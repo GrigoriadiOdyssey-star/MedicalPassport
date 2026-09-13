@@ -42,6 +42,21 @@ export const owners = [
 
 // Full source bodies were read for these IDs during this pass. Notes document the actual conclusion.
 const reviewRows = [
+ [2506,'specialty','MOVE_TO_PROFILE','Общий pancreatic profile содержит acute/chronic pancreatitis и insufficiency; не задаёт pediatric population. Не объединять с детским профилем без explicit age scope.'],
+ [2837,'specialty','MOVE_TO_PROFILE','В отличие от 2506 добавляет Pancreatic Cysts; одинаковое название не означает равное содержимое. Сохранить cysts отдельным требованием.'],
+ [3107,'specialty','MOVE_TO_PROFILE','Pediatric adrenal profile добавляет Steroid Therapy к CAH/insufficiency/Cushing/tumors; это регистрация/мониторинг клинического workflow, не autonomous prescription.'],
+ [3120,'specialty','MOVE_TO_PROFILE','Pediatric endocrine hub явно охватывает infancy through adolescence и Preventive Medicine; эти требования отсутствуют в exact pair 3340/3500.'],
+ [3167,'specialty','MOVE_TO_PROFILE','Hereditary Pancreatitis — конкретное требование; нельзя молча считать эквивалентом любых Genetic Disorders в 3287.'],
+ [3606,'specialty','MOVE_TO_PROFILE','Enzyme Replacement Therapy и Nutritional Monitoring расширяют pediatric pancreas profile; нужны отдельные record/order/monitoring references.'],
+ [3632,'specialty','MOVE_TO_PROFILE','Adrenal profile содержит Hormonal Evaluation, но не tumors/steroid therapy; сохранить union с 3107/3326, не supersede по номеру.'],
+ [3640,'specialty','MOVE_TO_PROFILE','Endocrine hub добавляет Continuous Monitoring и Clinical Research; невозможно приравнять к Nutrition/Preventive Medicine из 3120.'],
+ [3780,'specialty','MOVE_TO_PROFILE','Dermoscopy в pediatric dermatology hub — уникальная imaging projection, а не generic Imaging field; сохранить отдельно от genetics/lab/AI.'],
+ [3800,'specialty','MOVE_TO_PROFILE','Pediatric allergy/immunology hub содержит Molecular Diagnostics и Immunotherapy; сходство с другими hubs структурное, клинические требования различны.'],
+ [3828,'specialty','MOVE_TO_PROFILE','Pancreatic profile добавляет Enzyme Replacement и Genetic Disorders; оба термина сохраняются в union с heredity/nutritional monitoring.'],
+ [3868,'specialty','MOVE_TO_PROFILE','Hormone Monitoring дополняет adrenal disease list; monitoring не тождественна диагностической Hormonal Evaluation.'],
+ [3900,'specialty','MOVE_TO_PROFILE','Pediatric rheumatology hub добавляет Biological Therapy к требованиям 3560; нельзя удалить по одинаковому названию.'],
+ [4035,'specialty','MOVE_TO_PROFILE','Pediatric pancreas содержит Recurrent Pancreatitis, imaging/genetic evaluation/nutritional support — три workflow аспекта и отдельный recurrent phenotype.'],
+ [4536,'specialty','MOVE_TO_PROFILE','Pancreas перечисляет Laboratory Findings, Genetics, Nutrition и Treatment как Integrates; parser не должен считать болезни runtime dependencies.'],
  [862,'identity','MOVE_TO_PROFILE','Pediatric endocrine center — профиль Organization/Location/PractitionerRole; equipment references не являются отдельной базой клинических устройств.'],
  [882,'identity','MOVE_TO_PROFILE','Pediatric neurology center повторяет directory fields 862, но фильтрует другую специальность; сохранить specialty/service profile.'],
  [898,'identity','MOVE_TO_PROFILE','Worldwide neurology search — UI directory projection с country/city/specialists/ratings/costs; рейтинги и стоимость требуют источника и даты, не clinical ranking.'],
@@ -129,6 +144,11 @@ const reviewRows = [
 export const reviews = reviewRows.map(([id,owner,action,note])=>({id,owner:`CAP-${owner.toUpperCase()}`,action,note,reviewer:'Codex / source-level architectural review',scope:'full original module body; no independent clinical certification',reviewed:true,normalized:false,canonicalized:false,implementation_ready:false}));
 
 export const decisions = [
+ {id:'DEC-OV-06',ids:[2506,2837],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Same generic title, but 2837 uniquely adds Pancreatic Cysts. Pediatric scope cannot be inferred.',distinct:['2837: Pancreatic Cysts'],requirements:[]},
+ {id:'DEC-OV-07',ids:[3167,3287,3447,3606,3828,4035,4536],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Pediatric pancreas variants share core diagnoses but retain hereditary/genetic/recurrent, replacement therapy, nutritional and diagnostic requirements.',distinct:['Hereditary Pancreatitis','Recurrent Pancreatitis','Genetic Disorders','Enzyme Replacement Therapy','Nutritional Monitoring','Imaging','Genetic Evaluation','Nutritional Support','Laboratory Findings','Treatment'],requirements:[]},
+ {id:'DEC-OV-08',ids:[3107,3326,3488,3632,3868],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Exact pair 3326/3488 is embedded in a broader adrenal profile group with steroid therapy, hormonal evaluation and hormone monitoring.',distinct:['Steroid Therapy','Hormonal Evaluation','Hormone Monitoring'],requirements:[]},
+ {id:'DEC-OV-09',ids:[3120,3340,3500,3640,3880],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Pediatric endocrine hubs differ in age scope, preventive care, nutrition, monitoring, diabetes technology and research; larger ID does not prove supersession.',distinct:['infancy through adolescence','Preventive Medicine','Nutrition','Diabetes Technology','Continuous Monitoring','Diabetes Monitoring','Clinical Research'],requirements:[]},
+ {id:'DEC-OV-10',ids:[3560,3900],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Both pediatric rheumatology hubs compose shared capabilities; 3900 adds Biological Therapy.',distinct:['Biological Therapy'],requirements:[]},
  {id:'DEC-OV-04',ids:[2220,2590],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Ophthalmology hubs share AI/twin/imaging but differ in surgery/telemedicine versus genetics/laboratory; version order unproven.',distinct:['2220: Surgery, Telemedicine','2590: Genetics, Laboratory'],requirements:[]},
  {id:'DEC-OV-05',ids:[3340,3500,3880],type:'PARTIAL_OVERLAP',owner:'CAP-SPECIALTY',reason:'Exact pair 3340/3500 is only a subset of the larger same-title cluster. 3880 has distinct monitoring/research content.',distinct:['3340/3500: Diabetes Technology, Nutrition','3880: Diabetes Monitoring, Clinical Research'],requirements:[]},
  {id:'DEC-SP-04',ids:[1003,1073,1093],type:'SPECIALTY_PROJECTION',owner:'CAP-APPOINTMENTS',reason:'Clinic/physician/telemedicine appointment workflow is shared; infectious disease, ENT and dermatology retain distinct specialty eligibility.',distinct:['infectious disease','ENT','dermatology'],requirements:[]},

@@ -71,3 +71,22 @@ test('unknown owners and dependencies remain explicit instead of becoming valida
  assert.ok(graph.proposed_capability_edges.every(e=>e.validated===false));
  for(const r of registry){assert.equal(r.implementation_status,'NOT_IMPLEMENTED');assert.equal(r.duplicate_of,null);assert.equal(r.superseded_by,null);if(r.roadmap_stage==='MVP')assert.ok(r.P0_slice_candidate,'A shared owner alone must not promote a historical module to MVP');}
 });
+
+test('draft profile unions retain every original fragment and unique requirement without claiming approval',()=>{
+ const proposals=read('canonical_profile_proposals.json').profiles;
+ const trace=read('requirement_traceability_proposals.json').mappings;
+ const inventory=read('requirement_inventory.json').modules;
+ assert.equal(proposals.length,3);
+ for(const p of proposals){
+  assert.equal(p.canonicalized,false);assert.equal(p.implementation_ready,false);
+  assert.ok(fs.existsSync(path.join(root,'audit/master',p.document)));
+  for(const id of p.source_ids)for(const fragment of inventory[id-1].source_fragments){
+   const rows=trace.filter(t=>t.proposal_id===p.id&&t.source_fragment_id===fragment.fragment_id);
+   assert.equal(rows.length,1);assert.equal(rows[0].retained_text,fragment.text);assert.equal(rows[0].source_fragment_sha256,fragment.sha256);assert.equal(rows[0].approved,false);
+  }
+ }
+ const pancreas=proposals.find(p=>p.id==='PRF-PEDIATRIC-PANCREAS');
+ for(const label of ['Hereditary Pancreatitis','Recurrent Pancreatitis','Genetic Disorders','Nutritional Monitoring','Nutritional Support','Laboratory Findings'])assert.ok(pancreas.requirements.some(r=>r.label===label),label);
+ const adrenal=proposals.find(p=>p.id==='PRF-PEDIATRIC-ADRENAL');
+ for(const label of ['Steroid Therapy','Hormonal Evaluation','Hormone Monitoring'])assert.ok(adrenal.requirements.some(r=>r.label===label),label);
+});

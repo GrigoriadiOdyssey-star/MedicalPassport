@@ -6,21 +6,21 @@
 |---|---:|
 | SOURCE MODULES | 5175 |
 | ACCOUNTED | 5175 |
-| REVIEWED | 83 |
+| REVIEWED | 98 |
 | NORMALIZED | 0 |
 | CANONICALIZED | 0 |
 | IMPLEMENTATION_READY | 0 |
-| UNAUDITED | 5092 |
+| UNAUDITED | 5077 |
 | CANONICAL MODULES | 0; 33 владельцев предложено |
 | EXACT DUPLICATES | 3 группы / 3 повторных ID |
 | SEMANTIC DUPLICATES | 1 группа (36, 95), text-intent review |
-| PARTIAL OVERLAPS | 5 группы |
+| PARTIAL OVERLAPS | 10 группы |
 | LEGACY GENERATIONS | 0 подтверждено / 27 marker-кандидатов |
 | NEW GAPS | 0 подтверждено / 6 кандидатов |
 | CRITICAL FINDINGS | 4 |
 | HIGH FINDINGS | 8 |
 | GITLAB WRITE STATUS | NO_WRITES_THIS_PASS |
-| REVIEW PROGRESS | 1.6039% |
+| REVIEW PROGRESS | 1.8937% |
 | NORMALIZATION PROGRESS | 0% |
 | OVERALL AUDIT PROGRESS | 0% по минимуму обязательных gates |
 
@@ -30,7 +30,7 @@
 
 - Baseline/manifest с SHA-256, byte/line spans для каждого ID.
 - Ledger и JSON/CSV registry на 5175 ID, полные исходные descriptions и открытые gates.
-- 1969 duplicate/overlap групп/пар; 15 содержательных решений, 1954 кандидатных кластеров ещё не разрешены.
+- 1970 duplicate/overlap групп/пар; 20 содержательных решений, 1950 кандидатных кластеров ещё не разрешены.
 - 33 proposed shared owners, reference graph, data/AI/twin/clinical/security/interoperability findings.
 - Change Map на каждый ID, verbatim requirement inventory, 6 gap search dossiers.
 - 12 открытых архитектурных gates: часть пересматривает ранее исправленные формулировки на уровне будущей реализации.

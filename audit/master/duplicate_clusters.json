@@ -2606,10 +2606,51 @@
       ],
       "candidate_basis": [
         "normalized_title",
-        "bounded_tfidf_lexical_candidate"
+        "bounded_tfidf_lexical_candidate",
+        "explicit_source_review"
       ],
-      "classification": "NEEDS_REVIEW",
-      "adjudication": "PENDING"
+      "classification": "PARTIAL_OVERLAP",
+      "adjudication": "SOURCE_TEXT_REVIEWED; broader contextual review pending",
+      "decision_id": "DEC-OV-06",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
+      "reason": "Same generic title, but 2837 uniquely adds Pancreatic Cysts. Pediatric scope cannot be inferred.",
+      "unique_requirements": [
+        "2837: Pancreatic Cysts"
+      ],
+      "retained_requirements": [],
+      "comparison": {
+        "title": [
+          "Pancreatic Disorders Module",
+          "Pancreatic Disorders Module"
+        ],
+        "description_evidence": [
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 65392,
+            "body_sha256": "0b4c530d337694e42c44f9ba68696712b457c3f077c2b0302aa540b7c899b87f",
+            "original_id": 2506
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 71414,
+            "body_sha256": "26f2c184e2a4bbdaa522cb830203d13f7d08dbfd1b9b7df227a5dee2b10d9a27",
+            "original_id": 2837
+          }
+        ],
+        "responsibility": "Same generic title, but 2837 uniquely adds Pancreatic Cysts. Pediatric scope cannot be inferred.",
+        "capability": "CAP-SPECIALTY",
+        "inputs": "See verbatim source and field extraction; unspecified values remain unknown.",
+        "outputs": "See verbatim source; no inferred clinical output is treated as fact.",
+        "workflow": [
+          "2837: Pancreatic Cysts"
+        ],
+        "data_ownership": "Proposed shared owner; no source module has been superseded.",
+        "dependencies": "Extracted mentions are evidence candidates, not validated runtime edges.",
+        "clinical_context": [
+          "2837: Pancreatic Cysts"
+        ],
+        "actors": "Only actors explicitly stated in source; external credentials not verified."
+      }
     },
     {
       "cluster_id": "CL-133d86dd291e",
@@ -3466,10 +3507,78 @@
         3868
       ],
       "candidate_basis": [
-        "normalized_title"
+        "normalized_title",
+        "explicit_source_review"
       ],
-      "classification": "NEEDS_REVIEW",
-      "adjudication": "PENDING"
+      "classification": "PARTIAL_OVERLAP",
+      "adjudication": "SOURCE_TEXT_REVIEWED; broader contextual review pending",
+      "decision_id": "DEC-OV-08",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
+      "reason": "Exact pair 3326/3488 is embedded in a broader adrenal profile group with steroid therapy, hormonal evaluation and hormone monitoring.",
+      "unique_requirements": [
+        "Steroid Therapy",
+        "Hormonal Evaluation",
+        "Hormone Monitoring"
+      ],
+      "retained_requirements": [],
+      "comparison": {
+        "title": [
+          "Pediatric Adrenal Disorders Module",
+          "Pediatric Adrenal Disorders Module",
+          "Pediatric Adrenal Disorders Module",
+          "Pediatric Adrenal Disorders Module",
+          "Pediatric Adrenal Disorders Module"
+        ],
+        "description_evidence": [
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 76382,
+            "body_sha256": "28b6bdecc4100144840cf7afd7b2ade195d74c2713d776adbca4742862445267",
+            "original_id": 3107
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 80577,
+            "body_sha256": "2ced55d6143e2926cc1b384b85085a876f801857ca27c2bd7a544c1ba7e51165",
+            "original_id": 3326
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 84100,
+            "body_sha256": "2ced55d6143e2926cc1b384b85085a876f801857ca27c2bd7a544c1ba7e51165",
+            "original_id": 3488
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 86896,
+            "body_sha256": "1a2ab8dabd9e991f4b300c4d4bc6b198e0b1c93d2cde9356a9ec2a12eedfe5cf",
+            "original_id": 3632
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 91319,
+            "body_sha256": "3045aba3964abb2235d9017f9262297de363c7b03f59ac346cf3dfb950b247a6",
+            "original_id": 3868
+          }
+        ],
+        "responsibility": "Exact pair 3326/3488 is embedded in a broader adrenal profile group with steroid therapy, hormonal evaluation and hormone monitoring.",
+        "capability": "CAP-SPECIALTY",
+        "inputs": "See verbatim source and field extraction; unspecified values remain unknown.",
+        "outputs": "See verbatim source; no inferred clinical output is treated as fact.",
+        "workflow": [
+          "Steroid Therapy",
+          "Hormonal Evaluation",
+          "Hormone Monitoring"
+        ],
+        "data_ownership": "Proposed shared owner; no source module has been superseded.",
+        "dependencies": "Extracted mentions are evidence candidates, not validated runtime edges.",
+        "clinical_context": [
+          "Steroid Therapy",
+          "Hormonal Evaluation",
+          "Hormone Monitoring"
+        ],
+        "actors": "Only actors explicitly stated in source; external credentials not verified."
+      }
     },
     {
       "cluster_id": "CL-b998dcb32d53",
@@ -3632,10 +3741,90 @@
         3880
       ],
       "candidate_basis": [
-        "normalized_title"
+        "normalized_title",
+        "explicit_source_review"
       ],
-      "classification": "NEEDS_REVIEW",
-      "adjudication": "PENDING"
+      "classification": "PARTIAL_OVERLAP",
+      "adjudication": "SOURCE_TEXT_REVIEWED; broader contextual review pending",
+      "decision_id": "DEC-OV-09",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
+      "reason": "Pediatric endocrine hubs differ in age scope, preventive care, nutrition, monitoring, diabetes technology and research; larger ID does not prove supersession.",
+      "unique_requirements": [
+        "infancy through adolescence",
+        "Preventive Medicine",
+        "Nutrition",
+        "Diabetes Technology",
+        "Continuous Monitoring",
+        "Diabetes Monitoring",
+        "Clinical Research"
+      ],
+      "retained_requirements": [],
+      "comparison": {
+        "title": [
+          "Clinical Pediatric Endocrinology Intelligence Hub",
+          "Clinical Pediatric Endocrinology Intelligence Hub",
+          "Clinical Pediatric Endocrinology Intelligence Hub",
+          "Clinical Pediatric Endocrinology Intelligence Hub",
+          "Clinical Pediatric Endocrinology Intelligence Hub"
+        ],
+        "description_evidence": [
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 76613,
+            "body_sha256": "435ef86c115f8c787aedafedcac86a2e3166d50bdd4efd8c17a20bbfd781e32c",
+            "original_id": 3120
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 80879,
+            "body_sha256": "83f621f0a73d834c6123d82af6265cbe83bb731477fb31fef3f4b22e116a1742",
+            "original_id": 3340
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 84352,
+            "body_sha256": "83f621f0a73d834c6123d82af6265cbe83bb731477fb31fef3f4b22e116a1742",
+            "original_id": 3500
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 87038,
+            "body_sha256": "02e5c8c2ae70bbcbff06b70aa769caedd37dcaed8db13da253c9ca0a853626a4",
+            "original_id": 3640
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 91530,
+            "body_sha256": "c3f45372ebf787dddefd10377bb3986a7f2169a31ff754d57bb023ab0fe3ff3a",
+            "original_id": 3880
+          }
+        ],
+        "responsibility": "Pediatric endocrine hubs differ in age scope, preventive care, nutrition, monitoring, diabetes technology and research; larger ID does not prove supersession.",
+        "capability": "CAP-SPECIALTY",
+        "inputs": "See verbatim source and field extraction; unspecified values remain unknown.",
+        "outputs": "See verbatim source; no inferred clinical output is treated as fact.",
+        "workflow": [
+          "infancy through adolescence",
+          "Preventive Medicine",
+          "Nutrition",
+          "Diabetes Technology",
+          "Continuous Monitoring",
+          "Diabetes Monitoring",
+          "Clinical Research"
+        ],
+        "data_ownership": "Proposed shared owner; no source module has been superseded.",
+        "dependencies": "Extracted mentions are evidence candidates, not validated runtime edges.",
+        "clinical_context": [
+          "infancy through adolescence",
+          "Preventive Medicine",
+          "Nutrition",
+          "Diabetes Technology",
+          "Continuous Monitoring",
+          "Diabetes Monitoring",
+          "Clinical Research"
+        ],
+        "actors": "Only actors explicitly stated in source; external credentials not verified."
+      }
     },
     {
       "cluster_id": "CL-f44e80cae32c",
@@ -25452,12 +25641,53 @@
         3900
       ],
       "candidate_basis": [
-        "bounded_tfidf_lexical_candidate"
+        "bounded_tfidf_lexical_candidate",
+        "explicit_source_review"
       ],
-      "classification": "NEEDS_REVIEW",
-      "adjudication": "PENDING",
+      "classification": "PARTIAL_OVERLAP",
+      "adjudication": "SOURCE_TEXT_REVIEWED; broader contextual review pending",
       "cosine": 0.91656,
-      "shared_terms": 11
+      "shared_terms": 11,
+      "decision_id": "DEC-OV-10",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
+      "reason": "Both pediatric rheumatology hubs compose shared capabilities; 3900 adds Biological Therapy.",
+      "unique_requirements": [
+        "Biological Therapy"
+      ],
+      "retained_requirements": [],
+      "comparison": {
+        "title": [
+          "Clinical Pediatric Rheumatology Intelligence Hub",
+          "Clinical Pediatric Rheumatology Intelligence Hub"
+        ],
+        "description_evidence": [
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 85518,
+            "body_sha256": "4f8d2be62cef75d5a2c738fb2266df67fc8c9393b1d24183811a97e3b1adb4ee",
+            "original_id": 3560
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 91900,
+            "body_sha256": "07f057c125fe41bbedbbdc79de3f58377749ddbfac2e51552e6eb689543c2838",
+            "original_id": 3900
+          }
+        ],
+        "responsibility": "Both pediatric rheumatology hubs compose shared capabilities; 3900 adds Biological Therapy.",
+        "capability": "CAP-SPECIALTY",
+        "inputs": "See verbatim source and field extraction; unspecified values remain unknown.",
+        "outputs": "See verbatim source; no inferred clinical output is treated as fact.",
+        "workflow": [
+          "Biological Therapy"
+        ],
+        "data_ownership": "Proposed shared owner; no source module has been superseded.",
+        "dependencies": "Extracted mentions are evidence candidates, not validated runtime edges.",
+        "clinical_context": [
+          "Biological Therapy"
+        ],
+        "actors": "Only actors explicitly stated in source; external credentials not verified."
+      }
     },
     {
       "cluster_id": "CL-a157d3b8b469",
@@ -27138,6 +27368,125 @@
       "adjudication": "PENDING",
       "cosine": 0.68493,
       "shared_terms": 36
+    },
+    {
+      "cluster_id": "CL-9e0176dfde98",
+      "members": [
+        3167,
+        3287,
+        3447,
+        3606,
+        3828,
+        4035,
+        4536
+      ],
+      "candidate_basis": [
+        "explicit_source_review"
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "adjudication": "SOURCE_TEXT_REVIEWED; broader contextual review pending",
+      "decision_id": "DEC-OV-07",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
+      "reason": "Pediatric pancreas variants share core diagnoses but retain hereditary/genetic/recurrent, replacement therapy, nutritional and diagnostic requirements.",
+      "unique_requirements": [
+        "Hereditary Pancreatitis",
+        "Recurrent Pancreatitis",
+        "Genetic Disorders",
+        "Enzyme Replacement Therapy",
+        "Nutritional Monitoring",
+        "Imaging",
+        "Genetic Evaluation",
+        "Nutritional Support",
+        "Laboratory Findings",
+        "Treatment"
+      ],
+      "retained_requirements": [],
+      "comparison": {
+        "title": [
+          "Pediatric Pancreatic Disorders Module",
+          "Pediatric Pancreatic Disorders Module",
+          "Pediatric Pancreatic Disorders Module",
+          "Pediatric Pancreatic Disorders Module",
+          "Pediatric Pancreatic Disorders Module",
+          "Pediatric Pancreatic Disease Module",
+          "Pediatric Pancreatic Disease Module"
+        ],
+        "description_evidence": [
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 77491,
+            "body_sha256": "a4f8cc141c785b01e39192d427e12dec7946c460cd22ded2410ece094b251037",
+            "original_id": 3167
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 79727,
+            "body_sha256": "256d839d6f89f0c71ec8e0de165be21ef683d4ddc87b9b82e9b9132c30ac0409",
+            "original_id": 3287
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 83208,
+            "body_sha256": "256d839d6f89f0c71ec8e0de165be21ef683d4ddc87b9b82e9b9132c30ac0409",
+            "original_id": 3447
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 86401,
+            "body_sha256": "e67c8de38e68c5b2730b4698f5609c1febb40b04e02216d3fd1d23adadb33ed7",
+            "original_id": 3606
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 90577,
+            "body_sha256": "dd3eb38d38bff6387039cc494dd9b888e11908a376053d1bdbfb0d7bded5a53a",
+            "original_id": 3828
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 94728,
+            "body_sha256": "5dcbe907e339c5e5828a7b5d44493fbbf18fc40a596a848f56905ecc22d9a40d",
+            "original_id": 4035
+          },
+          {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 105844,
+            "body_sha256": "25751724e150e1b3f923ead5dd2a87c6814f7a8ada5d9fef9f981045ef13c4b8",
+            "original_id": 4536
+          }
+        ],
+        "responsibility": "Pediatric pancreas variants share core diagnoses but retain hereditary/genetic/recurrent, replacement therapy, nutritional and diagnostic requirements.",
+        "capability": "CAP-SPECIALTY",
+        "inputs": "See verbatim source and field extraction; unspecified values remain unknown.",
+        "outputs": "See verbatim source; no inferred clinical output is treated as fact.",
+        "workflow": [
+          "Hereditary Pancreatitis",
+          "Recurrent Pancreatitis",
+          "Genetic Disorders",
+          "Enzyme Replacement Therapy",
+          "Nutritional Monitoring",
+          "Imaging",
+          "Genetic Evaluation",
+          "Nutritional Support",
+          "Laboratory Findings",
+          "Treatment"
+        ],
+        "data_ownership": "Proposed shared owner; no source module has been superseded.",
+        "dependencies": "Extracted mentions are evidence candidates, not validated runtime edges.",
+        "clinical_context": [
+          "Hereditary Pancreatitis",
+          "Recurrent Pancreatitis",
+          "Genetic Disorders",
+          "Enzyme Replacement Therapy",
+          "Nutritional Monitoring",
+          "Imaging",
+          "Genetic Evaluation",
+          "Nutritional Support",
+          "Laboratory Findings",
+          "Treatment"
+        ],
+        "actors": "Only actors explicitly stated in source; external credentials not verified."
+      }
     },
     {
       "cluster_id": "CL-d6e0f1c4390c",

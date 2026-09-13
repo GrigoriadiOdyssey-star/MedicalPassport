@@ -55122,8 +55122,8 @@
     {
       "original_id": 2506,
       "module_id": "SRC-2506",
-      "action": "NEEDS_HUMAN_REVIEW",
-      "canonical_owner_proposal": null,
+      "action": "MOVE_TO_PROFILE",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
         "heading_line": 65392,
@@ -62404,8 +62404,8 @@
     {
       "original_id": 2837,
       "module_id": "SRC-2837",
-      "action": "NEEDS_HUMAN_REVIEW",
-      "canonical_owner_proposal": null,
+      "action": "MOVE_TO_PROFILE",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
         "heading_line": 71414,
@@ -68344,7 +68344,7 @@
     {
       "original_id": 3107,
       "module_id": "SRC-3107",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -68630,7 +68630,7 @@
     {
       "original_id": 3120,
       "module_id": "SRC-3120",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -69664,7 +69664,7 @@
     {
       "original_id": 3167,
       "module_id": "SRC-3167",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -79322,7 +79322,7 @@
     {
       "original_id": 3606,
       "module_id": "SRC-3606",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -79894,7 +79894,7 @@
     {
       "original_id": 3632,
       "module_id": "SRC-3632",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -80070,7 +80070,7 @@
     {
       "original_id": 3640,
       "module_id": "SRC-3640",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -83150,7 +83150,7 @@
     {
       "original_id": 3780,
       "module_id": "SRC-3780",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -83590,8 +83590,8 @@
     {
       "original_id": 3800,
       "module_id": "SRC-3800",
-      "action": "NEEDS_HUMAN_REVIEW",
-      "canonical_owner_proposal": null,
+      "action": "MOVE_TO_PROFILE",
+      "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
         "heading_line": 90043,
@@ -84206,7 +84206,7 @@
     {
       "original_id": 3828,
       "module_id": "SRC-3828",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -85086,7 +85086,7 @@
     {
       "original_id": 3868,
       "module_id": "SRC-3868",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -85790,7 +85790,7 @@
     {
       "original_id": 3900,
       "module_id": "SRC-3900",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -88760,7 +88760,7 @@
     {
       "original_id": 4035,
       "module_id": "SRC-4035",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
@@ -99782,7 +99782,7 @@
     {
       "original_id": 4536,
       "module_id": "SRC-4536",
-      "action": "NEEDS_HUMAN_REVIEW",
+      "action": "MOVE_TO_PROFILE",
       "canonical_owner_proposal": "CAP-SPECIALTY",
       "source_before": {
         "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",

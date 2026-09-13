@@ -4040,7 +4040,7 @@
             "body_sha256": "1a2ab8dabd9e991f4b300c4d4bc6b198e0b1c93d2cde9356a9ec2a12eedfe5cf",
             "original_id": 3632
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 3650,
@@ -4227,7 +4227,7 @@
             "body_sha256": "5dcbe907e339c5e5828a7b5d44493fbbf18fc40a596a848f56905ecc22d9a40d",
             "original_id": 4035
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 4050,
@@ -7735,7 +7735,7 @@
             "body_sha256": "435ef86c115f8c787aedafedcac86a2e3166d50bdd4efd8c17a20bbfd781e32c",
             "original_id": 3120
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 3121,
@@ -8615,7 +8615,7 @@
             "body_sha256": "02e5c8c2ae70bbcbff06b70aa769caedd37dcaed8db13da253c9ca0a853626a4",
             "original_id": 3640
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 3641,
@@ -8846,7 +8846,7 @@
             "body_sha256": "16754dbbdc49bc3674651a9ade9abe1e1b9fbb1640aa9c5af5faa7529f1febfe",
             "original_id": 3780
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 3781,
@@ -8879,7 +8879,7 @@
             "body_sha256": "5cbadf3876ee3853f09c611b6ac28f8bfed958cb5266845dd50f038a42fe2bfd",
             "original_id": 3800
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 3801,
@@ -9044,7 +9044,7 @@
             "body_sha256": "07f057c125fe41bbedbbdc79de3f58377749ddbfac2e51552e6eb689543c2838",
             "original_id": 3900
           },
-          "review": "LEXICAL_SEARCH_HIT_NOT_REVIEWED"
+          "review": "SOURCE_REVIEWED"
         },
         {
           "original_id": 3901,

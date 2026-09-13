@@ -1,9 +1,14 @@
 # Дубликаты и пересечения — проход 01
 
-Всего кандидатных групп/пар: 1969; NEEDS_REVIEW: 1954. Группы могут пересекаться. 3 exact-body группы означают 3 повторных ID относительно одного экземпляра на группу, а не потерю ID.
+Всего кандидатных групп/пар: 1970; NEEDS_REVIEW: 1950. Группы могут пересекаться. 3 exact-body группы означают 3 повторных ID относительно одного экземпляра на группу, а не потерю ID.
 
 | Решение | ID | Класс | Вывод |
 |---|---|---|---|
+| DEC-OV-06 | 2506, 2837 | PARTIAL_OVERLAP | Same generic title, but 2837 uniquely adds Pancreatic Cysts. Pediatric scope cannot be inferred. |
+| DEC-OV-07 | 3167, 3287, 3447, 3606, 3828, 4035, 4536 | PARTIAL_OVERLAP | Pediatric pancreas variants share core diagnoses but retain hereditary/genetic/recurrent, replacement therapy, nutritional and diagnostic requirements. |
+| DEC-OV-08 | 3107, 3326, 3488, 3632, 3868 | PARTIAL_OVERLAP | Exact pair 3326/3488 is embedded in a broader adrenal profile group with steroid therapy, hormonal evaluation and hormone monitoring. |
+| DEC-OV-09 | 3120, 3340, 3500, 3640, 3880 | PARTIAL_OVERLAP | Pediatric endocrine hubs differ in age scope, preventive care, nutrition, monitoring, diabetes technology and research; larger ID does not prove supersession. |
+| DEC-OV-10 | 3560, 3900 | PARTIAL_OVERLAP | Both pediatric rheumatology hubs compose shared capabilities; 3900 adds Biological Therapy. |
 | DEC-OV-04 | 2220, 2590 | PARTIAL_OVERLAP | Ophthalmology hubs share AI/twin/imaging but differ in surgery/telemedicine versus genetics/laboratory; version order unproven. |
 | DEC-OV-05 | 3340, 3500, 3880 | PARTIAL_OVERLAP | Exact pair 3340/3500 is only a subset of the larger same-title cluster. 3880 has distinct monitoring/research content. |
 | DEC-SP-04 | 1003, 1073, 1093 | SPECIALTY_PROJECTION | Clinic/physician/telemedicine appointment workflow is shared; infectious disease, ENT and dermatology retain distinct specialty eligibility. |

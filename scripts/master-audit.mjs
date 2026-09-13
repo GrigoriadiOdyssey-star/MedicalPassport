@@ -3,6 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {parseModules, sha256} from './catalog-lib.mjs';
 import {edition, baselineCommit, sourceHash, owners, reviews, decisions, findings, gaps} from '../config/master-audit.mjs';
+import {buildCanonicalProposals} from './canonical-proposals.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'audit/master');
@@ -140,6 +141,11 @@ const noObservedLinks=modules.filter(m=>!incoming.has(m.id)&&!outgoing.has(m.id)
 const graph={...meta,edge_direction:'dependent -> prerequisite / reference target',nodes:modules.map(m=>({id:`SRC-${m.id}`,original_id:m.id})),edges,proposed_capability_nodes:owners,proposed_capability_edges:owners.flatMap(o=>o.dependencies.map(d=>({from:o.id,to:d,type:'ARCHITECTURAL_PROPOSAL',validated:false}))),unresolved_references:unresolved,no_observed_explicit_links:noObservedLinks,orphan_interpretation:'No observed exact reference is not proof of a true architectural orphan; named/generic relationships are incomplete.',critical_dependencies_verified:0};
 
 const outputs=new Map();
+const canonicalProposals=buildCanonicalProposals(modules,meta);
+for(const [name,data] of canonicalProposals.outputs)outputs.set(name,data);
+progress.proposed_canonical_profiles=canonicalProposals.profiles.length;
+progress.original_ids_with_draft_requirement_mapping=new Set(canonicalProposals.mappings.map(m=>m.original_id)).size;
+for(const r of registry)r.canonical_specification_proposals=canonicalProposals.profiles.filter(p=>p.source_ids.includes(r.original_id)).map(p=>p.document);
 const json=(name,obj)=>outputs.set(name,JSON.stringify(obj,null,2)+'\n');
 json('source_manifest.json',manifest);json('audit_ledger.json',{...meta,allowed_statuses:statuses,modules:ledger});
 json('canonical_registry.json',{...meta,field_semantics:'All ownership/layer/roadmap/entity matches are proposals until reviewed and gated; FHIR_resources are literal mentions, FHIR_mapping_candidates are proposed mappings, empty profiles mean unspecified.',modules:registry});
@@ -165,13 +171,19 @@ function validate(){
  for(const m of registry){for(const f of fields)if(!(f in m))throw Error('Missing registry field '+f);if(m.description!==byId.get(m.original_id).body)throw Error('Description loss');if(!statuses.includes(m.audit_status))throw Error('Unknown audit status');if(m.canonical_owner&&!ownerMap.has(m.canonical_owner))throw Error('Dangling owner');if(m.readiness.reviewed!==reviewMap.has(m.original_id))throw Error('Inflated review');if(m.duplicate_of||m.superseded_by)throw Error('Premature destructive classification');}
  for(let i=0;i<spans.length;i++){const s=spans[i];if(i&&spans[i-1].end_byte_exclusive!==s.start_byte)throw Error('Source gap');if(sha256(bytes.subarray(s.start_byte,s.end_byte_exclusive))!==s.block_sha256)throw Error('Span hash');}if(spans.at(-1).end_byte_exclusive!==bytes.length)throw Error('Source tail loss');
  for(const c of clusters)if(c.members.some(id=>!byId.has(id))||new Set(c.members).size!==c.members.length)throw Error('Invalid cluster member');
+ for(const p of canonicalProposals.profiles){
+  if(p.source_ids.some(id=>!reviewMap.has(id)))throw Error('Unreviewed source in canonical proposal');
+  const sourceRows=requirementInventory.filter(m=>p.source_ids.includes(m.original_id));
+  for(const m of sourceRows)for(const f of m.source_fragments){const mapped=canonicalProposals.mappings.filter(t=>t.proposal_id===p.id&&t.source_fragment_id===f.fragment_id);if(mapped.length!==1||mapped[0].retained_text!==f.text||mapped[0].source_fragment_sha256!==f.sha256)throw Error('Draft requirement coverage loss');}
+  for(const r of p.requirements)if(!r.source_ids.length||r.source_ids.some(id=>!byId.get(id).body.includes(r.label)))throw Error('Unproven canonical requirement');
+ }
  const visit=(id,active=new Set(),done=new Set())=>{if(active.has(id))throw Error('Proposed capability dependency cycle '+id);if(done.has(id))return;active.add(id);for(const d of ownerMap.get(id).dependencies){if(!ownerMap.has(d))throw Error('Dangling dependency');visit(d,active,done);}active.delete(id);done.add(id);};for(const o of owners)visit(o.id);
  if(ledger.filter(m=>m.reviewed).length!==progress.reviewed||progress.unaudited+progress.reviewed!==5175)throw Error('Progress mismatch');
- return {result:'PASS',checks:['5175 IDs across source/registry/ledger/change map/requirements','Immutable source hash and contiguous byte spans','Verbatim descriptions preserved','Required registry fields/status enum','Review count based on explicit source decisions','All cluster member IDs valid','Proposed owner graph no missing targets or cycles','No supersede/duplicate writes','Deterministic artifacts'],counts:{modules:5175,reviewed,owners:owners.length,clusters:clusters.length,source_reference_edges:edges.length,unresolved_reference_entries:unresolved.length}};
+ return {result:'PASS',checks:['5175 IDs across source/registry/ledger/change map/requirements','Immutable source hash and contiguous byte spans','Verbatim descriptions preserved','Required registry fields/status enum','Review count based on explicit source decisions','All cluster member IDs valid','Proposed owner graph no missing targets or cycles','All fragments from 17 reviewed source IDs mapped once per draft profile with exact text/hash','No supersede/duplicate writes','Deterministic artifacts'],counts:{modules:5175,reviewed,owners:owners.length,clusters:clusters.length,source_reference_edges:edges.length,unresolved_reference_entries:unresolved.length,draft_profiles:canonicalProposals.profiles.length,draft_mapped_original_ids:progress.original_ids_with_draft_requirement_mapping}};
 }
 const validation=validate();
 json('validation.json',{...meta,...validation});
 const check=process.argv.includes('--check');
 if(!check)fs.mkdirSync(out,{recursive:true});
-for(const [name,data] of outputs){const file=path.join(out,name);if(check){if(!fs.existsSync(file)||fs.readFileSync(file,'utf8')!==data)throw Error('Artifact drift: '+name);}else fs.writeFileSync(file,data,'utf8');}
+for(const [name,data] of outputs){const file=path.join(out,name);if(check){if(!fs.existsSync(file)||fs.readFileSync(file,'utf8')!==data)throw Error('Artifact drift: '+name);}else {fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,data,'utf8');}}
 console.log(JSON.stringify({mode:check?'CHECK':'BUILD',...validation,progress},null,2));

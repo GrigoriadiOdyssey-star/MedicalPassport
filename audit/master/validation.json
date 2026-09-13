@@ -15,15 +15,18 @@
     "Review count based on explicit source decisions",
     "All cluster member IDs valid",
     "Proposed owner graph no missing targets or cycles",
+    "All fragments from 17 reviewed source IDs mapped once per draft profile with exact text/hash",
     "No supersede/duplicate writes",
     "Deterministic artifacts"
   ],
   "counts": {
     "modules": 5175,
-    "reviewed": 83,
+    "reviewed": 98,
     "owners": 33,
-    "clusters": 1969,
+    "clusters": 1970,
     "source_reference_edges": 16,
-    "unresolved_reference_entries": 5747
+    "unresolved_reference_entries": 5747,
+    "draft_profiles": 3,
+    "draft_mapped_original_ids": 17
   }
 }

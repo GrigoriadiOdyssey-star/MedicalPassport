@@ -76327,8 +76327,8 @@
     },
     {
       "original_id": 2506,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -76338,13 +76338,30 @@
         "body_sha256": "0b4c530d337694e42c44f9ba68696712b457c3f077c2b0302aa540b7c899b87f",
         "original_id": 2506
       },
-      "review": null,
+      "review": {
+        "id": 2506,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Общий pancreatic profile содержит acute/chronic pancreatitis и insufficiency; не задаёт pediatric population. Не объединять с детским профилем без explicit age scope.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -86274,8 +86291,8 @@
     },
     {
       "original_id": 2837,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -86285,13 +86302,30 @@
         "body_sha256": "26f2c184e2a4bbdaa522cb830203d13f7d08dbfd1b9b7df227a5dee2b10d9a27",
         "original_id": 2837
       },
-      "review": null,
+      "review": {
+        "id": 2837,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "В отличие от 2506 добавляет Pancreatic Cysts; одинаковое название не означает равное содержимое. Сохранить cysts отдельным требованием.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -94374,8 +94408,8 @@
     },
     {
       "original_id": 3107,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -94385,13 +94419,30 @@
         "body_sha256": "28b6bdecc4100144840cf7afd7b2ade195d74c2713d776adbca4742862445267",
         "original_id": 3107
       },
-      "review": null,
+      "review": {
+        "id": 3107,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pediatric adrenal profile добавляет Steroid Therapy к CAH/insufficiency/Cushing/tumors; это регистрация/мониторинг клинического workflow, не autonomous prescription.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -94764,8 +94815,8 @@
     },
     {
       "original_id": 3120,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -94775,13 +94826,30 @@
         "body_sha256": "435ef86c115f8c787aedafedcac86a2e3166d50bdd4efd8c17a20bbfd781e32c",
         "original_id": 3120
       },
-      "review": null,
+      "review": {
+        "id": 3120,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pediatric endocrine hub явно охватывает infancy through adolescence и Preventive Medicine; эти требования отсутствуют в exact pair 3340/3500.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -96174,8 +96242,8 @@
     },
     {
       "original_id": 3167,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -96185,13 +96253,30 @@
         "body_sha256": "a4f8cc141c785b01e39192d427e12dec7946c460cd22ded2410ece094b251037",
         "original_id": 3167
       },
-      "review": null,
+      "review": {
+        "id": 3167,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Hereditary Pancreatitis — конкретное требование; нельзя молча считать эквивалентом любых Genetic Disorders в 3287.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -109480,8 +109565,8 @@
     },
     {
       "original_id": 3606,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -109491,13 +109576,30 @@
         "body_sha256": "e67c8de38e68c5b2730b4698f5609c1febb40b04e02216d3fd1d23adadb33ed7",
         "original_id": 3606
       },
-      "review": null,
+      "review": {
+        "id": 3606,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Enzyme Replacement Therapy и Nutritional Monitoring расширяют pediatric pancreas profile; нужны отдельные record/order/monitoring references.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -110260,8 +110362,8 @@
     },
     {
       "original_id": 3632,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -110271,13 +110373,30 @@
         "body_sha256": "1a2ab8dabd9e991f4b300c4d4bc6b198e0b1c93d2cde9356a9ec2a12eedfe5cf",
         "original_id": 3632
       },
-      "review": null,
+      "review": {
+        "id": 3632,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Adrenal profile содержит Hormonal Evaluation, но не tumors/steroid therapy; сохранить union с 3107/3326, не supersede по номеру.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -110500,8 +110619,8 @@
     },
     {
       "original_id": 3640,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -110511,13 +110630,30 @@
         "body_sha256": "02e5c8c2ae70bbcbff06b70aa769caedd37dcaed8db13da253c9ca0a853626a4",
         "original_id": 3640
       },
-      "review": null,
+      "review": {
+        "id": 3640,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Endocrine hub добавляет Continuous Monitoring и Clinical Research; невозможно приравнять к Nutrition/Preventive Medicine из 3120.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -114700,8 +114836,8 @@
     },
     {
       "original_id": 3780,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -114711,13 +114847,30 @@
         "body_sha256": "16754dbbdc49bc3674651a9ade9abe1e1b9fbb1640aa9c5af5faa7529f1febfe",
         "original_id": 3780
       },
-      "review": null,
+      "review": {
+        "id": 3780,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Dermoscopy в pediatric dermatology hub — уникальная imaging projection, а не generic Imaging field; сохранить отдельно от genetics/lab/AI.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -115300,8 +115453,8 @@
     },
     {
       "original_id": 3800,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -115311,13 +115464,30 @@
         "body_sha256": "5cbadf3876ee3853f09c611b6ac28f8bfed958cb5266845dd50f038a42fe2bfd",
         "original_id": 3800
       },
-      "review": null,
+      "review": {
+        "id": 3800,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pediatric allergy/immunology hub содержит Molecular Diagnostics и Immunotherapy; сходство с другими hubs структурное, клинические требования различны.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -116140,8 +116310,8 @@
     },
     {
       "original_id": 3828,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -116151,13 +116321,30 @@
         "body_sha256": "dd3eb38d38bff6387039cc494dd9b888e11908a376053d1bdbfb0d7bded5a53a",
         "original_id": 3828
       },
-      "review": null,
+      "review": {
+        "id": 3828,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pancreatic profile добавляет Enzyme Replacement и Genetic Disorders; оба термина сохраняются в union с heredity/nutritional monitoring.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -117357,8 +117544,8 @@
     },
     {
       "original_id": 3868,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -117368,13 +117555,30 @@
         "body_sha256": "3045aba3964abb2235d9017f9262297de363c7b03f59ac346cf3dfb950b247a6",
         "original_id": 3868
       },
-      "review": null,
+      "review": {
+        "id": 3868,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Hormone Monitoring дополняет adrenal disease list; monitoring не тождественна диагностической Hormonal Evaluation.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -118334,8 +118538,8 @@
     },
     {
       "original_id": 3900,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -118345,13 +118549,30 @@
         "body_sha256": "07f057c125fe41bbedbbdc79de3f58377749ddbfac2e51552e6eb689543c2838",
         "original_id": 3900
       },
-      "review": null,
+      "review": {
+        "id": 3900,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pediatric rheumatology hub добавляет Biological Therapy к требованиям 3560; нельзя удалить по одинаковому названию.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -122384,8 +122605,8 @@
     },
     {
       "original_id": 4035,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -122395,13 +122616,30 @@
         "body_sha256": "5dcbe907e339c5e5828a7b5d44493fbbf18fc40a596a848f56905ecc22d9a40d",
         "original_id": 4035
       },
-      "review": null,
+      "review": {
+        "id": 4035,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pediatric pancreas содержит Recurrent Pancreatitis, imaging/genetic evaluation/nutritional support — три workflow аспекта и отдельный recurrent phenotype.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [
@@ -137414,8 +137652,8 @@
     },
     {
       "original_id": 4536,
-      "audit_status": "NOT_REVIEWED",
-      "reviewed": false,
+      "audit_status": "REVIEWED",
+      "reviewed": true,
       "normalized": false,
       "canonicalized": false,
       "implementation_ready": false,
@@ -137425,13 +137663,30 @@
         "body_sha256": "25751724e150e1b3f923ead5dd2a87c6814f7a8ada5d9fef9f981045ef13c4b8",
         "original_id": 4536
       },
-      "review": null,
+      "review": {
+        "id": 4536,
+        "owner": "CAP-SPECIALTY",
+        "action": "MOVE_TO_PROFILE",
+        "note": "Pancreas перечисляет Laboratory Findings, Genetics, Nutrition и Treatment как Integrates; parser не должен считать болезни runtime dependencies.",
+        "reviewer": "Codex / source-level architectural review",
+        "scope": "full original module body; no independent clinical certification",
+        "reviewed": true,
+        "normalized": false,
+        "canonicalized": false,
+        "implementation_ready": false
+      },
       "history": [
         {
           "date": "2026-09-14",
           "operation": "ACCOUNT_IMMUTABLE_BASELINE",
           "before": "NOT_REVIEWED",
           "after": "NOT_REVIEWED"
+        },
+        {
+          "date": "2026-09-14",
+          "operation": "SOURCE_BODY_ARCHITECTURAL_REVIEW",
+          "before": "NOT_REVIEWED",
+          "after": "REVIEWED"
         }
       ],
       "open_gates": [

@@ -8,14 +8,14 @@
   "gitlab_writes": false,
   "denominator": 5175,
   "accounted": 5175,
-  "reviewed": 83,
+  "reviewed": 98,
   "normalized": 0,
   "canonicalized": 0,
   "implementation_ready": 0,
-  "unaudited": 5092,
+  "unaudited": 5077,
   "canonical_modules": 0,
   "proposed_canonical_capabilities": 33,
-  "review_progress": 1.6039,
+  "review_progress": 1.8937,
   "normalization_progress": 0,
   "canonicalization_progress": 0,
   "implementation_readiness": 0,
@@ -27,11 +27,11 @@
     "exact_duplicate_excess_ids": 3,
     "semantic_duplicate_groups": 1,
     "semantic_duplicate_excess_ids": 1,
-    "partial_overlap_groups": 5,
+    "partial_overlap_groups": 10,
     "specialty_projection_groups": 5,
     "legacy_generations_confirmed": 0,
     "legacy_generation_candidate_modules": 27,
-    "unresolved_clusters": 1954
+    "unresolved_clusters": 1950
   },
   "new_gap_candidates": 6,
   "confirmed_new_gaps": 0,
@@ -39,5 +39,7 @@
   "critical_findings": 4,
   "high_findings": 8,
   "gitlab_write_status": "NO_WRITES_THIS_PASS",
-  "quality_gate": "NOT_COMPLETE"
+  "quality_gate": "NOT_COMPLETE",
+  "proposed_canonical_profiles": 3,
+  "original_ids_with_draft_requirement_mapping": 17
 }

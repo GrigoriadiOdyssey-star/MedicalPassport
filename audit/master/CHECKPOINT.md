@@ -26,6 +26,8 @@ git diff --check
 
 ## Следующий наиболее полезный пакет
 
+Продолжение прохода: 98 ID прочитаны; три draft profile unions и proposed mapping всех фрагментов 17 source IDs находятся в [CANONICAL_PROPOSALS_REPORT.md](CANONICAL_PROPOSALS_REPORT.md). Approved canonical migration не выполнялась. CSV закреплён через `.gitattributes` как `-text`, чтобы Git не менял CRLF record boundaries и не нарушал byte reproducibility. Проверять также архив/чистую копию, если меняется формат генератора.
+
 1. Закрыть контекстные сравнения для 36/95, 30/227/1924, 3340/3500/3880 и соседних поколений.
 2. Разработать canonical requirement union для каждого такого owner/profile; каждому исходному fragment присвоить destination и evidence. Не помечать duplicate/superseded до переноса всех уникальных требований.
 3. Уточнить 33 owner proposals: CAP-SPECIALTY разбить на проверенные specialty profiles, не создавать общий клинический super-service. Unresolved owner не назначать по одному слову.

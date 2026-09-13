@@ -1501,24 +1501,6 @@
       }
     },
     {
-      "original_id": 3868,
-      "title": "Pediatric Adrenal Disorders Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-3be2dc5b469e",
-        "CL-2d3a5604ad76",
-        "CL-99534b0d7a42",
-        "CL-61ce5cd10b31",
-        "CL-5d22c6f7431f"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 91319,
-        "body_sha256": "3045aba3964abb2235d9017f9262297de363c7b03f59ac346cf3dfb950b247a6",
-        "original_id": 3868
-      }
-    },
-    {
       "original_id": 3884,
       "title": "Pediatric Systemic Lupus Erythematosus Module",
       "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
@@ -1552,24 +1534,6 @@
         "heading_line": 91815,
         "body_sha256": "83d1435341abf28a02df1f0e672b633e907403bdde5eea54ac0c2f2b0c6735ec",
         "original_id": 3895
-      }
-    },
-    {
-      "original_id": 3900,
-      "title": "Clinical Pediatric Rheumatology Intelligence Hub",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-20cf7327fdba",
-        "CL-2aa72456ba07",
-        "CL-69d34f6bcb51",
-        "CL-3f4c6c092025",
-        "CL-9979efcef128"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 91900,
-        "body_sha256": "07f057c125fe41bbedbbdc79de3f58377749ddbfac2e51552e6eb689543c2838",
-        "original_id": 3900
       }
     },
     {
@@ -2531,23 +2495,6 @@
       }
     },
     {
-      "original_id": 3107,
-      "title": "Pediatric Adrenal Disorders Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-3be2dc5b469e",
-        "CL-2adf246594af",
-        "CL-73a4f89df67a",
-        "CL-2d3a5604ad76"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 76382,
-        "body_sha256": "28b6bdecc4100144840cf7afd7b2ade195d74c2713d776adbca4742862445267",
-        "original_id": 3107
-      }
-    },
-    {
       "original_id": 3114,
       "title": "Pediatric Endocrinology Digital Twin Integration",
       "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
@@ -2630,23 +2577,6 @@
         "heading_line": 77473,
         "body_sha256": "ea9ab82875b66bf83114e465e26b6f8a3f4e5b50ec391a6dfa186a39430e1c86",
         "original_id": 3166
-      }
-    },
-    {
-      "original_id": 3167,
-      "title": "Pediatric Pancreatic Disorders Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-5ff39da47e4e",
-        "CL-41d644765279",
-        "CL-b800b4f1e467",
-        "CL-143fe4e17ee3"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 77491,
-        "body_sha256": "a4f8cc141c785b01e39192d427e12dec7946c460cd22ded2410ece094b251037",
-        "original_id": 3167
       }
     },
     {
@@ -3670,23 +3600,6 @@
       }
     },
     {
-      "original_id": 3606,
-      "title": "Pediatric Pancreatic Disorders Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-5ff39da47e4e",
-        "CL-5e861b5c1c0e",
-        "CL-f1008bd221af",
-        "CL-d9c1718eb633"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 86401,
-        "body_sha256": "e67c8de38e68c5b2730b4698f5609c1febb40b04e02216d3fd1d23adadb33ed7",
-        "original_id": 3606
-      }
-    },
-    {
       "original_id": 3608,
       "title": "Pediatric Nutrition Management Module",
       "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
@@ -3752,40 +3665,6 @@
         "heading_line": 86860,
         "body_sha256": "9c7ab9a7130d12da4c57022957687421411443032f2663bc362658ecd434c105",
         "original_id": 3630
-      }
-    },
-    {
-      "original_id": 3632,
-      "title": "Pediatric Adrenal Disorders Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-3be2dc5b469e",
-        "CL-8eece3bf9ce9",
-        "CL-e005522e2930",
-        "CL-5d22c6f7431f"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 86896,
-        "body_sha256": "1a2ab8dabd9e991f4b300c4d4bc6b198e0b1c93d2cde9356a9ec2a12eedfe5cf",
-        "original_id": 3632
-      }
-    },
-    {
-      "original_id": 3640,
-      "title": "Clinical Pediatric Endocrinology Intelligence Hub",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-551f258af60a",
-        "CL-5b5f08a52ed1",
-        "CL-de0481c70c8b",
-        "CL-dcce49a84131"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 87038,
-        "body_sha256": "02e5c8c2ae70bbcbff06b70aa769caedd37dcaed8db13da253c9ca0a853626a4",
-        "original_id": 3640
       }
     },
     {
@@ -3874,40 +3753,6 @@
       }
     },
     {
-      "original_id": 3780,
-      "title": "Clinical Pediatric Dermatology Intelligence Hub",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-c50c069f6475",
-        "CL-81a4d1ebdbfc",
-        "CL-4aa7c1a92452",
-        "CL-993441197cfe"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 89671,
-        "body_sha256": "16754dbbdc49bc3674651a9ade9abe1e1b9fbb1640aa9c5af5faa7529f1febfe",
-        "original_id": 3780
-      }
-    },
-    {
-      "original_id": 3800,
-      "title": "Clinical Pediatric Allergy & Immunology Intelligence Hub",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-3520e9cd48ae",
-        "CL-932c75829fd0",
-        "CL-b9fa3890a050",
-        "CL-75d5c7e1bd46"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 90043,
-        "body_sha256": "5cbadf3876ee3853f09c611b6ac28f8bfed958cb5266845dd50f038a42fe2bfd",
-        "original_id": 3800
-      }
-    },
-    {
       "original_id": 3804,
       "title": "Pediatric Pulmonary Function Module",
       "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
@@ -3956,23 +3801,6 @@
         "heading_line": 90505,
         "body_sha256": "033dcf8787f5d7db75689a6d2b5aa51fd1ea6b4eeedea437b5aa50fef2035173",
         "original_id": 3824
-      }
-    },
-    {
-      "original_id": 3828,
-      "title": "Pediatric Pancreatic Disorders Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-5ff39da47e4e",
-        "CL-e428e46ccec3",
-        "CL-73d768301bb6",
-        "CL-d9c1718eb633"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 90577,
-        "body_sha256": "dd3eb38d38bff6387039cc494dd9b888e11908a376053d1bdbfb0d7bded5a53a",
-        "original_id": 3828
       }
     },
     {
@@ -4452,23 +4280,6 @@
       }
     },
     {
-      "original_id": 4035,
-      "title": "Pediatric Pancreatic Disease Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-4d53c6b6ce5f",
-        "CL-bb83c80c8a17",
-        "CL-8086c38ec229",
-        "CL-007a14560071"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 94728,
-        "body_sha256": "5dcbe907e339c5e5828a7b5d44493fbbf18fc40a596a848f56905ecc22d9a40d",
-        "original_id": 4035
-      }
-    },
-    {
       "original_id": 4040,
       "title": "Clinical Pediatric Gastroenterology Intelligence Hub",
       "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
@@ -4585,23 +4396,6 @@
         "heading_line": 105391,
         "body_sha256": "cc6f60350e6d47a402e23e1880667756d2a9f10135033d12d8bbbf5b85aa9db3",
         "original_id": 4515
-      }
-    },
-    {
-      "original_id": 4536,
-      "title": "Pediatric Pancreatic Disease Module",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-4d53c6b6ce5f",
-        "CL-449a332a7bed",
-        "CL-0bf729f307a9",
-        "CL-5783dd665416"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 105844,
-        "body_sha256": "25751724e150e1b3f923ead5dd2a87c6814f7a8ada5d9fef9f981045ef13c4b8",
-        "original_id": 4536
       }
     },
     {
@@ -16141,20 +15935,6 @@
         "heading_line": 76595,
         "body_sha256": "2aa9d96a01a78798a2973e6f176838d1101fbae224007ddb3a3353a4d162d65b",
         "original_id": 3119
-      }
-    },
-    {
-      "original_id": 3120,
-      "title": "Clinical Pediatric Endocrinology Intelligence Hub",
-      "clinical_risk": "HIGH_RISK_REVIEW_CANDIDATE",
-      "cluster_ids": [
-        "CL-551f258af60a"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 76613,
-        "body_sha256": "435ef86c115f8c787aedafedcac86a2e3166d50bdd4efd8c17a20bbfd781e32c",
-        "original_id": 3120
       }
     },
     {
@@ -47358,26 +47138,6 @@
       }
     },
     {
-      "original_id": 2506,
-      "title": "Pancreatic Disorders Module",
-      "clinical_risk": "UNASSESSED",
-      "cluster_ids": [
-        "CL-f17c381f257c",
-        "CL-41d644765279",
-        "CL-33a659f8705e",
-        "CL-9a37d1665f26",
-        "CL-5e861b5c1c0e",
-        "CL-bb83c80c8a17",
-        "CL-449a332a7bed"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 65392,
-        "body_sha256": "0b4c530d337694e42c44f9ba68696712b457c3f077c2b0302aa540b7c899b87f",
-        "original_id": 2506
-      }
-    },
-    {
       "original_id": 2826,
       "title": "Rheumatology Clinical Trials Registry",
       "clinical_risk": "UNASSESSED",
@@ -48102,23 +47862,6 @@
         "heading_line": 68692,
         "body_sha256": "314840d606b329f25955898e4aa926503a5311c6d0ef6ed5a195d8a74243bfd1",
         "original_id": 2686
-      }
-    },
-    {
-      "original_id": 2837,
-      "title": "Pancreatic Disorders Module",
-      "clinical_risk": "UNASSESSED",
-      "cluster_ids": [
-        "CL-f17c381f257c",
-        "CL-c7c810d8a8c1",
-        "CL-3815e0853414",
-        "CL-e610e3dbe920"
-      ],
-      "source": {
-        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
-        "heading_line": 71414,
-        "body_sha256": "26f2c184e2a4bbdaa522cb830203d13f7d08dbfd1b9b7df227a5dee2b10d9a27",
-        "original_id": 2837
       }
     },
     {
