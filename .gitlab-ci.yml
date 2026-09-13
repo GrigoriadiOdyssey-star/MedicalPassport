@@ -1,0 +1,17 @@
+image: node:24-alpine
+
+stages:
+  - validate
+
+validate-specifications:
+  stage: validate
+  script:
+    - node --version
+    - npm test
+    - npm run check
+  artifacts:
+    when: always
+    paths:
+      - data/audit-summary.json
+    expire_in: 30 days
+

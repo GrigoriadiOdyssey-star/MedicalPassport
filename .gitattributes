@@ -1,0 +1,5 @@
+* text=auto eol=lf
+sources/*.md -text
+*.json text eol=lf
+*.md text eol=lf
+
