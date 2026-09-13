@@ -6,6 +6,7 @@
 
 | Начать здесь | Содержание |
 |---|---|
+| [MASTER AUDIT — текущий проход](audit/master/MASTER_AUDIT_REPORT.md) | Пересчёт по 5175 ID, registry, clusters, canonical proposals, Change Map и checkpoint |
 | [Отчёт аудита](REPORT.md) | Выводы, исправления, проверки и оставшаяся работа |
 | [Область продукта](docs/product/product-scope.md) | P0 и границы следующих этапов |
 | [Дорожная карта](docs/product/roadmap.md) | Последовательность разработки и условия перехода |

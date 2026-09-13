@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "edition": "2026-09-14",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "baseline_commit": "27a26f77d2ca2532ef7c5586802d892dd359a8d0",
+  "pass": "MASTER-01",
+  "state": "ANALYZE_ONLY",
+  "gitlab_writes": false,
+  "owners": [
+    {
+      "id": "CAP-GOVERNANCE",
+      "key": "governance",
+      "name": "Product and architecture governance",
+      "layer": "PLATFORM CORE",
+      "pattern": "roadmap|project overview|documentation|system architecture|folder structure|database design",
+      "entities": [],
+      "dependencies": [],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-IDENTITY",
+      "key": "identity",
+      "name": "Identity and organizations",
+      "layer": "PLATFORM CORE",
+      "pattern": "authenticat|identity|users? (table|api)|doctors table|hospitals table|practitioner|single.sign.on",
+      "entities": [
+        "Patient",
+        "Practitioner",
+        "Organization",
+        "PractitionerRole"
+      ],
+      "dependencies": [],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-SECURITY",
+      "key": "security",
+      "name": "Security and tenant isolation",
+      "layer": "PLATFORM CORE",
+      "pattern": "security|encrypt|tenant|secrets|cyber|access control",
+      "entities": [
+        "Tenant",
+        "SecurityPolicy"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-AUDIT",
+      "key": "audit",
+      "name": "Audit and provenance",
+      "layer": "PLATFORM CORE",
+      "pattern": "audit|provenance",
+      "entities": [
+        "AuditEvent",
+        "Provenance"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-CONSENT",
+      "key": "consent",
+      "name": "Consent and authorization policy",
+      "layer": "PLATFORM CORE",
+      "pattern": "consent|guardian|confidential|privacy",
+      "entities": [
+        "Consent",
+        "AuthorityEvidence"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-DATA",
+      "key": "data",
+      "name": "Clinical data and patient matching",
+      "layer": "PLATFORM CORE",
+      "pattern": "clinical data|medical record|patient matching|data quality|data governance",
+      "entities": [
+        "ClinicalAssertion",
+        "PatientIdentifier"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-INTEROP",
+      "key": "interop",
+      "name": "Interoperability and terminology",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "fhir|hl7|interoperab|dicom|terminology|cross.border.*exchange",
+      "entities": [
+        "IntegrationEnvelope",
+        "ConceptMap"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-QR",
+      "key": "qr",
+      "name": "Scoped QR disclosure",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "\\bqr\\b",
+      "entities": [
+        "DisclosureGrant",
+        "DisclosureReceipt"
+      ],
+      "dependencies": [
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-PROFILE"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-PROFILE",
+      "key": "profile",
+      "name": "Medical passport profile",
+      "layer": "DOMAIN CORE",
+      "pattern": "medical profile|medical passport|emergency contacts|family members",
+      "entities": [
+        "Patient",
+        "RelatedPerson",
+        "Profile"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-MEDICATION",
+      "key": "medication",
+      "name": "Medication knowledge and reported use",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "medicin|medication|drug|pharmacolog",
+      "entities": [
+        "Medication",
+        "MedicationStatement"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-PRESCRIPTION",
+      "key": "prescription",
+      "name": "Prescription and eRx",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "prescri|\\berx\\b",
+      "entities": [
+        "MedicationRequest"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-PHARMACY",
+      "key": "pharmacy",
+      "name": "Pharmacy and dispense",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "pharmac(y|ies)|dispens",
+      "entities": [
+        "MedicationDispense",
+        "Organization"
+      ],
+      "dependencies": [
+        "CAP-PRESCRIPTION"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-ADMINISTRATION",
+      "key": "administration",
+      "name": "Medication administration",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "medication administration|drug administration",
+      "entities": [
+        "MedicationAdministration"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-ENCOUNTER"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-ALLERGY",
+      "key": "allergy",
+      "name": "Allergy and intolerance",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "allerg|hypersensitiv",
+      "entities": [
+        "AllergyIntolerance"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-CONDITION",
+      "key": "condition",
+      "name": "Conditions and clinical assessment",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "diagnos|conditions table|disease registry",
+      "entities": [
+        "Condition",
+        "ClinicalAssessment"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "POST_MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-LABORATORY",
+      "key": "laboratory",
+      "name": "Laboratory and observations",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "laborator|lab results|pathology|biomarker|blood test",
+      "entities": [
+        "Observation",
+        "DiagnosticReport",
+        "Specimen"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-IMAGING",
+      "key": "imaging",
+      "name": "Medical imaging",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "imaging|radiolog|\\bmri\\b|x.ray|ultrasound|\\bpacs\\b",
+      "entities": [
+        "ImagingStudy",
+        "DiagnosticReport"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-DOCUMENTS",
+      "key": "documents",
+      "name": "Documents and derivatives",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "document|\\bocr\\b|medical translation",
+      "entities": [
+        "DocumentReference",
+        "Binary",
+        "DocumentDerivative"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-IMMUNIZATION",
+      "key": "immunization",
+      "name": "Immunization",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "vaccin|immunization",
+      "entities": [
+        "Immunization"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "POST_MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-ENCOUNTER",
+      "key": "encounter",
+      "name": "Encounters and care workflows",
+      "layer": "DOMAIN CORE",
+      "pattern": "encounter|procedure|care plan|surg|clinical workflow",
+      "entities": [
+        "Encounter",
+        "Procedure",
+        "CarePlan",
+        "ServiceRequest"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-APPOINTMENTS",
+      "key": "appointments",
+      "name": "Appointments",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "appointment|scheduling|calendar",
+      "entities": [
+        "Appointment",
+        "Schedule",
+        "Slot"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "stage": "POST_MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-TELEMEDICINE",
+      "key": "telemedicine",
+      "name": "Telemedicine",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "telemedicine|telehealth|video consult",
+      "entities": [
+        "Encounter",
+        "Communication"
+      ],
+      "dependencies": [
+        "CAP-APPOINTMENTS",
+        "CAP-ENCOUNTER"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-NOTIFICATIONS",
+      "key": "notifications",
+      "name": "Notifications",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "notification|reminder|messaging",
+      "entities": [
+        "NotificationDelivery"
+      ],
+      "dependencies": [
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "stage": "POST_MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-DEVICES",
+      "key": "devices",
+      "name": "Devices and remote monitoring",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "device|wearable|remote.*monitor|\\brpm\\b",
+      "entities": [
+        "Device",
+        "DeviceMetric",
+        "Observation"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_2",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-COVERAGE",
+      "key": "coverage",
+      "name": "Coverage and claims",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "insurance|coverage|claim|billing|payment",
+      "entities": [
+        "Coverage",
+        "Claim",
+        "Invoice"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_3",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-AI",
+      "key": "ai",
+      "name": "AI platform and model lifecycle",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "\\bai\\b|artificial intelligence|machine learning|model gateway|model registry|\\brag\\b",
+      "entities": [
+        "ModelVersion",
+        "EvaluationRun",
+        "InferenceRun"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "stage": "RESEARCH",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-CDS",
+      "key": "cds",
+      "name": "Clinical decision support",
+      "layer": "AI / CDS PROFILE",
+      "pattern": "decision support|interaction engine|dose calcul|treatment recommend|diagnostic engine",
+      "entities": [
+        "CDSRecommendation",
+        "ApprovalDecision"
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY"
+      ],
+      "stage": "RESEARCH",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-TWIN",
+      "key": "twin",
+      "name": "Digital Twin core",
+      "layer": "SHARED CAPABILITY",
+      "pattern": "digital twin|physiological model|simulation",
+      "entities": [
+        "SimulationRun",
+        "TwinSnapshot",
+        "ModelVersion"
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA"
+      ],
+      "stage": "RESEARCH",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-RESEARCH",
+      "key": "research",
+      "name": "Research and cohort governance",
+      "layer": "DOMAIN CORE",
+      "pattern": "research|clinical trial|cohort|population",
+      "entities": [
+        "ResearchStudy",
+        "ResearchSubject"
+      ],
+      "dependencies": [
+        "CAP-CONSENT",
+        "CAP-DATA"
+      ],
+      "stage": "RESEARCH",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-TRAVEL",
+      "key": "travel",
+      "name": "Travel and jurisdiction rules",
+      "layer": "DOMAIN CORE",
+      "pattern": "travel|country rules|border crossing",
+      "entities": [
+        "TravelContext",
+        "JurisdictionRuleVersion"
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-CONSENT"
+      ],
+      "stage": "POST_MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-EMERGENCY",
+      "key": "emergency",
+      "name": "Emergency workflows",
+      "layer": "WORKFLOW",
+      "pattern": "emergency|\\bsos\\b|break.glass",
+      "entities": [
+        "EmergencyAccessReview"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "stage": "PHASE_3",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-OPERATIONS",
+      "key": "operations",
+      "name": "Operations and delivery",
+      "layer": "PLATFORM CORE",
+      "pattern": "backup|deploy|monitoring|logging|disaster|devops|infrastructure|observability",
+      "entities": [
+        "OperationalIncident",
+        "RestoreEvidence"
+      ],
+      "dependencies": [
+        "CAP-SECURITY"
+      ],
+      "stage": "MVP",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    },
+    {
+      "id": "CAP-SPECIALTY",
+      "key": "specialty",
+      "name": "Specialty profiles",
+      "layer": "SPECIALTY PROFILE",
+      "pattern": "pediatric|paediatric|cardiol|pulmon|renal|nephro|neuro|endocrin|oncol|mental|psychiatr|obstetric|gyneco|gastro|dermato|ophthalm|neonat|hepat|rheumat|urolog|orthoped|otolaryng|immunolog|genetic",
+      "entities": [
+        "SpecialtyProfile"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "stage": "PHASE_3",
+      "status": "PROPOSED",
+      "deployment": "logical ownership inside modular architecture; service split undecided"
+    }
+  ]
+}

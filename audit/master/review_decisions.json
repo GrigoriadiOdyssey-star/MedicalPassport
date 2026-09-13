@@ -1,0 +1,1272 @@
+{
+  "schema_version": 1,
+  "edition": "2026-09-14",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "baseline_commit": "27a26f77d2ca2532ef7c5586802d892dd359a8d0",
+  "pass": "MASTER-01",
+  "state": "ANALYZE_ONLY",
+  "gitlab_writes": false,
+  "reviews": [
+    {
+      "id": 862,
+      "owner": "CAP-IDENTITY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric endocrine center — профиль Organization/Location/PractitionerRole; equipment references не являются отдельной базой клинических устройств.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 882,
+      "owner": "CAP-IDENTITY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric neurology center повторяет directory fields 862, но фильтрует другую специальность; сохранить specialty/service profile.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 898,
+      "owner": "CAP-IDENTITY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Worldwide neurology search — UI directory projection с country/city/specialists/ratings/costs; рейтинги и стоимость требуют источника и даты, не clinical ranking.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 900,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Neurology dashboard объединяет diagnoses/EEG/MRI/development/medications/AI. Все факты читать из shared owners; AI recommendations показывать отдельно.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 937,
+      "owner": "CAP-IDENTITY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Nephrology search переиспользует directory/search и renal specialty filter; country/city/costs не доказательство доступности лечения.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 957,
+      "owner": "CAP-IDENTITY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Gastroenterology search отличается specialty filter, а не search engine; сохранить countries/costs/ratings как versioned directory fields.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1003,
+      "owner": "CAP-APPOINTMENTS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Infectious disease booking использует clinic/physician/telemedicine; specialty routing и правила triage ещё не заданы.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1010,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Infectious disease dashboard читает diagnoses/labs/vaccines/medications и AI; вакцинации — уникальная проекция по сравнению с neurology EEG/development.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1073,
+      "owner": "CAP-APPOINTMENTS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "ENT booking тот же appointment workflow с отдельным specialty eligibility, а не дубликат всего модуля.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1093,
+      "owner": "CAP-APPOINTMENTS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Dermatology booking — profile общего scheduling; тип приёма clinic/physician/telemedicine сохранить.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2068,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pulmonary diagnosis/risk/therapy optimization — intended-use profile CDS; никаких самостоятельных изменений терапии.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2088,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Neurology disease prediction не равна pulmonary risk prediction; отдельные cohort/evaluation/abstention при одном gateway.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2110,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Endocrine CDS добавляет twin integration; нужен versioned SimulationRun, не прямое преобразование в order.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2137,
+      "owner": "CAP-TELEMEDICINE",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Oncology video consultation включает translation/home monitoring; проверить перевод клинических терминов и источник RPM, не копировать телемедицину.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2167,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "GI diagnosis/risk/therapy — клинический профиль общего CDS, с отдельным validation cohort.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2220,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Ophthalmology hub содержит surgery/telemedicine; 2590 содержит genetics/labs. Полное слияние по названию потеряет требования обоих.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2260,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Rheumatology hub использует AI/twin/lab/imaging/telemedicine. Pediatrics 3560 расширяет genetics/rehabilitation/research, не замена этого hub.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2290,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Urology hub — композиция shared owners; общие названия сервисов в Integrates не разрешены до конкретного API/profile.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2389,
+      "owner": "CAP-RESEARCH",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric surgical registry включает clinical trials и AI dataset collection; clinical consent не подразумевает разрешение на обучение.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2493,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "IBD profile сохраняет Crohn/UC/activity scores/biologic monitoring; score version и units/thresholds не определены.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2590,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Clinical ophthalmology hub добавляет genetics/lab, но не упоминает surgery/telemedicine из 2220; partial overlap, chronology неизвестна.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3443,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric celiac profile сохраняет serology/biopsy/gluten-free diet/growth/follow-up; возрастной growth context нельзя удалить как общую GI функцию.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3560,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric rheumatology включает genetics/rehabilitation/research сверх 2260; клинические workflows и permissions отсутствуют.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3860,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric nephrology hub добавляет dialysis и research; использовать canonical observations/devices, не создавать renal copies фактов.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3880,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric endocrine hub отличается от 3340/3500: diabetes monitoring и research вместо nutrition/technology; сохранить union требований, не exact duplicate.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1,
+      "owner": "CAP-GOVERNANCE",
+      "action": "REWRITE",
+      "note": "План документации не задаёт владельцев или проверку завершения каждого раздела; сохранить все пункты, связать с gates.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2,
+      "owner": "CAP-GOVERNANCE",
+      "action": "REWRITE",
+      "note": "Мировое признание является целью; перечисление акторов и платформ шире P0. Сохранить путешествия и хронические болезни как продуктовый контекст.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3,
+      "owner": "CAP-GOVERNANCE",
+      "action": "REWRITE",
+      "note": "Список services не определяет границы владения и транзакций; GitHub Actions — историческая платформа. Модульный сервер и GitLab CI уже описаны отдельно.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 4,
+      "owner": "CAP-GOVERNANCE",
+      "action": "REWRITE",
+      "note": "Структура каталогов является предложением, реализации папок нет. Сохранить мобильные клиенты, тесты и AI как будущие компоненты.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 5,
+      "owner": "CAP-DATA",
+      "action": "REWRITE",
+      "note": "Перечень таблиц и деревья отношений не задают ключи, версии и source of truth. Medicines/Prescriptions и клинические факты разделить.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 6,
+      "owner": "CAP-IDENTITY",
+      "action": "REWRITE",
+      "note": "Не смешивать OIDC subject, данные пациента и пароли. Поля biometric_enabled не доказывают биометрическую аутентификацию.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 7,
+      "owner": "CAP-PROFILE",
+      "action": "REWRITE",
+      "note": "chronic_conditions и genetic_diseases дублируют клинические факты; height/weight требуют единиц и effective time. Контакты и страхование — ссылки.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 8,
+      "owner": "CAP-MEDICATION",
+      "action": "REWRITE",
+      "note": "В одной строке смешаны drug catalog, предписание и сообщённый приём. Сохранить страны, альтернативы, food/alcohol/driving warnings как отдельные требования с источниками.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 9,
+      "owner": "CAP-CONDITION",
+      "action": "REWRITE",
+      "note": "ICD10/ICD11 не взаимозаменяемы; хранить code system/version, provenance и verification. AI explanation не подтверждает диагноз.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 10,
+      "owner": "CAP-ALLERGY",
+      "action": "REWRITE",
+      "note": "severity, reaction, anaphylaxis и requires_epipen не эквивалентны. Разделить clinical/verification status и отсутствие сведений/подтверждённое отсутствие аллергий.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 11,
+      "owner": "CAP-IMMUNIZATION",
+      "action": "REWRITE",
+      "note": "Факт вакцинации отличен от плана следующей дозы и юридического сертификата. Сохранить партию, исполнителя и источник.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 12,
+      "owner": "CAP-DOCUMENTS",
+      "action": "REWRITE",
+      "note": "is_verified/ocr_completed/ai_processed не означают достоверность факта; разделить исходный файл и производные версии с provenance.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 13,
+      "owner": "CAP-PRESCRIPTION",
+      "action": "REWRITE",
+      "note": "Заказ врача не равен выдаче и введению лекарства. Подпись/право выписки и признание в другой стране требуют отдельных проверок.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 14,
+      "owner": "CAP-QR",
+      "action": "REWRITE",
+      "note": "Разделить grant, redemption и receipt; получатель bearer QR не идентифицирован. Offline QR конфликтует с немедленным отзывом — не P0.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 15,
+      "owner": "CAP-PROFILE",
+      "action": "REWRITE",
+      "note": "Контакт для экстренной связи не даёт полномочий на доступ; medical_power_of_attorney требует доказательства, срока и юрисдикции.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 16,
+      "owner": "CAP-CONSENT",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Семейные отношения, опека и права просмотра/изменения требуют отдельной модели AuthorityEvidence; не копировать кровь в family record.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 17,
+      "owner": "CAP-IDENTITY",
+      "action": "REWRITE",
+      "note": "Личность врача, лицензия по юрисдикции и affiliation должны версионироваться отдельно; rating не является credential.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 18,
+      "owner": "CAP-IDENTITY",
+      "action": "REWRITE",
+      "note": "Organization, Location и доступность emergency/ICU разделить; геокоординаты и live wait не подтверждают возможность принять пациента.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 27,
+      "owner": "CAP-AUDIT",
+      "action": "REWRITE",
+      "note": "old/new medical payload в журнале создаёт отдельную копию здоровья; рабочая редакция уже заменяет его ссылками на версии. Retention и доступ к аудиту ещё требуют реализации.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 29,
+      "owner": "CAP-IDENTITY",
+      "action": "REWRITE",
+      "note": "access_token/refresh_token как поля исторической таблицы конфликтуют с делегированным OIDC. Сохранить историю сессии и отзыв, не хранить plaintext secrets.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 30,
+      "owner": "CAP-CONSENT",
+      "action": "REWRITE",
+      "note": "accepted boolean недостаточен для scope/purpose/recipient/legal basis. Research consent и clinical sharing должны быть разными решениями.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 32,
+      "owner": "CAP-QR",
+      "action": "REWRITE",
+      "note": "Public clinical data и full record по роли больницы конфликтуют с ограниченным согласием. Уже исправлено в рабочей редакции, перенос в canonical policy предстоит.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 36,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "No Interaction и Change Dosage/Stop Medicine без ограничений небезопасны. Сохранить renal/hepatic/pregnancy/lactation и monitoring, явно описать неполное покрытие и human approval.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 54,
+      "owner": "CAP-IDENTITY",
+      "action": "REWRITE",
+      "note": "Локальные password/JWT/biometric endpoints — исторический вариант; текущий P0 делегирует OIDC. Device trust не означает клиническую Device-сущность.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 55,
+      "owner": "CAP-IDENTITY",
+      "action": "REWRITE",
+      "note": "Профиль, настройки и export/deletion требуют разделённых permissions и асинхронной процедуры. Список GDPR/HIPAA не доказывает соответствие.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 56,
+      "owner": "CAP-PROFILE",
+      "action": "REWRITE",
+      "note": "Обязательная группа крови создаёт ложные данные; поля unknown разрешены в рабочем контракте. Summary — проекция версий, не независимый источник.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 57,
+      "owner": "CAP-MEDICATION",
+      "action": "REWRITE",
+      "note": "taken/missed — сообщение пациента, не подтверждённое введение. CRUD, взаимодействия, альтернативы и дозовый калькулятор должны иметь разные границы.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 58,
+      "owner": "CAP-CONDITION",
+      "action": "REWRITE",
+      "note": "Создание пациентом diagnosis должно сохранять reported nature. AI summary и прогноз болезни не должны обновлять clinician assessment.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 59,
+      "owner": "CAP-ALLERGY",
+      "action": "REWRITE",
+      "note": "AI allergy analysis требует отдельного CDS, источников и проверки; emergency view использует те же факты с consent, не отдельную базу.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 60,
+      "owner": "CAP-IMMUNIZATION",
+      "action": "REWRITE",
+      "note": "Vaccination administration, schedule и certificate разделены; country recommendation и pediatric calendar вне взрослого P0.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 61,
+      "owner": "CAP-INTEROP",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "R4/R4B/R5 перечислены без профилей и contract tests. Выбрать адаптер/версию для партнёра; не объявлять поддержку всех версий.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 95,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "Короткая цепочка interactions/contraindications/pregnancy/food/alcohol полностью содержится в 36; клинических уникальных требований в этом тексте не выявлено.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 227,
+      "owner": "CAP-CONSENT",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "Сохранить who/which/duration/emergency/history и отзыв; дополнение workflow к таблице 30, а не дубликат.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1141,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "Physician assist, differential diagnosis, risk/guidelines/confidence — профиль CDS. Confidence требует определения и калибровки.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1239,
+      "owner": "CAP-AI",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "Название Autonomous не отменяет явно указанное Human Approval. Автоматизировать orchestration; clinical orders за отдельным clinician approval.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1681,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "Patient twin core задаёт orchestration physiological/clinical/predictive models; отсутствуют математические модели и validation.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1682,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Patient snapshot использует medical history/genomics/lab/imaging; версии и время входов обязательны, это не новый источник clinical facts.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1683,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Heart/liver/kidney/brain — семейства органных моделей, не ещё один независимый core.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1684,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Blood flow, heart function, arrhythmia — уникальные требования cardiovascular projection; не удалять при консолидации.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1685,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Lung function, gas exchange, ventilation — отдельная respiratory projection с единицами/граничными условиями.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1686,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Diabetes, thyroid, hormonal feedback — endocrine model family; не эквивалентна respiratory/cardiovascular.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1697,
+      "owner": "CAP-RESEARCH",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Population twin меняет единицу анализа на когорту; нужны cohort definition, research authorization и защита редких групп.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1698,
+      "owner": "CAP-RESEARCH",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Research platform поддерживает simulation studies/validation/model development; validation здесь цель, не доказанный результат.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1699,
+      "owner": "CAP-CDS",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Simulation-based diagnosis/treatment planning/outcome prediction — клинический интерфейс к twin, с human decision и intended-use validation.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1700,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "Umbrella объединяет patient/organ/disease/treatment/CDS; частично перекрывает 1681, но не тождественна orchestration core.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 1924,
+      "owner": "CAP-CONSENT",
+      "action": "MOVE_TO_SHARED_CAPABILITY",
+      "note": "AI Patient Consent включает digital/dynamic/cross-border consent; AI не принимает authorization decision, новые юрисдикционные требования сохранить.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2030,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Cardiology integration сохраняет hemodynamics, therapy prediction и progression поверх общего twin core.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 2069,
+      "owner": "CAP-TWIN",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pulmonary integration сохраняет lung simulation, therapy prediction и progression; специальность отличает её от 2030.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3287,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pancreatitis acute/chronic, insufficiency, genetics — pediatric pancreatic profile; тело и title совпадают с 3447, но сравнить окружение перед supersede.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3447,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Побайтно одинаковое parsed body и title с 3287; исходный ID сохраняется, закрытие не применяется.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3326,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "CAH, adrenal insufficiency, Cushing, adrenal tumors — pediatric adrenal profile; точное совпадение с 3488.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3488,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Точное содержательное совпадение с 3326; контекст соседних разделов остаётся предметом проверки.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3340,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Pediatric endocrine hub соединяет AI/twin/diabetes technology/genetics/nutrition/lab/imaging/telemedicine; сохранить все интеграции.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 3500,
+      "owner": "CAP-SPECIALTY",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Exact title/body с 3340; можно предложить одну профильную спецификацию, но не применять закрытие исходника.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 4595,
+      "owner": "CAP-INTEROP",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Renal profile расширяет общий exchange dialysis/transplant/pathology и handover/freshness. Эти требования не теряются при shared interoperability.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 4596,
+      "owner": "CAP-CONSENT",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Renal child profile добавляет evolving age/authority/assent/sensitive segmentation, не копию consent engine.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 4919,
+      "owner": "CAP-CONSENT",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Reproductive confidential encounters и jurisdiction rules уникальны; local MVP HIGH конфликтует с глобальным adult-only P0.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    },
+    {
+      "id": 5172,
+      "owner": "CAP-CONSENT",
+      "action": "MOVE_TO_PROFILE",
+      "note": "Mental-health consent включает school/research recipients и encounter/element segmentation; статус Extended v2 не доказывает replacement конкретного ID.",
+      "reviewer": "Codex / source-level architectural review",
+      "scope": "full original module body; no independent clinical certification",
+      "reviewed": true,
+      "normalized": false,
+      "canonicalized": false,
+      "implementation_ready": false
+    }
+  ],
+  "cluster_decisions": [
+    {
+      "id": "DEC-OV-04",
+      "ids": [
+        2220,
+        2590
+      ],
+      "type": "PARTIAL_OVERLAP",
+      "owner": "CAP-SPECIALTY",
+      "reason": "Ophthalmology hubs share AI/twin/imaging but differ in surgery/telemedicine versus genetics/laboratory; version order unproven.",
+      "distinct": [
+        "2220: Surgery, Telemedicine",
+        "2590: Genetics, Laboratory"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-OV-05",
+      "ids": [
+        3340,
+        3500,
+        3880
+      ],
+      "type": "PARTIAL_OVERLAP",
+      "owner": "CAP-SPECIALTY",
+      "reason": "Exact pair 3340/3500 is only a subset of the larger same-title cluster. 3880 has distinct monitoring/research content.",
+      "distinct": [
+        "3340/3500: Diabetes Technology, Nutrition",
+        "3880: Diabetes Monitoring, Clinical Research"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-SP-04",
+      "ids": [
+        1003,
+        1073,
+        1093
+      ],
+      "type": "SPECIALTY_PROJECTION",
+      "owner": "CAP-APPOINTMENTS",
+      "reason": "Clinic/physician/telemedicine appointment workflow is shared; infectious disease, ENT and dermatology retain distinct specialty eligibility.",
+      "distinct": [
+        "infectious disease",
+        "ENT",
+        "dermatology"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-SP-05",
+      "ids": [
+        2068,
+        2088,
+        2110,
+        2167
+      ],
+      "type": "SPECIALTY_PROJECTION",
+      "owner": "CAP-CDS",
+      "reason": "Shared CDS orchestration with separate clinical contexts and evaluation; endocrine profile uniquely calls Digital Twin.",
+      "distinct": [
+        "pulmonary risk",
+        "neurological disease prediction",
+        "endocrine twin integration",
+        "GI risk"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-SP-06",
+      "ids": [
+        862,
+        882,
+        898,
+        937,
+        957
+      ],
+      "type": "SHARED_CAPABILITY",
+      "owner": "CAP-IDENTITY",
+      "reason": "Provider organization directory and search data ownership can be shared while specialty profiles and search views remain separate.",
+      "distinct": [
+        "center services/physicians/equipment/contacts",
+        "search country/city/ratings/costs"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-EX-01",
+      "ids": [
+        3287,
+        3447
+      ],
+      "type": "EXACT_DUPLICATE",
+      "owner": "CAP-SPECIALTY",
+      "reason": "Identical title and parsed body; four pancreatic requirements retained verbatim for both IDs.",
+      "distinct": [],
+      "requirements": [
+        "Acute Pancreatitis",
+        "Chronic Pancreatitis",
+        "Pancreatic Insufficiency",
+        "Genetic Disorders"
+      ]
+    },
+    {
+      "id": "DEC-EX-02",
+      "ids": [
+        3326,
+        3488
+      ],
+      "type": "EXACT_DUPLICATE",
+      "owner": "CAP-SPECIALTY",
+      "reason": "Identical title and parsed body; four adrenal requirements retained for both IDs.",
+      "distinct": [],
+      "requirements": [
+        "Congenital Adrenal Hyperplasia",
+        "Adrenal Insufficiency",
+        "Cushing Syndrome",
+        "Adrenal Tumors"
+      ]
+    },
+    {
+      "id": "DEC-EX-03",
+      "ids": [
+        3340,
+        3500
+      ],
+      "type": "EXACT_DUPLICATE",
+      "owner": "CAP-SPECIALTY",
+      "reason": "Identical title and body; all eight integration requirements retained.",
+      "distinct": [],
+      "requirements": [
+        "AI",
+        "Digital Twin",
+        "Diabetes Technology",
+        "Genetics",
+        "Nutrition",
+        "Laboratory Medicine",
+        "Imaging",
+        "Telemedicine"
+      ]
+    },
+    {
+      "id": "DEC-SEM-01",
+      "ids": [
+        36,
+        95
+      ],
+      "type": "SEMANTIC_DUPLICATE",
+      "owner": "CAP-CDS",
+      "reason": "The abbreviated 95 contains no requirement beyond 36. Textual intent equivalence only; broader corpus/context still needs reconciliation.",
+      "distinct": [
+        "36 adds age/weight/labs, renal/hepatic safety, monitoring and unsafe legacy recommendations that need correction."
+      ],
+      "requirements": [
+        "Interactions",
+        "Contraindications",
+        "Pregnancy",
+        "Food",
+        "Alcohol",
+        "Warnings",
+        "Recommendation"
+      ]
+    },
+    {
+      "id": "DEC-OV-01",
+      "ids": [
+        30,
+        227,
+        1924
+      ],
+      "type": "PARTIAL_OVERLAP",
+      "owner": "CAP-CONSENT",
+      "reason": "Persistence schema, patient workflow and AI-labelled dynamic/cross-border feature share one authorization domain but have distinct responsibilities.",
+      "distinct": [
+        "30: version/signature/withdrawal persistence",
+        "227: who/which/duration/emergency controls",
+        "1924: cross-border/dynamic consent"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-OV-02",
+      "ids": [
+        1681,
+        1700
+      ],
+      "type": "PARTIAL_OVERLAP",
+      "owner": "CAP-TWIN",
+      "reason": "Core model orchestration vs umbrella platform composition. No evidence that the latter supersedes the former.",
+      "distinct": [
+        "1681: physiological/clinical/predictive models",
+        "1700: patient/organ/disease/treatment/CDS composition"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-OV-03",
+      "ids": [
+        8,
+        13,
+        57
+      ],
+      "type": "PARTIAL_OVERLAP",
+      "owner": "CAP-MEDICATION",
+      "reason": "Catalog/reported use/order/workflow cannot be merged into one clinical fact.",
+      "distinct": [
+        "8: drug/product plus use fields",
+        "13: signed clinician order",
+        "57: patient taken/missed and interaction workflows"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-SP-01",
+      "ids": [
+        1684,
+        1685,
+        1686,
+        2030,
+        2069
+      ],
+      "type": "SPECIALTY_PROJECTION",
+      "owner": "CAP-TWIN",
+      "reason": "Different physiological and disease contexts use one twin core. Cardiology and respiratory integration expand model concerns with progression/prediction.",
+      "distinct": [
+        "cardiovascular flow/arrhythmia",
+        "respiratory gas exchange/ventilation",
+        "endocrine diabetes/thyroid/feedback"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-SP-02",
+      "ids": [
+        4596,
+        4919,
+        5172
+      ],
+      "type": "SPECIALTY_PROJECTION",
+      "owner": "CAP-CONSENT",
+      "reason": "One policy engine, specialty-sensitive profiles; age/assent/jurisdiction plus reproductive/mental-health segmentation must survive.",
+      "distinct": [
+        "renal lifecycle",
+        "confidential reproductive encounters",
+        "mental-health school/research context"
+      ],
+      "requirements": []
+    },
+    {
+      "id": "DEC-SP-03",
+      "ids": [
+        61,
+        4595
+      ],
+      "type": "SPECIALTY_PROJECTION",
+      "owner": "CAP-INTEROP",
+      "reason": "Renal exchange adds dialysis/transplant/pathology and freshness to shared interoperability; not semantic duplicate.",
+      "distinct": [
+        "pediatric renal dataset",
+        "receiving-provider handover",
+        "freshness/source verification"
+      ],
+      "requirements": []
+    }
+  ]
+}

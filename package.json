@@ -8,6 +8,8 @@
   "scripts": {
     "build": "node scripts/build-catalog.mjs",
     "check": "node scripts/check.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "audit:build": "node scripts/master-audit.mjs",
+    "audit:check": "node scripts/master-audit.mjs --check"
   }
 }

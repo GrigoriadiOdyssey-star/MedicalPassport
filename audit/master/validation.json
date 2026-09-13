@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "edition": "2026-09-14",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "baseline_commit": "27a26f77d2ca2532ef7c5586802d892dd359a8d0",
+  "pass": "MASTER-01",
+  "state": "ANALYZE_ONLY",
+  "gitlab_writes": false,
+  "result": "PASS",
+  "checks": [
+    "5175 IDs across source/registry/ledger/change map/requirements",
+    "Immutable source hash and contiguous byte spans",
+    "Verbatim descriptions preserved",
+    "Required registry fields/status enum",
+    "Review count based on explicit source decisions",
+    "All cluster member IDs valid",
+    "Proposed owner graph no missing targets or cycles",
+    "No supersede/duplicate writes",
+    "Deterministic artifacts"
+  ],
+  "counts": {
+    "modules": 5175,
+    "reviewed": 83,
+    "owners": 33,
+    "clusters": 1969,
+    "source_reference_edges": 16,
+    "unresolved_reference_entries": 5747
+  }
+}
