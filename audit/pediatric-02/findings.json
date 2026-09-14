@@ -1,0 +1,266 @@
+{
+  "schema_version": 3,
+  "edition": "2026-09-14",
+  "pass": "PEDIATRIC-02",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "9637f5af9720dc3c1a2d2846b9df70f7f9980055",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "findings": [
+    {
+      "id": "MA-C01",
+      "severity": "CRITICAL",
+      "modules": [
+        8,
+        13,
+        57
+      ],
+      "title": "Clinical fact type conflation",
+      "description": "Catalog, prescription, patient-reported taking and administration need separate identities and provenance.",
+      "document": "data_architecture_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-C02",
+      "severity": "CRITICAL",
+      "modules": [
+        36,
+        95,
+        1141,
+        1699
+      ],
+      "title": "AI recommendation to order boundary",
+      "description": "Original dose change/stop medicine and twin treatment outputs must not write clinical orders; working text mitigation exists but no implementation evidence.",
+      "document": "clinical_safety_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-C03",
+      "severity": "CRITICAL",
+      "modules": [
+        14,
+        32,
+        30,
+        227
+      ],
+      "title": "Disclosure authority boundary",
+      "description": "Public/role-wide original access conflicts with scoped consent; canonical policy, atomic redemption and revocation tests required.",
+      "document": "security_privacy_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-C04",
+      "severity": "CRITICAL",
+      "modules": [
+        16,
+        4596,
+        4919,
+        5172
+      ],
+      "title": "Guardian and confidential encounter boundary",
+      "description": "Family links do not grant blanket authority; specialty exceptions, aging and recipient purpose require one policy engine.",
+      "document": "security_privacy_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H01",
+      "severity": "HIGH",
+      "modules": [
+        7,
+        9,
+        10,
+        56,
+        58,
+        59
+      ],
+      "title": "Duplicate clinical sources of truth",
+      "description": "Profile fields and clinical tables can diverge; projections must reference versioned canonical assertions.",
+      "document": "data_architecture_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H02",
+      "severity": "HIGH",
+      "modules": [
+        61,
+        4595
+      ],
+      "title": "Unspecified interoperability contracts",
+      "description": "FHIR version list lacks partner profiles, identity matching, terminology/version and round-trip tests.",
+      "document": "interoperability_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H03",
+      "severity": "HIGH",
+      "modules": [
+        1681,
+        1682,
+        1683,
+        1684,
+        1685,
+        1686,
+        1697,
+        1698,
+        1699,
+        1700
+      ],
+      "title": "Unvalidated simulation semantics",
+      "description": "No equations, applicability domain, uncertainty bounds or evaluation evidence in reviewed twin specifications.",
+      "document": "digital_twin_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H04",
+      "severity": "HIGH",
+      "modules": [
+        27,
+        29
+      ],
+      "title": "Audit and secret duplication",
+      "description": "Historical medical payload and tokens require elimination from persistence/logging designs; previous editorial mitigations are not tested runtime controls.",
+      "document": "security_privacy_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H05",
+      "severity": "HIGH",
+      "modules": [
+        12
+      ],
+      "title": "Document derivative trust",
+      "description": "OCR/translation/AI/verification flags lack versioned derivation and evidence semantics.",
+      "document": "ai_architecture_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H06",
+      "severity": "HIGH",
+      "modules": [
+        4919,
+        5172
+      ],
+      "title": "Conflicting MVP labels",
+      "description": "Specialty HIGH/CRITICAL MVP labels are not approval for adult-only P0.",
+      "document": "implementation_readiness.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H07",
+      "severity": "HIGH",
+      "modules": [
+        17,
+        18,
+        13
+      ],
+      "title": "Provider and cross-border authority",
+      "description": "Provider directory, professional credentials and prescribing authority are separate, jurisdiction-scoped evidence.",
+      "document": "security_privacy_findings.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "MA-H08",
+      "severity": "HIGH",
+      "modules": [
+        3,
+        5,
+        1681,
+        1700
+      ],
+      "title": "Ownership and executable dependency gaps",
+      "description": "Service/engine inventories omit transaction ownership and tested dependency contracts.",
+      "document": "canonical_architecture.md",
+      "status": "OPEN_ARCHITECTURE_GATE",
+      "scope": "architecture audit; not newly discovered exploitable application vulnerabilities",
+      "priorMitigations": "See existing REPORT.md and docs/engineering, docs/safety; this pass does not erase prior fixes."
+    },
+    {
+      "id": "GF-C01",
+      "severity": "CRITICAL",
+      "modules": [
+        1356,
+        1359,
+        4595
+      ],
+      "title": "Unvalidated connector mappings into clinical source of truth",
+      "status": "OPEN_SPECIFICATION_GATE",
+      "control": "Candidate mapping quarantine, validation, human approval, release version and rollback."
+    },
+    {
+      "id": "GF-C02",
+      "severity": "CRITICAL",
+      "modules": [
+        1218,
+        1547,
+        1823,
+        1826,
+        1840
+      ],
+      "title": "Ungoverned training or research hypothesis promoted to care",
+      "status": "OPEN_SPECIFICATION_GATE",
+      "control": "Separate governance basis, evidence validation and clinical release approval."
+    },
+    {
+      "id": "GF-H01",
+      "severity": "HIGH",
+      "modules": [
+        1176,
+        1606,
+        1843,
+        2677,
+        4566
+      ],
+      "title": "PGx/organ function context without explicit evidence/version/uncertainty contract",
+      "status": "OPEN_SPECIFICATION_GATE"
+    },
+    {
+      "id": "GF-H02",
+      "severity": "HIGH",
+      "modules": [
+        3712,
+        4076,
+        4646,
+        4787
+      ],
+      "title": "Generic anatomy or scenario animation mistaken for measured patient anatomy/effect",
+      "status": "OPEN_SPECIFICATION_GATE"
+    },
+    {
+      "id": "GF-H03",
+      "severity": "HIGH",
+      "modules": [
+        1369,
+        1218,
+        1259
+      ],
+      "title": "Provider fallback/retraining lacks intended-use and data-region release gates",
+      "status": "OPEN_SPECIFICATION_GATE"
+    }
+  ],
+  "additional_evidence": {
+    "source_review_count": 315,
+    "clinical_gates": "Existing 6 critical and 11 high gates remain open. More detailed source safeguards are preserved; no automatic closure."
+  }
+}

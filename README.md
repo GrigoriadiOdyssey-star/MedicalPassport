@@ -6,6 +6,8 @@
 
 | Начать здесь | Содержание |
 |---|---|
+| [PEDIATRIC-02 — последний checkpoint](audit/pediatric-02/MASTER_GAP_FILL_REPORT.md) | 741 reviewed ID, пять профильных спецификаций, 32 semantic decisions и сохранённые source fragments |
+| [Продолжить PEDIATRIC-02](audit/pediatric-02/CONTINUE_FROM_HERE.md) | Состояние, команды и следующая работа |
 | [GAP-FILL — текущий checkpoint](audit/gapfill/MASTER_GAP_FILL_REPORT.md) | Сверка 5175/51075, 450 reviewed IDs, семь стратегических draft extensions и открытые gates |
 | [Продолжить с checkpoint](audit/gapfill/CONTINUE_FROM_HERE.md) | Точные команды, сохранённое состояние и следующая безопасная работа |
 | [MASTER AUDIT — текущий проход](audit/master/MASTER_AUDIT_REPORT.md) | Пересчёт по 5175 ID, registry, clusters, canonical proposals, Change Map и checkpoint |

@@ -1,0 +1,2924 @@
+{
+  "schema_version": 3,
+  "pass": "PEDIATRIC-02",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "9637f5af9720dc3c1a2d2846b9df70f7f9980055",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "decisions": [
+    {
+      "id": "PED2-CARD-CORE",
+      "source_ids": [
+        3061,
+        3661,
+        4061
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "3061 retains ICU and lifelong follow-up; 3661 adds hypertension/prevention/electrophysiology; 4061 emphasizes ECG/MRI. One profile retains each scope.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3061,
+          "source_title": "Clinical Pediatric Cardiology Platform Core Engine",
+          "body": "Central platform for pediatric cardiology.\n\nSupports\n\n• Congenital Heart Disease\n• Acquired Cardiac Disease\n• Pediatric Arrhythmias\n• Cardiac Intensive Care\n• Lifelong Cardiac Follow-up\n\nIntegrates Cardiac Surgery, Genetics, Radiology, Intensive Care, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3061,
+            "heading_line": 75529,
+            "body_sha256": "0b47d8d7cf8814da700c7cb91f21281f5657855bb58eedcc1fe465d78356fbb8"
+          },
+          "unique_literal_feature_labels": [
+            "Acquired Cardiac Disease",
+            "Pediatric Arrhythmias",
+            "Cardiac Intensive Care",
+            "Lifelong Cardiac Follow-up"
+          ]
+        },
+        {
+          "source_id": 3661,
+          "source_title": "Clinical Pediatric Cardiology Platform Core Engine",
+          "body": "Central platform for pediatric cardiology.\n\nSupports\n\n• Congenital Heart Diseases\n• Arrhythmias\n• Cardiomyopathies\n• Heart Failure\n• Pediatric Hypertension\n• Cardiac Imaging\n• Preventive Cardiology\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Echocardiography\n• Cardiac MRI\n• Genetics\n• Electrophysiology\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3661,
+            "heading_line": 87437,
+            "body_sha256": "4206f96e3669100bd107e61d2189b1c0b9738b339c168a98731215b95e7e4553"
+          },
+          "unique_literal_feature_labels": [
+            "Congenital Heart Diseases",
+            "Pediatric Hypertension",
+            "Cardiac Imaging",
+            "Electrophysiology"
+          ]
+        },
+        {
+          "source_id": 4061,
+          "source_title": "Clinical Pediatric Cardiology Platform Core Engine",
+          "body": "Central platform for pediatric cardiology.\n\nSupports\n\n• Congenital Heart Disease\n• Arrhythmias\n• Cardiomyopathies\n• Heart Failure\n• Hypertension\n• Acquired Heart Disease\n• Preventive Cardiology\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• ECG\n• Echocardiography\n• Cardiac MRI\n• Genetics\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4061,
+            "heading_line": 95289,
+            "body_sha256": "07fe97d2c3f14852b65766d637a41d58cbedce5bf4a004727fc9ad6ede046e87"
+          },
+          "unique_literal_feature_labels": [
+            "Hypertension",
+            "Acquired Heart Disease",
+            "ECG"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-REGISTRY",
+      "source_ids": [
+        3062,
+        3662,
+        4062
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Catheterization and longitudinal monitoring coexist with medication history and functional status; none may be dropped.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3062,
+          "source_title": "Pediatric Cardiology Registry",
+          "body": "Maintains comprehensive pediatric cardiology records.\n\nSupports\n\n• Congenital Defects\n• Echocardiography\n• ECG\n• Catheterization\n• Surgery\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3062,
+            "heading_line": 75549,
+            "body_sha256": "f35f2af7bc364f1eeb0f5dae11a05a3bc0299eb08b12925f1979d8c73ee84455"
+          },
+          "unique_literal_feature_labels": [
+            "Congenital Defects",
+            "Surgery"
+          ]
+        },
+        {
+          "source_id": 3662,
+          "source_title": "Pediatric Cardiology Registry",
+          "body": "Maintains comprehensive pediatric cardiology records.\n\nSupports\n\n• Cardiac Diagnoses\n• ECG Data\n• Echocardiography\n• Imaging\n• Surgical History\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3662,
+            "heading_line": 87467,
+            "body_sha256": "177a2cea1ff5a10ab88170b9604fe1dd43d5e6926a51954e43b76ddc44c2da40"
+          },
+          "unique_literal_feature_labels": [
+            "Cardiac Diagnoses",
+            "ECG Data"
+          ]
+        },
+        {
+          "source_id": 4062,
+          "source_title": "Pediatric Cardiology Registry",
+          "body": "Maintains longitudinal pediatric cardiac records.\n\nSupports\n\n• Diagnoses\n• ECG\n• Echocardiography\n• Imaging\n• Catheterization\n• Surgical History\n• Medication History\n• Functional Status\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4062,
+            "heading_line": 95319,
+            "body_sha256": "e1d9d1a497d6148fc5b987b8b8ad4281fd1416503e682cf273c4547627169777"
+          },
+          "unique_literal_feature_labels": [
+            "Diagnoses",
+            "Medication History",
+            "Functional Status"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-CONGENITAL",
+      "source_ids": [
+        844,
+        3063,
+        3663,
+        4063
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Retain specific defect names, single-ventricle physiology, hemodynamics, procedures and explicit adult-congenital transition.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 844,
+          "source_title": "Congenital Heart Disease Registry",
+          "body": "# Congenital Heart Disease Registry\n\nStores congenital cardiac diagnoses.\n\nSupports\n\n• ASD\n\n• VSD\n\n• Tetralogy of Fallot\n\n• Coarctation\n\n• Other Congenital Defects\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 844,
+            "heading_line": 33623,
+            "body_sha256": "e761953a5a301b9a2af3e9490e5b8f74837373aa8747482229dbeccd49fc1c96"
+          },
+          "unique_literal_feature_labels": [
+            "Coarctation",
+            "Other Congenital Defects"
+          ]
+        },
+        {
+          "source_id": 3063,
+          "source_title": "Congenital Heart Disease Module",
+          "body": "Supports congenital cardiac disorders.\n\nSupports\n\n• ASD\n• VSD\n• PDA\n• Tetralogy of Fallot\n• Transposition of Great Arteries\n• Complex Congenital Heart Disease\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3063,
+            "heading_line": 75568,
+            "body_sha256": "3e55e058a9e30e834f7fd47d6391b7e0c829ef879b0640e8f6361a3985de73ed"
+          },
+          "unique_literal_feature_labels": [
+            "PDA",
+            "Complex Congenital Heart Disease"
+          ]
+        },
+        {
+          "source_id": 3663,
+          "source_title": "Congenital Heart Disease Module",
+          "body": "Supports congenital cardiac disorders.\n\nSupports\n\n• Septal Defects\n• Tetralogy of Fallot\n• Transposition of Great Arteries\n• Single Ventricle Physiology\n• Surgical Follow-up\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3663,
+            "heading_line": 87486,
+            "body_sha256": "7b2668e5a1c338e32f11592c3d4247342cb2f870399edbf1dfbec932af642c4f"
+          },
+          "unique_literal_feature_labels": [
+            "Septal Defects",
+            "Single Ventricle Physiology",
+            "Surgical Follow-up"
+          ]
+        },
+        {
+          "source_id": 4063,
+          "source_title": "Pediatric Congenital Heart Disease Module",
+          "body": "Supports congenital heart disease management.\n\nSupports\n\n• Anatomical Classification\n• Hemodynamic Assessment\n• Imaging\n• Surgical History\n• Interventional Procedures\n• Longitudinal Follow-up\n• Transition to Adult Congenital Cardiology\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4063,
+            "heading_line": 95340,
+            "body_sha256": "6c92538aa8bc23cbc7bfc42da3aa8b1711e42ade072b70a00f6ff40a85ea5618"
+          },
+          "unique_literal_feature_labels": [
+            "Anatomical Classification",
+            "Hemodynamic Assessment",
+            "Imaging",
+            "Surgical History",
+            "Interventional Procedures",
+            "Longitudinal Follow-up",
+            "Transition to Adult Congenital Cardiology"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-ECHO",
+      "source_ids": [
+        846,
+        3064,
+        3664,
+        4064
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Images/measurements/reports plus Doppler, valves, chambers, ventricular function and longitudinal comparison require a common imaging profile.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 846,
+          "source_title": "Pediatric Echocardiography Archive",
+          "body": "# Pediatric Echocardiography Archive\n\nStores pediatric echocardiograms.\n\nSupports\n\n• Images\n\n• Measurements\n\n• Physician Reports\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 846,
+            "heading_line": 33667,
+            "body_sha256": "f6ba2d2b3fb66b71c685da91c6eba1e79874d1f7991c7e9d361c971b5acfc4ce"
+          },
+          "unique_literal_feature_labels": [
+            "Images",
+            "Measurements",
+            "Physician Reports"
+          ]
+        },
+        {
+          "source_id": 3064,
+          "source_title": "Pediatric Echocardiography Module",
+          "body": "Supports pediatric cardiac ultrasound.\n\nSupports\n\n• Structural Assessment\n• Doppler Analysis\n• Ventricular Function\n• Valve Assessment\n• Congenital Heart Evaluation\n\nIntegrated with AI-assisted image interpretation.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3064,
+            "heading_line": 75587,
+            "body_sha256": "d00d37257157406c94f25a197be099d77543634c86a13072883e52eddfe8ed97"
+          },
+          "unique_literal_feature_labels": [
+            "Doppler Analysis",
+            "Congenital Heart Evaluation"
+          ]
+        },
+        {
+          "source_id": 3664,
+          "source_title": "Pediatric Echocardiography Module",
+          "body": "Supports pediatric echocardiography.\n\nSupports\n\n• Structural Assessment\n• Ventricular Function\n• Doppler Studies\n• Valve Assessment\n• AI-assisted Echo Analysis\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3664,
+            "heading_line": 87504,
+            "body_sha256": "ffc1135f6d22d03caea66e1bab2b370ee805e88566398daa0a6a400e9772dc6a"
+          },
+          "unique_literal_feature_labels": [
+            "Doppler Studies",
+            "AI-assisted Echo Analysis"
+          ]
+        },
+        {
+          "source_id": 4064,
+          "source_title": "Pediatric Echocardiography Module",
+          "body": "Supports pediatric echocardiography.\n\nSupports\n\n• 2D Echocardiography\n• Doppler\n• Chamber Measurements\n• Valve Assessment\n• Ventricular Function\n• Congenital Anatomy\n• Longitudinal Comparison\n• AI-assisted Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4064,
+            "heading_line": 95360,
+            "body_sha256": "a050d554076e1f2e0a002c748dfe146226497436db23e57cdaa4d5f5c30ffbbd"
+          },
+          "unique_literal_feature_labels": [
+            "2D Echocardiography",
+            "Doppler",
+            "Chamber Measurements",
+            "Congenital Anatomy",
+            "Longitudinal Comparison",
+            "AI-assisted Image Analysis"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-RHYTHM",
+      "source_ids": [
+        849,
+        3065,
+        3666,
+        4066
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Retain named channelopathies, AV/conduction disorders, bradyarrhythmia, Holter/event monitoring and electrophysiology.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 849,
+          "source_title": "Pediatric Arrhythmia Registry",
+          "body": "# Pediatric Arrhythmia Registry\n\nStores pediatric rhythm disorders.\n\nSupports\n\n• Supraventricular Tachycardia\n\n• Bradycardia\n\n• AV Block\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 849,
+            "heading_line": 33729,
+            "body_sha256": "da4b74500fc1836f77a3f9843f3ed94aa98a5452bb365fa737e1bd49a8a9250d"
+          },
+          "unique_literal_feature_labels": [
+            "Bradycardia",
+            "AV Block",
+            "Follow-up"
+          ]
+        },
+        {
+          "source_id": 3065,
+          "source_title": "Pediatric Arrhythmia Module",
+          "body": "Supports rhythm disorders in children.\n\nSupports\n\n• Supraventricular Tachycardia\n• Ventricular Arrhythmias\n• Congenital Channelopathies\n• Holter Monitoring\n• Electrophysiology\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3065,
+            "heading_line": 75607,
+            "body_sha256": "5e3f61d7dafbd749abd35ec42a5f72c46b49138228afde2dd88f85ae2d00a6fd"
+          },
+          "unique_literal_feature_labels": [
+            "Congenital Channelopathies",
+            "Electrophysiology"
+          ]
+        },
+        {
+          "source_id": 3666,
+          "source_title": "Pediatric Arrhythmia Module",
+          "body": "Supports pediatric rhythm disorders.\n\nSupports\n\n• Supraventricular Tachycardia\n• Ventricular Arrhythmias\n• Long QT Syndrome\n• Brugada Syndrome\n• Electrophysiology Evaluation\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3666,
+            "heading_line": 87540,
+            "body_sha256": "85821f212c142f48e67c7b6a5423202ade54dbd183c66aaf0ca44b0efab76821"
+          },
+          "unique_literal_feature_labels": [
+            "Long QT Syndrome",
+            "Brugada Syndrome",
+            "Electrophysiology Evaluation"
+          ]
+        },
+        {
+          "source_id": 4066,
+          "source_title": "Pediatric Arrhythmia Module",
+          "body": "Supports pediatric rhythm disorders.\n\nSupports\n\n• Supraventricular Tachycardia\n• Ventricular Arrhythmias\n• Bradyarrhythmias\n• Conduction Disorders\n• Holter Monitoring\n• Event Monitoring\n• Treatment Tracking\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4066,
+            "heading_line": 95402,
+            "body_sha256": "225fba819d391956fa7b587995481ecf1b9476daeb7621ba0e622efca2111961"
+          },
+          "unique_literal_feature_labels": [
+            "Bradyarrhythmias",
+            "Conduction Disorders",
+            "Event Monitoring",
+            "Treatment Tracking"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-FAILURE",
+      "source_ids": [
+        853,
+        3066,
+        3668,
+        4068
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Symptoms, myocarditis, mechanical support, fluid status, hospitalization, transplant evaluation and function are complementary.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 853,
+          "source_title": "Pediatric Heart Failure Registry",
+          "body": "# Pediatric Heart Failure Registry\n\nSupports monitoring of pediatric heart failure.\n\nTracks\n\n• Symptoms\n\n• Echocardiography\n\n• Medication\n\n• Hospitalizations\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 853,
+            "heading_line": 33811,
+            "body_sha256": "70535fa7db3ba9a7eba4b2020732baa4521957c53c30634d6b24eb512f51ca14"
+          },
+          "unique_literal_feature_labels": [
+            "Echocardiography",
+            "Medication",
+            "Hospitalizations"
+          ]
+        },
+        {
+          "source_id": 3066,
+          "source_title": "Pediatric Heart Failure Module",
+          "body": "Supports pediatric heart failure management.\n\nSupports\n\n• Dilated Cardiomyopathy\n• Myocarditis\n• Congenital Heart Failure\n• Mechanical Support\n• Long-term Monitoring\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3066,
+            "heading_line": 75625,
+            "body_sha256": "53f0c3851a1db44b07430a9e02646c6a1503d8cb006428b26cc2605fb2475f1c"
+          },
+          "unique_literal_feature_labels": [
+            "Dilated Cardiomyopathy",
+            "Myocarditis",
+            "Congenital Heart Failure",
+            "Mechanical Support",
+            "Long-term Monitoring"
+          ]
+        },
+        {
+          "source_id": 3668,
+          "source_title": "Pediatric Heart Failure Module",
+          "body": "Supports pediatric heart failure management.\n\nSupports\n\n• Functional Classification\n• Medication Management\n• Fluid Monitoring\n• Cardiac Function Tracking\n• Transplant Evaluation\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3668,
+            "heading_line": 87576,
+            "body_sha256": "b767b053ac344c12c217ffce564085bd857b1dc9d350c0ea202629161a558b6d"
+          },
+          "unique_literal_feature_labels": [
+            "Functional Classification",
+            "Medication Management",
+            "Fluid Monitoring",
+            "Cardiac Function Tracking",
+            "Transplant Evaluation"
+          ]
+        },
+        {
+          "source_id": 4068,
+          "source_title": "Pediatric Heart Failure Module",
+          "body": "Supports pediatric heart failure management.\n\nSupports\n\n• Symptoms\n• Ventricular Function\n• Biomarkers\n• Fluid Status\n• Medication Monitoring\n• Hospitalization Tracking\n• Longitudinal Functional Assessment\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4068,
+            "heading_line": 95442,
+            "body_sha256": "bf8cf23c2668d9d8df510d3d1704a88e42be58036e70e324dc53be92061125db"
+          },
+          "unique_literal_feature_labels": [
+            "Ventricular Function",
+            "Biomarkers",
+            "Fluid Status",
+            "Medication Monitoring",
+            "Hospitalization Tracking",
+            "Longitudinal Functional Assessment"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-SURGERY",
+      "source_ids": [
+        847,
+        3067,
+        3669,
+        4072
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Retain surgeon/hospital/procedure identity and corrective/palliative/valve/great-vessel detail alongside complications and long-term imaging outcomes.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 847,
+          "source_title": "Pediatric Heart Surgery Registry",
+          "body": "# Pediatric Heart Surgery Registry\n\nStores pediatric cardiac surgical history.\n\nSupports\n\n• Procedure\n\n• Hospital\n\n• Surgeon\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 847,
+            "heading_line": 33687,
+            "body_sha256": "9aa82913863fe39dfa254a8f26437152b5265e9f5fd0e3de81e3e31bf4c71519"
+          },
+          "unique_literal_feature_labels": [
+            "Procedure",
+            "Hospital",
+            "Surgeon",
+            "Follow-up"
+          ]
+        },
+        {
+          "source_id": 3067,
+          "source_title": "Pediatric Cardiac Surgery Module",
+          "body": "Supports pediatric cardiac surgery.\n\nSupports\n\n• Corrective Surgery\n• Palliative Surgery\n• Valve Repair\n• Great Vessel Reconstruction\n• Postoperative Monitoring\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3067,
+            "heading_line": 75643,
+            "body_sha256": "283608fdc916ebd88e2ac860ccc26c5a4f2ba5f67578f9e244b3c874f56e432b"
+          },
+          "unique_literal_feature_labels": [
+            "Corrective Surgery",
+            "Palliative Surgery",
+            "Valve Repair",
+            "Great Vessel Reconstruction"
+          ]
+        },
+        {
+          "source_id": 3669,
+          "source_title": "Pediatric Cardiac Surgery Module",
+          "body": "Supports pediatric cardiac surgery pathways.\n\nSupports\n\n• Preoperative Assessment\n• Surgical Planning\n• Postoperative Monitoring\n• ICU Follow-up\n• Long-term Outcomes\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3669,
+            "heading_line": 87594,
+            "body_sha256": "d5e9980de6f38427921659a82db5ceecdc9993740cc49057b3292a47856c5c7e"
+          },
+          "unique_literal_feature_labels": [
+            "ICU Follow-up",
+            "Long-term Outcomes"
+          ]
+        },
+        {
+          "source_id": 4072,
+          "source_title": "Pediatric Cardiac Surgery Module",
+          "body": "Supports pediatric cardiac surgery workflows.\n\nSupports\n\n• Preoperative Assessment\n• Surgical Planning\n• Procedure Documentation\n• Postoperative Monitoring\n• Complication Tracking\n• Imaging Follow-up\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4072,
+            "heading_line": 95524,
+            "body_sha256": "3dacdc68f943945dfed7c654746f7ab7e3b15c625bf1dba167e75bdac1ab36c8"
+          },
+          "unique_literal_feature_labels": [
+            "Procedure Documentation",
+            "Complication Tracking",
+            "Imaging Follow-up",
+            "Longitudinal Outcomes"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-GENETICS",
+      "source_ids": [
+        3077,
+        3672,
+        4073
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Shared familial cardiology context; preserve variant interpretation, counseling, family screening and disease-specific panels.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3077,
+          "source_title": "Pediatric Cardiac Genetics Module",
+          "body": "Supports inherited cardiac diseases.\n\nSupports\n\n• Cardiomyopathy Genetics\n• Channelopathies\n• Family Screening\n• Variant Interpretation\n• Genetic Counseling\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3077,
+            "heading_line": 75819,
+            "body_sha256": "354701d6bc4e5257141fd9bc6c147ed9ab33fce659d9de4269a7506bdb5a01c8"
+          },
+          "unique_literal_feature_labels": []
+        },
+        {
+          "source_id": 3672,
+          "source_title": "Pediatric Cardiac Genetics Module",
+          "body": "Supports genetic cardiac disorders.\n\nSupports\n\n• Cardiomyopathy Genes\n• Channelopathies\n• Congenital Heart Disease Genetics\n• Family Screening\n• Genetic Counseling\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3672,
+            "heading_line": 87648,
+            "body_sha256": "dcdd88c35fbadf9127d6be2672416556663df3fd3b94fe947e2d0f3ecdfcc6f2"
+          },
+          "unique_literal_feature_labels": [
+            "Cardiomyopathy Genes"
+          ]
+        },
+        {
+          "source_id": 4073,
+          "source_title": "Pediatric Cardiac Genetics Module",
+          "body": "Supports inherited cardiac disorders.\n\nSupports\n\n• Genetic Panels\n• Cardiomyopathy Genetics\n• Channelopathies\n• Congenital Heart Disease Genetics\n• Variant Interpretation\n• Family Screening\n• Genetic Counseling\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4073,
+            "heading_line": 95544,
+            "body_sha256": "6f90bddb86129e04c3a1129059ddf8f9aebd53078bca2c743f2a70c8ee7d2bda"
+          },
+          "unique_literal_feature_labels": [
+            "Genetic Panels"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-IMAGING",
+      "source_ids": [
+        3069,
+        3671,
+        4070
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Registry aliases do not erase catheterization, nuclear cardiology, CT angiography or 3D reconstruction and serial volumetric detail.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3069,
+          "source_title": "Pediatric Cardiology Imaging Registry",
+          "body": "Maintains pediatric cardiac imaging.\n\nSupports\n\n• Echocardiography\n• CT\n• MRI\n• Cardiac Catheterization\n• AI Imaging Analysis\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3069,
+            "heading_line": 75679,
+            "body_sha256": "e788955a997567c628ec421df7abc5dd3491c163125c6a48cf8a500209c486aa"
+          },
+          "unique_literal_feature_labels": [
+            "CT",
+            "MRI",
+            "Cardiac Catheterization",
+            "AI Imaging Analysis"
+          ]
+        },
+        {
+          "source_id": 3671,
+          "source_title": "Pediatric Cardiac Imaging Registry",
+          "body": "Maintains pediatric cardiac imaging.\n\nSupports\n\n• Echocardiography\n• Cardiac MRI\n• CT Angiography\n• Nuclear Cardiology\n• AI Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3671,
+            "heading_line": 87630,
+            "body_sha256": "d653aa91d402164739e59148f2ad46935a0e6cdb87cd1175bc73ab5113a56615"
+          },
+          "unique_literal_feature_labels": [
+            "CT Angiography",
+            "Nuclear Cardiology",
+            "AI Image Analysis"
+          ]
+        },
+        {
+          "source_id": 4070,
+          "source_title": "Pediatric Cardiac MRI & CT Registry",
+          "body": "Maintains advanced pediatric cardiac imaging.\n\nSupports\n\n• Cardiac MRI\n• Cardiac CT\n• 3D Reconstruction\n• Ventricular Volumes\n• Myocardial Assessment\n• Congenital Anatomy\n• Longitudinal Imaging Comparison\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4070,
+            "heading_line": 95484,
+            "body_sha256": "637970aba6b9ccc191ef6c4cce0f420a517798e8dab72dcade1afa4847f225ea"
+          },
+          "unique_literal_feature_labels": [
+            "Cardiac CT",
+            "3D Reconstruction",
+            "Ventricular Volumes",
+            "Myocardial Assessment",
+            "Congenital Anatomy",
+            "Longitudinal Imaging Comparison"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-AI",
+      "source_ids": [
+        854,
+        3072,
+        3674,
+        4075
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Educational output, diagnostic assistance, prediction and surgical support are distinct intended uses of shared AI infrastructure.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 854,
+          "source_title": "Pediatric Cardiology AI Assistant",
+          "body": "# Pediatric Cardiology AI Assistant\n\nAI assists pediatric cardiovascular monitoring.\n\nAnalyzes\n\n• ECG\n\n• Echocardiography\n\n• Symptoms\n\n• Laboratory Results\n\nProvides educational recommendations.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 854,
+            "heading_line": 33833,
+            "body_sha256": "5bf697c841fc4402dd0cf1a90a2cbe4bb7a374204e59fe675e6abc630aa2808a"
+          },
+          "unique_literal_feature_labels": [
+            "ECG",
+            "Echocardiography",
+            "Symptoms",
+            "Laboratory Results"
+          ]
+        },
+        {
+          "source_id": 3072,
+          "source_title": "Pediatric Cardiology AI Decision Support",
+          "body": "Provides AI-assisted pediatric cardiology.\n\nSupports\n\n• Congenital Defect Detection\n• Arrhythmia Prediction\n• Heart Failure Prediction\n• Surgical Risk Assessment\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3072,
+            "heading_line": 75732,
+            "body_sha256": "30481a12a5ef23ad65237daae4049aa9271691596914eb7c4a05cf2ec9478316"
+          },
+          "unique_literal_feature_labels": [
+            "Congenital Defect Detection",
+            "Arrhythmia Prediction",
+            "Heart Failure Prediction",
+            "Surgical Risk Assessment",
+            "Personalized Therapy"
+          ]
+        },
+        {
+          "source_id": 3674,
+          "source_title": "Pediatric Cardiology AI Decision Support",
+          "body": "Provides AI-assisted pediatric cardiology.\n\nSupports\n\n• Diagnosis Assistance\n• ECG Interpretation\n• Risk Prediction\n• Treatment Optimization\n• Surgical Planning Support\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3674,
+            "heading_line": 87684,
+            "body_sha256": "66ab04ced74dfee0ce9c47eb210c44dcd3629a564fa5a1d686f6c6db7b5e326b"
+          },
+          "unique_literal_feature_labels": [
+            "Diagnosis Assistance",
+            "ECG Interpretation",
+            "Risk Prediction",
+            "Treatment Optimization",
+            "Surgical Planning Support"
+          ]
+        },
+        {
+          "source_id": 4075,
+          "source_title": "Pediatric Cardiology AI Decision Support",
+          "body": "Provides AI-assisted pediatric cardiology decision support.\n\nSupports\n\n• ECG Pattern Analysis\n• Echocardiography Assistance\n• Risk Stratification\n• Disease Progression Analysis\n• Imaging Comparison\n• Treatment Monitoring\n\nAI outputs require qualified clinician review.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4075,
+            "heading_line": 95585,
+            "body_sha256": "a85e1f9789a24537d8c7be03cd2e36b7ce66438b04f671200a6599887d8b20eb"
+          },
+          "unique_literal_feature_labels": [
+            "ECG Pattern Analysis",
+            "Echocardiography Assistance",
+            "Risk Stratification",
+            "Disease Progression Analysis",
+            "Imaging Comparison",
+            "Treatment Monitoring"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-TWIN",
+      "source_ids": [
+        3073,
+        3675,
+        4076
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Retain development, function, anatomy, hemodynamics, progression and surgical scenario models with explicit epistemic status.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3073,
+          "source_title": "Pediatric Cardiology Digital Twin Integration",
+          "body": "Integrates pediatric cardiology with Digital Twin.\n\nSupports\n\n• Heart Development Simulation\n• Hemodynamic Modeling\n• Surgical Outcome Prediction\n• Long-term Cardiac Modeling\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3073,
+            "heading_line": 75750,
+            "body_sha256": "f5f8f72c44143c66615c066ef2422484059dc2a74babed0d81a7616cb268b4c1"
+          },
+          "unique_literal_feature_labels": [
+            "Heart Development Simulation",
+            "Long-term Cardiac Modeling"
+          ]
+        },
+        {
+          "source_id": 3675,
+          "source_title": "Pediatric Cardiology Digital Twin Integration",
+          "body": "Integrates cardiology with Digital Twin.\n\nSupports\n\n• Heart Function Simulation\n• Hemodynamic Modeling\n• Disease Progression\n• Surgical Outcome Prediction\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3675,
+            "heading_line": 87702,
+            "body_sha256": "bce18293f2cc10ba3700b7809e7a6d616e8021cfbdac27ca26d05db69bedf721"
+          },
+          "unique_literal_feature_labels": [
+            "Heart Function Simulation"
+          ]
+        },
+        {
+          "source_id": 4076,
+          "source_title": "Pediatric Cardiology Digital Twin Integration",
+          "body": "Integrates pediatric cardiology with Digital Twin.\n\nModels\n\n• Cardiac Anatomy\n• Hemodynamics\n• Ventricular Function\n• Disease Progression\n• Treatment Scenarios\n• Surgical Outcomes\n• Longitudinal Cardiac Trajectories\n\nSupports simulation for clinical decision support and research.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4076,
+            "heading_line": 95606,
+            "body_sha256": "feeeac003e028b43c59f6b9b91f1c0f74b9b13e9e0d714a934873fac7ace4668"
+          },
+          "unique_literal_feature_labels": [
+            "Cardiac Anatomy",
+            "Hemodynamics",
+            "Ventricular Function",
+            "Treatment Scenarios",
+            "Surgical Outcomes",
+            "Longitudinal Cardiac Trajectories"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-REMOTE",
+      "source_ids": [
+        3074,
+        3676,
+        4079
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Preserve AI translation and family consultation plus wearable provenance, symptom diaries and escalation. Teleconsultation is not a monitored emergency service.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3074,
+          "source_title": "Pediatric Cardiology Telemedicine Module",
+          "body": "Supports remote pediatric cardiology.\n\nSupports\n\n• ECG Review\n• Echo Review\n• Remote Monitoring\n• Family Consultation\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3074,
+            "heading_line": 75767,
+            "body_sha256": "487d4c1f5b3c7292136e8f16911df61b1ccce26d4cf0e25e5b680a9b0cecbde2"
+          },
+          "unique_literal_feature_labels": [
+            "Remote Monitoring",
+            "Family Consultation",
+            "AI Translation"
+          ]
+        },
+        {
+          "source_id": 3676,
+          "source_title": "Pediatric Cardiology Telemedicine Module",
+          "body": "Supports remote pediatric cardiology.\n\nSupports\n\n• Video Consultation\n• ECG Review\n• Echo Review\n• Medication Monitoring\n• Follow-up Care\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3676,
+            "heading_line": 87719,
+            "body_sha256": "51b4d97b6229b55e18ba177e20037ce4d91ab990052ac0b9a5f5cda63359fa4a"
+          },
+          "unique_literal_feature_labels": [
+            "Medication Monitoring",
+            "Follow-up Care"
+          ]
+        },
+        {
+          "source_id": 4079,
+          "source_title": "Pediatric Cardiology Telemedicine & Remote Monitoring Module",
+          "body": "Supports remote pediatric cardiac care.\n\nIntegrates\n\n• Video Consultation\n• Home Monitoring\n• Wearable Data\n• Blood Pressure\n• Heart Rate\n• Symptom Diaries\n• ECG Devices\n• Follow-up\n\nSupports escalation workflows based on predefined clinical criteria.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4079,
+            "heading_line": 95669,
+            "body_sha256": "15b2f92d715f71cb513dfd375bae3c83e1c9374c733a24439bc31ac8a77fedfa"
+          },
+          "unique_literal_feature_labels": [
+            "Home Monitoring",
+            "Wearable Data",
+            "Blood Pressure",
+            "Heart Rate",
+            "Symptom Diaries",
+            "ECG Devices",
+            "Follow-up"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-CARD-HUB",
+      "source_ids": [
+        860,
+        3080,
+        3680,
+        4080
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-CARDIOLOGY",
+      "reason": "Workspace and coordination views share data but retain rehabilitation, research, genetics and ICU interfaces.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 860,
+          "source_title": "Comprehensive Pediatric Cardiology Dashboard",
+          "body": "# Comprehensive Pediatric Cardiology Dashboard\n\nProvides a complete overview of pediatric cardiovascular health.\n\nDisplays\n\n• Diagnoses\n\n• ECG\n\n• Echocardiography\n\n• Medications\n\n• Surgeries\n\n• AI Recommendations\n\nActs as the primary pediatric cardiology workspace within the Medical Passport ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 860,
+            "heading_line": 33965,
+            "body_sha256": "70afa2c5982aee50377ea6201dd4d409cc56453633249cd26abc7dd5f2c68677"
+          },
+          "unique_literal_feature_labels": [
+            "Diagnoses",
+            "Medications",
+            "Surgeries",
+            "AI Recommendations"
+          ]
+        },
+        {
+          "source_id": 3080,
+          "source_title": "Clinical Pediatric Cardiology Intelligence Hub",
+          "body": "Coordinates the complete pediatric cardiology ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Cardiac Surgery\n• Genetics\n• Intensive Care\n• Radiology\n• Telemedicine\n• Laboratory Services\n\nProvides intelligent lifelong pediatric cardiovascular care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3080,
+            "heading_line": 75877,
+            "body_sha256": "c9cd9279edb55f3ad3ffb551ee52cd89001aaca0f5e1349a425d1cd7ed75c610"
+          },
+          "unique_literal_feature_labels": [
+            "AI",
+            "Intensive Care",
+            "Radiology",
+            "Laboratory Services"
+          ]
+        },
+        {
+          "source_id": 3680,
+          "source_title": "Clinical Pediatric Cardiology Intelligence Hub",
+          "body": "Coordinates the complete pediatric cardiology ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Echocardiography\n• Cardiac Imaging\n• Genetics\n• Electrophysiology\n• Cardiac Surgery\n• Telemedicine\n• Clinical Research\n\nProvides intelligent pediatric cardiology across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3680,
+            "heading_line": 87789,
+            "body_sha256": "32dd0faece3b292d8a4033601902c36e6c35c7cc224e2cc425306a6894a6b88e"
+          },
+          "unique_literal_feature_labels": [
+            "Cardiac Imaging",
+            "Electrophysiology"
+          ]
+        },
+        {
+          "source_id": 4080,
+          "source_title": "Clinical Pediatric Cardiology Intelligence Hub",
+          "body": "Coordinates the complete pediatric cardiology ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Congenital Heart Disease\n• Echocardiography\n• ECG\n• Arrhythmia Management\n• Cardiac MRI\n• Interventional Cardiology\n• Cardiac Surgery\n• Genetics\n• Rehabilitation\n• Telemedicine\n• Remote Monitoring\n• Clinical Research\n\nProvides intelligent longitudinal pediatric cardiovascular care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4080,
+            "heading_line": 95692,
+            "body_sha256": "8b8fd4cd70ddde1aaf7b774f95fa2b975e0a3200803aebc8b0c5787f8674958e"
+          },
+          "unique_literal_feature_labels": [
+            "Congenital Heart Disease",
+            "Arrhythmia Management",
+            "Cardiac MRI",
+            "Interventional Cardiology",
+            "Rehabilitation",
+            "Remote Monitoring"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-RENAL-ORCHESTRATION",
+      "source_ids": [
+        940,
+        4551,
+        4575,
+        4600
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-RENAL",
+      "reason": "Dashboard, clinical core and orchestration layers differ; no duplicate patient stores or mandatory deployment-per-module inference.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 940,
+          "source_title": "Comprehensive Pediatric Nephrology Dashboard",
+          "body": "# Comprehensive Pediatric Nephrology Dashboard\n\nProvides a complete overview of pediatric kidney health.\n\nDisplays\n\n• Diagnoses\n\n• Laboratory Results\n\n• Dialysis\n\n• Transplantation\n\n• Medications\n\n• AI Recommendations\n\nActs as the primary pediatric nephrology workspace within the Medical Passport ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 940,
+            "heading_line": 35747,
+            "body_sha256": "fb5dac5ad64fd876369c90153d6d3267f48b11d660045b51b59c14c1e3a543fc"
+          },
+          "unique_literal_feature_labels": [
+            "Diagnoses",
+            "Laboratory Results",
+            "Transplantation",
+            "Medications",
+            "AI Recommendations"
+          ]
+        },
+        {
+          "source_id": 4551,
+          "source_title": "Clinical Pediatric Nephrology Platform Core Engine",
+          "body": "Purpose:\nCentral clinical architecture for pediatric nephrology and longitudinal kidney health management across the EDHT ecosystem.\n\nCore Functions:\n• Pediatric Kidney Health Record\n• Renal Diagnosis Registry\n• Acute Kidney Injury Management\n• Chronic Kidney Disease Management\n• Congenital Kidney Disease\n• Genetic Nephrology\n• Glomerular Disease\n• Tubular Disorders\n• Electrolyte Disorders\n• Acid-Base Disorders\n• Pediatric Hypertension\n• Dialysis\n• Kidney Transplantation\n• Renal Medication Safety\n• Multidisciplinary Care Coordination\n\nClinical Data:\n• Creatinine\n• Cystatin C\n• eGFR\n• Urinalysis\n• Proteinuria\n• Albuminuria\n• Electrolytes\n• Acid-Base Status\n• Blood Pressure\n• Fluid Balance\n• Imaging\n• Renal Pathology\n• Genetics\n• Medication\n• Growth\n\nIntegrations:\n• Laboratory Medicine\n• Urology\n• Genetics\n• Radiology\n• Pathology\n• Cardiology\n• Pharmacy\n• Nutrition\n• Intensive Care\n• Medical Passport\n• Digital Twin\n\nAI Functions:\n• Longitudinal Pattern Recognition\n• Clinical Trend Detection\n• Deterioration Risk Support\n• Clinical Summarization\n• Missing-data Detection\n• Decision-support Orchestration\n\nSafety:\nAI cannot independently establish a renal diagnosis, prescribe medication or modify treatment.\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4551,
+            "heading_line": 106187,
+            "body_sha256": "70d9975f8d2ede466411453d3e7c57ea4c47c04a0be63fec8ad8cd5652e1f4ab"
+          },
+          "unique_literal_feature_labels": [
+            "Pediatric Kidney Health Record",
+            "Renal Diagnosis Registry",
+            "Acute Kidney Injury Management",
+            "Chronic Kidney Disease Management",
+            "Genetic Nephrology",
+            "Acid-Base Disorders",
+            "Pediatric Hypertension",
+            "Renal Medication Safety",
+            "Multidisciplinary Care Coordination",
+            "Creatinine",
+            "Cystatin C",
+            "eGFR",
+            "Urinalysis",
+            "Proteinuria",
+            "Albuminuria",
+            "Electrolytes",
+            "Acid-Base Status",
+            "Blood Pressure",
+            "Fluid Balance",
+            "Imaging",
+            "Medication",
+            "Growth",
+            "Urology",
+            "Pathology",
+            "Cardiology",
+            "Pharmacy",
+            "Longitudinal Pattern Recognition",
+            "Clinical Trend Detection",
+            "Deterioration Risk Support",
+            "Clinical Summarization",
+            "Missing-data Detection"
+          ]
+        },
+        {
+          "source_id": 4575,
+          "source_title": "Pediatric Nephrology, Urology, Dialysis & Transplantation Intelligence Hub",
+          "body": "Purpose:\nServe as the orchestration layer for the complete EDHT pediatric renal and urological ecosystem.\n\nCoordinates:\n• Pediatric Nephrology\n• Pediatric Urology\n• Genetics\n• Laboratory Medicine\n• Radiology\n• Renal Pathology\n• Pharmacology\n• Nutrition\n• Emergency Medicine\n• Intensive Care\n• Dialysis\n• Kidney Transplantation\n• Immunology\n• Vaccination Intelligence\n• Artificial Intelligence\n• Digital Twin\n• Telemedicine\n• Medical Passport\n• Transition to Adult Care\n\nPlatform Functions:\n• Unified Patient Timeline\n• Multidisciplinary Case Review\n• Role-based Access\n• Consent Management\n• Clinical Alerts\n• Cross-border Data Exchange\n• Structured Clinical Documentation\n• Decision-support Orchestration\n• Auditability\n• Data Provenance\n• Longitudinal Outcomes\n• Quality Indicators\n• Research-ready De-identified Data Layer\n\nArchitecture:\nActs as the parent coordination layer while specialized renal modules remain independently deployable services.\n\nMVP Scope:\n• Longitudinal Renal Record\n• Laboratory Integration\n• Kidney Function Trends\n• Diagnosis Registry\n• Medication Safety\n• Imaging Reports\n• Clinical Alerts\n• Medical Passport\n• Interoperability\n\nAdvanced Scope:\n• Predictive AI\n• Digital Twin Modeling\n• Dialysis Device Integration\n• Advanced Transplant Intelligence\n• Cross-border Specialist Networks\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4575,
+            "heading_line": 107258,
+            "body_sha256": "2809f39c2b392994651c2915dd0691424bf5bb256b725343e2c930746e0321b7"
+          },
+          "unique_literal_feature_labels": [
+            "Pediatric Nephrology",
+            "Pharmacology",
+            "Emergency Medicine",
+            "Immunology",
+            "Vaccination Intelligence",
+            "Transition to Adult Care",
+            "Unified Patient Timeline",
+            "Multidisciplinary Case Review",
+            "Role-based Access",
+            "Cross-border Data Exchange",
+            "Structured Clinical Documentation",
+            "Auditability",
+            "Longitudinal Outcomes",
+            "Quality Indicators",
+            "Research-ready De-identified Data Layer",
+            "Longitudinal Renal Record",
+            "Kidney Function Trends",
+            "Diagnosis Registry",
+            "Imaging Reports",
+            "Digital Twin Modeling",
+            "Dialysis Device Integration",
+            "Cross-border Specialist Networks"
+          ]
+        },
+        {
+          "source_id": 4600,
+          "source_title": "Clinical Pediatric Renal Ecosystem Master Orchestration & Intelligence Layer",
+          "body": "Purpose:\nProvide the master orchestration layer connecting all pediatric nephrology, urology, dialysis and kidney transplantation capabilities within EDHT.\n\nClinical Domains:\n• Acute Kidney Injury\n• Chronic Kidney Disease\n• Glomerular Disease\n• Congenital Kidney Disease\n• Genetic Kidney Disease\n• Tubular Disorders\n• Electrolyte Disorders\n• Hypertension\n• UTI\n• Pediatric Urology\n• Complex Bladder Disease\n• Kidney Stones\n• Dialysis\n• Kidney Transplantation\n• Renal Nutrition\n• Renal Pharmacology\n• Critical Care\n• Home Care\n\nDigital Capabilities:\n• Artificial Intelligence\n• Digital Twin\n• Remote Monitoring\n• Telemedicine\n• Medical Passport\n• Clinical Alerts\n• Multidisciplinary Care\n• Cross-Border Exchange\n• Patient/Guardian Interface\n• Clinical Registry\n• Research Data Layer\n\nPlatform Functions:\n• Unified Longitudinal Timeline\n• Workflow Orchestration\n• Identity and Access Control\n• Consent Management\n• Data Provenance\n• Clinical Decision Traceability\n• Interoperability\n• Quality Monitoring\n• Outcome Tracking\n• AI Governance\n• Safety Governance\n\nMVP Foundation:\n• Patient Renal Record\n• Laboratory Integration\n• Renal Function Trends\n• Medication Safety\n• Clinical Alerts\n• Imaging and Report Integration\n• Provider Workflows\n• Medical Passport\n• Interoperability\n\nExpansion Layers:\n• Dialysis Device Connectivity\n• Advanced Transplant Intelligence\n• Predictive AI\n• Digital Twin\n• Home Monitoring\n• Population Analytics\n• Research Infrastructure\n\nArchitecture Principle:\nThe platform remains modular. Individual services may be deployed progressively without breaking the unified longitudinal patient model.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4600,
+            "heading_line": 108281,
+            "body_sha256": "06c9e07249160b7a0a993c16df336aac67aedd5d5c101ef81680fad0bfe05147"
+          },
+          "unique_literal_feature_labels": [
+            "Acute Kidney Injury",
+            "Chronic Kidney Disease",
+            "Genetic Kidney Disease",
+            "Hypertension",
+            "UTI",
+            "Complex Bladder Disease",
+            "Kidney Stones",
+            "Renal Nutrition",
+            "Renal Pharmacology",
+            "Critical Care",
+            "Home Care",
+            "Remote Monitoring",
+            "Multidisciplinary Care",
+            "Cross-Border Exchange",
+            "Patient/Guardian Interface",
+            "Clinical Registry",
+            "Research Data Layer",
+            "Unified Longitudinal Timeline",
+            "Workflow Orchestration",
+            "Identity and Access Control",
+            "Clinical Decision Traceability",
+            "Quality Monitoring",
+            "Outcome Tracking",
+            "AI Governance",
+            "Safety Governance",
+            "Patient Renal Record",
+            "Renal Function Trends",
+            "Imaging and Report Integration",
+            "Provider Workflows",
+            "Dialysis Device Connectivity",
+            "Home Monitoring",
+            "Population Analytics",
+            "Research Infrastructure"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-RENAL-FUNCTION",
+      "source_ids": [
+        926,
+        4552
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-RENAL",
+      "reason": "4552 adds cystatin C, assay context, baseline/recovery and persistent-pattern interpretation; retain urea from 926.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 926,
+          "source_title": "Pediatric Kidney Function Monitoring",
+          "body": "# Pediatric Kidney Function Monitoring\n\nTracks renal function.\n\nSupports\n\n• Creatinine\n\n• eGFR\n\n• Urea\n\n• Electrolytes\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 926,
+            "heading_line": 35439,
+            "body_sha256": "bf36a0fb13c163c75292bbc0c65a854e7322ac7efd23e8e9cc9d8c586d954ad6"
+          },
+          "unique_literal_feature_labels": [
+            "Creatinine",
+            "eGFR",
+            "Urea",
+            "Electrolytes"
+          ]
+        },
+        {
+          "source_id": 4552,
+          "source_title": "Pediatric Kidney Function & Renal Biomarker Intelligence Module",
+          "body": "Purpose:\nProvide a unified longitudinal engine for assessment and monitoring of pediatric kidney function.\n\nCore Functions:\n• Creatinine Tracking\n• Cystatin C Tracking\n• eGFR Calculation\n• Age-adjusted Renal Function Interpretation\n• Baseline Kidney Function\n• Renal Function Trend Analysis\n• Proteinuria Monitoring\n• Albuminuria Monitoring\n• Urinary Biomarkers\n• Electrolyte Monitoring\n• Acid-Base Monitoring\n• Historical Comparison\n• Laboratory Abnormality Detection\n• Renal Recovery Tracking\n\nClinical Logic:\nThe system differentiates isolated abnormal results from persistent, recurrent or progressively worsening patterns.\n\nData Context:\n• Age\n• Sex where clinically relevant\n• Growth\n• Hydration\n• Medication\n• Acute Illness\n• Chronic Disease\n• Previous Renal Function\n• Laboratory Methodology\n\nAlerts:\n• Rapid Renal Function Deterioration\n• Critical Electrolyte Abnormality\n• Persistent Proteinuria\n• Significant Change from Patient Baseline\n• Clinician-defined Renal Risk Thresholds\n\nIntegrations:\n• Laboratory Medicine\n• Nephrology\n• Pharmacy\n• Intensive Care\n• Digital Twin\n• Medical Passport\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4552,
+            "heading_line": 106258,
+            "body_sha256": "0c8325091392577f6743225a195d91c60c498e6b03d7322a3284a80599d8af73"
+          },
+          "unique_literal_feature_labels": [
+            "Creatinine Tracking",
+            "Cystatin C Tracking",
+            "eGFR Calculation",
+            "Age-adjusted Renal Function Interpretation",
+            "Baseline Kidney Function",
+            "Renal Function Trend Analysis",
+            "Proteinuria Monitoring",
+            "Albuminuria Monitoring",
+            "Urinary Biomarkers",
+            "Electrolyte Monitoring",
+            "Acid-Base Monitoring",
+            "Historical Comparison",
+            "Laboratory Abnormality Detection",
+            "Renal Recovery Tracking",
+            "Age",
+            "Sex where clinically relevant",
+            "Growth",
+            "Hydration",
+            "Medication",
+            "Acute Illness",
+            "Chronic Disease",
+            "Previous Renal Function",
+            "Laboratory Methodology",
+            "Rapid Renal Function Deterioration",
+            "Critical Electrolyte Abnormality",
+            "Persistent Proteinuria",
+            "Significant Change from Patient Baseline",
+            "Clinician-defined Renal Risk Thresholds",
+            "Laboratory Medicine",
+            "Nephrology",
+            "Pharmacy",
+            "Intensive Care",
+            "Digital Twin",
+            "Medical Passport"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-RENAL-MEDICATION",
+      "source_ids": [
+        933,
+        4566
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-RENAL",
+      "reason": "933 names immunosuppressants, antihypertensives and diuretics; 4566 adds contrast, multiple nephrotoxins, TDM and missing monitoring.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 933,
+          "source_title": "Pediatric Nephrology Medication Manager",
+          "body": "# Pediatric Nephrology Medication Manager\n\nTracks renal medications.\n\nSupports\n\n• Weight-Based Dosage\n\n• Immunosuppressants\n\n• Antihypertensives\n\n• Diuretics\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 933,
+            "heading_line": 35591,
+            "body_sha256": "922c68c93254faac7d62920862b49321e37c56d9aee1d48c4e3fd8511ae7a22f"
+          },
+          "unique_literal_feature_labels": [
+            "Weight-Based Dosage",
+            "Immunosuppressants",
+            "Antihypertensives",
+            "Diuretics"
+          ]
+        },
+        {
+          "source_id": 4566,
+          "source_title": "Pediatric Renal Pharmacology, Dosing & Nephrotoxicity Safety Engine",
+          "body": "Purpose:\nReduce medication-related renal risk and support kidney-function-aware pharmacological workflows.\n\nCore Functions:\n• Medication Registry\n• Kidney Function Context\n• Renal Dose Context\n• Nephrotoxic Medication Detection\n• Multiple Nephrotoxin Exposure\n• Drug Interaction Risk\n• Laboratory Monitoring\n• Contrast Exposure\n• Therapeutic Drug Monitoring\n• Previous Adverse Reactions\n• Exposure Timeline\n• Renal Recovery Monitoring\n• Medication Reconciliation\n\nSafety Alerts:\n• Potentially Unsafe Renal Exposure\n• Kidney Function Deterioration\n• Missing Required Monitoring\n• Clinically Relevant Drug Combination\n• Clinician-defined High-risk Threshold\n\nIntegrations:\n• Pharmacy\n• Laboratory Medicine\n• Nephrology\n• Hospital Medication Systems\n• Medical Passport\n• AI Safety Layer\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4566,
+            "heading_line": 106884,
+            "body_sha256": "ad5782e70153b378cababd8bbbaf76cfb5a95cc3803a27d398a6b23288de24f9"
+          },
+          "unique_literal_feature_labels": [
+            "Medication Registry",
+            "Kidney Function Context",
+            "Renal Dose Context",
+            "Nephrotoxic Medication Detection",
+            "Multiple Nephrotoxin Exposure",
+            "Drug Interaction Risk",
+            "Laboratory Monitoring",
+            "Contrast Exposure",
+            "Therapeutic Drug Monitoring",
+            "Previous Adverse Reactions",
+            "Exposure Timeline",
+            "Renal Recovery Monitoring",
+            "Medication Reconciliation",
+            "Potentially Unsafe Renal Exposure",
+            "Kidney Function Deterioration",
+            "Missing Required Monitoring",
+            "Clinically Relevant Drug Combination",
+            "Clinician-defined High-risk Threshold",
+            "Pharmacy",
+            "Laboratory Medicine",
+            "Nephrology",
+            "Hospital Medication Systems",
+            "Medical Passport",
+            "AI Safety Layer"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-RENAL-DIALYSIS",
+      "source_ids": [
+        927,
+        4567,
+        4577,
+        4578,
+        4579
+      ],
+      "classification": "SPECIALTY_PROJECTION",
+      "target_profile": "PRF-PED-RENAL",
+      "reason": "Shared treatment/session record with distinct PD, HD and CKRT profiles; retain prescription, access, equipment, modality parameters and interruption history.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 927,
+          "source_title": "Pediatric Dialysis Registry",
+          "body": "# Pediatric Dialysis Registry\n\nStores dialysis treatment history.\n\nSupports\n\n• Hemodialysis\n\n• Peritoneal Dialysis\n\n• Treatment Sessions\n\n• Complications\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 927,
+            "heading_line": 35461,
+            "body_sha256": "e7c75267528b9567f447f230dad0529079c10330cd455e4ce002420967e95350"
+          },
+          "unique_literal_feature_labels": [
+            "Treatment Sessions"
+          ]
+        },
+        {
+          "source_id": 4567,
+          "source_title": "Pediatric Dialysis & Renal Replacement Therapy Platform",
+          "body": "Purpose:\nProvide comprehensive management of pediatric renal replacement therapy.\n\nCore Functions:\n• Hemodialysis\n• Peritoneal Dialysis\n• Continuous Renal Replacement Therapy\n• Dialysis Prescription\n• Session Registry\n• Vascular Access\n• Peritoneal Access\n• Fluid Management\n• Dry Weight\n• Blood Pressure\n• Laboratory Monitoring\n• Dialysis Adequacy\n• Medication\n• Nutrition\n• Infection\n• Complications\n• Device Integration\n• Home Dialysis\n• Quality Indicators\n\nOperational Functions:\n• Treatment Scheduling\n• Session Documentation\n• Equipment Tracking\n• Consumable Context\n• Access Surveillance\n• Clinical Escalation\n• Multidisciplinary Review\n\nPatient/Guardian Functions:\n• Home Treatment Records\n• Weight Tracking\n• Blood Pressure\n• Symptoms\n• Treatment Education\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4567,
+            "heading_line": 106927,
+            "body_sha256": "e668742c6d87d9c68fe14fbf7f383ec3e9a94515115668ac3fbd3d602f08d125"
+          },
+          "unique_literal_feature_labels": [
+            "Continuous Renal Replacement Therapy",
+            "Session Registry",
+            "Peritoneal Access",
+            "Fluid Management",
+            "Dry Weight",
+            "Infection",
+            "Device Integration",
+            "Home Dialysis",
+            "Quality Indicators",
+            "Treatment Scheduling",
+            "Session Documentation",
+            "Equipment Tracking",
+            "Consumable Context",
+            "Access Surveillance",
+            "Clinical Escalation",
+            "Multidisciplinary Review",
+            "Home Treatment Records",
+            "Weight Tracking",
+            "Symptoms",
+            "Treatment Education"
+          ]
+        },
+        {
+          "source_id": 4577,
+          "source_title": "Pediatric Peritoneal Dialysis Home Management Module",
+          "body": "Purpose:\nSupport children receiving chronic peritoneal dialysis at home and provide structured communication between families and clinical teams.\n\nCore Functions:\n• Peritoneal Dialysis Prescription\n• Automated Peritoneal Dialysis\n• Manual Exchange Documentation\n• Treatment Schedule\n• Dialysis Solution\n• Fill Volume\n• Dwell Time\n• Ultrafiltration\n• Weight\n• Blood Pressure\n• Fluid Balance\n• Catheter Status\n• Exit-site Monitoring\n• Treatment Adherence\n• Device Data Integration\n• Home Treatment Logs\n\nComplication Functions:\n• Peritonitis Registry\n• Exit-site Infection\n• Drainage Problems\n• Catheter Dysfunction\n• Fluid Overload\n• Treatment Interruption\n\nPatient/Guardian Functions:\n• Home Dashboard\n• Treatment Checklist\n• Supply Tracking\n• Symptom Reporting\n• Clinician-approved Educational Content\n• Emergency Instructions\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4577,
+            "heading_line": 107371,
+            "body_sha256": "2616d8ada0ef6da1fde969320286e3a7d2c64bcca7cd7ffb223e4ef41a80e95a"
+          },
+          "unique_literal_feature_labels": [
+            "Peritoneal Dialysis Prescription",
+            "Automated Peritoneal Dialysis",
+            "Manual Exchange Documentation",
+            "Treatment Schedule",
+            "Dialysis Solution",
+            "Fill Volume",
+            "Dwell Time",
+            "Catheter Status",
+            "Exit-site Monitoring",
+            "Treatment Adherence",
+            "Device Data Integration",
+            "Home Treatment Logs",
+            "Peritonitis Registry",
+            "Exit-site Infection",
+            "Drainage Problems",
+            "Catheter Dysfunction",
+            "Fluid Overload",
+            "Treatment Interruption",
+            "Home Dashboard",
+            "Treatment Checklist",
+            "Supply Tracking",
+            "Symptom Reporting",
+            "Clinician-approved Educational Content",
+            "Emergency Instructions"
+          ]
+        },
+        {
+          "source_id": 4578,
+          "source_title": "Pediatric Hemodialysis Clinical Operations & Intelligence Module",
+          "body": "Purpose:\nCoordinate pediatric hemodialysis sessions, clinical parameters, equipment and longitudinal outcomes.\n\nCore Functions:\n• Dialysis Prescription\n• Session Scheduling\n• Pre-Dialysis Assessment\n• Post-Dialysis Assessment\n• Weight\n• Target Weight\n• Blood Pressure\n• Ultrafiltration\n• Blood Flow\n• Dialysate Parameters\n• Anticoagulation\n• Laboratory Monitoring\n• Dialysis Adequacy\n• Medication Administration\n• Vascular Access\n• Session Events\n• Complications\n• Treatment Completion\n\nLongitudinal Intelligence:\n• Adequacy Trends\n• Blood Pressure Trends\n• Weight Trends\n• Access Performance\n• Laboratory Trends\n• Treatment Tolerance\n\nIntegrations:\n• Dialysis Machines\n• Laboratory Medicine\n• Pharmacy\n• Nutrition\n• Nephrology\n• Device Management\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4578,
+            "heading_line": 107415,
+            "body_sha256": "d091333825bb4cf96d186505cea043fe22d9de08a809051207a4ee2070fa502c"
+          },
+          "unique_literal_feature_labels": [
+            "Session Scheduling",
+            "Pre-Dialysis Assessment",
+            "Post-Dialysis Assessment",
+            "Target Weight",
+            "Dialysate Parameters",
+            "Medication Administration",
+            "Session Events",
+            "Treatment Completion",
+            "Adequacy Trends",
+            "Blood Pressure Trends",
+            "Weight Trends",
+            "Access Performance",
+            "Laboratory Trends",
+            "Treatment Tolerance",
+            "Dialysis Machines",
+            "Laboratory Medicine",
+            "Pharmacy",
+            "Nephrology",
+            "Device Management"
+          ]
+        },
+        {
+          "source_id": 4579,
+          "source_title": "Pediatric Continuous Kidney Replacement Therapy & ICU Renal Support Module",
+          "body": "Purpose:\nSupport renal replacement therapy in critically ill pediatric patients.\n\nCore Functions:\n• CKRT/CRRT Prescription\n• Treatment Modality\n• Vascular Access\n• Blood Flow\n• Dialysate\n• Replacement Fluid\n• Ultrafiltration\n• Anticoagulation\n• Fluid Balance\n• Hemodynamic Status\n• Electrolytes\n• Acid-Base Status\n• Device Data\n• Treatment Interruptions\n• Filter Changes\n• Complication Documentation\n\nICU Integration:\n• Sepsis\n• Multiorgan Failure\n• Hemodynamic Support\n• Mechanical Ventilation\n• Medication\n• Nutrition\n• Laboratory Data\n\nSafety:\nHigh-acuity treatment decisions remain under specialist critical-care and nephrology supervision.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4579,
+            "heading_line": 107461,
+            "body_sha256": "d697117ae266295883e509f7d58e0fbc6a8ff3dc7778e2e929cbe9ea81023f99"
+          },
+          "unique_literal_feature_labels": [
+            "CKRT/CRRT Prescription",
+            "Treatment Modality",
+            "Dialysate",
+            "Replacement Fluid",
+            "Hemodynamic Status",
+            "Electrolytes",
+            "Acid-Base Status",
+            "Device Data",
+            "Treatment Interruptions",
+            "Filter Changes",
+            "Complication Documentation",
+            "Sepsis",
+            "Multiorgan Failure",
+            "Hemodynamic Support",
+            "Mechanical Ventilation",
+            "Laboratory Data"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-RENAL-TRANSITION",
+      "source_ids": [
+        4574,
+        4599
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-RENAL",
+      "reason": "Passport/cross-border scope overlaps transition; 4599 adds readiness, skills, receipt confirmation and follow-up.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 4574,
+          "source_title": "Pediatric Renal Medical Passport & Transition-to-Adult-Care Module",
+          "body": "Purpose:\nPreserve critical kidney information across institutions, countries and the transition from pediatric to adult medicine.\n\nMedical Passport Data:\n• Major Renal Diagnosis\n• Baseline Kidney Function\n• CKD Status\n• Dialysis Status\n• Kidney Transplant Status\n• Critical Medication\n• Immunosuppression\n• Allergies\n• Vascular Access\n• Genetic Diagnosis\n• Major Procedures\n• Emergency Considerations\n\nTransition Functions:\n• Structured Pediatric Summary\n• Longitudinal Renal History\n• Treatment History\n• Dialysis History\n• Transplant History\n• Genetics\n• Imaging\n• Pathology\n• Current Care Plan\n• Adult Specialist Handover\n\nCross-Border Functions:\n• Multilingual Clinical Summary\n• Standardized Data Exchange\n• Patient-authorized Access\n• Emergency Access Rules\n• Jurisdiction-aware Data Sharing\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4574,
+            "heading_line": 107215,
+            "body_sha256": "6871169a34b0105e118f66b8504791017caf794c150fb0e2ebecf669861e5604"
+          },
+          "unique_literal_feature_labels": [
+            "Major Renal Diagnosis",
+            "Baseline Kidney Function",
+            "CKD Status",
+            "Dialysis Status",
+            "Kidney Transplant Status",
+            "Critical Medication",
+            "Immunosuppression",
+            "Allergies",
+            "Vascular Access",
+            "Genetic Diagnosis",
+            "Major Procedures",
+            "Emergency Considerations",
+            "Structured Pediatric Summary",
+            "Longitudinal Renal History",
+            "Treatment History",
+            "Adult Specialist Handover",
+            "Multilingual Clinical Summary",
+            "Standardized Data Exchange",
+            "Patient-authorized Access",
+            "Emergency Access Rules",
+            "Jurisdiction-aware Data Sharing"
+          ]
+        },
+        {
+          "source_id": 4599,
+          "source_title": "Pediatric Renal Transition, Lifelong Kidney Record & Adult Nephrology Handover Module",
+          "body": "Purpose:\nPrevent loss of clinically important information when pediatric renal patients transition into adult healthcare.\n\nCore Functions:\n• Transition Readiness\n• Patient Education\n• Self-management Skills\n• Diagnosis History\n• Kidney Function History\n• Genetics\n• Pathology\n• Imaging\n• Surgical History\n• Dialysis History\n• Transplant History\n• Medication History\n• Complication History\n• Current Care Plan\n• Adult Provider Handover\n\nLifelong Record:\nPreserves the pediatric renal trajectory as part of the patient's permanent EDHT health history.\n\nTransition Workflow:\nPreparation → Readiness Assessment → Structured Summary → Adult Provider Transfer → Confirmation → Follow-up.\n\nMedical Passport:\nCritical renal and transplant information remains continuously available according to authorization rules.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4599,
+            "heading_line": 108245,
+            "body_sha256": "a2be5f599ddc3ba7e89ba6c59844cc1008c95af39184e53bfd16e38733d903ec"
+          },
+          "unique_literal_feature_labels": [
+            "Transition Readiness",
+            "Patient Education",
+            "Self-management Skills",
+            "Diagnosis History",
+            "Kidney Function History",
+            "Surgical History",
+            "Medication History",
+            "Complication History",
+            "Adult Provider Handover"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-MENTAL-CORE",
+      "source_ids": [
+        3981,
+        4826,
+        5151
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-MENTAL",
+      "reason": "Retain broad clinical domains plus explicit episode/assessment schema and workflows; local MVP wording does not expand EDHT P0.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3981,
+          "source_title": "Clinical Pediatric Psychiatry Platform Core Engine",
+          "body": "Central platform for child and adolescent mental health.\n\nSupports\n\n• Child Psychiatry\n• Adolescent Psychiatry\n• Developmental Mental Health\n• Behavioral Medicine\n• Psychotherapy\n• Psychopharmacology\n• Crisis Care\n• Family Mental Health\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Psychology\n• Pediatrics\n• Neurology\n• Social Care\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3981,
+            "heading_line": 93502,
+            "body_sha256": "bd1dfab5e2b36f3fc86c78b44e5e305069224729a0b0e74fbc774efb3cbb24ff"
+          },
+          "unique_literal_feature_labels": [
+            "Developmental Mental Health",
+            "Behavioral Medicine",
+            "Psychopharmacology",
+            "Family Mental Health",
+            "Artificial Intelligence",
+            "Digital Twin",
+            "Telemedicine"
+          ]
+        },
+        {
+          "source_id": 4826,
+          "source_title": "Clinical Pediatric & Adolescent Mental Health Platform Core Engine",
+          "body": "Purpose:\nProvide the central longitudinal architecture for pediatric and adolescent mental health, psychiatry, psychology and behavioral care across EDHT.\n\nCore Functions:\n• Mental Health Diagnosis Registry\n• Psychological Assessment\n• Psychiatric Assessment\n• Behavioral Symptoms\n• Emotional Symptoms\n• Developmental Context\n• Family Context\n• School Context\n• Social Function\n• Sleep\n• Medication\n• Psychotherapy\n• Crisis Care\n• Neuropsychology\n• Rehabilitation\n• Long-term Outcomes\n• Transition to Adult Mental Health Services\n\nClinical Data:\n• Symptoms\n• Mental Status Examination\n• Standardized Assessments\n• Patient-reported Outcomes\n• Guardian-reported Outcomes\n• School-related Information\n• Medication\n• Therapy History\n• Hospitalizations\n• Functional Status\n• Safety Plans\n• Longitudinal Clinical Notes\n\nIntegrations:\n• Pediatrics\n• Neurology\n• Developmental Medicine\n• Psychology\n• Psychiatry\n• School Health\n• Social Care\n• Pharmacy\n• Emergency Medicine\n• Medical Passport\n\nAI Functions:\n• Longitudinal Clinical Summarization\n• Symptom Trend Analysis\n• Care-gap Detection\n• Pre-Visit Assessment\n• Documentation Assistance\n• Multidisciplinary Case Preparation\n\nSafety:\nAI cannot independently establish a psychiatric diagnosis, prescribe psychotropic medication or make autonomous crisis-management decisions.\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4826,
+            "heading_line": 117398,
+            "body_sha256": "17094b0f0a2215f9722751a2cbf275f7e4ed01284b349d72fddc04e7fe323305"
+          },
+          "unique_literal_feature_labels": [
+            "Psychological Assessment",
+            "Psychiatric Assessment",
+            "Behavioral Symptoms",
+            "Emotional Symptoms",
+            "Developmental Context",
+            "Family Context",
+            "School Context",
+            "Sleep",
+            "Neuropsychology",
+            "Rehabilitation",
+            "Long-term Outcomes",
+            "Transition to Adult Mental Health Services",
+            "Symptoms",
+            "Standardized Assessments",
+            "School-related Information",
+            "Therapy History",
+            "Hospitalizations",
+            "Functional Status",
+            "Safety Plans",
+            "Longitudinal Clinical Notes",
+            "Developmental Medicine",
+            "Psychiatry",
+            "School Health",
+            "Medical Passport",
+            "Longitudinal Clinical Summarization",
+            "Symptom Trend Analysis",
+            "Pre-Visit Assessment",
+            "Multidisciplinary Case Preparation"
+          ]
+        },
+        {
+          "source_id": 5151,
+          "source_title": "Clinical Pediatric Mental Health & Psychiatry Platform Core Engine",
+          "body": "Purpose:\nProvide a unified longitudinal architecture for pediatric and adolescent mental health across prevention, screening, assessment, treatment, crisis care, rehabilitation and transition into adult services.\n\nClinical Domains:\n• Child Psychiatry\n• Adolescent Psychiatry\n• Clinical Psychology\n• Behavioral Health\n• Neurodevelopmental Mental Health\n• Emotional Regulation\n• Mood Disorders\n• Anxiety Disorders\n• Trauma-related Disorders\n• Obsessive-Compulsive Spectrum\n• Eating Disorder Context\n• Psychotic Disorders\n• Behavioral Disorders\n• Sleep-Psychiatry Context\n• Substance-use Context\n• School Function\n• Family Function\n• Social Function\n\nCore Functions:\n• Mental Health Diagnosis Registry\n• Symptom Timeline\n• Mental Status Examination\n• Screening Assessments\n• Structured Clinical Assessments\n• Treatment Plans\n• Psychotherapy\n• Medication\n• Crisis History\n• Hospitalization\n• Functional Outcomes\n• Patient-reported Outcomes\n• Guardian-reported Outcomes\n\nData Model:\n• MentalHealthEpisode\n• Diagnosis\n• Symptom\n• Assessment\n• RiskAssessment\n• TherapyEpisode\n• MedicationEpisode\n• CrisisEpisode\n• FunctionalStatus\n• SchoolContext\n• FamilyContext\n• FollowUpPlan\n\nClinical Workflows:\n• Screening → Assessment → Diagnosis → Care Plan\n• Referral → Specialist Review → Treatment\n• Crisis → Safety Assessment → Escalation\n• Treatment → Monitoring → Outcome\n• Pediatric Care → Transition Planning → Adult Care\n\nAutomation:\n• Follow-up Scheduling\n• Assessment Due Detection\n• Medication Monitoring\n• Care-gap Detection\n• Treatment-plan Review\n• Transition Readiness Tracking\n\nAlerts:\n• Clinician-defined Urgent Review\n• Significant Documented Deterioration\n• Missed High-priority Follow-up\n• Medication Monitoring Gap\n• Crisis-plan Review Due\n\nPatient/Guardian Functions:\n• Symptom Journaling\n• Appointment Preparation\n• Clinician-approved Educational Content\n• Treatment-plan Visibility\n• Consent-aware Guardian Access\n\nPermissions:\n• Pediatric Patient Access\n• Guardian Access\n• Clinician Access\n• Mental-health Specialist Access\n• Emergency Access\n• Sensitive-data Segmentation\n\nAudit:\n• Record Access\n• Record Modification\n• Consent Changes\n• Guardian-access Changes\n• Emergency-access Events\n\nInteroperability:\n• FHIR-aligned Mental Health Data\n• Primary Care\n• Pediatrics\n• Neurology\n• School Health Context\n• Emergency Medicine\n• Pharmacy\n\nAI Functions:\n• Longitudinal Summary\n• Symptom Trend Support\n• Documentation Assistance\n• Care-gap Detection\n• Clinical-data Organization\n\nAI Safety:\nAI cannot independently establish psychiatric diagnosis, prescribe medication, determine involuntary treatment or replace emergency clinical assessment.\n\nMVP:\n• Diagnosis Registry\n• Assessment Record\n• Treatment Plan\n• Medication Record\n• Therapy Record\n• Crisis/Safety Record\n• Follow-up\n• Consent\n• Audit\n\nExpansion:\n• Advanced Outcome Analytics\n• Digital Phenotyping Research\n• Multimodal AI\n• Remote Monitoring\n• Population Mental-health Analytics\n\nStatus:\nExtended Module v2\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5151,
+            "heading_line": 130456,
+            "body_sha256": "a07649b1a2578495a108b9e545d10b7eac33b24cf2cf515262fd2785b55a88ee"
+          },
+          "unique_literal_feature_labels": [
+            "Clinical Psychology",
+            "Behavioral Health",
+            "Neurodevelopmental Mental Health",
+            "Emotional Regulation",
+            "Mood Disorders",
+            "Anxiety Disorders",
+            "Trauma-related Disorders",
+            "Obsessive-Compulsive Spectrum",
+            "Eating Disorder Context",
+            "Psychotic Disorders",
+            "Behavioral Disorders",
+            "Sleep-Psychiatry Context",
+            "Substance-use Context",
+            "School Function",
+            "Family Function",
+            "Symptom Timeline",
+            "Screening Assessments",
+            "Structured Clinical Assessments",
+            "Treatment Plans",
+            "Crisis History",
+            "Hospitalization",
+            "Functional Outcomes",
+            "MentalHealthEpisode",
+            "Diagnosis",
+            "Symptom",
+            "Assessment",
+            "RiskAssessment",
+            "TherapyEpisode",
+            "MedicationEpisode",
+            "CrisisEpisode",
+            "FunctionalStatus",
+            "SchoolContext",
+            "FamilyContext",
+            "FollowUpPlan",
+            "Screening → Assessment → Diagnosis → Care Plan",
+            "Referral → Specialist Review → Treatment",
+            "Crisis → Safety Assessment → Escalation",
+            "Treatment → Monitoring → Outcome",
+            "Pediatric Care → Transition Planning → Adult Care",
+            "Follow-up Scheduling",
+            "Assessment Due Detection",
+            "Medication Monitoring",
+            "Treatment-plan Review",
+            "Transition Readiness Tracking",
+            "Clinician-defined Urgent Review",
+            "Significant Documented Deterioration",
+            "Missed High-priority Follow-up",
+            "Medication Monitoring Gap",
+            "Crisis-plan Review Due",
+            "Symptom Journaling",
+            "Appointment Preparation",
+            "Clinician-approved Educational Content",
+            "Treatment-plan Visibility",
+            "Consent-aware Guardian Access",
+            "Pediatric Patient Access",
+            "Guardian Access",
+            "Clinician Access",
+            "Mental-health Specialist Access",
+            "Emergency Access",
+            "Sensitive-data Segmentation",
+            "Record Access",
+            "Record Modification",
+            "Consent Changes",
+            "Guardian-access Changes",
+            "Emergency-access Events",
+            "FHIR-aligned Mental Health Data",
+            "Primary Care",
+            "School Health Context",
+            "Longitudinal Summary",
+            "Symptom Trend Support",
+            "Clinical-data Organization",
+            "Diagnosis Registry",
+            "Assessment Record",
+            "Treatment Plan",
+            "Medication Record",
+            "Therapy Record",
+            "Crisis/Safety Record",
+            "Follow-up",
+            "Consent",
+            "Audit",
+            "Advanced Outcome Analytics",
+            "Digital Phenotyping Research",
+            "Multimodal AI",
+            "Remote Monitoring",
+            "Population Mental-health Analytics"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-MENTAL-MEDICATION",
+      "source_ids": [
+        3993,
+        4842,
+        5166
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-MENTAL",
+      "reason": "Combine clinician control/reconciliation, monitoring domains, start/stop/titration and typed MonitoringRequirement/Result without autonomous dose changes.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3993,
+          "source_title": "Pediatric Psychopharmacology Module",
+          "body": "Supports clinician-supervised psychiatric medication management.\n\nSupports\n\n• Medication Registry\n• Dose Tracking\n• Adverse Effects\n• Drug Interactions\n• Response Monitoring\n• Treatment History\n• Medication Reconciliation\n\nAll prescribing remains subject to licensed clinician review and local regulations.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3993,
+            "heading_line": 93774,
+            "body_sha256": "e352cb9d4d9812bc9d7b98ef7f50ab67deb5926e880c80978cabb262a785d5f8"
+          },
+          "unique_literal_feature_labels": [
+            "Dose Tracking",
+            "Response Monitoring",
+            "Treatment History"
+          ]
+        },
+        {
+          "source_id": 4842,
+          "source_title": "Pediatric Psychopharmacology, Medication Safety & Monitoring Engine",
+          "body": "Purpose:\nProvide medication safety and longitudinal monitoring for pediatric psychotropic treatment.\n\nCore Functions:\n• Medication Registry\n• Indication\n• Dose History\n• Weight-related Context\n• Medication Changes\n• Treatment Response\n• Adherence\n• Adverse Effects\n• Drug Interactions\n• Laboratory Monitoring\n• Cardiovascular Monitoring Context\n• Growth and Weight Monitoring\n• Sleep Effects\n• Neurological Effects\n• Medication Reconciliation\n\nSafety Functions:\n• Interaction Alerts\n• Duplicate Therapy Detection\n• Missing Monitoring Detection\n• Allergy Integration\n• Patient-specific Risk Context\n• Clinician-defined High-risk Alerts\n\nIntegrations:\n• Psychiatry\n• Pharmacy\n• Pediatrics\n• Cardiology\n• Laboratory Medicine\n• Medical Passport\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4842,
+            "heading_line": 118062,
+            "body_sha256": "1ac92d5d071eadccb398651fbe92107e167deab65be64cf9842fc34b9decd4d2"
+          },
+          "unique_literal_feature_labels": [
+            "Dose History",
+            "Weight-related Context",
+            "Medication Changes",
+            "Treatment Response",
+            "Adherence",
+            "Cardiovascular Monitoring Context",
+            "Growth and Weight Monitoring",
+            "Sleep Effects",
+            "Neurological Effects",
+            "Interaction Alerts",
+            "Duplicate Therapy Detection",
+            "Missing Monitoring Detection",
+            "Allergy Integration",
+            "Patient-specific Risk Context",
+            "Clinician-defined High-risk Alerts",
+            "Psychiatry",
+            "Pharmacy",
+            "Pediatrics",
+            "Cardiology",
+            "Laboratory Medicine",
+            "Medical Passport"
+          ]
+        },
+        {
+          "source_id": 5166,
+          "source_title": "Pediatric Psychiatric Medication & Psychopharmacology Safety Engine",
+          "body": "Purpose:\nProvide comprehensive longitudinal safety management for psychiatric medication in children and adolescents.\n\nFunctions:\n• Medication Registry\n• Indication\n• Dose\n• Weight Context\n• Start/Stop\n• Titration History\n• Adherence Context\n• Response\n• Adverse Effects\n• Allergy\n• Drug Interaction\n• Laboratory Monitoring\n• Cardiovascular Context\n• Metabolic Context\n• Neurological Context\n• Growth Context\n\nAutomation:\n• Monitoring Due\n• Laboratory Due\n• Follow-up Due\n• Interaction Review\n• Medication Reconciliation\n• Treatment-plan Review\n\nData Model:\n• MedicationEpisode\n• DoseChange\n• Indication\n• MonitoringRequirement\n• MonitoringResult\n• AdverseReaction\n• ResponseAssessment\n\nSafety:\nMedication decisions remain clinician-controlled.\n\nMVP:\nHIGH\n\nStatus:\nExtended Module v2\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5166,
+            "heading_line": 131200,
+            "body_sha256": "e724391913c9ef649be584c17b1e02671929514a442f43a96313e28d7132bfa4"
+          },
+          "unique_literal_feature_labels": [
+            "Dose",
+            "Weight Context",
+            "Start/Stop",
+            "Titration History",
+            "Adherence Context",
+            "Response",
+            "Allergy",
+            "Drug Interaction",
+            "Cardiovascular Context",
+            "Metabolic Context",
+            "Neurological Context",
+            "Growth Context",
+            "Monitoring Due",
+            "Laboratory Due",
+            "Follow-up Due",
+            "Interaction Review",
+            "Treatment-plan Review",
+            "MedicationEpisode",
+            "DoseChange",
+            "MonitoringRequirement",
+            "MonitoringResult",
+            "AdverseReaction",
+            "ResponseAssessment"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-MENTAL-THERAPY",
+      "source_ids": [
+        3994,
+        4841,
+        5167
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-MENTAL",
+      "reason": "Retain named intervention modalities and referral/goals; separate summary from restricted session notes rather than replacing either.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3994,
+          "source_title": "Pediatric Psychotherapy Coordination Module",
+          "body": "Coordinates evidence-based psychological interventions.\n\nSupports\n\n• CBT\n• Family Therapy\n• Behavioral Therapy\n• Supportive Therapy\n• Therapy Goals\n• Progress Tracking\n• Referral Coordination\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3994,
+            "heading_line": 93796,
+            "body_sha256": "13e2e461324b72f661e42000de973f66ccb5c9945f8d2199a30b5a75b47c39b8"
+          },
+          "unique_literal_feature_labels": [
+            "CBT",
+            "Family Therapy",
+            "Behavioral Therapy",
+            "Supportive Therapy",
+            "Therapy Goals",
+            "Progress Tracking",
+            "Referral Coordination"
+          ]
+        },
+        {
+          "source_id": 4841,
+          "source_title": "Pediatric Psychotherapy & Psychological Intervention Management Module",
+          "body": "Purpose:\nCreate a structured longitudinal record of psychological and psychotherapeutic interventions.\n\nCore Functions:\n• Therapy Indication\n• Therapy Modality\n• Treatment Goals\n• Session Registry\n• Intervention Plan\n• Symptom Measures\n• Functional Goals\n• Patient Participation\n• Guardian Participation where appropriate\n• Treatment Progress\n• Treatment Modification\n• Therapy Completion\n• Follow-up\n• Outcome Measures\n\nSupported Care Models:\n• Individual Therapy\n• Family-based Intervention\n• Group Therapy Context\n• Behavioral Intervention\n• Skills-based Therapy\n• Developmentally Adapted Psychological Care\n\nPrivacy:\nDetailed psychotherapy notes may be subject to enhanced access controls separate from general clinical summaries.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4841,
+            "heading_line": 118025,
+            "body_sha256": "274c8b6f62696c78f9aa71c076827f7ed3597dfc136be8dd46eebd93ebba9c81"
+          },
+          "unique_literal_feature_labels": [
+            "Therapy Indication",
+            "Therapy Modality",
+            "Intervention Plan",
+            "Symptom Measures",
+            "Functional Goals",
+            "Patient Participation",
+            "Guardian Participation where appropriate",
+            "Treatment Progress",
+            "Treatment Modification",
+            "Therapy Completion",
+            "Individual Therapy",
+            "Family-based Intervention",
+            "Behavioral Intervention",
+            "Skills-based Therapy",
+            "Developmentally Adapted Psychological Care"
+          ]
+        },
+        {
+          "source_id": 5167,
+          "source_title": "Pediatric Psychotherapy & Psychological Intervention Platform",
+          "body": "Purpose:\nProvide structured longitudinal management of psychological and psychotherapeutic interventions without unnecessarily exposing confidential session content.\n\nFunctions:\n• Therapy Type\n• Treatment Indication\n• Treatment Goals\n• Session Registry\n• Attendance\n• Progress Context\n• Outcome Measures\n• Family Intervention Context\n• Group Therapy Context\n• Treatment Completion\n• Follow-up\n\nPrivacy Architecture:\n• Clinical Summary Layer\n• Restricted Session-note Layer\n• Consent-aware Sharing\n• Role-based Access\n• Guardian-access Rules\n• Audit Trail\n\nInteroperability:\n• Psychiatry\n• Psychology\n• Pediatrics\n• Rehabilitation\n• School Support Context\n\nStatus:\nExtended Module v2\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5167,
+            "heading_line": 131251,
+            "body_sha256": "5d65d8d1a2f3afc848d526bdb253289966081b769de7511b3428bd3c0c42654b"
+          },
+          "unique_literal_feature_labels": [
+            "Therapy Type",
+            "Treatment Indication",
+            "Attendance",
+            "Progress Context",
+            "Family Intervention Context",
+            "Treatment Completion",
+            "Clinical Summary Layer",
+            "Restricted Session-note Layer",
+            "Consent-aware Sharing",
+            "Role-based Access",
+            "Guardian-access Rules",
+            "Audit Trail",
+            "Psychiatry",
+            "Psychology",
+            "Pediatrics",
+            "Rehabilitation",
+            "School Support Context"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-MENTAL-CRISIS",
+      "source_ids": [
+        3995,
+        3996,
+        4840,
+        5168
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-MENTAL",
+      "reason": "Assessment, protective factors, escalation, emergency disposition and follow-up remain human-led; preserve explicit prohibition of autonomous risk determination.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 3995,
+          "source_title": "Pediatric Mental Health Crisis Module",
+          "body": "Supports urgent pediatric mental health assessment.\n\nSupports\n\n• Acute Behavioral Crisis\n• Severe Psychiatric Symptoms\n• Safety Assessment\n• Crisis Escalation\n• Emergency Referral\n• Care Coordination\n• Follow-up\n\nDesigned for rapid escalation to appropriate emergency and specialist services.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3995,
+            "heading_line": 93816,
+            "body_sha256": "02d25380fd16fbae4f65a6bdb8544ac7cf1ee8888d933b68766312578d8dcafb"
+          },
+          "unique_literal_feature_labels": [
+            "Acute Behavioral Crisis",
+            "Severe Psychiatric Symptoms",
+            "Crisis Escalation",
+            "Emergency Referral",
+            "Care Coordination"
+          ]
+        },
+        {
+          "source_id": 3996,
+          "source_title": "Pediatric Suicide & Self-Harm Risk Module",
+          "body": "Supports clinician-led assessment of suicide and self-harm risk.\n\nSupports\n\n• Risk Assessment\n• Protective Factors\n• Safety Planning\n• Follow-up Tracking\n• Family Involvement\n• Emergency Escalation\n\nThe system does not independently determine risk or replace emergency clinical assessment.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 3996,
+            "heading_line": 93838,
+            "body_sha256": "892fd9e29b1746086f56330fa02356726c3066d7fe0e28474dea1bf135416939"
+          },
+          "unique_literal_feature_labels": [
+            "Risk Assessment",
+            "Safety Planning",
+            "Follow-up Tracking",
+            "Family Involvement",
+            "Emergency Escalation"
+          ]
+        },
+        {
+          "source_id": 4840,
+          "source_title": "Pediatric Mental Health Crisis, Safety Planning & Emergency Coordination Module",
+          "body": "Purpose:\nProvide a controlled clinical workflow for urgent pediatric mental-health assessment and crisis coordination.\n\nCore Functions:\n• Crisis Episode\n• Presenting Concern\n• Mental Status\n• Acute Behavioral Change\n• Safety Assessment\n• Protective Factors\n• Family/Guardian Context\n• Medication\n• Medical Context\n• Emergency Assessment\n• Specialist Consultation\n• Safety Plan\n• Disposition\n• Hospitalization\n• Follow-up\n• Continuity-of-Care Handover\n\nSafety Governance:\n• Human Clinical Assessment Required\n• Clear Escalation Pathways\n• Role-based Access\n• Time-stamped Decisions\n• Clinical Accountability\n• Audit Trail\n\nAI Role:\nAI may organize information and identify missing assessment elements but does not make autonomous emergency disposition decisions.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4840,
+            "heading_line": 117986,
+            "body_sha256": "8ee575086f166a3de177bfcbc97e02af1597f7a3b05016366804a350919e7bcb"
+          },
+          "unique_literal_feature_labels": [
+            "Crisis Episode",
+            "Presenting Concern",
+            "Mental Status",
+            "Acute Behavioral Change",
+            "Family/Guardian Context",
+            "Medication",
+            "Medical Context",
+            "Emergency Assessment",
+            "Specialist Consultation",
+            "Disposition",
+            "Continuity-of-Care Handover",
+            "Human Clinical Assessment Required",
+            "Clear Escalation Pathways",
+            "Role-based Access",
+            "Time-stamped Decisions",
+            "Clinical Accountability",
+            "Audit Trail"
+          ]
+        },
+        {
+          "source_id": 5168,
+          "source_title": "Pediatric Mental Health Crisis, Safety Plan & Emergency Coordination Module",
+          "body": "Purpose:\nProvide rapid access to clinician-validated safety information during pediatric mental-health crises.\n\nFunctions:\n• Crisis Episode Registry\n• Current Clinical Concern\n• Previous Crisis Context\n• Safety Assessment\n• Protective Context\n• Safety Plan\n• Emergency Contacts\n• Medication Context\n• Emergency Evaluation\n• Hospitalization\n• Discharge Plan\n• Follow-up\n• Recurrence Context\n\nWorkflow:\nConcern\n→ Qualified Assessment\n→ Clinician-defined Risk Stratification\n→ Safety Intervention\n→ Emergency/Hospital Pathway where required\n→ Discharge\n→ Follow-up\n\nPermissions:\n• Restricted Sensitive Information\n• Emergency-access Policy\n• Guardian-access Rules\n• Access Logging\n\nSafety:\nAutomated scoring never substitutes for qualified crisis assessment or emergency intervention.\n\nMVP:\nCRITICAL\n\nStatus:\nExtended Module v2\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5168,
+            "heading_line": 131289,
+            "body_sha256": "3bde3598bfd173ea5370e1ba62d674481685f1aa749dab618baa851c94319af9"
+          },
+          "unique_literal_feature_labels": [
+            "Crisis Episode Registry",
+            "Current Clinical Concern",
+            "Previous Crisis Context",
+            "Protective Context",
+            "Emergency Contacts",
+            "Medication Context",
+            "Emergency Evaluation",
+            "Discharge Plan",
+            "Recurrence Context",
+            "Restricted Sensitive Information",
+            "Emergency-access Policy",
+            "Guardian-access Rules",
+            "Access Logging"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-MENTAL-CONFIDENTIALITY",
+      "source_ids": [
+        4849,
+        5172
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-MENTAL",
+      "reason": "Telecare/transition and element/encounter-level authorization are different responsibilities linked through one consent owner.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 4849,
+          "source_title": "Pediatric Mental Health Telecare, Privacy & Transition-to-Adult-Care Module",
+          "body": "Purpose:\nSupport remote mental-health care, enhanced privacy governance and structured transition into adult mental-health services.\n\nTelecare Functions:\n• Video Consultation\n• Remote Psychological Follow-up\n• Symptom Assessments\n• Medication Review\n• Therapy Follow-up\n• Guardian Participation Controls\n• Patient-only Session Context where legally appropriate\n• Care Coordination\n\nPrivacy Functions:\n• Age-aware Confidentiality\n• Guardian Access Controls\n• Sensitive Note Segmentation\n• Purpose-limited Access\n• Emergency Override Governance\n• Consent History\n• Audit Trail\n\nTransition Functions:\n• Pediatric Mental Health Summary\n• Diagnosis History\n• Medication Exposure\n• Therapy History\n• Hospitalization History\n• Functional Status\n• Current Care Plan\n• Adult Provider Handover\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4849,
+            "heading_line": 118329,
+            "body_sha256": "bd0f29f180de2d83a4219c73674b4faf0b5752674075307120f9c405bddd4056"
+          },
+          "unique_literal_feature_labels": [
+            "Video Consultation",
+            "Remote Psychological Follow-up",
+            "Symptom Assessments",
+            "Medication Review",
+            "Therapy Follow-up",
+            "Guardian Participation Controls",
+            "Patient-only Session Context where legally appropriate",
+            "Care Coordination",
+            "Age-aware Confidentiality",
+            "Guardian Access Controls",
+            "Sensitive Note Segmentation",
+            "Purpose-limited Access",
+            "Emergency Override Governance",
+            "Consent History",
+            "Audit Trail",
+            "Pediatric Mental Health Summary",
+            "Diagnosis History",
+            "Medication Exposure",
+            "Therapy History",
+            "Hospitalization History",
+            "Functional Status",
+            "Current Care Plan",
+            "Adult Provider Handover"
+          ]
+        },
+        {
+          "source_id": 5172,
+          "source_title": "Pediatric Mental Health Consent, Assent, Confidentiality & Guardian Access Engine",
+          "body": "Purpose:\nProvide the privacy and authorization layer required for pediatric mental-health information.\n\nFunctions:\n• Guardian Authority Context\n• Patient Assent\n• Patient Consent where applicable\n• Confidential Encounter Context\n• Information Segmentation\n• Data-sharing Authorization\n• Authorization Expiration\n• Authorization Revocation\n• Emergency-access Context\n• Legal/Jurisdiction Context\n• Access History\n\nPermissions:\n• Patient\n• Parent/Guardian\n• Psychiatrist\n• Psychologist\n• Pediatrician\n• Emergency Clinician\n• Authorized School Recipient Context\n• Research Access Context\n\nAudit:\n• Who Accessed\n• What Was Accessed\n• Why\n• When\n• Disclosure Context\n• Override Context\n\nArchitecture Principle:\nAccess is determined at data-element and encounter level where required rather than treating the entire pediatric record as universally visible.\n\nMVP:\nCRITICAL\n\nStatus:\nExtended Module v2\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5172,
+            "heading_line": 131439,
+            "body_sha256": "05e793e77e96f45a357b49de8e843ac692321fa02360a0ba763398c31e44db0b"
+          },
+          "unique_literal_feature_labels": [
+            "Guardian Authority Context",
+            "Patient Assent",
+            "Patient Consent where applicable",
+            "Confidential Encounter Context",
+            "Information Segmentation",
+            "Data-sharing Authorization",
+            "Authorization Expiration",
+            "Authorization Revocation",
+            "Emergency-access Context",
+            "Legal/Jurisdiction Context",
+            "Access History",
+            "Patient",
+            "Parent/Guardian",
+            "Psychiatrist",
+            "Psychologist",
+            "Pediatrician",
+            "Emergency Clinician",
+            "Authorized School Recipient Context",
+            "Research Access Context",
+            "Who Accessed",
+            "What Was Accessed",
+            "Why",
+            "When",
+            "Disclosure Context",
+            "Override Context"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-MENTAL-HUB",
+      "source_ids": [
+        4000,
+        4850,
+        5175
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-MENTAL",
+      "reason": "Retain developmental/substance/family care, restricted summaries, passport and conditional adult transfer; no universal guardian or school access.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 4000,
+          "source_title": "Clinical Pediatric Mental Health Intelligence Hub",
+          "body": "Coordinates the complete pediatric mental health ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Pediatrics\n• Child Psychiatry\n• Psychology\n• Neurology\n• Developmental Medicine\n• Psychopharmacology\n• Crisis Care\n• Substance Use Care\n• Family Support\n• School Collaboration\n• Telemedicine\n• Clinical Research\n\nProvides longitudinal, family-centered and multidisciplinary pediatric mental health intelligence across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4000,
+            "heading_line": 93929,
+            "body_sha256": "36b906aa6bc464e9d4b8d8f2bebec96ab4c88e3c3c9332f6d09477352d86a925"
+          },
+          "unique_literal_feature_labels": [
+            "Child Psychiatry",
+            "Developmental Medicine",
+            "Substance Use Care",
+            "Family Support",
+            "School Collaboration",
+            "Telemedicine",
+            "Clinical Research"
+          ]
+        },
+        {
+          "source_id": 4850,
+          "source_title": "Clinical Pediatric & Adolescent Mental Health Intelligence Hub",
+          "body": "Purpose:\nServe as the master orchestration layer for the complete EDHT pediatric and adolescent mental-health ecosystem.\n\nCoordinates:\n• Child & Adolescent Psychiatry\n• Psychology\n• Mental Status Assessment\n• Anxiety Disorders\n• Mood Disorders\n• ADHD\n• Autism-related Health Coordination\n• Learning and Cognitive Function\n• Neuropsychology\n• Behavioral Disorders\n• Trauma-related Mental Health\n• Eating Disorders\n• Sleep and Behavioral Health\n• Severe Mental Illness\n• Crisis Care\n• Psychotherapy\n• Psychopharmacology\n• School Mental Health\n• Family and Social Support\n• Medical-Psychiatric Comorbidity\n• Adolescent Substance-related Health\n• Telecare\n• Transition to Adult Care\n\nDigital Capabilities:\n• Artificial Intelligence\n• Digital Twin\n• Remote Assessment\n• Telepsychiatry\n• Patient/Guardian Interface\n• Clinical Alerts\n• Privacy-aware Documentation\n• Outcomes Registry\n• Research Data Layer\n• Cross-Border Interoperability\n\nPlatform Functions:\n• Unified Mental Health Timeline\n• Structured Psychiatric Documentation\n• Psychological Assessment Integration\n• Medication Safety\n• Therapy Tracking\n• Functional Outcome Monitoring\n• Multidisciplinary Coordination\n• Role-based Access\n• Age-aware Privacy\n• Consent Management\n• Data Provenance\n• Clinical Decision Traceability\n• Auditability\n\nMVP Foundation:\n• Mental Health Diagnosis Registry\n• Structured Assessment\n• Medication Record\n• Psychological Treatment Record\n• Functional Status\n• Safety-plan Storage\n• Clinical Alerts\n• Privacy Controls\n• Teleconsultation\n• Medical Record Integration\n• Interoperability\n\nExpansion Layers:\n• Advanced Neuropsychology Analytics\n• Digital Mental Health Monitoring\n• Predictive Clinical Support\n• Digital Twin\n• School-system Integration\n• International Mental Health Registries\n• Research Infrastructure\n\nArchitecture Principle:\nMental health is treated as an integrated component of the lifelong EDHT medical record while preserving stricter privacy and access controls for sensitive psychiatric information.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4850,
+            "heading_line": 118368,
+            "body_sha256": "4e688f14246afcdcf1a9ac3254b32ec53aa6405638711c3fdd87c7d1204322f5"
+          },
+          "unique_literal_feature_labels": [
+            "Child & Adolescent Psychiatry",
+            "Mental Status Assessment",
+            "Anxiety Disorders",
+            "Autism-related Health Coordination",
+            "Learning and Cognitive Function",
+            "Neuropsychology",
+            "Trauma-related Mental Health",
+            "Eating Disorders",
+            "Sleep and Behavioral Health",
+            "School Mental Health",
+            "Family and Social Support",
+            "Medical-Psychiatric Comorbidity",
+            "Adolescent Substance-related Health",
+            "Telecare",
+            "Transition to Adult Care",
+            "Remote Assessment",
+            "Telepsychiatry",
+            "Patient/Guardian Interface",
+            "Clinical Alerts",
+            "Privacy-aware Documentation",
+            "Outcomes Registry",
+            "Research Data Layer",
+            "Unified Mental Health Timeline",
+            "Structured Psychiatric Documentation",
+            "Psychological Assessment Integration",
+            "Therapy Tracking",
+            "Functional Outcome Monitoring",
+            "Multidisciplinary Coordination",
+            "Role-based Access",
+            "Age-aware Privacy",
+            "Consent Management",
+            "Auditability",
+            "Mental Health Diagnosis Registry",
+            "Structured Assessment",
+            "Medication Record",
+            "Psychological Treatment Record",
+            "Safety-plan Storage",
+            "Privacy Controls",
+            "Teleconsultation",
+            "Medical Record Integration",
+            "Advanced Neuropsychology Analytics",
+            "Digital Mental Health Monitoring",
+            "Predictive Clinical Support",
+            "School-system Integration",
+            "International Mental Health Registries"
+          ]
+        },
+        {
+          "source_id": 5175,
+          "source_title": "Clinical Pediatric Mental Health Digital Twin, Passport & Intelligence Hub",
+          "body": "Purpose:\nServe as the master orchestration layer connecting pediatric psychiatry, psychology, behavioral health and neurodevelopment with the broader EDHT ecosystem.\n\nCoordinates:\n• Mental Health Screening\n• Psychiatric Assessment\n• Mental Status Examination\n• Anxiety\n• Depression\n• Mood Disorders\n• OCD\n• Trauma-related Care\n• ADHD\n• Autism-related Mental Health\n• Behavioral Disorders\n• Severe Mental Illness\n• Eating-related Psychiatry\n• Sleep-Psychiatry\n• Substance-use Care\n• Psychopharmacology\n• Psychotherapy\n• Crisis Care\n• School Function\n• Family Context\n• Inpatient Psychiatry\n• Consent and Confidentiality\n• Outcomes\n• Transition Care\n\nDigital Twin Components:\n• Mental-health Timeline\n• Symptom Trajectory\n• Functional Status\n• Treatment Exposure\n• Medication Response\n• Therapy History\n• Crisis History\n• School Function\n• Social Function\n• Patient-reported Outcomes\n\nMental Health Passport:\n• Clinically Confirmed Diagnoses\n• Current Medication\n• Significant Medication Reactions\n• Current Care Team\n• Clinician-approved Crisis/Safety Information\n• Communication Needs\n• Relevant Functional Baseline\n• Follow-up Requirements\n\nPlatform Functions:\n• Unified Mental-health Timeline\n• Sensitive-data Segmentation\n• Granular Permissions\n• Consent/Assent\n• Guardian-access Management\n• Medication Safety\n• Therapy Coordination\n• Crisis Continuity\n• Outcome Monitoring\n• Multidisciplinary Collaboration\n• Data Provenance\n• Clinical Decision Traceability\n• Cross-Border Interoperability\n\nInteroperability:\n• Pediatrics\n• Neurology\n• Developmental Pediatrics\n• Emergency Medicine\n• Pharmacy\n• Sleep Medicine\n• Rehabilitation\n• School Health where authorized\n• Adult Mental Health\n\nAI:\n• Longitudinal Clinical Summary\n• Treatment-response Organization\n• Care-gap Detection\n• Documentation Support\n• Functional Trend Analysis\n\nMVP Foundation:\n• Diagnosis Registry\n• Assessment\n• Mental Status\n• Treatment Plan\n• Medication\n• Psychotherapy Record\n• Crisis/Safety Plan\n• Follow-up\n• Consent/Assent\n• Confidentiality Controls\n• Guardian Permissions\n• Audit Trail\n• Interoperability\n\nExpansion Layers:\n• Advanced Mental-health AI\n• Mental-health Digital Twin\n• Remote Patient-reported Monitoring\n• Multimodal Outcome Analytics\n• Digital Phenotyping Research\n• Population Mental-health Analytics\n• International Outcomes Registries\n• Research Infrastructure\n\nArchitecture Principle:\nMental-health information is part of the longitudinal health record but receives stronger privacy, consent and access controls than ordinary clinical data where clinically and legally required.\n\nTransition Principle:\nThe pediatric record supports structured transition into adult mental-health services without automatically transferring information beyond applicable consent and legal requirements.\n\nStatus:\nExtended Module v2\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5175,
+            "heading_line": 131570,
+            "body_sha256": "9370b03bedfb38084073327790a5b91aea0db80b34a38f4b25ae3678047e071d"
+          },
+          "unique_literal_feature_labels": [
+            "Mental Health Screening",
+            "Psychiatric Assessment",
+            "Mental Status Examination",
+            "Anxiety",
+            "Depression",
+            "OCD",
+            "Trauma-related Care",
+            "Autism-related Mental Health",
+            "Eating-related Psychiatry",
+            "Sleep-Psychiatry",
+            "Substance-use Care",
+            "School Function",
+            "Family Context",
+            "Inpatient Psychiatry",
+            "Consent and Confidentiality",
+            "Outcomes",
+            "Transition Care",
+            "Mental-health Timeline",
+            "Symptom Trajectory",
+            "Treatment Exposure",
+            "Medication Response",
+            "Therapy History",
+            "Crisis History",
+            "Social Function",
+            "Patient-reported Outcomes",
+            "Clinically Confirmed Diagnoses",
+            "Current Medication",
+            "Significant Medication Reactions",
+            "Current Care Team",
+            "Clinician-approved Crisis/Safety Information",
+            "Communication Needs",
+            "Relevant Functional Baseline",
+            "Follow-up Requirements",
+            "Unified Mental-health Timeline",
+            "Sensitive-data Segmentation",
+            "Granular Permissions",
+            "Consent/Assent",
+            "Guardian-access Management",
+            "Therapy Coordination",
+            "Crisis Continuity",
+            "Outcome Monitoring",
+            "Multidisciplinary Collaboration",
+            "Developmental Pediatrics",
+            "Emergency Medicine",
+            "Pharmacy",
+            "Sleep Medicine",
+            "Rehabilitation",
+            "School Health where authorized",
+            "Adult Mental Health",
+            "Longitudinal Clinical Summary",
+            "Treatment-response Organization",
+            "Care-gap Detection",
+            "Documentation Support",
+            "Functional Trend Analysis",
+            "Diagnosis Registry",
+            "Assessment",
+            "Mental Status",
+            "Treatment Plan",
+            "Medication",
+            "Psychotherapy Record",
+            "Crisis/Safety Plan",
+            "Follow-up",
+            "Confidentiality Controls",
+            "Guardian Permissions",
+            "Audit Trail",
+            "Advanced Mental-health AI",
+            "Mental-health Digital Twin",
+            "Remote Patient-reported Monitoring",
+            "Multimodal Outcome Analytics",
+            "Digital Phenotyping Research",
+            "Population Mental-health Analytics",
+            "International Outcomes Registries"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-ALLERGY-DRUG-LABEL",
+      "source_ids": [
+        1115,
+        4416,
+        4418
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-ALLERGY",
+      "reason": "Drug record, diagnostic status and delabeling lifecycle coexist; original label/evidence/specialist decision/history remain attributable.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 1115,
+          "source_title": "Drug Allergy Registry",
+          "body": "Tracks medication allergies.\n\nSupports\n\n• Drug\n• Reaction\n• Severity\n• Alternatives\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 1115,
+            "heading_line": 39183,
+            "body_sha256": "b6901f1f569169bbb433375a039d529ad2375b80341da1ac7bd7456b06dad3bc"
+          },
+          "unique_literal_feature_labels": [
+            "Drug",
+            "Alternatives"
+          ]
+        },
+        {
+          "source_id": 4416,
+          "source_title": "Pediatric Drug Allergy Registry",
+          "body": "Maintains structured suspected and confirmed medication allergy records.\n\nSupports\n\n• Medication\n• Drug Class\n• Reaction\n• Timing\n• Severity\n• Treatment\n• Diagnostic Evaluation\n• Confirmation Status\n\nPrevents unverified allergy labels from being treated as equivalent to confirmed allergy.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4416,
+            "heading_line": 103192,
+            "body_sha256": "1dde648249ada4591f700084570943953c9b2e3867dd38208a65bc70ab1faceb"
+          },
+          "unique_literal_feature_labels": [
+            "Medication",
+            "Drug Class",
+            "Timing",
+            "Treatment",
+            "Diagnostic Evaluation",
+            "Confirmation Status"
+          ]
+        },
+        {
+          "source_id": 4418,
+          "source_title": "Pediatric Drug Allergy Delabeling Module",
+          "body": "Supports professionally verified removal or modification of incorrect drug-allergy labels.\n\nMaintains\n\n• Original Label\n• Diagnostic Evidence\n• Challenge Results\n• Specialist Decision\n• New Status\n• Date\n• Audit History\n\nPrevious records remain traceable.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4418,
+            "heading_line": 103235,
+            "body_sha256": "d1f85f28197a78db7b128eefa4b83b723c4d5aa5b9e4e58f56dcb7a43aef57db"
+          },
+          "unique_literal_feature_labels": [
+            "Original Label",
+            "Diagnostic Evidence",
+            "Challenge Results",
+            "Specialist Decision",
+            "New Status",
+            "Date",
+            "Audit History"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-IMMUNOTHERAPY-HOMONYM",
+      "source_ids": [
+        996,
+        1118
+      ],
+      "classification": "DISTINCT_CAPABILITIES",
+      "target_profile": null,
+      "reason": "Same title is a false merge candidate: 996 describes IVIG/SCIG/biological therapy; 1118 describes allergen SCIT/SLIT. Shared administration infrastructure does not make therapies interchangeable.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 996,
+          "source_title": "Pediatric Immunotherapy Registry",
+          "body": "# Pediatric Immunotherapy Registry\n\nTracks immunotherapy.\n\nSupports\n\n• IVIG\n\n• SCIG\n\n• Biological Therapy\n\n• Response Monitoring\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 996,
+            "heading_line": 37007,
+            "body_sha256": "445151d6537d103862787081442448e6c982b40c97d1a197ea7c299a5764d7e1"
+          },
+          "unique_literal_feature_labels": [
+            "IVIG",
+            "SCIG",
+            "Biological Therapy",
+            "Response Monitoring"
+          ]
+        },
+        {
+          "source_id": 1118,
+          "source_title": "Pediatric Immunotherapy Registry",
+          "body": "Tracks allergen immunotherapy.\n\nSupports\n\n• SCIT\n• SLIT\n• Response\n• Side Effects\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 1118,
+            "heading_line": 39234,
+            "body_sha256": "a18898343a97aac1f4f7e4119157f89c203a2097c959b6379f3130d6bda8ac7a"
+          },
+          "unique_literal_feature_labels": [
+            "SCIT",
+            "SLIT",
+            "Response",
+            "Side Effects"
+          ]
+        }
+      ],
+      "retention_status": "RETAIN_SEPARATE_THERAPY_TYPES",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-ALLERGY-HUB",
+      "source_ids": [
+        1120,
+        4401,
+        4450
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-ALLERGY",
+      "reason": "Retain allergy dashboard, immune integration, vaccine clearance, anaphylaxis, immunotherapy and transition across shared owners.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 1120,
+          "source_title": "Comprehensive Pediatric Allergy Dashboard",
+          "body": "Provides a complete overview of pediatric allergy care.\n\nDisplays\n\n• Allergies\n• Laboratory Results\n• Immunotherapy\n• Emergency History\n• AI Recommendations\n\nActs as the central pediatric allergy workspace.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 1120,
+            "heading_line": 39268,
+            "body_sha256": "d360722177e643e3a58cf32236448923d95301b68085f47779460f6514eca126"
+          },
+          "unique_literal_feature_labels": [
+            "Allergies",
+            "Laboratory Results",
+            "Emergency History",
+            "AI Recommendations"
+          ]
+        },
+        {
+          "source_id": 4401,
+          "source_title": "Clinical Pediatric Allergy & Immunology Platform Core Engine",
+          "body": "Central platform for pediatric allergy and clinical immunology.\n\nSupports\n\n• Food Allergy\n• Drug Allergy\n• Anaphylaxis\n• Respiratory Allergy\n• Allergic Asthma\n• Insect Venom Allergy\n• Primary Immunodeficiency\n• Immune Dysregulation\n• Immunotherapy\n• Vaccination Safety\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Laboratory Medicine\n• Genetics\n• Pulmonology\n• Dermatology\n• Gastroenterology\n• Vaccination Intelligence\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4401,
+            "heading_line": 102851,
+            "body_sha256": "5927214b51292ac8dba63858ac80a83f407b76b01a83589dd1feea1c9104d4a8"
+          },
+          "unique_literal_feature_labels": [
+            "Insect Venom Allergy",
+            "Vaccination Safety",
+            "Laboratory Medicine",
+            "Genetics",
+            "Pulmonology",
+            "Dermatology",
+            "Gastroenterology"
+          ]
+        },
+        {
+          "source_id": 4450,
+          "source_title": "Clinical Pediatric Allergy & Immunology Intelligence Hub",
+          "body": "Coordinates the complete pediatric allergy and clinical immunology ecosystem.\n\nIntegrates\n\n• Food Allergy\n• Drug Allergy\n• Vaccine Allergy\n• Anaphylaxis\n• Respiratory Allergy\n• Allergic Asthma\n• Allergen Immunotherapy\n• Primary Immunodeficiency\n• Immune Dysregulation\n• Immunogenetics\n• Infection Prevention\n• Vaccination Intelligence\n• Artificial Intelligence\n• Digital Twin\n• Emergency Medical Passport\n• Telemedicine\n• Adult-care Transition\n\nProvides lifelong allergy and immune intelligence across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4450,
+            "heading_line": 103927,
+            "body_sha256": "c7d6267fb0bb04338bd8693d14148902cc5e8968e23eb298a627af38a7a9ed08"
+          },
+          "unique_literal_feature_labels": [
+            "Vaccine Allergy",
+            "Allergen Immunotherapy",
+            "Immunogenetics",
+            "Infection Prevention",
+            "Emergency Medical Passport",
+            "Telemedicine",
+            "Adult-care Transition"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-IMMUNE-REGISTRY",
+      "source_ids": [
+        994,
+        4431,
+        5004
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-IMMUNOLOGY",
+      "reason": "Named SCID/CVID/IgA/CGD conditions plus suspected/confirmed, genetic, infection, malignancy and treatment contexts remain represented.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 994,
+          "source_title": "Primary Immunodeficiency Registry",
+          "body": "# Primary Immunodeficiency Registry\n\nStores congenital immune disorders.\n\nSupports\n\n• SCID\n\n• CVID\n\n• IgA Deficiency\n\n• Chronic Granulomatous Disease\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 994,
+            "heading_line": 36963,
+            "body_sha256": "565ccda31a333d9f4ac28a1cd457e05c84944a0018144c00d25ded98a7859b73"
+          },
+          "unique_literal_feature_labels": [
+            "SCID",
+            "CVID",
+            "IgA Deficiency",
+            "Chronic Granulomatous Disease"
+          ]
+        },
+        {
+          "source_id": 4431,
+          "source_title": "Pediatric Inborn Errors of Immunity Registry",
+          "body": "Supports children with primary immunodeficiencies and other inborn errors of immunity.\n\nTracks\n\n• Diagnosis\n• Phenotype\n• Infection History\n• Immune Function\n• Autoimmunity\n• Genetics\n• Treatment\n• Complications\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4431,
+            "heading_line": 103513,
+            "body_sha256": "226a9a08a25da616b33dc95f1d5e507bc0de3645a1e68c22740e265f9cbd4ad2"
+          },
+          "unique_literal_feature_labels": [
+            "Diagnosis",
+            "Phenotype",
+            "Immune Function",
+            "Treatment",
+            "Complications",
+            "Outcomes"
+          ]
+        },
+        {
+          "source_id": 5004,
+          "source_title": "Pediatric Primary Immunodeficiency / Inborn Errors of Immunity Registry Module",
+          "body": "Purpose:\nProvide lifelong structured management of confirmed or suspected inborn errors of immunity.\n\nCore Functions:\n• Clinical Diagnosis\n• Molecular Diagnosis\n• Immune Phenotype\n• Genetic Variant\n• Family History\n• Infection History\n• Autoimmunity\n• Autoinflammation\n• Lymphoproliferation\n• Malignancy Risk Context\n• Immunoglobulin Replacement\n• Antimicrobial Prophylaxis\n• Biological Therapy\n• Transplant Context\n• Gene Therapy Context\n• Long-term Surveillance\n\nIntegrations:\n• Immunology\n• Genetics\n• Infectious Disease\n• Hematology\n• Oncology\n• Rheumatology\n• Transplantation\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5004,
+            "heading_line": 124590,
+            "body_sha256": "5f562ab293842090172db469f9e1d5126a45a213c9071d4c2b63692c812e6547"
+          },
+          "unique_literal_feature_labels": [
+            "Clinical Diagnosis",
+            "Molecular Diagnosis",
+            "Immune Phenotype",
+            "Genetic Variant",
+            "Family History",
+            "Autoinflammation",
+            "Lymphoproliferation",
+            "Malignancy Risk Context",
+            "Immunoglobulin Replacement",
+            "Antimicrobial Prophylaxis",
+            "Biological Therapy",
+            "Transplant Context",
+            "Gene Therapy Context",
+            "Long-term Surveillance",
+            "Immunology",
+            "Infectious Disease",
+            "Hematology",
+            "Oncology",
+            "Rheumatology",
+            "Transplantation"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-IMMUNE-PROFILE",
+      "source_ids": [
+        4444,
+        5002
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-IMMUNOLOGY",
+      "reason": "5002 extends baseline/recovery and multisystem phenotype; retain explicit vaccine-response and test-type detail from 4444.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 4444,
+          "source_title": "Pediatric Immune Function Longitudinal Digital Profile",
+          "body": "Creates a longitudinal representation of immune function.\n\nIntegrates\n\n• Immunoglobulins\n• Cellular Immunity\n• Complement\n• Functional Tests\n• Vaccine Responses\n• Infection History\n• Treatment\n• Genetics\n\nSupports temporal comparison across childhood.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4444,
+            "heading_line": 103790,
+            "body_sha256": "39bfcf741f2d2d449523e237685a10da11fc6d42443913cb4f6bbc33805aea79"
+          },
+          "unique_literal_feature_labels": [
+            "Immunoglobulins",
+            "Functional Tests",
+            "Vaccine Responses",
+            "Infection History",
+            "Treatment",
+            "Genetics"
+          ]
+        },
+        {
+          "source_id": 5002,
+          "source_title": "Pediatric Immune Phenotype & Longitudinal Immunology Profile Module",
+          "body": "Purpose:\nCreate a continuously updated structured representation of pediatric immune function.\n\nCore Functions:\n• Immune Phenotype\n• Infection Phenotype\n• Autoimmune Phenotype\n• Autoinflammatory Phenotype\n• Allergic Phenotype\n• Lymphoproliferation Context\n• Growth Context\n• Family History\n• Immunoglobulin Profile\n• Cellular Immunity\n• Complement\n• Functional Testing\n• Genetic Findings\n• Treatment Exposure\n• Longitudinal Immune Status\n\nFunctions:\n• Baseline Immune Profile\n• Historical Comparison\n• Treatment-response Tracking\n• Immune Deterioration Context\n• Immune Recovery Context\n• Multisystem Correlation\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5002,
+            "heading_line": 124515,
+            "body_sha256": "cadabea3f11393b8a0c4e5b50154c4e866845672baf9964e04c085198cf7dc11"
+          },
+          "unique_literal_feature_labels": [
+            "Immune Phenotype",
+            "Infection Phenotype",
+            "Autoimmune Phenotype",
+            "Autoinflammatory Phenotype",
+            "Allergic Phenotype",
+            "Lymphoproliferation Context",
+            "Growth Context",
+            "Family History",
+            "Immunoglobulin Profile",
+            "Functional Testing",
+            "Genetic Findings",
+            "Treatment Exposure",
+            "Longitudinal Immune Status",
+            "Baseline Immune Profile",
+            "Historical Comparison",
+            "Treatment-response Tracking",
+            "Immune Deterioration Context",
+            "Immune Recovery Context",
+            "Multisystem Correlation"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-IMMUNE-REPLACEMENT",
+      "source_ids": [
+        996,
+        4441,
+        5015
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-IMMUNOLOGY",
+      "reason": "IVIG/SCIG therapy shares product/route/exposure tracking; retain biological therapy as a separate subtype, infusion reactions, home care and product changes.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 996,
+          "source_title": "Pediatric Immunotherapy Registry",
+          "body": "# Pediatric Immunotherapy Registry\n\nTracks immunotherapy.\n\nSupports\n\n• IVIG\n\n• SCIG\n\n• Biological Therapy\n\n• Response Monitoring\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 996,
+            "heading_line": 37007,
+            "body_sha256": "445151d6537d103862787081442448e6c982b40c97d1a197ea7c299a5764d7e1"
+          },
+          "unique_literal_feature_labels": [
+            "IVIG",
+            "SCIG",
+            "Biological Therapy",
+            "Response Monitoring"
+          ]
+        },
+        {
+          "source_id": 4441,
+          "source_title": "Pediatric Immunoglobulin Replacement Therapy Module",
+          "body": "Supports clinician-supervised immunoglobulin replacement.\n\nTracks\n\n• Product\n• Route\n• Dose\n• Administration\n• Immunoglobulin Levels\n• Infection Frequency\n• Adverse Reactions\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4441,
+            "heading_line": 103726,
+            "body_sha256": "f3f79f0cbebd6a9b795389a5e160c847fb6a4b41a4b544ee4d4fbe1186a2dadd"
+          },
+          "unique_literal_feature_labels": [
+            "Administration",
+            "Immunoglobulin Levels",
+            "Infection Frequency",
+            "Adverse Reactions"
+          ]
+        },
+        {
+          "source_id": 5015,
+          "source_title": "Pediatric Immunoglobulin Replacement Therapy Management Module",
+          "body": "Purpose:\nManage intravenous and subcutaneous immunoglobulin replacement across the complete treatment lifecycle.\n\nCore Functions:\n• Treatment Indication\n• Product\n• Route\n• Dose\n• Frequency\n• Weight Context\n• Infusion Schedule\n• Pre-treatment Laboratory Context\n• Infection Burden\n• Trough Level Context\n• Home Therapy\n• Administration Record\n• Adverse Reaction\n• Treatment Response\n• Product Change\n• Long-term Outcomes\n\nSafety Functions:\n• Product Traceability\n• Infusion Reaction History\n• Allergy Context\n• Dose History\n• Missed Treatment Detection\n• Clinician-defined Monitoring\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5015,
+            "heading_line": 124970,
+            "body_sha256": "6c8fe82e1adfe22165131173df221989948b70a4a2771d26eb5e598612b00e13"
+          },
+          "unique_literal_feature_labels": [
+            "Treatment Indication",
+            "Frequency",
+            "Weight Context",
+            "Infusion Schedule",
+            "Pre-treatment Laboratory Context",
+            "Infection Burden",
+            "Trough Level Context",
+            "Home Therapy",
+            "Administration Record",
+            "Adverse Reaction",
+            "Product Change",
+            "Long-term Outcomes",
+            "Product Traceability",
+            "Infusion Reaction History",
+            "Allergy Context",
+            "Dose History",
+            "Missed Treatment Detection",
+            "Clinician-defined Monitoring"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-IMMUNE-SCREENING",
+      "source_ids": [
+        4435,
+        5007
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "target_profile": "PRF-PED-IMMUNOLOGY",
+      "reason": "Combined-immunity scope and neonatal SCID screening require linked but distinct screening, confirmation, escalation and definitive-treatment states.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 4435,
+          "source_title": "Pediatric Combined Immunodeficiency Module",
+          "body": "Supports severe and other combined immunodeficiency disorders.\n\nIntegrates\n\n• Newborn Screening\n• Immune Phenotype\n• Infection\n• Genetics\n• Isolation Considerations\n• Prophylaxis\n• Immunoglobulin Therapy\n• Transplantation\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4435,
+            "heading_line": 103599,
+            "body_sha256": "6dc08973593cabb1ab566d9507766a79e6c199e63f1e1af24d3b8bc0a240d16f"
+          },
+          "unique_literal_feature_labels": [
+            "Newborn Screening",
+            "Immune Phenotype",
+            "Infection",
+            "Genetics",
+            "Isolation Considerations",
+            "Immunoglobulin Therapy",
+            "Transplantation"
+          ]
+        },
+        {
+          "source_id": 5007,
+          "source_title": "Pediatric Severe Combined Immunodeficiency & Newborn Immune Screening Module",
+          "body": "Purpose:\nCoordinate newborn screening, urgent diagnostic assessment and definitive care for severe combined immunodeficiency and related conditions.\n\nCore Functions:\n• Newborn Screening Result\n• Screening Date\n• Abnormal Screening Follow-up\n• Lymphocyte Count\n• T-cell Assessment\n• Molecular Diagnostics\n• Genetic Testing\n• Infection Prevention Context\n• Isolation Precaution Context\n• Vaccine Safety Context\n• Prophylaxis\n• Immunoglobulin Replacement\n• Transplant Evaluation\n• Gene Therapy Context\n• Definitive Treatment\n• Immune Reconstitution\n\nSafety Functions:\n• Abnormal Screen Escalation\n• Follow-up Completion Tracking\n• Live-vaccine Safety Alert\n• Infection Risk Context\n• Emergency Specialist Referral\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5007,
+            "heading_line": 124694,
+            "body_sha256": "77a62eb503cba8c3e1e5a89921746213852b84e8c86a32969c6a886611886160"
+          },
+          "unique_literal_feature_labels": [
+            "Newborn Screening Result",
+            "Screening Date",
+            "Abnormal Screening Follow-up",
+            "Lymphocyte Count",
+            "T-cell Assessment",
+            "Molecular Diagnostics",
+            "Genetic Testing",
+            "Infection Prevention Context",
+            "Isolation Precaution Context",
+            "Vaccine Safety Context",
+            "Immunoglobulin Replacement",
+            "Transplant Evaluation",
+            "Gene Therapy Context",
+            "Definitive Treatment",
+            "Immune Reconstitution",
+            "Abnormal Screen Escalation",
+            "Follow-up Completion Tracking",
+            "Live-vaccine Safety Alert",
+            "Infection Risk Context",
+            "Emergency Specialist Referral"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    },
+    {
+      "id": "PED2-IMMUNE-VACCINATION",
+      "source_ids": [
+        4443,
+        5014,
+        5020
+      ],
+      "classification": "SHARED_CAPABILITY",
+      "target_profile": "PRF-PED-IMMUNOLOGY",
+      "reason": "Immune safety, antibody-response assessment and post-transplant revaccination are distinct workflows under shared vaccination integration, not duplicate eligibility engines.",
+      "apply": false,
+      "source_records": [
+        {
+          "source_id": 4443,
+          "source_title": "Pediatric Immunology Vaccination Safety Engine",
+          "body": "Connects immune status with the EDHT Global Vaccination Intelligence Platform.\n\nEvaluates\n\n• Immune Diagnosis\n• Immune Function\n• Current Treatment\n• Vaccine Type\n• Previous Vaccinations\n• Previous Reactions\n• National Guidance\n• Specialist Decisions\n\nCan flag vaccinations requiring immunology review.\n\nStatus\n\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 4443,
+            "heading_line": 103767,
+            "body_sha256": "fdf2c7c82c820a18d0d429aa1ab4db96fa95ffb20c467c3f02cf5e97a236a35e"
+          },
+          "unique_literal_feature_labels": [
+            "Immune Diagnosis",
+            "Immune Function",
+            "Current Treatment",
+            "Vaccine Type",
+            "Previous Vaccinations",
+            "Previous Reactions",
+            "National Guidance",
+            "Specialist Decisions"
+          ]
+        },
+        {
+          "source_id": 5014,
+          "source_title": "Pediatric Vaccine Immunology & Protective Antibody Response Module",
+          "body": "Purpose:\nConnect vaccination history with clinically indicated immune-response assessment.\n\nCore Functions:\n• Vaccine History\n• Vaccine Product\n• Dose Sequence\n• Vaccination Date\n• National Calendar Context\n• Specific Antibody Testing\n• Pre/Post Vaccination Testing Context\n• Protective Response Context\n• Waning Response Context\n• Immune Deficiency Context\n• Revaccination Context\n• Specialist Recommendation\n• Contraindication Context\n• Temporary Restriction\n• Follow-up\n\nIntegrations:\n• Immunology\n• Vaccination Intelligence\n• Infectious Disease\n• Laboratory Medicine\n• Medical Passport\n\nSafety:\nLaboratory immune-response data does not automatically determine vaccination eligibility without clinical interpretation.\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5014,
+            "heading_line": 124933,
+            "body_sha256": "a87c440e69aba86734f8a20b08cd3b85c5c5189828f606b36c2a50d61caf0be5"
+          },
+          "unique_literal_feature_labels": [
+            "Vaccine History",
+            "Vaccine Product",
+            "Vaccination Date",
+            "National Calendar Context",
+            "Specific Antibody Testing",
+            "Pre/Post Vaccination Testing Context",
+            "Protective Response Context",
+            "Waning Response Context",
+            "Immune Deficiency Context",
+            "Revaccination Context",
+            "Specialist Recommendation",
+            "Contraindication Context",
+            "Temporary Restriction",
+            "Follow-up",
+            "Laboratory Medicine",
+            "Medical Passport"
+          ]
+        },
+        {
+          "source_id": 5020,
+          "source_title": "Pediatric Immune Reconstitution & Post-Transplant Revaccination Module",
+          "body": "Purpose:\nManage recovery of immune competence and clinician-approved revaccination after transplantation or major immune-modifying treatment.\n\nCore Functions:\n• Treatment/Transplant History\n• Immune Recovery Timeline\n• Lymphocyte Subsets\n• Immunoglobulin Levels\n• Functional Immune Testing\n• Previous Vaccination History\n• Vaccine Eligibility Review\n• National Calendar Mapping\n• Revaccination Schedule\n• Dose Sequence\n• Temporary Restrictions\n• Live-vaccine Restriction Context\n• Antibody Response Context\n• Completion Tracking\n\nSafety:\nVaccine recommendations remain dependent on current immune status, specialist review and applicable national guidance.\n\nIntegrations:\n• Immunology\n• Transplantation\n• Vaccination Intelligence\n• Infectious Disease\n\nStatus:\nDocumentation\n\n---",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "original_id": 5020,
+            "heading_line": 125154,
+            "body_sha256": "f663347c077e0db0ac36d1790abde1bf99bbf75d2eef9127ed2cf114ab600397"
+          },
+          "unique_literal_feature_labels": [
+            "Treatment/Transplant History",
+            "Immune Recovery Timeline",
+            "Lymphocyte Subsets",
+            "Immunoglobulin Levels",
+            "Functional Immune Testing",
+            "Previous Vaccination History",
+            "Vaccine Eligibility Review",
+            "National Calendar Mapping",
+            "Revaccination Schedule",
+            "Temporary Restrictions",
+            "Live-vaccine Restriction Context",
+            "Antibody Response Context",
+            "Completion Tracking",
+            "Transplantation"
+          ]
+        }
+      ],
+      "retention_status": "RETAINED_IN_DRAFT_APPENDIX",
+      "migrated_requirements": [],
+      "approved_migration": false,
+      "timestamp": "2026-09-14"
+    }
+  ]
+}
