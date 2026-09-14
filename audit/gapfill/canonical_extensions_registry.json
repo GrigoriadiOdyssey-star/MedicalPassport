@@ -1,0 +1,277 @@
+{
+  "schema_version": 2,
+  "edition": "2026-09-14",
+  "pass": "GAPFILL-01",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "7f1e8e84a4e5a3294cab525cea5f818b0a47d2e9",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "extensions": [
+    {
+      "id": "EXT-PHARM",
+      "key": "PHARM",
+      "title": "Precision Pharmacology / Drug Intelligence",
+      "canonical_owner": "CAP-CDS",
+      "document": "precision_pharmacology_architecture.md",
+      "search": "pharmaco|drug response|drug interaction|precision.*medicine|medicines table|medicines api|adverse|nephrotox|medication response",
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-AI",
+        "CAP-TWIN",
+        "CAP-CONSENT"
+      ],
+      "requirements": [
+        "Patient covariates and missingness",
+        "Medication exposure incl OTC/supplements",
+        "Renal/hepatic function and pediatric/pregnancy context",
+        "Genomic/PGx phenotype and uncertainty",
+        "Organ toxicity and adverse reaction evidence",
+        "Response model/scenario comparison",
+        "Clinician review boundary",
+        "Longitudinal response and governed learning"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    },
+    {
+      "id": "EXT-TWIN",
+      "key": "TWIN",
+      "title": "Seven-level Digital Twin",
+      "canonical_owner": "CAP-TWIN",
+      "document": "digital_twin_architecture.md",
+      "search": "digital twin|anatomical|physiological|patient.specific.*model|treatment.response visualization",
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-AI",
+        "CAP-IMAGING",
+        "CAP-DEVICES",
+        "CAP-CONSENT"
+      ],
+      "requirements": [
+        "Seven separated twin levels",
+        "Generic versus patient-derived anatomy",
+        "CT/MRI/PET-CT/X-ray/ultrasound/OCT references",
+        "Versioned physiological/disease/treatment model",
+        "Scenario assumptions and uncertainty",
+        "Longitudinal invalidation and replay",
+        "No clinical fact overwrite"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    },
+    {
+      "id": "EXT-VISUAL",
+      "key": "VISUAL",
+      "title": "Dynamic Organism / Treatment Impact Visualization",
+      "canonical_owner": "CAP-TWIN",
+      "document": "dynamic_organism_visualization.md",
+      "search": "visuali|organ.*model|anatom|treatment.response|therapy.*exposure|multisystem|organ.*effect",
+      "dependencies": [
+        "CAP-TWIN",
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CDS"
+      ],
+      "requirements": [
+        "Interactive body and organ/system highlighting",
+        "Observed/measured/inferred/predicted/simulated labels",
+        "Treatment impact/evidence/model links",
+        "Temporal overlays and stale/unknown states",
+        "Accessible alternative and no false patient anatomy"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    },
+    {
+      "id": "EXT-GENOMIC",
+      "key": "GENOMIC",
+      "title": "Protein / Genomic Intelligence Adapters",
+      "canonical_owner": "CAP-AI",
+      "document": "protein_genomic_adapters.md",
+      "search": "protein|genom|gene.variant|pharmacogen|molecular|pathway|omics",
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-LABORATORY",
+        "CAP-AI",
+        "CAP-CONSENT"
+      ],
+      "requirements": [
+        "Model-agnostic protein/variant adapters",
+        "Assembly/transcript/allele/phase provenance",
+        "Gene-drug/genotype-phenotype/pathway evidence",
+        "Licensing and provider approval",
+        "No protein prediction to clinical conclusion shortcut"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    },
+    {
+      "id": "EXT-INTEROP",
+      "key": "INTEROP",
+      "title": "Adaptive Interoperability / Connector Intelligence",
+      "canonical_owner": "CAP-INTEROP",
+      "document": "adaptive_interoperability_architecture.md",
+      "search": "interoper|connector|mapping|schema|format|fhir|hl7|dicom|cda|synchroniz",
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AI",
+        "CAP-AUDIT"
+      ],
+      "requirements": [
+        "Read-only discovery and format profiling",
+        "FHIR/HL7v2/CDA/DICOM/CSV/JSON/XML/API/export inputs",
+        "Candidate semantic/terminology mappings with confidence",
+        "Validation and loss/conflict reporting",
+        "Sandbox round-trip and human approval",
+        "Connector registry monitoring rollback",
+        "No unvalidated clinical source-of-truth writes"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    },
+    {
+      "id": "EXT-RESEARCH",
+      "key": "RESEARCH",
+      "title": "Research AI / Population Intelligence",
+      "canonical_owner": "CAP-RESEARCH",
+      "document": "research_ai_architecture.md",
+      "search": "research|population|epidemiolog|public health|eurostat|statistics|analytics|cohort",
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AI",
+        "CAP-AUDIT"
+      ],
+      "requirements": [
+        "Distinct analytics purposes",
+        "Cohort version and longitudinal exposure/outcome",
+        "Pseudonymization/aggregation and disclosure control",
+        "Governed hypothesis to evidence publication",
+        "No correlation-to-causation claim",
+        "Separate training consent/legal basis",
+        "Knowledge feedback approval and rollback"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    },
+    {
+      "id": "EXT-AI",
+      "key": "AI",
+      "title": "Model-agnostic AI Platform",
+      "canonical_owner": "CAP-AI",
+      "document": "ai_platform_architecture.md",
+      "search": "ai platform|knowledge|model registr|model rout|learning|gateway|assistant|inference|evaluation",
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "requirements": [
+        "Knowledge/Clinical/Personal/Research AI hierarchy",
+        "Gateway/router/model registry",
+        "Routing by task/risk/privacy/jurisdiction/cost/latency/validation",
+        "Approved alternative models or abstention",
+        "RAG/evidence versioning",
+        "Human review/audit/uncertainty",
+        "Governed evaluation to training to deployment lifecycle"
+      ],
+      "decision": "EXTEND_EXISTING_OWNER",
+      "record_kind": "CANONICAL_EXTENSION_DRAFT",
+      "new_original_module": false,
+      "new_gap_module": false,
+      "status": "DRAFT_SPECIFICATION",
+      "architecture_layer": "SHARED CAPABILITY",
+      "roadmap_stage": "RESEARCH",
+      "implementation_ready": false,
+      "clinical_safety": {
+        "autonomous_prescribing": false,
+        "autonomous_dose_change": false,
+        "simulation_is_clinical_fact": false,
+        "clinician_review_required": true,
+        "unvalidated_clinical_import_allowed": false
+      }
+    }
+  ]
+}

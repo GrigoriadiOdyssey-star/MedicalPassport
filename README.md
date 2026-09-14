@@ -6,6 +6,8 @@
 
 | Начать здесь | Содержание |
 |---|---|
+| [GAP-FILL — текущий checkpoint](audit/gapfill/MASTER_GAP_FILL_REPORT.md) | Сверка 5175/51075, 450 reviewed IDs, семь стратегических draft extensions и открытые gates |
+| [Продолжить с checkpoint](audit/gapfill/CONTINUE_FROM_HERE.md) | Точные команды, сохранённое состояние и следующая безопасная работа |
 | [MASTER AUDIT — текущий проход](audit/master/MASTER_AUDIT_REPORT.md) | Пересчёт по 5175 ID, registry, clusters, canonical proposals, Change Map и checkpoint |
 | [Канонические профили — продолжение](audit/master/CANONICAL_PROPOSALS_REPORT.md) | Три draft specifications и карта сохранения требований 17 исходных модулей |
 | [Отчёт аудита](REPORT.md) | Выводы, исправления, проверки и оставшаяся работа |

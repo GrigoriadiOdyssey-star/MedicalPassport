@@ -10,10 +10,13 @@ validate-specifications:
     - npm test
     - npm run check
     - npm run audit:check
+    - npm run gapfill:check
   artifacts:
     when: always
     paths:
       - data/audit-summary.json
       - audit/master/audit_progress.json
       - audit/master/validation.json
+      - audit/gapfill/audit_progress.json
+      - audit/gapfill/validation.json
     expire_in: 30 days

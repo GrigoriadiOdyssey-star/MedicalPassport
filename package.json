@@ -10,6 +10,8 @@
     "check": "node scripts/check.mjs",
     "test": "node --test tests/*.test.mjs",
     "audit:build": "node scripts/master-audit.mjs",
-    "audit:check": "node scripts/master-audit.mjs --check"
+    "audit:check": "node scripts/master-audit.mjs --check",
+    "gapfill:build": "node scripts/gapfill.mjs",
+    "gapfill:check": "node scripts/gapfill.mjs --check"
   }
 }
