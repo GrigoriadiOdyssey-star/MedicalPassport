@@ -14,6 +14,8 @@
     "gapfill:build": "node scripts/gapfill.mjs",
     "gapfill:check": "node scripts/gapfill.mjs --check",
     "pediatric:build": "node scripts/pediatric-audit.mjs",
-    "pediatric:check": "node scripts/pediatric-audit.mjs --check"
+    "pediatric:check": "node scripts/pediatric-audit.mjs --check",
+    "domain:build": "node scripts/domain-pass.mjs",
+    "domain:check": "node scripts/domain-pass.mjs --check"
   }
 }

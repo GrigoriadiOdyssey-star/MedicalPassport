@@ -1,14 +1,17 @@
 # EDHT — Medical Passport
 
-Исправленная продуктовая и техническая документация European Digital Health Technologies. Редакция аудита: **13 сентября 2026**.
+Исправленная продуктовая и техническая документация European Digital Health Technologies. Редакция аудита: **14 сентября 2026**.
 
 Этот репозиторий сохраняет все **5 175 исходных ID** и предоставляет основу разработки: ограниченный P0, API-контракт, модель данных, требования безопасности, критерии приёмки и воспроизводимый реестр. В исходном архиве был один Markdown-документ; исходного кода приложения и Git-истории не было. Приложение пока не реализовано и клинически не валидировано.
 
 | Начать здесь | Содержание |
 |---|---|
-| [PEDIATRIC-02 — последний checkpoint](audit/pediatric-02/MASTER_GAP_FILL_REPORT.md) | 741 reviewed ID, пять профильных спецификаций, 32 semantic decisions и сохранённые source fragments |
+| [DOMAIN-03 — последний checkpoint](audit/domain-03/MASTER_GAP_FILL_REPORT.md) | 1 100 reviewed ID; 30 normalized/canonicalized ID → 10 канонических спецификаций документации; 503 сохранённых фрагмента |
+| [Продолжить DOMAIN-03](audit/domain-03/CONTINUE_FROM_HERE.md) | Состояние, команды и следующая работа |
+| [Канонические спецификации](docs/canonical/README.md) | Принятая структура документации; клиническая валидация и реализация ещё не выполнены |
+| [PEDIATRIC-02 — предыдущий checkpoint](audit/pediatric-02/MASTER_GAP_FILL_REPORT.md) | 741 reviewed ID, пять профильных спецификаций, 32 semantic decisions и сохранённые source fragments |
 | [Продолжить PEDIATRIC-02](audit/pediatric-02/CONTINUE_FROM_HERE.md) | Состояние, команды и следующая работа |
-| [GAP-FILL — текущий checkpoint](audit/gapfill/MASTER_GAP_FILL_REPORT.md) | Сверка 5175/51075, 450 reviewed IDs, семь стратегических draft extensions и открытые gates |
+| [GAP-FILL — предыдущий checkpoint](audit/gapfill/MASTER_GAP_FILL_REPORT.md) | Сверка 5175/51075, 450 reviewed IDs, семь стратегических draft extensions и открытые gates |
 | [Продолжить с checkpoint](audit/gapfill/CONTINUE_FROM_HERE.md) | Точные команды, сохранённое состояние и следующая безопасная работа |
 | [MASTER AUDIT — текущий проход](audit/master/MASTER_AUDIT_REPORT.md) | Пересчёт по 5175 ID, registry, clusters, canonical proposals, Change Map и checkpoint |
 | [Канонические профили — продолжение](audit/master/CANONICAL_PROPOSALS_REPORT.md) | Три draft specifications и карта сохранения требований 17 исходных модулей |
@@ -39,6 +42,7 @@ P0 предлагается для взрослого владельца соб�
 npm run build
 npm test
 npm run check
+npm run domain:check
 ```
 
 Генератор сохраняет 5 175 идентификаторов, применяет точные [редакторские правила](config/editorial-corrections.json) и создаёт [журнал замен](data/corrections-applied.json). Проверки подтверждают целостность источника, воспроизводимость каталога, внутренние ссылки и базовую связность OpenAPI. Они не тестируют отсутствующий сервер и не доказывают клиническую безопасность.

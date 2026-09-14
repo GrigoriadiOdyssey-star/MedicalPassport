@@ -1,0 +1,19 @@
+{
+  "schema_version": 4,
+  "pass": "DOMAIN-03",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "status": "PASS_STRUCTURAL_AND_DOCUMENTATION_MIGRATION",
+  "normalized": 30,
+  "canonicalized": 30,
+  "retained_fragments": 503,
+  "canonical_documents": 10,
+  "new_reviewed": 359,
+  "repeated_reviewed_ids": 0,
+  "known_graph_targets": true,
+  "source_hash_verified": true,
+  "clinical_validation": false
+}
