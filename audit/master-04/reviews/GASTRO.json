@@ -1,0 +1,2403 @@
+{
+  "pass": "MASTER-04",
+  "domain": "GASTRO",
+  "parent_checkpoint": "04b8e805e857746f311710577d58f2c60b8eabc3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1100 reviewed IDs.",
+  "count": 116,
+  "reviews": [
+    {
+      "original_id": 941,
+      "title": "Pediatric Gastroenterologist Profile",
+      "body": "# Pediatric Gastroenterologist Profile\n\nProfessional profile of licensed pediatric gastroenterologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Pediatric Digestive Disease Expertise\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a7e79ab33105c44c7ec13aeb872c64f214161de660e1030815ad5f018602ceb7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35775
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Qualifications",
+        "Experience",
+        "Pediatric Digestive Disease Expertise",
+        "Languages"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 942,
+      "title": "Pediatric Gastroenterology Center Profile",
+      "body": "# Pediatric Gastroenterology Center Profile\n\nStores complete information about pediatric gastroenterology centers.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Endoscopy Unit\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "77c9ce7846939a4c32b52306c759c791d6373eb7743459807cfb5aea9b67ca56",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35797
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Services",
+        "Physicians",
+        "Endoscopy Unit",
+        "Contact Information"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 943,
+      "title": "Pediatric Gastroenterology Appointment Booking",
+      "body": "# Pediatric Gastroenterology Appointment Booking\n\nAllows scheduling consultations with pediatric gastroenterologists.\n\nSupports\n\n• Clinic\n\n• Physician\n\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eebec3deec32c22d2eb635efc15aa820f52e7ff966baef7dba0b2b0210b5e5a1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35819
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Clinic",
+        "Physician",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 944,
+      "title": "Pediatric Digestive Disease Registry",
+      "body": "# Pediatric Digestive Disease Registry\n\nStores gastrointestinal diagnoses.\n\nSupports\n\n• Celiac Disease\n\n• Crohn's Disease\n\n• Ulcerative Colitis\n\n• GERD\n\n• Functional Disorders\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c37d51e873b327faf303cae56b37a175904cef4a249b71874972ee73ce067e01",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35839
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Celiac Disease",
+        "Crohn's Disease",
+        "Ulcerative Colitis",
+        "GERD",
+        "Functional Disorders"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 945,
+      "title": "Pediatric Endoscopy Archive",
+      "body": "# Pediatric Endoscopy Archive\n\nStores endoscopic examinations.\n\nSupports\n\n• Gastroscopy\n\n• Colonoscopy\n\n• Capsule Endoscopy\n\n• Physician Reports\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6017dc39af6077182fe2a5427bf4d784e8c8cdc98b64eb4bff6077bb0a0c04d5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35863
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastroscopy",
+        "Colonoscopy",
+        "Capsule Endoscopy",
+        "Physician Reports"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 946,
+      "title": "Pediatric Liver Disease Registry",
+      "body": "# Pediatric Liver Disease Registry\n\nStores pediatric hepatology diagnoses.\n\nSupports\n\n• Hepatitis\n\n• Fatty Liver Disease\n\n• Cholestatic Disorders\n\n• Cirrhosis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cef11aa4f134930998bbfbbf3d2b29d1fe5fd3e77ad842fa72a8779fce254b7f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35885
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Hepatitis",
+        "Fatty Liver Disease",
+        "Cholestatic Disorders",
+        "Cirrhosis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 947,
+      "title": "Pediatric Pancreatic Disease Registry",
+      "body": "# Pediatric Pancreatic Disease Registry\n\nTracks pancreatic disorders.\n\nSupports\n\n• Pancreatitis\n\n• Enzyme Deficiency\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "612cfbed851c53f84894348db2dc65bc69dc7c3a284cd77a92d50ed611563790",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35907
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Pancreatitis",
+        "Enzyme Deficiency",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 948,
+      "title": "Pediatric Nutrition & Malabsorption Center",
+      "body": "# Pediatric Nutrition & Malabsorption Center\n\nSupports children with nutritional disorders.\n\nTracks\n\n• Malabsorption\n\n• Enteral Nutrition\n\n• Growth\n\n• Vitamin Deficiencies\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dc43e6a44387d3ebab259c7ef44b2361bc85bb1cef1991ad0a3d4bbb1aa0c9c9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35927
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Malabsorption",
+        "Enteral Nutrition",
+        "Growth",
+        "Vitamin Deficiencies"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 949,
+      "title": "Pediatric Stool Analysis Archive",
+      "body": "# Pediatric Stool Analysis Archive\n\nStores stool examination history.\n\nSupports\n\n• Microbiology\n\n• Parasites\n\n• Occult Blood\n\n• Calprotectin\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dcccd36f4f1c0af62b7b7bda274fa9b90156283c222688bab2bb6d450d3f4e98",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35949
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Microbiology",
+        "Parasites",
+        "Occult Blood",
+        "Calprotectin"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 950,
+      "title": "Pediatric Abdominal Ultrasound Archive",
+      "body": "# Pediatric Abdominal Ultrasound Archive\n\nStores abdominal ultrasound examinations.\n\nSupports\n\n• Liver\n\n• Gallbladder\n\n• Pancreas\n\n• Intestines\n\n• Spleen\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eb9a04c942015baa2268575f76ef06c943b78506c07d9e6ab3286beee8c64adf",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35971
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Liver",
+        "Gallbladder",
+        "Pancreas",
+        "Intestines",
+        "Spleen"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 951,
+      "title": "Pediatric Gastroenterology Laboratory Center",
+      "body": "# Pediatric Gastroenterology Laboratory Center\n\nTracks digestive laboratory markers.\n\nSupports\n\n• Liver Enzymes\n\n• Bilirubin\n\n• Albumin\n\n• Lipase\n\n• Amylase\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ab2cbb81fd646cb001240def8e85a81dfa4d19809d501d95a0e5434ea22ec1f3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35995
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Liver Enzymes",
+        "Bilirubin",
+        "Albumin",
+        "Lipase",
+        "Amylase"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 952,
+      "title": "Pediatric Gastroenterology Medication Manager",
+      "body": "# Pediatric Gastroenterology Medication Manager\n\nTracks gastrointestinal medications.\n\nSupports\n\n• Weight-Based Dosage\n\n• Immunosuppressants\n\n• Enzymes\n\n• Probiotics\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4c0305545febb2c33323ef3c7d3597288827820481142ecc77ad11070267cc2f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36019
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Weight-Based Dosage",
+        "Immunosuppressants",
+        "Enzymes",
+        "Probiotics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 953,
+      "title": "Pediatric IBD Monitoring",
+      "body": "# Pediatric IBD Monitoring\n\nSupports monitoring of inflammatory bowel disease.\n\nTracks\n\n• Symptoms\n\n• Laboratory Results\n\n• Endoscopy\n\n• Medication\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "413bcbe56c2ba6b298f70e401c606817c1451e272cc74f5ebfd25ced321c4562",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36041
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Laboratory Results",
+        "Endoscopy",
+        "Medication"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 954,
+      "title": "Pediatric Gastroenterology AI Assistant",
+      "body": "# Pediatric Gastroenterology AI Assistant\n\nAI assists digestive disease monitoring.\n\nAnalyzes\n\n• Symptoms\n\n• Laboratory Results\n\n• Imaging\n\n• Endoscopy\n\nProvides educational recommendations.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2c5ac03090ffbf990d516915d0781f8185d22613f1c25aa513745a1398392e85",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36063
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Laboratory Results",
+        "Imaging",
+        "Endoscopy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 955,
+      "title": "Pediatric Gastrointestinal Emergency Module",
+      "body": "# Pediatric Gastrointestinal Emergency Module\n\nSupports gastrointestinal emergencies.\n\nIncludes\n\n• GI Bleeding\n\n• Severe Dehydration\n\n• Acute Abdomen\n\n• Emergency Guidance\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2d2c1f90a9b0ab484095affde608181e2f98f693a986071379137af4dbb04cf3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36087
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "GI Bleeding",
+        "Severe Dehydration",
+        "Acute Abdomen",
+        "Emergency Guidance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 956,
+      "title": "Pediatric Gastroenterology Timeline",
+      "body": "# Pediatric Gastroenterology Timeline\n\nDisplays the complete digestive disease history.\n\nIncludes\n\n• Diagnoses\n\n• Endoscopy\n\n• Laboratory Results\n\n• Medications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e599623c6843d6bead17015f94725e956ff034aa26abbdefd95318fa77c20479",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36109
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Endoscopy",
+        "Laboratory Results",
+        "Medications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 959,
+      "title": "Pediatric Digestive Quality of Life Assessment",
+      "body": "# Pediatric Digestive Quality of Life Assessment\n\nEvaluates quality of life in chronic digestive diseases.\n\nSupports\n\n• Nutrition\n\n• Pain\n\n• School Attendance\n\n• Emotional Well-being\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "99be72ee4207609976ccc0bcf795838f2e68b876a701c6d25cf88213b76bb97b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36175
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Nutrition",
+        "Pain",
+        "School Attendance",
+        "Emotional Well-being"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 960,
+      "title": "Comprehensive Pediatric Gastroenterology Dashboard",
+      "body": "# Comprehensive Pediatric Gastroenterology Dashboard\n\nProvides a complete overview of pediatric digestive health.\n\nDisplays\n\n• Diagnoses\n\n• Laboratory Results\n\n• Endoscopy\n\n• Imaging\n\n• Nutrition\n\n• Medications\n\n• AI Recommendations\n\nActs as the primary pediatric gastroenterology workspace within the Medical Passport ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ac4461a2db37cde21808f7577dae6180239c278e035d60dd82371cce329c3357",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36197
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Laboratory Results",
+        "Endoscopy",
+        "Imaging",
+        "Nutrition",
+        "Medications",
+        "AI Recommendations"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3161,
+      "title": "Clinical Pediatric Gastroenterology Platform Core Engine",
+      "body": "Central platform for pediatric gastroenterology.\n\nSupports\n\n• Gastrointestinal Diseases\n• Hepatology\n• Pancreatic Disorders\n• Intestinal Disorders\n• Nutrition\n• Long-term Gastrointestinal Monitoring\n\nIntegrates Nutrition, Surgery, Genetics, Laboratory Medicine, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c8c8b7be40039e94b23d10a3897890173928f8cb7632ef159c9200e82a02f6f0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77379
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastrointestinal Diseases",
+        "Hepatology",
+        "Pancreatic Disorders",
+        "Intestinal Disorders",
+        "Nutrition",
+        "Long-term Gastrointestinal Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3162,
+      "title": "Pediatric Gastroenterology Registry",
+      "body": "Maintains comprehensive pediatric gastroenterology records.\n\nSupports\n\n• Diagnoses\n• Endoscopy\n• Histology\n• Nutrition Status\n• Laboratory Studies\n• Longitudinal Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d82cd4da3107513a3c8cce1fad8a62166d57eac2389fb1f9ca5bfb6d9f9b64e1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77400
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Endoscopy",
+        "Histology",
+        "Nutrition Status",
+        "Laboratory Studies",
+        "Longitudinal Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3163,
+      "title": "Pediatric Inflammatory Bowel Disease Module",
+      "body": "Supports inflammatory bowel disease.\n\nSupports\n\n• Crohn Disease\n• Ulcerative Colitis\n• Indeterminate Colitis\n• Biological Therapy\n• Disease Activity Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "db1fad1e3f21fc12bdbcb75ebf829aaced4986729860c66283ed8f2a96b150a5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77419
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Crohn Disease",
+        "Ulcerative Colitis",
+        "Indeterminate Colitis",
+        "Biological Therapy",
+        "Disease Activity Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3164,
+      "title": "Pediatric Celiac Disease Module",
+      "body": "Supports diagnosis and long-term management of celiac disease.\n\nSupports\n\n• Serologic Screening\n• Endoscopic Diagnosis\n• Gluten-free Diet Monitoring\n• Growth Assessment\n• Nutritional Deficiencies\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "400b3e2933e437ba06fd569b080460b6b5d9ccfd10721302a33dcdb1bd8be648",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77437
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Serologic Screening",
+        "Endoscopic Diagnosis",
+        "Gluten-free Diet Monitoring",
+        "Growth Assessment",
+        "Nutritional Deficiencies"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3165,
+      "title": "Pediatric Functional GI Disorders Module",
+      "body": "Supports functional gastrointestinal disorders.\n\nSupports\n\n• Functional Constipation\n• Irritable Bowel Syndrome\n• Functional Abdominal Pain\n• Functional Dyspepsia\n• Long-term Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "45d8ad9710c2ce000f7f1950e86c71e48ed39a064dad1ae66c745c31a863ea05",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77455
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Functional Constipation",
+        "Irritable Bowel Syndrome",
+        "Functional Abdominal Pain",
+        "Functional Dyspepsia",
+        "Long-term Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3166,
+      "title": "Pediatric Liver Disease Module",
+      "body": "Supports pediatric hepatology.\n\nSupports\n\n• Autoimmune Hepatitis\n• Viral Hepatitis\n• Metabolic Liver Disease\n• Cholestatic Disorders\n• Liver Failure\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ea9ab82875b66bf83114e465e26b6f8a3f4e5b50ec391a6dfa186a39430e1c86",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77473
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Autoimmune Hepatitis",
+        "Viral Hepatitis",
+        "Metabolic Liver Disease",
+        "Cholestatic Disorders",
+        "Liver Failure"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3168,
+      "title": "Pediatric Nutrition Module",
+      "body": "Supports nutritional medicine.\n\nSupports\n\n• Malnutrition\n• Enteral Nutrition\n• Parenteral Nutrition\n• Obesity\n• Micronutrient Monitoring\n• Growth Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f34b4a2719cd1494cdfeabc16ce8e07a60bae4e91001f81cd7b234c8400918d9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77508
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Malnutrition",
+        "Enteral Nutrition",
+        "Parenteral Nutrition",
+        "Obesity",
+        "Micronutrient Monitoring",
+        "Growth Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3169,
+      "title": "Pediatric Endoscopy Registry",
+      "body": "Maintains pediatric endoscopy data.\n\nSupports\n\n• Gastroscopy\n• Colonoscopy\n• Capsule Endoscopy\n• Endoscopic Ultrasound\n• AI Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "30cdb51ed2bd02533613e42ed045f301cb2a12c4d21104556473cda2df3b6598",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77527
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastroscopy",
+        "Colonoscopy",
+        "Capsule Endoscopy",
+        "Endoscopic Ultrasound",
+        "AI Image Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3170,
+      "title": "Pediatric Gastroenterology Imaging Registry",
+      "body": "Maintains gastrointestinal imaging.\n\nSupports\n\n• Ultrasound\n• MRI\n• CT\n• Fluoroscopy\n• AI Imaging Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1b988322d25371fc4235c3924fafa2ee09ce620f14231d212cc272a0b0f2acf5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77545
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Ultrasound",
+        "MRI",
+        "CT",
+        "Fluoroscopy",
+        "AI Imaging Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3171,
+      "title": "Pediatric Gastroenterology Laboratory Registry",
+      "body": "Maintains gastrointestinal laboratory studies.\n\nSupports\n\n• Liver Function Tests\n• Pancreatic Enzymes\n• Inflammatory Markers\n• Stool Analysis\n• Genetic Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6a5174eb6d3175507905254a6da3c8a5a2313815ee54d8f4f1f9f0686bc1f1ec",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77563
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Liver Function Tests",
+        "Pancreatic Enzymes",
+        "Inflammatory Markers",
+        "Stool Analysis",
+        "Genetic Testing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3172,
+      "title": "Pediatric Gastroenterology Biomarker Registry",
+      "body": "Maintains GI biomarkers.\n\nSupports\n\n• Calprotectin\n• Lactoferrin\n• Liver Biomarkers\n• Fibrosis Biomarkers\n• Nutritional Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "13654ca9aa925c78ef9794056adbb5ef78fc28e847d34f834222d9f4df3ee6cc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77581
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Calprotectin",
+        "Lactoferrin",
+        "Liver Biomarkers",
+        "Fibrosis Biomarkers",
+        "Nutritional Biomarkers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3173,
+      "title": "Pediatric Gastroenterology AI Decision Support",
+      "body": "Provides AI-assisted pediatric gastroenterology.\n\nSupports\n\n• IBD Activity Prediction\n• Nutritional Risk Assessment\n• Liver Disease Prediction\n• Endoscopic Interpretation\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ac22c26a9d39605b21b3fb54656c3dbf51aedb61c2d9f19a32cc10f43ee6b51e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77599
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "IBD Activity Prediction",
+        "Nutritional Risk Assessment",
+        "Liver Disease Prediction",
+        "Endoscopic Interpretation",
+        "Personalized Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3175,
+      "title": "Pediatric Gastroenterology Telemedicine Module",
+      "body": "Supports remote gastroenterology care.\n\nSupports\n\n• Nutrition Consultations\n• Endoscopy Review\n• Laboratory Review\n• AI Translation\n• Family Counseling\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "22d05f38cac0559bd3d6d872242a14d5811f76e0778918f059575efe4f4ea2e7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77634
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Nutrition Consultations",
+        "Endoscopy Review",
+        "Laboratory Review",
+        "AI Translation",
+        "Family Counseling"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3176,
+      "title": "Pediatric Gastroenterology Clinical Trials Registry",
+      "body": "Supports pediatric gastroenterology research.\n\nSupports\n\n• IBD Research\n• Hepatology Studies\n• Nutrition Studies\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5d0da74f00c99cb4c3e61ceb8dcdbf1b07b9c7c2125b62e0b6de1c6ebbba9777",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77652
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "IBD Research",
+        "Hepatology Studies",
+        "Nutrition Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3178,
+      "title": "Pediatric Gastrointestinal Genetics Module",
+      "body": "Supports inherited gastrointestinal diseases.\n\nSupports\n\n• Polyposis Syndromes\n• Congenital Enteropathies\n• Metabolic Disorders\n• Rare Digestive Diseases\n• Genetic Counseling\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "15dd35739db8b5d9a73c625ca56c314b699fa314007c7fce669da9ff2acdcb4f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77686
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Polyposis Syndromes",
+        "Congenital Enteropathies",
+        "Metabolic Disorders",
+        "Rare Digestive Diseases",
+        "Genetic Counseling"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3179,
+      "title": "Pediatric Gastroenterology Intelligence Registry",
+      "body": "Maintains AI-ready pediatric gastroenterology datasets.\n\nSupports\n\n• Endoscopy\n• Imaging\n• Histology\n• Laboratory\n• Genetics\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6823f4baf85f4342a17590b91e8fb5bd9e592d96767738dea562f3736827c32b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77704
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Endoscopy",
+        "Imaging",
+        "Histology",
+        "Laboratory",
+        "Genetics",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3180,
+      "title": "Clinical Pediatric Gastroenterology Intelligence Hub",
+      "body": "Coordinates the complete pediatric gastroenterology ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Nutrition\n• Hepatology\n• Genetics\n• Radiology\n• Laboratory Services\n• Telemedicine\n\nProvides intelligent lifelong digestive health management across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1b67f1a7cb8e375ca311a557c875bd16b65ada8f08fe290c1ad91c7ce85e7d46",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77723
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Nutrition",
+        "Hepatology",
+        "Genetics",
+        "Radiology",
+        "Laboratory Services",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3281,
+      "title": "Clinical Pediatric Gastroenterology Platform Core Engine",
+      "body": "Central platform for pediatric gastroenterology.\n\nSupports\n\n• Gastrointestinal Diseases\n• Hepatology\n• Pancreatic Disorders\n• Nutrition\n• Malabsorption\n• Inflammatory Bowel Disease\n\nIntegrates Nutrition, Surgery, Endoscopy, Radiology, Genetics, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1f8006eb60b2cc9705ebf6192065cfddb6c4b76ef02ffe77b178a6b63d4ec782",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79597
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastrointestinal Diseases",
+        "Hepatology",
+        "Pancreatic Disorders",
+        "Nutrition",
+        "Malabsorption",
+        "Inflammatory Bowel Disease"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3282,
+      "title": "Pediatric Gastroenterology Registry",
+      "body": "Maintains comprehensive pediatric gastroenterology records.\n\nSupports\n\n• Diagnoses\n• Endoscopy\n• Histology\n• Nutrition\n• Growth Monitoring\n• Longitudinal Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fc635e61b342743345411b6e918bb03ac188a397007a30135eeac00a8afa1b5d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79618
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Endoscopy",
+        "Histology",
+        "Nutrition",
+        "Growth Monitoring",
+        "Longitudinal Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3283,
+      "title": "Pediatric Inflammatory Bowel Disease Module",
+      "body": "Supports pediatric inflammatory bowel disease.\n\nSupports\n\n• Crohn Disease\n\n• Ulcerative Colitis\n\n• Indeterminate Colitis\n\n• Disease Activity Scores\n\n• Biologic Therapy\n\n• Growth Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "002e196abed2280c527d6c4c0b6fce4803e5393cc424becba76ca4bd2dc62500",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79637
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Crohn Disease",
+        "Ulcerative Colitis",
+        "Indeterminate Colitis",
+        "Disease Activity Scores",
+        "Biologic Therapy",
+        "Growth Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3284,
+      "title": "Pediatric Celiac Disease Module",
+      "body": "Supports diagnosis and treatment of celiac disease.\n\nSupports\n\n• Serology\n\n• HLA Typing\n\n• Endoscopy\n\n• Gluten-free Diet\n\n• Long-term Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b0b200de9f3be668563f0c4f54445f8f985232736dacd162cd090a758b067751",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79661
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Serology",
+        "HLA Typing",
+        "Endoscopy",
+        "Gluten-free Diet",
+        "Long-term Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3285,
+      "title": "Pediatric Functional GI Disorders Module",
+      "body": "Supports functional gastrointestinal disorders.\n\nSupports\n\n• Functional Abdominal Pain\n\n• IBS\n\n• Functional Constipation\n\n• Functional Dyspepsia\n\n• Rome IV Criteria\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0823fa9d3f2e9c900d374fb7b31c046e0005c5028c406c643e4089bdc8b30518",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79683
+      },
+      "verdict": "Rome IV is an explicit legacy framework reference, not proof of current applicability; retain release/version and clinician assessment rather than hard-code diagnostic criteria.",
+      "feature_labels": [
+        "Functional Abdominal Pain",
+        "IBS",
+        "Functional Constipation",
+        "Functional Dyspepsia",
+        "Rome IV Criteria"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3286,
+      "title": "Pediatric Hepatology Module",
+      "body": "Supports pediatric liver diseases.\n\nSupports\n\n• Hepatitis\n\n• Cholestasis\n\n• Wilson Disease\n\n• Autoimmune Hepatitis\n\n• Metabolic Liver Disease\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "898063720e9fe54308e487f3e7cc0f096ce810da2f320c8866d448bce16e6972",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79705
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Hepatitis",
+        "Cholestasis",
+        "Wilson Disease",
+        "Autoimmune Hepatitis",
+        "Metabolic Liver Disease"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3288,
+      "title": "Pediatric Nutrition Module",
+      "body": "Supports nutritional assessment.\n\nSupports\n\n• Growth Curves\n\n• Enteral Nutrition\n\n• Parenteral Nutrition\n\n• Obesity\n\n• Malnutrition\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "029fef817fd332176112b8cb46cdbaf6d520cfc74853620193b7603b2cadce91",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79747
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Growth Curves",
+        "Enteral Nutrition",
+        "Parenteral Nutrition",
+        "Obesity",
+        "Malnutrition"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3289,
+      "title": "Pediatric Endoscopy Registry",
+      "body": "Maintains pediatric endoscopy records.\n\nSupports\n\n• Gastroscopy\n\n• Colonoscopy\n\n• Capsule Endoscopy\n\n• Therapeutic Procedures\n\n• Digital Archive\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "86bdbc6948377b3f4c787b9d7ba65b36e1619f495a7f61fc37f6204ef6962761",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79769
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastroscopy",
+        "Colonoscopy",
+        "Capsule Endoscopy",
+        "Therapeutic Procedures",
+        "Digital Archive"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3290,
+      "title": "Pediatric Gastroenterology Imaging Registry",
+      "body": "Maintains gastrointestinal imaging.\n\nSupports\n\n• Ultrasound\n\n• MRI\n\n• CT\n\n• Contrast Studies\n\n• AI Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "64bcd6d3a13ee77634a0d0a948fa49da3f49fdb5139cb1613c440f4319e8b414",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79791
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Ultrasound",
+        "MRI",
+        "CT",
+        "Contrast Studies",
+        "AI Image Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3291,
+      "title": "Pediatric Gastroenterology Laboratory Registry",
+      "body": "Maintains gastrointestinal laboratory studies.\n\nSupports\n\n• Liver Function\n\n• Pancreatic Enzymes\n\n• Stool Studies\n\n• Calprotectin\n\n• Serology\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d40a7fdb8ff24a247923b9add194e4435f3f7148d63307eb72c449bfc3a5777e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79813
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Liver Function",
+        "Pancreatic Enzymes",
+        "Stool Studies",
+        "Calprotectin",
+        "Serology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3292,
+      "title": "Pediatric Gastroenterology Biomarker Registry",
+      "body": "Maintains gastrointestinal biomarkers.\n\nSupports\n\n• Calprotectin\n\n• CRP\n\n• Nutritional Biomarkers\n\n• Liver Biomarkers\n\n• Fibrosis Markers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b3698e1e3af3f743624b63831f4f0ff444dc2df35bae1e2b55fb80e4786c3f12",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79835
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Calprotectin",
+        "CRP",
+        "Nutritional Biomarkers",
+        "Liver Biomarkers",
+        "Fibrosis Markers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3293,
+      "title": "Pediatric Gastroenterology AI Decision Support",
+      "body": "Provides AI-assisted pediatric gastroenterology.\n\nSupports\n\n• Disease Activity Prediction\n\n• Nutrition Planning\n\n• Endoscopy Interpretation\n\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8a008f738d32ca490b4a655f3c65deb86d7dde9246bd69c1d17f2d52d17bad4c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79857
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Disease Activity Prediction",
+        "Nutrition Planning",
+        "Endoscopy Interpretation",
+        "Personalized Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3295,
+      "title": "Pediatric Gastroenterology Telemedicine Module",
+      "body": "Supports remote pediatric gastroenterology care.\n\nSupports\n\n• Nutrition Follow-up\n\n• Growth Monitoring\n\n• Laboratory Review\n\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "509dda369248fb73f74c08c983555a15d95676bf2e555a1ce5c77df01676f146",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79897
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Nutrition Follow-up",
+        "Growth Monitoring",
+        "Laboratory Review",
+        "AI Translation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3296,
+      "title": "Pediatric Gastroenterology Clinical Trials Registry",
+      "body": "Supports pediatric gastroenterology research.\n\nSupports\n\n• IBD Studies\n\n• Nutrition Research\n\n• Hepatology Trials\n\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "283ee7ba73148e934098177bce117cbeeacea379c60c763b6fc6dc915f56f8d9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79917
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "IBD Studies",
+        "Nutrition Research",
+        "Hepatology Trials",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3298,
+      "title": "Pediatric Gastroenterology Genetics Module",
+      "body": "Supports inherited gastrointestinal diseases.\n\nSupports\n\n• Monogenic IBD\n\n• Metabolic Disorders\n\n• Hepatic Genetics\n\n• Family Screening\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4cbdd47d498432841dfb07dac33867fdc888f6a76dc1382d0b122c5982370b11",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79957
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Monogenic IBD",
+        "Metabolic Disorders",
+        "Hepatic Genetics",
+        "Family Screening"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3299,
+      "title": "Pediatric Gastroenterology Intelligence Registry",
+      "body": "Maintains AI-ready gastroenterology datasets.\n\nSupports\n\n• Laboratory\n\n• Imaging\n\n• Endoscopy\n\n• Histology\n\n• Genetics\n\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5671b47dc0f8c274edf4b583df1cd68d6b1150677133dcb3ad6b22fadc305195",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79977
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Laboratory",
+        "Imaging",
+        "Endoscopy",
+        "Histology",
+        "Genetics",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3300,
+      "title": "Clinical Pediatric Gastroenterology Intelligence Hub",
+      "body": "Coordinates the complete pediatric gastroenterology ecosystem.\n\nIntegrates\n\n• AI\n\n• Digital Twin\n\n• Nutrition\n\n• Hepatology\n\n• Endoscopy\n\n• Genetics\n\n• Laboratory Medicine\n\n• Telemedicine\n\nProvides intelligent gastrointestinal care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ad491107a78e05eee617e87d61e41480645952704209ca5b7fe040723fc8c208",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 80001
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Nutrition",
+        "Hepatology",
+        "Endoscopy",
+        "Genetics",
+        "Laboratory Medicine",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3441,
+      "title": "Clinical Pediatric Gastroenterology Platform Core Engine",
+      "body": "Central platform for pediatric gastroenterology, hepatology and nutrition.\n\nSupports\n\n• Gastrointestinal Diseases\n• Liver Diseases\n• Pancreatic Disorders\n• Nutrition\n• Inflammatory Bowel Disease\n• Functional GI Disorders\n\nIntegrates Surgery, Nutrition, Endoscopy, Genetics, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0e273849cc53e9583f2582898bd6b37fddc28dfaf36e6ec849830926e22e3c1f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83077
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastrointestinal Diseases",
+        "Liver Diseases",
+        "Pancreatic Disorders",
+        "Nutrition",
+        "Inflammatory Bowel Disease",
+        "Functional GI Disorders"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3442,
+      "title": "Pediatric Gastroenterology Registry",
+      "body": "Maintains comprehensive pediatric gastroenterology records.\n\nSupports\n\n• Diagnoses\n\n• Endoscopy\n\n• Nutrition\n\n• Growth\n\n• Imaging\n\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b82e90921fcbc4c270a7db62a02b10635cddf4773620ce295736ef1eaab19818",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83098
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Endoscopy",
+        "Nutrition",
+        "Growth",
+        "Imaging",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3444,
+      "title": "Pediatric Inflammatory Bowel Disease Module",
+      "body": "Supports pediatric IBD.\n\nSupports\n\n• Crohn Disease\n\n• Ulcerative Colitis\n\n• Disease Activity\n\n• Biologic Therapy\n\n• Nutrition\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "38873163c6855d9b704d020b173ac082a5269b108e6ce6cd8dcd18e6b7e3b7e9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83144
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Crohn Disease",
+        "Ulcerative Colitis",
+        "Disease Activity",
+        "Biologic Therapy",
+        "Nutrition"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3445,
+      "title": "Pediatric Functional Gastrointestinal Disorders Module",
+      "body": "Supports functional GI disorders.\n\nSupports\n\n• Functional Abdominal Pain\n\n• IBS\n\n• Functional Constipation\n\n• Functional Dyspepsia\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e47daad9b977bc4eb219c3e6a836e643a5e53249d4afe5fa1faf355042f32aaf",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83166
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Functional Abdominal Pain",
+        "IBS",
+        "Functional Constipation",
+        "Functional Dyspepsia"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3446,
+      "title": "Pediatric Liver Diseases Module",
+      "body": "Supports pediatric hepatology.\n\nSupports\n\n• Viral Hepatitis\n\n• Autoimmune Hepatitis\n\n• Fatty Liver\n\n• Cholestatic Diseases\n\n• Cirrhosis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1f0ad5b5b9fb8cf31cb1fa78e0d15c41c4264d6714fcc01e7519ce99ddbecdeb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83186
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Viral Hepatitis",
+        "Autoimmune Hepatitis",
+        "Fatty Liver",
+        "Cholestatic Diseases",
+        "Cirrhosis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3448,
+      "title": "Pediatric Nutrition Module",
+      "body": "Supports pediatric nutrition.\n\nSupports\n\n• Malnutrition\n\n• Obesity\n\n• Enteral Nutrition\n\n• Parenteral Nutrition\n\n• Micronutrient Deficiency\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "14c978fb0c2fdc9fc1c94ea5332b4291fa410f7923e6e9210e356c63bfa48a1a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83228
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Malnutrition",
+        "Obesity",
+        "Enteral Nutrition",
+        "Parenteral Nutrition",
+        "Micronutrient Deficiency"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3449,
+      "title": "Pediatric Endoscopy Registry",
+      "body": "Maintains pediatric endoscopy records.\n\nSupports\n\n• Gastroscopy\n\n• Colonoscopy\n\n• Capsule Endoscopy\n\n• Therapeutic Procedures\n\n• AI-assisted Image Review\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "01c1f1f727ed0a6d28019f26a44ef84da03d2c5108314259a1100a80b37f778f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83250
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastroscopy",
+        "Colonoscopy",
+        "Capsule Endoscopy",
+        "Therapeutic Procedures",
+        "AI-assisted Image Review"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3450,
+      "title": "Pediatric Gastrointestinal Imaging Registry",
+      "body": "Maintains GI imaging.\n\nSupports\n\n• Ultrasound\n\n• CT\n\n• MRI\n\n• Contrast Studies\n\n• AI Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f41536981d5205823aa7357914aa18a35ed7995cdf9433b7ac30f2f43169442f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83272
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Ultrasound",
+        "CT",
+        "MRI",
+        "Contrast Studies",
+        "AI Image Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3451,
+      "title": "Pediatric Gastroenterology Laboratory Registry",
+      "body": "Maintains GI laboratory studies.\n\nSupports\n\n• Liver Function Tests\n\n• Pancreatic Enzymes\n\n• Fecal Calprotectin\n\n• Stool Studies\n\n• Genetic Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4b08c497e2d160ac37cb2685585b7fd754d6704c9d12431d412a39f3b3393e40",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83294
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Liver Function Tests",
+        "Pancreatic Enzymes",
+        "Fecal Calprotectin",
+        "Stool Studies",
+        "Genetic Testing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3452,
+      "title": "Pediatric Gastroenterology Biomarker Registry",
+      "body": "Maintains GI biomarkers.\n\nSupports\n\n• Inflammatory Biomarkers\n\n• Liver Biomarkers\n\n• Nutritional Biomarkers\n\n• Fibrosis Markers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cb7ad583a8c47c8554f8e4d67fc68693035d8a5ca2e0d61aff46806b62a07475",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83316
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Inflammatory Biomarkers",
+        "Liver Biomarkers",
+        "Nutritional Biomarkers",
+        "Fibrosis Markers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3453,
+      "title": "Pediatric Gastroenterology AI Decision Support",
+      "body": "Provides AI-assisted pediatric gastroenterology.\n\nSupports\n\n• Differential Diagnosis\n\n• Nutrition Optimization\n\n• IBD Activity Prediction\n\n• Liver Disease Monitoring\n\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6d5c114113a28f7e123ce000cee527bdf37ba92c0cc66b6f3f2ee603ab764399",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83336
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Differential Diagnosis",
+        "Nutrition Optimization",
+        "IBD Activity Prediction",
+        "Liver Disease Monitoring",
+        "Personalized Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3455,
+      "title": "Pediatric Gastroenterology Telemedicine Module",
+      "body": "Supports remote pediatric gastroenterology.\n\nSupports\n\n• Diet Review\n\n• Growth Monitoring\n\n• Laboratory Review\n\n• Medication Follow-up\n\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9bf67f31927573518c089769c4b36bcbbbd9852ab6c0bbbef7c8117c8339b223",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83378
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diet Review",
+        "Growth Monitoring",
+        "Laboratory Review",
+        "Medication Follow-up",
+        "AI Translation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3456,
+      "title": "Pediatric Gastroenterology Clinical Trials Registry",
+      "body": "Supports pediatric gastroenterology research.\n\nSupports\n\n• IBD Studies\n\n• Nutrition Research\n\n• Liver Disease Studies\n\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ac5047f5079759f3192150d33b3f709d3f8dab29c23d7b42837a46bce620840a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83400
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "IBD Studies",
+        "Nutrition Research",
+        "Liver Disease Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3458,
+      "title": "Pediatric Gastroenterology Genetics Module",
+      "body": "Supports inherited GI diseases.\n\nSupports\n\n• Polyposis Syndromes\n\n• Metabolic Disorders\n\n• Congenital GI Diseases\n\n• Family Screening\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3247201ee6d84d250c1287214334cb4dad0b623c0b1cf40c501e2709fcf78a4c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83440
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Polyposis Syndromes",
+        "Metabolic Disorders",
+        "Congenital GI Diseases",
+        "Family Screening"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3459,
+      "title": "Pediatric Gastroenterology Intelligence Registry",
+      "body": "Maintains AI-ready gastroenterology datasets.\n\nSupports\n\n• Laboratory\n\n• Endoscopy\n\n• Imaging\n\n• Nutrition\n\n• Genetics\n\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "43905d801584546d1797af2f718f94b59e361f9cdbb34e4289de96c46930332f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83460
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Laboratory",
+        "Endoscopy",
+        "Imaging",
+        "Nutrition",
+        "Genetics",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3460,
+      "title": "Clinical Pediatric Gastroenterology Intelligence Hub",
+      "body": "Coordinates the complete pediatric gastroenterology ecosystem.\n\nIntegrates\n\n• AI\n\n• Digital Twin\n\n• Nutrition\n\n• Hepatology\n\n• Endoscopy\n\n• Laboratory Medicine\n\n• Imaging\n\n• Telemedicine\n\nProvides intelligent pediatric digestive care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "91ecdc6e904d19858402766766bd3420a657230613d842deedfb8ab8fb3cca45",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 83484
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Nutrition",
+        "Hepatology",
+        "Endoscopy",
+        "Laboratory Medicine",
+        "Imaging",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4501,
+      "title": "Clinical Pediatric Gastroenterology Platform Core Engine",
+      "body": "Central platform for pediatric gastroenterology, hepatology and digestive medicine.\n\nSupports\n\n• Gastrointestinal Disorders\n• Liver Disease\n• Pancreatic Disease\n• Inflammatory Bowel Disease\n• Functional GI Disorders\n• Malabsorption\n• Nutrition\n• Feeding Disorders\n• Endoscopy\n• Intestinal Failure\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Genetics\n• Immunology\n• Microbiology\n• Pathology\n• Imaging\n• Nutrition\n• Surgery\n• Medical Passport\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "163505b2d30c76cb0877393054f1f8db2a9f2ccc6b707143b1015a79c5b95c7d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105064
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastrointestinal Disorders",
+        "Liver Disease",
+        "Pancreatic Disease",
+        "Inflammatory Bowel Disease",
+        "Functional GI Disorders",
+        "Malabsorption",
+        "Nutrition",
+        "Feeding Disorders",
+        "Endoscopy",
+        "Intestinal Failure",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Genetics",
+        "Immunology",
+        "Microbiology",
+        "Pathology",
+        "Imaging",
+        "Nutrition",
+        "Surgery",
+        "Medical Passport"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4502,
+      "title": "Pediatric Gastroenterology Longitudinal Registry",
+      "body": "Maintains longitudinal digestive health records.\n\nTracks\n\n• Diagnoses\n• Symptoms\n• Growth\n• Nutrition\n• Laboratory Results\n• Imaging\n• Endoscopy\n• Histopathology\n• Genetics\n• Medication\n• Procedures\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "afbd3d240f1388014c074dab9a1c4e24f9d978e75d151b262a78d67af0977e04",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105100
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Symptoms",
+        "Growth",
+        "Nutrition",
+        "Laboratory Results",
+        "Imaging",
+        "Endoscopy",
+        "Histopathology",
+        "Genetics",
+        "Medication",
+        "Procedures",
+        "Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4503,
+      "title": "Pediatric Gastrointestinal Symptom Intelligence Module",
+      "body": "Structures gastrointestinal symptoms across time.\n\nSupports\n\n• Abdominal Pain\n• Nausea\n• Vomiting\n• Diarrhea\n• Constipation\n• Bloating\n• Dysphagia\n• Reflux Symptoms\n• Stool Changes\n• Appetite Changes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bf9b9a1a59e275188f725123df5c5c380a39103ebf6c9dd9c24258f87f5506ee",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105125
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Abdominal Pain",
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Constipation",
+        "Bloating",
+        "Dysphagia",
+        "Reflux Symptoms",
+        "Stool Changes",
+        "Appetite Changes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4504,
+      "title": "Pediatric Abdominal Pain Assessment Module",
+      "body": "Supports structured assessment of acute and chronic abdominal pain.\n\nIntegrates\n\n• Pain Location\n• Duration\n• Severity\n• Meal Association\n• Stool Pattern\n• Urinary Symptoms\n• Menstrual Context where applicable\n• Laboratory Data\n• Imaging\n• Previous Episodes\n\nSupports clinician-reviewed differential diagnosis.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bd7e94cb3de600a7abc25ea187bc50b09040f81589260110134de76bdc044082",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105148
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Pain Location",
+        "Duration",
+        "Severity",
+        "Meal Association",
+        "Stool Pattern",
+        "Urinary Symptoms",
+        "Menstrual Context where applicable",
+        "Laboratory Data",
+        "Imaging",
+        "Previous Episodes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4505,
+      "title": "Pediatric Nausea & Vomiting Module",
+      "body": "Supports longitudinal evaluation of nausea and vomiting.\n\nTracks\n\n• Onset\n• Frequency\n• Timing\n• Hydration\n• Feeding\n• Neurological Context\n• Gastrointestinal Findings\n• Medication\n• Laboratory Results\n• Imaging\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8e86ffa1bd9d3de8f1cc64e301b69a00d63bd0dfe741819d164fe0d1ff6e7ff0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105173
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Onset",
+        "Frequency",
+        "Timing",
+        "Hydration",
+        "Feeding",
+        "Neurological Context",
+        "Gastrointestinal Findings",
+        "Medication",
+        "Laboratory Results",
+        "Imaging"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4506,
+      "title": "Pediatric Gastroesophageal Reflux Disease Module",
+      "body": "Supports pediatric reflux and GERD care.\n\nIntegrates\n\n• Symptoms\n• Feeding\n• Growth\n• Respiratory Associations\n• Medication\n• Endoscopy\n• pH/Impedance Testing\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6350929f821ae9eda604136f0b91b9e1c87c6aba361a9cb333222f1f87c6663f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105196
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Feeding",
+        "Growth",
+        "Respiratory Associations",
+        "Medication",
+        "Endoscopy",
+        "pH/Impedance Testing",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4507,
+      "title": "Pediatric Dysphagia & Swallowing Integration Module",
+      "body": "Supports evaluation of swallowing disorders.\n\nIntegrates\n\n• Feeding History\n• Oropharyngeal Symptoms\n• Esophageal Symptoms\n• Aspiration Risk\n• Swallow Studies\n• Endoscopy\n• ENT\n• Neurology\n• Speech and Feeding Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "015f5b8f961fbf8ba531aa951b0d9e715bde9b82a88886018686478a8a648cc0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105217
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Feeding History",
+        "Oropharyngeal Symptoms",
+        "Esophageal Symptoms",
+        "Aspiration Risk",
+        "Swallow Studies",
+        "Endoscopy",
+        "ENT",
+        "Neurology",
+        "Speech and Feeding Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4508,
+      "title": "Pediatric Eosinophilic Gastrointestinal Disease Module",
+      "body": "Supports eosinophilic gastrointestinal disorders.\n\nIntegrates\n\n• Symptoms\n• Allergy History\n• Endoscopy\n• Histopathology\n• Laboratory Findings\n• Diet\n• Medication\n• Treatment Response\n\nConnects gastroenterology with allergy and immunology.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "544a128d81a56a2a12c941981b01cce5f0a486a6d2dcfb74f163c70ae2b30837",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105239
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Allergy History",
+        "Endoscopy",
+        "Histopathology",
+        "Laboratory Findings",
+        "Diet",
+        "Medication",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4509,
+      "title": "Pediatric Eosinophilic Esophagitis Module",
+      "body": "Supports longitudinal eosinophilic esophagitis care.\n\nTracks\n\n• Dysphagia\n• Feeding Difficulty\n• Food Impaction\n• Allergy Context\n• Endoscopic Findings\n• Histology\n• Dietary Therapy\n• Medication\n• Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e51ce15f6aad797b3b30e96806e880c5216bef683d5b0175fb140627a3a3f5f2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105262
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Dysphagia",
+        "Feeding Difficulty",
+        "Food Impaction",
+        "Allergy Context",
+        "Endoscopic Findings",
+        "Histology",
+        "Dietary Therapy",
+        "Medication",
+        "Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4510,
+      "title": "Pediatric Functional Gastrointestinal Disorders Module",
+      "body": "Supports clinician-managed disorders of gut-brain interaction.\n\nIntegrates\n\n• Symptoms\n• Symptom Duration\n• Stool Patterns\n• Diet\n• Growth\n• Psychosocial Context\n• Diagnostic Evaluation\n• Treatment\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9c0470237feccc2a8c6fb9e2789ed4d5552b2bf74e05202317668d39b1106735",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105284
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Symptom Duration",
+        "Stool Patterns",
+        "Diet",
+        "Growth",
+        "Psychosocial Context",
+        "Diagnostic Evaluation",
+        "Treatment",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4511,
+      "title": "Pediatric Constipation & Defecation Disorders Module",
+      "body": "Supports pediatric constipation and defecation disorders.\n\nTracks\n\n• Stool Frequency\n• Stool Characteristics\n• Pain\n• Withholding\n• Continence\n• Medication\n• Diet\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d8d9d5981268528d82a84705248b41407c27cb3ea1436291de00295a7eb014d0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105306
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Stool Frequency",
+        "Stool Characteristics",
+        "Pain",
+        "Withholding",
+        "Continence",
+        "Medication",
+        "Diet",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4512,
+      "title": "Pediatric Chronic Diarrhea Module",
+      "body": "Supports investigation of persistent diarrhea.\n\nIntegrates\n\n• Stool Pattern\n• Duration\n• Growth\n• Diet\n• Infection Testing\n• Inflammatory Markers\n• Malabsorption\n• Endoscopy\n• Genetics\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e566f1ced1f7e3f0cde934f3d66ad4bd542267753485e15a2815b9627f785847",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105327
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Stool Pattern",
+        "Duration",
+        "Growth",
+        "Diet",
+        "Infection Testing",
+        "Inflammatory Markers",
+        "Malabsorption",
+        "Endoscopy",
+        "Genetics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4513,
+      "title": "Pediatric Gastrointestinal Motility Module",
+      "body": "Supports pediatric gastrointestinal motility disorders.\n\nIntegrates\n\n• Symptoms\n• Transit Studies\n• Manometry\n• Feeding\n• Medication\n• Neurological Conditions\n• Surgical History\n• Longitudinal Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8b80b8938b24096f77e3a115dc3090aee468b7ac099b55c8b99b9a38076e5d5b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105349
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Transit Studies",
+        "Manometry",
+        "Feeding",
+        "Medication",
+        "Neurological Conditions",
+        "Surgical History",
+        "Longitudinal Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4514,
+      "title": "Pediatric Intestinal Malabsorption Module",
+      "body": "Supports malabsorption assessment.\n\nIntegrates\n\n• Growth\n• Stool Findings\n• Micronutrients\n• Laboratory Results\n• Pancreatic Function\n• Intestinal Disease\n• Genetics\n• Dietary Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6280ea15e7f8ba0d9e16ba6eb1e663fb3dfd158f12211ba7b8545e6ce236f094",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105370
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Growth",
+        "Stool Findings",
+        "Micronutrients",
+        "Laboratory Results",
+        "Pancreatic Function",
+        "Intestinal Disease",
+        "Genetics",
+        "Dietary Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4515,
+      "title": "Pediatric Celiac Disease Module",
+      "body": "Supports comprehensive pediatric celiac disease care.\n\nIntegrates\n\n• Serology\n• Genetics\n• Endoscopy\n• Histopathology\n• Growth\n• Nutrition\n• Gluten-free Diet\n• Micronutrients\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cc6f60350e6d47a402e23e1880667756d2a9f10135033d12d8bbbf5b85aa9db3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105391
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Serology",
+        "Genetics",
+        "Endoscopy",
+        "Histopathology",
+        "Growth",
+        "Nutrition",
+        "Gluten-free Diet",
+        "Micronutrients",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4516,
+      "title": "Pediatric Inflammatory Bowel Disease Platform",
+      "body": "Supports pediatric inflammatory bowel disease.\n\nIntegrates\n\n• Crohn Disease\n• Ulcerative Colitis\n• IBD-Unclassified\n• Symptoms\n• Growth\n• Endoscopy\n• Imaging\n• Histopathology\n• Medication\n• Surgery\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "061968e3974fa8a7f70757b6de17cd637d7f8f2181fb4b56d6fdb9d3bfcecc65",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105413
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Crohn Disease",
+        "Ulcerative Colitis",
+        "IBD-Unclassified",
+        "Symptoms",
+        "Growth",
+        "Endoscopy",
+        "Imaging",
+        "Histopathology",
+        "Medication",
+        "Surgery"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4517,
+      "title": "Pediatric Crohn Disease Module",
+      "body": "Supports longitudinal Crohn disease management.\n\nTracks\n\n• Disease Location\n• Disease Behavior\n• Symptoms\n• Growth\n• Laboratory Activity\n• Endoscopy\n• Imaging\n• Treatment\n• Complications\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e94ba6fda8ce526f2b0ed7d2b0d11ef1a9c4bd1be63eef192f07edcd0726c771",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105436
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Disease Location",
+        "Disease Behavior",
+        "Symptoms",
+        "Growth",
+        "Laboratory Activity",
+        "Endoscopy",
+        "Imaging",
+        "Treatment",
+        "Complications",
+        "Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4518,
+      "title": "Pediatric Ulcerative Colitis Module",
+      "body": "Supports longitudinal ulcerative colitis management.\n\nTracks\n\n• Disease Extent\n• Symptoms\n• Laboratory Activity\n• Endoscopy\n• Histopathology\n• Medication\n• Hospitalizations\n• Surgery\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "139004d84a31e5bf764c49969dff92efdd509ca8395d9b88b8ea597ded622b68",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105459
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Disease Extent",
+        "Symptoms",
+        "Laboratory Activity",
+        "Endoscopy",
+        "Histopathology",
+        "Medication",
+        "Hospitalizations",
+        "Surgery",
+        "Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4519,
+      "title": "Very-Early-Onset IBD & Immunogenetics Module",
+      "body": "Supports very-early-onset inflammatory bowel disease.\n\nIntegrates\n\n• Age at Onset\n• Phenotype\n• Immune Findings\n• Infection History\n• Genetics\n• Family History\n• Endoscopy\n• Histopathology\n• Targeted Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "07c8f91b566a491accde14a483d4ab5f0950d15998a866d9f9332f749ec1e69f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105481
+      },
+      "verdict": "Very-early-onset IBD retains age at onset, immune/infection context, genetics and family history. Targeted treatment is an independently authorized specialist plan, not inferred from a variant.",
+      "feature_labels": [
+        "Age at Onset",
+        "Phenotype",
+        "Immune Findings",
+        "Infection History",
+        "Genetics",
+        "Family History",
+        "Endoscopy",
+        "Histopathology",
+        "Targeted Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4520,
+      "title": "Pediatric IBD Disease Activity Intelligence Engine",
+      "body": "Supports longitudinal assessment of IBD activity.\n\nIntegrates\n\n• Symptoms\n• Growth\n• Laboratory Markers\n• Stool Biomarkers\n• Endoscopy\n• Imaging\n• Medication\n• Patient-reported Outcomes\n\nSupports validated pediatric disease activity frameworks where appropriate.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a2b7210bd24acf5d243315c7ce2c791b8b2d2b52c87ecce84a0af5eb799e6e2c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105503
+      },
+      "verdict": "A pediatric disease-activity score requires a named validated framework/version and complete inputs; missing inputs cannot produce false remission or an invented score.",
+      "feature_labels": [
+        "Symptoms",
+        "Growth",
+        "Laboratory Markers",
+        "Stool Biomarkers",
+        "Endoscopy",
+        "Imaging",
+        "Medication",
+        "Patient-reported Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4521,
+      "title": "Pediatric Gastrointestinal Endoscopy Module",
+      "body": "Supports pediatric diagnostic and therapeutic endoscopy.\n\nRecords\n\n• Indication\n• Procedure\n• Anatomical Findings\n• Images\n• Biopsies\n• Intervention\n• Sedation Context\n• Complications\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ba1bd74020259f683e904cb1ed4fb545d6e94a3a41058c6e43593365c0afd366",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105526
+      },
+      "verdict": "Endoscopy retains anatomical findings, image/biopsy identity, sedation context, interventions and complications; separate procedure authorization from archival access.",
+      "feature_labels": [
+        "Indication",
+        "Procedure",
+        "Anatomical Findings",
+        "Images",
+        "Biopsies",
+        "Intervention",
+        "Sedation Context",
+        "Complications",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4522,
+      "title": "Pediatric Endoscopy Image Intelligence Module",
+      "body": "Supports AI-assisted analysis of pediatric endoscopic images.\n\nMay assist with\n\n• Anatomical Localization\n• Mucosal Abnormality Detection\n• Lesion Mapping\n• Inflammation Assessment\n• Image Quality\n• Longitudinal Comparison\n\nFinal interpretation remains under specialist review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2f7db821bd7205575f67f6bd1346384fb6a72421e97605690df7c2258e359dc7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105548
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Anatomical Localization",
+        "Mucosal Abnormality Detection",
+        "Lesion Mapping",
+        "Inflammation Assessment",
+        "Image Quality",
+        "Longitudinal Comparison"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4523,
+      "title": "Pediatric Gastrointestinal Histopathology Integration Module",
+      "body": "Connects gastroenterology with pathology.\n\nIntegrates\n\n• Biopsy Location\n• Endoscopic Findings\n• Histology\n• Immunohistochemistry\n• Molecular Findings\n• Pathologist Interpretation\n• Clinical Diagnosis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f31187419e605596d203427763d3ee3ccb3c6c43acb23c1bd37585d1d81c64c2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105569
+      },
+      "verdict": "Biopsy location and collection episode link histopathology, immunohistochemistry and molecular findings to the signed pathologist interpretation; no image-model output replaces it.",
+      "feature_labels": [
+        "Biopsy Location",
+        "Endoscopic Findings",
+        "Histology",
+        "Immunohistochemistry",
+        "Molecular Findings",
+        "Pathologist Interpretation",
+        "Clinical Diagnosis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4524,
+      "title": "Pediatric GI Imaging Integration Module",
+      "body": "Integrates gastrointestinal imaging.\n\nSupports\n\n• Ultrasound\n• Radiography\n• CT\n• MRI\n• MR Enterography\n• Contrast Studies\n• Historical Comparison\n• Radiology Reports\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7c4ee2af57b055c8372971efc3d7142eb3fb1865d9a5672f85e0b44f0ebc95a6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105589
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Ultrasound",
+        "Radiography",
+        "CT",
+        "MRI",
+        "MR Enterography",
+        "Contrast Studies",
+        "Historical Comparison",
+        "Radiology Reports"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4525,
+      "title": "Pediatric Stool Diagnostic Intelligence Module",
+      "body": "Integrates structured stool diagnostics.\n\nSupports\n\n• Microbiology\n• Molecular Pathogen Testing\n• Inflammatory Biomarkers\n• Malabsorption Markers\n• Pancreatic Markers\n• Occult Blood\n• Longitudinal Trends\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "925879af7489675a87529c8cff8f2b975282f8b71ad96a2a6bff7f976b580b56",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105610
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Microbiology",
+        "Molecular Pathogen Testing",
+        "Inflammatory Biomarkers",
+        "Malabsorption Markers",
+        "Pancreatic Markers",
+        "Occult Blood",
+        "Longitudinal Trends"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4526,
+      "title": "Clinical Pediatric Hepatology Platform",
+      "body": "Supports comprehensive pediatric liver medicine.\n\nIntegrates\n\n• Liver Disease\n• Cholestasis\n• Viral Hepatitis\n• Autoimmune Disease\n• Metabolic Disease\n• Genetic Disease\n• Portal Hypertension\n• Liver Failure\n• Transplantation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "853ea13596f88646c924720d9ed54b37c57e575c17c0d0071ba964b45a06035e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105630
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Liver Disease",
+        "Cholestasis",
+        "Viral Hepatitis",
+        "Autoimmune Disease",
+        "Metabolic Disease",
+        "Genetic Disease",
+        "Portal Hypertension",
+        "Liver Failure",
+        "Transplantation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4527,
+      "title": "Pediatric Liver Function Longitudinal Module",
+      "body": "Tracks longitudinal hepatic status.\n\nIntegrates\n\n• Liver Enzymes\n• Bilirubin\n• Synthetic Function\n• Coagulation\n• Albumin\n• Imaging\n• Clinical Findings\n• Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "52452f597e7a513aa2411fe705861c1b0afb3b0e6783e8a6566f4e99d5e7a523",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105652
+      },
+      "verdict": "Hepatic synthetic function/coagulation and clinical context must remain distinct from isolated enzyme elevation; preserve measurement units and temporal provenance.",
+      "feature_labels": [
+        "Liver Enzymes",
+        "Bilirubin",
+        "Synthetic Function",
+        "Coagulation",
+        "Albumin",
+        "Imaging",
+        "Clinical Findings",
+        "Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4528,
+      "title": "Pediatric Cholestasis Module",
+      "body": "Supports neonatal and pediatric cholestatic disorders.\n\nIntegrates\n\n• Bilirubin Pattern\n• Liver Tests\n• Imaging\n• Genetics\n• Metabolic Testing\n• Infectious Evaluation\n• Histopathology\n• Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dfcf18c54c4880a33613e15702e8f7e4dcd412f837fd18c620a50527c6d72736",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105673
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Bilirubin Pattern",
+        "Liver Tests",
+        "Imaging",
+        "Genetics",
+        "Metabolic Testing",
+        "Infectious Evaluation",
+        "Histopathology",
+        "Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4529,
+      "title": "Pediatric Viral Hepatitis Module",
+      "body": "Supports pediatric viral hepatitis care.\n\nIntegrates\n\n• Virus\n• Serology\n• Molecular Testing\n• Viral Load\n• Liver Function\n• Treatment\n• Vaccination\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a96674b3bb1438f96d01db571be5596e99081616e534bf46f430231008159c62",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105694
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Virus",
+        "Serology",
+        "Molecular Testing",
+        "Viral Load",
+        "Liver Function",
+        "Treatment",
+        "Vaccination",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4530,
+      "title": "Pediatric Autoimmune Liver Disease Module",
+      "body": "Supports autoimmune liver disorders.\n\nIntegrates\n\n• Autoantibodies\n• Immunoglobulins\n• Liver Function\n• Histopathology\n• Imaging\n• Immunosuppressive Therapy\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "deff9854dda382f292f595dd65ece8b91aa52115d8e8f1eb783bba72bf2425e4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105715
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Autoantibodies",
+        "Immunoglobulins",
+        "Liver Function",
+        "Histopathology",
+        "Imaging",
+        "Immunosuppressive Therapy",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4531,
+      "title": "Pediatric Genetic & Metabolic Liver Disease Module",
+      "body": "Supports inherited and metabolic liver disease.\n\nIntegrates\n\n• Phenotype\n• Biochemistry\n• Metabolomics where available\n• Genetics\n• Family History\n• Imaging\n• Pathology\n• Targeted Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d8912a7b29e51ad5629f0156fe62f1ef905747641f14f413e130bdf4bd1dcfa5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105735
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Phenotype",
+        "Biochemistry",
+        "Metabolomics where available",
+        "Genetics",
+        "Family History",
+        "Imaging",
+        "Pathology",
+        "Targeted Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4532,
+      "title": "Pediatric Portal Hypertension Module",
+      "body": "Supports portal hypertension surveillance.\n\nTracks\n\n• Etiology\n• Splenomegaly\n• Platelets\n• Imaging\n• Varices\n• Endoscopy\n• Bleeding Events\n• Intervention\n• Longitudinal Status\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7741e1aaa6fccc2c8874a3cef3f3c0f68cbc63ed883921c24089d6e50d287bce",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105756
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Etiology",
+        "Splenomegaly",
+        "Platelets",
+        "Imaging",
+        "Varices",
+        "Endoscopy",
+        "Bleeding Events",
+        "Intervention",
+        "Longitudinal Status"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4533,
+      "title": "Pediatric Acute & Chronic Liver Failure Module",
+      "body": "Supports high-acuity liver failure workflows.\n\nIntegrates\n\n• Etiology\n• Liver Function\n• Coagulation\n• Neurological Status\n• Metabolic Status\n• Organ Dysfunction\n• Treatment\n• Transplant Assessment\n\nSupports clinician-defined escalation pathways.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "53964f3a34307a125389f8c5272c912bc3ebd69964f5420a3cab77140c7faf7b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105778
+      },
+      "verdict": "Liver failure retains neurological/metabolic/multiorgan status and transplant assessment. Human-led escalation must not wait for automated completion or model availability.",
+      "feature_labels": [
+        "Etiology",
+        "Liver Function",
+        "Coagulation",
+        "Neurological Status",
+        "Metabolic Status",
+        "Organ Dysfunction",
+        "Treatment",
+        "Transplant Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4534,
+      "title": "Pediatric Liver Transplantation Module",
+      "body": "Supports pre- and post-transplant pediatric liver care.\n\nTracks\n\n• Transplant Indication\n• Donor Context\n• Procedure\n• Immunosuppression\n• Graft Function\n• Rejection\n• Infection\n• Medication\n• Long-term Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3c6dea3efbadd9062176d533c3e3ef23947c725b8573ea57b446fa61876b4bb7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105801
+      },
+      "verdict": "Preserve donor context under separate authorization, graft/rejection/infection history and independently prescribed immunosuppression; suspected rejection differs from confirmed pathology.",
+      "feature_labels": [
+        "Transplant Indication",
+        "Donor Context",
+        "Procedure",
+        "Immunosuppression",
+        "Graft Function",
+        "Rejection",
+        "Infection",
+        "Medication",
+        "Long-term Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4535,
+      "title": "Pediatric Liver Medication Toxicity Surveillance Module",
+      "body": "Supports detection and longitudinal assessment of potential medication-related liver injury.\n\nIntegrates\n\n• Medication Exposure\n• Dose\n• Treatment Timeline\n• Liver Tests\n• Symptoms\n• Alternative Causes\n• Treatment Changes\n• Outcome\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "469698ee7ff08be885be8d1814d6537eb1b5938cf7d7a5f960aec7c39a4bc8f9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105823
+      },
+      "verdict": "Suspected drug-related liver injury retains exposure timeline, alternative causes and clinician causality assessment; temporal association is not automatic attribution.",
+      "feature_labels": [
+        "Medication Exposure",
+        "Dose",
+        "Treatment Timeline",
+        "Liver Tests",
+        "Symptoms",
+        "Alternative Causes",
+        "Treatment Changes",
+        "Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4537,
+      "title": "Pediatric Pancreatitis Module",
+      "body": "Supports acute and recurrent pancreatitis.\n\nTracks\n\n• Episodes\n• Symptoms\n• Enzymes\n• Imaging\n• Etiology\n• Medication\n• Genetics\n• Complications\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b5f6d4711fd4ce38f8d525168f20885f2b71db66ec04160bf109f165427e7dc5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105865
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Episodes",
+        "Symptoms",
+        "Enzymes",
+        "Imaging",
+        "Etiology",
+        "Medication",
+        "Genetics",
+        "Complications",
+        "Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4538,
+      "title": "Pediatric Pancreatic Exocrine Insufficiency Module",
+      "body": "Supports exocrine pancreatic insufficiency.\n\nIntegrates\n\n• Etiology\n• Stool Markers\n• Growth\n• Nutrition\n• Fat-soluble Vitamins\n• Enzyme Replacement\n• Treatment Response\n\nConnects with cystic fibrosis care where relevant.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "36bf11502869a933ed2d0688ad592c4283196f6744255755726280071ce252ba",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105887
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Etiology",
+        "Stool Markers",
+        "Growth",
+        "Nutrition",
+        "Fat-soluble Vitamins",
+        "Enzyme Replacement",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4539,
+      "title": "Pediatric Clinical Nutrition Platform",
+      "body": "Coordinates clinical pediatric nutrition.\n\nIntegrates\n\n• Growth\n• Energy Requirements\n• Macronutrients\n• Micronutrients\n• Medical Diets\n• Feeding Route\n• Malnutrition Risk\n• Disease-specific Nutrition\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ec276eed1a640d5f330b53e37de5e3ec0b12164a99fdc114e169bf4a8a2df63a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105909
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Growth",
+        "Energy Requirements",
+        "Macronutrients",
+        "Micronutrients",
+        "Medical Diets",
+        "Feeding Route",
+        "Malnutrition Risk",
+        "Disease-specific Nutrition"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4540,
+      "title": "Pediatric Malnutrition Risk & Monitoring Engine",
+      "body": "Supports identification and longitudinal monitoring of nutritional risk.\n\nIntegrates\n\n• Weight\n• Height\n• Growth Velocity\n• BMI\n• Body Composition where available\n• Dietary Intake\n• Disease Burden\n• Laboratory Findings\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "46ec91b520945532b319d2c9a9a3a957dd671d2589d9ba709f09f411eb94c083",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105930
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Weight",
+        "Height",
+        "Growth Velocity",
+        "BMI",
+        "Body Composition where available",
+        "Dietary Intake",
+        "Disease Burden",
+        "Laboratory Findings"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4541,
+      "title": "Pediatric Micronutrient Status Module",
+      "body": "Tracks clinically relevant micronutrient status.\n\nSupports\n\n• Iron\n• Vitamin D\n• Vitamin B12\n• Folate\n• Fat-soluble Vitamins\n• Trace Elements\n• Laboratory Trends\n• Supplementation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "af1ad27829446a7e21508239f81b4a3d042e3e1f446e8871d995a8831de189f6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105951
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Iron",
+        "Vitamin D",
+        "Vitamin B12",
+        "Folate",
+        "Fat-soluble Vitamins",
+        "Trace Elements",
+        "Laboratory Trends",
+        "Supplementation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4542,
+      "title": "Pediatric Feeding Disorder Module",
+      "body": "Supports multidisciplinary pediatric feeding disorders.\n\nIntegrates\n\n• Feeding Skills\n• Oral Intake\n• Sensory Factors\n• Swallowing\n• Gastrointestinal Disease\n• Nutrition\n• Development\n• Behavioral Context\n• Family Impact\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5c60c7b10435d03eefe7572a3dcabf55d3c9dbae003ff7f91084c99fe050a0f2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105972
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Feeding Skills",
+        "Oral Intake",
+        "Sensory Factors",
+        "Swallowing",
+        "Gastrointestinal Disease",
+        "Nutrition",
+        "Development",
+        "Behavioral Context",
+        "Family Impact"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4543,
+      "title": "Pediatric Enteral Nutrition Module",
+      "body": "Supports clinician-prescribed enteral nutrition.\n\nTracks\n\n• Indication\n• Formula\n• Route\n• Feeding Schedule\n• Calories\n• Fluid\n• Tolerance\n• Growth\n• Tube-related Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4f205a60b981b62e3f0b472a98554a60241713c26557e00dde9687221d54554a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105994
+      },
+      "verdict": "Enteral nutrition retains formula, route, schedule, fluid/calorie units, tube complications and clinician prescription; no autonomous feed changes.",
+      "feature_labels": [
+        "Indication",
+        "Formula",
+        "Route",
+        "Feeding Schedule",
+        "Calories",
+        "Fluid",
+        "Tolerance",
+        "Growth",
+        "Tube-related Complications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4544,
+      "title": "Pediatric Parenteral Nutrition Module",
+      "body": "Supports specialist-supervised parenteral nutrition.\n\nIntegrates\n\n• Indication\n• Composition\n• Central Access\n• Infusion Schedule\n• Laboratory Monitoring\n• Liver Function\n• Infection\n• Growth\n• Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e0e3b0a0fca88660e50e075b1b15fb1fb20a5960fbffda278e7adf281060be92",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 106016
+      },
+      "verdict": "Parenteral nutrition requires versioned authorized composition, central access, infusion schedule and monitoring. Interfaces must not silently translate a tracking record into compounding or pump instructions.",
+      "feature_labels": [
+        "Indication",
+        "Composition",
+        "Central Access",
+        "Infusion Schedule",
+        "Laboratory Monitoring",
+        "Liver Function",
+        "Infection",
+        "Growth",
+        "Complications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4545,
+      "title": "Pediatric Intestinal Failure & Rehabilitation Module",
+      "body": "Supports complex pediatric intestinal failure.\n\nIntegrates\n\n• Remaining Intestinal Anatomy\n• Enteral Nutrition\n• Parenteral Nutrition\n• Growth\n• Central Access\n• Infection\n• Liver Health\n• Surgical History\n• Intestinal Adaptation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "099526174e029ef6d6c22180cc937dd0ac593c0345033e4d5d701bca56474809",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 106038
+      },
+      "verdict": "Intestinal rehabilitation preserves remaining bowel anatomy, enteral/parenteral support, central access, infections, liver health and adaptation; these are complementary profiles, not duplicates.",
+      "feature_labels": [
+        "Remaining Intestinal Anatomy",
+        "Enteral Nutrition",
+        "Parenteral Nutrition",
+        "Growth",
+        "Central Access",
+        "Infection",
+        "Liver Health",
+        "Surgical History",
+        "Intestinal Adaptation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4546,
+      "title": "Pediatric Gastroenterology AI Decision Support",
+      "body": "Provides AI-assisted digestive disease intelligence.\n\nSupports\n\n• Symptom Pattern Analysis\n• Growth Trend Analysis\n• Laboratory Correlation\n• Endoscopy Support\n• Nutrition Risk Detection\n• Disease Activity Trends\n• Treatment-response Analysis\n\nAI output requires qualified clinician review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dc7790413e2fb0a65ea6beed1dd536ce3842cb89260f0ad241fc467685eb15ed",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 106060
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Symptom Pattern Analysis",
+        "Growth Trend Analysis",
+        "Laboratory Correlation",
+        "Endoscopy Support",
+        "Nutrition Risk Detection",
+        "Disease Activity Trends",
+        "Treatment-response Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4548,
+      "title": "Pediatric Gastroenterology AI Pre-Visit Assessment",
+      "body": "Creates structured pre-visit gastroenterology summaries.\n\nAI may organize\n\n• Symptoms\n• Stool Patterns\n• Diet\n• Growth\n• Medication\n• Previous Testing\n• Endoscopy\n• Imaging\n• Family History\n• Previous Treatment\n\nGenerated content remains draft until clinician validation.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c99df33e5b9cd3e9cb354653f3162ed031141ca53732db6f9b74efe2ca76dd01",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 106105
+      },
+      "verdict": "Pre-visit summary remains draft with symptom/diet/family source attribution and explicit missing context until clinician validation.",
+      "feature_labels": [
+        "Symptoms",
+        "Stool Patterns",
+        "Diet",
+        "Growth",
+        "Medication",
+        "Previous Testing",
+        "Endoscopy",
+        "Imaging",
+        "Family History",
+        "Previous Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4549,
+      "title": "Pediatric Gastroenterology Transition-to-Adult-Care Module",
+      "body": "Supports structured transfer to adult gastroenterology, hepatology and nutrition services.\n\nTransfers\n\n• Diagnoses\n• Genetics\n• Endoscopy History\n• Histopathology\n• Imaging\n• Nutrition Support\n• Medication\n• Surgery\n• Transplant History\n• Long-term Risks\n\nMaintains continuity through the EDHT Medical Passport.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a14debb59d81006126de87e6df52fdebb38276994f8e24718139b0c90f4894ca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 106130
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Genetics",
+        "Endoscopy History",
+        "Histopathology",
+        "Imaging",
+        "Nutrition Support",
+        "Medication",
+        "Surgery",
+        "Transplant History",
+        "Long-term Risks"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4550,
+      "title": "Clinical Pediatric Gastroenterology, Hepatology & Nutrition Intelligence Hub",
+      "body": "Coordinates the complete pediatric digestive-health ecosystem.\n\nIntegrates\n\n• Gastroenterology\n• Hepatology\n• Pancreatology\n• Inflammatory Bowel Disease\n• Celiac Disease\n• Motility\n• Endoscopy\n• Histopathology\n• Clinical Nutrition\n• Feeding Disorders\n• Intestinal Failure\n• Genetics\n• Allergy & Immunology\n• Artificial Intelligence\n• Digital Twin\n• Medical Passport\n• Transition to Adult Care\n\nProvides longitudinal, multidisciplinary and cross-border pediatric digestive intelligence across EDHT.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "42de5f5068c304debca58154b3e16ef58e1a036fc7aeda56d8518101d84a6ccc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 106155
+      },
+      "verdict": "Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.",
+      "feature_labels": [
+        "Gastroenterology",
+        "Hepatology",
+        "Pancreatology",
+        "Inflammatory Bowel Disease",
+        "Celiac Disease",
+        "Motility",
+        "Endoscopy",
+        "Histopathology",
+        "Clinical Nutrition",
+        "Feeding Disorders",
+        "Intestinal Failure",
+        "Genetics",
+        "Allergy & Immunology",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Medical Passport",
+        "Transition to Adult Care"
+      ],
+      "date": "2026-09-14"
+    }
+  ]
+}

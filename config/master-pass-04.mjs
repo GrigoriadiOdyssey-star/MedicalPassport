@@ -6,6 +6,19 @@ export const domains={
  HEMONC:{ranges:[[961,980],[3121,3140],[3241,3260]],note:'Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.'}
 };
 export const specific={
+ 3285:'Rome IV is an explicit legacy framework reference, not proof of current applicability; retain release/version and clinician assessment rather than hard-code diagnostic criteria.',
+ 4519:'Very-early-onset IBD retains age at onset, immune/infection context, genetics and family history. Targeted treatment is an independently authorized specialist plan, not inferred from a variant.',
+ 4520:'A pediatric disease-activity score requires a named validated framework/version and complete inputs; missing inputs cannot produce false remission or an invented score.',
+ 4521:'Endoscopy retains anatomical findings, image/biopsy identity, sedation context, interventions and complications; separate procedure authorization from archival access.',
+ 4523:'Biopsy location and collection episode link histopathology, immunohistochemistry and molecular findings to the signed pathologist interpretation; no image-model output replaces it.',
+ 4527:'Hepatic synthetic function/coagulation and clinical context must remain distinct from isolated enzyme elevation; preserve measurement units and temporal provenance.',
+ 4533:'Liver failure retains neurological/metabolic/multiorgan status and transplant assessment. Human-led escalation must not wait for automated completion or model availability.',
+ 4534:'Preserve donor context under separate authorization, graft/rejection/infection history and independently prescribed immunosuppression; suspected rejection differs from confirmed pathology.',
+ 4535:'Suspected drug-related liver injury retains exposure timeline, alternative causes and clinician causality assessment; temporal association is not automatic attribution.',
+ 4543:'Enteral nutrition retains formula, route, schedule, fluid/calorie units, tube complications and clinician prescription; no autonomous feed changes.',
+ 4544:'Parenteral nutrition requires versioned authorized composition, central access, infusion schedule and monitoring. Interfaces must not silently translate a tracking record into compounding or pump instructions.',
+ 4545:'Intestinal rehabilitation preserves remaining bowel anatomy, enteral/parenteral support, central access, infections, liver health and adaptation; these are complementary profiles, not duplicates.',
+ 4548:'Pre-visit summary remains draft with symptom/diet/family source attribution and explicit missing context until clinician validation.' ,
  906:'Oximetry requires device identity, signal quality, observation time and acquisition context; thresholds and escalation coverage need approved configuration, not inferred from a generic Alerts label.',
  913:'Weight-based dosage is retained as source intent. Record weight/time/units and independently authorized prescription; do not infer an autonomous dosing engine.',
  3181:'Source includes an unresolved contentReference marker. Retain it as source provenance but do not treat it as a verified citation. Respiratory core is a specialty profile referencing shared owners.',
