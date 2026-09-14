@@ -1,0 +1,75 @@
+# MASTER-04 domain findings
+
+## PULM — 104 new IDs
+
+Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.
+
+- 906: Oximetry requires device identity, signal quality, observation time and acquisition context; thresholds and escalation coverage need approved configuration, not inferred from a generic Alerts label.
+- 913: Weight-based dosage is retained as source intent. Record weight/time/units and independently authorized prescription; do not infer an autonomous dosing engine.
+- 3181: Source includes an unresolved contentReference marker. Retain it as source provenance but do not treat it as a verified citation. Respiratory core is a specialty profile referencing shared owners.
+- 3200: Source contentReference marker is not external evidence. Hub coordinates shared capabilities; it is not a separate clinical truth store.
+- 4460: Action plans require author/version/effective date and school-specific disclosure scope. Display of rescue instructions is separate from generation of a new treatment plan.
+- 4461: Preserve raw curves, FEV1/FVC, reference equation/version, age/height context and test-quality status. Non-comparable or poor-quality tests cannot silently drive a trend.
+- 4463: Pair pre/post measurements with medication, administration time, repeat time and quality; the system records specialist interpretation rather than inventing a response threshold.
+- 4472: CFTR molecular evidence retains classification release, phenotype and family authorization; molecular context alone does not authorize treatment.
+- 4476: CFTR modulator eligibility, product/dose, laboratory monitoring and response remain specialist-supervised with explicit source/evidence versions; no autonomous product substitution.
+- 4484: Preserve invasive airway, prescribed ventilator settings, backup systems, emergency plan and caregiver training. Read-only acquisition cannot silently become remote ventilator control.
+- 4485: Tracheostomy type, caregiver competency and decannulation assessment must survive consolidation; final decannulation remains a clinical decision.
+- 4488: Sleep stages, carbon dioxide and device titration context are distinct from pulse-oximetry alone; preserve specialist report and acquisition settings.
+- 4491: Clinician-defined escalation requires recipient coverage, acknowledgement, fallback and unresolved-alert state; connectivity is not continuous clinical supervision.
+- 4492: An inhaler device event is evidence of device use, not proof of delivered dose or correct inhalation technique; reconcile with source 4493 assessment.
+- 4496: Generated pre-visit content remains a draft and preserves reporter/source attribution until clinician validation.
+- 4498: Emergency passport exposes authorized minimum-necessary current respiratory baseline and device dependency; multilingual access does not bypass identity/consent checks or delay emergency care.
+- 4499: Transfer includes source genetics, device/oxygen/ventilation and emergency plans; add receiving-provider acknowledgement and follow-up rather than count export as completed handover.
+
+## GASTRO — 116 new IDs
+
+Pediatric digestive/hepatic/nutrition profile retains symptoms, growth, source laboratory/endoscopic/pathology evidence and treatment context. Separate observations from clinician diagnosis, nutrition prescriptions and derived predictions. Preserve intestinal failure, transplantation, feeding and cross-specialty privacy without autonomous treatment changes.
+
+- 3285: Rome IV is an explicit legacy framework reference, not proof of current applicability; retain release/version and clinician assessment rather than hard-code diagnostic criteria.
+- 4519: Very-early-onset IBD retains age at onset, immune/infection context, genetics and family history. Targeted treatment is an independently authorized specialist plan, not inferred from a variant.
+- 4520: A pediatric disease-activity score requires a named validated framework/version and complete inputs; missing inputs cannot produce false remission or an invented score.
+- 4521: Endoscopy retains anatomical findings, image/biopsy identity, sedation context, interventions and complications; separate procedure authorization from archival access.
+- 4523: Biopsy location and collection episode link histopathology, immunohistochemistry and molecular findings to the signed pathologist interpretation; no image-model output replaces it.
+- 4527: Hepatic synthetic function/coagulation and clinical context must remain distinct from isolated enzyme elevation; preserve measurement units and temporal provenance.
+- 4533: Liver failure retains neurological/metabolic/multiorgan status and transplant assessment. Human-led escalation must not wait for automated completion or model availability.
+- 4534: Preserve donor context under separate authorization, graft/rejection/infection history and independently prescribed immunosuppression; suspected rejection differs from confirmed pathology.
+- 4535: Suspected drug-related liver injury retains exposure timeline, alternative causes and clinician causality assessment; temporal association is not automatic attribution.
+- 4543: Enteral nutrition retains formula, route, schedule, fluid/calorie units, tube complications and clinician prescription; no autonomous feed changes.
+- 4544: Parenteral nutrition requires versioned authorized composition, central access, infusion schedule and monitoring. Interfaces must not silently translate a tracking record into compounding or pump instructions.
+- 4545: Intestinal rehabilitation preserves remaining bowel anatomy, enteral/parenteral support, central access, infections, liver health and adaptation; these are complementary profiles, not duplicates.
+- 4548: Pre-visit summary remains draft with symptom/diet/family source attribution and explicit missing context until clinician validation.
+
+## RHEUM — 48 new IDs
+
+Rheumatology retains longitudinal phenotype, disease activity, multisystem assessment and source-specific evidence. Laboratory biomarkers alone cannot become a diagnosis or treatment authorization. Shared medication and consent owners control immunosuppression context; preserve joint, ocular, renal, growth, function and vaccination profiles separately.
+
+- 4703: Joint mapping retains examination source, joint/site, laterality, range of motion and comparison time; clinician-observed swelling is not inferred from an illustrative map.
+- 4704: One lupus timeline is a synchronized authorized projection across domains, not a mandate to overwrite renal/cardiac specialty evidence.
+- 4707: Ethnic/geographic context remains conditional and attributed; it must not substitute for phenotype, testing or clinical assessment.
+- 4710: Preserve evolving phenotype and diagnostic uncertainty; canonicalization must not force a fixed disease label.
+- 4715: Permanent contraindication, temporary precaution and specialist review are distinct states; eligibility needs a current approved policy and clinician assessment.
+- 4719: Patient and guardian reports retain separate attribution; functional burden cannot be suppressed by a normal laboratory result.
+- 4721: Flare/remission documentation and AI change signals are separate; AI cannot classify a flare or modify immunosuppression autonomously.
+- 4725: Independent deployability is retained as an architectural option with shared patient references; local HIGH MVP wording does not expand the adult P0.
+- 5029: Laterality, effusion, tendon involvement, injection and surgery history extend the earlier joint map; keep them as requirements of one joint-assessment profile.
+- 5030: Surveillance retains due/overdue, completed exam, abnormal-result follow-up and responsible recipient; a reminder is not evidence that an eye examination occurred.
+- 5036: Preserve explicit clinician-led urgent Kawasaki assessment; model completion must not delay urgent care or trigger autonomous treatment.
+- 5039: Undifferentiated phenotype retains diagnostic evolution and uncertainty; do not force premature classification during normalization.
+- 5043: Symptoms and functional impairment remain visible with normal inflammatory markers or low disease activity; patient-reported burden is not interchangeable with clinician disease scoring.
+- 5046: Treatment holds are clinician-defined and versioned. Safety alerts do not themselves authorize a drug hold, restart or dose change.
+- 5047: Restriction expiry, dose sequence, revaccination and specialist recommendation extend vaccination context. Expired restriction requires reassessment, not automatic eligibility.
+- 5048: Pediatric task validation, traceability and bias monitoring remain release gates; AI cannot diagnose, prescribe immunosuppression or determine emergency treatment.
+
+## HEMONC — 55 new IDs
+
+Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.
+
+- 969: Transfusion compatibility is a separately validated blood-bank workflow; historical registry data alone cannot authorize product release or administration.
+- 975: Severe bleeding, acute anemia and febrile neutropenia retain human-led urgent pathways; no automated triage result may delay emergency assessment.
+- 3122: TNM/Staging is a source label, not one universal pediatric cancer staging system. Store tumor-specific classification system/version and clinician-signed stage.
+- 3123: MRD records require specimen, assay, sensitivity/quantification context and treatment time point; missing result cannot imply molecular remission.
+- 3128: Donor matching, conditioning, GVHD and immune reconstitution remain distinct transplant workflows with donor/patient identity separation.
+- 3133: Tumor classification, survival prediction and therapy optimization are different AI intended uses requiring separate validation; no autonomous treatment decisions.
+- 3138: Survivorship preserves late toxicity, cardiac/endocrine follow-up, fertility and quality-of-life context under age-appropriate confidential access.
+- 3248: Blood products, reaction history and iron-overload monitoring survive shared transfusion profiles; clinical product selection remains outside autonomous AI authority.

@@ -16,6 +16,8 @@
     "pediatric:build": "node scripts/pediatric-audit.mjs",
     "pediatric:check": "node scripts/pediatric-audit.mjs --check",
     "domain:build": "node scripts/domain-pass.mjs",
-    "domain:check": "node scripts/domain-pass.mjs --check"
+    "domain:check": "node scripts/domain-pass.mjs --check",
+    "master04:build": "node scripts/master04.mjs",
+    "master04:check": "node scripts/master04.mjs --check"
   }
 }

@@ -6,7 +6,10 @@
 
 | Начать здесь | Содержание |
 |---|---|
-| [DOMAIN-03 — последний checkpoint](audit/domain-03/MASTER_GAP_FILL_REPORT.md) | 1 100 reviewed ID; 30 normalized/canonicalized ID → 10 канонических спецификаций документации; 503 сохранённых фрагмента |
+| [MASTER-04 — последний checkpoint](audit/master-04/MASTER_AUDIT_REPORT.md) | 1 423 reviewed; 273 normalized/canonicalized; 17 общих спецификаций с профилями; 7 proposals интегрированы на уровне документации |
+| [Продолжить MASTER-04](audit/master-04/CONTINUE_FROM_HERE.md) | Новые диапазоны review, сохранённые ID и восемь обязательных gates готовности |
+| [Текущие общие спецификации](docs/canonical/master04/README.md) | Один canonical owner + profiles; исторические документы и требования сохранены |
+| [DOMAIN-03 — предыдущий checkpoint](audit/domain-03/MASTER_GAP_FILL_REPORT.md) | 1 100 reviewed ID; 30 normalized/canonicalized ID → 10 канонических спецификаций документации; 503 сохранённых фрагмента |
 | [Продолжить DOMAIN-03](audit/domain-03/CONTINUE_FROM_HERE.md) | Состояние, команды и следующая работа |
 | [Канонические спецификации](docs/canonical/README.md) | Принятая структура документации; клиническая валидация и реализация ещё не выполнены |
 | [PEDIATRIC-02 — предыдущий checkpoint](audit/pediatric-02/MASTER_GAP_FILL_REPORT.md) | 741 reviewed ID, пять профильных спецификаций, 32 semantic decisions и сохранённые source fragments |
@@ -43,6 +46,7 @@ npm run build
 npm test
 npm run check
 npm run domain:check
+npm run master04:check
 ```
 
 Генератор сохраняет 5 175 идентификаторов, применяет точные [редакторские правила](config/editorial-corrections.json) и создаёт [журнал замен](data/corrections-applied.json). Проверки подтверждают целостность источника, воспроизводимость каталога, внутренние ссылки и базовую связность OpenAPI. Они не тестируют отсутствующий сервер и не доказывают клиническую безопасность.
