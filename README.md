@@ -1,3 +1,9 @@
+# Current checkpoint: MASTER-07 (2026-09-15)
+
+1738 / 5175 reviewed; 612 normalized and canonicalized original IDs; 19 shared specifications with 193 source profiles. Seven gap proposals integrated at documentation scope. Implementation ready: 0.
+
+[Current audit report](audit/master-07/MASTER_AUDIT_REPORT.md) · [Continue from checkpoint](audit/master-07/CONTINUE_FROM_HERE.md).
+
 # Current checkpoint: MASTER-06 (2026-09-15)
 
 1673 / 5175 reviewed; 548 normalized and canonicalized original IDs; 19 shared specifications with 158 source profiles. Seven gap proposals integrated at documentation scope. Implementation ready: 0.

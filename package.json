@@ -24,6 +24,8 @@
     "master05:build": "node scripts/master05.mjs",
     "master05:check": "node scripts/master05.mjs --check",
     "master06:build": "node scripts/master06.mjs",
-    "master06:check": "node scripts/master06.mjs --check"
+    "master06:check": "node scripts/master06.mjs --check",
+    "master07:build": "node scripts/master07.mjs",
+    "master07:check": "node scripts/master07.mjs --check"
   }
 }
