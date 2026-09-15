@@ -1,0 +1,18 @@
+{
+  "pass": "MASTER-14",
+  "baseline": "audit/master-08",
+  "apply_deltas_in_order": [
+    "audit/master-09",
+    "audit/master-10",
+    "audit/master-11",
+    "audit/master-12",
+    "audit/master-13",
+    "audit/master-14"
+  ],
+  "merge_rules": {
+    "canonical": "Append profile/requirements under existing owner; preserve previous docs",
+    "ledger": "Overlay by original_id; no new reviewed IDs",
+    "deep_queue": "Retain prior items; owner-boundary resolved only"
+  },
+  "next_safe_action": "Continue high-risk deep review and source-preserving normalization; no UNAUDITED originals remain."
+}
