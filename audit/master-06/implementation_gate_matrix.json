@@ -1,0 +1,1389 @@
+{
+  "schema_version": 5,
+  "pass": "MASTER-06",
+  "edition": "2026-09-15",
+  "parent_checkpoint": "46539f4beb5cc79e3ff35f9d6a6f46086d3390b3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "records": [
+    {
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-ADMINISTRATION.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-AI",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-AI.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-ALLERGY",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-ALLERGY.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-CDS",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-CDS.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-CONSENT",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-CONSENT.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-DATA",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-DATA.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-DEVICES",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-DEVICES.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "PARTIAL_EVIDENCE",
+          "evidence": [
+            "specs/device-configuration.schema.json",
+            "scripts/device-configuration-contract.mjs",
+            "docs/engineering/device-configuration-contract.md",
+            "tests/device-configuration.test.mjs"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Partner terminology and migration conformance, authenticated review, correction/import reconciliation, named approval"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "PARTIAL_EVIDENCE",
+          "evidence": [
+            "specs/device-configuration.schema.json",
+            "scripts/device-configuration-contract.mjs",
+            "docs/engineering/device-configuration-contract.md",
+            "tests/device-configuration.test.mjs"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime integration, authorization, partner conformance, clinical and human-factors acceptance; named approval"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-EMERGENCY.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-ENCOUNTER.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-IMAGING",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-IMAGING.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-IMMUNIZATION.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-INTEROP",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-INTEROP.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-LABORATORY.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-MEDICATION.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-PROFILE",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-PROFILE.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-RESEARCH.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-SPECIALTY.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-TELEMEDICINE.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    },
+    {
+      "canonical_id": "CORE-CAP-TWIN",
+      "implementation_ready": false,
+      "gates": [
+        {
+          "name": "architecture",
+          "status": "DOCUMENTED_NOT_SIGNED_OFF",
+          "evidence": [
+            "docs/canonical/master06/CAP-TWIN.md"
+          ],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named architecture approval and detailed dependency/interface review"
+        },
+        {
+          "name": "data",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Executable field/cardinality/value-set schemas and migration conformance"
+        },
+        {
+          "name": "security",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Threat model review and runtime authorization/security evidence"
+        },
+        {
+          "name": "privacy",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Approved jurisdiction/consent/retention policy and enforcement evidence"
+        },
+        {
+          "name": "interoperability",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Pinned partner profiles/terminologies plus conformance and semantic loss fixtures"
+        },
+        {
+          "name": "clinical_safety",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Intended-use assessment, hazard controls, qualified clinical approval and model/threshold validation"
+        },
+        {
+          "name": "testing",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Runtime, integration, negative clinical workflows and usability test evidence"
+        },
+        {
+          "name": "acceptance",
+          "status": "OPEN",
+          "evidence": [],
+          "approved_by": null,
+          "approval_reference": null,
+          "missing": "Named owner acceptance against approved scope and acceptance results"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2791 @@
+{
+  "schema_version": 5,
+  "pass": "MASTER-06",
+  "edition": "2026-09-15",
+  "parent_checkpoint": "46539f4beb5cc79e3ff35f9d6a6f46086d3390b3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "profiles": [
+    {
+      "id": "M05-HEM-TRANSFUSION",
+      "owner": "CAP-ADMINISTRATION",
+      "source_ids": [
+        969,
+        3248,
+        4181,
+        4182,
+        4183,
+        4184,
+        4993,
+        4994
+      ],
+      "reason": "Transfusion administration owns patient/product/start-end/volume/exposure and reactions. Blood bank remains authoritative for product release, antibody/crossmatch and special requirements; historical compatibility never authorizes a new unit. Preserve chronic/massive programs, hemovigilance and future product requirements.",
+      "semantic_decision": "M05-HEM-TRANSFUSION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        854,
+        3072,
+        3674,
+        4075
+      ],
+      "reason": "Educational output, diagnostic assistance, prediction and surgical support are distinct intended uses of shared AI infrastructure.",
+      "semantic_decision": "PED2-CARD-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        914,
+        3193,
+        3374,
+        4494,
+        4496
+      ],
+      "reason": "Educational assistance, risk prediction, interpretation and draft summarization are distinct task profiles with pediatric evaluation, review and no clinical writes.",
+      "semantic_decision": "M04-PULM-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        954,
+        3173,
+        3293,
+        3453,
+        4546,
+        4548
+      ],
+      "reason": "Retain educational output, diagnostic support, nutrition/activity predictions, endoscopy support and draft summary as separate task profiles; no autonomous prescribing.",
+      "semantic_decision": "M04-GASTRO-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        4722,
+        5048
+      ],
+      "reason": "Shared AI tasks retain pediatric/bias evaluation, source/model version, uncertainty and prohibition on autonomous diagnosis, immunosuppression or emergency treatment.",
+      "semantic_decision": "M04-RHEUM-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-STRATEGIC-GENOMIC",
+      "key": "GENOMIC",
+      "owner": "CAP-AI",
+      "source_ids": [
+        1609,
+        1621
+      ],
+      "reason": "Scientific-execution profiles distinguish human whole-genome/exome/structural variants from pathogen evolution/resistance/outbreak tasks. Clinical report and interpretation authority remains outside adapter execution.",
+      "semantic_decision": "M04-STRATEGIC-GENOMIC",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-STRATEGIC-AI",
+      "key": "AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        1218,
+        1259,
+        1369,
+        1471,
+        1547
+      ],
+      "reason": "Retraining, clinical validation and knowledge updates are separate governed releases. Preserve approval dates, model/dataset versions, feedback and safety monitoring under shared execution infrastructure.",
+      "semantic_decision": "M04-STRATEGIC-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        974,
+        3252,
+        4191,
+        4192,
+        4196,
+        4998
+      ],
+      "reason": "Educational explanation, morphology, differential/risk and draft documentation are separate AI intended uses. Preserve specialist verification, reject/correct/sign/publish states and explicit prohibition on autonomous transfusion/transplant/anticoagulation decisions.",
+      "semantic_decision": "M05-HEM-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        3133,
+        4223,
+        4243,
+        4245
+      ],
+      "reason": "Classification/prognosis, image/pathology analysis, evidence retrieval and case synthesis are separate governed tasks. Unsupported summary statements cannot be silently released as clinical facts.",
+      "semantic_decision": "M05-ONCO-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-ALLERGY-LABEL",
+      "owner": "CAP-ALLERGY",
+      "source_ids": [
+        1115,
+        4416,
+        4418
+      ],
+      "reason": "Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "workflow": "Capture historical label → assess reaction/diagnostic evidence → specialist conclusion → attributable label revision → notify authorized consumers.",
+      "entities": [
+        "AllergyLabel",
+        "ReactionRecord",
+        "DiagnosticEvidence",
+        "DelabelingDecision"
+      ],
+      "dependencies": [
+        "CAP-ALLERGY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+      "prior_document_sha256": "91ad570db8389c71764d1614ce20bac130e05517c043d5ec6467cc2bd107d5c6",
+      "semantic_decision": "PED2-ALLERGY-DRUG-LABEL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-MENTAL-MEDICATION",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        3993,
+        4842,
+        5166
+      ],
+      "reason": "Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "workflow": "Reconcile exposure → verify indication/context → evaluate approved monitoring rules → clinician review → separately authorized order action.",
+      "entities": [
+        "MedicationEpisodeReference",
+        "DoseChangeReference",
+        "MonitoringRequirement",
+        "MonitoringResult",
+        "ResponseAssessment"
+      ],
+      "dependencies": [
+        "CAP-CDS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION",
+        "CAP-LABORATORY",
+        "CAP-AI"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+      "prior_document_sha256": "308e25d39390136403e04f3ec935850bca3050b395cecba6fb0bd77ca45f1940",
+      "semantic_decision": "PED2-MENTAL-MEDICATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-RENAL-MEDICATION",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        933,
+        4566
+      ],
+      "reason": "933 names immunosuppressants, antihypertensives and diuretics; 4566 adds contrast, multiple nephrotoxins, TDM and missing monitoring.",
+      "semantic_decision": "PED2-RENAL-MEDICATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-MED-SAFETY",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        4713,
+        5046
+      ],
+      "reason": "Medication safety profiles retain pre-treatment screening, glucocorticoid/targeted exposures, organ/infection/vaccination context and clinician-defined treatment holds; alerts cannot execute holds.",
+      "semantic_decision": "M04-RHEUM-MED-SAFETY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-STRATEGIC-PHARM",
+      "key": "PHARM",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        1175,
+        1176,
+        1540,
+        1606,
+        1661,
+        1663,
+        1664,
+        1680,
+        1727,
+        1841,
+        1843,
+        1860,
+        2399,
+        2677,
+        4419
+      ],
+      "reason": "Precision medicine has broader diagnostic/preventive intent than pharmacology. Keep that as a sibling decision-support profile; retain CYP, OTC/supplements, cross-reactivity tolerance/evidence and no autonomous prescription.",
+      "semantic_decision": "M04-STRATEGIC-PHARM",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-MED-SAFETY",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        4179,
+        4988,
+        4997
+      ],
+      "reason": "Retain anticoagulation and hematology medication monitoring profiles with renal/weight/procedure context, holds/reversal, cytotoxic/immune exposure and infection/cytopenia monitoring. Assessment cannot execute dose, reversal or hold.",
+      "semantic_decision": "M05-HEM-MED-SAFETY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-PRECISION-SAFETY",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        4220,
+        4227,
+        4228,
+        5130
+      ],
+      "reason": "Preserve molecular actionability/evidence, resistance evolution, germline/somatic/CNV/fusion/reclassification context and authorized BSA/protocol/organ/toxicity checks. A molecular association is not treatment authorization.",
+      "semantic_decision": "M05-ONCO-PRECISION-SAFETY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-MENTAL-CONFIDENTIALITY",
+      "owner": "CAP-CONSENT",
+      "source_ids": [
+        4849,
+        5172
+      ],
+      "reason": "Telecare/transition and element/encounter-level authorization are different responsibilities linked through one consent owner.",
+      "semantic_decision": "PED2-MENTAL-CONFIDENTIALITY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-CARD-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        3062,
+        3662,
+        4062
+      ],
+      "reason": "Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "workflow": "Resolve authorized source records → reconcile identity/version → index timeline → publish bounded summary.",
+      "entities": [
+        "SpecialtyRecordIndex",
+        "ClinicalReference",
+        "ContextSnapshot"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-CARD-RECORD.md",
+      "prior_document_sha256": "a67c90542208c26faec3129247a245d110e37bf487ed0a03e3827a3d3312203c",
+      "semantic_decision": "PED2-CARD-REGISTRY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-GENETICS",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        3077,
+        3672,
+        4073
+      ],
+      "reason": "Shared familial cardiology context; preserve variant interpretation, counseling, family screening and disease-specific panels.",
+      "semantic_decision": "PED2-CARD-GENETICS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-IMMUNE-REGISTRY",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        994,
+        4431,
+        5004
+      ],
+      "reason": "Named SCID/CVID/IgA/CGD conditions plus suspected/confirmed, genetic, infection, malignancy and treatment contexts remain represented.",
+      "semantic_decision": "PED2-IMMUNE-REGISTRY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        916,
+        3182,
+        3362,
+        4452
+      ],
+      "reason": "One respiratory index preserves bronchoscopy, genetics, oxygen, admissions, ventilatory support and outcomes with source versions.",
+      "semantic_decision": "M04-PULM-RECORD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        956,
+        3162,
+        3282,
+        3442,
+        4502
+      ],
+      "reason": "Digestive index retains growth, histology, nutrition, procedure/outcome and imaging references without creating duplicate clinical truth.",
+      "semantic_decision": "M04-GASTRO-RECORD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        976,
+        3242,
+        4162
+      ],
+      "reason": "The hematology index preserves CBC/coagulation, smear/marrow, genetic, transfusion, complication and outcome references with correction/version history.",
+      "semantic_decision": "M05-HEM-RECORD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-GENETICS",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        3257,
+        4168,
+        4189,
+        4996
+      ],
+      "reason": "Genetic report/reference profile preserves phenotype, variant/classification, family/carrier/pedigree and molecular assay context. Data indexing does not take over laboratory or genetics-review authority.",
+      "semantic_decision": "M05-HEM-GENETICS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        3122,
+        4202,
+        5127
+      ],
+      "reason": "Tumor timeline preserves first symptoms, diagnostic delay/milestones, histology/molecular classification versions, stage/risk systems, recurrence and outcomes. TNM is a historical source label, not a universal pediatric staging system.",
+      "semantic_decision": "M05-ONCO-RECORD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-MENTAL-CRISIS",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        3995,
+        3996,
+        4840,
+        5168
+      ],
+      "reason": "Assessment, protective factors, escalation, emergency disposition and follow-up remain human-led; preserve explicit prohibition of autonomous risk determination.",
+      "semantic_decision": "PED2-MENTAL-CRISIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-CARD-SURGERY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        847,
+        3067,
+        3669,
+        4072
+      ],
+      "reason": "Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "workflow": "Preoperative assessment → authorized plan → procedure documentation → postoperative/ICU follow-up → longitudinal outcomes.",
+      "entities": [
+        "Procedure",
+        "SurgicalEpisode",
+        "ComplicationRecord",
+        "FollowUpPlan"
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "prior_document_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf",
+      "semantic_decision": "PED2-CARD-SURGERY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-MENTAL-THERAPY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        3994,
+        4841,
+        5167
+      ],
+      "reason": "Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "workflow": "Referral/indication → agreed goals/modality → sessions → outcome/review → completion/follow-up.",
+      "entities": [
+        "TherapyEpisode",
+        "SessionReference",
+        "ClinicalSummary",
+        "RestrictedSessionNote",
+        "TherapyGoal"
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+      "prior_document_sha256": "5b046e0573967dac2d0b6a562190ad9b8f5c1840c2939d2839d5202e4a9a8211",
+      "semantic_decision": "PED2-MENTAL-THERAPY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-RENAL-DIALYSIS",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        927,
+        4567,
+        4577,
+        4578,
+        4579
+      ],
+      "reason": "Shared treatment/session record with distinct PD, HD and CKRT profiles; retain prescription, access, equipment, modality parameters and interruption history.",
+      "semantic_decision": "PED2-RENAL-DIALYSIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-PROCEDURE",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        3189,
+        3370,
+        4467
+      ],
+      "reason": "Bronchoscopy retains video, lavage, foreign-body removal, diagnostic/therapeutic procedures, sampling, complications and follow-up.",
+      "semantic_decision": "M04-PULM-PROCEDURE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-ENDOSCOPY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        945,
+        3169,
+        3289,
+        3449,
+        4521
+      ],
+      "reason": "Retain capsule/endoscopic ultrasound, therapeutic interventions, images, biopsy location, sedation and complications; image AI is a referenced task.",
+      "semantic_decision": "M04-GASTRO-ENDOSCOPY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-REHAB",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        4720,
+        5044
+      ],
+      "reason": "Preserve baseline, gait/balance, range of motion, assistive devices, OT/PT/home plan and agreed activity goals.",
+      "semantic_decision": "M04-RHEUM-REHAB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-MARROW",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        968,
+        3249,
+        4173,
+        4992
+      ],
+      "reason": "The marrow procedure profile preserves aspiration/core biopsy, specimen tracking, morphology/cellularity, flow, cytogenetic/molecular and signed pathology references. Procedure and laboratory interpretation authorities remain separate.",
+      "semantic_decision": "M05-HEM-MARROW",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-APHERESIS",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        4995
+      ],
+      "reason": "Apheresis is a procedure/session profile of the existing encounter owner. Preserve access, machine, replacement fluid, anticoagulation, collection product and complications without enabling device control.",
+      "semantic_decision": "M05-HEM-APHERESIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-RADIATION",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        4231,
+        4232,
+        5133
+      ],
+      "reason": "Radiotherapy/proton course profiles distinguish planned and delivered dose, fractionation, cranial/spinal targets, critical structures and lifetime exposure; no treatment-equipment control.",
+      "semantic_decision": "M05-ONCO-RADIATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-SURGERY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        4233,
+        5131
+      ],
+      "reason": "Retain operative indication, margins, extent-of-resection assessment, postoperative MRI, pathology, CSF/neurological complications and adjuvant context.",
+      "semantic_decision": "M05-ONCO-SURGERY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-CARD-ECHO",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        846,
+        3064,
+        3664,
+        4064
+      ],
+      "reason": "Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "workflow": "Acquire authorized echo reference → validate identity/measurement metadata → specialist report → longitudinal comparison.",
+      "entities": [
+        "ImagingStudy",
+        "ImagingMeasurement",
+        "DiagnosticReport"
+      ],
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-CARD-ECHO.md",
+      "prior_document_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e",
+      "semantic_decision": "PED2-CARD-ECHO",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-CARD-IMAGING",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        3069,
+        3671,
+        4070
+      ],
+      "reason": "Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "workflow": "Link CT/MRI/echo/nuclear/catheterization study references → validate acquisition/geometry → specialist review → compare compatible studies.",
+      "entities": [
+        "ImagingStudy",
+        "ImagingSeries",
+        "ReconstructionReference",
+        "Report"
+      ],
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-CARD-IMAGING.md",
+      "prior_document_sha256": "b3c3b6e64107375a9a692dff823973856ef01f0f6c5fee75e8a797a62558a819",
+      "semantic_decision": "PED2-CARD-IMAGING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-IMAGING",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        912,
+        3190,
+        3371,
+        4466
+      ],
+      "reason": "All modalities, historical comparison, signed radiology reports and separately governed AI outputs remain available.",
+      "semantic_decision": "M04-PULM-IMAGING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-IMAGING",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        950,
+        3170,
+        3290,
+        3450,
+        4524
+      ],
+      "reason": "Preserve organ-specific ultrasound, fluoroscopy/contrast, MR enterography, historical comparisons and report provenance.",
+      "semantic_decision": "M04-GASTRO-IMAGING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-PATHOLOGY-IMAGES",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        3130,
+        4222
+      ],
+      "reason": "Shared imaging manages whole-slide/annotation references linked to morphology, immunohistochemistry, cytogenetic/molecular and expert reports. It does not authorize or overwrite signed pathology.",
+      "semantic_decision": "M05-ONCO-PATHOLOGY-IMAGES",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-IMAGING",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        3129,
+        4224,
+        5128
+      ],
+      "reason": "Preserve CT/MRI/PET/ultrasound/nuclear studies and CNS lesion/volume, enhancement, edema, mass effect, hydrocephalus/spinal dissemination, postoperative and treatment overlays with acquisition and interpretation provenance.",
+      "semantic_decision": "M05-ONCO-IMAGING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-IMMUNE-VACCINATION",
+      "owner": "CAP-IMMUNIZATION",
+      "source_ids": [
+        4443,
+        5014,
+        5020
+      ],
+      "reason": "Immune safety, antibody-response assessment and post-transplant revaccination are distinct workflows under shared vaccination integration, not duplicate eligibility engines.",
+      "semantic_decision": "PED2-IMMUNE-VACCINATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-VACCINATION",
+      "owner": "CAP-IMMUNIZATION",
+      "source_ids": [
+        4715,
+        5047
+      ],
+      "reason": "One immunization policy profile retains dose sequence, temporary/permanent restrictions, specialist recommendation and expiration/reassessment; expiry is not automatic eligibility.",
+      "semantic_decision": "M04-RHEUM-VACCINATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-STRATEGIC-INTEROP",
+      "key": "INTEROP",
+      "owner": "CAP-INTEROP",
+      "source_ids": [
+        1356,
+        1359
+      ],
+      "reason": "Named protocols and external-system intent overlap the proposed adaptive connector; discovery, mapping/loss review and signed releases extend the existing integration owner.",
+      "semantic_decision": "M04-STRATEGIC-INTEROP",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-RENAL-FUNCTION",
+      "owner": "CAP-LABORATORY",
+      "source_ids": [
+        926,
+        4552
+      ],
+      "reason": "Retain urea, creatinine, cystatin C, eGFR, urinary markers, protein/albumin, electrolytes, acid-base, recovery and persistent-pattern distinctions. Unknown context cannot imply normality.",
+      "workflow": "Ingest validated results → bind units/method/age/context → clinician-approved calculation → baseline comparison → review.",
+      "entities": [
+        "Observation",
+        "RenalBaseline",
+        "EquationReference",
+        "TrendAssessment"
+      ],
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+      "prior_document_sha256": "0ba894f3fcb6c0e833a8541cdf00624f7c614c65ec67cd833bc4f091a8062dc7",
+      "semantic_decision": "PED2-RENAL-FUNCTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-FUNCTION",
+      "owner": "CAP-LABORATORY",
+      "source_ids": [
+        905,
+        3369,
+        4461,
+        4462,
+        4463,
+        4465
+      ],
+      "reason": "Retain raw spirometry curves, plethysmography, diffusion/exercise/respiratory muscle testing, quality/reference version and paired bronchodilator administration timing.",
+      "semantic_decision": "M04-PULM-FUNCTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-LAB",
+      "owner": "CAP-LABORATORY",
+      "source_ids": [
+        949,
+        951,
+        3171,
+        3291,
+        3451,
+        4525,
+        4527
+      ],
+      "reason": "Preserve stool parasites/occult blood, lactoferrin/calprotectin context, lipase/amylase, synthetic hepatic function/coagulation and sample/method/time; labs do not themselves diagnose.",
+      "semantic_decision": "M04-GASTRO-LAB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-LAB",
+      "owner": "CAP-LABORATORY",
+      "source_ids": [
+        967,
+        971,
+        3250,
+        4180,
+        4977,
+        4986
+      ],
+      "reason": "Retain all CBC indices, differential/reticulocytes, age-adjusted reference context, acute-illness baseline, factor/inhibitor/mixing studies, anticoagulant and hepatic context. Assay results remain source-owned observations, not diagnoses.",
+      "semantic_decision": "M05-HEM-LAB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-IMMUNE-REPLACEMENT",
+      "owner": "CAP-MEDICATION",
+      "source_ids": [
+        996,
+        4441,
+        5015
+      ],
+      "reason": "IVIG/SCIG therapy shares product/route/exposure tracking; retain biological therapy as a separate subtype, infusion reactions, home care and product changes.",
+      "semantic_decision": "PED2-IMMUNE-REPLACEMENT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-SYSTEMIC",
+      "owner": "CAP-MEDICATION",
+      "source_ids": [
+        4226,
+        5132
+      ],
+      "reason": "Exposure/regimen records preserve intent, protocol/cycle/day, weight/BSA context, prerequisites, delays, modifications and completion/discontinuation. Prescription and administration services retain authority.",
+      "semantic_decision": "M05-ONCO-SYSTEMIC",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-RENAL-HANDOVER",
+      "owner": "CAP-PROFILE",
+      "source_ids": [
+        4574,
+        4599
+      ],
+      "reason": "Preserve renal/genetic/pathology/imaging/dialysis/transplant history, emergency context and cross-border language support. Export alone is not completed handover.",
+      "workflow": "Readiness/skills assessment → authorized current summary → receiving-provider transfer → confirmation → follow-up.",
+      "entities": [
+        "TransitionPlan",
+        "DisclosurePackage",
+        "DeliveryReceipt",
+        "HandoverAcknowledgement"
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+      "prior_document_sha256": "e48b81fef7c88650fd50b44f1c378c18322260617661e347eae035e09f5f89c7",
+      "semantic_decision": "PED2-RENAL-TRANSITION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-PASSPORT",
+      "owner": "CAP-PROFILE",
+      "source_ids": [
+        4195,
+        4199
+      ],
+      "reason": "Current authorized blood passport and adult handover preserve antibodies/factor/inhibitor context, emergency plan and specialist contact; receipt and acceptance remain separate from export and from blood-bank release.",
+      "semantic_decision": "M05-HEM-PASSPORT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-PASSPORT",
+      "owner": "CAP-PROFILE",
+      "source_ids": [
+        4248
+      ],
+      "reason": "Cancer exposure passport is a profile of existing passport ownership, retaining original/molecular diagnosis, surgery, chemotherapy, radiation, cellular therapy, transplant and late-effect surveillance history.",
+      "semantic_decision": "M05-ONCO-PASSPORT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-STRATEGIC-RESEARCH",
+      "key": "RESEARCH",
+      "owner": "CAP-RESEARCH",
+      "source_ids": [
+        1438,
+        1440,
+        1823,
+        1826,
+        2219,
+        2588,
+        4649
+      ],
+      "reason": "Retain mortality/morbidity, agency-specific reporting, cohorts, imaging datasets and neurosurgical outcomes. Research education is not cohort processing; anonymous wording needs disclosure validation.",
+      "semantic_decision": "M04-STRATEGIC-RESEARCH",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-TRIAL",
+      "owner": "CAP-RESEARCH",
+      "source_ids": [
+        3136,
+        4198,
+        4241,
+        5135
+      ],
+      "reason": "Discovery/matching and actual investigational enrollment are distinct research profiles. Preserve site-verified criteria, trial/protocol/consent versions, treatment arm, deviations, adverse events and withdrawal.",
+      "semantic_decision": "M05-ONCO-TRIAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3061,
+        3661,
+        4061
+      ],
+      "reason": "3061 retains ICU and lifelong follow-up; 3661 adds hypertension/prevention/electrophysiology; 4061 emphasizes ECG/MRI. One profile retains each scope.",
+      "semantic_decision": "PED2-CARD-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-CONGENITAL",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        844,
+        3063,
+        3663,
+        4063
+      ],
+      "reason": "Retain specific defect names, single-ventricle physiology, hemodynamics, procedures and explicit adult-congenital transition.",
+      "semantic_decision": "PED2-CARD-CONGENITAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-RHYTHM",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        849,
+        3065,
+        3666,
+        4066
+      ],
+      "reason": "Retain named channelopathies, AV/conduction disorders, bradyarrhythmia, Holter/event monitoring and electrophysiology.",
+      "semantic_decision": "PED2-CARD-RHYTHM",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-FAILURE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        853,
+        3066,
+        3668,
+        4068
+      ],
+      "reason": "Symptoms, myocarditis, mechanical support, fluid status, hospitalization, transplant evaluation and function are complementary.",
+      "semantic_decision": "PED2-CARD-FAILURE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-HUB",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        860,
+        3080,
+        3680,
+        4080
+      ],
+      "reason": "Workspace and coordination views share data but retain rehabilitation, research, genetics and ICU interfaces.",
+      "semantic_decision": "PED2-CARD-HUB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-RENAL-ORCHESTRATION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        940,
+        4551,
+        4575,
+        4600
+      ],
+      "reason": "Dashboard, clinical core and orchestration layers differ; no duplicate patient stores or mandatory deployment-per-module inference.",
+      "semantic_decision": "PED2-RENAL-ORCHESTRATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-MENTAL-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3981,
+        4826,
+        5151
+      ],
+      "reason": "Retain broad clinical domains plus explicit episode/assessment schema and workflows; local MVP wording does not expand EDHT P0.",
+      "semantic_decision": "PED2-MENTAL-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-MENTAL-HUB",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4000,
+        4850,
+        5175
+      ],
+      "reason": "Retain developmental/substance/family care, restricted summaries, passport and conditional adult transfer; no universal guardian or school access.",
+      "semantic_decision": "PED2-MENTAL-HUB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-ALLERGY-HUB",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        1120,
+        4401,
+        4450
+      ],
+      "reason": "Retain allergy dashboard, immune integration, vaccine clearance, anaphylaxis, immunotherapy and transition across shared owners.",
+      "semantic_decision": "PED2-ALLERGY-HUB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-IMMUNE-PROFILE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4444,
+        5002
+      ],
+      "reason": "5002 extends baseline/recovery and multisystem phenotype; retain explicit vaccine-response and test-type detail from 4444.",
+      "semantic_decision": "PED2-IMMUNE-PROFILE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-IMMUNE-SCREENING",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4435,
+        5007
+      ],
+      "reason": "Combined-immunity scope and neonatal SCID screening require linked but distinct screening, confirmation, escalation and definitive-treatment states.",
+      "semantic_decision": "PED2-IMMUNE-SCREENING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        920,
+        3181,
+        3200,
+        3361,
+        3380,
+        4451,
+        4500
+      ],
+      "reason": "Respiratory orchestration retains congenital/airway/rare disease, sleep, home ventilation and emergency/passport interfaces. A common workspace delegates clinical facts and orders to their owners.",
+      "semantic_decision": "M04-PULM-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-ASTHMA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        904,
+        3183,
+        3363,
+        4455,
+        4456,
+        4457,
+        4458,
+        4459,
+        4460
+      ],
+      "reason": "Asthma profiles distinguish diagnosis, control, exacerbation, trigger inference, allergic context and signed action plan. Preserve biologics, age-appropriate framework and school disclosure.",
+      "semantic_decision": "M04-PULM-ASTHMA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-CF",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        908,
+        3184,
+        3364,
+        4471,
+        4474,
+        4475,
+        4476
+      ],
+      "reason": "CF shares a longitudinal profile while retaining CFTR-modulator eligibility, pancreatic/nutrition/endocrine/fertility context and exacerbation recovery. Molecular interpretation and medication orders remain separate.",
+      "semantic_decision": "M04-PULM-CF",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        960,
+        3161,
+        3180,
+        3281,
+        3300,
+        3441,
+        3460,
+        4501,
+        4550
+      ],
+      "reason": "Digestive orchestration preserves hepatology, pancreatic/motility/feeding/intestinal-failure care and nutrition with shared source owners and separate signed plans.",
+      "semantic_decision": "M04-GASTRO-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-IBD",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        953,
+        3163,
+        3283,
+        3444,
+        4516,
+        4517,
+        4518,
+        4519,
+        4520
+      ],
+      "reason": "Retain IBD-unclassified/indeterminate terminology history, Crohn location/behavior, UC extent, monogenic immune context, growth and instrument-specific activity; no automatic scores or targeted treatment.",
+      "semantic_decision": "M04-GASTRO-IBD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-FUNCTIONAL",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3165,
+        3285,
+        3445,
+        4510,
+        4511,
+        4513
+      ],
+      "reason": "Retain named functional disorders and legacy Rome IV reference, evolving framework version, motility testing, continence and patient-reported burden.",
+      "semantic_decision": "M04-GASTRO-FUNCTIONAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-NUTRITION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        948,
+        3168,
+        3288,
+        3448,
+        4539,
+        4540,
+        4541,
+        4542,
+        4543,
+        4544,
+        4545
+      ],
+      "reason": "Nutrition profiles retain feeding skills, micronutrients, formula/route and fluid/calorie units, PN composition/access, remaining bowel anatomy and adaptation. Orders and pump/compounding actions remain external authorized workflows.",
+      "semantic_decision": "M04-GASTRO-NUTRITION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4701,
+        4725,
+        5026,
+        5050
+      ],
+      "reason": "Systemic disease orchestration retains all organ interfaces, specialty independence, evolving phenotype and adult handover; local MVP wording does not change global adult P0.",
+      "semantic_decision": "M04-RHEUM-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-JIA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4702,
+        5028
+      ],
+      "reason": "Retain subtype, active/limited joint counts, intra-articular procedure history, uveitis and growth, plans and guardian diaries.",
+      "semantic_decision": "M04-RHEUM-JIA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-JOINT",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4703,
+        5029
+      ],
+      "reason": "One examination/map profile preserves laterality, effusion, tendon involvement, injection/surgery history, gait and observed versus rendered findings.",
+      "semantic_decision": "M04-RHEUM-JOINT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-LUPUS",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4704,
+        5031,
+        4705,
+        5032
+      ],
+      "reason": "Systemic and renal lupus assessments are coordinated profiles; retain urinary/blood-pressure/biopsy/complement evidence, organ damage and renal relapse with separate clinical authority.",
+      "semantic_decision": "M04-RHEUM-LUPUS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-MYOSITIS",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4708,
+        5033
+      ],
+      "reason": "Preserve electrophysiology, muscle biopsy, swallowing/respiratory involvement, calcinosis and multidisciplinary rehabilitation.",
+      "semantic_decision": "M04-RHEUM-MYOSITIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-SCLERODERMA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4709,
+        5034
+      ],
+      "reason": "Localized and systemic scope retains vascular/skin distribution, contracture, organ surveillance and change timeline without collapsing disease classifications.",
+      "semantic_decision": "M04-RHEUM-SCLERODERMA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-VASCULITIS",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4706,
+        5035
+      ],
+      "reason": "Preserve vessel distribution/size, ocular and other organ contexts, biopsy, damage and recurrence.",
+      "semantic_decision": "M04-RHEUM-VASCULITIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-EVOLUTION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4710,
+        5039
+      ],
+      "reason": "Maintain diagnostic classification history and uncertain/evolving overlap phenotype; normalization never forces a diagnosis.",
+      "semantic_decision": "M04-RHEUM-EVOLUTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-RHEUM-FUNCTION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4719,
+        5043
+      ],
+      "reason": "Keep patient/guardian attribution, school and social participation, sleep/fatigue and treatment burden even when inflammatory markers are normal.",
+      "semantic_decision": "M04-RHEUM-FUNCTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        980,
+        3241,
+        3259,
+        4161,
+        4200,
+        4976,
+        5000
+      ],
+      "reason": "One hematology orchestration profile retains hemostasis, marrow failure, apheresis, hemovigilance, immune/genetic interfaces and adult transition. It delegates authoritative results, blood-bank releases and treatment orders.",
+      "semantic_decision": "M05-HEM-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-ANEMIA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        964,
+        3243,
+        4163,
+        4164,
+        4978,
+        4979
+      ],
+      "reason": "Retain anemia subtypes, reticulocyte response, iron/vitamin/renal/inflammatory context, oral/IV iron history and menstrual/GI blood loss as distinct clinical contexts; no automatic diagnosis or iron prescription.",
+      "semantic_decision": "M05-HEM-ANEMIA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-HEMOGLOBIN",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        965,
+        3244,
+        4166,
+        4167,
+        4981,
+        4982
+      ],
+      "reason": "Sickle-cell and thalassemia remain distinct disease profiles sharing longitudinal infrastructure. Retain carrier/newborn screening, acute chest/stroke/splenic risk, hydroxyurea context, alloantibodies, MRI iron, chelation and endocrine/bone outcomes.",
+      "semantic_decision": "M05-HEM-HEMOGLOBIN",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-BLEEDING",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        966,
+        3245,
+        4174,
+        4175,
+        4176,
+        4984,
+        4985
+      ],
+      "reason": "Preserve hemophilia, von Willebrand and rare factor/fibrinogen/platelet-function disorders separately; inhibitor and non-factor therapy, home treatment, dental/surgery and menstrual bleeding context remain explicit.",
+      "semantic_decision": "M05-HEM-BLEEDING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-CYTOPENIA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3246,
+        3247,
+        4169,
+        4170,
+        4171,
+        4172,
+        4983,
+        4990,
+        4991
+      ],
+      "reason": "Platelet/white-cell/multilineage marrow profiles retain qualitative platelet disease, cyclic neutropenia, named inherited syndromes, medication/toxin exposure, prophylaxis and transplant evaluation without equating every cytopenia.",
+      "semantic_decision": "M05-HEM-CYTOPENIA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-TRANSPLANT",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3128,
+        4186,
+        4187,
+        4188
+      ],
+      "reason": "HSCT coordination retains donor search/HLA, conditioning, engraftment, GVHD, immune recovery and lifelong complications. Donor identity/permissions are separate, and no matching score determines eligibility.",
+      "semantic_decision": "M05-HEM-TRANSPLANT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-THROMBOSIS",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4177,
+        4178,
+        4987,
+        4989
+      ],
+      "reason": "Venous/arterial/catheter/cerebral events, provoking factors, recurrence, post-thrombotic outcomes and genetic/acquired risk remain distinct; testing and anticoagulation decisions are specialist-led.",
+      "semantic_decision": "M05-HEM-THROMBOSIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3121,
+        3140,
+        4201,
+        5126,
+        5150
+      ],
+      "reason": "Oncology and CNS-specific orchestration are profiles of the shared specialty owner. Preserve tumor-specific interfaces, molecular evolution, rehabilitation, palliative and lifelong developmental care without fragmenting source records.",
+      "semantic_decision": "M05-ONCO-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-DIAGNOSIS",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4203,
+        4209,
+        4221,
+        5129
+      ],
+      "reason": "Multidisciplinary diagnostic integration retains specimen/surgical source, DNA/RNA/epigenetic context, lab/pathologist/report versions, external review and tumor-board evidence. Signed pathology and reclassification remain attributable.",
+      "semantic_decision": "M05-ONCO-DIAGNOSIS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-LEUKEMIA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3123,
+        4204,
+        4205,
+        4206
+      ],
+      "reason": "ALL/AML/mixed-lineage profiles retain immunophenotype, cytogenetic/molecular risk, treatment phases and MRD assay/time-point/sensitivity context; missing MRD never implies remission.",
+      "semantic_decision": "M05-ONCO-LEUKEMIA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-CNS",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3125,
+        4208,
+        5136,
+        5137,
+        5138,
+        5139,
+        5140,
+        5141
+      ],
+      "reason": "Distinct glioma/embryonal/ependymal/sellar/optic-pathway tumor profiles retain molecular grouping, CSF/spinal staging, resection, endocrine/visual function and supportive care; stable imaging cannot erase visual decline.",
+      "semantic_decision": "M05-ONCO-CNS",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-OUTCOMES",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        3138,
+        4235,
+        4236,
+        4249,
+        5147,
+        5148
+      ],
+      "reason": "Response, recurrence, toxicity and survivorship profiles retain criterion/version, discordant modalities, repeat molecular/biopsy evidence, cumulative exposure, secondary malignancy and lifelong follow-up; no invented schedule.",
+      "semantic_decision": "M05-ONCO-OUTCOMES",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-SUPPORT",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4246,
+        4247
+      ],
+      "reason": "Educational communication and concurrent palliative/supportive care are separate specialty workflows. Preserve age-appropriate multilingual explanation, symptoms, care goals and family needs without implying treatment cessation.",
+      "semantic_decision": "M05-ONCO-SUPPORT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-NEURO-FUNCTION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4210,
+        5143,
+        5144,
+        5145,
+        5146
+      ],
+      "reason": "Keep seizures/neurological deficits, endocrine/water-balance/growth, cognitive baseline, educational accommodations and hearing/vision outcomes as linked profiles with source attribution and minimum-necessary school disclosure.",
+      "semantic_decision": "M05-ONCO-NEURO-FUNCTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-CELLULAR",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4230
+      ],
+      "reason": "CAR-T coordination uses a specialty profile and existing source owners; retain chain of identity/custody through collection, manufacturing, bridging, release and infusion. Manufacturing progress is not product-release authority.",
+      "semantic_decision": "M05-ONCO-CELLULAR",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "CAN-CARD-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        3074,
+        3676,
+        4079
+      ],
+      "reason": "Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "workflow": "Authorize consultation/monitoring scope → receive provenance-tagged reports → clinician review → acknowledgement/action → follow-up.",
+      "entities": [
+        "Encounter",
+        "RemoteReport",
+        "MonitoringPlan",
+        "EscalationTask"
+      ],
+      "dependencies": [
+        "CAP-TELEMEDICINE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "prior_contract": {
+        "api": {
+          "commands": [
+            "CreateOrUpdateRecord",
+            "ComposeAuthorizedView",
+            "RecordProfessionalReview"
+          ],
+          "required": [
+            "actor",
+            "tenant",
+            "purpose",
+            "contextVersion",
+            "idempotencyKey"
+          ],
+          "errors": [
+            "ACCESS_DENIED",
+            "STALE_CONTEXT",
+            "INSUFFICIENT_EVIDENCE",
+            "INVALID_SOURCE"
+          ],
+          "events": [
+            "RecordVersionCreated",
+            "ReviewRecorded",
+            "DerivedArtifactInvalidated"
+          ],
+          "status": "SPECIFIED_NOT_IMPLEMENTED"
+        },
+        "actors": [
+          "Authorized patient/guardian",
+          "Treating clinician",
+          "Relevant specialist",
+          "Authorized source service"
+        ],
+        "inputs": [
+          "Patient/tenant/purpose",
+          "Versioned authorized source records",
+          "Measurement/report/evidence context"
+        ],
+        "outputs": [
+          "Versioned specialty artifact",
+          "Provenance and uncertainty",
+          "Reviewer disposition and follow-up"
+        ],
+        "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+        "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+        "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+        "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+        "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them."
+      },
+      "prior_document": "docs/canonical/CAN-CARD-REMOTE.md",
+      "prior_document_sha256": "d9e0a8b160a7c868dbdb9e03d666d23f097d4fc97c26aba68f621a52a7b24bf2",
+      "semantic_decision": "PED2-CARD-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-PULM-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        3195,
+        3376,
+        4497
+      ],
+      "reason": "Preserve home spirometry, ventilator/oxygen review, medication supervision, translation and second opinion; do not equate consultation with monitored emergency coverage.",
+      "semantic_decision": "M04-PULM-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-GASTRO-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        3175,
+        3295,
+        3455
+      ],
+      "reason": "Nutrition/growth/lab/medication review, endoscopy discussion, translation and family counseling share a consultation workflow, not a feeding-prescription engine.",
+      "semantic_decision": "M04-GASTRO-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-HEM-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        3254,
+        4194,
+        4197
+      ],
+      "reason": "Remote consultation preserves bleeding/pain diaries, attributed home measurements, transfusion follow-up, laboratory review, translation and second opinion without assuming continuous emergency supervision.",
+      "semantic_decision": "M05-HEM-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M05-ONCO-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        3135,
+        4242
+      ],
+      "reason": "Secure second-opinion/remote review preserves clinical questions and source imaging/pathology/genomics/treatment packages with translation and receiving-specialist access controls.",
+      "semantic_decision": "M05-ONCO-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "PED2-CARD-TWIN",
+      "owner": "CAP-TWIN",
+      "source_ids": [
+        3073,
+        3675,
+        4076
+      ],
+      "reason": "Retain development, function, anatomy, hemodynamics, progression and surgical scenario models with explicit epistemic status.",
+      "semantic_decision": "PED2-CARD-TWIN",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M04-STRATEGIC-TWIN",
+      "key": "TWIN",
+      "owner": "CAP-TWIN",
+      "source_ids": [
+        3073,
+        3675,
+        4076
+      ],
+      "reason": "Cardiac patient models retain anatomy/function/hemodynamics/development and surgical scenarios. Operational hospital/physician models are excluded from patient physiology and remain separate pending operational-owner review.",
+      "semantic_decision": "M04-STRATEGIC-TWIN",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4626,
+        4650,
+        5101,
+        5125
+      ],
+      "reason": "Shared neurosurgical orchestration retains prenatal-to-adult scope, neuroendoscopy, neurotrauma, surgical planning, implants, neurocritical care and rehabilitation. Independent deployability remains an option; AI cannot determine indication or operative strategy.",
+      "semantic_decision": "M06-NEUROSURG-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        5102
+      ],
+      "reason": "Case/procedure index owns authorized versioned references and chronology, not a second surgical/pathology/device truth store. Preserve surgical team, anatomical site, preoperative status and reoperation/outcome context.",
+      "semantic_decision": "M06-NEUROSURG-RECORD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-HYDRO",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4627,
+        5103,
+        5142
+      ],
+      "reason": "Hydrocephalus and tumor-related CSF disease are clinical coordination profiles. Preserve ventricular/head-growth/development/vision, CSF diversion, external drainage/ETV and infection/revision context; actual device configuration stays with the device owner.",
+      "semantic_decision": "M06-NEUROSURG-HYDRO",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-DEVICES",
+      "owner": "CAP-DEVICES",
+      "source_ids": [
+        4628,
+        5104,
+        5115
+      ],
+      "reason": "Shunts, neurostimulators and intrathecal/other implants share one lifecycle owner with distinct device profiles. Preserve manufacturer/model, anatomical configuration, current versus historical settings, programming/revision, battery/explantation and exact imaging-compatibility evidence. Read access cannot issue device commands.",
+      "semantic_decision": "M06-NEUROSURG-DEVICES",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-SHUNT-URGENT",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        5105
+      ],
+      "reason": "Suspected shunt malfunction uses current verified configuration and baseline/history to support urgent clinical assessment. Neither a model result nor missing data may delay evaluation or exclude malfunction.",
+      "semantic_decision": "M06-NEUROSURG-SHUNT-URGENT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-CRANIOFACIAL",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4629,
+        5110
+      ],
+      "reason": "Preserve suture/syndromic phenotype, functional/cosmetic outcomes, airway/ophthalmic/neurodevelopment and dental/orthodontic reconstruction context within one craniofacial profile.",
+      "semantic_decision": "M06-NEUROSURG-CRANIOFACIAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-CONGENITAL",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4630,
+        4631,
+        5107
+      ],
+      "reason": "Neural-tube and other congenital disorders retain prenatal linkage, lesion level/closure, motor/sensory, kidney/bladder/bowel, skin, nutrition, education and social care. Verified maternal-child linkage does not merge identities or permissions.",
+      "semantic_decision": "M06-NEUROSURG-CONGENITAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-CHIARI",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4632,
+        5108
+      ],
+      "reason": "Retain malformation classification, brainstem/swallowing/sleep-breathing, syrinx, CSF-flow imaging, decompression complications and response surveillance.",
+      "semantic_decision": "M06-NEUROSURG-CHIARI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-SPINE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4633,
+        4639,
+        4640,
+        4641,
+        5109,
+        5112
+      ],
+      "reason": "Distinct syrinx, injury, tethering, dysraphism and spinal-tumor profiles retain anatomy/measurements, neurological and renal/urodynamic function, retethering, pathology and rehabilitation; they are not synonymous diagnoses.",
+      "semantic_decision": "M06-NEUROSURG-SPINE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-TUMOR-SURGERY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        4634,
+        5111,
+        5131
+      ],
+      "reason": "Neurosurgical tumor procedures complement the existing oncologic surgery profile. Preserve intraoperative findings, molecular/pathology links, residual/extent-of-resection assessment, postoperative imaging and CSF/neurological outcomes.",
+      "semantic_decision": "M06-NEUROSURG-TUMOR-SURGERY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-EPILEPSY",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4606,
+        4635,
+        5113
+      ],
+      "reason": "Preserve treatment-failure history, video-EEG, functional/structural imaging, genetic/metabolic and neuropsychology context, surgical hypothesis, conference, consent and separately authorized decision; neither AI nor a test establishes eligibility alone.",
+      "semantic_decision": "M06-NEUROSURG-EPILEPSY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-FUNCTIONAL",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4644,
+        5114
+      ],
+      "reason": "Functional/spasticity/dystonia/pain/epilepsy therapy coordination retains goals, intrathecal therapy, implantation/programming history, battery and functional outcomes while device and medication owners retain their facts.",
+      "semantic_decision": "M06-NEUROSURG-FUNCTIONAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-VASCULAR",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4636,
+        5117,
+        5118
+      ],
+      "reason": "Neurovascular and intracranial-bleeding profiles retain AVM/cavernous/aneurysm/moyamoya, angiography, coagulation/anticoagulant/hemophilia context and endovascular/radiosurgical outcomes. No autonomous hemostatic or reversal action.",
+      "semantic_decision": "M06-NEUROSURG-VASCULAR",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-TRAUMA",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4637,
+        4638,
+        5094,
+        5116
+      ],
+      "reason": "Severe injury and concussion retain mechanism/time, consciousness/amnesia, ICU/imaging and school/cognitive recovery. Return-to-learn and return-to-activity require distinct clinician clearance; a low automated risk signal cannot exclude acute injury.",
+      "semantic_decision": "M06-NEUROSURG-TRAUMA",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-INFECTION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        4642,
+        5119
+      ],
+      "reason": "Preserve wound/CNS/shunt infection, CSF leak/hemorrhage, microbiology/resistance, device removal/replacement, ICU/reoperation and attributable resolution versus suspected findings.",
+      "semantic_decision": "M06-NEUROSURG-INFECTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-MONITORING",
+      "owner": "CAP-DEVICES",
+      "source_ids": [
+        4643,
+        5121
+      ],
+      "reason": "Intracranial/multimodal and intraoperative acquisition are separate device-channel profiles with units, clocks, signal quality, baseline/change/recovery and anesthesia/intervention correlation. Qualified real-time clinical monitoring is not replaced by recorded signals or AI.",
+      "semantic_decision": "M06-NEUROSURG-MONITORING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-PLANNING",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        5120
+      ],
+      "reason": "Surgical planning is a versioned encounter workflow linking registered imaging/navigation, functional/vascular anatomy, neurophysiology/anesthesia/blood/device plans and final signed plan; no navigation accuracy claim is inferred.",
+      "semantic_decision": "M06-NEUROSURG-PLANNING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-ENDOSCOPY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        5106
+      ],
+      "reason": "Neuroendoscopic procedure profile retains indication/ETV type, preoperative and intraoperative findings, procedure date, CSF dynamics, complications, failure, repeat procedures and shunt conversion with clinician outcome assessment.",
+      "semantic_decision": "M06-NEUROSURG-ENDOSCOPY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-RECOVERY",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        5122
+      ],
+      "reason": "Postoperative recovery documentation retains baseline/current neurological status, wound/device, swallowing/speech, functional goals, rehabilitation and school reintegration as a profile of shared encounter follow-up.",
+      "semantic_decision": "M06-NEUROSURG-RECOVERY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        4645,
+        5123
+      ],
+      "reason": "Separate timeline, image comparison/segmentation, planning, device-history and outcome tasks. Preserve pediatric evaluation, source/model versions, uncertainty, human validation and no autonomous indication/approach/emergency interpretation.",
+      "semantic_decision": "M06-NEUROSURG-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        4647
+      ],
+      "reason": "Remote follow-up preserves attributed guardian symptom/wound/device reports, approved instructions and escalation recipient/fallback; connection does not establish emergency coverage.",
+      "semantic_decision": "M06-NEUROSURG-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEUROSURG-MED-DEVICE-SAFETY",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        5097
+      ],
+      "reason": "Combined medication/device safety is derived clinical assessment, not device control. Retain dose/weight/organ/TDM/allergy and reconciliation plus battery/replacement/monitoring gaps, with source data owned by medication and device services.",
+      "semantic_decision": "M06-NEUROSURG-MED-DEVICE-SAFETY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-SURGICAL-PASSPORT",
+      "owner": "CAP-PROFILE",
+      "source_ids": [
+        4648,
+        4798
+      ],
+      "reason": "Neurosurgical and dental/craniofacial emergency views share passport ownership with specialty profiles. Preserve current device configuration, placement/removal/replacement, critical medications, bleeding/immunosuppression and communication needs; underlying device records stay authoritative.",
+      "semantic_decision": "M06-SURGICAL-PASSPORT",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-CORE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2341,
+        2350,
+        3021,
+        3040,
+        3261,
+        3279,
+        3280
+      ],
+      "reason": "One neonatal orchestration owner coordinates delivery-room, term/preterm, ICU, congenital and lifelong developmental profiles. Maternal and infant records remain distinct, and historical local MVP claims do not authorize deployment.",
+      "semantic_decision": "M06-NEONATAL-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-RECORD",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        2342,
+        3022,
+        3262
+      ],
+      "reason": "Admission/birth index retains delivery details, initial exam, gestational age, birth weight, timed Apgar assessments and NICU course. Unknown birth times/identity are explicit; no retrospective score inference.",
+      "semantic_decision": "M06-NEONATAL-RECORD",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-PREMATURITY",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2343,
+        3023,
+        3263
+      ],
+      "reason": "Preserve extremely/very/moderate preterm contexts, growth, respiratory support, neurodevelopment and complication follow-up with appropriate age/reference applicability.",
+      "semantic_decision": "M06-NEONATAL-PREMATURITY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-ICU",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2344,
+        3024,
+        3264
+      ],
+      "reason": "NICU coordination retains high-flow and high-frequency ventilation as distinct modalities alongside CPAP, hemodynamic monitoring, infection control and nutrition. Source observations and prescribed settings remain separate from control.",
+      "semantic_decision": "M06-NEONATAL-ICU",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-POSTOP-ICU",
+      "owner": "CAP-ENCOUNTER",
+      "source_ids": [
+        1131
+      ],
+      "reason": "Postoperative pediatric ICU is an encounter/history profile retaining ventilation, monitoring, complications and outcomes, not evidence that every ICU function is implemented.",
+      "semantic_decision": "M06-PED-POSTOP-ICU",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-RESUSCITATION",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        2345,
+        3025
+      ],
+      "reason": "Preserve initial stabilization, timed airway/compression/oxygen/administration and outcome documentation. Guideline intent requires a named approved version and qualified team; the system does not generate or autonomously execute resuscitation instructions.",
+      "semantic_decision": "M06-NEONATAL-RESUSCITATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-RESPIRATORY",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2346,
+        2355,
+        3026,
+        3265
+      ],
+      "reason": "Keep transient tachypnea, distress, meconium aspiration, persistent pulmonary hypertension, BPD and apnea distinct with ventilation/oxygen history and clinical interpretation.",
+      "semantic_decision": "M06-NEONATAL-RESPIRATORY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-INFECTION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2347,
+        3027
+      ],
+      "reason": "Early/late-onset and congenital infection/meningitis remain distinct episode contexts; microbiology, antibiotics and response retain source timing and clinical diagnosis authority.",
+      "semantic_decision": "M06-NEONATAL-INFECTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-JAUNDICE",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2348
+      ],
+      "reason": "Jaundice profile coordinates source bilirubin, age/gestation, phototherapy and separately authorized exchange-transfusion context. No thresholds or treatment recommendation are inferred from a legacy title.",
+      "semantic_decision": "M06-NEONATAL-JAUNDICE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-SCREENING",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2349,
+        2359,
+        3032,
+        3267,
+        3277
+      ],
+      "reason": "Screening, confirmatory evaluation and established congenital diagnosis are distinct states. Preserve metabolic/hearing/cardiac, chromosomal/rare/genomic and organ-specific anomalies plus family counseling without treating a screen as diagnosis.",
+      "semantic_decision": "M06-NEONATAL-SCREENING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-NUTRITION",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2351,
+        3028,
+        3268
+      ],
+      "reason": "Preserve breastfeeding, donor milk, fortification, enteral/parenteral routes, tolerance and growth. Orders/formula changes and administration remain separately authorized; donor product provenance is not blanket donor access.",
+      "semantic_decision": "M06-NEONATAL-NUTRITION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-GROWTH-FOLLOWUP",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2352,
+        2360
+      ],
+      "reason": "Growth/development and complications retain measurement time/technique, weight/length/head circumference and selected reference release. Historical WHO wording does not prove suitability for every gestational age.",
+      "semantic_decision": "M06-NEONATAL-GROWTH-FOLLOWUP",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-NEURO",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2353,
+        3033,
+        3266
+      ],
+      "reason": "Preserve reflex/tone examination, seizures, HIE, hemorrhage/leukomalacia and source neuroimaging without collapsing distinct injury phenotypes into a single AI label.",
+      "semantic_decision": "M06-NEONATAL-NEURO",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-CARDIAC",
+      "owner": "CAP-SPECIALTY",
+      "source_ids": [
+        2354
+      ],
+      "reason": "Cardiac neonatal profile links congenital diagnoses and echo/monitoring source data to specialist review using existing clinical/imaging/device owners.",
+      "semantic_decision": "M06-NEONATAL-CARDIAC",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-LAB",
+      "owner": "CAP-LABORATORY",
+      "source_ids": [
+        2356,
+        3030,
+        3031,
+        3270,
+        3271
+      ],
+      "reason": "Retain gases, bilirubin, biochemistry, microbiology, metabolic/genetic and brain/cardiac/infection/growth/organ biomarkers with specimen/method/age/time and reference provenance; biomarker correlation is not diagnosis.",
+      "semantic_decision": "M06-NEONATAL-LAB",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-IMAGING",
+      "owner": "CAP-IMAGING",
+      "source_ids": [
+        2357,
+        3029,
+        3269
+      ],
+      "reason": "All original CT/MRI/X-ray/ultrasound, cranial and echo scopes remain with imaging acquisition/report references and separate AI assistance.",
+      "semantic_decision": "M06-NEONATAL-IMAGING",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-MEDICATION",
+      "owner": "CAP-MEDICATION",
+      "source_ids": [
+        2358
+      ],
+      "reason": "Neonatal antibiotic, nutrition and infusion exposure shares medication ownership with distinct route/units/time/status; prescribing and administration retain separate authority.",
+      "semantic_decision": "M06-NEONATAL-MEDICATION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-AI",
+      "owner": "CAP-AI",
+      "source_ids": [
+        3034,
+        3272
+      ],
+      "reason": "Sepsis/mortality/respiratory/growth/neurodevelopment predictions are separate governed tasks with intended-use population, calibration and uncertainty requirements; none authorizes treatment limitation or intervention.",
+      "semantic_decision": "M06-NEONATAL-AI",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-TWIN",
+      "owner": "CAP-TWIN",
+      "source_ids": [
+        3035,
+        3273
+      ],
+      "reason": "Organ development/growth models, therapy/NICU scenarios and long-term forecasts share twin infrastructure but remain separately typed hypothetical outputs, never measured development or clinical fact.",
+      "semantic_decision": "M06-NEONATAL-TWIN",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-PRECISION",
+      "owner": "CAP-CDS",
+      "source_ids": [
+        3038,
+        3276
+      ],
+      "reason": "Precision nutrition, genomics, respiratory care and individual developmental risk are assessment profiles with explicit missingness/evidence and clinician review, not autonomous therapy or diagnosis.",
+      "semantic_decision": "M06-NEONATAL-PRECISION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "source_ids": [
+        3036,
+        3274
+      ],
+      "reason": "Regional NICU consultation, parent counseling, imaging and post-discharge follow-up retain provider coverage, source verification and translation limits.",
+      "semantic_decision": "M06-NEONATAL-REMOTE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-RESEARCH",
+      "owner": "CAP-RESEARCH",
+      "source_ids": [
+        3037,
+        3275
+      ],
+      "reason": "Prematurity, respiratory/nutrition and ICU study profiles retain separate protocol/data-release and training permissions; AI dataset intent is not approval.",
+      "semantic_decision": "M06-NEONATAL-RESEARCH",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-NEONATAL-DATASET",
+      "owner": "CAP-DATA",
+      "source_ids": [
+        3039,
+        3278
+      ],
+      "reason": "Authorized neonatal dataset index preserves imaging/lab/genetics, NICU, development/growth and longitudinal outcomes while research and model-training release gates remain separate.",
+      "semantic_decision": "M06-NEONATAL-DATASET",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-EMERGENCY-CORE",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        831,
+        2339,
+        3007
+      ],
+      "reason": "Shared emergency records retain fever, seizures, trauma, poisoning/admissions, dehydration, respiratory failure and pediatric resuscitation scope. A registry is not an emergency dispatch or autonomous triage service.",
+      "semantic_decision": "M06-PED-EMERGENCY-CORE",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-EYE-EMERGENCY",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        1068,
+        4741,
+        4969
+      ],
+      "reason": "Eye emergency profiles retain acute vision loss, chemical burns, globe/orbital/corneal/anterior/posterior injury, laterality/time and visual recovery; diagrams do not require delaying urgent care for imaging.",
+      "semantic_decision": "M06-PED-EYE-EMERGENCY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-AIRWAY-DENTAL",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        1088,
+        4780
+      ],
+      "reason": "Airway obstruction/foreign body and odontogenic spread are distinct emergency profiles sharing human escalation. Preserve dental origin, drainage/extraction/referral and antibiotic history without automated exclusion or prescribing.",
+      "semantic_decision": "M06-PED-AIRWAY-DENTAL",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-SKIN-EMERGENCY",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        1108
+      ],
+      "reason": "Severe skin/allergic emergency profile preserves named SJS/TEN and severe-reaction scope; no model-only diagnosis or unsupervised medication action.",
+      "semantic_decision": "M06-PED-SKIN-EMERGENCY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-SURGICAL-EMERGENCY",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        1138,
+        4909,
+        4943
+      ],
+      "reason": "Acute abdomen/obstruction/trauma and ovarian/testicular emergencies retain different anatomy, laterality, onset, viability/preservation and procedural contexts. Automated systems cannot rule out torsion or delay specialist assessment.",
+      "semantic_decision": "M06-PED-SURGICAL-EMERGENCY",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-ALLERGY-ACTION",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        4098
+      ],
+      "reason": "Individualized allergy/anaphylaxis plan preserves clinician/version, trigger/medication instruction, caregiver/school minimal scope and emergency contacts; sharing never creates a new prescription.",
+      "semantic_decision": "M06-PED-ALLERGY-ACTION",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    },
+    {
+      "id": "M06-PED-TRANSFER",
+      "owner": "CAP-EMERGENCY",
+      "source_ids": [
+        4678
+      ],
+      "reason": "Prehospital transfer retains injury/transport chronology, interventions, sending/receiving identities and handover acknowledgement with time/source uncertainty. Cross-provider transport does not grant broad passport access.",
+      "semantic_decision": "M06-PED-TRANSFER",
+      "adoption_scope": "DOCUMENTATION_PROFILE",
+      "clinical_approval": false
+    }
+  ]
+}

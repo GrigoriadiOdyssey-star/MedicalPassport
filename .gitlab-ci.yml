@@ -15,6 +15,7 @@ validate-specifications:
     - npm run domain:check
     - npm run master04:check
     - npm run master05:check
+    - npm run master06:check
   artifacts:
     when: always
     paths:
@@ -31,4 +32,6 @@ validate-specifications:
       - audit/master-04/validation.json
       - audit/master-05/audit_progress.json
       - audit/master-05/validation.json
+      - audit/master-06/audit_progress.json
+      - audit/master-06/validation.json
     expire_in: 30 days

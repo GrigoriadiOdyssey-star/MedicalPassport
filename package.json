@@ -4,7 +4,9 @@
   "private": true,
   "description": "Audited EDHT Medical Passport product specifications and traceable module registry",
   "type": "module",
-  "engines": { "node": ">=24 <25" },
+  "engines": {
+    "node": ">=24 <25"
+  },
   "scripts": {
     "build": "node scripts/build-catalog.mjs",
     "check": "node scripts/check.mjs",
@@ -20,6 +22,8 @@
     "master04:build": "node scripts/master04.mjs",
     "master04:check": "node scripts/master04.mjs --check",
     "master05:build": "node scripts/master05.mjs",
-    "master05:check": "node scripts/master05.mjs --check"
+    "master05:check": "node scripts/master05.mjs --check",
+    "master06:build": "node scripts/master06.mjs",
+    "master06:check": "node scripts/master06.mjs --check"
   }
 }
