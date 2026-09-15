@@ -1,0 +1,1817 @@
+{
+  "pass": "MASTER-05",
+  "domain": "HEMATO",
+  "parent_checkpoint": "4b42871cf4e76845a081b5607d3f361a77b1edf5",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1423 reviewed IDs.",
+  "count": 63,
+  "reviews": [
+    {
+      "original_id": 4161,
+      "title": "Clinical Pediatric Hematology Platform Core Engine",
+      "body": "Central platform for pediatric hematology, hemostasis and transfusion medicine.\n\nSupports\n\n• Anemias\n• Hemoglobinopathies\n• Cytopenias\n• Bone Marrow Failure\n• Bleeding Disorders\n• Thrombosis\n• Transfusion Medicine\n• Rare Hematologic Diseases\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Laboratory Medicine\n• Genetics\n• Molecular Diagnostics\n• Pathology\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "34c3e1721fab8d1c864b174eef143a76a27a1200a5569b65bdb4353eee8115f8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97554
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Anemias",
+        "Hemoglobinopathies",
+        "Cytopenias",
+        "Bone Marrow Failure",
+        "Bleeding Disorders",
+        "Thrombosis",
+        "Transfusion Medicine",
+        "Rare Hematologic Diseases",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Laboratory Medicine",
+        "Genetics",
+        "Molecular Diagnostics",
+        "Pathology",
+        "Telemedicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4162,
+      "title": "Pediatric Hematology Longitudinal Registry",
+      "body": "Maintains longitudinal pediatric hematology records.\n\nSupports\n\n• Diagnoses\n• CBC Trends\n• Blood Smears\n• Coagulation Results\n• Genetics\n• Bone Marrow Studies\n• Transfusions\n• Treatments\n• Complications\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0c5d477fe2775619fdb1f727c6df7e3ecffc2ab648e8e00d2750e551bb23b15a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97585
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Diagnoses",
+        "CBC Trends",
+        "Blood Smears",
+        "Coagulation Results",
+        "Genetics",
+        "Bone Marrow Studies",
+        "Transfusions",
+        "Treatments",
+        "Complications",
+        "Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4163,
+      "title": "Pediatric Anemia Intelligence Module",
+      "body": "Supports structured evaluation of pediatric anemia.\n\nIntegrates\n\n• Hemoglobin\n• MCV\n• Reticulocytes\n• Iron Studies\n• Vitamin Status\n• Hemolysis Markers\n• Inflammation\n• Renal Function\n• Family History\n\nSupports clinician-reviewed differential diagnosis.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c4f17e407f83b24b9a0eb3b78929eb3ab1760c97ab8b809ea11d9be59628282c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97608
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hemoglobin",
+        "MCV",
+        "Reticulocytes",
+        "Iron Studies",
+        "Vitamin Status",
+        "Hemolysis Markers",
+        "Inflammation",
+        "Renal Function",
+        "Family History"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4164,
+      "title": "Pediatric Iron Deficiency Anemia Module",
+      "body": "Supports iron deficiency assessment and longitudinal monitoring.\n\nTracks\n\n• Hemoglobin\n• Ferritin\n• Transferrin Saturation\n• Nutrition\n• Growth\n• Blood Loss Risk\n• Treatment\n• Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "af505f803e47127a5047e05d86f7a5f5aaa78e88c5aba47a242b09bc9dbf1fcd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97632
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hemoglobin",
+        "Ferritin",
+        "Transferrin Saturation",
+        "Nutrition",
+        "Growth",
+        "Blood Loss Risk",
+        "Treatment",
+        "Response"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4165,
+      "title": "Pediatric Hemolytic Anemia Module",
+      "body": "Supports inherited and acquired hemolytic disorders.\n\nSupports\n\n• Hemolysis Markers\n• Blood Smear\n• Direct Antiglobulin Testing\n• Enzyme Disorders\n• Membrane Disorders\n• Immune Hemolysis\n• Genetics\n• Treatment Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "306efc9597964aa0394759710f056526ee6124f26136aa8a7e9142cdf0ae399a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97653
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hemolysis Markers",
+        "Blood Smear",
+        "Direct Antiglobulin Testing",
+        "Enzyme Disorders",
+        "Membrane Disorders",
+        "Immune Hemolysis",
+        "Genetics",
+        "Treatment Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4166,
+      "title": "Pediatric Sickle Cell Disease Module",
+      "body": "Supports longitudinal sickle cell disease care.\n\nSupports\n\n• Genotype\n• Hematologic Trends\n• Pain Events\n• Acute Chest Events\n• Transfusions\n• Organ Monitoring\n• Medication\n• Preventive Care\n• Hospitalizations\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a0ce788f86c3878ed46ccf43649df4e3f910e0e94ceee33cf78023c9184466b1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97674
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Genotype",
+        "Hematologic Trends",
+        "Pain Events",
+        "Acute Chest Events",
+        "Transfusions",
+        "Organ Monitoring",
+        "Medication",
+        "Preventive Care",
+        "Hospitalizations"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4167,
+      "title": "Pediatric Thalassemia Module",
+      "body": "Supports alpha and beta thalassemia care.\n\nSupports\n\n• Genotype\n• Hemoglobin Analysis\n• Transfusion History\n• Iron Overload\n• Chelation\n• Organ Monitoring\n• Growth\n• Endocrine Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "06886cc1e810e52244af2a62914545fa379108a451c59600903c4bed1aeb650f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97696
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Genotype",
+        "Hemoglobin Analysis",
+        "Transfusion History",
+        "Iron Overload",
+        "Chelation",
+        "Organ Monitoring",
+        "Growth",
+        "Endocrine Complications"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4168,
+      "title": "Pediatric Hemoglobinopathy Genetics Module",
+      "body": "Supports molecular characterization of inherited hemoglobin disorders.\n\nSupports\n\n• Genetic Testing\n• Variant Interpretation\n• Hemoglobin Analysis\n• Family Screening\n• Carrier Identification\n• Genetic Counseling\n• Phenotype Correlation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d8d6c6690d0b8f5a3d7abb83644d652825e705ada3f8291593eac75822b2cbe6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97717
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Genetic Testing",
+        "Variant Interpretation",
+        "Hemoglobin Analysis",
+        "Family Screening",
+        "Carrier Identification",
+        "Genetic Counseling",
+        "Phenotype Correlation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4169,
+      "title": "Pediatric Neutropenia Module",
+      "body": "Supports pediatric neutropenia evaluation.\n\nSupports\n\n• ANC Trends\n• Infection History\n• Medication Exposure\n• Autoimmune Causes\n• Congenital Causes\n• Bone Marrow Findings\n• Genetics\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bebba974703cfe1be4b3eb2de9cd1d0fdb9287d58043521581dfe41803eade9d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97737
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "ANC Trends",
+        "Infection History",
+        "Medication Exposure",
+        "Autoimmune Causes",
+        "Congenital Causes",
+        "Bone Marrow Findings",
+        "Genetics",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4170,
+      "title": "Pediatric Thrombocytopenia Module",
+      "body": "Supports pediatric platelet-count disorders.\n\nSupports\n\n• Platelet Trends\n• Bleeding Symptoms\n• Immune Thrombocytopenia\n• Medication Exposure\n• Infection Association\n• Bone Marrow Data\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0244136cdc5f245850c830733a65ffb166f23826ae821aa4c1dbe0e218df3956",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97758
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Platelet Trends",
+        "Bleeding Symptoms",
+        "Immune Thrombocytopenia",
+        "Medication Exposure",
+        "Infection Association",
+        "Bone Marrow Data",
+        "Treatment Response"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4171,
+      "title": "Pediatric Pancytopenia Diagnostic Module",
+      "body": "Supports structured evaluation of multilineage cytopenias.\n\nIntegrates\n\n• CBC\n• Reticulocytes\n• Blood Smear\n• Bone Marrow\n• Infection Testing\n• Nutritional Data\n• Immunology\n• Genetics\n• Medication History\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "68b5f705f0d63556355b5e253b13b2aebb62ab05093822ec63c89ac640eaf661",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97778
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "CBC",
+        "Reticulocytes",
+        "Blood Smear",
+        "Bone Marrow",
+        "Infection Testing",
+        "Nutritional Data",
+        "Immunology",
+        "Genetics",
+        "Medication History"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4172,
+      "title": "Pediatric Bone Marrow Failure Module",
+      "body": "Supports inherited and acquired bone marrow failure.\n\nSupports\n\n• Aplastic Anemia\n• Congenital Syndromes\n• Cytopenias\n• Bone Marrow Studies\n• Genetics\n• Transfusion Requirements\n• Treatment Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "69ddd8bcbe545037104dfc9ea96b973b27f1fa86ee24efce5f154eba08b8c042",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97800
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Aplastic Anemia",
+        "Congenital Syndromes",
+        "Cytopenias",
+        "Bone Marrow Studies",
+        "Genetics",
+        "Transfusion Requirements",
+        "Treatment Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4173,
+      "title": "Pediatric Bone Marrow Diagnostics Module",
+      "body": "Integrates bone marrow diagnostic workflows.\n\nSupports\n\n• Aspiration\n• Biopsy\n• Morphology\n• Flow Cytometry\n• Cytogenetics\n• Molecular Diagnostics\n• Pathology Reports\n• Longitudinal Comparison\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fa90c7d09f0dda7bf9955ac668021e43ad78d30616649c2752e0f6dcc81850c6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97820
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Aspiration",
+        "Biopsy",
+        "Morphology",
+        "Flow Cytometry",
+        "Cytogenetics",
+        "Molecular Diagnostics",
+        "Pathology Reports",
+        "Longitudinal Comparison"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4174,
+      "title": "Pediatric Hemophilia Module",
+      "body": "Supports pediatric hemophilia care.\n\nSupports\n\n• Hemophilia A\n• Hemophilia B\n• Factor Levels\n• Bleeding Events\n• Joint Health\n• Replacement Therapy\n• Inhibitor Monitoring\n• Prophylaxis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7168b30db210f8d8326c230a620b1493aa88053534ffe3645bae2595d5708889",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97841
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hemophilia A",
+        "Hemophilia B",
+        "Factor Levels",
+        "Bleeding Events",
+        "Joint Health",
+        "Replacement Therapy",
+        "Inhibitor Monitoring",
+        "Prophylaxis"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4175,
+      "title": "Pediatric von Willebrand Disease Module",
+      "body": "Supports von Willebrand disease assessment.\n\nSupports\n\n• Bleeding History\n• Laboratory Testing\n• Disease Classification\n• Procedure Planning\n• Treatment History\n• Emergency Plans\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "180b17c39b26115c2ef5677ca3d5b49305993850f7487069c5d28b95b759b55f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97862
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Bleeding History",
+        "Laboratory Testing",
+        "Disease Classification",
+        "Procedure Planning",
+        "Treatment History",
+        "Emergency Plans",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4176,
+      "title": "Pediatric Rare Bleeding Disorders Module",
+      "body": "Supports rare inherited and acquired bleeding disorders.\n\nSupports\n\n• Coagulation Factor Deficiencies\n• Platelet Function Disorders\n• Fibrinogen Disorders\n• Genetics\n• Bleeding Phenotype\n• Treatment Plans\n• Emergency Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "db0993552d80679f21f7834b1f0587c80fde36f70b2f69c54854a7da3c145377",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97882
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Coagulation Factor Deficiencies",
+        "Platelet Function Disorders",
+        "Fibrinogen Disorders",
+        "Genetics",
+        "Bleeding Phenotype",
+        "Treatment Plans",
+        "Emergency Information"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4177,
+      "title": "Pediatric Thrombosis Module",
+      "body": "Supports pediatric thrombotic disorders.\n\nSupports\n\n• Venous Thrombosis\n• Arterial Thrombosis\n• Catheter-related Thrombosis\n• Imaging\n• Risk Factors\n• Anticoagulation\n• Recurrence Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c7bd2d85d85eaa0c73318b65e2aa619d3641ca0d912ed2cffb956f60f33ffce4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97902
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Venous Thrombosis",
+        "Arterial Thrombosis",
+        "Catheter-related Thrombosis",
+        "Imaging",
+        "Risk Factors",
+        "Anticoagulation",
+        "Recurrence Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4178,
+      "title": "Pediatric Thrombophilia Module",
+      "body": "Supports thrombophilia assessment.\n\nIntegrates\n\n• Personal History\n• Family History\n• Laboratory Testing\n• Genetic Factors\n• Acquired Risk Factors\n• Recurrence Risk\n• Specialist Interpretation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6c2a7ff51bc5aab86d81c4b9e10ff7f9a6a4fc6ab0bcf2a12f3813971930e7bd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97922
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Personal History",
+        "Family History",
+        "Laboratory Testing",
+        "Genetic Factors",
+        "Acquired Risk Factors",
+        "Recurrence Risk",
+        "Specialist Interpretation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4179,
+      "title": "Pediatric Anticoagulation Management Module",
+      "body": "Supports clinician-supervised anticoagulation workflows.\n\nSupports\n\n• Medication\n• Dose\n• Laboratory Monitoring\n• Adherence\n• Bleeding Events\n• Thrombotic Events\n• Procedures\n• Treatment Duration\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d6c51e63a0b7337b602256b87531715278ca46ca390bdf9933937c168f654d66",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97942
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Medication",
+        "Dose",
+        "Laboratory Monitoring",
+        "Adherence",
+        "Bleeding Events",
+        "Thrombotic Events",
+        "Procedures",
+        "Treatment Duration"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4180,
+      "title": "Pediatric Hemostasis Laboratory Intelligence Module",
+      "body": "Centralizes pediatric coagulation diagnostics.\n\nSupports\n\n• PT\n• INR\n• aPTT\n• Fibrinogen\n• D-Dimer\n• Factor Assays\n• Platelet Function\n• Specialized Testing\n• Longitudinal Trends\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "78d41de0ad1a335c663d40071d46207977d4fe5f38fc1db124f4f584bdcc695f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97963
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "PT",
+        "INR",
+        "aPTT",
+        "Fibrinogen",
+        "D-Dimer",
+        "Factor Assays",
+        "Platelet Function",
+        "Specialized Testing",
+        "Longitudinal Trends"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4181,
+      "title": "Pediatric Transfusion Medicine Module",
+      "body": "Supports pediatric transfusion workflows.\n\nSupports\n\n• Red Blood Cells\n• Platelets\n• Plasma\n• Specialized Components\n• Indications\n• Compatibility\n• Administration\n• Outcome Documentation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "78f8242028c0af28127048f50d8d6b1456fed871593a365051852b9bf329b8c0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 97985
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Red Blood Cells",
+        "Platelets",
+        "Plasma",
+        "Specialized Components",
+        "Indications",
+        "Compatibility",
+        "Administration",
+        "Outcome Documentation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4182,
+      "title": "Pediatric Blood Compatibility & Matching Module",
+      "body": "Supports safe blood-product matching.\n\nIntegrates\n\n• ABO\n• Rh\n• Antibody Screening\n• Crossmatching\n• Extended Phenotyping\n• Genotyping\n• Previous Reactions\n• Transfusion History\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5f332bef42a4e30301a75c3affa9107aade7d9be00a399fa10378b9719d0ae9a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98006
+      },
+      "verdict": "ABO/Rh, antibody screen, crossmatch, extended phenotype/genotype and previous reactions require blood-bank source/version and patient/product verification; a passport is not a compatibility-release authority.",
+      "feature_labels": [
+        "ABO",
+        "Rh",
+        "Antibody Screening",
+        "Crossmatching",
+        "Extended Phenotyping",
+        "Genotyping",
+        "Previous Reactions",
+        "Transfusion History"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4183,
+      "title": "Pediatric Transfusion Reaction Surveillance Module",
+      "body": "Supports detection and documentation of transfusion-related adverse events.\n\nTracks\n\n• Symptoms\n• Vital Signs\n• Laboratory Findings\n• Product Information\n• Reaction Classification\n• Clinical Response\n• Investigation\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bb30d9a41724ed11ae8f1523e06f57e335bcef7842e1b39d183762de48a377ce",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98027
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Symptoms",
+        "Vital Signs",
+        "Laboratory Findings",
+        "Product Information",
+        "Reaction Classification",
+        "Clinical Response",
+        "Investigation",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4184,
+      "title": "Pediatric Chronic Transfusion Program Module",
+      "body": "Supports children requiring repeated transfusions.\n\nTracks\n\n• Transfusion Schedule\n• Blood Products\n• Hemoglobin Targets\n• Antibodies\n• Iron Burden\n• Complications\n• Treatment Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6a13aceb3c84ce914167739d679d3a7ad78c69d2ac2419c7134499c9e81070b5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98048
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Transfusion Schedule",
+        "Blood Products",
+        "Hemoglobin Targets",
+        "Antibodies",
+        "Iron Burden",
+        "Complications",
+        "Treatment Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4185,
+      "title": "Pediatric Iron Overload Monitoring Module",
+      "body": "Supports iron overload surveillance.\n\nIntegrates\n\n• Ferritin\n• Transfusion Burden\n• Liver Assessment\n• Cardiac Assessment\n• MRI-derived Data\n• Chelation Therapy\n• Longitudinal Trends\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c87ad1221f6533763fa880491af8e9e3d69f822abdfded98244a9dc014ed1556",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98068
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Ferritin",
+        "Transfusion Burden",
+        "Liver Assessment",
+        "Cardiac Assessment",
+        "MRI-derived Data",
+        "Chelation Therapy",
+        "Longitudinal Trends"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4186,
+      "title": "Pediatric Hematopoietic Stem Cell Transplant Module",
+      "body": "Supports pediatric hematopoietic stem cell transplantation.\n\nSupports\n\n• Candidate Assessment\n• Donor Search\n• Compatibility\n• Conditioning\n• Transplantation\n• Engraftment\n• Complications\n• Long-term Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "005d1f71242badd49b9afa757f0bf5d2847dc1ebe901032d21e07069141cedb5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98088
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Candidate Assessment",
+        "Donor Search",
+        "Compatibility",
+        "Conditioning",
+        "Transplantation",
+        "Engraftment",
+        "Complications",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4187,
+      "title": "Pediatric Stem Cell Donor Matching Module",
+      "body": "Supports transplant donor evaluation.\n\nIntegrates\n\n• HLA Data\n• Relationship\n• Donor Health\n• Compatibility\n• Genetic Information\n• Infectious Screening\n• Selection Documentation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b74a18be38b85fbd541341e10e3a36a5bae390a2a7297171b31c0b80379e574a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98109
+      },
+      "verdict": "Donor relationship/health/HLA/genetic/infectious evidence belongs to a separately authorized donor identity; recipient care access is not blanket donor-record access.",
+      "feature_labels": [
+        "HLA Data",
+        "Relationship",
+        "Donor Health",
+        "Compatibility",
+        "Genetic Information",
+        "Infectious Screening",
+        "Selection Documentation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4188,
+      "title": "Pediatric Post-Transplant Monitoring Module",
+      "body": "Supports longitudinal post-transplant surveillance.\n\nTracks\n\n• Engraftment\n• Blood Counts\n• Immune Recovery\n• Infection\n• GVHD\n• Organ Function\n• Medication\n• Long-term Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "86bffe5d8717bb42731e383ab3ccabac191400a5bfbce5fb16a49c0f56ebaf81",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98129
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Engraftment",
+        "Blood Counts",
+        "Immune Recovery",
+        "Infection",
+        "GVHD",
+        "Organ Function",
+        "Medication",
+        "Long-term Complications"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4189,
+      "title": "Pediatric Hematology Molecular Diagnostics Module",
+      "body": "Supports molecular hematology.\n\nIntegrates\n\n• Gene Panels\n• Exome Sequencing\n• Genome Sequencing\n• Cytogenetics\n• Molecular Variants\n• Phenotype Correlation\n• Family Data\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7f74cbd096978c6ed0fc09b8a1ae88d1a71c4137253e8cba91f1993cb4d27139",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98150
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Gene Panels",
+        "Exome Sequencing",
+        "Genome Sequencing",
+        "Cytogenetics",
+        "Molecular Variants",
+        "Phenotype Correlation",
+        "Family Data"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4190,
+      "title": "Pediatric Hematology Digital Pathology Module",
+      "body": "Supports digital hematopathology workflows.\n\nSupports\n\n• Blood Smears\n• Bone Marrow Images\n• Cell Morphology\n• Digital Slides\n• Image Annotation\n• AI-assisted Pattern Detection\n• Pathologist Verification\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c8672556a3adb7a65d718f8e791765eee0a2f92aa9f6d6551f8e383e5fa76316",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98170
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Blood Smears",
+        "Bone Marrow Images",
+        "Cell Morphology",
+        "Digital Slides",
+        "Image Annotation",
+        "AI-assisted Pattern Detection",
+        "Pathologist Verification"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4191,
+      "title": "Pediatric Hematology AI Morphology Analysis Module",
+      "body": "Provides AI-assisted analysis of hematologic morphology.\n\nSupports\n\n• Cell Classification\n• Abnormal Cell Detection\n• Morphological Patterns\n• Blood Smear Analysis\n• Bone Marrow Assistance\n• Comparison with Previous Studies\n\nAI output remains subject to laboratory specialist verification.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1886ba82b3331364a64909de269375e79cc643b7a643b4a8713e792cf93c3837",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98190
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Cell Classification",
+        "Abnormal Cell Detection",
+        "Morphological Patterns",
+        "Blood Smear Analysis",
+        "Bone Marrow Assistance",
+        "Comparison with Previous Studies"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4192,
+      "title": "Pediatric Hematology AI Decision Support",
+      "body": "Provides AI-assisted hematology decision support.\n\nSupports\n\n• CBC Pattern Analysis\n• Differential Diagnosis\n• Coagulation Interpretation\n• Hemolysis Analysis\n• Cytopenia Assessment\n• Longitudinal Trend Detection\n• Risk Stratification\n\nAI output requires qualified clinician review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f260886e9f408de85a3703f2cc58cf3f8e865fbf8b8fabbe1adc61ead2e56ddc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98211
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "CBC Pattern Analysis",
+        "Differential Diagnosis",
+        "Coagulation Interpretation",
+        "Hemolysis Analysis",
+        "Cytopenia Assessment",
+        "Longitudinal Trend Detection",
+        "Risk Stratification"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4194,
+      "title": "Pediatric Hematology Remote Monitoring Module",
+      "body": "Supports remote longitudinal hematology care.\n\nSupports\n\n• Symptoms\n• Home Measurements\n• Medication Adherence\n• Laboratory Results\n• Bleeding Diaries\n• Pain Diaries\n• Treatment Events\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7597062a162841787740a8225872e71581f533046dd6b166e3bcedd47eca5d96",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98253
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Symptoms",
+        "Home Measurements",
+        "Medication Adherence",
+        "Laboratory Results",
+        "Bleeding Diaries",
+        "Pain Diaries",
+        "Treatment Events",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4195,
+      "title": "Pediatric Hematology Emergency Medical Passport Module",
+      "body": "Provides rapid access to critical hematology information.\n\nMay display\n\n• Diagnosis\n• Hemophilia Type\n• Factor Deficiency\n• Sickle Cell Disease\n• Antibodies\n• Blood Group\n• Current Therapy\n• Emergency Plan\n• Specialist Contact\n\nSupports multilingual cross-border emergency access with appropriate authorization.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "825f3e8fc80fc007dfd41303ceb2e8c70c47595e6ae6a941f61d202ecf4ef46d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98274
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Diagnosis",
+        "Hemophilia Type",
+        "Factor Deficiency",
+        "Sickle Cell Disease",
+        "Antibodies",
+        "Blood Group",
+        "Current Therapy",
+        "Emergency Plan",
+        "Specialist Contact"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4196,
+      "title": "Pediatric Hematology AI Pre-Visit Assessment Module",
+      "body": "Creates AI-assisted preliminary hematology documentation.\n\nAI may structure\n\n• Symptoms\n• Bleeding History\n• Infection History\n• Transfusion History\n• Medication\n• Family History\n• Laboratory Trends\n• Relevant Previous Events\n\nClinician can\n\n• Review\n• Edit\n• Correct\n• Reject\n• Approve\n• Sign\n• Publish\n\nAI-generated content remains draft until clinician validation.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9c7dd90cd3faf5c7e813c92f6a5326860f39235ecababb00c966795903dfc4fa",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98298
+      },
+      "verdict": "Draft → review/edit/correct/reject → approve/sign/publish are separate attributable states; preserve the exact source and clinician-approved version.",
+      "feature_labels": [
+        "Symptoms",
+        "Bleeding History",
+        "Infection History",
+        "Transfusion History",
+        "Medication",
+        "Family History",
+        "Laboratory Trends",
+        "Relevant Previous Events",
+        "Review",
+        "Edit",
+        "Correct",
+        "Reject",
+        "Approve",
+        "Sign",
+        "Publish"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4197,
+      "title": "Pediatric Hematology Telemedicine Module",
+      "body": "Supports remote specialist hematology care.\n\nSupports\n\n• Video Consultation\n• Laboratory Review\n• Treatment Monitoring\n• Second Opinion\n• Multidisciplinary Consultation\n• Cross-border Consultation\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7069b46d6aea20365aa3f89ce03461906a51c1a571f218ceecd222bfa03f8d13",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98331
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Video Consultation",
+        "Laboratory Review",
+        "Treatment Monitoring",
+        "Second Opinion",
+        "Multidisciplinary Consultation",
+        "Cross-border Consultation",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4198,
+      "title": "Pediatric Hematology Clinical Trials Matching Module",
+      "body": "Supports clinician-supervised research opportunity matching.\n\nIntegrates\n\n• Diagnosis\n• Age\n• Molecular Findings\n• Genetics\n• Previous Treatments\n• Disease Status\n• Trial Eligibility Criteria\n\nPotential matches require research-team verification before enrollment.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4e85333f5d0a126269e543eb843ee6405f92398a4c910ff05eee8e293b1bd30f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98351
+      },
+      "verdict": "Research-team verification is required before enrollment; an algorithmic match is not eligibility confirmation or consent.",
+      "feature_labels": [
+        "Diagnosis",
+        "Age",
+        "Molecular Findings",
+        "Genetics",
+        "Previous Treatments",
+        "Disease Status",
+        "Trial Eligibility Criteria"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4199,
+      "title": "Pediatric Hematology Transition-to-Adult-Care Module",
+      "body": "Supports structured transition to adult hematology.\n\nSupports\n\n• Transition Readiness\n• Medical Summary\n• Treatment History\n• Genetics\n• Transfusion History\n• Emergency Plans\n• Adult Specialist Transfer\n• Continuity Tracking\n\nMaintains the longitudinal EDHT Medical Passport across transition.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5ac6b01e833edfea0e8f783f82710c1131b376a8be03e5b0a6fa1e3713e072c6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98373
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Transition Readiness",
+        "Medical Summary",
+        "Treatment History",
+        "Genetics",
+        "Transfusion History",
+        "Emergency Plans",
+        "Adult Specialist Transfer",
+        "Continuity Tracking"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4200,
+      "title": "Clinical Pediatric Hematology Intelligence Hub",
+      "body": "Coordinates the complete pediatric hematology ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Anemia\n• Hemoglobinopathies\n• Cytopenias\n• Hemostasis\n• Thrombosis\n• Transfusion Medicine\n• Bone Marrow Diagnostics\n• Molecular Diagnostics\n• Genetics\n• Stem Cell Transplantation\n• Digital Pathology\n• Emergency Medical Passport\n• Telemedicine\n• Clinical Research\n• Adult-care Transition\n\nProvides intelligent longitudinal pediatric hematology care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0a4967d893d4581acadfda67228a9cab75261e744efb86c2e065c02763d67db0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98396
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Anemia",
+        "Hemoglobinopathies",
+        "Cytopenias",
+        "Hemostasis",
+        "Thrombosis",
+        "Transfusion Medicine",
+        "Bone Marrow Diagnostics",
+        "Molecular Diagnostics",
+        "Genetics",
+        "Stem Cell Transplantation",
+        "Digital Pathology",
+        "Emergency Medical Passport",
+        "Telemedicine",
+        "Clinical Research",
+        "Adult-care Transition"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4976,
+      "title": "Clinical Pediatric Hematology Platform Core Engine",
+      "body": "Purpose:\nProvide the unified longitudinal architecture for pediatric hematology, coagulation, cytopenias, transfusion medicine and bone marrow disorders across EDHT.\n\nCore Functions:\n• Hematology Diagnosis Registry\n• Complete Blood Count Timeline\n• Anemia\n• Cytopenias\n• Hemoglobin Disorders\n• Bleeding Disorders\n• Thrombosis\n• Platelet Disorders\n• Bone Marrow Disorders\n• Hemolysis\n• Iron Disorders\n• Transfusion Medicine\n• Apheresis Context\n• Hematological Genetics\n• Medication Safety\n• Long-term Outcomes\n• Transition to Adult Hematology\n\nClinical Data:\n• CBC\n• Reticulocytes\n• Morphology\n• Coagulation\n• Iron Studies\n• Hemolysis Markers\n• Immunological Data\n• Molecular Diagnostics\n• Genetics\n• Bone Marrow\n• Pathology\n• Medication\n• Transfusion History\n• Procedures\n\nIntegrations:\n• Pediatrics\n• Oncology\n• Immunology\n• Genetics\n• Nephrology\n• Rheumatology\n• Gynecology\n• Infectious Disease\n• Laboratory Medicine\n• Blood Bank\n• Medical Passport\n\nAI Functions:\n• Longitudinal Hematology Trend Analysis\n• Cytopenia Pattern Support\n• Hemolysis Pattern Support\n• Bleeding/Thrombosis Timeline\n• Clinical Summarization\n• Missing-data Detection\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "59474d419bad219c3f4087f81964879b2afd08b7fd79003c75259f7878827ce0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123412
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hematology Diagnosis Registry",
+        "Complete Blood Count Timeline",
+        "Anemia",
+        "Cytopenias",
+        "Hemoglobin Disorders",
+        "Bleeding Disorders",
+        "Thrombosis",
+        "Platelet Disorders",
+        "Bone Marrow Disorders",
+        "Hemolysis",
+        "Iron Disorders",
+        "Transfusion Medicine",
+        "Apheresis Context",
+        "Hematological Genetics",
+        "Medication Safety",
+        "Long-term Outcomes",
+        "Transition to Adult Hematology",
+        "CBC",
+        "Reticulocytes",
+        "Morphology",
+        "Coagulation",
+        "Iron Studies",
+        "Hemolysis Markers",
+        "Immunological Data",
+        "Molecular Diagnostics",
+        "Genetics",
+        "Bone Marrow",
+        "Pathology",
+        "Medication",
+        "Transfusion History",
+        "Procedures",
+        "Pediatrics",
+        "Oncology",
+        "Immunology",
+        "Genetics",
+        "Nephrology",
+        "Rheumatology",
+        "Gynecology",
+        "Infectious Disease",
+        "Laboratory Medicine",
+        "Blood Bank",
+        "Medical Passport",
+        "Longitudinal Hematology Trend Analysis",
+        "Cytopenia Pattern Support",
+        "Hemolysis Pattern Support",
+        "Bleeding/Thrombosis Timeline",
+        "Clinical Summarization",
+        "Missing-data Detection"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4977,
+      "title": "Pediatric Complete Blood Count & Hematologic Trend Intelligence Module",
+      "body": "Purpose:\nCreate a longitudinal structured representation of pediatric hematologic laboratory data.\n\nCore Functions:\n• Hemoglobin\n• Hematocrit\n• Red Cell Count\n• MCV\n• MCH\n• RDW\n• White Cell Count\n• Differential\n• Platelet Count\n• Reticulocyte Count\n• Peripheral Smear Context\n• Age-adjusted Reference Context\n• Historical Comparison\n• Treatment Correlation\n• Acute Illness Context\n\nClinical Intelligence:\n• Persistent Abnormality Detection\n• Rapid Change Detection\n• Multi-lineage Cytopenia Detection\n• Recovery Pattern Tracking\n• Patient-specific Baseline Comparison\n\nIntegrations:\n• Laboratory Medicine\n• Hematology\n• Oncology\n• Intensive Care\n• Primary Care\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "ed271a6dd365209292fcf1f77732bb894e64055680e92aa79302ffa2a9611039",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123481
+      },
+      "verdict": "CBC trends retain age-adjusted reference context, acute illness, source method/time and patient baseline; persistent abnormalities differ from isolated deviations.",
+      "feature_labels": [
+        "Hemoglobin",
+        "Hematocrit",
+        "Red Cell Count",
+        "MCV",
+        "MCH",
+        "RDW",
+        "White Cell Count",
+        "Differential",
+        "Platelet Count",
+        "Reticulocyte Count",
+        "Peripheral Smear Context",
+        "Age-adjusted Reference Context",
+        "Historical Comparison",
+        "Treatment Correlation",
+        "Acute Illness Context",
+        "Persistent Abnormality Detection",
+        "Rapid Change Detection",
+        "Multi-lineage Cytopenia Detection",
+        "Recovery Pattern Tracking",
+        "Patient-specific Baseline Comparison",
+        "Laboratory Medicine",
+        "Hematology",
+        "Oncology",
+        "Intensive Care",
+        "Primary Care"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4978,
+      "title": "Pediatric Anemia Diagnostic & Longitudinal Management Module",
+      "body": "Purpose:\nSupport structured evaluation and longitudinal management of pediatric anemia.\n\nCore Functions:\n• Anemia Detection\n• Severity\n• Morphological Classification\n• Reticulocyte Response\n• Iron Status\n• Vitamin Status Context\n• Hemolysis Context\n• Blood Loss Context\n• Chronic Disease Context\n• Renal Context\n• Bone Marrow Context\n• Genetic Context\n• Treatment\n• Transfusion Context\n• Response\n• Recurrence\n\nAI Functions:\n• Anemia Pattern Organization\n• Laboratory Correlation\n• Historical Trend Support\n• Missing Workup Detection\n\nSafety:\nAI-supported classification does not replace specialist diagnostic assessment.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "7415d5101d3e6814ff6c3450642018d09adcd9016740d4e9639489c86fa829e1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123525
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Anemia Detection",
+        "Severity",
+        "Morphological Classification",
+        "Reticulocyte Response",
+        "Iron Status",
+        "Vitamin Status Context",
+        "Hemolysis Context",
+        "Blood Loss Context",
+        "Chronic Disease Context",
+        "Renal Context",
+        "Bone Marrow Context",
+        "Genetic Context",
+        "Treatment",
+        "Transfusion Context",
+        "Response",
+        "Recurrence",
+        "Anemia Pattern Organization",
+        "Laboratory Correlation",
+        "Historical Trend Support",
+        "Missing Workup Detection"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4979,
+      "title": "Pediatric Iron Deficiency & Iron Metabolism Module",
+      "body": "Purpose:\nProvide longitudinal management of iron deficiency and disorders of iron metabolism.\n\nCore Functions:\n• Ferritin\n• Transferrin Context\n• Transferrin Saturation\n• Serum Iron Context\n• Hemoglobin\n• MCV\n• Reticulocyte Context\n• Diet\n• Growth\n• Gastrointestinal Context\n• Menstrual Blood Loss Context\n• Chronic Inflammation Context\n• Oral Iron Therapy\n• Intravenous Iron Context\n• Treatment Response\n• Recurrence\n\nIntegrations:\n• Hematology\n• Nutrition\n• Gastroenterology\n• Gynecology\n• Primary Care\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "390c6bd63465e0031072475ce6ca65ea048b2084bd7a7c56b61ec76078e72b45",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123562
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Ferritin",
+        "Transferrin Context",
+        "Transferrin Saturation",
+        "Serum Iron Context",
+        "Hemoglobin",
+        "MCV",
+        "Reticulocyte Context",
+        "Diet",
+        "Growth",
+        "Gastrointestinal Context",
+        "Menstrual Blood Loss Context",
+        "Chronic Inflammation Context",
+        "Oral Iron Therapy",
+        "Intravenous Iron Context",
+        "Treatment Response",
+        "Recurrence",
+        "Hematology",
+        "Nutrition",
+        "Gastroenterology",
+        "Gynecology",
+        "Primary Care",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4980,
+      "title": "Pediatric Hemolytic Anemia & Red Cell Destruction Module",
+      "body": "Purpose:\nCoordinate diagnosis and management of congenital and acquired pediatric hemolytic anemia.\n\nCore Functions:\n• Hemoglobin Trend\n• Reticulocytes\n• Bilirubin\n• LDH Context\n• Haptoglobin Context\n• Peripheral Smear\n• Direct Antiglobulin Testing Context\n• Splenomegaly\n• Jaundice\n• Hemoglobinopathy Context\n• Membrane Disorder Context\n• Enzyme Disorder Context\n• Autoimmune Context\n• Transfusion\n• Medication\n• Treatment Response\n\nIntegrations:\n• Hematology\n• Immunology\n• Genetics\n• Hepatology\n• Laboratory Medicine\n• Blood Bank\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "00eca56d4abf0c73c71d90c11379c55d6ed370f49a00d762ad7513336e8c507c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123598
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hemoglobin Trend",
+        "Reticulocytes",
+        "Bilirubin",
+        "LDH Context",
+        "Haptoglobin Context",
+        "Peripheral Smear",
+        "Direct Antiglobulin Testing Context",
+        "Splenomegaly",
+        "Jaundice",
+        "Hemoglobinopathy Context",
+        "Membrane Disorder Context",
+        "Enzyme Disorder Context",
+        "Autoimmune Context",
+        "Transfusion",
+        "Medication",
+        "Treatment Response",
+        "Hematology",
+        "Immunology",
+        "Genetics",
+        "Hepatology",
+        "Laboratory Medicine",
+        "Blood Bank"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4981,
+      "title": "Pediatric Hemoglobinopathy & Sickle Cell Disease Platform",
+      "body": "Purpose:\nProvide comprehensive longitudinal care for inherited hemoglobin disorders including sickle cell disease.\n\nCore Functions:\n• Hemoglobinopathy Diagnosis\n• Newborn Screening Context\n• Hemoglobin Analysis\n• Genotype\n• Baseline Hemoglobin\n• Hemolysis Markers\n• Pain Episodes\n• Acute Chest Context\n• Infection Risk\n• Splenic Function Context\n• Stroke Risk Context\n• Transfusion\n• Disease-modifying Therapy\n• Hydroxyurea Context\n• Iron Overload\n• Organ Surveillance\n• Vaccination Context\n• Long-term Outcomes\n\nIntegrations:\n• Hematology\n• Genetics\n• Neurology\n• Pulmonology\n• Cardiology\n• Nephrology\n• Infectious Disease\n• Vaccination Intelligence\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "b986a1c74012ded852bfa0db394869e0967e380a6fe4ecc0708db30bcda4c5a5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123634
+      },
+      "verdict": "Sickle-cell profile retains newborn screening, splenic/stroke/infection context, hydroxyurea exposure, vaccination and organ surveillance; source context does not prescribe treatment.",
+      "feature_labels": [
+        "Hemoglobinopathy Diagnosis",
+        "Newborn Screening Context",
+        "Hemoglobin Analysis",
+        "Genotype",
+        "Baseline Hemoglobin",
+        "Hemolysis Markers",
+        "Pain Episodes",
+        "Acute Chest Context",
+        "Infection Risk",
+        "Splenic Function Context",
+        "Stroke Risk Context",
+        "Transfusion",
+        "Disease-modifying Therapy",
+        "Hydroxyurea Context",
+        "Iron Overload",
+        "Organ Surveillance",
+        "Vaccination Context",
+        "Long-term Outcomes",
+        "Hematology",
+        "Genetics",
+        "Neurology",
+        "Pulmonology",
+        "Cardiology",
+        "Nephrology",
+        "Infectious Disease",
+        "Vaccination Intelligence"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4982,
+      "title": "Pediatric Thalassemia & Chronic Transfusion Management Module",
+      "body": "Purpose:\nCoordinate longitudinal care of pediatric thalassemia and other chronic transfusion-dependent anemias.\n\nCore Functions:\n• Thalassemia Type\n• Genotype\n• Hemoglobin\n• Transfusion Schedule\n• Pre-transfusion Hemoglobin\n• Blood Product History\n• Alloantibody Context\n• Iron Overload\n• Ferritin\n• MRI Iron Context\n• Chelation Therapy\n• Growth\n• Endocrine Surveillance\n• Cardiac Surveillance\n• Liver Surveillance\n• Bone Health\n• Treatment Response\n\nIntegrations:\n• Hematology\n• Blood Bank\n• Genetics\n• Cardiology\n• Endocrinology\n• Hepatology\n• Pharmacy\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "fde8b2f8df971805a62f0ae173c4bdf17bcf6a1d2a6481deac466773b279fc3c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123677
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Thalassemia Type",
+        "Genotype",
+        "Hemoglobin",
+        "Transfusion Schedule",
+        "Pre-transfusion Hemoglobin",
+        "Blood Product History",
+        "Alloantibody Context",
+        "Iron Overload",
+        "Ferritin",
+        "MRI Iron Context",
+        "Chelation Therapy",
+        "Growth",
+        "Endocrine Surveillance",
+        "Cardiac Surveillance",
+        "Liver Surveillance",
+        "Bone Health",
+        "Treatment Response",
+        "Hematology",
+        "Blood Bank",
+        "Genetics",
+        "Cardiology",
+        "Endocrinology",
+        "Hepatology",
+        "Pharmacy"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4983,
+      "title": "Pediatric Platelet Disorders & Thrombocytopenia Module",
+      "body": "Purpose:\nProvide structured assessment of quantitative and qualitative platelet disorders.\n\nCore Functions:\n• Platelet Count\n• Platelet Trend\n• Bleeding Symptoms\n• Bruising\n• Petechiae\n• Mucosal Bleeding\n• Immune Thrombocytopenia Context\n• Bone Marrow Context\n• Medication Context\n• Infection Context\n• Autoimmune Context\n• Genetic Platelet Disorder Context\n• Treatment\n• Transfusion\n• Response\n• Recurrence\n\nIntegrations:\n• Hematology\n• Immunology\n• Rheumatology\n• Genetics\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "5f501c0d4a7a6da7be46a97970e9f5bcab6d10a1d3b512c6728aac69a47f1225",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123715
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Platelet Count",
+        "Platelet Trend",
+        "Bleeding Symptoms",
+        "Bruising",
+        "Petechiae",
+        "Mucosal Bleeding",
+        "Immune Thrombocytopenia Context",
+        "Bone Marrow Context",
+        "Medication Context",
+        "Infection Context",
+        "Autoimmune Context",
+        "Genetic Platelet Disorder Context",
+        "Treatment",
+        "Transfusion",
+        "Response",
+        "Recurrence",
+        "Hematology",
+        "Immunology",
+        "Rheumatology",
+        "Genetics",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4984,
+      "title": "Pediatric Hemophilia & Inherited Bleeding Disorder Platform",
+      "body": "Purpose:\nProvide lifelong management of hemophilia and inherited coagulation disorders.\n\nCore Functions:\n• Bleeding Disorder Diagnosis\n• Factor Levels\n• Genetic Diagnosis\n• Bleeding Episode Registry\n• Joint Bleeding Context\n• Trauma Context\n• Factor Replacement\n• Prophylaxis\n• Non-factor Therapy Context\n• Inhibitor Context\n• Treatment Product\n• Dose History\n• Home Treatment\n• Surgery Planning\n• Dental Procedure Planning\n• Emergency Plan\n• Long-term Joint Outcomes\n\nMedical Passport:\n• Diagnosis\n• Severity\n• Current Hemostatic Treatment\n• Inhibitor Status\n• Emergency Treatment Plan\n• Specialist Contact Context\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "111f4abcdccf3eb4925286e588858a2204637a33d1c1851487c1585421b636d3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123750
+      },
+      "verdict": "Retain non-factor therapy, inhibitor status, home treatment, dental/surgery planning and emergency contact as distinct hemostasis profile requirements.",
+      "feature_labels": [
+        "Bleeding Disorder Diagnosis",
+        "Factor Levels",
+        "Genetic Diagnosis",
+        "Bleeding Episode Registry",
+        "Joint Bleeding Context",
+        "Trauma Context",
+        "Factor Replacement",
+        "Prophylaxis",
+        "Non-factor Therapy Context",
+        "Inhibitor Context",
+        "Treatment Product",
+        "Dose History",
+        "Home Treatment",
+        "Surgery Planning",
+        "Dental Procedure Planning",
+        "Emergency Plan",
+        "Long-term Joint Outcomes",
+        "Diagnosis",
+        "Severity",
+        "Current Hemostatic Treatment",
+        "Inhibitor Status",
+        "Emergency Treatment Plan",
+        "Specialist Contact Context"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4985,
+      "title": "Pediatric von Willebrand Disease & Mucocutaneous Bleeding Module",
+      "body": "Purpose:\nCoordinate diagnosis and longitudinal management of von Willebrand disease and related mucocutaneous bleeding phenotypes.\n\nCore Functions:\n• Bleeding History\n• Epistaxis\n• Oral Bleeding\n• Bruising\n• Procedural Bleeding\n• Menstrual Bleeding Context\n• Family History\n• VWF Testing\n• Factor VIII Context\n• Platelet Function Context\n• Treatment\n• Procedural Plan\n• Emergency Plan\n• Response\n• Long-term Follow-up\n\nIntegrations:\n• Hematology\n• Gynecology\n• ENT\n• Dentistry\n• Surgery\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "18cb001e15d9840cc7e75ecb5879985652ce2bdd98fdd116f30e1acb42faf6fb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123790
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Bleeding History",
+        "Epistaxis",
+        "Oral Bleeding",
+        "Bruising",
+        "Procedural Bleeding",
+        "Menstrual Bleeding Context",
+        "Family History",
+        "VWF Testing",
+        "Factor VIII Context",
+        "Platelet Function Context",
+        "Treatment",
+        "Procedural Plan",
+        "Emergency Plan",
+        "Response",
+        "Long-term Follow-up",
+        "Hematology",
+        "Gynecology",
+        "ENT",
+        "Dentistry",
+        "Surgery",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4986,
+      "title": "Pediatric Coagulation Laboratory & Hemostasis Intelligence Module",
+      "body": "Purpose:\nIntegrate pediatric coagulation testing with bleeding, thrombosis and treatment context.\n\nCore Functions:\n• PT\n• INR\n• aPTT\n• Fibrinogen\n• D-Dimer Context\n• Factor Assays\n• von Willebrand Testing\n• Platelet Function Context\n• Inhibitor Testing\n• Mixing Studies Context\n• Anticoagulant Exposure Context\n• Liver Function Context\n• Historical Comparison\n• Treatment Correlation\n\nAI Functions:\n• Coagulation Pattern Organization\n• Longitudinal Trend Support\n• Treatment Context Correlation\n\nSafety:\nLaboratory interpretation remains clinician- and context-dependent.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "106b5fdd4d21cb3e5b2ecc6fc7fec2cd46b9c0ab0472475fca4fa375f9f3c755",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123825
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "PT",
+        "INR",
+        "aPTT",
+        "Fibrinogen",
+        "D-Dimer Context",
+        "Factor Assays",
+        "von Willebrand Testing",
+        "Platelet Function Context",
+        "Inhibitor Testing",
+        "Mixing Studies Context",
+        "Anticoagulant Exposure Context",
+        "Liver Function Context",
+        "Historical Comparison",
+        "Treatment Correlation",
+        "Coagulation Pattern Organization",
+        "Longitudinal Trend Support",
+        "Treatment Context Correlation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4987,
+      "title": "Pediatric Thrombosis & Venous Thromboembolism Management Module",
+      "body": "Purpose:\nCoordinate pediatric venous and arterial thrombosis care.\n\nCore Functions:\n• Thrombotic Event\n• Anatomical Site\n• Venous Thrombosis\n• Arterial Thrombosis\n• Catheter-associated Thrombosis\n• Cerebral Venous Context\n• Imaging\n• Risk Factors\n• Family History\n• Thrombophilia Context\n• Medication Exposure\n• Anticoagulation\n• Laboratory Monitoring\n• Recurrence\n• Post-thrombotic Outcomes\n\nIntegrations:\n• Hematology\n• Radiology\n• Neurology\n• Cardiology\n• Oncology\n• Intensive Care\n• Pharmacy\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "c75ea70067a08d320d833f02f55fd6ebaf39927ce2b43590272cd4583cb2ca69",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123859
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Thrombotic Event",
+        "Anatomical Site",
+        "Venous Thrombosis",
+        "Arterial Thrombosis",
+        "Catheter-associated Thrombosis",
+        "Cerebral Venous Context",
+        "Imaging",
+        "Risk Factors",
+        "Family History",
+        "Thrombophilia Context",
+        "Medication Exposure",
+        "Anticoagulation",
+        "Laboratory Monitoring",
+        "Recurrence",
+        "Post-thrombotic Outcomes",
+        "Hematology",
+        "Radiology",
+        "Neurology",
+        "Cardiology",
+        "Oncology",
+        "Intensive Care",
+        "Pharmacy"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4988,
+      "title": "Pediatric Anticoagulation & Antithrombotic Safety Engine",
+      "body": "Purpose:\nProvide medication safety and monitoring for pediatric anticoagulant and antithrombotic therapy.\n\nCore Functions:\n• Anticoagulant Registry\n• Indication\n• Dose\n• Weight-related Context\n• Renal Function Context\n• Laboratory Monitoring\n• Drug Interactions\n• Bleeding Events\n• Thrombotic Events\n• Procedure Planning\n• Medication Holds\n• Reversal Context\n• Adherence\n• Treatment Duration\n• Medication Reconciliation\n\nSafety Functions:\n• Bleeding Risk Alerts\n• Missing Monitoring Detection\n• Interaction Alerts\n• Procedure Context\n• Renal Function Alerts\n• Clinician-defined High-risk Conditions\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "41cd6aa796366526bd0b86c55f1f4604644efbdec400bf00ee7d35018b9b39f3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123895
+      },
+      "verdict": "Anticoagulation monitoring retains renal/weight/procedure context, holds and reversal; alerts never execute a hold, reversal or dose adjustment.",
+      "feature_labels": [
+        "Anticoagulant Registry",
+        "Indication",
+        "Dose",
+        "Weight-related Context",
+        "Renal Function Context",
+        "Laboratory Monitoring",
+        "Drug Interactions",
+        "Bleeding Events",
+        "Thrombotic Events",
+        "Procedure Planning",
+        "Medication Holds",
+        "Reversal Context",
+        "Adherence",
+        "Treatment Duration",
+        "Medication Reconciliation",
+        "Bleeding Risk Alerts",
+        "Missing Monitoring Detection",
+        "Interaction Alerts",
+        "Procedure Context",
+        "Renal Function Alerts",
+        "Clinician-defined High-risk Conditions"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4989,
+      "title": "Pediatric Thrombophilia & Genetic Coagulation Risk Module",
+      "body": "Purpose:\nSupport specialist evaluation of inherited and acquired thrombotic risk in pediatric patients.\n\nCore Functions:\n• Thrombosis History\n• Family History\n• Provoking Factors\n• Recurrent Events\n• Laboratory Thrombophilia Context\n• Genetic Testing\n• Autoimmune Context\n• Medication Context\n• Central Line Context\n• Malignancy Context\n• Long-term Anticoagulation Context\n• Counseling\n• Future Risk Documentation\n\nClinical Governance:\nTesting decisions and interpretation remain specialist-led and indication-specific.\n\nIntegrations:\n• Hematology\n• Genetics\n• Rheumatology\n• Oncology\n• Cardiology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "1d1ebe1fa74c14ab7181a178099added88ee943527f138948215175fbd2d1bac",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123933
+      },
+      "verdict": "Thrombophilia testing decisions remain indication-specific and specialist-led; genetic risk is not an automatic anticoagulation indication.",
+      "feature_labels": [
+        "Thrombosis History",
+        "Family History",
+        "Provoking Factors",
+        "Recurrent Events",
+        "Laboratory Thrombophilia Context",
+        "Genetic Testing",
+        "Autoimmune Context",
+        "Medication Context",
+        "Central Line Context",
+        "Malignancy Context",
+        "Long-term Anticoagulation Context",
+        "Counseling",
+        "Future Risk Documentation",
+        "Hematology",
+        "Genetics",
+        "Rheumatology",
+        "Oncology",
+        "Cardiology"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4990,
+      "title": "Pediatric Neutropenia & White Cell Disorder Module",
+      "body": "Purpose:\nProvide longitudinal evaluation and management of pediatric neutropenia and other clinically significant white cell abnormalities.\n\nCore Functions:\n• Absolute Neutrophil Count\n• White Cell Differential\n• Severity\n• Duration\n• Infection History\n• Medication Context\n• Autoimmune Context\n• Genetic Context\n• Bone Marrow Context\n• Cyclic Pattern Context\n• Growth\n• Treatment\n• Prophylaxis\n• G-CSF Context\n• Clinical Response\n\nIntegrations:\n• Hematology\n• Immunology\n• Infectious Disease\n• Genetics\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "691b9c18902a7ed2ef98d796307b4a32cbbbeb153905fafd1155c0150f87b54a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123968
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Absolute Neutrophil Count",
+        "White Cell Differential",
+        "Severity",
+        "Duration",
+        "Infection History",
+        "Medication Context",
+        "Autoimmune Context",
+        "Genetic Context",
+        "Bone Marrow Context",
+        "Cyclic Pattern Context",
+        "Growth",
+        "Treatment",
+        "Prophylaxis",
+        "G-CSF Context",
+        "Clinical Response",
+        "Hematology",
+        "Immunology",
+        "Infectious Disease",
+        "Genetics",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4991,
+      "title": "Pediatric Pancytopenia, Bone Marrow Failure & Marrow Dysfunction Module",
+      "body": "Purpose:\nCoordinate evaluation of multi-lineage cytopenias, inherited marrow failure and acquired bone marrow dysfunction.\n\nCore Functions:\n• Hemoglobin\n• Neutrophils\n• Platelets\n• Reticulocytes\n• Peripheral Smear\n• Bone Marrow Examination\n• Cytogenetics Context\n• Molecular Diagnostics\n• Genetics\n• Viral Context\n• Autoimmune Context\n• Medication/Toxin Context\n• Transfusion Support\n• Infection Prophylaxis\n• Treatment\n• Transplant Evaluation\n\nIntegrations:\n• Hematology\n• Genetics\n• Immunology\n• Infectious Disease\n• Transplantation\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "645f9f3e6c196e64d83ea109d17c2ef55215b5047b3ef512cf9788f048106a87",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124002
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hemoglobin",
+        "Neutrophils",
+        "Platelets",
+        "Reticulocytes",
+        "Peripheral Smear",
+        "Bone Marrow Examination",
+        "Cytogenetics Context",
+        "Molecular Diagnostics",
+        "Genetics",
+        "Viral Context",
+        "Autoimmune Context",
+        "Medication/Toxin Context",
+        "Transfusion Support",
+        "Infection Prophylaxis",
+        "Treatment",
+        "Transplant Evaluation",
+        "Hematology",
+        "Genetics",
+        "Immunology",
+        "Infectious Disease",
+        "Transplantation",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4992,
+      "title": "Pediatric Bone Marrow Aspiration, Biopsy & Hematopathology Module",
+      "body": "Purpose:\nConnect bone marrow procedures, morphology, pathology and molecular diagnostics within one traceable clinical workflow.\n\nCore Functions:\n• Procedure Indication\n• Aspiration\n• Core Biopsy\n• Specimen Tracking\n• Morphology\n• Cellularity Context\n• Flow Cytometry\n• Cytogenetics\n• Molecular Testing\n• Histopathology\n• Immunophenotyping\n• Specialist Interpretation\n• Clinical Correlation\n• Historical Comparison\n• Treatment Impact\n\nIntegrations:\n• Hematology\n• Oncology\n• Pathology\n• Molecular Diagnostics\n• Genetics\n• Laboratory Medicine\n\nAI Functions:\n• Structured Data Organization\n• Historical Comparison Support\n• Diagnostic Timeline Assembly\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "68ae5af11520e10f738778b71ab65881adfa8a47d4f5a4919e6f6adb53ce6c24",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124038
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Procedure Indication",
+        "Aspiration",
+        "Core Biopsy",
+        "Specimen Tracking",
+        "Morphology",
+        "Cellularity Context",
+        "Flow Cytometry",
+        "Cytogenetics",
+        "Molecular Testing",
+        "Histopathology",
+        "Immunophenotyping",
+        "Specialist Interpretation",
+        "Clinical Correlation",
+        "Historical Comparison",
+        "Treatment Impact",
+        "Hematology",
+        "Oncology",
+        "Pathology",
+        "Molecular Diagnostics",
+        "Genetics",
+        "Laboratory Medicine",
+        "Structured Data Organization",
+        "Historical Comparison Support",
+        "Diagnostic Timeline Assembly"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4993,
+      "title": "Pediatric Transfusion Medicine & Blood Product Management Platform",
+      "body": "Purpose:\nProvide complete traceability and safety for pediatric blood product transfusion.\n\nCore Functions:\n• Transfusion Indication\n• Blood Product Type\n• Product Identification\n• Compatibility\n• Special Product Requirements\n• Transfusion Start/End\n• Volume\n• Vital Signs Context\n• Reaction Monitoring\n• Transfusion Reaction\n• Alloantibody History\n• Transfusion Exposure Timeline\n• Massive Transfusion Context\n• Chronic Transfusion Program\n• Outcome\n\nIntegrations:\n• Blood Bank\n• Hematology\n• Oncology\n• Surgery\n• Intensive Care\n• Emergency Medicine\n• Medical Passport\n\nSafety Functions:\n• Compatibility Verification\n• Reaction History\n• Product Requirement Alerts\n• Patient Identity Verification\n• Audit Trail\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "f031966a17b152fa53e6187f3eb065278111a425f3917afbf4d6f8b27df7351c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124078
+      },
+      "verdict": "Blood products require identity, product ID/special requirements, start/end, volume and compatible source release; preserve massive/chronic transfusion contexts and audit.",
+      "feature_labels": [
+        "Transfusion Indication",
+        "Blood Product Type",
+        "Product Identification",
+        "Compatibility",
+        "Special Product Requirements",
+        "Transfusion Start/End",
+        "Volume",
+        "Vital Signs Context",
+        "Reaction Monitoring",
+        "Transfusion Reaction",
+        "Alloantibody History",
+        "Transfusion Exposure Timeline",
+        "Massive Transfusion Context",
+        "Chronic Transfusion Program",
+        "Outcome",
+        "Blood Bank",
+        "Hematology",
+        "Oncology",
+        "Surgery",
+        "Intensive Care",
+        "Emergency Medicine",
+        "Medical Passport",
+        "Compatibility Verification",
+        "Reaction History",
+        "Product Requirement Alerts",
+        "Patient Identity Verification",
+        "Audit Trail"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4994,
+      "title": "Pediatric Transfusion Reaction & Hemovigilance Module",
+      "body": "Purpose:\nDocument, investigate and monitor adverse events associated with pediatric transfusion.\n\nCore Functions:\n• Reaction Timing\n• Product\n• Symptoms\n• Vital Signs\n• Laboratory Evaluation\n• Hemolysis Context\n• Allergy Context\n• Infectious Context\n• Treatment\n• Severity\n• Investigation\n• Blood Bank Review\n• Final Classification\n• Future Transfusion Requirements\n• Outcome\n\nHemovigilance:\n• Reaction Reporting\n• Trend Analysis\n• Product Traceability\n• Safety Event Registry\n• Quality Review\n\nMedical Passport:\nClinically significant transfusion reactions can propagate to future transfusion safety records.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "446d4baf36eb1a57d6eb500003fdbecc6a5159c7e3f17c8e05c237b2314dd112",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124124
+      },
+      "verdict": "Reaction surveillance retains timing, product, clinical investigation, blood-bank final classification and future product requirements; propagation preserves uncertainty until adjudicated.",
+      "feature_labels": [
+        "Reaction Timing",
+        "Product",
+        "Symptoms",
+        "Vital Signs",
+        "Laboratory Evaluation",
+        "Hemolysis Context",
+        "Allergy Context",
+        "Infectious Context",
+        "Treatment",
+        "Severity",
+        "Investigation",
+        "Blood Bank Review",
+        "Final Classification",
+        "Future Transfusion Requirements",
+        "Outcome",
+        "Reaction Reporting",
+        "Trend Analysis",
+        "Product Traceability",
+        "Safety Event Registry",
+        "Quality Review"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4995,
+      "title": "Pediatric Apheresis & Therapeutic Cell Collection Module",
+      "body": "Purpose:\nCoordinate therapeutic apheresis and clinically indicated cellular collection procedures in pediatric patients.\n\nCore Functions:\n• Procedure Indication\n• Procedure Type\n• Vascular Access\n• Machine/Device Context\n• Replacement Fluid Context\n• Anticoagulation Context\n• Pre-procedure Labs\n• Procedure Parameters\n• Complications\n• Medication\n• Product Collection Context\n• Treatment Response\n• Follow-up\n\nClinical Contexts:\n• Plasma Exchange\n• Red Cell Exchange\n• Leukapheresis Context\n• Stem Cell Collection Context\n• Other Therapeutic Apheresis\n\nIntegrations:\n• Hematology\n• Transfusion Medicine\n• Oncology\n• Transplantation\n• Intensive Care\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "f1c4cb065c0a8a96aa59e4498c7757e10fca795ff39f09e2f29b0418ad43181f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124161
+      },
+      "verdict": "Apheresis records preserve access, device, replacement fluid, anticoagulation, parameters and collected-product context; documentation is separate from machine control.",
+      "feature_labels": [
+        "Procedure Indication",
+        "Procedure Type",
+        "Vascular Access",
+        "Machine/Device Context",
+        "Replacement Fluid Context",
+        "Anticoagulation Context",
+        "Pre-procedure Labs",
+        "Procedure Parameters",
+        "Complications",
+        "Medication",
+        "Product Collection Context",
+        "Treatment Response",
+        "Follow-up",
+        "Plasma Exchange",
+        "Red Cell Exchange",
+        "Leukapheresis Context",
+        "Stem Cell Collection Context",
+        "Other Therapeutic Apheresis",
+        "Hematology",
+        "Transfusion Medicine",
+        "Oncology",
+        "Transplantation",
+        "Intensive Care"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4996,
+      "title": "Pediatric Hematology Genetics & Inherited Blood Disease Module",
+      "body": "Purpose:\nProvide integrated genetic evaluation and family-oriented care for inherited hematological disorders.\n\nCore Functions:\n• Hematologic Phenotype\n• Family History\n• Pedigree\n• Genetic Testing\n• Variant Classification\n• Genotype-Phenotype Correlation\n• Hemoglobin Disorders\n• Bleeding Disorders\n• Platelet Disorders\n• Bone Marrow Failure\n• Red Cell Disorders\n• Family Testing\n• Carrier Context\n• Genetic Counseling\n• Long-term Surveillance\n\nAI Functions:\n• Phenotype Structuring\n• Family Pattern Organization\n• Genetic Correlation Support\n\nGovernance:\nFinal variant and disease interpretation remains specialist-led.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "6a3b2ff268fd0a60097cc24df50b285084512275deae6445fa75205d5b21449a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124200
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hematologic Phenotype",
+        "Family History",
+        "Pedigree",
+        "Genetic Testing",
+        "Variant Classification",
+        "Genotype-Phenotype Correlation",
+        "Hemoglobin Disorders",
+        "Bleeding Disorders",
+        "Platelet Disorders",
+        "Bone Marrow Failure",
+        "Red Cell Disorders",
+        "Family Testing",
+        "Carrier Context",
+        "Genetic Counseling",
+        "Long-term Surveillance",
+        "Phenotype Structuring",
+        "Family Pattern Organization",
+        "Genetic Correlation Support"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4997,
+      "title": "Pediatric Hematology Medication, Chemotherapy-Adjacent & Immunotherapy Safety Module",
+      "body": "Purpose:\nProvide medication safety across complex hematological treatment pathways.\n\nCore Functions:\n• Hematology Medication Registry\n• Dose History\n• Weight-related Context\n• Organ Function Context\n• Immunosuppression\n• Cytotoxic Exposure Context\n• Biologic Therapy\n• Immunotherapy Context\n• Drug Interactions\n• Laboratory Monitoring\n• Infection Risk\n• Allergy\n• Adverse Events\n• Medication Reconciliation\n• Treatment Response\n\nSafety Functions:\n• Cytopenia Monitoring\n• Organ Toxicity Context\n• Infection Risk Alerts\n• Interaction Detection\n• Required Monitoring\n• Clinician-defined Treatment Holds\n\nIntegrations:\n• Hematology\n• Oncology\n• Pharmacy\n• Laboratory Medicine\n• Infectious Disease\n• Immunology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "0554fdedba7688c39d8285f8bd854e491bb7b98604f5c6bde765fff6ddd5844a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124235
+      },
+      "verdict": "Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.",
+      "feature_labels": [
+        "Hematology Medication Registry",
+        "Dose History",
+        "Weight-related Context",
+        "Organ Function Context",
+        "Immunosuppression",
+        "Cytotoxic Exposure Context",
+        "Biologic Therapy",
+        "Immunotherapy Context",
+        "Drug Interactions",
+        "Laboratory Monitoring",
+        "Infection Risk",
+        "Allergy",
+        "Adverse Events",
+        "Medication Reconciliation",
+        "Treatment Response",
+        "Cytopenia Monitoring",
+        "Organ Toxicity Context",
+        "Infection Risk Alerts",
+        "Interaction Detection",
+        "Required Monitoring",
+        "Clinician-defined Treatment Holds",
+        "Hematology",
+        "Oncology",
+        "Pharmacy",
+        "Laboratory Medicine",
+        "Infectious Disease",
+        "Immunology"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4998,
+      "title": "Pediatric Hematology AI, Laboratory & Predictive Clinical Intelligence Module",
+      "body": "Purpose:\nProvide governed AI-assisted intelligence across pediatric hematology workflows.\n\nCore Functions:\n• CBC Trend Analysis\n• Cytopenia Pattern Support\n• Hemolysis Pattern Support\n• Coagulation Trend Support\n• Bleeding Episode Summarization\n• Thrombosis Timeline Analysis\n• Transfusion Exposure Analysis\n• Medication-response Analysis\n• Bone Marrow Data Organization\n• Missing-data Detection\n• Care-gap Detection\n• Pre-Visit Assessment\n• Clinical Documentation Support\n\nAI Governance:\n• Explainability\n• Human Validation\n• Confidence and Uncertainty\n• Source Data Traceability\n• Model Version Tracking\n• Pediatric Validation\n• Bias Monitoring\n• Audit Trail\n\nSafety:\nAI cannot autonomously diagnose hematologic disease, prescribe anticoagulation, order transfusion or determine transplant eligibility.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "3082301f3579070cef5051dcce3108ec160047d338cdd4ab4a355638319afff9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124278
+      },
+      "verdict": "Preserve explicit prohibitions on autonomous diagnosis, anticoagulation prescription, transfusion order and transplant eligibility; task-specific pediatric validation stays open.",
+      "feature_labels": [
+        "CBC Trend Analysis",
+        "Cytopenia Pattern Support",
+        "Hemolysis Pattern Support",
+        "Coagulation Trend Support",
+        "Bleeding Episode Summarization",
+        "Thrombosis Timeline Analysis",
+        "Transfusion Exposure Analysis",
+        "Medication-response Analysis",
+        "Bone Marrow Data Organization",
+        "Missing-data Detection",
+        "Care-gap Detection",
+        "Pre-Visit Assessment",
+        "Clinical Documentation Support",
+        "Explainability",
+        "Human Validation",
+        "Confidence and Uncertainty",
+        "Source Data Traceability",
+        "Model Version Tracking",
+        "Pediatric Validation",
+        "Bias Monitoring",
+        "Audit Trail"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 5000,
+      "title": "Clinical Pediatric Hematology, Hemostasis & Transfusion Intelligence Hub",
+      "body": "Purpose:\nServe as the master orchestration layer for the complete EDHT pediatric hematology, hemostasis, thrombosis and transfusion ecosystem.\n\nCoordinates:\n• General Pediatric Hematology\n• CBC Intelligence\n• Anemia\n• Iron Disorders\n• Hemolytic Anemia\n• Hemoglobinopathies\n• Sickle Cell Disease\n• Thalassemia\n• Platelet Disorders\n• Hemophilia\n• von Willebrand Disease\n• Coagulation Diagnostics\n• Thrombosis\n• Anticoagulation\n• Thrombophilia\n• Neutropenia\n• Bone Marrow Failure\n• Bone Marrow Diagnostics\n• Transfusion Medicine\n• Hemovigilance\n• Apheresis\n• Hematological Genetics\n• Medication Safety\n• Transition Care\n\nDigital Capabilities:\n• Artificial Intelligence\n• Hematology Digital Twin\n• Laboratory Integration\n• Blood Bank Integration\n• Blood Passport\n• Remote Monitoring\n• Patient/Guardian Interface\n• Clinical Alerts\n• Outcomes Registry\n• Research Data Layer\n• Cross-Border Interoperability\n\nPlatform Functions:\n• Unified Hematology Timeline\n• Laboratory Trend Intelligence\n• Bleeding/Thrombosis Event Registry\n• Transfusion Traceability\n• Medication Safety\n• Genetic Integration\n• Bone Marrow Integration\n• Emergency Treatment Information\n• Multidisciplinary Case Coordination\n• Role-based Access\n• Consent Management\n• Data Provenance\n• Clinical Decision Traceability\n• Quality and Outcome Monitoring\n\nMVP Foundation:\n• Hematology Diagnosis Registry\n• CBC Timeline\n• Anemia Record\n• Bleeding Disorder Record\n• Thrombosis Record\n• Medication/Anticoagulation Record\n• Transfusion History\n• Blood Product Safety\n• Clinical Alerts\n• Blood Passport\n• Interoperability\n\nExpansion Layers:\n• Advanced Hematology AI\n• Hematology Digital Twin\n• Automated Blood Bank Integration\n• Predictive Cytopenia Analytics\n• Advanced Hemostasis Intelligence\n• Rare Genetic Blood Disease Analytics\n• International Registries\n• Research Infrastructure\n\nArchitecture Principle:\nHematological care remains connected to oncology, immunology, genetics, nephrology, rheumatology, gynecology, infectious disease and emergency medicine through one continuous EDHT patient model.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "aa54a3a90a2caca7e59826b0d07ebde8bca662df15377dd90750c7c522a6f0e6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 124363
+      },
+      "verdict": "Apheresis, hemovigilance and blood-bank integration extend the common hematology workspace; local MVP language does not authorize clinical deployment.",
+      "feature_labels": [
+        "General Pediatric Hematology",
+        "CBC Intelligence",
+        "Anemia",
+        "Iron Disorders",
+        "Hemolytic Anemia",
+        "Hemoglobinopathies",
+        "Sickle Cell Disease",
+        "Thalassemia",
+        "Platelet Disorders",
+        "Hemophilia",
+        "von Willebrand Disease",
+        "Coagulation Diagnostics",
+        "Thrombosis",
+        "Anticoagulation",
+        "Thrombophilia",
+        "Neutropenia",
+        "Bone Marrow Failure",
+        "Bone Marrow Diagnostics",
+        "Transfusion Medicine",
+        "Hemovigilance",
+        "Apheresis",
+        "Hematological Genetics",
+        "Medication Safety",
+        "Transition Care",
+        "Artificial Intelligence",
+        "Hematology Digital Twin",
+        "Laboratory Integration",
+        "Blood Bank Integration",
+        "Blood Passport",
+        "Remote Monitoring",
+        "Patient/Guardian Interface",
+        "Clinical Alerts",
+        "Outcomes Registry",
+        "Research Data Layer",
+        "Cross-Border Interoperability",
+        "Unified Hematology Timeline",
+        "Laboratory Trend Intelligence",
+        "Bleeding/Thrombosis Event Registry",
+        "Transfusion Traceability",
+        "Medication Safety",
+        "Genetic Integration",
+        "Bone Marrow Integration",
+        "Emergency Treatment Information",
+        "Multidisciplinary Case Coordination",
+        "Role-based Access",
+        "Consent Management",
+        "Data Provenance",
+        "Clinical Decision Traceability",
+        "Quality and Outcome Monitoring",
+        "Hematology Diagnosis Registry",
+        "CBC Timeline",
+        "Anemia Record",
+        "Bleeding Disorder Record",
+        "Thrombosis Record",
+        "Medication/Anticoagulation Record",
+        "Transfusion History",
+        "Blood Product Safety",
+        "Clinical Alerts",
+        "Blood Passport",
+        "Interoperability",
+        "Advanced Hematology AI",
+        "Hematology Digital Twin",
+        "Automated Blood Bank Integration",
+        "Predictive Cytopenia Analytics",
+        "Advanced Hemostasis Intelligence",
+        "Rare Genetic Blood Disease Analytics",
+        "International Registries",
+        "Research Infrastructure"
+      ],
+      "date": "2026-09-15"
+    }
+  ]
+}
