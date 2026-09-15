@@ -1,0 +1,2565 @@
+{
+  "pass": "MASTER-09",
+  "baseline_commit": "7d7763deda0c9bb49b8ae82018a9c46428e7bc66",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "records": [
+    {
+      "id": "CORE-CAP-IDENTITY",
+      "owner": "CAP-IDENTITY",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        601,
+        602,
+        631,
+        632,
+        651,
+        652,
+        671,
+        672,
+        691,
+        692,
+        721,
+        722,
+        761,
+        762,
+        781,
+        782,
+        801,
+        802,
+        821,
+        822,
+        841,
+        842,
+        861,
+        862,
+        881,
+        882,
+        901,
+        902,
+        921,
+        922,
+        941,
+        942,
+        961,
+        962,
+        981,
+        982,
+        991,
+        992,
+        1001,
+        1002,
+        1031,
+        1032,
+        1051,
+        1052,
+        1071,
+        1072,
+        1091,
+        1092,
+        1111,
+        1112
+      ],
+      "profile_ids": [
+        "M09-providers"
+      ],
+      "profiles": [
+        {
+          "id": "M09-providers",
+          "owner": "CAP-IDENTITY",
+          "source_ids": [
+            601,
+            602,
+            631,
+            632,
+            651,
+            652,
+            671,
+            672,
+            691,
+            692,
+            721,
+            722,
+            761,
+            762,
+            781,
+            782,
+            801,
+            802,
+            821,
+            822,
+            841,
+            842,
+            861,
+            862,
+            881,
+            882,
+            901,
+            902,
+            921,
+            922,
+            941,
+            942,
+            961,
+            962,
+            981,
+            982,
+            991,
+            992,
+            1001,
+            1002,
+            1031,
+            1032,
+            1051,
+            1052,
+            1071,
+            1072,
+            1091,
+            1092,
+            1111,
+            1112
+          ],
+          "reason": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+        }
+      ],
+      "semantic_decision": "M09-providers",
+      "owner_evidence": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "document": "docs/canonical/master09/CAP-IDENTITY.md",
+      "extends_document": "docs/canonical/master08/CAP-IDENTITY.md",
+      "requirements": [
+        {
+          "id": "M09-CAP-IDENTITY-5c6d8de0472569a9",
+          "text": "Provides professional information about licensed gastroenterologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-8b2d7025901b5418",
+          "text": "Full Name",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601,
+            631
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b0f874eff292dcf3",
+          "text": "Qualifications",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601,
+            631,
+            651,
+            671,
+            691,
+            721,
+            761,
+            781,
+            801,
+            821,
+            841,
+            861,
+            881,
+            901,
+            921,
+            941,
+            961,
+            981,
+            991,
+            1001,
+            1031,
+            1051,
+            1071,
+            1091,
+            1111
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-0b379eedb717ebd1",
+          "text": "Experience",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601,
+            631,
+            651,
+            671,
+            691,
+            721,
+            761,
+            781,
+            801,
+            821,
+            841,
+            861,
+            881,
+            901,
+            921,
+            941,
+            961,
+            981,
+            991,
+            1001,
+            1031,
+            1051,
+            1071,
+            1091,
+            1111
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-2d1464b435bb05f6",
+          "text": "Languages",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601,
+            631,
+            651,
+            671,
+            691,
+            721,
+            761,
+            781,
+            801,
+            821,
+            841,
+            861,
+            881,
+            901,
+            921,
+            941,
+            961,
+            981,
+            991,
+            1001,
+            1031,
+            1051,
+            1071,
+            1091,
+            1111
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-832099f1aa3fa722",
+          "text": "Professional Biography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601,
+            631
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-31e9a54eeb92f0c3",
+          "text": "Integrated with Global Gastroenterology Network.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            601
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-c6512e131aee524e",
+          "text": "Stores complete information about participating gastroenterology clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            602
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-c0cedbf42faa6a9b",
+          "text": "Clinic Information",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            602,
+            632
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-cf0d6b7a13473234",
+          "text": "Services",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            602,
+            632,
+            652,
+            672,
+            692,
+            722,
+            762,
+            782,
+            802,
+            822,
+            842,
+            862,
+            882,
+            902,
+            922,
+            942,
+            962,
+            982,
+            992,
+            1052,
+            1072,
+            1092
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-9e23bd6dbe2aa871",
+          "text": "Working Hours",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            602,
+            632
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-9ffc076550b94ce2",
+          "text": "Contact Information",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            602,
+            632,
+            652,
+            672,
+            692,
+            722,
+            762,
+            782,
+            802,
+            822,
+            842,
+            862,
+            882,
+            902,
+            922,
+            942,
+            962,
+            982,
+            992,
+            1002,
+            1032,
+            1052,
+            1072,
+            1092,
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-94fd81ab79d21ed2",
+          "text": "Provides professional information about licensed nephrologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            631
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-2591bcc0c52b2bed",
+          "text": "Integrated with Global Nephrology Network.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            631
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b49d7b229e544f04",
+          "text": "Stores complete information about participating nephrology clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            632
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d4b7b5ca629f9f19",
+          "text": "Professional profile of a licensed urologist.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            651
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-a98fb94637000a04",
+          "text": "Biography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            651,
+            671,
+            691,
+            721,
+            761,
+            781,
+            821
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-54d186f5910d5178",
+          "text": "Stores complete information about urology clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            652
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-705ca7666c7616e4",
+          "text": "Physicians",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            652,
+            672,
+            692,
+            722,
+            762,
+            782,
+            822,
+            842,
+            862,
+            882,
+            902,
+            922,
+            942,
+            962,
+            982,
+            992,
+            1002,
+            1032,
+            1052,
+            1072,
+            1092,
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-bc69691df2ee1ace",
+          "text": "Equipment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            652,
+            692,
+            782,
+            802
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-0532dbf26f49b042",
+          "text": "Provides professional information about licensed andrologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            671
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b761822ab810fa50",
+          "text": "Stores complete information about participating andrology clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            672
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7baa46d6c91b05ae",
+          "text": "Provides professional information about licensed gynecologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            691
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-358d38decabe63a8",
+          "text": "Integrated with Global Gynecology Network.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            691
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-9054c34adf704244",
+          "text": "Stores complete information about participating gynecology clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            692
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-af30a91baac142be",
+          "text": "Provides professional information about licensed obstetricians.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            721
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-8eff5e436fe16bbf",
+          "text": "Integrated with Global Obstetrics Network.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            721
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-358357e494b6a541",
+          "text": "Stores complete information about maternity hospitals and obstetric clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            722
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-95a1b896198ea681",
+          "text": "Delivery Facilities",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            722
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-3e4d421deabb734c",
+          "text": "Professional profile of reproductive medicine physicians.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            761
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-4c7be48140932489",
+          "text": "Stores complete information about fertility centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            762
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-80fe3b19682f73b3",
+          "text": "Success Rates",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            762
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-ebb12f56bc95193c",
+          "text": "Professional profile of licensed mammologists and breast specialists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            781
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-f5b2d222cc00e8e1",
+          "text": "Stores complete information about breast health centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            782
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-902430668e2215b1",
+          "text": "Professional profile of licensed gynecologic oncologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            801
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-db901beb671d41e4",
+          "text": "Scientific Publications",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            801
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-618c63d232134483",
+          "text": "Stores complete information about gynecologic oncology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            802
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-18419e891e0c8e26",
+          "text": "Surgical Team",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            802
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-e620861d8b257c48",
+          "text": "Professional profile of licensed pediatricians.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            821
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-17d31396b3c71d55",
+          "text": "Pediatric Subspecialties",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            821
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-8462e4af0c91eb32",
+          "text": "Integrated with the Global Pediatrics Network.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            821
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-5e7071ee6dcf05fc",
+          "text": "Stores complete information about pediatric clinics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            822
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-c84e0c7c0452daa2",
+          "text": "Emergency Department",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            822
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7679bd8fc2209502",
+          "text": "Professional profile of licensed pediatric cardiologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            841
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-6950e23544f10fb6",
+          "text": "Congenital Heart Disease Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            841
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-dc495a91b84a7612",
+          "text": "Stores complete information about pediatric cardiology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            842
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-97e08f582e37b393",
+          "text": "Diagnostic Equipment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            842,
+            862,
+            882,
+            1052
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-9cef0ee95bea8577",
+          "text": "Professional profile of licensed pediatric endocrinologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            861
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-19d6da3e6223fd2d",
+          "text": "Pediatric Endocrinology Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            861
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d7d1fb8ec93b1fbe",
+          "text": "Stores complete information about pediatric endocrinology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            862
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-3f7e8c9ef0904c79",
+          "text": "Professional profile of licensed pediatric neurologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            881
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-acb4e1c5d3c86a1c",
+          "text": "Pediatric Neurology Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            881
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-6d7e487dc402f330",
+          "text": "Stores complete information about pediatric neurology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            882
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-391936b779ac3e11",
+          "text": "Professional profile of licensed pediatric pulmonologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            901
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-635c29a2509800b1",
+          "text": "Pediatric Respiratory Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            901
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-09f4e5fb9ceae4ec",
+          "text": "Stores complete information about pediatric pulmonology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            902
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-38ceae4a47b97bc3",
+          "text": "Respiratory Laboratories",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            902
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-a75e3d37d44eae25",
+          "text": "Professional profile of licensed pediatric nephrologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            921
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-552c09e472f659fb",
+          "text": "Pediatric Kidney Disease Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            921
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-e7ed73f79b4b8cfa",
+          "text": "Stores complete information about pediatric nephrology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            922
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-2fa89c3e03cb9528",
+          "text": "Dialysis Unit",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            922
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-2aa3c61555623752",
+          "text": "Professional profile of licensed pediatric gastroenterologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            941
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b3fbb64bf5052313",
+          "text": "Pediatric Digestive Disease Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            941
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-4d210de505682f82",
+          "text": "Stores complete information about pediatric gastroenterology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            942
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-28bdd10390ec2ba1",
+          "text": "Endoscopy Unit",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            942
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7e5230495550a76f",
+          "text": "Professional profile of licensed pediatric hematologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            961
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d3cc017780655943",
+          "text": "Pediatric Blood Disorders Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            961
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-aab46c6a52aec19d",
+          "text": "Stores complete information about pediatric hematology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            962
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-30167dd7df2181cb",
+          "text": "Transfusion Unit",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            962
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d496749b4c9c0e12",
+          "text": "Professional profile of licensed pediatric rheumatologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            981
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-56b7f62706203c91",
+          "text": "Autoimmune Disease Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            981
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b0ac7b2b0f27e413",
+          "text": "Stores complete information about pediatric rheumatology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            982
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-2406447bcc9e0ae3",
+          "text": "Infusion Unit",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            982
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-195dc6a217ddfa71",
+          "text": "Professional profile of licensed pediatric immunologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            991
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7b31910ce4008215",
+          "text": "Immunology Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            991
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-f90f972bfe58b6e9",
+          "text": "Stores complete information about pediatric immunology centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            992
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7f024f21523515c1",
+          "text": "Infusion Center",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            992
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b9c4b774e7021c20",
+          "text": "Professional profile of licensed pediatric infectious disease specialists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1001
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b72a924aa65aed33",
+          "text": "International Certification",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1001
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-41cfe805a82c8c57",
+          "text": "Stores complete information about pediatric infectious disease centers.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1002
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-fcc773a1bf424b27",
+          "text": "Isolation Units",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1002
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-f833803c6fa6e87b",
+          "text": "ICU Support",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1002
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b5be473b98bc84f7",
+          "text": "Professional profile of pediatric orthopedic surgeons.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1031
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-132339b93a55a724",
+          "text": "Pediatric Orthopedic Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1031
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7613c881806d453e",
+          "text": "Stores pediatric orthopedic center information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1032
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-4eb64c04a5621b34",
+          "text": "Operating Rooms",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1032
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-e9426dd272d9aa70",
+          "text": "Rehabilitation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1032
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-e51dd3340d5d3f2f",
+          "text": "Professional profile of pediatric ophthalmologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1051
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-9e0d2a7e07d9142d",
+          "text": "Eye Disease Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1051
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b2a4219bff681f77",
+          "text": "Stores pediatric ophthalmology center information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1052
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-0f7aad8fad57e9cd",
+          "text": "Professional profile of pediatric ENT specialists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1071
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-b5e56d4fd9f53a0a",
+          "text": "Stores pediatric ENT clinic information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1072
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-bc506fdefc6e7e7b",
+          "text": "Surgery",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1072
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-abd090c864e78c97",
+          "text": "Professional profile of pediatric dermatologists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1091
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-557a2b3908e72131",
+          "text": "Stores pediatric dermatology center information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1092
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-3ad43067192a5233",
+          "text": "Laser Unit",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1092
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-66462421da5bea5c",
+          "text": "Professional profile of pediatric allergists.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1111
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-e590049332f58a2d",
+          "text": "Allergy Expertise",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1111
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-9f045d9b3d4ec4ba",
+          "text": "Stores pediatric allergy center information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-42ecf80f75b68da4",
+          "text": "Immunotherapy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-56ef72bd61b96ba5",
+          "text": "Diagnostic Laboratory",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1112
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M09-CAP-IDENTITY-ac11ca69519aa147",
+          "text": "# Gastroenterologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            601
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            601,
+            602,
+            631,
+            632,
+            651,
+            652,
+            671,
+            672,
+            691,
+            692,
+            721,
+            722,
+            761,
+            762,
+            781,
+            782,
+            801,
+            802,
+            821,
+            822,
+            841,
+            842,
+            861,
+            862,
+            881,
+            882,
+            901,
+            902,
+            921,
+            922,
+            941,
+            942,
+            961,
+            962,
+            981,
+            982,
+            991,
+            992,
+            1001,
+            1002,
+            1031,
+            1032,
+            1051,
+            1052,
+            1071,
+            1072,
+            1091,
+            1092,
+            1111,
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            601,
+            602,
+            631,
+            632,
+            651,
+            652,
+            671,
+            672,
+            691,
+            692,
+            721,
+            722,
+            761,
+            762,
+            781,
+            782,
+            801,
+            802,
+            821,
+            822,
+            841,
+            842,
+            861,
+            862,
+            881,
+            882,
+            901,
+            902,
+            921,
+            922,
+            941,
+            942,
+            961,
+            962,
+            981,
+            982,
+            991,
+            992,
+            1001,
+            1002,
+            1051,
+            1052,
+            1071,
+            1072,
+            1091,
+            1092,
+            1111,
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            601,
+            602,
+            631,
+            632,
+            651,
+            652,
+            671,
+            672,
+            691,
+            692,
+            721,
+            722,
+            761,
+            762,
+            781,
+            782,
+            801,
+            802,
+            821,
+            822,
+            841,
+            842,
+            861,
+            862,
+            881,
+            882,
+            901,
+            902,
+            921,
+            922,
+            941,
+            942,
+            961,
+            962,
+            981,
+            982,
+            991,
+            992,
+            1001,
+            1002,
+            1051,
+            1052,
+            1071,
+            1072,
+            1091,
+            1092,
+            1111,
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            601,
+            602,
+            631,
+            632,
+            651,
+            652,
+            671,
+            672,
+            691,
+            692,
+            721,
+            722,
+            761,
+            762,
+            781,
+            782,
+            801,
+            802,
+            821,
+            822,
+            841,
+            842,
+            861,
+            862,
+            881,
+            882,
+            901,
+            902,
+            921,
+            922,
+            941,
+            942,
+            961,
+            962,
+            981,
+            982,
+            991,
+            992,
+            1001,
+            1002,
+            1031,
+            1032,
+            1051,
+            1052,
+            1071,
+            1072,
+            1091,
+            1092,
+            1111,
+            1112
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-f569fa7670590aeb",
+          "text": "# Gastroenterology Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            602
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-efe98dfb804a8f44",
+          "text": "# Nephrologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            631
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-ca5e2f5b75a8df11",
+          "text": "# Nephrology Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            632
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-687f62edcf434ec8",
+          "text": "# Urologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            651
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-caf5b0fa96fabe4d",
+          "text": "# Urology Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            652
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-0f12e4d7fdf10d5b",
+          "text": "# Andrologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            671
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-717890d62f0899f1",
+          "text": "# Andrology Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            672
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-885aab14009bf99c",
+          "text": "# Gynecologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            691
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-43f53c97116835bb",
+          "text": "# Gynecology Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            692
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-95cae3ec14ae983a",
+          "text": "# Obstetrician Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            721
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-6210cd898efeb6f0",
+          "text": "# Obstetrics Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            722
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7eeca0ddaf681292",
+          "text": "# Reproductive Medicine Specialist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            761
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-fe44ae8e088cce0e",
+          "text": "# Fertility Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            762
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-2152ccd1db5e4e1c",
+          "text": "# Mammologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            781
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-3681581a149391df",
+          "text": "# Breast Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            782
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-3cbaaf135ec230f4",
+          "text": "# Gynecologic Oncologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            801
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-f2dcc78f6bbe3c9f",
+          "text": "# Gynecologic Oncology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            802
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-c40c5e2ce46cd437",
+          "text": "# Pediatrician Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            821
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d3ae416d8f9efe85",
+          "text": "# Children's Clinic Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            822
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-6552cec1dda8232a",
+          "text": "# Pediatric Cardiologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            841
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-33c6efb713e8defa",
+          "text": "# Pediatric Cardiology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            842
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-90875e36c5e8bc13",
+          "text": "# Pediatric Endocrinologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            861
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-7e5e5d0f135c5dc9",
+          "text": "# Pediatric Endocrinology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            862
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-5061025c320e85cc",
+          "text": "# Pediatric Neurologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            881
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-0e2d38ab3840b699",
+          "text": "# Pediatric Neurology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            882
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-6433849aa7094066",
+          "text": "# Pediatric Pulmonologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            901
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-5b2614bda8a45dfd",
+          "text": "# Pediatric Pulmonology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            902
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-d1a2ff07838bbb71",
+          "text": "# Pediatric Nephrologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            921
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-38980d3bf08d643e",
+          "text": "# Pediatric Nephrology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            922
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-a5240d8e14ca4fb9",
+          "text": "# Pediatric Gastroenterologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            941
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-5bf1d3b662e9f48d",
+          "text": "# Pediatric Gastroenterology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            942
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-ac2a54dc4ff16d8a",
+          "text": "# Pediatric Hematologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            961
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-4c335fedd07534bd",
+          "text": "# Pediatric Hematology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            962
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-c22fb2d75b52512a",
+          "text": "# Pediatric Rheumatologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            981
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-bd7e78c694876b7e",
+          "text": "# Pediatric Rheumatology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            982
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-8ac3a576242e74c4",
+          "text": "# Pediatric Immunologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            991
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-315650fd1adf754d",
+          "text": "# Pediatric Immunology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            992
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-989005540cd21f66",
+          "text": "# Pediatric Dermatologist Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1091
+          ]
+        },
+        {
+          "id": "M09-CAP-IDENTITY-01ccb7d2b5e8d20c",
+          "text": "# Pediatric Dermatology Center Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1092
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "4f3c29c0a9d30047a8bf7a7b4bbff5f511f4d2690da32a9b4d540024f9937bd8"
+    },
+    {
+      "id": "CORE-CAP-SECURITY",
+      "owner": "CAP-SECURITY",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        81,
+        221,
+        229
+      ],
+      "profile_ids": [
+        "M09-security"
+      ],
+      "profiles": [
+        {
+          "id": "M09-security",
+          "owner": "CAP-SECURITY",
+          "source_ids": [
+            81,
+            221,
+            229
+          ],
+          "reason": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation."
+        }
+      ],
+      "semantic_decision": "M09-security",
+      "owner_evidence": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation.",
+      "document": "docs/canonical/master09/CAP-SECURITY.md",
+      "extends_document": null,
+      "requirements": [
+        {
+          "id": "M09-CAP-SECURITY-629b16ac9350b892",
+          "text": "Defines the complete cybersecurity architecture of the Medical Passport platform.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-7efdfe952679b5c0",
+          "text": "Zero Trust",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-243d98090bcfe43c",
+          "text": "Least Privilege",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-efab02dcd64d47d9",
+          "text": "Defense in Depth",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-858c42e17497dec9",
+          "text": "Secure by Design",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-2a76091a7d264e09",
+          "text": "Privacy by Design",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-dcbab808a3e06a8e",
+          "text": "JWT",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-94cfbae96bac6045",
+          "text": "Refresh Tokens",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-1fcd23c11cd2a403",
+          "text": "OAuth2",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-dadb9905ad0f4460",
+          "text": "OpenID Connect",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-0df8448d109fc80b",
+          "text": "Passkeys (Future)",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-228708623b4a91cc",
+          "text": "Face ID",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-8544798a5cd544fe",
+          "text": "Touch ID",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c48f0e7bb6f278e1",
+          "text": "RBAC",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-39d49b3394926d89",
+          "text": "ABAC (Future)",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-ac8e894989f78b0d",
+          "text": "Role Validation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-92136b5e00fbfa03",
+          "text": "Permission Policies",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-1d08a19784da168d",
+          "text": "Session Validation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-cc446c4677c82bba",
+          "text": "Data at Rest",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-efa55b16ffd6b66c",
+          "text": "AES-256",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-bfd14a2628c4561e",
+          "text": "Data in Transit",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-44effbba6a37147d",
+          "text": "TLS 1.3",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-9b20e418dec1b014",
+          "text": "Passwords",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-b2ddb9bc7f9d0b9f",
+          "text": "Argon2id",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-b2939543db0cba65",
+          "text": "File Encryption",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-a37d696435bd65eb",
+          "text": "Database Encryption",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-4dd0471d118c033f",
+          "text": "Transparent Data Encryption",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-50c9278cdc7a856e",
+          "text": "Rate Limiting",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-19086e6ec05cad80",
+          "text": "API Gateway",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-0516a3459a0d42ec",
+          "text": "WAF",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-53ea403916caa27a",
+          "text": "IP Filtering",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-21d5a6006369762a",
+          "text": "Request Validation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-6a60a2356ae80df4",
+          "text": "Response Validation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-12f2676c6afe85d6",
+          "text": "Certificate Pinning",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-36ef60cb4284cb6d",
+          "text": "Jailbreak Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-2eedc06a12f7090d",
+          "text": "Root Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c7ec7ad4a608a77a",
+          "text": "Secure Storage",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-ea7d7213eb5237e7",
+          "text": "Anti-Tampering",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-0d203d109ac49707",
+          "text": "Debug Protection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-1edf7e9ad779a4aa",
+          "text": "Reverse Proxy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-2d5a0b36b9cb8fb2",
+          "text": "Firewall",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-dd62fadb3409bd03",
+          "text": "IDS",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-88ef688342a5cfec",
+          "text": "IPS",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-bb4d650f117f4ad7",
+          "text": "Container Isolation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-b750bbe18dadbefd",
+          "text": "Secrets Management",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-d20a95b6b63719a7",
+          "text": "Audit Logs",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-fe9519c9fe62691a",
+          "text": "SIEM",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-24b48d5ee466adb2",
+          "text": "Threat Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-d5d8df29510477b4",
+          "text": "Intrusion Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-88ea21d275ee6dbb",
+          "text": "Security Alerts",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-f2ae6a91b86879ea",
+          "text": "Incident Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-dbd1329f16de55fa",
+          "text": "GDPR",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c71fe81b3339854c",
+          "text": "HIPAA",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-ebc02dc8c76cbc1e",
+          "text": "ISO 27001",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-930269163a40dfb0",
+          "text": "ISO 27799",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-5343e452ee0ea0c2",
+          "text": "eIDAS",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-aec6f70baa78f943",
+          "text": "OWASP ASVS",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-9de6811d9a459189",
+          "text": "OWASP Mobile Top 10",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-f4cf69f73e2d6134",
+          "text": "├── Authentication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c3ea13f8dde404df",
+          "text": "├── API Gateway",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-58bdc43bd4f43ec3",
+          "text": "├── Database",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-37da9cd61593c7cd",
+          "text": "├── AI",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-efa2a8ae50719ab3",
+          "text": "├── QR Passport",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-a7f2ddd3ac9459b5",
+          "text": "├── Telemedicine",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-fb47ac4f47f989bd",
+          "text": "├── Administration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-48a0e7b8fcbc590c",
+          "text": "├── Audit Logs",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-37bfdffca1a32095",
+          "text": "Future Features",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-055c2f5807580744",
+          "text": "Hardware Security Module (HSM)",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-fb2f2827c2730391",
+          "text": "Confidential Computing",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-b0a8e8e123f08000",
+          "text": "AI Threat Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-a038f352e2ab0fe4",
+          "text": "Behavioral Authentication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-715d744563d3d18c",
+          "text": "Continuous Risk Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-f1ab44b959085525",
+          "text": "Quantum-resistant Cryptography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-a0c6ef43bca5ead1",
+          "text": "Never trust.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-d21403bbd1b7c05c",
+          "text": "Always verify.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-43db0b6fdafc77fd",
+          "text": "Every request is verified regardless of origin.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c2e88dc8de4d0e09",
+          "text": "Authentication required for",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-4b7405cdbb65ac47",
+          "text": "Users",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-2a7be9b76da4a339",
+          "text": "Doctors",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-b6e8bd9e5e799cd8",
+          "text": "Hospitals",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-e5649b86c07b7df1",
+          "text": "Laboratories",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-1d745269dabac525",
+          "text": "Pharmacies",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-8b6673a8566e3112",
+          "text": "APIs",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-4c73978c58a28078",
+          "text": "Detects",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c5b16ab99f898d09",
+          "text": "Unauthorized Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-203048eff978d44d",
+          "text": "Suspicious Activity",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c36b4c4137bd941f",
+          "text": "API Abuse",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-ac22cfcec1898c09",
+          "text": "Brute Force Attempts",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-63ee838132573d7f",
+          "text": "Data Exfiltration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-e0fcf4135335ba2e",
+          "text": "AI assists security operations by highlighting anomalies for review.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            229
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M09-CAP-SECURITY-188b4fd37b0739fd",
+          "text": "# Security Architecture",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-2f5fdcca89ef8e56",
+          "text": "## Purpose",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81,
+            221,
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-f05c7011a6ae4b0d",
+          "text": "# Security Principles",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-c5f78d13092e39b7",
+          "text": "# Authentication",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-058fdd3c32bde582",
+          "text": "# Authorization",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-583d22c7fdd893f1",
+          "text": "# Encryption",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-2d4f62385ca954c9",
+          "text": "# API Protection",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-52038c10ad7499ec",
+          "text": "# Mobile Security",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-dc147eae5bc8ff62",
+          "text": "# Server Security",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-49f07d5bccf60fe5",
+          "text": "# Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-fe7a7c5c9542680c",
+          "text": "# Compliance",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-9879a69a15c5a50a",
+          "text": "# Integrations",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81,
+            221,
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            81,
+            221,
+            229
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-fd81916b25b51037",
+          "text": "# Zero Trust Architecture",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-ef30bda2b3afa0f1",
+          "text": "## Principle",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            221
+          ]
+        },
+        {
+          "id": "M09-CAP-SECURITY-96061e0445d3e9c7",
+          "text": "# Security Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            229
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-DATA"
+      ],
+      "document_sha256": "b395136b5e5b89ec485f77be92755cb4c8b1394079d8e7be773f5e1ca67170b4"
+    }
+  ]
+}
