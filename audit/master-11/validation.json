@@ -1,0 +1,18 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "status": "TARGETED_PASS",
+  "normalized": 21,
+  "canonicalized": 21,
+  "retained_fragments": 314,
+  "canonical_documents": 7,
+  "new_active_specifications": 1,
+  "new_profiles": 7,
+  "baseline_results_reused": true,
+  "gap_semantic_search_repeated": false
+}
