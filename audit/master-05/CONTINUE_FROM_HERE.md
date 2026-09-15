@@ -1,6 +1,6 @@
 # Continue MASTER-05
 
-Branch audit/master-pass-05; parent 4b42871cf4e76845a081b5607d3f361a77b1edf5. Current final commit is recorded externally in EDHT_MASTER_04_CHECKPOINT.json. Read audit_progress.json and audit_ledger.json; do not restart historical passes.
+Branch audit/master-pass-05; parent 4b42871cf4e76845a081b5607d3f361a77b1edf5. Current final commit is recorded externally in EDHT_MASTER_05_CHECKPOINT.json. Read audit_progress.json and audit_ledger.json; do not restart historical passes.
 
 Reviewed 1554; unaudited 3621; normalized/canonicalized 421; active owner specifications 18. Seven gap proposals integrated at documentation scope, zero clinical approvals and zero implementation-ready IDs.
 

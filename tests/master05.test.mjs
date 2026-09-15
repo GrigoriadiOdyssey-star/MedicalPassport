@@ -48,6 +48,7 @@ test('current accounting and progress retain all 5175 originals without inflated
  for(const r of data.sources){assert.equal(r.description,prev[r.original_id-1].description);assert.equal(r.duplicate_of,null);assert.equal(r.superseded_by,null);}
 });
 test('current documents, shared graph and support paths are complete',()=>{
+ assert.match(text('audit/master-05/CONTINUE_FROM_HERE.md'),/EDHT_MASTER_05_CHECKPOINT\.json/);
  for(const c of f().canonical){const doc=text(c.document);assert.equal(sha256(doc),c.document_sha256);for(const r of [...c.requirements,...c.source_metadata])assert.ok(doc.includes('<a id="'+r.id+'"></a>'));}
  const g=read('dependency_graph.json').proposal_graph;assertGraph(g.nodes,g.edges);
  const m=read('count_reconciliation.json');assert.equal(m.supporting_artifacts,m.supporting_artifact_paths.length);for(const n of m.supporting_artifact_paths)assert.ok(fs.existsSync(path.join(root,'audit/master-05',n)),n);
