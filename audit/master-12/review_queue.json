@@ -1,0 +1,3851 @@
+{
+  "pass": "MASTER-12",
+  "next_exact_cluster": {
+    "key": "MANUAL-CLASSIFICATION|capability_owner_classification",
+    "ids": [
+      26,
+      41,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      66,
+      67,
+      71,
+      72,
+      73,
+      78,
+      80,
+      83,
+      90,
+      101,
+      131,
+      132,
+      136,
+      149,
+      150,
+      158,
+      161,
+      162,
+      165,
+      167,
+      171,
+      172,
+      181,
+      186,
+      187,
+      191,
+      194,
+      196,
+      207,
+      210,
+      211,
+      212,
+      225,
+      234,
+      235,
+      236,
+      240,
+      244,
+      250,
+      252,
+      258,
+      259,
+      260,
+      261,
+      263,
+      264,
+      265,
+      268,
+      269,
+      272,
+      278,
+      285,
+      286,
+      287,
+      296,
+      297,
+      298,
+      301,
+      308,
+      309,
+      314,
+      319,
+      320,
+      322,
+      324,
+      325,
+      326,
+      328,
+      329,
+      330,
+      336,
+      337,
+      342,
+      346,
+      347,
+      350,
+      356,
+      357,
+      367,
+      389,
+      444,
+      445,
+      447,
+      449,
+      453,
+      458,
+      460,
+      470,
+      484,
+      488,
+      495
+    ],
+    "score": 0
+  },
+  "unselected_eligible": 0,
+  "incomplete_not_reviewed": [
+    {
+      "original_id": 26,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 41,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 47,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 48,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 49,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 50,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 51,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 52,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 53,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 66,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 67,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 71,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 72,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 73,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 78,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 80,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 83,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 90,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 93,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 94,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 96,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 97,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 98,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 99,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 101,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 102,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 103,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 104,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 105,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 106,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 107,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 108,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 109,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 110,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 112,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 113,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 114,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 115,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 116,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 118,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 119,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 120,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 121,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 122,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 123,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 124,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 125,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 126,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 127,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 128,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 129,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 130,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 131,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 132,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 134,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 135,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 136,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 137,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 138,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 139,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 140,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 142,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 145,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 149,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 150,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 154,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 155,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 157,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 158,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 159,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 160,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 161,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 162,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 164,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 165,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 166,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 167,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 168,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 169,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 170,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 171,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 172,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 173,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 174,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 175,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 181,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 183,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 185,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 186,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 187,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 188,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 189,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 191,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 193,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 194,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 196,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 203,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 204,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 205,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 206,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 207,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 210,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 211,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 212,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 225,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 228,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 232,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 233,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 234,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 235,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 236,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 240,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 241,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 242,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 244,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 249,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 250,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 251,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 252,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 253,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 254,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 256,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 258,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 259,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 260,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 261,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 263,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 264,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 265,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 268,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 269,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 272,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 278,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 284,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 285,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 286,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 287,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 296,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 297,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 298,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 301,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 308,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 309,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 314,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 319,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 320,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 322,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 324,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 325,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 326,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 328,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 329,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 330,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 336,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 337,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 342,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 346,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 347,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 350,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 356,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 357,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 367,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 389,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 444,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 445,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 447,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 449,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 453,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 458,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 460,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 470,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 484,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 488,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 495,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 496,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 498,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 499,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 500,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 506,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 514,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 517,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 518,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 527,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 528,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 529,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 531,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 536,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 544,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 549,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 551,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 552,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 556,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 567,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 588,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 598,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 604,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 606,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 607,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 616,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 619,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 629,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 654,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 657,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 658,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 659,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 664,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 665,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 687,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 689,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 690,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 694,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 698,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 700,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 704,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 706,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 707,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 711,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 717,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 719,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 725,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 734,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 735,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 736,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 737,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 741,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 747,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 748,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 749,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 754,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 756,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 757,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 785,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 788,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 790,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 797,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 798,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 799,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 800,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 835,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 1018,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1025,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1035,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1287,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1294,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1300,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 1336,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1372,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1392,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 1396,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 2000,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2006,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2011,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2020,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2022,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2027,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2033,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2034,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2037,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2039,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2053,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2055,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2058,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2062,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2064,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2073,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2076,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2077,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2081,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2093,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2094,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2104,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2111,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2112,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2113,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2115,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2123,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2124,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2128,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2129,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2153,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2155,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2156,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2157,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2164,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2166,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2174,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2178,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2180,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2189,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2190,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2192,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2194,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2196,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2197,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2202,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2203,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2205,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2208,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2211,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2214,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2215,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2216,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2218,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2221,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2222,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2223,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2224,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2226,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2227,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2228,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2230,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2236,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2237,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2240,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2244,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2246,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2247,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2250,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2253,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2255,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2256,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2262,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2267,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2269,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2272,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2274,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2278,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2279,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2281,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2282,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2283,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2284,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2285,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2289,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2294,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2296,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2297,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2304,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2313,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2321,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2395,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2402,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2403,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2405,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2407,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2412,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2413,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2414,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2417,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2419,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2420,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2421,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2423,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2425,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2436,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2438,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2440,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2458,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2460,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2472,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2474,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2477,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2481,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2484,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2486,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2489,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2499,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2501,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2502,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2508,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2509,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2519,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2537,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2538,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2540,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2542,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2544,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2546,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2549,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2556,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2560,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2564,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2566,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2567,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2568,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2570,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2576,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2579,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2580,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2581,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2582,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2591,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2592,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2594,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2595,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2596,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2597,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2600,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2601,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2602,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2610,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2633,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2634,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2639,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2643,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2644,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2645,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2647,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2661,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2674,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2683,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2684,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2686,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2691,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2693,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2694,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2697,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2700,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2702,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2703,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2706,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2708,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2710,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2711,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2714,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2720,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2723,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2724,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2726,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2730,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2731,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2744,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2746,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2749,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2750,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2774,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2791,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2792,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2793,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2794,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2798,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2800,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2805,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2815,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2820,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2821,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2822,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2823,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2825,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2826,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2829,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2836,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 2838,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2840,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2841,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2842,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2843,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2845,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2846,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2849,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2864,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2868,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2887,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 2888,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2890,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2891,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2892,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2893,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2895,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2896,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2899,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2903,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2904,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2907,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2911,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2912,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2913,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2915,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2916,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2919,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2921,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2922,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2923,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2924,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2925,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2926,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2927,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2933,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2935,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2938,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2939,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2940,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2943,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2948,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 2950,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2952,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2953,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2955,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2956,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2963,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2964,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2965,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2966,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2979,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2983,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2986,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2987,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2988,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2997,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 2998,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 3003,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 3388,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 3403,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 3543,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 3556,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 3883,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 3896,
+      "eligible": false,
+      "missing": [
+        "purpose_or_requirements"
+      ]
+    },
+    {
+      "original_id": 4103,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4104,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4305,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4311,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4312,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4332,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4333,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4345,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4347,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4379,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4734,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4903,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4904,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4905,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4906,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4907,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    },
+    {
+      "original_id": 4965,
+      "eligible": false,
+      "missing": [
+        "capability_owner_classification"
+      ]
+    }
+  ],
+  "selection_method": "Largest shared capability/domain; cached overlap reduction, risk and dependency hints break close scores."
+}

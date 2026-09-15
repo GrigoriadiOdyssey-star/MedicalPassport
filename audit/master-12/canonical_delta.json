@@ -1,0 +1,387 @@
+{
+  "pass": "MASTER-12",
+  "records": [
+    {
+      "id": "CORE-CAP-MEDICATION",
+      "owner": "CAP-MEDICATION",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        406,
+        407,
+        408,
+        409,
+        418,
+        419,
+        420,
+        422,
+        423,
+        429
+      ],
+      "profile_ids": [
+        "M12-CAP-MEDICATION"
+      ],
+      "profiles": [
+        {
+          "id": "M12-CAP-MEDICATION",
+          "source_ids": [
+            406,
+            407,
+            408,
+            409,
+            418,
+            419,
+            420,
+            422,
+            423,
+            429
+          ],
+          "owner": "CAP-MEDICATION",
+          "reason": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice."
+        }
+      ],
+      "semantic_decision": "M12-CAP-MEDICATION",
+      "owner_evidence": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "extends_document": "docs/canonical/master08/CAP-MEDICATION.md",
+      "requirements": [
+        {
+          "id": "M12-CAP-MEDICATION-1fcc5c976829f270",
+          "text": "Displays documented adverse reactions.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-5708feb5b2b05d3b",
+          "text": "Common",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-825581d631dea6b1",
+          "text": "Rare",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-7426b74c566cd805",
+          "text": "Serious",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-267d300e14857db1",
+          "text": "Frequency",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-053d69bfbf0fe38f",
+          "text": "Displays manufacturer storage recommendations.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-e938795183a5f0eb",
+          "text": "Temperature",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-1ef85726acaee012",
+          "text": "Humidity",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-f3874df0c9ca903e",
+          "text": "Shelf Life",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-1749c3b239693fca",
+          "text": "Tracks expiration dates of user medications.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-6c2f4d895f25a6d5",
+          "text": "Notifications",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-e3fce19fec4e0e2c",
+          "text": "Replacement Planning",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-d47c35543e2e1605",
+          "text": "Provides official medication recall notifications.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-d45681bf4af764e0",
+          "text": "Batch Numbers",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-365194eb7cba728c",
+          "text": "Manufacturer Notices",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-7e87754b77c55032",
+          "text": "Safety Alerts",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-344ee57b39c9017e",
+          "text": "Tracks medication adherence.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-7a310edd235fac85",
+          "text": "Daily Compliance",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-7458daf3fa39e72c",
+          "text": "Weekly Compliance",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-7448c71201d2fedb",
+          "text": "Monthly Compliance",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-4b2b3039f84e32d0",
+          "text": "Stores complete medication treatment history.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-755810788253adec",
+          "text": "Displays medication history chronologically.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-419b2e970e09a62d",
+          "text": "Integrated with Medical Timeline.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-165ef7ae645a4e29",
+          "text": "Tracks medication quantities at home.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-54a97f77aead29cb",
+          "text": "Current Quantity",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-3bbce35e03ef595a",
+          "text": "Daily Consumption",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-e4fb08fa46d1c742",
+          "text": "Low Stock Alerts",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-6f4423b7c5a516fd",
+          "text": "Analyzes long-term medication usage.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-f9c2804753bc33dc",
+          "text": "Daily Statistics",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-8e8ceaba63a2be45",
+          "text": "Monthly Statistics",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-bbd6557737c50bcd",
+          "text": "Annual Statistics",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-8812c622ecd0dc9e",
+          "text": "Displays official medication information.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-e94f4e46bd1a18b2",
+          "text": "Indications",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-37686c4220a596f9",
+          "text": "Contraindications",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-368389b22a7065de",
+          "text": "Dosage",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-b1100d9ac9ca4e0b",
+          "text": "Side Effects",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-74ea519eb4c0c6db",
+          "text": "Storage",
+          "kind": "REQUIREMENT"
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M12-CAP-MEDICATION-b1bf0bb2383919d2",
+          "text": "# Medication Side Effects",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-9e1e5ea546716da1",
+          "text": "# Medication Storage",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-2fe79420944ca6c2",
+          "text": "# Medication Expiration",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-8f7c9c2699b1416b",
+          "text": "# Medication Recall Center",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-baa6f92429cbdbe2",
+          "text": "# Medication Compliance",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-3486a2b208391dec",
+          "text": "# Medication Therapy History",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-87796f3d77eefdff",
+          "text": "# Medication Timeline",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-b7661584a8de0be6",
+          "text": "# Medication Stock Management",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-1829ef9e396daacd",
+          "text": "# Medication Consumption Statistics",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-MEDICATION-87aad222a94c3cb8",
+          "text": "# Medication Information Sheet",
+          "kind": "SOURCE_METADATA"
+        }
+      ],
+      "document_sha256": "050a39af8289ce9446ec6910bdd092159a438bb125b64ea7b369a1adf83b1c64"
+    },
+    {
+      "id": "CORE-CAP-NOTIFICATIONS",
+      "owner": "CAP-NOTIFICATIONS",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        416
+      ],
+      "profile_ids": [
+        "M12-CAP-NOTIFICATIONS"
+      ],
+      "profiles": [
+        {
+          "id": "M12-CAP-NOTIFICATIONS",
+          "source_ids": [
+            416
+          ],
+          "owner": "CAP-NOTIFICATIONS",
+          "reason": "Medication reminder delivery reuses notifications; a schedule/message/read receipt is not ingestion, a prescription or a missed-dose treatment instruction."
+        }
+      ],
+      "semantic_decision": "M12-CAP-NOTIFICATIONS",
+      "owner_evidence": "Medication reminder delivery reuses notifications; a schedule/message/read receipt is not ingestion, a prescription or a missed-dose treatment instruction.",
+      "document": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+      "extends_document": "docs/canonical/master08/CAP-NOTIFICATIONS.md",
+      "requirements": [
+        {
+          "id": "M12-CAP-NOTIFICATIONS-3c2f5c4e0d8d1399",
+          "text": "Schedules medication reminders.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-a300ec4dd85fc4ad",
+          "text": "Daily Schedule",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-24efe7e465adc535",
+          "text": "Weekly Schedule",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-ebed94288c77f1b6",
+          "text": "Missed Dose Alerts",
+          "kind": "REQUIREMENT"
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M12-CAP-NOTIFICATIONS-8effcca6139189dd",
+          "text": "# Medication Reminder Center",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M12-CAP-NOTIFICATIONS-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA"
+        }
+      ],
+      "document_sha256": "b30e0fd8c02e5666b261fcdcff0c21e4e92a86f032f8e0432825f9c4f9572d6f"
+    }
+  ]
+}
