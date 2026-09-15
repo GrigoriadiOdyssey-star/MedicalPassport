@@ -18,6 +18,8 @@
     "domain:build": "node scripts/domain-pass.mjs",
     "domain:check": "node scripts/domain-pass.mjs --check",
     "master04:build": "node scripts/master04.mjs",
-    "master04:check": "node scripts/master04.mjs --check"
+    "master04:check": "node scripts/master04.mjs --check",
+    "master05:build": "node scripts/master05.mjs",
+    "master05:check": "node scripts/master05.mjs --check"
   }
 }

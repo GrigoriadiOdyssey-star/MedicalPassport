@@ -14,6 +14,7 @@ validate-specifications:
     - npm run pediatric:check
     - npm run domain:check
     - npm run master04:check
+    - npm run master05:check
   artifacts:
     when: always
     paths:
@@ -28,4 +29,6 @@ validate-specifications:
       - audit/domain-03/validation.json
       - audit/master-04/audit_progress.json
       - audit/master-04/validation.json
+      - audit/master-05/audit_progress.json
+      - audit/master-05/validation.json
     expire_in: 30 days

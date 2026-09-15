@@ -1,12 +1,15 @@
 # EDHT — Medical Passport
 
-Исправленная продуктовая и техническая документация European Digital Health Technologies. Редакция аудита: **14 сентября 2026**.
+Исправленная продуктовая и техническая документация European Digital Health Technologies. Редакция аудита: **15 сентября 2026**.
 
 Этот репозиторий сохраняет все **5 175 исходных ID** и предоставляет основу разработки: ограниченный P0, API-контракт, модель данных, требования безопасности, критерии приёмки и воспроизводимый реестр. В исходном архиве был один Markdown-документ; исходного кода приложения и Git-истории не было. Приложение пока не реализовано и клинически не валидировано.
 
 | Начать здесь | Содержание |
 |---|---|
-| [MASTER-04 — последний checkpoint](audit/master-04/MASTER_AUDIT_REPORT.md) | 1 423 reviewed; 273 normalized/canonicalized; 17 общих спецификаций с профилями; 7 proposals интегрированы на уровне документации |
+| [MASTER-05 — последний checkpoint](audit/master-05/MASTER_AUDIT_REPORT.md) | 1 554 reviewed; 421 normalized/canonicalized; 18 общих спецификаций, 105 профилей; 7 ранее интегрированных proposals |
+| [Продолжить MASTER-05](audit/master-05/CONTINUE_FROM_HERE.md) | Новые диапазоны review, сохранённые ID и открытые readiness gates |
+| [Текущие спецификации MASTER-05](docs/canonical/master05/README.md) | Shared owners и профили; прежние версии и требования сохранены |
+| [MASTER-04 — предыдущий checkpoint](audit/master-04/MASTER_AUDIT_REPORT.md) | 1 423 reviewed; 273 normalized/canonicalized; 17 общих спецификаций с профилями; 7 proposals интегрированы на уровне документации |
 | [Продолжить MASTER-04](audit/master-04/CONTINUE_FROM_HERE.md) | Новые диапазоны review, сохранённые ID и восемь обязательных gates готовности |
 | [Текущие общие спецификации](docs/canonical/master04/README.md) | Один canonical owner + profiles; исторические документы и требования сохранены |
 | [DOMAIN-03 — предыдущий checkpoint](audit/domain-03/MASTER_GAP_FILL_REPORT.md) | 1 100 reviewed ID; 30 normalized/canonicalized ID → 10 канонических спецификаций документации; 503 сохранённых фрагмента |
@@ -47,6 +50,7 @@ npm test
 npm run check
 npm run domain:check
 npm run master04:check
+npm run master05:check
 ```
 
 Генератор сохраняет 5 175 идентификаторов, применяет точные [редакторские правила](config/editorial-corrections.json) и создаёт [журнал замен](data/corrections-applied.json). Проверки подтверждают целостность источника, воспроизводимость каталога, внутренние ссылки и базовую связность OpenAPI. Они не тестируют отсутствующий сервер и не доказывают клиническую безопасность.
