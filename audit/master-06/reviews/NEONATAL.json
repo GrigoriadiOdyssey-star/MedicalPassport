@@ -1,0 +1,1056 @@
+{
+  "pass": "MASTER-06",
+  "domain": "NEONATAL",
+  "parent_checkpoint": "46539f4beb5cc79e3ff35f9d6a6f46086d3390b3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1554 reviewed IDs.",
+  "count": 56,
+  "reviews": [
+    {
+      "original_id": 2341,
+      "title": "Neonatology Platform Core Engine",
+      "body": "Central platform for neonatology.\n\nSupports\n\n• Newborn Assessment\n\n• Intensive Care\n\n• Development Monitoring\n\n• Long-term Neonatal Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dc1a3748714be15ad4d6cf3574b4c2f0442d89ed7f91eac957953614b100dd05",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62262
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Newborn Assessment",
+        "Intensive Care",
+        "Development Monitoring",
+        "Long-term Neonatal Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2342,
+      "title": "Neonatal Admission Registry",
+      "body": "Maintains neonatal admission records.\n\nSupports\n\n• Birth History\n\n• Delivery Details\n\n• Initial Examination\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dc97742bcde55dc637ed98a63f80c63d9046ef3d47ed194aca4b72aa044a32f4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62282
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Birth History",
+        "Delivery Details",
+        "Initial Examination"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2343,
+      "title": "Premature Infant Management Module",
+      "body": "Supports premature newborn care.\n\nSupports\n\n• Gestational Age\n\n• Growth Monitoring\n\n• NICU Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e0ac203d7ed98df897391019b0cd9c1765998c90f8403282a07fc66ad66c27c0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62300
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Gestational Age",
+        "Growth Monitoring",
+        "NICU Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2344,
+      "title": "Neonatal Intensive Care Registry",
+      "body": "Maintains NICU history.\n\nSupports\n\n• Respiratory Support\n\n• Monitoring\n\n• Procedures\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "02d9ac86461891647fbd770d34210a28b735a95045154f77863092334ad1f5f6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62318
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Respiratory Support",
+        "Monitoring",
+        "Procedures"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2345,
+      "title": "Neonatal Resuscitation Module",
+      "body": "Supports neonatal resuscitation documentation.\n\nSupports\n\n• Initial Stabilization\n\n• Resuscitation Steps\n\n• Clinical Outcome\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "22613ecdd0b50f93b94061b428a450d45ef5d3564ab085a6305db50c374417a4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62336
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Initial Stabilization",
+        "Resuscitation Steps",
+        "Clinical Outcome"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2346,
+      "title": "Neonatal Respiratory Disorders Module",
+      "body": "Supports respiratory disorders.\n\nSupports\n\n• Respiratory Distress Syndrome\n\n• Transient Tachypnea\n\n• Oxygen Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9f1256e69adca6539c6237a5046a3940d9d1c17910638b51b852af02a51e69ce",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62354
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Respiratory Distress Syndrome",
+        "Transient Tachypnea",
+        "Oxygen Therapy"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2347,
+      "title": "Neonatal Infection Registry",
+      "body": "Maintains neonatal infection history.\n\nSupports\n\n• Early Sepsis\n\n• Late Sepsis\n\n• Antibiotic Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "473928d3ee3b5660bc57dbe5abad89fa6892161d32f42eb580382e76bcdc4efe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62372
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Early Sepsis",
+        "Late Sepsis",
+        "Antibiotic Therapy"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2348,
+      "title": "Neonatal Jaundice Module",
+      "body": "Supports neonatal jaundice management.\n\nSupports\n\n• Bilirubin Monitoring\n\n• Phototherapy\n\n• Exchange Transfusion\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5cb1bac932d80681bcaccb30f63bcd198ccbaf5501df81cbbedac8411a25882e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62390
+      },
+      "verdict": "Bilirubin monitoring, phototherapy and exchange transfusion are separate workflows; age/gestation, measurement timing and validated protocol context are required before clinical action.",
+      "feature_labels": [
+        "Bilirubin Monitoring",
+        "Phototherapy",
+        "Exchange Transfusion"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2349,
+      "title": "Congenital Screening Registry",
+      "body": "Maintains newborn screening.\n\nSupports\n\n• Metabolic Disorders\n\n• Hearing Screening\n\n• Cardiac Screening\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "139d4e2e009d432768e39e5f977f1479c3e04aae58a30bab402b05d8147a3699",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62408
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Metabolic Disorders",
+        "Hearing Screening",
+        "Cardiac Screening"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2350,
+      "title": "Neonatology Platform Intelligence Hub",
+      "body": "Coordinates all neonatology services.\n\nIntegrates\n\n• Neonatology AI\n\n• Digital Twin\n\n• NICU Systems\n\n• Laboratory\n\n• Pediatrics Platform\n\nForms the complete neonatology ecosystem within EDHT.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b9c679f63bef5721a696df9029ffc66772f7a9f8c8592bcd03e139c6495d18ba",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62426
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Neonatology AI",
+        "Digital Twin",
+        "NICU Systems",
+        "Laboratory",
+        "Pediatrics Platform"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2351,
+      "title": "Neonatal Nutrition Module",
+      "body": "Supports neonatal nutrition management.\n\nSupports\n\n• Breastfeeding Monitoring\n\n• Enteral Nutrition\n\n• Parenteral Nutrition\n\n• Feeding Tolerance\n\n• Growth Evaluation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2f7e69c7059218058da7ddd1c73085a358509f6d0a1da9be2e713068bbf501ea",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62450
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Breastfeeding Monitoring",
+        "Enteral Nutrition",
+        "Parenteral Nutrition",
+        "Feeding Tolerance",
+        "Growth Evaluation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2352,
+      "title": "Neonatal Growth Registry",
+      "body": "Maintains neonatal growth records.\n\nSupports\n\n• Weight\n\n• Length\n\n• Head Circumference\n\n• Growth Curves\n\n• WHO Standards\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "931d8121bb84113a1842159e8eef5e4d95bb2adb3311e156b67ca13c74988236",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62472
+      },
+      "verdict": "WHO Standards is retained as historical source intent, not a universal neonatal growth reference. Preserve reference/version and gestational/corrected-age applicability with specialist validation.",
+      "feature_labels": [
+        "Weight",
+        "Length",
+        "Head Circumference",
+        "Growth Curves",
+        "WHO Standards"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2353,
+      "title": "Neonatal Neurology Module",
+      "body": "Supports neonatal neurological care.\n\nSupports\n\n• Neurological Examination\n\n• Muscle Tone\n\n• Seizure Monitoring\n\n• Reflex Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4f575a7f1a7260babc47631c3f8fcd92247b10e85c1f0be67a46734241409764",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62494
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Neurological Examination",
+        "Muscle Tone",
+        "Seizure Monitoring",
+        "Reflex Assessment"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2354,
+      "title": "Neonatal Cardiology Module",
+      "body": "Supports neonatal cardiac disorders.\n\nSupports\n\n• Congenital Heart Disease\n\n• Echocardiography\n\n• Cardiac Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "161ff9191049e5079adea36b7c280598a90883da8f5e0bfafa7de15fe9ff3738",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62514
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Congenital Heart Disease",
+        "Echocardiography",
+        "Cardiac Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2355,
+      "title": "Neonatal Pulmonology Module",
+      "body": "Supports neonatal respiratory care.\n\nSupports\n\n• Mechanical Ventilation\n\n• CPAP\n\n• Oxygen Therapy\n\n• Respiratory Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3b7305d6584387a53c2fc9cba95e2fb4fe8f91131da2607a2cbc6153301b19be",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62532
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Mechanical Ventilation",
+        "CPAP",
+        "Oxygen Therapy",
+        "Respiratory Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2356,
+      "title": "Neonatal Laboratory Registry",
+      "body": "Maintains neonatal laboratory data.\n\nSupports\n\n• Blood Tests\n\n• Blood Gas Analysis\n\n• Biochemistry\n\n• Microbiology\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2c5b853ca8fa458a26697d7599a6a4f2549f18bf61f2ad624a86418bfa02d908",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62552
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Blood Tests",
+        "Blood Gas Analysis",
+        "Biochemistry",
+        "Microbiology"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2357,
+      "title": "Neonatal Imaging Registry",
+      "body": "Maintains neonatal imaging.\n\nSupports\n\n• Ultrasound\n\n• X-Ray\n\n• MRI\n\n• CT\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e6b0de35578eeea1871598f1e935067279b3fac5c195c1489f043b1c3b3d94c7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62572
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Ultrasound",
+        "X-Ray",
+        "MRI",
+        "CT"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2358,
+      "title": "Neonatal Medication Registry",
+      "body": "Maintains neonatal medication history.\n\nSupports\n\n• Antibiotics\n\n• Nutrition\n\n• Infusions\n\n• Medication Safety\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "442ff4be00e1b20ccf76c8fb7d7342c98d2aa07538a3dd11aca77532c2bba286",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62592
+      },
+      "verdict": "Infusions, nutrition and antibiotics retain exposure/route/units and separately authorized prescription and administration; no autonomous neonatal dose or pump change.",
+      "feature_labels": [
+        "Antibiotics",
+        "Nutrition",
+        "Infusions",
+        "Medication Safety"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2359,
+      "title": "Neonatal Genetic Screening Module",
+      "body": "Supports neonatal genetic screening.\n\nSupports\n\n• Rare Diseases\n\n• Metabolic Disorders\n\n• Genetic Consultation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e1ed0db64fdd7678d0edf6af540dfd011d7169004e6fbbfe07774c7feeff1d65",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62612
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Rare Diseases",
+        "Metabolic Disorders",
+        "Genetic Consultation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2360,
+      "title": "Neonatal Follow-up Registry",
+      "body": "Supports long-term neonatal follow-up.\n\nSupports\n\n• Growth\n\n• Development\n\n• Complication Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e8933f1f44743ed786fb75b54b52f9a579f2ef636a0bee65c270b86428981037",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62630
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Growth",
+        "Development",
+        "Complication Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3021,
+      "title": "Clinical Neonatology Platform Core Engine",
+      "body": "Central platform for neonatal medicine.\n\nSupports\n\n• Premature Infants\n• Full-term Newborns\n• Neonatal Intensive Care\n• Congenital Disorders\n• Long-term Development Monitoring\n\nIntegrates Obstetrics, Pediatrics, Genetics, Intensive Care, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fdeb931b981b0c33480a0fed17dfaceb1ff81d0902efde5b155a4bd891e40c74",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74795
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Premature Infants",
+        "Full-term Newborns",
+        "Neonatal Intensive Care",
+        "Congenital Disorders",
+        "Long-term Development Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3022,
+      "title": "Neonatology Registry",
+      "body": "Maintains comprehensive neonatal records.\n\nSupports\n\n• Birth Data\n• Gestational Age\n• Birth Weight\n• Apgar Scores\n• Neonatal Diagnoses\n• Longitudinal Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c4e2a53b9e264430ada312ca50b408d2f15bd90e56762d690dc51e72c9c0447a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74815
+      },
+      "verdict": "Birth/gestational-age/weight and Apgar observations require time point, assessor and source; an Apgar score is not retrospectively inferred from other documentation.",
+      "feature_labels": [
+        "Birth Data",
+        "Gestational Age",
+        "Birth Weight",
+        "Apgar Scores",
+        "Neonatal Diagnoses",
+        "Longitudinal Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3023,
+      "title": "Prematurity Management Module",
+      "body": "Supports premature infant management.\n\nSupports\n\n• Extremely Preterm Infants\n• Very Preterm Infants\n• Respiratory Support\n• Growth Monitoring\n• Neurodevelopmental Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3125412ab53424b7185bd671d5fc43f3432ba107ea6dadb65edb7c226b5d8efb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74834
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Extremely Preterm Infants",
+        "Very Preterm Infants",
+        "Respiratory Support",
+        "Growth Monitoring",
+        "Neurodevelopmental Assessment"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3024,
+      "title": "Neonatal Intensive Care Module",
+      "body": "Supports NICU management.\n\nSupports\n\n• Mechanical Ventilation\n• CPAP\n• High-flow Therapy\n• Hemodynamic Monitoring\n• Infection Control\n• Nutrition Support\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0846a4a7eb3a4fd312712516b3a15ccf3207917eb64deb9168248967e46a0c03",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74852
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Mechanical Ventilation",
+        "CPAP",
+        "High-flow Therapy",
+        "Hemodynamic Monitoring",
+        "Infection Control",
+        "Nutrition Support"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3025,
+      "title": "Neonatal Resuscitation Module",
+      "body": "Supports neonatal resuscitation.\n\nSupports\n\n• Airway Management\n• Chest Compressions\n• Medication Administration\n• Oxygen Therapy\n• Resuscitation Documentation\n\nBased on international neonatal resuscitation guidelines.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1067a33e1ef3230028bb2318d2d4b3deddbb8eec7ca85f60496640e1974d2ed3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74871
+      },
+      "verdict": "The source claim based on international guidelines supplies no named version or validation evidence. Require approved neonatal resuscitation protocol/version and qualified response team; preserve documentation intent without embedding unverified instructions.",
+      "feature_labels": [
+        "Airway Management",
+        "Chest Compressions",
+        "Medication Administration",
+        "Oxygen Therapy",
+        "Resuscitation Documentation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3026,
+      "title": "Neonatal Respiratory Disorders Module",
+      "body": "Supports respiratory diseases in newborns.\n\nSupports\n\n• Respiratory Distress Syndrome\n• Transient Tachypnea\n• Meconium Aspiration\n• Persistent Pulmonary Hypertension\n• Bronchopulmonary Dysplasia\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ef53d08549b20d4f4cf5e28f125c9ce1c8d6dbeea7ce44faabcf40b1734f181e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74891
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Respiratory Distress Syndrome",
+        "Transient Tachypnea",
+        "Meconium Aspiration",
+        "Persistent Pulmonary Hypertension",
+        "Bronchopulmonary Dysplasia"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3027,
+      "title": "Neonatal Infection Module",
+      "body": "Supports neonatal infectious diseases.\n\nSupports\n\n• Early-Onset Sepsis\n• Late-Onset Sepsis\n• Congenital Infections\n• Meningitis\n• Antibiotic Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8a46ebf1d9a073f023fe8046b373a7ff373c23285d4182102574c2b1c05f6c8c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74909
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Early-Onset Sepsis",
+        "Late-Onset Sepsis",
+        "Congenital Infections",
+        "Meningitis",
+        "Antibiotic Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3028,
+      "title": "Neonatal Nutrition Module",
+      "body": "Supports neonatal nutritional management.\n\nSupports\n\n• Breast Milk Feeding\n• Donor Milk\n• Enteral Nutrition\n• Parenteral Nutrition\n• Growth Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a97c22425223e188d916bf8e38a530843004d3d947b46b6cd214ceb578cd4ad8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74927
+      },
+      "verdict": "Donor milk, breast milk, fortification and enteral/parenteral nutrition remain distinct product/route/exposure contexts; milk provenance does not expose donor identity without authorization.",
+      "feature_labels": [
+        "Breast Milk Feeding",
+        "Donor Milk",
+        "Enteral Nutrition",
+        "Parenteral Nutrition",
+        "Growth Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3029,
+      "title": "Neonatal Imaging Registry",
+      "body": "Maintains neonatal imaging studies.\n\nSupports\n\n• Cranial Ultrasound\n• Echocardiography\n• Chest X-ray\n• MRI\n• AI Imaging Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "af0cefbb3229acf522d19785f6332417598b637e1d4026a4505e53c17c86887c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74945
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Cranial Ultrasound",
+        "Echocardiography",
+        "Chest X-ray",
+        "MRI",
+        "AI Imaging Analysis"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3030,
+      "title": "Neonatal Laboratory Registry",
+      "body": "Maintains neonatal laboratory studies.\n\nSupports\n\n• Blood Gases\n• Bilirubin\n• Infection Markers\n• Metabolic Screening\n• Genetic Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6e3bb4e9af96ad59b88637a364e93701bddbe15b29c74813eef4aee211e78106",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74963
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Blood Gases",
+        "Bilirubin",
+        "Infection Markers",
+        "Metabolic Screening",
+        "Genetic Testing"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3031,
+      "title": "Neonatal Biomarker Registry",
+      "body": "Maintains neonatal biomarkers.\n\nSupports\n\n• Inflammatory Biomarkers\n• Neurological Biomarkers\n• Cardiac Biomarkers\n• Metabolic Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1c96617851879c49596ce1061f8dd355f518885560a4fb27902516d80c33dc06",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74981
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Inflammatory Biomarkers",
+        "Neurological Biomarkers",
+        "Cardiac Biomarkers",
+        "Metabolic Biomarkers"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3032,
+      "title": "Congenital Anomaly Module",
+      "body": "Supports congenital anomaly management.\n\nSupports\n\n• Congenital Malformations\n• Chromosomal Disorders\n• Rare Diseases\n• Genetic Counseling\n• Surgical Planning\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bfd62bc7539efbe08abae21a5eecb59afca3fa9d21216548057ecd9dbb0e0b70",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74998
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Congenital Malformations",
+        "Chromosomal Disorders",
+        "Rare Diseases",
+        "Genetic Counseling",
+        "Surgical Planning"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3033,
+      "title": "Neonatal Neurology Module",
+      "body": "Supports neurological disorders in newborns.\n\nSupports\n\n• Hypoxic-Ischemic Encephalopathy\n• Neonatal Seizures\n• Brain Injury\n• Development Monitoring\n• Neuroimaging\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8ca9a0b04ac02d338ac12510e220a6d11bf6130dcceb2b9c724d7874c52c2d69",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 75016
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Hypoxic-Ischemic Encephalopathy",
+        "Neonatal Seizures",
+        "Brain Injury",
+        "Development Monitoring",
+        "Neuroimaging"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3034,
+      "title": "Neonatal AI Decision Support",
+      "body": "Provides AI-assisted neonatal care.\n\nSupports\n\n• Sepsis Prediction\n• Mortality Risk Prediction\n• Respiratory Failure Prediction\n• Growth Analysis\n• Personalized NICU Care\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "03ce686f7f34e92c719819dc9658620f87251e1ef025ab2dcff15288f7b89c57",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 75034
+      },
+      "verdict": "Sepsis, mortality, respiratory and growth predictions are separate intended uses with population/gestational applicability and calibration evidence; no AI determination of treatment limitation.",
+      "feature_labels": [
+        "Sepsis Prediction",
+        "Mortality Risk Prediction",
+        "Respiratory Failure Prediction",
+        "Growth Analysis",
+        "Personalized NICU Care"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3036,
+      "title": "Neonatal Telemedicine Module",
+      "body": "Supports remote neonatal consultations.\n\nSupports\n\n• Regional NICU Support\n• Imaging Review\n• Video Consultation\n• AI Translation\n• Follow-up After Discharge\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "571e3bb32e87675642cf1d466df20720e0530b4a564e000f32e52790cbcbb1fc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 75069
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Regional NICU Support",
+        "Imaging Review",
+        "Video Consultation",
+        "AI Translation",
+        "Follow-up After Discharge"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3037,
+      "title": "Neonatal Clinical Trials Registry",
+      "body": "Supports neonatal clinical research.\n\nSupports\n\n• Prematurity Studies\n• Respiratory Research\n• Nutrition Studies\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "85a59baaf4754e3a2c3caed38e14fdbd89fb0e101184db68f57f99cca0e0cb2c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 75087
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Prematurity Studies",
+        "Respiratory Research",
+        "Nutrition Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3039,
+      "title": "Neonatal Intelligence Registry",
+      "body": "Maintains AI-ready neonatal datasets.\n\nSupports\n\n• Imaging\n• Laboratory\n• Genetics\n• Development\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87837e2577a04e22686c92fa555a4d6e54d0ab74e5a8518396205e0c77e16a2e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 75121
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Imaging",
+        "Laboratory",
+        "Genetics",
+        "Development",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3040,
+      "title": "Clinical Neonatology Intelligence Hub",
+      "body": "Coordinates the complete neonatology ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Obstetrics\n• Pediatrics\n• Genetics\n• Intensive Care\n• Laboratory Services\n• Telemedicine\n\nProvides intelligent neonatal care and lifelong developmental support across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8eeb7afdfb934cf89289c87a29ffdf7e4641eeabc74eac0d9e8d99a3d3c1fc37",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 75139
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Obstetrics",
+        "Pediatrics",
+        "Genetics",
+        "Intensive Care",
+        "Laboratory Services",
+        "Telemedicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3261,
+      "title": "Clinical Pediatric Neonatology Platform Core Engine",
+      "body": "Central platform for neonatology.\n\nSupports\n\n• Prematurity\n• Neonatal Intensive Care\n• Congenital Disorders\n• Neonatal Resuscitation\n• High-risk Newborn Follow-up\n\nIntegrates Obstetrics, Genetics, Pediatric Surgery, Intensive Care, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a9bac37c3c9bced87dd84435333ccc058ce81a00ed5c84a3318945d3ae0ea866",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79226
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Prematurity",
+        "Neonatal Intensive Care",
+        "Congenital Disorders",
+        "Neonatal Resuscitation",
+        "High-risk Newborn Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3262,
+      "title": "Neonatal Registry",
+      "body": "Maintains comprehensive neonatal records.\n\nSupports\n\n• Birth History\n• Gestational Age\n• Apgar Score\n• NICU Course\n• Growth\n• Longitudinal Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d30182ab919254d00c7f62d1d187104c32ed4eed54598653eb82002094534332",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79246
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Birth History",
+        "Gestational Age",
+        "Apgar Score",
+        "NICU Course",
+        "Growth",
+        "Longitudinal Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3263,
+      "title": "Prematurity Module",
+      "body": "Supports management of premature infants.\n\nSupports\n\n• Extremely Preterm\n• Very Preterm\n• Moderate Preterm\n• Growth Monitoring\n• Neurodevelopment Follow-up\n• Complication Prevention\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0ace620f79d3578b18c09e63d373a827c11fbb2677e29aa973a42ba737768e84",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79265
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Extremely Preterm",
+        "Very Preterm",
+        "Moderate Preterm",
+        "Growth Monitoring",
+        "Neurodevelopment Follow-up",
+        "Complication Prevention"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3264,
+      "title": "Neonatal Intensive Care Module",
+      "body": "Supports neonatal intensive care.\n\nSupports\n\n• Mechanical Ventilation\n• CPAP\n• High-frequency Ventilation\n• Hemodynamic Monitoring\n• Infection Control\n• Nutritional Support\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "96b0b957fecab6dbda1f78c87a1d0e458105a1811b729fab84e4f6fd42cbfdb0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79284
+      },
+      "verdict": "High-frequency ventilation complements earlier high-flow/CPAP scope. Preserve prescribed settings, observed device data, clinical events and quality/timing separately; no remote ventilator control.",
+      "feature_labels": [
+        "Mechanical Ventilation",
+        "CPAP",
+        "High-frequency Ventilation",
+        "Hemodynamic Monitoring",
+        "Infection Control",
+        "Nutritional Support"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3265,
+      "title": "Neonatal Respiratory Disorders Module",
+      "body": "Supports neonatal respiratory diseases.\n\nSupports\n\n• Respiratory Distress Syndrome\n• Meconium Aspiration\n• Persistent Pulmonary Hypertension\n• Bronchopulmonary Dysplasia\n• Apnea of Prematurity\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1e2f9fa496d9de337b596f3979ba4556bc88483b6ddb0d0540f7355e07732064",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79303
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Respiratory Distress Syndrome",
+        "Meconium Aspiration",
+        "Persistent Pulmonary Hypertension",
+        "Bronchopulmonary Dysplasia",
+        "Apnea of Prematurity"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3266,
+      "title": "Neonatal Neurology Module",
+      "body": "Supports neurological disorders in newborns.\n\nSupports\n\n• Hypoxic-Ischemic Encephalopathy\n• Neonatal Seizures\n• Intraventricular Hemorrhage\n• Periventricular Leukomalacia\n• Neurodevelopmental Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a6b3ab04b683c69c2f190bd6e16de2377d3825fd293ad968a5103ac123ee0ae9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79321
+      },
+      "verdict": "Intraventricular hemorrhage and periventricular leukomalacia extend earlier neurological scope; preserve source imaging and clinical assessment rather than conflating injury phenotypes.",
+      "feature_labels": [
+        "Hypoxic-Ischemic Encephalopathy",
+        "Neonatal Seizures",
+        "Intraventricular Hemorrhage",
+        "Periventricular Leukomalacia",
+        "Neurodevelopmental Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3267,
+      "title": "Congenital Malformations Module",
+      "body": "Supports congenital anomalies.\n\nSupports\n\n• Congenital Heart Disease\n• Neural Tube Defects\n• Gastrointestinal Malformations\n• Renal Malformations\n• Craniofacial Disorders\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cb6f43b801f1dcc26265ecac8d54eb876ad69102c9e1dc3da6930ffa4b5d44a1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79339
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Congenital Heart Disease",
+        "Neural Tube Defects",
+        "Gastrointestinal Malformations",
+        "Renal Malformations",
+        "Craniofacial Disorders"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3268,
+      "title": "Neonatal Nutrition Module",
+      "body": "Supports nutritional care in newborns.\n\nSupports\n\n• Breastfeeding\n• Enteral Feeding\n• Parenteral Nutrition\n• Growth Assessment\n• Human Milk Fortification\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9ae8887fe0f84d8665252d960f890386c11c9ffe42e3c8506d233e698fca3a2a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79357
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Breastfeeding",
+        "Enteral Feeding",
+        "Parenteral Nutrition",
+        "Growth Assessment",
+        "Human Milk Fortification"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3269,
+      "title": "Neonatal Imaging Registry",
+      "body": "Maintains neonatal imaging.\n\nSupports\n\n• Cranial Ultrasound\n• Echocardiography\n• Chest X-ray\n• MRI\n• AI Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "81858afd14b30033fd7b53873542f56e8e55067eb6ff60e8e2314d7ffccde47f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79375
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Cranial Ultrasound",
+        "Echocardiography",
+        "Chest X-ray",
+        "MRI",
+        "AI Image Analysis"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3270,
+      "title": "Neonatal Laboratory Registry",
+      "body": "Maintains neonatal laboratory studies.\n\nSupports\n\n• Blood Gas Analysis\n• Bilirubin\n• Infection Panels\n• Metabolic Screening\n• Genetic Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f6fa265ada2774713aef04da270e406cf93db0b4bdae26d9304f9b6e56788c54",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79393
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Blood Gas Analysis",
+        "Bilirubin",
+        "Infection Panels",
+        "Metabolic Screening",
+        "Genetic Testing"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3271,
+      "title": "Neonatal Biomarker Registry",
+      "body": "Maintains neonatal biomarkers.\n\nSupports\n\n• Brain Injury Biomarkers\n• Infection Biomarkers\n• Metabolic Biomarkers\n• Growth Biomarkers\n• Organ Function Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9dea2812e01abf830118ad1b8685653b5e72c3897e562a2c176eb11501eb47bc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79411
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Brain Injury Biomarkers",
+        "Infection Biomarkers",
+        "Metabolic Biomarkers",
+        "Growth Biomarkers",
+        "Organ Function Biomarkers"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3272,
+      "title": "Neonatology AI Decision Support",
+      "body": "Provides AI-assisted neonatal medicine.\n\nSupports\n\n• Sepsis Prediction\n• Respiratory Failure Prediction\n• Neurodevelopment Risk Assessment\n• Growth Prediction\n• Personalized NICU Care\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1d1c186563af51d13627065d7084d5762338e7ad854454a650524fa2c42b46d4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79429
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Sepsis Prediction",
+        "Respiratory Failure Prediction",
+        "Neurodevelopment Risk Assessment",
+        "Growth Prediction",
+        "Personalized NICU Care"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3274,
+      "title": "Neonatal Telemedicine Module",
+      "body": "Supports remote neonatal consultations.\n\nSupports\n\n• NICU Consultation\n• Imaging Review\n• Parent Counseling\n• Home Follow-up\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "875d1d0b5b1c2c4b28b0f8f4112373579a3ba1306555992b058f90694ae8a9f9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79464
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "NICU Consultation",
+        "Imaging Review",
+        "Parent Counseling",
+        "Home Follow-up",
+        "AI Translation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3275,
+      "title": "Neonatology Clinical Trials Registry",
+      "body": "Supports neonatal research.\n\nSupports\n\n• Prematurity Studies\n• NICU Research\n• Nutrition Studies\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0c666206da8298304800536b67403d4708d48a2d3747a888fd3e0db4b110635d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79482
+      },
+      "verdict": "AI Dataset Collection is a research intent, not permission to train on neonatal records. Protocol, appropriate authorization, purpose and disclosure controls remain separate.",
+      "feature_labels": [
+        "Prematurity Studies",
+        "NICU Research",
+        "Nutrition Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3277,
+      "title": "Neonatal Genetics Module",
+      "body": "Supports inherited neonatal diseases.\n\nSupports\n\n• Rare Genetic Disorders\n• Congenital Syndromes\n• Whole Genome Sequencing\n• Family Counseling\n• Precision Diagnosis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c1f72f582583264ffada8ee68b69f3950bb51e863024c9c05181b0ef0a4de834",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79516
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Rare Genetic Disorders",
+        "Congenital Syndromes",
+        "Whole Genome Sequencing",
+        "Family Counseling",
+        "Precision Diagnosis"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3278,
+      "title": "Neonatology Intelligence Registry",
+      "body": "Maintains AI-ready neonatal datasets.\n\nSupports\n\n• NICU Data\n• Imaging\n• Laboratory\n• Genetics\n• Growth\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9886f31763922f7121f8c81a29b36a57f749cd1ec3fbf60056d97f947ae07e3d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79534
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "NICU Data",
+        "Imaging",
+        "Laboratory",
+        "Genetics",
+        "Growth",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3279,
+      "title": "Neonatal Intelligence Platform",
+      "body": "Coordinates neonatal medicine.\n\nIntegrates\n\n• Neonatology\n• Obstetrics\n• Genetics\n• Intensive Care\n• Pediatric Surgery\n• AI\n\nSupports the complete continuum from delivery room to infant follow-up.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ca448a8dd5aff4142a59daad07ee6b4bb8269f7121170683e9390b0a96db7a45",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79553
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "Neonatology",
+        "Obstetrics",
+        "Genetics",
+        "Intensive Care",
+        "Pediatric Surgery",
+        "AI"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3280,
+      "title": "Clinical Neonatology Intelligence Hub",
+      "body": "Coordinates the complete neonatal ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Genetics\n• Intensive Care\n• Laboratory Medicine\n• Radiology\n• Telemedicine\n• Clinical Research\n\nProvides intelligent newborn care across the EDHT ecosystem from birth through infancy.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c7fc960c4e8539458bb0a71ca18dd90673ac931b08dc326a5f0f72df3db61824",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79574
+      },
+      "verdict": "Neonatal care preserves gestational/postnatal age and measurement context, birth/admission identity, respiratory/nutrition/medication exposure, ICU events and developmental follow-up. Maternal and infant identities/permissions remain separate. AI and monitoring cannot autonomously resuscitate, prescribe, change ventilation or determine eligibility.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Genetics",
+        "Intensive Care",
+        "Laboratory Medicine",
+        "Radiology",
+        "Telemedicine",
+        "Clinical Research"
+      ],
+      "date": "2026-09-15"
+    }
+  ]
+}
