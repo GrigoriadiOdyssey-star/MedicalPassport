@@ -26,6 +26,10 @@
     "master06:build": "node scripts/master06.mjs",
     "master06:check": "node scripts/master06.mjs --check",
     "master07:build": "node scripts/master07.mjs",
-    "master07:check": "node scripts/master07.mjs --check"
+    "master07:check": "node scripts/master07.mjs --check",
+    "master08:build": "node scripts/master08.mjs",
+    "master08:check": "node scripts/master08.mjs --check",
+    "readiness08:build": "node scripts/readiness08.mjs",
+    "readiness08:check": "node scripts/readiness08.mjs --check"
   }
 }

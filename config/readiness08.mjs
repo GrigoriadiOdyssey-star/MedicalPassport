@@ -1,0 +1,34 @@
+export const criteria=['purpose','scope','non_goals','actors','roles','permissions','inputs','outputs','canonical_data_ownership','data_model','fhir_resources_profiles','api_contracts','events','dependencies','external_integrations','security','privacy','consent','audit_trail','clinical_safety','ai_boundaries','failure_modes','observability','testing_strategy','acceptance_criteria','versioning','migration_considerations'];
+export const tags=['MVP_CORE','MVP_OPTIONAL','POST_MVP','PHASE_2','RESEARCH','LONG_TERM'];
+export const core=['CAP-IDENTITY','CAP-SECURITY','CAP-CONSENT','CAP-AUDIT','CAP-DATA','CAP-PROFILE','CAP-ALLERGY'];
+export const optional=['CAP-DOCUMENTS','CAP-INTEROP','CAP-NOTIFICATIONS'];
+export const priorities=[
+['Identity / Authentication','CAP-IDENTITY'],['Patient Profile','CAP-PROFILE'],['Consent','CAP-CONSENT'],['Authorization / RBAC / ABAC','CAP-SECURITY'],['Audit','CAP-AUDIT'],['Clinical Record','CAP-DATA'],['Documents','CAP-DOCUMENTS'],['Medication','CAP-MEDICATION'],['Allergy','CAP-ALLERGY'],['Laboratory','CAP-LABORATORY'],['Medical Imaging','CAP-IMAGING'],['Emergency / SOS','CAP-EMERGENCY'],['QR Access','CAP-QR'],['FHIR / Interoperability','CAP-INTEROP'],['Terminology','CAP-INTEROP'],['Notifications','CAP-NOTIFICATIONS'],['Provider / Organization','CAP-IDENTITY'],['Telemedicine','CAP-TELEMEDICINE'],['Devices / RPM','CAP-DEVICES'],['AI Platform','CAP-AI'],['Digital Twin','CAP-TWIN'],['Precision Pharmacology','CAP-MEDICATION'],['Adaptive Interoperability','CAP-INTEROP'],['Self-Adapting Connector Intelligence','CAP-INTEROP'],['Research AI / Population Intelligence','CAP-RESEARCH'],['Protein / Genomic / Multi-model Intelligence','CAP-AI']];
+export const ownerGaps={
+'CAP-IDENTITY':'Choose issuer and account recovery/credential lifecycle; define account-to-patient binding and provider-role verification/expiry schemas. MFA enrollment and session revocation need misuse-case acceptance.',
+'CAP-SECURITY':'No active canonical specification yet. Normalize existing authorization originals; define deny-by-default RBAC/ABAC policy input, enforcement and cache/revocation consistency contracts.',
+'CAP-CONSENT':'Define recipient/resource/purpose/version/expiry grant and withdrawal schemas, conflict precedence and guardian authority. Approve jurisdiction/adolescent segmentation rules; consent is not the enforcement mechanism.',
+'CAP-AUDIT':'Define producer identity, sequence/idempotency/durable acknowledgement and tamper-evidence model; govern redacted change references and approved retention/export policy.',
+'CAP-DATA':'Define stable patient/source binding, correction/merge/unmerge rules and provenance schema. Conflicting identity must quarantine rather than silently match; signed source boundaries remain missing.',
+'CAP-PROFILE':'Define source-linked projection schema and field-level authorization, freshness and unknown state. Required legacy blood type must migrate to unknown until verified; no invented normal values.',
+'CAP-ALLERGY':'Define reported versus confirmed, absent versus unknown/not assessed, substance coding, verification and correction schema. Clinician confirmation and clinical safety acceptance are still missing.',
+'CAP-DOCUMENTS':'Define quarantined upload and immutable derivative schemas, MIME/size/archive limits, malware/OCR review lifecycle, retention and reauthorization on content retrieval.',
+'CAP-INTEROP':'Pin partner FHIR release and profiles, terminology system/version, map-loss and reconciliation fixtures; terminology expansion/validation contract and partner credentials remain unresolved.',
+'CAP-NOTIFICATIONS':'Pin delivery providers, recipient verification, redacted templates, scheduling/expiry/retry and acknowledgement semantics; no clinical-response SLA has been established.',
+'CAP-MEDICATION':'Separate reported use, knowledge, prescribing, dispensing and administration. Drug identity/strength/form/route/units, interaction evidence license/version and pharmacogenomic uncertainty need exact contracts.',
+'CAP-LABORATORY':'Specify specimen/observation/report identity, units/method/reference intervals, corrected results, critical flag acknowledgement and partner conformance fixtures.',
+'CAP-IMAGING':'Specify study/series/instance identity, diagnostic original/derivative lineage, de-identification validation, signed report and actual PACS operation/version conformance.',
+'CAP-EMERGENCY':'Define supported jurisdiction/provider coverage, explicit recipient acknowledgement, unavailable/offline states, minimum disclosure and qualified emergency workflow acceptance.',
+'CAP-QR':'Define opaque grant token lifecycle, recipient binding, atomic one-use redemption, online revocation and resource-level filtering; offline revocation guarantees are explicitly unavailable.',
+'CAP-TELEMEDICINE':'Specify verified clinician/region, meeting access, independent recording/translation consent, connection failure, clinical documentation and provider contracts.',
+'CAP-DEVICES':'Existing configuration evidence schema covers only documented history. RPM units/clock/quality, robotics/assistive/recall profiles, connector releases and device clinical acceptance remain unproven.',
+'CAP-AI':'Specify task intended use, data rights, model/version registry, evaluation by cohort, uncertainty/abstention, rollback, prompt-injection boundaries and clinician disposition; no autonomous treatment.',
+'CAP-TWIN':'Specify source/model/scenario separation, validity domain, uncertainty and counterfactual assumptions; measured facts must never be replaced by simulated trajectories.',
+'CAP-RESEARCH':'Define protocol/cohort/consent linkage, secondary-use permissions, de-identification/re-identification controls, dataset lineage, population bias and approved output disclosure.',
+'CAP-APPOINTMENTS':'Define participant/availability identity, timezone/DST and concurrency/idempotency reservation, cancellation/reschedule and encounter separation.',
+'CAP-ENCOUNTER':'Specify clinician attribution, procedure/therapy state transitions, consent/assent, source-owned devices/drugs and signed correction workflows; no autonomous indications or clearance.',
+'CAP-CDS':'Define bounded clinical task, evidence release, patient context freshness, rule/model validation and clinician disposition; decision support cannot overwrite clinical facts.',
+'CAP-ADMINISTRATION':'Define actual exposure/product/route/time, barcode identity, blood-bank release reference, reaction and correction contracts; prescribing/dispensing remain separate.',
+'CAP-IMMUNIZATION':'Define administered versus planned/refused/unknown state, product/lot/dose/source and schedule-version applicability; no inferred protection or autonomous scheduling.',
+'CAP-SPECIALTY':'Each clinical profile needs intended-use and typed data/acceptance contracts while retaining shared source owners; generic orchestration text is insufficient for all specialties.'
+};

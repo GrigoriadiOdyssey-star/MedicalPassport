@@ -1,3 +1,9 @@
+# Current checkpoint: MASTER-08 (2026-09-15)
+
+1764 / 5175 reviewed; 668 normalized/canonicalized originals; 25 shared specifications and 212 profiles. Seven gap proposals remain integrated. Implementation ready: 0.
+
+[Audit](audit/master-08/MASTER_AUDIT_REPORT.md) · [Continue](audit/master-08/CONTINUE_FROM_HERE.md) · [Readiness pipeline](audit/master-08/IMPLEMENTATION_READINESS_REPORT.md) · [MVP candidate architecture](docs/engineering/mvp_candidate_architecture.md) · [MVP tags](docs/engineering/mvp_candidate_registry.json).
+
 # Current checkpoint: MASTER-07 (2026-09-15)
 
 1738 / 5175 reviewed; 612 normalized and canonicalized original IDs; 19 shared specifications with 193 source profiles. Seven gap proposals integrated at documentation scope. Implementation ready: 0.

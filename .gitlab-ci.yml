@@ -17,6 +17,8 @@ validate-specifications:
     - npm run master05:check
     - npm run master06:check
     - npm run master07:check
+    - npm run master08:check
+    - npm run readiness08:check
   artifacts:
     when: always
     paths:
@@ -37,4 +39,8 @@ validate-specifications:
       - audit/master-06/validation.json
       - audit/master-07/audit_progress.json
       - audit/master-07/validation.json
+      - audit/master-08/audit_progress.json
+      - audit/master-08/validation.json
+      - audit/master-08/implementation_readiness_registry.json
+      - docs/engineering/mvp_candidate_registry.json
     expire_in: 30 days
