@@ -1,0 +1,38 @@
+{
+  "pass": "MASTER-13",
+  "baseline": "audit/master-08",
+  "apply_deltas_in_order": [
+    "audit/master-09",
+    "audit/master-10",
+    "audit/master-11",
+    "audit/master-12",
+    "audit/master-13"
+  ],
+  "source_count": 5175,
+  "previous_reviewed_ids": 4641,
+  "new_reviewed_ids": 534,
+  "normalization": "Unchanged: inherit MASTER12; no new canonical owner/spec/profile/alias",
+  "review_scope": "Complete Level-A inventory and source evidence; not complete clinical, semantic or implementation audit",
+  "next_safe_action": {
+    "pass": "MASTER-13",
+    "unaudited_ids": [],
+    "next_exact_unaudited_ids": [],
+    "next_safe_action": "Close high-risk deep-review and canonical boundary queue without increasing REVIEWED",
+    "next_deep_review_ids": [
+      4312,
+      4347,
+      4734,
+      4965,
+      4903,
+      4904,
+      4905,
+      4906,
+      4907,
+      4332,
+      4333,
+      1300,
+      2000
+    ],
+    "all_originals_level_a_accounted": true
+  }
+}
