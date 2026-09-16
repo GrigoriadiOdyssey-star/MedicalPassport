@@ -1,0 +1,471 @@
+{
+  "pass": "MASTER-16",
+  "parent_commit": "397cd96fcd61849201bed30fcc9933bd0bf0a3b0",
+  "branch": "audit/master-pass-16",
+  "progress": {
+    "pass": "MASTER-16",
+    "baseline_commit": "397cd96fcd61849201bed30fcc9933bd0bf0a3b0",
+    "baseline_state": "audit/master-08/",
+    "mode": "APPEND_ONLY_DELTA",
+    "date": "2026-09-16",
+    "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+    "gitlab_writes": false,
+    "schema_version": 5,
+    "edition": "2026-09-15",
+    "parent_checkpoint": "397cd96fcd61849201bed30fcc9933bd0bf0a3b0",
+    "implementation_started": false,
+    "EXPECTED_SOURCE_MODULES": 51075,
+    "ORIGINAL_SOURCE_MODULES": 5175,
+    "ACCOUNTED_SOURCE_MODULES": 5175,
+    "NEW_GAP_MODULES": 0,
+    "REVIEWED": 5175,
+    "NORMALIZED": 2649,
+    "CANONICALIZED": 2649,
+    "IMPLEMENTATION_READY": 0,
+    "UNAUDITED": 0,
+    "REVIEW_PROGRESS": 100,
+    "NORMALIZATION_PROGRESS": 51.1884,
+    "CANONICALIZATION_PROGRESS": 51.1884,
+    "GAP_FILL_PROGRESS": 100,
+    "IMPLEMENTATION_READINESS": 0,
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+    "gap_scope": {
+      "identified_specification_gaps": 7,
+      "drafted": 7,
+      "validated_closed": 7,
+      "integrated": 7,
+      "validation_scope": "Documentation semantic/owner/integration gates only; clinical/runtime release gates remain open",
+      "clinical_validated": 0
+    },
+    "formulas": {
+      "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+      "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+      "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+      "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+      "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+      "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate",
+      "AUDIT_WORK_PROGRESS": "100 * (REVIEWED + NORMALIZED + CANONICALIZED) / (3 * 5175); equal-weight documentation work steps, not clinical readiness or time spent"
+    },
+    "duplicate_counts": {
+      "exact_groups": 3,
+      "semantic_groups": 1,
+      "partial_overlap_groups": 47,
+      "distinct_capability_groups": 1,
+      "unresolved_clusters": 1937,
+      "source_ids_closed": 0
+    },
+    "legacy_generations_confirmed": 0,
+    "legacy_marker_candidates": 27,
+    "high_risk_candidate_ids": 3608,
+    "critical_findings": 6,
+    "high_findings": 11,
+    "gitlab_write_status": "NO_WRITES",
+    "final_audit_ready": false,
+    "GAP_FILL_VALIDATED": 7,
+    "AUDIT_WORK_PROGRESS": 67.4589,
+    "NEWLY_REVIEWED": 0,
+    "NEWLY_NORMALIZED": 987,
+    "NEWLY_CANONICALIZED": 987,
+    "CANONICAL_SPECIFICATIONS": 28,
+    "UNIQUE_REQUIREMENTS_PRESERVED": 15184,
+    "SOURCE_FRAGMENTS_PRESERVED": 40152,
+    "GAP_FILL_INTEGRATED": 7,
+    "NEWLY_GAP_FILL_VALIDATED": 0,
+    "NEWLY_GAP_FILL_INTEGRATED": 0,
+    "PROFILES": 266,
+    "NEWLY_IMPLEMENTATION_READY": 0,
+    "REVIEWED_BEFORE_RUN": 5175,
+    "FAST_REVIEWED": 0,
+    "DEEP_REVIEWED": 0,
+    "NEEDS_DEEP_REVIEW": 0,
+    "DUPLICATE_CANDIDATES_FOUND": 0,
+    "PARTIAL_OVERLAPS_FOUND": 0,
+    "LEGACY_CANDIDATES_FOUND": 0,
+    "LEVEL_A_LIMITATION": "Deterministic full-body classification with evidence extraction, not complete clinical/semantic adjudication. Deep queue is counted separately and not implementation-ready.",
+    "KNOWN_DEEP_REVIEW_QUEUE": 3109,
+    "deep_queue_scope": "MASTER12 and MASTER13 only; older clinical findings remain inherited",
+    "NEW_REVIEW_SOURCE_FRAGMENTS_PRESERVED": 0,
+    "DEEP_QUEUE_RESIDUAL_NOTE": "Seven canonical boundaries resolved for documentation; clinical/integration gates remain open, no queue items silently removed.",
+    "NORMALIZED_BEFORE": 1662,
+    "CANONICALIZED_BEFORE": 1662,
+    "REMAINING": 2526,
+    "MVP_CORE": 7,
+    "MVP_OPTIONAL": 3,
+    "POST_MVP": 14,
+    "PHASE_2": 4,
+    "RESEARCH": 4,
+    "LONG_TERM": 1,
+    "CANONICAL_OWNERS_CREATED": 0
+  },
+  "readiness": {
+    "ready": 0,
+    "blocked": 28,
+    "without_spec": 5,
+    "path": "audit/master-16/readiness_registry.json"
+  },
+  "validation": [
+    {
+      "name": "MILESTONE40",
+      "passed": 160,
+      "failed": 0,
+      "path": "audit/master-16/validation/MILESTONE40.txt",
+      "sha256": "3ff6fc87b06d7ff800ce10fef5f13d6293919672abfb5837dd094121f7f71caa"
+    },
+    {
+      "name": "FINAL",
+      "passed": 166,
+      "failed": 0,
+      "path": "audit/master-16/validation/FINAL.txt",
+      "sha256": "4655b2d22a6fc2bd6fcd5108876125f5f15c5ce6118d17d00b37c6e39d1e94af"
+    }
+  ],
+  "targeted_clusters": 18,
+  "new_profiles": 18,
+  "new_owners": 0,
+  "new_canonical_specifications": 1,
+  "new_owner_distinct_requirement_strings": 4455,
+  "new_source_fragments": 13525,
+  "next_exact_cluster": {
+    "key": "diagnostic-and-assessment-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-LABORATORY",
+      "CAP-IMAGING",
+      "CAP-DEVICES",
+      "CAP-CDS",
+      "CAP-IMMUNIZATION"
+    ],
+    "ids": [
+      2008,
+      2131,
+      3692,
+      4158,
+      4321,
+      4322,
+      4324,
+      4396,
+      4405,
+      4565,
+      4611,
+      4745,
+      4746,
+      4755,
+      4767,
+      4796,
+      4939,
+      5021,
+      5089
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "audit/master-16/CONTINUE_FROM_HERE.md",
+      "sha256": "2f608b7c549e6a6277ea996bd683f98bdbe71b23d7babef34f10a16f98452bb6"
+    },
+    {
+      "path": "audit/master-16/DECISIONS_AND_LIMITS.md",
+      "sha256": "22cb7eac45d49438fe226dc86211fdd5b9754c4822f2e8029b4d98ee49bf5fb7"
+    },
+    {
+      "path": "audit/master-16/aliases_delta.json",
+      "sha256": "a31702ee7f3774b6e249dc8ad426a37d5d0399364c5240f09fe0d7a4ba7aa8c2"
+    },
+    {
+      "path": "audit/master-16/audit_ledger_delta.json",
+      "sha256": "945504f29ae57742d78efa9c8147c7e7e844cc42423f3b28596ea5182cd02d9f"
+    },
+    {
+      "path": "audit/master-16/audit_progress.json",
+      "sha256": "55c8e9dcdd371268ad47dd9376bfe125395cc600fd3ebaf66cb1d2353359c45c"
+    },
+    {
+      "path": "audit/master-16/batches/001.json",
+      "sha256": "0a6f6dfc021735ca0926253326259e5178119c7f9858063dbbcfcf1ee0ae92a7"
+    },
+    {
+      "path": "audit/master-16/batches/002.json",
+      "sha256": "354576e9f50c171413b4ea360dde9def43923b24fab032f5df6695e990383f03"
+    },
+    {
+      "path": "audit/master-16/batches/003.json",
+      "sha256": "7d5fe213f19f554394ffa114b53829dacc6a382a4fbd43e56f0dca8ae7f47754"
+    },
+    {
+      "path": "audit/master-16/batches/004.json",
+      "sha256": "2d5efe91be8ba64c2c902a974aa40ac197397c709f3e5a5e51c46378595defc8"
+    },
+    {
+      "path": "audit/master-16/batches/005.json",
+      "sha256": "1522969df1ee152010dae309445d9848ae5dda7cbe59c383a01aa456ff1ccb44"
+    },
+    {
+      "path": "audit/master-16/batches/006.json",
+      "sha256": "9aff15f5986d057311c872d6d9ae1eab59a664028b102fac07a8b7729df21237"
+    },
+    {
+      "path": "audit/master-16/batches/007.json",
+      "sha256": "fc2dcb2ed3aab2d39986a5976d2bfc989d937ff64f44fb2e293d01512a85846f"
+    },
+    {
+      "path": "audit/master-16/batches/008.json",
+      "sha256": "2c7c522cf59ec0ea54d97c36291eac9879da0fa583921cc422a19aefde45c9b8"
+    },
+    {
+      "path": "audit/master-16/batches/009.json",
+      "sha256": "3c14f8d39f18ae466527bc6e32e21b1b7c75909a6979630eddd58e16e7d8ea0c"
+    },
+    {
+      "path": "audit/master-16/batches/010.json",
+      "sha256": "e92f54fc4be7facf1f4c3fb91c1f8bbafa40c7a66aad9dd47b03202adb24ed8a"
+    },
+    {
+      "path": "audit/master-16/batches/011.json",
+      "sha256": "2e88cde37115f8ca96cdbf5177c626de9bf6163dd93a5deff3d913748d660d04"
+    },
+    {
+      "path": "audit/master-16/batches/012.json",
+      "sha256": "fde5e9e85a36a9f5dc26c3fd0f913bc9a7a1c47efb007e8ca71a419f8b4c9421"
+    },
+    {
+      "path": "audit/master-16/batches/013.json",
+      "sha256": "76f64552d596d832acd444a44de93c9fc39f25cade774a4e5c453d812789c266"
+    },
+    {
+      "path": "audit/master-16/batches/014.json",
+      "sha256": "5399dbad19056ea9b139b78c6489cf1b2d3edfe35ab107a5c6acea401a14245e"
+    },
+    {
+      "path": "audit/master-16/batches/015.json",
+      "sha256": "1bee5ff50429589e0da77a217b11537450ca7e69388b307ece6fad1d7e3d2f97"
+    },
+    {
+      "path": "audit/master-16/batches/016.json",
+      "sha256": "32cf4cdf6513f2bd2ac8eb68c7be722649573cb3459c51d017b88dd0fa0ce463"
+    },
+    {
+      "path": "audit/master-16/batches/017.json",
+      "sha256": "e720402f0fb54f6854e6af76c96f1cf2c59df1fb593f358acd27bb25fbad4945"
+    },
+    {
+      "path": "audit/master-16/batches/018.json",
+      "sha256": "8e22a0def306208e84214c5763d99c4043cd994e64f36a041f2278d1bc2d8fbd"
+    },
+    {
+      "path": "audit/master-16/canonical_delta.json",
+      "sha256": "a65c86c5e3904f50e8941c3b86b3b0b689e1165c0bf12008713a51a5e662eead"
+    },
+    {
+      "path": "audit/master-16/canonical_registry_delta.json",
+      "sha256": "8364b51abfb7100cb01367b9df05b49e155b4daecc01c667ed9948fbd51b6de8"
+    },
+    {
+      "path": "audit/master-16/cluster_checkpoint.json",
+      "sha256": "8b6b6b6f8be5ceb0af16f91cb2b8933cc7b8c7e090bf23734893ed21dd510d32"
+    },
+    {
+      "path": "audit/master-16/deep_review_queue_delta.json",
+      "sha256": "9f1cbc0340196973f0204bfc6b1af897bd774d959d7eedb2551c7a5c3de9ee00"
+    },
+    {
+      "path": "audit/master-16/dependency_graph_delta.json",
+      "sha256": "ab06e32ac0c07653b35a792d0489605c042529de37b49ef1ea7e1382de3f86ae"
+    },
+    {
+      "path": "audit/master-16/mvp_delta.json",
+      "sha256": "cbfb4c1c128acb70de3e25b3da73955b06f4d1eadbdaa02090e26c8cbc5a7d87"
+    },
+    {
+      "path": "audit/master-16/normalization_queue.json",
+      "sha256": "024e4a408c7d181ef041f0a577f9942b4e29be595e48ea1c1c44681fecc28b83"
+    },
+    {
+      "path": "audit/master-16/normalized_delta.json",
+      "sha256": "7924103bcb577193589b3d8731610d8bbcf4536662c3c0def0966f74827a7a10"
+    },
+    {
+      "path": "audit/master-16/readiness_preparation.json",
+      "sha256": "41b08a20484f5304ce8604f3604574281ed95058470e63081f370c36cc0238df"
+    },
+    {
+      "path": "audit/master-16/readiness_registry.json",
+      "sha256": "ed074eb432930cc504e98fb5fd1fad0ca01f0646dfee693315b3410c95381b62"
+    },
+    {
+      "path": "audit/master-16/requirement_migration_delta.json",
+      "sha256": "15426851fc1e833b33e2e435f68a858c3ae0ccc00a9eb548a3ce1f0c62768d94"
+    },
+    {
+      "path": "audit/master-16/semantic_comparisons.json",
+      "sha256": "3b5c68426ffc9a5bdf57383ecb47f73ab740e7c699388977c24f79d2cd008940"
+    },
+    {
+      "path": "audit/master-16/state_manifest.json",
+      "sha256": "4bba44b16ccbe65361fcb98f18d5fef40f10790bb48d6adfb85c251818c6e093"
+    },
+    {
+      "path": "audit/master-16/validation/FINAL.txt",
+      "sha256": "4655b2d22a6fc2bd6fcd5108876125f5f15c5ce6118d17d00b37c6e39d1e94af"
+    },
+    {
+      "path": "audit/master-16/validation/MILESTONE40.txt",
+      "sha256": "3ff6fc87b06d7ff800ce10fef5f13d6293919672abfb5837dd094121f7f71caa"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-001.txt",
+      "sha256": "7f940bf26c8ae8a3990f00f0037983f7e452caeffc5b2d085713beff59c750db"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-002.txt",
+      "sha256": "941e15c911283ae79343abdb8930be7bee8eea93f20065827feaad8b5a097c03"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-003.txt",
+      "sha256": "9e3328afdc14abe02d70e8c92fa056f2f5a41963ca23caf7c11b0fa74aa6d5c7"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-004.txt",
+      "sha256": "b0bfc86e1f0547be6c146338038a56536aaf332990e888fb364864bc0af5e944"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-005.txt",
+      "sha256": "9bed1fb265721ea569a924013076b3d9d5cc3853b7c2526976531b893589491c"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-006.txt",
+      "sha256": "2470dc2880ca7351afe07d40aca8e7dfe6384951f061fffbe1ecdfb6a776d4ba"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-007.txt",
+      "sha256": "bfdf0fe0bcb588fce43d1979aea3aaa8d9a1eca4a2f15a937ffbcdd0ef374fc5"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-008.txt",
+      "sha256": "12a6d71576823b258cbeda3b4ccc757749e33c4270dfe61e4607405c1b78467e"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-009.txt",
+      "sha256": "909d360b1a768eec0cd78d8d9b44ea81410068dba5543300fdee271e33908e10"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-010.txt",
+      "sha256": "d2ffe7b2b8c8b731566e5b475ed68229cc400e1028f93a968fadae9cd29e9f72"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-011.txt",
+      "sha256": "4dba1275ccd08456833b8552306ac7fd61f77e7273cc433ed6feec1f713a7fd9"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-012.txt",
+      "sha256": "b33bd092f2e42ca62d0bcaf589f24db1caedc0b1d7290a6eec5f3fe313214532"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-013.txt",
+      "sha256": "02ad94517912445003359e3da50dc3a94b836d54e23260bdabb2ca391e52dfc7"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-014.txt",
+      "sha256": "fb63b865569f9093aa2804d8e828e6737ed98a8598425cfd23a6497d90eba40a"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-015.txt",
+      "sha256": "355631ff859692cb578d6e1f154914630111fb216980a736b2afbfa629ca1a3f"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-016.txt",
+      "sha256": "89c9d67d2b334344cf59103a484b05855a7ba6be2677ef5fad720a98ace627e2"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-017.txt",
+      "sha256": "3a3dbab04254bd1a87e1c11c875ff395eed28e46c617d9defc4fd098456be6de"
+    },
+    {
+      "path": "audit/master-16/validation/cluster-018.txt",
+      "sha256": "61eac94d2fa6c86e7a9d6c5ecb405cf113ad48212dbb0d13fcdd9952e06adedb"
+    },
+    {
+      "path": "audit/master-16/validation/readiness.txt",
+      "sha256": "f82e8874577883dc86f8b90a0a522be1cde0cfa6ce0fad946811d40105c81f94"
+    },
+    {
+      "path": "audit/master-16/validation_summary.json",
+      "sha256": "d9469ee44cf771299dfb821aa922ee5c8c457fc28d8e9993959b387424aba11e"
+    },
+    {
+      "path": "config/master16.mjs",
+      "sha256": "38f75e8aaae2eb9bc924d356140735e3dbab61d684c57e1f5dfc2d2e4f494c4b"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-ALLERGY.md",
+      "sha256": "f56002a007ed7a7a17709884cb80a7920b953b711d6fc05b18b665cd13ca9ba3"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-CDS.md",
+      "sha256": "31b1fa9eea4e00c3333f8249c0ce93cafe2bdba14275f0b682eda2697c18d2b2"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-DEVICES.md",
+      "sha256": "46a47ca23de79b8965e59b2247b6855ef7223e205111f15ebdafa37d097840ea"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-IMAGING.md",
+      "sha256": "6c951518f0c7b53c91fbafa7429f24ea4bc3ae65e4f4acbb164d93a50e564a71"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-LABORATORY.md",
+      "sha256": "e076092b8b0901c67db574ecd87c53e3fbe933e0afb90b759f20825195bcdbda"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-PHARMACY.md",
+      "sha256": "67a034eb1b232d18e6ed3d4e6fd2cb4f22ad78049517e1bcbfc6375f570598fa"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-RESEARCH.md",
+      "sha256": "789c6f0a264aadd5365bc2e92a512791b1e6c68c4ff3c3c53bbe79184e063eb9"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-SPECIALTY.md",
+      "sha256": "7e6c68b134a1e8596236f73748d209f58989c06a6a38911676ef845e77d29b60"
+    },
+    {
+      "path": "docs/canonical/master16/CAP-TWIN.md",
+      "sha256": "2e6a5cc20282a2535e5127e66c41c12ece2b2630bb185ae779d444cd6467268a"
+    },
+    {
+      "path": "docs/engineering/audit-readiness16.md",
+      "sha256": "3e5b61fea29ee27380cfb0e319defe00f78d18f8e30b9d5e71005f82bdbffa18"
+    },
+    {
+      "path": "scripts/master16.mjs",
+      "sha256": "14499f2cdf1c02c9227be345caaea52ab038ecd59bda01fd96fbe35c5422d356"
+    },
+    {
+      "path": "scripts/readiness16-gates.mjs",
+      "sha256": "cd11dc890f200b38b8bdfa1e260abeb7c4e07f9df98ea66670414f4640170761"
+    },
+    {
+      "path": "scripts/readiness16.mjs",
+      "sha256": "1edac8b59ea360f2bde44dd1cc53ecb438dd6cfde43a949c1aa11bad269655d8"
+    },
+    {
+      "path": "scripts/validate-master16.mjs",
+      "sha256": "edf462d57282282f23aa9110de8818faf6479eb46a04e0a74c068cfe53883df7"
+    },
+    {
+      "path": "specs/audit-envelope16.fixtures.json",
+      "sha256": "038e9cff213f1edf2103cf9a66b5c38a81853d949c4eb98af02b7561ac6526c1"
+    },
+    {
+      "path": "specs/audit-envelope16.schema.json",
+      "sha256": "d2be27e7a30a060aaa858eea13367f1b2e66de6d8c21938a2f605bbb9d0dd282"
+    },
+    {
+      "path": "tests/master16.test.mjs",
+      "sha256": "1697848988d4c23821da198fdb2621866b956207169cc414bdcfa381d79839fb"
+    },
+    {
+      "path": "tests/readiness16.test.mjs",
+      "sha256": "ea54bd9365e32927c342ddfe8860ae07543ab29ef13c5cbd20a05bf20f2d6fc8"
+    }
+  ],
+  "gitlab_writes": false
+}

@@ -1,0 +1,37 @@
+{
+  "pass": "MASTER-16",
+  "next_exact_cluster": {
+    "key": "diagnostic-and-assessment-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-LABORATORY",
+      "CAP-IMAGING",
+      "CAP-DEVICES",
+      "CAP-CDS",
+      "CAP-IMMUNIZATION"
+    ],
+    "ids": [
+      2008,
+      2131,
+      3692,
+      4158,
+      4321,
+      4322,
+      4324,
+      4396,
+      4405,
+      4565,
+      4611,
+      4745,
+      4746,
+      4755,
+      4767,
+      4796,
+      4939,
+      5021,
+      5089
+    ]
+  },
+  "remaining_total": 2526,
+  "source_review_complete": true
+}

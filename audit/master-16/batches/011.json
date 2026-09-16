@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-16",
+  "batch": 11,
+  "family": "echocardiography-records",
+  "owner": "CAP-IMAGING",
+  "ids": [
+    2009
+  ],
+  "decision_sha256": "66a577ef1ef90c25d1d91d28c216fe7f5d66fb272c1f1c873e78732f5e87c6d3",
+  "source_hashes": {
+    "2009": "4951dd11b47483863243d4aadaa0b805c31a0ea50c7ff64571e45f6219175b7a"
+  }
+}

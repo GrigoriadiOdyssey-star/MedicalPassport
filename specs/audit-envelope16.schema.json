@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:edht:audit-envelope:1",
+  "title": "Proposed bounded Audit append/receipt/error; syntax does not establish authorization or durability",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "event_id",
+        "request_id",
+        "tenant_id",
+        "producer_id",
+        "producer_sequence",
+        "actor_reference",
+        "resource_reference",
+        "redacted_change_reference",
+        "action",
+        "outcome",
+        "policy_reference",
+        "occurred_at_ms"
+      ],
+      "properties": {
+        "kind": {
+          "const": "audit_append"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "producer_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "producer_sequence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "actor_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "resource_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "redacted_change_reference": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]*$"
+        },
+        "action": {
+          "enum": [
+            "READ",
+            "CREATE",
+            "UPDATE",
+            "DELETE_REQUEST",
+            "EXPORT_REQUEST",
+            "ACCESS_DENIED",
+            "CORRECTION"
+          ]
+        },
+        "outcome": {
+          "enum": [
+            "SUCCEEDED",
+            "DENIED",
+            "FAILED",
+            "PENDING"
+          ]
+        },
+        "policy_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "occurred_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "event_id",
+        "tenant_id",
+        "producer_id",
+        "receipt_id",
+        "ingest_sequence",
+        "committed_at_ms",
+        "body_sha256",
+        "chain_sha256",
+        "durable"
+      ],
+      "properties": {
+        "kind": {
+          "const": "audit_receipt"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "producer_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "receipt_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "ingest_sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "committed_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "body_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "chain_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "durable": {
+          "const": true
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "request_id",
+        "code"
+      ],
+      "properties": {
+        "kind": {
+          "const": "audit_error"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "code": {
+          "enum": [
+            "INVALID_ENVELOPE",
+            "UNAUTHENTICATED",
+            "DENIED",
+            "IDEMPOTENCY_CONFLICT",
+            "RATE_LIMITED",
+            "AUDIT_UNAVAILABLE"
+          ]
+        }
+      }
+    }
+  ]
+}
