@@ -1,0 +1,46 @@
+{
+  "targeted_atomic_clusters": 14,
+  "targeted_current_tests": 7,
+  "targeted_status": "PASS",
+  "full_validations": 4,
+  "final_tests_passed": 152,
+  "failed_validators": 0,
+  "inherited_historical_test_replacement_count": 1,
+  "resolved_development_error": "Checkpoint prose quoting error prevented parsing before any new batch was written; corrected and targeted/full validation passed.",
+  "scope": "Documentation/provenance/contract verification only; no clinical/runtime approval",
+  "reproduce": "node scripts/validate-master15.mjs",
+  "runs": [
+    {
+      "label": "MILESTONE20",
+      "status": "PASS",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "path": "validation/MILESTONE20.txt",
+      "sha256": "a7ce48b5addbc7a71e8fdbb21606e9cc46ec634916073e036785985e996c2e8d"
+    },
+    {
+      "label": "MILESTONE25",
+      "status": "PASS",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "path": "validation/MILESTONE25.txt",
+      "sha256": "bc459c666d74136e274715d6a479f995d5c1267f3f0fd1c5b279869649fd7b1f"
+    },
+    {
+      "label": "MILESTONE30",
+      "status": "PASS",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "path": "validation/MILESTONE30.txt",
+      "sha256": "f1db8d93522f8d1caa3073e3828e3d3b997b40492519c0a50504692c0b15eb98"
+    },
+    {
+      "label": "FINAL",
+      "status": "PASS",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "path": "validation/FINAL.txt",
+      "sha256": "572f27751c39e35be38df0a1e526f96f16f3be018edd09b2762691d3329ceaef"
+    }
+  ]
+}
