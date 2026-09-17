@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 48,
+  "family": "ai-assisted-laboratory-workflows",
+  "owner": "CAP-LABORATORY",
+  "ids": [
+    1413,
+    1747
+  ],
+  "decision_sha256": "b50f4dd147d93f136866ad441fb6636e3fa9afcd9fca87668ea7cf7f71d48465",
+  "source_hashes": {
+    "1413": "8e9b28f4fc8f66d2cdf5c495e70c26a51ae5905d1c23c08fb1757e6661f0625c",
+    "1747": "1a645740012459e90a1eda4b316b44eb7b1839b2347a7629f84d85d6c033d0de"
+  }
+}

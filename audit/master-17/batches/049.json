@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 49,
+  "family": "operational-ai-proposals",
+  "owner": "CAP-AI",
+  "ids": [
+    1408,
+    1978
+  ],
+  "decision_sha256": "ba03ff6463e8c314a23fb1fee4489603d967ba6634cbe74f89ede2aa90ada767",
+  "source_hashes": {
+    "1408": "7103ff9a49db8810d23a3f34cc65213dbd029df41a1466131683844f08c632c8",
+    "1978": "3d127cb60a3d48317898b725e365dd79e82a418bc7e08ed8ccbf5b890979d31c"
+  }
+}

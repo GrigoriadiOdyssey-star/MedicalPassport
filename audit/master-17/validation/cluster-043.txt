@@ -1,0 +1,16 @@
+✔ normalization adds only unique previously unnormalized IDs and never recounts review (1.1923ms)
+✔ all source fragments migrate and lost text, changed source and aliases fail closed (2061.6088ms)
+✔ deduplicated clauses preserve source applicability, line provenance and source-specific comparison (729.0934ms)
+✔ all new specifications extend existing owners and preserve earlier document hashes (69.8133ms)
+✔ dependency cleanup removes self and duplicate edges without inventing startup ordering (1.1612ms)
+✔ readiness preparation retains open clinical gates and does not expand the minimal MVP (2.2417ms)
+✔ MASTER16 and all earlier artifacts remain unchanged (498.7098ms)
+✔ Diagnostic exact IDs use evidence-based result, study and clinical-decision owners (0.8518ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6105.6964

@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 6,
+  "family": "diagnostic-imaging",
+  "owner": "CAP-IMAGING",
+  "ids": [
+    4745,
+    4796
+  ],
+  "decision_sha256": "7f9d87c43d02888b4faa92cd05a4546f7d260def2237fa466592aec80dbc8398",
+  "source_hashes": {
+    "4745": "6686861a23979cd36f67f958e1139d2cba4f05c3c1db4f1ed8c3d2dd14de63a5",
+    "4796": "bdf243865f1606344e30891cd06349ed3a8331f1d6f4dcb0add92d0221db91ab"
+  }
+}

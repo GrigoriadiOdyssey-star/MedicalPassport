@@ -1,0 +1,288 @@
+{
+  "pass": "MASTER-17",
+  "completed_batches": 51,
+  "normalized": 3660,
+  "canonicalized": 3660,
+  "targeted_tests": 8,
+  "failed": 0,
+  "batches": [
+    {
+      "path": "audit/master-17/batches/001.json",
+      "sha256": "1faca25817fab26b8c60358ca7808e60a4f1fe226a4413f58e832d8fe28c6c67"
+    },
+    {
+      "path": "audit/master-17/batches/002.json",
+      "sha256": "894451c149b6b3ed80d3a75d08610783b668875736f55d23dab8e2e77f17bbcb"
+    },
+    {
+      "path": "audit/master-17/batches/003.json",
+      "sha256": "2557f0a3866dde22743459a56d470223e8b035361deb35a40ad2c2b0c3fe28df"
+    },
+    {
+      "path": "audit/master-17/batches/004.json",
+      "sha256": "357a8a383b01f707b0d5218cc0d1df0558908281b1f5d6fa2c0fb1d87a2a62ae"
+    },
+    {
+      "path": "audit/master-17/batches/005.json",
+      "sha256": "2bff8b2aed0ab3f6630d114cd568b1bd87a44b9054aa5248cc8f526f70414f08"
+    },
+    {
+      "path": "audit/master-17/batches/006.json",
+      "sha256": "2026b3d056329b87f943817d471f3d75ecdf1e18dbb21e9582f9ec8d07785db1"
+    },
+    {
+      "path": "audit/master-17/batches/007.json",
+      "sha256": "aa8c70e0ccf3af260004d47ba829b538a152baf76eaaa900dd57c7c3bea294f1"
+    },
+    {
+      "path": "audit/master-17/batches/008.json",
+      "sha256": "e275751f10322e36ea3e7fc836507c6fafcb49809a27ed3686747d60eac08a81"
+    },
+    {
+      "path": "audit/master-17/batches/009.json",
+      "sha256": "f42e14b38581135a75a9e844e230bfb0c73dbbf63a16d56973a39f64993773f4"
+    },
+    {
+      "path": "audit/master-17/batches/010.json",
+      "sha256": "a261445a10df14890ca66f9cfe39afb167872741a72388d87092c3e7fa7c5bab"
+    },
+    {
+      "path": "audit/master-17/batches/011.json",
+      "sha256": "f95fd10360634fac595eae6562c13aac095f886eef5749f6220e29ad33b5d81b"
+    },
+    {
+      "path": "audit/master-17/batches/012.json",
+      "sha256": "f5ed5b035dd1be2684c64c42a6c9b323d6c14e67a47354f8f43355c107de43ce"
+    },
+    {
+      "path": "audit/master-17/batches/013.json",
+      "sha256": "a29d468baa7bb538e592d6a4227a6a74e0429c2e4e16c2b68643afb985ae03c2"
+    },
+    {
+      "path": "audit/master-17/batches/014.json",
+      "sha256": "dc8c0407f48a4d46d9bcb2435f62b22de6b79256ab3bd5858bf6c7dc29d8e29f"
+    },
+    {
+      "path": "audit/master-17/batches/015.json",
+      "sha256": "da92a2eb4b5b62b6515dd8f1cf88200ee3d54a04d7d557f85427c11ac0f981fc"
+    },
+    {
+      "path": "audit/master-17/batches/016.json",
+      "sha256": "fc3512f0b3cf46112bc8c2c46cf2ad09479b3b1699e3479ad8e3619836b9f8b7"
+    },
+    {
+      "path": "audit/master-17/batches/017.json",
+      "sha256": "e57181d45e6436499b3068213b51ceae64d749fb443ac7c10c92bb93b49d93f1"
+    },
+    {
+      "path": "audit/master-17/batches/018.json",
+      "sha256": "f44f65002b3135e49681377f9613c3af3840938fea78cabb80605f06467a3713"
+    },
+    {
+      "path": "audit/master-17/batches/019.json",
+      "sha256": "94919356976f5efaeb6c4a976e9e5b45191759274e78ed37341a49c8cfe3e414"
+    },
+    {
+      "path": "audit/master-17/batches/020.json",
+      "sha256": "fd20a8091488aff1b6de3ea3e8afad82a6ee6074f734986f298b7e5d6e343605"
+    },
+    {
+      "path": "audit/master-17/batches/021.json",
+      "sha256": "3426cdb4dc9fb3d48d744167cdd4100c7364aedcabbb16bc402ce48fd07070ae"
+    },
+    {
+      "path": "audit/master-17/batches/022.json",
+      "sha256": "3591ba4ccaf4566110dfb0b30b38d392a70413951d5c4951fa995a08c47daef6"
+    },
+    {
+      "path": "audit/master-17/batches/023.json",
+      "sha256": "cdcfc77c236e985d3eb944f2d6dfe93ed5785bf678269086def8da8d2a55f109"
+    },
+    {
+      "path": "audit/master-17/batches/024.json",
+      "sha256": "2b103b09baa4f071787ae2d5a12448fb2948850e951a2b1dd6bac7fe91665ff3"
+    },
+    {
+      "path": "audit/master-17/batches/025.json",
+      "sha256": "e606b8152cc025cd8195a555728eaef3704baef8d5cd4ab4915098c041e66866"
+    },
+    {
+      "path": "audit/master-17/batches/026.json",
+      "sha256": "342190c2b4995e19b5c0af7e4cc1bc62382152e6ef0ff9cca188f168b69b530b"
+    },
+    {
+      "path": "audit/master-17/batches/027.json",
+      "sha256": "4495d9ba2d9a6cddfd6994ad1d4274b1702e588c6a5e9691107d503f9100ee19"
+    },
+    {
+      "path": "audit/master-17/batches/028.json",
+      "sha256": "fc194d785c54ddc23b41505f6d106216cf7776c7ed2ad40292bc97afce110795"
+    },
+    {
+      "path": "audit/master-17/batches/029.json",
+      "sha256": "70871323438981c422fe12b6241c81ec7bd4a3a10d0ee8a58e3ca36bcbd28683"
+    },
+    {
+      "path": "audit/master-17/batches/030.json",
+      "sha256": "121a9009787804ae2fa3df86d0d8dec6ec48fae636abc80a65484470fe8fd259"
+    },
+    {
+      "path": "audit/master-17/batches/031.json",
+      "sha256": "752e219e32f8659bde9c03c87fd959349122e8e1d3eb8da85b19ee061cfa2781"
+    },
+    {
+      "path": "audit/master-17/batches/032.json",
+      "sha256": "c6c3b9e04a3799eb8ede890791f2aecbae9edfefe15f9b62e117d96f62a4d44d"
+    },
+    {
+      "path": "audit/master-17/batches/033.json",
+      "sha256": "10151c9e226cd48046ac4d5be11a81566f8dd7875f34453ab4c0e7ffaece8b33"
+    },
+    {
+      "path": "audit/master-17/batches/034.json",
+      "sha256": "bd8cd08ea2449369368511abb767aace2a5312f087789418fb33923def01d3b1"
+    },
+    {
+      "path": "audit/master-17/batches/035.json",
+      "sha256": "e824cf78929a21fd53b1f235e02f6f722a0d0b711812f8981d45bed6a51a8dde"
+    },
+    {
+      "path": "audit/master-17/batches/036.json",
+      "sha256": "a4a52ae23b83aa7b3d79866b32d452be27926203c18997be7db99d30c584f643"
+    },
+    {
+      "path": "audit/master-17/batches/037.json",
+      "sha256": "17cf92d1f5e349dac87dd9d96330dc9a77af8add0a6205a0e27b5877baf4c9ff"
+    },
+    {
+      "path": "audit/master-17/batches/038.json",
+      "sha256": "456c90b023fd662ad0fe1c4ff674549863de054b00911ba08657fe584a2d9f65"
+    },
+    {
+      "path": "audit/master-17/batches/039.json",
+      "sha256": "7bc307bba1707b2d4e8594f1bda2fbe424c42e33a3a767e5f31a16e42a8996d7"
+    },
+    {
+      "path": "audit/master-17/batches/040.json",
+      "sha256": "73dadfad44a3851bab83bb9dd078dc95b81c6a86e377b112928042e364777604"
+    },
+    {
+      "path": "audit/master-17/batches/041.json",
+      "sha256": "cec30aff7550a2e81dd129f52ef0ecd8e80e18a74f85637ef4c0e0e74d2d3451"
+    },
+    {
+      "path": "audit/master-17/batches/042.json",
+      "sha256": "e45374dee70eb4202598a90f54902275f1f3008039669b69b3c5889deb8ae5b4"
+    },
+    {
+      "path": "audit/master-17/batches/043.json",
+      "sha256": "c59ace747aa8351db51e18f840aa3c15449da43ea5f909c2cc09d61c30f661b2"
+    },
+    {
+      "path": "audit/master-17/batches/044.json",
+      "sha256": "26f7d9026ccd372693fe789a4c42f43b61ddba120ec21ad751369e9fd32e4d93"
+    },
+    {
+      "path": "audit/master-17/batches/045.json",
+      "sha256": "e4aeed453d85ae7b983cb0a8c20fb784b7f7e60628f03f041c42bbc5dfb79109"
+    },
+    {
+      "path": "audit/master-17/batches/046.json",
+      "sha256": "b7da1af1f3536816bf0833d96dd640ae76c10a8599351861924509df182e7895"
+    },
+    {
+      "path": "audit/master-17/batches/047.json",
+      "sha256": "38f42c0d37edb852a9717c325f87b3916888f4402737202aef91c2e5abc1a4fc"
+    },
+    {
+      "path": "audit/master-17/batches/048.json",
+      "sha256": "4e8948c4c963b25db1016dcddc70f1c314c657e3aa4e7f884f32421b5aa55ecc"
+    },
+    {
+      "path": "audit/master-17/batches/049.json",
+      "sha256": "b57504521fa4b1226729e078712a08e28310bb6e88bd1d64d514727cdfb336c8"
+    },
+    {
+      "path": "audit/master-17/batches/050.json",
+      "sha256": "5bfed49ece41f57dbe6994f56c67c4bcf9d4aeea476161ebc3e316d883a562b3"
+    },
+    {
+      "path": "audit/master-17/batches/051.json",
+      "sha256": "e6d0f659fbcf4018d56c1515b6689d038519f2009ab1867a7926645bd8679e96"
+    }
+  ],
+  "next_exact_cluster": {
+    "key": "ai-personalization-precision-and-specialty-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-AI",
+      "CAP-CDS",
+      "CAP-TWIN",
+      "CAP-RESEARCH",
+      "CAP-SPECIALTY",
+      "CAP-OPERATIONS"
+    ],
+    "ids": [
+      1157,
+      1169,
+      1207,
+      1245,
+      1266,
+      1274,
+      1283,
+      1289,
+      1291,
+      1310,
+      1311,
+      1328,
+      1334,
+      1381,
+      1384,
+      1521,
+      1522,
+      1524,
+      1532,
+      1535,
+      1538,
+      1584,
+      1588,
+      1597,
+      1608,
+      1619,
+      1631,
+      1632,
+      1633,
+      1638,
+      1662,
+      1666,
+      1668,
+      1670,
+      1671,
+      1673,
+      1674,
+      1675,
+      1676,
+      1678,
+      1690,
+      1701,
+      1711,
+      1720,
+      1782,
+      1786,
+      1788,
+      1791,
+      1842,
+      1849,
+      1851,
+      1854,
+      1856,
+      1864,
+      1902,
+      1907,
+      1935,
+      1952,
+      1955,
+      1989
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-17",
+  "batch": 4,
+  "family": "diagnostic-vaccination-planning",
+  "owner": "CAP-IMMUNIZATION",
+  "ids": [
+    4321,
+    4322,
+    4324
+  ],
+  "decision_sha256": "56ebe0632c3cae3b59bbbd984c09c2d2f1a55fbc731f494746bb53fed9597b0b",
+  "source_hashes": {
+    "4321": "3f87221f7965942c25cc96e834fdf2a2f67aeb5cfdc4883affe3c90ab3cfd362",
+    "4322": "823d19890025a5f56e11d37e7ca6655758adc7a7c746898138b3104f7743e225",
+    "4324": "0cc9ff421562f13390d9058c3f31b2ccf08a4aae610198cf45c8da35d0ac25b8"
+  }
+}

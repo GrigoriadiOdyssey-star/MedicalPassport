@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 45,
+  "family": "ai-assisted-emergency-coordination",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    1750,
+    1887
+  ],
+  "decision_sha256": "158df2d4d828a15ffd27fec63861c1c62637fe50003dfd749c2354c1449fa00f",
+  "source_hashes": {
+    "1750": "62903c693966cfae21ecf51359618d53e84eda4ac7db5720c51638f1dd5d1d30",
+    "1887": "4083ed8bbd0e758149d36eb8bfb437548c57b89d627cb85ea443a9a4ac2166b4"
+  }
+}

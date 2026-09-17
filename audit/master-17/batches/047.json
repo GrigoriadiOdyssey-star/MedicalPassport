@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 47,
+  "family": "ai-assisted-imaging-workflows",
+  "owner": "CAP-IMAGING",
+  "ids": [
+    1578,
+    1748
+  ],
+  "decision_sha256": "8c33382932633148bf46b787e02a34019836eb7e1f7596148cb0dd57b523a874",
+  "source_hashes": {
+    "1578": "bfea1fa454b59c331b4bc18ce0259cd8ad549be37c10ce5160238fba648c427a",
+    "1748": "c884ac3fc4ee3808c21a136ade768fc3c10d10b5d3964e6b3e2cc8f2dc5fb14e"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 37,
+  "family": "pharmacy-availability-profiles",
+  "owner": "CAP-PHARMACY",
+  "ids": [
+    152,
+    154
+  ],
+  "decision_sha256": "bddfff721b5167f762cb7cac44e9d3eebad6ada578f850a2405add2d6497fec9",
+  "source_hashes": {
+    "152": "26409d1fdd62ebf1a2f24f0f83cd97049371117bb2cbdd389a15b29f571516a0",
+    "154": "a492728c45ddda29c1a3a2c96ff7b333b64e2fd5391f83dfcf529e883642262f"
+  }
+}
