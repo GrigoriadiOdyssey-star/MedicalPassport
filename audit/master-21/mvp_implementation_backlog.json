@@ -1,0 +1,462 @@
+{
+  "items": [
+    {
+      "task_id": "M21-IDENTITY",
+      "owner": "CAP-IDENTITY",
+      "dependencies": [],
+      "purpose": "Implement bounded CAP-IDENTITY contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Verified adapter boundary and epoch/session/binding invalidation"
+      ],
+      "frontend": [
+        "Provider login handoff and explicit synthetic mode; ambiguous binding denies"
+      ],
+      "database": [
+        "IdentitySession, SubjectBinding, RoleAttestation, TrustConfig; current epochs invalidate old authority"
+      ],
+      "API": [
+        "Internal resolveSession / resolveRecipient ports; no public self-asserted identity"
+      ],
+      "events": [
+        "Synchronous trusted epoch updates; no new permission-grant event"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Expired session/role, unknown adult, wrong issuer trust epoch, recovery invalidation",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "No login/email/role string can establish patient ownership or clinical authority",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC identity/recipient registry; real verified provider adapter required before deployment",
+      "release_gate": [
+        "CAP-IDENTITY-B01-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-IDENTITY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-IDENTITY-B05-LEGAL_REVIEW_REQUIRED",
+        "CAP-IDENTITY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-IDENTITY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 1,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-DATA",
+      "owner": "CAP-DATA",
+      "dependencies": [
+        "M21-IDENTITY"
+      ],
+      "purpose": "Implement bounded CAP-DATA contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Exact source resolution, conflict quarantine and atomic version invalidation"
+      ],
+      "frontend": [
+        "Source origin/version/unknown provenance presentation"
+      ],
+      "database": [
+        "Immutable source versions and current pointer; source digest and patient/tenant binding"
+      ],
+      "API": [
+        "Internal readExact; no public import or clinical write"
+      ],
+      "events": [
+        "Existing SourceVersionChanged with null grant reference"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Wrong source patient, stale version, quarantine, conflicting identity, restore mismatch",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "No inferred patient match or silent selection of a corrected source version",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC source/policy/identity ports; actual SQL transaction and admission protocol required during implementation",
+      "release_gate": [
+        "CAP-DATA-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-DATA-B05-LEGAL_REVIEW_REQUIRED",
+        "CAP-DATA-B06-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-DATA-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 2,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-SECURITY",
+      "owner": "CAP-SECURITY",
+      "dependencies": [
+        "M21-IDENTITY",
+        "M21-DATA"
+      ],
+      "purpose": "Implement bounded CAP-SECURITY contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Deny-by-default barrier and shared transaction/admission protocol"
+      ],
+      "frontend": [
+        "Uniform denial/unavailable states; no resource existence leakage"
+      ],
+      "database": [
+        "Current identity/grant/source/policy snapshots and admission epoch; no persistent bearer ALLOW"
+      ],
+      "API": [
+        "Internal authorize and controlled release admission; MASTER09 envelope mapping retained"
+      ],
+      "events": [
+        "AccessAllowed/AccessDenied and immutable audit references"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Wrong role/purpose/tenant, revoked grant, stale source/policy/authority epochs, unavailable audit",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "No clinical bytes without current bounded admission and durable audit; revocation ordering proven in runtime tests",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC source/policy/identity ports; actual SQL transaction and admission protocol required during implementation",
+      "release_gate": [
+        "CAP-SECURITY-B01-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-SECURITY-B02-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-SECURITY-B04-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-SECURITY-B05-LEGAL_REVIEW_REQUIRED",
+        "CAP-SECURITY-B05-JURISDICTION_CONFIGURATION_REQUIRED",
+        "CAP-SECURITY-B05-CLINICAL",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 3,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-CONSENT",
+      "owner": "CAP-CONSENT",
+      "dependencies": [
+        "M21-SECURITY"
+      ],
+      "purpose": "Implement bounded CAP-CONSENT contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Atomic grant creation/withdrawal, idempotency and outbox; TTL from current policy"
+      ],
+      "frontend": [
+        "Recipient/purpose/expiry confirmation, withdrawal acknowledgement and limits"
+      ],
+      "database": [
+        "DisclosureGrant, GrantAuthority and dedupe; separate version/expiry/revocation"
+      ],
+      "API": [
+        "Existing create/revoke routes and MASTER17 closed envelopes"
+      ],
+      "events": [
+        "GrantCreated / GrantWithdrawn in existing transactional outbox"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Identical/conflicting retry, unauthorized withdrawal, expired TTL, regrant after source change",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "No reactivation of revoked grant; correction requires fresh authorization",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC source/policy/identity ports; actual SQL transaction and admission protocol required during implementation",
+      "release_gate": [
+        "CAP-CONSENT-B01-LEGAL_REVIEW_REQUIRED",
+        "CAP-CONSENT-B01-JURISDICTION_CONFIGURATION_REQUIRED",
+        "CAP-CONSENT-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-CONSENT-B05-LEGAL_REVIEW_REQUIRED",
+        "CAP-CONSENT-B06-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-CONSENT-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 4,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-AUDIT",
+      "owner": "CAP-AUDIT",
+      "dependencies": [
+        "M21-CONSENT"
+      ],
+      "purpose": "Implement bounded CAP-AUDIT contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Tenant-chain serialization, durable pre-release append and receipt snapshot"
+      ],
+      "frontend": [
+        "Attempt-versus-delivery wording and patient-only historical accountability"
+      ],
+      "database": [
+        "MASTER19 event/dedupe/receipt/outbox/tenant-stream model; source-selection READ audit extension"
+      ],
+      "API": [
+        "MASTER16 append and MASTER18 receipt query"
+      ],
+      "events": [
+        "Existing audit metadata; selection audit outside grant receipt projection"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Concurrent append/revoke, source selection before grant, crash/restore and receipt policy revocation",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "One durable effect per append retry; clinical grant revocation does not erase patient accountability",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC source/policy/identity ports; actual SQL transaction and admission protocol required during implementation",
+      "release_gate": [
+        "CAP-AUDIT-B01-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-AUDIT-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-AUDIT-B03-LEGAL_REVIEW_REQUIRED",
+        "CAP-AUDIT-B05-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-AUDIT-B06-LEGAL_REVIEW_REQUIRED",
+        "CAP-AUDIT-B06-CLINICAL",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 5,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-ALLERGY",
+      "owner": "CAP-ALLERGY",
+      "dependencies": [
+        "M21-DATA",
+        "M21-SECURITY"
+      ],
+      "purpose": "Implement bounded CAP-ALLERGY contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Cross-field validation and source correction state; no diagnosis or clinical write"
+      ],
+      "frontend": [
+        "UNKNOWN, NOT_ASSESSED, NO_KNOWN_ALLERGY and RECORDED remain distinct"
+      ],
+      "database": [
+        "Attributed assertion/verification/missingness fields in immutable source model"
+      ],
+      "API": [
+        "Internal readExact source semantics; original MASTER17 allergy view preserved"
+      ],
+      "events": [
+        "SourceVersionChanged under Data ownership; no inferred clinical event"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Contradictory null/state fixtures, missing reaction, unverified/confirmed/conflicting source",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "No absence inferred from missing data; no autonomous clinical change",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC source/policy/identity ports; actual SQL transaction and admission protocol required during implementation",
+      "release_gate": [
+        "CAP-ALLERGY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-ALLERGY-B05-LEGAL_REVIEW_REQUIRED",
+        "CAP-ALLERGY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-ALLERGY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+        "CAP-ALLERGY-B01-CLINICAL",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 6,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-PROFILE",
+      "owner": "CAP-PROFILE",
+      "dependencies": [
+        "M21-ALLERGY",
+        "M21-CONSENT",
+        "M21-AUDIT"
+      ],
+      "purpose": "Implement bounded CAP-PROFILE contract; retained full-owner extensions remain outside scope",
+      "backend": [
+        "Selection and clinician projection after current authorization and audit"
+      ],
+      "frontend": [
+        "Accessible escaped source text, explicit uncertainty, no clinical cache or sharing URL"
+      ],
+      "database": [
+        "Ephemeral permitted projection only; no new authoritative clinical table"
+      ],
+      "API": [
+        "POST /v1/allergy-selection and existing GET allergy-view"
+      ],
+      "events": [
+        "No new domain event; reuse access-attempt audit"
+      ],
+      "security": [
+        "Trusted server context, exact tenant/patient/resource/version/purpose checks",
+        "No source text, credentials or cursors in logs",
+        "Synthetic-only adapter excluded from production"
+      ],
+      "tests": [
+        "Cross-patient selection, unauthorized clinician preview, source XSS escaping and unavailable states",
+        "Negative and unavailable cases; no false claim of runtime acceptance from schema tests"
+      ],
+      "acceptance_criteria": [
+        "Only schema-declared source fields shown; no raw identifiers, credentials or cached clinical fallback",
+        "Production activation blocked while release gates remain open"
+      ],
+      "mock_external_dependency": "SYNTHETIC source/policy/identity ports; actual SQL transaction and admission protocol required during implementation",
+      "release_gate": [
+        "CAP-PROFILE-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-PROFILE-B05-LEGAL_REVIEW_REQUIRED",
+        "CAP-PROFILE-B06-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-PROFILE-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 7,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-AUDIT-QUERY",
+      "owner": "CAP-AUDIT",
+      "dependencies": [
+        "M21-AUDIT",
+        "M21-PROFILE"
+      ],
+      "purpose": "Patient-only historical receipt query",
+      "backend": [
+        "Snapshot paging, nonrecursive self-audit and opaque cursor binding"
+      ],
+      "frontend": [
+        "Attempt-versus-delivery wording and withheld actor state"
+      ],
+      "database": [
+        "Grant projection sequence and restore epoch"
+      ],
+      "API": [
+        "GET /v1/disclosure-grants/{id}/receipts; MASTER18 schema unchanged"
+      ],
+      "events": [
+        "RECEIPTS_VIEW metadata; no clinical payload"
+      ],
+      "security": [
+        "Current patient self-read remains independent of clinical grant revocation"
+      ],
+      "tests": [
+        "Revoked clinical grant allowed for patient; revoked receipt policy denied",
+        "Wrong tenant/role/expired cursor and audit failure"
+      ],
+      "acceptance_criteria": [
+        "No receipt leakage; no recursive audit; no claim of actual network delivery"
+      ],
+      "mock_external_dependency": "SYNTHETIC current identity/policy state",
+      "release_gate": [
+        "CAP-AUDIT-B01-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-AUDIT-B03-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-AUDIT-B03-LEGAL_REVIEW_REQUIRED",
+        "CAP-AUDIT-B05-EXTERNAL_INTEGRATION_REQUIRED",
+        "CAP-AUDIT-B06-LEGAL_REVIEW_REQUIRED",
+        "CAP-AUDIT-B06-CLINICAL",
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 8,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-RECOVERY",
+      "owner": "CAP-AUDIT",
+      "dependencies": [
+        "M21-AUDIT-QUERY"
+      ],
+      "purpose": "Prove shared durability and recovery",
+      "backend": [
+        "Quarantine restore and reconcile source/grant/authority/audit/dedupe/outbox/epochs"
+      ],
+      "frontend": [
+        "Unavailable display without stale clinical fallback"
+      ],
+      "database": [
+        "Real transaction/lock/unique-key migrations and fault injection"
+      ],
+      "API": [
+        "No-store errors and read barrier during outages"
+      ],
+      "events": [
+        "Idempotent replay; no grant reactivation"
+      ],
+      "security": [
+        "Independent checkpoints and admission invalidation"
+      ],
+      "tests": [
+        "Crash before/after commit, forked chain prevention, concurrent revoke/correction/read"
+      ],
+      "acceptance_criteria": [
+        "No acknowledged loss; no reopened read before reconciliation"
+      ],
+      "mock_external_dependency": "Synthetic data with real selected store during build",
+      "release_gate": [
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE"
+      ],
+      "estimated_dependency_order": 9,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    },
+    {
+      "task_id": "M21-E2E",
+      "owner": "CAP-PROFILE",
+      "dependencies": [
+        "M21-RECOVERY"
+      ],
+      "purpose": "End-to-end synthetic acceptance and production interlock",
+      "backend": [
+        "Verified release configuration boundary; no mock in production package"
+      ],
+      "frontend": [
+        "Accessible selection → grant → clinician view → receipt → withdrawal"
+      ],
+      "database": [
+        "Isolated synthetic reset and current version checks"
+      ],
+      "API": [
+        "All positive/negative workflow routes and closed errors"
+      ],
+      "events": [
+        "Outbox reconciliation checked across full journey"
+      ],
+      "security": [
+        "Wrong-identity/tenant/policy tests; log/cache leakage inspection"
+      ],
+      "tests": [
+        "Clinical state ambiguity fixtures",
+        "20 operations +20 queries/sec for 10min, p99 read <=1s and append <=500ms"
+      ],
+      "acceptance_criteria": [
+        "Measured synthetic journey and load evidence; external approvals remain separately required"
+      ],
+      "mock_external_dependency": "Only labelled synthetic fixtures; no real patient/provider connection",
+      "release_gate": [
+        "M21-PRODUCTION-RUNTIME-ACCEPTANCE",
+        "CAP-SECURITY-B05-CLINICAL",
+        "CAP-AUDIT-B06-CLINICAL",
+        "CAP-ALLERGY-B01-CLINICAL"
+      ],
+      "estimated_dependency_order": 10,
+      "status": "READY_FOR_SYNTHETIC_IMPLEMENTATION"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+// Contract-test double only. No network, durable store, real credentials, HTTP server or patient data.
+import fs from 'node:fs';import {validPort,fixture} from './ports21.mjs';import {checkDisclosureInvariants} from './disclosure17-invariants.mjs';
+const disclosure=JSON.parse(fs.readFileSync(new URL('../specs/disclosure-contract17.schema.json',import.meta.url)));
+export function createSandbox(input=fixture){const f=structuredClone(input);if(f.mode!=='SYNTHETIC'||f.policy?.mode!=='SYNTHETIC')throw Error('MOCK_FORBIDDEN_OUTSIDE_SYNTHETIC');
+ for(const object of [f.patient,f.clinician,f.binding,f.authority,f.policy,f.source,f.grant])for(const [key,value]of Object.entries(object))if(value!==null&&(/(_id|_reference)$/.test(key))&&!String(value).startsWith('syn_'))throw Error('NON_SYNTHETIC_IDENTIFIER');
+ const error=code=>({kind:'port_error',schema_version:1,code,request_reference:'syn_request'});
+ const context=session=>{if(!f.identity_available)return error('UNAVAILABLE');const c=[f.patient,f.clinician].find(c=>c.session_reference===session);if(!c||!validPort(c)||c.verified_at_ms>f.now_ms||c.expires_at_ms<=f.now_ms||c.trust_epoch!==f.epochs.trust||c.session_epoch!==(c.actor==='PATIENT'?f.epochs.patient_session:f.epochs.clinician_session))return error('UNAUTHENTICATED');return structuredClone(c);};
+ const bindingOk=()=>validPort(f.binding)&&f.binding.status==='ACTIVE'&&f.binding.adult_status==='VERIFIED_ADULT';
+ const decision=(session,action)=>{const c=context(session);if(c.kind==='port_error')return {decision:c.code==='UNAVAILABLE'?'UNAVAILABLE':'DENY'};
+  if(!f.policy_available||!f.audit_available||!validPort(f.policy))return {decision:'UNAVAILABLE'};
+  const g=f.grant;if(!checkDisclosureInvariants(disclosure,g)||!bindingOk()||c.tenant_id!==f.policy.tenant_id||c.tenant_id!==g.tenant_id||f.binding.tenant_id!==g.tenant_id||f.binding.patient_id!==g.patient_id)return {decision:'DENY'};
+  if(action==='audit.receipts.read_self'){return {decision:c.actor==='PATIENT'&&c.subject_id===f.binding.subject_id&&c.patient_id===g.patient_id&&c.binding_version===f.binding.binding_version&&f.policy.receipts_enabled?'ALLOW':'DENY'};}
+  if(action!=='allergy.read')return {decision:'DENY'};
+  if(!f.source_available)return {decision:'UNAVAILABLE'};
+  const s=f.source,a=f.authority;
+  const allow=c.actor==='CLINICIAN'&&validPort(s)&&validPort(a)&&f.policy.admission_enabled&&g.status==='ACTIVE'&&g.created_at_ms<=f.now_ms&&g.expires_at_ms>f.now_ms&&g.expires_at_ms-g.created_at_ms<=f.policy.max_grant_ttl_seconds*1000&&g.creator_subject_id===f.binding.subject_id&&g.purpose===f.policy.purpose&&g.policy_version===f.policy.policy_version&&g.recipient_role_reference===c.role_reference&&s.state==='CURRENT'&&s.tenant_id===g.tenant_id&&s.patient_id===g.patient_id&&s.record_id===g.record_id&&s.record_version===g.record_version&&a.tenant_id===g.tenant_id&&a.grant_id===g.grant_id&&a.patient_binding_version===f.binding.binding_version&&a.recipient_role_version===c.role_version&&a.policy_epoch===f.policy.policy_epoch;
+  return {decision:allow?'ALLOW':'DENY'};
+ };
+ return {resolveSession:context,resolveRecipient(role){const c=context(f.clinician.session_reference);return c.actor==='CLINICIAN'&&c.role_reference===role?c:error('NOT_FOUND');},readExact(tenant,patient,record,version){if(!f.source_available)return error('UNAVAILABLE');const s=f.source;return validPort(s)&&s.state==='CURRENT'&&s.tenant_id===tenant&&s.patient_id===patient&&s.record_id===record&&s.record_version===version?structuredClone(s):error('NOT_FOUND');},authorize:decision,
+  project(session){const d=decision(session,'allergy.read').decision;if(d!=='ALLOW')return error(d==='UNAVAILABLE'?'UNAVAILABLE':'NOT_FOUND');const s=f.source;return {kind:'allergy_view',schema_version:1,grant_id:f.grant.grant_id,record_id:s.record_id,record_version:s.record_version,assertion_state:s.assertion_state,verification_state:s.verification_state,freshness:s.freshness,source_reference:s.source_reference,reported_substance:s.reported_substance,reported_reaction:s.reported_reaction,receipt_reference:f.receipt_reference};},
+  selectOwned(session,request){if(!validPort(request)||request.kind!=='selection_request')return error('INVALID_REQUEST');const c=context(session),s=f.source;
+   if(!f.source_available||!f.policy_available||!f.audit_available)return error('UNAVAILABLE');
+   if(c.actor!=='PATIENT'||!bindingOk()||!validPort(f.policy)||!f.policy.admission_enabled||!validPort(s)||c.tenant_id!==s.tenant_id||c.tenant_id!==f.binding.tenant_id||c.tenant_id!==f.policy.tenant_id||c.patient_id!==s.patient_id||c.patient_id!==f.binding.patient_id||c.subject_id!==f.binding.subject_id||c.binding_version!==f.binding.binding_version||s.state!=='CURRENT'||request.record_id!==s.record_id||request.expected_record_version!==s.record_version)return error('NOT_FOUND');
+   return {kind:'selection_view',schema_version:1,record_id:s.record_id,record_version:s.record_version,source_reference:s.source_reference,assertion_state:s.assertion_state,verification_state:s.verification_state,freshness:s.freshness,reported_substance:s.reported_substance,reported_reaction:s.reported_reaction,receipt_reference:f.receipt_reference};},
+  futureConnector(name){return error(['FHIR','LAB','PHARMACY','NOTIFICATION'].includes(name)?'NOT_IN_MVP':'INVALID_REQUEST');},production_ready:false};
+}

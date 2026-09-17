@@ -1,0 +1,10 @@
+{
+  "pass": "MASTER-21",
+  "targeted_passed": 12,
+  "failed": 0,
+  "full_validation_rerun": false,
+  "owner_dependency_graph_recomputed": false,
+  "scope": "New closed ports, synthetic adapters, clinical/release dispositions and scoped engineering readiness; not a running application or clinical approval",
+  "prior_validated_baseline": "audit/master-20/validation_summary.json",
+  "log_sha256": "929ac922909083ba1f479c7db90f290f06eb0d12c265e900cada26385aa5f20d"
+}
