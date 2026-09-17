@@ -1,0 +1,23 @@
+{
+  "pass": "MASTER-19",
+  "batch": 64,
+  "family": "general-longitudinal-specialty-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    111,
+    149,
+    239,
+    244,
+    284,
+    296
+  ],
+  "decision_sha256": "573d4b2f75ef849657dfd9403666a826e216bfafde29b77d66afa8bb35b0a37a",
+  "source_hashes": {
+    "111": "f45ea80fc110e6aae47fa44916e0e78183203031d8df66d2a611f98679e657a3",
+    "149": "232a32242f43a7b9e3f89d45fdd3b3a0e15a052899a09ed7c736ef08c51262c0",
+    "239": "6eb8e7b43f82fcfe0d6b0d40098ed32fad5edb8e2c7a5fca0448b5d2eeb7a969",
+    "244": "38c4276e3b0720c884e6f219d86369f280eee4a1cb9bc9af10256e267c344282",
+    "284": "1c8c649b13e343e6f30463d3f7ab9f65240fe18abe6efb7a2d1b71fee2832222",
+    "296": "d26e538d680b0aca17441226a5e5f14148ca2e08fcfab17c6323f9bb339a71c7"
+  }
+}

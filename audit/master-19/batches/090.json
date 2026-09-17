@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 90,
+  "family": "core-emergency-handoff",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    265,
+    267
+  ],
+  "decision_sha256": "4e08c12d6380b4f5e1e8f07d394497b54f26486c3c79442a7118619d8aae733b",
+  "source_hashes": {
+    "265": "bbfef8cbbee2337e8485edea371949d09a99b654266d6d9a99057996b73d2eda",
+    "267": "1cdffe45267ebed6735758107197e7d36cee2862c10c190721ce7941f930c3a7"
+  }
+}

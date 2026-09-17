@@ -1,0 +1,33 @@
+{
+  "pass": "MASTER-19",
+  "batch": 53,
+  "family": "gynecological-longitudinal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    699,
+    700,
+    701,
+    702,
+    704,
+    707,
+    709,
+    710,
+    714,
+    717,
+    720
+  ],
+  "decision_sha256": "4783bfda05d80deecbb0854a00678e1d2950e59d6a5d85e2eefa6fd051dceffe",
+  "source_hashes": {
+    "699": "fa38c5c0a45cf54fa4204a050fb7711f516549d43c59dba099b005a1d4a9157e",
+    "700": "bf8ec4bf3e2267a993523e7d4206b2dd45d42d75d4ad9cc553768938b8b2cb1a",
+    "701": "b84a4b0e7ab2daf188f18016a842405fcbd043e079d20b083e782927d4e51f43",
+    "702": "435f5f3f1d64bb935692a19c74b42e4cb558caec4053e256e215ec68b903e684",
+    "704": "91611334fdfb83732f0a5707d7ace655ccdd4fa18a5c87e54cd1e80f018015ba",
+    "707": "2dfc21afeb602179915f434f3bb5583112776701adcbf325ee1324355fac6992",
+    "709": "90494cb2a5c65562bf79a201953fb6d5e1fc9ceb7a12ffd3545894084ce4698e",
+    "710": "bedb90c1fc0bdc179c36f4eeb4ea8ae547de963d164683313272683e6ccbd86e",
+    "714": "3dd19a386de2942379ebc730878c60d69ae7d7f9fca4941e4b3b8b02cecf0500",
+    "717": "62c5e96ea99290518e54f0c9692c8c7759cf105e815cda0ca40dfa4f65fe31d2",
+    "720": "fd86d77655b0c5fec0f6c5a149ef85c6382bc7dbd5a311037774cd0e8da5f578"
+  }
+}

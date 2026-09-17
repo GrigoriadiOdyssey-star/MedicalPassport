@@ -1,0 +1,16 @@
+✔ normalization adds only unique previously unnormalized IDs and never recounts review (1.1194ms)
+✔ all source fragments migrate and lost text, changed source and aliases fail closed (1855.1253ms)
+✔ deduplicated clauses preserve source applicability, line provenance and source-specific comparison (886.9916ms)
+✔ all new specifications extend existing owners and preserve earlier document hashes (124.2963ms)
+✔ dependency cleanup removes self and duplicate edges without inventing startup ordering (1.3289ms)
+✔ readiness preparation retains open clinical gates and does not expand the minimal MVP (2.6056ms)
+✔ MASTER18 and all earlier artifacts remain unchanged (251.7094ms)
+✔ pediatric drug, simulation and consent mappings retain explicit human authority (0.7645ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5617.9932

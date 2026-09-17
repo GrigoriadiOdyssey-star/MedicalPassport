@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 36,
+  "family": "laboratory-collection-booking",
+  "owner": "CAP-APPOINTMENTS",
+  "ids": [
+    366
+  ],
+  "decision_sha256": "55b9cf0a3f07b3eb09df149b3fb42933e4e67b85a115ccc239642b166ebc9a8b",
+  "source_hashes": {
+    "366": "fd0cbfbe5439aadbc007eb1f8387062a49f059f6215fcd72e543401b66f8972d"
+  }
+}

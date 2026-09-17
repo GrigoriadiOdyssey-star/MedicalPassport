@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 91,
+  "family": "core-pharmacy-directory-reservation",
+  "owner": "CAP-PHARMACY",
+  "ids": [
+    19,
+    398
+  ],
+  "decision_sha256": "7a806ec47e0deb4877ae1ed3d80b285806f673bb9aa4744ad7c66ce0a5f5c46b",
+  "source_hashes": {
+    "19": "a398c17dd759d5b54efdf4169b97d6750d70fa9d1850bcacdc8f26623d372ad6",
+    "398": "4574df0ac232783e0e995eb704ab475c4ad1940e915324fabb137d2bbb3ed023"
+  }
+}

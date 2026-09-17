@@ -1,0 +1,27 @@
+{
+  "pass": "MASTER-19",
+  "batch": 10,
+  "family": "pediatric-derived-ai-analysis",
+  "owner": "CAP-AI",
+  "ids": [
+    4004,
+    4029,
+    4298,
+    4356,
+    4386,
+    4447,
+    4522,
+    4847
+  ],
+  "decision_sha256": "42dcce8a27904345533310cd065d7225f8ca4ee9024255dfe8ffaf3ff9da5683",
+  "source_hashes": {
+    "4004": "55f836032e48b32ad924bee1c44cd610d23eaa30cd79d6eba1c4a92a8ce703ae",
+    "4029": "590295c362e571823c5ec5c73466e40bdbabc361c796c680a72612fc2c9c421b",
+    "4298": "eb0012603a9803138b8b2d5d0003ce0d98c4cd4f53460759bbc15aa43af3382b",
+    "4356": "c6ecb12770bb9bac677ede1d5c3ae817651c35a7121afbd5004d90cd2efa127e",
+    "4386": "50e7ac87ab06bd677aace9598dc6c2b5a11b28a5d4c524197940100e797c3267",
+    "4447": "e9f6acac1062a47fa0783fad398a80149cc253567d8a5e8ca39c02c3e7403c87",
+    "4522": "2f7db821bd7205575f67f6bd1346384fb6a72421e97605690df7c2258e359dc7",
+    "4847": "1eda4b2c260a22d0a381e12d9f9bf3cedaed5b80e70020a74bcdf2cd2c374275"
+  }
+}

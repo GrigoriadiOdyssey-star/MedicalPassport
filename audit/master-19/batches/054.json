@@ -1,0 +1,33 @@
+{
+  "pass": "MASTER-19",
+  "batch": 54,
+  "family": "pediatric-growth-and-metabolic-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    148,
+    825,
+    833,
+    834,
+    840,
+    848,
+    865,
+    873,
+    880,
+    929,
+    932
+  ],
+  "decision_sha256": "80e03b7a549328400c19b38995865b58541c935a09e2e89aa2ac2b825451d3b7",
+  "source_hashes": {
+    "148": "7b6a441ca305d217b2dfe9f0852d5e26d8c5170fa43a543839a39bb8365c2ba7",
+    "825": "ad28d59eac4af087f14744057d93ef54f6bc70d5deacc61cd00aa053c959c7f1",
+    "833": "7fef6beaf40c6e7d9d69d9881be44f777204a109654d31f7bc7bcec600e7bac4",
+    "834": "8800037e7ead2ee8a82530af2a7538ab4077f13735d1b9aa17ec6478a7fc49ac",
+    "840": "e050590a1668a2b5c9c2464e1dc2569a5b6783b234067021c18314ed22fa9433",
+    "848": "9e624d270b2bfe48a9f3c8db429cd605cb8d6dc2028150e425e4dac69da2cdb2",
+    "865": "645186ea39afa2fa9196e4aab8b2a15dc1d949ace0d535926a17edf6d8c89575",
+    "873": "a3b062ef888cd78d8657d0965d66904e89ac8d9cc9edaa5729a47b14738a8087",
+    "880": "203450009f585ff4b2f43ecf3664d6de2fcfec916e70b5732d489c2fa2f3d557",
+    "929": "35aba7eba84fcffe132ee589f2b400414a6c5eee1e85c6833e7aff7d3f564757",
+    "932": "a3fb8ba727622e3616e0f7cc3710da778a333c79a9460935a468c1ac74130442"
+  }
+}

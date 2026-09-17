@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 67,
+  "family": "remaining-financial-estimates",
+  "owner": "CAP-COVERAGE",
+  "ids": [
+    206,
+    458,
+    478,
+    497
+  ],
+  "decision_sha256": "bcf5da42ac70aefe5272298a66f9ee01339e529ac2764cd10c1a685154baa142",
+  "source_hashes": {
+    "206": "9ff10e35a9b01e518d510d03116135cd1fcf220c5470e176a160ce1175ed1bea",
+    "458": "20fe47b0907aa00e4474ce701a41c94a36ce740c0d41778c575c6ac4dfbdc4fb",
+    "478": "9afcbae05786fba0437edc65c4e9dc71fe94e0a15a627131045c54c908e693e3",
+    "497": "e47d1548fd5c3930c1d17370d7f8b96a5e00185ffd0e10b389cd562690a5019d"
+  }
+}

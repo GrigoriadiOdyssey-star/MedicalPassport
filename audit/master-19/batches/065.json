@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-19",
+  "batch": 65,
+  "family": "dental-longitudinal-specialty-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    445,
+    451,
+    452,
+    454,
+    460
+  ],
+  "decision_sha256": "7531fa0029931e4ea358ec8bba90c0769b43badc9840c87eb2995d368b3da450",
+  "source_hashes": {
+    "445": "d189587d0aabe1ec593e987eae3322a0c8fb293c9becdacdf7520aeadad1aadc",
+    "451": "ec947211913b9f726a0ef92839fd1c6a28b0e46e7b222f149eb9ce5cd65ddf61",
+    "452": "4d1b70a43f934a7307489bdb7774e89bf69264d755c54f932eb05c313e357979",
+    "454": "00d1ed489a67a492c2d032af4510f8026de4071f9c949811caafee653ddaa952",
+    "460": "fd977abdb5a374225ce375bce403f59bd32cf8b2dc296fa248203a23887a979a"
+  }
+}

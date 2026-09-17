@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 89,
+  "family": "canonical-data-model-foundations",
+  "owner": "CAP-DATA",
+  "ids": [
+    5,
+    52
+  ],
+  "decision_sha256": "089510ed36d6b585d49ff4c1448f7c50c7625e1afcb385d0b090023a5d6161c6",
+  "source_hashes": {
+    "5": "0cfeb474772fe1d3c4a2ac68e59661aaf26fceb0128498e9d7d2d8ced38b1bb2",
+    "52": "8fa7b132e6919651f65e8dd89350e02bb96ce5595924e03a3a5fbada631c207c"
+  }
+}

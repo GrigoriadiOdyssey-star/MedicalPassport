@@ -1,0 +1,23 @@
+{
+  "pass": "MASTER-19",
+  "batch": 63,
+  "family": "cardiopulmonary-longitudinal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    505,
+    513,
+    520,
+    588,
+    597,
+    600
+  ],
+  "decision_sha256": "27f43b1358d7be8ce6a8ea9ef936965227a426bfaaf023265ab8802a018a847b",
+  "source_hashes": {
+    "505": "ac3c32946ef24b4162636db7830de101ccb05dc02dce1841dfea15a291bcbcd7",
+    "513": "fc09c8e9e6167f78b42e7d0abdb5f942f4afae238f6ab09886cc4ef487bd7bc3",
+    "520": "7692f89e7692f1bc26c88673023aa58921bf2f6907771feeb35edf329bdab73e",
+    "588": "420a2773092735a2231c80c95a6bb455a0af5eda4a021cba54293a171f658b4d",
+    "597": "1fbfce955173891e036fce86e621a09d70f8dca6d17d6b130e0e9088b73a3720",
+    "600": "f6ad36d54a2a76da9e131bb6c9c19249df11e70341e0d4e1754315d22d306338"
+  }
+}

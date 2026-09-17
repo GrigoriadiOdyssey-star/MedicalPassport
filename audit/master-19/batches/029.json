@@ -1,0 +1,33 @@
+{
+  "pass": "MASTER-19",
+  "batch": 29,
+  "family": "source-physiological-study-archives",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    506,
+    527,
+    528,
+    538,
+    551,
+    585,
+    658,
+    744,
+    845,
+    851,
+    885
+  ],
+  "decision_sha256": "782c9707830b1d65cf3220e4adda8f13c7a799748cd45dad4aa5869162509ad7",
+  "source_hashes": {
+    "506": "fde353327aad148fe629b9f022c5ac2da0e8fb27e88bb87d480f53637f4bf7f7",
+    "527": "3c0dcfa7483cd7e6c08f4c4ac8f3e2a33e464e3fa6175d6f6d07c3a37d607041",
+    "528": "9f049b886cfb899fd54c301352561a5f2c03c1d67ecbb4c1ae86339252faa16f",
+    "538": "d3c42747d1474e39973483c6f875296812940fba81af71fec363ecb832013800",
+    "551": "00bd185e3bf1211ecf8c8f1a427d7e2651d73fc860036577689d0a1fe0b1b26e",
+    "585": "860971b713ad0a5e64dbd6597d5aa36e747630c1074ea5d37635d10fd5720a7a",
+    "658": "5080071d45eebc45194ab9bbad1e75eeca4fc664a54370815211adb28681f4bd",
+    "744": "931ed24a3adaa67d9559b99ca597e8843ccdb4bdf2d6dcdb33f91aacfb0882f5",
+    "845": "c1c02dd955a1d9fadb984c72b7132e3ad2433d7b0149f68c0832d2534e8f5476",
+    "851": "a1454b64123a16230792966d6f6a8d866351915cebcbe8ddfa63e24269409577",
+    "885": "884acffb5ee97584946deb79021f2dc961fe4655e54f016189cd637eb1ae2a4a"
+  }
+}

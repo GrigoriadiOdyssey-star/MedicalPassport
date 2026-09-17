@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 20,
+  "family": "pediatric-vaccine-exchange",
+  "owner": "CAP-INTEROP",
+  "ids": [
+    4344,
+    4349
+  ],
+  "decision_sha256": "b39c28155832a9589a0f57c43dcfae164ed1819d9b3dcd0e19edd98679e5cd6f",
+  "source_hashes": {
+    "4344": "bcdd48bc4d73af95081dafe71ca6002f408c674af5520c9df61bf67e85c7be65",
+    "4349": "2bc8235c183fb23b3b776278efa2a3f5ccd3f3d04f31e37b48f445aacdb0e6dc"
+  }
+}

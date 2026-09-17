@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-19",
+  "batch": 86,
+  "family": "core-identity-and-binding",
+  "owner": "CAP-IDENTITY",
+  "ids": [
+    101,
+    102,
+    103
+  ],
+  "decision_sha256": "b0dd1caf9b00df49e94c3c3a447a0f51924e5412662db6718619f799d8a3d751",
+  "source_hashes": {
+    "101": "e2424a00af94f9d24845026f782f92e1a9ab196bc3da507160fbfa3120bda08f",
+    "102": "02e00f0b8e54aa725067c28e2c8f285264e35153b62971e1dd47245eced53ae3",
+    "103": "8699b0470885495b04fb90fb862fea4bd4b4a4d97d4aaab76521fea3773f37dd"
+  }
+}

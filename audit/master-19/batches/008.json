@@ -1,0 +1,33 @@
+{
+  "pass": "MASTER-19",
+  "batch": 8,
+  "family": "pediatric-medication-and-precision-safety",
+  "owner": "CAP-MEDICATION",
+  "ids": [
+    4095,
+    4391,
+    4413,
+    4428,
+    4621,
+    4896,
+    4917,
+    5016,
+    5056,
+    5082,
+    5134
+  ],
+  "decision_sha256": "3fb560b0f61daa3ac9cab90058c343ecf61da83b1611cba0bac66d6cfd6c5cc5",
+  "source_hashes": {
+    "4095": "f4ba8bb6a2187bc702a5ff25efdd673d05204abd30b52fb8bf17d4f7140d10bc",
+    "4391": "8d7a69a35be91cbbfc9b84b66802ae22f2c1e738df861a43c25024f1c23916a3",
+    "4413": "e9c48d5d5a1273d2eccd844de33274513653a4b2659b4c5ceb9ef2f470b6efc0",
+    "4428": "c90fcdd667925352f46785caa2e028606c7242893aff6150982f54afd9fb3932",
+    "4621": "551971395241da00d66dfdabfcbd9d3af1d0d409626161e475e70ae25cfc98fb",
+    "4896": "6f1492e112bb5141fccc3d439662a0a07b5371166e2127b3a607257b5839f3c0",
+    "4917": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+    "5016": "bdd042e9661f37e92931b48b21263ce3063fe414ece54c6fe5a79f1439ea1b16",
+    "5056": "f5354a0edb24a73827e7e24638d432671367bf944fc0bd7feed2123a06f9c6b2",
+    "5082": "e78df222c0f8bcc82fd2819327ff3730789a0ed4c751b247bb6158b83eec2056",
+    "5134": "27ee5058d9f4b633b729a9718a049a56fa3812cbff3ad70802cbcba8f08bb527"
+  }
+}

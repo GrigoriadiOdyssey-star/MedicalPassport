@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 71,
+  "family": "core-allergy-assertions",
+  "owner": "CAP-ALLERGY",
+  "ids": [
+    10,
+    59,
+    110,
+    294
+  ],
+  "decision_sha256": "0a29b3d698bac1462e818497983999e0ddba6950a854b27f0f6accda84d5f12e",
+  "source_hashes": {
+    "10": "eb4ec13c02b6c513d1afff7d5a50dabc92f74b95f2bd1261711105d19794a1a4",
+    "59": "0baecdd726eb8c4a153abfd9c19c7fbe1b7cea07257f0fc2b62a860489581c10",
+    "110": "24efb6090b5ccff1c980535359360207fa96e1a982ed8b66f2383cf3b6b36525",
+    "294": "95a6049dc47135803a232f611f4f919fa70ffe2fae312deb4c851e70bd6ffb8b"
+  }
+}

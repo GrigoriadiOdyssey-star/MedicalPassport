@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 78,
+  "family": "remaining-hospital-portal",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    205
+  ],
+  "decision_sha256": "4903ad89e32fbfa5ac886a55a07b6d48219a1a83474f1aff8f1426a37e823f1d",
+  "source_hashes": {
+    "205": "715d6b1a0443e7874f6e85780ddd6e94379ae257c1bd6eeb9ca2d1d700d83caa"
+  }
+}

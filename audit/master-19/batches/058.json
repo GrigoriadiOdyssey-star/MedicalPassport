@@ -1,0 +1,27 @@
+{
+  "pass": "MASTER-19",
+  "batch": 58,
+  "family": "eye-and-sensory-longitudinal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    547,
+    553,
+    558,
+    559,
+    560,
+    1060,
+    1066,
+    1080
+  ],
+  "decision_sha256": "90c559fdce9e593532dbca352b06ebe8b1507081ecef9db7739217c1c4c5b569",
+  "source_hashes": {
+    "547": "8bd4fc941f18d1143244decd0a042ba5bb1bcb4d330533f65053cce845e701c4",
+    "553": "f4d20a0876a8ef87ca128bdaf6cde8ac86670dc950ca33d077e5955201f82a6d",
+    "558": "3981d7cd285f01a640bd1a7a153f9324e9b323443bf5ac17027b9c565cdffebc",
+    "559": "8fa242f9562f311543161f944574e53fb6290ab07e14d9c897754f1baa030b50",
+    "560": "76b692faad224a6314b61453c3101ccaeba464c277bf36a92a5640fd080bf4bf",
+    "1060": "96c20e970e493fc7aa15d827ba2dfbd8d7b626af8727063635e8483edf499631",
+    "1066": "b112cf51abdc2b91fd6be5551327a18cd9092ffc3706ff846c445621a054817a",
+    "1080": "9951eda72365b54326894c2c5340a2403780c48b8ce0e21c4d6563e2343a2c94"
+  }
+}

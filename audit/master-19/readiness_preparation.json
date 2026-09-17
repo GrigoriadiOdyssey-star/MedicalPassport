@@ -1,0 +1,1270 @@
+{
+  "pass": "MASTER-19",
+  "baseline": "audit/master-08/implementation_readiness_registry.json",
+  "prior_deltas": [
+    "audit/master-09/readiness_delta.json",
+    "audit/master-10/readiness_delta.json",
+    "audit/master-11/readiness_delta.json"
+  ],
+  "scope": "Owner/profile acceptance additions only; no repeated engineering rewrite or MVP implementation",
+  "records": [
+    {
+      "owner": "CAP-SPECIALTY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-combined-specialty-safety",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-multisystem-endocrine-oncology",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-skin-airway-digestive-renal",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-neuro-sensory-dental-functional",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-endocrine-reproductive-urologic",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-immune-infection-neuro-mental",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "general-longitudinal-specialty-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "dental-longitudinal-specialty-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "skin-and-sensitive-infection-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "cardiopulmonary-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "neurological-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "eye-and-sensory-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "endocrine-digestive-renal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "male-reproductive-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "gynecological-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "maternal-newborn-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "breast-and-oncology-longitudinal-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-growth-and-metabolic-care",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "pediatric-development-and-quality-of-life",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IMMUNIZATION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-vaccine-rule-profiles",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "vaccination-history-archive",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-vaccination-records",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ALLERGY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-allergy-diagnostic-and-safety",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-allergy-assertions",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-MEDICATION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-medication-and-precision-safety",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-medication-exposure-and-monitoring",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-LABORATORY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-clinical-results",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "laboratory-clinical-result-service-profiles",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-laboratory-longitudinal-results",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-laboratory-portal",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-AI",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-derived-ai-analysis",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-ai-personal-assistance-and-predictions",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-inference-artifacts",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DEVICES",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-equipment-and-support-lifecycle",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "device-integration-and-lifecycle-contracts",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-device-monitoring",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-home-device-observations",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DOCUMENTS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-certificate-lifecycle",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "laboratory-document-archives",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-clinical-documents",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IMAGING",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-imaging-longitudinal-profiles",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "source-imaging-archives",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-imaging-archive",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-RESEARCH",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-outbreak-population-context",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-population-infection-surveillance",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ENCOUNTER",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-procedure-and-functional-studies",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "source-physiological-study-archives",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "laboratory-referral-orders",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-encounter-and-referral-history",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-hospital-portal",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-SECURITY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-certificate-cryptography",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "laboratory-signature-controls",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-security-and-sensitive-access",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-security-services",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-EMERGENCY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-hypoglycemia-emergency-context",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-emergency-handoff",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-CDS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-clinical-screening-prioritization",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-clinical-recommendation-and-interaction",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-guideline-advice",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-INTEROP",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-vaccine-exchange",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "laboratory-exchange-hub",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-interoperability-and-national-exchange",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-platform-exchange",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-NOTIFICATIONS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-vaccine-reminders-and-renal-escalation",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-sensitive-notification",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-reminders",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-CONSENT",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-adolescent-confidential-consent",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-QR",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-certificate-qr",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-clinical-sharing-qr",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-PROFILE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-family-vaccine-projection",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "laboratory-directory-projections",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-profile-and-directory-projections",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-profile-projections",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TELEMEDICINE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pediatric-remote-dermatology",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-telemedicine-communication",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-dietitian-consultation",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-APPOINTMENTS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "laboratory-collection-booking",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "core-appointments-and-marketplace",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-OPERATIONS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "platform-operations-and-resource-coordination",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-recovery-and-isolation-operations",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-GOVERNANCE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "platform-governance-and-architecture",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-governance",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-COVERAGE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "coverage-claims-and-billing",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-financial-estimates",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-PRESCRIPTION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "prescription-lifecycle-and-erx",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-CONDITION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "condition-assertions-and-diagnosis-api",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-AUDIT",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "core-audit-history",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-audit-service",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TRAVEL",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "core-travel-regulatory-information",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "remaining-country-information",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ADMINISTRATION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "core-medication-administration-history",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IDENTITY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "core-identity-and-binding",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DATA",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "canonical-data-model-foundations",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-PHARMACY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "core-pharmacy-directory-reservation",
+          "acceptance": "Preserve every original clause, patient/tenant/source/version/time provenance and explicit missingness. Test wrong identity, stale measurements, revoked consent, guardian changes, adolescent confidentiality and source corrections. Pediatric age, developmental stage, weight/height/unit/time and clinical context remain explicit where applicable. No automatic diagnosis, prescription, dose change, medication stop, device actuation or crisis disposition; qualified clinician review remains required. Clinical validation and production acceptance remain external gates.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    }
+  ]
+}

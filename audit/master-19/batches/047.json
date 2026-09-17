@@ -1,0 +1,29 @@
+{
+  "pass": "MASTER-19",
+  "batch": 47,
+  "family": "core-clinical-recommendation-and-interaction",
+  "owner": "CAP-CDS",
+  "ids": [
+    36,
+    95,
+    96,
+    160,
+    163,
+    290,
+    295,
+    404,
+    417
+  ],
+  "decision_sha256": "ac819b273b03632f3069f5d6d5488875490a581cddb8578785bceddcaa959210",
+  "source_hashes": {
+    "36": "d0bd2b0c02883674e23d7f74ab8249b27a048d374e934b5478a24acdc165a63b",
+    "95": "35dd88ae331cffd242266ae9985e91ac6356a343e25f824de18ea8f128970357",
+    "96": "9c1cb1b2d0c573ca1ca5e48bec78c0093b95c29d5e3a6e60de60de7893b82c1a",
+    "160": "8cdd921add25b21b2f0da40826933427d77c61e76277b5b4d266e0559b2ebe58",
+    "163": "2090f2e5a1473400a29862f1e35d7dbe9007a6215de0a27d5d39e129f2bcb90f",
+    "290": "c9d4a88fd3673e0ea7131e7e4b651ecc2109ce95db1cb9c6bf05560f8cb95ae8",
+    "295": "b83288a7ae48e0fa190cd8ac3034596c0c3541345f793837820753861ae5ef0d",
+    "404": "4fddc8baf59b4c21c049a999ceecc36ba9b12744fa9e86b5be26fee9dd13c2a7",
+    "417": "38c2f864cca72198467fa647e3ce67ea32ad19f2ebe25254c731680663aa9593"
+  }
+}

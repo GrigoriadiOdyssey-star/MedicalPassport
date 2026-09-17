@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-19",
+  "batch": 87,
+  "family": "core-interoperability-and-national-exchange",
+  "owner": "CAP-INTEROP",
+  "ids": [
+    66,
+    67,
+    450
+  ],
+  "decision_sha256": "54ac5633a358932e606983debe5788b762ffe00e96b3b12c0e89af321185250d",
+  "source_hashes": {
+    "66": "e9559211c018db02a576c1a25143a87cffbd89cbc976a969e67820b64ad24f88",
+    "67": "97ce201d13c5f10886da27d25edcefdf366d6b9a518677f896427ae5f58cd591",
+    "450": "acaa9c0fb7681ec133fb41ae2252f09d062bec5da23adbf06902c9644c087b48"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "pass": "MASTER-19",
+  "batch": 30,
+  "family": "laboratory-directory-projections",
+  "owner": "CAP-PROFILE",
+  "ids": [
+    361,
+    362,
+    369,
+    370,
+    371,
+    372,
+    373
+  ],
+  "decision_sha256": "ef49f5de25e06b6ac7bc01d3f60f258cba447a7198c3f4d012c5c06481c2cf90",
+  "source_hashes": {
+    "361": "e324c682a99433ebff64b5c5d912dc250865811735b0e73afadb7cafe81e3ec6",
+    "362": "2e8d101e0998e0c99611e7d9155603e563bc1c85db3726aacbcc68f5ba026883",
+    "369": "205349b1dce5160b29ad0b61df849511d28197578e03db391ae39dae74602108",
+    "370": "959171fd3829235fccd34771524c16b5c04a9644a3c52d1d64afc634a4f8bc74",
+    "371": "334453c84b8c0d7821a7d075a349c1fdf62afd7d97145437b40023c8bcb61fb9",
+    "372": "7804c3ced104f62d648717203ba7b78b106ff24b64d3bf819edc3ddad11e0cbd",
+    "373": "eab07089c67a249d929b1ed3cbbb0581a0b6d3263a80bc340df9abc1030c8a11"
+  }
+}

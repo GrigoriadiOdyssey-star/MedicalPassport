@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 92,
+  "family": "core-sensitive-notification",
+  "owner": "CAP-NOTIFICATIONS",
+  "ids": [
+    491,
+    1019
+  ],
+  "decision_sha256": "b3d696fbee32cbfb049e50b08fa6e003aa3524672d652b0d75aa756f75941bbe",
+  "source_hashes": {
+    "491": "39055e4eab4dd451e4190b012ca2c81f974bce26362c89dd467544a345f8e28b",
+    "1019": "caaf4d3648b7eb02f2592a9bb89c3bf10822b1ede879aa03ec8871ecef2c7a83"
+  }
+}

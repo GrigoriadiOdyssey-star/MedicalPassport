@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 80,
+  "family": "remaining-reminders",
+  "owner": "CAP-NOTIFICATIONS",
+  "ids": [
+    237
+  ],
+  "decision_sha256": "0a24b72c0528b1b3d149afbf6ff5cc4b770399090e8aff793ee219ed93259baa",
+  "source_hashes": {
+    "237": "bbfc3bc32d0e7e56e612826c9555563d2fb527d5cab55c85ec72657f351b6711"
+  }
+}

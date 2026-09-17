@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 74,
+  "family": "remaining-audit-service",
+  "owner": "CAP-AUDIT",
+  "ids": [
+    226
+  ],
+  "decision_sha256": "99d5b02b75a747accda19d952d536666fe0ddea710ae673138c620528b3ddba2",
+  "source_hashes": {
+    "226": "d177eb1069dab29780118c5ad30b5e8df619ec741a13e61db244f7e649e8801c"
+  }
+}

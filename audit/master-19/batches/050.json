@@ -1,0 +1,35 @@
+{
+  "pass": "MASTER-19",
+  "batch": 50,
+  "family": "endocrine-digestive-renal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    570,
+    580,
+    610,
+    613,
+    615,
+    617,
+    621,
+    625,
+    630,
+    640,
+    646,
+    650
+  ],
+  "decision_sha256": "40f2fcab78de0567867e3e1c3a58d1fba82923afba48ebb641ec0ed2744956c3",
+  "source_hashes": {
+    "570": "5485fff8a933f3eb272a222af2f314a96753d4ec18f8b3614b8aaba1d3cf0654",
+    "580": "585ecf8c2fb29740c3dd780efb5f2949df73a37509d203f5d497e2ef6fca3be1",
+    "610": "c35650432c98e936bea1fb2034fe7f1c225798353ae7e40088bed2c5ac4ce185",
+    "613": "f2958ea55713558d21da4861e03881ecffb9cee1acdeba3e2a97c6ff041a812a",
+    "615": "e166db688e995b8183b800c2802d17e0fb8ecd6d43c86de3145092578eca1846",
+    "617": "c5bfe13fae1083f71fc1e3dc080876fae45fa42036e792dccbc06858cc881984",
+    "621": "8d46bd90b11fbc9357c530b6c412c780762a90afd3a9f8702f592eb139042a01",
+    "625": "da4f4a2e3edf5fe9d8de7b7c9e5ca226bcb99dad90a84ed09e405e5f86a2d69b",
+    "630": "52484a7fd39813617132ff86f33ff702e5a2c650a88de8f48a74b268da152fd6",
+    "640": "213be93d9aece5d102be401dfafdac98cac9caed3270f4c5e2323c069f59114c",
+    "646": "bde72cef8901488e3b6585265c7ed5b749e64cd45485f949467d62368f603f77",
+    "650": "19dd47b4e81e86b6633bb531b4c7d28247398bcc8368e2c072126ad27b3ec547"
+  }
+}

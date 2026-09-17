@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 83,
+  "family": "core-population-infection-surveillance",
+  "owner": "CAP-RESEARCH",
+  "ids": [
+    1006,
+    1012,
+    1027,
+    1028
+  ],
+  "decision_sha256": "bed27407d2353fbee47af186d083585a42c94c81c26651243cb34fd4cd367c96",
+  "source_hashes": {
+    "1006": "4d4299b3e1e820d2d14dcb5800c72b237b3d0aedcc8170c589b96185da14fa53",
+    "1012": "e2aafd04327af40b5b93f4bb19374d19fb7a374876dc1f35df8e93fe7f86778f",
+    "1027": "cf64e1ef4b5ddba791dd9274177ee3a33268e109bca8d60176358603a9f53ef2",
+    "1028": "56ba1384085909337e446e65b42b0f816fa2b19756e302d88a5820ffd4411bb5"
+  }
+}
