@@ -1,0 +1,23 @@
+{
+  "pass": "MASTER-18",
+  "batch": 20,
+  "family": "ai-clinical-document-drafts",
+  "owner": "CAP-DOCUMENTS",
+  "ids": [
+    1151,
+    1152,
+    1351,
+    1352,
+    1575,
+    1967
+  ],
+  "decision_sha256": "52ddb094a15b3e8f48f637aa2999663ad3051e9e5bb6c9a9525d10ec61f5c233",
+  "source_hashes": {
+    "1151": "a011fda7bdef022bc4b2954e86e12f229d43019f32942cba6950f210fcae5f96",
+    "1152": "d4e52dae96f98ad220baada9d45c17318a40c88bfc5c1ff432417326406fd024",
+    "1351": "6cf15dfd2393efd8c01c1c75bd166f6301bc00bcb052ca2194b273d0b59ddd7c",
+    "1352": "dfdf80578e374ef5dbe67191362857a39eabef9386de9247a79d63b71fc06ffd",
+    "1575": "90fae9a0047b6d3ade424a8ef04ff6ec82b9c9bfaf1736dc1243bb6466fe6989",
+    "1967": "cc4f8ab4d6f999703e5b7915600b217dd0af03d8447ffb85eabdf8a520f86c51"
+  }
+}

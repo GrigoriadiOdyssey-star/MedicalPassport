@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 13,
+  "family": "precision-genomic-report",
+  "owner": "CAP-DOCUMENTS",
+  "ids": [
+    1638
+  ],
+  "decision_sha256": "158550928cbc140b314a16ec9de4cf0d5d9f3a800f0300831a318caffd5ce461",
+  "source_hashes": {
+    "1638": "c8ed1f871cc4ed4960fbf3bd2ac4dc495b3af1e8e40f43b8209c090c7922aee7"
+  }
+}

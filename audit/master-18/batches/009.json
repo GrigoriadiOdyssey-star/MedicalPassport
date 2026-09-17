@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 9,
+  "family": "precision-critical-laboratory-escalation",
+  "owner": "CAP-LABORATORY",
+  "ids": [
+    1597
+  ],
+  "decision_sha256": "e89ff19361e1a649221622b9da81df971d7e9c76bc505f6438efdee3d8a70e06",
+  "source_hashes": {
+    "1597": "46894bb2552409f09827754232108836de0d9a74e45762be44f622b04fc630ab"
+  }
+}

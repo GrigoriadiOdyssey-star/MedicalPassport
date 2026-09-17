@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 10,
+  "family": "precision-research",
+  "owner": "CAP-RESEARCH",
+  "ids": [
+    1678
+  ],
+  "decision_sha256": "7f5abc6432bab38b4202d08d6b183f49860db81732fc1b8f56baa06969d4db1c",
+  "source_hashes": {
+    "1678": "ee98ec8315c4a7c5c4175d951759216c9953fa3e5a5885995c950ce6f54ce6c1"
+  }
+}

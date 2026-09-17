@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 12,
+  "family": "precision-alert-delivery",
+  "owner": "CAP-NOTIFICATIONS",
+  "ids": [
+    1334
+  ],
+  "decision_sha256": "88f1b1ff69676fb320bf43bf3a9f1cbf6a4be67b9ab124520a2bce80c8041742",
+  "source_hashes": {
+    "1334": "ec72092deef3a111afd5c670a6c09b7814e5f41ddc9bad9fd3ef8ca565e4d2fa"
+  }
+}

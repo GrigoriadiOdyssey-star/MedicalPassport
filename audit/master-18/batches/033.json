@@ -1,0 +1,33 @@
+{
+  "pass": "MASTER-18",
+  "batch": 33,
+  "family": "ai-emergency-logistics-and-offline-projections",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    1205,
+    1346,
+    1347,
+    1348,
+    1349,
+    1391,
+    1393,
+    1394,
+    1395,
+    1396,
+    1865
+  ],
+  "decision_sha256": "4f49cc35c2a858bbbbfe53b3618e8cc60bfd12dcdc04a7443129d62e353d2be0",
+  "source_hashes": {
+    "1205": "b613816f8d2656cab53afee4cdf23491d6e362a47d331305f6b8c676fb67f89b",
+    "1346": "e369aa26c4030f8a208833aeb7423bd66a6df7df3d1e1ac23a044ea7f0aae5fb",
+    "1347": "04a02e4113195ad0236e5bb50200d62c526efafe8dc05d12b111ae4302d3210f",
+    "1348": "a6d31bc6e874f04edd3840f77a8ba357c6b70b52c016ede2c366b15774e61f7a",
+    "1349": "4c1d7e1628b9e705577a9e3d23a274bbecd8824f6e198d1c37b881c8211b67d1",
+    "1391": "eabcb50ca85a43936bc3c7b05d474831e317af6b41dce80328933e74b46e3b24",
+    "1393": "b0daaf99802299025e78cef63aed2fc70012b29b5a236b2a1ba2c6a661a666c7",
+    "1394": "faf2dc701881908dfec6f8f3122ef349dbb1efbf2e971d9ba4d5d16131107f0a",
+    "1395": "9e11453297936767d0e8748836aee4c66cbfc8c6854d5bf84cbcf553e7ef982f",
+    "1396": "549cbba204b29980c3998c51f4139089c2e11ef6f83e7b35bb7287ee98d4e553",
+    "1865": "d5937933d9843a9c4b771ac0bee8bbbd7c0ac8342df7952144a60194db4ffb9e"
+  }
+}

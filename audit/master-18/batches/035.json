@@ -1,0 +1,25 @@
+{
+  "pass": "MASTER-18",
+  "batch": 35,
+  "family": "ai-patient-workspace-and-timelines",
+  "owner": "CAP-PROFILE",
+  "ids": [
+    1160,
+    1180,
+    1249,
+    1331,
+    1526,
+    1756,
+    1777
+  ],
+  "decision_sha256": "17e75918385aaae5654bbbeac355be220102b74ca56552e459d1b6cd5ace05bc",
+  "source_hashes": {
+    "1160": "d9654be480206e02a9cafda10080c049be22f387ee34f49d66240727c4acd16a",
+    "1180": "4b991a6d0240105d3cda6e625976c6ca224cf7d92085d3e34bfd3f1db725675f",
+    "1249": "3829d5190eadbd5b30153071404a8f4cf8843ad9f6373e5d8cadda2662a4142a",
+    "1331": "772ea46e5d4fc45e52c5ee1cb7a9c338b81e0ec59307d0ff9ebe58a66bf0b2b0",
+    "1526": "a609eee07d23f10bf9ccd39e9e3dfaf616f237b4a82855a000f0ac1967b4b573",
+    "1756": "91a05fa9423f5016f5e6bfe853c60a1ed85bf8f53910cdc1dafd7849e4ed18f3",
+    "1777": "28cbf3e4292ca623d18a5cb9b431b59ecfcbefadf04586e326c740bc73d06fb3"
+  }
+}

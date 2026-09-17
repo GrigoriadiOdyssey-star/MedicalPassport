@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 51,
+  "family": "clinical-imaging-result-profiles",
+  "owner": "CAP-IMAGING",
+  "ids": [
+    2022,
+    3549,
+    3889
+  ],
+  "decision_sha256": "289617de74952ef4e5cb9a555b4d1afcc281e8d40458dcabc8eb1f05c37ee352",
+  "source_hashes": {
+    "2022": "ffd0aea5a75d96ab2d79219d147915ba0845cb0441085f29216027aadcf1dd02",
+    "3549": "431d1e09e69407d17f01bc915d4bdf64d438941f4c33775def38a2860a3d935b",
+    "3889": "3d6cd03e6f8952a968ebb812f7036b18382da27e24abcc9d446d4c625091a731"
+  }
+}

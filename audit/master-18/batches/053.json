@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 53,
+  "family": "clinical-triage-and-hemodynamic-coordination",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    2713,
+    2720,
+    2733
+  ],
+  "decision_sha256": "06810ef0a19ed79745130138d35cf6c5e309d367bd6f91e09c04111ec5d704fa",
+  "source_hashes": {
+    "2713": "f4c04423e31c16b4b02bfcf6d3213d59765afdcce3971d3fef16dfe5578c5aaf",
+    "2720": "2c3d882b9cf26a001ab0cd0d378ef180a2558f0350de62ed1548f473f2b8e33e",
+    "2733": "19bb62e5b6f382ff4c690115c1cd6716c387d1d22e94e989838aab3741188db2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-18",
+  "batch": 28,
+  "family": "ai-data-lineage-governance",
+  "owner": "CAP-DATA",
+  "ids": [
+    1491,
+    1929
+  ],
+  "decision_sha256": "bbce0f1c3612a3bc19452715ee69a6acad09592aa949427cef3f2c18cd69959f",
+  "source_hashes": {
+    "1491": "b6a9772a0573645abb4a0ad8c0d85d1e1257ddfaa442b423eb8771af51aa1a77",
+    "1929": "bbb4e6ed1eedd496696624a1eaedba8c2a0a1b03acfe82238e2d8406d7f5cc53"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 40,
+  "family": "ai-professional-directory",
+  "owner": "CAP-PROFILE",
+  "ids": [
+    1882,
+    1883,
+    1896
+  ],
+  "decision_sha256": "fdb6e8dc794b8de0bbdb4a3f779278fc6dcec9169940e86aa91a4f153a9a8b9a",
+  "source_hashes": {
+    "1882": "3929217b4fc6fded1307246b09a12bed67ecf29a2cbbf81b95514bb594d62e46",
+    "1883": "2688c8a0a7c82d0b582e362338924479469b21873294286d7a9e665f10b25ac4",
+    "1896": "2a0306e202e2e09c2a70a39264871f30316ad2e9b4c9512219cac240a78c3d8e"
+  }
+}

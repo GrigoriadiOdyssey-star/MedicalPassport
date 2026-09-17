@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-18",
+  "batch": 55,
+  "family": "clinical-population-surveillance",
+  "owner": "CAP-RESEARCH",
+  "ids": [
+    2409,
+    2763
+  ],
+  "decision_sha256": "65a63ca000126b4dc83f31993a5f6c263057f3057d1974b8c64d31964ccf55de",
+  "source_hashes": {
+    "2409": "f67b53b43ba22f6889c1ac4fc9c1050e2823c14b46ada8c6037f9473a4e7455a",
+    "2763": "1d2d78f09c8e4be5086321e0f606a3e438a96a37ffb5abb047111818c5d3493a"
+  }
+}

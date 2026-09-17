@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-18",
+  "batch": 54,
+  "family": "clinical-guideline-and-surgical-proposals",
+  "owner": "CAP-CDS",
+  "ids": [
+    2049,
+    3713
+  ],
+  "decision_sha256": "31ff645f5889a752987ccbe222e3f3590e33fb9efb0563b31784d895b820c9ab",
+  "source_hashes": {
+    "2049": "89544fb40357ebaa7882874c4af3e6bfeefb7e5a1b56b13db088179dd96aa289",
+    "3713": "d61a3c9acc29f943f1182ab869e9549ce8187eabba8d26a936f1143647575502"
+  }
+}

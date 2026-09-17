@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 39,
+  "family": "ai-economic-and-quality-projections",
+  "owner": "CAP-AI",
+  "ids": [
+    1319,
+    1320,
+    1874,
+    1875
+  ],
+  "decision_sha256": "14c3d5424febdf14fdc8cff57c90ba1203d7f1a00c0f69079370ce0c4040cc75",
+  "source_hashes": {
+    "1319": "65145bb691a40fbe518720de7e4463f60e70acd45a9bf2aaa5a51802fdcf9b0e",
+    "1320": "ff2ef13dbe286c6766124fa388e9e805a78fc481388cf046b1a5264be4876fe3",
+    "1874": "62be8356766405767eba4804709f218e63177609226d74fd6c0a6d452d9d4514",
+    "1875": "1bd82a145bdc11ab44ebd24f5377d9a30662afff0a320c64a01af378ac34f1d9"
+  }
+}

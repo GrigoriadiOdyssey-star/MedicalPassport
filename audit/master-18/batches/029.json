@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 29,
+  "family": "ai-decision-audit-evidence",
+  "owner": "CAP-AUDIT",
+  "ids": [
+    1492
+  ],
+  "decision_sha256": "d311df4710c2e121287ffcb790859a6d76d658fbe03921178906fdf4552603e6",
+  "source_hashes": {
+    "1492": "18a7f1f6039d0619d091d26e43b58c2fcc6a36904b769ad3b5b5ed81a5aa3f25"
+  }
+}

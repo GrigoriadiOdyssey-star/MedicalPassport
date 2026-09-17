@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 52,
+  "family": "clinical-pediatric-chemotherapy-plan",
+  "owner": "CAP-MEDICATION",
+  "ids": [
+    3470
+  ],
+  "decision_sha256": "270e3bdcde858d231574ff59c362618172d1a178810d69f4de2c6461b2dcdd7f",
+  "source_hashes": {
+    "3470": "c82fb0758edaf103283f88a402b32e205c982695d443c26e12ea59a5ba9b708a"
+  }
+}

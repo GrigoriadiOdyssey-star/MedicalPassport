@@ -1,0 +1,810 @@
+{
+  "pass": "MASTER-18",
+  "baseline": "audit/master-08/implementation_readiness_registry.json",
+  "prior_deltas": [
+    "audit/master-09/readiness_delta.json",
+    "audit/master-10/readiness_delta.json",
+    "audit/master-11/readiness_delta.json"
+  ],
+  "scope": "Owner/profile acceptance additions only; no repeated engineering rewrite or MVP implementation",
+  "records": [
+    {
+      "owner": "CAP-CDS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-clinical-recommendations",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-clinical-decision-proposals",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Unknown/rare/unsupported cases must abstain and route to qualified review. Pin guideline jurisdiction/population/effective version, distinguish risk scores from triage authority, preserve unresolved contradictory rules, and test that no rule-chain or cached recommendation can issue an intervention.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-differential-diagnosis-addendum",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-guideline-and-surgical-proposals",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-AI",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-derived-model-artifacts",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve germline versus somatic context, variant reference/interpretation versions and family disclosure boundaries. Claimed survival or reduced risk remains an unvalidated intended outcome.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-runtime-knowledge-and-derived-artifacts",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Cache keys bind tenant, purpose, input versions, authorization epoch and model/release; correction and revocation invalidate reuse. Preserve raw image and transform history. No uncontrolled online clinical learning; evaluate each intended use, population, calibration, fairness, drift and abstention. Family/genomic comparisons require independent relative permissions.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-educational-simulation",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Label simulated data and educational purpose; avoid real patient reuse without authorization. Certification requires independently verified accreditor/assessor decisions; learning scores cannot grant clinical roles.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-economic-and-quality-projections",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-specialty-ai-forecasts",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-SPECIALTY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-specialty-coordination",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-longitudinal-specialty-and-digital-therapy",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Mental-health and addiction profiles need crisis escalation and sensitive-data controls; monitoring never promises continuous human coverage. Distinguish treatment proposal, enrollment, delivery, adherence evidence and measured outcome. No automatic emergency disposition or life-support control.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-cardiovascular-neuro-and-functional-care",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Depression, substance use and developmental records require crisis pathways, age-appropriate explanation and restricted sensitive disclosure; school or caregiver access cannot be inferred.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-renal-reproductive-and-perinatal-care",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Retain sexual/reproductive confidentiality and specimen/person linkage. Prenatal predictions and unknown testing cannot be converted to confirmed fetal findings. Counseling, lawful consent and specialist decision remain separately evidenced.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-oncology-bone-immune-infectious-care",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Preserve pathogen/site, microbiology versus clinical diagnosis, treatment phase and adverse-event history; genotype cannot automatically establish treatment eligibility, prognosis or infectiousness. Genomic familial risk and HIV records require sensitive disclosure boundaries.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-sensory-skin-and-postoperative-care",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ENCOUNTER",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-followup-coordination",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-visit-referral-and-discharge-coordination",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-acquisition-and-procedure-history",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Preserve raw acquisition and interpreted report separately, procedure time, performer, consent and correction lineage; archive presence never attests a completed or safe intervention.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-PROFILE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-clinical-workspace",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-patient-workspace-and-timelines",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-professional-directory",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-EMERGENCY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-intensive-care-coordination",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-emergency-logistics-and-offline-projections",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Failed route or delivery must surface pending/unavailable status with an established fallback, not claim a dispatched team or response time. Preserve blood-group/allergy verification and no-data states; do not infer safe transfusion from summary.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-triage-and-hemodynamic-coordination",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-MEDICATION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-medication-proposals",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Require units, indication, current organ-function/exposure context, drug/knowledge versions and clinician-confirmed disposition; no automatic dose or substitution.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-medication-history-and-safety",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-pediatric-chemotherapy-plan",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TWIN",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-counterfactual-simulation",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve assumptions, horizon, calibration population and model version; display uncertainty, unsupported scenarios and no-action status.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-counterfactual-and-twin-state",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Retain scenario assumptions, source snapshot/horizon, epistemic uncertainty and population applicability. Synchronization is version-aware and correction/revocation aware; unsupported counterfactuals abstain.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-LABORATORY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-critical-laboratory-escalation",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-laboratory-result-operations",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-genomics-and-hemostasis-results",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Keep germline/somatic and embryo/parent linkage separate. Reclassification must preserve original interpretation and notify authorized consumers; no silent pathogenicity overwrite.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-RESEARCH",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-research",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-research-and-population-evidence",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Record cohort/protocol/purpose, ascertainment windows, population denominators, linkage permissions, re-identification controls and controlled release. Research results must not silently populate patient advice.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-population-surveillance",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IMMUNIZATION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-vaccination-planner",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-vaccination-history-and-response",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Pin schedule/product/antigen versions and jurisdiction; do not treat unspecified booster or adverse-event status as eligible, completed or caused by vaccination.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-NOTIFICATIONS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-alert-delivery",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-notification-escalation-handoff",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DOCUMENTS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "precision-genomic-report",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "ai-clinical-document-drafts",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Require permitted recording, minimum retention, original/draft/signed state separation, qualified verification before release, and no unattended signing or hallucinated findings.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-INTEROP",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-terminology-and-exchange",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Pin source/target versions, rounding and mapping confidence, idempotency, correction ordering and partner capability; mismatches quarantine rather than coerce. Imported recommendations remain unapproved.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-PHARMACY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-pharmacy-service-workflow",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DEVICES",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-device-lifecycle",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-device-and-life-support-context",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Retain device model/firmware, clock, units, calibration and gaps. Stale sensors, mode ambiguity or missing patient binding must never lead to automated actuation.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-SECURITY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-resource-authorization",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IMAGING",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-imaging-data-workflow",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-imaging-result-profiles",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DATA",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-data-lineage-governance",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-AUDIT",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-decision-audit-evidence",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IDENTITY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-identity-security-consent-data",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-CONSENT",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-informed-consent-workflow",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-APPOINTMENTS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-service-queue-and-scheduling",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TELEMEDICINE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-professional-communication",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TRAVEL",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "ai-crossborder-care-information",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ALLERGY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "clinical-pediatric-hypersensitivity",
+          "acceptance": "Preserve every source clause with source-specific applicability, patient/tenant identity, evidence versions, uncertainty and correction lineage. Unverified or stale context must remain explicit; never infer absent disease, permission or clinical eligibility. Test wrong-patient, revoked consent, missing inputs, conflicting sources and downstream invalidation. Qualified clinical acceptance and actual service integration remain required. Preserve age/development, body size and acquisition time where present, laterality/site, clinical phase, donor/recipient or mother/fetus identity, guardian/assent and adolescent confidentiality. No universal dose, threshold or protocol is inferred. Plans, actual procedures, device operation, clinical diagnoses and model suggestions stay separately attributable. Challenge-test and auto-injector training requirements cannot imply unsupervised exposure or automated dosing; preserve suspected/confirmed/unknown and reviewer evidence.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    }
+  ]
+}

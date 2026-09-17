@@ -1,0 +1,17 @@
+# MASTER-18
+
+REVIEWED 5175/5175; no repeat review. NORMALIZED / CANONICALIZED 4312/5175 (83.3237%).
+
+Next exact cluster: remaining-pediatric-high-risk-contracts; IDs 4004, 4005, 4014, 4025, 4029, 4030, 4036, 4047, 4049, 4054, 4055, 4056, 4065, 4084, 4087, 4094, 4095, 4104, 4105, 4107, 4111, 4112, 4114, 4124, 4127, 4128, 4129, 4132, 4134, 4136, 4138, 4142, 4148, 4150, 4151, 4154, 4185, 4214, 4215, 4254, 4263, 4264, 4266, 4272, 4274, 4275, 4276, 4277, 4278, 4280, 4281, 4282, 4284, 4290, 4291, 4292, 4294, 4295, 4298, 4302, 4303, 4304, 4306, 4308, 4309, 4310, 4312, 4313, 4314, 4315, 4316, 4317, 4318, 4319, 4320, 4325, 4326, 4327, 4328, 4329, 4330, 4331, 4332, 4333, 4334, 4335, 4336, 4337, 4338, 4340, 4342, 4343, 4344, 4345, 4346, 4348, 4349, 4350, 4353, 4356, 4357, 4359, 4362, 4371, 4372, 4373, 4375, 4377, 4378, 4379, 4380, 4382, 4386, 4391, 4394, 4395, 4403, 4406, 4408, 4409, 4410, 4413, 4415, 4417, 4421, 4424, 4425, 4426, 4428, 4430, 4436, 4437, 4447, 4464, 4468, 4469, 4473, 4483, 4484, 4487, 4489, 4490, 4505, 4509, 4512, 4514, 4522, 4526, 4528, 4553, 4557, 4559, 4561, 4564, 4589, 4597, 4604, 4612, 4613, 4616, 4621, 4712, 4729, 4730, 4734, 4738, 4747, 4748, 4756, 4758, 4765, 4770, 4777, 4778, 4783, 4785, 4786, 4790, 4802, 4806, 4808, 4811, 4812, 4813, 4814, 4817, 4821, 4828, 4829, 4830, 4833, 4836, 4844, 4846, 4847, 4852, 4854, 4855, 4858, 4859, 4862, 4869, 4880, 4881, 4888, 4891, 4892, 4894, 4896, 4902, 4903, 4904, 4907, 4908, 4910, 4912, 4914, 4915, 4917, 4919, 4927, 4928, 4931, 4934, 4935, 4936, 4941, 4942, 4944, 4947, 4952, 4954, 4957, 4963, 4970, 4971, 4972, 4980, 5003, 5005, 5008, 5009, 5011, 5012, 5016, 5017, 5030, 5036, 5037, 5052, 5053, 5054, 5056, 5063, 5067, 5072, 5077, 5082, 5085, 5087, 5134, 5152, 5156, 5157, 5158, 5160, 5165, 5170
+
+Apply MASTER08 and deltas MASTER09 through MASTER18. Retain old source variants and clinical/readiness gates. If next_exact_cluster.requires_new_family_decision is true, resolve clinical recommendation, simulation, research, model execution and operational ownership before adding a selection rule. Otherwise use node scripts/master18.mjs --next. Validate with node scripts/master18.mjs --check.
+
+Last canonical cluster: clinical-specialty-ai-forecasts; completed atomic batches: 56.
+
+Remaining source IDs: see normalization_queue.json (remaining_source_ids). Never select already canonicalized IDs.
+
+Readiness queue: audit/master-18/readiness_queue.json. Seven MVP_CORE candidates are READINESS_IN_PROGRESS; 28 full canonical specifications still have open gates; newly ready specifications: none. Exact categorized missing_fields, severity, dependencies and resolution status are preserved per owner.
+
+Next readiness actions: bind actual issuer/role/policy adapters and the specified Audit receipt query; prove the atomic read/revocation and durable-audit boundary; obtain policy and clinical/security acceptance for the bounded adult allergy-disclosure slice. MASTER18 closes the bounded receipt-query specification category (three additional fields), but no full-owner blocker set; six MVP evidence categories remain open.
+
+Next canonical action: resolve the 268 queued pediatric high-risk sources with existing review cache and exact source clauses, distinguishing care orchestration, vaccine rules/certification, allergy, drug safety, imaging/results, devices and confidential-consent authority. Do not repeat any of the 4312 completed original IDs.

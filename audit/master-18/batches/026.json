@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 26,
+  "family": "ai-laboratory-result-operations",
+  "owner": "CAP-LABORATORY",
+  "ids": [
+    1414,
+    1598,
+    1869
+  ],
+  "decision_sha256": "cb95beb72110ffb6a9bbb7a4ad449a166c084c098561b508bc0b44f36b7c7209",
+  "source_hashes": {
+    "1414": "d792f3f76d8112ecbd70ee7c7e1cd2fe8885f5c20e0f284c16abca5217eff754",
+    "1598": "df16402d6ba20ec65b83f83484ed501f4a352357d07313125d9f75b47385170c",
+    "1869": "d1c46795910f84721c46f961e93baa84f75eeb261b1edb6c9ac64856116faccb"
+  }
+}
