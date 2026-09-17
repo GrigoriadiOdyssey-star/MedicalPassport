@@ -1,0 +1,16 @@
+✔ immutable published package: first release, exact replay and consecutive new major (2.3517ms)
+✔ changed authorization, payload or predecessor cannot reuse a published identity (0.5531ms)
+✔ corrupt history, duplicate identity, unknown fields and missing manifest fields fail closed (0.4366ms)
+✔ 157 inherited blockers preserved; only 25 exact compatibility-policy items close (268.1177ms)
+✔ all 3109 prior clinical queue entries retain provenance and no fabricated review (325.7733ms)
+✔ clinical and external gates are scoped release obligations, not engineering approvals (253.9089ms)
+✔ backlog dependencies are closed and ordered while incomplete MVP correctly fails build gate (229.0467ms)
+✔ unchanged architecture controls are reused and earlier committed artifacts are untouched (305.1032ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1568.6474
