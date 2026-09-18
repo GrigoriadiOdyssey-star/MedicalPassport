@@ -1,0 +1,93 @@
+{
+  "owner_graph_recomputed": false,
+  "owner_graph_reference": "audit/master-20/mvp_dependency_order.json",
+  "task_graph_updated": true,
+  "order": [
+    {
+      "task_id": "M21-IDENTITY",
+      "dependencies": []
+    },
+    {
+      "task_id": "M21-DATA",
+      "dependencies": [
+        "M21-IDENTITY"
+      ]
+    },
+    {
+      "task_id": "M21-SECURITY",
+      "dependencies": [
+        "M21-IDENTITY",
+        "M21-DATA"
+      ]
+    },
+    {
+      "task_id": "M21-CONSENT",
+      "dependencies": [
+        "M21-SECURITY"
+      ]
+    },
+    {
+      "task_id": "M21-AUDIT",
+      "dependencies": [
+        "M21-CONSENT"
+      ]
+    },
+    {
+      "task_id": "M21-ALLERGY",
+      "dependencies": [
+        "M21-DATA",
+        "M21-SECURITY"
+      ]
+    },
+    {
+      "task_id": "M21R-LEASE",
+      "dependencies": [
+        "M21-AUDIT",
+        "M21-ALLERGY"
+      ]
+    },
+    {
+      "task_id": "M21-PROFILE",
+      "dependencies": [
+        "M21-ALLERGY",
+        "M21-CONSENT",
+        "M21-AUDIT",
+        "M21R-LEASE"
+      ]
+    },
+    {
+      "task_id": "M21-AUDIT-QUERY",
+      "dependencies": [
+        "M21-AUDIT",
+        "M21-PROFILE"
+      ]
+    },
+    {
+      "task_id": "M21R-RESTORE",
+      "dependencies": [
+        "M21R-LEASE"
+      ]
+    },
+    {
+      "task_id": "M21-RECOVERY",
+      "dependencies": [
+        "M21-AUDIT-QUERY",
+        "M21R-RESTORE"
+      ]
+    },
+    {
+      "task_id": "M21R-INTERLEAVINGS",
+      "dependencies": [
+        "M21R-RESTORE",
+        "M21-AUDIT-QUERY"
+      ]
+    },
+    {
+      "task_id": "M21-E2E",
+      "dependencies": [
+        "M21-RECOVERY",
+        "M21R-INTERLEAVINGS"
+      ]
+    }
+  ]
+}

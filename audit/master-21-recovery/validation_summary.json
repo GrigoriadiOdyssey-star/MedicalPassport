@@ -1,0 +1,10 @@
+{
+  "targeted_passed": 5,
+  "failed": 0,
+  "modeled_operation_orders": 720,
+  "command": "node --test tests/admission-recovery.test.mjs",
+  "tests_sha256": "c34fab61bd4b51f864903ea37a1c1b20063f96e0387091425f4a8c59ced0fa07",
+  "model_sha256": "8eb9ffc3c4ad96f7f42eb866099f28a3a8c2b3759fba73964f25dc6ab8b88c1b",
+  "full_audit_repeated": false,
+  "scope": "Pure state model, dependent-owner propagation, task graph and append-only guard; SQL concurrency/network and clinical release acceptance remain pending"
+}
