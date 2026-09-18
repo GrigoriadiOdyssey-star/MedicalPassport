@@ -1,0 +1,136 @@
+{
+  "mvp_dependency": false,
+  "items": [
+    {
+      "id": "GI-01",
+      "owners": [
+        "CAP-AI",
+        "CAP-DOCUMENTS",
+        "CAP-GOVERNANCE"
+      ],
+      "task": "Implement immutable source/version/assertion registry and permission-checked originals",
+      "depends": [],
+      "acceptance": [
+        "GI-AC-02",
+        "GI-AC-05",
+        "GI-AC-08",
+        "GI-AC-13"
+      ]
+    },
+    {
+      "id": "GI-02",
+      "owners": [
+        "CAP-INTEROP",
+        "CAP-AI"
+      ],
+      "task": "Onboard two approved authoritative sources, schedules, feed/page discovery, health/failover and import quarantine",
+      "depends": [
+        "GI-01"
+      ],
+      "acceptance": [
+        "GI-AC-01",
+        "GI-AC-06"
+      ]
+    },
+    {
+      "id": "GI-03",
+      "owners": [
+        "CAP-AI",
+        "CAP-DOCUMENTS"
+      ],
+      "task": "Versioned translation and protected clinical-span alignment with qualified evaluation",
+      "depends": [
+        "GI-01"
+      ],
+      "acceptance": [
+        "GI-AC-03",
+        "GI-AC-05"
+      ]
+    },
+    {
+      "id": "GI-04",
+      "owners": [
+        "CAP-AI",
+        "CAP-CDS"
+      ],
+      "task": "Context matching, side-by-side comparison and cited explanation with abstention",
+      "depends": [
+        "GI-02",
+        "GI-03"
+      ],
+      "acceptance": [
+        "GI-AC-04",
+        "GI-AC-14"
+      ]
+    },
+    {
+      "id": "GI-05",
+      "owners": [
+        "CAP-AI",
+        "CAP-CDS",
+        "CAP-GOVERNANCE"
+      ],
+      "task": "Structural/semantic update detection and governed safety/knowledge review",
+      "depends": [
+        "GI-02"
+      ],
+      "acceptance": [
+        "GI-AC-07",
+        "GI-AC-12"
+      ]
+    },
+    {
+      "id": "GI-06",
+      "owners": [
+        "CAP-AI",
+        "CAP-NOTIFICATIONS",
+        "CAP-ENCOUNTER"
+      ],
+      "task": "Dependency invalidation, retranslation/recomparison and privacy-safe clinician notices/tasks",
+      "depends": [
+        "GI-04",
+        "GI-05"
+      ],
+      "acceptance": [
+        "GI-AC-09",
+        "GI-AC-10",
+        "GI-AC-11"
+      ]
+    },
+    {
+      "id": "GI-07",
+      "owners": [
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-CDS"
+      ],
+      "task": "Clinical/security/multilingual integration acceptance, restore/replay and no-autonomous-behavior checks",
+      "depends": [
+        "GI-06"
+      ],
+      "acceptance": [
+        "GI-AC-01",
+        "GI-AC-02",
+        "GI-AC-03",
+        "GI-AC-04",
+        "GI-AC-05",
+        "GI-AC-06",
+        "GI-AC-07",
+        "GI-AC-08",
+        "GI-AC-09",
+        "GI-AC-10",
+        "GI-AC-11",
+        "GI-AC-12",
+        "GI-AC-13",
+        "GI-AC-14"
+      ]
+    }
+  ],
+  "release_gates": [
+    "Two authoritative-source contracts, permissions and real connector acceptance",
+    "Multilingual clinical translation and semantic comparison validation",
+    "Qualified high-risk change review and independent clinical-rule deployment approval",
+    "Source-specific polling/notification SLO and fault/restore evidence",
+    "Current consent/clinician access and legal data-use controls"
+  ]
+}

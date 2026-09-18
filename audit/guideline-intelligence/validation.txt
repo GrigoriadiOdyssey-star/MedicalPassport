@@ -1,0 +1,17 @@
+✔ unverified imports, missing validation and unclassified changes cannot enter approved knowledge (2.365ms)
+✔ high-risk recommendation and population changes require safety review plus governed approval (0.4824ms)
+✔ knowledge approval does not activate clinical behavior without independent validated release (1.6968ms)
+✔ unavailable source retains last verified content and known withdrawal status (1.6327ms)
+✔ metadata-only changes count; hash/layout difference alone is not a clinical conclusion (0.278ms)
+✔ version-bound comparisons and translations invalidate without rewriting historical results (0.2753ms)
+✔ uncited explanations abstain and patient recheck never creates clinical mutations (0.3265ms)
+✔ request line provenance is exact and all 18 components and 14 acceptance criteria remain explicit (13.0251ms)
+✔ existing owners/evidence and MVP stay unchanged; subsequent-wave work is dependency-ordered (67.5452ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 242.2058
