@@ -1,0 +1,10 @@
+# Standalone app CI definition. Not included by the frozen root pipeline yet.
+image: node:24-alpine
+stages: [validate]
+validate-medical-passport:
+  stage: validate
+  script:
+    - cd apps/medical-passport
+    - npm ci --ignore-scripts --no-fund --no-audit
+    - npm test
+    - npm run migrate
