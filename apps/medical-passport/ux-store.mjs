@@ -1,3 +1,4 @@
+import { localDate } from "./scheduling.mjs";
 import { HttpError, hash, cleanBody, kinds } from "./store.mjs";
 const fail = (code, status = 400) => {
   throw new HttpError(status, code);
@@ -24,7 +25,7 @@ export function attachUX(Store) {
       ...this.me(user),
       ...this.db
         .prepare(
-          "SELECT birth_date,country FROM patient_details WHERE patient_id=?",
+          "SELECT birth_date,country,timezone FROM patient_details WHERE patient_id=?",
         )
         .get(p.id),
     };
@@ -52,7 +53,7 @@ export function attachUX(Store) {
         .run(name, user.user_id);
       this.db
         .prepare(
-          "INSERT INTO patient_details VALUES(?,?,?) ON CONFLICT(patient_id) DO UPDATE SET birth_date=excluded.birth_date,country=excluded.country",
+          "INSERT INTO patient_details(patient_id,birth_date,country) VALUES(?,?,?) ON CONFLICT(patient_id) DO UPDATE SET birth_date=excluded.birth_date,country=excluded.country",
         )
         .run(p.id, birth, country);
       this.audit(user.user_id, "PROFILE_UPDATED", "", p.id);
@@ -115,6 +116,22 @@ export function attachUX(Store) {
           archive ? 1 : 0,
           this.now(),
         );
+      if (this.cancelFuture) {
+        const plan = this.db
+          .prepare(
+            "SELECT id FROM reminder_plans WHERE record_id=? AND active=1",
+          )
+          .get(id);
+        if (plan) {
+          this.db
+            .prepare(
+              "UPDATE reminder_plans SET active=0,updated_at=? WHERE id=?",
+            )
+            .run(this.now(), plan.id);
+          this.cancelFuture(plan.id, 0);
+          this.audit(user.user_id, "REMINDER_PAUSED_ON_EDIT", plan.id, p.id);
+        }
+      }
       this.audit(
         user.user_id,
         archive ? "RECORD_ARCHIVED" : "RECORD_UPDATED",
@@ -133,6 +150,13 @@ export function attachUX(Store) {
           .get(id, p.id)
       )
         fail("NOT_FOUND", 404);
+      const language = trim(body.language ?? "und", 20),
+        translation = body.translation_status ?? "original";
+      if (
+        !/^[a-z]{2,3}(-[A-Za-z]{2,8})?$/.test(language) ||
+        !["original", "translated"].includes(translation)
+      )
+        fail("INVALID_DOCUMENT_METADATA");
       const description = trim(body.description ?? "", 1000),
         d = date(body.document_date ?? "");
       this.db
@@ -140,6 +164,11 @@ export function attachUX(Store) {
           "INSERT INTO document_details(document_id,description,document_date) VALUES(?,?,?) ON CONFLICT(document_id) DO UPDATE SET description=excluded.description,document_date=excluded.document_date",
         )
         .run(id, description, d);
+      this.db
+        .prepare(
+          "UPDATE document_details SET language=?,translation_status=? WHERE document_id=?",
+        )
+        .run(language, translation, id);
       this.audit(user.user_id, "DOCUMENT_METADATA_UPDATED", id, p.id);
       return { ok: true };
     });
@@ -167,6 +196,7 @@ export function attachUX(Store) {
     screen,
     offset = 0,
     archived = false,
+    phase = "active",
   ) {
     const p = this.patient(user);
     offset = Number(offset);
@@ -174,10 +204,27 @@ export function attachUX(Store) {
       fail("INVALID_PAGE");
     return this.transaction(() => {
       this.audit(user.user_id, "SCREEN_READ", screen, p.id);
+      const today = localDate(this.now(), this.profile(user).timezone ?? "UTC");
+      const medPhase = archived ? "past" : phase;
+      if (!["active", "past", "upcoming"].includes(medPhase))
+        fail("INVALID_PAGE");
+      const medWhere =
+        medPhase === "past"
+          ? "(archived=1 OR json_extract(body,'$.status')='stopped' OR (json_extract(body,'$.end')!='' AND json_extract(body,'$.end')<'" +
+            today +
+            "'))"
+          : "archived=0 AND COALESCE(json_extract(body,'$.status'),'active')!='stopped' AND " +
+            (medPhase === "upcoming"
+              ? "json_extract(body,'$.start')>'" + today + "'"
+              : "(COALESCE(json_extract(body,'$.start'),'')<='" +
+                today +
+                "') AND (COALESCE(json_extract(body,'$.end'),'')='' OR json_extract(body,'$.end')>='" +
+                today +
+                "')");
       const readRecords = (filter, limit = 30) =>
         this.db
           .prepare(
-            `SELECT * FROM current_records WHERE patient_id=? AND ${filter === "medication" ? (archived ? "(archived=1 OR json_extract(body,'$.status')='stopped')" : "archived=0 AND COALESCE(json_extract(body,'$.status'),'active')!='stopped'") : "archived=?"} ${filter ? "AND kind=?" : ""} ORDER BY created_at DESC,id DESC LIMIT ? OFFSET ?`,
+            `SELECT * FROM current_records WHERE patient_id=? AND ${filter === "medication" ? medWhere : "archived=?"} ${filter ? "AND kind=?" : ""} ORDER BY created_at DESC,id DESC LIMIT ? OFFSET ?`,
           )
           .all(
             ...[
@@ -192,7 +239,7 @@ export function attachUX(Store) {
       const docs = () =>
         this.db
           .prepare(
-            "SELECT d.id,d.name,d.mime,d.document_type,d.source,d.created_at,COALESCE(m.description,'') description,COALESCE(m.document_date,'') document_date,COALESCE(m.archived,0) archived FROM documents d LEFT JOIN document_details m ON m.document_id=d.id WHERE d.patient_id=? AND COALESCE(m.archived,0)=? ORDER BY d.created_at DESC,d.id DESC LIMIT 30 OFFSET ?",
+            "SELECT d.id,d.name,d.mime,d.document_type,d.source,d.created_at,COALESCE(m.description,'') description,COALESCE(m.document_date,'') document_date,COALESCE(m.language,'und') language,COALESCE(m.translation_status,'original') translation_status,COALESCE(m.archived,0) archived FROM documents d LEFT JOIN document_details m ON m.document_id=d.id WHERE d.patient_id=? AND COALESCE(m.archived,0)=? ORDER BY d.created_at DESC,d.id DESC LIMIT 30 OFFSET ?",
           )
           .all(p.id, archived ? 1 : 0, offset);
       if (kinds.includes(screen))
@@ -209,9 +256,13 @@ export function attachUX(Store) {
       if (["home", "passport"].includes(screen)) {
         const counts = this.db
           .prepare(
-            "SELECT kind,COUNT(*) count FROM current_records WHERE patient_id=? AND archived=0 AND (kind!='medication' OR COALESCE(json_extract(body,'$.status'),'active')!='stopped') GROUP BY kind",
+            "SELECT kind,COUNT(*) count FROM current_records WHERE patient_id=? AND archived=0 AND (kind!='medication' OR (COALESCE(json_extract(body,'$.status'),'active')!='stopped' AND COALESCE(NULLIF(json_extract(body,'$.start'),''),'0000-01-01')<=? AND COALESCE(NULLIF(json_extract(body,'$.end'),''),'9999-12-31')>=?)) GROUP BY kind",
           )
-          .all(p.id);
+          .all(
+            p.id,
+            localDate(this.now(), this.profile(user).timezone || "UTC"),
+            localDate(this.now(), this.profile(user).timezone || "UTC"),
+          );
         return {
           profile: this.profile(user),
           counts,

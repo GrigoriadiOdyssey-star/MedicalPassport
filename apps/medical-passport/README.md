@@ -1,6 +1,6 @@
-# EDHT Medical Passport — Functional Alpha 0.2
+# EDHT Medical Passport — Functional Alpha 0.3
 
-Node 24, vanilla browser UI, real HTTP API and SQLite persistence. This is the MASTER-23 multi-screen redesign, based on implementation commit `05ab4fd`. Use fictional adult profiles only. Production startup is refused; the server binds only to `127.0.0.1`.
+Node 24, vanilla browser UI, real HTTP API and SQLite persistence. This is MASTER-24 productization, based on MASTER-23 commit `331b891`. Use fictional adult profiles only. Production startup is refused; the server binds only to `127.0.0.1`.
 
 ## Start
 
@@ -62,7 +62,7 @@ See `../../audit/master-22/` for the checkpoint, evidence and honest task accoun
 
 `npm test` runs real in-memory/disk SQLite tests and HTTP tests against ephemeral ports, including QR generation independently decoded by jsQR, permission isolation, CSRF/Origin, expiry, revoke, one-time races, audit rollback, account recovery, FHIR replay and DB restart. Tests use temporary disposable synthetic databases and close them before cleanup.
 
-`tests/browser-alpha02.md` records the latest browser scenario and responsive evidence; `tests/browser-scenario.md` preserves Alpha 0.1 evidence. It is browser verification evidence, not a claimed automated Playwright suite.
+`tests/browser-alpha03.md` records the latest browser scenario and responsive evidence; `tests/browser-alpha02.md` preserves Alpha 0.2; `tests/browser-scenario.md` preserves Alpha 0.1 evidence. It is browser verification evidence, not a claimed automated Playwright suite.
 
 ## Alpha 0.2 interface and additive APIs
 
@@ -73,3 +73,9 @@ Migration 003 adds immutable record revisions and document/profile metadata with
 New authenticated routes: GET/POST /api/profile; GET /api/views/:screen with bounded offset pages; GET /api/records/:id/history; POST /api/records/:id/update or /archive; POST /api/documents/:id/metadata or /archive; POST /api/access/info. Mutations retain existing CSRF/Origin checks. Access status is recipient-bound and does not consume a one-time grant; actual content reads still use the original authorization transaction.
 
 The app suite has 32 tests. Frontend tests combine pure helpers and real DOM integration with mocked network; API/store tests exercise real SQLite and HTTP. Native browser journeys are documented separately. See ../../audit/master-23/ALPHA_02_STATUS.md for remaining limitations and checkpoint.
+
+## Alpha 0.3
+
+Run `node seed-demo.mjs` for labelled fictional patient/doctor fixtures (it prints their local demo credentials). New migrations 004/005 retain existing data. Notification center/settings, medication schedules and dose history, explicit timezone decisions, active-access filters and session controls are functional. See [product architecture](PRODUCT_ALPHA03.md) and [MASTER-24 status](../../audit/master-24/STATUS.md).
+
+The in-app scheduler runs every 30 seconds and on relevant reads while this local server runs. Browser alerts require an explicit foreground permission action. PUSH/EMAIL/SMS are adapter boundaries only; choosing one does not send externally. No LLM, prescribing, translation service or appointment provider is connected.

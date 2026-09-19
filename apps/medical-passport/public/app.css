@@ -1274,3 +1274,385 @@ dialog::backdrop {
     font-size: 13px;
   }
 }
+/* Alpha 0.3: medical blue identity; red reserved for critical/emergency. */
+:root {
+  color: #18324e;
+  background: #f4f8fc;
+  --accent: #1766b8;
+  --muted: #566d85;
+  --line: #dce7f2;
+  --red: #b53340;
+}
+.sidebar {
+  background: #fff;
+  border-color: #dce7f2;
+}
+.brand-mark {
+  background: #1766b8;
+  color: #fff;
+  box-shadow: 0 5px 14px #1766b828;
+}
+.brand {
+  color: #113f70;
+}
+.nav a[aria-current="page"] {
+  background: #e8f2ff;
+  color: #124d91;
+}
+.nav a:hover {
+  background: #f0f6fd;
+}
+.topbar {
+  border-bottom: 1px solid #deebf5;
+}
+.alpha {
+  background: #e7f3fc;
+  color: #245077;
+}
+.welcome-card {
+  background: linear-gradient(115deg, #e2f0ff, #f0f9ff 65%, #dcf5f4);
+  border: 1px solid #cae2fa;
+}
+.welcome-card h1 {
+  color: #103e72;
+}
+.welcome-card .avatar {
+  background: #cdeafa;
+  color: #145688;
+  box-shadow: 0 0 0 12px #ffffff70;
+}
+.avatar {
+  background: #e2f1fa;
+  color: #185886;
+}
+.eyebrow {
+  color: #236799;
+}
+.card {
+  border-color: #dfe8f2;
+  box-shadow: 0 4px 22px #153a6506;
+}
+.quick-card {
+  border: 1px solid #d2e3f6;
+  box-shadow: 0 5px 18px #1c569008;
+}
+.quick-icon {
+  background: #e7f2ff;
+  color: #175caa;
+}
+.quick-card.ai {
+  background: #edf5ff;
+}
+.quick-card.ai .quick-icon {
+  background: #d9ebff;
+  color: #235bb2;
+}
+.quick-card.sos {
+  background: #fff4f4;
+}
+.quick-card.sos .quick-icon {
+  background: #fbe0e2;
+  color: var(--red);
+}
+.btn:not(.secondary):not(.ghost):not(.danger) {
+  background: #1766b8;
+  color: #fff;
+}
+.btn:not(.secondary):not(.ghost):not(.danger):hover {
+  background: #11559d;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn[aria-pressed="true"] {
+  background: #e0efff;
+  color: #12529a;
+  border-color: #8dbbe9;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.note {
+  background: #edf5fd;
+  color: #345777;
+}
+.tab[aria-selected="true"] {
+  color: #155da7;
+  border-color: #1766b8;
+}
+.bottom-nav a[aria-current="page"] {
+  background: #e5f1ff;
+  color: #135aa4;
+}
+.sos-panel {
+  background: #fff5f5;
+  border-color: #f1d1d4;
+}
+.chat-intro {
+  background: #edf5ff;
+}
+.chat-icon {
+  color: #1766b8;
+  background: #dcecff;
+}
+.chip.active,
+.chip.DELIVERED,
+.chip.SCHEDULED,
+.chip.PENDING {
+  background: #e4f1ff;
+  color: #13599b;
+}
+.chip.TAKEN,
+.chip.TAKEN_LATE {
+  background: #e4f5ed;
+  color: #1a6344;
+}
+.chip.MISSED,
+.chip.SKIPPED,
+.chip.SNOOZED {
+  background: #fff1dc;
+  color: #805913;
+}
+.notification-badge {
+  display: inline-flex;
+  border-radius: 20px;
+  background: #1766b8;
+  color: #fff;
+  font-size: 11px;
+  min-width: 17px;
+  justify-content: center;
+}
+.notification-badge:empty {
+  display: none;
+}
+.notification.unread {
+  border-left: 4px solid #2775c8;
+}
+.notification-list {
+  display: grid;
+  gap: 14px;
+}
+.notification h2 {
+  font-size: 18px;
+}
+.notification .card-actions {
+  flex-wrap: wrap;
+}
+.command-center {
+  margin: 28px 0;
+}
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.summary-stats strong {
+  display: block;
+  color: #165596;
+  font-size: 32px;
+}
+.summary-stats span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.dose-card {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.dose-card > div:first-child {
+  flex: 1;
+  min-width: 180px;
+}
+.dose-card p {
+  margin: 5px 0;
+}
+.dose-card .card-actions {
+  width: 100%;
+  margin: 4px 0 0;
+  padding-top: 8px;
+}
+.dose-card label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.reminder-tools {
+  background: #f1f7fd;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px 0;
+}
+.reminder-tools .btn {
+  margin: 4px;
+}
+.adherence {
+  margin-top: 24px;
+}
+.adherence details {
+  margin-top: 18px;
+  max-height: 540px;
+  overflow: auto;
+}
+summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 12px 0;
+  font-weight: 600;
+}
+.weekday-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+.weekday-options label,
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
+.weekday-options input,
+.check input {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+}
+.settings-grid {
+  margin-top: 24px;
+}
+.settings-grid .card {
+  min-width: 0;
+}
+.toolbar {
+  flex-wrap: wrap;
+}
+.card-actions {
+  flex-wrap: wrap;
+}
+.notification .row {
+  flex-wrap: wrap;
+}
+.splash {
+  min-height: 80dvh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #145da9;
+}
+.splash strong {
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+.splash svg {
+  width: 220px;
+  height: 64px;
+  margin: 20px auto;
+}
+.splash path {
+  stroke-dasharray: 350;
+  animation: ecg 1.6s linear infinite;
+}
+@keyframes ecg {
+  from {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .splash path {
+    animation: none;
+  }
+}
+@media (max-width: 760px) {
+  .activity {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .topbar {
+    gap: 7px;
+    padding: 10px 12px;
+  }
+  .topbar-title {
+    font-size: 12px;
+    max-width: 115px;
+  }
+  .topbar .user-link {
+    display: none;
+  }
+  .topbar select {
+    max-width: 62px;
+  }
+  .dose-card {
+    padding: 14px 0;
+  }
+  .dose-card .card-actions {
+    gap: 7px;
+  }
+  .dose-card .btn {
+    padding: 10px 13px;
+  }
+  .command-center {
+    margin-top: 20px;
+  }
+  .summary-stats {
+    gap: 14px;
+  }
+  .screen-head {
+    flex-wrap: wrap;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .notification h2 {
+    font-size: 17px;
+  }
+  .adherence .row {
+    flex-wrap: wrap;
+  }
+  .qr-review {
+    padding: 20px;
+  }
+  .weekday-options {
+    gap: 6px;
+  }
+}
+.tabs {
+  background: #edf3fa;
+}
+.warning {
+  background: #fff1f1;
+  border-color: #bc3d46;
+  color: #85343b;
+}
+.notification .card-actions .btn {
+  min-width: 88px;
+}
+.timeline-date {
+  margin: 24px 0 12px;
+  color: #245c91;
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .quick-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .quick-card {
+    padding: 15px;
+  }
+  .user-link > span:last-child {
+    max-width: 100px;
+  }
+  .topbar {
+    gap: 10px;
+  }
+}

@@ -21,7 +21,7 @@ export const screens = [
 ];
 export function route(hash, role) {
   const key = hash.replace(/^#\/?/, "");
-  return role === "doctor" ? "doctor" : screens.includes(key) ? key : "home";
+  return role === "doctor" ? "doctor" : [...screens,"notifications","notification-settings","privacy"].includes(key) ? key : "home";
 }
 export function grantStatus(g, now = Date.now()) {
   return g.revoked_at !== null

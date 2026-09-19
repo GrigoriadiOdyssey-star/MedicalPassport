@@ -1,3 +1,4 @@
+import { createProductUI } from "../public/product-ui.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -27,7 +28,7 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
   w.HTMLDialogElement.prototype.close = function () {
     this.open = false;
   };
-  w.__deps = { tr: translate, ...ui };
+  w.__deps = { tr: translate, createProductUI, ...ui };
   let records = [],
     calls = [];
   const me = {
@@ -72,13 +73,21 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
       };
       records.push(value);
     } else if (path === "/api/doctors") value = [];
-    else if (path === "/api/grants") value = [];
+    else if (
+      path === "/api/grants" ||
+      path === "/api/audit" ||
+      path === "/api/notification-settings" ||
+      path === "/api/sessions"
+    )
+      value = [];
+    else if (path === "/api/notifications") value = { items: [], unread: 0 };
+    else if (path === "/api/reminders") value = { plans: [], doses: [] };
     else if (path === "/api/assistant")
       value = { source_records: [], is_generative_ai: false };
     return { ok: true, status: 200, json: async () => value };
   };
   w.eval(
-    "const {tr,escape:e,screens,route,grantStatus,sourceStatus,errorMessage,groupTimeline}=window.__deps;\n" +
+    "const {tr,createProductUI,escape:e,screens,route,grantStatus,sourceStatus,errorMessage,groupTimeline}=window.__deps;\n" +
       source,
   );
   t.after(() => w.close());
@@ -238,4 +247,61 @@ test("localized skip link and profile remain named independently of mobile-hidde
       w.document.querySelector(".skip").textContent === translate("skip", "ru"),
   );
   await waitFor(() => !w.document.querySelector(".skeleton"));
+});
+test("notification center and settings submit real UI actions with CSRF", async (t) => {
+  const { w, calls, navigate, click } = await setup(t);
+  await navigate("notifications");
+  assert.match(w.document.querySelector("main").textContent, /Notifications/);
+  click('[data-notice-action="read_all"]');
+  await waitFor(() =>
+    calls.some((c) => c.path === "/api/notifications/action"),
+  );
+  const request = calls.find((c) => c.path === "/api/notifications/action");
+  assert.equal(JSON.parse(request.opt.body).action, "read_all");
+  assert.equal(request.opt.headers["x-csrf-token"], "csrf");
+  await waitFor(() => !w.document.querySelector(".skeleton"));
+  await navigate("notification-settings");
+  assert.match(
+    w.document.querySelector("main").textContent,
+    /External channels are not connected/,
+  );
+});
+test("medication reminder form enforces confirmation and serializes schedule independently of record", async (t) => {
+  const { w, calls, navigate, click } = await setup(t);
+  await navigate("medication");
+  click('[data-action="add-record"]');
+  let f = w.document.querySelector("#record-form");
+  f.elements.name.value = "Synthetic reminder med";
+  f.dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+  await waitFor(() =>
+    w.document.querySelector('[data-action="configure-reminder"]'),
+  );
+  click('[data-action="configure-reminder"]');
+  await waitFor(() => w.document.querySelector("#reminder-form"));
+  f = w.document.querySelector("#reminder-form");
+  f.dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+  assert.equal(
+    calls.filter((c) => c.path === "/api/reminders" && c.opt.method === "POST")
+      .length,
+    0,
+  );
+  f.elements.confirmed.checked = true;
+  f.elements.start.value = "2026-09-19";
+  f.elements.timezone.value = "UTC";
+  f.elements.times.value = "08:00,20:00";
+  f.dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+  await waitFor(() =>
+    calls.some((c) => c.path === "/api/reminders" && c.opt.method === "POST"),
+  );
+  const request = calls.find(
+    (c) => c.path === "/api/reminders" && c.opt.method === "POST",
+  );
+  assert.deepEqual(JSON.parse(request.opt.body).times, ["08:00", "20:00"]);
+  assert.equal(JSON.parse(request.opt.body).record_id, "record-1");
+  assert.equal(calls.filter((c) => c.path === "/api/records").length, 1);
+  await waitFor(() =>
+    w.document
+      .querySelector("#toast")
+      .textContent.includes("Reminder scheduled"),
+  );
 });

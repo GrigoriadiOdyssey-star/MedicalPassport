@@ -6,7 +6,9 @@ import QRCode from "qrcode";
 import { Store, HttpError, appRoot, hash } from "./store.mjs";
 import { adaptFHIR } from "./interop.mjs";
 import { attachUX } from "./ux-store.mjs";
+import { attachProduct } from "./product-store.mjs";
 attachUX(Store);
+attachProduct(Store);
 export function createApplication({
   database = path.join(appRoot, "var", "passport.sqlite"),
   mode = process.env.EDHT_MODE ?? "synthetic",
@@ -18,6 +20,7 @@ export function createApplication({
     );
   const store = new Store(database, now);
   let origin;
+  let notificationWorker;
   const registrationLimit = new Map();
   const server = http.createServer(async (req, res) => {
     const headers = {
@@ -70,7 +73,15 @@ export function createApplication({
       }
       if (
         req.method === "GET" &&
-        ["/", "/main.js", "/i18n.js", "/ui.js", "/app.css"].includes(route)
+        [
+          "/",
+          "/main.js",
+          "/i18n.js",
+          "/ui.js",
+          "/app.css",
+          "/product-ui.js",
+          "/product-i18n.js",
+        ].includes(route)
       ) {
         const filename = route === "/" ? "index.html" : route.slice(1),
           mime = route.endsWith(".js")
@@ -136,6 +147,69 @@ export function createApplication({
       requestActor = user.user_id;
       if (mutation && req.headers["x-csrf-token"] !== user.csrf)
         throw new HttpError(403, "INVALID_CSRF");
+      if (req.method === "GET" && route === "/api/notifications") {
+        json(
+          200,
+          store.notificationList(
+            user,
+            url.searchParams.get("filter") ?? "all",
+            url.searchParams.get("type") ?? "all",
+            Number(url.searchParams.get("offset") ?? 0),
+          ),
+        );
+        return;
+      }
+      if (req.method === "POST" && route === "/api/notifications/action") {
+        json(
+          200,
+          store.notificationAction(
+            user,
+            body.id ?? "",
+            body.action,
+            body.minutes,
+          ),
+        );
+        return;
+      }
+      if (req.method === "GET" && route === "/api/notification-settings") {
+        json(200, store.preferences(user));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/notification-settings") {
+        json(200, store.savePreferences(user, body));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/reminders") {
+        json(
+          200,
+          store.reminderData(user, Number(url.searchParams.get("days") ?? 1),Number(url.searchParams.get("offset")??0)),
+        );
+        return;
+      }
+      if (req.method === "POST" && route === "/api/reminders") {
+        json(201, store.configureReminder(user, body.record_id, body));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/reminders/pause") {
+        json(200, store.pauseReminder(user, body.id));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/doses/action") {
+        json(200, store.doseAction(user, body.id, body.action, body.minutes));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/timezone") {
+        json(200, store.timezoneChoice(user, body));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/sessions") {
+        json(200, store.sessionsList(user));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/sessions/revoke") {
+        json(200, store.revokeSession(user, body.id));
+        return;
+      }
       if (req.method === "GET" && route === "/api/profile") {
         json(200, store.profile(user));
         return;
@@ -152,6 +226,7 @@ export function createApplication({
             route.split("/")[3],
             url.searchParams.get("offset") ?? 0,
             url.searchParams.get("archived") === "1",
+            url.searchParams.get("phase") ?? "active",
           ),
         );
         return;
@@ -242,7 +317,7 @@ export function createApplication({
         return;
       }
       if (req.method === "GET" && route === "/api/grants") {
-        json(200, store.grants(user));
+        json(200, store.grants(user,Number(url.searchParams.get("offset")??0),url.searchParams.get("status")??"all"));
         return;
       }
       if (req.method === "POST" && route === "/api/grants") {
@@ -354,9 +429,18 @@ export function createApplication({
         server.listen(port, "127.0.0.1", resolve);
       });
       origin = "http://127.0.0.1:" + server.address().port;
+      notificationWorker = setInterval(() => {
+        try {
+          store.pumpNotifications();
+        } catch (e) {
+          console.error("Notification worker failed:", e.name);
+        }
+      }, 30000);
+      notificationWorker.unref();
       return origin;
     },
     async close() {
+      clearInterval(notificationWorker);
       await new Promise((resolve) => server.close(resolve));
       store.close();
     },

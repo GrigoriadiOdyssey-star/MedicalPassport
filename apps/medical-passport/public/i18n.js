@@ -1,3 +1,4 @@
+import { productStrings } from "./product-i18n.js";
 export const strings = {
   navPassport: ["Passport", "Паспорт"],
   navProfile: ["Profile", "Профиль"],
@@ -384,6 +385,11 @@ export const strings = {
   ],
   ACCESS_STATUS_CHECK: ["Access status checked", "Проверен статус доступа"],
 };
+Object.assign(strings, productStrings);
+strings.alpha = [
+  "Alpha 0.3 · fictional adult data only",
+  "Alpha 0.3 · только вымышленные данные взрослых",
+];
 export function translate(key, locale = "ru") {
   return strings[key]?.[locale === "en" ? 0 : 1] ?? key;
 }
@@ -412,3 +418,13 @@ export const errorKeys = {
   NOT_FOUND: "accessDenied",
   ACCESS_NOT_AUTHORIZED: "accessDenied",
 };
+
+Object.assign(errorKeys, {
+  INVALID_SCHEDULE: "scheduleError",
+  SCHEDULE_CONFIRM_REQUIRED: "scheduleError",
+  INVALID_TIMEZONE: "scheduleError",
+  DOSE_ALREADY_RESOLVED: "doseResolved",
+  DOSE_NOT_DUE: "doseNotDue",
+  REMINDER_DISABLED: "reminderDisabled",
+  SCHEDULE_OUTSIDE_RECORD: "scheduleBounds",
+});

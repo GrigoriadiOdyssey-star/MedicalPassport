@@ -68,7 +68,7 @@ export function cleanBody(kind, b) {
           "donor",
         ]
       : kind === "allergy"
-        ? ["name", "reaction", "status", "severity"]
+        ? ["name", "reaction", "status", "severity", "onset", "notes"]
         : kind === "medication"
           ? [
               "name",
@@ -76,6 +76,11 @@ export function cleanBody(kind, b) {
               "status",
               "dose",
               "frequency",
+              "form",
+              "unit",
+              "instructions",
+              "food",
+              "prescriber",
               "route",
               "start",
               "end",
@@ -150,7 +155,7 @@ export class Store {
     this.db.exec(
       "CREATE TABLE IF NOT EXISTS migrations(version INTEGER PRIMARY KEY, applied_at INTEGER NOT NULL)",
     );
-    for (const version of [1, 2, 3])
+    for (const version of [1, 2, 3, 4, 5])
       if (
         !this.db
           .prepare("SELECT 1 FROM migrations WHERE version=?")
@@ -574,13 +579,15 @@ export class Store {
       };
     });
   }
-  grants(user) {
+  grants(user, offset=0, status="all") {
+    if(!Number.isInteger(Number(offset))||offset<0||offset>100000||!["all","active","expired","revoked","used"].includes(status))fail(400,"INVALID_PAGE");
+    const now=this.now();const where={all:"",active:" AND g.revoked_at IS NULL AND g.expires_at>"+now+" AND NOT(g.one_time=1 AND g.used_at IS NOT NULL)",expired:" AND g.revoked_at IS NULL AND g.expires_at<="+now,revoked:" AND g.revoked_at IS NOT NULL",used:" AND g.revoked_at IS NULL AND g.expires_at>"+now+" AND g.one_time=1 AND g.used_at IS NOT NULL"}[status];
     const p = this.patient(user);
     return this.db
       .prepare(
-        "SELECT g.id,g.scopes,g.purpose,g.expires_at,g.revoked_at,g.one_time,g.used_at,u.name AS recipient FROM grants g JOIN users u ON u.id=g.recipient_id WHERE g.patient_id=? ORDER BY g.created_at DESC",
+        "SELECT g.id,g.scopes,g.purpose,g.expires_at,g.revoked_at,g.one_time,g.used_at,u.name AS recipient FROM grants g JOIN users u ON u.id=g.recipient_id WHERE g.patient_id=? "+where+" ORDER BY g.created_at DESC,g.id LIMIT 30 OFFSET ?",
       )
-      .all(p.id)
+      .all(p.id,Number(offset))
       .map((g) => ({ ...g, scopes: JSON.parse(g.scopes) }));
   }
   revoke(user, id) {

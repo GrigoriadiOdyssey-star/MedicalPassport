@@ -1,3 +1,4 @@
+import { createProductUI } from "./product-ui.js";
 import { translate as tr } from "./i18n.js";
 import {
   escape as e,
@@ -32,6 +33,7 @@ let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   data = {},
   offset = 0,
   archived = false,
+  medPhase = "active",
   filter = "all",
   qr = null,
   shareToken = "",
@@ -104,6 +106,7 @@ async function api(path, body, blob = false) {
   return blob ? r.blob() : r.json();
 }
 function clearPrivate() {
+  product.clear();
   authMode = "signin";
   me = null;
   csrf = "";
@@ -188,7 +191,7 @@ function shell() {
   const nav = (key, mobile = false) =>
     `<a href="#/${key}" ${screen === key ? 'aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon[key]}</span><span>${e(t(mobile ? ({ passport: "navPassport", profile: "navProfile", assistant: "navAI", qr: "navQR" }[key] ?? key) : key))}</span></a>`;
   $("#app").innerHTML =
-    `<aside class="sidebar" id="sidebar"><div class="brand"><span class="brand-mark">✚</span><span>EDHT<small>Medical Passport</small></span></div><nav class="nav" aria-label="${e(t("menu"))}">${navs.map((k) => nav(k)).join("")}</nav><div class="sidebar-foot">${e(t("local"))}<br>Alpha 0.2</div></aside><div class="workspace"><header class="topbar"><button class="icon-btn mobile-menu" data-action="menu" aria-label="${e(t("menu"))}" aria-expanded="false">☰</button><div class="topbar-title">${e(t(screen))}</div>${langSelect()}${me.role === "patient" ? `<button class="icon-btn activity" data-action="activity" aria-label="${e(t("notifications"))}">◷</button>` : ""}<a class="user-link" aria-label="${e(t(me.role === "doctor" ? "doctor" : "profile") + ": " + me.name)}" href="#/${me.role === "doctor" ? "doctor" : "profile"}">${avatar(me.name)}<span>${e(me.name)}</span></a><button class="icon-btn" data-action="logout" aria-label="${e(t("logout"))}">↗</button></header><div class="alpha">${e(t("alpha"))}</div><main id="main" class="main" tabindex="-1"><div class="skeleton title"></div><div class="grid" aria-busy="true" aria-label="${e(t("loading"))}"><div class="skeleton"></div><div class="skeleton"></div></div></main></div>${me.role === "patient" ? `<nav class="bottom-nav" aria-label="${e(t("menu"))}">${["home", "passport", "qr", "assistant", "profile"].map((k) => nav(k, true)).join("")}</nav><a class="sos-float" href="#/emergency">✚ SOS</a>` : ""}`;
+    `<aside class="sidebar" id="sidebar"><div class="brand"><span class="brand-mark">✚</span><span>EDHT<small>Medical Passport</small></span></div><nav class="nav" aria-label="${e(t("menu"))}">${navs.map((k) => nav(k)).join("")}</nav><div class="sidebar-foot">${e(t("local"))}<br>Alpha 0.3</div></aside><div class="workspace"><header class="topbar"><button class="icon-btn mobile-menu" data-action="menu" aria-label="${e(t("menu"))}" aria-expanded="false">☰</button><div class="topbar-title">${e(t(screen))}</div>${langSelect()}${me.role === "patient" ? `<button class="icon-btn activity" data-action="notifications" aria-label="${e(t("notifications"))}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0v6l2 3H4l2-3zM9 20h6"/></svg> <span class="notification-badge" data-unread></span></button>` : ""}<a class="user-link" aria-label="${e(t(me.role === "doctor" ? "doctor" : "profile") + ": " + me.name)}" href="#/${me.role === "doctor" ? "doctor" : "profile"}">${avatar(me.name)}<span>${e(me.name)}</span></a><button class="icon-btn" data-action="logout" aria-label="${e(t("logout"))}">↗</button></header><div class="alpha">${e(t("alpha"))}</div><main id="main" class="main" tabindex="-1"><div class="skeleton title"></div><div class="grid" aria-busy="true" aria-label="${e(t("loading"))}"><div class="skeleton"></div><div class="skeleton"></div></div></main></div>${me.role === "patient" ? `<nav class="bottom-nav" aria-label="${e(t("menu"))}">${["home", "passport", "qr", "assistant", "profile"].map((k) => nav(k, true)).join("")}</nav><a class="sos-float" href="#/emergency">✚ SOS</a>` : ""}`;
 }
 function empty(title, description, action = "", label = "add") {
   return `<div class="empty"><div class="empty-icon" aria-hidden="true">${icon[screen] ?? "○"}</div><h2>${e(t(title))}</h2><p>${e(t(description))}</p>${action ? b(label, action, "", "") : ""}</div>`;
@@ -202,12 +205,18 @@ function recordCard(r, doctor = false) {
     r.kind === "allergy"
       ? [
           ["reaction", body.reaction],
+          ["onset", body.onset],
+          ["notes", body.notes],
           ["severity", t(body.severity ?? "unknown")],
           ["status", t(body.status ?? "reported")],
         ]
       : r.kind === "medication"
         ? [
-            ["dose", body.dose],
+            ["dose", [body.dose, body.unit].filter(Boolean).join(" ")],
+            ["form", body.form],
+            ["instructions", body.instructions],
+            ["prescriber", body.prescriber],
+            ["food", body.food ? t(body.food) : ""],
             ["frequency", body.frequency],
             ["route", body.route],
             ["start", body.start],
@@ -215,10 +224,10 @@ function recordCard(r, doctor = false) {
             ["notes", body.notes],
           ]
         : [["notes", body.notes]];
-  return `<article class="card record-card ${body.severity === "critical" ? "critical" : ""}"><div class="record-title"><h2>${e(body.name ?? t(r.kind))}</h2>${body.severity === "critical" ? chip("critical") : ""}</div><div class="chips">${chip(meta)}${r.archived ? chip("archived") : chip(body.status === "stopped" ? "stopped" : "active")}</div>${definition(fields)}<small>${e(t("date"))}: ${stamp(r.created_at)} · ${e(t("version"))} ${r.version}</small>${doctor ? "" : `<div class="card-actions">${!r.archived ? b("edit", "edit-record", `data-id="${r.id}"`) + b(r.kind === "medication" ? "stop" : "archive", "archive-record", `data-id="${r.id}"`) : ""}${b("history", "history", `data-id="${r.id}"`, "ghost")}</div>`}</article>`;
+  return `<article class="card record-card ${body.severity === "critical" ? "critical" : ""}"><div class="record-title"><h2>${e(body.name ?? t(r.kind))}</h2>${body.severity === "critical" ? chip("critical") : ""}</div><div class="chips">${chip(meta)}${r.archived ? chip("archived") : chip(body.status === "stopped" ? "stopped" : body.start && body.start > new Date().toISOString().slice(0, 10) ? "upcoming" : "active")}</div>${definition(r.kind === "medication" ? fields.filter(([, v]) => v) : fields)}${r.kind === "medication" && !doctor ? product.medTools(r, data) : ""}<small>${e(t("date"))}: ${stamp(r.created_at)} · ${e(t("version"))} ${r.version}</small>${doctor ? "" : `<div class="card-actions">${!r.archived ? b("edit", "edit-record", `data-id="${r.id}"`) + b(r.kind === "medication" ? "stop" : "archive", "archive-record", `data-id="${r.id}"`) : ""}${b("history", "history", `data-id="${r.id}"`, "ghost")}</div>`}</article>`;
 }
 function docCard(d, doctor = false) {
-  return `<article class="card document-card"><div class="row spread"><span class="list-icon" aria-hidden="true">▤</span>${chip("reported")}</div><h3>${e(d.name)}</h3><p class="muted">${e(t(d.document_type))} · ${e(d.document_date || stamp(d.created_at))}</p>${d.description ? `<p>${e(d.description)}</p>` : ""}<div class="card-actions">${b("download", doctor ? "shared-download" : "download", `data-id="${d.id}"`)}${!doctor && d.mime === "text/plain" ? b("preview", "preview", `data-id="${d.id}"`) : ""}${!doctor && !d.archived ? b("edit", "edit-document", `data-id="${d.id}"`, "ghost") + b("archive", "archive-document", `data-id="${d.id}"`, "ghost") : ""}</div></article>`;
+  return `<article class="card document-card"><div class="row spread"><span class="list-icon" aria-hidden="true">▤</span>${chip("reported")}</div><h3>${e(d.name)}</h3><p class="muted">${e(t(d.document_type))} · ${e(d.document_date || stamp(d.created_at))}</p><small>${e(t("documentLanguage"))}: ${e(d.language ?? "und")} · ${e(t(d.translation_status ?? "original"))}</small>${d.description ? `<p>${e(d.description)}</p>` : ""}<div class="card-actions">${b("download", doctor ? "shared-download" : "download", `data-id="${d.id}"`)}${!doctor && d.mime === "text/plain" ? b("preview", "preview", `data-id="${d.id}"`) : ""}${!doctor && !d.archived ? b("edit", "edit-document", `data-id="${d.id}"`, "ghost") + b("archive", "archive-document", `data-id="${d.id}"`, "ghost") : ""}</div></article>`;
 }
 function listRows(rows) {
   return (
@@ -236,7 +245,7 @@ function home() {
     blood = [em.bloodGroup, em.rh]
       .filter((x) => x && x !== "UNKNOWN")
       .join(" ");
-  return `<section class="card welcome-card"><div><p class="eyebrow">${e(t("greeting"))}</p><h1>${e(p.name)}</h1><p>${e(t("overview"))}</p><div class="profile-meta"><span>${e(t("birth"))}: ${e(p.birth_date || t("unknown"))}</span><span>${e(t("blood"))}: ${e(blood || t("unknown"))}</span></div></div>${avatar(p.name)}</section>${data.critical_allergies.length ? `<div class="warning">⚑ ${e(t("criticalWarning"))}: ${data.critical_allergies.map((r) => e(r.body.name)).join(", ")}</div>` : ""}<div class="quick-grid">${[
+  return `<section class="card welcome-card"><div><p class="eyebrow">${e(t("greeting"))}</p><h1>${e(p.name)}</h1><p>${e(t("overview"))}</p><div class="profile-meta"><span>${e(t("birth"))}: ${e(p.birth_date || t("unknown"))}${p.birth_date ? " · " + e(t("age")) + ": " + Math.floor((Date.now() - Date.parse(p.birth_date)) / 31557600000) : ""}</span><span>${e(t("blood"))}: ${e(blood || t("unknown"))}</span></div></div>${avatar(p.name)}</section>${data.critical_allergies.length ? `<div class="warning">⚑ ${e(t("criticalWarning"))}: ${data.critical_allergies.map((r) => e(r.body.name)).join(", ")}</div>` : ""}<div class="quick-grid">${[
     ["emergency", "sos", "sosHelp", "sos"],
     ["qr", "showQR", "qrHelp", ""],
     ["assistant", "askAI", "aiHelp", "ai"],
@@ -260,14 +269,17 @@ function passport() {
         ["birth", p.birth_date],
         ["country", p.country],
       ],
-    )}<div class="card-actions">${link("profile", "edit")}</div></section><section class="card"><h2>${e(t("blood"))}</h2><p class="big-value">${e(em.bloodGroup && em.bloodGroup !== "UNKNOWN" ? em.bloodGroup + " " + (em.rh === "UNKNOWN" ? "" : em.rh) : t("unknown"))}</p><div class="card-actions">${b("editEmergency", "edit-emergency")}</div></section>${["condition", "allergy", "medication", "vaccination", "documents"].map((k) => `<section class="card"><h2>${e(t(k))}</h2><p class="big-value">${k === "documents" ? data.document_count : (data.counts.find((c) => c.kind === k)?.count ?? 0)}</p><div class="card-actions">${k === "condition" || k === "vaccination" ? `<button class="btn secondary" data-action="filter-records" data-kind="${k}">${e(t("view"))}</button>` : link(k, "view")}${b("add", "add-record", `data-kind="${k}"`)}</div></section>`).join("")}<section class="card"><h2>${e(t("contacts"))}</h2><p>${e(em.contacts || t("unknown"))}</p><div class="card-actions">${link("emergency", "view")}${b("edit", "edit-emergency")}</div></section></div>`
+    )}<div class="card-actions">${link("profile", "edit")}</div></section><section class="card"><h2>${e(t("blood"))}</h2><p class="big-value">${e(em.bloodGroup && em.bloodGroup !== "UNKNOWN" ? em.bloodGroup + " " + (em.rh === "UNKNOWN" ? "" : em.rh) : t("unknown"))}</p><div class="card-actions">${b("editEmergency", "edit-emergency")}</div></section>${["condition", "allergy", "medication", "vaccination", "observation", "documents"].map((k) => `<section class="card"><h2>${e(t(k))}</h2><p class="big-value">${k === "documents" ? data.document_count : (data.counts.find((c) => c.kind === k)?.count ?? 0)}</p><div class="card-actions">${["condition", "vaccination", "observation"].includes(k) ? `<button class="btn secondary" data-action="filter-records" data-kind="${k}">${e(t("view"))}</button>` : link(k, "view")}${b("add", "add-record", `data-kind="${k}"`)}</div></section>`).join("")}${["procedures", "imaging", "devices"].map((k) => `<section class="card"><h2>${e(t(k))}</h2><p class="muted">${e(t("notConnected"))}</p>${k === "imaging" ? link("documents", "documents") : ""}</section>`).join("")}<section class="card"><h2>${e(t("contacts"))}</h2><p>${e(em.contacts || t("unknown"))}</p><div class="card-actions">${link("emergency", "view")}${b("edit", "edit-emergency")}</div></section></div>`
   );
 }
 function recordScreen() {
   const kind = screen === "records" ? null : screen;
   let rows = data.records ?? [];
   if (filter !== "all" && !kind) rows = rows.filter((r) => r.kind === filter);
-  const toolbar = `<div class="toolbar"><div class="tabs" role="tablist"><button class="tab" role="tab" data-action="archive-tab" data-value="0" aria-selected="${!archived}">${e(t("active"))}</button><button class="tab" role="tab" data-action="archive-tab" data-value="1" aria-selected="${archived}">${e(t("archived"))}</button></div>${!kind ? `<label>${e(t("recordType"))}<select data-filter>${["all", "condition", "observation", "allergy", "medication", "vaccination", "documents"].map((k) => `<option value="${k}" ${filter === k ? "selected" : ""}>${e(t(k))}</option>`).join("")}</select></label>` : ""}</div>`;
+  const toolbar =
+    kind === "medication"
+      ? `<div class="toolbar tabs">${["active", "upcoming", "past"].map((k) => b(k, "med-phase", `data-phase="${k}" aria-pressed="${medPhase === k}"`)).join("")}</div>`
+      : `<div class="toolbar"><div class="tabs" role="tablist"><button class="tab" role="tab" data-action="archive-tab" data-value="0" aria-selected="${!archived}">${e(t("active"))}</button><button class="tab" role="tab" data-action="archive-tab" data-value="1" aria-selected="${archived}">${e(t("archived"))}</button></div>${!kind ? `<label>${e(t("recordType"))}<select data-filter>${["all", "condition", "observation", "allergy", "medication", "vaccination", "documents"].map((k) => `<option value="${k}" ${filter === k ? "selected" : ""}>${e(t(k))}</option>`).join("")}</select></label>` : ""}</div>`;
   return (
     head(
       screen,
@@ -291,7 +303,13 @@ function recordScreen() {
             documents:
               filter === "all" || filter === "documents" ? data.documents : [],
           })
-            .map((r) => (r.kind === "documents" ? docCard(r) : recordCard(r)))
+            .map(
+              (r, i, rows) =>
+                (i === 0 ||
+                stamp(r.created_at) !== stamp(rows[i - 1].created_at)
+                  ? `<h2 class="timeline-date">${stamp(r.created_at)}</h2>`
+                  : "") + (r.kind === "documents" ? docCard(r) : recordCard(r)),
+            )
             .join("") ||
           empty("nothing", "emptyRecords", "add-record", "addRecord")
         }</div>`
@@ -362,8 +380,9 @@ function qrScreen() {
             data.doctors.map((d) => [d.id, d.name]),
           )
         : `<p class="note">${e(t("noDoctors"))}</p>`
-    }</fieldset><fieldset><legend>${e(t("what"))}</legend><div class="scope-grid">${["allergy", "medication", "condition", "vaccination", "documents", "emergency", "observation"].map((k) => `<label class="scope-option"><input type="checkbox" name="scope" value="${k}" ${k === "allergy" ? "checked" : ""}><span>${icon[k] ?? "▤"} ${e(t(k))}</span></label>`).join("")}</div><p class="help">${e(t("scopeHelp"))}</p></fieldset><div class="form-row">${field("duration", "howlong", "1h", "text", true, ["once", "1h", "24h", "7d"])}${field("purpose", "why", "review", "text", true, ["review", "emergency"])}</div><p class="help">${e(t("onceHelp"))}</p><div class="field-error" data-form-error role="alert"></div><button class="btn" ${!data.doctors.length ? "disabled" : ""}>▦ ${e(t("generate"))}</button></form></section>${qr ? `<section class="card qr-card"><p class="eyebrow">${e(t("shareTitle"))}</p><h2>${e(qr.recipient)}</h2><img src="${qr.qr}" alt="${e(t("qr"))}"><div class="chips">${qr.scopes.map((k) => chip(k)).join("")}</div><p>${e(t(qr.purpose))}</p><small>${e(t("expiresIn"))}</small><div class="countdown" data-expires="${qr.expires_at}"></div><div class="row">${b("copy", "copy")}${b("share", "share")}${b("revoke", "revoke", `data-id="${qr.id}"`, "danger")}</div><p class="help">${e(t("saveLink"))}</p><p class="help">${e(t("localQR"))}</p></section>` : `<section class="card qr-card"><div class="symbol">▦</div><h2>${e(t("emptyGrants"))}</h2><p>${e(t("securityNote"))}</p></section>`}</div>` +
-    grantsList()
+    }</fieldset><fieldset><legend>${e(t("what"))}</legend><div class="scope-grid">${["allergy", "medication", "condition", "vaccination", "documents", "emergency", "observation"].map((k) => `<label class="scope-option"><input type="checkbox" name="scope" value="${k}" ${k === "allergy" ? "checked" : ""}><span>${icon[k] ?? "▤"} ${e(t(k))}</span></label>`).join("")}</div><p class="help">${e(t("scopeHelp"))}</p></fieldset><div class="form-row">${field("duration", "howlong", "1h", "text", true, ["once", "1h", "24h", "7d"])}${field("purpose", "why", "review", "text", true, ["review", "emergency"])}</div><p class="help">${e(t("onceHelp"))}</p><div class="field-error" data-form-error role="alert"></div><button class="btn" ${!data.doctors.length ? "disabled" : ""}>▦ ${e(t("reviewAccess"))}</button></form></section>${qr ? `<section class="card qr-card"><p class="eyebrow">${e(t("shareTitle"))}</p><h2>${e(qr.recipient)}</h2><img src="${qr.qr}" alt="${e(t("qr"))}"><div class="chips">${qr.scopes.map((k) => chip(k)).join("")}</div><p>${e(t(qr.purpose))}</p><small>${e(t("expiresIn"))}</small><div class="countdown" data-expires="${qr.expires_at}"></div><div class="row">${b("copy", "copy")}${b("share", "share")}${b("revoke", "revoke", `data-id="${qr.id}"`, "danger")}</div><p class="help">${e(t("saveLink"))}</p><p class="help">${e(t("localQR"))}</p></section>` : `<section class="card qr-card"><div class="symbol">▦</div><h2>${e(t("emptyGrants"))}</h2><p>${e(t("securityNote"))}</p></section>`}</div>` +
+    grantsList() +
+    `<div class="toolbar">${offset ? b("previous", "page", `data-offset="${Math.max(0, offset - 30)}"`) : ""}${data.grants.length === 30 ? b("next", "page", `data-offset="${offset + 30}"`) : ""}${link("privacy", "activeAccess")}</div>`
   );
 }
 function doctorScreen() {
@@ -383,8 +402,10 @@ function doctorScreen() {
         ["scope", accessInfo.scopes.map((k) => t(k)).join(", ")],
         ["expires", new Date(accessInfo.expires_at).toLocaleString(locale)],
         ["source", t("sharedVia")],
+        ["why", t(accessInfo.purpose)],
+        ["patientLabel", accessInfo.patient_label],
       ],
-    )}<p class="help">${e(t("unverified"))}</p></section><div class="grid access-card">${accessInfo.scopes
+    )}<div class="countdown" data-expires="${accessInfo.expires_at}"></div><p class="help">${e(t("unverified"))}</p></section><div class="grid access-card">${accessInfo.scopes
       .filter((k) => k !== "documents" && k !== "emergency")
       .map(
         (k) =>
@@ -402,13 +423,23 @@ function doctorScreen() {
   return (
     head("doctor") +
     `<section class="card"><p>${e(t("accessPrompt"))}</p><form id="access-form" novalidate>${field("token", "accessToken", shareToken, "text", true)}${field("document_id", "documentId")}<div class="field-error" data-form-error role="alert"></div><div class="form-actions"><button class="btn">${e(t(shared ? "refreshAccess" : "openAccess"))}</button></div></form></section>` +
-    extra
+    extra +
+    (shared
+      ? `<section class="card"><h2>${e(t("records"))}</h2>${
+          groupTimeline(shared)
+            .map(
+              (r) =>
+                `<div class="list-item"><div><strong>${e(r.body?.name ?? r.name ?? t(r.kind))}</strong><p>${stamp(r.created_at)} · ${e(t(r.kind))}</p>${chip(sourceStatus(r.source))}</div></div>`,
+            )
+            .join("") || e(t("nothing"))
+        }</section>`
+      : "")
   );
 }
 function assistantScreen() {
   return (
     head("assistant") +
-    `<div class="chat"><section class="chat-intro"><div class="chat-icon">✧</div><h2>${e(t("aiTitle"))}</h2><p class="note">${e(t("aiNotice"))}</p><small>● ${e(t("aiContext"))}</small><div class="prompts">${["aiMedication", "aiDocument", "aiQuestions", "aiTravel"].map((k) => b(k, "prompt", `data-prompt="${k}"`)).join("")}</div></section><div aria-live="polite">${messages.map((m) => `<div class="message ${m.role}">${e(m.text)}${m.sources ? `<small>${e(t("aiSources"))}: ${m.sources.length} · ${m.sources.map((r) => e(r.id.slice(0, 8)) + " / v" + r.version).join(", ")}</small>` : ""}</div>`).join("")}</div><form id="chat-form" class="chat-compose" novalidate>${field("message", "message", "", "textarea", true)}<button class="btn">${e(t("send"))}</button></form></div>`
+    `<div class="chat"><section class="chat-intro"><div class="chat-icon">✧</div><h2>${e(t("aiTitle"))}</h2><p class="note">${e(t("aiNotice"))}</p><small>● ${e(t("aiContext"))}</small><div class="prompts">${["aiMedication", "aiDocument", "aiQuestions", "aiSummary", "aiTravel", "aiLab"].map((k) => b(k, "prompt", `data-prompt="${k}"`)).join("")}</div></section><div aria-live="polite">${messages.map((m) => `<div class="message ${m.role}">${e(m.text)}${m.sources ? `<small>${e(t("aiSources"))}: ${m.sources.length} · ${m.sources.map((r) => e(r.id.slice(0, 8)) + " / v" + r.version).join(", ")}</small>` : ""}</div>`).join("")}</div><form id="chat-form" class="chat-compose" novalidate>${field("message", "message", "", "textarea", true)}<button class="btn">${e(t("send"))}</button></form></div>`
   );
 }
 function profileScreen() {
@@ -418,12 +449,31 @@ function profileScreen() {
     `<section class="card"><div class="profile-summary">${avatar(p.name)}<div><h2>${e(p.name)}</h2><small>${e(p.email)}</small></div></div><form id="profile-form" novalidate>${field("name", "name", p.name, "text", true)}<div class="form-row">${field("birth_date", "birth", p.birth_date ?? "", "date")}${field("country", "country", p.country ?? "")}</div><p class="help">${e(t("adult"))}</p><div class="field-error" data-form-error role="alert"></div><div class="form-actions"><button class="btn">${e(t("save"))}</button></div></form></section>`
   );
 }
+const product = createProductUI({
+  document,
+  window,
+  api,
+  t,
+  e,
+  b,
+  chip,
+  field,
+  modal,
+  actions,
+  notice,
+  load,
+  link,
+  get: () => ({ me, data, locale, screen }),
+});
 function render() {
   if (!me) return renderAuth();
-  let html = "";
+  let html = product.render(screen, data) ?? "";
   switch (screen) {
     case "home":
-      html = home();
+      html = home().replace(
+        '<div class="grid">',
+        product.dashboard(data) + '<div class="grid">',
+      );
       break;
     case "passport":
       html = passport();
@@ -431,7 +481,9 @@ function render() {
     case "allergy":
     case "medication":
     case "records":
-      html = recordScreen();
+      html =
+        recordScreen() +
+        (screen === "medication" ? product.adherence(data) : "");
       break;
     case "documents":
       html = documents();
@@ -449,7 +501,7 @@ function render() {
       html = assistantScreen();
       break;
     case "profile":
-      html = profileScreen();
+      html = profileScreen() + product.profileExtras(data);
   }
   $("#main").innerHTML = html;
   countdown();
@@ -478,15 +530,24 @@ async function load() {
           "?offset=" +
           offset +
           "&archived=" +
-          (archived ? 1 : 0),
+          (archived ? 1 : 0) +
+          "&phase=" +
+          medPhase,
       );
     else if (screen === "qr") {
       const [grants, doctors] = await Promise.all([
-        api("/grants"),
+        api(
+          "/grants?offset=" +
+            offset +
+            "&status=" +
+            (filter === "all" ? "active" : filter),
+        ),
         api("/doctors"),
       ]);
       result = { grants, doctors };
     } else if (screen === "profile") result = await api("/profile");
+    if (id !== loadId) return;
+    result = await product.enrich(screen, result);
     if (id !== loadId) return;
     data = result;
     render();
@@ -520,7 +581,7 @@ function openRecord(kind, existing) {
         : k === "medication"
           ? "addMedication"
           : "addRecord",
-    `<form id="record-form" data-kind="${k}" ${existing ? `data-id="${existing.id}" data-version="${existing.version}"` : ""} novalidate><p class="help">${e(t("patientOnly"))}</p>${!existing && !["allergy", "medication"].includes(k) ? field("kind", "recordType", k, "text", true, ["condition", "observation", "vaccination"]) : ""}${field("name", k === "allergy" ? "substance" : "name", body.name ?? "", "text", true)}${k === "allergy" ? field("reaction", "reaction", body.reaction ?? "") + `<div class="form-row">${field("severity", "severity", body.severity ?? "unknown", "text", false, ["unknown", "mild", "moderate", "severe", "critical"])}${field("status", "status", body.status ?? "reported", "text", false, ["reported", "unknown", "not_assessed", "no_known_allergy"])}</div>` : k === "medication" ? `<div class="form-row">${field("dose", "dose", body.dose ?? "")}${field("frequency", "frequency", body.frequency ?? "")}</div>${field("route", "route", body.route ?? "")}<div class="form-row">${field("start", "start", body.start ?? "", "date")}${field("end", "end", body.end ?? "", "date")}</div>${field("status", "status", body.status ?? "active", "text", false, ["active", "reported", "stopped"])}${field("notes", "notes", body.notes ?? "", "textarea")}` : field("notes", "notes", body.notes ?? "", "textarea")}<div class="field-error" data-form-error role="alert"></div>${actions()}</form>`,
+    `<form id="record-form" data-kind="${k}" ${existing ? `data-id="${existing.id}" data-version="${existing.version}"` : ""} novalidate><p class="help">${e(t("patientOnly"))}</p>${!existing && !["allergy", "medication"].includes(k) ? field("kind", "recordType", k, "text", true, ["condition", "observation", "vaccination"]) : ""}${field("name", k === "allergy" ? "substance" : "name", body.name ?? "", "text", true)}${k === "allergy" ? field("reaction", "reaction", body.reaction ?? "") + field("onset", "onset", body.onset ?? "", "date") + field("notes", "notes", body.notes ?? "", "textarea") + `<div class="form-row">${field("severity", "severity", body.severity ?? "unknown", "text", false, ["unknown", "mild", "moderate", "severe", "critical"])}${field("status", "status", body.status ?? "reported", "text", false, ["reported", "unknown", "not_assessed", "no_known_allergy"])}</div>` : k === "medication" ? `<div class="form-row">${field("dose", "dose", body.dose ?? "")}${field("frequency", "frequency", body.frequency ?? "")}</div>${field("route", "route", body.route ?? "")}<div class="form-row">${field("form", "form", body.form ?? "")}${field("unit", "unit", body.unit ?? "")}</div>${field("instructions", "instructions", body.instructions ?? "", "textarea")}${field("prescriber", "prescriber", body.prescriber ?? "")}${field("food", "food", body.food ?? "unspecified", "text", false, ["unspecified", "with_food", "without_food"])}<div class="form-row">${field("start", "start", body.start ?? "", "date")}${field("end", "end", body.end ?? "", "date")}</div>${field("status", "status", body.status ?? "active", "text", false, ["active", "reported", "stopped"])}${field("notes", "notes", body.notes ?? "", "textarea")}` : field("notes", "notes", body.notes ?? "", "textarea")}<div class="field-error" data-form-error role="alert"></div>${actions()}</form>`,
   );
 }
 async function openEmergency() {
@@ -553,7 +614,7 @@ function openUpload(doc) {
   chosenFile = null;
   modal(
     doc ? "edit" : "upload",
-    `<form id="upload-form" ${doc ? `data-id="${doc.id}"` : ""} novalidate>${!doc ? `<label class="dropzone" id="dropzone"><span class="drop-icon">⇧</span><strong>${e(t("drop"))}</strong><span class="help">${e(t("fileHelp"))}</span><input type="file" name="file" accept=".pdf,.txt" aria-label="${e(t("choose"))}"><span id="selected-file"></span></label>${field("document_type", "documentType", "medical_document", "text", true, ["medical_document", "lab", "report", "prescription"])}` : ""}<div class="form-row">${field("document_date", "date", doc?.document_date ?? "", "date")}${doc ? `<p class="help">${e(t("source"))}: ${e(doc.source)}</p>` : field("source", "source", t("reported"))}</div>${field("description", "description", doc?.description ?? "", "textarea")}<div class="field-error" data-form-error role="alert"></div>${actions()}</form>`,
+    `<form id="upload-form" ${doc ? `data-id="${doc.id}"` : ""} novalidate>${!doc ? `<label class="dropzone" id="dropzone"><span class="drop-icon">⇧</span><strong>${e(t("drop"))}</strong><span class="help">${e(t("fileHelp"))}</span><input type="file" name="file" accept=".pdf,.txt" aria-label="${e(t("choose"))}"><span id="selected-file"></span></label>${field("document_type", "documentType", "medical_document", "text", true, ["lab", "imaging", "prescription", "discharge", "vaccination", "consultation", "other"])}` : ""}<div class="form-row">${field("document_date", "date", doc?.document_date ?? "", "date")}${doc ? `<p class="help">${e(t("source"))}: ${e(doc.source)}</p>` : field("source", "source", t("reported"))}</div>${field("description", "description", doc?.description ?? "", "textarea")}<div class="form-row">${field("language", "documentLanguage", doc?.language ?? "und", "text")}${field("translation_status", "translation_status", doc?.translation_status ?? "original", "text", true, ["original", "translated"])}</div><p class="help">${e(t("translationNotice"))}</p><div class="field-error" data-form-error role="alert"></div>${actions()}</form>`,
   );
   if (!doc) {
     const zone = $("#dropzone");
@@ -678,6 +739,7 @@ document.addEventListener("change", async (event) => {
     offset = 0;
     await load();
   }
+  if (await product.change(event.target)) return;
   if (event.target.matches("input[type=file]")) {
     chosenFile = event.target.files[0];
     $("#selected-file").textContent = chosenFile?.name ?? "";
@@ -693,6 +755,45 @@ document.addEventListener("click", async (event) => {
   const a = target.dataset.action;
   event.preventDefault();
   try {
+    if (a === "confirm-qr") {
+      const f = $("#qr-form");
+      f.dataset.reviewed = "1";
+      f.hidden = false;
+      $(".qr-review").remove();
+      f.requestSubmit();
+      return;
+    }
+    if (a === "edit-qr") {
+      $("#qr-form").hidden = false;
+      $(".qr-review").remove();
+      return;
+    }
+    if (a === "notifications") {
+      location.hash = "/notifications";
+      return;
+    }
+    if (
+      [
+        "access-filter",
+        "access-page",
+        "dose-page",
+        "notification-filter",
+        "notification-page",
+        "notification-action",
+        "configure-reminder",
+        "schedule-preset",
+        "pause-reminder",
+        "dose",
+        "dose-days",
+        "timezone",
+        "end-session",
+        "enable-browser",
+      ].includes(a)
+    ) {
+      target.disabled = true;
+      await product.click(a, target);
+      return;
+    }
     if (a === "close") return $("#dialog").close();
     if (a === "menu") {
       const open = $("#sidebar").classList.toggle("open");
@@ -720,6 +821,13 @@ document.addEventListener("click", async (event) => {
       location.hash = "/records";
       return;
     }
+    if (a === "med-phase") {
+      medPhase = target.dataset.phase;
+      archived = false;
+      offset = 0;
+      await load();
+      return;
+    }
     if (a === "archive-tab") {
       archived = target.dataset.value === "1";
       offset = 0;
@@ -731,7 +839,8 @@ document.addEventListener("click", async (event) => {
     }
     if (a === "grant-tab") {
       filter = target.dataset.value;
-      return render();
+      offset = 0;
+      return load();
     }
     const record = data.records?.find((r) => r.id === target.dataset.id),
       doc = data.documents?.find((d) => d.id === target.dataset.id);
@@ -867,6 +976,7 @@ document.addEventListener("submit", async (event) => {
   }
   form.setAttribute("aria-busy", "true");
   try {
+    if (await product.submit(form, values)) return;
     if (form.id === "auth-form") {
       if (authMode === "recover") {
         await api("/recover", values);
@@ -934,6 +1044,8 @@ document.addEventListener("submit", async (event) => {
       await api("/documents/" + id + "/metadata", {
         description: values.description,
         document_date: values.document_date,
+        language: values.language,
+        translation_status: values.translation_status,
       });
       $("#dialog").close();
       await load();
@@ -948,6 +1060,14 @@ document.addEventListener("submit", async (event) => {
           (scopes.length !== 1 || scopes[0] !== "emergency"))
       )
         throw Error("INVALID_SCOPE");
+      if (!form.dataset.reviewed) {
+        const review = document.createElement("section");
+        review.className = "card qr-review";
+        review.innerHTML = `<h2>${e(t("reviewGenerate"))}</h2><p>${e(data.doctors.find((d) => d.id === values.recipient_id)?.name ?? "")}</p><p>${scopes.map((k) => e(t(k))).join(" · ")}</p><p>${e(t(values.duration))} · ${e(t(values.purpose))}</p>${b("generateConfirmed", "confirm-qr", "", "")}${b("previousStep", "edit-qr")}`;
+        form.hidden = true;
+        form.after(review);
+        return;
+      }
       qr = await api("/grants", { ...values, scopes });
       qr.recipient =
         data.doctors.find((d) => d.id === values.recipient_id)?.name ?? "";
@@ -961,7 +1081,19 @@ document.addEventListener("submit", async (event) => {
       await chat(values.message);
       return;
     }
-    notice(t("saved"));
+    notice(
+      t(
+        form.id === "record-form"
+          ? form.dataset.kind === "medication"
+            ? "medicationSaved"
+            : "recordSaved"
+          : form.id === "emergency-form"
+            ? "emergencySaved"
+            : form.id === "upload-form"
+              ? "documentUploaded"
+              : "saved",
+      ),
+    );
   } catch (err) {
     const message = errorMessage(err.message, locale),
       el = form.querySelector("[data-form-error]");
@@ -979,7 +1111,7 @@ window.addEventListener("hashchange", () => {
   offset = 0;
   archived = false;
   if (
-    !["condition", "vaccination"].includes(filter) ||
+    !["condition", "vaccination", "observation"].includes(filter) ||
     !location.hash.endsWith("/records")
   )
     filter = "all";
@@ -992,6 +1124,7 @@ document.addEventListener("keydown", (event) => {
     $(".mobile-menu")?.setAttribute("aria-expanded", "false");
   }
 });
+setInterval(() => product.poll().catch(() => {}), 30000);
 refreshMe().catch((err) => {
   renderAuth();
   if (err.message !== "UNAUTHENTICATED")
