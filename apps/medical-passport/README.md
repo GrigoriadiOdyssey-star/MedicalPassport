@@ -1,6 +1,6 @@
-# EDHT Medical Passport — runnable synthetic alpha
+# EDHT Medical Passport — Functional Alpha 0.2
 
-Node 24, vanilla browser UI, real HTTP API and SQLite persistence. This is the MASTER-22 functional implementation, based on checkpoint `c4b6b44`. Use fictional adult profiles only. Production startup is refused; the server binds only to `127.0.0.1`.
+Node 24, vanilla browser UI, real HTTP API and SQLite persistence. This is the MASTER-23 multi-screen redesign, based on implementation commit `05ab4fd`. Use fictional adult profiles only. Production startup is refused; the server binds only to `127.0.0.1`.
 
 ## Start
 
@@ -62,4 +62,14 @@ See `../../audit/master-22/` for the checkpoint, evidence and honest task accoun
 
 `npm test` runs real in-memory/disk SQLite tests and HTTP tests against ephemeral ports, including QR generation independently decoded by jsQR, permission isolation, CSRF/Origin, expiry, revoke, one-time races, audit rollback, account recovery, FHIR replay and DB restart. Tests use temporary disposable synthetic databases and close them before cleanup.
 
-`tests/browser-scenario.md` records the browser scenario and observed results. It is browser verification evidence, not a claimed automated Playwright suite.
+`tests/browser-alpha02.md` records the latest browser scenario and responsive evidence; `tests/browser-scenario.md` preserves Alpha 0.1 evidence. It is browser verification evidence, not a claimed automated Playwright suite.
+
+## Alpha 0.2 interface and additive APIs
+
+Home, Passport, Timeline, Allergies, Medications, Documents, QR, Emergency, AI assistant and Profile have separate screens. Desktop sidebar and mobile bottom navigation share one RU/EN dictionary. Forms use dialogs, confirmations and error states. The doctor has a separate read-only workspace.
+
+Migration 003 adds immutable record revisions and document/profile metadata without rewriting original records. Edits use expected versions and return 409 on conflicts. Archives preserve history and original document bytes while removing entries from live shared views. Medication start/end dates are validated server-side.
+
+New authenticated routes: GET/POST /api/profile; GET /api/views/:screen with bounded offset pages; GET /api/records/:id/history; POST /api/records/:id/update or /archive; POST /api/documents/:id/metadata or /archive; POST /api/access/info. Mutations retain existing CSRF/Origin checks. Access status is recipient-bound and does not consume a one-time grant; actual content reads still use the original authorization transaction.
+
+The app suite has 32 tests. Frontend tests combine pure helpers and real DOM integration with mocked network; API/store tests exercise real SQLite and HTTP. Native browser journeys are documented separately. See ../../audit/master-23/ALPHA_02_STATUS.md for remaining limitations and checkpoint.

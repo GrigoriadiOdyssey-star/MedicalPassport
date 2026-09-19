@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-19",
+  "branch": "implementation/master-23",
+  "parent_commit": "05ab4fd",
+  "alpha_version": "0.2.0",
+  "status": "RUNNABLE_SYNTHETIC_FUNCTIONAL_ALPHA",
+  "redesign_complete": true,
+  "runnable_locally": true,
+  "production_ready": false,
+  "patient_screens": 10,
+  "doctor_workspace": true,
+  "old_one_page_ui_removed": true,
+  "i18n": [
+    "ru",
+    "en"
+  ],
+  "tests": {
+    "total": 32,
+    "pass": 32,
+    "fail": 0,
+    "store_security": 16,
+    "original_http_restart": 2,
+    "ux_api_store": 7,
+    "frontend_unit_dom": 7,
+    "tap": "audit/master-23/tests.tap",
+    "browser": "apps/medical-passport/tests/browser-alpha02.md",
+    "browser_method": "Agent-operated real browser, not a committed automated browser runner",
+    "console_errors_final_check": 0
+  },
+  "responsive": {
+    "widths": [
+      390,
+      768,
+      1366,
+      1920
+    ],
+    "horizontal_overflow_on_observed_screens": false,
+    "all_screen_all_viewport_cartesian_matrix": false
+  },
+  "accessibility": {
+    "labels": true,
+    "localized_skip_link": true,
+    "visible_focus": true,
+    "native_modal_focus": true,
+    "escape_close_observed": true,
+    "formal_wcag_certification": false
+  },
+  "migrations": 3,
+  "historical_audit": "Preserved; not repeated",
+  "master21_remaining_tasks": 13,
+  "external_gates": {
+    "external_remaining": 68,
+    "legal_remaining": 38,
+    "jurisdiction_remaining": 34,
+    "source": "audit/master-21-recovery/checkpoint.json",
+    "note": "Inherited, not additive unique counts; no gate closed by UX redesign"
+  },
+  "gitlab_push": false,
+  "next_exact_task": "Implement and test five-second request/context/digest-bound single-use admission leases, monotonic expiry and atomic claim; preserve Alpha 0.2 UI and existing section-grant behavior until explicit version-bound contracts are implemented."
+}
