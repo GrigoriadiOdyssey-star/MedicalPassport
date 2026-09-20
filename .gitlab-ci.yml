@@ -1,11 +1,5 @@
 image: node:24-alpine
 
-variables:
-  GIT_DEPTH: "0"
-
-before_script:
-  - apk add --no-cache git
-
 stages:
   - validate
 

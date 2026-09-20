@@ -1,0 +1,9 @@
+include:
+  - local: '/.gitlab-ci.yml'
+
+variables:
+  GIT_DEPTH: "0"
+
+default:
+  before_script:
+    - apk add --no-cache git
