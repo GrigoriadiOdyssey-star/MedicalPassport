@@ -1,5 +1,6 @@
 import { createAlpha4UI } from "../public/alpha4-ui.js";
 import { createProductUI } from "../public/product-ui.js";
+import { createPharmacyUI } from "../public/pharmacy-ui.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -29,7 +30,7 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
   w.HTMLDialogElement.prototype.close = function () {
     this.open = false;
   };
-  w.__deps = { tr: translate, createProductUI, createAlpha4UI, ...ui };
+  w.__deps = { tr: translate, createProductUI, createPharmacyUI, createAlpha4UI, ...ui };
   let records = [],
     calls = [];
   const me = {
@@ -84,12 +85,19 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
       value = [];
     else if (path === "/api/notifications") value = { items: [], unread: 0 };
     else if (path === "/api/reminders") value = { plans: [], doses: [] };
+    else if (path === "/api/pharmacy") value = {provider:{status:"SYNTHETIC_ADAPTER"},recent_searches:[],results:[]};
+    else if (path === "/api/pharmacy/prescriptions") value = [];
+    else if (path === "/api/pharmacy/orders") value = [];
+    else if (path === "/api/pharmacy/dispensing") value = [];
+    else if (path === "/api/pharmacy/notices") value = [];
+    else if (path === "/api/pharmacy/provider-boundary") value = {status:"SYNTHETIC_ADAPTER",capabilities:[]};
+    else if (path === "/api/pharmacy/pharmacology-context") value = {patient_state_version:0,records:[],genomics:{status:"NOT_CONFIGURED"},digital_twin:{status:"INTERFACE_ONLY"}};
     else if (path === "/api/assistant")
       value = { source_records: [], is_generative_ai: false };
     return { ok: true, status: 200, json: async () => value };
   };
   w.eval(
-    "const {tr,createProductUI,createAlpha4UI,escape:e,screens,route,grantStatus,sourceStatus,errorMessage,groupTimeline}=window.__deps;\n" +
+    "const {tr,createProductUI,createPharmacyUI,createAlpha4UI,escape:e,screens,route,grantStatus,sourceStatus,errorMessage,groupTimeline}=window.__deps;\n" +
       source,
   );
   t.after(() => w.close());
@@ -134,7 +142,7 @@ test("grant status precedence preserves revoke, expiry and single-use distinctio
 });
 test("navigation renders one screen, empty state and modal validated record creation", async (t) => {
   const { w, calls, navigate, click } = await setup(t);
-  assert.equal(w.document.querySelectorAll(".nav a").length, 7);
+  assert.equal(w.document.querySelectorAll(".nav a").length, 8);
   assert.match(
     w.document.querySelector("#main").textContent,
     /Synthetic Patient/,
@@ -320,4 +328,14 @@ test("new resumable file selection does not invoke legacy selected-file handler"
   input.dispatchEvent(new w.Event("change", { bubbles: true }));
   await new Promise((resolve) => setTimeout(resolve, 10));
   assert.ok(form.isConnected);
+});
+
+test("pharmacy is first-class patient navigation with synthetic provenance and map/list controls", async (t) => {
+  const { w, calls, navigate } = await setup(t);
+  await navigate("pharmacy");
+  assert.match(w.document.querySelector("main").textContent, /Pharmacy/);
+  assert.match(w.document.querySelector("main").textContent, /SYNTHETIC DATA/);
+  assert.ok(w.document.querySelector('[data-action="pharmacy-mode"][data-mode="map"]'));
+  assert.ok(w.document.querySelector('[data-action="pharmacy-locate"]'));
+  assert.ok(calls.some((c) => c.path === "/api/pharmacy"));
 });
