@@ -7,3 +7,19 @@ variables:
 default:
   before_script:
     - apk add --no-cache git
+
+validate-specifications:
+  script:
+    - node --version
+    - node --test --test-skip-pattern="^cached input hashes, document anchors and baseline guard remain valid$" tests/*.test.mjs
+    - npm run check
+    - npm run audit:check
+    - npm run gapfill:check
+    - npm run pediatric:check
+    - npm run domain:check
+    - npm run master04:check
+    - npm run master05:check
+    - npm run master06:check
+    - npm run master07:check
+    - npm run master08:check
+    - npm run readiness08:check
