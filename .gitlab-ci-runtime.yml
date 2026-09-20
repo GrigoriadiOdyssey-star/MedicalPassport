@@ -23,3 +23,10 @@ validate-specifications:
     - npm run master07:check
     - npm run master08:check
     - npm run readiness08:check
+
+medical-passport-master26:
+  stage: validate
+  script:
+    - cd apps/medical-passport
+    - npm ci --ignore-scripts
+    - npm test
