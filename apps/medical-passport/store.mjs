@@ -85,7 +85,46 @@ export function cleanBody(kind, b) {
               "start",
               "end",
             ]
-          : ["name", "notes"];
+          : kind === "condition"
+            ? [
+                "name",
+                "notes",
+                "status",
+                "onset",
+                "resolution",
+                "provider",
+                "code",
+                "code_system",
+              ]
+            : kind === "observation"
+              ? [
+                  "name",
+                  "notes",
+                  "panel",
+                  "value",
+                  "unit",
+                  "reference_low",
+                  "reference_high",
+                  "flag",
+                  "observed_at",
+                  "provider",
+                  "specimen",
+                  "method",
+                ]
+              : kind === "vaccination"
+                ? [
+                    "name",
+                    "notes",
+                    "dose_number",
+                    "date",
+                    "manufacturer",
+                    "lot",
+                    "country",
+                    "provider",
+                    "status",
+                    "document_id",
+                  ]
+                : ["name", "notes"];
   if (Object.keys(b).some((k) => !allowed.includes(k)))
     fail(400, "UNKNOWN_RECORD_FIELD");
   const out = {};
@@ -94,8 +133,10 @@ export function cleanBody(kind, b) {
     out[k] = v.trim();
   }
   if (kind !== "emergency") out.name = text(b.name);
-  if (kind === "medication") {
-    for (const k of ["start", "end"])
+  if (
+    ["medication", "condition", "observation", "vaccination"].includes(kind)
+  ) {
+    for (const k of ["start", "end", "onset", "resolution", "date"])
       if (
         out[k] &&
         (!/^\d{4}-\d{2}-\d{2}$/.test(out[k]) ||
@@ -132,6 +173,36 @@ export function cleanBody(kind, b) {
     if (out.status !== "reported" && out.reaction)
       fail(400, "CONTRADICTORY_ASSERTION");
   }
+  if (kind === "observation") {
+    for (const key of ["value", "reference_low", "reference_high"])
+      if (out[key] && !Number.isFinite(Number(out[key])))
+        fail(400, "INVALID_NUMERIC_VALUE");
+    if (
+      out.reference_low &&
+      out.reference_high &&
+      Number(out.reference_low) > Number(out.reference_high)
+    )
+      fail(400, "INVALID_REFERENCE_RANGE");
+    if (out.observed_at && !Number.isFinite(Date.parse(out.observed_at)))
+      fail(400, "INVALID_DATE");
+    if (
+      out.flag &&
+      !["unknown", "normal", "low", "high", "critical"].includes(out.flag)
+    )
+      fail(400, "INVALID_FLAG");
+  }
+  if (
+    kind === "condition" &&
+    out.status &&
+    !["active", "resolved", "remission", "unknown"].includes(out.status)
+  )
+    fail(400, "INVALID_STATUS");
+  if (
+    kind === "vaccination" &&
+    out.dose_number &&
+    !/^[1-9][0-9]?$/.test(out.dose_number)
+  )
+    fail(400, "INVALID_DOSE_NUMBER");
   if (kind === "emergency") {
     out.bloodGroup ??= "UNKNOWN";
     out.rh ??= "UNKNOWN";
@@ -155,7 +226,7 @@ export class Store {
     this.db.exec(
       "CREATE TABLE IF NOT EXISTS migrations(version INTEGER PRIMARY KEY, applied_at INTEGER NOT NULL)",
     );
-    for (const version of [1, 2, 3, 4, 5])
+    for (const version of [1, 2, 3, 4, 5, 6, 7])
       if (
         !this.db
           .prepare("SELECT 1 FROM migrations WHERE version=?")
@@ -410,6 +481,14 @@ export class Store {
     if (!kinds.includes(kind)) fail(400, "INVALID_KIND");
     const clean = cleanBody(kind, body);
     return this.transaction(() => {
+      if (
+        kind === "vaccination" &&
+        clean.document_id &&
+        !this.db
+          .prepare("SELECT id FROM documents WHERE id=? AND patient_id=?")
+          .get(clean.document_id, p.id)
+      )
+        fail(404, "CERTIFICATE_NOT_FOUND");
       if (source.startsWith("synthetic_fhir:")) {
         const old = this.db
           .prepare(
@@ -463,7 +542,24 @@ export class Store {
           )
           .all(patientId)
       : [];
-    return { patient_id: patientId, records, documents: docs };
+    const imaging = scopes.includes("imaging")
+      ? this.db
+          .prepare(
+            "SELECT id,study_uid,metadata,version FROM imaging_studies WHERE patient_id=? AND archived=0 ORDER BY created_at DESC LIMIT 100",
+          )
+          .all(patientId)
+          .map((r) => ({
+            ...r,
+            metadata: JSON.parse(r.metadata),
+            instances: this.db
+              .prepare(
+                "SELECT i.id,i.sop_uid,i.mime,i.metadata FROM imaging_instances i JOIN imaging_series s ON s.id=i.series_id WHERE s.study_id=? ORDER BY i.created_at LIMIT 500",
+              )
+              .all(r.id)
+              .map((i) => ({ ...i, metadata: JSON.parse(i.metadata) })),
+          }))
+      : [];
+    return { patient_id: patientId, records, documents: docs, imaging };
   }
   ownPassport(user) {
     const p = this.patient(user);
@@ -480,14 +576,15 @@ export class Store {
     if (
       !["application/pdf", "text/plain"].includes(mime) ||
       typeof base64 !== "string" ||
-      base64.length > 1500000 ||
+      base64.length >
+        Math.ceil(((this.legacyUploadLimit ?? 2097152) * 4) / 3) + 4 ||
       !/^[A-Za-z0-9+/]*={0,2}$/.test(base64)
     )
       fail(400, "INVALID_DOCUMENT");
     const bytes = Buffer.from(base64, "base64");
     if (
       !bytes.length ||
-      bytes.length > 1048576 ||
+      bytes.length > (this.legacyUploadLimit ?? 2097152) ||
       (mime === "application/pdf" &&
         bytes.subarray(0, 5).toString() !== "%PDF-")
     )
@@ -527,9 +624,9 @@ export class Store {
     if (
       !Array.isArray(scopes) ||
       !scopes.length ||
-      scopes.length > 7 ||
+      scopes.length > 8 ||
       new Set(scopes).size !== scopes.length ||
-      scopes.some((x) => ![...kinds, "documents"].includes(x))
+      scopes.some((x) => ![...kinds, "documents", "imaging"].includes(x))
     )
       fail(400, "INVALID_SCOPE");
     const durations = {
@@ -579,15 +676,36 @@ export class Store {
       };
     });
   }
-  grants(user, offset=0, status="all") {
-    if(!Number.isInteger(Number(offset))||offset<0||offset>100000||!["all","active","expired","revoked","used"].includes(status))fail(400,"INVALID_PAGE");
-    const now=this.now();const where={all:"",active:" AND g.revoked_at IS NULL AND g.expires_at>"+now+" AND NOT(g.one_time=1 AND g.used_at IS NOT NULL)",expired:" AND g.revoked_at IS NULL AND g.expires_at<="+now,revoked:" AND g.revoked_at IS NOT NULL",used:" AND g.revoked_at IS NULL AND g.expires_at>"+now+" AND g.one_time=1 AND g.used_at IS NOT NULL"}[status];
+  grants(user, offset = 0, status = "all") {
+    if (
+      !Number.isInteger(Number(offset)) ||
+      offset < 0 ||
+      offset > 100000 ||
+      !["all", "active", "expired", "revoked", "used"].includes(status)
+    )
+      fail(400, "INVALID_PAGE");
+    const now = this.now();
+    const where = {
+      all: "",
+      active:
+        " AND g.revoked_at IS NULL AND g.expires_at>" +
+        now +
+        " AND NOT(g.one_time=1 AND g.used_at IS NOT NULL)",
+      expired: " AND g.revoked_at IS NULL AND g.expires_at<=" + now,
+      revoked: " AND g.revoked_at IS NOT NULL",
+      used:
+        " AND g.revoked_at IS NULL AND g.expires_at>" +
+        now +
+        " AND g.one_time=1 AND g.used_at IS NOT NULL",
+    }[status];
     const p = this.patient(user);
     return this.db
       .prepare(
-        "SELECT g.id,g.scopes,g.purpose,g.expires_at,g.revoked_at,g.one_time,g.used_at,u.name AS recipient FROM grants g JOIN users u ON u.id=g.recipient_id WHERE g.patient_id=? "+where+" ORDER BY g.created_at DESC,g.id LIMIT 30 OFFSET ?",
+        "SELECT g.id,g.scopes,g.purpose,g.expires_at,g.revoked_at,g.one_time,g.used_at,u.name AS recipient FROM grants g JOIN users u ON u.id=g.recipient_id WHERE g.patient_id=? " +
+          where +
+          " ORDER BY g.created_at DESC,g.id LIMIT 30 OFFSET ?",
       )
-      .all(p.id,Number(offset))
+      .all(p.id, Number(offset))
       .map((g) => ({ ...g, scopes: JSON.parse(g.scopes) }));
   }
   revoke(user, id) {
@@ -608,7 +726,7 @@ export class Store {
       this.audit(user.user_id, "GRANT_REVOKED", id, p.id);
     });
   }
-  consume(user, token, documentId = null) {
+  consume(user, token, documentId = null, imagingId = null) {
     return this.transaction(() => {
       if (
         !user.token_hash ||
@@ -650,7 +768,15 @@ export class Store {
         fail(404, "NOT_FOUND");
       const scopes = JSON.parse(g.scopes);
       let result;
-      if (documentId) {
+      if (imagingId) {
+        if (documentId || !scopes.includes("imaging")) fail(404, "NOT_FOUND");
+        result = this.db
+          .prepare(
+            "SELECT i.* FROM imaging_instances i JOIN imaging_series r ON r.id=i.series_id JOIN imaging_studies t ON t.id=r.study_id WHERE i.id=? AND t.patient_id=? AND t.archived=0",
+          )
+          .get(imagingId, g.patient_id);
+        if (!result) fail(404, "NOT_FOUND");
+      } else if (documentId) {
         if (!scopes.includes("documents")) fail(404, "NOT_FOUND");
         result = this.db
           .prepare(
@@ -671,9 +797,11 @@ export class Store {
         user.user_id,
         g.purpose === "emergency"
           ? "EMERGENCY_ACCESS"
-          : documentId
-            ? "SHARED_DOCUMENT_READ"
-            : "SHARED_PASSPORT_READ",
+          : imagingId
+            ? "SHARED_IMAGING_READ"
+            : documentId
+              ? "SHARED_DOCUMENT_READ"
+              : "SHARED_PASSPORT_READ",
         g.id,
         g.patient_id,
       );

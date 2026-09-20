@@ -1656,3 +1656,578 @@ summary {
     gap: 10px;
   }
 }
+/* Alpha 0.4 design tokens: compact identity, clinical density, deliberate hierarchy. */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --surface: #fff;
+  --surface-soft: #f0f5fc;
+  --text-strong: #102949;
+  --text-muted: #46617d;
+  --interactive: #165fc9;
+  --focus: #1579ec;
+  --positive: #167951;
+  --critical: #b02f3f;
+  --elevation: 0 6px 24px #132c4c09;
+}
+body {
+  background: #f3f7fc;
+  color: var(--text-strong);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.main {
+  max-width: 1520px;
+  padding: 28px 32px 80px;
+  margin: auto;
+}
+.sidebar {
+  width: 224px;
+  background: #fff;
+  border-right: 1px solid #e3ebf5;
+}
+.workspace {
+  margin-left: 224px;
+}
+.sidebar .nav a {
+  padding: 12px 16px;
+  margin: 3px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.topbar {
+  padding: 14px 28px;
+  min-height: 72px;
+}
+.topbar-title {
+  font-weight: 650;
+}
+.alpha {
+  font-size: 12px;
+  padding: 6px 32px;
+  background: #e8f1ff;
+  color: #31557c;
+}
+.screen-head {
+  margin-bottom: 24px;
+}
+.screen-head h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.5px;
+  color: #315c87;
+}
+.card {
+  border: 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--elevation);
+  padding: 22px;
+}
+.welcome-card {
+  min-height: 0 !important;
+  padding: 20px 24px !important;
+  background: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: 4px solid var(--interactive);
+}
+.welcome-card h1 {
+  font-size: 28px !important;
+  line-height: 1.2 !important;
+  margin: 3px 0 10px;
+}
+.welcome-card .eyebrow,
+.welcome-card > div > p:not(.eyebrow) {
+  display: none;
+}
+.welcome-card .avatar {
+  width: 56px;
+  height: 56px;
+  font-size: 19px;
+}
+.profile-meta {
+  gap: 18px;
+  font-size: 14px;
+  color: #34516e;
+}
+.quick-grid {
+  gap: 12px;
+  margin: 18px 0;
+}
+.quick-card {
+  min-height: 76px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #dfe8f5;
+  box-shadow: none;
+  border-radius: 12px;
+}
+.quick-icon {
+  font-size: 25px;
+}
+.quick-card small {
+  font-size: 12px;
+}
+.warning {
+  padding: 12px 18px;
+  border-radius: 0 8px 8px 0;
+  margin: 14px 0;
+  background: #fff1f1;
+  color: #842b38;
+}
+.btn {
+  min-height: 42px;
+  padding: 9px 15px;
+  border-radius: 9px;
+  font-weight: 650;
+}
+.btn:hover {
+  filter: brightness(0.96);
+}
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+.health-nav {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 6px 0 18px;
+  margin-bottom: 12px;
+  scrollbar-width: thin;
+}
+.health-nav a {
+  white-space: nowrap;
+  padding: 9px 14px;
+  border-radius: 9px;
+  color: #345371;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.health-nav a[aria-current],
+.health-nav a:hover {
+  background: #dfeeff;
+  color: #124f9b;
+}
+.clinical-list {
+  display: grid;
+  gap: 16px;
+}
+.clinical-card {
+  background: var(--surface);
+  padding: 22px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--elevation);
+}
+.clinical-card h2,
+.clinical-card h3 {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+.clinical-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.clinical-grid dt {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.clinical-grid dd {
+  margin: 3px 0;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.clinical-status,
+.source-badge,
+.verification-badge {
+  display: inline-flex;
+  padding: 4px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e7f0fc;
+  color: #285888;
+  margin-right: 6px;
+}
+.verification-badge {
+  background: #fff4dd;
+  color: #6c500c;
+}
+.provenance-line {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.document-library {
+  display: grid;
+  gap: 12px;
+}
+.document-tile {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--elevation);
+}
+.document-tile h2 {
+  font-size: 18px;
+  margin: 0 0 4px;
+  overflow-wrap: anywhere;
+}
+.document-tile p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #46617d;
+}
+.document-tile .card-actions {
+  max-width: 270px;
+  justify-content: flex-end;
+}
+.document-format {
+  background: #e9f2ff;
+  color: #155aab;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 750;
+  padding: 24px 4px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.policy-line {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.upload-resume {
+  padding: 18px;
+  margin-bottom: 20px;
+  background: #e4f1fc;
+  border-radius: 12px;
+}
+.upload-resume h2 {
+  font-size: 16px;
+}
+.upload-resume .row {
+  padding: 8px 0;
+}
+progress {
+  width: 100%;
+  height: 12px;
+  accent-color: var(--interactive);
+}
+.document-preview {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+}
+.hash,
+pre {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  max-width: 100%;
+  font-size: 12px;
+}
+details {
+  padding: 12px 0;
+}
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.lab-trend {
+  width: 100%;
+  height: 140px;
+  color: #146ad2;
+  background: #f7faff;
+  border-radius: 8px;
+}
+.search-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  background: white;
+  border-bottom: 1px solid #e5ecf5;
+  text-decoration: none;
+}
+.imaging-workspace {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 20px;
+}
+.imaging-workspace aside {
+  min-width: 0;
+}
+.imaging-workspace aside .btn {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+}
+.viewer-stage {
+  background: #0b172a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.viewer-stage canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: none;
+}
+.viewer-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.viewer-toolbar label {
+  font-size: 12px;
+  max-width: 150px;
+}
+dialog:has(.imaging-workspace) {
+  width: min(1160px, 96vw);
+  max-width: 96vw;
+}
+dialog {
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 28px 90px #10243a44;
+}
+dialog::backdrop {
+  background: #162c4870;
+  backdrop-filter: blur(3px);
+}
+.dialog-head {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e8eef6;
+}
+.dialog-body {
+  padding: 24px;
+}
+.form-row {
+  gap: 16px;
+}
+label {
+  font-size: 14px;
+  color: #294867;
+}
+input,
+select,
+textarea {
+  background: #fff;
+  border: 1px solid #bfcfe0;
+  border-radius: 8px;
+  min-height: 44px;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+textarea {
+  min-height: 100px;
+}
+.command-center .grid {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.command-center .wide {
+  grid-column: auto;
+}
+.summary-stats {
+  gap: 12px;
+}
+.summary-stats strong {
+  font-size: 25px;
+}
+.record-card .definition {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.record-card h2 {
+  font-size: 20px;
+}
+.card-actions {
+  gap: 8px;
+}
+.muted,
+.help {
+  color: var(--text-muted);
+}
+@media (min-width: 1600px) {
+  .clinical-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .clinical-list > .clinical-card:has(.lab-trend) {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 1100px) {
+  .command-center .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .command-center .wide {
+    grid-column: 1/-1;
+  }
+  .document-tile {
+    grid-template-columns: 48px 1fr;
+  }
+  .document-tile .card-actions {
+    grid-column: 2;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  .clinical-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .main {
+    padding: 22px 24px 88px;
+  }
+}
+@media (max-width: 760px) {
+  .workspace {
+    margin-left: 0;
+  }
+  .sidebar {
+    width: 260px;
+  }
+  .main {
+    padding: 18px 16px 110px;
+  }
+  .topbar {
+    padding: 10px 14px;
+  }
+  .topbar-title {
+    font-size: 14px;
+  }
+  .screen-head {
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .screen-head h1 {
+    font-size: 25px;
+  }
+  .screen-head .btn {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .welcome-card {
+    padding: 16px !important;
+  }
+  .welcome-card h1 {
+    font-size: 22px !important;
+  }
+  .welcome-card .avatar {
+    display: none;
+  }
+  .profile-meta {
+    display: grid;
+    gap: 4px;
+  }
+  .quick-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quick-card {
+    padding: 12px 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    min-height: 98px;
+  }
+  .quick-card strong {
+    font-size: 12px;
+  }
+  .quick-card small {
+    display: none;
+  }
+  .health-nav {
+    margin: 0 -16px 16px;
+    padding: 0 16px 10px;
+  }
+  .health-nav a {
+    padding: 10px 12px;
+  }
+  .command-center .grid {
+    grid-template-columns: 1fr;
+  }
+  .command-center .wide {
+    grid-column: auto;
+  }
+  .clinical-card {
+    padding: 17px;
+  }
+  .clinical-grid {
+    gap: 12px;
+  }
+  .document-tile {
+    padding: 16px;
+    gap: 14px;
+  }
+  .document-tile .card-actions {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .document-tile .btn {
+    flex: 1;
+    min-height: 44px;
+  }
+  .imaging-workspace {
+    grid-template-columns: 1fr;
+  }
+  .imaging-workspace aside {
+    max-height: 170px;
+    overflow: auto;
+  }
+  .viewer-toolbar label {
+    max-width: 110px;
+  }
+  .dialog-body {
+    padding: 16px;
+  }
+  .dialog-head {
+    padding: 16px;
+  }
+  .bottom-nav {
+    background: #fff;
+    box-shadow: 0 -4px 20px #193d6410;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .bottom-nav a {
+    min-height: 58px;
+  }
+  .sos-float {
+    bottom: 82px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .alpha {
+    padding: 5px 16px;
+    font-size: 11px;
+  }
+}

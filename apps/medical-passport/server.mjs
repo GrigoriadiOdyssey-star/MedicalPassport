@@ -1,4 +1,9 @@
 import http from "node:http";
+import os from "node:os";
+import { pipeline } from "node:stream/promises";
+import { LocalObjects, Ingestion, storagePolicy } from "./storage.mjs";
+import { Care } from "./care.mjs";
+import { Imaging, SandboxPACS } from "./imaging.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
@@ -13,12 +18,31 @@ export function createApplication({
   database = path.join(appRoot, "var", "passport.sqlite"),
   mode = process.env.EDHT_MODE ?? "synthetic",
   now,
+  objectRoot,
+  uploadPolicy,
+  scanner,
 } = {}) {
   if (mode !== "synthetic" || process.env.NODE_ENV === "production")
     throw Error(
       "PRODUCTION_RELEASE_GATES_OPEN: only synthetic loopback mode permitted",
     );
   const store = new Store(database, now);
+  const objects = new LocalObjects(
+    objectRoot ??
+      (database === ":memory:"
+        ? fs.mkdtempSync(path.join(os.tmpdir(), "edht-objects-"))
+        : path.join(path.dirname(database), "blob-storage")),
+  );
+  const imaging = new Imaging(store),
+    ingestion = new Ingestion(
+      store,
+      objects,
+      storagePolicy(uploadPolicy),
+      imaging,
+      scanner,
+    ),
+    pacs = new SandboxPACS(imaging, ingestion);
+  const care = new Care(store);
   let origin;
   let notificationWorker;
   const registrationLimit = new Map();
@@ -29,7 +53,7 @@ export function createApplication({
       "X-Frame-Options": "DENY",
       "Referrer-Policy": "no-referrer",
       "Content-Security-Policy":
-        "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+        "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
       "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
     };
     for (const [k, v] of Object.entries(headers)) res.setHeader(k, v);
@@ -49,7 +73,10 @@ export function createApplication({
       if (mutation && req.headers.origin !== origin)
         throw new HttpError(403, "INVALID_ORIGIN");
       let body = {};
-      if (mutation) {
+      const rawChunk =
+        req.method === "PUT" &&
+        /^\/api\/uploads\/[a-f0-9-]+\/chunk$/.test(route);
+      if (mutation && !rawChunk) {
         if (
           !String(req.headers["content-type"] ?? "").startsWith(
             "application/json",
@@ -60,7 +87,8 @@ export function createApplication({
           chunks = [];
         for await (const chunk of req) {
           length += chunk.length;
-          if (length > 1600000) throw new HttpError(413, "BODY_TOO_LARGE");
+          if (length > Math.ceil((ingestion.policy.chunkBytes * 4) / 3) + 32768)
+            throw new HttpError(413, "BODY_TOO_LARGE");
           chunks.push(chunk);
         }
         try {
@@ -80,6 +108,9 @@ export function createApplication({
           "/ui.js",
           "/app.css",
           "/product-ui.js",
+          "/alpha4-ui.js",
+          "/care-ui.js",
+          "/file-hash.js",
           "/product-i18n.js",
         ].includes(route)
       ) {
@@ -147,6 +178,189 @@ export function createApplication({
       requestActor = user.user_id;
       if (mutation && req.headers["x-csrf-token"] !== user.csrf)
         throw new HttpError(403, "INVALID_CSRF");
+      const sendObject = async (key, mime, name, start, end) => {
+        res.writeHead(200, {
+          "Content-Type": mime,
+          "Content-Disposition":
+            'attachment; filename="' +
+            name.replace(/[^A-Za-z0-9._-]/g, "_") +
+            '"',
+        });
+        await pipeline(
+          fs.createReadStream(
+            objects.location(key),
+            start === undefined ? {} : { start, end },
+          ),
+          res,
+        );
+      };
+      if (route === "/api/access/imaging" && req.method === "POST") {
+        const i = store.consume(user, body.token, null, body.instance_id);
+        await sendObject(i.object_key, i.mime, "imaging-" + i.sop_uid + ".dcm");
+        return;
+      }
+      if (route === "/api/appointments") {
+        if (req.method === "GET") {
+          json(200, care.appointments(user));
+          return;
+        }
+        if (req.method === "POST") {
+          json(200, care.saveAppointment(user, body));
+          return;
+        }
+      }
+      if (route === "/api/guidelines/context") {
+        if (req.method === "GET") {
+          json(200, care.context(user));
+          return;
+        }
+        if (req.method === "POST") {
+          json(200, care.saveContext(user, body));
+          return;
+        }
+      }
+      if (route === "/api/storage-policy" && req.method === "GET") {
+        json(200, {
+          ...ingestion.policy,
+          malware_scanner: scanner ? "CONFIGURED" : "NOT_SCANNED_SYNTHETIC",
+          pacs: pacs.capabilities(),
+        });
+        return;
+      }
+      if (route === "/api/uploads" && req.method === "POST") {
+        json(201, ingestion.create(user, body));
+        return;
+      }
+      if (route === "/api/uploads" && req.method === "GET") {
+        const p = store.patient(user);
+        json(
+          200,
+          store.db
+            .prepare(
+              "SELECT id,name,mime,kind,size,received,status,expires_at FROM upload_sessions WHERE patient_id=? AND status IN ('UPLOADING','PROCESSING') ORDER BY created_at DESC LIMIT 64",
+            )
+            .all(p.id),
+        );
+        return;
+      }
+      if (
+        /^\/api\/uploads\/[a-f0-9-]+(\/(chunk|complete|cancel))?$/.test(route)
+      ) {
+        const id = route.split("/")[3];
+        if (rawChunk) {
+          if (req.headers["content-type"] !== "application/octet-stream")
+            throw new HttpError(415, "BINARY_CHUNK_REQUIRED");
+          json(
+            200,
+            await ingestion.chunk(
+              user,
+              id,
+              Number(url.searchParams.get("offset")),
+              req,
+              req.headers["x-chunk-sha256"],
+            ),
+          );
+          return;
+        }
+        if (req.method === "GET") {
+          json(200, ingestion.status(user, id));
+          return;
+        }
+        if (req.method === "POST" && route.endsWith("/complete")) {
+          json(200, await ingestion.complete(user, id));
+          return;
+        }
+        if (req.method === "POST" && route.endsWith("/cancel")) {
+          json(200, await ingestion.cancel(user, id));
+          return;
+        }
+      }
+      if (
+        /^\/api\/documents\/[a-f0-9-]+\/versions$/.test(route) &&
+        req.method === "GET"
+      ) {
+        json(200, ingestion.versions(user, route.split("/")[3]));
+        return;
+      }
+      if (route === "/api/imaging" && req.method === "GET") {
+        json(200, pacs.qido(user));
+        return;
+      }
+      if (route === "/api/pacs/capabilities" && req.method === "GET") {
+        json(200, pacs.capabilities());
+        return;
+      }
+      if (/^\/api\/imaging\/[a-f0-9-]+$/.test(route)) {
+        if (req.method === "GET") {
+          json(200, imaging.study(user, route.split("/")[3]));
+          return;
+        }
+        if (req.method === "POST") {
+          json(200, imaging.revise(user, route.split("/")[3], body));
+          return;
+        }
+      }
+      if (
+        /^\/api\/imaging-instances\/[a-f0-9-]+\/(file|pixels)$/.test(route) &&
+        req.method === "GET"
+      ) {
+        const i = pacs.wado(user, route.split("/")[3]);
+        if (route.endsWith("/pixels")) {
+          const m = i.metadata;
+          if (i.mime !== "application/dicom" || !m.viewerSupported)
+            throw new HttpError(415, "PIXEL_FORMAT_UNSUPPORTED");
+          await sendObject(
+            i.object_key,
+            "application/octet-stream",
+            "pixels.bin",
+            m.pixelOffset,
+            m.pixelOffset + m.rows * m.columns * (m.bitsAllocated / 8) - 1,
+          );
+        } else
+          await sendObject(
+            i.object_key,
+            i.mime,
+            "image" + (i.mime === "application/dicom" ? ".dcm" : ""),
+          );
+        return;
+      }
+      if (/^\/api\/record\/[a-f0-9-]+$/.test(route) && req.method === "GET") {
+        const p = store.patient(user),
+          r = store.db
+            .prepare(
+              "SELECT * FROM current_records WHERE id=? AND patient_id=?",
+            )
+            .get(route.split("/")[3], p.id);
+        if (!r) throw new HttpError(404, "NOT_FOUND");
+        store.transaction(() =>
+          store.audit(user.user_id, "RECORD_DETAIL_READ", r.id, p.id),
+        );
+        json(200, { ...r, body: JSON.parse(r.body) });
+        return;
+      }
+      if (route === "/api/search" && req.method === "GET") {
+        const p = store.patient(user),
+          q = (url.searchParams.get("q") ?? "").trim();
+        if (q.length < 2 || q.length > 100)
+          throw new HttpError(400, "SEARCH_2_TO_100_CHARACTERS");
+        const pattern = "%" + q.replace(/[\\%_]/g, (c) => "\\" + c) + "%";
+        const records = store.db
+          .prepare(
+            "SELECT id,kind,body,source,version FROM current_records WHERE patient_id=? AND archived=0 AND body LIKE ? ESCAPE '\\' LIMIT 30",
+          )
+          .all(p.id, pattern)
+          .map((r) => ({ ...r, body: JSON.parse(r.body) }));
+        const documents = store.db
+          .prepare(
+            "SELECT id,name,document_type,source FROM documents WHERE patient_id=? AND id NOT IN (SELECT document_id FROM document_details WHERE archived=1) AND (name LIKE ? ESCAPE '\\' OR source LIKE ? ESCAPE '\\') LIMIT 30",
+          )
+          .all(p.id, pattern, pattern);
+        store.transaction(() =>
+          store.audit(user.user_id, "PATIENT_SEARCH", "", p.id),
+        );
+        json(200, { records, documents });
+        return;
+      }
       if (req.method === "GET" && route === "/api/notifications") {
         json(
           200,
@@ -182,7 +396,11 @@ export function createApplication({
       if (req.method === "GET" && route === "/api/reminders") {
         json(
           200,
-          store.reminderData(user, Number(url.searchParams.get("days") ?? 1),Number(url.searchParams.get("offset")??0)),
+          store.reminderData(
+            user,
+            Number(url.searchParams.get("days") ?? 1),
+            Number(url.searchParams.get("offset") ?? 0),
+          ),
         );
         return;
       }
@@ -302,7 +520,13 @@ export function createApplication({
         json(201, store.upload(user, body));
         return;
       }
-      const download = (d) => {
+      const download = async (d, version) => {
+        const stored = ingestion.file(d, version);
+        if (stored) {
+          await sendObject(stored.object_key, stored.mime, stored.name);
+          return;
+        }
+        if (version) throw new HttpError(404, "VERSION_NOT_FOUND");
         res.writeHead(200, {
           "Content-Type": d.mime,
           "Content-Disposition": `attachment; filename="${d.name.replace(/[^A-Za-z0-9._-]/g, "_")}"`,
@@ -313,11 +537,23 @@ export function createApplication({
         req.method === "GET" &&
         /^\/api\/documents\/[a-f0-9-]+$/.test(route)
       ) {
-        download(store.ownDocument(user, route.split("/").at(-1)));
+        await download(
+          store.ownDocument(user, route.split("/").at(-1)),
+          url.searchParams.has("version")
+            ? Number(url.searchParams.get("version"))
+            : undefined,
+        );
         return;
       }
       if (req.method === "GET" && route === "/api/grants") {
-        json(200, store.grants(user,Number(url.searchParams.get("offset")??0),url.searchParams.get("status")??"all"));
+        json(
+          200,
+          store.grants(
+            user,
+            Number(url.searchParams.get("offset") ?? 0),
+            url.searchParams.get("status") ?? "all",
+          ),
+        );
         return;
       }
       if (req.method === "POST" && route === "/api/grants") {
@@ -354,7 +590,7 @@ export function createApplication({
           typeof body.document_id !== "string"
         )
           throw new HttpError(400, "INVALID_REQUEST");
-        download(store.consume(user, body.token, body.document_id));
+        await download(store.consume(user, body.token, body.document_id));
         return;
       }
       if (req.method === "GET" && route === "/api/audit") {
@@ -423,6 +659,10 @@ export function createApplication({
   return {
     server,
     store,
+    ingestion,
+    care,
+    imaging,
+    objects,
     async start(port = 0) {
       await new Promise((resolve, reject) => {
         server.once("error", reject);

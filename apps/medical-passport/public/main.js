@@ -1,3 +1,4 @@
+import { createAlpha4UI } from "./alpha4-ui.js";
 import { createProductUI } from "./product-ui.js";
 import { translate as tr } from "./i18n.js";
 import {
@@ -107,6 +108,7 @@ async function api(path, body, blob = false) {
 }
 function clearPrivate() {
   product.clear();
+  alpha4.clear();
   authMode = "signin";
   me = null;
   csrf = "";
@@ -187,11 +189,22 @@ function renderAuth() {
 function shell() {
   if ($(".skip")) $(".skip").textContent = t("skip");
   document.documentElement.lang = locale;
-  const navs = me.role === "doctor" ? ["doctor"] : screens;
+  const navs =
+    me.role === "doctor"
+      ? ["doctor"]
+      : [
+          "home",
+          "passport",
+          "records",
+          "documents",
+          "qr",
+          "assistant",
+          "profile",
+        ];
   const nav = (key, mobile = false) =>
-    `<a href="#/${key}" ${screen === key ? 'aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon[key]}</span><span>${e(t(mobile ? ({ passport: "navPassport", profile: "navProfile", assistant: "navAI", qr: "navQR" }[key] ?? key) : key))}</span></a>`;
+    `<a href="#/${key}" ${screen === key ? 'aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon[key] ?? "○"}</span><span>${e(t(mobile ? ({ passport: "navPassport", profile: "navProfile", assistant: "navAI", qr: "navQR" }[key] ?? key) : key === "records" ? "health" : key))}</span></a>`;
   $("#app").innerHTML =
-    `<aside class="sidebar" id="sidebar"><div class="brand"><span class="brand-mark">✚</span><span>EDHT<small>Medical Passport</small></span></div><nav class="nav" aria-label="${e(t("menu"))}">${navs.map((k) => nav(k)).join("")}</nav><div class="sidebar-foot">${e(t("local"))}<br>Alpha 0.3</div></aside><div class="workspace"><header class="topbar"><button class="icon-btn mobile-menu" data-action="menu" aria-label="${e(t("menu"))}" aria-expanded="false">☰</button><div class="topbar-title">${e(t(screen))}</div>${langSelect()}${me.role === "patient" ? `<button class="icon-btn activity" data-action="notifications" aria-label="${e(t("notifications"))}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0v6l2 3H4l2-3zM9 20h6"/></svg> <span class="notification-badge" data-unread></span></button>` : ""}<a class="user-link" aria-label="${e(t(me.role === "doctor" ? "doctor" : "profile") + ": " + me.name)}" href="#/${me.role === "doctor" ? "doctor" : "profile"}">${avatar(me.name)}<span>${e(me.name)}</span></a><button class="icon-btn" data-action="logout" aria-label="${e(t("logout"))}">↗</button></header><div class="alpha">${e(t("alpha"))}</div><main id="main" class="main" tabindex="-1"><div class="skeleton title"></div><div class="grid" aria-busy="true" aria-label="${e(t("loading"))}"><div class="skeleton"></div><div class="skeleton"></div></div></main></div>${me.role === "patient" ? `<nav class="bottom-nav" aria-label="${e(t("menu"))}">${["home", "passport", "qr", "assistant", "profile"].map((k) => nav(k, true)).join("")}</nav><a class="sos-float" href="#/emergency">✚ SOS</a>` : ""}`;
+    `<aside class="sidebar" id="sidebar"><div class="brand"><span class="brand-mark">✚</span><span>EDHT<small>Medical Passport</small></span></div><nav class="nav" aria-label="${e(t("menu"))}">${navs.map((k) => nav(k)).join("")}</nav><div class="sidebar-foot">${e(t("local"))}<br>Alpha 0.4</div></aside><div class="workspace"><header class="topbar"><button class="icon-btn mobile-menu" data-action="menu" aria-label="${e(t("menu"))}" aria-expanded="false">☰</button><div class="topbar-title">${e(t(screen))}</div>${langSelect()}${me.role === "patient" ? `<a class="icon-btn" href="#/search" aria-label="${e(t("search"))}">⌕</a>` : ""}${me.role === "patient" ? `<button class="icon-btn activity" data-action="notifications" aria-label="${e(t("notifications"))}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0v6l2 3H4l2-3zM9 20h6"/></svg> <span class="notification-badge" data-unread></span></button>` : ""}<a class="user-link" aria-label="${e(t(me.role === "doctor" ? "doctor" : "profile") + ": " + me.name)}" href="#/${me.role === "doctor" ? "doctor" : "profile"}">${avatar(me.name)}<span>${e(me.name)}</span></a><button class="icon-btn" data-action="logout" aria-label="${e(t("logout"))}">↗</button></header><div class="alpha">${e(t("alpha"))}</div><main id="main" class="main" tabindex="-1"><div class="skeleton title"></div><div class="grid" aria-busy="true" aria-label="${e(t("loading"))}"><div class="skeleton"></div><div class="skeleton"></div></div></main></div>${me.role === "patient" ? `<nav class="bottom-nav" aria-label="${e(t("menu"))}">${["home", "passport", "qr", "assistant", "profile"].map((k) => nav(k, true)).join("")}</nav><a class="sos-float" href="#/emergency">✚ SOS</a>` : ""}`;
 }
 function empty(title, description, action = "", label = "add") {
   return `<div class="empty"><div class="empty-icon" aria-hidden="true">${icon[screen] ?? "○"}</div><h2>${e(t(title))}</h2><p>${e(t(description))}</p>${action ? b(label, action, "", "") : ""}</div>`;
@@ -223,8 +236,8 @@ function recordCard(r, doctor = false) {
             ["end", body.end],
             ["notes", body.notes],
           ]
-        : [["notes", body.notes]];
-  return `<article class="card record-card ${body.severity === "critical" ? "critical" : ""}"><div class="record-title"><h2>${e(body.name ?? t(r.kind))}</h2>${body.severity === "critical" ? chip("critical") : ""}</div><div class="chips">${chip(meta)}${r.archived ? chip("archived") : chip(body.status === "stopped" ? "stopped" : body.start && body.start > new Date().toISOString().slice(0, 10) ? "upcoming" : "active")}</div>${definition(r.kind === "medication" ? fields.filter(([, v]) => v) : fields)}${r.kind === "medication" && !doctor ? product.medTools(r, data) : ""}<small>${e(t("date"))}: ${stamp(r.created_at)} · ${e(t("version"))} ${r.version}</small>${doctor ? "" : `<div class="card-actions">${!r.archived ? b("edit", "edit-record", `data-id="${r.id}"`) + b(r.kind === "medication" ? "stop" : "archive", "archive-record", `data-id="${r.id}"`) : ""}${b("history", "history", `data-id="${r.id}"`, "ghost")}</div>`}</article>`;
+        : Object.entries(body).filter(([k, v]) => k !== "name" && v);
+  return `<article class="card record-card ${body.severity === "critical" ? "critical" : ""}"><div class="record-title"><h2>${e(body.name ?? t(r.kind))}</h2>${body.severity === "critical" ? chip("critical") : ""}</div><div class="chips">${chip(meta)}${r.archived ? chip("archived") : chip(body.status === "stopped" ? "stopped" : body.start && body.start > new Date().toISOString().slice(0, 10) ? "upcoming" : "active")}</div>${definition(r.kind === "medication" ? fields.filter(([, v]) => v) : fields)}${r.kind === "medication" && !doctor ? `<a class="btn ghost" href="#/medication-detail?id=${r.id}">${e(t("view"))} →</a>` + product.medTools(r, data) : ""}<small>${e(t("date"))}: ${stamp(r.created_at)} · ${e(t("version"))} ${r.version}</small>${doctor ? "" : `<div class="card-actions">${!r.archived ? b("edit", "edit-record", `data-id="${r.id}"`) + b(r.kind === "medication" ? "stop" : "archive", "archive-record", `data-id="${r.id}"`) : ""}${b("history", "history", `data-id="${r.id}"`, "ghost")}</div>`}</article>`;
 }
 function docCard(d, doctor = false) {
   return `<article class="card document-card"><div class="row spread"><span class="list-icon" aria-hidden="true">▤</span>${chip("reported")}</div><h3>${e(d.name)}</h3><p class="muted">${e(t(d.document_type))} · ${e(d.document_date || stamp(d.created_at))}</p><small>${e(t("documentLanguage"))}: ${e(d.language ?? "und")} · ${e(t(d.translation_status ?? "original"))}</small>${d.description ? `<p>${e(d.description)}</p>` : ""}<div class="card-actions">${b("download", doctor ? "shared-download" : "download", `data-id="${d.id}"`)}${!doctor && d.mime === "text/plain" ? b("preview", "preview", `data-id="${d.id}"`) : ""}${!doctor && !d.archived ? b("edit", "edit-document", `data-id="${d.id}"`, "ghost") + b("archive", "archive-document", `data-id="${d.id}"`, "ghost") : ""}</div></article>`;
@@ -380,7 +393,7 @@ function qrScreen() {
             data.doctors.map((d) => [d.id, d.name]),
           )
         : `<p class="note">${e(t("noDoctors"))}</p>`
-    }</fieldset><fieldset><legend>${e(t("what"))}</legend><div class="scope-grid">${["allergy", "medication", "condition", "vaccination", "documents", "emergency", "observation"].map((k) => `<label class="scope-option"><input type="checkbox" name="scope" value="${k}" ${k === "allergy" ? "checked" : ""}><span>${icon[k] ?? "▤"} ${e(t(k))}</span></label>`).join("")}</div><p class="help">${e(t("scopeHelp"))}</p></fieldset><div class="form-row">${field("duration", "howlong", "1h", "text", true, ["once", "1h", "24h", "7d"])}${field("purpose", "why", "review", "text", true, ["review", "emergency"])}</div><p class="help">${e(t("onceHelp"))}</p><div class="field-error" data-form-error role="alert"></div><button class="btn" ${!data.doctors.length ? "disabled" : ""}>▦ ${e(t("reviewAccess"))}</button></form></section>${qr ? `<section class="card qr-card"><p class="eyebrow">${e(t("shareTitle"))}</p><h2>${e(qr.recipient)}</h2><img src="${qr.qr}" alt="${e(t("qr"))}"><div class="chips">${qr.scopes.map((k) => chip(k)).join("")}</div><p>${e(t(qr.purpose))}</p><small>${e(t("expiresIn"))}</small><div class="countdown" data-expires="${qr.expires_at}"></div><div class="row">${b("copy", "copy")}${b("share", "share")}${b("revoke", "revoke", `data-id="${qr.id}"`, "danger")}</div><p class="help">${e(t("saveLink"))}</p><p class="help">${e(t("localQR"))}</p></section>` : `<section class="card qr-card"><div class="symbol">▦</div><h2>${e(t("emptyGrants"))}</h2><p>${e(t("securityNote"))}</p></section>`}</div>` +
+    }</fieldset><fieldset><legend>${e(t("what"))}</legend><div class="scope-grid">${["allergy", "medication", "condition", "vaccination", "documents", "imaging", "emergency", "observation"].map((k) => `<label class="scope-option"><input type="checkbox" name="scope" value="${k}" ${k === "allergy" ? "checked" : ""}><span>${icon[k] ?? "▤"} ${e(t(k))}</span></label>`).join("")}</div><p class="help">${e(t("scopeHelp"))}</p></fieldset><div class="form-row">${field("duration", "howlong", "1h", "text", true, ["once", "1h", "24h", "7d"])}${field("purpose", "why", "review", "text", true, ["review", "emergency"])}</div><p class="help">${e(t("onceHelp"))}</p><div class="field-error" data-form-error role="alert"></div><button class="btn" ${!data.doctors.length ? "disabled" : ""}>▦ ${e(t("reviewAccess"))}</button></form></section>${qr ? `<section class="card qr-card"><p class="eyebrow">${e(t("shareTitle"))}</p><h2>${e(qr.recipient)}</h2><img src="${qr.qr}" alt="${e(t("qr"))}"><div class="chips">${qr.scopes.map((k) => chip(k)).join("")}</div><p>${e(t(qr.purpose))}</p><small>${e(t("expiresIn"))}</small><div class="countdown" data-expires="${qr.expires_at}"></div><div class="row">${b("copy", "copy")}${b("share", "share")}${b("revoke", "revoke", `data-id="${qr.id}"`, "danger")}</div><p class="help">${e(t("saveLink"))}</p><p class="help">${e(t("localQR"))}</p></section>` : `<section class="card qr-card"><div class="symbol">▦</div><h2>${e(t("emptyGrants"))}</h2><p>${e(t("securityNote"))}</p></section>`}</div>` +
     grantsList() +
     `<div class="toolbar">${offset ? b("previous", "page", `data-offset="${Math.max(0, offset - 30)}"`) : ""}${data.grants.length === 30 ? b("next", "page", `data-offset="${offset + 30}"`) : ""}${link("privacy", "activeAccess")}</div>`
   );
@@ -406,7 +419,7 @@ function doctorScreen() {
         ["patientLabel", accessInfo.patient_label],
       ],
     )}<div class="countdown" data-expires="${accessInfo.expires_at}"></div><p class="help">${e(t("unverified"))}</p></section><div class="grid access-card">${accessInfo.scopes
-      .filter((k) => k !== "documents" && k !== "emergency")
+      .filter((k) => k !== "documents" && k !== "emergency" && k !== "imaging")
       .map(
         (k) =>
           `<section class="wide"><h2>${e(t(k))}</h2><div class="grid">${
@@ -418,7 +431,7 @@ function doctorScreen() {
       )
       .join(
         "",
-      )}${accessInfo.scopes.includes("documents") ? `<section class="wide"><h2>${e(t("documents"))}</h2><div class="grid">${shared.documents.map((d) => docCard(d, true)).join("") || `<p>${e(t("nothing"))}</p>`}</div></section>` : ""}${accessInfo.scopes.includes("emergency") ? `<section class="wide">${emergency(shared.records.filter((r) => r.kind === "emergency").sort((a, b) => b.created_at - a.created_at)[0]?.body, true)}</section>` : ""}</div>`;
+      )}${accessInfo.scopes.includes("imaging") ? `<section class="wide"><h2>${e(t("imaging"))}</h2>${(shared.imaging ?? []).map((s) => `<article class="clinical-card"><h3>${e(s.metadata.title)}</h3><p>${e(s.metadata.modality)} · ${e(s.metadata.facility)} · ${e(s.metadata.acquisitionDate)}</p><p>${e(s.metadata.report || t("nothing"))}</p>${chip("reported")}<div class="card-actions">${s.instances.map((i) => b("download", "shared-imaging", `data-id="${i.id}"`)).join("")}</div></article>`).join("")}</section>` : ""}${accessInfo.scopes.includes("documents") ? `<section class="wide"><h2>${e(t("documents"))}</h2><div class="grid">${shared.documents.map((d) => docCard(d, true)).join("") || `<p>${e(t("nothing"))}</p>`}</div></section>` : ""}${accessInfo.scopes.includes("emergency") ? `<section class="wide">${emergency(shared.records.filter((r) => r.kind === "emergency").sort((a, b) => b.created_at - a.created_at)[0]?.body, true)}</section>` : ""}</div>`;
   }
   return (
     head("doctor") +
@@ -439,6 +452,7 @@ function doctorScreen() {
 function assistantScreen() {
   return (
     head("assistant") +
+    `<a class="btn" href="#/guidelines">${e(t("guidelines"))} →</a>` +
     `<div class="chat"><section class="chat-intro"><div class="chat-icon">✧</div><h2>${e(t("aiTitle"))}</h2><p class="note">${e(t("aiNotice"))}</p><small>● ${e(t("aiContext"))}</small><div class="prompts">${["aiMedication", "aiDocument", "aiQuestions", "aiSummary", "aiTravel", "aiLab"].map((k) => b(k, "prompt", `data-prompt="${k}"`)).join("")}</div></section><div aria-live="polite">${messages.map((m) => `<div class="message ${m.role}">${e(m.text)}${m.sources ? `<small>${e(t("aiSources"))}: ${m.sources.length} · ${m.sources.map((r) => e(r.id.slice(0, 8)) + " / v" + r.version).join(", ")}</small>` : ""}</div>`).join("")}</div><form id="chat-form" class="chat-compose" novalidate>${field("message", "message", "", "textarea", true)}<button class="btn">${e(t("send"))}</button></form></div>`
   );
 }
@@ -465,6 +479,18 @@ const product = createProductUI({
   link,
   get: () => ({ me, data, locale, screen }),
 });
+const alpha4 = createAlpha4UI({
+  document,
+  window,
+  api,
+  e,
+  t,
+  modal,
+  load,
+  notice,
+  csrf: () => csrf,
+  get: () => ({ me, data, locale, screen, offset, archived }),
+});
 function render() {
   if (!me) return renderAuth();
   let html = product.render(screen, data) ?? "";
@@ -472,7 +498,9 @@ function render() {
     case "home":
       html = home().replace(
         '<div class="grid">',
-        product.dashboard(data) + '<div class="grid">',
+        product.dashboard(data) +
+          alpha4.careDashboard(data) +
+          '<div class="grid">',
       );
       break;
     case "passport":
@@ -503,7 +531,15 @@ function render() {
     case "profile":
       html = profileScreen() + product.profileExtras(data);
   }
+  html = alpha4.render(screen, data) ?? html;
+  if (["records", "medication", "allergy"].includes(screen))
+    html = alpha4.subnav() + html;
+  if (["documents", "condition", "observation", "vaccination"].includes(screen))
+    html += pagination();
   $("#main").innerHTML = html;
+  alpha4
+    .activate()
+    .catch((err) => notice(errorMessage(err.message, locale), true));
   countdown();
 }
 async function load() {
@@ -548,6 +584,7 @@ async function load() {
     } else if (screen === "profile") result = await api("/profile");
     if (id !== loadId) return;
     result = await product.enrich(screen, result);
+    result = await alpha4.enrich(screen, result);
     if (id !== loadId) return;
     data = result;
     render();
@@ -568,6 +605,8 @@ async function refreshMe() {
 }
 function openRecord(kind, existing) {
   if (kind === "documents") return openUpload();
+  if (["condition", "observation", "vaccination"].includes(kind))
+    return alpha4.clinicalForm(kind, existing);
   if (kind === "emergency") return openEmergency();
   const body = existing?.body ?? {},
     k =
@@ -611,6 +650,7 @@ async function openEmergency() {
   );
 }
 function openUpload(doc) {
+  if (!doc) return alpha4.uploadModal();
   chosenFile = null;
   modal(
     doc ? "edit" : "upload",
@@ -740,7 +780,7 @@ document.addEventListener("change", async (event) => {
     await load();
   }
   if (await product.change(event.target)) return;
-  if (event.target.matches("input[type=file]")) {
+  if (event.target.matches("#upload-form input[type=file]")) {
     chosenFile = event.target.files[0];
     $("#selected-file").textContent = chosenFile?.name ?? "";
   }
@@ -755,6 +795,21 @@ document.addEventListener("click", async (event) => {
   const a = target.dataset.action;
   event.preventDefault();
   try {
+    if (a.startsWith("a4-") && (await alpha4.click(a, target))) return;
+    if (a === "shared-imaging") {
+      const blob = await api(
+        "/access/imaging",
+        { token: shareToken, instance_id: target.dataset.id },
+        true,
+      );
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "imaging.dcm";
+      anchor.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      return;
+    }
     if (a === "confirm-qr") {
       const f = $("#qr-form");
       f.dataset.reviewed = "1";
@@ -976,6 +1031,7 @@ document.addEventListener("submit", async (event) => {
   }
   form.setAttribute("aria-busy", "true");
   try {
+    if (await alpha4.submit(form, values)) return;
     if (await product.submit(form, values)) return;
     if (form.id === "auth-form") {
       if (authMode === "recover") {
@@ -1016,31 +1072,7 @@ document.addEventListener("submit", async (event) => {
     }
     if (form.id === "upload-form") {
       let id = form.dataset.id;
-      if (!id) {
-        const file = chosenFile;
-        if (
-          !file ||
-          file.size < 1 ||
-          file.size > 1048576 ||
-          !/\.(pdf|txt)$/i.test(file.name)
-        )
-          throw Error("INVALID_DOCUMENT");
-        const bytes = new Uint8Array(await file.arrayBuffer());
-        let bin = "";
-        for (let i = 0; i < bytes.length; i += 8192)
-          bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
-        const result = await api("/documents", {
-          name: file.name,
-          mime: file.name.toLowerCase().endsWith(".txt")
-            ? "text/plain"
-            : "application/pdf",
-          document_type: values.document_type,
-          source: values.source || "patient_uploaded",
-          base64: btoa(bin),
-        });
-        id = result.id;
-        form.dataset.id = id;
-      }
+      if (!id) throw Error("USE_RESUMABLE_UPLOAD");
       await api("/documents/" + id + "/metadata", {
         description: values.description,
         document_date: values.document_date,
@@ -1124,7 +1156,20 @@ document.addEventListener("keydown", (event) => {
     $(".mobile-menu")?.setAttribute("aria-expanded", "false");
   }
 });
-setInterval(() => product.poll().catch(() => {}), 30000);
+setInterval(async () => {
+  try {
+    await product.poll();
+    if (
+      me?.role === "patient" &&
+      ["home", "notifications", "medication", "medication-detail"].includes(
+        screen,
+      ) &&
+      !$("#dialog").open &&
+      !document.querySelector("form[aria-busy=true]")
+    )
+      await load();
+  } catch {}
+}, 30000);
 refreshMe().catch((err) => {
   renderAuth();
   if (err.message !== "UNAUTHENTICATED")

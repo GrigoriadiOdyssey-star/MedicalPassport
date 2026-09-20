@@ -75,6 +75,8 @@ export function attachProduct(Store) {
       this.db.prepare("SELECT MAX(seq) n FROM audit_events").get().n,
     );
     const events = {
+      IMAGING_INSTANCE_IMPORTED: ["Document", "imagingImported", "imaging"],
+      SHARED_IMAGING_READ: ["Access", "imagingOpened", "privacy"],
       DOCUMENT_UPLOADED: ["Document", "documentUploaded", "documents"],
       RECORD_UPDATED: ["Clinical", "recordUpdated", "records"],
       GRANT_CREATED: ["Access", "accessGranted", "privacy"],
@@ -101,7 +103,14 @@ export function attachProduct(Store) {
           title: event[1],
           source: "audit",
           related_entity: reference,
-          action_url: "#/" + event[2],
+          action_url:
+            "#/" +
+            event[2] +
+            (action === "DOCUMENT_UPLOADED"
+              ? "?document=" + reference
+              : action === "IMAGING_INSTANCE_IMPORTED"
+                ? "?study=" + reference
+                : ""),
           dedupe_key: "audit:" + seq,
           audit_seq: seq,
         });
@@ -246,7 +255,7 @@ export function attachProduct(Store) {
         type: "Medication",
         title: "reminderScheduled",
         related_entity: plan,
-        action_url: "#/medication",
+        action_url: "#/medication-detail?id=" + r.id,
         dedupe_key: "plan:" + plan + ":" + version,
       });
       return { id: plan, version };
@@ -317,7 +326,7 @@ export function attachProduct(Store) {
                 expires_at: existing.scheduled_at + DAY,
                 source: "medication_dose",
                 related_entity: existing.id,
-                action_url: "#/medication",
+                action_url: "#/medication-detail?id=" + plan.record_id,
                 dedupe_key: "dose:" + existing.id + ":" + existing.plan_version,
               });
             continue;
@@ -359,7 +368,7 @@ export function attachProduct(Store) {
             expires_at: slot.at + DAY,
             source: "medication_dose",
             related_entity: id,
-            action_url: "#/medication",
+            action_url: "#/medication-detail?id=" + plan.record_id,
             dedupe_key: "dose:" + id + ":" + plan.version,
           });
         }

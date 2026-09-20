@@ -105,6 +105,15 @@ export function attachUX(Store) {
       if (r.version !== expectedVersion) fail("VERSION_CONFLICT", 409);
       if (r.archived) fail("RECORD_ARCHIVED", 409);
       const clean = archive ? JSON.parse(r.body) : cleanBody(r.kind, body);
+      if (
+        !archive &&
+        r.kind === "vaccination" &&
+        clean.document_id &&
+        !this.db
+          .prepare("SELECT id FROM documents WHERE id=? AND patient_id=?")
+          .get(clean.document_id, p.id)
+      )
+        fail("CERTIFICATE_NOT_FOUND", 404);
       this.db
         .prepare(
           "INSERT INTO record_changes(record_id,version,body,archived,created_at) VALUES(?,?,?,?,?)",

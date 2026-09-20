@@ -1,6 +1,6 @@
-# EDHT Medical Passport — Functional Alpha 0.3
+# EDHT Medical Passport — Functional Alpha 0.4
 
-Node 24, vanilla browser UI, real HTTP API and SQLite persistence. This is MASTER-24 productization, based on MASTER-23 commit `331b891`. Use fictional adult profiles only. Production startup is refused; the server binds only to `127.0.0.1`.
+Node 24, vanilla browser UI, real HTTP API and SQLite persistence. This is MASTER-25 productization, based on MASTER-24 commit `c4c3599`. Use fictional adult profiles only. Production startup is refused; the server binds only to `127.0.0.1`.
 
 ## Start
 
@@ -31,7 +31,7 @@ Recovery: `node cli.mjs recovery <email>` prints a local single-use, 15-minute r
 
 1. Register and log in as a fictional adult patient.
 2. Add an allergy and reported medication; add conditions, observations or vaccination records as needed.
-3. Upload a PDF or UTF-8 text fixture (maximum 1 MiB). PDFs are signature-checked but not malware-scanned; all downloads use attachment disposition.
+3. Upload a synthetic document through resumable chunks. The default configurable policy allows 256 MiB documents and 2 GiB imaging objects. Files are not malware-scanned; downloads use attachment disposition.
 4. Save the emergency profile, including unknown blood group/Rh when unknown. Entries preserve prior versions; they are not clinician-verified.
 5. Select a provisioned doctor, scopes, purpose and lifetime. Create the QR and copy its link immediately. Raw tokens are shown once and only hashes are stored in the database.
 6. Log out and log in as that doctor. Paste the QR link into the access form, or open its URL in the **same machine's** browser. A phone cannot reach this loopback alpha by scanning its link.
@@ -46,9 +46,9 @@ Durations: one request (maximum one hour), one hour, 24 hours, seven days. A one
 - Passwords use salted scrypt; session, recovery and QR tokens use random 256-bit values with only hashes stored. Login failures are throttled. Account/practitioner status and session epoch are checked.
 - Consent, recipient, expiry, revocation, scope and single-use claims are checked in SQLite `BEGIN IMMEDIATE` transactions. Audit failure rolls back one-time consumption. Six independent DB connections are tested for one winner.
 - Records are immutable; emergency entries increment a version. Audit is append-only and hash-chained inside the same database. This detects accidental/tampered chains but is **not** external, independently anchored tamper-proof storage.
-- Patient data is bounded to its patient ID; documents contain bytes, metadata and SHA-256. Downloads reauthorize. There are no public clinical routes, third-party scripts or external requests from the frontend.
+- Patient data is bounded to its patient ID; documents keep metadata and SHA-256 in SQLite; immutable binary versions live in local object storage. Downloads reauthorize. There are no public clinical routes, third-party scripts or external requests from the frontend.
 - The synthetic FHIR adapter accepts a restricted subset of Condition, Observation, AllergyIntolerance and MedicationStatement with exact `Patient/<id>` binding. Exact replay returns the existing record; conflicting content for a source ID returns 409. It is not a general FHIR server, does not round-trip every field, and has no real provider connection.
-- The assistant is a labelled deterministic summary of server-selected own-patient context with record IDs/versions. `is_generative_ai:false`; no LLM, diagnosis, prescribing or dose changes. Guideline Intelligence, Digital Twin and Precision Pharmacology remain disconnected boundaries.
+- The assistant is a labelled deterministic summary of server-selected own-patient context with record IDs/versions. `is_generative_ai:false`; no LLM, diagnosis, prescribing or dose changes. Guideline Intelligence has versioned jurisdiction context only; external sources, Digital Twin derivation and Precision Pharmacology remain disconnected.
 
 ## Remaining strict MASTER-21 obligations
 
@@ -72,10 +72,14 @@ Migration 003 adds immutable record revisions and document/profile metadata with
 
 New authenticated routes: GET/POST /api/profile; GET /api/views/:screen with bounded offset pages; GET /api/records/:id/history; POST /api/records/:id/update or /archive; POST /api/documents/:id/metadata or /archive; POST /api/access/info. Mutations retain existing CSRF/Origin checks. Access status is recipient-bound and does not consume a one-time grant; actual content reads still use the original authorization transaction.
 
-The app suite has 32 tests. Frontend tests combine pure helpers and real DOM integration with mocked network; API/store tests exercise real SQLite and HTTP. Native browser journeys are documented separately. See ../../audit/master-23/ALPHA_02_STATUS.md for remaining limitations and checkpoint.
+The Alpha 0.2 baseline had 32 tests. Frontend tests combine pure helpers and real DOM integration with mocked network; API/store tests exercise real SQLite and HTTP. Native browser journeys are documented separately. See ../../audit/master-23/ALPHA_02_STATUS.md for remaining limitations and checkpoint.
 
 ## Alpha 0.3
 
 Run `node seed-demo.mjs` for labelled fictional patient/doctor fixtures (it prints their local demo credentials). New migrations 004/005 retain existing data. Notification center/settings, medication schedules and dose history, explicit timezone decisions, active-access filters and session controls are functional. See [product architecture](PRODUCT_ALPHA03.md) and [MASTER-24 status](../../audit/master-24/STATUS.md).
 
 The in-app scheduler runs every 30 seconds and on relevant reads while this local server runs. Browser alerts require an explicit foreground permission action. PUSH/EMAIL/SMS are adapter boundaries only; choosing one does not send externally. No LLM, prescribing, translation service or appointment provider is connected.
+
+## Alpha 0.4
+
+Migrations 006/007 preserve prior records and move legacy document bytes to content-addressed local objects at startup. Documents 2.0, resumable uploads, bounded DICOM import/viewing, structured clinical records, personal calendar and guideline context are functional synthetic workflows. See [Alpha 0.4 architecture](PRODUCT_ALPHA04.md), [current status](../../audit/master-25/STATUS.md), [browser evidence](../../audit/master-25/BROWSER_REVIEW.md) and [canonical coverage](../../PRODUCT_IMPLEMENTATION_COVERAGE.md). The current application suite has 59 tests; historical audit validators are separate.

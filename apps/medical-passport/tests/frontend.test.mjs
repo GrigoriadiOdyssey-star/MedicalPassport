@@ -1,3 +1,4 @@
+import { createAlpha4UI } from "../public/alpha4-ui.js";
 import { createProductUI } from "../public/product-ui.js";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -28,7 +29,7 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
   w.HTMLDialogElement.prototype.close = function () {
     this.open = false;
   };
-  w.__deps = { tr: translate, createProductUI, ...ui };
+  w.__deps = { tr: translate, createProductUI, createAlpha4UI, ...ui };
   let records = [],
     calls = [];
   const me = {
@@ -44,6 +45,7 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
     calls.push({ path, opt });
     let value = {};
     if (path === "/api/me") value = me;
+    else if (path === "/api/appointments") value = [];
     else if (path === "/api/views/home" || path === "/api/views/passport")
       value = {
         profile: me,
@@ -87,7 +89,7 @@ async function setup(t, { role = "patient", failScreen = false } = {}) {
     return { ok: true, status: 200, json: async () => value };
   };
   w.eval(
-    "const {tr,createProductUI,escape:e,screens,route,grantStatus,sourceStatus,errorMessage,groupTimeline}=window.__deps;\n" +
+    "const {tr,createProductUI,createAlpha4UI,escape:e,screens,route,grantStatus,sourceStatus,errorMessage,groupTimeline}=window.__deps;\n" +
       source,
   );
   t.after(() => w.close());
@@ -132,7 +134,7 @@ test("grant status precedence preserves revoke, expiry and single-use distinctio
 });
 test("navigation renders one screen, empty state and modal validated record creation", async (t) => {
   const { w, calls, navigate, click } = await setup(t);
-  assert.equal(w.document.querySelectorAll(".nav a").length, 10);
+  assert.equal(w.document.querySelectorAll(".nav a").length, 7);
   assert.match(
     w.document.querySelector("#main").textContent,
     /Synthetic Patient/,
@@ -304,4 +306,18 @@ test("medication reminder form enforces confirmation and serializes schedule ind
       .querySelector("#toast")
       .textContent.includes("Reminder scheduled"),
   );
+});
+
+test("new resumable file selection does not invoke legacy selected-file handler", async (t) => {
+  const { w } = await setup(t);
+  const form = w.document.createElement("form");
+  form.id = "a4-upload";
+  const input = w.document.createElement("input");
+  input.type = "file";
+  form.append(input);
+  w.document.body.append(form);
+  assert.equal(w.document.querySelector("#selected-file"), null);
+  input.dispatchEvent(new w.Event("change", { bubbles: true }));
+  await new Promise((resolve) => setTimeout(resolve, 10));
+  assert.ok(form.isConnected);
 });

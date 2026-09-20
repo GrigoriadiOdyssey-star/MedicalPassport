@@ -20,8 +20,25 @@ export const screens = [
   "profile",
 ];
 export function route(hash, role) {
-  const key = hash.replace(/^#\/?/, "");
-  return role === "doctor" ? "doctor" : [...screens,"notifications","notification-settings","privacy"].includes(key) ? key : "home";
+  const key = hash.replace(/^#\/?/, "").split("?")[0];
+  return role === "doctor"
+    ? "doctor"
+    : [
+          ...screens,
+          "care",
+          "guidelines",
+          "medication-detail",
+          "condition",
+          "observation",
+          "vaccination",
+          "imaging",
+          "search",
+          "notifications",
+          "notification-settings",
+          "privacy",
+        ].includes(key)
+      ? key
+      : "home";
 }
 export function grantStatus(g, now = Date.now()) {
   return g.revoked_at !== null

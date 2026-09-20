@@ -1,5 +1,7 @@
 import { productStrings } from "./product-i18n.js";
 export const strings = {
+  imaging: ["Medical imaging", "Медицинские исследования"],
+  search: ["Search", "Поиск"],
   navPassport: ["Passport", "Паспорт"],
   navProfile: ["Profile", "Профиль"],
   navAI: ["AI", "AI"],
@@ -179,8 +181,8 @@ export const strings = {
   ],
   choose: ["Choose file", "Выбрать файл"],
   fileHelp: [
-    "PDF or TXT · up to 1 MB · fictional data only",
-    "PDF или TXT · до 1 МБ · только вымышленные данные",
+    "PDF or TXT · configured size policy · fictional data only",
+    "PDF или TXT · настраиваемая политика размера · только вымышленные данные",
   ],
   fileWarning: [
     "Files are not malware-scanned. PDF preview is unavailable; download to a trusted viewer.",
@@ -337,8 +339,8 @@ export const strings = {
     "Запись изменилась. Обновите её перед сохранением.",
   ],
   uploadError: [
-    "Choose a valid PDF or TXT file up to 1 MB.",
-    "Выберите корректный PDF или TXT до 1 МБ.",
+    "Choose a valid PDF or TXT file configured size policy.",
+    "Выберите корректный PDF или TXT настраиваемая политика размера.",
   ],
   tryLater: [
     "Too many attempts. Try again in a minute.",
@@ -387,8 +389,8 @@ export const strings = {
 };
 Object.assign(strings, productStrings);
 strings.alpha = [
-  "Alpha 0.3 · fictional adult data only",
-  "Alpha 0.3 · только вымышленные данные взрослых",
+  "Alpha 0.4 · fictional adult data only",
+  "Alpha 0.4 · только вымышленные данные взрослых",
 ];
 export function translate(key, locale = "ru") {
   return strings[key]?.[locale === "en" ? 0 : 1] ?? key;
@@ -427,4 +429,55 @@ Object.assign(errorKeys, {
   DOSE_NOT_DUE: "doseNotDue",
   REMINDER_DISABLED: "reminderDisabled",
   SCHEDULE_OUTSIDE_RECORD: "scheduleBounds",
+});
+
+Object.assign(strings, {
+  imaging: ["Medical imaging", "Исследования"],
+  observation: ["Laboratory", "Лаборатория"],
+  "medication-detail": ["Medication details", "Карточка препарата"],
+  health: ["Health", "Здоровье"],
+  imagingImported: ["Imaging imported", "Исследование импортировано"],
+  imagingOpened: ["Doctor opened imaging", "Врач открыл снимок"],
+});
+
+Object.assign(strings, {
+  care: ["Care", "Приёмы"],
+  guidelines: ["Guidelines", "Рекомендации"],
+  planned: ["Planned", "Запланировано"],
+  attended: ["Attended", "Состоялся"],
+  cancelled: ["Cancelled", "Отменён"],
+  appointmentReminder: ["Upcoming appointment", "Предстоящий приём"],
+});
+
+Object.assign(strings, {
+  clinicalName: ["Name / test", "Название / анализ"],
+  normal: ["Within reported range", "В пределах указанного диапазона"],
+  low: ["Low (source flag)", "Ниже (отметка источника)"],
+  high: ["High (source flag)", "Выше (отметка источника)"],
+  resolved: ["Resolved", "Разрешено"],
+  remission: ["Remission", "Ремиссия"],
+  uploadUnsupported: [
+    "This file representation is not supported; the source was not imported.",
+    "Представление файла не поддержано; исходник не импортирован.",
+  ],
+  uploadIntegrity: [
+    "File integrity check failed. Select the original file and retry.",
+    "Контрольная сумма не совпала. Выберите исходный файл и повторите.",
+  ],
+  uploadQuota: [
+    "This upload exceeds the configured file or storage policy.",
+    "Загрузка превышает настроенный лимит файла или хранилища.",
+  ],
+});
+Object.assign(errorKeys, {
+  DICOM_TRANSFER_SYNTAX_UNSUPPORTED: "uploadUnsupported",
+  DICOM_UNDEFINED_LENGTH_UNSUPPORTED: "uploadUnsupported",
+  DICOM_PART10_REQUIRED: "uploadUnsupported",
+  CONTENT_SIGNATURE_MISMATCH: "uploadUnsupported",
+  FILE_CHECKSUM_MISMATCH: "uploadIntegrity",
+  CHUNK_CHECKSUM_MISMATCH: "uploadIntegrity",
+  RESUME_FILE_MISMATCH: "uploadIntegrity",
+  FILE_SIZE_POLICY: "uploadQuota",
+  STORAGE_QUOTA: "uploadQuota",
+  CHUNK_SIZE_POLICY: "uploadQuota",
 });
