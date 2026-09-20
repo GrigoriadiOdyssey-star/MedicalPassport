@@ -182,7 +182,7 @@ export function attachPharmacy(Store){
   };
   Store.prototype.pharmacyPrescriptions=function(user,status="all"){
     const p=this.patient(user);this.ensurePharmacyPatientDemo(user);
-    const rows=this.db.prepare("SELECT x.*,m.brand_name,m.generic_name,m.active_ingredient,m.strength,m.dose_form,m.package,m.manufacturer,m.verification_state product_verification FROM prescriptions x JOIN medication_products m ON m.product_id=x.product_id WHERE x.patient_id=? ORDER BY x.created_at DESC").all(p.id);
+    const rows=this.db.prepare("SELECT x.*,m.brand_name,m.generic_name,m.active_ingredient,m.strength,m.dose_form,m.package,m.manufacturer,m.local_product_identifier,m.country_identifier,m.verification_state product_verification FROM prescriptions x JOIN medication_products m ON m.product_id=x.product_id WHERE x.patient_id=? ORDER BY x.created_at DESC").all(p.id);
     const filtered=status==="all"?rows:rows.filter(x=>x.status===upper(status));
     this.transaction(()=>this.audit(user.user_id,"PRESCRIPTION_LIST_READ",status,p.id));
     return filtered;
