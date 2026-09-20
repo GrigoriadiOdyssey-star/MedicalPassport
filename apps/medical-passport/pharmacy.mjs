@@ -99,8 +99,8 @@ export function attachPharmacy(Store){
   Store.prototype.seedPharmacyCatalog=function(){
     const now=this.now();
     this.transaction(()=>{
-      const ps=this.db.prepare("INSERT OR IGNORE INTO pharmacies VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-      for(const p of syntheticPharmacies)ps.run(...p.slice(0,11),JSON.stringify(p[11]),...p.slice(12,21),JSON.stringify(p[21]),"SYNTHETIC","synthetic:master26",now);
+      const ps=this.db.prepare("INSERT OR IGNORE INTO pharmacies VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+      for(const p of syntheticPharmacies)ps.run(...p.slice(0,11),JSON.stringify(p[11]),...p.slice(12,19),JSON.stringify(p[19]),"SYNTHETIC","synthetic:master26",now);
       const ms=this.db.prepare("INSERT OR IGNORE INTO medication_products VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
       for(const p of syntheticProducts)ms.run(...p,"SYNTHETIC","synthetic:master26");
       const inv=this.db.prepare("INSERT OR IGNORE INTO inventory_observations VALUES(?,?,?,?,?,?,?,?,?)");

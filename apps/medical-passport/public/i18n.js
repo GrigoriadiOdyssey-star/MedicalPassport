@@ -1,4 +1,5 @@
 import { productStrings } from "./product-i18n.js";
+import { pharmacyStrings } from "./pharmacy-i18n.js";
 export const strings = {
   imaging: ["Medical imaging", "Медицинские исследования"],
   search: ["Search", "Поиск"],
@@ -387,7 +388,7 @@ export const strings = {
   ],
   ACCESS_STATUS_CHECK: ["Access status checked", "Проверен статус доступа"],
 };
-Object.assign(strings, productStrings);
+Object.assign(strings, productStrings, pharmacyStrings);
 strings.alpha = [
   "Alpha 0.4 · fictional adult data only",
   "Alpha 0.4 · только вымышленные данные взрослых",

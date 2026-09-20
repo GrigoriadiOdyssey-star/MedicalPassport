@@ -1,5 +1,6 @@
 import { createAlpha4UI } from "./alpha4-ui.js";
 import { createProductUI } from "./product-ui.js";
+import { createPharmacyUI } from "./pharmacy-ui.js";
 import { translate as tr } from "./i18n.js";
 import {
   escape as e,
@@ -26,6 +27,7 @@ const $ = (s) => document.querySelector(s),
     condition: "◈",
     observation: "∿",
     vaccination: "✓",
+    pharmacy: "⚕",
   };
 let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   me = null,
@@ -108,6 +110,7 @@ async function api(path, body, blob = false) {
 }
 function clearPrivate() {
   product.clear();
+  pharmacy.clear();
   alpha4.clear();
   authMode = "signin";
   me = null;
@@ -196,6 +199,7 @@ function shell() {
           "home",
           "passport",
           "records",
+          "pharmacy",
           "documents",
           "qr",
           "assistant",
@@ -463,6 +467,22 @@ function profileScreen() {
     `<section class="card"><div class="profile-summary">${avatar(p.name)}<div><h2>${e(p.name)}</h2><small>${e(p.email)}</small></div></div><form id="profile-form" novalidate>${field("name", "name", p.name, "text", true)}<div class="form-row">${field("birth_date", "birth", p.birth_date ?? "", "date")}${field("country", "country", p.country ?? "")}</div><p class="help">${e(t("adult"))}</p><div class="field-error" data-form-error role="alert"></div><div class="form-actions"><button class="btn">${e(t("save"))}</button></div></form></section>`
   );
 }
+const pharmacy = createPharmacyUI({
+  document,
+  window,
+  api,
+  t,
+  e,
+  b,
+  chip,
+  field,
+  modal,
+  actions,
+  notice,
+  load,
+  link,
+  get: () => ({ me, data, locale, screen }),
+});
 const product = createProductUI({
   document,
   window,
@@ -493,12 +513,13 @@ const alpha4 = createAlpha4UI({
 });
 function render() {
   if (!me) return renderAuth();
-  let html = product.render(screen, data) ?? "";
+  let html = pharmacy.render(screen, data) ?? product.render(screen, data) ?? "";
   switch (screen) {
     case "home":
       html = home().replace(
         '<div class="grid">',
-        product.dashboard(data) +
+        pharmacy.dashboard(data) +
+          product.dashboard(data) +
           alpha4.careDashboard(data) +
           '<div class="grid">',
       );
@@ -583,6 +604,7 @@ async function load() {
       result = { grants, doctors };
     } else if (screen === "profile") result = await api("/profile");
     if (id !== loadId) return;
+    result = await pharmacy.enrich(screen, result);
     result = await product.enrich(screen, result);
     result = await alpha4.enrich(screen, result);
     if (id !== loadId) return;
@@ -779,6 +801,7 @@ document.addEventListener("change", async (event) => {
     offset = 0;
     await load();
   }
+  if (await pharmacy.change(event.target)) return;
   if (await product.change(event.target)) return;
   if (event.target.matches("#upload-form input[type=file]")) {
     chosenFile = event.target.files[0];
@@ -795,6 +818,7 @@ document.addEventListener("click", async (event) => {
   const a = target.dataset.action;
   event.preventDefault();
   try {
+    if (a.startsWith("pharmacy-") && (await pharmacy.click(a, target))) return;
     if (a.startsWith("a4-") && (await alpha4.click(a, target))) return;
     if (a === "shared-imaging") {
       const blob = await api(
@@ -1031,6 +1055,7 @@ document.addEventListener("submit", async (event) => {
   }
   form.setAttribute("aria-busy", "true");
   try {
+    if (await pharmacy.submit(form, values)) return;
     if (await alpha4.submit(form, values)) return;
     if (await product.submit(form, values)) return;
     if (form.id === "auth-form") {

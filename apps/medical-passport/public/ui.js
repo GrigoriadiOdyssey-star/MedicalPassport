@@ -36,6 +36,21 @@ export function route(hash, role) {
           "notifications",
           "notification-settings",
           "privacy",
+          "pharmacy",
+          "pharmacy-map",
+          "pharmacy-list",
+          "pharmacy-search",
+          "pharmacy-detail",
+          "pharmacy-medication-detail",
+          "prescriptions",
+          "prescription-detail",
+          "availability",
+          "pharmacy-order",
+          "pharmacy-orders",
+          "dispensing",
+          "medication-history",
+          "pharmacy-notifications",
+          "pharmacology",
         ].includes(key)
       ? key
       : "home";
