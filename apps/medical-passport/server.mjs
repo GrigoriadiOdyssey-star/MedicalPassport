@@ -12,8 +12,10 @@ import { Store, HttpError, appRoot, hash } from "./store.mjs";
 import { adaptFHIR } from "./interop.mjs";
 import { attachUX } from "./ux-store.mjs";
 import { attachProduct } from "./product-store.mjs";
+import { attachPharmacy } from "./pharmacy.mjs";
 attachUX(Store);
 attachProduct(Store);
+attachPharmacy(Store);
 export function createApplication({
   database = path.join(appRoot, "var", "passport.sqlite"),
   mode = process.env.EDHT_MODE ?? "synthetic",
@@ -27,6 +29,7 @@ export function createApplication({
       "PRODUCTION_RELEASE_GATES_OPEN: only synthetic loopback mode permitted",
     );
   const store = new Store(database, now);
+  store.seedPharmacyCatalog();
   const objects = new LocalObjects(
     objectRoot ??
       (database === ":memory:"
@@ -54,7 +57,7 @@ export function createApplication({
       "Referrer-Policy": "no-referrer",
       "Content-Security-Policy":
         "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
-      "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+      "Permissions-Policy": "camera=(), microphone=(), geolocation=(self)",
     };
     for (const [k, v] of Object.entries(headers)) res.setHeader(k, v);
     let requestActor = "anonymous";
@@ -112,6 +115,8 @@ export function createApplication({
           "/care-ui.js",
           "/file-hash.js",
           "/product-i18n.js",
+          "/pharmacy-ui.js",
+          "/pharmacy-i18n.js",
         ].includes(route)
       ) {
         const filename = route === "/" ? "index.html" : route.slice(1),
@@ -359,6 +364,66 @@ export function createApplication({
           store.audit(user.user_id, "PATIENT_SEARCH", "", p.id),
         );
         json(200, { records, documents });
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy") {
+        json(200, store.pharmacySearch(user, Object.fromEntries(url.searchParams)));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/products") {
+        json(200, store.pharmacyProducts(user, url.searchParams.get("q") ?? ""));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/prescriptions") {
+        json(200, store.pharmacyPrescriptions(user, url.searchParams.get("status") ?? "all"));
+        return;
+      }
+      if (req.method === "GET" && /^\/api\/pharmacy\/prescriptions\/[A-Za-z0-9_-]+$/.test(route)) {
+        json(200, store.pharmacyPrescription(user, route.split("/").at(-1)));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/orders") {
+        json(200, store.pharmacyOrders(user));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/pharmacy/orders") {
+        json(201, store.createPharmacyOrder(user, body));
+        return;
+      }
+      if (req.method === "POST" && /^\/api\/pharmacy\/orders\/[a-f0-9-]+\/action$/.test(route)) {
+        json(200, store.pharmacyOrderAction(user, route.split("/")[4], body.action));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/dispensing") {
+        json(200, store.pharmacyDispensing(user));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/notices") {
+        json(200, store.pharmacyNotices(user));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/provider-boundary") {
+        json(200, store.pharmacyProviderBoundary(user));
+        return;
+      }
+      if (req.method === "GET" && route === "/api/pharmacy/pharmacology-context") {
+        json(200, store.pharmacologyContext(user));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/pharmacy/favorite") {
+        json(200, store.pharmacyFavorite(user, body.pharmacy_id, body.favorite !== false));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/pharmacy/simulate") {
+        json(200, store.pharmacySimulation(user, body));
+        return;
+      }
+      if (req.method === "POST" && route === "/api/pharmacy/assistant") {
+        json(200, store.pharmacyAssistant(user, body));
+        return;
+      }
+      if (req.method === "GET" && /^\/api\/pharmacy\/[A-Za-z0-9_-]+$/.test(route)) {
+        json(200, store.pharmacyDetail(user, route.split("/").at(-1), url.searchParams.get("q") ?? ""));
         return;
       }
       if (req.method === "GET" && route === "/api/notifications") {
