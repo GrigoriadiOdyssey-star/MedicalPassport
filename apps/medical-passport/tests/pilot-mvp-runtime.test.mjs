@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {PILOT_TRANSLATION_TYPES,PILOT_DOCUMENT_CATEGORIES} from '../pilot-mvp-runtime.mjs';
+test('translation gateway exposes required medical types',()=>{for(const x of ['DOCUMENT','LAB_RESULT','MEDICATION_INFORMATION','CLINICAL_SUMMARY','TELEMEDICINE_MESSAGE','GUIDELINE'])assert.ok(PILOT_TRANSLATION_TYPES.includes(x));});
+test('document categories preserve Product Bible MVP categories',()=>{for(const x of ['LAB','IMAGING','DISCHARGE','PRESCRIPTION','CONSULTATION','VACCINATION','INSURANCE','OTHER'])assert.ok(PILOT_DOCUMENT_CATEGORIES.includes(x));});
