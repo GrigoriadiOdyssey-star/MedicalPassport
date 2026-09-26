@@ -4,7 +4,7 @@ import { MASTER2728_ROUTES, MASTER2728_RELEASE_GATES } from '../master27-28-inte
 
 test('MASTER-27/28 route contract is namespaced and additive', () => {
   assert.ok(MASTER2728_ROUTES.length >= 13);
-  for (const route of MASTER2728_ROUTES) assert.match(route, / \/api\/mvp\//);
+  for (const route of MASTER2728_ROUTES) assert.match(route, /\/api\/mvp\//);
   assert.equal(new Set(MASTER2728_ROUTES).size, MASTER2728_ROUTES.length);
 });
 
