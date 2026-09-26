@@ -1,0 +1,4 @@
+import test from'node:test';import assert from'node:assert/strict';import{normalizeReminderConfig,missedDoseMessage,nextDose,REMINDER_STATES}from'../pilot-reminders.mjs';
+test('reminder MVP exposes required interaction states',()=>assert.deepEqual(REMINDER_STATES,['TAKEN','SNOOZED','SKIPPED','MISSED']));
+test('reminder config preserves timezone quiet hours and bounded snooze',()=>{const r=normalizeReminderConfig({times:['08:00'],days_of_week:[1,1,7,2],permanent:true,timezone:'Europe/Tallinn',quiet_hours:{start:'22:00',end:'07:00'},snooze_minutes:999});assert.deepEqual(r.days_of_week,[1,2]);assert.equal(r.snooze_minutes,180);assert.equal(r.end_date,null);});
+test('missed dose never recommends doubling',()=>assert.ok(missedDoseMessage().forbidden.includes('DOUBLE_DOSE')));test('next dose chooses chronological pending event',()=>assert.equal(nextDose([{status:'PENDING',scheduled_at:20},{status:'PENDING',scheduled_at:10}],0).scheduled_at,10));
