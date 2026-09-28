@@ -10,7 +10,7 @@ export function installMaster2728(Store, store) {
   attachMaster2728(Store);
   store.initLabTwinPilot?.();
   store.initPilotMvpRuntime?.();
-  store.seedLaboratoryCatalogue?.();
+  if(typeof store.transaction==='function') store.seedLaboratoryCatalogue?.();
   return {
     coverage: {
       ...(store.master2728Coverage?.() ?? {}),
