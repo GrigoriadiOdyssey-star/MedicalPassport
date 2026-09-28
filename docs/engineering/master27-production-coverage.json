@@ -20,7 +20,7 @@
     {"capability":"critical_clinician_delivery","status":"INTERFACE_ONLY"},
     {"capability":"diagnostic_report","status":"IMPLEMENTED"},
     {"capability":"diagnostic_report_versioning","status":"IMPLEMENTED"},
-    {"capability":"existing_document_attachment_boundary","status":"PARTIAL"},
+    {"capability":"existing_document_attachment_boundary","status":"IMPLEMENTED"},
     {"capability":"longitudinal_laboratory_history","status":"IMPLEMENTED"},
     {"capability":"trend_compatibility","status":"IMPLEMENTED"},
     {"capability":"laboratory_patient_workspace","status":"IMPLEMENTED"},
@@ -56,10 +56,11 @@
     "unknown_remains_unknown": true,
     "rejected_specimen_is_not_negative_result": true,
     "final_results_are_not_silently_overwritten": true,
-    "specialty_versions_are_append_only": true
+    "specialty_versions_are_append_only": true,
+    "report_attachments_require_patient_ownership": true
   },
   "ci": {
-    "latest_attempted_pipeline": 2888307732,
+    "latest_attempted_pipeline": 2888366704,
     "status": "EXTERNAL_GATE",
     "reason": "ci_quota_exceeded_before_runner_start"
   }
