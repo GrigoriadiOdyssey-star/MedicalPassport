@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {Store} from '../store.mjs';
 import {attachMaster2728} from '../master27-28-bootstrap.mjs';
+import {createApplication} from '../server.mjs';
 
 attachMaster2728(Store);
 const password='Synthetic-master27-specialty-123';
@@ -73,4 +74,17 @@ test('specialty records preserve patient isolation and external idempotency',t=>
  assert.equal(a.record_id,b.record_id);assert.equal(b.replayed,true);
  assert.throws(()=>s.labSpecialtyGet(other,a.record_id),/LAB_SPECIALTY_NOT_FOUND/);
  assert.throws(()=>s.labSpecialtyCreate(u,'PATHOLOGY',{...input,diagnosis_text:'Conflicting source text'}),/IMPORT_SOURCE_CONFLICT/);
+});
+
+test('HTTP specialty routes enforce auth, CSRF, namespace and patient isolation',async t=>{
+ const app=createApplication({database:':memory:'}),origin=await app.start();t.after(()=>app.close());
+ function client(){let cookie='',csrf='';return async(path,body,token=csrf)=>{const r=await fetch(origin+'/api'+path,{method:body===undefined?'GET':'POST',headers:{Origin:origin,Cookie:cookie,'Content-Type':'application/json','x-csrf-token':token},body:body===undefined?undefined:JSON.stringify(body)});if(r.headers.has('set-cookie'))cookie=r.headers.get('set-cookie').split(';')[0];const data=await r.json();if(data.csrf)csrf=data.csrf;return{status:r.status,data};};}
+ const p=client(),o=client();
+ await p('/register',{name:'P',email:'http-specialty@example.test',password,synthetic:true,adult:true});await p('/login',{email:'http-specialty@example.test',password});
+ await o('/register',{name:'O',email:'http-specialty-other@example.test',password,synthetic:true,adult:true});await o('/login',{email:'http-specialty-other@example.test',password});
+ const denied=await p('/mvp/laboratory/pathology',{status:'FINAL',anatomic_site:'Synthetic biopsy',diagnosis_text:'Synthetic source'},'bad');assert.equal(denied.status,403);
+ const created=await p('/mvp/laboratory/pathology',{status:'FINAL',anatomic_site:'Synthetic biopsy',diagnosis_text:'Synthetic source'});assert.equal(created.status,201);
+ assert.equal((await p('/mvp/laboratory/pathology/'+created.data.record_id)).status,200);
+ assert.equal((await p('/mvp/laboratory/microbiology/'+created.data.record_id)).status,404);
+ assert.equal((await o('/mvp/laboratory/pathology/'+created.data.record_id)).status,404);
 });
