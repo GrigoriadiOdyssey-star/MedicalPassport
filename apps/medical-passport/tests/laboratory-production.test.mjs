@@ -33,9 +33,9 @@ function progressOrderAndSpecimen(s,u){
   return{order,specimen,accession};
 }
 
-test('migration 009 creates laboratory schema and synthetic catalogue with explicit provenance',t=>{
+test('mounted laboratory runtime creates migrations 009/010 and synthetic catalogue with explicit provenance',t=>{
   const{s,u}=setup(t);
-  assert.equal(s.db.prepare('SELECT COUNT(*) n FROM migrations').get().n,9);
+  assert.equal(s.db.prepare('SELECT COUNT(*) n FROM migrations').get().n,10);
   assert.ok(s.labCatalogue(u).length>=4);
   assert.equal(s.labProviders(u)[0].verification_state,'SYNTHETIC');
   assert.equal(s.labProviderBoundary(u).production_lis_lims,false);
