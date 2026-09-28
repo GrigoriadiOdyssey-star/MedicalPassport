@@ -226,7 +226,7 @@ export class Store {
     this.db.exec(
       "CREATE TABLE IF NOT EXISTS migrations(version INTEGER PRIMARY KEY, applied_at INTEGER NOT NULL)",
     );
-    for (const version of [1, 2, 3, 4, 5, 6, 7, 8])
+    for (const version of [1, 2, 3, 4, 5, 6, 7, 8, 9])
       if (
         !this.db
           .prepare("SELECT 1 FROM migrations WHERE version=?")
