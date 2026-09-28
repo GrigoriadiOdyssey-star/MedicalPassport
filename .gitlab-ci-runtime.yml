@@ -30,3 +30,10 @@ medical-passport-master26:
     - cd apps/medical-passport
     - npm ci --ignore-scripts
     - npm test
+
+medical-passport-master27:
+  stage: validate
+  script:
+    - cd apps/medical-passport
+    - npm ci --ignore-scripts
+    - node --test tests/laboratory-production.test.mjs tests/master27-28-integration.test.mjs tests/master27-28-server-plugin.test.mjs
