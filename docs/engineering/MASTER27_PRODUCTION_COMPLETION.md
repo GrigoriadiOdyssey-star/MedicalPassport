@@ -11,6 +11,7 @@ Reused supporting owners: `CAP-DATA`, `CAP-CONSENT`, `CAP-AUDIT`, `CAP-SECURITY`
 ## Implemented in `implementation/master-27-completion`
 
 - forward-only migration 009 for providers, catalogue, panels, orders, specimens, accessions, reference ranges, versioned results, DiagnosticReports, attachments and critical-result notification state;
+- additive migration 010 for versioned pathology, microbiology, molecular-genetics and POCT specialty records plus document links;
 - laboratory order state machine and immutable order event history;
 - specimen state machine with explicit rejected/cancelled states;
 - accessioning with patient/order/specimen ownership checks;
@@ -24,14 +25,19 @@ Reused supporting owners: `CAP-DATA`, `CAP-CONSENT`, `CAP-AUDIT`, `CAP-SECURITY`
 - longitudinal projection that keeps patient-reported observations separate from laboratory measured results;
 - trend compatibility guard: unit/method mismatch is `NOT_COMPARABLE`, never silently converted;
 - critical-result patient notification state without claiming real clinician delivery;
+- result and specialty document attachment boundaries with patient ownership checks;
+- pathology specialty workflow with append-only specialist text, provenance and explicit `autonomous_diagnosis=false`;
+- microbiology specialty workflow with structured detection/culture/susceptibility source data and no automatic therapy or antibiotic selection;
+- molecular-genetics specialty workflow requiring supplied variant data and interpretation source, with no fabricated pathogenicity or pharmacogenomic action;
+- POCT specialty workflow that preserves device origin and never treats device data as laboratory-verified by default;
 - deterministic Laboratory Assistant safety boundary: no diagnosis, prescribing, treatment change, dose change or invented reference range;
 - namespaced `/api/mvp/laboratory/*` APIs behind the existing auth/CSRF server boundary;
 - additive Laboratory patient workspace loaded independently of the MASTER-26 `main.js` shell;
-- executable MASTER-27 domain/API/E2E tests.
+- executable MASTER-27 domain/API/E2E and specialty safety tests.
 
 ## Synthetic adapters
 
-The current test catalogue, provider, reference ranges and provider-origin results used by tests are explicitly synthetic (`synthetic:master27`). They are fixtures, not real clinical providers.
+The current test catalogue, provider, reference ranges, provider-origin results, pathology, microbiology, genetics and POCT fixtures used by tests are explicitly synthetic or unverified. They are not real clinical-provider connections and are never promoted to verified production data by default.
 
 ## External gates
 
