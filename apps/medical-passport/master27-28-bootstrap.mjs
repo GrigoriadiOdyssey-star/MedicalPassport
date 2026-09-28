@@ -12,7 +12,10 @@ export function attachMaster2728(Store){
   if(current&&!current.master27CatalogueSeed){
     const wrapped=function(...args){
       const result=current.apply(this,args);
-      if(typeof this.transaction==='function') this.seedLaboratoryCatalogue?.();
+      if(typeof this.transaction==='function'){
+        this.initLaboratoryExtensions?.();
+        this.seedLaboratoryCatalogue?.();
+      }
       return result;
     };
     wrapped.master27CatalogueSeed=true;
