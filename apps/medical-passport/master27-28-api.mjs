@@ -7,11 +7,13 @@ export function handleMaster2728Api({req,route,url,body,user,store,json}){
   if(req.method==='POST'&&route==='/api/mvp/pilot/consent'){json(200,store.pilotConsentMvp(user,body.version));return true;}
   if(req.method==='POST'&&route==='/api/mvp/pilot/event'){json(201,store.pilotEventMvp(user,body.event,body.metadata));return true;}
 
+  // Legacy pilot laboratory projection retained for compatibility.
   if(req.method==='GET'&&route==='/api/mvp/labs'){json(200,store.labResultsMvp(user,url.searchParams.get('test')||''));return true;}
   if(req.method==='POST'&&route==='/api/mvp/labs'){json(201,store.saveLabResultMvp(user,body));return true;}
   if(req.method==='GET'&&route==='/api/mvp/labs/trend'){const test=url.searchParams.get('test')||'';if(!test)throw Error('LAB_TEST_CODE_REQUIRED');json(200,store.labTrendMvp(user,test));return true;}
   if(req.method==='POST'&&route==='/api/mvp/fhir/labs/import'){json(201,store.fhirLabSynthetic(user,body.resource||body));return true;}
 
+  // MASTER-27 production-shaped laboratory runtime. Real providers remain gated.
   if(req.method==='GET'&&route==='/api/mvp/laboratory/providers'){json(200,store.labProviders(user));return true;}
   if(req.method==='GET'&&route==='/api/mvp/laboratory/catalogue'){json(200,store.labCatalogue(user));return true;}
   if(req.method==='GET'&&route==='/api/mvp/laboratory/panels'){json(200,store.labPanels(user));return true;}
@@ -30,7 +32,16 @@ export function handleMaster2728Api({req,route,url,body,user,store,json}){
   if(req.method==='POST'&&route==='/api/mvp/laboratory/accessions'){json(201,store.createLabAccession(user,body));return true;}
   if(req.method==='GET'&&route==='/api/mvp/laboratory/results'){
     json(200,store.labResultSearch(user,{
-      q:url.searchParams.get('q')||'',test_id:url.searchParams.get('test_id')||'',status:url.searchParams.get('status')||'',flag:url.searchParams.get('flag')||'',category:url.searchParams.get('category')||'',provider:url.searchParams.get('provider')||'',specimen_type:url.searchParams.get('specimen_type')||'',source:url.searchParams.get('source')||'',date_from:url.searchParams.get('date_from')||'',date_to:url.searchParams.get('date_to')||''
+      q:url.searchParams.get('q')||'',
+      test_id:url.searchParams.get('test_id')||'',
+      status:url.searchParams.get('status')||'',
+      flag:url.searchParams.get('flag')||'',
+      category:url.searchParams.get('category')||'',
+      provider:url.searchParams.get('provider')||'',
+      specimen_type:url.searchParams.get('specimen_type')||'',
+      source:url.searchParams.get('source')||'',
+      date_from:url.searchParams.get('date_from')||'',
+      date_to:url.searchParams.get('date_to')||''
     }));return true;
   }
   if(req.method==='POST'&&route==='/api/mvp/laboratory/results/import'){json(201,store.importLabResult(user,body));return true;}
@@ -52,15 +63,16 @@ export function handleMaster2728Api({req,route,url,body,user,store,json}){
   match=/^\/api\/mvp\/laboratory\/reports\/([A-Za-z0-9_-]+)\/version$/.exec(route);
   if(match&&req.method==='POST'){json(201,store.reviseDiagnosticReport(user,match[1],body));return true;}
 
-  match=/^\/api\/mvp\/laboratory\/specialty\/(pathology|microbiology|molecular_genetics|poct)$/i.exec(route);
-  if(match&&req.method==='GET'){json(200,store.labSpecialtyList(user,match[1]));return true;}
-  if(match&&req.method==='POST'){json(201,store.labSpecialtyCreate(user,match[1],body));return true;}
-  match=/^\/api\/mvp\/laboratory\/specialty\/(pathology|microbiology|molecular_genetics|poct)\/([A-Za-z0-9_-]+)$/i.exec(route);
-  if(match&&req.method==='GET'){const item=store.labSpecialtyGet(user,match[2]);if(item.domain!==match[1].toUpperCase())return json(404,{error:'LAB_SPECIALTY_NOT_FOUND'}),true;json(200,item);return true;}
-  match=/^\/api\/mvp\/laboratory\/specialty\/(pathology|microbiology|molecular_genetics|poct)\/([A-Za-z0-9_-]+)\/version$/i.exec(route);
-  if(match&&req.method==='POST'){const item=store.labSpecialtyGet(user,match[2]);if(item.domain!==match[1].toUpperCase())return json(404,{error:'LAB_SPECIALTY_NOT_FOUND'}),true;json(201,store.labSpecialtyRevise(user,match[2],body));return true;}
-  match=/^\/api\/mvp\/laboratory\/specialty\/(pathology|microbiology|molecular_genetics|poct)\/([A-Za-z0-9_-]+)\/attachments$/i.exec(route);
-  if(match&&req.method==='POST'){const item=store.labSpecialtyGet(user,match[2]);if(item.domain!==match[1].toUpperCase())return json(404,{error:'LAB_SPECIALTY_NOT_FOUND'}),true;json(201,store.linkLabSpecialtyAttachment(user,match[2],body.version,body.document_id,body.relation));return true;}
+  const specialtyDomain={pathology:'PATHOLOGY',microbiology:'MICROBIOLOGY','molecular-genetics':'MOLECULAR_GENETICS',poct:'POCT'};
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)$/.exec(route);
+  if(match&&req.method==='GET'){json(200,store.labSpecialtyList(user,specialtyDomain[match[1]]));return true;}
+  if(match&&req.method==='POST'){json(201,store.labSpecialtyCreate(user,specialtyDomain[match[1]],body));return true;}
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)\/([A-Za-z0-9_-]+)$/.exec(route);
+  if(match&&req.method==='GET'){const record=store.labSpecialtyGet(user,match[2]);if(record.domain!==specialtyDomain[match[1]]){json(404,{error:'LAB_SPECIALTY_NOT_FOUND'});return true;}json(200,record);return true;}
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)\/([A-Za-z0-9_-]+)\/version$/.exec(route);
+  if(match&&req.method==='POST'){const record=store.labSpecialtyGet(user,match[2]);if(record.domain!==specialtyDomain[match[1]]){json(404,{error:'LAB_SPECIALTY_NOT_FOUND'});return true;}json(201,store.labSpecialtyRevise(user,match[2],body));return true;}
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)\/([A-Za-z0-9_-]+)\/attachments$/.exec(route);
+  if(match&&req.method==='POST'){const record=store.labSpecialtyGet(user,match[2]);if(record.domain!==specialtyDomain[match[1]]){json(404,{error:'LAB_SPECIALTY_NOT_FOUND'});return true;}json(201,store.linkLabSpecialtyAttachment(user,match[2],body.version,body.document_id,body.relation));return true;}
 
   if(req.method==='GET'&&route==='/api/mvp/laboratory/notifications'){json(200,store.labNotifications(user));return true;}
   match=/^\/api\/mvp\/laboratory\/notifications\/([A-Za-z0-9_-]+)\/acknowledge$/.exec(route);
