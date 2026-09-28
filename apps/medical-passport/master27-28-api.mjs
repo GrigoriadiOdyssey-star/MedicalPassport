@@ -63,6 +63,17 @@ export function handleMaster2728Api({req,route,url,body,user,store,json}){
   match=/^\/api\/mvp\/laboratory\/reports\/([A-Za-z0-9_-]+)\/version$/.exec(route);
   if(match&&req.method==='POST'){json(201,store.reviseDiagnosticReport(user,match[1],body));return true;}
 
+  const specialtyDomain={pathology:'PATHOLOGY',microbiology:'MICROBIOLOGY','molecular-genetics':'MOLECULAR_GENETICS',poct:'POCT'};
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)$/.exec(route);
+  if(match&&req.method==='GET'){json(200,store.labSpecialtyList(user,specialtyDomain[match[1]]));return true;}
+  if(match&&req.method==='POST'){json(201,store.labSpecialtyCreate(user,specialtyDomain[match[1]],body));return true;}
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)\/([A-Za-z0-9_-]+)$/.exec(route);
+  if(match&&req.method==='GET'){const record=store.labSpecialtyGet(user,match[2]);if(record.domain!==specialtyDomain[match[1]])throw new Error('LAB_SPECIALTY_NOT_FOUND');json(200,record);return true;}
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)\/([A-Za-z0-9_-]+)\/version$/.exec(route);
+  if(match&&req.method==='POST'){const record=store.labSpecialtyGet(user,match[2]);if(record.domain!==specialtyDomain[match[1]])throw new Error('LAB_SPECIALTY_NOT_FOUND');json(201,store.labSpecialtyRevise(user,match[2],body));return true;}
+  match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)\/([A-Za-z0-9_-]+)\/attachments$/.exec(route);
+  if(match&&req.method==='POST'){const record=store.labSpecialtyGet(user,match[2]);if(record.domain!==specialtyDomain[match[1]])throw new Error('LAB_SPECIALTY_NOT_FOUND');json(201,store.linkLabSpecialtyAttachment(user,match[2],body.version,body.document_id,body.relation));return true;}
+
   if(req.method==='GET'&&route==='/api/mvp/laboratory/notifications'){json(200,store.labNotifications(user));return true;}
   match=/^\/api\/mvp\/laboratory\/notifications\/([A-Za-z0-9_-]+)\/acknowledge$/.exec(route);
   if(match&&req.method==='POST'){json(200,store.ackLabNotification(user,match[1]));return true;}
