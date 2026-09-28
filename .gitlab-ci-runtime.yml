@@ -36,4 +36,4 @@ medical-passport-master27:
   script:
     - cd apps/medical-passport
     - npm ci --ignore-scripts
-    - node --test tests/laboratory-production.test.mjs tests/master27-28-integration.test.mjs tests/master27-28-server-plugin.test.mjs
+    - node --test tests/laboratory-production.test.mjs tests/laboratory-extensions.test.mjs tests/master27-28-integration.test.mjs tests/master27-28-server-plugin.test.mjs
