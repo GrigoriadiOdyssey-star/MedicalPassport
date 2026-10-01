@@ -51,17 +51,17 @@ export function handleMaster2728Api({req,route,url,body,user,store,json}){
   match=/^\/api\/mvp\/laboratory\/results\/([A-Za-z0-9_-]+)$/.exec(route);
   if(match&&req.method==='GET'){json(200,store.labResult(user,match[1]));return true;}
   match=/^\/api\/mvp\/laboratory\/results\/([A-Za-z0-9_-]+)\/version$/.exec(route);
-  if(match&&req.method==='POST'){json(201,store.reviseLabResult(user,match[1],body));return true;}
+  if(match&&req.method==='POST'){json(201,store.revisePatientLabResult(user,match[1],body));return true;}
   if(req.method==='GET'&&route==='/api/mvp/laboratory/longitudinal'){json(200,store.labLongitudinal(user));return true;}
   match=/^\/api\/mvp\/laboratory\/trends\/([A-Za-z0-9_-]+)$/.exec(route);
   if(match&&req.method==='GET'){json(200,store.labTrendSeries(user,match[1]));return true;}
 
   if(req.method==='GET'&&route==='/api/mvp/laboratory/reports'){json(200,store.labReports(user));return true;}
-  if(req.method==='POST'&&route==='/api/mvp/laboratory/reports'){json(201,store.createDiagnosticReport(user,body));return true;}
+  if(req.method==='POST'&&route==='/api/mvp/laboratory/reports'){json(201,store.createPatientDiagnosticReport(user,body));return true;}
   match=/^\/api\/mvp\/laboratory\/reports\/([A-Za-z0-9_-]+)$/.exec(route);
   if(match&&req.method==='GET'){json(200,store.labReport(user,match[1]));return true;}
   match=/^\/api\/mvp\/laboratory\/reports\/([A-Za-z0-9_-]+)\/version$/.exec(route);
-  if(match&&req.method==='POST'){json(201,store.reviseDiagnosticReport(user,match[1],body));return true;}
+  if(match&&req.method==='POST'){json(201,store.revisePatientDiagnosticReport(user,match[1],body));return true;}
 
   const specialtyDomain={pathology:'PATHOLOGY',microbiology:'MICROBIOLOGY','molecular-genetics':'MOLECULAR_GENETICS',poct:'POCT'};
   match=/^\/api\/mvp\/laboratory\/(pathology|microbiology|molecular-genetics|poct)$/.exec(route);

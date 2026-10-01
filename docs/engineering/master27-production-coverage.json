@@ -3,44 +3,159 @@
   "branch": "implementation/master-27-completion",
   "canonical_owner": "CAP-LABORATORY",
   "no_new_canonical_owner": true,
-  "classification_legend": ["IMPLEMENTED","PARTIAL","INTERFACE_ONLY","SYNTHETIC_ADAPTER","NOT_IMPLEMENTED","EXTERNAL_GATE"],
+  "classification_legend": [
+    "IMPLEMENTED",
+    "PARTIAL",
+    "INTERFACE_ONLY",
+    "SYNTHETIC_ADAPTER",
+    "NOT_IMPLEMENTED",
+    "EXTERNAL_GATE"
+  ],
   "capabilities": [
-    {"capability":"laboratory_orders","status":"IMPLEMENTED"},
-    {"capability":"test_catalogue","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"panels","status":"IMPLEMENTED"},
-    {"capability":"specimen_lifecycle","status":"IMPLEMENTED"},
-    {"capability":"accessioning","status":"IMPLEMENTED"},
-    {"capability":"result_ingestion","status":"IMPLEMENTED"},
-    {"capability":"stable_external_identity_and_idempotency","status":"IMPLEMENTED"},
-    {"capability":"result_status_lifecycle","status":"IMPLEMENTED"},
-    {"capability":"immutable_result_versioning","status":"IMPLEMENTED"},
-    {"capability":"reference_ranges","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"source_abnormal_critical_flags","status":"IMPLEMENTED"},
-    {"capability":"critical_patient_notification_state","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"critical_clinician_delivery","status":"INTERFACE_ONLY"},
-    {"capability":"diagnostic_report","status":"IMPLEMENTED"},
-    {"capability":"diagnostic_report_versioning","status":"IMPLEMENTED"},
-    {"capability":"existing_document_attachment_boundary","status":"IMPLEMENTED"},
-    {"capability":"longitudinal_laboratory_history","status":"IMPLEMENTED"},
-    {"capability":"trend_compatibility","status":"IMPLEMENTED"},
-    {"capability":"laboratory_patient_workspace","status":"IMPLEMENTED"},
-    {"capability":"laboratory_assistant_safety_boundary","status":"IMPLEMENTED"},
-    {"capability":"specialty_append_only_versioning","status":"IMPLEMENTED"},
-    {"capability":"specialty_document_links","status":"IMPLEMENTED"},
-    {"capability":"pathology","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"microbiology","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"molecular_genetics","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"poct_device","status":"SYNTHETIC_ADAPTER"},
-    {"capability":"real_lis_lims","status":"EXTERNAL_GATE"},
-    {"capability":"national_lab_network","status":"EXTERNAL_GATE"},
-    {"capability":"production_pathology_feed","status":"EXTERNAL_GATE"},
-    {"capability":"production_microbiology_feed","status":"EXTERNAL_GATE"},
-    {"capability":"production_genomics_feed","status":"EXTERNAL_GATE"},
-    {"capability":"authoritative_terminology","status":"EXTERNAL_GATE"},
-    {"capability":"authoritative_reference_ranges","status":"EXTERNAL_GATE"},
-    {"capability":"production_device_connectors","status":"EXTERNAL_GATE"},
-    {"capability":"clinical_validation","status":"EXTERNAL_GATE"},
-    {"capability":"jurisdictional_regulatory_validation","status":"EXTERNAL_GATE"}
+    {
+      "capability": "laboratory_orders",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "test_catalogue",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "panels",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "specimen_lifecycle",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "accessioning",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "result_ingestion",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "stable_external_identity_and_idempotency",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "result_status_lifecycle",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "immutable_result_versioning",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "reference_ranges",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "source_abnormal_critical_flags",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "critical_patient_notification_state",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "critical_clinician_delivery",
+      "status": "INTERFACE_ONLY"
+    },
+    {
+      "capability": "diagnostic_report",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "diagnostic_report_versioning",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "existing_document_attachment_boundary",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "longitudinal_laboratory_history",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "trend_compatibility",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "laboratory_patient_workspace",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "laboratory_assistant_safety_boundary",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "specialty_append_only_versioning",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "specialty_document_links",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "capability": "pathology",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "microbiology",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "molecular_genetics",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "poct_device",
+      "status": "SYNTHETIC_ADAPTER"
+    },
+    {
+      "capability": "real_lis_lims",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "national_lab_network",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "production_pathology_feed",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "production_microbiology_feed",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "production_genomics_feed",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "authoritative_terminology",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "authoritative_reference_ranges",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "production_device_connectors",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "clinical_validation",
+      "status": "EXTERNAL_GATE"
+    },
+    {
+      "capability": "jurisdictional_regulatory_validation",
+      "status": "EXTERNAL_GATE"
+    }
   ],
   "safety": {
     "autonomous_diagnosis": false,
@@ -63,5 +178,11 @@
     "latest_attempted_pipeline": 2888366704,
     "status": "EXTERNAL_GATE",
     "reason": "ci_quota_exceeded_before_runner_start"
-  }
+  },
+  "runtime_implemented": true,
+  "ci_verified": false,
+  "clinical_validated": false,
+  "production_ready": false,
+  "external_gates_open": true,
+  "coverage_source": "current active synthetic runtime; CI has not passed on this revision"
 }

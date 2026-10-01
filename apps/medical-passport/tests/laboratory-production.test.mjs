@@ -35,7 +35,7 @@ function progressOrderAndSpecimen(s,u){
 
 test('migrations 009-010 create laboratory schema and synthetic catalogue with explicit provenance',t=>{
   const{s,u}=setup(t);
-  assert.equal(s.db.prepare('SELECT COUNT(*) n FROM migrations').get().n,10);
+  assert.equal(s.db.prepare('SELECT COUNT(*) n FROM migrations').get().n,11);
   assert.ok(s.labCatalogue(u).length>=4);
   assert.equal(s.labProviders(u)[0].verification_state,'SYNTHETIC');
   assert.equal(s.labProviderBoundary(u).production_lis_lims,false);
@@ -95,7 +95,7 @@ test('DiagnosticReport versions are append-only and result references are patien
   const{s,u,other}=setup(t),flow=progressOrderAndSpecimen(s,u);
   const result=s.importLabResult(u,{order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',status:'FINAL',value:80});
   const created=s.createDiagnosticReport(u,{order_id:flow.order.id,result_refs:[result.result_id],specimen_refs:[flow.specimen.id],status:'FINAL',title:'Synthetic chemistry report'});
-  s.reviseDiagnosticReport(u,created.report_id,{status:'AMENDED',report_text:'Synthetic amendment'});
+  s.reviseDiagnosticReport(u,created.report_id,{status:'AMENDED',correction_reason:'Synthetic source amendment',report_text:'Synthetic amendment'});
   const report=s.labReport(u,created.report_id);
   assert.deepEqual(report.versions.map(x=>x.status),['AMENDED','FINAL']);
   assert.throws(()=>s.createDiagnosticReport(other,{result_refs:[result.result_id]}),/LAB_RESULT_NOT_FOUND/);

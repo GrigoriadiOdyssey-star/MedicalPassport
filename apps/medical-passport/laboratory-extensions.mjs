@@ -25,7 +25,7 @@ const here=path.dirname(fileURLToPath(import.meta.url));
 const migration10=fs.readFileSync(path.join(here,'migrations','010.sql'),'utf8');
 
 function domain(v){v=String(v??'').toUpperCase();if(!DOMAINS.has(v))fail('INVALID_LAB_SPECIALTY');return v}
-function specialtyPayload(kind,input={}){
+function specialtyPayload(kind,input={},now=0){
  if(kind==='PATHOLOGY'){
   const payload={
    anatomic_site:text(input.anatomic_site,300),
@@ -71,7 +71,7 @@ function specialtyPayload(kind,input={}){
  if(!text(device.id??input.device_id,200))fail('POCT_DEVICE_REQUIRED');
  if(!text(measurement.code??measurement.name??input.measurement_code??input.measurement_name,200))fail('POCT_MEASUREMENT_REQUIRED');
  if(value===undefined||value===null||String(value).length>500)fail('POCT_VALUE_REQUIRED');
- return{device:{id:text(device.id??input.device_id,200),manufacturer:text(device.manufacturer,200),model:text(device.model,200),serial:text(device.serial,200)},measurement:{code:text(measurement.code??input.measurement_code,100),name:text(measurement.name??input.measurement_name,300),value,unit:text(measurement.unit??input.unit,100)},method:text(input.method,300),observed_at:Number(input.observed_at??Date.now()),device_verification_state:String(input.device_verification_state??'UNVERIFIED').toUpperCase()==='SYNTHETIC'?'SYNTHETIC':'UNVERIFIED',laboratory_verified:false,lab_equivalent:false};
+ const observed=input.observed_at==null?now:(typeof input.observed_at==='number'?input.observed_at:Date.parse(input.observed_at));if(!Number.isFinite(observed))fail('INVALID_LAB_TIMESTAMP');return{device:{id:text(device.id??input.device_id,200),manufacturer:text(device.manufacturer,200),model:text(device.model,200),serial:text(device.serial,200)},measurement:{code:text(measurement.code??input.measurement_code,100),name:text(measurement.name??input.measurement_name,300),value,unit:text(measurement.unit??input.unit,100)},method:text(input.method,300),observed_at:observed,device_verification_state:String(input.device_verification_state??'UNVERIFIED').toUpperCase()==='SYNTHETIC'?'SYNTHETIC':'UNVERIFIED',laboratory_verified:false,lab_equivalent:false};
 }
 
 export function attachLaboratoryExtensions(Store){
@@ -112,7 +112,7 @@ export function attachLaboratoryExtensions(Store){
 
  Store.prototype.labSpecialtyCreate=function(user,kind,input={}){
   kind=domain(kind);const p=this.patient(user);if(input.specimen_id&&!this.db.prepare('SELECT 1 FROM laboratory_specimens WHERE id=? AND patient_id=?').get(input.specimen_id,p.id))fail('SPECIMEN_NOT_FOUND',404);
-  const payload=specialtyPayload(kind,input),sourceSystem=text(input.source_system??'EDHT_MANUAL',100)||'EDHT_MANUAL',external=input.external_record_id==null?null:text(input.external_record_id,200),status=String(input.status??(kind==='POCT'?'FINAL':'REGISTERED')).toUpperCase();
+  const payload=specialtyPayload(kind,input,this.now()),sourceSystem=text(input.source_system??'EDHT_MANUAL',100)||'EDHT_MANUAL',external=input.external_record_id==null?null:text(input.external_record_id,200),status=String(input.status??(kind==='POCT'?'FINAL':'REGISTERED')).toUpperCase();
   if(!SPECIALTY_TRANSITIONS.REGISTERED.includes(status)&&status!=='REGISTERED')fail('INVALID_LAB_SPECIALTY_STATUS');
   const source=text(input.source??'synthetic:master27',200)||'synthetic:master27',verification=source.startsWith('synthetic:')?'SYNTHETIC':'UNVERIFIED',provenance=input.provenance&&typeof input.provenance==='object'&&!Array.isArray(input.provenance)?input.provenance:{source_system:sourceSystem,external_record_id:external,production_feed:false},normalized={status,payload,source,provenance,verification_state:verification},digest=sha(normalized);
   const existing=external?this.db.prepare('SELECT * FROM laboratory_specialty_records WHERE patient_id=? AND domain=? AND source_system=? AND external_record_id=?').get(p.id,kind,sourceSystem,external):null;
@@ -123,7 +123,7 @@ export function attachLaboratoryExtensions(Store){
  Store.prototype.labSpecialtyRevise=function(user,id,input={}){
   const p=this.patient(user),record=this.db.prepare('SELECT * FROM laboratory_specialty_records WHERE id=? AND patient_id=?').get(id,p.id);if(!record)fail('LAB_SPECIALTY_NOT_FOUND',404);
   const latest=this.db.prepare('SELECT * FROM laboratory_specialty_versions WHERE record_id=? ORDER BY version DESC LIMIT 1').get(id),status=String(input.status??'').toUpperCase();if(!(SPECIALTY_TRANSITIONS[latest.status]??[]).includes(status))fail('INVALID_LAB_SPECIALTY_TRANSITION',409);
-  const previous=parse(latest.payload,{}),payload=specialtyPayload(record.domain,{...previous,...input}),source=text(input.source??latest.source,200),provenance=input.provenance&&typeof input.provenance==='object'&&!Array.isArray(input.provenance)?input.provenance:parse(latest.provenance,{}),verification=latest.verification_state,now=this.now(),version=latest.version+1,issued=Number(input.issued_at??now),digest=sha({status,payload,source,provenance,verification_state:verification});
+  const previous=parse(latest.payload,{}),payload=specialtyPayload(record.domain,{...previous,...input},this.now()),source=text(input.source??latest.source,200),provenance=input.provenance&&typeof input.provenance==='object'&&!Array.isArray(input.provenance)?input.provenance:parse(latest.provenance,{}),verification=latest.verification_state,now=this.now(),version=latest.version+1,issued=Number(input.issued_at??now),digest=sha({status,payload,source,provenance,verification_state:verification});
   return this.transaction(()=>{this.db.prepare('INSERT INTO laboratory_specialty_versions VALUES(?,?,?,?,?,?,?,?,?,?,?)').run(id,version,status,json(payload),source,json(provenance),verification,issued,latest.version,digest,now);this.audit(user.user_id,'LAB_'+record.domain+'_'+status,id,p.id);return{record_id:id,version,status,domain:record.domain};});
  };
 

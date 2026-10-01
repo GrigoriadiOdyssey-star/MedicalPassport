@@ -226,27 +226,18 @@ export class Store {
     this.db.exec(
       "CREATE TABLE IF NOT EXISTS migrations(version INTEGER PRIMARY KEY, applied_at INTEGER NOT NULL)",
     );
-    for (const version of [1, 2, 3, 4, 5, 6, 7, 8, 9])
-      if (
-        !this.db
-          .prepare("SELECT 1 FROM migrations WHERE version=?")
-          .get(version)
-      ) {
-        this.transaction(() => {
-          this.db.exec(
-            fs.readFileSync(
-              appRoot +
-                "migrations/" +
-                String(version).padStart(3, "0") +
-                ".sql",
-              "utf8",
-            ),
-          );
-          this.db
-            .prepare("INSERT INTO migrations VALUES(?,?)")
-            .run(version, this.now());
-        });
-      }
+    const migrationFiles = fs.readdirSync(path.join(appRoot, "migrations"))
+      .filter((name) => /^\d{3}\.sql$/.test(name))
+      .sort((a, b) => Number(a.slice(0, 3)) - Number(b.slice(0, 3)));
+    for (const name of migrationFiles) {
+      const version = Number(name.slice(0, 3));
+      if (this.db.prepare("SELECT 1 FROM migrations WHERE version=?").get(version))
+        continue;
+      this.transaction(() => {
+        this.db.exec(fs.readFileSync(path.join(appRoot, "migrations", name), "utf8"));
+        this.db.prepare("INSERT INTO migrations(version,applied_at) VALUES(?,?)").run(version, this.now());
+      });
+    }
     this.db
       .prepare("INSERT OR IGNORE INTO organizations VALUES(?,?,1)")
       .run("local-synthetic", "EDHT Synthetic Clinic");
@@ -561,7 +552,7 @@ export class Store {
       : [];
     const laboratory=scopes.includes("laboratory")?this.db.prepare(`SELECT r.id,r.test_id,v.version,v.status,v.value_type,v.value_json,v.unit,v.source_flag,v.epistemic_state,v.source,v.verification_state,v.provenance,v.reference_range_snapshot,v.observed_at,v.issued_at,t.test_name,t.local_code
       FROM laboratory_results r JOIN laboratory_result_versions v ON v.result_id=r.id AND v.version=(SELECT MAX(x.version) FROM laboratory_result_versions x WHERE x.result_id=r.id)
-      JOIN laboratory_tests t ON t.test_id=r.test_id WHERE r.patient_id=? ORDER BY COALESCE(v.issued_at,v.created_at) DESC LIMIT 500`).all(patientId).map(x=>({result_id:x.id,version:x.version,status:x.status,test:{id:x.test_id,code:x.local_code,name:x.test_name},value:JSON.parse(x.value_json),value_type:x.value_type,unit:x.unit,flag:x.source_flag,epistemic_state:x.epistemic_state,source:x.source,verification_state:x.verification_state,provenance:JSON.parse(x.provenance),reference_range:JSON.parse(x.reference_range_snapshot),observed_at:x.observed_at,issued_at:x.issued_at})):null;
+      JOIN laboratory_tests t ON t.test_id=r.test_id WHERE r.patient_id=? AND v.status IN('PRELIMINARY','FINAL','CORRECTED','AMENDED') ORDER BY COALESCE(v.issued_at,v.created_at) DESC LIMIT 500`).all(patientId).map(x=>({result_id:x.id,version:x.version,status:x.status,test:{id:x.test_id,code:x.local_code,name:x.test_name},value:JSON.parse(x.value_json),value_type:x.value_type,unit:x.unit,flag:x.source_flag,epistemic_state:x.epistemic_state,source:x.source,verification_state:x.verification_state,provenance:JSON.parse(x.provenance),reference_range:JSON.parse(x.reference_range_snapshot),observed_at:x.observed_at,issued_at:x.issued_at})):null;
     return { patient_id: patientId, records, documents: docs, imaging, ...(laboratory?{laboratory:{results:laboratory,provenance:{owner:"CAP-LABORATORY",source:"laboratory_results+laboratory_result_versions",synthetic_only:true}}}:{}) };
   }
   ownPassport(user) {
