@@ -3,6 +3,7 @@ import {attachPilotMvpRuntime} from './pilot-mvp-runtime.mjs';
 import {attachLaboratoryProduction} from './laboratory-production.mjs';
 import {attachLaboratoryExtensions} from './laboratory-extensions.mjs';
 import {attachLaboratoryReportAttachments} from './laboratory-report-attachments.mjs';
+import {attachLaboratoryHardening} from './laboratory-hardening.mjs';
 
 export function attachMaster2728(Store){
   attachLabTwinPilot(Store);
@@ -10,6 +11,7 @@ export function attachMaster2728(Store){
   attachLaboratoryProduction(Store);
   attachLaboratoryExtensions(Store);
   attachLaboratoryReportAttachments(Store);
+  attachLaboratoryHardening(Store);
   const current=Store.prototype.initLabTwinPilot;
   if(current&&!current.master27CatalogueSeed){
     const wrapped=function(...args){

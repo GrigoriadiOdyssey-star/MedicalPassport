@@ -559,7 +559,10 @@ export class Store {
               .map((i) => ({ ...i, metadata: JSON.parse(i.metadata) })),
           }))
       : [];
-    return { patient_id: patientId, records, documents: docs, imaging };
+    const laboratory=scopes.includes("laboratory")?this.db.prepare(`SELECT r.id,r.test_id,v.version,v.status,v.value_type,v.value_json,v.unit,v.source_flag,v.epistemic_state,v.source,v.verification_state,v.provenance,v.reference_range_snapshot,v.observed_at,v.issued_at,t.test_name,t.local_code
+      FROM laboratory_results r JOIN laboratory_result_versions v ON v.result_id=r.id AND v.version=(SELECT MAX(x.version) FROM laboratory_result_versions x WHERE x.result_id=r.id)
+      JOIN laboratory_tests t ON t.test_id=r.test_id WHERE r.patient_id=? ORDER BY COALESCE(v.issued_at,v.created_at) DESC LIMIT 500`).all(patientId).map(x=>({result_id:x.id,version:x.version,status:x.status,test:{id:x.test_id,code:x.local_code,name:x.test_name},value:JSON.parse(x.value_json),value_type:x.value_type,unit:x.unit,flag:x.source_flag,epistemic_state:x.epistemic_state,source:x.source,verification_state:x.verification_state,provenance:JSON.parse(x.provenance),reference_range:JSON.parse(x.reference_range_snapshot),observed_at:x.observed_at,issued_at:x.issued_at})):null;
+    return { patient_id: patientId, records, documents: docs, imaging, ...(laboratory?{laboratory:{results:laboratory,provenance:{owner:"CAP-LABORATORY",source:"laboratory_results+laboratory_result_versions",synthetic_only:true}}}:{}) };
   }
   ownPassport(user) {
     const p = this.patient(user);
@@ -626,7 +629,7 @@ export class Store {
       !scopes.length ||
       scopes.length > 8 ||
       new Set(scopes).size !== scopes.length ||
-      scopes.some((x) => ![...kinds, "documents", "imaging"].includes(x))
+      scopes.some((x) => ![...kinds, "documents", "imaging", "laboratory"].includes(x))
     )
       fail(400, "INVALID_SCOPE");
     const durations = {
@@ -801,7 +804,9 @@ export class Store {
             ? "SHARED_IMAGING_READ"
             : documentId
               ? "SHARED_DOCUMENT_READ"
-              : "SHARED_PASSPORT_READ",
+              : scopes.includes("laboratory")
+                ? "SHARED_LABORATORY_READ"
+                : "SHARED_PASSPORT_READ",
         g.id,
         g.patient_id,
       );

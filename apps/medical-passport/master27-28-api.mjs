@@ -44,7 +44,7 @@ export function handleMaster2728Api({req,route,url,body,user,store,json}){
       date_to:url.searchParams.get('date_to')||''
     }));return true;
   }
-  if(req.method==='POST'&&route==='/api/mvp/laboratory/results/import'){json(201,store.importLabResult(user,body));return true;}
+  if(req.method==='POST'&&route==='/api/mvp/laboratory/results/import'){json(201,store.importPatientLabResult(user,body));return true;}
   match=/^\/api\/mvp\/laboratory\/results\/([A-Za-z0-9_-]+)\/attachments$/.exec(route);
   if(match&&req.method==='GET'){json(200,store.labAttachments(user,match[1]));return true;}
   if(match&&req.method==='POST'){json(201,store.linkLabAttachment(user,match[1],body.version,body.document_id,body.relation));return true;}
