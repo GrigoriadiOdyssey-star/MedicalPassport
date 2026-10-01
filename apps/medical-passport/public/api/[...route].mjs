@@ -1,4 +1,5 @@
 import { SupabaseAuth } from "./_lib/supabase-auth.mjs";
+import { SupabaseRepository } from "./_lib/supabase-repository.mjs";
 
 const ACCESS = "__Host-edht_access";
 const REFRESH = "__Host-edht_refresh";
@@ -30,6 +31,9 @@ async function body(req) {
   }
   try { return raw ? JSON.parse(raw) : {}; } catch { throw new Error("INVALID_JSON"); }
 }
+function repository(accessToken) {
+  return new SupabaseRepository({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY, accessToken });
+}
 function auth() {
   return new SupabaseAuth({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY });
 }
@@ -49,13 +53,13 @@ function safeOrigin(req) {
 async function current(req, res, client) {
   const jar = cookies(req);
   if (jar[ACCESS]) {
-    try { return await client.user(jar[ACCESS]); } catch {}
+    try { return { user: await client.user(jar[ACCESS]), accessToken: jar[ACCESS] }; } catch {}
   }
   if (!jar[REFRESH]) return null;
   try {
     const result = await client.refresh(jar[REFRESH]);
     setSession(res, result.session);
-    return result.user;
+    return { user: result.user, accessToken: result.session.accessToken };
   } catch {
     clearCookies(res);
     return null;
@@ -77,11 +81,17 @@ export default async function handler(req, res) {
     if (method === "POST" && route === "/api/register") {
       if (payload.synthetic !== true || payload.adult !== true) return json(res, 400, { error: "CONFIRMATION_REQUIRED" });
       const result = await client.signUp({ email: payload.email, password: payload.password, displayName: payload.display_name });
-      if (result.session) setSession(res, result.session);
+      if (result.session) {
+        await repository(result.session.accessToken).saveProfile({ patientUserId: result.user.id, displayName: payload.display_name, locale: payload.locale || "ru", timeZone: payload.time_zone || "UTC" });
+        setSession(res, result.session);
+      }
       return json(res, 201, { confirmationRequired: result.confirmationRequired });
     }
     if (method === "POST" && route === "/api/login") {
       const result = await client.signIn({ email: payload.email, password: payload.password });
+      const cloud = repository(result.session.accessToken);
+      const profile = await cloud.profile(result.user.id);
+      if (!profile) await cloud.saveProfile({ patientUserId: result.user.id, displayName: result.user.email.split("@")[0], locale: "ru", timeZone: "UTC" });
       setSession(res, result.session);
       return json(res, 200, { ok: true });
     }
@@ -99,26 +109,41 @@ export default async function handler(req, res) {
     if (method === "POST" && route === "/api/recover/update") {
       if (!validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
       if (!await current(req, res, client)) return json(res, 401, { error: "UNAUTHENTICATED" });
-      await client.updatePassword(cookies(req)[ACCESS], payload.password);
+      await client.updatePassword((await current(req, res, client)).accessToken, payload.password);
       return json(res, 200, { ok: true });
     }
     if (method === "POST" && route === "/api/logout") {
       if (!validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
       const user = await current(req, res, client);
-      if (user) { try { await client.signOut(cookies(req)[ACCESS]); } catch {} }
+      if (user) { try { await client.signOut(user.accessToken); } catch {} }
       clearCookies(res);
       return json(res, 200, { ok: true });
     }
     if (method === "GET" && route === "/api/me") {
-      const user = await current(req, res, client);
-      if (!user) return json(res, 401, { error: "UNAUTHENTICATED" });
+      const session = await current(req, res, client);
+      if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
+      const user = session.user;
+      const profile = await repository(session.accessToken).profile(user.id);
       let csrf = cookies(req)[CSRF];
       if (!csrf) { csrf = crypto.randomUUID(); setCookie(res, CSRF, csrf, 60 * 60 * 24 * 30, false); }
-      return json(res, 200, { id: user.id, email: user.email, name: user.email || "Patient", role: "patient", csrf });
+      return json(res, 200, { id: user.id, email: user.email, name: profile?.display_name || user.email || "Patient", role: "patient", csrf });
+    }
+    if (method === "GET" && route === "/api/profile") {
+      const session = await current(req, res, client);
+      if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
+      const profile = await repository(session.accessToken).profile(session.user.id);
+      return json(res, 200, { name: profile?.display_name || session.user.email || "Patient", locale: profile?.locale || "ru", time_zone: profile?.time_zone || "UTC", birth_date: "", country: "" });
     }
     if (method === "GET" && route === "/api/views/home") {
-      if (!await current(req, res, client)) return json(res, 401, { error: "UNAUTHENTICATED" });
-      return json(res, 200, { profile: { name: "Patient", birth_date: "", country: "" }, emergency: null, critical_allergies: [], recent: [], documents: [], counts: [{ kind: "medication", count: 0 }, { kind: "allergy", count: 0 }], access: [] });
+      const session = await current(req, res, client);
+      if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
+      const cloud = repository(session.accessToken);
+      const profile = await cloud.profile(session.user.id);
+      const rows = await cloud.currentRecords(session.user.id);
+      const records = rows.map((r) => ({ id: r.record_id, version: r.version, kind: r.kind, body: r.body, source: r.source, created_at: r.created_at }));
+      const counts = ["condition","observation","allergy","medication","vaccination","emergency"].map((kind) => ({ kind, count: records.filter((r) => r.kind === kind).length }));
+      const emergency = records.find((r) => r.kind === "emergency") || null;
+      return json(res, 200, { profile: { name: profile?.display_name || session.user.email || "Patient", birth_date: "", country: "" }, emergency, critical_allergies: records.filter((r) => r.kind === "allergy" && r.body?.severity === "critical"), recent: records.slice(0, 8), documents: [], counts, access: [] });
     }
     return json(res, 501, { error: "CLOUD_FEATURE_NOT_MIGRATED" });
   } catch (error) {

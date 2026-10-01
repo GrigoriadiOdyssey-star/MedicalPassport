@@ -167,7 +167,7 @@ export class SupabaseAuth {
   }
 
   async requestPasswordReset({ email, redirectTo } = {}) {
-    if (typeof email !== "string" || email.length > 254 || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email.trim()))
+    if (typeof email !== "string" || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))
       throw new Error("AUTHENTICATION_FAILED");
     let redirect;
     try { redirect = new URL(redirectTo); } catch { throw new Error("RECOVERY_REDIRECT_INVALID"); }
