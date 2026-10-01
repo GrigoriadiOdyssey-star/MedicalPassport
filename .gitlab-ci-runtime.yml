@@ -37,3 +37,23 @@ medical-passport-master27:
     - cd apps/medical-passport
     - npm ci --ignore-scripts
     - node --test tests/laboratory-production.test.mjs tests/laboratory-extensions.test.mjs tests/laboratory-specialties.test.mjs tests/laboratory-report-attachments.test.mjs tests/laboratory-hardening.test.mjs tests/laboratory-migration-registry.test.mjs tests/laboratory-frontend.test.mjs tests/master27-28-integration.test.mjs tests/master27-28-server-plugin.test.mjs
+
+cloud-postgres-migrations:
+  stage: validate
+  image: postgres:17-alpine
+  services:
+    - name: postgres:17-alpine
+      alias: postgres
+  variables:
+    POSTGRES_DB: edht_ci
+    POSTGRES_HOST_AUTH_METHOD: trust
+    PGHOST: postgres
+    PGUSER: postgres
+    PGDATABASE: edht_ci
+  before_script: []
+  script:
+    - until pg_isready -h postgres -U postgres -d edht_ci; do sleep 1; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001000000_document_storage.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001001000_patient_records.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/rls-smoke.sql
