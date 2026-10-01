@@ -47,9 +47,10 @@ let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   loadId = 0,
   chosenFile = null,
   toastTimer;
-let recoveryLink = null;
+let recoveryLink = null, recoveryType = null;
 const initialHash = new URLSearchParams(location.hash.replace(/^#/, ""));
-if (initialHash.get("type") === "recovery" && initialHash.get("access_token") && initialHash.get("refresh_token")) {
+if (["recovery", "signup"].includes(initialHash.get("type")) && initialHash.get("access_token") && initialHash.get("refresh_token")) {
+  recoveryType = initialHash.get("type");
   recoveryLink = {
     access_token: initialHash.get("access_token"),
     refresh_token: initialHash.get("refresh_token"),
@@ -1222,7 +1223,7 @@ setInterval(async () => {
 }, 30000);
 if (recoveryLink) {
   api("/recover/session", recoveryLink)
-    .then(() => { authMode = "reset"; renderAuth(); })
+    .then(() => { if (recoveryType === "recovery") { authMode = "reset"; renderAuth(); } else refreshMe().catch((err) => { renderAuth(); notice(errorMessage(err.message, locale), true); }); })
     .catch((err) => { renderAuth(); notice(errorMessage(err.message, locale), true); });
 } else {
   refreshMe().catch((err) => {

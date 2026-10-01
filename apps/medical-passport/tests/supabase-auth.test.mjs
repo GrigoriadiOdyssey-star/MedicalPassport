@@ -28,3 +28,15 @@ test("password update requires a bearer session and a strong password length", a
   assert.equal(captured.headers.authorization, "Bearer " + "x".repeat(24));
   await assert.rejects(client.updatePassword("x".repeat(24), "short"), /PASSWORD_INVALID/);
 });
+
+test("signup callback is validated and attached to the Auth redirect", async () => {
+  let captured;
+  const client = new SupabaseAuth({ supabaseUrl: url, publishableKey: key, fetchImpl: async (request, init) => {
+    captured = { url: String(request), init };
+    return new Response(JSON.stringify({ user: { id: "user-2", email: "p@example.org" }, access_token: "a".repeat(24), refresh_token: "r".repeat(24) }), { status: 200, headers: { "content-type": "application/json" } });
+  }});
+  const result = await client.signUp({ email: "P@example.org", password: "long-enough-password", displayName: "Patient", redirectTo: "https://preview.example/?confirmation=1" });
+  assert.match(captured.url, /auth\/v1\/signup\?redirect_to=/);
+  assert.equal(result.confirmationRequired, false);
+  await assert.rejects(client.signUp({ email: "P@example.org", password: "long-enough-password", displayName: "Patient", redirectTo: "https://evil.example.test" }), /AUTH_PROVIDER_UNAVAILABLE|RECOVERY_REDIRECT_INVALID/);
+});

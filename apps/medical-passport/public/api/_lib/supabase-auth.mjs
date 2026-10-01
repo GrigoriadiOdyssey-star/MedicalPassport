@@ -80,7 +80,7 @@ export class SupabaseAuth {
     }
   }
 
-  async signUp({ email, password, displayName } = {}) {
+  async signUp({ email, password, displayName, redirectTo } = {}) {
     if (
       typeof email !== "string" ||
       email.length > 254 ||
@@ -93,7 +93,12 @@ export class SupabaseAuth {
       displayName.length > 100
     )
       throw new Error("REGISTRATION_INVALID");
-    const result = await this.request("/auth/v1/signup", {
+    let redirect;
+    try { redirect = new URL(redirectTo); } catch { throw new Error("RECOVERY_REDIRECT_INVALID"); }
+    if (redirect.protocol !== "https:" || redirect.username || redirect.password)
+      throw new Error("RECOVERY_REDIRECT_INVALID");
+    const query = new URLSearchParams({ redirect_to: redirect.toString() });
+    const result = await this.request("/auth/v1/signup?" + query.toString(), {
       method: "POST",
       body: {
         email: email.trim().toLowerCase(),

@@ -81,7 +81,7 @@ export default async function handler(req, res) {
     const client = auth();
     if (method === "POST" && route === "/api/register") {
       if (payload.synthetic !== true || payload.adult !== true) return json(res, 400, { error: "CONFIRMATION_REQUIRED" });
-      const result = await client.signUp({ email: payload.email, password: payload.password, displayName: payload.display_name });
+      const result = await client.signUp({ email: payload.email, password: payload.password, displayName: payload.display_name, redirectTo: "https://" + req.headers.host + "/?confirmation=1" });
       if (result.session) {
         await repository(result.session.accessToken).saveProfile({ patientUserId: result.user.id, displayName: payload.display_name, locale: payload.locale || "ru", timeZone: payload.time_zone || "UTC" });
         setSession(res, result.session);
