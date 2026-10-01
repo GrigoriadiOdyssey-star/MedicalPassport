@@ -24,6 +24,7 @@ function json(res, status, value) {
   res.end(JSON.stringify(value));
 }
 async function body(req) {
+  if (req.body && typeof req.body === "object" && !Array.isArray(req.body)) return req.body;
   let raw = "";
   for await (const chunk of req) {
     raw += chunk;
@@ -108,8 +109,9 @@ export default async function handler(req, res) {
     }
     if (method === "POST" && route === "/api/recover/update") {
       if (!validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
-      if (!await current(req, res, client)) return json(res, 401, { error: "UNAUTHENTICATED" });
-      await client.updatePassword((await current(req, res, client)).accessToken, payload.password);
+      const session = await current(req, res, client);
+      if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
+      await client.updatePassword(session.accessToken, payload.password);
       return json(res, 200, { ok: true });
     }
     if (method === "POST" && route === "/api/logout") {
