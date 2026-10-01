@@ -51,7 +51,17 @@ test("sign-in, refresh, user validation and logout use Supabase Auth endpoints",
     expires_at: 1790971200,
     user,
   };
-  const fake = fakeFetch(session);
+  const calls = [];
+  const fake = {
+    calls,
+    fetchImpl: async (url, init) => {
+      const parsed = new URL(url);
+      calls.push({ url: parsed, init });
+      if (parsed.pathname === "/auth/v1/user") return Response.json(user);
+      if (parsed.pathname === "/auth/v1/logout") return new Response(null, { status: 204 });
+      return Response.json(session);
+    },
+  };
   const auth = new SupabaseAuth({
     supabaseUrl: "https://edht-test.supabase.co",
     publishableKey: key,
