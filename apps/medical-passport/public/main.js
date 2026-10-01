@@ -47,7 +47,15 @@ let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   loadId = 0,
   chosenFile = null,
   toastTimer;
-if (location.hash.startsWith("#access=")) {
+let recoveryLink = null;
+const initialHash = new URLSearchParams(location.hash.replace(/^#/, ""));
+if (initialHash.get("type") === "recovery" && initialHash.get("access_token") && initialHash.get("refresh_token")) {
+  recoveryLink = {
+    access_token: initialHash.get("access_token"),
+    refresh_token: initialHash.get("refresh_token"),
+  };
+  history.replaceState(null, "", location.pathname + location.search);
+} else if (location.hash.startsWith("#access=")) {
   shareToken = new URLSearchParams(location.hash.slice(1)).get("access") ?? "";
   history.replaceState(null, "", location.pathname);
 }
@@ -187,7 +195,7 @@ function renderAuth() {
       )
       .join(
         "",
-      )}</div><form id="auth-form" novalidate>${authMode === "signup" ? field("name", "name", "", "text", true) : ""}${authMode === "recover" ? field("token", "recoveryCode", "", "text", true) : field("email", "email", "", "email", true)}${field("password", authMode === "recover" ? "newPassword" : "password", "", "password", true)}<p class="help">${e(t("passwordHelp"))}</p>${authMode === "signup" ? `<label class="check"><input type="checkbox" name="synthetic" required>${e(t("synthetic"))}</label><label class="check"><input type="checkbox" name="adult" required>${e(t("adult"))}</label>` : ""}<div class="field-error" data-form-error role="alert"></div><button class="btn">${e(t(authMode))}</button></form><small>${e(t("securityNote"))}</small></main></div>`;
+      )}</div><form id="auth-form" novalidate>${authMode === "signup" ? field("name", "name", "", "text", true) : ""}${authMode === "reset" ? "" : field("email", "email", "", "email", authMode !== "reset")}${authMode === "recover" ? "" : field("password", authMode === "reset" ? "newPassword" : "password", "", "password", true)}<p class="help">${e(t("passwordHelp"))}</p>${authMode === "signup" ? `<label class="check"><input type="checkbox" name="synthetic" required>${e(t("synthetic"))}</label><label class="check"><input type="checkbox" name="adult" required>${e(t("adult"))}</label>` : ""}<div class="field-error" data-form-error role="alert"></div><button class="btn">${e(t(authMode))}</button></form><small>${e(t("securityNote"))}</small></main></div>`;
 }
 function shell() {
   if ($(".skip")) $(".skip").textContent = t("skip");
@@ -1060,18 +1068,35 @@ document.addEventListener("submit", async (event) => {
     if (await product.submit(form, values)) return;
     if (form.id === "auth-form") {
       if (authMode === "recover") {
-        await api("/recover", values);
+        await api("/recover", { email: values.email });
         authMode = "signin";
         renderAuth();
         notice(t("saved"));
         return;
       }
-      if (authMode === "signup")
-        await api("/register", {
-          ...values,
+      if (authMode === "reset") {
+        await api("/recover/update", { password: values.password });
+        await api("/logout", {});
+        authMode = "signin";
+        renderAuth();
+        notice(t("saved"));
+        return;
+      }
+      if (authMode === "signup") {
+        const result = await api("/register", {
+          email: values.email,
+          password: values.password,
+          display_name: values.name,
           synthetic: values.synthetic === "on",
           adult: values.adult === "on",
         });
+        if (result.confirmationRequired) {
+          authMode = "signin";
+          renderAuth();
+          notice(t("saved"));
+          return;
+        }
+      }
       await api("/login", { email: values.email, password: values.password });
       await refreshMe();
       return;
@@ -1195,8 +1220,14 @@ setInterval(async () => {
       await load();
   } catch {}
 }, 30000);
-refreshMe().catch((err) => {
-  renderAuth();
-  if (err.message !== "UNAUTHENTICATED")
-    notice(errorMessage(err.message, locale), true);
-});
+if (recoveryLink) {
+  api("/recover/session", recoveryLink)
+    .then(() => { authMode = "reset"; renderAuth(); })
+    .catch((err) => { renderAuth(); notice(errorMessage(err.message, locale), true); });
+} else {
+  refreshMe().catch((err) => {
+    renderAuth();
+    if (err.message !== "UNAUTHENTICATED")
+      notice(errorMessage(err.message, locale), true);
+  });
+}
