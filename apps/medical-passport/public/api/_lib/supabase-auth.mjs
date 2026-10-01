@@ -93,12 +93,16 @@ export class SupabaseAuth {
       displayName.length > 100
     )
       throw new Error("REGISTRATION_INVALID");
-    let redirect;
-    try { redirect = new URL(redirectTo); } catch { throw new Error("RECOVERY_REDIRECT_INVALID"); }
-    if (redirect.protocol !== "https:" || redirect.username || redirect.password)
-      throw new Error("RECOVERY_REDIRECT_INVALID");
-    const query = new URLSearchParams({ redirect_to: redirect.toString() });
-    const result = await this.request("/auth/v1/signup?" + query.toString(), {
+    let signupPath = "/auth/v1/signup";
+    if (redirectTo !== undefined) {
+      let redirect;
+      try { redirect = new URL(redirectTo); } catch { throw new Error("RECOVERY_REDIRECT_INVALID"); }
+      if (redirect.protocol !== "https:" || redirect.username || redirect.password)
+        throw new Error("RECOVERY_REDIRECT_INVALID");
+      const query = new URLSearchParams({ redirect_to: redirect.toString() });
+      signupPath += "?" + query.toString();
+    }
+    const result = await this.request(signupPath, {
       method: "POST",
       body: {
         email: email.trim().toLowerCase(),
