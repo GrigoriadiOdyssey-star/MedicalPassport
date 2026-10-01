@@ -184,7 +184,7 @@ test('order final state is derived from canonical measured results after valid s
     verification_state:'SYNTHETIC',epistemic_state:'MEASURED'});
   const current=store.db.prepare('SELECT status FROM laboratory_orders WHERE id=?').get(order.id);
   assert.equal(current.status,'FINAL');
-  assert.equal(store.db.prepare('SELECT COUNT(*) n FROM laboratory_order_events WHERE order_id=? AND to_status=\'FINAL\'').get(order.id).n,1);
+  assert.equal(store.db.prepare('SELECT COUNT(*) n FROM laboratory_order_events WHERE order_id=? AND status=\'FINAL\'').get(order.id).n,1);
 });
 
 test('active health coverage remains synthetic, CI-unverified and not production-ready',async t=>{

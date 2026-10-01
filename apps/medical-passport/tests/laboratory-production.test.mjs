@@ -72,7 +72,7 @@ test('UNKNOWN reference range and UNKNOWN flag remain explicitly unknown',t=>{
 
 test('external result import is idempotent and conflicting source payload fails closed',t=>{
   const{s,u}=setup(t),flow=progressOrderAndSpecimen(s,u);
-  const payload={order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',source_system:'SYNTHETIC_LIS',external_result_id:'ext-1',status:'FINAL',value:82,unit:'µmol/L',source_flag:'NORMAL',reference_range_id:'range-creat',observed_at:1000,issued_at:1001};
+  const payload={order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',source_system:'SYNTHETIC_LIS',external_result_id:'ext-1',status:'FINAL',value:82,unit:'µmol/L',source_flag:'NORMAL',reference_range_id:'range-creat',population:'synthetic adult fixture',observed_at:1000,issued_at:1001};
   const first=s.importLabResult(u,payload),replay=s.importLabResult(u,payload);
   assert.equal(first.result_id,replay.result_id);assert.equal(replay.replayed,true);
   assert.throws(()=>s.importLabResult(u,{...payload,value:99}),/IMPORT_SOURCE_CONFLICT/);
@@ -80,7 +80,7 @@ test('external result import is idempotent and conflicting source payload fails 
 
 test('PRELIMINARY to FINAL to CORRECTED preserves every immutable result version',t=>{
   const{s,u}=setup(t),flow=progressOrderAndSpecimen(s,u);
-  const first=s.importLabResult(u,{order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',source_system:'SYNTHETIC_LIS',external_result_id:'versioned-1',status:'PRELIMINARY',value:80,unit:'µmol/L',source_flag:'NORMAL',reference_range_id:'range-creat'});
+  const first=s.importLabResult(u,{order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',source_system:'SYNTHETIC_LIS',external_result_id:'versioned-1',status:'PRELIMINARY',value:80,unit:'µmol/L',source_flag:'NORMAL',reference_range_id:'range-creat',population:'synthetic adult fixture'});
   s.reviseLabResult(u,first.result_id,{status:'FINAL',value:81,correction_reason:''});
   s.reviseLabResult(u,first.result_id,{status:'CORRECTED',value:84,correction_reason:'Source laboratory correction'});
   const detail=s.labResult(u,first.result_id);
@@ -136,7 +136,7 @@ test('laboratory assistant cannot diagnose prescribe or invent ranges',t=>{
 
 test('MASTER-27 E2E: order to specimen to accession to final report to correction and audit',t=>{
   const{s,u}=setup(t),flow=progressOrderAndSpecimen(s,u);
-  const preliminary=s.importLabResult(u,{order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',panel_id:'panel-basic',source_system:'SYNTHETIC_LIS',external_result_id:'e2e-creat',status:'PRELIMINARY',value:79,unit:'µmol/L',source_flag:'NORMAL',reference_range_id:'range-creat'});
+  const preliminary=s.importLabResult(u,{order_id:flow.order.id,specimen_id:flow.specimen.id,test_id:'lab-creat',panel_id:'panel-basic',source_system:'SYNTHETIC_LIS',external_result_id:'e2e-creat',status:'PRELIMINARY',value:79,unit:'µmol/L',source_flag:'NORMAL',reference_range_id:'range-creat',population:'synthetic adult fixture'});
   s.reviseLabResult(u,preliminary.result_id,{status:'FINAL',value:80});
   const report=s.createDiagnosticReport(u,{order_id:flow.order.id,result_refs:[preliminary.result_id],specimen_refs:[flow.specimen.id],status:'FINAL',title:'Synthetic final report'});
   assert.equal(s.labLongitudinal(u).laboratory.find(x=>x.id===preliminary.result_id).status,'FINAL');

@@ -17,7 +17,8 @@ async function setup(t,hash='#/laboratory?tab=overview',language='ru'){
     else if(path==='/mvp/laboratory/notifications')value=[{id:'notice-1',result_id:'result-1',result_version:2,status:'SYNTHETIC_NOTIFICATION',created_at:1,source:'synthetic'}];
     else if(path==='/mvp/laboratory/providers')value=[{display_name:'Synthetic laboratory',verification_state:'SYNTHETIC',address:'',country:'GB',source:'synthetic'}];
     else if(path==='/mvp/laboratory/catalogue')value=[{test_id:'lab-creat',test_name:'Creatinine',local_code:'CREAT',category:'chemistry',specimen_type:'serum',default_unit:'umol/L',terminology_state:'SYNTHETIC'}];
-    else if(path==='/mvp/laboratory/specialized-boundaries')value={pathology:{status:'SYNTHETIC_ADAPTER',fields:[]}};\n    else if(['/mvp/laboratory/pathology','/mvp/laboratory/microbiology','/mvp/laboratory/molecular-genetics','/mvp/laboratory/poct'].includes(path)){const domain=path.split('/').at(-1);value=[{domain,current:{version:2,status:'FINAL',source:'synthetic:specialty',verification_state:'SYNTHETIC',provenance:{adapter:'synthetic'},payload:{title:'Factual specialty record',autonomous_diagnosis:false}},attachments:[{name:'source.txt',relation:'SOURCE_REPORT',version:2,document_source:'synthetic'}]}];}
+    else if(path==='/mvp/laboratory/specialized-boundaries')value={pathology:{status:'SYNTHETIC_ADAPTER',fields:[]}};
+    else if(['/mvp/laboratory/pathology','/mvp/laboratory/microbiology','/mvp/laboratory/molecular-genetics','/mvp/laboratory/poct'].includes(path)){const domain=path.split('/').at(-1);value=[{domain,current:{version:2,status:'FINAL',source:'synthetic:specialty',verification_state:'SYNTHETIC',provenance:{adapter:'synthetic'},payload:{title:'Factual specialty record',autonomous_diagnosis:false}},attachments:[{name:'source.txt',relation:'SOURCE_REPORT',version:2,document_source:'synthetic'}]}];}
     else if(path.startsWith('/mvp/laboratory/trends/'))value={compatibility:'NOT_COMPARABLE',series:[],excluded:[]};
     else if(path==='/mvp/laboratory/results/result-1')value=result;
     else if(path==='/mvp/laboratory/results/result-1/attachments')value=[];
@@ -37,7 +38,8 @@ test('MASTER-27 UI renders all routes, labels synthetic records and preserves ve
       assert.ok(w.document.querySelector('.laboratory-tabs'),tab);
       assert.ok(w.document.querySelector('.chip.synthetic'));
       if(tab==='result'){assert.match(w.document.querySelector('#main').textContent,/v1/);assert.match(w.document.querySelector('#main').textContent,/v2/);}
-      if(tab==='results')assert.ok(w.document.querySelector('#lab-filter-form'));\n      if(tab==='specialties'){assert.match(w.document.querySelector('#main').textContent,/Factual specialty record/);assert.match(w.document.querySelector('#main').textContent,/SYNTHETIC/);assert.match(w.document.querySelector('#main').textContent,/source.txt/);assert.equal(w.document.querySelectorAll('form').length,0);}
+      if(tab==='results')assert.ok(w.document.querySelector('#lab-filter-form'));
+      if(tab==='specialties'){assert.match(w.document.querySelector('#main').textContent,/Factual specialty record/);assert.match(w.document.querySelector('#main').textContent,/SYNTHETIC/);assert.match(w.document.querySelector('#main').textContent,/source.txt/);assert.equal(w.document.querySelectorAll('form').length,0);}
     }
     assert.equal(w.document.querySelector('h1')?.textContent,language==='ru'?'Лаборатория':'Laboratory');
     assert.ok(w.document.querySelector('[data-master27-lab-nav]'));
