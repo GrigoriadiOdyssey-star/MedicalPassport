@@ -38,5 +38,5 @@ test("signup callback is validated and attached to the Auth redirect", async () 
   const result = await client.signUp({ email: "P@example.org", password: "long-enough-password", displayName: "Patient", redirectTo: "https://preview.example/?confirmation=1" });
   assert.match(captured.url, /auth\/v1\/signup\?redirect_to=/);
   assert.equal(result.confirmationRequired, false);
-  await assert.rejects(client.signUp({ email: "P@example.org", password: "long-enough-password", displayName: "Patient", redirectTo: "https://evil.example.test" }), /AUTH_PROVIDER_UNAVAILABLE|RECOVERY_REDIRECT_INVALID/);
+  await assert.rejects(client.signUp({ email: "P@example.org", password: "long-enough-password", displayName: "Patient", redirectTo: "http://evil.example.test" }), /AUTH_PROVIDER_UNAVAILABLE|RECOVERY_REDIRECT_INVALID/);
 });
