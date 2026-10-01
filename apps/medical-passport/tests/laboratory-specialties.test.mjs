@@ -18,7 +18,7 @@ function fixture(t){
 
 test('migration 010 is additive and specialty boundaries are synthetic adapters',t=>{
  const{s,u}=fixture(t);
- assert.equal(s.db.prepare('SELECT COUNT(*) n FROM migrations').get().n,10);
+ assert.equal(s.db.prepare('SELECT COUNT(*) n FROM migrations').get().n,11);
  const b=s.labSpecializedBoundaries(u);
  for(const key of ['pathology','microbiology','molecular_genetics','poct_devices'])assert.equal(b[key].status,'SYNTHETIC_ADAPTER');
  assert.equal(b.pathology.autonomous_diagnosis,false);

@@ -14,7 +14,7 @@ test('DiagnosticReport resolves only patient-owned attachments and versions atta
  const created=s.createDiagnosticReport(u,{status:'FINAL',title:'Synthetic report',attachment_refs:[a.id]});
  let detail=s.labReport(u,created.report_id);
  assert.deepEqual(detail.current.attachment_refs,[a.id]);assert.equal(detail.attachments[0].id,a.id);
- s.reviseDiagnosticReport(u,created.report_id,{status:'AMENDED',attachment_refs:[a.id,b.id],report_text:'Synthetic amendment'});
+ s.reviseDiagnosticReport(u,created.report_id,{status:'AMENDED',correction_reason:'Synthetic source correction',attachment_refs:[a.id,b.id],report_text:'Synthetic amendment'});
  detail=s.labReport(u,created.report_id);
  assert.deepEqual(detail.current.attachment_refs.sort(),[a.id,b.id].sort());assert.equal(detail.attachments.length,2);
  assert.deepEqual(detail.versions.map(v=>v.attachment_refs.length),[2,1]);

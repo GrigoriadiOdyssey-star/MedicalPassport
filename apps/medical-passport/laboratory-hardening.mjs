@@ -1,4 +1,5 @@
 import {createHash} from 'node:crypto';
+import {LAB_ORDER_TRANSITIONS} from './laboratory-production.mjs';
 
 const json=value=>JSON.stringify(value??{});
 const parse=(value,fallback={})=>{try{return JSON.parse(value)}catch{return fallback}};
@@ -115,7 +116,8 @@ export function attachLaboratoryHardening(Store){
 
   const actionOrder=Store.prototype.labOrderAction;
   Store.prototype.labOrderAction=function(user,id,next,reason=''){
-    const patient=this.patient(user),target=String(next??'').toUpperCase();
+    const patient=this.patient(user),target=String(next??'').toUpperCase(),order=this.db.prepare('SELECT status FROM laboratory_orders WHERE id=? AND patient_id=?').get(id,patient.id);
+    if(order&&!(LAB_ORDER_TRANSITIONS[order.status]??[]).includes(target))throw Error('INVALID_LAB_ORDER_TRANSITION');
     const specimens=this.db.prepare('SELECT status FROM laboratory_specimens WHERE order_id=? AND patient_id=?').all(id,patient.id).map(x=>x.status);
     if(target==='COLLECTED'&&!specimens.includes('COLLECTED'))throw Error('COLLECTED_SPECIMEN_REQUIRED');
     if(target==='RECEIVED'&&!specimens.some(x=>['RECEIVED','ACCESSIONED','PROCESSING','COMPLETED'].includes(x)))throw Error('RECEIVED_SPECIMEN_REQUIRED');

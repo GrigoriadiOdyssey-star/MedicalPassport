@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {Store} from '../store.mjs';
 import {attachMaster2728} from '../master27-28-bootstrap.mjs';
+import {createApplication} from '../server.mjs';
 
 attachMaster2728(Store);
 const password='Synthetic-master27-hardening-123!';
