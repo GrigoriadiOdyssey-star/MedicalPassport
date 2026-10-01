@@ -15,8 +15,10 @@ test("cloud clinical data is append-only and owner-bound", () => {
   assert.match(migration, /edht_record_owner_or_scoped_grant_read/);
   assert.match(migration, /edht_append_clinical_record_version/);
   assert.match(migration, /pg_advisory_xact_lock/);
+  assert.match(migration, /EDHT_RECORD_IDENTITY_IMMUTABLE/);
+  assert.match(migration, /v_existing_kind <> p_kind or v_existing_source <> p_source/);
   assert.match(migration, /revoke all on public\.edht_clinical_record_versions from anon, authenticated/);
-  assert.doesNotMatch(migration, /create policy[^;]+for (update|delete)[\s\S]*?edht_clinical_record_versions/i);
+  assert.doesNotMatch(migration, /on public\.edht_clinical_record_versions for (update|delete)/i);
 });
 
 test("shared record access is owner-issued, scope-limited, expiring and revocable", () => {

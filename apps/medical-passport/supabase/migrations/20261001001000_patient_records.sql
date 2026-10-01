@@ -104,6 +104,8 @@ as $$
 declare
   v_record_id uuid;
   v_version integer;
+  v_existing_kind text;
+  v_existing_source text;
 begin
   if auth.uid() is null then
     raise exception 'EDHT_AUTH_REQUIRED' using errcode = '42501';
@@ -123,12 +125,18 @@ begin
   else
     v_record_id := p_record_id;
     perform pg_advisory_xact_lock(hashtextextended(v_record_id::text, 0));
-    select max(r.version) into v_version
+    select r.version, r.kind, r.source
+      into v_version, v_existing_kind, v_existing_source
     from public.edht_clinical_record_versions r
     where r.record_id = v_record_id
-      and r.patient_user_id = auth.uid();
+      and r.patient_user_id = auth.uid()
+    order by r.version desc
+    limit 1;
     if v_version is null then
       raise exception 'EDHT_RECORD_NOT_OWNED' using errcode = '42501';
+    end if;
+    if v_existing_kind <> p_kind or v_existing_source <> p_source then
+      raise exception 'EDHT_RECORD_IDENTITY_IMMUTABLE' using errcode = '22023';
     end if;
     v_version := v_version + 1;
   end if;
