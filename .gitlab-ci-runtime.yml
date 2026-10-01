@@ -56,4 +56,5 @@ cloud-postgres-migrations:
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001000000_document_storage.sql
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001001000_patient_records.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001224520_cloud_rpc_and_fk_hardening.sql
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/rls-smoke.sql
