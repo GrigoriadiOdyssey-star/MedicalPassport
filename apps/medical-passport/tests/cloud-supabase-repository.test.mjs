@@ -114,6 +114,6 @@ test("repository rejects unsafe config and never surfaces provider response bodi
     assert.doesNotMatch(error.message, /synthetic PHI|service-token/);
     return true;
   });
-  assert.throws(() => repo.currentRecords("not-a-uuid"), /PATIENT_ID_INVALID/);
-  assert.throws(() => repo.currentRecords(patient, "unsupported"), /RECORD_KIND_INVALID/);
+  await assert.rejects(repo.currentRecords("not-a-uuid"), /PATIENT_ID_INVALID/);
+  await assert.rejects(repo.currentRecords(patient, "unsupported"), /RECORD_KIND_INVALID/);
 });
