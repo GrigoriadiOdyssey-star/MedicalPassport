@@ -4,9 +4,12 @@ import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 import { JSDOM } from "jsdom";
 import handler from "../public/api/[...route].mjs";
-import { readAuthCallback, establishAuthCallback } from "../public/cloud-auth-callback.js";
 import * as ui from "../public/ui.js";
 import { translate } from "../public/i18n.js";
+
+const mainSource = await readFile(new URL("../public/main.js", import.meta.url), "utf8");
+const callbackSource = mainSource.slice(mainSource.indexOf("function readAuthCallback("), mainSource.indexOf('let authError = "";'));
+const { readAuthCallback, establishAuthCallback } = new Function(callbackSource + ";return {readAuthCallback,establishAuthCallback};")();
 
 const access = "synthetic-recovery-access-token";
 const refresh = "synthetic-recovery-refresh-token";
@@ -154,7 +157,7 @@ async function browserHarness(url, apiReply) {
   const script = module.replace(/^import[\s\S]*?from\s+"[^"]+";\s*/gm, "");
   const factory = () => ({ submit: async () => false, clear() {}, poll: async () => {}, isPollingPaused: () => false });
   const context = vm.createContext({
-    ...ui, tr: translate, readAuthCallback, establishAuthCallback,
+    ...ui, e: ui.escape, tr: translate,
     createAlpha4UI:factory, createProductUI:factory, createPharmacyUI:factory,
     window:w, document:w.document, location:w.location, history:w.history, localStorage:w.localStorage,
     URLSearchParams, FormData:w.FormData, setInterval:()=>0, setTimeout:()=>0, clearTimeout:()=>{},
