@@ -398,6 +398,7 @@ export function translate(key, locale = "ru") {
 }
 export const errorKeys = {
   INVALID_CREDENTIALS: "loginError",
+  AUTHENTICATION_FAILED: "cloudLoginError",
   UNAUTHENTICATED: "sessionExpired",
   INVALID_CSRF: "sessionExpired",
   PATIENT_ONLY: "forbidden",
@@ -481,4 +482,12 @@ Object.assign(errorKeys, {
   FILE_SIZE_POLICY: "uploadQuota",
   STORAGE_QUOTA: "uploadQuota",
   CHUNK_SIZE_POLICY: "uploadQuota",
+});
+
+// Credential rejection must not reveal whether an account exists.
+Object.assign(strings, {
+  cloudLoginError: [
+    "Unable to sign in. Check your email and password or recover access.",
+    "Не удалось войти. Проверьте email и пароль или восстановите доступ.",
+  ],
 });
