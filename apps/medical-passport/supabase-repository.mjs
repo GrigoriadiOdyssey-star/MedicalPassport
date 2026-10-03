@@ -98,9 +98,14 @@ export class SupabaseRepository {
       throw new Error("CLOUD_BACKEND_UNAVAILABLE");
     }
 
+    if (response.status === 400 || response.status === 422) throw new Error("CLOUD_REQUEST_INVALID");
+    if (response.status === 409) throw new Error("CLOUD_CONFLICT");
     if (response.status === 401) throw new Error("CLOUD_SESSION_INVALID");
     if (response.status === 403) throw new Error("CLOUD_ACCESS_DENIED");
-    if (response.status === 404) throw new Error("CLOUD_RESOURCE_MISSING");
+    if (response.status === 404) {
+      let code;try {code=(await response.json()).code;}catch {}
+      throw new Error(code==="PT404" ? "CLOUD_ENTITY_NOT_FOUND" : "CLOUD_RESOURCE_MISSING");
+    }
     if (!response.ok) throw new Error("CLOUD_BACKEND_REJECTED");
     if (response.status === 204) return null;
     try {

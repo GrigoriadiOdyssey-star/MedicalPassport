@@ -9,6 +9,8 @@ export function createProductUI(ctx) {
     days = 1,
     browserEnabled = false,
     seen = new Set(),
+    pollInFlight = false,
+    pollBlocked = false,
     medPhase = "active",
     accessFilter = "active",
     accessOffset = 0,
@@ -31,6 +33,7 @@ export function createProductUI(ctx) {
         "&offset=" +
         noticeOffset,
     );
+    pollBlocked = false;
     d.notifications = notifications;
     badge(notifications.unread);
     if (["home", "medication", "notifications"].includes(screen))
@@ -196,7 +199,7 @@ export function createProductUI(ctx) {
     await change(document.querySelector("#reminder-form [name=mode]"));
   }
   function profileExtras(d) {
-    return `<div class="grid settings-grid"><section class="card"><h2>${e(t("notifications"))}</h2>${link("notification-settings")}<h2>${e(t("privacy"))}</h2>${link("privacy", "view")}</section><section class="card"><h2>${e(t("security"))}</h2><p>${e(t("securityInfo"))}</p>${b("logout", "logout")}<h3>${e(t("devices"))}</h3><p class="muted">${e(t("notConnected"))}</p></section><section class="card wide"><h2>${e(t("sessions"))}</h2>${(d.sessions ?? []).map((s) => `<div class="row spread"><p>${e(t(s.current ? "currentSession" : "sessions"))} #${s.id}<br><small>${e(t("expires"))}: ${e(dateTime(s.expires_at))}</small></p>${!s.current ? b("endSession", "end-session", `data-id="${s.id}"`) : ""}</div>`).join("")}</section></div>`;
+    return `<div class="grid settings-grid"><section class="card"><h2>${e(t("notifications"))}</h2>${link("notification-settings")}<h2>${e(t("privacy"))}</h2>${link("privacy", "view")}</section><section class="card"><h2>${e(t("security"))}</h2><p>${e(t("securityInfo"))}</p>${b("logout", "logout")}<h3>${e(t("devices"))}</h3><p class="muted">${e(t("notConnected"))}</p></section><section class="card wide"><h2>${e(t("sessions"))}</h2>${(d.sessions ?? []).map((s) => `<div class="row spread"><p>${e(t(s.current ? "currentSession" : "sessions"))} #${s.id}<br><small>${s.expires_at ? e(t("expires")) + ": " + e(dateTime(s.expires_at)) : e(t("sessions"))}</small></p>${!s.current && s.revocable !== false ? b("endSession", "end-session", `data-id="${s.id}"`) : ""}</div>`).join("")}</section></div>`;
   }
   async function click(a, target) {
     const id = target.dataset.id;
@@ -329,8 +332,10 @@ export function createProductUI(ctx) {
     return false;
   }
   async function poll() {
-    if (!get().me || get().me.role !== "patient") return;
+    if (!get().me || get().me.role !== "patient" || document.hidden || pollInFlight || pollBlocked) return;
+    pollInFlight = true;
     const actor = get().me.id;
+    try {
     const n = await api("/notifications?filter=unread");
     if (!get().me || get().me.id !== actor) return;
     badge(n.unread);
@@ -349,6 +354,12 @@ export function createProductUI(ctx) {
         }
       }
     }
+    } catch (error) {
+      // Pause after any failure; an explicit successful screen load or a new session resumes.
+      pollBlocked = true;
+      throw error;
+    } finally { pollInFlight = false; }
+
   }
   return {
     enrich,
@@ -368,8 +379,11 @@ export function createProductUI(ctx) {
     submit,
     change,
     poll,
+    isPollingPaused: () => pollBlocked || pollInFlight,
     clear() {
       browserEnabled = false;
+      pollBlocked = false;
+      pollInFlight = false;
       seen.clear();
       noticeFilter = "unread";
       noticeOffset = 0;

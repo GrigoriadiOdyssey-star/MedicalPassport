@@ -569,9 +569,12 @@ function render() {
     .catch((err) => notice(errorMessage(err.message, locale), true));
   countdown();
 }
+let autoRefreshBlocked = false;
+let loadInFlight = 0;
 async function load() {
   if (!me) return renderAuth();
   const id = ++loadId;
+  loadInFlight++;
   screen = route(location.hash, me.role);
   shell();
   try {
@@ -617,16 +620,18 @@ async function load() {
     }
     if (id !== loadId) return;
     data = result;
+    autoRefreshBlocked = false;
     render();
   } catch (err) {
     if (id !== loadId) return;
+    autoRefreshBlocked = true;
     $("#main").innerHTML = empty(
       "errorTitle",
       errorMessage(err.message, locale),
       "retry",
       "retry",
     );
-  }
+  } finally { loadInFlight--; }
 }
 async function refreshMe() {
   me = await api("/me");
@@ -1207,6 +1212,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 setInterval(async () => {
+  if (document.hidden || loadInFlight || autoRefreshBlocked || product.isPollingPaused()) return;
   try {
     if (screen !== "home") await product.poll();
     if (

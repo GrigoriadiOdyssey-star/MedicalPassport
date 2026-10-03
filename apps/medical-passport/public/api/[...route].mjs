@@ -1,5 +1,6 @@
 import { SupabaseAuth } from "./_lib/supabase-auth.mjs";
 import { SupabaseRepository } from "./_lib/supabase-repository.mjs";
+import { CloudRuntimeRepository, CloudHttpError, cloudRoute } from "./_lib/cloud-runtime.mjs";
 
 const ACCESS = "__Host-edht_access";
 const REFRESH = "__Host-edht_refresh";
@@ -130,25 +131,15 @@ export default async function handler(req, res) {
       if (!csrf) { csrf = crypto.randomUUID(); setCookie(res, CSRF, csrf, 60 * 60 * 24 * 30, false); }
       return json(res, 200, { id: user.id, email: user.email, name: profile?.display_name || user.email || "Patient", role: "patient", csrf });
     }
-    if (method === "GET" && route === "/api/profile") {
-      const session = await current(req, res, client);
-      if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
-      const profile = await repository(session.accessToken).profile(session.user.id);
-      return json(res, 200, { name: profile?.display_name || session.user.email || "Patient", locale: profile?.locale || "ru", time_zone: profile?.time_zone || "UTC", birth_date: "", country: "" });
-    }
-    if (method === "GET" && route === "/api/views/home") {
-      const session = await current(req, res, client);
-      if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
-      const cloud = repository(session.accessToken);
-      const profile = await cloud.profile(session.user.id);
-      const rows = await cloud.currentRecords(session.user.id);
-      const records = rows.map((r) => ({ id: r.record_id, version: r.version, kind: r.kind, body: r.body, source: r.source, created_at: r.created_at }));
-      const counts = ["condition","observation","allergy","medication","vaccination","emergency"].map((kind) => ({ kind, count: records.filter((r) => r.kind === kind).length }));
-      const emergency = records.find((r) => r.kind === "emergency") || null;
-      return json(res, 200, { profile: { name: profile?.display_name || session.user.email || "Patient", birth_date: "", country: "" }, emergency, critical_allergies: records.filter((r) => r.kind === "allergy" && r.body?.severity === "critical"), recent: records.slice(0, 8), documents: [], counts, access: [] });
-    }
+    const session = await current(req, res, client);
+    if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
+    if (method !== "GET" && !validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
+    const cloud = new CloudRuntimeRepository({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY, accessToken: session.accessToken });
+    const result = await cloudRoute({ cloud, session, user: session.user, method, path: route, params: url.searchParams, payload });
+    if (result) return json(res, result.status || 200, result.body);
     return json(res, 501, { error: "CLOUD_FEATURE_NOT_MIGRATED" });
   } catch (error) {
+    if (error instanceof CloudHttpError) return json(res, error.status, { error: error.message });
     const known = new Set([
       "BODY_TOO_LARGE", "INVALID_JSON", "REGISTRATION_INVALID",
       "AUTHENTICATION_FAILED", "REGISTRATION_UNAVAILABLE", "AUTH_RATE_LIMITED",
@@ -157,14 +148,14 @@ export default async function handler(req, res) {
       "CLOUD_PUBLISHABLE_KEY_REQUIRED", "CLOUD_PUBLISHABLE_KEY_INVALID",
       "CLOUD_SESSION_REQUIRED", "CLOUD_REFRESH_REQUIRED", "CLOUD_FETCH_UNAVAILABLE",
       "CLOUD_TIMEOUT_INVALID", "CLOUD_PATH_INVALID", "CLOUD_BACKEND_UNAVAILABLE",
-      "CLOUD_SESSION_INVALID", "CLOUD_ACCESS_DENIED", "CLOUD_RESOURCE_MISSING",
-      "CLOUD_BACKEND_REJECTED", "CLOUD_RESPONSE_INVALID", "PATIENT_ID_INVALID",
+      "CLOUD_SESSION_INVALID", "CLOUD_ACCESS_DENIED", "CLOUD_RESOURCE_MISSING", "CLOUD_ENTITY_NOT_FOUND",
+      "CLOUD_BACKEND_REJECTED", "CLOUD_RESPONSE_INVALID", "CLOUD_REQUEST_INVALID", "CLOUD_CONFLICT", "CLOUD_RESULT_LIMIT", "PATIENT_ID_INVALID",
       "RECORD_ID_INVALID", "RECORD_KIND_INVALID", "RECIPIENT_ID_INVALID",
       "GRANT_ID_INVALID", "DOCUMENT_ID_INVALID", "DOCUMENT_VERSION_INVALID",
     ]);
     const code = known.has(error?.message) ? error.message : "INTERNAL_ERROR";
     console.error("[EDHT_API_ERROR]", code);
-    const status = code === "BODY_TOO_LARGE" ? 413
+    const status = code === "CLOUD_REQUEST_INVALID" ? 400 : code === "CLOUD_CONFLICT" ? 409 : code === "CLOUD_ENTITY_NOT_FOUND" ? 404 : code === "BODY_TOO_LARGE" ? 413
       : code === "INVALID_JSON" || code === "PATIENT_ID_INVALID" || code === "RECORD_ID_INVALID" || code === "RECORD_KIND_INVALID" || code === "RECIPIENT_ID_INVALID" || code === "GRANT_ID_INVALID" || code === "DOCUMENT_ID_INVALID" || code === "DOCUMENT_VERSION_INVALID" ? 400
       : code === "AUTHENTICATION_FAILED" || code === "CLOUD_SESSION_INVALID" ? 401
       : code === "CLOUD_ACCESS_DENIED" ? 403
