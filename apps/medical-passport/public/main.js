@@ -527,10 +527,7 @@ function render() {
     case "home":
       html = home().replace(
         '<div class="grid">',
-        pharmacy.dashboard(data) +
-          product.dashboard(data) +
-          alpha4.careDashboard(data) +
-          '<div class="grid">',
+        pharmacy.dashboard(data) + '<div class="grid">',
       );
       break;
     case "passport":
@@ -613,9 +610,11 @@ async function load() {
       result = { grants, doctors };
     } else if (screen === "profile") result = await api("/profile");
     if (id !== loadId) return;
-    result = await pharmacy.enrich(screen, result);
-    result = await product.enrich(screen, result);
-    result = await alpha4.enrich(screen, result);
+    if (screen !== "home") {
+      result = await pharmacy.enrich(screen, result);
+      result = await product.enrich(screen, result);
+      result = await alpha4.enrich(screen, result);
+    }
     if (id !== loadId) return;
     data = result;
     render();
@@ -1209,7 +1208,7 @@ document.addEventListener("keydown", (event) => {
 });
 setInterval(async () => {
   try {
-    await product.poll();
+    if (screen !== "home") await product.poll();
     if (
       me?.role === "patient" &&
       ["home", "notifications", "medication", "medication-detail"].includes(
