@@ -491,3 +491,22 @@ Object.assign(strings, {
     "Не удалось войти. Проверьте email и пароль или восстановите доступ.",
   ],
 });
+
+Object.assign(strings, {
+  cloudRecoveryHelp: [
+    "We will email you a Supabase recovery link. Open the newest email to set a new password.",
+    "Мы отправим ссылку восстановления Supabase. Откройте последнее письмо, чтобы задать новый пароль.",
+  ],
+  cloudRecoverySent: [
+    "If recovery is available for this address, an email will arrive. Open the newest recovery email.",
+    "Если восстановление для этого адреса доступно, придёт письмо. Откройте последнее письмо восстановления.",
+  ],
+  cloudRecoveryInvalid: [
+    "This recovery link is invalid, expired or already used. Request a new email below.",
+    "Ссылка восстановления недействительна, просрочена или уже использована. Запросите новое письмо ниже.",
+  ],
+});
+Object.assign(errorKeys, {
+  RECOVERY_LINK_INVALID: "cloudRecoveryInvalid",
+  PASSWORD_INVALID: "passwordHelp",
+});

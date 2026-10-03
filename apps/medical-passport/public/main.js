@@ -1,3 +1,4 @@
+import { readAuthCallback, establishAuthCallback } from "./cloud-auth-callback.js";
 import { createAlpha4UI } from "./alpha4-ui.js";
 import { createProductUI } from "./product-ui.js";
 import { createPharmacyUI } from "./pharmacy-ui.js";
@@ -47,15 +48,11 @@ let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   loadId = 0,
   chosenFile = null,
   toastTimer;
-let recoveryLink = null, recoveryType = null;
-const initialHash = new URLSearchParams(location.hash.replace(/^#/, ""));
-if (["recovery", "signup"].includes(initialHash.get("type")) && initialHash.get("access_token") && initialHash.get("refresh_token")) {
-  recoveryType = initialHash.get("type");
-  recoveryLink = {
-    access_token: initialHash.get("access_token"),
-    refresh_token: initialHash.get("refresh_token"),
-  };
-  history.replaceState(null, "", location.pathname + location.search);
+let authError = "";
+const authCallback = readAuthCallback(location);
+if (authCallback.kind !== "none") {
+  // Remove provider fragments before rendering or making further requests.
+  history.replaceState(null, "", location.pathname);
 } else if (location.hash.startsWith("#access=")) {
   shareToken = new URLSearchParams(location.hash.slice(1)).get("access") ?? "";
   history.replaceState(null, "", location.pathname);
@@ -196,7 +193,7 @@ function renderAuth() {
       )
       .join(
         "",
-      )}</div><form id="auth-form" novalidate>${authMode === "signup" ? field("name", "name", "", "text", true) : ""}${authMode === "reset" ? "" : field("email", "email", "", "email", authMode !== "reset")}${authMode === "recover" ? "" : field("password", authMode === "reset" ? "newPassword" : "password", "", "password", true)}<p class="help">${e(t("passwordHelp"))}</p>${authMode === "signup" ? `<label class="check"><input type="checkbox" name="synthetic" required>${e(t("synthetic"))}</label><label class="check"><input type="checkbox" name="adult" required>${e(t("adult"))}</label>` : ""}<div class="field-error" data-form-error role="alert"></div><button class="btn">${e(t(authMode))}</button></form><small>${e(t("securityNote"))}</small></main></div>`;
+      )}</div><form id="auth-form" novalidate>${authMode === "signup" ? field("name", "name", "", "text", true) : ""}${authMode === "reset" ? "" : field("email", "email", "", "email", authMode !== "reset")}${authMode === "recover" ? "" : field("password", authMode === "reset" ? "newPassword" : "password", "", "password", true)}<p class="help">${e(t(authMode === "recover" ? "cloudRecoveryHelp" : "passwordHelp"))}</p>${authMode === "signup" ? `<label class="check"><input type="checkbox" name="synthetic" required>${e(t("synthetic"))}</label><label class="check"><input type="checkbox" name="adult" required>${e(t("adult"))}</label>` : ""}<div class="field-error" data-form-error role="alert">${authError ? e(errorMessage(authError, locale)) : ""}</div><button class="btn">${e(t(authMode))}</button></form><small>${e(t("securityNote"))}</small></main></div>`;
 }
 function shell() {
   if ($(".skip")) $(".skip").textContent = t("skip");
@@ -894,6 +891,7 @@ document.addEventListener("click", async (event) => {
     }
     if (a === "auth") {
       authMode = target.dataset.mode;
+      authError = "";
       return renderAuth();
     }
     if (a === "logout")
@@ -1074,14 +1072,17 @@ document.addEventListener("submit", async (event) => {
     if (form.id === "auth-form") {
       if (authMode === "recover") {
         await api("/recover", { email: values.email });
-        authMode = "signin";
+        authMode = "recover";
+        authError = "";
         renderAuth();
-        notice(t("saved"));
+        notice(t("cloudRecoverySent"));
         return;
       }
       if (authMode === "reset") {
         await api("/recover/update", { password: values.password });
         await api("/logout", {});
+        csrf = "";
+        authError = "";
         authMode = "signin";
         renderAuth();
         notice(t("saved"));
@@ -1195,6 +1196,7 @@ document.addEventListener("submit", async (event) => {
   }
 });
 window.addEventListener("hashchange", () => {
+  if (!me && location.hash === "#/recover") { authMode = "recover"; authError = ""; renderAuth(); return; }
   offset = 0;
   archived = false;
   if (
@@ -1226,10 +1228,25 @@ setInterval(async () => {
     else await product.poll();
   } catch {}
 }, 30000);
-if (recoveryLink) {
-  api("/recover/session", recoveryLink)
-    .then(() => { if (recoveryType === "recovery") { authMode = "reset"; renderAuth(); } else refreshMe().catch((err) => { renderAuth(); notice(errorMessage(err.message, locale), true); }); })
-    .catch((err) => { renderAuth(); notice(errorMessage(err.message, locale), true); });
+if (authCallback.kind === "invalid") {
+  authMode = "recover";
+  authError = authCallback.error;
+  renderAuth();
+} else if (authCallback.kind !== "none") {
+  establishAuthCallback(api, authCallback)
+    .then(async (session) => {
+      csrf = session.csrf;
+      if (session.mode === "reset") { authMode = "reset"; renderAuth(); }
+      else await refreshMe();
+    })
+    .catch((err) => {
+      authMode = "recover";
+      authError = err.message;
+      renderAuth();
+    });
+} else if (location.hash === "#/recover") {
+  authMode = "recover";
+  renderAuth();
 } else {
   refreshMe().catch((err) => {
     renderAuth();

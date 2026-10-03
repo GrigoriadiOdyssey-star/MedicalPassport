@@ -43,7 +43,9 @@ function setSession(res, session) {
   const now = Math.floor(Date.now() / 1000);
   setCookie(res, ACCESS, session.accessToken, Math.max(60, Math.min(3600, session.expiresAt ? session.expiresAt - now : 3600)));
   setCookie(res, REFRESH, session.refreshToken, 60 * 60 * 24 * 30);
-  setCookie(res, CSRF, crypto.randomUUID(), 60 * 60 * 24 * 30, false);
+  const csrf = crypto.randomUUID();
+  setCookie(res, CSRF, csrf, 60 * 60 * 24 * 30, false);
+  return csrf;
 }
 function validCsrf(req) {
   const jar = cookies(req);
@@ -105,8 +107,8 @@ export default async function handler(req, res) {
     if (method === "POST" && route === "/api/recover/session") {
       if (typeof payload.access_token !== "string" || typeof payload.refresh_token !== "string") return json(res, 400, { error: "RECOVERY_LINK_INVALID" });
       const user = await client.user(payload.access_token);
-      setSession(res, { accessToken: payload.access_token, refreshToken: payload.refresh_token });
-      return json(res, 200, { id: user.id });
+      const csrf = setSession(res, { accessToken: payload.access_token, refreshToken: payload.refresh_token });
+      return json(res, 200, { id: user.id, csrf });
     }
     if (method === "POST" && route === "/api/recover/update") {
       if (!validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
