@@ -69,3 +69,11 @@ cloud-preview-runtime-contracts:
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-document-rls.sql
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-reminder-contract.sql
     - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/rls-smoke.sql
+
+cloud-preview-care-contracts:
+  extends: cloud-postgres-migrations
+  script:
+    - until pg_isready -h postgres -U postgres -d edht_ci; do sleep 1; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
+    - for migration in apps/medical-passport/supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$migration"; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-care-contract.sql
