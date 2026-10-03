@@ -89,3 +89,16 @@ test("pending document versions never masquerade as completed originals",async()
  const rows=await repo.documents(A,{all:true});
  assert.equal(rows.length,1);assert.equal(rows[0].version,1);assert.equal(rows[0].name,"original.txt");
 });
+
+test("cloud document upload completion checks stored bytes before database finalization",async()=>{
+ await withCloud(async calls=>{
+  const res=response();
+  await handler({method:"POST",url:"/api/uploads/"+A+"/complete",headers:{...headers,origin:"https://"+headers.host,"x-csrf-token":"synthetic-csrf"},body:{}},res);
+  assert.equal(res.statusCode,409);assert.deepEqual(res.body,{error:"UPLOAD_INTEGRITY_MISMATCH"});
+  assert.ok(!calls.some(c=>c.url.pathname.endsWith("/edht_upload_finish")));
+ },url=>{
+  const p=new URL(url).pathname;
+  if(p.endsWith("/edht_upload_sessions"))return Response.json([{id:A,document_id:A,version:1,status:"OPEN",expires_at:new Date(Date.now()+3600000).toISOString(),size:3,sha256:"a".repeat(64)}]);
+  if(p.includes("/storage/v1/object/authenticated/"))return new Response("abc");
+ });
+});

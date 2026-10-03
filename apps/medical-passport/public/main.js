@@ -1214,7 +1214,6 @@ document.addEventListener("keydown", (event) => {
 setInterval(async () => {
   if (document.hidden || loadInFlight || autoRefreshBlocked || product.isPollingPaused()) return;
   try {
-    if (screen !== "home") await product.poll();
     if (
       me?.role === "patient" &&
       ["home", "notifications", "medication", "medication-detail"].includes(
@@ -1224,6 +1223,7 @@ setInterval(async () => {
       !document.querySelector("form[aria-busy=true]")
     )
       await load();
+    else await product.poll();
   } catch {}
 }, 30000);
 if (recoveryLink) {
