@@ -510,3 +510,18 @@ Object.assign(errorKeys, {
   RECOVERY_LINK_INVALID: "cloudRecoveryInvalid",
   PASSWORD_INVALID: "passwordHelp",
 });
+
+Object.assign(strings, {
+  cloudUploadFormat: [
+    "This file format is not supported. Choose one of the formats listed above.",
+    "Этот формат файла не поддерживается. Выберите один из форматов, указанных выше.",
+  ],
+  cloudUploadTooLarge: [
+    "This file exceeds the displayed size limit. Choose a smaller file.",
+    "Размер файла превышает указанный лимит. Выберите файл меньшего размера.",
+  ],
+});
+Object.assign(errorKeys, {
+  UNSUPPORTED_FILE_TYPE: "cloudUploadFormat",
+  FILE_TOO_LARGE: "cloudUploadTooLarge",
+});
