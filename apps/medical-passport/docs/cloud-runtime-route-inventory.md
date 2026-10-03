@@ -37,3 +37,13 @@ These routes must remain explicit release blockers until their cloud contracts a
 3. Deploy cloud runtime changes to the Preview branch; run all existing jobs plus new regression tests.
 4. Verify authenticated requests and UI in the actual Preview; inspect runtime logs.
 5. Distinguish SQL role-based A/B isolation from two live independent browser sessions in the release report.
+
+## Implementation checkpoint (2026-10-03)
+
+Implemented real owner-scoped clinical view reads, original/version document listing and private Storage upload sessions, notification delivery/read/dismiss/preferences, reminders and dose actions, profile updates, clinical create/version update/archive, canonical grant listing/revoke, verified doctor directory, audit and own-session reads, deterministic assistant and search. Gateway rewrites cover nested API paths. Failed automatic refresh pauses; explicit successful refresh resumes it.
+
+Additional migrations and tests are additive. Existing RLS policies and historical tests remain unchanged. Notification and document SQL A/B tests also ran against Preview under authenticated roles inside rolled-back transactions. This does NOT substitute for two independent live Auth/browser sessions.
+
+Document upload in this Preview is bounded to 4 MiB and uses signed direct upload with size/SHA-256 verification on completion. Originals are immutable. Antivirus scanning and comprehensive large-file/resumable upload verification are not claimed. The previous SQLite upload protocol remains unchanged.
+
+Remaining release blockers: legacy recipient-bound QR link creation/one-time consumption is not migrated; session revocation beyond current logout is not migrated; external pharmacy/care/guideline/imaging/laboratory APIs in the inventory remain explicit 501 where unimplemented. Do not call these features ready, do not replace errors with empty fixtures, and do not promote production. Two independent live test-account sessions and document-upload end-to-end validation remain to be completed.

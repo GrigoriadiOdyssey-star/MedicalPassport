@@ -129,7 +129,7 @@ export default async function handler(req, res) {
       const profile = await repository(session.accessToken).profile(user.id);
       let csrf = cookies(req)[CSRF];
       if (!csrf) { csrf = crypto.randomUUID(); setCookie(res, CSRF, csrf, 60 * 60 * 24 * 30, false); }
-      return json(res, 200, { id: user.id, email: user.email, name: profile?.display_name || user.email || "Patient", role: "patient", csrf });
+      return json(res, 200, { id: user.id, email: user.email, name: profile?.display_name || user.email || "Patient", role: "patient", auth_provider: "supabase", csrf });
     }
     const session = await current(req, res, client);
     if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });

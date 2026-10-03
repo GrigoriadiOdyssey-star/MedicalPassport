@@ -19,7 +19,7 @@ export class CloudRuntimeRepository extends SupabaseRepository {
  async fullProfile(user) {
   const rows=await this.rows("edht_patient_profiles",{select:"display_name,locale,time_zone,birth_date,country",patient_user_id:"eq."+uuid(user.id),limit:"1"});
   const p=rows[0];if(!p)fail(404,"PROFILE_NOT_FOUND");
-  return {id:user.id,name:p.display_name,locale:p.locale,time_zone:p.time_zone,timezone:p.time_zone,birth_date:p.birth_date||"",country:p.country||""};
+  return {auth_provider:"supabase",id:user.id,name:p.display_name,locale:p.locale,time_zone:p.time_zone,timezone:p.time_zone,birth_date:p.birth_date||"",country:p.country||""};
  }
  async documents(userId,{offset=0,archived=false,all=false}={}) {
   // Fetch all immutable versions in bounded pages before selecting each latest version.
@@ -142,8 +142,13 @@ export async function cloudRoute({cloud,user,session,method,path,params,payload}
  }
  if(method==="POST"&&path==="/api/reminders/pause")return {body:await cloud.rpc("edht_reminder_pause",{p_id:uuid(payload.id)})};
  if(method==="POST"&&path==="/api/doses/action"){
+  await cloud.pump(user.id);
   if(!["taken","skip","snooze"].includes(payload.action))fail(400,"INVALID_DOSE_ACTION");
   return {body:await cloud.rpc("edht_dose_action",{p_id:uuid(payload.id),p_action:payload.action,p_minutes:Number(payload.minutes||10)})};
+ }
+ if(method==="POST"&&path==="/api/timezone"){
+  if(!["home","local"].includes(payload.mode))fail(400,"INVALID_TIMEZONE");
+  return {body:await cloud.rpc("edht_timezone",{p_zone:payload.timezone,p_mode:payload.mode})};
  }
  if(method==="GET"&&path==="/api/audit")return {body:await cloud.audit(user.id)};
  if(method==="GET"&&path==="/api/sessions")return {body:await cloud.sessions(session)};
@@ -169,13 +174,16 @@ export async function cloudRoute({cloud,user,session,method,path,params,payload}
  }
  if(method==="POST"&&path==="/api/records"){
   if(!KINDS.includes(payload.kind))fail(400,"INVALID_KIND");
-  const result=await cloud.appendRecord({kind:payload.kind,body:cleanBody(payload.kind,payload.body),source:"patient_reported"});
+  const body=cleanBody(payload.kind,payload.body);
+  if(payload.kind==="vaccination"&&body.document_id&&!(await cloud.documents(user.id,{all:true})).some(d=>d.id===body.document_id))fail(404,"CERTIFICATE_NOT_FOUND");
+  const result=await cloud.appendRecord({kind:payload.kind,body,source:"patient_reported"});
   return {status:201,body:{id:result.record_id,version:result.version}};
  }
  if(method==="POST"&&/^\/api\/records\/[^/]+\/(update|archive)$/.test(path)){
   const id=uuid(path.split("/")[3]),r=(await cloud.records(user.id)).find(r=>r.id===id);
   if(!r)fail(404,"NOT_FOUND");
   const archive=path.endsWith("/archive");
+  if(!archive&&r.kind==="vaccination"&&payload.body?.document_id&&!(await cloud.documents(user.id,{all:true})).some(d=>d.id===payload.body.document_id))fail(404,"CERTIFICATE_NOT_FOUND");
   return {body:await cloud.rpc("edht_change_record",{p_id:id,p_version:payload.version,p_body:archive?null:cleanBody(r.kind,payload.body),p_archive:archive})};
  }
  if(method==="POST"&&path==="/api/profile"){
