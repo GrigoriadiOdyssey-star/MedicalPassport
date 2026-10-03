@@ -68,7 +68,7 @@ export function sourceStatus(source) {
   return source?.startsWith("synthetic_fhir:") ? "imported" : "reported";
 }
 export function errorMessage(code, locale) {
-  return translate(
+  const message = translate(
     errorKeys[code] ??
       (code === "NETWORK"
         ? "network"
@@ -77,6 +77,10 @@ export function errorMessage(code, locale) {
           : "server"),
     locale,
   );
+  const diagnostic = typeof code === "string" &&
+    (code.startsWith("CLOUD_") || code === "INTERNAL_ERROR") &&
+    /^[A-Z][A-Z0-9_]{1,63}$/.test(code);
+  return diagnostic ? message + " [" + code + "]" : message;
 }
 export function groupTimeline(data) {
   return [
