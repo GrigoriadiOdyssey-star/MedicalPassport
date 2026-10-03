@@ -261,6 +261,7 @@ export function createAlpha4UI(ctx) {
           dcm: "application/dicom",
         }[ext];
       if (!mime) throw Error("UNSUPPORTED_FILE_TYPE");
+      if (file.size > policy.documentBytes && form.dataset.kind === "document") throw Error("FILE_TOO_LARGE");
       state.textContent = `${index + 1}/${files.length} · ${file.name} · ${L("Проверка файла", "Hashing")}`;
       const hash = await hashFile(
         file,
@@ -300,6 +301,14 @@ export function createAlpha4UI(ctx) {
         form.dataset.resume = session.id;
       }
       currentUpload = session.id;
+      if (session.transport === "supabase-signed") {
+        const response = await window.fetch(session.upload_url, {method:"PUT",headers:{"Content-Type":mime,"cache-control":"no-store","x-upsert":"false"},body:file});
+        if (!response.ok && response.status !== 409) throw Error("CLOUD_UPLOAD_FAILED");
+        // Complete verifies stored bytes and hash; no provider body, URL or token is logged.
+        await api("/uploads/" + session.id + "/complete", {});
+        form.dataset.resume = ""; currentUpload = null; progress.value = 100;
+        continue;
+      }
       for (
         let offset = session.received;
         offset < file.size;

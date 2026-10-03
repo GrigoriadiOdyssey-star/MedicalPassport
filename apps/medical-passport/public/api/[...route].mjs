@@ -136,6 +136,7 @@ export default async function handler(req, res) {
     if (method !== "GET" && !validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
     const cloud = new CloudRuntimeRepository({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY, accessToken: session.accessToken });
     const result = await cloudRoute({ cloud, session, user: session.user, method, path: route, params: url.searchParams, payload });
+    if (result?.redirect) { res.statusCode=302; res.setHeader("Location",result.redirect); res.end(); return; }
     if (result) return json(res, result.status || 200, result.body);
     return json(res, 501, { error: "CLOUD_FEATURE_NOT_MIGRATED" });
   } catch (error) {

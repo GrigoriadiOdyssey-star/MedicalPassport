@@ -29,7 +29,7 @@ async function withCloud(run,override){
 }
 test("authenticated empty clinical flows execute Supabase reads and preserve API shapes",async()=>{
  await withCloud(async calls=>{
-  for(const path of ["me","profile","views/home","views/passport","views/records","views/medication","views/allergy","views/condition","views/observation","views/vaccination","views/emergency","views/documents","notifications","doctors","grants","audit","sessions","notification-settings","reminders"]){
+  for(const path of ["me","profile","views/home","views/passport","views/records","views/medication","views/allergy","views/condition","views/observation","views/vaccination","views/emergency","views/documents","notifications","doctors","grants","audit","sessions","notification-settings","reminders","storage-policy","uploads"]){
    const res=response();await handler({method:"GET",url:"/api/"+path,headers},res);
    assert.equal(res.statusCode,200,path);assert.equal(res.headers.get("cache-control"),"no-store, private");
    if(path==="notifications")assert.deepEqual(res.body,{items:[],unread:0,timezone:"UTC",offset:0});
@@ -77,4 +77,15 @@ test("malformed provider lists fail closed instead of silently returning []",asy
  const repo=new CloudRuntimeRepository({supabaseUrl:"https://synthetic.supabase.co",publishableKey:"sb_publishable_synthetic_contract_test",accessToken:token,fetchImpl:async()=>Response.json({data:[]})});
  await assert.rejects(repo.records(A),/CLOUD_RESPONSE_INVALID/);
  await assert.rejects(repo.documents(A),/CLOUD_RESPONSE_INVALID/);
+});
+
+test("pending document versions never masquerade as completed originals",async()=>{
+ const repo=new CloudRuntimeRepository({supabaseUrl:"https://synthetic.supabase.co",publishableKey:"sb_publishable_synthetic_contract_test",accessToken:token,fetchImpl:async url=>{
+  const p=new URL(url).pathname;
+  if(p.endsWith("/edht_documents"))return Response.json([{id:A,version:2,metadata:{cloud_upload_pending:true},created_at:"2026-01-02T00:00:00Z"},{id:A,version:1,original_name:"original.txt",metadata:{},created_at:"2026-01-01T00:00:00Z"}]);
+  if(p.endsWith("/edht_upload_sessions"))return Response.json([{document_id:A,version:2,status:"OPEN"}]);
+  return Response.json([]);
+ }});
+ const rows=await repo.documents(A,{all:true});
+ assert.equal(rows.length,1);assert.equal(rows[0].version,1);assert.equal(rows[0].name,"original.txt");
 });

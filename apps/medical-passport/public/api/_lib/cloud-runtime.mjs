@@ -1,3 +1,4 @@
+import { documentRoute } from "./cloud-documents.mjs";
 import { cleanBody } from "./cloud-record-validation.mjs";
 import { validateSchedule, slots, localDate, wallTime } from "./cloud-scheduling.mjs";
 import { SupabaseRepository } from "./supabase-repository.mjs";
@@ -24,7 +25,12 @@ export class CloudRuntimeRepository extends SupabaseRepository {
   // Fetch all immutable versions in bounded pages before selecting each latest version.
   const rows=[];let next=0;
   for(;;){const batch=await this.rows("edht_documents",{select:"id,version,original_name,mime_type,byte_size,document_type,source,created_at,metadata",patient_user_id:"eq."+uuid(userId),order:"id.asc,version.desc",offset:String(next),limit:"500"});rows.push(...batch);if(batch.length<500)break;next+=500;if(next>100000)fail(503,"CLOUD_RESULT_LIMIT");}
-  const seen=new Set();const result=rows.filter(r=>{if(seen.has(r.id))return false;seen.add(r.id);return Boolean(r.metadata?.archived)===archived;}).map(documentRow).sort((a,b)=>b.created_at-a.created_at||a.id.localeCompare(b.id));
+  const [sessions,details]=await Promise.all([
+   this.rows("edht_upload_sessions",{select:"document_id,version,status",patient_user_id:"eq."+uuid(userId)}),
+   this.rows("edht_document_details",{select:"document_id,description,document_date,language,translation_status,archived",patient_user_id:"eq."+uuid(userId)})
+  ]);
+  const complete=rows.filter(r=>!r.metadata?.cloud_upload_pending||sessions.some(s=>s.document_id===r.id&&s.version===r.version&&s.status==="COMPLETE")).map(r=>({...r,metadata:{...r.metadata,...details.find(d=>d.document_id===r.id)}}));
+  const seen=new Set();const result=complete.filter(r=>{if(seen.has(r.id))return false;seen.add(r.id);return Boolean(r.metadata?.archived)===archived;}).map(documentRow).sort((a,b)=>b.created_at-a.created_at||a.id.localeCompare(b.id));
   return all?result:result.slice(offset,offset+30);
  }
  async records(userId) {
@@ -114,6 +120,7 @@ export class CloudRuntimeRepository extends SupabaseRepository {
 }
 
 export async function cloudRoute({cloud,user,session,method,path,params,payload}) {
+ const documentResult=await documentRoute({cloud,user,method,path,params,payload});if(documentResult)return documentResult;
  if(method==="GET"&&path==="/api/profile")return {body:await cloud.fullProfile(user)};
  if(method==="GET"&&path.startsWith("/api/views/"))return {body:await cloud.view(user,path.slice(11),params)};
  if(method==="GET"&&path==="/api/notifications")return {body:await cloud.notifications(params,user.id)};
@@ -148,7 +155,8 @@ export async function cloudRoute({cloud,user,session,method,path,params,payload}
   const rows=await cloud.rows("edht_clinical_record_versions",{select:"record_id,version,kind,body,source,created_at,archived",record_id:"eq."+uuid(path.split("/")[3]),patient_user_id:"eq."+uuid(user.id),order:"version.asc"});if(!rows.length)fail(404,"NOT_FOUND");return {body:rows.map(record)};
  }
  if(method==="GET"&&/^\/api\/documents\/[^/]+\/versions$/.test(path)){
-  const rows=await cloud.rows("edht_documents",{select:"id,version,original_name,mime_type,byte_size,document_type,source,created_at,metadata",id:"eq."+uuid(path.split("/")[3]),patient_user_id:"eq."+uuid(user.id),order:"version.desc"});if(!rows.length)fail(404,"NOT_FOUND");return {body:rows.map(documentRow)};
+  const rows=await cloud.rows("edht_documents",{select:"id,version,original_name,mime_type,byte_size,document_type,source,created_at,metadata,uploaded_by,sha256",id:"eq."+uuid(path.split("/")[3]),patient_user_id:"eq."+uuid(user.id),order:"version.desc"});if(!rows.length)fail(404,"NOT_FOUND");const sessions=await cloud.rows("edht_upload_sessions",{select:"document_id,version,status",patient_user_id:"eq."+uuid(user.id),document_id:"eq."+uuid(path.split("/")[3])});
+  return {body:rows.filter(r=>!r.metadata?.cloud_upload_pending||sessions.some(s=>s.version===r.version&&s.status==="COMPLETE")).map(r=>({...documentRow(r),size:r.byte_size,metadata:r.metadata,uploaded_by:r.uploaded_by,sha256:r.sha256,reason:r.metadata?.reason||"",scan_state:"NOT_SCANNED"}))};
  }
  if(method==="POST"&&path==="/api/assistant"){
   const records=(await cloud.records(user.id)).filter(r=>!r.archived&&["allergy","medication","condition"].includes(r.kind));
