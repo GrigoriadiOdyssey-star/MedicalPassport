@@ -1,3 +1,4 @@
+import { careRoute } from "./cloud-care.mjs";
 import { documentRoute } from "./cloud-documents.mjs";
 import { cleanBody } from "./cloud-record-validation.mjs";
 import { validateSchedule, slots, localDate, wallTime } from "./cloud-scheduling.mjs";
@@ -120,6 +121,7 @@ export class CloudRuntimeRepository extends SupabaseRepository {
 }
 
 export async function cloudRoute({cloud,user,session,method,path,params,payload}) {
+ const careResult=await careRoute({cloud,user,method,path,payload});if(careResult)return careResult;
  const documentResult=await documentRoute({cloud,user,method,path,params,payload});if(documentResult)return documentResult;
  if(method==="GET"&&path==="/api/profile")return {body:await cloud.fullProfile(user)};
  if(method==="GET"&&path.startsWith("/api/views/"))return {body:await cloud.view(user,path.slice(11),params)};
