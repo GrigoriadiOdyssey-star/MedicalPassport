@@ -42,6 +42,7 @@ async function provider(run,{denyRefresh=false}={}) {
    return Response.json({access_token:fresh,refresh_token:nextRefresh,expires_at:Math.floor(Date.now()/1000)+3600,user:{id:uid,email:"synthetic@example.test"}});
   }
   if(u.pathname.endsWith("/edht_patient_profiles"))return Response.json([{patient_user_id:uid,display_name:"Synthetic",locale:"ru",time_zone:"UTC"}]);
+  if(u.pathname.endsWith("/edht_reminder_plans"))return Response.json([]);
   if(u.pathname.endsWith("/edht_notifications_read"))return Response.json({items:[],unread:0,timezone:"UTC",offset:0});
   if(u.pathname.endsWith("/edht_notification_action"))return Response.json({ok:true});
   throw Error("Unexpected synthetic provider route: "+u.pathname);

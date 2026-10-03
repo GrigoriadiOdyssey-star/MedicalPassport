@@ -39,11 +39,10 @@ function repository(accessToken) {
 function auth() {
   return new SupabaseAuth({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY });
 }
-function setSession(res, session) {
+function setSession(res, session, csrf = crypto.randomUUID()) {
   const now = Math.floor(Date.now() / 1000);
   setCookie(res, ACCESS, session.accessToken, Math.max(60, Math.min(3600, session.expiresAt ? session.expiresAt - now : 3600)));
   setCookie(res, REFRESH, session.refreshToken, 60 * 60 * 24 * 30);
-  const csrf = crypto.randomUUID();
   setCookie(res, CSRF, csrf, 60 * 60 * 24 * 30, false);
   return csrf;
 }
@@ -62,7 +61,8 @@ async function current(req, res, client) {
   if (!jar[REFRESH]) return null;
   try {
     const result = await client.refresh(jar[REFRESH]);
-    setSession(res, result.session);
+    // Refresh extends the same authenticated session; open tabs keep their CSRF.
+    setSession(res, result.session, jar[CSRF]);
     return { user: result.user, accessToken: result.session.accessToken };
   } catch {
     clearCookies(res);
