@@ -154,7 +154,7 @@ export async function cloudRoute({cloud,user,session,method,path,params,payload}
  }
  if(method==="GET"&&path==="/api/audit")return {body:await cloud.audit(user.id)};
  if(method==="GET"&&path==="/api/sessions")return {body:await cloud.sessions(session)};
- if(method==="GET"&&path==="/api/passport")return {body:{records:await cloud.records(user.id),documents:await cloud.documents(user.id,{all:true})}};
+ if(method==="GET"&&path==="/api/passport")return {body:{records:(await cloud.records(user.id)).filter(r=>!r.archived),documents:await cloud.documents(user.id,{all:true})}};
  if(method==="GET"&&/^\/api\/record\/[^/]+$/.test(path)){
   const rows=await cloud.records(user.id);const found=rows.find(r=>r.id===uuid(path.split("/")[3]));if(!found)fail(404,"NOT_FOUND");return {body:found};
  }
