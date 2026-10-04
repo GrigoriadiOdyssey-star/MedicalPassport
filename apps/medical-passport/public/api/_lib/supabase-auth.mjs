@@ -69,6 +69,13 @@ export class SupabaseAuth {
     }
     if (response.status === 401 || response.status === 400)
       throw new Error("AUTHENTICATION_FAILED");
+    if (response.status === 403 && url.pathname === "/auth/v1/user" && method === "GET") {
+      // A revoked session is an authentication failure, not a provider outage.
+      // Inspect only the stable error code; never expose the provider response.
+      let code;
+      try { code = (await response.json())?.code; } catch {}
+      if (code === "session_not_found") throw new Error("AUTHENTICATION_FAILED");
+    }
     if (response.status === 422) throw new Error("REGISTRATION_UNAVAILABLE");
     if (response.status === 429) throw new Error("AUTH_RATE_LIMITED");
     if (!response.ok) throw new Error("AUTH_PROVIDER_UNAVAILABLE");

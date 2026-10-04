@@ -42,3 +42,14 @@ test("actual expired credentials still return 401 without a provider error body"
   assert.equal(res.statusCode,401);assert.deepEqual(res.body,{error:"UNAUTHENTICATED"});
  });
 });
+
+test("revoked Supabase session returns 401 rather than a provider outage",async()=>{
+ await run({fetcher:async()=>Response.json({code:"session_not_found",message:"PRIVATE_PROVIDER_DETAIL"},{status:403})},res=>{
+  assert.equal(res.statusCode,401);assert.deepEqual(res.body,{error:"UNAUTHENTICATED"});
+ });
+});
+test("unknown Supabase forbidden errors are not treated as expired sessions",async()=>{
+ await run({fetcher:async()=>Response.json({code:"unexpected_failure",message:"PRIVATE_PROVIDER_DETAIL"},{status:403})},(res,headers)=>{
+  assert.equal(res.statusCode,503);assert.deepEqual(res.body,{error:"AUTH_PROVIDER_UNAVAILABLE"});assert.equal(headers.has("set-cookie"),false);
+ });
+});
