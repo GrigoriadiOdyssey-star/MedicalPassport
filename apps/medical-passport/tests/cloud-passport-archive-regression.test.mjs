@@ -16,7 +16,7 @@ async function exercise(rows,run,{error=false}={}){
   return Response.json([]);
  };
  try{
-  const res=response();await handler({method:"GET",url:"/api/passport",headers:{host,cookie:"__Host-edht_access=synthetic"}},res);
+  const res=response();await handler({method:"GET",url:"/api/passport",headers:{host,cookie:"__Host-edht_access=synthetic-access-token-long-enough"}},res);
   await run(res,calls);
  }finally{globalThis.fetch=previous.fetch;for(const [name,value] of [["SUPABASE_URL",previous.url],["SUPABASE_PUBLISHABLE_KEY",previous.key]]){if(value===undefined)delete process.env[name];else process.env[name]=value;}}
 }

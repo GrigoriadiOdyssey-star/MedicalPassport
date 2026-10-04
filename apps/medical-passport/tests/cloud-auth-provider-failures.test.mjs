@@ -53,3 +53,10 @@ test("unknown Supabase forbidden errors are not treated as expired sessions",asy
   assert.equal(res.statusCode,503);assert.deepEqual(res.body,{error:"AUTH_PROVIDER_UNAVAILABLE"});assert.equal(headers.has("set-cookie"),false);
  });
 });
+
+test("short credentials are rejected before contacting Supabase",async()=>{
+ let calls=0;
+ await run({cookie:"__Host-edht_access=synthetic",fetcher:async()=>{calls++;throw new Error("MUST_NOT_CALL_PROVIDER");}},res=>{
+  assert.equal(res.statusCode,401);assert.deepEqual(res.body,{error:"UNAUTHENTICATED"});assert.equal(calls,0);
+ });
+});
