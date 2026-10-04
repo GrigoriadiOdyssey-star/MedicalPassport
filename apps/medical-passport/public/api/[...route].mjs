@@ -56,7 +56,10 @@ function safeOrigin(req) {
 async function current(req, res, client) {
   const jar = cookies(req);
   if (jar[ACCESS]) {
-    try { return { user: await client.user(jar[ACCESS]), accessToken: jar[ACCESS] }; } catch {}
+    try { return { user: await client.user(jar[ACCESS]), accessToken: jar[ACCESS] }; }
+    catch (error) {
+      if (!["AUTHENTICATION_FAILED", "CLOUD_SESSION_REQUIRED"].includes(error.message)) throw error;
+    }
   }
   if (!jar[REFRESH]) return null;
   try {
@@ -64,7 +67,8 @@ async function current(req, res, client) {
     // Refresh extends the same authenticated session; open tabs keep their CSRF.
     setSession(res, result.session, jar[CSRF]);
     return { user: result.user, accessToken: result.session.accessToken };
-  } catch {
+  } catch (error) {
+    if (!["AUTHENTICATION_FAILED", "CLOUD_REFRESH_REQUIRED"].includes(error.message)) throw error;
     clearCookies(res);
     return null;
   }
@@ -120,7 +124,13 @@ export default async function handler(req, res) {
     if (method === "POST" && route === "/api/logout") {
       if (!validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
       const user = await current(req, res, client);
-      if (user) { try { await client.signOut(user.accessToken); } catch {} }
+      if (user) {
+        try { await client.signOut(user.accessToken); }
+        catch (error) {
+          clearCookies(res);
+          if (error.message !== "AUTHENTICATION_FAILED") throw error;
+        }
+      }
       clearCookies(res);
       return json(res, 200, { ok: true });
     }
