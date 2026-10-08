@@ -1,3 +1,4 @@
+import { trustedCloudRole } from "./_lib/cloud-consent.mjs";
 import { SupabaseAuth } from "./_lib/supabase-auth.mjs";
 import { SupabaseRepository } from "./_lib/supabase-repository.mjs";
 import { CloudRuntimeRepository, CloudHttpError, cloudRoute } from "./_lib/cloud-runtime.mjs";
@@ -25,7 +26,10 @@ function json(res, status, value) {
   res.end(JSON.stringify(value));
 }
 async function body(req) {
-  if (req.body && typeof req.body === "object" && !Array.isArray(req.body)) return req.body;
+  if (req.body && typeof req.body === "object" && !Array.isArray(req.body)) {
+    if (Buffer.byteLength(JSON.stringify(req.body)) > 32768) throw new Error("BODY_TOO_LARGE");
+    return req.body;
+  }
   let raw = "";
   for await (const chunk of req) {
     raw += chunk;
@@ -141,13 +145,14 @@ export default async function handler(req, res) {
       const profile = await repository(session.accessToken).profile(user.id);
       let csrf = cookies(req)[CSRF];
       if (!csrf) { csrf = crypto.randomUUID(); setCookie(res, CSRF, csrf, 60 * 60 * 24 * 30, false); }
-      return json(res, 200, { id: user.id, email: user.email, name: profile?.display_name || user.email || "Patient", role: "patient", auth_provider: "supabase", csrf });
+      const role = process.env.EDHT_QR_STORAGE_READY === "true" ? await trustedCloudRole(new CloudRuntimeRepository({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY, accessToken: session.accessToken }), user) : "patient";
+      return json(res, 200, { id: user.id, email: user.email, name: profile?.display_name || user.email || "Patient", role, auth_provider: "supabase", csrf });
     }
     const session = await current(req, res, client);
     if (!session) return json(res, 401, { error: "UNAUTHENTICATED" });
     if (method !== "GET" && !validCsrf(req)) return json(res, 403, { error: "INVALID_CSRF" });
     const cloud = new CloudRuntimeRepository({ supabaseUrl: process.env.SUPABASE_URL, publishableKey: process.env.SUPABASE_PUBLISHABLE_KEY, accessToken: session.accessToken });
-    const result = await cloudRoute({ cloud, session, user: session.user, method, path: route, params: url.searchParams, payload });
+    const result = await cloudRoute({ cloud, session, user: session.user, method, path: route, params: url.searchParams, payload, origin: "https://" + req.headers.host });
     if (result?.redirect) { res.statusCode=302; res.setHeader("Location",result.redirect); res.end(); return; }
     if (result) return json(res, result.status || 200, result.body);
     return json(res, 501, { error: "CLOUD_FEATURE_NOT_MIGRATED" });

@@ -525,3 +525,198 @@ Object.assign(errorKeys, {
   UNSUPPORTED_FILE_TYPE: "cloudUploadFormat",
   FILE_TOO_LARGE: "cloudUploadTooLarge",
 });
+
+// Cloud assistant modes and actionable errors; no provider response bodies.
+Object.assign(strings, {
+  "aiTitle": [
+    "Your medical passport assistant",
+    "Ассистент медицинского паспорта"
+  ],
+  "aiBoundary": [
+    "Answers can explain recorded information and general medical concepts. They do not replace a clinician or authorize treatment changes.",
+    "Ответы помогают разобраться в записях и общих медицинских понятиях. Они не заменяют врача и не разрешают менять лечение."
+  ],
+  "aiModeLive": [
+    "Generative AI is connected. Check answers against the original sources.",
+    "Генеративный ИИ подключён. Проверяйте ответы по оригинальным источникам."
+  ],
+  "aiModeDeterministic": [
+    "Recorded-data overview mode. A generative AI model is not used.",
+    "Режим обзора записанных данных. Генеративная модель не используется."
+  ],
+  "aiModeDisabled": [
+    "Generative AI is disabled. Paid calls have not been authorized.",
+    "Генеративный ИИ выключен. Платные вызовы не разрешены."
+  ],
+  "aiModeUnavailable": [
+    "The AI provider is temporarily unavailable. Your saved history is retained.",
+    "AI-провайдер временно недоступен. Сохранённая история остаётся доступной."
+  ],
+  "aiModeBudgetExceeded": [
+    "The approved AI usage limit has been reached. No new paid request will be made.",
+    "Достигнут утверждённый лимит использования ИИ. Новые платные запросы не выполняются."
+  ],
+  "aiStorageUnavailable": [
+    "Cloud conversation storage is not configured yet. You can still use the passport and SOS sections.",
+    "Облачное хранение диалогов пока не настроено. Паспорт и раздел SOS остаются доступны."
+  ],
+  "aiConversations": [
+    "Saved conversations",
+    "Сохранённые диалоги"
+  ],
+  "aiChooseConversation": [
+    "Choose a conversation",
+    "Выберите диалог"
+  ],
+  "aiNewConversation": [
+    "New conversation",
+    "Новый диалог"
+  ],
+  "aiDeleteConversation": [
+    "Delete conversation",
+    "Удалить диалог"
+  ],
+  "aiDeleteConfirm": [
+    "Delete this conversation and its messages?",
+    "Удалить этот диалог и все его сообщения?"
+  ],
+  "aiWaiting": [
+    "Waiting for an answer…",
+    "Ожидаем ответ…"
+  ],
+  "aiPendingRetry": [
+    "The request is not confirmed. Retry resends the same request, without creating a duplicate.",
+    "Выполнение запроса не подтверждено. Повторная попытка отправит тот же запрос без создания дубликата."
+  ],
+  "aiSummary": [
+    "Summarize my recorded medical history",
+    "Кратко изложи мою записанную медицинскую историю"
+  ],
+  "aiLab": [
+    "Explain my recorded laboratory results",
+    "Объясни мои записанные результаты анализов"
+  ],
+  "aiDisabledError": [
+    "AI is not enabled for this environment. No paid call was made.",
+    "ИИ не включён для этого окружения. Платный вызов не выполнялся."
+  ],
+  "aiUnavailableError": [
+    "The AI service is temporarily unavailable. Retry this request later.",
+    "AI-сервис временно недоступен. Повторите этот запрос позже."
+  ],
+  "aiLimitError": [
+    "The approved AI usage limit has been reached. Try again when the limit renews.",
+    "Достигнут утверждённый лимит ИИ. Повторите после обновления лимита."
+  ],
+  "aiBusyError": [
+    "Another answer is being prepared for this conversation. Wait and retry.",
+    "Для этого диалога уже готовится ответ. Подождите и повторите."
+  ],
+  "aiInvalidResponse": [
+    "The assistant returned an invalid response. No substitute answer is shown.",
+    "Ассистент вернул некорректный ответ. Подставной ответ не отображается."
+  ]
+});
+Object.assign(errorKeys, {
+  "AI_DISABLED": "aiDisabledError",
+  "AI_CONFIGURATION_REQUIRED": "aiDisabledError",
+  "AI_STORAGE_UNAVAILABLE": "aiStorageUnavailable",
+  "AI_PROVIDER_UNAVAILABLE": "aiUnavailableError",
+  "AI_PROVIDER_TIMEOUT": "aiUnavailableError",
+  "AI_RESPONSE_INVALID": "aiInvalidResponse",
+  "AI_BUDGET_EXCEEDED": "aiLimitError",
+  "AI_RATE_LIMITED": "tryLater",
+  "AI_CONCURRENCY_LIMIT": "aiBusyError",
+  "AI_CONVERSATION_BUSY": "aiBusyError",
+  "AI_REQUEST_PENDING": "aiBusyError"
+});
+
+Object.assign(strings, {
+  "aiInputLimit": [
+    "This question or conversation is too long. Shorten it or start a new conversation.",
+    "Вопрос или диалог слишком длинный. Сократите вопрос или начните новый диалог."
+  ],
+  "aiReconciliation": [
+    "The provider may have processed this request, but its outcome is not confirmed. No new chargeable attempt will be made until it is reconciled.",
+    "Провайдер мог обработать запрос, но результат пока не подтверждён. Новый платный вызов будет заблокирован до сверки."
+  ],
+  "aiConversationMissing": [
+    "This conversation is unavailable to your account. Choose another conversation.",
+    "Этот диалог недоступен вашему аккаунту. Выберите другой диалог."
+  ],
+  "aiLimitError": [
+    "The approved AI usage limit has been reached. New paid requests are paused.",
+    "Достигнут утверждённый лимит ИИ. Новые платные запросы приостановлены."
+  ]
+});
+Object.assign(errorKeys, {
+  "AI_NOT_CONFIGURED": "aiDisabledError",
+  "AI_CONFIGURATION_INVALID": "aiDisabledError",
+  "AI_STORAGE_NOT_CONFIGURED": "aiStorageUnavailable",
+  "AI_STORE_REQUIRED": "aiStorageUnavailable",
+  "AI_STORE_RESPONSE_INVALID": "aiUnavailableError",
+  "AI_STORE_REJECTED": "aiUnavailableError",
+  "AI_INPUT_INVALID": "invalid",
+  "AI_INPUT_LIMIT": "aiInputLimit",
+  "AI_HISTORY_LIMIT": "aiInputLimit",
+  "AI_INVALID_ID": "invalid",
+  "AI_CONVERSATION_LIMIT": "aiLimitError",
+  "AI_CONVERSATION_NOT_FOUND": "aiConversationMissing",
+  "AI_PROVIDER_RATE_LIMITED": "tryLater",
+  "AI_PROVIDER_RATE_LIMIT": "tryLater",
+  "AI_CIRCUIT_OPEN": "aiUnavailableError",
+  "AI_BUSY": "aiBusyError",
+  "AI_RECONCILIATION_REQUIRED": "aiReconciliation",
+  "AI_VERSION_CONFLICT": "conflict",
+  "AI_REQUEST_CONFLICT": "conflict",
+  "AI_CONTEXT_CHANGED": "conflict",
+  "AI_INVALID_RESPONSE": "aiInvalidResponse",
+  "AI_SOURCE_INVALID": "aiInvalidResponse",
+  "AI_UNSAFE_RESPONSE": "aiInvalidResponse",
+  "AI_USAGE_UNKNOWN": "aiReconciliation"
+});
+
+Object.assign(strings, {
+  "aiTransient": [
+    "This response is temporary and is not saved in conversation history.",
+    "Этот ответ временный и не сохраняется в истории диалога."
+  ]
+});
+
+Object.assign(strings, {
+  "qrClinicalObservations": [
+    "Clinical results",
+    "Клинические результаты"
+  ],
+  "qrScopeUnavailable": [
+    "Not connected in cloud Preview",
+    "Не подключено в облачном Preview"
+  ],
+  "qrDocumentBoundary": [
+    "Cloud QR can share authorized clinical records. Sharing original documents, imaging files and specialized reports is not connected yet.",
+    "Облачный QR может передавать разрешённые клинические записи. Передача оригиналов документов, снимков и специализированных отчётов пока не подключена."
+  ],
+  "qrNotConfigured": [
+    "Cloud QR is not configured in this Preview yet. No access permission has been issued.",
+    "Облачный QR пока не настроен в этом Preview. Разрешение на доступ не выдано."
+  ],
+  "qrDocumentsUnavailable": [
+    "Sharing these documents or imaging files is not available in cloud Preview. Select supported clinical sections.",
+    "Передача этих документов или снимков недоступна в облачном Preview. Выберите поддерживаемые клинические разделы."
+  ],
+  "qrRecipientError": [
+    "Choose a verified clinician from the available directory.",
+    "Выберите подтверждённого врача из доступного каталога."
+  ],
+  "qrGrantError": [
+    "Check the access duration, purpose and selected sections. Emergency access permits only the emergency profile.",
+    "Проверьте срок, цель и выбранные разделы. Экстренный доступ разрешает только экстренный профиль."
+  ]
+});
+Object.assign(errorKeys, {
+  "QR_NOT_CONFIGURED": "qrNotConfigured",
+  "CLOUD_QR_DOCUMENT_SHARING_UNAVAILABLE": "qrDocumentsUnavailable",
+  "INVALID_RECIPIENT": "qrRecipientError",
+  "INVALID_SCOPE": "scopeError",
+  "INVALID_GRANT": "qrGrantError"
+});

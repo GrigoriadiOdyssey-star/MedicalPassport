@@ -1,3 +1,5 @@
+import { consentRoute } from "./cloud-consent.mjs";
+import { assistantRoute } from "./cloud-assistant.mjs";
 import { careRoute } from "./cloud-care.mjs";
 import { documentRoute } from "./cloud-documents.mjs";
 import { cleanBody } from "./cloud-record-validation.mjs";
@@ -120,7 +122,11 @@ export class CloudRuntimeRepository extends SupabaseRepository {
  }
 }
 
-export async function cloudRoute({cloud,user,session,method,path,params,payload}) {
+export async function cloudRoute({cloud,user,session,method,path,params,payload,origin}) {
+ const qrPath=path==="/api/grants"&&method==="POST"||path.startsWith("/api/access");
+ if(process.env.EDHT_QR_STORAGE_READY==="true"){const consent=await consentRoute({cloud,user,method,path,params,payload,origin});if(consent)return consent;}
+ else if(qrPath)fail(503,"QR_NOT_CONFIGURED");
+ const assistantResult=await assistantRoute({cloud,user,method,path,payload});if(assistantResult)return assistantResult;
  const careResult=await careRoute({cloud,user,method,path,payload});if(careResult)return careResult;
  const documentResult=await documentRoute({cloud,user,method,path,params,payload});if(documentResult)return documentResult;
  if(method==="GET"&&path==="/api/profile")return {body:await cloud.fullProfile(user)};
@@ -164,10 +170,6 @@ export async function cloudRoute({cloud,user,session,method,path,params,payload}
  if(method==="GET"&&/^\/api\/documents\/[^/]+\/versions$/.test(path)){
   const rows=await cloud.rows("edht_documents",{select:"id,version,original_name,mime_type,byte_size,document_type,source,created_at,metadata,uploaded_by,sha256",id:"eq."+uuid(path.split("/")[3]),patient_user_id:"eq."+uuid(user.id),order:"version.desc"});if(!rows.length)fail(404,"NOT_FOUND");const sessions=await cloud.rows("edht_upload_sessions",{select:"document_id,version,status",patient_user_id:"eq."+uuid(user.id),document_id:"eq."+uuid(path.split("/")[3])});
   return {body:rows.filter(r=>!r.metadata?.cloud_upload_pending||sessions.some(s=>s.version===r.version&&s.status==="COMPLETE")).map(r=>({...documentRow(r),size:r.byte_size,metadata:r.metadata,uploaded_by:r.uploaded_by,sha256:r.sha256,reason:r.metadata?.reason||"",scan_state:"NOT_SCANNED"}))};
- }
- if(method==="POST"&&path==="/api/assistant"){
-  const records=(await cloud.records(user.id)).filter(r=>!r.archived&&["allergy","medication","condition"].includes(r.kind));
-  return {body:{provider:"deterministic-sandbox",model:"context-summary-v1",is_generative_ai:false,generated_at:Date.now(),source_records:records.map(r=>({id:r.id,version:r.version,source:r.source})),text:"В вашем синтетическом паспорте: аллергии — "+records.filter(r=>r.kind==="allergy").length+", лекарства — "+records.filter(r=>r.kind==="medication").length+", состояния — "+records.filter(r=>r.kind==="condition").length+". Это записанные сведения, а не подтверждённые диагнозы или назначения. Обсудите медицинские вопросы с врачом. При непосредственной угрозе здоровью обратитесь в местную экстренную службу.",boundaries:{guideline_registry:"interface_preserved_not_connected",precision_pharmacology:"not_enabled",digital_twin:"pilot_read_only"}}};
  }
  if(method==="GET"&&path==="/api/search"){
   const q=params.get("q")||"";if(q.length<2||q.length>100)fail(400,"INVALID_SEARCH");

@@ -44,6 +44,8 @@ let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   accessInfo = null,
   authMode = "signin",
   messages = [],
+  assistantState = { mode: "disabled", storage_ready: false, conversations: [], id: null, busy: false, pending: null, error: "" },
+  assistantEpoch = 0,
   loadId = 0,
   chosenFile = null,
   toastTimer;
@@ -162,6 +164,8 @@ function clearPrivate() {
   accessInfo = null;
   shareToken = "";
   messages = [];
+  assistantEpoch++;
+  assistantState = { mode: "disabled", storage_ready: false, conversations: [], id: null, busy: false, pending: null, error: "" };
   loadId++;
   $("#dialog").close();
   $("#dialog").replaceChildren();
@@ -425,6 +429,8 @@ function grantsList() {
   return `<section class="access-card"><h2>${e(t("qr"))}</h2><div class="tabs" role="tablist">${["active", "expired", "revoked", "used"].map((k) => `<button class="tab" role="tab" data-action="grant-tab" data-value="${k}" aria-selected="${selected === k}">${e(t(k))}</button>`).join("")}</div><div class="grid">${rows.map((g) => `<article class="card access-card"><div class="row spread"><h3>${e(g.recipient)}</h3>${chip(grantStatus(g))}</div><p>${g.scopes.map((k) => e(t(k))).join(" · ")}</p><small>${e(t("expires"))}: ${e(new Date(g.expires_at).toLocaleString(locale))}</small><div class="card-actions">${!g.revoked_at ? b("revoke", "revoke", `data-id="${g.id}"`) : ""}</div></article>`).join("")}</div>${!rows.length ? `<p class="muted">${e(t("nothing"))}</p>` : ""}</section>`;
 }
 function qrScreen() {
+  const cloud = me?.auth_provider === "supabase";
+  const unavailableScopes = ["documents", "imaging", "laboratory"];
   return (
     head("qr") +
     `<div class="qr-layout"><section class="card"><form id="qr-form" novalidate><fieldset><legend>${e(t("who"))}</legend>${
@@ -438,7 +444,7 @@ function qrScreen() {
             data.doctors.map((d) => [d.id, d.name]),
           )
         : `<p class="note">${e(me?.auth_provider === "supabase" ? (locale === "ru" ? "В каталоге пока нет подтверждённых врачей. Добавление и проверка врачей выполняются администратором тестовой среды." : "No verified clinicians are available yet. The test environment administrator manages clinician verification.") : t("noDoctors"))}</p>`
-    }</fieldset><fieldset><legend>${e(t("what"))}</legend><div class="scope-grid">${["allergy", "medication", "condition", "vaccination", "documents", "imaging", "emergency", "observation"].map((k) => `<label class="scope-option"><input type="checkbox" name="scope" value="${k}" ${k === "allergy" ? "checked" : ""}><span>${icon[k] ?? "▤"} ${e(t(k))}</span></label>`).join("")}</div><p class="help">${e(t("scopeHelp"))}</p></fieldset><div class="form-row">${field("duration", "howlong", "1h", "text", true, ["once", "1h", "24h", "7d"])}${field("purpose", "why", "review", "text", true, ["review", "emergency"])}</div><p class="help">${e(t("onceHelp"))}</p><div class="field-error" data-form-error role="alert"></div><button class="btn" ${!data.doctors.length ? "disabled" : ""}>▦ ${e(t("reviewAccess"))}</button></form></section>${qr ? `<section class="card qr-card"><p class="eyebrow">${e(t("shareTitle"))}</p><h2>${e(qr.recipient)}</h2><img src="${qr.qr}" alt="${e(t("qr"))}"><div class="chips">${qr.scopes.map((k) => chip(k)).join("")}</div><p>${e(t(qr.purpose))}</p><small>${e(t("expiresIn"))}</small><div class="countdown" data-expires="${qr.expires_at}"></div><div class="row">${b("copy", "copy")}${b("share", "share")}${b("revoke", "revoke", `data-id="${qr.id}"`, "danger")}</div><p class="help">${e(t("saveLink"))}</p><p class="help">${e(t("localQR"))}</p></section>` : `<section class="card qr-card"><div class="symbol">▦</div><h2>${e(t("emptyGrants"))}</h2><p>${e(t("securityNote"))}</p></section>`}</div>` +
+    }</fieldset><fieldset><legend>${e(t("what"))}</legend><div class="scope-grid">${["allergy", "medication", "condition", "vaccination", "documents", "imaging", "emergency", "observation"].map((k) => `<label class="scope-option"><input type="checkbox" name="scope" value="${k}" ${k === "allergy" ? "checked" : ""} ${cloud && unavailableScopes.includes(k) ? "disabled" : ""}><span>${icon[k] ?? "▤"} ${e(t(cloud && k === "observation" ? "qrClinicalObservations" : k))}${cloud && unavailableScopes.includes(k) ? " · " + e(t("qrScopeUnavailable")) : ""}</span></label>`).join("")}</div><p class="help">${e(t("scopeHelp"))}</p>${cloud ? `<p class="help">${e(t("qrDocumentBoundary"))}</p>` : ""}</fieldset><div class="form-row">${field("duration", "howlong", "1h", "text", true, ["once", "1h", "24h", "7d"])}${field("purpose", "why", "review", "text", true, ["review", "emergency"])}</div><p class="help">${e(t("onceHelp"))}</p><div class="field-error" data-form-error role="alert"></div><button class="btn" ${!data.doctors.length ? "disabled" : ""}>▦ ${e(t("reviewAccess"))}</button></form></section>${qr ? `<section class="card qr-card"><p class="eyebrow">${e(t("shareTitle"))}</p><h2>${e(qr.recipient)}</h2><img src="${qr.qr}" alt="${e(t("qr"))}"><div class="chips">${qr.scopes.map((k) => chip(k)).join("")}</div><p>${e(t(qr.purpose))}</p><small>${e(t("expiresIn"))}</small><div class="countdown" data-expires="${qr.expires_at}"></div><div class="row">${b("copy", "copy")}${b("share", "share")}${b("revoke", "revoke", `data-id="${qr.id}"`, "danger")}</div><p class="help">${e(t("saveLink"))}</p><p class="help">${e(t("localQR"))}</p></section>` : `<section class="card qr-card"><div class="symbol">▦</div><h2>${e(t("emptyGrants"))}</h2><p>${e(t("securityNote"))}</p></section>`}</div>` +
     grantsList() +
     `<div class="toolbar">${offset ? b("previous", "page", `data-offset="${Math.max(0, offset - 30)}"`) : ""}${data.grants.length === 30 ? b("next", "page", `data-offset="${offset + 30}"`) : ""}${link("privacy", "activeAccess")}</div>`
   );
@@ -494,12 +500,74 @@ function doctorScreen() {
       : "")
   );
 }
+function assistantUUID(value) {
+  return typeof value === "string" && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
+}
+function assistantRequestID() {
+  if (typeof crypto.randomUUID === "function") return crypto.randomUUID();
+  const bytes = crypto.getRandomValues(new Uint8Array(16));
+  bytes[6] = (bytes[6] & 15) | 64;
+  bytes[8] = (bytes[8] & 63) | 128;
+  const hex = [...bytes].map(n => n.toString(16).padStart(2, "0")).join("");
+  return [hex.slice(0, 8), hex.slice(8, 12), hex.slice(12, 16), hex.slice(16, 20), hex.slice(20)].join("-");
+}
+function assistantMode(value) {
+  return ["live", "deterministic", "disabled", "unavailable", "budget-exceeded"].includes(value) ? value : "unavailable";
+}
+function assistantCurrent(epoch, owner) {
+  return epoch === assistantEpoch && Boolean(me) && me.id === owner;
+}
+function assistantHistory(value) {
+  if (!value || !Array.isArray(value.messages)) throw Error("AI_RESPONSE_INVALID");
+  return value.messages.map(m => {
+    if (!["user", "assistant"].includes(m.role) || typeof m.text !== "string") throw Error("AI_RESPONSE_INVALID");
+    return { role: m.role, text: m.text, sources: Array.isArray(m.source_records) ? m.source_records : [], mode: m.mode, persisted: true };
+  });
+}
+function assistantLocation(id) {
+  history.replaceState(null, "", "#/assistant" + (id ? "?conversation=" + encodeURIComponent(id) : ""));
+}
+async function loadAssistant(load) {
+  const epoch = assistantEpoch, owner = me.id;
+  const status = await api("/assistant/status");
+  if (!assistantCurrent(epoch, owner) || load !== loadId) return;
+  assistantState.mode = assistantMode(status.mode);
+  assistantState.storage_ready = status.storage_ready === true;
+  if (!assistantState.storage_ready) {
+    assistantState.conversations = [];
+    assistantState.id = null;
+    messages = [];
+    return;
+  }
+  const list = await api("/assistant/conversations");
+  if (!assistantCurrent(epoch, owner) || load !== loadId) return;
+  if (!Array.isArray(list.conversations)) throw Error("AI_RESPONSE_INVALID");
+  assistantState.conversations = list.conversations.filter(c => assistantUUID(c.id));
+  const requested = new URLSearchParams(location.hash.split("?")[1] || "").get("conversation");
+  const id = assistantUUID(requested) ? requested : assistantState.id || assistantState.conversations[0]?.id;
+  if (!id) { messages = []; return; }
+  const history = await api("/assistant/conversations/" + id);
+  if (!assistantCurrent(epoch, owner) || load !== loadId) return;
+  messages = assistantHistory(history);
+  assistantState.id = id;
+}
 function assistantScreen() {
-  return (
-    head("assistant") +
-    `<a class="btn" href="#/guidelines">${e(t("guidelines"))} →</a>` +
-    `<div class="chat"><section class="chat-intro"><div class="chat-icon">✧</div><h2>${e(t("aiTitle"))}</h2><p class="note">${e(t("aiNotice"))}</p><small>● ${e(t("aiContext"))}</small><div class="prompts">${["aiMedication", "aiDocument", "aiQuestions", "aiSummary", "aiTravel", "aiLab"].map((k) => b(k, "prompt", `data-prompt="${k}"`)).join("")}</div></section><div aria-live="polite">${messages.map((m) => `<div class="message ${m.role}">${e(m.text)}${m.sources ? `<small>${e(t("aiSources"))}: ${m.sources.length} · ${m.sources.map((r) => e(r.id.slice(0, 8)) + " / v" + r.version).join(", ")}</small>` : ""}</div>`).join("")}</div><form id="chat-form" class="chat-compose" novalidate>${field("message", "message", "", "textarea", true)}<button class="btn">${e(t("send"))}</button></form></div>`
-  );
+  const cloud = me?.auth_provider === "supabase";
+  const state = assistantState;
+  const mode = cloud ? state.mode : "deterministic";
+  const modeLabel = t("aiMode" + mode.replace(/(^|-)([a-z])/g, (_, dash, c) => c.toUpperCase()));
+  const disabled = state.busy || Boolean(state.pending) || (cloud && (!state.storage_ready || !["live", "deterministic"].includes(mode)));
+  const controls = cloud && state.storage_ready
+    ? '<section class="card"><label>' + e(t("aiConversations")) + '<select data-assistant-conversation ' + (state.busy ? "disabled" : "") + '><option value="">' + e(t("aiChooseConversation")) + '</option>' + state.conversations.map(c => '<option value="' + e(c.id) + '" ' + (c.id === state.id ? "selected" : "") + '>' + e(stamp(c.updated_at || c.created_at)) + ' · ' + e(c.id.slice(0, 8)) + '</option>').join("") + '</select></label>' + b("aiNewConversation", "assistant-new", state.busy ? "disabled" : "") + (state.id ? b("aiDeleteConversation", "assistant-delete", state.busy ? "disabled" : "") : "") + '</section>'
+    : "";
+  const error = state.error ? '<p role="alert">' + e(errorMessage(state.error, locale)) + '</p>' + (state.pending ? b("retry", "assistant-retry", state.busy ? "disabled" : "") : "") : "";
+  const sourceLink = r => assistantUUID(r.id) && Number.isSafeInteger(r.version) && r.version > 0
+    ? '<a href="#/' + (r.kind === "document" ? "documents?document=" : "records?record=") + encodeURIComponent(r.id) + '" data-action="assistant-source" data-id="' + e(r.id) + '" data-version="' + r.version + '" data-kind="' + (r.kind === "document" ? "document" : "record") + '">' + e(r.id.slice(0, 8)) + ' / v' + r.version + '</a>' : "";
+  return head("assistant") + '<a class="btn" href="#/guidelines">' + e(t("guidelines")) + ' →</a>' +
+    '<div class="chat"><section class="chat-intro"><div class="chat-icon">✧</div><h2>' + e(t("aiTitle")) + '</h2><p class="note" data-assistant-mode="' + e(mode) + '">' + e(modeLabel) + '</p><p class="note">' + e(t("aiBoundary")) + '</p>' + (cloud && !state.storage_ready ? '<p>' + e(t("aiStorageUnavailable")) + '</p>' : "") + '<small>● ' + e(t("aiContext")) + '</small><div class="prompts">' + ["aiMedication", "aiDocument", "aiQuestions", "aiSummary", "aiTravel", "aiLab"].map(k => b(k, "prompt", 'data-prompt="' + k + '" ' + (disabled ? "disabled" : ""))).join("") + '</div></section>' + controls +
+    '<div aria-live="polite">' + messages.map(m => '<div class="message ' + (m.role === "user" ? "user" : "assistant") + '">' + e(m.text) + (m.persisted === false ? '<small>' + e(t("aiTransient")) + '</small>' : "") + (m.sources?.length ? '<small>' + e(t("aiSources")) + ': ' + m.sources.map(sourceLink).filter(Boolean).join(", ") + '</small>' : "") + '</div>').join("") +
+    (state.pending ? '<div class="message user pending">' + e(state.pending.message) + '<small>' + e(t(state.busy ? "aiWaiting" : "aiPendingRetry")) + '</small></div>' : "") + (state.busy ? '<p role="status">' + e(t("aiWaiting")) + '</p>' : "") + error +
+    '</div><form id="chat-form" class="chat-compose" novalidate>' + field("message", "message", "", "textarea", true) + '<button class="btn" ' + (disabled ? "disabled" : "") + '>' + e(t("send")) + '</button></form></div>';
 }
 function profileScreen() {
   const p = data;
@@ -644,6 +712,7 @@ async function load() {
       ]);
       result = { grants, doctors };
     } else if (screen === "profile") result = await api("/profile");
+    else if (screen === "assistant" && me.auth_provider === "supabase") await loadAssistant(id);
     if (id !== loadId) return;
     if (screen !== "home") {
       result = await pharmacy.enrich(screen, result);
@@ -779,25 +848,129 @@ async function useAccess(token, docId) {
     if (err.message === "NETWORK") throw err;
   }
 }
-async function chat(message) {
-  messages.push({ role: "user", text: message });
+async function assistantSelect(id) {
+  if (assistantState.busy || !assistantUUID(id)) return;
+  const epoch = assistantEpoch, owner = me.id;
+  assistantState.busy = true;
+  assistantState.error = "";
   render();
-  if (
-    /sos|emergency|urgent|dying|chest pain|can't breathe|экстр|умира|не могу дышать|боль в груди/i.test(
-      message,
-    )
-  ) {
-    messages.push({ role: "assistant", text: t("aiEmergency") });
+  try {
+    const history = await api("/assistant/conversations/" + id);
+    if (!assistantCurrent(epoch, owner)) return;
+    messages = assistantHistory(history);
+    assistantState.id = id;
+    assistantState.pending = null;
+    assistantLocation(id);
+  } catch (err) {
+    if (assistantCurrent(epoch, owner)) assistantState.error = err.message;
+  } finally {
+    if (assistantCurrent(epoch, owner)) { assistantState.busy = false; if (screen === "assistant") render(); }
+  }
+}
+async function assistantNew() {
+  if (assistantState.busy || !assistantState.storage_ready) return;
+  const epoch = assistantEpoch, owner = me.id;
+  assistantState.busy = true;
+  assistantState.error = "";
+  render();
+  try {
+    const created = await api("/assistant/conversations", {});
+    if (!assistantCurrent(epoch, owner)) return;
+    if (!assistantUUID(created.id)) throw Error("AI_RESPONSE_INVALID");
+    assistantState.id = created.id;
+    assistantState.pending = null;
+    messages = [];
+    assistantState.conversations.unshift(created);
+    assistantLocation(created.id);
+  } catch (err) {
+    if (assistantCurrent(epoch, owner)) assistantState.error = err.message;
+  } finally {
+    if (assistantCurrent(epoch, owner)) { assistantState.busy = false; if (screen === "assistant") render(); }
+  }
+}
+async function assistantDelete() {
+  if (assistantState.busy || !assistantState.id) return;
+  const epoch = assistantEpoch, owner = me.id, id = assistantState.id;
+  assistantState.busy = true;
+  render();
+  try {
+    const result = await api("/assistant/conversations/" + id + "/delete", {});
+    if (!assistantCurrent(epoch, owner)) return;
+    if (result.ok !== true) throw Error("AI_RESPONSE_INVALID");
+    assistantState.conversations = assistantState.conversations.filter(c => c.id !== id);
+    assistantState.id = null;
+    assistantState.pending = null;
+    assistantState.error = "";
+    messages = [];
+    assistantLocation(null);
+  } finally {
+    if (assistantCurrent(epoch, owner)) { assistantState.busy = false; if (screen === "assistant") render(); }
+  }
+}
+async function assistantSource(target) {
+  const id = target.dataset.id, version = Number(target.dataset.version);
+  if (!assistantUUID(id) || !Number.isSafeInteger(version) || version < 1) return;
+  const epoch = assistantEpoch, owner = me.id;
+  const rows = await api((target.dataset.kind === "document" ? "/documents/" : "/records/") + id + (target.dataset.kind === "document" ? "/versions" : "/history"));
+  if (!assistantCurrent(epoch, owner)) return;
+  const source = rows.find(r => r.version === version);
+  if (!source) throw Error("NOT_FOUND");
+  modal("aiSources", '<p>' + e(t("version")) + ' ' + version + '</p>' + definition(Object.entries(source.body || source.metadata || {})));
+}
+async function chat(message, retry = false) {
+  if (!me || assistantState.busy || (assistantState.pending && !retry)) return;
+  const epoch = assistantEpoch, owner = me.id, cloud = me.auth_provider === "supabase";
+  message = String(message || "").trim();
+  if (!message) return;
+  // Immediate escalation remains available independently of a provider or network.
+  if (!retry && /sos|emergency|urgent|dying|chest pain|can't breathe|экстр|умира|не могу дышать|боль в груди/i.test(message)) {
+    messages.push({ role: "user", text: message, persisted: false }, { role: "assistant", text: t("aiEmergency"), persisted: false });
     render();
     return;
   }
-  const result = await api("/assistant", { message, language: locale });
-  messages.push({
-    role: "assistant",
-    text: t("aiReply"),
-    sources: result.source_records,
-  });
+  if (cloud && (!assistantState.storage_ready || !["live", "deterministic"].includes(assistantState.mode))) {
+    assistantState.error = "AI_DISABLED";
+    render();
+    return;
+  }
+  assistantState.busy = true;
+  assistantState.error = "";
+  const pending = retry ? assistantState.pending : {
+    message, language: locale, request_id: assistantRequestID(), conversation_id: assistantState.id,
+  };
+  if (!pending) { assistantState.busy = false; return; }
+  assistantState.pending = pending;
   render();
+  try {
+    if (cloud && assistantState.mode === "live" && !pending.conversation_id) {
+      const created = await api("/assistant/conversations", {});
+      if (!assistantCurrent(epoch, owner)) return;
+      if (!assistantUUID(created.id)) throw Error("AI_RESPONSE_INVALID");
+      pending.conversation_id = created.id;
+      assistantState.id = created.id;
+      assistantState.conversations.unshift(created);
+      assistantLocation(created.id);
+    }
+    const result = await api("/assistant", cloud ? pending : { message: pending.message, language: pending.language });
+    if (!assistantCurrent(epoch, owner)) return;
+    if (typeof result.text !== "string" || !result.text.trim()) throw Error("AI_RESPONSE_INVALID");
+    if (cloud && result.persisted === true) {
+      const history = await api("/assistant/conversations/" + pending.conversation_id);
+      if (!assistantCurrent(epoch, owner)) return;
+      messages = assistantHistory(history);
+    } else {
+      if (cloud && (result.mode === "live" || result.is_generative_ai === true)) throw Error("AI_RESPONSE_INVALID");
+      messages.push({ role: "user", text: pending.message, persisted: false }, { role: "assistant", text: result.text, sources: result.source_records, mode: result.mode, persisted: false });
+    }
+    assistantState.pending = null;
+  } catch (err) {
+    if (assistantCurrent(epoch, owner)) assistantState.error = err.message;
+  } finally {
+    if (assistantCurrent(epoch, owner)) {
+      assistantState.busy = false;
+      if (screen === "assistant") render();
+    }
+  }
 }
 function countdown() {
   document.querySelectorAll("[data-expires]").forEach((el) => {
@@ -833,6 +1006,7 @@ setInterval(async () => {
   }
 }, 10000);
 document.addEventListener("change", async (event) => {
+  if (event.target.matches("[data-assistant-conversation]")) return assistantSelect(event.target.value);
   if (event.target.matches("[data-language]")) {
     locale = event.target.value;
     localStorage.setItem("edht-language", locale);
@@ -892,6 +1066,10 @@ document.addEventListener("click", async (event) => {
       $(".qr-review").remove();
       return;
     }
+    if (a === "assistant-new") return await assistantNew();
+    if (a === "assistant-delete") return confirmation("aiDeleteConfirm", assistantDelete);
+    if (a === "assistant-retry") return await chat(assistantState.pending?.message, true);
+    if (a === "assistant-source") return await assistantSource(target);
     if (a === "notifications") {
       location.hash = "/notifications";
       return;
