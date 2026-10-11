@@ -1,4 +1,5 @@
 import {CloudHttpError} from "./cloud-runtime.mjs";
+import { NUTRITION_PANEL, NutritionValidationError, validateAnthropometryBody } from "../../nutrition-model.mjs";
 const fail=(s,c)=>{throw new CloudHttpError(s,c)};
 const text=(v)=>{if(typeof v!=="string"||!v.trim()||v.length>2000)fail(400,"INVALID_TEXT");return v.trim();};
 export function cleanBody(kind, b) {
@@ -160,6 +161,10 @@ export function cleanBody(kind, b) {
       !["UNKNOWN", "+", "-"].includes(out.rh)
     )
       fail(400, "INVALID_BLOOD_GROUP");
+  }
+  if (kind === "observation" && out.panel === NUTRITION_PANEL) {
+    try { validateAnthropometryBody(out); }
+    catch (error) { if (error instanceof NutritionValidationError) fail(400, "INVALID_NUTRITION_RECORD"); throw error; }
   }
   return out;
 }

@@ -1,4 +1,4 @@
-import {createHash} from "node:crypto";
+import {DOCUMENT_MIMES,verifyDocumentObject} from "./cloud-document-content.mjs";
 import {CloudHttpError,ms} from "./cloud-runtime.mjs";
 const fail=(s,c)=>{throw new CloudHttpError(s,c)};
 const uuid=v=>{if(typeof v!=="string"||!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(v))fail(400,"INVALID_ID");return v;};
@@ -18,12 +18,13 @@ async function signUpload(cloud,user,s){
  if(signed.origin!==cloud.base.origin||!signed.pathname.startsWith("/storage/v1/object/upload/sign/"+bucket+"/")||!signed.searchParams.has("token"))throw Error("CLOUD_RESPONSE_INVALID");
  return {...projection(s),transport:"supabase-signed",upload_url:signed.toString()};
 }
-export async function documentRoute({cloud,user,method,path,params,payload}){
+export async function documentRoute({cloud,user,method,path,params,payload,env=process.env}){
  if(method==="GET"&&path==="/api/storage-policy")return {body:cloudStoragePolicy};
  if(method==="GET"&&path==="/api/uploads")return {body:(await sessions(cloud,user)).map(projection)};
  if(method==="POST"&&path==="/api/uploads"){
   if(payload.kind!=="document")fail(400,"CLOUD_IMAGING_UPLOAD_UNAVAILABLE");
-  if(typeof payload.name!=="string"||/[\r\n]/.test(payload.name)||!Number.isSafeInteger(payload.size)||payload.size<1||payload.size>cloudStoragePolicy.documentBytes)fail(400,"INVALID_UPLOAD");
+  if(typeof payload.name!=="string"||/[\r\n]/.test(payload.name)||!Number.isSafeInteger(payload.size)||payload.size<1||payload.size>cloudStoragePolicy.documentBytes||typeof payload.mime!=="string"||!payload.mime.trim())fail(400,"INVALID_UPLOAD");
+  if(!DOCUMENT_MIMES.includes(payload.mime))fail(415,"UNSUPPORTED_FILE_TYPE");
   const s=await cloud.rpc("edht_upload_reserve",{p_name:payload.name,p_mime:payload.mime,p_size:payload.size,p_sha256:payload.sha256,p_metadata:payload.metadata||{}});
   return {status:201,body:await signUpload(cloud,user,s)};
  }
@@ -32,16 +33,17 @@ export async function documentRoute({cloud,user,method,path,params,payload}){
  }
  if(method==="POST"&&/^\/api\/uploads\/[^/]+\/(complete|cancel)$/.test(path)){
   const s=(await sessions(cloud,user,path.split("/")[3]))[0],cancel=path.endsWith("/cancel");
-  if(!cancel&&s.status!=="COMPLETE"){
-   if(s.status!=="OPEN"||ms(s.expires_at)<=Date.now())fail(409,"UPLOAD_CLOSED");
+  if(!cancel){
+   if(!["OPEN","COMPLETE"].includes(s.status)||(s.status==="OPEN"&&ms(s.expires_at)<=Date.now()))fail(409,"UPLOAD_CLOSED");
    const url=new URL("/storage/v1/object/authenticated/"+bucket+"/"+user.id+"/"+s.document_id+"/"+s.version,cloud.base);
-   let res;try{res=await cloud.fetch(url,{headers:{apikey:cloud.key,authorization:"Bearer "+cloud.token},signal:AbortSignal.timeout(30000)});}catch{throw Error("CLOUD_BACKEND_UNAVAILABLE");}
+   let res;try{res=await cloud.fetch(url,{headers:{apikey:cloud.key,authorization:"Bearer "+cloud.token},signal:AbortSignal.timeout(30000),redirect:"error"});}catch{throw Error("CLOUD_BACKEND_UNAVAILABLE");}
    if(!res.ok)fail(res.status===404?409:502,"CLOUD_UPLOAD_VERIFY_FAILED");
-   const hash=createHash("sha256");let size=0;
-   for await(const chunk of res.body){size+=chunk.byteLength;if(size>cloudStoragePolicy.documentBytes)fail(413,"FILE_TOO_LARGE");hash.update(chunk);}
-   if(size!==s.size||hash.digest("hex")!==s.sha256)fail(409,"UPLOAD_INTEGRITY_MISMATCH");
+   await verifyDocumentObject(res,s);
+   const capability=env.EDHT_DOCUMENT_INGESTION_CAPABILITY;
+   if(typeof capability!=="string"||!/^[A-Za-z0-9_-]{43,128}$/.test(capability))fail(503,"DOCUMENT_VERIFICATION_NOT_CONFIGURED");
+   return {body:await cloud.rpc("edht_upload_verified_finish",{p_id:s.id,p_server_capability:capability,p_observed_sha256:s.sha256,p_observed_size:s.size,p_observed_mime:s.mime})};
   }
-  return {body:await cloud.rpc("edht_upload_finish",{p_id:s.id,p_cancel:cancel})};
+  return {body:await cloud.rpc("edht_upload_finish",{p_id:s.id,p_cancel:true})};
  }
  if(method==="POST"&&/^\/api\/documents\/[^/]+\/(metadata|archive)$/.test(path))return {body:await cloud.rpc("edht_document_metadata",{p_id:uuid(path.split("/")[3]),p_body:payload,p_archive:path.endsWith("/archive")})};
  if(method==="GET"&&/^\/api\/documents\/[^/]+$/.test(path)){

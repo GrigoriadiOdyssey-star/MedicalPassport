@@ -720,3 +720,102 @@ Object.assign(errorKeys, {
   "INVALID_SCOPE": "scopeError",
   "INVALID_GRANT": "qrGrantError"
 });
+
+Object.assign(strings, {
+  aiHistoryLimited: ["Only the latest 40 messages are displayed. Earlier messages remain saved; loading them is not available yet.", "Показаны только последние 40 сообщений. Более ранние сообщения сохранены; их загрузка пока недоступна."]
+});
+
+Object.assign(strings, {
+  "nutrition": [
+    "Nutrition · measurements",
+    "Питание · измерения"
+  ],
+  "nutritionWeight": [
+    "Weight (kg)",
+    "Масса тела (кг)"
+  ],
+  "nutritionHeight": [
+    "Height (cm)",
+    "Рост (см)"
+  ],
+  "nutritionWaist": [
+    "Waist circumference (cm)",
+    "Окружность талии (см)"
+  ],
+  "nutritionAdd": [
+    "Add a measurement",
+    "Добавить измерение"
+  ],
+  "nutritionMeasurement": [
+    "Measurement",
+    "Показатель"
+  ],
+  "nutritionValue": [
+    "Reported value",
+    "Записанное значение"
+  ],
+  "nutritionMeasuredAt": [
+    "Measured at",
+    "Время измерения"
+  ],
+  "nutritionTimeUTC": [
+    "Measurement time in UTC (e.g. 2026-10-12T09:00:00Z)",
+    "Время измерения UTC (например, 2026-10-12T09:00:00Z)"
+  ],
+  "nutritionMethod": [
+    "How was this obtained?",
+    "Как получено значение?"
+  ],
+  "nutritionSelfReported": [
+    "Reported from memory",
+    "Со слов пациента"
+  ],
+  "nutritionHomeMeasured": [
+    "Home measurement",
+    "Домашнее измерение"
+  ],
+  "nutritionSourcePatient": [
+    "Patient reported",
+    "Сообщено пациентом"
+  ],
+  "nutritionUnverified": [
+    "Not clinician verified",
+    "Не подтверждено врачом"
+  ],
+  "nutritionUnits": [
+    "Weight uses kg; height and waist use cm. Use a dot for decimals.",
+    "Масса — в кг; рост и талия — в см. Для десятичных дробей используйте точку."
+  ],
+  "nutritionBoundary": [
+    "Record measurements and review their history. Clinical reference ranges, dietary targets and recommendations are not connected. Pediatric feeding and clinical plans are not available here.",
+    "Записывайте измерения и просматривайте историю. Клинические нормы, цели питания и рекомендации пока не подключены. Детское вскармливание и лечебные планы в этом разделе недоступны."
+  ],
+  "nutritionEmpty": [
+    "No measurements yet",
+    "Измерений пока нет"
+  ],
+  "nutritionEmptyArchive": [
+    "No archived measurements",
+    "Архивных измерений нет"
+  ],
+  "nutritionEmptyHelp": [
+    "A missing measurement is not a clinical conclusion.",
+    "Отсутствие измерения не является медицинским заключением."
+  ],
+  "nutritionLegacyWarning": [
+    "This existing record does not match the measurement format. Its original values and history remain available.",
+    "Эта существующая запись не соответствует формату измерения. Исходные значения и история сохранены."
+  ],
+  "nutritionInvalid": [
+    "Check the measurement, unit, positive numeric value and valid UTC time. Only patient-reported methods are available.",
+    "Проверьте показатель, единицу, положительное число и корректное время UTC. Доступны только сведения, сообщённые пациентом."
+  ],
+  "nutritionLoadedCount": [
+    "Loaded measurements",
+    "Загруженные измерения"
+  ]
+});
+Object.assign(errorKeys, { INVALID_NUTRITION_RECORD: "nutritionInvalid" });
+
+Object.assign(strings, { documentVerificationUnavailable: ["Server file verification is not configured. This upload has not been completed.", "Серверная проверка файлов пока не подключена. Эта загрузка не завершена."] });
+Object.assign(errorKeys, { DOCUMENT_VERIFICATION_NOT_CONFIGURED: "documentVerificationUnavailable", UPLOAD_VERIFICATION_REQUIRED: "documentVerificationUnavailable" });

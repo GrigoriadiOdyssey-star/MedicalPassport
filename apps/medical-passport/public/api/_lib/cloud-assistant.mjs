@@ -33,7 +33,7 @@ export async function assistantRoute({cloud,user,method,path,payload,env=process
    }
    const match=path.match(/^\/api\/assistant\/conversations\/([^/]+)(\/delete)?$/);
    if(!match||!UUID.test(match[1]))fail(404,"NOT_FOUND");
-   if(method==="GET"&&!match[2]){const h=await store().history(match[1]);return{body:{id:h.conversation_id,version:h.version,messages:h.messages.map(publicMessage)}};}
+   if(method==="GET"&&!match[2]){const h=await store().history(match[1]);return{body:{id:h.conversation_id,version:h.version,has_older:h.has_older===true,messages:h.messages.map(publicMessage)}};}
    if(method==="POST"&&match[2]){if(Object.keys(payload??{}).length)fail(400,"AI_INPUT_INVALID");return{body:await store().delete(match[1])};}
    fail(405,"METHOD_NOT_ALLOWED");
   }

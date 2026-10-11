@@ -1,4 +1,5 @@
 import { consentRoute } from "./cloud-consent.mjs";
+import { nutritionView } from "../../nutrition-model.mjs";
 import { assistantRoute } from "./cloud-assistant.mjs";
 import { careRoute } from "./cloud-care.mjs";
 import { documentRoute } from "./cloud-documents.mjs";
@@ -101,10 +102,11 @@ export class CloudRuntimeRepository extends SupabaseRepository {
   return rows.map(r=>({id:r.id,created_at:ms(r.created_at),expires_at:ms(r.expires_at),current:r.id===id,revocable:false}));
  }
  async view(user,name,params) {
-  if(!["home","passport","records","documents",...KINDS].includes(name))fail(404,"NOT_FOUND");
+  if(!["home","passport","records","documents","nutrition",...KINDS].includes(name))fail(404,"NOT_FOUND");
   const offset=page(params.get("offset")||0),archived=params.get("archived")==="1";
   if(name==="documents")return {documents:await this.documents(user.id,{offset,archived}),offset,page_size:30};
   const [profile,records]=await Promise.all([this.fullProfile(user),this.records(user.id)]);
+  if(name==="nutrition")return nutritionView(records,{offset,archived});
   if(KINDS.includes(name)){
    let selected=records.filter(r=>r.kind===name);
    if(name==="medication"){
@@ -122,13 +124,13 @@ export class CloudRuntimeRepository extends SupabaseRepository {
  }
 }
 
-export async function cloudRoute({cloud,user,session,method,path,params,payload,origin}) {
+export async function cloudRoute({cloud,user,session,method,path,params,payload,origin,env=process.env}) {
  const qrPath=path==="/api/grants"&&method==="POST"||path.startsWith("/api/access");
  if(process.env.EDHT_QR_STORAGE_READY==="true"){const consent=await consentRoute({cloud,user,method,path,params,payload,origin});if(consent)return consent;}
  else if(qrPath)fail(503,"QR_NOT_CONFIGURED");
  const assistantResult=await assistantRoute({cloud,user,method,path,payload});if(assistantResult)return assistantResult;
  const careResult=await careRoute({cloud,user,method,path,payload});if(careResult)return careResult;
- const documentResult=await documentRoute({cloud,user,method,path,params,payload});if(documentResult)return documentResult;
+ const documentResult=await documentRoute({cloud,user,method,path,params,payload,env});if(documentResult)return documentResult;
  if(method==="GET"&&path==="/api/profile")return {body:await cloud.fullProfile(user)};
  if(method==="GET"&&path.startsWith("/api/views/"))return {body:await cloud.view(user,path.slice(11),params)};
  if(method==="GET"&&path==="/api/notifications")return {body:await cloud.notifications(params,user.id)};

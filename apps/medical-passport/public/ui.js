@@ -26,6 +26,7 @@ export function route(hash, role) {
     : [
           ...screens,
           "care",
+          "nutrition",
           "guidelines",
           "medication-detail",
           "condition",

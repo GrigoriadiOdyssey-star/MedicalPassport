@@ -1,4 +1,5 @@
 import { createAlpha4UI } from "./alpha4-ui.js";
+import { createNutritionUI } from "./nutrition-ui.js";
 import { createProductUI } from "./product-ui.js";
 import { createPharmacyUI } from "./pharmacy-ui.js";
 import { translate as tr } from "./i18n.js";
@@ -26,6 +27,7 @@ const $ = (s) => document.querySelector(s),
     doctor: "⊕",
     condition: "◈",
     observation: "∿",
+    nutrition: "◉",
     vaccination: "✓",
     pharmacy: "⚕",
   };
@@ -44,7 +46,7 @@ let locale = localStorage.getItem("edht-language") === "en" ? "en" : "ru",
   accessInfo = null,
   authMode = "signin",
   messages = [],
-  assistantState = { mode: "disabled", storage_ready: false, conversations: [], id: null, busy: false, pending: null, error: "" },
+  assistantState = { mode: "disabled", storage_ready: false, has_older: false, conversations: [], id: null, busy: false, pending: null, error: "" },
   assistantEpoch = 0,
   loadId = 0,
   chosenFile = null,
@@ -165,7 +167,7 @@ function clearPrivate() {
   shareToken = "";
   messages = [];
   assistantEpoch++;
-  assistantState = { mode: "disabled", storage_ready: false, conversations: [], id: null, busy: false, pending: null, error: "" };
+  assistantState = { mode: "disabled", storage_ready: false, has_older: false, conversations: [], id: null, busy: false, pending: null, error: "" };
   loadId++;
   $("#dialog").close();
   $("#dialog").replaceChildren();
@@ -244,6 +246,7 @@ function shell() {
           "home",
           "passport",
           "records",
+          ...(me.auth_provider === "supabase" ? ["nutrition"] : []),
           "pharmacy",
           "documents",
           "qr",
@@ -536,6 +539,7 @@ async function loadAssistant(load) {
   if (!assistantState.storage_ready) {
     assistantState.conversations = [];
     assistantState.id = null;
+    assistantState.has_older = false;
     messages = [];
     return;
   }
@@ -545,10 +549,11 @@ async function loadAssistant(load) {
   assistantState.conversations = list.conversations.filter(c => assistantUUID(c.id));
   const requested = new URLSearchParams(location.hash.split("?")[1] || "").get("conversation");
   const id = assistantUUID(requested) ? requested : assistantState.id || assistantState.conversations[0]?.id;
-  if (!id) { messages = []; return; }
+  if (!id) { assistantState.has_older = false; messages = []; return; }
   const history = await api("/assistant/conversations/" + id);
   if (!assistantCurrent(epoch, owner) || load !== loadId) return;
   messages = assistantHistory(history);
+  assistantState.has_older = history.has_older === true;
   assistantState.id = id;
 }
 function assistantScreen() {
@@ -565,7 +570,7 @@ function assistantScreen() {
     ? '<a href="#/' + (r.kind === "document" ? "documents?document=" : "records?record=") + encodeURIComponent(r.id) + '" data-action="assistant-source" data-id="' + e(r.id) + '" data-version="' + r.version + '" data-kind="' + (r.kind === "document" ? "document" : "record") + '">' + e(r.id.slice(0, 8)) + ' / v' + r.version + '</a>' : "";
   return head("assistant") + '<a class="btn" href="#/guidelines">' + e(t("guidelines")) + ' →</a>' +
     '<div class="chat"><section class="chat-intro"><div class="chat-icon">✧</div><h2>' + e(t("aiTitle")) + '</h2><p class="note" data-assistant-mode="' + e(mode) + '">' + e(modeLabel) + '</p><p class="note">' + e(t("aiBoundary")) + '</p>' + (cloud && !state.storage_ready ? '<p>' + e(t("aiStorageUnavailable")) + '</p>' : "") + '<small>● ' + e(t("aiContext")) + '</small><div class="prompts">' + ["aiMedication", "aiDocument", "aiQuestions", "aiSummary", "aiTravel", "aiLab"].map(k => b(k, "prompt", 'data-prompt="' + k + '" ' + (disabled ? "disabled" : ""))).join("") + '</div></section>' + controls +
-    '<div aria-live="polite">' + messages.map(m => '<div class="message ' + (m.role === "user" ? "user" : "assistant") + '">' + e(m.text) + (m.persisted === false ? '<small>' + e(t("aiTransient")) + '</small>' : "") + (m.sources?.length ? '<small>' + e(t("aiSources")) + ': ' + m.sources.map(sourceLink).filter(Boolean).join(", ") + '</small>' : "") + '</div>').join("") +
+    (cloud && state.has_older ? '<p class="note" role="status" data-assistant-history-limit>' + e(t("aiHistoryLimited")) + '</p>' : "") + '<div aria-live="polite">' + messages.map(m => '<div class="message ' + (m.role === "user" ? "user" : "assistant") + '">' + e(m.text) + (m.persisted === false ? '<small>' + e(t("aiTransient")) + '</small>' : "") + (m.sources?.length ? '<small>' + e(t("aiSources")) + ': ' + m.sources.map(sourceLink).filter(Boolean).join(", ") + '</small>' : "") + '</div>').join("") +
     (state.pending ? '<div class="message user pending">' + e(state.pending.message) + '<small>' + e(t(state.busy ? "aiWaiting" : "aiPendingRetry")) + '</small></div>' : "") + (state.busy ? '<p role="status">' + e(t("aiWaiting")) + '</p>' : "") + error +
     '</div><form id="chat-form" class="chat-compose" novalidate>' + field("message", "message", "", "textarea", true) + '<button class="btn" ' + (disabled ? "disabled" : "") + '>' + e(t("send")) + '</button></form></div>';
 }
@@ -620,6 +625,7 @@ const alpha4 = createAlpha4UI({
   csrf: () => csrf,
   get: () => ({ me, data, locale, screen, offset, archived }),
 });
+function nutritionUI() { return createNutritionUI({ t, e, b, head, field, modal, actions, get: () => ({ me, data, locale, archived }) }); }
 function render() {
   if (!me) return renderAuth();
   let html = pharmacy.render(screen, data) ?? product.render(screen, data) ?? "";
@@ -630,6 +636,7 @@ function render() {
         pharmacy.dashboard(data) + '<div class="grid">',
       );
       break;
+    case "nutrition": html = nutritionUI().render(data); break;
     case "passport":
       html = passport();
       break;
@@ -684,6 +691,7 @@ async function load() {
         "home",
         "passport",
         "records",
+        "nutrition",
         "medication",
         "allergy",
         "documents",
@@ -714,7 +722,7 @@ async function load() {
     } else if (screen === "profile") result = await api("/profile");
     else if (screen === "assistant" && me.auth_provider === "supabase") await loadAssistant(id);
     if (id !== loadId) return;
-    if (screen !== "home") {
+    if (!["home", "nutrition"].includes(screen)) {
       result = await pharmacy.enrich(screen, result);
       result = await product.enrich(screen, result);
       result = await alpha4.enrich(screen, result);
@@ -858,6 +866,7 @@ async function assistantSelect(id) {
     const history = await api("/assistant/conversations/" + id);
     if (!assistantCurrent(epoch, owner)) return;
     messages = assistantHistory(history);
+    assistantState.has_older = history.has_older === true;
     assistantState.id = id;
     assistantState.pending = null;
     assistantLocation(id);
@@ -879,6 +888,7 @@ async function assistantNew() {
     if (!assistantUUID(created.id)) throw Error("AI_RESPONSE_INVALID");
     assistantState.id = created.id;
     assistantState.pending = null;
+    assistantState.has_older = false;
     messages = [];
     assistantState.conversations.unshift(created);
     assistantLocation(created.id);
@@ -901,6 +911,7 @@ async function assistantDelete() {
     assistantState.id = null;
     assistantState.pending = null;
     assistantState.error = "";
+    assistantState.has_older = false;
     messages = [];
     assistantLocation(null);
   } finally {
@@ -958,6 +969,7 @@ async function chat(message, retry = false) {
       const history = await api("/assistant/conversations/" + pending.conversation_id);
       if (!assistantCurrent(epoch, owner)) return;
       messages = assistantHistory(history);
+      assistantState.has_older = history.has_older === true;
     } else {
       if (cloud && (result.mode === "live" || result.is_generative_ai === true)) throw Error("AI_RESPONSE_INVALID");
       messages.push({ role: "user", text: pending.message, persisted: false }, { role: "assistant", text: result.text, sources: result.source_records, mode: result.mode, persisted: false });
@@ -1037,6 +1049,8 @@ document.addEventListener("click", async (event) => {
   const a = target.dataset.action;
   event.preventDefault();
   try {
+    if (a === "nutrition-add") return nutritionUI().openForm();
+    if (a === "nutrition-edit") { const r = data.records.find(r => r.id === target.dataset.id); if (!r) throw Error("NOT_FOUND"); return nutritionUI().openForm(r); }
     if (a.startsWith("pharmacy-") && (await pharmacy.click(a, target))) return;
     if (a.startsWith("a4-") && (await alpha4.click(a, target))) return;
     if (a === "shared-imaging") {
@@ -1319,6 +1333,12 @@ document.addEventListener("submit", async (event) => {
       await api("/login", { email: values.email, password: values.password });
       await refreshMe();
       return;
+    }
+    if (form.id === "nutrition-form") {
+      const body = nutritionUI().formBody(values);
+      if (form.dataset.id) await api("/records/" + form.dataset.id + "/update", { body, version: Number(form.dataset.version) });
+      else await api("/records", { kind: "observation", body });
+      $("#dialog").close(); offset = 0; archived = false; await load();
     }
     if (form.id === "record-form" || form.id === "emergency-form") {
       const kind =

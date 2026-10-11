@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "tested_base_sha": "5e7f130a303a4e4e0665049aa8972b436e7c1c39",
+  "tested_changes": "Exact production files and new tests staged from this base; final commit binding recorded in MR, not self-referential docs",
+  "execution": {
+    "provider": "Vercel Sandbox",
+    "session_id": "sbx_Paw6M1PGCugQ6Emft29HF86HktY2",
+    "region": "iad1",
+    "os": "Ubuntu26.04.1 Linux x86_64",
+    "node": "24.21.0",
+    "postgres": "17.11",
+    "local_hp_execution": false,
+    "plan": "hobby",
+    "paid_ai_calls": 0,
+    "managed_db_writes": 0
+  },
+  "application": {
+    "pass": 282,
+    "fail": 0,
+    "skipped": 0
+  },
+  "root_unskipped": {
+    "pass": 247,
+    "fail": 1,
+    "skipped": 0,
+    "failure": "cached input hashes, document anchors and baseline guard remain valid (pre-existing MASTER09)"
+  },
+  "validators": {
+    "pass": 11,
+    "fail": 0
+  },
+  "postgres": {
+    "fresh": "PASS",
+    "upgrade": "PASS",
+    "contracts": [
+      "rls-smoke",
+      "preview-runtime-rls",
+      "preview-document-rls",
+      "preview-reminder-contract",
+      "preview-care-contract",
+      "preview-assistant-contract",
+      "qr-consent-contract",
+      "document-server-verification-contract"
+    ],
+    "result": "PASS",
+    "synthetic_fixtures": "ROLLBACK",
+    "managed_supabase_acceptance": "NOT_VERIFIED"
+  },
+  "live_preview": {
+    "result": "NOT_VERIFIED",
+    "deployment_id": null
+  },
+  "ready_for_production": false
+}

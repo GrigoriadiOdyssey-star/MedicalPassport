@@ -33,7 +33,10 @@ export class OpenAIResponses{
     let value;try{
       const chunks=[];let size=0;for await(const chunk of response.body){size+=chunk.byteLength;if(size>131072)throw Error("response limit");chunks.push(Buffer.from(chunk));}
       value=JSON.parse(Buffer.concat(chunks).toString("utf8"));
-    }catch{throw new AssistantProviderError("AI_RESPONSE_INVALID",502);}
+    }catch(error){
+      const timeout=error?.name==="TimeoutError"||error?.name==="AbortError";
+      throw new AssistantProviderError(timeout?"AI_PROVIDER_TIMEOUT":"AI_RESPONSE_INVALID",timeout?503:502);
+    }
     if(value.status!=="completed"||!Array.isArray(value.output))throw new AssistantProviderError("AI_RESPONSE_INVALID",502);
     const text=value.output.filter(x=>x.type==="message"&&x.role==="assistant").flatMap(x=>x.content??[]).filter(x=>x.type==="output_text").map(x=>x.text).join("");
     let answer;try{answer=JSON.parse(text);}catch{throw new AssistantProviderError("AI_RESPONSE_INVALID",502);}
