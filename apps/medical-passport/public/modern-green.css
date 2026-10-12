@@ -174,3 +174,6 @@ dialog[open] { animation: edht-green-dialog 180ms ease-out; }
   .btn, .icon-btn, .nav a, .bottom-nav a, .quick-card, .document-tile, .prompts button, input, select, textarea { transition: none; }
   .main > .screen-head, .main > .welcome-card, .main > .grid, .main > .document-library, .main > .clinical-list, dialog[open] { animation: none; }
 }
+
+.tabs { background: #edf5ef; }
+.timeline-date { color: var(--edht-green-hover); }
