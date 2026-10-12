@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 33,
+  "family": "laboratory-exchange-hub",
+  "owner": "CAP-INTEROP",
+  "ids": [
+    380
+  ],
+  "decision_sha256": "1a028aed7003c7a9069e4c03c0398b4ef885a005688f5be267ade2c82ab9cce1",
+  "source_hashes": {
+    "380": "a51f71e2dc570de9f10acb098c6809dc2c14afd5786428019967ca6e09ceb3aa"
+  }
+}

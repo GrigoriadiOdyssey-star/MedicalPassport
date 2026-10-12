@@ -1,0 +1,15 @@
+{
+  "source_repository": "https://gitlab.com/OdisseyGrigoriadi/edht",
+  "source_branch": "implementation/cloud-mvp-completion",
+  "source_commit": "bb31e24076cd0bd688287dae55e9fd3178a5ccc0",
+  "source_tree": "2a510e75821958118288561fa8f8aed840479573",
+  "source_tracked_files": 1679,
+  "github_before_import": "9f9614d1739f41352367271759ae6a2ab89ce3d7",
+  "github_original_main": "e8396f1e70c9f95935b699ed6451fc9fe8f91fa1",
+  "backup_branch": "backup/main-before-gitlab-sync-2026-10-12",
+  "allowed_github_only_prefix": ".github/",
+  "imported_on": "2026-10-12",
+  "validation_status": "imported; application CI must pass before promotion",
+  "issues_modified": false,
+  "production_deployment_modified": false
+}

@@ -1,0 +1,3200 @@
+{
+  "request_path": "audit/guideline-intelligence/user-requirement.txt",
+  "request_sha256": "e75f7539484696ae01b3ce29d8539f5f75b196b73841be242064a8eb3a521728",
+  "canonical_addendum": "docs/canonical/guideline-intelligence.md",
+  "preservation": "Every nonempty request line retained exactly; this is provenance preservation, not a claim that every requirement is implemented.",
+  "lines": [
+    {
+      "source_line": 1,
+      "text": "MANDATORY CAPABILITY:",
+      "sha256": "55619fdca0dd12fd43a49924ce122e5801db819a54c5bfe3ca22dc893f399f07",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 2,
+      "text": "CROSS-JURISDICTION CLINICAL GUIDELINE INTELLIGENCE",
+      "sha256": "9778b4b7e73d60ab900b609dc21100479d8ee5c8dcf62416f06f13f4cc29ac75",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 3,
+      "text": "WITH CONTINUOUS UPDATE & VERSION CONTROL",
+      "sha256": "1658b21c7a4db3f65a0bc04828fb934c2da7948811eedbecbe4eb020fc3e4b8b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 5,
+      "text": "Добавить/усилить существующую canonical capability для международного сопоставления клинических рекомендаций с обязательной системой обновления, версионирования и отслеживания изменений.",
+      "sha256": "1374e91ceaf807014d130b0f4615dfab77f5642074e8ee1a68ab77a062776cac",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 7,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 8,
+      "text": "ЦЕЛЬ",
+      "sha256": "5e6edee208126e7b9a14beecdad547ca15f236c547784db3e052d81ee807d3ee",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 9,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 11,
+      "text": "Когда пациент обращается к врачу из другой страны, EDHT должен уметь:",
+      "sha256": "3395cc62b57a5dbdd7a203440df654672aa4a7c28efcbe1819b527ba0d7bb511",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 13,
+      "text": "1. определить страну/юрисдикцию пациента;",
+      "sha256": "95a2af22574f224ba4f2a7f8146fb4e57f8d4b30d74e13ed3b3a25b13a9e7cc6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 14,
+      "text": "2. определить выбранную страну/юрисдикцию врача;",
+      "sha256": "bd76d2b38d382475e1985f30f7a2195b187d50b69b03378b4e7441b28fbdec33",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 15,
+      "text": "3. определить специальность и клинический контекст;",
+      "sha256": "a537a985abdd738e7a9f91f335e7d6d9f65821a895a06eacafdfee23a574108c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 16,
+      "text": "4. найти официальные клинические рекомендации соответствующей страны врача;",
+      "sha256": "fd07a8fc469eee70d7be8eb545f4f1b9cfaec8514e83dde4198c34a194f6fe54",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 17,
+      "text": "5. найти рекомендации страны пациента;",
+      "sha256": "2fc46f57f9a053204c6b473b526fe547e6a1527edd603f77f29ad3925f1df4ce",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 18,
+      "text": "6. предоставить оригинальные документы;",
+      "sha256": "f76a4e82c06ffc59e26d18dd4189a2dc0d0ae6c1d6202c90c1749995eec3ce83",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 19,
+      "text": "7. перевести документы на выбранный пользователем язык;",
+      "sha256": "c3b34e68b8a8d34e5b0bb0ff7d54614c717732a84a2284c503dd2b0560e80630",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 20,
+      "text": "8. выполнить структурированное сопоставление рекомендаций;",
+      "sha256": "c336aab5146d929025627c273c4a6a3842b93d3fa056de0ec49a12232242d902",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 21,
+      "text": "9. показать врачу и пациенту различия и совпадения;",
+      "sha256": "c4ea19fc93ccc5cd3e62d7a0d0402436ae06160fa6ac9e910ec87946188f5947",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 22,
+      "text": "10. сохранить provenance, версии и даты документов;",
+      "sha256": "89b78f89f3a3d767e4938e22e23936a62e7f908c595e6e5f4750e72b2463430f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 23,
+      "text": "11. автоматически отслеживать появление новых рекомендаций;",
+      "sha256": "178192969d4d87ff0ddc358230928c66a0627ce7d41adbea8a10f5ab77a03e36",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 24,
+      "text": "12. отслеживать обновления существующих рекомендаций;",
+      "sha256": "e3b9f3ef97bdce195fdd56adc8d2024bc97dd2cacd27834f9523a10bd6a5df5a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 25,
+      "text": "13. выявлять отменённые/заменённые рекомендации;",
+      "sha256": "71fdc4dda98bcf653cf17c10725bb626a3a0a62d3d2994e287205b72fab35a19",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 26,
+      "text": "14. показывать врачу, что именно изменилось;",
+      "sha256": "1a9bfae37c9810ffc92f2ae603cb42af3e8204b87bf6dbc74dc778c7c8398cd7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 27,
+      "text": "15. не использовать устаревший документ без явного предупреждения.",
+      "sha256": "e4a1e639dc09438fbe01157b34fbfe80e7eab578db655780a0e5962ae2171d83",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 29,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 30,
+      "text": "AUTHORITATIVE SOURCES",
+      "sha256": "fc742cfe28d8380ca435e835cbdb706737aa6438ec9dc79428e31b97afcd6418",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 31,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 33,
+      "text": "Приоритет источников:",
+      "sha256": "1fcafae6cb420e91cc29a8db20138cd8dfdca0bfa73320791b68b4e91bfaa5bc",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 35,
+      "text": "national ministries of health",
+      "sha256": "f445495fe60b4d00bfcabdd4f2db0493bcfadddefd61523d04f8325b9869d3d3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 36,
+      "text": "official national guideline repositories",
+      "sha256": "61e07defd25a69474bee9f75cad5c6274ac1f9dbd5cc46771ac5a5207feb413b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 37,
+      "text": "national medical authorities",
+      "sha256": "9069743011d0b2fdefca5cc14819592f5369a9cdbed4514c213aa3001baff16c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 38,
+      "text": "recognized professional medical societies",
+      "sha256": "aaff46be2d4cb21096b177b084d26b6a11cf6fc9b2250032ebd35881743d61f8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 39,
+      "text": "official public-health institutions",
+      "sha256": "5d6c40d9d5d2ec306bb4f195224d000b16566226af73104f525de26ced5d1d36",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 40,
+      "text": "supranational authorities where applicable.",
+      "sha256": "be1dca7bd5044d3822229ffcf7f6835fcf58654af7037483ca0c6a88d0c39902",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 42,
+      "text": "AI не должен выдавать случайный интернет-текст как официальную clinical guideline.",
+      "sha256": "62aa62f03fdf51c64fb60e5acd2b07a6d843e1e5b8315b1e1197f75ce6e52a4e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 44,
+      "text": "Для каждого документа сохранять:",
+      "sha256": "dbbe93aac109e6ef614c4e8a1b7bd5dc01cf5a9bb65680f2099e272b580eb340",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 46,
+      "text": "country",
+      "sha256": "aff64e4fd520bd185cb01adab98d2d20060f621c62d5cad5204712cfa2294ef7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 47,
+      "text": "jurisdiction",
+      "sha256": "bcd3a888401fba8a4b040456cbc53acfab3c7e1de94a1a4d55ba5a8f852a4ea6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 48,
+      "text": "issuing organization",
+      "sha256": "50b5de28c2cc36c36099871f3264937dcf758fd14e4fe32e5e832fe759edee9c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 49,
+      "text": "document title",
+      "sha256": "a45016c9b89a7a97f676c830193b2d35b5ff7f11c851b9a7120664b3f287ae3f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 50,
+      "text": "specialty",
+      "sha256": "435bee0ece478688423893793c874b7c5476b816c07f7e545d2da37366bae907",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 51,
+      "text": "condition",
+      "sha256": "596d40a4ed24c02a31b19d6e633f46f64304a672b40f793d8c6deab868beb0e2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 52,
+      "text": "publication date",
+      "sha256": "be52205f062f07d10c5c3523c4d4f76e3cd7359646fb2ea64550f3496cfd5df0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 53,
+      "text": "effective date where available",
+      "sha256": "0375c0f8734706c255908101f2a660e2298ace3bdf9a77f59380731e2ba21ee7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 54,
+      "text": "version",
+      "sha256": "5ca4f3850ccc331aaf8a257d6086e526a3b42a63e18cb11d020847985b31d188",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 55,
+      "text": "revision date",
+      "sha256": "30c600e26a49cf539b8baad772300a95e75fbcf1b86c000a0fa73cabd1814beb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 56,
+      "text": "source URL/reference",
+      "sha256": "2f71d8f5a9d33d295cc0851866c37e6b2c8883e554ea65c3204e625ce7acf627",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 57,
+      "text": "retrieval date",
+      "sha256": "5240d0c13f37cf4ffd5072f4082afcc5e1f39663dab4cf7c68e4704fc0223ed4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 58,
+      "text": "language",
+      "sha256": "a4ef304ba42a200bafd78b046e0869af9183f6eee5524aead5dcb3a5ab5f8f3f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 59,
+      "text": "evidence/grading system where available",
+      "sha256": "cfe77cd63e65d8eaa146f5e2be9032bc037a7646bad5b0a09e5850645e2a4fb5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 60,
+      "text": "superseded/current status",
+      "sha256": "daa0f2facc1713b7459a9efd63b34de3d4090a64a5fb78194c03931d5f2527f6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 61,
+      "text": "document hash",
+      "sha256": "3bef22cb20b0f444140c88a7adb6412f7fb94c6028088ab3ef26d10323adf364",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 62,
+      "text": "source authority status",
+      "sha256": "9d4aac4053369617104839a6e34e02b96883a0f24b5e022a6825a093f127fc15",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 63,
+      "text": "last verified timestamp.",
+      "sha256": "a843143c96c3d5331f3180d89bca0e151a3ab82d150384bc16a340336c7e1838",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 65,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 66,
+      "text": "COUNTRY CONTEXT",
+      "sha256": "8dcb6270c41e75238c00107931ab45a884b33d379eef386c5c26c14d851cd665",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 67,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 69,
+      "text": "Разделять:",
+      "sha256": "cb98861e2c5f04aa251853185ac3d13e8afa165b9ad33088e965c5d7569b0e8a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 71,
+      "text": "PATIENT_HOME_JURISDICTION",
+      "sha256": "eeca4745935961e00c85bdf3a0acdc63ea4240501b7b27dce5a4b861f33ff1a3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 72,
+      "text": "PATIENT_CURRENT_LOCATION",
+      "sha256": "0f8f3e9ac7823febd5ffae1cb8c4b56e197ca6eace9b88a1b895dae72fee0c94",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 73,
+      "text": "TREATING_DOCTOR_JURISDICTION",
+      "sha256": "486d1f7a3a9f4fdb600ea35144eb3a0af2f734d84db3413e88199e6249ce9711",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 74,
+      "text": "CARE_DELIVERY_JURISDICTION.",
+      "sha256": "43473e973c50e0690d3cb46c14e627fdd1baaf4b5a98c1bd6b22829eeff16ce6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 76,
+      "text": "Не считать эти значения автоматически одинаковыми.",
+      "sha256": "32d294a4d789834af2af6551dd212a9c0493d3b0f03a4ab0c00b6a25e1a4a54b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 78,
+      "text": "Врач должен иметь возможность выбрать применимую юрисдикцию вручную.",
+      "sha256": "5e187ba85335bb78b1d92657d828e382a39c8647e687699e6616d61ce148607f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 80,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 81,
+      "text": "GUIDELINE MATCHING",
+      "sha256": "1c1d93d42bab5f7d35cc9d6d88e5fec4810bbd82bb3d96a2827a3edd11dad4e8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 82,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 84,
+      "text": "AI должен сопоставлять документы не только по названию.",
+      "sha256": "478588a270810618b00b34279fd6702da44b7ea2e4cda8fa5187371df68a7fa0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 86,
+      "text": "Использовать:",
+      "sha256": "b6a1998428b57334140d1febf291bee5e462cf2b3a4feb62004c45cec592a4a8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 88,
+      "text": "diagnosis / condition",
+      "sha256": "b6fcc0c7c79c9994134f68beed1b63a76ca917b02a82653b923eae6e49033b48",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 89,
+      "text": "patient age",
+      "sha256": "deecdd091355bb673a05c78f749696ce2a549cc82efd0fc6258af18cd630df1b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 90,
+      "text": "sex",
+      "sha256": "98d44e13f455d916674d38424d39e1cb01b2a9132aacbb7b97a6f8bb7feb2544",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 91,
+      "text": "pregnancy",
+      "sha256": "f1d6a553546aa7a9682463059f40e5a2a737b53719f0301b93ddaae3fb8efaf6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 92,
+      "text": "pediatric/adult context",
+      "sha256": "eb1e4ff5a86ff6c84f0db2adad30065fa1ef12edf879f001d8da53805f31c3a0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 93,
+      "text": "disease severity",
+      "sha256": "f0a8745467cf183ec0f5bebf0a199c2d067069812b21260e819524b54c718e60",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 94,
+      "text": "comorbidities",
+      "sha256": "225111da137d4fc94d5823cc3449ab8926765fb4812e6af8dff58b8505ed268a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 95,
+      "text": "treatment stage",
+      "sha256": "3f5d826e84c0ba257fcf113d6184ea775ec14caa0a155f26f17e5b1442b85356",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 96,
+      "text": "medication context",
+      "sha256": "62b8c5b238875870857fa87598c66ae08ebd6f048cb1f1ae9a9f602100aa7806",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 97,
+      "text": "procedure context",
+      "sha256": "874ea719be05607837461906acfd1ce5f9c9a689c1e08bf000501841ac4da539",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 98,
+      "text": "specialty.",
+      "sha256": "f97395c8b3392b8df28dd7d37432330fcddb480edcbd6af694f840a619aeadb2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 100,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 101,
+      "text": "COMPARISON ENGINE",
+      "sha256": "921160dd2a7e7fb92fbe05c8a445c1b09bd1753e9265592f1334788cf3c4bc96",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 102,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 104,
+      "text": "Показывать:",
+      "sha256": "0cacd0630cc923825c9a10ee9a088800376354b8a91fa6053a5c3100a312e51c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 106,
+      "text": "AGREEMENT",
+      "sha256": "03c89c21a05030ba4a5e4835731d3cfffa869a709b6583769e9a8bb826c7d245",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 107,
+      "text": "DIFFERENCE",
+      "sha256": "e6e6116709d80667c7c59f06aa83b2ade3f5de66f8a3d153ebaf2e637e02d0cf",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 108,
+      "text": "ADDITIONAL_REQUIREMENT",
+      "sha256": "cc856dff4a5d55a2e800a403c284c5ab8bd53652166b4fb426e1281b43634dd3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 109,
+      "text": "CONTRAINDICATION_DIFFERENCE",
+      "sha256": "dcb864bea19b0539be677c88017e4b51f958909844505ae611ece4b42155750a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 110,
+      "text": "DIAGNOSTIC_DIFFERENCE",
+      "sha256": "0acefd5cc935e1b70da05cc69c2af115d1298ada7e595c34ffbdeb0ed5750fe9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 111,
+      "text": "TREATMENT_DIFFERENCE",
+      "sha256": "d499bdb30405b93a05d26edb6ce3ff3e6da4a209b33566f90c355cc6e5e1ccb7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 112,
+      "text": "DOSING_DIFFERENCE",
+      "sha256": "b570497de9ad21c0c48f65106cb7663ff2937ba88f001349e8f0cb0a4b0e861d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 113,
+      "text": "MONITORING_DIFFERENCE",
+      "sha256": "87dbb0b66da006c57242f2930cd79e3baed840711aa945691552606da10485b2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 114,
+      "text": "SCREENING_DIFFERENCE",
+      "sha256": "ac60015338d0d983128ef2141767928b51939ff5ad3942d0944cd8fb34c5926e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 115,
+      "text": "FOLLOW_UP_DIFFERENCE",
+      "sha256": "1fdb8643ef76ee7e5b6a23c5586097ad80cadfcb8d60d3d7bfc6868995d3467e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 116,
+      "text": "REFERRAL_DIFFERENCE",
+      "sha256": "86319c61b76d72c8022abe84101acd22c6f84ec7aee92a78801b227df11fafdf",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 117,
+      "text": "EVIDENCE_GRADE_DIFFERENCE.",
+      "sha256": "f1a2bcbfd1c8cfae6a0402e82f4dc67f681b685d99b286f9123981c1820e5fc5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 119,
+      "text": "Для каждого различия показать:",
+      "sha256": "b8bb029db0d5a6990227fa4d7dc06677cfcaa0ab01e04ceeb7038aa48486b9f7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 121,
+      "text": "Country A recommendation",
+      "sha256": "cc5d544ac74c74b9858ddbfdbd9ded0445a6d87fc96a790aea6746df40f39de4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 122,
+      "text": "Country B recommendation",
+      "sha256": "2e6529c5f40dfa1a86077c490151a3bbfd3cf8127973a226c1dba27a9c42bafd",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 123,
+      "text": "source",
+      "sha256": "41cf6794ba4200b839c53531555f0f3998df4cbb01a4d5cb0b94e3ca5e23947d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 124,
+      "text": "section/page/paragraph where available",
+      "sha256": "65c8748e0a75b78754b50ac48d61377037a8021a617cfa4a7dd2f214dbeb71f6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 125,
+      "text": "publication/version date",
+      "sha256": "55a49f2c10e4293608b2cfeefe0e80f488b6201961c15356a4ab5fcec83d14bc",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 126,
+      "text": "evidence level where available.",
+      "sha256": "09aaac41f74cf6f1afd2c994962e26298e1ffa379c77a0f6606e0fc2ee03a9a1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 128,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 129,
+      "text": "TRANSLATION",
+      "sha256": "0a74a1a4d667229b7841426b8ef950f8a0f6cc06a194a4ebee435dc7cc1db03f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 130,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 132,
+      "text": "Поддержать перевод клинических рекомендаций на любой поддерживаемый язык EDHT.",
+      "sha256": "6f9faaa52814f015a2515406b9a7bf6b83df909fb665c16fe956ffe893fa76d9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 134,
+      "text": "Хранить отдельно:",
+      "sha256": "b0bf2457a77d40625e05f3cc8efb30242fade689cd79ce3cb7f3e99c75e5a89d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 136,
+      "text": "ORIGINAL TEXT",
+      "sha256": "0496b409fef66d3efc2f621a31babc6a71a8e8fe03bda4654ced43ac4f748c7d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 137,
+      "text": "MACHINE TRANSLATION",
+      "sha256": "89dff92de045cf13e22a5453a18a36c43a8a124d96a0a7f0714d5c7965ed9271",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 138,
+      "text": "HUMAN-VERIFIED TRANSLATION where available.",
+      "sha256": "3032947cb198eb56beef3987176a84abc2a234b99f08a030090dc2952f641cf6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 140,
+      "text": "Перевод не должен изменять:",
+      "sha256": "46ba71f1f9c52d9bd9d13478d728893d14d7f46daa32df810dd2ea11bc293147",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 142,
+      "text": "drug names",
+      "sha256": "4e4ca9754bec60c74614a5dd74891360bae4bab6eb6379751ff814c9d6ca0781",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 143,
+      "text": "dose units",
+      "sha256": "51b0e6347589369e89a4a9a83c4fee2cdabb4704e67193d2584ffa7e92ea39d2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 144,
+      "text": "laboratory units",
+      "sha256": "5dd370694b65e1078fc8d81f606ea05d24dc49eece90ba324311c448cf28dc2b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 145,
+      "text": "medical terminology",
+      "sha256": "8d6735a4bbc5df6d656dfb28381ae9661e0e6947f91748b3ed37fcce76bbe7f7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 146,
+      "text": "evidence grades",
+      "sha256": "dbb2478c6b93934dca45f2a635b279efc11a4ba4c09cd7eb44b51fa1e545f7a2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 147,
+      "text": "contraindications",
+      "sha256": "ce05a57cd41ae7f37002430dd63f06e788169243b9a99f90408d04425c9bc7fa",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 148,
+      "text": "legal warnings.",
+      "sha256": "b92cad33c8fba74440489637208e417dce290b0df3dfeabefe85c4f24a435edc",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 150,
+      "text": "Пользователь всегда должен иметь возможность открыть оригинальный текст.",
+      "sha256": "febbf91c32b21451bd2406c44fcb04a64f9c02d97fe3f97cb86b37b111b7723b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 152,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 153,
+      "text": "SIDE-BY-SIDE MODE",
+      "sha256": "6c89dd041d40a05383b7f540d5ba105746d9699454d830d3fbf0fb0068d53789",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 154,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 156,
+      "text": "Добавить режим:",
+      "sha256": "a3f585761e5f550d858ef47f675fefe92103e002fb1a9f75466ebb9fffafb97f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 158,
+      "text": "Country A guideline",
+      "sha256": "36b3b5c626dcbe161a86f9f8dec7235ea8afedc68f38c634be71aa94fd133b4e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 159,
+      "text": "↔",
+      "sha256": "5daa46f80c857cf61c7ff5f1b5180fb4bf587abfa86c29b03b1b8e6ae6ba04ac",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 160,
+      "text": "Country B guideline",
+      "sha256": "07084e17ead1bc9e7d062a490f20228ded9d040f19c2d4c544be7b6e627e2d47",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 162,
+      "text": "с синхронизированными разделами.",
+      "sha256": "4aef370d60fa36ef7b6db25be88697c6b6768df921598b13c32a2127b2338ac8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 164,
+      "text": "Например:",
+      "sha256": "4dba2918244e048b4acd418b3db02c82e802722fb4600ad86fca488d244c3660",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 166,
+      "text": "Diagnosis",
+      "sha256": "2e3074a1b8413c5c234081213cc0c61ae1e0e927e88888652e20e105da9fa066",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 167,
+      "text": "Investigations",
+      "sha256": "21476f00fdcfab750c7eb576a422847c41dd165af30b053cc98d61d16148a607",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 168,
+      "text": "First-line therapy",
+      "sha256": "1186a9bb01b1047b3e71409db96b11eaa47f6e27eda08d1499d8120c352f8d4d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 169,
+      "text": "Second-line therapy",
+      "sha256": "1b07b2ad89c2ddd4084ebb601c67362056111f5044ac9ce61dc038262a30f0e0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 170,
+      "text": "Medication",
+      "sha256": "00c96546afa2324ddd3ca5bb265b5e74b966f6f7e6f24af7350809b84f121ca3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 171,
+      "text": "Dose",
+      "sha256": "6b942766c4e443fa0de85800f1d7310c1d485f6ce3f4e2ee405cb4f61270ddb0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 172,
+      "text": "Contraindications",
+      "sha256": "05c1d22a4667c80dd61112cdd1a6934a0ea909df62066e461d740a331a36a39c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 173,
+      "text": "Monitoring",
+      "sha256": "1dc83f605edf0ae29b9e25c0b6b233972528a78394d5f362b8cbdead1ff75eca",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 174,
+      "text": "Follow-up",
+      "sha256": "09b2d9cd1123792aad06158c9acb18ce855b7011b78f3923c91804b3ef6bf176",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 175,
+      "text": "Referral",
+      "sha256": "aeb7b00433003f75c286e214eccd11a1e4ba6fbd0d0413cb35864749821cc8e0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 176,
+      "text": "Emergency criteria.",
+      "sha256": "df70449507ebf73cfe03c78ffa660ec5e09538b2f2576426607530992f9b1768",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 178,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 179,
+      "text": "PATIENT-SPECIFIC CONTEXT",
+      "sha256": "7eb97754acada5ed0c91a1bccbe0e6fbe4ee71b3bda38663d31f881b82e8c57e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 180,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 182,
+      "text": "После согласия и разрешения врача AI может выделять части рекомендаций,",
+      "sha256": "83f52600a2f3c2635c265bfc2b306b3ce36f7dd04b766f3e15c05dfeb5b803f8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 183,
+      "text": "релевантные конкретному пациенту.",
+      "sha256": "3a37169908fc118646f20e03671ea4a48c2e8dbd14dc4ecca1fc34db28ea1bb0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 185,
+      "text": "Но:",
+      "sha256": "01e5b3a83c49773797cc6b212a7e63eb2c5ce093b9fe0846994ba132d3a5316c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 187,
+      "text": "patient-specific relevance ≠ medical prescription.",
+      "sha256": "f38914d7ec983d905a67f2df289a4215b31423f5eabd14807a4349c720f1f62f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 189,
+      "text": "AI должен формулировать:",
+      "sha256": "f0a5ff698a6c6274500b35b5fdf9754a7754a2f37fc2d487b85cfb76394a21c7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 191,
+      "text": "\"Applicable guideline section\"",
+      "sha256": "bcdddc896d9486ffb03067d6d222132af979f0ff641ae8e227ae6043c91ee29c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 192,
+      "text": "\"Potentially relevant difference\"",
+      "sha256": "5cd1ace59de68b2ca42f4a78847fd06a8cd7ba493ca711eac395992fa32ff913",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 193,
+      "text": "\"Requires clinician review\"",
+      "sha256": "97219c6bb143f2b57fa40ef13227737b8aca03243bfcbb7f9bcff55b939ca5f7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 195,
+      "text": "а не автоматически менять лечение.",
+      "sha256": "502e70e0fb7a14ec0867ef3597eeb4b288c514728e1245ffbafa30ccd7fb4db0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 197,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 198,
+      "text": "CLINICAL SAFETY",
+      "sha256": "fa7dba81a3963d3f8a28e4322bacb8e074c0d152859272107bf6ce6327da2c33",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 199,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 201,
+      "text": "AI НЕ должен:",
+      "sha256": "c9f8fb4a0b39250d7a6d1e853ab2d5e4b653202dd3ff8374a1e19bbd7ce91b36",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 203,
+      "text": "выбирать \"лучшую страну\";",
+      "sha256": "9cbe298a29bdc501abc542213323f5f51b2f2aae75b12eed5e9de3fd2bf4cbed",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 204,
+      "text": "автоматически объявлять одну guideline правильнее другой;",
+      "sha256": "e09ce6466efea71c8399bb8a5d8a91e7a6160daf9b1a38218db4eb31e215d2a7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 205,
+      "text": "самостоятельно менять терапию;",
+      "sha256": "7b9409a51d29d1780127e6d6e0f61f5c2050cf8f7cd6a020a7fa69519bb02436",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 206,
+      "text": "автоматически назначать/отменять лекарство;",
+      "sha256": "9a5c8f16dbeb7c404ada1023d28eb1da67d8a31f11f4c0f43ea051757ccf9ffe",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 207,
+      "text": "подменять решение врача.",
+      "sha256": "1f843cf74622030d5cf33335a130128140714248d478801e9a934b1b7027e52f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 209,
+      "text": "Если рекомендации конфликтуют:",
+      "sha256": "5efabb2b07c14356b17c3f36feefcc66ce3debcc197b9a836d6213936df7c18e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 211,
+      "text": "показать конфликт,",
+      "sha256": "469efa2436ad763321e952378f10a6172e9e4ac312595f7cdcfc50bd463b9664",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 212,
+      "text": "источники,",
+      "sha256": "58c4ab1ddecd255adbef86368c6f42b3e89dc7c44f305bfcb1c2cce2c8c9e143",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 213,
+      "text": "даты,",
+      "sha256": "64f00c412b51b7839f6fb4a9640e398d401aefbb78aa6a4f87b3b59afe02bf4d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 214,
+      "text": "уровень доказательности,",
+      "sha256": "d872eee28a14fef0be38c12c8a63cfc0aebf6737632deba0f22163c16dbca8f5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 215,
+      "text": "и передать решение врачу.",
+      "sha256": "fa5a537a83e511a881f882bf3737de52e0f1533c105e92f2311c7456b16e7aa5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 217,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 218,
+      "text": "CONTINUOUS GUIDELINE UPDATE SYSTEM",
+      "sha256": "48be7b37d1ff03957c051db67a15de5e480f6304fdd7364b5ebec77b8246d80d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 219,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 221,
+      "text": "Добавить отдельную capability:",
+      "sha256": "d4c1b76969b31b1ed553e58442b479e8b64c0e6d1e0d76e2f31d746ce8632aef",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 223,
+      "text": "CLINICAL GUIDELINE UPDATE & SURVEILLANCE ENGINE.",
+      "sha256": "7f74a4069437965080259b8f0676d452423fcb18e787094a1e176237156a49e4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 225,
+      "text": "Система должна регулярно проверять официальные источники на:",
+      "sha256": "d68db54002b3cd65f899e2a903e617eea3e4e487fade35e5dd3c5b7dcaa1cbf3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 227,
+      "text": "new guideline",
+      "sha256": "15561368810e50d69578639267ccd83f2c4d8b03e6c13638ae9bc1c15826e197",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 228,
+      "text": "new version",
+      "sha256": "30e4af48343ed4e5b11ac1d072de79d7b02107894975ceda841cce472a63ab33",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 229,
+      "text": "revision",
+      "sha256": "2b214ddf3326016519afcb268f63623b80b91a65265277668e4d020d87dd9078",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 230,
+      "text": "amendment",
+      "sha256": "8c0b602c4a07c24a872aba4e8a49a8fbd64bd6902ceb72f43606d50a3fd3ec7f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 231,
+      "text": "corrigendum",
+      "sha256": "25edca658ca614e52ad4043a25ceebd2c2431cdcd2e242d29352f77e8ca06187",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 232,
+      "text": "withdrawal",
+      "sha256": "b79e8c5b67bcad216587877d0fb5a69384a7ad582cfff769572b6eccc51a4ec6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 233,
+      "text": "superseded guideline",
+      "sha256": "2781d633759fe8d5f6fb78d1dcf67d71f6dbc5457c783cfa2e92ff52ac16a644",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 234,
+      "text": "changed evidence grade",
+      "sha256": "c49a780b1260ba7e21f5306abe7d75df1c49b857ae885e41ba3228b1a728438b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 235,
+      "text": "changed treatment recommendation",
+      "sha256": "928ae19070e2a9cdb7c637aa76173c4ef5ce827a87d3c516ac81a48e26291f07",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 236,
+      "text": "changed dose recommendation",
+      "sha256": "527df9193a265b857888ba2377ec9dc2d99190a78a3471e4fca41c303daa4f9b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 237,
+      "text": "changed contraindication",
+      "sha256": "7f2a7795c26417764790e8d08cdc84315b78ac62f0e11fef05af8806ccdb73d3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 238,
+      "text": "changed screening recommendation",
+      "sha256": "52968736972cf97ea7143fafa8e39b5c7c2074a1adc07fc607f246564c73163d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 239,
+      "text": "changed monitoring requirement",
+      "sha256": "2232f7a6deec96412f8b8f5cbbd4b42d7658f84ee5ef22a4f438b3f03c93c617",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 240,
+      "text": "changed emergency criteria.",
+      "sha256": "a1bb576afc60fb6f436c1d7606d04e0a675e7cf101f39eb47e1f622f38a20278",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 242,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 243,
+      "text": "UPDATE SOURCES",
+      "sha256": "43491ec979f99a90187a2c1537664b77acc1161f249f7b8de6cec94449334ea0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 244,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 246,
+      "text": "Для каждого authoritative source поддерживать:",
+      "sha256": "058cb30b72f789be18d976ca3c018cfe6acbe1f5f5ec5413a487dc36bf8e8077",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 248,
+      "text": "source connector",
+      "sha256": "b86baa77342ed90a109221a77ef0585968c1f60db83315cb22f22b8a8954157a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 249,
+      "text": "source type",
+      "sha256": "62ac625f40ea1a8fbbb1c42debfa4885c46de11394e697041dbbc07dc314e95a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 250,
+      "text": "jurisdiction",
+      "sha256": "bcd3a888401fba8a4b040456cbc53acfab3c7e1de94a1a4d55ba5a8f852a4ea6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 251,
+      "text": "specialty coverage",
+      "sha256": "f40cceb5043d2d000af86102dc17f9086f2e46120e06b60f7b074c2a804537b0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 252,
+      "text": "polling schedule",
+      "sha256": "ad5b72a07a86cba0034a46c99b281f2d9d4ea7e2e945698934fb5b6adbf405ed",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 253,
+      "text": "API/RSS/feed availability",
+      "sha256": "1f14f1173f2ddffa50860c51b689ca9cf53f6b1a3a9fc5693cedc84082aa3bfa",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 254,
+      "text": "document page monitoring where legally/technically allowed",
+      "sha256": "5a6962cf386cdef2ba143d916ed1a5157df0073e32c31026eeb579e89773fb5c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 255,
+      "text": "last successful check",
+      "sha256": "0194d6ffa15b29760d2eac14585844e5c8a1a10dc71f27b4926fb3db66b38d76",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 256,
+      "text": "last changed timestamp",
+      "sha256": "43c49da99315eb808437f85a7aec5ca9e66dd342b2172fa00e8a620ee94ae768",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 257,
+      "text": "failure state.",
+      "sha256": "9c3dd6010e466cd5e2e3421b16869d4a96d2b87e032497cdd6e0203e447f2683",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 259,
+      "text": "При наличии API/RSS/feed использовать их как предпочтительный способ обновления.",
+      "sha256": "627ac14b5a826a08f75479fe45d44ea70f84481d21cfe272a34ec55e26f4e39b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 261,
+      "text": "Если доступен только web/document repository:",
+      "sha256": "7b79c1e5a8d19a6dc6384f0fca86d386f9c49b779a6e0a37d53ff6da81bbec0d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 263,
+      "text": "использовать controlled document discovery / metadata comparison.",
+      "sha256": "d643764b8745fe2f7cb39b9e89388e8c2ce7881612ee9053b09a09818a7f8ef2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 265,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 266,
+      "text": "UPDATE FREQUENCY",
+      "sha256": "d7838da979df4ea6d4affb62293569c7ec5684040cb4bc4dabddc5bbf46470b5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 267,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 269,
+      "text": "Не использовать одну частоту для всех источников.",
+      "sha256": "bf54dcba4c49c58ff34d81602a003a62ca0a64ac6ac5590e9e62824ad8810e26",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 271,
+      "text": "Поддержать configurable monitoring frequency:",
+      "sha256": "7873d84cfbc87bd8bb5bd7093c8907887dbe0683fbf55e2285c82e120c65bf3f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 273,
+      "text": "DAILY",
+      "sha256": "915f3942e1bbdb301830ed1faef13addefdced371a3944bb037339ee02e3ba7a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 274,
+      "text": "WEEKLY",
+      "sha256": "beb6bef23bf2d59958ab0448bc0bc6e1f96b8d56d06488c8e321151ac7727a19",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 275,
+      "text": "MONTHLY",
+      "sha256": "92702f1bd0be3b73df0c8789ba09f205d256b88b364eb079e1f0c0d18dbcb332",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 276,
+      "text": "MANUAL",
+      "sha256": "7c8107bd5c185722e9bd48bc83c92683214422556edb9604fa01c3d52f54564c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 277,
+      "text": "EVENT_DRIVEN where supported.",
+      "sha256": "f0ca3b95e9fb2a5dcc597d87befca833d24763cc04f142dcc68cde54375ff0ad",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 279,
+      "text": "Высокоприоритетные emergency / medication / infectious disease recommendations",
+      "sha256": "c2ea9bf61e5e2c0c155f41a373a59e1a9cf387b252c9a9cb3024324d95a14a0f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 280,
+      "text": "могут проверяться чаще.",
+      "sha256": "fc1a00ba5089d22bb55107a6d2487ff77955d07b7e2d7bfb7f5f975f1f647484",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 282,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 283,
+      "text": "VERSION CONTROL",
+      "sha256": "56e8f6f54877d1bfa09810d1e10cccbebcee7aa77c624a6d10207969e4ae61f8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 284,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 286,
+      "text": "Каждая guideline должна иметь immutable version history.",
+      "sha256": "420e73d77a110ef2544ae674a742d024f6b5716536dfd02af424e35cde8f6333",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 288,
+      "text": "Хранить:",
+      "sha256": "9a868c8e1fc6f72667a6843740bfc2b5b7e58f734d7ce1daccfd4a9b1bd643bb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 290,
+      "text": "guideline_id",
+      "sha256": "0627672b7a553a6889709a83e1580ba61a8a5ad91bac3690a909d5e25853e64d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 291,
+      "text": "version_id",
+      "sha256": "efb500ac8426a814307b6e1c671e48f7582ac433b1b355a5793841bef1befb40",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 292,
+      "text": "source_version",
+      "sha256": "599263c5e9f17d1eea0af133d920d645ff4d3d3fdde52723cb49222884c65856",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 293,
+      "text": "effective_date",
+      "sha256": "b767be19ba1e06fb93a6a88f1ad2702b38332a79519d618adab4b54ae1d98844",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 294,
+      "text": "publication_date",
+      "sha256": "f5d929b0c1f14d0f5eca98a13d9de008de27ae60c464b39cd509851a59de011c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 295,
+      "text": "retrieved_at",
+      "sha256": "45364d7449912ef79f6a93f44a5761adb6bdf26f43ed6cd125e2a6773a8c58ab",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 296,
+      "text": "document_hash",
+      "sha256": "327a96032ec1315dbc85c0b6b24f5dc9fdf72a50ebe0933da5a50d9d59a4ad12",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 297,
+      "text": "supersedes_version_id",
+      "sha256": "0c85ec941cfe11d1adfcddeb16c54a76e83d45fc800f6c53b93a683945aded5b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 298,
+      "text": "superseded_by_version_id",
+      "sha256": "a6b414e2ed15cd0da1e18266d914dbbddfe633bc7203f05f5767c24c0683638a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 299,
+      "text": "change_type",
+      "sha256": "716c0494c0afca63ad24b5b81dc1d14754edd6d784edf8b95d4e6584c17da422",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 300,
+      "text": "change_summary",
+      "sha256": "eae43e4793acf3edfeb874a6c5fcb364f8a372266130c7a1091bcd0173c32d94",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 301,
+      "text": "status.",
+      "sha256": "c085fc3becf460a54b3655ca58fb70e4d851a324c2b91d5fa6fcfe890d0fa358",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 303,
+      "text": "Старые версии НЕ удалять.",
+      "sha256": "ad7c4b30b0caec7ec0d0819a37c0aa6f49e6018cc22bd6a258d919264c550418",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 305,
+      "text": "Статусы:",
+      "sha256": "fec5cfca4c3110f22d1e320aeadcb16574c4706319e45c41d2175a35e4d2e1a1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 307,
+      "text": "CURRENT",
+      "sha256": "e3cc57e193d6512e6debf0e925febe757e87e85d66150a2f212aa8641940b027",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 308,
+      "text": "SUPERSEDED",
+      "sha256": "91589d25f19f316077280f4366bce2413fff245cc68dedabaaae81b22562b634",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 309,
+      "text": "WITHDRAWN",
+      "sha256": "130c31a7c228fe13661d83ba0ee0f784df19419780e4f4e587e76b8106ae8cc9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 310,
+      "text": "ARCHIVED",
+      "sha256": "24e1323307842b00f0dccd78e2620179d3957f0446fc99143ccc173ea3254082",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 311,
+      "text": "PENDING_VERIFICATION",
+      "sha256": "1bb95ce86d9f5f2593d6f39d299a63e7dac48a20f667bf8932d3e9ea9090baf8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 312,
+      "text": "SOURCE_UNAVAILABLE.",
+      "sha256": "43dc0850c92f6498980efb3819c29bf793f843b297549b7971e494909e486e57",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 314,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 315,
+      "text": "CHANGE DETECTION",
+      "sha256": "2351b80f992ac921dd55ab8ea823dae99534ca88f17a77af738c174f6243e23e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 316,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 318,
+      "text": "При обнаружении новой версии:",
+      "sha256": "2181a09b67806d7e009cf7738c37d4fd5bce5f4ae97b34b365398eedd9aa49fc",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 320,
+      "text": "1. загрузить/получить новый документ;",
+      "sha256": "14971904dc457f693826550e08a8aecab1ab0f2f239da87b03c5f5c66344ff53",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 321,
+      "text": "2. проверить источник;",
+      "sha256": "405d15a2dd76247231cb65422d9074bd574a731b4190b54da603a1e62f839bde",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 322,
+      "text": "3. вычислить document hash;",
+      "sha256": "ec0c94033e1a6084f8e1f26608a862a564584cf7d939616806d83b9d81256e56",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 323,
+      "text": "4. определить, действительно ли это новая версия;",
+      "sha256": "e8970bcf30340149aa8dea8063853b6e04f55ba170701b5329932ce5e243c70c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 324,
+      "text": "5. выполнить structural diff;",
+      "sha256": "37b8fa2dae9fcca2b20b1b26477f58c5010bc256d1c1b5e8114417626837c989",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 325,
+      "text": "6. выполнить semantic diff;",
+      "sha256": "79200b076fce7ae5f4fc1f3f70536a8c06c9343c69b1dc75783d068bea0e2404",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 326,
+      "text": "7. определить изменившиеся клинические рекомендации;",
+      "sha256": "57651facf9b5125690e48f471a0cd425a107c470a3a2c41d705761ea68b45e7a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 327,
+      "text": "8. определить affected specialties/conditions;",
+      "sha256": "058d083bd1a84eac07bad6c56b2ca20a5b5b8855259636b07608cd27603591f1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 328,
+      "text": "9. определить affected medications/workflows;",
+      "sha256": "cb1b22a60218518d9972aa4d72f92711ad2e26341c3e58e068a10fe35e73a335",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 329,
+      "text": "10. создать change record.",
+      "sha256": "dfab32e8b96ad4aa0d8bc174bc29e6de80b2472f1ad930ac2c8729f9f400b620",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 331,
+      "text": "Не считать изменение дизайна PDF клиническим изменением.",
+      "sha256": "9d656e6df9a26cd32a825f6b857f809d8aa0a1cd98d20a74eae63329dc3639ef",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 333,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 334,
+      "text": "CLINICAL CHANGE CLASSIFICATION",
+      "sha256": "911a80dfd394bab5a816bc1087782c653818c1f3d8860e89943de331b55fbd66",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 335,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 337,
+      "text": "Классифицировать изменения:",
+      "sha256": "243482b11abdda548363f433b2b6c264e10f785e9b4772ad6eb03e9260f3bebe",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 339,
+      "text": "EDITORIAL_ONLY",
+      "sha256": "de00c5c125564a8feda9c6860d343d7bbbc9e0cabaec368d4a4d162e5fd0217c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 340,
+      "text": "EVIDENCE_UPDATE",
+      "sha256": "4c0e58e101bd5c13c3019486f072da42185a1b091b30eae8cfa2ab2263fa784f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 341,
+      "text": "DIAGNOSTIC_CHANGE",
+      "sha256": "a8d5e7872298c9d5668ce669d9e4792935113c9748b027b7bf0dd9e94477c26f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 342,
+      "text": "TREATMENT_CHANGE",
+      "sha256": "735a9fe1cbd8eae9353b499616b18ade392d1bffc639373e37247c456f29e864",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 343,
+      "text": "MEDICATION_CHANGE",
+      "sha256": "bf1b29ee31ef5a86504d5901b824744004f065054f5174fc1af5bb7a19c181b6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 344,
+      "text": "DOSE_CHANGE",
+      "sha256": "2ceacda194e253116ef54def0640212e89b8f6ec89fde276196ff164e49bb14b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 345,
+      "text": "CONTRAINDICATION_CHANGE",
+      "sha256": "c75d9d4a17d765e9b2abe91ad110b1b828bed10d18d8af8ccd1534c1a40bfbc5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 346,
+      "text": "MONITORING_CHANGE",
+      "sha256": "b69e2a002b21c5e20ce24fdc9abfd5232eb94575cbed6287c5ccdc9506d28857",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 347,
+      "text": "SCREENING_CHANGE",
+      "sha256": "44f0fe5b6931dc72351dbcabeec2034b8ad61f1841d7d5e8c2ac06b6e5ab0e75",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 348,
+      "text": "FOLLOW_UP_CHANGE",
+      "sha256": "4f54301ca0da4bb4b26edab2b23c4673b8bd1b85cea9c7429fad2c686cbcbacd",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 349,
+      "text": "REFERRAL_CHANGE",
+      "sha256": "97e4aa331874519aca04a0e3e393fed3e57d22a1546b04ef5f858f2d8bfa1ad1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 350,
+      "text": "EMERGENCY_CHANGE",
+      "sha256": "348c5766f91be85ebc93f33c2ccfc6a113a3a59ff0058cd24502aeaddfd79559",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 351,
+      "text": "LEGAL_OR_POLICY_CHANGE.",
+      "sha256": "2cb297db44bcef6215624924cdeb184b293c9cb690b000002a390645738b15de",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 353,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 354,
+      "text": "GUIDELINE UPDATE IMPACT ENGINE",
+      "sha256": "6750992d2f6a51177e024e2db3c8801376c80208ac0931145098c86abb50f5e1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 355,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 357,
+      "text": "При значимом изменении определить:",
+      "sha256": "bc6251ea6305a73869650e19ab2b83bb75ef47ff63ab464a91f08cb87f795a2f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 359,
+      "text": "affected canonical knowledge",
+      "sha256": "f05303f73612ec08ec76758875b6647f239574ec1ab7595c8576c3306b8b4439",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 360,
+      "text": "affected Clinical AI rules",
+      "sha256": "ef7f6bdc3c3b905db0e78873a6ed1d5da46b06b8b1851e5b23c89ebb78ba9fd9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 361,
+      "text": "affected CDS logic",
+      "sha256": "8c834942fe275b463c95fb6e3ce84f5cb4e19ea65ae2c36276c16712ead3a56c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 362,
+      "text": "affected Precision Pharmacology rules",
+      "sha256": "94547415a410dea76b7bd16d7bcdc04122fb83d059989cd66ac8f2af53bb4e3d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 363,
+      "text": "affected Digital Twin assumptions",
+      "sha256": "8c963a383f9d23cb14c4b95045bb90e43510f27bb937d0b647628ee8e5bfda62",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 364,
+      "text": "affected patient-specific comparisons",
+      "sha256": "1a914bc8cf95e0de64312660d3907bf12a00b21c4a9562e09552d71fef9def4e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 365,
+      "text": "affected saved physician workflows.",
+      "sha256": "0798830cfab40abd02164883e54fe9312926ac7f52449511afa92e89b0f03f97",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 367,
+      "text": "Не обновлять clinical behavior автоматически без validation.",
+      "sha256": "1c581972922403fc7c967f719d2c0467f0a6858197bb971f803f4f521a5b17f0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 369,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 370,
+      "text": "UPDATE VALIDATION WORKFLOW",
+      "sha256": "d000412d9c3ae1388399a6aff80d7c3c8afc7142b2f7e0772292bdbaa477ad69",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 371,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 373,
+      "text": "Новая версия должна пройти:",
+      "sha256": "d6f0551ddce1ca63c7076a7d09e69b99b74c5b8877a679469d43a3c7f29dc61d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 375,
+      "text": "SOURCE_VALIDATION",
+      "sha256": "f696b1cbdee2500bc7e609681b42f121fdad7370ed0b8ebb5be0c809de16cab1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 376,
+      "text": "DOCUMENT_VALIDATION",
+      "sha256": "21e627b5e0003214e6cb7ba2f8e1e22f9af26bf3de231f253181dc71ef54be0c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 377,
+      "text": "STRUCTURE_VALIDATION",
+      "sha256": "401d8f4291a257132df81d3c5c6d076bd50f390dd7094a3749ad88c0b4dc6ae4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 378,
+      "text": "SEMANTIC_DIFF",
+      "sha256": "3136e5c2b3f5a9376cb449e937fe928151652a149c78d22af1b02a4b94ef22cc",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 379,
+      "text": "CLINICAL_CHANGE_CLASSIFICATION",
+      "sha256": "621713077574bf0aa03aca39ed0a7b056aebb2a54efa27cceb6a66d5c39e697b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 380,
+      "text": "SAFETY_REVIEW where applicable.",
+      "sha256": "ef431baa6b41100d53a1e4312cbb481e60cff7d48b7229f69f100bc32b4e9bc4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 382,
+      "text": "После этого:",
+      "sha256": "ba73766b5edc09df78c6fc757aaa325376e7b7e6507a128a7d3f2457676bf31c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 384,
+      "text": "PENDING_CLINICAL_REVIEW",
+      "sha256": "ef203b0b6871f972e4bb8f8b7a4f26429625c6092c21364eb13ae5d6d78a4cb4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 385,
+      "text": "или",
+      "sha256": "bcacbff7a563801652328c178fcb73deb0c6fbe73ce0fbbb958bff0cafe7844e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 386,
+      "text": "APPROVED_FOR_KNOWLEDGE_LAYER.",
+      "sha256": "a826b845962dcf1e18f96b26eb55d284e24b7c01f5c88c16fabf3c49846221b7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 388,
+      "text": "Высокорисковые изменения:",
+      "sha256": "9421a6f1fe7966e4abd99985e4ec95ac67b3e25b027ea339c622ef5acd08e6c4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 390,
+      "text": "dose",
+      "sha256": "daf81fe9648c6ae09439b52d850b3ad158d88a82709d8873e27d0ebf55ed08a1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 391,
+      "text": "contraindication",
+      "sha256": "48ec657a893d58d5f76cdb628889a5e12e204ffcb86156054e0ad1393f602d31",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 392,
+      "text": "emergency",
+      "sha256": "b955e6cd0808744cf5cba260906e156ab4c43076b4c933dea0a1df1baae2a4bb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 393,
+      "text": "pregnancy",
+      "sha256": "f1d6a553546aa7a9682463059f40e5a2a737b53719f0301b93ddaae3fb8efaf6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 394,
+      "text": "pediatrics",
+      "sha256": "ca25a37ef4cffb536a332a437e5cda039ace45067ef96067b8456e8b4646ded8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 395,
+      "text": "oncology",
+      "sha256": "a5ec2abe485f271a3e3d48a03f15fc40d30fed1ac5321bd24e1722d4d90fe9e5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 396,
+      "text": "critical care",
+      "sha256": "c72bcc59869444a84f980ec941969e989719ae97605d6c10520ae7a93f9f5b4d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 398,
+      "text": "не должны автоматически попадать в активный Clinical AI без review.",
+      "sha256": "38f8df646a038e8db3158ce2f05779200f07c20371465b82acb48fe94820dbcd",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 400,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 401,
+      "text": "UPDATE NOTIFICATIONS",
+      "sha256": "433bf8c772f64883becb78190928db4ec03ff18ec72625a1ef03a9a877488024",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 402,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 404,
+      "text": "Врач должен получать уведомление:",
+      "sha256": "126e5d3e702c016757005738ae82042a2732263da3e5cbb46bde627c27f8d702",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 406,
+      "text": "\"Clinical guideline updated\"",
+      "sha256": "220da2204ad60891462c0a9a5deb7dab8d3e23133ef1c50bf7c9c28ee98c6a70",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 408,
+      "text": "с указанием:",
+      "sha256": "c24e42a3572ab1a8763001db661f94aa99102a989559d9bc4c20dc06ec9e103d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 410,
+      "text": "country",
+      "sha256": "aff64e4fd520bd185cb01adab98d2d20060f621c62d5cad5204712cfa2294ef7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 411,
+      "text": "issuing organization",
+      "sha256": "50b5de28c2cc36c36099871f3264937dcf758fd14e4fe32e5e832fe759edee9c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 412,
+      "text": "condition",
+      "sha256": "596d40a4ed24c02a31b19d6e633f46f64304a672b40f793d8c6deab868beb0e2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 413,
+      "text": "old version",
+      "sha256": "810e0a408c7146f0af24c1a05aa7fc9a34bb16fcda2b0566ff2bba739f28e58e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 414,
+      "text": "new version",
+      "sha256": "30e4af48343ed4e5b11ac1d072de79d7b02107894975ceda841cce472a63ab33",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 415,
+      "text": "effective date",
+      "sha256": "9c12937c06bfb84fa69f82f3f4c5aaeaad4eefe3d1c5ee24ab2f881b18c9221e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 416,
+      "text": "what changed",
+      "sha256": "f4d5184a59a53684f8825e6fa913c5c5de5e21d6a335696018d6e0930174d1be",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 417,
+      "text": "clinical importance",
+      "sha256": "b50cb15beeb9431ed0646660db4f2fe772ba1c9089286e536f8f755f3c0a9e9b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 418,
+      "text": "affected saved patients/workflows if applicable.",
+      "sha256": "328db2f667ca9a7bcb36c2c9003e1b06f3dca4aa882fedc2ace2244a64c0c9cf",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 420,
+      "text": "Не показывать alarm fatigue для editorial-only updates.",
+      "sha256": "c2b1ae6ddb8505915951c95dcb8797e91dfb7b162e3c855b8345ad752aa0e441",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 422,
+      "text": "Поддержать уровни:",
+      "sha256": "fea9b414d51b8074faf61508f29da337ae374eb030e731237f868b2196a2c38b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 424,
+      "text": "INFO",
+      "sha256": "cda14d0b2d954643c80cf0a1ee7ea1896bbe27cffc52c0c554eadc5432984d8b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 425,
+      "text": "IMPORTANT",
+      "sha256": "ed99f4e13c587b921351dd673949818dbd0d1be31e6a70dbcdabff05c42cb470",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 426,
+      "text": "HIGH_CLINICAL_IMPACT",
+      "sha256": "83be3cddbb8686f8e3df5b6d212d282a27eb7e9b0bf09ec966b2c8bf1b43fd79",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 427,
+      "text": "URGENT_SAFETY_CHANGE.",
+      "sha256": "978c3d12753ab1d35cd7b871c9969b2d7bfc2c474d385d125335bbc9debbc45b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 429,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 430,
+      "text": "PATIENT IMPACT RECHECK",
+      "sha256": "a76599ef06e2a0156f499566c7f997eaef24ee76de610870f68693473ffd6e98",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 431,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 433,
+      "text": "Если новая рекомендация потенциально влияет на пациента:",
+      "sha256": "83750d4ad6b44f6a092044f48fde7b812c41e6c4cca48ed3c814bf2fdf1e5bdf",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 435,
+      "text": "система может создать:",
+      "sha256": "e70649e72900be2893d7b4d9ddcca4893928a6aa39b4461cb26a7242b701bb95",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 437,
+      "text": "GUIDELINE_REVIEW_REQUIRED",
+      "sha256": "ba511ae152a3ff129e8408f2430f0e73628557e22f82393e6e609991c0c270f8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 439,
+      "text": "для врача.",
+      "sha256": "7d15c8f3c6358f06be925024dae690023e748ed1e6d2c9620193037c516a1fb1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 441,
+      "text": "Но не должна автоматически менять:",
+      "sha256": "f3f2aadac9b7fd3c1b59fec6cb6812639c8431ee6043c157ed5ea6760fb60711",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 443,
+      "text": "diagnosis",
+      "sha256": "b54e2b152c2135f45dfca42c67ec11c8a8d6076f1796f3deaa64a752c1d4efa8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 444,
+      "text": "medication",
+      "sha256": "876636910b597ab4f30f72770544d3d02bc2f416f24f9eb19a8d920a01f844ef",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 445,
+      "text": "dose",
+      "sha256": "daf81fe9648c6ae09439b52d850b3ad158d88a82709d8873e27d0ebf55ed08a1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 446,
+      "text": "care plan.",
+      "sha256": "e62fec1f37a3c56cf1547e4491373a5ef9bf97210d4c0ce5c7b22bddf40db9c9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 448,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 449,
+      "text": "CROSS-COUNTRY UPDATE RE-COMPARISON",
+      "sha256": "203c56640e638ec1e717d1613867d0007291cdd379dff34d3da777586e2fdd71",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 450,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 452,
+      "text": "Если обновилась guideline одной из стран:",
+      "sha256": "c1e7f5f9ad75e8cdd4c6f6e45c2b40bd1b133f70c7a158763ec794f39dbd0334",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 454,
+      "text": "автоматически пометить ранее сохранённые comparisons как:",
+      "sha256": "3293f64c0b4c24e472beeaafa88a7fa84eb788f0512e1e46bad06eaa7f6e6326",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 456,
+      "text": "OUTDATED_COMPARISON",
+      "sha256": "aff658d659a81d9e624409d0b5861f2096ca6728d990a6ba346620d323fae350",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 458,
+      "text": "и предложить:",
+      "sha256": "ae24c0e3872b0afd4b2475ea3dfd9619aa74bdce4f9c357451063349d20ab5f8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 460,
+      "text": "RE-COMPARE WITH CURRENT GUIDELINES.",
+      "sha256": "7efc303d4256a7990bd95a8b97d6bf880b5d35817729febfe5a90ef1fab27f13",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 462,
+      "text": "Старое сравнение сохранять в audit history.",
+      "sha256": "5320026b419371772b4f490ffe57ec5763fb247cb0e67053290736e1367a53fb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 464,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 465,
+      "text": "TRANSLATION UPDATE VERSIONING",
+      "sha256": "c9e9dd16fa0f34de92098da8ef3f3686b64ab03b5b3555afec77bbf41778e886",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 466,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 468,
+      "text": "Переводы также должны иметь versioning.",
+      "sha256": "f238e4321a0968452770aa4cf29d03bdecece5e6b1f5e88011c08c928dac816a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 470,
+      "text": "Если исходный guideline обновлён:",
+      "sha256": "ce4869d4bc060d4beeb5afb361148ee21554375a11fbdba237d418a34163a1ed",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 472,
+      "text": "старый перевод пометить:",
+      "sha256": "e4a82f5d0d81574b3dbe3f795851877fdf7eff3b61321d1aff04c1be60eebfa3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 474,
+      "text": "SOURCE_SUPERSEDED.",
+      "sha256": "39da8aab87c82692523e5ab0227df521a9e02395f3439f6c4f0281f508fe0ce6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 476,
+      "text": "Создать новый translation job.",
+      "sha256": "3a70ba7d03dcfec5f70f068a3ff88a1e62a6fecb108a5f38ef7c8bf61bcf9192",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 478,
+      "text": "Не использовать старый перевод как перевод новой версии.",
+      "sha256": "3b923178fbf8630bdef969406f94673720c6bc0b4d1928067b8775fe12f1dd87",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 480,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 481,
+      "text": "GUIDELINE REGISTRY",
+      "sha256": "aa0f5ea189897412620aae284c1c27b8ff67186d9412011b3e4d88fc27b02656",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 482,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 484,
+      "text": "Создать/усилить:",
+      "sha256": "b7c0f94f9d128ea363e29d1ff947beeb5de6a3c62a1dfac979577be2a628e5f9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 486,
+      "text": "Guideline Registry.",
+      "sha256": "9683ba9ef4bc98ffa7f967a5dcc5121c2105a8a1037ace225138b02f18a93754",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 488,
+      "text": "Для каждого guideline хранить:",
+      "sha256": "acbf7172c8ab9b02ca2d10792e6a4ca87d5d0714aee2eb4a6b0fa7c573de9c3e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 490,
+      "text": "guideline_id",
+      "sha256": "0627672b7a553a6889709a83e1580ba61a8a5ad91bac3690a909d5e25853e64d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 491,
+      "text": "country",
+      "sha256": "aff64e4fd520bd185cb01adab98d2d20060f621c62d5cad5204712cfa2294ef7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 492,
+      "text": "jurisdiction",
+      "sha256": "bcd3a888401fba8a4b040456cbc53acfab3c7e1de94a1a4d55ba5a8f852a4ea6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 493,
+      "text": "authority",
+      "sha256": "8f76fd501bb68ef71f4e276bc28f29bce1003b0c2c9d9478de81b5bfc0cde1e9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 494,
+      "text": "specialty",
+      "sha256": "435bee0ece478688423893793c874b7c5476b816c07f7e545d2da37366bae907",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 495,
+      "text": "condition",
+      "sha256": "596d40a4ed24c02a31b19d6e633f46f64304a672b40f793d8c6deab868beb0e2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 496,
+      "text": "language",
+      "sha256": "a4ef304ba42a200bafd78b046e0869af9183f6eee5524aead5dcb3a5ab5f8f3f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 497,
+      "text": "current_version",
+      "sha256": "81268bf70a874c7fafa16bfa496b0f8c7c4876de1b17fd8833f3a23c4d8a2df9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 498,
+      "text": "all_versions",
+      "sha256": "9d3280a8b10a00a3aba64c9ad0b00918b3461be948e1ef8dba42a1f4281a38b7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 499,
+      "text": "source",
+      "sha256": "41cf6794ba4200b839c53531555f0f3998df4cbb01a4d5cb0b94e3ca5e23947d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 500,
+      "text": "status",
+      "sha256": "073c1634c496cdb649d1afe0a312bbb4b7e1741b271542e4a436c3b8824b1761",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 501,
+      "text": "last_checked",
+      "sha256": "e053cee114f934ca6f3acabe13d537dbbf34618609855e9f8e27b6a1c34f91d4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 502,
+      "text": "next_check",
+      "sha256": "a5b04ef658e972dd67f52b310f13020234a8dc2b1125b174a0295ccda20baa1b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 503,
+      "text": "translation_status",
+      "sha256": "f97384b9147d8d81a58736761c0ac7a4bf0137535c21972db440ad17eb6f6f7b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 504,
+      "text": "comparison_status",
+      "sha256": "9283ce1b894a7b2895d6bc089ccd1765b2b05337b218a10c2f66bc5a6b961bbd",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 505,
+      "text": "clinical_validation_status.",
+      "sha256": "383a6cee664ca486ee981256b7253c6f7768e24b65b6780df95e3d9bfc6834d8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 507,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 508,
+      "text": "SOURCE HEALTH MONITORING",
+      "sha256": "1d9f3eca6be2ce628a788ae85c8352a866b3e88916b6cf469387fdbf1e406998",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 509,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 511,
+      "text": "Если официальный источник перестал отвечать:",
+      "sha256": "543158f2b25ca7f2a5dfee19c9cf41608f764c381088924cddb799f8580fba9d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 513,
+      "text": "не удалять guideline.",
+      "sha256": "616923671ae3ed4d62cfaadbf75d26c11a8932d5b5f32809eadbf258afc67c54",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 515,
+      "text": "Пометить:",
+      "sha256": "455586ce74181cd4413707bb2a6cb7f7d213e6f9d0aee815c4ce25183406c46d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 517,
+      "text": "SOURCE_TEMPORARILY_UNAVAILABLE",
+      "sha256": "32ab6b2c7012052bb4fc99ff618ef5172f4c30d28c6a052b68f5643f1d9da653",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 519,
+      "text": "и сохранить последнюю verified version.",
+      "sha256": "e2284b7ec8737c85d15300bd764302c193845d85f85657843ef799434121f3c7",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 521,
+      "text": "Указать:",
+      "sha256": "1072d732cf8e73f3a75ce3562be24b9766a9295dc59050f462af0da69d16419a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 523,
+      "text": "last_verified_at.",
+      "sha256": "e411659c7d741a6f088566b43b2955fb4ecd473b614224950c7694fd66a20061",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 525,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 526,
+      "text": "UPDATE FAILOVER",
+      "sha256": "f1a57b0f18cd536480ed07c6e1549c577fa2e5ba1f5afc6a32e1641d153b605c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 527,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 529,
+      "text": "Если основной источник недоступен:",
+      "sha256": "b0478a8f6ec444ea5a9fda95c1a206862d2d2cda528f1d766d8bbeef29b6e467",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 531,
+      "text": "разрешить использование secondary authoritative source",
+      "sha256": "2a4cf9e03e9a0aad7d2bbed277a01463dfdceb653e5e855b5cc4929f6270318f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 532,
+      "text": "только если источник явно идентифицирован.",
+      "sha256": "31722703947d2c7fea0ba8662303aa51c1f8391ff68f6ebf129e83988cddd223",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 534,
+      "text": "Не использовать неофициальный mirror как authoritative без маркировки.",
+      "sha256": "e95b08d3f7786be3e268a1799b3b5bb7f36ce9d518c70f4ed6b308fb25695eb0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 536,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 537,
+      "text": "WHY DO GUIDELINES DIFFER",
+      "sha256": "88a2e271216b0cbed4eab57a773cb27079da1acdb9fc901509f3a90661b5bbd3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 538,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 540,
+      "text": "Добавить функцию:",
+      "sha256": "d68c1a08fe37d4b17c233b3e1a22d8d6ee1d2196adc9c9ff925d5fc5cabdbba6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 542,
+      "text": "\"Why do these guidelines differ?\"",
+      "sha256": "ca8afb558be7dc3a4d067bfee76b734211022f92360d6343160296f6b3ce1b1b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 544,
+      "text": "AI может объяснять различия только когда причина подтверждается источниками.",
+      "sha256": "1ca47b547ac1ba86f02b4517771a5f8072d4cf04e9ef93a4cb9d7b6cbb18866e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 546,
+      "text": "Возможные подтверждённые причины:",
+      "sha256": "38c9680a856177d5d8953970724d4e3e10b4835254a1afd1cb00c3a0e897c526",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 548,
+      "text": "different publication date",
+      "sha256": "f5a5426f2bb02a78cf5f517b745cf5c4acf3beb41cc2134e7765998b349f8c4c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 549,
+      "text": "different evidence base",
+      "sha256": "171e6f54be19f3e9fedd6e243e471450a1d06337e3a5d3446168a28347e18f6a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 550,
+      "text": "different evidence grading system",
+      "sha256": "22b022a0fb3e2f536fb48563423eecdb23b6e9a789b7b481755569c28dfc6046",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 551,
+      "text": "drug availability",
+      "sha256": "0d350c943eedb03500aaeb2c877069fd42517efd7f903a3611a4bfc66ffb870c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 552,
+      "text": "national formulary",
+      "sha256": "1c93fcb0d276810a89b86a4f1e3e1d7a25927777f1a45e5506623a2cd134bdc2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 553,
+      "text": "population-specific considerations",
+      "sha256": "df3b9eeb44e267351ce7f0789791ae7178f52692403b29951ae4e6b004b21cad",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 554,
+      "text": "local healthcare organization",
+      "sha256": "38b687ddfa2a312d02f331b6990b06eec89ede1fb7fdc538b4655be756de6859",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 555,
+      "text": "screening policy",
+      "sha256": "02a6d10a7f5155d76c83661386fb90ccdd86476c508fe6751f5d678eea43adfb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 556,
+      "text": "resource availability.",
+      "sha256": "abeb291e318b2762c314ed19e5a1e974ab70f9171f0e7fdac876609d5863aa63",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 558,
+      "text": "Если причина не подтверждена:",
+      "sha256": "f9a1f3bb04354ec3e7cdf5a87bb1e50dba6b7db01196930039f872f625a76498",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 560,
+      "text": "показать:",
+      "sha256": "a23a09a9cc4dae415dd97b7e4ae98dd93b7d20b8ee450fcc6a4a3bdc978cf973",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 562,
+      "text": "\"Reason not established from available authoritative sources.\"",
+      "sha256": "d1890aac8800c724f84591da6f5ebdff0ba7025fa889e4b224c0a969cbc474ca",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 564,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 565,
+      "text": "KNOWLEDGE AI INTEGRATION",
+      "sha256": "829b86bc0797d407830d19f05a59e2616b402544b3ad8d5f627847ca0187ae90",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 566,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 568,
+      "text": "Связать capability с:",
+      "sha256": "0ea3f3a3104bd1a976b1cdf8b207dc752efd0a03043c3594bfd2914b98b716b2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 570,
+      "text": "Knowledge AI",
+      "sha256": "5fa7f1d6bfd8a9107c711f86715c34c5a6257d5d101ac16ab201a8ed377060f1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 571,
+      "text": "Clinical AI/CDS",
+      "sha256": "0990c50d82e1a5d8272816a3c9f30f7de9ed05fc80176ee709a369273799e236",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 572,
+      "text": "Medical Passport",
+      "sha256": "48a5f1e39f2982d354f0cec76f19fdb9f35df398355255285586209aba9015ca",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 573,
+      "text": "Telemedicine",
+      "sha256": "b0dbcc94aeadd68b374a0219cc875e74370d5eda21bee95152c2ff35969ed370",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 574,
+      "text": "Precision Pharmacology",
+      "sha256": "7efe2e4b9fc3720c6ea626457fa1c7589da28174380a61c4b8202055488ef8bd",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 575,
+      "text": "Digital Twin",
+      "sha256": "472e0a91cc92fbcc8789c14168bc61a5f1aef76465caa2853be7f54d44071d1e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 576,
+      "text": "Research AI.",
+      "sha256": "04675dd6777b80c6cf1078b4a16a6636a0c39d12f169cd17e671263c91645335",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 578,
+      "text": "Clinical AI должен ссылаться на конкретную recommendation/version/source,",
+      "sha256": "b972e0ea8cd1c5f1726b5b87e643d513097c80857532c9dbc728d23a1b5cd764",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 579,
+      "text": "а не просто писать \"по рекомендациям\".",
+      "sha256": "e132171796c81dd73da5bf91d699235be8f27fb04b51b79725de6cf2d6d06f6f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 581,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 582,
+      "text": "DOCUMENT WORKFLOW",
+      "sha256": "d87a4d57c0fe975b4b283f3117f5a7d2853165d8a66d11af63459265995a9d9c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 583,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 585,
+      "text": "В интерфейсе врача:",
+      "sha256": "3e080921d449419c08e7d836628704e0d96051fec021d6519c0f110d72dc6ede",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 587,
+      "text": "Clinical Guidelines",
+      "sha256": "df755eec7a9cd10148418cc1e546f45f42a257c1e6a7ffae1262dc62c15f728f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 588,
+      "text": "→ Patient Country",
+      "sha256": "f4a9f07d74beccc092b04c3fb811899c4c282194dcb292813251fe4e1879e9cb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 589,
+      "text": "→ Doctor Country",
+      "sha256": "703a9f2dd1dc71d9a18da198033bee9d2c119fa77851019a3d65160b7dafb312",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 590,
+      "text": "→ Condition / Specialty",
+      "sha256": "b10c4381c77aca69a4ffbfcfcf24f43b50670d48bd540fbb54eb0b5630c9a40c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 591,
+      "text": "→ Compare Guidelines",
+      "sha256": "799bf16beeee63c54990130f7c3696271142063534000da52b3c97d6b2e9dae8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 592,
+      "text": "→ Translate",
+      "sha256": "07713ad04b976741f23699e1078f0da15d1babf7789c60e024048aef706e1995",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 593,
+      "text": "→ View Original",
+      "sha256": "511caf2d0262d067628c3981ea04e75864569eadfbbc31d152ad5bed61dcad74",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 594,
+      "text": "→ View Differences",
+      "sha256": "c0c9c62c5b6a9f640f65342009eb0ca5ea98d673f62953411ff52f262d90de81",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 595,
+      "text": "→ View Update History",
+      "sha256": "bc4866f428929018fbc2a2bcab554c36bf6dd86655748b815c15538451a16da2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 596,
+      "text": "→ View What Changed",
+      "sha256": "26c3c7acec78704f49012ed8c79c4bfae9a3937dacc721bb35afd0c3d067613f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 597,
+      "text": "→ Save to Encounter / Medical Passport.",
+      "sha256": "5b9b997c6a1f47a2b8bc9eb9a23c416c79e9956645c94f8ac13397f1004043df",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 599,
+      "text": "Врач может сохранить:",
+      "sha256": "c969101ee50f4a4b6ae407409315559edc80489be033e4a5340972b3c168e3c9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 601,
+      "text": "document reference",
+      "sha256": "5b4748af126f8e536a0676c3dd5d85718ea335c62e0852b9cca81b760530c3d4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 602,
+      "text": "comparison result",
+      "sha256": "9414c3167108ab85208d7e1f7c55fa1fe060ef778c7c70a8587693aada9b6a37",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 603,
+      "text": "selected guideline version",
+      "sha256": "e38ffab44bdd5bd7b28af43b212412bd4c39a2e61605d0c7e5392ce778a625ce",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 604,
+      "text": "clinical note explaining chosen approach.",
+      "sha256": "33464b03e012b4e36456d629c2ce461c910795b8bacca72643f67a3b755febe4",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 606,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 607,
+      "text": "AUDIT / PROVENANCE",
+      "sha256": "646c5ba6fc6500ae04940ef53f40f7a8e613a2f516e1efb9b27c63db6475de06",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 608,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 610,
+      "text": "Записывать:",
+      "sha256": "7243f25ba93991ebe4ca38b9f4ef163502505b66b6449bb4275d1c953a07f1ce",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 612,
+      "text": "who requested comparison",
+      "sha256": "aedf7e4ebebe146dd8940d9f92f5b6726e368a3b0ec38d3f9d848104c5a987cb",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 613,
+      "text": "countries selected",
+      "sha256": "888d53955227704cae536b8f4400b4acadedfa5a0bdddcfe4ac8267e526d3d8a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 614,
+      "text": "guideline versions",
+      "sha256": "3d94f1bee05f87407690682e90378783a5d254582e427490bb14c63fbc340144",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 615,
+      "text": "translation version",
+      "sha256": "32a34f881f3593474d36d5e46e584d8908749f16d4a051cf9439467087ca9faa",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 616,
+      "text": "AI/model version",
+      "sha256": "970120ee35431fd4523e48345cda5787310b16b760456dd25263ca03bfcfb9f1",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 617,
+      "text": "retrieval timestamp",
+      "sha256": "ca00e1684b48d62986aeba0e049573820dcc332f8a7dd69e76eae1d2815b0d67",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 618,
+      "text": "comparison timestamp",
+      "sha256": "96923f2dd561a1a497f847a51522372724e67d65004b0b4ba26adce30858c49a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 619,
+      "text": "update detection timestamp",
+      "sha256": "0b763dafe0411df3fbeffbbdd34fe907dafdddf625d26a190936c38c27dc2e93",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 620,
+      "text": "change classification",
+      "sha256": "dff0a3ca2a901cce0a5ae108ff0ccfb25cbd5b66336b399a205cf6f2abd490bc",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 621,
+      "text": "validation state",
+      "sha256": "ff6cb35d7b5f147b9fe935b3c666095af88af9d9e670a3c722de1aa173765135",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 622,
+      "text": "clinician decision where recorded.",
+      "sha256": "65ccf5b01d499de8482ab5feac56229fc38959ce356a5ac1ad39800f2883eccf",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 624,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 625,
+      "text": "OFFLINE / DOCUMENT IMPORT",
+      "sha256": "5b792ca8c1cc9ca3457422af78e8d530fe8b4dcb6375302fdfb5eefa59536602",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 626,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 628,
+      "text": "Если guideline отсутствует в автоматическом registry,",
+      "sha256": "097501595bf4337a0d989a0a7fb5fe108539b54b4a7ed4ee9266a51c46246eaa",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 629,
+      "text": "разрешить загрузить официальный PDF/document.",
+      "sha256": "9183936de96d36022c0373d7e653be73f0ce4dbd43069041edcba1ed3b50dd6f",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 631,
+      "text": "AI:",
+      "sha256": "b15279149eff90015140b145d3f07e33ab4783eb38ec7e5cece551212c64c33c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 633,
+      "text": "extract",
+      "sha256": "f1cf2fd5c86895128d559088259a132d4d4689a4d6ae4e0339100393438ec986",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 634,
+      "text": "identify issuing authority",
+      "sha256": "bc94b08b709e070d700fc2f5af983ee96d6fcff19bc0f4296f709147dbf4d02d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 635,
+      "text": "identify jurisdiction",
+      "sha256": "b6272024f306c05b24f19d69d695034b38d9cbf047ec1e145e1fdc3fbfacbab2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 636,
+      "text": "identify version",
+      "sha256": "937d44191be6057ab777a48812fcade69d45b9b0a6b7b5861bad507c8bd37cc0",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 637,
+      "text": "translate",
+      "sha256": "7fd690e20d081646429b8b6a37835c428a6406013aa2499209837334ae3f1456",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 638,
+      "text": "structure",
+      "sha256": "520cdb563bf80b193aab6aad62781a9647c75dbf76748117299c7dac0ae63a87",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 639,
+      "text": "compare",
+      "sha256": "1241626eb8ca542931d74f9ac0f6b294e791ff041ab106789b514331e74c9830",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 641,
+      "text": "но документ должен быть помечен как:",
+      "sha256": "56772f9a297b4efb8f663bc2c1bfaefffcb71c6c83dfd8a8c10c0fdd99e9b392",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 643,
+      "text": "USER_SUPPLIED_SOURCE",
+      "sha256": "11bc456fc0e1e6241101bb45f8056a855360bb48aa389134b8f7547d9f565660",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 645,
+      "text": "пока источник не подтверждён.",
+      "sha256": "a27067d3f7e8cf500826d09f2d2d9bd43d86936faab34e2bd9458c3991801268",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 647,
+      "text": "После подтверждения можно связать документ с official registry entry.",
+      "sha256": "fd3fb7004c00f938ea2f5b2f31cb962be82d6503c7d4223b9317d6ccafa91e70",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 649,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 650,
+      "text": "IMPLEMENTATION COMPONENTS",
+      "sha256": "b802ab6f84a6b92c373d301ec2f7fbe90d80a025d77cb8d698b3ebd1f2d3aa38",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 651,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 653,
+      "text": "Добавить/усилить:",
+      "sha256": "dce6df96205ce3d7737b917234af8cc8edb275ff67e7a61ae150912944438caf",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 655,
+      "text": "Guideline Registry",
+      "sha256": "da5480ea7f89cd766b1f0ec0bbb9e13ff13e08642c93a296c77079ed324b5028",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 656,
+      "text": "Guideline Source Connector Layer",
+      "sha256": "cd9bcb0e01d2e5ed07158e71564fe3390ba45f157d8723a260dacb2a62a94dc3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 657,
+      "text": "Guideline Retrieval",
+      "sha256": "69896df1009422e4af350e39e8f35c76da104e179e5738be1c2224bcc8bb0e8d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 658,
+      "text": "Guideline Versioning",
+      "sha256": "8547d947833d33528915a62fea2cf57718e0037334b6dc13bd42e76ab38bac40",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 659,
+      "text": "Guideline Update Surveillance",
+      "sha256": "852e74a17f992ed07da0f927ae2cf69fd949cdbd9ef4b131d30ad7b1f3e07b80",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 660,
+      "text": "Guideline Change Detection",
+      "sha256": "84fab7af409ee365a176d4ae32c7d0ff118d0a05ad54b8edf9d97de1bb205307",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 661,
+      "text": "Guideline Semantic Diff",
+      "sha256": "0c4c854ebee82cc92682456078aa2dbc6d756447f4f7de74e4217da3c5ce5e8a",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 662,
+      "text": "Guideline Clinical Impact Engine",
+      "sha256": "96ec760b39158a379b566d58a2dffab8bc0dbca0a3140c8a78e4918f59beac31",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 663,
+      "text": "Guideline Translation",
+      "sha256": "8ad245d7c6b072d2e03cee072083e79cc7c5b9f7cd48aa994662991aefca3205",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 664,
+      "text": "Guideline Translation Versioning",
+      "sha256": "5954673f2883eba304c099ca99155219fe42683a2954fa7c36471699705c2fc3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 665,
+      "text": "Guideline Semantic Alignment",
+      "sha256": "0759d14cf592255dbf40ee177ab64bba0c9a7f3d3ae4ab6a92eabcec16628306",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 666,
+      "text": "Cross-Jurisdiction Comparison Engine",
+      "sha256": "e0ef88c21646fdbe8408d886e82d6f7f4c1a96113e7290d75ad6b31dfe748f68",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 667,
+      "text": "Guideline Re-comparison Engine",
+      "sha256": "cd185f20b68e29556d1c560a3f1ffa265c9699fb2a9701dfcda16bb24286d794",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 668,
+      "text": "Guideline Notification Service",
+      "sha256": "f416c97faeec981e421a50af97d7845eef91640c41d5ec6be3f3a0edfd7c9685",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 669,
+      "text": "Evidence/Provenance Layer",
+      "sha256": "fb99da81eb179e4e9ee494afb666ad81b5dda70f3cb6e7ae2f550724fbf20ff5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 670,
+      "text": "Clinical Safety Guardrails",
+      "sha256": "ea385651c2663d9924a58152d7da977550a9f233872763ceb4b67e4f9efffe5d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 671,
+      "text": "Doctor Review Workflow",
+      "sha256": "d2e333e04c9cdca09c903d753d13c8906159a07c3c37f5de51ec5779298421e2",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 672,
+      "text": "Update Audit Trail.",
+      "sha256": "20c8ea6e173b5aef1aa5d10da4e5b132141b4a7d1247d8413b26e234926fe7b5",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 674,
+      "text": "Не создавать параллельные AI engines,",
+      "sha256": "50e0d32c93b2b35bcb713d24bb6b7fa8bb034ab4bbdcaa4fac0e706dd321834d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 675,
+      "text": "если capability может быть реализована через существующие Knowledge AI / Clinical AI canonical owners.",
+      "sha256": "71d914dd77fbfd2dcedc3b8417810dd3c076e596dc7c8c04ac88e77a360365a6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 677,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 678,
+      "text": "ARCHITECTURAL RULE",
+      "sha256": "99f0586cbe55d817fa74d0508e5f21a0cac8233f8c1b98b6a29d37d2e052d604",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 679,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 681,
+      "text": "Guideline Engine должен быть shared platform capability.",
+      "sha256": "2a9a8783840759ff98d020fdf37b43c197f50e6e5543e16e42e6efa96b591c07",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 683,
+      "text": "Specialty modules не должны хранить отдельные независимые копии guideline documents.",
+      "sha256": "0bbf652333d99d1af55b69433cf71bf7172259a572ba570d7ce6c2c20348e58c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 685,
+      "text": "Использовать:",
+      "sha256": "b6a1998428b57334140d1febf291bee5e462cf2b3a4feb62004c45cec592a4a8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 687,
+      "text": "one canonical Guideline Registry",
+      "sha256": "8a4598d76353aa997ccfa2638aa87828f9d763e8093d8952f9caf4b2ba1b2580",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 688,
+      "text": "+",
+      "sha256": "a318c24216defe206feeb73ef5be00033fa9c4a74d0b967f6532a26ca5906d3b",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 689,
+      "text": "specialty projections/profiles.",
+      "sha256": "d0c135362f2f578f80f1fb39700e330996ce292b18100664912cc745f49c1409",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 691,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 692,
+      "text": "FINAL ACCEPTANCE CRITERIA",
+      "sha256": "3a57fd55e2b68954abaa340b86ad209bccf50e54d41ce99ba66330f7d902feb3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 693,
+      "text": "==================================================",
+      "sha256": "3f371d52d6e85154a1ba5eb7d7aa2c0b3e12dd707362a1844acfb8d19a237fb9",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 695,
+      "text": "Capability считается архитектурно готовой только если система умеет:",
+      "sha256": "02c55e5c6b1f221f64d845ea991f1b548d784399b7825bd165d8f823987afe7c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 697,
+      "text": "1. находить официальные рекомендации двух юрисдикций;",
+      "sha256": "da657c3945524215513333a8e948191031df3e0c8978686b79bb359b9bf8fbd8",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 698,
+      "text": "2. хранить текущую и исторические версии;",
+      "sha256": "4c4fce69841d28fc8ad4b88d1dc98636bdd793943966b3bf14b13f7aca1b6fea",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 699,
+      "text": "3. переводить;",
+      "sha256": "083ce8ba08a839b3cecb3201d842661e56f76b78589bcab9364cff1a1105b45c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 700,
+      "text": "4. сопоставлять;",
+      "sha256": "90a2fa6baf0a3d1db84c6fba219f0e216a385a48c026af605a9e3caf7a3e1266",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 701,
+      "text": "5. показывать источник и версию;",
+      "sha256": "87fb4a794e679c654fe40fab4708cd7f4d2fe39ba919bdc7a7bdc6f199d2e37e",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 702,
+      "text": "6. выявлять новую версию;",
+      "sha256": "7d24c3dd2daf66ed9117a22276b3ae8f9dda27996767b19c507e7abcb0bc079c",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 703,
+      "text": "7. определять значимые изменения;",
+      "sha256": "f0f8d52bc07e743613bb46563c50c7ee12b7195b5da50be1b8c5572d49f0be88",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 704,
+      "text": "8. сохранять старые версии;",
+      "sha256": "fae465a8b95a2ffc551eec6ec3c6e95d6308a76cd1cc034ab5730f1042b96dba",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 705,
+      "text": "9. уведомлять врача;",
+      "sha256": "555310a8d4c807b8adc07f600891f23f6b12a47c3893afc773c39da7f7eb4845",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 706,
+      "text": "10. помечать устаревшие comparisons;",
+      "sha256": "5b551c875539b03b5f5b64d5e57b6262b0dcc5de7e306b21d50e01390e723aa3",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 707,
+      "text": "11. повторно сравнивать после обновления;",
+      "sha256": "6487b3e72096a828f6c990b522b7be1bcab2629b86631e4afb3f2c8237f2481d",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 708,
+      "text": "12. не применять high-risk changes без validation;",
+      "sha256": "e84fd67107ac55d8fe0d71da4bdfbae8f88cce4b622374a2bd313db5d3b5cb77",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 709,
+      "text": "13. сохранять audit/provenance;",
+      "sha256": "570839ddf45569b7002f29701743a93b900f0d772508ce14329d6810f63ae300",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    },
+    {
+      "source_line": 710,
+      "text": "14. не подменять решение врача.",
+      "sha256": "1b0e66a3dd8826b130b597bd3e1817bc0c589745c3715d6313b8d228f4c6abb6",
+      "target_document": "docs/canonical/guideline-intelligence.md"
+    }
+  ]
+}

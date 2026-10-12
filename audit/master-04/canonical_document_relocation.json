@@ -1,0 +1,141 @@
+{
+  "schema_version": 5,
+  "pass": "MASTER-04",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "04b8e805e857746f311710577d58f2c60b8eabc3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "relocations": [
+    {
+      "historical_id": "CAN-CARD-ECHO",
+      "historical_document": "docs/canonical/CAN-CARD-ECHO.md",
+      "historical_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e",
+      "target": "docs/canonical/master04/CAP-IMAGING.md",
+      "profile_id": "CAN-CARD-ECHO",
+      "source_ids": [
+        846,
+        3064,
+        3664,
+        4064
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-CARD-IMAGING",
+      "historical_document": "docs/canonical/CAN-CARD-IMAGING.md",
+      "historical_sha256": "b3c3b6e64107375a9a692dff823973856ef01f0f6c5fee75e8a797a62558a819",
+      "target": "docs/canonical/master04/CAP-IMAGING.md",
+      "profile_id": "CAN-CARD-IMAGING",
+      "source_ids": [
+        3069,
+        3671,
+        4070
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-CARD-RECORD",
+      "historical_document": "docs/canonical/CAN-CARD-RECORD.md",
+      "historical_sha256": "a67c90542208c26faec3129247a245d110e37bf487ed0a03e3827a3d3312203c",
+      "target": "docs/canonical/master04/CAP-DATA.md",
+      "profile_id": "CAN-CARD-RECORD",
+      "source_ids": [
+        3062,
+        3662,
+        4062
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-CARD-SURGERY",
+      "historical_document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "historical_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf",
+      "target": "docs/canonical/master04/CAP-ENCOUNTER.md",
+      "profile_id": "CAN-CARD-SURGERY",
+      "source_ids": [
+        847,
+        3067,
+        3669,
+        4072
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-CARD-REMOTE",
+      "historical_document": "docs/canonical/CAN-CARD-REMOTE.md",
+      "historical_sha256": "d9e0a8b160a7c868dbdb9e03d666d23f097d4fc97c26aba68f621a52a7b24bf2",
+      "target": "docs/canonical/master04/CAP-TELEMEDICINE.md",
+      "profile_id": "CAN-CARD-REMOTE",
+      "source_ids": [
+        3074,
+        3676,
+        4079
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-RENAL-FUNCTION",
+      "historical_document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+      "historical_sha256": "0ba894f3fcb6c0e833a8541cdf00624f7c614c65ec67cd833bc4f091a8062dc7",
+      "target": "docs/canonical/master04/CAP-LABORATORY.md",
+      "profile_id": "CAN-RENAL-FUNCTION",
+      "source_ids": [
+        926,
+        4552
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-RENAL-HANDOVER",
+      "historical_document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+      "historical_sha256": "e48b81fef7c88650fd50b44f1c378c18322260617661e347eae035e09f5f89c7",
+      "target": "docs/canonical/master04/CAP-PROFILE.md",
+      "profile_id": "CAN-RENAL-HANDOVER",
+      "source_ids": [
+        4574,
+        4599
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-MENTAL-MEDICATION",
+      "historical_document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+      "historical_sha256": "308e25d39390136403e04f3ec935850bca3050b395cecba6fb0bd77ca45f1940",
+      "target": "docs/canonical/master04/CAP-CDS.md",
+      "profile_id": "CAN-MENTAL-MEDICATION",
+      "source_ids": [
+        3993,
+        4842,
+        5166
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-MENTAL-THERAPY",
+      "historical_document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+      "historical_sha256": "5b046e0573967dac2d0b6a562190ad9b8f5c1840c2939d2839d5202e4a9a8211",
+      "target": "docs/canonical/master04/CAP-ENCOUNTER.md",
+      "profile_id": "CAN-MENTAL-THERAPY",
+      "source_ids": [
+        3994,
+        4841,
+        5167
+      ],
+      "original_ids_not_newly_counted": true
+    },
+    {
+      "historical_id": "CAN-ALLERGY-LABEL",
+      "historical_document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+      "historical_sha256": "91ad570db8389c71764d1614ce20bac130e05517c043d5ec6467cc2bd107d5c6",
+      "target": "docs/canonical/master04/CAP-ALLERGY.md",
+      "profile_id": "CAN-ALLERGY-LABEL",
+      "source_ids": [
+        1115,
+        4416,
+        4418
+      ],
+      "original_ids_not_newly_counted": true
+    }
+  ]
+}

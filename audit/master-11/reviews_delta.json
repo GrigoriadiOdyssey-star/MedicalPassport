@@ -1,0 +1,236 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "reviews": [
+    {
+      "original_id": 22,
+      "title": "Travel Records Table",
+      "body": "# Travel Records Table\n\n## Purpose\n\nStores all travel history and upcoming trips.\n\n---\n\n# Fields\n\nid (UUID)\n\nuser_id\n\ndeparture_country\n\ndestination_country\n\ndeparture_city\n\ndestination_city\n\ndeparture_date\n\nreturn_date\n\ntrip_status\n\npurpose\n\ninsurance_policy_id\n\nvaccination_required\n\nvisa_required\n\ntravel_notes\n\nemergency_contacts_shared\n\nmedical_profile_shared\n\nqr_access_enabled\n\ncreated_at\n\nupdated_at\n\n---\n\n# Relationships\n\nTravel Record\n\n├── User\n\n├── Insurance\n\n├── QR Sessions\n\n├── Medical Profile\n\n├── Vaccinations\n\n├── Notifications\n\n├── AI Assistant\n\n---\n\nFuture Features\n\n• Country Health Advisories\n\n• Vaccine Recommendations\n\n• Climate Risk Analysis\n\n• Medicine Import Rules\n\n• Emergency Numbers\n\n• Embassy Information\n\n• Local Pharmacy Finder\n\n---\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d2f5b5710845379de56758ccff4c8d6640b9b493f7738496511f279388a49b1e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 1970,
+        "body_sha256": "d2f5b5710845379de56758ccff4c8d6640b9b493f7738496511f279388a49b1e",
+        "original_id": 22
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice."
+    },
+    {
+      "original_id": 117,
+      "title": "Travel Health Module",
+      "body": "# Travel Health\n\nDestination\n\n↓\n\nCountry Analysis\n\n↓\n\nVaccination Check\n\n↓\n\nDisease Alerts\n\n↓\n\nClimate Risks\n\n↓\n\nMedicine Restrictions\n\n↓\n\nTravel Recommendations\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fa49e930b567eaefa76cf1a96c742729323e84c158a5d8476390e546ca6280b3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 15769,
+        "body_sha256": "fa49e930b567eaefa76cf1a96c742729323e84c158a5d8476390e546ca6280b3",
+        "original_id": 117
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice."
+    },
+    {
+      "original_id": 177,
+      "title": "Accessible Travel Support",
+      "body": "# Accessible Travel\n\nProvides\n\n• Accessible Airports\n\n• Accessible Hotels\n\n• Accessible Pharmacies\n\n• Accessible Hospitals\n\n• Medical Equipment Rental\n\n• Emergency Contacts\n\nIntegrated with Travel Module.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "25d46b319bffdb1210575ef92f4fa39a2f227232c45621c6a5b1861c2a630707",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 17839,
+        "body_sha256": "25d46b319bffdb1210575ef92f4fa39a2f227232c45621c6a5b1861c2a630707",
+        "original_id": 177
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice."
+    },
+    {
+      "original_id": 220,
+      "title": "Cross-Border Medical Record Exchange",
+      "body": "# Cross-Border Medical Record Exchange\n\nPurpose\n\nSecure exchange of medical records between healthcare organizations in different countries.\n\nSupports\n\n• Patient Consent\n\n• Secure Transfer\n\n• Audit Trail\n\n• Standardized Formats\n\n• Encrypted Communication\n\n• Automatic Translation\n\nDesigned for international continuity of care.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6a26a1969306426947b41d491123d01682921639f58da9aa5a92691679f15ca4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 19077,
+        "body_sha256": "6a26a1969306426947b41d491123d01682921639f58da9aa5a92691679f15ca4",
+        "original_id": 220
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts."
+    },
+    {
+      "original_id": 425,
+      "title": "Medication Travel Certificate",
+      "body": "# Medication Travel Certificate\n\nGenerates travel documentation for prescribed medications.\n\nSupports\n\n• Physician Information\n\n• Medication List\n\n• Diagnosis\n\n• QR Verification\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "50dde7828a179eadf0ada900f5bb541a672262c9744c146e24569b549c2fe64b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24045,
+        "body_sha256": "50dde7828a179eadf0ada900f5bb541a672262c9744c146e24569b549c2fe64b",
+        "original_id": 425
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Medication travel certificate is a versioned document derivative linking qualified physician, prescribed medication and diagnosis source where authorized, with scoped QR verification. A generated certificate does not certify authenticity, medication legality, border acceptance or prescribing authority. Minimize diagnosis disclosure and preserve signature/issuer provenance."
+    },
+    {
+      "original_id": 459,
+      "title": "International Dental Tourism",
+      "body": "# International Dental Tourism\n\nProvides international dental treatment planning.\n\nSupports\n\n• Country Selection\n\n• Clinic Search\n\n• Dentist Search\n\n• Cost Comparison\n\n• Travel Planning\n\nIntegrated with Medical Tourism Platform.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "581e4e429670a9736e22300270813ca3345ce6d0ca04dea8b22162d5550d10a4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24785,
+        "body_sha256": "581e4e429670a9736e22300270813ca3345ce6d0ca04dea8b22162d5550d10a4",
+        "original_id": 459
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice."
+    },
+    {
+      "original_id": 1021,
+      "title": "Pediatric Travel Infection Assessment",
+      "body": "Assesses infectious risks before international travel.\n\nSupports\n\n• Destination Analysis\n• Required Vaccines\n• Local Epidemics\n• WHO Recommendations\n\n---",
+      "body_sha256": "69d6c322c90943815780e1b723abd623c16fdee2f68df6922baa7d99724b94f1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 37585,
+        "body_sha256": "69d6c322c90943815780e1b723abd623c16fdee2f68df6922baa7d99724b94f1",
+        "original_id": 1021
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance."
+    },
+    {
+      "original_id": 1344,
+      "title": "AI Cross-Border Medical Exchange",
+      "body": "Secure international exchange of medical information.\n\nSupports\n\n• Cross-border Care\n\n• Emergency Access\n\n• Consent Management\n\n• Standardized Medical Records\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b139985be8505c2a62c077973b3b6a4b5d7dea05807a4775f627fd8ad22c8643",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 43840,
+        "body_sha256": "b139985be8505c2a62c077973b3b6a4b5d7dea05807a4775f627fd8ad22c8643",
+        "original_id": 1344
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts."
+    },
+    {
+      "original_id": 1403,
+      "title": "AI Medical Tourism Assistant",
+      "body": "Supports international medical tourism.\n\nIncludes\n\n• Hospital Selection\n• Cost Comparison\n• Travel Planning\n• Medical Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0588632ede90170d3ab9a57496792d918d94563f1b78e4efb0f818fcd7ea0838",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 44923,
+        "body_sha256": "0588632ede90170d3ab9a57496792d918d94563f1b78e4efb0f818fcd7ea0838",
+        "original_id": 1403
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit."
+    },
+    {
+      "original_id": 1425,
+      "title": "AI Travel Infection Risk Assessment",
+      "body": "Calculates infection risks before travel.\n\nAnalyzes\n\n• Destination\n• Season\n• Climate\n• Current Outbreaks\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "21c1f4bc81861e48637516e0f67f95043ecc6e6683f1b9bb0268e14ad21c514c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 45295,
+        "body_sha256": "21c1f4bc81861e48637516e0f67f95043ecc6e6683f1b9bb0268e14ad21c514c",
+        "original_id": 1425
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit."
+    },
+    {
+      "original_id": 1886,
+      "title": "AI Cross-Border Medical Exchange",
+      "body": "Facilitates secure international medical information exchange.\n\nSupports\n\n• Patient Records\n\n• Imaging\n\n• Laboratory Results\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f53615b24f2bca183e6f210265d16590b3b89521c374e9ecb1d5920dafec7389",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 53873,
+        "body_sha256": "f53615b24f2bca183e6f210265d16590b3b89521c374e9ecb1d5920dafec7389",
+        "original_id": 1886
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts."
+    },
+    {
+      "original_id": 1888,
+      "title": "AI Medical Tourism Coordinator",
+      "body": "Supports international medical tourism.\n\nSupports\n\n• Hospital Selection\n\n• Treatment Planning\n\n• Patient Navigation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3486bdbc017975c95416c4fb46b4902bf95559d76f50e5e7e7a12b68e35e5941",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 53909,
+        "body_sha256": "3486bdbc017975c95416c4fb46b4902bf95559d76f50e5e7e7a12b68e35e5941",
+        "original_id": 1888
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit."
+    },
+    {
+      "original_id": 3957,
+      "title": "Pediatric Travel & Tropical Medicine Module",
+      "body": "Supports pediatric travel medicine.\n\nSupports\n\n• Travel Risk Assessment\n• Vaccination Planning\n• Tropical Diseases\n• Exposure Evaluation\n• Post-travel Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "15206d2dbf98442e55633c61ff55ab106ed6d693f504335999201d42753a768a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 92991,
+        "body_sha256": "15206d2dbf98442e55633c61ff55ab106ed6d693f504335999201d42753a768a",
+        "original_id": 3957
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance."
+    },
+    {
+      "original_id": 4307,
+      "title": "Cross-Border Immunization Migration Engine",
+      "body": "Recalculates vaccination requirements after international relocation.\n\nExample\n\nEstonia\n↓\nGermany\n\nSystem compares\n\n• Previous Vaccinations\n• Antigen Composition\n• Dose Numbers\n• Product Equivalence\n• German Schedule\n• Age Requirements\n• Catch-up Requirements\n\nPreserves the original vaccination history.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "299226d05979f748fba053337a69c632a9e978c6282503e238032d0245530618",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100771,
+        "body_sha256": "299226d05979f748fba053337a69c632a9e978c6282503e238032d0245530618",
+        "original_id": 4307
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule."
+    },
+    {
+      "original_id": 4339,
+      "title": "Travel Vaccination Intelligence Engine",
+      "body": "Supports personalized vaccination assessment for international travel.\n\nConsiders\n\n• Destination\n• Transit Countries\n• Travel Date\n• Duration\n• Age\n• Medical History\n• Existing Vaccinations\n• Destination-specific Requirements\n• Risk-based Recommendations\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "165b51f0a1304cee4573daa8e1aba4c3cc0ca9515212004ee6e8f977b5e92cfc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 101474,
+        "body_sha256": "165b51f0a1304cee4573daa8e1aba4c3cc0ca9515212004ee6e8f977b5e92cfc",
+        "original_id": 4339
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-17",
+  "batch": 5,
+  "family": "diagnostic-clinical-assessment",
+  "owner": "CAP-CDS",
+  "ids": [
+    2008,
+    4158,
+    4396
+  ],
+  "decision_sha256": "5873ced49597767b9383b28c6fdd0adf81a2cc963d730a1d577af97b8f401111",
+  "source_hashes": {
+    "2008": "c355d9b77ec1d94443e0f215fc99667cd133a36602e25e382f3ea6abcf21fb01",
+    "4158": "9dc5cedb294deeb0897bbf531ffe64557a03f9e120803ba3f4ef03577b8fe983",
+    "4396": "e3ea71465464466d4ac33515d25491ed856576bf7b3ef899ca09b5007141431b"
+  }
+}

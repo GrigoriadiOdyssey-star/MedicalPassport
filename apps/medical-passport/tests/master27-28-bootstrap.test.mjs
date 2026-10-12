@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {attachMaster2728} from '../master27-28-bootstrap.mjs';
+test('MASTER27/28 attaches additively',()=>{class Store{};const original=Store;assert.equal(attachMaster2728(Store),original);assert.equal(typeof Store.prototype.labResultsMvp,'function');assert.equal(typeof Store.prototype.patientDashboardMvp,'function');assert.equal(typeof Store.prototype.translationGatewayMvp,'function');});

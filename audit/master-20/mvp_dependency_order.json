@@ -1,0 +1,44 @@
+{
+  "kind": "SPECIFICATION_AND_BUILD_SEQUENCE_NOT_SERVICE_STARTUP",
+  "order": [
+    "CAP-IDENTITY",
+    "CAP-DATA",
+    "CAP-SECURITY",
+    "CAP-CONSENT",
+    "CAP-AUDIT",
+    "CAP-ALLERGY",
+    "CAP-PROFILE"
+  ],
+  "dependencies": {
+    "CAP-IDENTITY": [],
+    "CAP-DATA": [
+      "CAP-IDENTITY"
+    ],
+    "CAP-SECURITY": [
+      "CAP-IDENTITY",
+      "CAP-DATA"
+    ],
+    "CAP-CONSENT": [
+      "CAP-IDENTITY",
+      "CAP-DATA",
+      "CAP-SECURITY"
+    ],
+    "CAP-AUDIT": [
+      "CAP-IDENTITY",
+      "CAP-SECURITY",
+      "CAP-CONSENT"
+    ],
+    "CAP-ALLERGY": [
+      "CAP-DATA",
+      "CAP-SECURITY"
+    ],
+    "CAP-PROFILE": [
+      "CAP-ALLERGY",
+      "CAP-CONSENT",
+      "CAP-AUDIT",
+      "CAP-SECURITY"
+    ]
+  },
+  "ready_for_full_application_build": false,
+  "shared_runtime_boundaries": "Grant, Security and Audit share the MASTER19 transaction; contract reference cycles do not impose service startup order."
+}

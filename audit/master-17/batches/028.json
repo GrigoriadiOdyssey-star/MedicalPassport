@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-17",
+  "batch": 28,
+  "family": "registry-allergy",
+  "owner": "CAP-ALLERGY",
+  "ids": [
+    1117,
+    3382,
+    3782,
+    4082,
+    4411
+  ],
+  "decision_sha256": "fc1e433da04e3f032d764c58c4eba0a1bbdb88258e572243872aa2495f5773d2",
+  "source_hashes": {
+    "1117": "91a6c83a776fe16a68c23c3a8608107a87a6982763701d0cf0fde894672aff72",
+    "3382": "404dd9525f5b9a85c9e9f53e1e54259bd387b6908aacd2ee7810c9b0fd6b5204",
+    "3782": "f0eb599e1d834560a32cd423a3aeef84b00b9e7ab994aadbd1c8cdabe65f06b2",
+    "4082": "c2308c10ee5aa418e8ffa48e0aa09afb5f6ac16a1b4955d81417ddf8aaeb7410",
+    "4411": "bbf3d9e06f5e0637cd8e7e38dd9e4c47c5dfaed1198113ca8bfe21da8d7fb82a"
+  }
+}

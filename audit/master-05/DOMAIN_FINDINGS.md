@@ -1,0 +1,50 @@
+# MASTER-05 domain findings
+
+## HEMATO — 63 new IDs
+
+Hematology preserves age/context-sensitive observations, specimen identity, disease phenotype, blood-product traceability and separately authorized treatment. Shared profiles retain uncertainty and longitudinal correction; compatibility, transfusion, anticoagulation and transplantation cannot be authorized by AI or historical registry entries.
+
+- 4182: ABO/Rh, antibody screen, crossmatch, extended phenotype/genotype and previous reactions require blood-bank source/version and patient/product verification; a passport is not a compatibility-release authority.
+- 4187: Donor relationship/health/HLA/genetic/infectious evidence belongs to a separately authorized donor identity; recipient care access is not blanket donor-record access.
+- 4196: Draft → review/edit/correct/reject → approve/sign/publish are separate attributable states; preserve the exact source and clinician-approved version.
+- 4198: Research-team verification is required before enrollment; an algorithmic match is not eligibility confirmation or consent.
+- 4977: CBC trends retain age-adjusted reference context, acute illness, source method/time and patient baseline; persistent abnormalities differ from isolated deviations.
+- 4981: Sickle-cell profile retains newborn screening, splenic/stroke/infection context, hydroxyurea exposure, vaccination and organ surveillance; source context does not prescribe treatment.
+- 4984: Retain non-factor therapy, inhibitor status, home treatment, dental/surgery planning and emergency contact as distinct hemostasis profile requirements.
+- 4988: Anticoagulation monitoring retains renal/weight/procedure context, holds and reversal; alerts never execute a hold, reversal or dose adjustment.
+- 4989: Thrombophilia testing decisions remain indication-specific and specialist-led; genetic risk is not an automatic anticoagulation indication.
+- 4993: Blood products require identity, product ID/special requirements, start/end, volume and compatible source release; preserve massive/chronic transfusion contexts and audit.
+- 4994: Reaction surveillance retains timing, product, clinical investigation, blood-bank final classification and future product requirements; propagation preserves uncertainty until adjudicated.
+- 4995: Apheresis records preserve access, device, replacement fluid, anticoagulation, parameters and collected-product context; documentation is separate from machine control.
+- 4998: Preserve explicit prohibitions on autonomous diagnosis, anticoagulation prescription, transfusion order and transplant eligibility; task-specific pediatric validation stays open.
+- 5000: Apheresis, hemovigilance and blood-bank integration extend the common hematology workspace; local MVP language does not authorize clinical deployment.
+
+## ONCO — 46 new IDs
+
+Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.
+
+- 4206: MRD retains assay, specimen, treatment phase/time point, sensitivity/quantification and result uncertainty; missing or below-quantification is not automatically negative/remission.
+- 4209: Histology, DNA/RNA and epigenetic/molecular classification use a version-controlled framework; preserve prior classification and signed reclassification reasons.
+- 4225: Radiomics is a research task unless the particular clinical intended use has validation and applicable regulatory controls; retain acquisition/segmentation/extraction/model versions.
+- 4226: Chemotherapy retains protocol version, cycle/day, laboratory prerequisites, authorizations, administration and delays/modifications. Tracking is not an executable medication order.
+- 4227: Identity, protocol, body-surface inputs/formula version, organ function and prior toxicity require authorized verification; never compute or release a treatment dose from incomplete context.
+- 4230: CAR-T must retain patient/product chain of identity and custody across collection, manufacturing, bridging, release and infusion; manufacturing status does not establish product-release authority.
+- 4231: Radiation planning and delivered dose are distinct; preserve course, fractions, target/organ-at-risk definitions and correction history without enabling equipment control.
+- 4235: Response assessment records criterion/version, modality/time point and reviewer; discordant MRD, imaging and clinical results must remain visible.
+- 4239: Onco-fertility preserves age-appropriate consent/assent, separate guardian authority, specialist referral and confidential information; records do not promise fertility outcomes.
+- 4241: Potential international trial matches require site verification of current criteria and separate consent/enrollment; geographic availability and recruitment are not inferred.
+- 4245: If statement-level provenance is technically unavailable, mark the generated statement unsupported or omit it from released clinical summaries; do not silently relax traceability.
+- 4247: Supportive and palliative care may coexist with disease-directed treatment; shared profile must retain care goals and family/patient needs without inferring treatment cessation.
+
+## NEUROONCO — 22 new IDs
+
+Neuro-oncology preserves integrated molecular/pathological classification, imaging and treatment chronology, neurological function and developmental late effects. Shared oncology profiles retain CNS-specific anatomy, acquisition uncertainty and clinician-led decisions; no autonomous diagnosis, surgery, radiotherapy or systemic treatment.
+
+- 5129: Integrated diagnosis retains specimen/surgical source, source lab/pathologist, report version, external review and reclassification history; molecular output does not overwrite signed pathology.
+- 5131: Extent of resection is a clinical assessment linked to operative findings and postoperative imaging; preserve complications and adjuvant-treatment context.
+- 5133: Lifetime radiation record preserves fractionation, cranial/spinal exposure and critical structures; planned and delivered dose must remain distinguishable.
+- 5135: Investigational care retains trial/protocol/consent versions, treatment arm, deviations, withdrawal and research/clinical separation; ordinary care consent is insufficient for trial participation.
+- 5141: Visual response and tumor-imaging response are distinct outcomes; imaging stability cannot erase visual decline or rehabilitation need.
+- 5142: Hydrocephalus/CSF device history retains shunt/ETV/external drainage, settings, infection/revision and emergency information; device documentation never authorizes remote adjustment.
+- 5145: Neurocognitive baseline, developmental goals and accommodations remain age/context-sensitive; school disclosure is minimum-necessary and separately authorized.
+- 5147: Recurrent episodes stay linked to the original tumor while preserving new biopsy, molecular evidence, re-irradiation and multidisciplinary decisions.

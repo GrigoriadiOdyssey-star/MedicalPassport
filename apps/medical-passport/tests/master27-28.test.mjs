@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {MASTER2728_EPISTEMIC_STATES} from '../lab-twin-pilot.mjs';
+test('MASTER27/28 epistemic states remain explicit',()=>assert.deepEqual(MASTER2728_EPISTEMIC_STATES.sort(),['CLINICIAN_ASSESSED','INFERRED','MEASURED','OBSERVED','PATIENT_REPORTED','PREDICTED','SIMULATED'].sort()));
+test('MASTER27/28 safety vocabulary excludes autonomous treatment claims',()=>{const forbidden=['DIAGNOSE_PATIENT','PRESCRIBE_AUTONOMOUSLY','DOUBLE_DOSE_AFTER_MISSED'];for(const x of forbidden)assert.ok(!MASTER2728_EPISTEMIC_STATES.includes(x));});

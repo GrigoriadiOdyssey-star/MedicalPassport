@@ -1,0 +1,93 @@
+{
+  "pass": "MASTER-20",
+  "parent_commit": "6024c58c393f40b458a10cc396f9f4ba3d2d2f8b",
+  "canonical_specifications": 33,
+  "documentation_coverage": 100,
+  "documentation_metrics_source": "audit/master-19/audit_progress.json",
+  "engineering_before": 157,
+  "engineering_resolved": 25,
+  "engineering_remaining": 132,
+  "implementation_ready_before": 1,
+  "newly_implementation_ready": 0,
+  "total_ready_bounded_profiles": 1,
+  "full_canonical_owners_ready": 0,
+  "mvp_core_ready_bounded_profiles": 1,
+  "mvp_core_blocked": 6,
+  "clinical_validation_required": 14,
+  "mvp_blocking_clinical_questions": 3,
+  "deep_queue_counts": {
+    "MVP_BLOCKING": 13,
+    "HIGH_RISK_PRE_RELEASE": 1762,
+    "POST_MVP_VALIDATION": 907,
+    "RESEARCH_LONG_TERM": 427
+  },
+  "external_gates": {
+    "EXTERNAL_INTEGRATION_REQUIRED": 68,
+    "LEGAL_REVIEW_REQUIRED": 38,
+    "JURISDICTION_CONFIGURATION_REQUIRED": 34
+  },
+  "backlog_items": 3,
+  "readiness_prerequisites": 6,
+  "build_gate": "BUILD_GATE_FAIL",
+  "application_implementation_started": false,
+  "normalization_repeated": false,
+  "clinical_approval": false,
+  "next_exact_action": "Close CAP-IDENTITY-B01 and bounded Security adapter contracts; then Consent/Data/Allergy/Profile readiness and reevaluate build gate",
+  "evidence": [
+    {
+      "path": "docs/engineering/shared-contracts20.md",
+      "sha256": "d9cc64cd0c86d3d011d1c94bbcc5eebc46423f77e59432e3a92e67f10300aa09"
+    },
+    {
+      "path": "scripts/contract-release20.mjs",
+      "sha256": "512de1d8d5e53a51613da3a810956eeb27366d682d5d139c013b287a1a9a730e"
+    },
+    {
+      "path": "tests/master20.test.mjs",
+      "sha256": "ea5564cafb0ce8a3040093772ee48ce9151e6e52a84c1b6c6536f89a0b6d1a5b"
+    }
+  ],
+  "artifact_manifest": [
+    {
+      "path": "audit/master-20/engineering_blocker_registry.json",
+      "sha256": "b0900e19a5206308565b175dc70d4a52e58a4897a99dab9269ee457e426021ed"
+    },
+    {
+      "path": "audit/master-20/external_gate_registry.json",
+      "sha256": "32c1dda5927938a5a26b4487050c47f74b8ba84b3ef025ac0c528f70be659aeb"
+    },
+    {
+      "path": "audit/master-20/clinical_validation_registry.json",
+      "sha256": "c9da372d9466ec94b915a83f11f22a9de1fd5b9ec743a638409c4d800148aca3"
+    },
+    {
+      "path": "audit/master-20/deep_clinical_queue_routing.json",
+      "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+    },
+    {
+      "path": "audit/master-20/readiness_status.json",
+      "sha256": "37adf4dfd9e91580e9063017552f7b4d230dd91fb5fcd6bec9387ee220cab961"
+    },
+    {
+      "path": "audit/master-20/mvp_implementation_backlog.json",
+      "sha256": "666aeab564465f13bb1e5fb8971ce805bfd1888662ade34cd058fc8b259fad8b"
+    },
+    {
+      "path": "audit/master-20/mvp_dependency_order.json",
+      "sha256": "6ba625ba6fa693c0836b28bbef9477a5776b4e49159cade307239bc9016c92fd"
+    },
+    {
+      "path": "audit/master-20/architecture_control.json",
+      "sha256": "ffb15459fe5864678fe7458eb336f36a01d91cd8747725fed34e52624ecab7d5"
+    },
+    {
+      "path": "audit/master-20/mvp_implementation_backlog.md",
+      "sha256": "64ff2a04f21c880bf3d4e6ec382eca99504ca6f0ba2ec061643b4c25d44e7b71"
+    },
+    {
+      "path": "audit/master-20/MVP_BUILD_GATE.md",
+      "sha256": "b08fcb41c3570b9c4226a96f2d9268cd450ada7168d76157d735dbb6897fa557"
+    }
+  ],
+  "prior_metrics_preserved": true
+}

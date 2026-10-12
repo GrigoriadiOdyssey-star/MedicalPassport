@@ -1,0 +1,26 @@
+{
+  "pass": "MASTER-18",
+  "targeted_clusters": 56,
+  "targeted_checks_per_cluster": 8,
+  "readiness_checks": 8,
+  "full_runs": [
+    {
+      "name": "MILESTONE80",
+      "passed": 198,
+      "failed": 0,
+      "path": "audit/master-18/validation/MILESTONE80.txt",
+      "sha256": "f5292a3927376384f6354fc8b2ed86fc5d0b1dfab61dbfb9e03802f13b2bedd7"
+    },
+    {
+      "name": "FINAL",
+      "passed": 198,
+      "failed": 0,
+      "path": "audit/master-18/validation/FINAL.txt",
+      "sha256": "e381abcba619e3ee1420b1e3102f31af0311c557f95d9ed7c3e7e169a0ba86d6"
+    }
+  ],
+  "failed_final": 0,
+  "recovered_issues": [],
+  "historical_test_policy": "Existing runner excludes the obsolete MASTER09 diff test only. Historical tests are unchanged; current parent-commit and exact-artifact hash guards replace that stale assumption.",
+  "scope": "Documentation, exact source provenance and bounded synthetic contract checks; no runtime implementation, clinical or security approval."
+}

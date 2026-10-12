@@ -1,0 +1,35 @@
+{
+  "name": "edht",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Audited EDHT Medical Passport product specifications and traceable module registry",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "node scripts/build-catalog.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "audit:build": "node scripts/master-audit.mjs",
+    "audit:check": "node scripts/master-audit.mjs --check",
+    "gapfill:build": "node scripts/gapfill.mjs",
+    "gapfill:check": "node scripts/gapfill.mjs --check",
+    "pediatric:build": "node scripts/pediatric-audit.mjs",
+    "pediatric:check": "node scripts/pediatric-audit.mjs --check",
+    "domain:build": "node scripts/domain-pass.mjs",
+    "domain:check": "node scripts/domain-pass.mjs --check",
+    "master04:build": "node scripts/master04.mjs",
+    "master04:check": "node scripts/master04.mjs --check",
+    "master05:build": "node scripts/master05.mjs",
+    "master05:check": "node scripts/master05.mjs --check",
+    "master06:build": "node scripts/master06.mjs",
+    "master06:check": "node scripts/master06.mjs --check",
+    "master07:build": "node scripts/master07.mjs",
+    "master07:check": "node scripts/master07.mjs --check",
+    "master08:build": "node scripts/master08.mjs",
+    "master08:check": "node scripts/master08.mjs --check",
+    "readiness08:build": "node scripts/readiness08.mjs",
+    "readiness08:check": "node scripts/readiness08.mjs --check"
+  }
+}

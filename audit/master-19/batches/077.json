@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 77,
+  "family": "remaining-governance",
+  "owner": "CAP-GOVERNANCE",
+  "ids": [
+    210
+  ],
+  "decision_sha256": "29801e2939e0a7c0f358cc342dadfeb7e4113e0d5dd3b93e97331779fe5187b3",
+  "source_hashes": {
+    "210": "726d86806a238fe3ee3707f8099c5c06d8d082662d5bafbf081d86d1f44cbb34"
+  }
+}

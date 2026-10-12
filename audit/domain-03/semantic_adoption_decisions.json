@@ -1,0 +1,151 @@
+{
+  "schema_version": 4,
+  "pass": "DOMAIN-03",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "decisions": [
+    {
+      "canonical_id": "CAN-CARD-ECHO",
+      "source_ids": [
+        846,
+        3064,
+        3664,
+        4064
+      ],
+      "semantic_decision": "PED2-CARD-ECHO",
+      "owner": "CAP-IMAGING",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-ECHO. Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-CARD-IMAGING",
+      "source_ids": [
+        3069,
+        3671,
+        4070
+      ],
+      "semantic_decision": "PED2-CARD-IMAGING",
+      "owner": "CAP-IMAGING",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-IMAGING. Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-CARD-RECORD",
+      "source_ids": [
+        3062,
+        3662,
+        4062
+      ],
+      "semantic_decision": "PED2-CARD-REGISTRY",
+      "owner": "CAP-DATA",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-REGISTRY. Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-CARD-SURGERY",
+      "source_ids": [
+        847,
+        3067,
+        3669,
+        4072
+      ],
+      "semantic_decision": "PED2-CARD-SURGERY",
+      "owner": "CAP-ENCOUNTER",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-SURGERY. Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-CARD-REMOTE",
+      "source_ids": [
+        3074,
+        3676,
+        4079
+      ],
+      "semantic_decision": "PED2-CARD-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-REMOTE. Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-RENAL-FUNCTION",
+      "source_ids": [
+        926,
+        4552
+      ],
+      "semantic_decision": "PED2-RENAL-FUNCTION",
+      "owner": "CAP-LABORATORY",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-RENAL-FUNCTION. Retain urea, creatinine, cystatin C, eGFR, urinary markers, protein/albumin, electrolytes, acid-base, recovery and persistent-pattern distinctions. Unknown context cannot imply normality.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-RENAL-HANDOVER",
+      "source_ids": [
+        4574,
+        4599
+      ],
+      "semantic_decision": "PED2-RENAL-TRANSITION",
+      "owner": "CAP-PROFILE",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-RENAL-TRANSITION. Preserve renal/genetic/pathology/imaging/dialysis/transplant history, emergency context and cross-border language support. Export alone is not completed handover.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-MENTAL-MEDICATION",
+      "source_ids": [
+        3993,
+        4842,
+        5166
+      ],
+      "semantic_decision": "PED2-MENTAL-MEDICATION",
+      "owner": "CAP-CDS",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-MENTAL-MEDICATION. Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-MENTAL-THERAPY",
+      "source_ids": [
+        3994,
+        4841,
+        5167
+      ],
+      "semantic_decision": "PED2-MENTAL-THERAPY",
+      "owner": "CAP-ENCOUNTER",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-MENTAL-THERAPY. Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    },
+    {
+      "canonical_id": "CAN-ALLERGY-LABEL",
+      "source_ids": [
+        1115,
+        4416,
+        4418
+      ],
+      "semantic_decision": "PED2-ALLERGY-DRUG-LABEL",
+      "owner": "CAP-ALLERGY",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-ALLERGY-DRUG-LABEL. Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "adoption_scope": "DOCUMENTATION_STRUCTURE",
+      "requirements_migrated": true,
+      "clinical_approval": false
+    }
+  ]
+}

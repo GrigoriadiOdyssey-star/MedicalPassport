@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-17",
+  "batch": 41,
+  "family": "identity-authentication-profiles",
+  "owner": "CAP-IDENTITY",
+  "ids": [
+    82,
+    222,
+    223
+  ],
+  "decision_sha256": "f878d4699ac5d40920b6f007b1438a20c85d1c908afd274bf75a101763a2dcaf",
+  "source_hashes": {
+    "82": "e9915d5eda6933cc3e7a140cef3c85fea3e1b2b666635a62257291f00e1e88c7",
+    "222": "2f396d737c2c9e2ac4f64398b20a53d598b64b61f9b1ed3b1feb62cbb4cb5bc9",
+    "223": "51eb66dfe639b487cc97773f128f8485c2d8e24831a25d2b72f07dab2cd77226"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 68,
+  "family": "remaining-home-device-observations",
+  "owner": "CAP-DEVICES",
+  "ids": [
+    238,
+    241,
+    586,
+    906
+  ],
+  "decision_sha256": "ca0745ddea32584a236234d18e4e5c5b44e8bebd0880c62fd2d4971141fd6737",
+  "source_hashes": {
+    "238": "054faf8e6ffdd4c641954c5fa0e03919a5c4e80072a07fc3fccee00a32d0fe42",
+    "241": "ef256943157a36d7328f6377bb99cc0076d51b12b18389c086143d8e783f946c",
+    "586": "b9f6228fd822d92060d4eff1e6b7e27345c1771b5c5079cc3df450836dc18e4b",
+    "906": "0dab658b65543b18081580140188417d7d7320541774d6a1876df2301484e692"
+  }
+}

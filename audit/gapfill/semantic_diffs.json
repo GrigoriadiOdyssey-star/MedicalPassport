@@ -1,0 +1,562 @@
+{
+  "schema_version": 2,
+  "edition": "2026-09-14",
+  "pass": "GAPFILL-01",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "7f1e8e84a4e5a3294cab525cea5f818b0a47d2e9",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "decisions": [
+    {
+      "decision_id": "GF-OVERLAP-1",
+      "source_ids": [
+        1175,
+        1540
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "Precision medicine genetics/biomarkers versus diagnostics/prevention scope",
+      "target_module": "EXT-PHARM",
+      "common_requirements": [],
+      "unique_requirements": [
+        {
+          "source_id": 1175,
+          "source_title": "AI Precision Medicine Engine",
+          "requirements": [
+            "Genetics",
+            "Biomarkers",
+            "Personalized Therapy"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 40410,
+          "body_sha256": "89e4169a89f60be23c9a6f41336eca85243c84f50f9b85a4590fe9f3075d11c3"
+        },
+        {
+          "source_id": 1540,
+          "source_title": "AI Precision Medicine Engine",
+          "requirements": [
+            "Personalized Diagnostics",
+            "Personalized Treatment",
+            "Personalized Prevention",
+            "Predictive Healthcare"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 47423,
+          "body_sha256": "093465b454296b001b889327e8706d54634e0e37bd5dd4f6d229875c183eb786"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 1175,
+          "source_title": "AI Precision Medicine Engine",
+          "body": "Supports precision medicine.\n\nAnalyzes\n\n• Genetics\n\n• Biomarkers\n\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "Precision medicine genetics/biomarkers versus diagnostics/prevention scope",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 40410,
+            "body_sha256": "89e4169a89f60be23c9a6f41336eca85243c84f50f9b85a4590fe9f3075d11c3"
+          }
+        },
+        {
+          "source_id": 1540,
+          "source_title": "AI Precision Medicine Engine",
+          "body": "Supports precision medicine.\n\nIncludes\n\n• Personalized Diagnostics\n\n• Personalized Treatment\n\n• Personalized Prevention\n\n• Predictive Healthcare\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "Precision medicine genetics/biomarkers versus diagnostics/prevention scope",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 47423,
+            "body_sha256": "093465b454296b001b889327e8706d54634e0e37bd5dd4f6d229875c183eb786"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-2",
+      "source_ids": [
+        1661,
+        1841
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "Precision core biomarkers/CDS versus genomic/molecular medicine",
+      "target_module": "EXT-PHARM",
+      "common_requirements": [
+        "Personalized Therapy"
+      ],
+      "unique_requirements": [
+        {
+          "source_id": 1661,
+          "source_title": "AI Precision Medicine Core Engine",
+          "requirements": [
+            "Genomics",
+            "Biomarkers",
+            "Clinical Decision Support"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 49713,
+          "body_sha256": "6a0ff7d0280e3bbff882e47d7b9879178d69b438123ac79f25d3cacd9e0b4f21"
+        },
+        {
+          "source_id": 1841,
+          "source_title": "AI Precision Medicine Core Engine",
+          "requirements": [
+            "Genomic Medicine",
+            "Molecular Medicine"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 53045,
+          "body_sha256": "9438e2e036d45ee676f75f314d8837f06d38e27087618d7c9f78f276ede6b945"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 1661,
+          "source_title": "AI Precision Medicine Core Engine",
+          "body": "Central AI engine for precision medicine.\n\nSupports\n\n• Personalized Therapy\n\n• Genomics\n\n• Biomarkers\n\n• Clinical Decision Support\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "Precision core biomarkers/CDS versus genomic/molecular medicine",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 49713,
+            "body_sha256": "6a0ff7d0280e3bbff882e47d7b9879178d69b438123ac79f25d3cacd9e0b4f21"
+          }
+        },
+        {
+          "source_id": 1841,
+          "source_title": "AI Precision Medicine Core Engine",
+          "body": "Central AI engine for precision medicine.\n\nSupports\n\n• Personalized Therapy\n\n• Genomic Medicine\n\n• Molecular Medicine\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "Precision core biomarkers/CDS versus genomic/molecular medicine",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 53045,
+            "body_sha256": "9438e2e036d45ee676f75f314d8837f06d38e27087618d7c9f78f276ede6b945"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-3",
+      "source_ids": [
+        1680,
+        1860
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "Precision platform prevention/intelligence versus PGx/multiomics",
+      "target_module": "EXT-PHARM",
+      "common_requirements": [
+        "Personalized Therapy"
+      ],
+      "unique_requirements": [
+        {
+          "source_id": 1680,
+          "source_title": "AI Precision Medicine Platform",
+          "requirements": [
+            "Personalized Diagnosis",
+            "Prevention",
+            "Monitoring",
+            "Clinical Intelligence"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 50069,
+          "body_sha256": "14a7736c488a63f717d50d9d714f38b3b4d2b5c352867da9e35556c1d5ee9890"
+        },
+        {
+          "source_id": 1860,
+          "source_title": "AI Precision Medicine Platform",
+          "requirements": [
+            "Molecular Diagnostics",
+            "Pharmacogenomics",
+            "Multi-Omics",
+            "Precision Monitoring"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 53389,
+          "body_sha256": "727636d56671b622e785d4e9a014d3669827c5eb54428a4e96c3670b6496cb82"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 1680,
+          "source_title": "AI Precision Medicine Platform",
+          "body": "Unified precision medicine platform.\n\nCoordinates\n\n• Personalized Diagnosis\n\n• Personalized Therapy\n\n• Prevention\n\n• Monitoring\n\n• Clinical Intelligence\n\nForms the precision medicine layer of the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "Precision platform prevention/intelligence versus PGx/multiomics",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 50069,
+            "body_sha256": "14a7736c488a63f717d50d9d714f38b3b4d2b5c352867da9e35556c1d5ee9890"
+          }
+        },
+        {
+          "source_id": 1860,
+          "source_title": "AI Precision Medicine Platform",
+          "body": "Unified precision medicine platform.\n\nCoordinates\n\n• Personalized Therapy\n\n• Molecular Diagnostics\n\n• Pharmacogenomics\n\n• Multi-Omics\n\n• Precision Monitoring\n\nForms the precision medicine intelligence layer of the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "Precision platform prevention/intelligence versus PGx/multiomics",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 53389,
+            "body_sha256": "727636d56671b622e785d4e9a014d3669827c5eb54428a4e96c3670b6496cb82"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-4",
+      "source_ids": [
+        1606,
+        1843
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "PGx adverse reactions/metabolism versus selection/dose context",
+      "target_module": "EXT-PHARM",
+      "common_requirements": [],
+      "unique_requirements": [
+        {
+          "source_id": 1606,
+          "source_title": "AI Pharmacogenomics Engine",
+          "requirements": [
+            "Drug Metabolism",
+            "Adverse Reactions",
+            "Personalized Therapy"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 48691,
+          "body_sha256": "abbb42c6d4c0225870546b3dfde3e7b35f03632c5c08a262de910189abe8512c"
+        },
+        {
+          "source_id": 1843,
+          "source_title": "AI Pharmacogenomics Engine",
+          "requirements": [
+            "Drug Response",
+            "Gene Variants",
+            "Dose Optimization"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 53081,
+          "body_sha256": "ed209eda1fc667aace35a0a6a3632997fcddabaadd92676df7ab2c379e41d342"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 1606,
+          "source_title": "AI Pharmacogenomics Engine",
+          "body": "Predicts drug response using genetic information.\n\nSupports\n\n• Drug Metabolism\n\n• Adverse Reactions\n\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "PGx adverse reactions/metabolism versus selection/dose context",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 48691,
+            "body_sha256": "abbb42c6d4c0225870546b3dfde3e7b35f03632c5c08a262de910189abe8512c"
+          }
+        },
+        {
+          "source_id": 1843,
+          "source_title": "AI Pharmacogenomics Engine",
+          "body": "Optimizes medication selection using pharmacogenomics.\n\nSupports\n\n• Drug Response\n\n• Gene Variants\n\n• Dose Optimization\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "PGx adverse reactions/metabolism versus selection/dose context",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 53081,
+            "body_sha256": "ed209eda1fc667aace35a0a6a3632997fcddabaadd92676df7ab2c379e41d342"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-5",
+      "source_ids": [
+        1218,
+        1547
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "Model retraining/outcome feedback versus knowledge/clinical validation",
+      "target_module": "EXT-AI",
+      "common_requirements": [],
+      "unique_requirements": [
+        {
+          "source_id": 1218,
+          "source_title": "AI Continuous Learning Engine",
+          "requirements": [
+            "Physician Feedback",
+            "Outcome Analysis",
+            "Model Retraining"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 41258,
+          "body_sha256": "eccb85eb0f8fd7c59d0cbf91104a101386b25d892ead11a5c204a28d524e696e"
+        },
+        {
+          "source_id": 1547,
+          "source_title": "AI Continuous Learning Engine",
+          "requirements": [
+            "Knowledge Updates",
+            "Clinical Validation",
+            "Learning Feedback"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 47559,
+          "body_sha256": "6825bc6cf09c1e7bb5ee5fd612851a70435e31338287343f56c3df7f19b95f84"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 1218,
+          "source_title": "AI Continuous Learning Engine",
+          "body": "Improves AI performance over time.\n\nSupports\n\n• Physician Feedback\n\n• Outcome Analysis\n\n• Model Retraining\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-AI",
+          "reason": "Model retraining/outcome feedback versus knowledge/clinical validation",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 41258,
+            "body_sha256": "eccb85eb0f8fd7c59d0cbf91104a101386b25d892ead11a5c204a28d524e696e"
+          }
+        },
+        {
+          "source_id": 1547,
+          "source_title": "AI Continuous Learning Engine",
+          "body": "Continuously improves medical reasoning.\n\nSupports\n\n• Knowledge Updates\n\n• Clinical Validation\n\n• Learning Feedback\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-AI",
+          "reason": "Model retraining/outcome feedback versus knowledge/clinical validation",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 47559,
+            "body_sha256": "6825bc6cf09c1e7bb5ee5fd612851a70435e31338287343f56c3df7f19b95f84"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-6",
+      "source_ids": [
+        1224,
+        1876
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "Hospital assets/staff versus patient flow/resource forecasts; operational twin",
+      "target_module": "EXT-TWIN",
+      "common_requirements": [],
+      "unique_requirements": [
+        {
+          "source_id": 1224,
+          "source_title": "AI Hospital Digital Twin",
+          "requirements": [
+            "Beds",
+            "Departments",
+            "Equipment",
+            "Staff"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 41384,
+          "body_sha256": "31442ddff365854f057df100a1f72e3d2b1485ac32de0981d000b1e2bf4dec50"
+        },
+        {
+          "source_id": 1876,
+          "source_title": "AI Hospital Digital Twin",
+          "requirements": [
+            "Patient Flow",
+            "Resource Simulation",
+            "Operational Forecasting"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 53685,
+          "body_sha256": "a1c05f7fb09292575feb922f269f35686a3cc9e83ca819ea453ea2ad9d186f2d"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 1224,
+          "source_title": "AI Hospital Digital Twin",
+          "body": "Creates a digital model of hospital operations.\n\nMonitors\n\n• Beds\n\n• Departments\n\n• Equipment\n\n• Staff\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-TWIN",
+          "reason": "Hospital assets/staff versus patient flow/resource forecasts; operational twin",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 41384,
+            "body_sha256": "31442ddff365854f057df100a1f72e3d2b1485ac32de0981d000b1e2bf4dec50"
+          }
+        },
+        {
+          "source_id": 1876,
+          "source_title": "AI Hospital Digital Twin",
+          "body": "Creates a digital operational model of the hospital.\n\nSupports\n\n• Patient Flow\n\n• Resource Simulation\n\n• Operational Forecasting\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-TWIN",
+          "reason": "Hospital assets/staff versus patient flow/resource forecasts; operational twin",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 53685,
+            "body_sha256": "a1c05f7fb09292575feb922f269f35686a3cc9e83ca819ea453ea2ad9d186f2d"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-7",
+      "source_ids": [
+        2399,
+        2677
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "PGx metabolism/safety versus explicit CYP analysis/response prediction",
+      "target_module": "EXT-PHARM",
+      "common_requirements": [
+        "Personalized Therapy",
+        "Medication Safety"
+      ],
+      "unique_requirements": [
+        {
+          "source_id": 2399,
+          "source_title": "Pharmacogenomics Module",
+          "requirements": [
+            "Drug Metabolism"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 63364,
+          "body_sha256": "994248e426bce718e5d808d00e920ab627200b9c86d387faa9b157ad59e19164"
+        },
+        {
+          "source_id": 2677,
+          "source_title": "Pharmacogenomics Module",
+          "requirements": [
+            "Drug Response Prediction",
+            "CYP Gene Analysis"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 68539,
+          "body_sha256": "158ba96118fc7ebcf909f14de1a23c21d126400ea078f0ae276fd83587382ef5"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 2399,
+          "source_title": "Pharmacogenomics Module",
+          "body": "Supports pharmacogenomic analysis.\n\nSupports\n\n• Drug Metabolism\n\n• Personalized Therapy\n\n• Medication Safety\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "PGx metabolism/safety versus explicit CYP analysis/response prediction",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 63364,
+            "body_sha256": "994248e426bce718e5d808d00e920ab627200b9c86d387faa9b157ad59e19164"
+          }
+        },
+        {
+          "source_id": 2677,
+          "source_title": "Pharmacogenomics Module",
+          "body": "Supports pharmacogenomic decision-making.\n\nSupports\n\n• Drug Response Prediction\n• CYP Gene Analysis\n• Personalized Therapy\n• Medication Safety\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-PHARM",
+          "reason": "PGx metabolism/safety versus explicit CYP analysis/response prediction",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 68539,
+            "body_sha256": "158ba96118fc7ebcf909f14de1a23c21d126400ea078f0ae276fd83587382ef5"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    },
+    {
+      "decision_id": "GF-OVERLAP-8",
+      "source_ids": [
+        2219,
+        2588
+      ],
+      "classification": "PARTIAL_OVERLAP",
+      "reason": "Eye trials/registries versus imaging datasets; research governance shared",
+      "target_module": "EXT-RESEARCH",
+      "common_requirements": [
+        "Clinical Trials"
+      ],
+      "unique_requirements": [
+        {
+          "source_id": 2219,
+          "source_title": "Ophthalmology Research Registry",
+          "requirements": [
+            "Registries",
+            "AI Datasets"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 60030,
+          "body_sha256": "06d7b5f21e98b98bdc59c644625a314156dc17d939ad3c29308d1c75394fab93"
+        },
+        {
+          "source_id": 2588,
+          "source_title": "Ophthalmology Research Registry",
+          "requirements": [
+            "Imaging Databases",
+            "AI Dataset Collection"
+          ],
+          "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+          "heading_line": 66950,
+          "body_sha256": "7b7d9cb53c95c0d745f966f960b7b5b47fb65ea8aad873711fa5489cd8940ad6"
+        }
+      ],
+      "migrated_requirements": [],
+      "proposed_retained_requirements": [
+        {
+          "source_id": 2219,
+          "source_title": "Ophthalmology Research Registry",
+          "body": "Supports ophthalmology clinical research.\n\nSupports\n\n• Clinical Trials\n\n• Registries\n\n• AI Datasets\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-RESEARCH",
+          "reason": "Eye trials/registries versus imaging datasets; research governance shared",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 60030,
+            "body_sha256": "06d7b5f21e98b98bdc59c644625a314156dc17d939ad3c29308d1c75394fab93"
+          }
+        },
+        {
+          "source_id": 2588,
+          "source_title": "Ophthalmology Research Registry",
+          "body": "Supports ophthalmology clinical research.\n\nSupports\n\n• Clinical Trials\n\n• Imaging Databases\n\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+          "target_module": "EXT-RESEARCH",
+          "reason": "Eye trials/registries versus imaging datasets; research governance shared",
+          "timestamp": "2026-09-14",
+          "provenance": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 66950,
+            "body_sha256": "7b7d9cb53c95c0d745f966f960b7b5b47fb65ea8aad873711fa5489cd8940ad6"
+          }
+        }
+      ],
+      "migration_status": "PROPOSED_EXTENSION_TRACE_NOT_APPROVED",
+      "apply": false
+    }
+  ]
+}

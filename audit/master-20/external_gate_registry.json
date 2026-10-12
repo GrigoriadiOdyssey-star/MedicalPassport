@@ -1,0 +1,1618 @@
+{
+  "records": [
+    {
+      "gate_id": "CAP-IDENTITY-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IDENTITY-B01",
+      "canonical_owner": "CAP-IDENTITY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Choose issuer and account recovery/credential lifecycle; define account-to-patient binding and provider-role verification/expiry schemas. MFA enrollment and session revocation need misuse-case acceptance.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-IDENTITY-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-IDENTITY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IDENTITY-B03",
+      "canonical_owner": "CAP-IDENTITY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IDENTITY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-IDENTITY-B05",
+      "canonical_owner": "CAP-IDENTITY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-IDENTITY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-IDENTITY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IDENTITY-B06",
+      "canonical_owner": "CAP-IDENTITY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IDENTITY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-IDENTITY-B06",
+      "canonical_owner": "CAP-IDENTITY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-SECURITY-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-SECURITY-B01",
+      "canonical_owner": "CAP-SECURITY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Pinned actual issuer, role and policy providers",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-SECURITY-B02-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-SECURITY-B02",
+      "canonical_owner": "CAP-SECURITY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Executable adapter schema and signing configuration",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-SECURITY-B02"
+      ]
+    },
+    {
+      "gate_id": "CAP-SECURITY-B04-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-SECURITY-B04",
+      "canonical_owner": "CAP-SECURITY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Runtime negative integration cases",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-SECURITY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-SECURITY-B05",
+      "canonical_owner": "CAP-SECURITY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Jurisdiction, retention, migration and qualified acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-SECURITY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-SECURITY-B05-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-SECURITY-B05",
+      "canonical_owner": "CAP-SECURITY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Jurisdiction, retention, migration and qualified acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-SECURITY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-AUDIT-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-AUDIT-B01",
+      "canonical_owner": "CAP-AUDIT",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Producer registry, key lifecycle and current tenant/action authorization integration",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AUDIT-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-AUDIT-B03",
+      "canonical_owner": "CAP-AUDIT",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Approved retention/hold/export policy and independent checkpoint key custody",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AUDIT-B03-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-AUDIT-B03",
+      "canonical_owner": "CAP-AUDIT",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Approved retention/hold/export policy and independent checkpoint key custody",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AUDIT-B05-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-AUDIT-B05",
+      "canonical_owner": "CAP-AUDIT",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Approved internal-only exchange applicability or pinned external mapping with semantic-loss fixtures",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AUDIT-B06-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-AUDIT-B06",
+      "canonical_owner": "CAP-AUDIT",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Named architecture, security/privacy, clinical-safety applicability and owner acceptance evidence",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CONSENT-B01-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-CONSENT-B01",
+      "canonical_owner": "CAP-CONSENT",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Define recipient/resource/purpose/version/expiry grant and withdrawal schemas, conflict precedence and guardian authority. Approve jurisdiction/adolescent segmentation rules; consent is not the enforcement mechanism.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-CONSENT-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-CONSENT-B01-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-CONSENT-B01",
+      "canonical_owner": "CAP-CONSENT",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Define recipient/resource/purpose/version/expiry grant and withdrawal schemas, conflict precedence and guardian authority. Approve jurisdiction/adolescent segmentation rules; consent is not the enforcement mechanism.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-CONSENT-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-CONSENT-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-CONSENT-B03",
+      "canonical_owner": "CAP-CONSENT",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CONSENT-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-CONSENT-B05",
+      "canonical_owner": "CAP-CONSENT",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-CONSENT-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-CONSENT-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-CONSENT-B06",
+      "canonical_owner": "CAP-CONSENT",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CONSENT-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-CONSENT-B06",
+      "canonical_owner": "CAP-CONSENT",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DATA-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-DATA-B03",
+      "canonical_owner": "CAP-DATA",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DATA-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-DATA-B05",
+      "canonical_owner": "CAP-DATA",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-DATA-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-DATA-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-DATA-B06",
+      "canonical_owner": "CAP-DATA",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DATA-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-DATA-B06",
+      "canonical_owner": "CAP-DATA",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-INTEROP-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-INTEROP-B01",
+      "canonical_owner": "CAP-INTEROP",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Pin partner FHIR release and profiles, terminology system/version, map-loss and reconciliation fixtures; terminology expansion/validation contract and partner credentials remain unresolved.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-INTEROP-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-INTEROP-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-INTEROP-B03",
+      "canonical_owner": "CAP-INTEROP",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-INTEROP-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-INTEROP-B05",
+      "canonical_owner": "CAP-INTEROP",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-INTEROP-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-INTEROP-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-INTEROP-B06",
+      "canonical_owner": "CAP-INTEROP",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-INTEROP-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-INTEROP-B06",
+      "canonical_owner": "CAP-INTEROP",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-QR-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-QR-B03",
+      "canonical_owner": "CAP-QR",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-QR-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-QR-B05",
+      "canonical_owner": "CAP-QR",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-QR-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-QR-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-QR-B06",
+      "canonical_owner": "CAP-QR",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-QR-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-QR-B06",
+      "canonical_owner": "CAP-QR",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PROFILE-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-PROFILE-B03",
+      "canonical_owner": "CAP-PROFILE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PROFILE-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-PROFILE-B05",
+      "canonical_owner": "CAP-PROFILE",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-PROFILE-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-PROFILE-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-PROFILE-B06",
+      "canonical_owner": "CAP-PROFILE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PROFILE-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-PROFILE-B06",
+      "canonical_owner": "CAP-PROFILE",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-MEDICATION-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-MEDICATION-B03",
+      "canonical_owner": "CAP-MEDICATION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-MEDICATION-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-MEDICATION-B05",
+      "canonical_owner": "CAP-MEDICATION",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-MEDICATION-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-MEDICATION-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-MEDICATION-B06",
+      "canonical_owner": "CAP-MEDICATION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-MEDICATION-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-MEDICATION-B06",
+      "canonical_owner": "CAP-MEDICATION",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PHARMACY-B04-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-PHARMACY-B04",
+      "canonical_owner": "CAP-PHARMACY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Verified pharmacy/prescription integrations and jurisdiction-specific substitution/delivery acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PHARMACY-B04-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-PHARMACY-B04",
+      "canonical_owner": "CAP-PHARMACY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Verified pharmacy/prescription integrations and jurisdiction-specific substitution/delivery acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PHARMACY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-PHARMACY-B05",
+      "canonical_owner": "CAP-PHARMACY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Privacy/consent/retention policy, stale stock handling tests and qualified safety/owner acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-PHARMACY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-ADMINISTRATION-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-ADMINISTRATION-B03",
+      "canonical_owner": "CAP-ADMINISTRATION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ADMINISTRATION-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-ADMINISTRATION-B05",
+      "canonical_owner": "CAP-ADMINISTRATION",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-ADMINISTRATION-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-ADMINISTRATION-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-ADMINISTRATION-B06",
+      "canonical_owner": "CAP-ADMINISTRATION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ADMINISTRATION-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-ADMINISTRATION-B06",
+      "canonical_owner": "CAP-ADMINISTRATION",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ALLERGY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-ALLERGY-B03",
+      "canonical_owner": "CAP-ALLERGY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ALLERGY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-ALLERGY-B05",
+      "canonical_owner": "CAP-ALLERGY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-ALLERGY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-ALLERGY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-ALLERGY-B06",
+      "canonical_owner": "CAP-ALLERGY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ALLERGY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-ALLERGY-B06",
+      "canonical_owner": "CAP-ALLERGY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-LABORATORY-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-LABORATORY-B01",
+      "canonical_owner": "CAP-LABORATORY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Specify specimen/observation/report identity, units/method/reference intervals, corrected results, critical flag acknowledgement and partner conformance fixtures.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-LABORATORY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-LABORATORY-B03",
+      "canonical_owner": "CAP-LABORATORY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-LABORATORY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-LABORATORY-B05",
+      "canonical_owner": "CAP-LABORATORY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-LABORATORY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-LABORATORY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-LABORATORY-B06",
+      "canonical_owner": "CAP-LABORATORY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-LABORATORY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-LABORATORY-B06",
+      "canonical_owner": "CAP-LABORATORY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IMAGING-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IMAGING-B03",
+      "canonical_owner": "CAP-IMAGING",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IMAGING-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-IMAGING-B05",
+      "canonical_owner": "CAP-IMAGING",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-IMAGING-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-IMAGING-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IMAGING-B06",
+      "canonical_owner": "CAP-IMAGING",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IMAGING-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-IMAGING-B06",
+      "canonical_owner": "CAP-IMAGING",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DOCUMENTS-B01-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-DOCUMENTS-B01",
+      "canonical_owner": "CAP-DOCUMENTS",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Define quarantined upload and immutable derivative schemas, MIME/size/archive limits, malware/OCR review lifecycle, retention and reauthorization on content retrieval.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-DOCUMENTS-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-DOCUMENTS-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-DOCUMENTS-B03",
+      "canonical_owner": "CAP-DOCUMENTS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DOCUMENTS-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-DOCUMENTS-B05",
+      "canonical_owner": "CAP-DOCUMENTS",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-DOCUMENTS-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-DOCUMENTS-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-DOCUMENTS-B06",
+      "canonical_owner": "CAP-DOCUMENTS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DOCUMENTS-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-DOCUMENTS-B06",
+      "canonical_owner": "CAP-DOCUMENTS",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IMMUNIZATION-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IMMUNIZATION-B03",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IMMUNIZATION-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-IMMUNIZATION-B05",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-IMMUNIZATION-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-IMMUNIZATION-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-IMMUNIZATION-B06",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-IMMUNIZATION-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-IMMUNIZATION-B06",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ENCOUNTER-B01-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-ENCOUNTER-B01",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Specify clinician attribution, procedure/therapy state transitions, consent/assent, source-owned devices/drugs and signed correction workflows; no autonomous indications or clearance.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ENCOUNTER-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-ENCOUNTER-B03",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ENCOUNTER-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-ENCOUNTER-B05",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-ENCOUNTER-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-ENCOUNTER-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-ENCOUNTER-B06",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-ENCOUNTER-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-ENCOUNTER-B06",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-APPOINTMENTS-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-APPOINTMENTS-B03",
+      "canonical_owner": "CAP-APPOINTMENTS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-APPOINTMENTS-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-APPOINTMENTS-B05",
+      "canonical_owner": "CAP-APPOINTMENTS",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-APPOINTMENTS-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-APPOINTMENTS-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-APPOINTMENTS-B06",
+      "canonical_owner": "CAP-APPOINTMENTS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-APPOINTMENTS-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-APPOINTMENTS-B06",
+      "canonical_owner": "CAP-APPOINTMENTS",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B01",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Specify verified clinician/region, meeting access, independent recording/translation consent, connection failure, clinical documentation and provider contracts.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-TELEMEDICINE-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B01-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B01",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Specify verified clinician/region, meeting access, independent recording/translation consent, connection failure, clinical documentation and provider contracts.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-TELEMEDICINE-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B01-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B01",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Specify verified clinician/region, meeting access, independent recording/translation consent, connection failure, clinical documentation and provider contracts.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-TELEMEDICINE-B01"
+      ]
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B03",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B05",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-TELEMEDICINE-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B06",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TELEMEDICINE-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-TELEMEDICINE-B06",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-NOTIFICATIONS-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-NOTIFICATIONS-B01",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Pin delivery providers, recipient verification, redacted templates, scheduling/expiry/retry and acknowledgement semantics; no clinical-response SLA has been established.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-NOTIFICATIONS-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-NOTIFICATIONS-B03",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-NOTIFICATIONS-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-NOTIFICATIONS-B05",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-NOTIFICATIONS-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-NOTIFICATIONS-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-NOTIFICATIONS-B06",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-NOTIFICATIONS-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-NOTIFICATIONS-B06",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DEVICES-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-DEVICES-B03",
+      "canonical_owner": "CAP-DEVICES",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DEVICES-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-DEVICES-B05",
+      "canonical_owner": "CAP-DEVICES",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-DEVICES-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-DEVICES-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-DEVICES-B06",
+      "canonical_owner": "CAP-DEVICES",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-DEVICES-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-DEVICES-B06",
+      "canonical_owner": "CAP-DEVICES",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AI-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-AI-B03",
+      "canonical_owner": "CAP-AI",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AI-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-AI-B05",
+      "canonical_owner": "CAP-AI",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-AI-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-AI-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-AI-B06",
+      "canonical_owner": "CAP-AI",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-AI-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-AI-B06",
+      "canonical_owner": "CAP-AI",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CDS-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-CDS-B03",
+      "canonical_owner": "CAP-CDS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CDS-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-CDS-B05",
+      "canonical_owner": "CAP-CDS",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-CDS-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-CDS-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-CDS-B06",
+      "canonical_owner": "CAP-CDS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CDS-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-CDS-B06",
+      "canonical_owner": "CAP-CDS",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TWIN-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TWIN-B03",
+      "canonical_owner": "CAP-TWIN",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TWIN-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-TWIN-B05",
+      "canonical_owner": "CAP-TWIN",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-TWIN-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-TWIN-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TWIN-B06",
+      "canonical_owner": "CAP-TWIN",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TWIN-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-TWIN-B06",
+      "canonical_owner": "CAP-TWIN",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-RESEARCH-B01-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-RESEARCH-B01",
+      "canonical_owner": "CAP-RESEARCH",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Define protocol/cohort/consent linkage, secondary-use permissions, de-identification/re-identification controls, dataset lineage, population bias and approved output disclosure.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-RESEARCH-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-RESEARCH-B03",
+      "canonical_owner": "CAP-RESEARCH",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-RESEARCH-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-RESEARCH-B05",
+      "canonical_owner": "CAP-RESEARCH",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-RESEARCH-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-RESEARCH-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-RESEARCH-B06",
+      "canonical_owner": "CAP-RESEARCH",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-RESEARCH-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-RESEARCH-B06",
+      "canonical_owner": "CAP-RESEARCH",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TRAVEL-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TRAVEL-B03",
+      "canonical_owner": "CAP-TRAVEL",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TRAVEL-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-TRAVEL-B05",
+      "canonical_owner": "CAP-TRAVEL",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-TRAVEL-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-TRAVEL-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-TRAVEL-B06",
+      "canonical_owner": "CAP-TRAVEL",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-TRAVEL-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-TRAVEL-B06",
+      "canonical_owner": "CAP-TRAVEL",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-EMERGENCY-B01-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-EMERGENCY-B01",
+      "canonical_owner": "CAP-EMERGENCY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Define supported jurisdiction/provider coverage, explicit recipient acknowledgement, unavailable/offline states, minimum disclosure and qualified emergency workflow acceptance.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-EMERGENCY-B01-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-EMERGENCY-B01",
+      "canonical_owner": "CAP-EMERGENCY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Define supported jurisdiction/provider coverage, explicit recipient acknowledgement, unavailable/offline states, minimum disclosure and qualified emergency workflow acceptance.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-EMERGENCY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-EMERGENCY-B03",
+      "canonical_owner": "CAP-EMERGENCY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-EMERGENCY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-EMERGENCY-B05",
+      "canonical_owner": "CAP-EMERGENCY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-EMERGENCY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-EMERGENCY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-EMERGENCY-B06",
+      "canonical_owner": "CAP-EMERGENCY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-EMERGENCY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-EMERGENCY-B06",
+      "canonical_owner": "CAP-EMERGENCY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-SPECIALTY-B03-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-SPECIALTY-B03",
+      "canonical_owner": "CAP-SPECIALTY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Applicability, pinned exchange profiles and terminology bindings require owner/partner confirmation; internal-only objects need an explicit approved non-applicability rationale.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-SPECIALTY-B05-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-SPECIALTY-B05",
+      "canonical_owner": "CAP-SPECIALTY",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Versioned event schemas, producers, durable delivery, replay/idempotency and retention contracts are incomplete.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": [
+        "CAP-SPECIALTY-B05"
+      ]
+    },
+    {
+      "gate_id": "CAP-SPECIALTY-B06-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-SPECIALTY-B06",
+      "canonical_owner": "CAP-SPECIALTY",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-SPECIALTY-B06-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-SPECIALTY-B06",
+      "canonical_owner": "CAP-SPECIALTY",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Actual partner/provider releases, credentials, operating regions and conformance evidence are not confirmed.",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-OPERATIONS-M19-B2-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-OPERATIONS-M19-B2",
+      "canonical_owner": "CAP-OPERATIONS",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Approved jurisdictional retention policy, operator permissions and verified infrastructure adapters",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-OPERATIONS-M19-B2-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-OPERATIONS-M19-B2",
+      "canonical_owner": "CAP-OPERATIONS",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Approved jurisdictional retention policy, operator permissions and verified infrastructure adapters",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-OPERATIONS-M19-B2-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-OPERATIONS-M19-B2",
+      "canonical_owner": "CAP-OPERATIONS",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Approved jurisdictional retention policy, operator permissions and verified infrastructure adapters",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-GOVERNANCE-M19-B2-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-GOVERNANCE-M19-B2",
+      "canonical_owner": "CAP-GOVERNANCE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Partner certification and clinical/legal evidence review criteria with jurisdiction-specific accountable approval",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-GOVERNANCE-M19-B2-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-GOVERNANCE-M19-B2",
+      "canonical_owner": "CAP-GOVERNANCE",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Partner certification and clinical/legal evidence review criteria with jurisdiction-specific accountable approval",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-GOVERNANCE-M19-B2-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-GOVERNANCE-M19-B2",
+      "canonical_owner": "CAP-GOVERNANCE",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Partner certification and clinical/legal evidence review criteria with jurisdiction-specific accountable approval",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-COVERAGE-M19-B2-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-COVERAGE-M19-B2",
+      "canonical_owner": "CAP-COVERAGE",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Verified insurer/payment adapters, jurisdictional billing policy and privacy acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-COVERAGE-M19-B2-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-COVERAGE-M19-B2",
+      "canonical_owner": "CAP-COVERAGE",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Verified insurer/payment adapters, jurisdictional billing policy and privacy acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-COVERAGE-M19-B2-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-COVERAGE-M19-B2",
+      "canonical_owner": "CAP-COVERAGE",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Verified insurer/payment adapters, jurisdictional billing policy and privacy acceptance",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PRESCRIPTION-M19-B2-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-PRESCRIPTION-M19-B2",
+      "canonical_owner": "CAP-PRESCRIPTION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Verified clinician/issuer authority, jurisdiction-dependent eRx rules and qualified clinical safety validation",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-PRESCRIPTION-M19-B2-JURISDICTION_CONFIGURATION_REQUIRED",
+      "source_blocker": "CAP-PRESCRIPTION-M19-B2",
+      "canonical_owner": "CAP-PRESCRIPTION",
+      "type": "JURISDICTION_CONFIGURATION_REQUIRED",
+      "requirement": "Verified clinician/issuer authority, jurisdiction-dependent eRx rules and qualified clinical safety validation",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned jurisdiction/purpose/data-category configuration; missing applicable rule denies activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CONDITION-M19-B2-EXTERNAL_INTEGRATION_REQUIRED",
+      "source_blocker": "CAP-CONDITION-M19-B2",
+      "canonical_owner": "CAP-CONDITION",
+      "type": "EXTERNAL_INTEGRATION_REQUIRED",
+      "requirement": "Clinical verification-state acceptance, privacy policy and external terminology integration",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Versioned authenticated adapter port; development uses explicit synthetic fixtures. Fail unavailable rather than invent partner success.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    },
+    {
+      "gate_id": "CAP-CONDITION-M19-B2-LEGAL_REVIEW_REQUIRED",
+      "source_blocker": "CAP-CONDITION-M19-B2",
+      "canonical_owner": "CAP-CONDITION",
+      "type": "LEGAL_REVIEW_REQUIRED",
+      "requirement": "Clinical verification-state acceptance, privacy policy and external terminology integration",
+      "status": "OPEN_RELEASE_GATE",
+      "implementation_boundary": "Typed DRAFT/APPROVED policy reference; genuine accountable approval verification required before activation.",
+      "evidence_required": "Authenticated capability/version/scope-bound approval or integration acceptance; no evidence fabricated",
+      "engineering_blocker_ids": []
+    }
+  ]
+}

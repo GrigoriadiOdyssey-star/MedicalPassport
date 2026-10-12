@@ -1,0 +1,331 @@
+{
+  "items": [
+    {
+      "module_source": 82,
+      "title": "Identity & Access Management (IAM)",
+      "source_queue": "audit/master-12/deep_review_queue.json",
+      "source_sha256": "e9915d5eda6933cc3e7a140cef3c85fea3e1b2b666635a62257291f00e1e88c7",
+      "affected_canonical_owner": "CAP-IDENTITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Identity, role and account-to-patient binding cannot be inferred from login alone.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Identity, role and account-to-patient binding cannot be inferred from login alone.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 222,
+      "title": "Identity & Access Management",
+      "source_queue": "audit/master-12/deep_review_queue.json",
+      "source_sha256": "2f396d737c2c9e2ac4f64398b20a53d598b64b61f9b1ed3b1feb62cbb4cb5bc9",
+      "affected_canonical_owner": "CAP-IDENTITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Current identity/role adapter state is mandatory at release; stale binding denies.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Current identity/role adapter state is mandatory at release; stale binding denies.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 223,
+      "title": "Multi-Factor Authentication",
+      "source_queue": "audit/master-12/deep_review_queue.json",
+      "source_sha256": "51eb66dfe639b487cc97773f128f8485c2d8e24831a25d2b72f07dab2cd77226",
+      "affected_canonical_owner": "CAP-IDENTITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: MFA enrollment/recovery must invalidate affected sessions; no fallback bypass from account role.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "MFA enrollment/recovery must invalidate affected sessions; no fallback bypass from account role.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 74,
+      "title": "Medical Passport Screen Architecture",
+      "source_queue": "audit/master-12/deep_review_queue.json",
+      "source_sha256": "2f9ca22679d0b3489036cab1d6ce1a1661b1583b65217e26af930f919465eace",
+      "affected_canonical_owner": "CAP-PROFILE",
+      "clinical_risk": "Misinterpretation of clinical or accountability state",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Adult allergy presentation must preserve UNKNOWN versus NOT_ASSESSED versus NO_KNOWN_ALLERGY and provenance.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Adult allergy presentation must preserve UNKNOWN versus NOT_ASSESSED versus NO_KNOWN_ALLERGY and provenance.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 226,
+      "title": "Audit Trail System",
+      "source_queue": "audit/master-12/deep_review_queue.json",
+      "source_sha256": "d177eb1069dab29780118c5ad30b5e8df619ec741a13e61db244f7e649e8801c",
+      "affected_canonical_owner": "CAP-AUDIT",
+      "clinical_risk": "Misinterpretation of clinical or accountability state",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Access-attempt receipts do not prove clinician reading or successful network delivery.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Access-attempt receipts do not prove clinician reading or successful network delivery.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 224,
+      "title": "Encryption Framework",
+      "source_queue": "audit/master-12/deep_review_queue.json",
+      "source_sha256": "c5d423d1a920c3cda7e79478a49393230bd76781ea3a3442a90df72a741990e6",
+      "affected_canonical_owner": "CAP-SECURITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Encrypted storage/transport does not substitute for current resource-level authorization.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Encrypted storage/transport does not substitute for current resource-level authorization.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 52,
+      "title": "Database Architecture",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "8fa7b132e6919651f65e8dd89350e02bb96ce5595924e03a3a5fbada631c207c",
+      "affected_canonical_owner": "CAP-DATA",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Patient/source identity, conflict quarantine and storage version boundary; no patient merge inferred from account.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Patient/source identity, conflict quarantine and storage version boundary; no patient merge inferred from account.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 83,
+      "title": "Audit Logging Architecture",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "871305ebf496947835419042f5050b5d849ce3fd87841bdb9c08529affca7e24",
+      "affected_canonical_owner": "CAP-AUDIT",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Audit uses opaque references; no clinical before/after payload or credentials in routine logs.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Audit uses opaque references; no clinical before/after payload or credentials in routine logs.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 101,
+      "title": "User Registration Architecture",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "e2424a00af94f9d24845026f782f92e1a9ab196bc3da507160fbfa3120bda08f",
+      "affected_canonical_owner": "CAP-IDENTITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Registration does not establish adult patient identity or current clinician credentials.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Registration does not establish adult patient identity or current clinician credentials.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 102,
+      "title": "Login Architecture",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "02e00f0b8e54aa725067c28e2c8f285264e35153b62971e1dd47245eced53ae3",
+      "affected_canonical_owner": "CAP-IDENTITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Login and recovery require independently verified subject/binding and current revocation state.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Login and recovery require independently verified subject/binding and current revocation state.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 104,
+      "title": "Profile Management",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "6799951fcd58c885d87cac7b36600d5637dd79dc3522381de713d03127f96a6f",
+      "affected_canonical_owner": "CAP-PROFILE",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Profile is a permission-filtered projection, never an independent clinical source.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Profile is a permission-filtered projection, never an independent clinical source.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 110,
+      "title": "Allergy Management",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "24efb6090b5ccff1c980535359360207fa96e1a982ed8b66f2383cf3b6b36525",
+      "affected_canonical_owner": "CAP-ALLERGY",
+      "clinical_risk": "Misinterpretation of clinical or accountability state",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Reported, confirmed, absent and unknown allergy states must remain distinct with attributed source.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Reported, confirmed, absent and unknown allergy states must remain distinct with attributed source.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    },
+    {
+      "module_source": 225,
+      "title": "Digital Signature Platform",
+      "source_queue": "audit/master-13/deep_review_queue.json",
+      "source_sha256": "505cbee607073f53c88d2e12f6d7ec6348e9e30e11f4800a7fab458df9b4def4",
+      "affected_canonical_owner": "CAP-SECURITY",
+      "clinical_risk": "Wrong identity, scope or unauthorized disclosure may expose clinical data",
+      "precise_unresolved_question": "Does the implemented workflow enforce this retained boundary: Signature integrity and issuer trust do not prove clinical correctness or prescribing authority.?",
+      "existing_evidence": [
+        {
+          "path": "docs/engineering/mvp-contracts21.md",
+          "sha256": "55e24a6bcfc528887e3803f57a6828980bb99a6bb29ca5432c2e23de4a5a5118"
+        },
+        {
+          "path": "audit/master-20/deep_clinical_queue_routing.json",
+          "sha256": "d7252f3ada49ef2daa99050b09088b9cb295ee97378bf8ef984328df5830af0c"
+        }
+      ],
+      "required_engineering_decision": "Signature integrity and issuer trust do not prove clinical correctness or prescribing authority.",
+      "engineering_resolution": "Defined in MASTER21 ports/shared admission and display contract; verify actual runtime via backlog",
+      "clinician_validation_mandatory_before_coding": false,
+      "validation_only_required_before_clinical_release": true,
+      "disposition": "BLOCKS_CLINICAL_RELEASE",
+      "clinical_approval": false
+    }
+  ],
+  "remaining_queue_reference": "audit/master-20/deep_clinical_queue_routing.json",
+  "other_items_reprocessed": 0
+}

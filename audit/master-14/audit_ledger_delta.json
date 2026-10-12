@@ -1,0 +1,82 @@
+{
+  "pass": "MASTER-14",
+  "modules": [
+    {
+      "original_id": 107,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    },
+    {
+      "original_id": 118,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    },
+    {
+      "original_id": 342,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    },
+    {
+      "original_id": 367,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    },
+    {
+      "original_id": 756,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    },
+    {
+      "original_id": 1025,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    },
+    {
+      "original_id": 4305,
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false,
+      "exclusive_status": "CANONICALIZED",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "deep_review_required": true
+    }
+  ]
+}

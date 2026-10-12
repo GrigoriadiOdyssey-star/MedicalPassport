@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 46,
+  "family": "ai-assisted-document-collaboration",
+  "owner": "CAP-DOCUMENTS",
+  "ids": [
+    1752,
+    1968
+  ],
+  "decision_sha256": "cd33a760bf31616362335948843ec86b1e08b586909a37f1deb5ae72330e1616",
+  "source_hashes": {
+    "1752": "170fc50d6a4faf732d4488c7e182c7c18e49172d338b0e56b6ed193e0b0f52d4",
+    "1968": "ca7269343ef66b53af251d4e9a3ed6b51d406049cfd1a6d105415c63009eed31"
+  }
+}

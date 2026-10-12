@@ -1,0 +1,519 @@
+{
+  "pass": "MASTER-18",
+  "completed_batches": 56,
+  "normalized": 4312,
+  "canonicalized": 4312,
+  "targeted_tests": 8,
+  "failed": 0,
+  "batches": [
+    {
+      "path": "audit/master-18/batches/001.json",
+      "sha256": "aa5fe5c10b9bdc7c0d81e3ce37efe15cee72350e81e44a59c9a3d916237b35ef"
+    },
+    {
+      "path": "audit/master-18/batches/002.json",
+      "sha256": "06af1584211c78197ef70ead9a13604e75f18c5905bad31362b4130173b2a9ab"
+    },
+    {
+      "path": "audit/master-18/batches/003.json",
+      "sha256": "2cfe34d0b10aa88638fddc0b3ecb30e30b5dcdeda924ceeac4aff8c0a0a029ff"
+    },
+    {
+      "path": "audit/master-18/batches/004.json",
+      "sha256": "8956a71648d34e183b2fd9dd937d2e6bb9bef0d12e42255f2897cf1d193ef006"
+    },
+    {
+      "path": "audit/master-18/batches/005.json",
+      "sha256": "84677de2c9b3540dc4f796ad0098587f2e00d2021ae6de71f5d46501a5cbf340"
+    },
+    {
+      "path": "audit/master-18/batches/006.json",
+      "sha256": "284fd19e7243625406b61eaee02c78104c28d52ad2d63889bd0f068aa7124be9"
+    },
+    {
+      "path": "audit/master-18/batches/007.json",
+      "sha256": "13aee27077576a0ae6c6b18a0bb24879c5ff208e283c0c2e3f8f32ac406c41b9"
+    },
+    {
+      "path": "audit/master-18/batches/008.json",
+      "sha256": "6efabad14a8d8718d58f69845ba94f6e7c6083c90f50566770708b119af48af5"
+    },
+    {
+      "path": "audit/master-18/batches/009.json",
+      "sha256": "ccfdfd20f2d914e0fb397b26c8ad35d86826742992692f97ffd510bbfddf1b0a"
+    },
+    {
+      "path": "audit/master-18/batches/010.json",
+      "sha256": "7447723b7b73f28d69b5e71596ca82ebd3e559d6b84f1ff962498410f6496b99"
+    },
+    {
+      "path": "audit/master-18/batches/011.json",
+      "sha256": "7ea4a8fc260b4127ce33b42fc061545d62c2c01f3951bc8cc4fa9b72cc23b3e1"
+    },
+    {
+      "path": "audit/master-18/batches/012.json",
+      "sha256": "556572c6bed6e06c223417d479aa6c40106b029e6862813bf389797f55d2886e"
+    },
+    {
+      "path": "audit/master-18/batches/013.json",
+      "sha256": "5959d176eee8224551715426bac556439bd69a928387402dba8963529371735d"
+    },
+    {
+      "path": "audit/master-18/batches/014.json",
+      "sha256": "f65b0e5b0b04d32ac8409a1670de3ea72922870333e985e70d087378675d2588"
+    },
+    {
+      "path": "audit/master-18/batches/015.json",
+      "sha256": "c2de7445422bcef5bef282c11fa73bb048c401ac1143bb4ffbf9793ef1910b65"
+    },
+    {
+      "path": "audit/master-18/batches/016.json",
+      "sha256": "7ccc5339bf3db05fbe9d44d7deeadcd8eac4b77bda99aad08a4f9df4a05eb9e9"
+    },
+    {
+      "path": "audit/master-18/batches/017.json",
+      "sha256": "4978c211ad3bcfb3a3215c5610680750fe4ed5da7a1afefea2383f264ca3f1d8"
+    },
+    {
+      "path": "audit/master-18/batches/018.json",
+      "sha256": "f2a520302cf35be2b9049335fda036e889398c05b866a5d3533f52b942f3f324"
+    },
+    {
+      "path": "audit/master-18/batches/019.json",
+      "sha256": "9852018d90e8b584cef76dfc0b798a306a87ced472a5cdfbdf9818a073e3578b"
+    },
+    {
+      "path": "audit/master-18/batches/020.json",
+      "sha256": "6deecc83deb92a7fb7d5147cf82f3b461aeb9385a5bb2c4d8719a9f4b75dcdec"
+    },
+    {
+      "path": "audit/master-18/batches/021.json",
+      "sha256": "bae7cc874a0b3d8601d9e838a8c1e5430e59789058f37393f80c739486bfe802"
+    },
+    {
+      "path": "audit/master-18/batches/022.json",
+      "sha256": "4de923ee73d39957ea8642a756b6a0fd07a3c02b46ba11c68b0cb671ba53e426"
+    },
+    {
+      "path": "audit/master-18/batches/023.json",
+      "sha256": "41fb546e7b9afbc578d782efedf1d534fd193eaa4b4557807a0910abbec863f6"
+    },
+    {
+      "path": "audit/master-18/batches/024.json",
+      "sha256": "e5e6e128b79f6ca7d1cb3e2f1a9370382510331477a0180b2ae2134e42f52dc4"
+    },
+    {
+      "path": "audit/master-18/batches/025.json",
+      "sha256": "fc1f6838a35b0f7cef9dcebb5e5c380a3416f48f73ae227aeccf539bb9209a64"
+    },
+    {
+      "path": "audit/master-18/batches/026.json",
+      "sha256": "42337adb1e614b5c680344bb1242dd4eec4f8b96ffda41548f9719c945d1d596"
+    },
+    {
+      "path": "audit/master-18/batches/027.json",
+      "sha256": "d5578409e815e2c4e9df833b79305bd9f9be1210a02063dc89ec05089f413530"
+    },
+    {
+      "path": "audit/master-18/batches/028.json",
+      "sha256": "6866c71f5f4135c8f1bb51c4158eaffd0688f93c073eb892d9f72e058ffd448e"
+    },
+    {
+      "path": "audit/master-18/batches/029.json",
+      "sha256": "d1838c633d420d227fddf72deb5e94e8fae27d796ddbde20c2a0cbeb7b1c26eb"
+    },
+    {
+      "path": "audit/master-18/batches/030.json",
+      "sha256": "d6686a24af35e0af84bd85b58b6e45046db3512dd3aabea2e3ba59613426932b"
+    },
+    {
+      "path": "audit/master-18/batches/031.json",
+      "sha256": "fbbb6b643f0570641f83a520ecc42ce860f23e50402c6e6b26ae5dc5c4c76769"
+    },
+    {
+      "path": "audit/master-18/batches/032.json",
+      "sha256": "33819fdd18bbdec611faa369ddb7e2aa9a3196a7add6c63042dae7283905da49"
+    },
+    {
+      "path": "audit/master-18/batches/033.json",
+      "sha256": "946d82aff620ea2dfabfa6a713e51e84a41ddc9a1c17f8f081aec570e56f6e68"
+    },
+    {
+      "path": "audit/master-18/batches/034.json",
+      "sha256": "3b2f1142e6ed090e56be5b51d1fd88d60282df7b7df0c5258695f6b25e3b31d1"
+    },
+    {
+      "path": "audit/master-18/batches/035.json",
+      "sha256": "26270a0388126bdddfee4dc2d9de4af517f948c4bbab176baec5c7e59f3f0236"
+    },
+    {
+      "path": "audit/master-18/batches/036.json",
+      "sha256": "ad9006023ee169b8d4723093717bce2d3e4ccea3ce5ab65fcac3289bbe3b1ad6"
+    },
+    {
+      "path": "audit/master-18/batches/037.json",
+      "sha256": "fb627c74a5af4d4a1136da5ae1ba81d7d3f486bdafca8b9fb99478714127743a"
+    },
+    {
+      "path": "audit/master-18/batches/038.json",
+      "sha256": "7fc44465aa869cb3dddbda0be1ffd8fdc23b8bb7f3154b3ad1636674cbe60bee"
+    },
+    {
+      "path": "audit/master-18/batches/039.json",
+      "sha256": "b80a1719b744739d6a9572664d01813aea904ab5be89bae96b885a4b55b4b228"
+    },
+    {
+      "path": "audit/master-18/batches/040.json",
+      "sha256": "460f4a1f9a19b495d40e4a3b6187b0b4f25657f64d004f41b2830ba272a7a9cc"
+    },
+    {
+      "path": "audit/master-18/batches/041.json",
+      "sha256": "c3f7d293367161663244b57f844e3b909d3477a26814c0b8c849501dcb151bc0"
+    },
+    {
+      "path": "audit/master-18/batches/042.json",
+      "sha256": "76cac7b455acf0dc6fb2b0d3e241e8ff6b28b3a141c9800384313404b2ec9828"
+    },
+    {
+      "path": "audit/master-18/batches/043.json",
+      "sha256": "59c22631c472cce334669f4135522f148c6ba1de2fc36735fe9af4dd81b8cda2"
+    },
+    {
+      "path": "audit/master-18/batches/044.json",
+      "sha256": "f07ecc9d044d76fcd13eba6d53139cfc17d3e4378d5158b3bd38054e08d8d9cc"
+    },
+    {
+      "path": "audit/master-18/batches/045.json",
+      "sha256": "b3398486bdc4f2ae86a50e6b46deea3b581b419b775ea17ebc379dd7e9e5daa1"
+    },
+    {
+      "path": "audit/master-18/batches/046.json",
+      "sha256": "cf927eb0cfff07b2ea17552a3aad5c7e584e553ddf888eaabe364250c88747dd"
+    },
+    {
+      "path": "audit/master-18/batches/047.json",
+      "sha256": "d34ba992f648a737d04881d00672f32c157c032d9e939b38f8b0a18941e800dc"
+    },
+    {
+      "path": "audit/master-18/batches/048.json",
+      "sha256": "370eb2bdc74f884bf0f49abdd9e9fbf727c7742c3dcc360d218295052efdddde"
+    },
+    {
+      "path": "audit/master-18/batches/049.json",
+      "sha256": "df9453b71a465f682042c2dd8b4000a860c268a3fedd20ba424773cbe52eb4c2"
+    },
+    {
+      "path": "audit/master-18/batches/050.json",
+      "sha256": "16ff52b7316b4e4035776e3666554e0c9a757d41833a96638f97f88c85a3c96e"
+    },
+    {
+      "path": "audit/master-18/batches/051.json",
+      "sha256": "af58f8d1aace7367597636cb9bb266bd37047d02bb32ca64c4d64b4fecf42a4b"
+    },
+    {
+      "path": "audit/master-18/batches/052.json",
+      "sha256": "a50ceec9a9af40187165dada027a049dea2746b484f46a89de28db07aa995c0a"
+    },
+    {
+      "path": "audit/master-18/batches/053.json",
+      "sha256": "8fd49f657ab97a821e981a2ff58fb2aaa797357b269969897a50d927b3f7c6dd"
+    },
+    {
+      "path": "audit/master-18/batches/054.json",
+      "sha256": "791a3d925e4aadf6d5861a33a2f0a69fab7ac80cd89ec05be10c7bb6838e715d"
+    },
+    {
+      "path": "audit/master-18/batches/055.json",
+      "sha256": "bb1b45ef3d6fd132f3713debdc7a3c40e2be088f5a70936fb5d99d5cc82136fa"
+    },
+    {
+      "path": "audit/master-18/batches/056.json",
+      "sha256": "95827d817150a6e044a349338f19d21878597a463944b279e46d3aa190e8c75c"
+    }
+  ],
+  "next_exact_cluster": {
+    "key": "remaining-pediatric-high-risk-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-SPECIALTY",
+      "CAP-IMMUNIZATION",
+      "CAP-ALLERGY",
+      "CAP-MEDICATION",
+      "CAP-CDS",
+      "CAP-IMAGING",
+      "CAP-LABORATORY",
+      "CAP-DEVICES",
+      "CAP-CONSENT"
+    ],
+    "ids": [
+      4004,
+      4005,
+      4014,
+      4025,
+      4029,
+      4030,
+      4036,
+      4047,
+      4049,
+      4054,
+      4055,
+      4056,
+      4065,
+      4084,
+      4087,
+      4094,
+      4095,
+      4104,
+      4105,
+      4107,
+      4111,
+      4112,
+      4114,
+      4124,
+      4127,
+      4128,
+      4129,
+      4132,
+      4134,
+      4136,
+      4138,
+      4142,
+      4148,
+      4150,
+      4151,
+      4154,
+      4185,
+      4214,
+      4215,
+      4254,
+      4263,
+      4264,
+      4266,
+      4272,
+      4274,
+      4275,
+      4276,
+      4277,
+      4278,
+      4280,
+      4281,
+      4282,
+      4284,
+      4290,
+      4291,
+      4292,
+      4294,
+      4295,
+      4298,
+      4302,
+      4303,
+      4304,
+      4306,
+      4308,
+      4309,
+      4310,
+      4312,
+      4313,
+      4314,
+      4315,
+      4316,
+      4317,
+      4318,
+      4319,
+      4320,
+      4325,
+      4326,
+      4327,
+      4328,
+      4329,
+      4330,
+      4331,
+      4332,
+      4333,
+      4334,
+      4335,
+      4336,
+      4337,
+      4338,
+      4340,
+      4342,
+      4343,
+      4344,
+      4345,
+      4346,
+      4348,
+      4349,
+      4350,
+      4353,
+      4356,
+      4357,
+      4359,
+      4362,
+      4371,
+      4372,
+      4373,
+      4375,
+      4377,
+      4378,
+      4379,
+      4380,
+      4382,
+      4386,
+      4391,
+      4394,
+      4395,
+      4403,
+      4406,
+      4408,
+      4409,
+      4410,
+      4413,
+      4415,
+      4417,
+      4421,
+      4424,
+      4425,
+      4426,
+      4428,
+      4430,
+      4436,
+      4437,
+      4447,
+      4464,
+      4468,
+      4469,
+      4473,
+      4483,
+      4484,
+      4487,
+      4489,
+      4490,
+      4505,
+      4509,
+      4512,
+      4514,
+      4522,
+      4526,
+      4528,
+      4553,
+      4557,
+      4559,
+      4561,
+      4564,
+      4589,
+      4597,
+      4604,
+      4612,
+      4613,
+      4616,
+      4621,
+      4712,
+      4729,
+      4730,
+      4734,
+      4738,
+      4747,
+      4748,
+      4756,
+      4758,
+      4765,
+      4770,
+      4777,
+      4778,
+      4783,
+      4785,
+      4786,
+      4790,
+      4802,
+      4806,
+      4808,
+      4811,
+      4812,
+      4813,
+      4814,
+      4817,
+      4821,
+      4828,
+      4829,
+      4830,
+      4833,
+      4836,
+      4844,
+      4846,
+      4847,
+      4852,
+      4854,
+      4855,
+      4858,
+      4859,
+      4862,
+      4869,
+      4880,
+      4881,
+      4888,
+      4891,
+      4892,
+      4894,
+      4896,
+      4902,
+      4903,
+      4904,
+      4907,
+      4908,
+      4910,
+      4912,
+      4914,
+      4915,
+      4917,
+      4919,
+      4927,
+      4928,
+      4931,
+      4934,
+      4935,
+      4936,
+      4941,
+      4942,
+      4944,
+      4947,
+      4952,
+      4954,
+      4957,
+      4963,
+      4970,
+      4971,
+      4972,
+      4980,
+      5003,
+      5005,
+      5008,
+      5009,
+      5011,
+      5012,
+      5016,
+      5017,
+      5030,
+      5036,
+      5037,
+      5052,
+      5053,
+      5054,
+      5056,
+      5063,
+      5067,
+      5072,
+      5077,
+      5082,
+      5085,
+      5087,
+      5134,
+      5152,
+      5156,
+      5157,
+      5158,
+      5160,
+      5165,
+      5170
+    ]
+  }
+}

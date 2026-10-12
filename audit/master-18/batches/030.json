@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 30,
+  "family": "ai-identity-security-consent-data",
+  "owner": "CAP-IDENTITY",
+  "ids": [
+    1345
+  ],
+  "decision_sha256": "06843996065738ff30baabd2762294edb3d024e18a458ab83fee9fa7a7164141",
+  "source_hashes": {
+    "1345": "315702c1314fd56a3d23912f0201a7bffb7c5ef33243bf467116d1ec99eaafa8"
+  }
+}

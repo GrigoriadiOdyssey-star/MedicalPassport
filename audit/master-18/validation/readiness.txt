@@ -1,0 +1,16 @@
+✔ receipt schema and synthetic fixtures agree with closed paging oracle (5.7948ms)
+✔ receipt omission, unknown clinical payload and malformed fields fail closed (1.125ms)
+✔ snapshot order, duplicate receipts, upper bounds and empty cursor loops fail (0.6546ms)
+✔ withheld actors and lifecycle outcome constraints preserve privacy and semantics (0.3204ms)
+✔ query authority model denies cross-tenant, clinician-only and absent bindings uniformly (0.3957ms)
+✔ producer clock skew is allowed and syntax does not prove delivery or authority (0.4837ms)
+✔ bounded contract closes one MVP specification category without erasing full-owner blockers (16.3585ms)
+✔ all current and inherited readiness evidence matches exact on-disk content (33.1881ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 174.4934

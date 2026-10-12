@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "source_branch": "implementation/cloud-ai-consent-acceptance",
+  "base_sha": "5e7f130a303a4e4e0665049aa8972b436e7c1c39",
+  "target_branch": "implementation/cloud-mvp-completion",
+  "dependency_mr": 11,
+  "counting": {
+    "original_ids": 5175,
+    "fully_closed_original_modules": null,
+    "reason": "No exhaustive source_id -> deployed runtime acceptance ledger; do not infer closure from canonical helpers or tests",
+    "nutrition_is_separate_extension": true
+  },
+  "items": [
+    {
+      "owner": "CORE-CAP-IDENTITY",
+      "source_ids": [
+        54,
+        29
+      ],
+      "status": "IMPLEMENTED_NOT_VERIFIED",
+      "code": [
+        "public/api/_lib/supabase-auth.mjs"
+      ],
+      "api": [
+        "/api/login",
+        "/api/me",
+        "/api/recover",
+        "/api/recover/session",
+        "/api/recover/update",
+        "/api/logout"
+      ],
+      "acceptance": "Existing contracts retained; final independent live sessions BLOCKED"
+    },
+    {
+      "owner": "CORE-CAP-AI",
+      "source_ids": [
+        25,
+        77
+      ],
+      "clause_ids": [
+        "M19-CAP-AI-29e90b5e07c59b34",
+        "M19-CAP-AI-9898ec8f5318b048",
+        "M19-CAP-AI-488f3e9404ec57c4",
+        "M19-CAP-AI-9a47bfcee126667c"
+      ],
+      "status": "IMPLEMENTED_NOT_VERIFIED",
+      "code": [
+        "public/api/_lib/cloud-assistant.mjs",
+        "public/api/_lib/openai-responses.mjs",
+        "public/main.js"
+      ],
+      "database": "20261008211343_assistant_conversations_and_budget.sql (managed DB unapplied)",
+      "api": [
+        "/api/assistant/status",
+        "/api/assistant/conversations",
+        "/api/assistant/conversations/:id"
+      ],
+      "ui": "disabled-mode history CRUD + truthful latest40 notice",
+      "tests": [
+        "cloud-assistant-timeout",
+        "cloud-assistant-history-readiness",
+        "cloud-assistant-history-ui",
+        "existing cloud-assistant/UI"
+      ],
+      "component_result": "PASS",
+      "live_result": "BLOCKED"
+    },
+    {
+      "owner": "CORE-CAP-QR",
+      "source_ids": [
+        14,
+        32,
+        33
+      ],
+      "status": "IMPLEMENTED_NOT_VERIFIED",
+      "code": [
+        "public/api/_lib/cloud-consent.mjs"
+      ],
+      "database": "20261008211351_qr_consent_read_contract.sql (managed DB unapplied)",
+      "tests": [
+        "qr-consent-contract.sql"
+      ],
+      "component_result": "PASS",
+      "live_result": "BLOCKED",
+      "document_proxy": "BLOCKED"
+    },
+    {
+      "owner": "CORE-CAP-DOCUMENTS",
+      "source_ids": [
+        12,
+        39,
+        40
+      ],
+      "status": "IMPLEMENTED_NOT_VERIFIED",
+      "code": [
+        "public/api/_lib/cloud-documents.mjs",
+        "public/api/_lib/cloud-document-content.mjs"
+      ],
+      "database": "20261011233250_document_ingestion_verification.sql (CLI-generated; managed DB unapplied)",
+      "api": [
+        "POST/api/uploads",
+        "POST/api/uploads/:id/complete",
+        "POST/api/uploads/:id/cancel",
+        "edht_document_verification_state"
+      ],
+      "tests": [
+        "cloud-document-content",
+        "cloud-document-completion",
+        "document-server-verification-contract.sql"
+      ],
+      "component_result": "PASS",
+      "live_result": "BLOCKED",
+      "malware_state": "NOT_CONFIGURED"
+    },
+    {
+      "owner": "CAP-NUTRITION",
+      "source_ids": [],
+      "provenance": {
+        "branch": "architecture/unified-clinical-nutrition",
+        "sha": "109a57486588d7199b6405a75c86fcb5c9ea2e85",
+        "consolidation_reference": "SRC-0292",
+        "mapping": "SOURCE_MAPPING_PENDING for whole-clause/original closure"
+      },
+      "status": "IMPLEMENTED_NOT_VERIFIED",
+      "profile": "GENERAL",
+      "code": [
+        "public/nutrition-model.mjs",
+        "public/nutrition-ui.js",
+        "public/api/_lib/cloud-record-validation.mjs"
+      ],
+      "database": "Existing observation append/version layer; no new RLS/kind",
+      "api": [
+        "GET/api/views/nutrition",
+        "POST/api/records",
+        "POST/api/records/:id/update",
+        "POST/api/records/:id/archive",
+        "GET/api/records/:id/history"
+      ],
+      "tests": [
+        "cloud-nutrition",
+        "cloud-nutrition-ui"
+      ],
+      "component_result": "PASS",
+      "clinical_validation": "NOT_APPROVED",
+      "live_result": "BLOCKED"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "CLOUD_CI_RUNNER",
+      "status": "BLOCKED",
+      "reason": "GitLab-hosted quota/tags were not confirmed; existing runner57035521 is HP. New branch uses a fresh unmatched cloud-only tag. No extra test skip."
+    },
+    {
+      "id": "ISOLATED_SUPABASE",
+      "status": "BLOCKED",
+      "reason": "Only the existing potentially shared project exists. Org Free confirmed. get_cost UNAVAILABLE (MCP tool get_cost was not returned by tools/list). No paid resources/upgrade or live schema writes."
+    },
+    {
+      "id": "LIVE_AI",
+      "status": "BLOCKED",
+      "reason": "Paid provider calls deferred. No key/model/pricing/budget capability configured. Contract mocks are not live acceptance."
+    },
+    {
+      "id": "LIVE_AUTH_RLS_AB_C",
+      "status": "BLOCKED",
+      "reason": "Disposable PG role contracts pass; actual independent A/B/verified-clinician C/unverified clinician Supabase sessions on final Preview remain unverified."
+    },
+    {
+      "id": "DOCUMENT_RELEASE",
+      "status": "BLOCKED",
+      "reason": "Server attestation migration prepared and cloud-tested, not applied to managed project. Capability unconfigured. No AV/OCR/translation worker. QR document proxy remains unavailable. Legacy/direct Storage/durable-grant path not certified."
+    },
+    {
+      "id": "CLINICAL_VERTICALS",
+      "status": "IN_PROGRESS",
+      "reason": "Existing six-kind record layer reused; specialised cloud laboratory/pharmacy/imaging/twin/calculation flows not closed."
+    },
+    {
+      "id": "NUTRITION_DB_CONTRACT",
+      "status": "BLOCKED",
+      "reason": "Anthropometry API+UI implemented; direct RPC body validation/global completeness, children/guardian flows and clinical nutrition plans not implemented."
+    },
+    {
+      "id": "HISTORICAL_BASELINE",
+      "status": "BLOCKED",
+      "reason": "Unskipped root248 tests:247PASS/1existing MASTER09cached-baselineFAIL. Historical source/assertions/guards untouched; prior runtime exclusion unchanged."
+    }
+  ]
+}

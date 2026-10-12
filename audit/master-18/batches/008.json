@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-18",
+  "batch": 8,
+  "family": "precision-counterfactual-simulation",
+  "owner": "CAP-TWIN",
+  "ids": [
+    1283,
+    1690
+  ],
+  "decision_sha256": "cd1daea0e2c8569f00d918b35d024f4aebc27a6d920569ea6d8a4b59d37c1d8a",
+  "source_hashes": {
+    "1283": "db537b22ba36ac9a1a2fcbacccd6b08843deec31b7a0f0b1b9d1a70a9c6def88",
+    "1690": "6c4d20cb8190ed97926da2e190a6b6b5545ddd3a37e1b634870b3fc78fe3899a"
+  }
+}

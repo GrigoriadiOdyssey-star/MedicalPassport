@@ -1,0 +1,339 @@
+{
+  "scope": "Synthetic envelope fixtures; no runtime or concurrent endpoint coverage",
+  "positive": [
+    {
+      "kind": "access_request",
+      "request_id": "req1",
+      "tenant_id": "tenant1",
+      "subject_id": "subject1",
+      "session_reference": "session1",
+      "patient_id": "patient1",
+      "recipient_role_reference": "role1",
+      "action": "allergy.read",
+      "resource_id": "record1",
+      "expected_resource_version": 1,
+      "purpose_code": "patient_authorized_review",
+      "grant_id": "grant1",
+      "expected_grant_version": 1,
+      "expected_policy_version": 1
+    },
+    {
+      "kind": "access_decision",
+      "request_id": "req1",
+      "decision_id": "decision1",
+      "decision": "ALLOW",
+      "reason_code": "AUTHORIZED",
+      "checked_policy_version": 1,
+      "checked_grant_version": 1,
+      "checked_resource_version": 1,
+      "audit_receipt_reference": "receipt1"
+    },
+    {
+      "kind": "access_decision",
+      "request_id": "req1",
+      "decision_id": "decision1",
+      "decision": "DENY",
+      "reason_code": "WITHDRAWN",
+      "checked_policy_version": null,
+      "checked_grant_version": null,
+      "checked_resource_version": null,
+      "audit_receipt_reference": null
+    },
+    {
+      "kind": "audit_event",
+      "event_id": "event1",
+      "event_version": 1,
+      "event_type": "EnforcementReceipt",
+      "producer_reference": "enforcer1",
+      "actor_reference": "subject1",
+      "tenant_id": "tenant1",
+      "request_id": "req1",
+      "decision_id": "decision1",
+      "occurred_at_ms": 1,
+      "outcome": "ALLOW",
+      "reason_code": "AUTHORIZED",
+      "policy_version": 1,
+      "grant_version": 1,
+      "resource_version": 1
+    }
+  ],
+  "negative": [
+    {
+      "name": "extra token",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "patient1",
+        "recipient_role_reference": "role1",
+        "action": "allergy.read",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "patient_authorized_review",
+        "grant_id": "grant1",
+        "expected_grant_version": 1,
+        "expected_policy_version": 1,
+        "access_token": "secret"
+      }
+    },
+    {
+      "name": "empty patient",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "",
+        "recipient_role_reference": "role1",
+        "action": "allergy.read",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "patient_authorized_review",
+        "grant_id": "grant1",
+        "expected_grant_version": 1,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "oversized identifier",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "recipient_role_reference": "role1",
+        "action": "allergy.read",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "patient_authorized_review",
+        "grant_id": "grant1",
+        "expected_grant_version": 1,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "clinical purpose injection",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "patient1",
+        "recipient_role_reference": "role1",
+        "action": "allergy.read",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "prescribe",
+        "grant_id": "grant1",
+        "expected_grant_version": 1,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "wrong action",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "patient1",
+        "recipient_role_reference": "role1",
+        "action": "medication.write",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "patient_authorized_review",
+        "grant_id": "grant1",
+        "expected_grant_version": 1,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "zero version",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "patient1",
+        "recipient_role_reference": "role1",
+        "action": "allergy.read",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "patient_authorized_review",
+        "grant_id": "grant1",
+        "expected_grant_version": 0,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "fractional version",
+      "value": {
+        "kind": "access_request",
+        "request_id": "req1",
+        "tenant_id": "tenant1",
+        "subject_id": "subject1",
+        "session_reference": "session1",
+        "patient_id": "patient1",
+        "recipient_role_reference": "role1",
+        "action": "allergy.read",
+        "resource_id": "record1",
+        "expected_resource_version": 1,
+        "purpose_code": "patient_authorized_review",
+        "grant_id": "grant1",
+        "expected_grant_version": 1,
+        "expected_policy_version": 1.5
+      }
+    },
+    {
+      "name": "allow lacks receipt",
+      "value": {
+        "kind": "access_decision",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "decision": "ALLOW",
+        "reason_code": "AUTHORIZED",
+        "checked_policy_version": 1,
+        "checked_grant_version": 1,
+        "checked_resource_version": 1,
+        "audit_receipt_reference": null
+      }
+    },
+    {
+      "name": "allow lacks checked version",
+      "value": {
+        "kind": "access_decision",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "decision": "ALLOW",
+        "reason_code": "AUTHORIZED",
+        "checked_policy_version": 1,
+        "checked_grant_version": null,
+        "checked_resource_version": 1,
+        "audit_receipt_reference": "receipt1"
+      }
+    },
+    {
+      "name": "deny with authorized reason",
+      "value": {
+        "kind": "access_decision",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "decision": "DENY",
+        "reason_code": "AUTHORIZED",
+        "checked_policy_version": null,
+        "checked_grant_version": null,
+        "checked_resource_version": null,
+        "audit_receipt_reference": null
+      }
+    },
+    {
+      "name": "extra health data",
+      "value": {
+        "kind": "audit_event",
+        "event_id": "event1",
+        "event_version": 1,
+        "event_type": "EnforcementReceipt",
+        "producer_reference": "enforcer1",
+        "actor_reference": "subject1",
+        "tenant_id": "tenant1",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "occurred_at_ms": 1,
+        "outcome": "ALLOW",
+        "reason_code": "AUTHORIZED",
+        "policy_version": 1,
+        "grant_version": 1,
+        "resource_version": 1,
+        "diagnosis": "sensitive"
+      }
+    },
+    {
+      "name": "negative event time",
+      "value": {
+        "kind": "audit_event",
+        "event_id": "event1",
+        "event_version": 1,
+        "event_type": "EnforcementReceipt",
+        "producer_reference": "enforcer1",
+        "actor_reference": "subject1",
+        "tenant_id": "tenant1",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "occurred_at_ms": -1,
+        "outcome": "ALLOW",
+        "reason_code": "AUTHORIZED",
+        "policy_version": 1,
+        "grant_version": 1,
+        "resource_version": 1
+      }
+    },
+    {
+      "name": "event wrong type",
+      "value": {
+        "kind": "audit_event",
+        "event_id": "event1",
+        "event_version": 1,
+        "event_type": "PrescriptionIssued",
+        "producer_reference": "enforcer1",
+        "actor_reference": "subject1",
+        "tenant_id": "tenant1",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "occurred_at_ms": 1,
+        "outcome": "ALLOW",
+        "reason_code": "AUTHORIZED",
+        "policy_version": 1,
+        "grant_version": 1,
+        "resource_version": 1
+      }
+    },
+    {
+      "name": "allow event with denial reason",
+      "value": {
+        "kind": "audit_event",
+        "event_id": "event1",
+        "event_version": 1,
+        "event_type": "EnforcementReceipt",
+        "producer_reference": "enforcer1",
+        "actor_reference": "subject1",
+        "tenant_id": "tenant1",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "occurred_at_ms": 1,
+        "outcome": "ALLOW",
+        "reason_code": "WITHDRAWN",
+        "policy_version": 1,
+        "grant_version": 1,
+        "resource_version": 1
+      }
+    },
+    {
+      "name": "allow event lacks grant evidence",
+      "value": {
+        "kind": "audit_event",
+        "event_id": "event1",
+        "event_version": 1,
+        "event_type": "EnforcementReceipt",
+        "producer_reference": "enforcer1",
+        "actor_reference": "subject1",
+        "tenant_id": "tenant1",
+        "request_id": "req1",
+        "decision_id": "decision1",
+        "occurred_at_ms": 1,
+        "outcome": "ALLOW",
+        "reason_code": "AUTHORIZED",
+        "policy_version": 1,
+        "grant_version": null,
+        "resource_version": 1
+      }
+    }
+  ]
+}

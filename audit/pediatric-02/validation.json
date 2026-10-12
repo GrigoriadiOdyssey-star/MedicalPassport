@@ -1,0 +1,24 @@
+{
+  "schema_version": 3,
+  "pass": "PEDIATRIC-02",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "9637f5af9720dc3c1a2d2846b9df70f7f9980055",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "status": "PASS_STRUCTURAL",
+  "scope": [
+    "source census/hash",
+    "exclusive accounting",
+    "owner references",
+    "nonempty descriptions",
+    "P0 boundaries",
+    "proposed graph targets/cycles",
+    "candidate membership",
+    "frozen review hashes",
+    "safety declarations",
+    "source-line retention"
+  ],
+  "clinical_validation": false,
+  "canonical_migrations_approved": 0
+}

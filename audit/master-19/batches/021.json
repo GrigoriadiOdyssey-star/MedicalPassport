@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 21,
+  "family": "pediatric-vaccine-reminders-and-renal-escalation",
+  "owner": "CAP-NOTIFICATIONS",
+  "ids": [
+    4278,
+    4597
+  ],
+  "decision_sha256": "e3537d5b4815f5f5fc4b5542586631d0743e46c417dcba94e3ea3deb0f9213a1",
+  "source_hashes": {
+    "4278": "eca82f80c50cda9bc249b7d5388d6bf0bd1203691fa8f47bb66ce77684bff788",
+    "4597": "cbe42c290fecc1fea6cdc379c2e20d0805b4e663bb8d0d1a1404985a76ef5518"
+  }
+}

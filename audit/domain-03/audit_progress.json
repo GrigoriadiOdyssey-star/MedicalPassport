@@ -1,0 +1,91 @@
+{
+  "schema_version": 4,
+  "edition": "2026-09-14",
+  "pass": "DOMAIN-03",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "EXPECTED_SOURCE_MODULES": 51075,
+  "ORIGINAL_SOURCE_MODULES": 5175,
+  "ACCOUNTED_SOURCE_MODULES": 5175,
+  "GENERATED_CANONICAL_MODULES": 25,
+  "generated_canonical_breakdown": {
+    "prior_drafts": 15,
+    "current_adopted_documentation_records": 10,
+    "clinically_approved_modules": 0,
+    "owner_proposals_excluded": 33
+  },
+  "NEW_GAP_MODULES": 0,
+  "SUPPORTING_ARTIFACTS": 22,
+  "exclusive_status_counts": {
+    "NOT_REVIEWED": 4075,
+    "REVIEWED_ONLY": 1070,
+    "NORMALIZED": 0,
+    "CANONICALIZED": 30,
+    "SUPERSEDED": 0,
+    "DUPLICATE": 0,
+    "PARTIAL_OVERLAP": 0,
+    "NEEDS_REVIEW": 0,
+    "IMPLEMENTATION_READY": 0
+  },
+  "REVIEWED": 1100,
+  "NORMALIZED": 30,
+  "CANONICALIZED": 30,
+  "IMPLEMENTATION_READY": 0,
+  "UNAUDITED": 4075,
+  "REVIEW_PROGRESS": 21.256,
+  "NORMALIZATION_PROGRESS": 0.5797,
+  "CANONICALIZATION_PROGRESS": 0.5797,
+  "GAP_FILL_PROGRESS": 0,
+  "IMPLEMENTATION_READINESS": 0,
+  "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+  "gap_scope": {
+    "identified_specification_gaps": 7,
+    "drafted": 7,
+    "validated_closed": 0,
+    "draft_coverage_percent": 100
+  },
+  "formulas": {
+    "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+    "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+    "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+    "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+    "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate",
+    "AUDIT_WORK_PROGRESS": "100 * (REVIEWED + NORMALIZED + CANONICALIZED) / (3 * 5175); equal-weight documentation work steps, not clinical readiness or time spent"
+  },
+  "duplicate_counts": {
+    "exact_groups": 3,
+    "semantic_groups": 1,
+    "partial_overlap_groups": 47,
+    "distinct_capability_groups": 1,
+    "unresolved_clusters": 1937,
+    "source_ids_closed": 0
+  },
+  "legacy_generations_confirmed": 0,
+  "legacy_marker_candidates": 27,
+  "high_risk_candidate_ids": 3608,
+  "high_risk_unreviewed": 2619,
+  "unresolved_owner_ids": 1910,
+  "critical_findings": 6,
+  "high_findings": 11,
+  "gitlab_write_status": "NO_WRITES",
+  "final_audit_ready": false,
+  "batch": {
+    "new_reviewed": 359,
+    "repeated_reviewed_ids": 0,
+    "normalized": 30,
+    "canonicalized": 30,
+    "adopted_canonical_documents": 10,
+    "applied_source_fragments": 503,
+    "domains": {
+      "NEURO": 101,
+      "ENDOCRINE": 160,
+      "INFECTION": 73,
+      "REHAB": 25
+    }
+  },
+  "GAP_FILL_VALIDATED": 0,
+  "AUDIT_WORK_PROGRESS": 7.4718
+}

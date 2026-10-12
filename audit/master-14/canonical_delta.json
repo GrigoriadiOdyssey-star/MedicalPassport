@@ -1,0 +1,397 @@
+{
+  "pass": "MASTER-14",
+  "records": [
+    {
+      "id": "CORE-CAP-NOTIFICATIONS",
+      "owner": "CAP-NOTIFICATIONS",
+      "title": "Shared notifications: domain event variants",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        107,
+        118,
+        342,
+        367,
+        756,
+        1025,
+        4305
+      ],
+      "profile_ids": [
+        "M14-NOTIFICATION-DOMAIN-EVENTS"
+      ],
+      "profiles": [
+        {
+          "id": "M14-NOTIFICATION-DOMAIN-EVENTS",
+          "owner": "CAP-NOTIFICATIONS",
+          "source_ids": [
+            107,
+            118,
+            342,
+            367,
+            756,
+            1025,
+            4305
+          ],
+          "variants": [
+            {
+              "source_id": 107,
+              "purpose": "Deliver cross-domain reminders through push, SMS and email.",
+              "difference": "Adds the explicit cross-domain medicine, appointment, vaccination, laboratory, travel and AI recommendation routing matrix to the existing channel/template lifecycle.",
+              "dependency": [
+                "CAP-MEDICATION",
+                "CAP-APPOINTMENTS",
+                "CAP-IMMUNIZATION",
+                "CAP-LABORATORY",
+                "CAP-TRAVEL",
+                "CAP-AI"
+              ]
+            },
+            {
+              "source_id": 118,
+              "purpose": "Present a unified notification inbox for medical, access, AI and emergency events.",
+              "difference": "Preserves QR access, AI alerts and emergency events as separate origin categories. An inbox read state is not human clinical acknowledgement.",
+              "dependency": [
+                "CAP-QR",
+                "CAP-AI",
+                "CAP-EMERGENCY"
+              ]
+            },
+            {
+              "source_id": 342,
+              "purpose": "Notify authorized recipients of device and synchronization events.",
+              "difference": "Preserves low battery, offline, synchronization failure, firmware update and new-measurement events. The device owner determines state; notification never performs a firmware or therapy change.",
+              "dependency": [
+                "CAP-DEVICES"
+              ]
+            },
+            {
+              "source_id": 367,
+              "purpose": "Notify recipients of laboratory workflow milestones and critical-result events.",
+              "difference": "Preserves sample received, analysis started, results available and critical result separately. Laboratory authority determines criticality; delivery alone cannot close critical-result escalation.",
+              "dependency": [
+                "CAP-LABORATORY"
+              ]
+            },
+            {
+              "source_id": 756,
+              "purpose": "Deliver pregnancy-context appointment, laboratory, ultrasound and medication reminders.",
+              "difference": "Preserves the four distinct event sources; a pregnancy profile does not duplicate the shared notification lifecycle. Confidential content must be redacted in external previews.",
+              "dependency": [
+                "CAP-APPOINTMENTS",
+                "CAP-LABORATORY",
+                "CAP-IMAGING",
+                "CAP-MEDICATION"
+              ]
+            },
+            {
+              "source_id": 1025,
+              "purpose": "Deliver pediatric infection laboratory, medication, isolation and follow-up notifications.",
+              "difference": "Preserves isolation completion as an externally authorized event, not a timer-derived clearance. Guardian authority and confidential child/adolescent context are checked for each recipient.",
+              "dependency": [
+                "CAP-LABORATORY",
+                "CAP-MEDICATION",
+                "CAP-SPECIALTY",
+                "CAP-APPOINTMENTS"
+              ]
+            },
+            {
+              "source_id": 4305,
+              "purpose": "Deliver versioned vaccination-status notifications with jurisdiction and preference context.",
+              "difference": "Preserves upcoming, due soon, due, window ending, overdue, catch-up required and medical review required separately. Immunization/CDS owns those determinations; delivery configuration cannot override clinical windows or invent catch-up rules.",
+              "dependency": [
+                "CAP-IMMUNIZATION",
+                "CAP-CDS"
+              ]
+            }
+          ]
+        }
+      ],
+      "semantic_decision": "M14-NOTIFICATION-DOMAIN-EVENTS",
+      "owner_evidence": "One existing delivery owner with event-origin variants. No new canonical module; seven source profiles extend the shared notification capability. Origin services determine clinical/event truth. Notifications owns authorized template rendering, recipient/channel selection, scheduling, attempts and delivery records. Clinical response and acknowledgement remain separate.",
+      "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "extends_document": "docs/canonical/master08/CAP-NOTIFICATIONS.md",
+      "also_extends_document": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+      "requirements": [
+        {
+          "id": "M14-NOTIFY-d7a2add4cd06a8e6",
+          "text": "Medicines",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-bcddbd1b76017ab8",
+          "text": "Appointments",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-ca00fc7c0d0e2a70",
+          "text": "Vaccinations",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-a10a70546ef9f3c2",
+          "text": "Laboratory",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-fdb7c739414b8157",
+          "text": "Travel",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-e22fe857a3a17db9",
+          "text": "AI Recommendations",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-0f5ad7d6e65af38c",
+          "text": "Delivery",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-510a1445ac875884",
+          "text": "Push",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-88e65e1525989565",
+          "text": "SMS",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-5e249b74917623fe",
+          "text": "Email",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-6c2f4d895f25a6d5",
+          "text": "Notifications",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-f8eacbfaa2347a2d",
+          "text": "Doctor Visits",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-2f573c840579b95b",
+          "text": "QR Access",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-2befb28f2bb3878c",
+          "text": "AI Alerts",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-c34462462dc175ea",
+          "text": "Emergency Events",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-6ddd67a550a74e20",
+          "text": "Provides notifications related to connected medical devices.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-97143e00bb2b5725",
+          "text": "Low Battery",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-912535a4a7e3d592",
+          "text": "Device Offline",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-cb63e985907e943f",
+          "text": "Synchronization Failure",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-d1c10e8e39fa7d04",
+          "text": "Firmware Updates",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-029dd19ca0c75503",
+          "text": "New Measurements",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-891d2d9f385f5f09",
+          "text": "Provides notifications regarding laboratory examinations.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-fd48a9ca82c534b6",
+          "text": "Sample Received",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-9ebfce6645aba3cf",
+          "text": "Analysis Started",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-2ee00e764702536c",
+          "text": "Results Available",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-b3f9832849c475fb",
+          "text": "Critical Result Notification",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-f2a1427d4c8ead8e",
+          "text": "Integrated with Medical Passport.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-66ab60fd2ae605d4",
+          "text": "Provides reminders.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-e2b1e6331d9b8c99",
+          "text": "Laboratory Tests",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-9d14aa09e65edcba",
+          "text": "Ultrasounds",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-3cfa39200ce0ea10",
+          "text": "Medication",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-8da5ac137df17104",
+          "text": "Notification system.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-71f790fdf94f9c10",
+          "text": "Laboratory Results",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-cfe6a25d05cd276d",
+          "text": "Medication Reminders",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-a2e50249981ac0d3",
+          "text": "Isolation Completion",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-4ba2bd68672f5410",
+          "text": "Follow-up Visits",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-3ab15acd11531fcd",
+          "text": "Provides personalized vaccination notifications.",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-e8a41ba26751d33f",
+          "text": "May generate",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-1060aee9db5f0052",
+          "text": "Upcoming Vaccination",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-5dbbf6b0c58e16a8",
+          "text": "Due Soon",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-77ecfd2a8e9235c0",
+          "text": "Vaccination Due",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-525f0834375517e5",
+          "text": "Recommended Window Ending",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-60666aa99a7dcb66",
+          "text": "Overdue Vaccination",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-223f66b5846b763e",
+          "text": "Catch-up Required",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-1dec26f0a0ad3059",
+          "text": "Medical Review Required",
+          "kind": "REQUIREMENT"
+        },
+        {
+          "id": "M14-NOTIFY-83a0658c647ea7d1",
+          "text": "Notification timing can be configured by jurisdiction and user preferences.",
+          "kind": "REQUIREMENT"
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M14-NOTIFY-da910d58c579ff75",
+          "text": "# Reminder Engine",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-f7a04154dc52bf5c",
+          "text": "# Notification Center",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-89caaaba04da196f",
+          "text": "# Medical Device Notifications",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-4456042f42cf39b4",
+          "text": "# Laboratory Result Notifications",
+          "kind": "SOURCE_METADATA"
+        },
+        {
+          "id": "M14-NOTIFY-f4e5055eed2fb649",
+          "text": "# Pregnancy Notification Center",
+          "kind": "SOURCE_METADATA"
+        }
+      ],
+      "document_sha256": "27747bb6315cf245f72fbd978aa42f85df6c4a6a717d9a42ae638063a4ace7c2"
+    }
+  ]
+}

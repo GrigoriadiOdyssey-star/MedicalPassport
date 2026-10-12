@@ -1,0 +1,47 @@
+{
+  "pass": "MASTER-14",
+  "aliases": [
+    {
+      "original_id": 107,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 118,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 342,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 367,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 756,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1025,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4305,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    }
+  ]
+}

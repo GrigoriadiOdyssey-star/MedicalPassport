@@ -1,0 +1,27 @@
+{
+  "pass": "MASTER-17",
+  "batch": 44,
+  "family": "clinical-communication-profiles",
+  "owner": "CAP-TELEMEDICINE",
+  "ids": [
+    1242,
+    1754,
+    1894,
+    1961,
+    1962,
+    1971,
+    1972,
+    1980
+  ],
+  "decision_sha256": "02482111f948ab698e85c5b306a0a979eef138a9999473f81c3c055899e45da3",
+  "source_hashes": {
+    "1242": "6c0c302183bcd5e84bd70ab89a67fb06efd0fc9183d1b1b521a64f4668a96cac",
+    "1754": "9828e639edf2469852bee98a72da36b3bde6cd9d7ada584df048b8a719721a36",
+    "1894": "dcb712ba4d30af0f7b7e953c49591b94d3d632f9b0c7e16ec9e89c2072871332",
+    "1961": "1598ef3ecc9a235954a98d12eb26b85a7e9c7413145130dde4c7bda8634bdaa1",
+    "1962": "28a66171b5276a1ea09074bab0fbfee038e2ba5fbb9093c8624b352462e74f20",
+    "1971": "4555c5b5572575727be99d8b74bdafa29151c6774446f91257a9baaa8729923d",
+    "1972": "c7d831a9ea806f38498d96c5093df03f2980abc771beb352c1112ed9f516b62f",
+    "1980": "761925620bd90362b7afbe3c703c5ebba6751f43f762d735e6da231398d7a58a"
+  }
+}

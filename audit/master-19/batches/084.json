@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 84,
+  "family": "core-vaccination-records",
+  "owner": "CAP-IMMUNIZATION",
+  "ids": [
+    11,
+    60,
+    109,
+    827
+  ],
+  "decision_sha256": "e71474fb16187aa25faa0e41d52c58c3dcabd3202d8ac056c952db2635e51387",
+  "source_hashes": {
+    "11": "41b7b8132797bbe464104aa1ddada45ed05f1a3364eecc06452f177b9e13feb8",
+    "60": "74575726dc66ac019290547aca4b0fdb25d47ddfdc00fbf3832f0e24c3218f62",
+    "109": "84cf2b93d0e345f99770b61120cf386fd3000a42f697e1815348550bd09979b0",
+    "827": "4a52cc00bb6103cc1292b50c57db7b49dc629e2f0936012e5ae1961e7e3e0ce8"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "pass": "MASTER-10",
+  "baseline_commit": "9efb09e6f91980c1315a1b7fcaa1f77a3f96d793",
+  "baseline_state": "audit/master-08",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "apply_deltas_in_order": [
+    "audit/master-09/",
+    "audit/master-10/"
+  ],
+  "merge_rules": {
+    "ledger": "Upsert by original_id; all unspecified original rows inherited unchanged",
+    "canonical": "Union source/profile/requirement IDs under same canonical id; preserve original documents and append target_document. All current additions extend existing owners; no new active specification",
+    "mappings": "Append new source IDs only; target_document identifies base/addendum anchors",
+    "dependencies": "Union baseline nodes/edges with delta",
+    "readiness": "Apply explicit owner delta only; all unmentioned blockers/gates remain unchanged",
+    "mvp": "Replace security canonical reference only; tags/counts unchanged"
+  },
+  "cache_inputs": [
+    {
+      "path": "audit/master-09/audit_progress.json",
+      "sha256": "83c21dd7b1ca1d1a4158ffb5828f3c5d5f4c5d486f8c292258d2a50036a8acb3"
+    },
+    {
+      "path": "audit/master-09/state_manifest.json",
+      "sha256": "f966cdfbb30a81a945e260f2ead13a1faf0ec9183992007963acc525d3b7dc3d"
+    },
+    {
+      "path": "audit/master-09/audit_ledger_delta.json",
+      "sha256": "8e397336e1dde57d699935eb2bfdc0830e77a9d88d49b18f4188b1117eaba735"
+    },
+    {
+      "path": "audit/master-08/audit_progress.json",
+      "sha256": "5ae16e6bb1cfe703b18bc8265b5a9a9236427ade924ac97ae581976d6e319755"
+    },
+    {
+      "path": "audit/master-08/canonical_registry.json",
+      "sha256": "ee164b06ad69803b43eade848ac77389101c7d094ff48ac88641a6b89bce1ba0"
+    },
+    {
+      "path": "audit/master-08/active_canonical_records.json",
+      "sha256": "45d2258e80e6806da6b437572feed7caf4a036374e2dbaaa983f677d80b0b04c"
+    },
+    {
+      "path": "audit/master-08/dependency_graph.json",
+      "sha256": "9a26d48efa5ce8e0b9a8cc3d82072ec2b978ae2c1ac47fe1f024d121bbfe94b6"
+    },
+    {
+      "path": "audit/master-08/implementation_readiness_registry.json",
+      "sha256": "71b96710ce1f9c0a7070d8b6ad3d2c6e7221b5a4bca57d7c1d05c7ccdc3c4b2c"
+    },
+    {
+      "path": "docs/engineering/mvp_candidate_registry.json",
+      "sha256": "d596d6033fed37e019b4f3d04b7f26e44bf56217b135770aaed43f701ab010e5"
+    }
+  ],
+  "reused_results": {
+    "baseline_validation": "EDHT_MASTER_08_CHECKPOINT.json (external output artifact)",
+    "gap_fill": "audit/master-08/gap_disposition.json",
+    "semantic_search": "audit/master-08/gap_semantic_search.json",
+    "historical_documents_rewritten": 0
+  },
+  "last_processed_original_id": 780,
+  "last_processed_cluster": "REPRODUCTIVE_763_780_AND_SECURITY_CONTRACT",
+  "next_exact_task": "Resolve reviewed-only 778 against travel/provider/analytics owners; complete actual issuer/role/policy integration and runtime concurrency proof before security readiness. Exclude baseline and both delta ledgers."
+}

@@ -1,0 +1,2715 @@
+{
+  "pass": "MASTER-10",
+  "baseline_commit": "9efb09e6f91980c1315a1b7fcaa1f77a3f96d793",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "mappings": [
+    {
+      "source_id": 763,
+      "source_line": 1,
+      "source_text": "# Fertility Consultation Booking",
+      "source_fragment_sha256": "5c2f48e6266c264a3bf9973ea877ee9b90930cf3b36cb147c1b6cbf25c03c9c5",
+      "normalized_text": "# Fertility Consultation Booking",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-82a77873cf8fbddc",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 3,
+      "source_text": "Allows scheduling fertility consultations.",
+      "source_fragment_sha256": "45567412b9ff31d74171e70b4383198a4e2e2b40605cba590bd00b6b39c2a8c0",
+      "normalized_text": "Allows scheduling fertility consultations.",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-1529f209dda56be0",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 7,
+      "source_text": "• Clinic",
+      "source_fragment_sha256": "b41f2349607e7f3f266673a69a79670b5f7f97ca8ceb6659ffef1d2af7ed2369",
+      "normalized_text": "Clinic",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-76968af3bfd3face",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 9,
+      "source_text": "• Physician",
+      "source_fragment_sha256": "adac3f45b087b56f5a4aedb5607e4965c7a291eb988cfdabd18f9739a81933b6",
+      "normalized_text": "Physician",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-55faff639138dc86",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 11,
+      "source_text": "• Online Consultation",
+      "source_fragment_sha256": "868985f9c7003c285777edd86a89a343231771008a86b8e48bb9f2fbe464ed89",
+      "normalized_text": "Online Consultation",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-76507b42b60ede7f",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 763,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-APPOINTMENTS",
+      "target_record_id": "M10-CAP-APPOINTMENTS-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31809,
+        "body_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 1,
+      "source_text": "# Couple Fertility Profile",
+      "source_fragment_sha256": "5f839af312b02ef5b6204317110d0f107a338546a5d5af700381fa020f3226e1",
+      "normalized_text": "# Couple Fertility Profile",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-9fe942870c502c79",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 3,
+      "source_text": "Creates a shared reproductive health profile for partners.",
+      "source_fragment_sha256": "751ba25e7508be10b74eb1bff89e69edfb0443e492135845e2b35c7e5dee7ae1",
+      "normalized_text": "Creates a shared reproductive health profile for partners.",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-589356eb408c56c7",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 7,
+      "source_text": "• Female Data",
+      "source_fragment_sha256": "aa4c5aaa0d90d64b835954b63b95b7cd5c91b510821fd2f51e79cadb8e955079",
+      "normalized_text": "Female Data",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-8d85b001168e70bc",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 9,
+      "source_text": "• Male Data",
+      "source_fragment_sha256": "11e14ab43caf057444e591298a5ab66a5398a356e332549c277f7494f189fe16",
+      "normalized_text": "Male Data",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-5432218f4540930f",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 11,
+      "source_text": "• Shared Treatment Timeline",
+      "source_fragment_sha256": "7123eb634cc50840dd539bfd17cf8898954e46546c2a7346d5ecdd3a766e4217",
+      "normalized_text": "Shared Treatment Timeline",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-8ba19d107237a535",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 764,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-PROFILE",
+      "target_record_id": "M10-CAP-PROFILE-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31829,
+        "body_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 1,
+      "source_text": "# Infertility Diagnosis Registry",
+      "source_fragment_sha256": "0d5c2be59ff8b155b1a7885f4190e17c72773d2411f4f7611a8b2b6aa8f39087",
+      "normalized_text": "# Infertility Diagnosis Registry",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-ad40c081f1820f2e",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 3,
+      "source_text": "Stores infertility diagnoses.",
+      "source_fragment_sha256": "751c5bcd3fcfd5752790d68bde78e727dd2f8864f9d76d0efde954070531281e",
+      "normalized_text": "Stores infertility diagnoses.",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-d3af434368617d45",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 7,
+      "source_text": "• Female Factors",
+      "source_fragment_sha256": "5582d20a75d4e97b5f5c89ed7565c13c47564ac526447c7229c2749fc9eeb9b4",
+      "normalized_text": "Female Factors",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-835f37c3ebb6b75b",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 9,
+      "source_text": "• Male Factors",
+      "source_fragment_sha256": "42aba598545c275b538a07fbbcfc185727f3dfd39d24b141f40a2b3bc1c659ad",
+      "normalized_text": "Male Factors",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-3dd7f81ca16c3f04",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 11,
+      "source_text": "• Combined Factors",
+      "source_fragment_sha256": "2cbe550e502fc189b763f54d4340aee5116087bb18f8dabc5a2655556a22884e",
+      "normalized_text": "Combined Factors",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-8bf40a14548e8c95",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 13,
+      "source_text": "• Unexplained Infertility",
+      "source_fragment_sha256": "54ef9f3c234aa5dd35e9f05b10c18853b37ea8cb740ce110645bd348e34ac85f",
+      "normalized_text": "Unexplained Infertility",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-0f8b98280a0538f0",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 765,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31849,
+        "body_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 1,
+      "source_text": "# Ovarian Stimulation Monitoring",
+      "source_fragment_sha256": "e799a31e68712b85855661ce3d28db7b846a30a88abebcfce8f9e00fd33dcc44",
+      "normalized_text": "# Ovarian Stimulation Monitoring",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-dac3f0105b9d8a52",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 3,
+      "source_text": "Tracks ovarian stimulation cycles.",
+      "source_fragment_sha256": "bc9f6fb0e2e1a3e70d4f8584ef8162ace6502ca34336d727417ef8427cfff0f2",
+      "normalized_text": "Tracks ovarian stimulation cycles.",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-7ac700b64b17d11f",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 7,
+      "source_text": "• Follicle Growth",
+      "source_fragment_sha256": "f637da00aab3fefa2cdedb22c6d9891b3208e95f8f4d9d57f15cb442b1c0d6d5",
+      "normalized_text": "Follicle Growth",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-4289dc7827e23a4f",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 9,
+      "source_text": "• Estradiol",
+      "source_fragment_sha256": "a20cdc8d242a3bdbcdb49fb2189cca57bc0b05de473fe3c9bf738aecd18b81eb",
+      "normalized_text": "Estradiol",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-49dff57230c6f6cc",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 11,
+      "source_text": "• Medication Response",
+      "source_fragment_sha256": "3eca6c1b7e8da7db2907b38bfa7a4b73ef7f3d046f3e999c69099c40fa3f98b0",
+      "normalized_text": "Medication Response",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-bb1f33938f899a6e",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 771,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31981,
+        "body_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 1,
+      "source_text": "# Pregnancy After IVF Monitoring",
+      "source_fragment_sha256": "13b9513c560415dbeb9adf33d769f0d4f7edb182411c13f6be83752cf05cd663",
+      "normalized_text": "# Pregnancy After IVF Monitoring",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-3b37a0174ec2e138",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 3,
+      "source_text": "Supports pregnancies achieved through assisted reproduction.",
+      "source_fragment_sha256": "6584170825edd29a1b0fef15ed4f01b11f14355f01644176167625aa1ab714cf",
+      "normalized_text": "Supports pregnancies achieved through assisted reproduction.",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-a5879e040aa4403f",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 5,
+      "source_text": "Tracks",
+      "source_fragment_sha256": "88980154513d74131c5ec47da81bd01d3e921142c6ab810b805bc8e625f4ba5b",
+      "normalized_text": "Tracks",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-20dcf9e08bfc7cd6",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 7,
+      "source_text": "• Early Pregnancy",
+      "source_fragment_sha256": "17c8a5cd1150bac08b2ebb612d1c91e0248a7d8feec5563905e1ca68919d2c83",
+      "normalized_text": "Early Pregnancy",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-5b35040d6e704676",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 9,
+      "source_text": "• Ultrasound",
+      "source_fragment_sha256": "547e01ee69c17fc492eba77945500effb2ae9b6193b4ea337a42bfa71af1bdaa",
+      "normalized_text": "Ultrasound",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-5032f26f1a690cb2",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 11,
+      "source_text": "• Laboratory Results",
+      "source_fragment_sha256": "a172210b9d7918da0af42eaf6c3e4ded2ff7e3e12198024196a56abfe9134d4e",
+      "normalized_text": "Laboratory Results",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-71f790fdf94f9c10",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 775,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32069,
+        "body_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 1,
+      "source_text": "# Comprehensive Reproductive Medicine Dashboard",
+      "source_fragment_sha256": "35dd6288a70ddcc0daa89ed00069bcb14174642785b5482dab8d9619a3fa7db5",
+      "normalized_text": "# Comprehensive Reproductive Medicine Dashboard",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-1dfde8983969ac72",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 3,
+      "source_text": "Provides a complete overview of fertility treatment.",
+      "source_fragment_sha256": "b35215ca914d0f40a645c4c875dd9a63c34ecc1c817577e4eb42b4fbab8cffc5",
+      "normalized_text": "Provides a complete overview of fertility treatment.",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-e69b8e91d7214b61",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 5,
+      "source_text": "Displays",
+      "source_fragment_sha256": "5a3452eb50bce84aebfe4b2629f17c4f99ea87ded63babf8b42624f893992863",
+      "normalized_text": "Displays",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-f3d993f49bc6debb",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 7,
+      "source_text": "• Hormones",
+      "source_fragment_sha256": "7b460dd11f0d5bfd004d04be9a2e209e6026384741edac123c6be573dfce80b3",
+      "normalized_text": "Hormones",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-7b40033c1c8e1625",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 9,
+      "source_text": "• IVF",
+      "source_fragment_sha256": "e78c258807cd56b73b5d41a99fb05cf73c53db15b178d3082b0cb73e7e92f89e",
+      "normalized_text": "IVF",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-baec3852076bf1c2",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 11,
+      "source_text": "• Embryos",
+      "source_fragment_sha256": "3c1e1e99419830bdbe76eab4d92b690dbd3b763f99601c95098984e96fb96a1d",
+      "normalized_text": "Embryos",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-9e824ea2c4e0ef7f",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 13,
+      "source_text": "• Medications",
+      "source_fragment_sha256": "6ca0d3d226133e4cb66a4e48de2020ba57544fc009a1ff046f1f970dea09c8b1",
+      "normalized_text": "Medications",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-b769af85ada69188",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 15,
+      "source_text": "• Pregnancy Progress",
+      "source_fragment_sha256": "5fc3596345f0f61fc9788df7f198e3c9c49ee49a05003f0356ff4be821cfc9d8",
+      "normalized_text": "Pregnancy Progress",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-e5797c17a8280c5f",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 17,
+      "source_text": "• AI Recommendations",
+      "source_fragment_sha256": "fd8d5ef620dbdd9a5e12d658762f26763355a7fb4dad544bfa1e661725b26a9d",
+      "normalized_text": "AI Recommendations",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-e22fe857a3a17db9",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 19,
+      "source_text": "Acts as the primary reproductive medicine workspace within the Medical Passport ecosystem.",
+      "source_fragment_sha256": "dc7598a51a6f69f5e972d448014ea54f2337a9933874c803d99a6d64ab660289",
+      "normalized_text": "Acts as the primary reproductive medicine workspace within the Medical Passport ecosystem.",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-3f2ee03c609429ec",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 21,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 23,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 780,
+      "source_line": 25,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-SPECIALTY",
+      "target_record_id": "M10-CAP-SPECIALTY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32177,
+        "body_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 1,
+      "source_text": "# IVF Treatment Registry",
+      "source_fragment_sha256": "a5d05f4261f57a38001b7a28bf7bd818a60724586a0112bd42f82099c7beb793",
+      "normalized_text": "# IVF Treatment Registry",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-a03ffa8dc573799d",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 3,
+      "source_text": "Stores in vitro fertilization treatment history.",
+      "source_fragment_sha256": "467822c4e2d334d50b9a00d62ed48e84385b94ad3968c4e2c4ace78b59c34993",
+      "normalized_text": "Stores in vitro fertilization treatment history.",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-db7edbbf09f663c6",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 7,
+      "source_text": "• Stimulation",
+      "source_fragment_sha256": "73535123050c137c532fba7956083688bbaebd2c73f24757ef9b157e47544979",
+      "normalized_text": "Stimulation",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-b858b78dcd5ed9ca",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 9,
+      "source_text": "• Egg Retrieval",
+      "source_fragment_sha256": "0cd5f8745e099f23a5a0550ac4163b258e16f3c317d3cc7570788779ebc04972",
+      "normalized_text": "Egg Retrieval",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-34829087d2d9b447",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 11,
+      "source_text": "• Fertilization",
+      "source_fragment_sha256": "5200e1756ae4f191a16c65d97a73ab0aa8cc9aeb253fa7179528c173e583b98e",
+      "normalized_text": "Fertilization",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-4b40812dc9c94bb9",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 13,
+      "source_text": "• Embryo Transfer",
+      "source_fragment_sha256": "7276d0ad760073fe09b072542c83dd21e8a175593bd847c18e9344e54abde879",
+      "normalized_text": "Embryo Transfer",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-e3c75140386562e4",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 766,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31871,
+        "body_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 1,
+      "source_text": "# Egg Retrieval Monitoring",
+      "source_fragment_sha256": "3b87eb7fd1928b0b9465c611e2cdb5abe799efa6f23d0ecb6965bbe25e68413f",
+      "normalized_text": "# Egg Retrieval Monitoring",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-4ceb9ca5a3baadc1",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 3,
+      "source_text": "Tracks oocyte retrieval procedures.",
+      "source_fragment_sha256": "629bdecba0432ac80bf996f403a681ae7bc6d2c779dfc08e688b1a8dade228d6",
+      "normalized_text": "Tracks oocyte retrieval procedures.",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-bd1c3e8adb48ad5b",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 7,
+      "source_text": "• Number Retrieved",
+      "source_fragment_sha256": "d722bbadb7798455151d388118a90d9e3f9a22d9969a08b0847f5c341bb10baf",
+      "normalized_text": "Number Retrieved",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-b266eb550530399d",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 9,
+      "source_text": "• Quality",
+      "source_fragment_sha256": "0e8fa018c99f5220c4a4dc3c442752b50ff7c53490eeaf22ac90695445f2e8db",
+      "normalized_text": "Quality",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-fbaf1cf78a982e74",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 11,
+      "source_text": "• Procedure Notes",
+      "source_fragment_sha256": "b4a6c86d3141d854601819640047c66f48ceacea1a9a5ad8ca26bd651167545c",
+      "normalized_text": "Procedure Notes",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-734fba275d46f333",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 768,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31915,
+        "body_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 1,
+      "source_text": "# Embryo Transfer Registry",
+      "source_fragment_sha256": "63898d73225daa4b567abb9749780767b05279d8b8833932abfccf02004ada7b",
+      "normalized_text": "# Embryo Transfer Registry",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-33505285cac0e12d",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 3,
+      "source_text": "Stores embryo transfer procedures.",
+      "source_fragment_sha256": "1fff5a1805960827b58ca12f8b9c869481471db73a402ab4d5020f2a7f8f4fbf",
+      "normalized_text": "Stores embryo transfer procedures.",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-ed058f76a46ae094",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 7,
+      "source_text": "• Transfer Date",
+      "source_fragment_sha256": "f33ab961bee7bc7378d01d8ad9540bac73d40f02f7961a04bad2cd34c9c7ac2a",
+      "normalized_text": "Transfer Date",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-9989db3c868bfcee",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 9,
+      "source_text": "• Embryo Grade",
+      "source_fragment_sha256": "be1395b175d886769a9dc1cd81e27d6cfc2a7318e657426c858c742c4754f805",
+      "normalized_text": "Embryo Grade",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-6c551171dbdfd703",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 11,
+      "source_text": "• Physician Notes",
+      "source_fragment_sha256": "03e9a275ddda86dea2bc568d2b4cb1d6fe0ed5d4491eac848f2b0d211c2393f7",
+      "normalized_text": "Physician Notes",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-6864b968505141fb",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 769,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-ENCOUNTER",
+      "target_record_id": "M10-CAP-ENCOUNTER-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31935,
+        "body_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 1,
+      "source_text": "# Fertility Medication Manager",
+      "source_fragment_sha256": "bb1af7e40e2b99177249c9b52996f16ae3cd038e570f45de60d6442b6bb7bd78",
+      "normalized_text": "# Fertility Medication Manager",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-ae8336324478e370",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 3,
+      "source_text": "Tracks reproductive medicine medications.",
+      "source_fragment_sha256": "cd7f6e0e591d4ebf3e6a1395703cb778ea8be14dbe9f1e3aa3fec609af39d6a2",
+      "normalized_text": "Tracks reproductive medicine medications.",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-fe9de08e531ab937",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 7,
+      "source_text": "• FSH",
+      "source_fragment_sha256": "36a8abfa0baf6931e0294f523b83079301bf342993fb84cdea61ec9b5584c0ec",
+      "normalized_text": "FSH",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-37b35a2f4dc4e7c5",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 9,
+      "source_text": "• LH",
+      "source_fragment_sha256": "baef37247ab0d8885c88ad2794ac26f6d51d88b14bc0426e97db54842ecd5915",
+      "normalized_text": "LH",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-fbfd0eed59f10498",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 11,
+      "source_text": "• hCG",
+      "source_fragment_sha256": "ba455a01ebaf67c6f3ea7cc86a612e19b440b3e80d10f699bdae422f203a637d",
+      "normalized_text": "hCG",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-543b0085a8e98d30",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 13,
+      "source_text": "• Progesterone",
+      "source_fragment_sha256": "dfe68735854c86d26cbd6f71f5fbf1ac4c4ad7cd17bb63286706de3d5cc131c3",
+      "normalized_text": "Progesterone",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-2f87863459d7d729",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 15,
+      "source_text": "• Estrogen",
+      "source_fragment_sha256": "92be1b4953a1860499da1e2186084f1c70d5369f3bc6ae304335c35edc73ba03",
+      "normalized_text": "Estrogen",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-3f55ecdbec07eb48",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 17,
+      "source_text": "• GnRH Analogues",
+      "source_fragment_sha256": "569c93bcdd69c1c4d8b2708275b482691753d005338e41436aa2ba521ef8eec0",
+      "normalized_text": "GnRH Analogues",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-2de08d4225f61134",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 19,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 21,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 770,
+      "source_line": 23,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-MEDICATION",
+      "target_record_id": "M10-CAP-MEDICATION-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31955,
+        "body_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 1,
+      "source_text": "# Follicle Monitoring",
+      "source_fragment_sha256": "8064526be9f9b8b5a1b5d3c0b4754b607fe027bbd1ef2db1912139059a0382d4",
+      "normalized_text": "# Follicle Monitoring",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-d87533e51ebf56ef",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 3,
+      "source_text": "Stores follicular development.",
+      "source_fragment_sha256": "d93999a4c5183c459b1344c7cea83d76bbde632721bc9b3de4606d1556f3c052",
+      "normalized_text": "Stores follicular development.",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-bcfd6ce60cb26e45",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 7,
+      "source_text": "• Ultrasound",
+      "source_fragment_sha256": "547e01ee69c17fc492eba77945500effb2ae9b6193b4ea337a42bfa71af1bdaa",
+      "normalized_text": "Ultrasound",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-5032f26f1a690cb2",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 9,
+      "source_text": "• Diameter",
+      "source_fragment_sha256": "5a8bf138ec02bcbb13e38b53bee949771d428294d3b76401a22b50b14fe83ff9",
+      "normalized_text": "Diameter",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-9b3538175b56f8f9",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 11,
+      "source_text": "• Number",
+      "source_fragment_sha256": "a27dfe6f2dc7e6eea9939be1f182212d0b9fdfa9ecc862f1039cb70346a23491",
+      "normalized_text": "Number",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-6a39849178d3ef60",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 13,
+      "source_text": "• Growth Timeline",
+      "source_fragment_sha256": "44dec1f38202b5f5e4983be3a9ab91be54053cdb26bb93423d217ecc4ed7aff0",
+      "normalized_text": "Growth Timeline",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-67b8930e2378552d",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 772,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-IMAGING",
+      "target_record_id": "M10-CAP-IMAGING-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32001,
+        "body_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 1,
+      "source_text": "# Embryo Registry",
+      "source_fragment_sha256": "3aa0db302efaad2cc51dc4563801a3573696166cafc108df64217e6ed2b4c460",
+      "normalized_text": "# Embryo Registry",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-3eb6309d77e2fbe2",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 3,
+      "source_text": "Stores embryo information.",
+      "source_fragment_sha256": "92b9f8845cb94952794002d4a7149d16516e029764d7d16319ba9df28d1a16a6",
+      "normalized_text": "Stores embryo information.",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-2d681d38c3aaefc2",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 7,
+      "source_text": "• Development Stage",
+      "source_fragment_sha256": "8e981909a0e15e43640fe77263c10133c7edd7fa824353601f7c0671d39ddf86",
+      "normalized_text": "Development Stage",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-7e44192230be02a2",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 9,
+      "source_text": "• Grading",
+      "source_fragment_sha256": "e7992d206df3b8f8b5b50139430a012c68e46af4b735fa923f55b4c324132731",
+      "normalized_text": "Grading",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-dba7066a268b6f23",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 11,
+      "source_text": "• Cryopreservation",
+      "source_fragment_sha256": "82df0a9a89bbb71867ecb7fca80239d365a5c7601682de2af6a79189f03af249",
+      "normalized_text": "Cryopreservation",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-42e8af3059cdaa23",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 13,
+      "source_text": "• Transfer History",
+      "source_fragment_sha256": "8fd8e7b5afaa6800f1c41a40f4f73152817e2223278b67736b9d33a8dadfea39",
+      "normalized_text": "Transfer History",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-b5c004e6259d340b",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 767,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31893,
+        "body_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 1,
+      "source_text": "# Reproductive Hormone Dashboard",
+      "source_fragment_sha256": "c815ae9766b27bf8f8956c3a3b153fc91f9aced8d9ca0c6c2f07a2dacd655919",
+      "normalized_text": "# Reproductive Hormone Dashboard",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-0c2317df648b72cf",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 3,
+      "source_text": "Displays reproductive hormone trends.",
+      "source_fragment_sha256": "1af55e701f6669c9bcc7dc66eb5e23e85b4f070e0b764639dbc6071595206f7d",
+      "normalized_text": "Displays reproductive hormone trends.",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-d3c2d52814568958",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 7,
+      "source_text": "• AMH",
+      "source_fragment_sha256": "64be2c15ad319b3b87c4c72aae5b182ffccc15988321904da051cfda5768af68",
+      "normalized_text": "AMH",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-3568af0ff32502f8",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 9,
+      "source_text": "• LH",
+      "source_fragment_sha256": "baef37247ab0d8885c88ad2794ac26f6d51d88b14bc0426e97db54842ecd5915",
+      "normalized_text": "LH",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-fbfd0eed59f10498",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 11,
+      "source_text": "• FSH",
+      "source_fragment_sha256": "36a8abfa0baf6931e0294f523b83079301bf342993fb84cdea61ec9b5584c0ec",
+      "normalized_text": "FSH",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-37b35a2f4dc4e7c5",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 13,
+      "source_text": "• Estradiol",
+      "source_fragment_sha256": "a20cdc8d242a3bdbcdb49fb2189cca57bc0b05de473fe3c9bf738aecd18b81eb",
+      "normalized_text": "Estradiol",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-49dff57230c6f6cc",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 15,
+      "source_text": "• Progesterone",
+      "source_fragment_sha256": "dfe68735854c86d26cbd6f71f5fbf1ac4c4ad7cd17bb63286706de3d5cc131c3",
+      "normalized_text": "Progesterone",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-2f87863459d7d729",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 17,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 19,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 773,
+      "source_line": 21,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32023,
+        "body_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 1,
+      "source_text": "# Cryopreservation Registry",
+      "source_fragment_sha256": "d9e6e71348657d875098a585882331c0d509c174c345b13ba67c06747a6af9b7",
+      "normalized_text": "# Cryopreservation Registry",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-21a6ba10d0ba7f39",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 3,
+      "source_text": "Stores frozen embryos and gametes.",
+      "source_fragment_sha256": "015ed05c20cece39b6522a3501b0d0672555aac751f31cb65bba2a188b9d0c94",
+      "normalized_text": "Stores frozen embryos and gametes.",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-4f370eac5e1cee93",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 5,
+      "source_text": "Supports",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "normalized_text": "Supports",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-4fbeeb87456accf5",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 7,
+      "source_text": "• Embryos",
+      "source_fragment_sha256": "3c1e1e99419830bdbe76eab4d92b690dbd3b763f99601c95098984e96fb96a1d",
+      "normalized_text": "Embryos",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-9e824ea2c4e0ef7f",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 9,
+      "source_text": "• Eggs",
+      "source_fragment_sha256": "0d7c627c37449ba6f19ead35cb1aa6893f003cde4e18ca3a6085caff720040b0",
+      "normalized_text": "Eggs",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-47a0fa03c1f96d3d",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 11,
+      "source_text": "• Sperm",
+      "source_fragment_sha256": "2f91221b9d263a16fd20da63878d7bf9722a88419258de9f787cb022dce6b0a6",
+      "normalized_text": "Sperm",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-99449419ec92652a",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 13,
+      "source_text": "• Storage Information",
+      "source_fragment_sha256": "f7334b2c48565c032bf2339fe74b21d9bda71d2858fbf892bea219afbdcc8aad",
+      "normalized_text": "Storage Information",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-18427afb0c9b45b2",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 774,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-LABORATORY",
+      "target_record_id": "M10-CAP-LABORATORY-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32047,
+        "body_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 1,
+      "source_text": "# Fertility Success Analytics",
+      "source_fragment_sha256": "d5ff32b9750b855be393811fc1d1df06b499d86660394fe5d534b66f15e79f5d",
+      "normalized_text": "# Fertility Success Analytics",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-af60b3fbe84d77de",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 3,
+      "source_text": "Provides treatment outcome statistics.",
+      "source_fragment_sha256": "e1c754cab60b7fbbed07553eafb33c85856bf66ca2e93538151f4c7842a419a9",
+      "normalized_text": "Provides treatment outcome statistics.",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-0b4925eaaf51d57b",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 5,
+      "source_text": "Displays",
+      "source_fragment_sha256": "5a3452eb50bce84aebfe4b2629f17c4f99ea87ded63babf8b42624f893992863",
+      "normalized_text": "Displays",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-f3d993f49bc6debb",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 7,
+      "source_text": "• Cycles",
+      "source_fragment_sha256": "a5cfc2e1d237a13b1a8315c7311856515ccf1b17970600e26f68e7055ce94376",
+      "normalized_text": "Cycles",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-97ede4bf21a6303f",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 9,
+      "source_text": "• Pregnancy Rate",
+      "source_fragment_sha256": "52faaf1c2da0bc5508d5f3b44e618639d5bd5f34c6c083c7d56327c2f22d976f",
+      "normalized_text": "Pregnancy Rate",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-d30d3ca2feffeaa9",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 11,
+      "source_text": "• Live Birth Rate",
+      "source_fragment_sha256": "4823330ffd66a0eb497595b464d16fe1f79d2aa394062d0893c002a222eac87a",
+      "normalized_text": "Live Birth Rate",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-b11ec48e32b62f08",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 13,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 15,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 776,
+      "source_line": 17,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-RESEARCH",
+      "target_record_id": "M10-CAP-RESEARCH-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32089,
+        "body_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 1,
+      "source_text": "# Reproductive AI Assistant",
+      "source_fragment_sha256": "752099b43da11908c4cd840e02dc3ed3d96c31d621851f962bf5a57e094573d9",
+      "normalized_text": "# Reproductive AI Assistant",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-782ad0677884c83c",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 3,
+      "source_text": "AI assists reproductive treatment monitoring.",
+      "source_fragment_sha256": "01ea68747e43989c96f4db21431f843a2528f450a2f2259b4f088ae64d784c9c",
+      "normalized_text": "AI assists reproductive treatment monitoring.",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-cc6356b415e00b17",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 5,
+      "source_text": "Analyzes",
+      "source_fragment_sha256": "13b7b7ca454c21257958a7fb3d8f4b8322256d26cd3021c682d0cdd0b06e02ec",
+      "normalized_text": "Analyzes",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-0535ebb6ad4f5674",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 7,
+      "source_text": "• Hormones",
+      "source_fragment_sha256": "7b460dd11f0d5bfd004d04be9a2e209e6026384741edac123c6be573dfce80b3",
+      "normalized_text": "Hormones",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-7b40033c1c8e1625",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 9,
+      "source_text": "• Ultrasound",
+      "source_fragment_sha256": "547e01ee69c17fc492eba77945500effb2ae9b6193b4ea337a42bfa71af1bdaa",
+      "normalized_text": "Ultrasound",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-5032f26f1a690cb2",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 11,
+      "source_text": "• Laboratory Results",
+      "source_fragment_sha256": "a172210b9d7918da0af42eaf6c3e4ded2ff7e3e12198024196a56abfe9134d4e",
+      "normalized_text": "Laboratory Results",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-71f790fdf94f9c10",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 13,
+      "source_text": "• Treatment Timeline",
+      "source_fragment_sha256": "6b877c7860f2d752400a6c3742d8f3993e10747bf33e7f1fc7a8e856b523bbbf",
+      "normalized_text": "Treatment Timeline",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-9b97c6e8966ca772",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 777,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-AI",
+      "target_record_id": "M10-CAP-AI-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-AI.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32109,
+        "body_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 1,
+      "source_text": "# Fertility Timeline",
+      "source_fragment_sha256": "41bc40bf935615a934bcbd9d731f3d76c927030f8b7ba34ede05586feb3c68ba",
+      "normalized_text": "# Fertility Timeline",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-94811b69bb1ffb15",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 3,
+      "source_text": "Displays the complete fertility treatment journey.",
+      "source_fragment_sha256": "3e1c20a3feed18f0b1396cddf8b63d6d85615e7901eea8284977f54d7396437c",
+      "normalized_text": "Displays the complete fertility treatment journey.",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-63aeb7f77f1f47fe",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 5,
+      "source_text": "Includes",
+      "source_fragment_sha256": "df498282bede20a9dfff2ee882b7bd646bc7769513fc97e596f1649f123b949c",
+      "normalized_text": "Includes",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-01bbec9df504a305",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 7,
+      "source_text": "• Diagnostics",
+      "source_fragment_sha256": "0b308a597fa2037728b491b7e62ae2675874d4869429a5e32e3860d3672e98d9",
+      "normalized_text": "Diagnostics",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-66cb8cd6201376f6",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 9,
+      "source_text": "• Medications",
+      "source_fragment_sha256": "6ca0d3d226133e4cb66a4e48de2020ba57544fc009a1ff046f1f970dea09c8b1",
+      "normalized_text": "Medications",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-b769af85ada69188",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 11,
+      "source_text": "• Procedures",
+      "source_fragment_sha256": "0136fe37167a5be80a08520a756caa6a92b1d9255fa5924c9a82b86b01844857",
+      "normalized_text": "Procedures",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-228b18d13e8b34f1",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 13,
+      "source_text": "• Outcomes",
+      "source_fragment_sha256": "9159662ae83fa42023dc259bfb72077d0c4105ef881d4107f847fb0eaab4fa08",
+      "normalized_text": "Outcomes",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-5e8c51cc3501e267",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "REQUIREMENT",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 15,
+      "source_text": "Status",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "normalized_text": "Status",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-5ba74d8fcc7b20cc",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 17,
+      "source_text": "Documentation",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "normalized_text": "Documentation",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-d5232cbd3a326267",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    },
+    {
+      "source_id": 779,
+      "source_line": 19,
+      "source_text": "---",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "normalized_text": "---",
+      "target_module": "CORE-CAP-DATA",
+      "target_record_id": "M10-CAP-DATA-6f33acf3afb37064",
+      "target_document": "docs/canonical/master10/CAP-DATA.md",
+      "kind": "SOURCE_METADATA",
+      "provenance": {
+        "source_file": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32155,
+        "body_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229"
+      }
+    }
+  ]
+}

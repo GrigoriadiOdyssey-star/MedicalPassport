@@ -1,0 +1,284 @@
+{
+  "records": [
+    {
+      "id": "CAP-SECURITY-B05-CLINICAL",
+      "source_blocker": "CAP-SECURITY-B05",
+      "affected_capability": "CAP-SECURITY",
+      "clinical_question": "Can wrong-patient, stale binding or revoked authorization disclose an allergy view despite fail-closed rules?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical safety officer and privacy/security reviewer",
+      "validation_method": "Adversarial patient-binding and revocation scenarios with workflow observation",
+      "release_impact": "MVP clinical release blocked until reviewed",
+      "mvp_blocking": true,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-AUDIT-B06-CLINICAL",
+      "source_blocker": "CAP-AUDIT-B06",
+      "affected_capability": "CAP-AUDIT",
+      "clinical_question": "Do patients understand that a committed access-attempt receipt does not establish delivery or clinician review?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical safety officer and patient human-factors reviewer",
+      "validation_method": "Comprehension study using synthetic attempt/denial/unavailable receipts",
+      "release_impact": "MVP clinical release blocked until reviewed",
+      "mvp_blocking": true,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-PHARMACY-B05-CLINICAL",
+      "source_blocker": "CAP-PHARMACY-B05",
+      "affected_capability": "CAP-PHARMACY",
+      "clinical_question": "Can stale stock, partial dispensing or unclear acknowledgement lead to unsafe treatment assumptions?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical pharmacist",
+      "validation_method": "Dispense/reservation misuse scenarios with reconciliation evidence",
+      "release_impact": "Pharmacy release blocked; outside initial MVP",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-ALLERGY-B01-CLINICAL",
+      "source_blocker": "CAP-ALLERGY-B01",
+      "affected_capability": "CAP-ALLERGY",
+      "clinical_question": "Can the display distinguish unknown, not assessed, no known allergy, reported reaction and clinician-confirmed assertion without suppressing a hazard?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Allergist or clinical immunologist with clinical safety reviewer",
+      "validation_method": "Blinded interpretation of synthetic state/provenance/freshness cases and correction handling",
+      "release_impact": "MVP clinical release blocked until reviewed",
+      "mvp_blocking": true,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-TELEMEDICINE-B01-CLINICAL",
+      "source_blocker": "CAP-TELEMEDICINE-B01",
+      "affected_capability": "CAP-TELEMEDICINE",
+      "clinical_question": "Are lost connections, jurisdiction changes and unconfirmed clinician handoffs presented without implying completed care?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Practicing telemedicine clinician",
+      "validation_method": "Observed communication failure and consent/recording simulations",
+      "release_impact": "Telemedicine clinical release blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-NOTIFICATIONS-B01-CLINICAL",
+      "source_blocker": "CAP-NOTIFICATIONS-B01",
+      "affected_capability": "CAP-NOTIFICATIONS",
+      "clinical_question": "Can users mistake technical delivery or retry for a staffed clinical response?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical operations and human-factors reviewer",
+      "validation_method": "Escalation/acknowledgement failure scenarios",
+      "release_impact": "Clinical-alert release blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-DEVICES-B01-CLINICAL",
+      "source_blocker": "CAP-DEVICES-B01",
+      "affected_capability": "CAP-DEVICES",
+      "clinical_question": "Are device quality, unit/time errors, stale data and unverified configuration visibly distinguished from current clinical measurements?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Biomedical engineer and relevant clinical specialist",
+      "validation_method": "Device-specific hazard and wrong-unit/time/source fixtures",
+      "release_impact": "Each device intended-use release blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-AI-B01-CLINICAL",
+      "source_blocker": "CAP-AI-B01",
+      "affected_capability": "CAP-AI",
+      "clinical_question": "Are intended-use, cohort performance, uncertainty, abstention and human disposition sufficient to prevent unsupported clinical decisions?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Intended-use clinical specialist and model validation lead",
+      "validation_method": "Prespecified held-out cohort evaluation and unsafe-output challenge set",
+      "release_impact": "Clinical AI release blocked; no autonomous treatment",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-CDS-B01-CLINICAL",
+      "source_blocker": "CAP-CDS-B01",
+      "affected_capability": "CAP-CDS",
+      "clinical_question": "Does evidence/context freshness and uncertainty prevent dose or treatment advice outside the validated intended use?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical pharmacologist and relevant specialist",
+      "validation_method": "Prespecified context/interaction/organ-function/PGx boundary validation",
+      "release_impact": "Clinical CDS release blocked; no autonomous prescribing",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-EMERGENCY-B01-CLINICAL",
+      "source_blocker": "CAP-EMERGENCY-B01",
+      "affected_capability": "CAP-EMERGENCY",
+      "clinical_question": "Can users distinguish unavailable dispatch, missing recipient acknowledgement and actual emergency service acceptance?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Emergency physician and local emergency operations lead",
+      "validation_method": "Jurisdiction-specific handoff and outage tabletop simulation",
+      "release_impact": "Emergency clinical release blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-SPECIALTY-B01-CLINICAL",
+      "source_blocker": "CAP-SPECIALTY-B01",
+      "affected_capability": "CAP-SPECIALTY",
+      "clinical_question": "Does each profile preserve source authority, intended use and specialty-specific hazards under shared orchestration?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Named specialist for each profile",
+      "validation_method": "Profile-specific hazard analysis and acceptance cases",
+      "release_impact": "Each specialty profile release independently blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-GOVERNANCE-M19-B2-CLINICAL",
+      "source_blocker": "CAP-GOVERNANCE-M19-B2",
+      "affected_capability": "CAP-GOVERNANCE",
+      "clinical_question": "Does approval evidence bind the actual capability/version/intended use and an accountable qualified reviewer?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical governance lead",
+      "validation_method": "Evidence provenance and scope/version mismatch challenge",
+      "release_impact": "Clinical release approval mechanism blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-PRESCRIPTION-M19-B2-CLINICAL",
+      "source_blocker": "CAP-PRESCRIPTION-M19-B2",
+      "affected_capability": "CAP-PRESCRIPTION",
+      "clinical_question": "Are issuer authority, cancellation, partial fulfilment and medication units safe under the intended eRx jurisdiction?",
+      "risk_level": "HIGH",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Prescribing clinician and clinical pharmacist",
+      "validation_method": "Signed-order lifecycle and medication-safety scenario review",
+      "release_impact": "Prescription release blocked; outside initial MVP",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    },
+    {
+      "id": "CAP-CONDITION-M19-B2-CLINICAL",
+      "source_blocker": "CAP-CONDITION-M19-B2",
+      "affected_capability": "CAP-CONDITION",
+      "clinical_question": "Can reported, provisional and confirmed clinical assertions and corrections be interpreted without upgrading uncertainty?",
+      "risk_level": "REQUIRES_SPECIALIST_TRIAGE",
+      "evidence_required": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "reviewer_specialty": "Clinical informatician and relevant clinician",
+      "validation_method": "Assertion-state, terminology and correction review",
+      "release_impact": "Condition assertion clinical release blocked",
+      "mvp_blocking": false,
+      "blocks": "CLINICAL_PRODUCTION_RELEASE",
+      "engineering_approval": false,
+      "clinically_validated": false,
+      "status": "OPEN"
+    }
+  ]
+}

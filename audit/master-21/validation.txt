@@ -1,0 +1,20 @@
+✔ closed port schemas match generated artifacts and reject each missing or extra field (14.6756ms)
+✔ source and identity cross-field constraints reject clinical or authority contradictions (0.7417ms)
+✔ session expiry, trust/session epoch and unknown sessions fail closed (2.2842ms)
+✔ exact clinician read succeeds but wrong binding, role, version, purpose and revoked authority deny (19.6418ms)
+✔ clinical grant withdrawal blocks clinician while patient historical receipts remain separately authorized (2.3141ms)
+✔ source selection is patient-bound and does not require or fabricate a clinician grant (1.8761ms)
+✔ projections conform to unchanged disclosure schema; unavailable dependencies never release content (3.4913ms)
+✔ synthetic adapters reject production/real identifiers and excluded connectors cannot claim success (1.151ms)
+✔ all seven scoped profiles satisfy explicit criteria; missing evidence or blockers fail build promotion (180.6164ms)
+✔ full-owner denominator and retained blocker descriptions are never silently converted to scoped closure (155.8956ms)
+✔ 13 prioritized questions and 3 clinical questions become explicit release gates without clinical answers (190.4935ms)
+✔ expanded task graph has no missing or cyclic dependencies; old owner graph and canonical evidence are reused (310.2173ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1065.0585

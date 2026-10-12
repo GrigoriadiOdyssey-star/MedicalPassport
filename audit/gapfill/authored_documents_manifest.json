@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "edition": "2026-09-14",
+  "pass": "GAPFILL-01",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "7f1e8e84a4e5a3294cab525cea5f818b0a47d2e9",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "documents": [
+    {
+      "path": "precision_pharmacology_architecture.md",
+      "sha256": "706e7ae399a2367270ad5f0077b91aae3e6d10b793aeae2fbcb5f0e96f376577",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "digital_twin_architecture.md",
+      "sha256": "c92f0b0bc1e805aee32836bda4969ccc72f11d3f312242945b2e7ada5628ca20",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "dynamic_organism_visualization.md",
+      "sha256": "e92066e39896e4ac5433c2661bec49e37bd200e9a515cbe2d09dbcca26677634",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "protein_genomic_adapters.md",
+      "sha256": "860c09e8551ab3f32ef1609492307b9979d0347b26e18685054113c4848eec5b",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "adaptive_interoperability_architecture.md",
+      "sha256": "4c67316349d453d150ef86ccd0ab029c032f092f42d0e556ad09f4ff37f393d1",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "research_ai_architecture.md",
+      "sha256": "174e00f5345d6b2e5a77e1f3a935659a7a0d389066d9ec031eebdf13b6df0e63",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "ai_platform_architecture.md",
+      "sha256": "9cc38d23ecf35d94e21dd7d769cdf6d09afa5344da7bc0d43ff466839748f36b",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "data_architecture.md",
+      "sha256": "de6ca17786fcad273884a0072aa1e4cc2ce30553fd23af55e054605f1fb4f1b1",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "clinical_safety_findings.md",
+      "sha256": "2df73c3218a21b39e913f3858a452efbb7b5b9856159311389c8ff9015e7f993",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "interoperability_findings.md",
+      "sha256": "00a46a5737eaf21d3c511fd695c54d833b2ca02bf6488613a67fb477a53c49f5",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "path": "CONTINUE_FROM_HERE.md",
+      "sha256": "4558aea95a5d9268a7a1a5eec470d0b03f9e05557c297ddd91786e12413c758d",
+      "status": "AUTHORED_DRAFT_NOT_INDEPENDENTLY_VALIDATED"
+    }
+  ]
+}

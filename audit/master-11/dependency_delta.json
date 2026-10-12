@@ -1,0 +1,70 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "nodes": [
+    {
+      "id": "CORE-CAP-TRAVEL",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-TRAVEL"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-DATA"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-CONSENT"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-AUDIT"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-IDENTITY"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-RESEARCH"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-QR"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-PROFILE"
+    },
+    {
+      "from": "CORE-CAP-TRAVEL",
+      "to": "CAP-IMMUNIZATION"
+    },
+    {
+      "from": "CORE-CAP-DOCUMENTS",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-INTEROP",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-IMMUNIZATION",
+      "to": "CAP-SECURITY"
+    }
+  ],
+  "baseline_graph": "audit/master-08/dependency_graph.json"
+}

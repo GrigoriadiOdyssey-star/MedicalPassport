@@ -1,0 +1,2 @@
+create index if not exists edht_appointment_versions_actor_user_id_idx on public.edht_appointment_versions(actor_user_id);
+create index if not exists edht_guideline_context_versions_actor_user_id_idx on public.edht_guideline_context_versions(actor_user_id);

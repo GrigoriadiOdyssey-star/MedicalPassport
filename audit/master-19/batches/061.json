@@ -1,0 +1,25 @@
+{
+  "pass": "MASTER-19",
+  "batch": 61,
+  "family": "remaining-inference-artifacts",
+  "owner": "CAP-AI",
+  "ids": [
+    199,
+    208,
+    231,
+    240,
+    247,
+    661,
+    1044
+  ],
+  "decision_sha256": "969e9db755f1a34453958b70d0f7b0a5a617fef96b3a145f727b762ec679a4ef",
+  "source_hashes": {
+    "199": "aa945833c3fcd4e46e9969b842be85ee8b8afb01cb566cdde8a76b0a1db07820",
+    "208": "107796761d473c31900b05114c85a37a775a98100a9c0183310a792f9a7ea41a",
+    "231": "361a8e83a3dcb98c90c271dbd2b760fc82d96b97838a85b3212c0ebcf313f559",
+    "240": "1aad3d3e3c6462ae97480c18b26d766d2d893c10c7f42be1505f9ba3725ac3da",
+    "247": "3a8aa62ff82c66b16202721b85d84fbe6cbe9476a5fd84ef921daa1508c51dae",
+    "661": "e1012abb4bda88319ba0c40736b7588f1fb1fb957b3dcc71fa074bde75e40a46",
+    "1044": "1d8ff77e471b7c9834123185bd8e051342b3bd569cd1850b5d74a4ed0f7a5c7c"
+  }
+}

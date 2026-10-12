@@ -1,0 +1,35 @@
+{
+  "pass": "MASTER-20",
+  "parent_commit": "6024c58c393f40b458a10cc396f9f4ba3d2d2f8b",
+  "canonical_specifications": 33,
+  "documentation_coverage": 100,
+  "documentation_metrics_source": "audit/master-19/audit_progress.json",
+  "engineering_before": 157,
+  "engineering_resolved": 25,
+  "engineering_remaining": 132,
+  "implementation_ready_before": 1,
+  "newly_implementation_ready": 0,
+  "total_ready_bounded_profiles": 1,
+  "full_canonical_owners_ready": 0,
+  "mvp_core_ready_bounded_profiles": 1,
+  "mvp_core_blocked": 6,
+  "clinical_validation_required": 14,
+  "mvp_blocking_clinical_questions": 3,
+  "deep_queue_counts": {
+    "MVP_BLOCKING": 13,
+    "HIGH_RISK_PRE_RELEASE": 1762,
+    "POST_MVP_VALIDATION": 907,
+    "RESEARCH_LONG_TERM": 427
+  },
+  "external_gates": {
+    "EXTERNAL_INTEGRATION_REQUIRED": 68,
+    "LEGAL_REVIEW_REQUIRED": 38,
+    "JURISDICTION_CONFIGURATION_REQUIRED": 34
+  },
+  "backlog_items": 3,
+  "readiness_prerequisites": 6,
+  "build_gate": "BUILD_GATE_FAIL",
+  "application_implementation_started": false,
+  "normalization_repeated": false,
+  "clinical_approval": false
+}

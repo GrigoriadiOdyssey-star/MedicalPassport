@@ -1,0 +1,18 @@
+{
+  "mode": "REUSE_UNCHANGED_VALIDATED_EVIDENCE",
+  "baseline": "audit/master-19/architecture_control.json",
+  "sha256": "9bb27f460a1f10a8f159ea2f858225491f39c82451a4f9ada7bab0a761cf1212",
+  "capabilities": 25,
+  "digital_twin": "CAP-TWIN",
+  "precision_pharmacology": "CAP-CDS",
+  "status": "REQUESTED_CONCEPTUAL_CAPABILITIES_COVERED",
+  "integration": "Existing canonical-data → CAP-CDS → CAP-TWIN → clinician path; no autonomous prescribing, stopping medication or dose change",
+  "remaining_engineering": [
+    "Model-specific typed numerical contracts and acceptance thresholds",
+    "Runtime authorized handoff, invalidation and replay implementation",
+    "Imaging derivation and modality-specific integration",
+    "Accessible dynamic-organism UI and export implementation"
+  ],
+  "clinical_release": false,
+  "evidence_unchanged": true
+}

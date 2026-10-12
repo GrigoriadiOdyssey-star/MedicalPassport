@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-17",
+  "batch": 35,
+  "family": "medication-record-profiles",
+  "owner": "CAP-MEDICATION",
+  "ids": [
+    8,
+    57,
+    106,
+    159,
+    411
+  ],
+  "decision_sha256": "79ddf203d4b48f0de571a5ab320b576dc5186402ecc6db27d1005b0d39ece3e8",
+  "source_hashes": {
+    "8": "2df19410b9a3b13f90c45e26d40b06bd09f77bab9f048ff1636d808e69e5058f",
+    "57": "65e5a07b573db01c50b3354444a371321dba2acf5d59745356bf3556da201760",
+    "106": "c352fa6a6d1d640e2f3ab5ee14f73cd33c264331c2581ffb8c219eff35253ce0",
+    "159": "6b1de570fa623971a85393ab741a780f1df5fce2d1eb65f3594f1ff30502642e",
+    "411": "f36c764f290f1a549cf1be30962a21ccb675e344e4e9dbdad77cc9f36acd3867"
+  }
+}

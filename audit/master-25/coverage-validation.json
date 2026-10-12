@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "owners": 33,
+  "specification_references": 219,
+  "counts": {
+    "POST_MVP": 11,
+    "PARTIALLY_IMPLEMENTED": 19,
+    "RESEARCH": 3
+  }
+}

@@ -1,0 +1,2960 @@
+{
+  "pass": "MASTER-12",
+  "baseline_commit": "53c4fe4647f200df6c4f867acc6b044a6b728ab4",
+  "batch": 13,
+  "label": "CAP-MEDICATION|oncology:1;CAP-IMAGING|musculoskeletal:1;CAP-MEDICATION|endocrine:1;CAP-DOCUMENTS|neurology:1;CAP-AUDIT|audit:1;CAP-SECURITY|security:1;CAP-AI|renal:1;CAP-ALLERGY|pediatrics:1;CAP-CDS|cds:1;CAP-GOVERNANCE|governance:1;CAP-IMMUNIZATION|pediatrics:1;CAP-OPERATIONS|neurology:1;CAP-PROFILE|pediatrics:1;CAP-APPOINTMENTS|oncology:1;CAP-CONDITION|respiratory:1;CAP-CONSENT|consent:1;CAP-EMERGENCY|infection:1;CAP-IMAGING|neurology:1;CAP-IMMUNIZATION|medication:1;CAP-MEDICATION|infection:1;CAP-PRESCRIPTION|prescription:1;CAP-CONDITION|cardiovascular:1;CAP-CONDITION|reproductive:1;CAP-ENCOUNTER|reproductive:1;CAP-IMAGING|oncology:1;CAP-PROFILE|reproductive:1;CAP-DEVICES|cardiovascular:1;CAP-DEVICES|musculoskeletal:1;CAP-DEVICES|respiratory:1;CAP-IMAGING|endocrine:1",
+  "date": "2026-09-16",
+  "count": 30,
+  "reviews": [
+    {
+      "original_id": 2126,
+      "title": "Chemotherapy Management Module",
+      "eligible": true,
+      "main_purpose": "Supports chemotherapy management.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "oncology",
+      "subdomain": [
+        "oncology"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "DUPLICATE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [
+          2776
+        ],
+        "cached_clusters": [
+          {
+            "id": "CL-b9d11e71924b",
+            "classification": "NEEDS_REVIEW",
+            "others": [
+              2776
+            ],
+            "basis": [
+              "normalized_title"
+            ]
+          }
+        ],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Supports chemotherapy management.",
+            "sha256": "b8d9f4eb8834eba78540647c884ab3479cad44903cb51b1c54a554dec25c7253"
+          },
+          {
+            "line": 5,
+            "text": "• Treatment Cycles",
+            "sha256": "08531d395ba9645e8e992eba9fe8a4c6781fe77f864acf80b7672544a160777c"
+          },
+          {
+            "line": 7,
+            "text": "• Toxicity",
+            "sha256": "ec6291ec3d3c715661fd36ae7bf21a38aa19b95746e636de731a312a4bf09831"
+          },
+          {
+            "line": 9,
+            "text": "• Drug Protocols",
+            "sha256": "1195d5dd73bc205086aee6f8a7e6374ab419a1951296cf596d3aa007e6d448f6"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 58312,
+        "body_sha256": "affc28d3f5bd5a714bb11544844f9582ccc5e4353bf062e40ea1cc8b2f6bfb94",
+        "original_id": 2126
+      },
+      "source_body": "Supports chemotherapy management.\n\nSupports\n\n• Treatment Cycles\n\n• Toxicity\n\n• Drug Protocols\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|oncology"
+    },
+    {
+      "original_id": 2539,
+      "title": "Musculoskeletal Imaging Registry",
+      "eligible": true,
+      "main_purpose": "Maintains musculoskeletal imaging.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "musculoskeletal",
+      "subdomain": [
+        "musculoskeletal"
+      ],
+      "capability": "CAP-IMAGING",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-IMAGING",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-IMAGING"
+      ],
+      "overlap_status": "PARTIAL_OVERLAP",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [
+          {
+            "id": "CL-218afcfaed09",
+            "classification": "NEEDS_REVIEW",
+            "others": [
+              3550
+            ],
+            "basis": [
+              "bounded_tfidf_lexical_candidate"
+            ]
+          }
+        ],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Maintains musculoskeletal imaging.",
+            "sha256": "e7655e55a00d615315232e3dbda96362ed486bd2954835c6a0928197d3c0e003"
+          },
+          {
+            "line": 5,
+            "text": "• X-Ray",
+            "sha256": "d884b4e11adc6f583e1d7d23e9e0e05a69868b0268a6e3fb7e3c9dc2f3e18459"
+          },
+          {
+            "line": 7,
+            "text": "• MRI",
+            "sha256": "eb9b1848e538fba1a1210797af792fc2f5caff215ce3d771a05a1e419a64d50f"
+          },
+          {
+            "line": 9,
+            "text": "• Ultrasound",
+            "sha256": "547e01ee69c17fc492eba77945500effb2ae9b6193b4ea337a42bfa71af1bdaa"
+          },
+          {
+            "line": 11,
+            "text": "• CT",
+            "sha256": "6643b937ed1d7558ae533938c74883a1902b32437e2ed11a392cdd5f207816d1"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PARTIAL_OVERLAP",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 66018,
+        "body_sha256": "49ad9db111314e90c5886fbb0c77e7a51c195b8763f5950f7042f93886e86d59",
+        "original_id": 2539
+      },
+      "source_body": "Maintains musculoskeletal imaging.\n\nSupports\n\n• X-Ray\n\n• MRI\n\n• Ultrasound\n\n• CT\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-IMAGING|musculoskeletal"
+    },
+    {
+      "original_id": 4917,
+      "title": "Adolescent Reproductive Medication & Hormonal Therapy Safety Module",
+      "eligible": true,
+      "main_purpose": "Provide longitudinal medication safety for gynecological and reproductive hormonal therapies.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "endocrine",
+      "subdomain": [
+        "endocrine"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "SENSITIVE_REVIEW_REQUIRED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-PHARMACY",
+        "CAP-ALLERGY",
+        "CAP-LABORATORY",
+        "CAP-OPERATIONS",
+        "CAP-SPECIALTY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 23,
+        "fragments": [
+          {
+            "line": 2,
+            "text": "Provide longitudinal medication safety for gynecological and reproductive hormonal therapies.",
+            "sha256": "fa8ec708eee2c6250085e6e9ec94575b9af49ff0e5a91d3b3a0b93638c2f4216"
+          },
+          {
+            "line": 5,
+            "text": "• Medication Registry",
+            "sha256": "bd549b0954c39ebcc98541ac5bd9bd0f871878314bdc5255d59d352d89179575"
+          },
+          {
+            "line": 6,
+            "text": "• Treatment Indication",
+            "sha256": "e7cd88d5f096520a9af5e98bee6a82c26c4c68d21d4d3f2503df9e17b2f7b423"
+          },
+          {
+            "line": 7,
+            "text": "• Hormonal Therapy",
+            "sha256": "15e6a94f207a650631eda10f900607f0731ccdc92acbc0768a16b70c890934ca"
+          },
+          {
+            "line": 8,
+            "text": "• Dose History",
+            "sha256": "aeb570ed1577c195b3e99f5b464ec44caea5b63ec3e9a83bd11a6529b406f531"
+          },
+          {
+            "line": 9,
+            "text": "• Treatment Duration",
+            "sha256": "59c3984b6a8572f057c58811569da3afc3390136ad6d92fa0eee8764bc18e475"
+          },
+          {
+            "line": 10,
+            "text": "• Adherence",
+            "sha256": "010435e221ec4847cecd11785d93bfc0c6ff04d7f90b1a014d2d165f14c1f050"
+          },
+          {
+            "line": 11,
+            "text": "• Drug Interactions",
+            "sha256": "2e45aeb9c2df0618731e05bc69bec46f7e92a8c1df68232baf42481d02a1f43e"
+          },
+          {
+            "line": 12,
+            "text": "• Allergy",
+            "sha256": "be2a94aac4ea02fad5e2a037fa830a007efd3152cdbb59b86b022949e2a576fc"
+          },
+          {
+            "line": 13,
+            "text": "• Adverse Effects",
+            "sha256": "842f7958f46064b7fda8f2ada6266909f4f2373a910c1a8dceda78de210df489"
+          },
+          {
+            "line": 14,
+            "text": "• Blood Pressure Context",
+            "sha256": "5bcd4f16e10d514dd129eb1d9b04aa84b002c1af59314d3b21d61eba42ccee21"
+          },
+          {
+            "line": 15,
+            "text": "• Thrombotic Risk Context",
+            "sha256": "d3b3976d004da953227c91f328a235c1fb05abc830ea2d2d4ddd100f062a3fc5"
+          },
+          {
+            "line": 16,
+            "text": "• Migraine Context",
+            "sha256": "7383d48d96bad2d672f4d5f3d700fb2f246e2eb4110947622c850b369217a7ae"
+          },
+          {
+            "line": 17,
+            "text": "• Liver Context",
+            "sha256": "ae0c2417e780a96f2dca34f3bc9b5e094715bf88207884f596bddaddf1faa97e"
+          },
+          {
+            "line": 18,
+            "text": "• Laboratory Monitoring where indicated",
+            "sha256": "dbcb6d8e3aab0ef83c788d8d354e035c5ac0b8cc3e2ad264e43df4b948edaaec"
+          },
+          {
+            "line": 19,
+            "text": "• Treatment Response",
+            "sha256": "5087d36ed93e0067e6878ab0e104ff4fd75a71645f1ec35af3ebdf43f6322c27"
+          },
+          {
+            "line": 22,
+            "text": "• Gynecology",
+            "sha256": "f6bd9d6d5b7d0743433b38c8b9aeca72f9f969f3cb2c338aeb888dddc198dcd7"
+          },
+          {
+            "line": 23,
+            "text": "• Endocrinology",
+            "sha256": "aa7aa928870aef0e243e87e3ad39bf2afafd61d89486c34766fb0aae168686d3"
+          },
+          {
+            "line": 24,
+            "text": "• Pharmacy",
+            "sha256": "950bd70b45473ad492818361ce8c09e706c05a659a84555ec2217754f111248f"
+          },
+          {
+            "line": 25,
+            "text": "• Hematology",
+            "sha256": "79ba21124969dbdab63a8fb105b74390923b73b03e13250cd0dce71771a5e6f6"
+          },
+          {
+            "line": 26,
+            "text": "• Neurology",
+            "sha256": "ee3ae00c2458bebd06bdbb8be0678d3f207ed84ec882cb78c2785e271c2240fb"
+          },
+          {
+            "line": 27,
+            "text": "• Primary Care",
+            "sha256": "a7cc358a080e487598846b43e573582664916076609312c15af64b1d291371a7"
+          },
+          {
+            "line": 30,
+            "text": "Medication selection remains clinician-led and patient-specific.",
+            "sha256": "daab2ac680d5b21c09a9211757f689d91ba6a9a513ff323652cc0fb0713fd24d"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        {
+          "mention": "Gynecology",
+          "original_targets": [],
+          "capability_candidates": [
+            "CAP-SPECIALTY"
+          ],
+          "resolution": "CAPABILITY_CANDIDATE",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Endocrinology",
+          "original_targets": [],
+          "capability_candidates": [
+            "CAP-SPECIALTY"
+          ],
+          "resolution": "CAPABILITY_CANDIDATE",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Pharmacy",
+          "original_targets": [],
+          "capability_candidates": [
+            "CAP-PHARMACY"
+          ],
+          "resolution": "CAPABILITY_CANDIDATE",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Hematology",
+          "original_targets": [],
+          "capability_candidates": [],
+          "resolution": "UNRESOLVED",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Neurology",
+          "original_targets": [],
+          "capability_candidates": [
+            "CAP-SPECIALTY"
+          ],
+          "resolution": "CAPABILITY_CANDIDATE",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Primary Care",
+          "original_targets": [],
+          "capability_candidates": [],
+          "resolution": "UNRESOLVED",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Safety",
+          "original_targets": [],
+          "capability_candidates": [],
+          "resolution": "UNRESOLVED",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        {
+          "mention": "Medication selection remains clinician-led and patient-specific.",
+          "original_targets": [],
+          "capability_candidates": [
+            "CAP-MEDICATION"
+          ],
+          "resolution": "CAPABILITY_CANDIDATE",
+          "source": {
+            "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+            "heading_line": 121066,
+            "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+            "original_id": 4917
+          }
+        },
+        "CAP-PHARMACY",
+        "CAP-ALLERGY",
+        "CAP-LABORATORY",
+        "CAP-OPERATIONS",
+        "CAP-SPECIALTY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "PRIVACY_SECURITY_INTEROP",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 121066,
+        "body_sha256": "914cd91c31941b5a01446631657eb9464fdcbc2dfeb9d80e8eff8515a8c61759",
+        "original_id": 4917
+      },
+      "source_body": "Purpose:\nProvide longitudinal medication safety for gynecological and reproductive hormonal therapies.\n\nCore Functions:\n• Medication Registry\n• Treatment Indication\n• Hormonal Therapy\n• Dose History\n• Treatment Duration\n• Adherence\n• Drug Interactions\n• Allergy\n• Adverse Effects\n• Blood Pressure Context\n• Thrombotic Risk Context\n• Migraine Context\n• Liver Context\n• Laboratory Monitoring where indicated\n• Treatment Response\n\nIntegrations:\n• Gynecology\n• Endocrinology\n• Pharmacy\n• Hematology\n• Neurology\n• Primary Care\n\nSafety:\nMedication selection remains clinician-led and patient-specific.\n\nStatus:\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|endocrine"
+    },
+    {
+      "original_id": 92,
+      "title": "OCR Medical Recognition",
+      "eligible": true,
+      "main_purpose": "Medical document recognition.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "neurology",
+      "subdomain": [
+        "neurology"
+      ],
+      "capability": "CAP-DOCUMENTS",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-DOCUMENTS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-DOCUMENTS",
+        "CAP-INTEROP",
+        "CAP-PRESCRIPTION",
+        "CAP-LABORATORY",
+        "CAP-IMMUNIZATION",
+        "CAP-COVERAGE",
+        "CAP-AI"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 11,
+        "fragments": [
+          {
+            "line": 5,
+            "text": "Medical document recognition.",
+            "sha256": "9e8b91d78d8f62c9610caf1776aa24f2e596c038efd0904dace4c74bc70d4492"
+          },
+          {
+            "line": 9,
+            "text": "• Prescriptions",
+            "sha256": "90e6c119c6810baf6ffe8406032d71fc55d86a76c413032ad21212f61aac8edd"
+          },
+          {
+            "line": 11,
+            "text": "• Laboratory Results",
+            "sha256": "a172210b9d7918da0af42eaf6c3e4ded2ff7e3e12198024196a56abfe9134d4e"
+          },
+          {
+            "line": 13,
+            "text": "• Hospital Reports",
+            "sha256": "9bd769dc63229e77789b4e943158972bb83bc8bd7cee2602253140cd7e4183ef"
+          },
+          {
+            "line": 15,
+            "text": "• Vaccination Cards",
+            "sha256": "df1ec5fae50f2256252fa13891f4a4ea4073b01646fe609af25f8012d9fb1045"
+          },
+          {
+            "line": 17,
+            "text": "• Insurance Documents",
+            "sha256": "40888ab5c7ac04c41df52b0f0c65c37507c0eeab69c8abb3ee162f042096ab71"
+          },
+          {
+            "line": 19,
+            "text": "Output",
+            "sha256": "b2439bcb8dee14b685f137f294b0e0cb62f5aadf45143ce01d79777d435a93b4"
+          },
+          {
+            "line": 21,
+            "text": "• Structured Medical Data",
+            "sha256": "3cba2c536d93d31f526e3e1eca4590b31571adbdbee5babbbb200f730a4d20c7"
+          },
+          {
+            "line": 23,
+            "text": "• AI Summary",
+            "sha256": "b0372b9c9178bed117b95427e3ff38806ce2457779c402f376aa2e0243626571"
+          },
+          {
+            "line": 25,
+            "text": "• Translation",
+            "sha256": "9907ec6a1364fd5cdc2eea9b0c42e4204ee5ab9bae56aed6037039e123bf7c1a"
+          },
+          {
+            "line": 27,
+            "text": "• FHIR Mapping",
+            "sha256": "5c2c5e557f53a9464720e668f786151ac215fb5310462aa7b97a3fec289e4ca1"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-INTEROP",
+        "CAP-PRESCRIPTION",
+        "CAP-LABORATORY",
+        "CAP-IMMUNIZATION",
+        "CAP-COVERAGE",
+        "CAP-AI"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 14837,
+        "body_sha256": "4e5aca6ac02269d36ecff5ee01d223f51633b5544a479273d159569cb93cfbae",
+        "original_id": 92
+      },
+      "source_body": "# OCR Medical Recognition\n\nPurpose\n\nMedical document recognition.\n\nSupports\n\n• Prescriptions\n\n• Laboratory Results\n\n• Hospital Reports\n\n• Vaccination Cards\n\n• Insurance Documents\n\nOutput\n\n• Structured Medical Data\n\n• AI Summary\n\n• Translation\n\n• FHIR Mapping\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-DOCUMENTS|neurology"
+    },
+    {
+      "original_id": 226,
+      "title": "Audit Trail System",
+      "eligible": true,
+      "main_purpose": "Logs are immutable and timestamped.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "audit",
+      "subdomain": [
+        "audit"
+      ],
+      "capability": "CAP-AUDIT",
+      "likely_architecture_layer": "PLATFORM CORE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-AUDIT",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-AUDIT",
+        "CAP-QR",
+        "CAP-PRESCRIPTION",
+        "CAP-LABORATORY",
+        "CAP-DOCUMENTS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 8,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Records",
+            "sha256": "47a84e92d5b225ee185aff8a30bafb3240a41b84c740bcaeac43772dd7f2fd37"
+          },
+          {
+            "line": 5,
+            "text": "• Login",
+            "sha256": "a2cb28eb45e536242f450a9a3b54e108dbaab0a40519729916e2db49f3e6c7cf"
+          },
+          {
+            "line": 7,
+            "text": "• Record Access",
+            "sha256": "e20f44ddece960a969449e61b53b3eb61545aa6e3bdc50199f9fb82b84878406"
+          },
+          {
+            "line": 9,
+            "text": "• Document Changes",
+            "sha256": "e68f73af46df74340a2b7c8532ab6a1f8d5ad16d079b55b6205e807ee1931d02"
+          },
+          {
+            "line": 11,
+            "text": "• Prescription Creation",
+            "sha256": "eec3f0652e3c742380b2b67910d5811d2d4c77ad7aa8fb233e3e65c14524a6fb"
+          },
+          {
+            "line": 13,
+            "text": "• Laboratory Imports",
+            "sha256": "0f97e544603c8d9b8d6604f72da5ffeff3c792dc837584adcf0030eaa5a94ae5"
+          },
+          {
+            "line": 15,
+            "text": "• QR Access",
+            "sha256": "5a18956dcbf088401850eb075859edcf47ca2d636f01837be01a489e4ebdfdb9"
+          },
+          {
+            "line": 17,
+            "text": "Logs are immutable and timestamped.",
+            "sha256": "d3ea3f9690dfdc0bb10ee2ef9ddbe753a812233a5eee7e49c128e6b979678a82"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-QR",
+        "CAP-PRESCRIPTION",
+        "CAP-LABORATORY",
+        "CAP-DOCUMENTS"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 19251,
+        "body_sha256": "d177eb1069dab29780118c5ad30b5e8df619ec741a13e61db244f7e649e8801c",
+        "original_id": 226
+      },
+      "source_body": "# Audit Trail\n\nRecords\n\n• Login\n\n• Record Access\n\n• Document Changes\n\n• Prescription Creation\n\n• Laboratory Imports\n\n• QR Access\n\nLogs are immutable and timestamped.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-AUDIT|audit"
+    },
+    {
+      "original_id": 224,
+      "title": "Encryption Framework",
+      "eligible": true,
+      "main_purpose": "Future-ready for cryptographic upgrades.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "security",
+      "subdomain": [
+        "security"
+      ],
+      "capability": "CAP-SECURITY",
+      "likely_architecture_layer": "PLATFORM CORE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-SECURITY",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-SECURITY",
+        "CAP-DATA",
+        "CAP-PRESCRIPTION",
+        "CAP-LABORATORY",
+        "CAP-DOCUMENTS",
+        "CAP-OPERATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 11,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Protects",
+            "sha256": "9aafa12fb7d7ce891db18a213db394b96db6fda9fd42e8298dd6f6ed048847c6"
+          },
+          {
+            "line": 5,
+            "text": "• Medical Records",
+            "sha256": "b62b4bab0a3f08a6aec1ef0998968ec93ee2f8228de417fa2606b3c2aa1a4bf5"
+          },
+          {
+            "line": 7,
+            "text": "• Laboratory Results",
+            "sha256": "a172210b9d7918da0af42eaf6c3e4ded2ff7e3e12198024196a56abfe9134d4e"
+          },
+          {
+            "line": 9,
+            "text": "• Prescriptions",
+            "sha256": "90e6c119c6810baf6ffe8406032d71fc55d86a76c413032ad21212f61aac8edd"
+          },
+          {
+            "line": 11,
+            "text": "• Documents",
+            "sha256": "6dfbba5f69ed3475492bb6823d8c789dda31214abe2cc2c795afe1b5c0c456a3"
+          },
+          {
+            "line": 13,
+            "text": "• Images",
+            "sha256": "d35c848887fbec7122c23c2c99273cf1d21ecbb4a07461a6dc0af24c82771142"
+          },
+          {
+            "line": 15,
+            "text": "Encryption",
+            "sha256": "82f4e719a19ce7e573734543f366f55117e4048116b3892adcd1831fb1775d8f"
+          },
+          {
+            "line": 17,
+            "text": "• Data at Rest",
+            "sha256": "434fa59ac6e8c055957d1bab8ee2be64a2c9633ff1e39e592f211b0a700512a9"
+          },
+          {
+            "line": 19,
+            "text": "• Data in Transit",
+            "sha256": "18dfcbde6956197a0829c6eb478831162d1361580ed502637000f45cffbdc0a8"
+          },
+          {
+            "line": 21,
+            "text": "• Backup Encryption",
+            "sha256": "ccc19c0a99577fccf5c3e115ee69bb6acad79a2236412736232a52ec0d5b3eee"
+          },
+          {
+            "line": 23,
+            "text": "Future-ready for cryptographic upgrades.",
+            "sha256": "82a07cb298b5acae1e44ac03ddd5f3aa727c62092811ff0e69114e248fa4b78b"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-IDENTITY",
+        "CAP-DATA",
+        "CAP-PRESCRIPTION",
+        "CAP-LABORATORY",
+        "CAP-DOCUMENTS",
+        "CAP-OPERATIONS"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 19195,
+        "body_sha256": "c5d423d1a920c3cda7e79478a49393230bd76781ea3a3442a90df72a741990e6",
+        "original_id": 224
+      },
+      "source_body": "# Encryption\n\nProtects\n\n• Medical Records\n\n• Laboratory Results\n\n• Prescriptions\n\n• Documents\n\n• Images\n\nEncryption\n\n• Data at Rest\n\n• Data in Transit\n\n• Backup Encryption\n\nFuture-ready for cryptographic upgrades.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-SECURITY|security"
+    },
+    {
+      "original_id": 1589,
+      "title": "AI Kidney Function Analyzer",
+      "eligible": true,
+      "main_purpose": "Evaluates renal laboratory results.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "renal",
+      "subdomain": [
+        "renal"
+      ],
+      "capability": "CAP-AI",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-AI",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-AI",
+        "CAP-LABORATORY",
+        "CAP-SPECIALTY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Evaluates renal laboratory results.",
+            "sha256": "1c2e51f09ae9fb90b1a8822b36e16c34ddf6f6c61b6735d7a5febd2d377431a7"
+          },
+          {
+            "line": 5,
+            "text": "• Creatinine",
+            "sha256": "48bedc570c9477b5a6bb09f2ee99c29b803fb5fd64c98bcc4cb0a19c599b5a4d"
+          },
+          {
+            "line": 7,
+            "text": "• eGFR",
+            "sha256": "e970b0d08364981aee5d937a5637d1568a4463dd71189438b7d3b3a89a5d55bc"
+          },
+          {
+            "line": 9,
+            "text": "• Urea",
+            "sha256": "237b0b099685a697ce5602bd6e60c52a28daeff9c24f692cea2875f3658d3086"
+          },
+          {
+            "line": 11,
+            "text": "• Albuminuria",
+            "sha256": "589a5e3f6f9cefe310e4bd0c8ae27c839bb0a94e71e1e18b67154b17b31ce28b"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-LABORATORY",
+        "CAP-SPECIALTY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 48359,
+        "body_sha256": "8319d7f82c156a7cea5bc8dc019424276da36b8dba07cd425add83f6f406a95d",
+        "original_id": 1589
+      },
+      "source_body": "Evaluates renal laboratory results.\n\nSupports\n\n• Creatinine\n\n• eGFR\n\n• Urea\n\n• Albuminuria\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-AI|renal"
+    },
+    {
+      "original_id": 828,
+      "title": "Child Allergy Registry",
+      "eligible": true,
+      "main_purpose": "Stores pediatric allergies.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "pediatrics",
+      "subdomain": [
+        "pediatrics"
+      ],
+      "capability": "CAP-ALLERGY",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-ALLERGY",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-ALLERGY",
+        "CAP-MEDICATION",
+        "CAP-EMERGENCY",
+        "CAP-SPECIALTY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores pediatric allergies.",
+            "sha256": "7dc40f097bbd7cb37113a56b8a68b93ac6b0ab75d138262aa7955a2856ef351d"
+          },
+          {
+            "line": 7,
+            "text": "• Food Allergies",
+            "sha256": "780c755e5b5077a99c3157d9bb73b1f52f30a800db14453f1b1ef5ffabacd068"
+          },
+          {
+            "line": 9,
+            "text": "• Drug Allergies",
+            "sha256": "bbb0ef0c051a8e8d5f29d76b3fef46f6bb31652247ac2954475859f4ccd8bb7b"
+          },
+          {
+            "line": 11,
+            "text": "• Environmental Allergies",
+            "sha256": "ff4b4b113028ef4a8a0943c83065cb47bbb312aa2183313ab335ae8320d11e85"
+          },
+          {
+            "line": 13,
+            "text": "• Emergency Action Plan",
+            "sha256": "ee05ac4ad6476a1565a4fcc67a29297ec4cfe851d84ac46ddf1ca958fda40079"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-MEDICATION",
+        "CAP-EMERGENCY",
+        "CAP-SPECIALTY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 33261,
+        "body_sha256": "b17e6df0976387cbea2da1fb868fcfa44c9cb061388c7c24f2539b19767f0b76",
+        "original_id": 828
+      },
+      "source_body": "# Child Allergy Registry\n\nStores pediatric allergies.\n\nSupports\n\n• Food Allergies\n\n• Drug Allergies\n\n• Environmental Allergies\n\n• Emergency Action Plan\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-ALLERGY|pediatrics"
+    },
+    {
+      "original_id": 163,
+      "title": "Clinical Decision Support System",
+      "eligible": true,
+      "main_purpose": "Final decision always remains with the physician.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "cds",
+      "subdomain": [
+        "cds"
+      ],
+      "capability": "CAP-CDS",
+      "likely_architecture_layer": "AI / CDS PROFILE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CDS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CDS",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY",
+        "CAP-AI"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 10,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "AI analyzes",
+            "sha256": "cc68d86e830edac9decd54a16c8895d4a47eaa19f7ab9c4a5098a7c442beb0dc"
+          },
+          {
+            "line": 5,
+            "text": "• Symptoms",
+            "sha256": "a416efb6ed692159cd1f34c3db88803567aac199c6aa5b6580c335ba6e2aff9d"
+          },
+          {
+            "line": 7,
+            "text": "• Diagnoses",
+            "sha256": "e32124b69210a6d4bd4f3cc4ef269787045287aa18faa7539ff34feb41bb0953"
+          },
+          {
+            "line": 9,
+            "text": "• Laboratory Results",
+            "sha256": "a172210b9d7918da0af42eaf6c3e4ded2ff7e3e12198024196a56abfe9134d4e"
+          },
+          {
+            "line": 11,
+            "text": "• Medicines",
+            "sha256": "45e9ab825dd3fd57ed4d73768a37f5dd5a8abca18e721f7bd048e8da0ca954ec"
+          },
+          {
+            "line": 13,
+            "text": "Provides",
+            "sha256": "42bf68febaec028aa063e9b008ed3c7a72443de8621d2032f045e20fbb62dd65"
+          },
+          {
+            "line": 15,
+            "text": "• Clinical Suggestions",
+            "sha256": "2034230313aefc4dfe8bf6fa1f092fb2294e0dcb5557f7d857343477b5ef27a3"
+          },
+          {
+            "line": 17,
+            "text": "• Risk Alerts",
+            "sha256": "60abbbc11658294f808b324a446aa430451e26632228994cef4bd1c705829dac"
+          },
+          {
+            "line": 19,
+            "text": "• Guideline References",
+            "sha256": "6e391865293a163199b4b2dc8273cdc681226a399fad83edddff053b9d6dff3c"
+          },
+          {
+            "line": 21,
+            "text": "Final decision always remains with the physician.",
+            "sha256": "e875083025765d2b8e7e12330848c8fd5edbd74d9e12381b11eb754bbe7eed52"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 17347,
+        "body_sha256": "2090f2e5a1473400a29862f1e35d7dbe9007a6215de0a27d5d39e129f2bcb90f",
+        "original_id": 163
+      },
+      "source_body": "# Clinical Decision Support\n\nAI analyzes\n\n• Symptoms\n\n• Diagnoses\n\n• Laboratory Results\n\n• Medicines\n\nProvides\n\n• Clinical Suggestions\n\n• Risk Alerts\n\n• Guideline References\n\nFinal decision always remains with the physician.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CDS|cds"
+    },
+    {
+      "original_id": 202,
+      "title": "Partner Ecosystem Architecture",
+      "eligible": true,
+      "main_purpose": "Single integration model.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "governance",
+      "subdomain": [
+        "governance"
+      ],
+      "capability": "CAP-GOVERNANCE",
+      "likely_architecture_layer": "PLATFORM CORE",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-GOVERNANCE",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-GOVERNANCE",
+        "CAP-PHARMACY",
+        "CAP-LABORATORY",
+        "CAP-COVERAGE",
+        "CAP-RESEARCH"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 11,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Partners",
+            "sha256": "5dab502bfba3c3dfc2c9308a9f5cd3cfccf959852af05b2a430ebd9c12b95b90"
+          },
+          {
+            "line": 5,
+            "text": "• Hospitals",
+            "sha256": "fa1626dceeb1a37d622f6320d3524b15fd4d4fa33d835a73fb36565ab095f543"
+          },
+          {
+            "line": 7,
+            "text": "• Clinics",
+            "sha256": "232c784c2c2c9709f0aa8c286ad98f17dc4eb0ff44962752daff9c776eeb07a3"
+          },
+          {
+            "line": 9,
+            "text": "• Laboratories",
+            "sha256": "92f04eb3ee272d86a32a5d2cdd497fa33f6f2270309c7421a99aa9fa48390eb6"
+          },
+          {
+            "line": 11,
+            "text": "• Pharmacies",
+            "sha256": "8ce13877de3d11570f123f1ee3a2d88c2bfbabaa5349da72819e50ec4f8271e2"
+          },
+          {
+            "line": 13,
+            "text": "• Insurance Companies",
+            "sha256": "17d095cc76ce402376a762383fe5e498e352fea78bdfc61b628a2ed2b6c0ce01"
+          },
+          {
+            "line": 15,
+            "text": "• Government Systems",
+            "sha256": "f805579b947d111681cba991a22d098dffdb6e7a3bdfa42159a749028f2e824f"
+          },
+          {
+            "line": 17,
+            "text": "• NGOs",
+            "sha256": "eff199dc2cbf849139cceca8f5c6591987255ff975a173429faadef46f9e8d8e"
+          },
+          {
+            "line": 19,
+            "text": "• Universities",
+            "sha256": "6a57181e0eb21738170bce3cd0ba8e26f311a1104f2062ab348e9108ed54e359"
+          },
+          {
+            "line": 21,
+            "text": "• Research Centers",
+            "sha256": "c02f8a0399f037bfa11759364901d2e6511216945dd59144e210a150d3db62bc"
+          },
+          {
+            "line": 23,
+            "text": "Single integration model.",
+            "sha256": "7d808310de0eed3e50f9576649fb055ab86f7a449c5555dd35fdf1435d0b3ab0"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-PHARMACY",
+        "CAP-LABORATORY",
+        "CAP-COVERAGE",
+        "CAP-RESEARCH"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 18575,
+        "body_sha256": "2af4d054eb6be0a37fdd338e9568dc781ac5c441fd2c1938e0513ceae79d2ea2",
+        "original_id": 202
+      },
+      "source_body": "# Partner Ecosystem\n\nPartners\n\n• Hospitals\n\n• Clinics\n\n• Laboratories\n\n• Pharmacies\n\n• Insurance Companies\n\n• Government Systems\n\n• NGOs\n\n• Universities\n\n• Research Centers\n\nSingle integration model.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-GOVERNANCE|governance"
+    },
+    {
+      "original_id": 3004,
+      "title": "Childhood Vaccination Module",
+      "eligible": true,
+      "main_purpose": "Supports lifelong immunization management.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "pediatrics",
+      "subdomain": [
+        "pediatrics"
+      ],
+      "capability": "CAP-IMMUNIZATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-IMMUNIZATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-IMMUNIZATION",
+        "CAP-PROFILE",
+        "CAP-NOTIFICATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 8,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Supports lifelong immunization management.",
+            "sha256": "f487442a560451f3d1dc2f41f7c45318c7f543bbf3afe8d5dd875b71d1169cac"
+          },
+          {
+            "line": 5,
+            "text": "• National Vaccination Schedules",
+            "sha256": "ec13317275797a9a99d1e78d842737a3156178c36a67635441f59cb4a8437a04"
+          },
+          {
+            "line": 6,
+            "text": "• International Vaccination Programs",
+            "sha256": "0da4a889dae155c478f5cb588b16ac836ad791ebc435c6af5473859a98e1d954"
+          },
+          {
+            "line": 7,
+            "text": "• Booster Reminders",
+            "sha256": "873d07422a42cd94a774489ead19d7c56fa81ddf9bf7972efb23b9baf8eed0a0"
+          },
+          {
+            "line": 8,
+            "text": "• Vaccine Certificates",
+            "sha256": "7a4696ef88d1bfbf3211dfcc201ca23080fd40daf8b9cfddc9039ae196f04e89"
+          },
+          {
+            "line": 9,
+            "text": "• Contraindications",
+            "sha256": "01dda832982a51b3d9a07807f2e38f9f509c90fcaeddb5d7fb0674cbcd958a81"
+          },
+          {
+            "line": 10,
+            "text": "• Adverse Events",
+            "sha256": "6d18c7d0018e64f05da012d88c7289ce42f43d399ef8554320dd4798670a9e27"
+          },
+          {
+            "line": 12,
+            "text": "Integrated with Medical Passport.",
+            "sha256": "e8311c451b5995c1a27c99d584495f98515f355d8fa9df1b82eaeef6d7d23ed8"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-PROFILE",
+        "CAP-NOTIFICATIONS"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74470,
+        "body_sha256": "6d9e9f8c2f10b9e41859c3a0aa336fb0919c3bdfe4c40e180dcc03d2d3e70ea3",
+        "original_id": 3004
+      },
+      "source_body": "Supports lifelong immunization management.\n\nSupports\n\n• National Vaccination Schedules\n• International Vaccination Programs\n• Booster Reminders\n• Vaccine Certificates\n• Contraindications\n• Adverse Events\n\nIntegrated with Medical Passport.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-IMMUNIZATION|pediatrics"
+    },
+    {
+      "original_id": 530,
+      "title": "Epilepsy Monitoring",
+      "eligible": true,
+      "main_purpose": "Supports long-term epilepsy management.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "neurology",
+      "subdomain": [
+        "neurology"
+      ],
+      "capability": "CAP-OPERATIONS",
+      "likely_architecture_layer": "PLATFORM CORE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-OPERATIONS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-OPERATIONS",
+        "CAP-PROFILE",
+        "CAP-MEDICATION",
+        "CAP-EMERGENCY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 7,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Supports long-term epilepsy management.",
+            "sha256": "2832dc3a0d0e8433722948d6c4b60003970d9ec484b3183ca39bb56daa743ff9"
+          },
+          {
+            "line": 5,
+            "text": "Includes",
+            "sha256": "df498282bede20a9dfff2ee882b7bd646bc7769513fc97e596f1649f123b949c"
+          },
+          {
+            "line": 7,
+            "text": "• Seizure Diary",
+            "sha256": "0bf875ed88c6b683d42cebf32ebebb4323615f9c678306136085da8ee5249952"
+          },
+          {
+            "line": 9,
+            "text": "• Medication History",
+            "sha256": "d61cae82236995bd1db3e67dd6b37e80ec505d62b033265cf87d93b80e5aaa07"
+          },
+          {
+            "line": 11,
+            "text": "• EEG Results",
+            "sha256": "456c0399eb4c3cc96aaeec49c2d9e6dfed832b2ad3aabae79f4d8fa67096bdca"
+          },
+          {
+            "line": 13,
+            "text": "• Trigger Monitoring",
+            "sha256": "1f104e5fe69cce05fe2338352a8e5f9db6f09f0d6b1b0f352ea755b71d1ae4c3"
+          },
+          {
+            "line": 15,
+            "text": "• Emergency Contacts",
+            "sha256": "3d4868aef15f8781e6aabb4627b58e31009e4e56d9563315dbd1d556fd969ea5"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-SECURITY",
+        "CAP-PROFILE",
+        "CAP-MEDICATION",
+        "CAP-EMERGENCY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 26351,
+        "body_sha256": "3bb6880bba90591ee73bd5477a05701fea05d44fddb75403e2bac2cd5b2df97b",
+        "original_id": 530
+      },
+      "source_body": "# Epilepsy Monitoring\n\nSupports long-term epilepsy management.\n\nIncludes\n\n• Seizure Diary\n\n• Medication History\n\n• EEG Results\n\n• Trigger Monitoring\n\n• Emergency Contacts\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-OPERATIONS|neurology"
+    },
+    {
+      "original_id": 824,
+      "title": "Child Medical Passport",
+      "eligible": true,
+      "main_purpose": "Creates a complete digital medical passport for children.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "pediatrics",
+      "subdomain": [
+        "pediatrics"
+      ],
+      "capability": "CAP-PROFILE",
+      "likely_architecture_layer": "DOMAIN CORE",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-PROFILE",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-PROFILE",
+        "CAP-ALLERGY",
+        "CAP-IMMUNIZATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 8,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Creates a complete digital medical passport for children.",
+            "sha256": "f5062c09eafd859e81557314468e9312fe2cb45d94f1ab5398b870122d791483"
+          },
+          {
+            "line": 5,
+            "text": "Includes",
+            "sha256": "df498282bede20a9dfff2ee882b7bd646bc7769513fc97e596f1649f123b949c"
+          },
+          {
+            "line": 7,
+            "text": "• Birth Information",
+            "sha256": "7eb5c0cf1cdba901f4b4ee9d2e796b992bedf306a890a18c4dc5ff364f4347c1"
+          },
+          {
+            "line": 9,
+            "text": "• Parents",
+            "sha256": "c60cb30bfaa087b54ce21b576fbf2c87c89149f6e8d5676159c798002a163e4c"
+          },
+          {
+            "line": 11,
+            "text": "• Allergies",
+            "sha256": "cb956fc6312f82ca1a381df26588d0a4d5330bb5594e3fb7f2cb7a42b18669d8"
+          },
+          {
+            "line": 13,
+            "text": "• Vaccinations",
+            "sha256": "1294e183c10def30b5ae82e0633df5bb5ad6f52144f411c65de7e5c0a9f4a113"
+          },
+          {
+            "line": 15,
+            "text": "• Growth History",
+            "sha256": "e8cbd7b2f8993e16a9b67e2a77c00fdc81419ea3acd05b705e3f65a1e73b0aca"
+          },
+          {
+            "line": 17,
+            "text": "• Chronic Diseases",
+            "sha256": "33a16af2954c65ca4d7dbaccd5d1a25153b31eb378ae5bc86857aff70c8f88be"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-ALLERGY",
+        "CAP-IMMUNIZATION"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 33167,
+        "body_sha256": "63474bf5a3c3614bdb79cdef65fbbf76318a617ff6e0d725366d51d256beacef",
+        "original_id": 824
+      },
+      "source_body": "# Child Medical Passport\n\nCreates a complete digital medical passport for children.\n\nIncludes\n\n• Birth Information\n\n• Parents\n\n• Allergies\n\n• Vaccinations\n\n• Growth History\n\n• Chronic Diseases\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-PROFILE|pediatrics"
+    },
+    {
+      "original_id": 803,
+      "title": "Gynecologic Oncology Appointment Booking",
+      "eligible": true,
+      "main_purpose": "Allows scheduling consultations with gynecologic oncologists.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "oncology",
+      "subdomain": [
+        "gyneco",
+        "oncol"
+      ],
+      "capability": "CAP-APPOINTMENTS",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-APPOINTMENTS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-APPOINTMENTS",
+        "CAP-SPECIALTY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Allows scheduling consultations with gynecologic oncologists.",
+            "sha256": "04f1dde92f81ee2e97852dd51ed9170b10c974a4e1038aeb6bfe9cac0e118b28"
+          },
+          {
+            "line": 7,
+            "text": "• Clinic",
+            "sha256": "b41f2349607e7f3f266673a69a79670b5f7f97ca8ceb6659ffef1d2af7ed2369"
+          },
+          {
+            "line": 9,
+            "text": "• Physician",
+            "sha256": "adac3f45b087b56f5a4aedb5607e4965c7a291eb988cfdabd18f9739a81933b6"
+          },
+          {
+            "line": 11,
+            "text": "• Online Consultation",
+            "sha256": "868985f9c7003c285777edd86a89a343231771008a86b8e48bb9f2fbe464ed89"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-SPECIALTY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32691,
+        "body_sha256": "eef10286ad989a5adeaded81e59460b0f8e9300a1eb9283558f3fc3fb21bfcb7",
+        "original_id": 803
+      },
+      "source_body": "# Gynecologic Oncology Appointment Booking\n\nAllows scheduling consultations with gynecologic oncologists.\n\nSupports\n\n• Clinic\n\n• Physician\n\n• Online Consultation\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-APPOINTMENTS|oncology"
+    },
+    {
+      "original_id": 584,
+      "title": "Respiratory Disease Registry",
+      "eligible": true,
+      "main_purpose": "Stores respiratory system diagnoses.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "respiratory",
+      "subdomain": [
+        "respiratory"
+      ],
+      "capability": "CAP-CONDITION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CONDITION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CONDITION",
+        "CAP-SPECIALTY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 8,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores respiratory system diagnoses.",
+            "sha256": "28655961415dd941007bf7302cad6d0eba424e38092348067ac0e2f421669eaa"
+          },
+          {
+            "line": 7,
+            "text": "• Asthma",
+            "sha256": "06d50afa769b4366c5494e110144665e9eeb100cd37b9abcbca703ff6f50ffa1"
+          },
+          {
+            "line": 9,
+            "text": "• COPD",
+            "sha256": "fbfa2848877387b7930933b34408a84160986dc67731984055dd15394e3df334"
+          },
+          {
+            "line": 11,
+            "text": "• Pneumonia",
+            "sha256": "1689d744f0831f008ea888d0c420c0a1fbfd5ec52e01b6d3758c9ba8f0161107"
+          },
+          {
+            "line": 13,
+            "text": "• Bronchitis",
+            "sha256": "cdb3b39ec01b1ba855fd2a86b4ec6b20c58aae7911194a162a603a00107244e1"
+          },
+          {
+            "line": 15,
+            "text": "• Pulmonary Fibrosis",
+            "sha256": "d44a201bd63616a1e0facf698b48e4bae2cf2183a3a90b733fb69daf5e012d93"
+          },
+          {
+            "line": 17,
+            "text": "• Sleep Apnea",
+            "sha256": "4bded6173563aaed0b30dcb161ca9ea978c7af3b8785c9399914c23bd018d231"
+          },
+          {
+            "line": 19,
+            "text": "• Tuberculosis",
+            "sha256": "c4e5e9767d90dcd1a12c609897a360129a86fcf7c97c3b8515f5516205041531"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SPECIALTY"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 27653,
+        "body_sha256": "3d0329f0e508ab6516b4e7a3ca0340970036a3b5de7d2e634c3f9c10b2e4d0a8",
+        "original_id": 584
+      },
+      "source_body": "# Respiratory Disease Registry\n\nStores respiratory system diagnoses.\n\nSupports\n\n• Asthma\n\n• COPD\n\n• Pneumonia\n\n• Bronchitis\n\n• Pulmonary Fibrosis\n\n• Sleep Apnea\n\n• Tuberculosis\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CONDITION|respiratory"
+    },
+    {
+      "original_id": 489,
+      "title": "Confidential Medical Access",
+      "eligible": true,
+      "main_purpose": "Provides enhanced privacy for sensitive medical information.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "consent",
+      "subdomain": [
+        "consent"
+      ],
+      "capability": "CAP-CONSENT",
+      "likely_architecture_layer": "PLATFORM CORE",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "SENSITIVE_REVIEW_REQUIRED",
+      "probable_canonical_owner": "CAP-CONSENT",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CONSENT",
+        "CAP-IDENTITY",
+        "CAP-AUDIT"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Provides enhanced privacy for sensitive medical information.",
+            "sha256": "3042e7e7898a1689855c791ce03f5d5a5d8aa357917a6fc437e834f159f947a4"
+          },
+          {
+            "line": 7,
+            "text": "• Additional Authentication",
+            "sha256": "554bba0672864617cc3ca0a86c6ed426a379aa220f08c323508b388ff4c52efe"
+          },
+          {
+            "line": 9,
+            "text": "• Temporary Access",
+            "sha256": "04dfa2f56a373ded8a317fb4e822b6e27c65ebb15498306c26d2baea5e64f1b0"
+          },
+          {
+            "line": 11,
+            "text": "• Audit Log",
+            "sha256": "105870a2fdbf5ce937aaaf81be6b86c4c120987a2a01e8622537c3f38063f697"
+          },
+          {
+            "line": 13,
+            "text": "• Patient-controlled Permissions",
+            "sha256": "6e995a6f31f910ebb1117c7a18af3c752354577cf094dd7afead6306b0490023"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "PRIVACY_SECURITY_INTEROP",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 25449,
+        "body_sha256": "a6d3228090a4be15b487031c01bbc2180b5e5298ae5df8f744aa7daf72143270",
+        "original_id": 489
+      },
+      "source_body": "# Confidential Medical Access\n\nProvides enhanced privacy for sensitive medical information.\n\nSupports\n\n• Additional Authentication\n\n• Temporary Access\n\n• Audit Log\n\n• Patient-controlled Permissions\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CONSENT|consent"
+    },
+    {
+      "original_id": 198,
+      "title": "Infection Isolation Protocols",
+      "eligible": true,
+      "main_purpose": "Provides emergency recommendations for healthcare professionals.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "infection",
+      "subdomain": [
+        "infection"
+      ],
+      "capability": "CAP-EMERGENCY",
+      "likely_architecture_layer": "WORKFLOW",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-EMERGENCY",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-EMERGENCY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 5,
+            "text": "• Contact Precautions",
+            "sha256": "29748046cc3b1b450fb28c1a92f0f96572cde74b339503fb0c2d8f868f5cbe4b"
+          },
+          {
+            "line": 7,
+            "text": "• Droplet Precautions",
+            "sha256": "ac9487fb2965f413aa31d9db32d537e37ef4fb607be1ad3f4d4348a77c0c7e19"
+          },
+          {
+            "line": 9,
+            "text": "• Airborne Precautions",
+            "sha256": "a2fd3eb3b63ae4a01b0ee2a86af56c82fe8008e1b480a9a1c8e7fd11e1dc4b83"
+          },
+          {
+            "line": 11,
+            "text": "Provides emergency recommendations for healthcare professionals.",
+            "sha256": "c048b76453dce9947a75c3a92cf5780a1a9b3da91b46a18a3ee8a9047170af77"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 18445,
+        "body_sha256": "9a2861bc5b2853ed4d54fb6a72e4addd0d99e35931dc7b602bd06d7a27012033",
+        "original_id": 198
+      },
+      "source_body": "# Isolation Protocols\n\nSupports\n\n• Contact Precautions\n\n• Droplet Precautions\n\n• Airborne Precautions\n\nProvides emergency recommendations for healthcare professionals.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-EMERGENCY|infection"
+    },
+    {
+      "original_id": 525,
+      "title": "Brain MRI Archive",
+      "eligible": true,
+      "main_purpose": "Stores magnetic resonance imaging studies of the brain.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "neurology",
+      "subdomain": [
+        "neurology"
+      ],
+      "capability": "CAP-IMAGING",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-IMAGING",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-IMAGING",
+        "CAP-AI"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores magnetic resonance imaging studies of the brain.",
+            "sha256": "3a736662bcc8db74d2fb47909d8c7e771547222c86629d8578394858ba613b60"
+          },
+          {
+            "line": 7,
+            "text": "• Images",
+            "sha256": "d35c848887fbec7122c23c2c99273cf1d21ecbb4a07461a6dc0af24c82771142"
+          },
+          {
+            "line": 9,
+            "text": "• Radiology Reports",
+            "sha256": "584b16e689e084b32785d562bb792971303071ef7e511d339530adb355d69c74"
+          },
+          {
+            "line": 11,
+            "text": "• Historical Comparison",
+            "sha256": "e6851800df1618d4704b0f1ac8e8887f0ca5dfc5445751c11337c161fa004054"
+          },
+          {
+            "line": 13,
+            "text": "• AI-assisted Image Review",
+            "sha256": "e757e0f06a9dcb33a769f5f2faece56bdad74f8940cdb325711136e9bc0c6ddf"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AI"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 26243,
+        "body_sha256": "9976be077a4a93c51376c700675e8bf4364e563b9963b3eba5170db25e5420e5",
+        "original_id": 525
+      },
+      "source_body": "# Brain MRI Archive\n\nStores magnetic resonance imaging studies of the brain.\n\nSupports\n\n• Images\n\n• Radiology Reports\n\n• Historical Comparison\n\n• AI-assisted Image Review\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-IMAGING|neurology"
+    },
+    {
+      "original_id": 4303,
+      "title": "Vaccine Dose Interval Intelligence Engine",
+      "eligible": true,
+      "main_purpose": "Calculates vaccine dose intervals.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-IMMUNIZATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-IMMUNIZATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-IMMUNIZATION",
+        "CAP-APPOINTMENTS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 10,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Calculates vaccine dose intervals.",
+            "sha256": "ad19025817b47384c328584649044dda664ed23db78c46a3b3bf5e43f74f200f"
+          },
+          {
+            "line": 5,
+            "text": "• Previous Dose Date",
+            "sha256": "1cf2b40b3b66cc5656bae9006dc859fabd570f30e5a36f8da3fd047d57e228b0"
+          },
+          {
+            "line": 6,
+            "text": "• Minimum Interval",
+            "sha256": "cfec08c5192535b9b4e218d7ebdac196f9c3c1a1a4aea1d0ff56782277445c8b"
+          },
+          {
+            "line": 7,
+            "text": "• Recommended Interval",
+            "sha256": "8bb0e50c0f357da1cf9e7b8a5a8828206c63ae07751755402d0c47eb88d8eb39"
+          },
+          {
+            "line": 8,
+            "text": "• Dose Number",
+            "sha256": "9828ceed2df811e9b00f07082a25e5ccb217d7656756b2cf919b34714f87cd77"
+          },
+          {
+            "line": 9,
+            "text": "• Vaccine Product",
+            "sha256": "fc5f943fd76acf78dc5396759468e1bdd2668caff75dd025e5e26c0f5f2c4154"
+          },
+          {
+            "line": 10,
+            "text": "• Antigen Equivalence",
+            "sha256": "ce1c595747aee3ecea2e6db01f67f0f4e2031821b9c80bf23971938cb62f27ae"
+          },
+          {
+            "line": 11,
+            "text": "• Delayed Doses",
+            "sha256": "02d021b5d45823fa82fddcce62d0585fe71c1d129a25c0753faf722152d7da1f"
+          },
+          {
+            "line": 12,
+            "text": "• Catch-up Schedules",
+            "sha256": "e5b20a11e16bd03a94ef621384cb6c980301a73e632ce799932202423e058743"
+          },
+          {
+            "line": 14,
+            "text": "Prevents simple calendar logic from incorrectly restarting vaccine series.",
+            "sha256": "d0ab587bbf3579c5e5a076adb42aaefac9a661b8e01bc2b9113be4d2d4201573"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-APPOINTMENTS"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100681,
+        "body_sha256": "cc2065ba60d1b6d55f68dda8f0adade1d35c8bf21fae3172132e5db654cca9b5",
+        "original_id": 4303
+      },
+      "source_body": "Calculates vaccine dose intervals.\n\nSupports\n\n• Previous Dose Date\n• Minimum Interval\n• Recommended Interval\n• Dose Number\n• Vaccine Product\n• Antigen Equivalence\n• Delayed Doses\n• Catch-up Schedules\n\nPrevents simple calendar logic from incorrectly restarting vaccine series.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-IMMUNIZATION|medication"
+    },
+    {
+      "original_id": 2848,
+      "title": "Microbiome Medicine Module",
+      "eligible": true,
+      "main_purpose": "Supports human microbiome analysis.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "infection",
+      "subdomain": [
+        "infection"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-OPERATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Supports human microbiome analysis.",
+            "sha256": "0afd12f9f72f2470e08b95f1ab0efcf15e862da7e70c9e03f4d5abbbdab775ad"
+          },
+          {
+            "line": 5,
+            "text": "• Gut Microbiota",
+            "sha256": "2d10c633420a649de1fc238dba057d5063caee3eca186abf61f5325ba2919337"
+          },
+          {
+            "line": 6,
+            "text": "• Dysbiosis Assessment",
+            "sha256": "5f8ffa5a395e133959388b76dd950f65f8617954c34c18ed2dc523eb75435840"
+          },
+          {
+            "line": 7,
+            "text": "• Personalized Microbiome Therapy",
+            "sha256": "f4752c0dd704fbbb0eb21bdeaa131e7e593c10bc83c2c5b1e624f48db46fe303"
+          },
+          {
+            "line": 8,
+            "text": "• Longitudinal Monitoring",
+            "sha256": "af3177e015395803206c7bb458367414f30574be0ddd11b6b36c33fc858c0417"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-OPERATIONS"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK",
+        "OWNER_BOUNDARY_COMPARISON"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 71607,
+        "body_sha256": "0e9de0343ddab82202c0572d6f6bb810c92090dec4055f960b34c3574fbae9af",
+        "original_id": 2848
+      },
+      "source_body": "Supports human microbiome analysis.\n\nSupports\n\n• Gut Microbiota\n• Dysbiosis Assessment\n• Personalized Microbiome Therapy\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|infection"
+    },
+    {
+      "original_id": 546,
+      "title": "Contact Lens Registry",
+      "eligible": true,
+      "main_purpose": "Stores contact lens prescriptions and usage.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "prescription",
+      "subdomain": [
+        "prescription"
+      ],
+      "capability": "CAP-PRESCRIPTION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-PRESCRIPTION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-PRESCRIPTION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 6,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores contact lens prescriptions and usage.",
+            "sha256": "f21f59538006540f2f077cbe65b8e6c34b442958ad7c249a9a320333746b511d"
+          },
+          {
+            "line": 7,
+            "text": "• Lens Type",
+            "sha256": "0b405aaa7a7de90d540b048c0ee7c66cc8573a44e7da8cb0c855e5002e8e984a"
+          },
+          {
+            "line": 9,
+            "text": "• Base Curve",
+            "sha256": "3ddbee09b7d888cd0ba3c9f0e5c3493ac200058ede7bccecdc119ea34d9de0e8"
+          },
+          {
+            "line": 11,
+            "text": "• Diameter",
+            "sha256": "5a8bf138ec02bcbb13e38b53bee949771d428294d3b76401a22b50b14fe83ff9"
+          },
+          {
+            "line": 13,
+            "text": "• Wearing Schedule",
+            "sha256": "9737ba5ffbc8c2ca17bdf55649f4d9bedee35d35ed72f50ce9e0d230f0578819"
+          },
+          {
+            "line": 15,
+            "text": "• Replacement Schedule",
+            "sha256": "5ee192f52109e2c150bf88e6af16fbbab8f5df5df12b55a6fbe936c6d9443d2b"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-MEDICATION",
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 26727,
+        "body_sha256": "8fa1d190b6d732b13ca7b9eac5447191784eebff43aebcb9b08b631952a5025c",
+        "original_id": 546
+      },
+      "source_body": "# Contact Lens Registry\n\nStores contact lens prescriptions and usage.\n\nSupports\n\n• Lens Type\n\n• Base Curve\n\n• Diameter\n\n• Wearing Schedule\n\n• Replacement Schedule\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-PRESCRIPTION|prescription"
+    },
+    {
+      "original_id": 504,
+      "title": "Cardiovascular Disease Registry",
+      "eligible": true,
+      "main_purpose": "Stores cardiovascular diagnoses.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "cardiovascular",
+      "subdomain": [
+        "cardiovascular"
+      ],
+      "capability": "CAP-CONDITION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CONDITION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CONDITION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 7,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores cardiovascular diagnoses.",
+            "sha256": "7a74c3778aec08fd5c91665243578d27cff2a5532ef399e86b0ca5337aacc893"
+          },
+          {
+            "line": 7,
+            "text": "• Hypertension",
+            "sha256": "7cdf439aa2538bb31ffe9aafeafcf39b234b6b0e3a2b055470916b8057059e25"
+          },
+          {
+            "line": 9,
+            "text": "• Coronary Artery Disease",
+            "sha256": "2c304ef8d510f9420ebcbd24053c96a7297549639bea80fe6e42cb443e2e1a3e"
+          },
+          {
+            "line": 11,
+            "text": "• Heart Failure",
+            "sha256": "3949a60235c8e1f798f09addbc7bd92c3b7a06c12fc8b515749c3fc7a8f10bb5"
+          },
+          {
+            "line": 13,
+            "text": "• Arrhythmias",
+            "sha256": "87bc4ed522137de2f50c2cc0390c6449d1cc69f8f890850c2a32c9c6cbb77e04"
+          },
+          {
+            "line": 15,
+            "text": "• Cardiomyopathy",
+            "sha256": "d1f9d677fae512065ca0084f9dd635034d00b65c36b8c53397bde5135114a95a"
+          },
+          {
+            "line": 17,
+            "text": "• Congenital Heart Disease",
+            "sha256": "903355b44fe46072a9a9ed1145f1fc3b9f0138a7a99f98e88380c1d42884fa68"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 25759,
+        "body_sha256": "0615959e380c66fb6a4a83fc4a4e6b8efbc0d3ffbb73c967afcc53b093884f55",
+        "original_id": 504
+      },
+      "source_body": "# Cardiovascular Disease Registry\n\nStores cardiovascular diagnoses.\n\nSupports\n\n• Hypertension\n\n• Coronary Artery Disease\n\n• Heart Failure\n\n• Arrhythmias\n\n• Cardiomyopathy\n\n• Congenital Heart Disease\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CONDITION|cardiovascular"
+    },
+    {
+      "original_id": 2653,
+      "title": "Female Infertility Module",
+      "eligible": true,
+      "main_purpose": "Supports female infertility diagnostics and treatment.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "reproductive",
+      "subdomain": [
+        "reproductive"
+      ],
+      "capability": "CAP-CONDITION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CONDITION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CONDITION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 6,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Supports female infertility diagnostics and treatment.",
+            "sha256": "33383b50394b5906316b9771562d5829a9aaff242e312813d44d0f9075d2e5b4"
+          },
+          {
+            "line": 5,
+            "text": "• Ovulation Disorders",
+            "sha256": "989095eaae8f1d1469fe768fd2c0b38b7b2b41409eb6fe49f08e55ce716574f6"
+          },
+          {
+            "line": 6,
+            "text": "• Tubal Factor",
+            "sha256": "664f22fd28269355b398af3bb849c14a13131b3a583610bce8d69538771175b2"
+          },
+          {
+            "line": 7,
+            "text": "• Endometrial Disorders",
+            "sha256": "65393610c5a958605ee22c8875e231e774922549a835c36877f6fc2074fd862d"
+          },
+          {
+            "line": 8,
+            "text": "• Fertility Evaluation",
+            "sha256": "7c8e49ea4105fa2d810f24409a894be94f73626d43032568b1c564611d429342"
+          },
+          {
+            "line": 9,
+            "text": "• Treatment Planning",
+            "sha256": "15494f725741ad2a84d83f33882f7257ebb11693b9b8f9e53f87ed639fb3e22c"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 68115,
+        "body_sha256": "94d1efcc0b8f2c66f4ad9d435902342a8e06af3c65674ad34b042eceeb89e019",
+        "original_id": 2653
+      },
+      "source_body": "Supports female infertility diagnostics and treatment.\n\nSupports\n\n• Ovulation Disorders\n• Tubal Factor\n• Endometrial Disorders\n• Fertility Evaluation\n• Treatment Planning\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CONDITION|reproductive"
+    },
+    {
+      "original_id": 2669,
+      "title": "Assisted Reproductive Technology Registry",
+      "eligible": true,
+      "main_purpose": "Maintains ART procedures.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "reproductive",
+      "subdomain": [
+        "reproductive"
+      ],
+      "capability": "CAP-ENCOUNTER",
+      "likely_architecture_layer": "DOMAIN CORE",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "SENSITIVE_REVIEW_REQUIRED",
+      "probable_canonical_owner": "CAP-ENCOUNTER",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-ENCOUNTER"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 6,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Maintains ART procedures.",
+            "sha256": "4044b278a217ac46ca4765bd1dfa360261cb4e903b690cbe80dfdb58e3cdf766"
+          },
+          {
+            "line": 5,
+            "text": "• IVF",
+            "sha256": "e78c258807cd56b73b5d41a99fb05cf73c53db15b178d3082b0cb73e7e92f89e"
+          },
+          {
+            "line": 6,
+            "text": "• ICSI",
+            "sha256": "bac5ffb97b273541cfb1905d57ce547784042f10604e748dd6d3240968483317"
+          },
+          {
+            "line": 7,
+            "text": "• Frozen Embryo Transfer",
+            "sha256": "0d75a9c0fd78a8a13f0104b41c7d2fdf4c1be8b968562bfd75edf81d69a994b5"
+          },
+          {
+            "line": 8,
+            "text": "• Donor Programs",
+            "sha256": "9b0b80ab3d06c0578d34cf4a667d07d95e1ab8f3f6d5e29a56149eb13ef3cc85"
+          },
+          {
+            "line": 9,
+            "text": "• Outcome Analysis",
+            "sha256": "354843e19266cb3225271d808f9321acf56b81295921037f7e0e264ac062d3d4"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "PRIVACY_SECURITY_INTEROP"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 68393,
+        "body_sha256": "9522e538ca61cd9750d1670a382e65a3c80fd7b425907e54d0142beaab8e91f9",
+        "original_id": 2669
+      },
+      "source_body": "Maintains ART procedures.\n\nSupports\n\n• IVF\n• ICSI\n• Frozen Embryo Transfer\n• Donor Programs\n• Outcome Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-ENCOUNTER|reproductive"
+    },
+    {
+      "original_id": 789,
+      "title": "Breast Cancer Screening",
+      "eligible": true,
+      "main_purpose": "Supports preventive breast cancer screening.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "oncology",
+      "subdomain": [
+        "oncology"
+      ],
+      "capability": "CAP-IMAGING",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-IMAGING",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-IMAGING"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Supports preventive breast cancer screening.",
+            "sha256": "3d40c2a699b8a12cb15b2a8e8eb283078f941de9cd3b6b1c17ec569acdacd789"
+          },
+          {
+            "line": 7,
+            "text": "• Mammography Schedule",
+            "sha256": "e052e4f8d2913a2b56f74a2a7b34863d8af683ce37cf64ea25e6781d0d4c743e"
+          },
+          {
+            "line": 9,
+            "text": "• Ultrasound",
+            "sha256": "547e01ee69c17fc492eba77945500effb2ae9b6193b4ea337a42bfa71af1bdaa"
+          },
+          {
+            "line": 11,
+            "text": "• MRI",
+            "sha256": "eb9b1848e538fba1a1210797af792fc2f5caff215ce3d771a05a1e419a64d50f"
+          },
+          {
+            "line": 13,
+            "text": "• Family History",
+            "sha256": "50770cb6234d891691ec94ab12164752caa06f64c6716a7a49ec7ce6a3481c72"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32379,
+        "body_sha256": "60bbbd717865adbfebef70127704a419b271436db4ee31b229987d0cf6085dd4",
+        "original_id": 789
+      },
+      "source_body": "# Breast Cancer Screening\n\nSupports preventive breast cancer screening.\n\nTracks\n\n• Mammography Schedule\n\n• Ultrasound\n\n• MRI\n\n• Family History\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-IMAGING|oncology"
+    },
+    {
+      "original_id": 723,
+      "title": "Pregnancy Registration",
+      "eligible": true,
+      "main_purpose": "Registers pregnancy within the Medical Passport ecosystem.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "reproductive",
+      "subdomain": [
+        "reproductive"
+      ],
+      "capability": "CAP-PROFILE",
+      "likely_architecture_layer": "DOMAIN CORE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-PROFILE",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-PROFILE"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Registers pregnancy within the Medical Passport ecosystem.",
+            "sha256": "0ae462a0acb83ecf163ab8d753ca2d6962bb9877a9a9126ee5141f3769be4ca5"
+          },
+          {
+            "line": 7,
+            "text": "• Estimated Due Date",
+            "sha256": "8191aef27c1afd797853d016efdb0da5e768f71ebc2681eaf5f31794ed43c3ac"
+          },
+          {
+            "line": 9,
+            "text": "• Gestational Age",
+            "sha256": "04627773f8ec0b15f804b7e84ef26917eeeac06e51e358a2a1f599e900f04435"
+          },
+          {
+            "line": 11,
+            "text": "• Pregnancy Type",
+            "sha256": "3bae0783da59965deea3131bcd95be09cd068aca24e6f807489d8cbe559164c3"
+          },
+          {
+            "line": 13,
+            "text": "• Physician Assignment",
+            "sha256": "11fcc50bd4b56948a805238ada76d463436015cf1106afabdfc0ab51635cea46"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "NEEDS_DEEP_REVIEW",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": true,
+      "deep_review_reasons": [
+        "HIGH_CLINICAL_RISK"
+      ],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 30909,
+        "body_sha256": "ea4893fb9474b16978c72a6ca0545a9661b53bbcbca49a44ba698436ee9977d2",
+        "original_id": 723
+      },
+      "source_body": "# Pregnancy Registration\n\nRegisters pregnancy within the Medical Passport ecosystem.\n\nSupports\n\n• Estimated Due Date\n\n• Gestational Age\n\n• Pregnancy Type\n\n• Physician Assignment\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-PROFILE|reproductive"
+    },
+    {
+      "original_id": 2026,
+      "title": "Implantable Cardioverter Defibrillator Registry",
+      "eligible": true,
+      "main_purpose": "Maintains ICD records.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "cardiovascular",
+      "subdomain": [
+        "cardiovascular"
+      ],
+      "capability": "CAP-DEVICES",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-DEVICES",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-DEVICES"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Maintains ICD records.",
+            "sha256": "6ff9871e8e190b672a79dad55f6744853ca0d96bc5e7934988fb40870bf2cdb0"
+          },
+          {
+            "line": 5,
+            "text": "• Shock Events",
+            "sha256": "b0d29c71ad72225b333956e3a0aba12ed96c68e6cafedd770715cc6567c24bc3"
+          },
+          {
+            "line": 7,
+            "text": "• Device Status",
+            "sha256": "4691645cf683199681653295ed8aca683f52f867de5addab0c873877b7fd70e1"
+          },
+          {
+            "line": 9,
+            "text": "• Follow-up",
+            "sha256": "13c1e4f2f02fb807ea45c47deb23c5e346053210f035b5e6b48169613375cb23"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 56468,
+        "body_sha256": "699576e17ce74595ab1ae8da1f45ec13fc01d125870c3e830c5b06cb4c53b7f2",
+        "original_id": 2026
+      },
+      "source_body": "Maintains ICD records.\n\nSupports\n\n• Shock Events\n\n• Device Status\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-DEVICES|cardiovascular"
+    },
+    {
+      "original_id": 2585,
+      "title": "Low Vision Rehabilitation Module",
+      "eligible": true,
+      "main_purpose": "Supports patients with visual impairment.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "musculoskeletal",
+      "subdomain": [
+        "musculoskeletal"
+      ],
+      "capability": "CAP-DEVICES",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-DEVICES",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-DEVICES"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Supports patients with visual impairment.",
+            "sha256": "e0d54b0e8c84f034c16ff56cc506ef8e8ff48fc1abb28ef603846b4aeeb2c0f5"
+          },
+          {
+            "line": 5,
+            "text": "• Functional Vision Assessment",
+            "sha256": "e5d61442d9c200211eae7f91eea0b479ee18a09d6c46d24520e4d009a2403e58"
+          },
+          {
+            "line": 7,
+            "text": "• Assistive Devices",
+            "sha256": "e0ac899e25ece55d7f0f178374bd4bf22abb001124df19de3a37cbc6398a264b"
+          },
+          {
+            "line": 9,
+            "text": "• Rehabilitation Planning",
+            "sha256": "dc009f593b2548f7321846613917d2d51d57e24f4cd39975815671a757844f5d"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 66896,
+        "body_sha256": "fd5de13ea0c0e652d140bf2f2351853a2d3070b0b06e200e704c6369f3e62f68",
+        "original_id": 2585
+      },
+      "source_body": "Supports patients with visual impairment.\n\nSupports\n\n• Functional Vision Assessment\n\n• Assistive Devices\n\n• Rehabilitation Planning\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-DEVICES|musculoskeletal"
+    },
+    {
+      "original_id": 2067,
+      "title": "Respiratory Wearable Integration",
+      "eligible": true,
+      "main_purpose": "Integrates wearable respiratory devices.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "respiratory",
+      "subdomain": [
+        "respiratory"
+      ],
+      "capability": "CAP-DEVICES",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-DEVICES",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-DEVICES"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 1,
+            "text": "Integrates wearable respiratory devices.",
+            "sha256": "2cd44db07aaa973290148840a2cca782ed8fad4e0fe6899937078a96c16823eb"
+          },
+          {
+            "line": 5,
+            "text": "• Pulse Oximeters",
+            "sha256": "8a1d307486c1f9589e4f0cc6f7272ef1cdfdbe69b2246ca3cf89363fb0544bf9"
+          },
+          {
+            "line": 7,
+            "text": "• Smart Inhalers",
+            "sha256": "60385b4988bc09a806d602dccbf0c13979fe33b7e5d297b461cbca0fb923c421"
+          },
+          {
+            "line": 9,
+            "text": "• Respiratory Sensors",
+            "sha256": "ff9ccb074d9b53fd51e2968bdc93205cb1b14223fff34de1df73e66f367ac3f0"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 57214,
+        "body_sha256": "ae7793ff890ecee0e50f29ddb5cfd1beb3945460f74e249b5fbbbb6b56033371",
+        "original_id": 2067
+      },
+      "source_body": "Integrates wearable respiratory devices.\n\nSupports\n\n• Pulse Oximeters\n\n• Smart Inhalers\n\n• Respiratory Sensors\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-DEVICES|respiratory"
+    },
+    {
+      "original_id": 573,
+      "title": "Thyroid Ultrasound Archive",
+      "eligible": true,
+      "main_purpose": "Stores thyroid ultrasound examinations.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "endocrine",
+      "subdomain": [
+        "endocrine"
+      ],
+      "capability": "CAP-IMAGING",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-IMAGING",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-IMAGING"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores thyroid ultrasound examinations.",
+            "sha256": "5caf351c621f7c413256416dc1a148263780262a5ebf3bf14350c0dbe5313b07"
+          },
+          {
+            "line": 7,
+            "text": "• Images",
+            "sha256": "d35c848887fbec7122c23c2c99273cf1d21ecbb4a07461a6dc0af24c82771142"
+          },
+          {
+            "line": 9,
+            "text": "• TI-RADS Classification",
+            "sha256": "fa84147388315239cb2ce04aa0b1a2f742855a9a820e725b56d5e2ec13f83878"
+          },
+          {
+            "line": 11,
+            "text": "• Nodule Measurements",
+            "sha256": "208ebf48a321ef4dcaa7a795b03f01ee221e3bd2529bf876fc47229fb33beb5a"
+          },
+          {
+            "line": 13,
+            "text": "• Physician Reports",
+            "sha256": "be514cef8ae925139682935123cf99b46e35cc188749d4d0b41432f01c840d95"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "A",
+      "analysis_method": "DETERMINISTIC_FULL_BODY_EXTRACTION_AND_CANDIDATE_CLASSIFICATION",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": null,
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 27363,
+        "body_sha256": "20f45d9e9c615b46fef721fae110d75980fe8cc16553bfd3cd8cce5b2ab1683b",
+        "original_id": 573
+      },
+      "source_body": "# Thyroid Ultrasound Archive\n\nStores thyroid ultrasound examinations.\n\nSupports\n\n• Images\n\n• TI-RADS Classification\n\n• Nodule Measurements\n\n• Physician Reports\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-IMAGING|endocrine"
+    }
+  ]
+}

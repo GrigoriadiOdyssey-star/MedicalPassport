@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 72,
+  "family": "remaining-laboratory-portal",
+  "owner": "CAP-LABORATORY",
+  "ids": [
+    203,
+    275
+  ],
+  "decision_sha256": "afc6e4291488e259224fe2c4e72eda9d5fb014027f4eb62c6a038d287d7aef50",
+  "source_hashes": {
+    "203": "748d850e03cd859db7f44a0cd7d84de266f8477c828456f963575ead9d0dab25",
+    "275": "5bbba435dcf3424f1a854c7eda2c3a378bd3ccfdb99c6a89d4954ddcfb108f12"
+  }
+}

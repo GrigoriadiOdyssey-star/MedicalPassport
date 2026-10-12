@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-16",
+  "batch": 18,
+  "family": "research-decision-profiles",
+  "owner": "CAP-RESEARCH",
+  "ids": [
+    1439,
+    1839
+  ],
+  "decision_sha256": "ac5b381cfef17bc690afd2e8f105474d61b1631aa2db03f1691917dcf9d49a76",
+  "source_hashes": {
+    "1439": "46a0dafc1f5ee195a6099ae3c03dada7db4c49c80a29ba50ef11190f68025351",
+    "1839": "3235d5a2ba9bacd2f1e57a571cf3eeaa30d07046fcd7cc55925427e96b630000"
+  }
+}

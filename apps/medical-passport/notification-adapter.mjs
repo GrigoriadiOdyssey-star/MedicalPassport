@@ -1,0 +1,2 @@
+export class LocalNotificationAdapter{constructor(store){this.store=store;this.kind='LOCAL_SYNTHETIC';}deliver(userId){this.store.pumpNotifications(userId);return{adapter:this.kind,delivered_locally:true,external_push:false};}}
+export class ExternalPushBoundary{constructor(){this.kind='EXTERNAL_GATE';}deliver(){return{adapter:this.kind,delivered_locally:false,external_push:false,status:'NOT_CONNECTED'};}}

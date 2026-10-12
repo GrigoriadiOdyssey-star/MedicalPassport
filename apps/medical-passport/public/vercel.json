@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/gateway?__edht_route=:path*"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "implementation/cloud-mvp-completion": false
+    }
+  },
+  "ignoreCommand": "node -e \"process.exit(process.env.VERCEL_ENV === 'production' ? 0 : 1)\""
+}

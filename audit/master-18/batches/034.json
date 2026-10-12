@@ -1,0 +1,25 @@
+{
+  "pass": "MASTER-18",
+  "batch": 34,
+  "family": "ai-visit-referral-and-discharge-coordination",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    1170,
+    1342,
+    1378,
+    1404,
+    1755,
+    1885,
+    1963
+  ],
+  "decision_sha256": "e629693f9be7e969bf110bd16808a01b58d7d9f8399d168f1100a2d6c53818a3",
+  "source_hashes": {
+    "1170": "f9389226bde5a8809557a3d8ae9550dd3e1eb63cbeb9af0c67404fe572b90522",
+    "1342": "c7492185035b7bab5efb5ab8171aedda1008f146fc30fa16a1b818e9e3a3294c",
+    "1378": "c30f3ed7187aea9e1591047b838f35927956f825fab6bbc83b8b200cae4e16db",
+    "1404": "9120ce88284c0d209c0114d7f6eee8407ea4e965b1791722555508b9aad0c349",
+    "1755": "f7d3ea0e8a425b43ec313b9fe71a53ebfcc0b9293efbac3cb201a7d3822eb2ba",
+    "1885": "034a8096e7d6aa960f84bf99ba6d37a4960c08bdd4b67962c21b1c04db15c097",
+    "1963": "5c6da5c4773a1d099e621eb7c44887e4f99dc28997da344cb21e6c722ef6562f"
+  }
+}

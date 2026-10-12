@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-19",
+  "batch": 15,
+  "family": "pediatric-outbreak-population-context",
+  "owner": "CAP-RESEARCH",
+  "ids": [
+    4290,
+    4291,
+    4292,
+    4294,
+    4295
+  ],
+  "decision_sha256": "63e8de3201636fcd077bcaed13cff964e521e163135e7e307a5a7a0ac4815817",
+  "source_hashes": {
+    "4290": "c6bfa222bfe2395094cea1b780c3be055c44e21e30ab7ac6dcf968a466fecbe1",
+    "4291": "1e1adb6f5ece85d06093db1392920bfeac54d1c40ddc87f61a2cff3014d09318",
+    "4292": "f36c1a047b4c0735e007024481a945195cd1ab9185e196e8799a090055b6e8d4",
+    "4294": "911233c75abcdf52e7160cf62812f448c1c202f644da31c5ce1d1a35625b87ea",
+    "4295": "0632ffd98228a4759d0d70e5cc26c8e60d34a721faf1efc09ae71f0be50b7d41"
+  }
+}

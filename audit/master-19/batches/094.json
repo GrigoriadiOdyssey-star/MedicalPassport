@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 94,
+  "family": "core-audit-history",
+  "owner": "CAP-AUDIT",
+  "ids": [
+    83
+  ],
+  "decision_sha256": "724f5353bc5c60e4931cf7a9b986db6f67a06e55305e3ac0a357079effdf0c61",
+  "source_hashes": {
+    "83": "871305ebf496947835419042f5050b5d849ce3fd87841bdb9c08529affca7e24"
+  }
+}

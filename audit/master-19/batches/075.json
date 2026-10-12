@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 75,
+  "family": "remaining-country-information",
+  "owner": "CAP-TRAVEL",
+  "ids": [
+    212
+  ],
+  "decision_sha256": "02f8da66c78049ca9e0e228f0c7353b8796f0c24c2200ca1e748ed154d25649a",
+  "source_hashes": {
+    "212": "11df80f834a0edfd2fdb8ffb211ed7aa5a27b77ec592a0d3e07936b8992b12a4"
+  }
+}

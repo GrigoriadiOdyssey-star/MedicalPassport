@@ -1,0 +1,71 @@
+{
+  "pass": "MASTER-12",
+  "aliases": [
+    {
+      "original_id": 406,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 407,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 408,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 409,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 418,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 419,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 420,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 422,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 423,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 429,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master12/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 416,
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+      "source_preserved": true
+    }
+  ]
+}

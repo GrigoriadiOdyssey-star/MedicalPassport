@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-17",
+  "batch": 34,
+  "family": "medication-safety-assessments",
+  "owner": "CAP-CDS",
+  "ids": [
+    405,
+    412,
+    430,
+    431,
+    758
+  ],
+  "decision_sha256": "7d40b9a3f5425818ba2ec676d97c7f91cc6c70744f8b2cc6c822bcf004436819",
+  "source_hashes": {
+    "405": "7b0efe3ded2f24335f731510012d33e6cf60d4e91751c7ce0e25f8ab0012fda4",
+    "412": "694bcd7b32121ab2a302f07b8ddc93c3b258ce912bff0efd0848660b360ec2eb",
+    "430": "0d707bf5996373e702ba8d5ad9800b6527f4e31bd0f27850db8ec0388528a6e5",
+    "431": "528428d6e4f126248ce49617715d9dbc61f1fc44256ca5cded72967c8e2d07da",
+    "758": "e1baf5f37d74dead70c41d4e605eaac325ddd8dafbd6d22195836b50eebb2cbd"
+  }
+}

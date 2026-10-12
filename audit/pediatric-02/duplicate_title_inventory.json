@@ -1,0 +1,4339 @@
+{
+  "schema_version": 3,
+  "pass": "PEDIATRIC-02",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "9637f5af9720dc3c1a2d2846b9df70f7f9980055",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "groups": [
+    {
+      "title": "ai drug interaction engine",
+      "original_ids": [
+        36,
+        95
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "medical translation engine",
+      "original_ids": [
+        38,
+        217
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "disaster recovery & business continuity",
+      "original_ids": [
+        84,
+        230
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "chronic disease management",
+      "original_ids": [
+        111,
+        239
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "implant registry",
+      "original_ids": [
+        181,
+        345
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai medical intelligence platform",
+      "original_ids": [
+        208,
+        1560
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "laboratory integration hub",
+      "original_ids": [
+        214,
+        380
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "hydration monitoring",
+      "original_ids": [
+        245,
+        293
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai medical interpreter",
+      "original_ids": [
+        255,
+        1967
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "kidney function monitoring",
+      "original_ids": [
+        316,
+        635
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "skin disease registry",
+      "original_ids": [
+        464,
+        2182
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "cardiac biomarker registry",
+      "original_ids": [
+        512,
+        2014
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "cardiac surgery registry",
+      "original_ids": [
+        519,
+        2024
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "glaucoma registry",
+      "original_ids": [
+        548,
+        2204
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric ophthalmology registry",
+      "original_ids": [
+        557,
+        3722
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "kidney transplant registry",
+      "original_ids": [
+        639,
+        2145,
+        2456
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "kidney stone registry",
+      "original_ids": [
+        644,
+        2264
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "female urology module",
+      "original_ids": [
+        662,
+        2276
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urological surgery registry",
+      "original_ids": [
+        664,
+        2278
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "uterine fibroid registry",
+      "original_ids": [
+        705,
+        2296
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "delivery registry",
+      "original_ids": [
+        737,
+        2320
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric sleep apnea registry",
+      "original_ids": [
+        911,
+        1086
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bone marrow registry",
+      "original_ids": [
+        968,
+        3249,
+        3912
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric immunotherapy registry",
+      "original_ids": [
+        996,
+        1118
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric anaphylaxis registry",
+      "original_ids": [
+        1117,
+        4411
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai differential diagnosis engine",
+      "original_ids": [
+        1142,
+        1462,
+        1722
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai contraindication analyzer",
+      "original_ids": [
+        1148,
+        1726
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai clinical guideline engine",
+      "original_ids": [
+        1149,
+        1724
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai disease progression predictor",
+      "original_ids": [
+        1163,
+        1702
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai precision medicine engine",
+      "original_ids": [
+        1175,
+        1540
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai medical alert prioritization",
+      "original_ids": [
+        1191,
+        1508
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai medical evidence ranking",
+      "original_ids": [
+        1196,
+        1542
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai clinical consensus engine",
+      "original_ids": [
+        1197,
+        1735
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai continuous learning engine",
+      "original_ids": [
+        1218,
+        1547
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai hospital digital twin",
+      "original_ids": [
+        1224,
+        1876
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai clinical prioritization engine",
+      "original_ids": [
+        1230,
+        1732
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai medical timeline generator",
+      "original_ids": [
+        1249,
+        1526
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai medication adherence monitor",
+      "original_ids": [
+        1251,
+        1772
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai cross-border medical exchange",
+      "original_ids": [
+        1344,
+        1886
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai clinical quality assurance",
+      "original_ids": [
+        1354,
+        1737
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai personalized clinical dashboard",
+      "original_ids": [
+        1381,
+        1676
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai vaccination recommendation engine",
+      "original_ids": [
+        1427,
+        1784
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai personalized treatment engine",
+      "original_ids": [
+        1521,
+        1662
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai personalized prevention planner",
+      "original_ids": [
+        1524,
+        1782
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai disease progression simulator",
+      "original_ids": [
+        1525,
+        1687
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai emergency event predictor",
+      "original_ids": [
+        1528,
+        1708
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai clinical scenario simulator",
+      "original_ids": [
+        1537,
+        1694
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai pharmacogenomics engine",
+      "original_ids": [
+        1606,
+        1843
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai precision medicine core engine",
+      "original_ids": [
+        1661,
+        1841
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ai precision medicine platform",
+      "original_ids": [
+        1680,
+        1860
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "congenital heart disease module",
+      "original_ids": [
+        2028,
+        3063,
+        3663
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pulmonary hypertension module",
+      "original_ids": [
+        2043,
+        2522,
+        2866
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "asthma management module",
+      "original_ids": [
+        2052,
+        2513,
+        2863
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "copd management module",
+      "original_ids": [
+        2053,
+        2514,
+        2864
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "bronchoscopy registry",
+      "original_ids": [
+        2056,
+        2519
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pulmonary infection module",
+      "original_ids": [
+        2057,
+        2515
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "interstitial lung disease module",
+      "original_ids": [
+        2059,
+        2517,
+        2865
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "oxygen therapy module",
+      "original_ids": [
+        2062,
+        2524
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "mechanical ventilation registry",
+      "original_ids": [
+        2064,
+        2523
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "respiratory rehabilitation module",
+      "original_ids": [
+        2066,
+        2525
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pulmonology ai decision support",
+      "original_ids": [
+        2068,
+        2527,
+        2873
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pulmonology digital twin integration",
+      "original_ids": [
+        2069,
+        2528,
+        2874
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neurocritical care module",
+      "original_ids": [
+        2092,
+        2621
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "diabetes mellitus management module",
+      "original_ids": [
+        2102,
+        2433
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "continuous glucose monitoring module",
+      "original_ids": [
+        2103,
+        3626
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "adrenal disorders module",
+      "original_ids": [
+        2108,
+        2437,
+        2806
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pituitary disorders module",
+      "original_ids": [
+        2109,
+        2436,
+        2805
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "endocrinology ai decision support",
+      "original_ids": [
+        2110,
+        2810
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "obesity management module",
+      "original_ids": [
+        2113,
+        2439
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "reproductive endocrinology module",
+      "original_ids": [
+        2117,
+        2978
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "endocrinology telemedicine module",
+      "original_ids": [
+        2119,
+        2446
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "tnm classification module",
+      "original_ids": [
+        2124,
+        2774
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "cancer screening module",
+      "original_ids": [
+        2125,
+        2773
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "chemotherapy management module",
+      "original_ids": [
+        2126,
+        2776
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "immunotherapy module",
+      "original_ids": [
+        2127,
+        2777
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "targeted therapy module",
+      "original_ids": [
+        2128,
+        2778
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "oncology imaging registry",
+      "original_ids": [
+        2133,
+        2782
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "oncology telemedicine module",
+      "original_ids": [
+        2137,
+        2786
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "oncology ai decision support",
+      "original_ids": [
+        2138,
+        2784
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "oncology digital twin integration",
+      "original_ids": [
+        2139,
+        2785
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "acute kidney injury module",
+      "original_ids": [
+        2143,
+        2454,
+        2854
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dialysis management module",
+      "original_ids": [
+        2144,
+        2455
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "inflammatory bowel disease module",
+      "original_ids": [
+        2157,
+        2493,
+        2834
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gastrointestinal bleeding module",
+      "original_ids": [
+        2163,
+        2496
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gastroenterology imaging registry",
+      "original_ids": [
+        2165,
+        2839
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gastroenterology telemedicine module",
+      "original_ids": [
+        2166,
+        2501,
+        2845
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gastroenterology ai decision support",
+      "original_ids": [
+        2167,
+        2499,
+        2843
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gastroenterology digital twin integration",
+      "original_ids": [
+        2168,
+        2500,
+        2844
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "fatty liver disease module",
+      "original_ids": [
+        2173,
+        2475
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "liver function registry",
+      "original_ids": [
+        2175,
+        2472
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "portal hypertension module",
+      "original_ids": [
+        2176,
+        2479
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "hepatic encephalopathy module",
+      "original_ids": [
+        2177,
+        2480
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "liver transplant registry",
+      "original_ids": [
+        2178,
+        2478
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "psoriasis management module",
+      "original_ids": [
+        2183,
+        2553,
+        2883
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "atopic dermatitis module",
+      "original_ids": [
+        2184,
+        2554,
+        2884
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "acne management module",
+      "original_ids": [
+        2185,
+        2561
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "skin infection module",
+      "original_ids": [
+        2186,
+        2558
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermoscopy registry",
+      "original_ids": [
+        2188,
+        2556
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "chronic wound management module",
+      "original_ids": [
+        2189,
+        2562
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "cosmetic dermatology module",
+      "original_ids": [
+        2191,
+        2559,
+        2898
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "hair disorders module",
+      "original_ids": [
+        2192,
+        2563,
+        2887
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "nail disorders module",
+      "original_ids": [
+        2193,
+        2564,
+        2888
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatopathology registry",
+      "original_ids": [
+        2194,
+        2566,
+        2890
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology telemedicine module",
+      "original_ids": [
+        2196,
+        2570,
+        2895
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology ai decision support",
+      "original_ids": [
+        2197,
+        2568,
+        2893
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology digital twin integration",
+      "original_ids": [
+        2198,
+        2569,
+        2894
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "cataract management module",
+      "original_ids": [
+        2203,
+        2903
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "corneal disease module",
+      "original_ids": [
+        2208,
+        2907
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric ophthalmology module",
+      "original_ids": [
+        2210,
+        2577,
+        2908,
+        3019
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology imaging registry",
+      "original_ids": [
+        2213,
+        2578,
+        2909
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology surgery registry",
+      "original_ids": [
+        2214,
+        2579
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology telemedicine module",
+      "original_ids": [
+        2215,
+        2581,
+        2915
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology ai decision support",
+      "original_ids": [
+        2216,
+        2580,
+        2913
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology digital twin integration",
+      "original_ids": [
+        2217,
+        2587,
+        2914
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology research registry",
+      "original_ids": [
+        2219,
+        2588
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "cochlear implant registry",
+      "original_ids": [
+        2225,
+        2603
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "vestibular disorders module",
+      "original_ids": [
+        2226,
+        2594,
+        2927
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "chronic sinusitis module",
+      "original_ids": [
+        2227,
+        2595
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "laryngeal disorders module",
+      "original_ids": [
+        2230,
+        2597
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "sleep breathing disorders module",
+      "original_ids": [
+        2231,
+        2516,
+        2938
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "head and neck oncology module",
+      "original_ids": [
+        2233,
+        2606
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent imaging registry",
+      "original_ids": [
+        2235,
+        2599,
+        2929
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent telemedicine module",
+      "original_ids": [
+        2236,
+        2601,
+        2935
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent ai decision support",
+      "original_ids": [
+        2237,
+        2600,
+        2933
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent digital twin integration",
+      "original_ids": [
+        2238,
+        2609,
+        2934
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent platform intelligence hub",
+      "original_ids": [
+        2240,
+        2610
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatoid arthritis module",
+      "original_ids": [
+        2242,
+        2533,
+        2813
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "systemic lupus erythematosus module",
+      "original_ids": [
+        2244,
+        2534,
+        2814
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ankylosing spondylitis module",
+      "original_ids": [
+        2246,
+        2536,
+        2815
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "psoriatic arthritis module",
+      "original_ids": [
+        2247,
+        2541,
+        2816
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology imaging registry",
+      "original_ids": [
+        2252,
+        2819
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "biological therapy module",
+      "original_ids": [
+        2253,
+        2822
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology telemedicine module",
+      "original_ids": [
+        2255,
+        2549,
+        2825
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology ai decision support",
+      "original_ids": [
+        2256,
+        2540,
+        2823
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology digital twin integration",
+      "original_ids": [
+        2257,
+        2548,
+        2824
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision rheumatology module",
+      "original_ids": [
+        2259,
+        2827
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology platform intelligence hub",
+      "original_ids": [
+        2260,
+        2550
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "benign prostatic hyperplasia module",
+      "original_ids": [
+        2262,
+        2634,
+        2943
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urinary tract infection module",
+      "original_ids": [
+        2265,
+        2946
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "male infertility module",
+      "original_ids": [
+        2268,
+        2638
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology imaging registry",
+      "original_ids": [
+        2270,
+        2640,
+        2949
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology ai decision support",
+      "original_ids": [
+        2279,
+        2645,
+        2953
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology digital twin integration",
+      "original_ids": [
+        2280,
+        2646,
+        2954
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology telemedicine module",
+      "original_ids": [
+        2281,
+        2647,
+        2955
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology laboratory registry",
+      "original_ids": [
+        2284,
+        2643,
+        2950
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "robotic urology surgery module",
+      "original_ids": [
+        2285,
+        2952
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision urology module",
+      "original_ids": [
+        2286,
+        2649,
+        2957
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology research registry",
+      "original_ids": [
+        2287,
+        2648
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "menstrual disorders module",
+      "original_ids": [
+        2294,
+        2963
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ovarian disease module",
+      "original_ids": [
+        2297,
+        2966
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gynecology ai decision support",
+      "original_ids": [
+        2300,
+        2973
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "hormonal therapy registry",
+      "original_ids": [
+        2303,
+        2443
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "fertility preservation module",
+      "original_ids": [
+        2308,
+        2658
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gynecology telemedicine module",
+      "original_ids": [
+        2309,
+        2975
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "high-risk pregnancy module",
+      "original_ids": [
+        2315,
+        2984
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "postpartum care module",
+      "original_ids": [
+        2321,
+        2988
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "obstetrics telemedicine module",
+      "original_ids": [
+        2325,
+        2994
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "obstetrics ai decision support",
+      "original_ids": [
+        2326,
+        2992
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "obstetrics digital twin integration",
+      "original_ids": [
+        2327,
+        2993
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nutrition module",
+      "original_ids": [
+        2336,
+        3006,
+        3168,
+        3288,
+        3448,
+        3829
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric emergency module",
+      "original_ids": [
+        2339,
+        3007
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal resuscitation module",
+      "original_ids": [
+        2345,
+        3025
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal respiratory disorders module",
+      "original_ids": [
+        2346,
+        3026,
+        3265
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatology platform intelligence hub",
+      "original_ids": [
+        2350,
+        2370
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal nutrition module",
+      "original_ids": [
+        2351,
+        3028,
+        3268
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal neurology module",
+      "original_ids": [
+        2353,
+        3033,
+        3266
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal laboratory registry",
+      "original_ids": [
+        2356,
+        3030,
+        3270
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal imaging registry",
+      "original_ids": [
+        2357,
+        3029,
+        3269
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal digital twin integration",
+      "original_ids": [
+        2365,
+        3035
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal ai decision support",
+      "original_ids": [
+        2366,
+        3034
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal telemedicine module",
+      "original_ids": [
+        2367,
+        3036,
+        3274
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric surgery registry",
+      "original_ids": [
+        2372,
+        3042,
+        3702
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric trauma surgery module",
+      "original_ids": [
+        2374,
+        3047,
+        3710
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric abdominal surgery module",
+      "original_ids": [
+        2375,
+        3044,
+        3705
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric thoracic surgery module",
+      "original_ids": [
+        2376,
+        3045,
+        3706
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric urological surgery module",
+      "original_ids": [
+        2377,
+        3707
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurosurgery module",
+      "original_ids": [
+        2378,
+        3708
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric orthopedic surgery module",
+      "original_ids": [
+        2379,
+        3048,
+        3709
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric minimally invasive surgery module",
+      "original_ids": [
+        2383,
+        3052,
+        3704
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric surgical imaging registry",
+      "original_ids": [
+        2384,
+        3049
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric surgical ai decision support",
+      "original_ids": [
+        2386,
+        3053
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric surgical digital twin integration",
+      "original_ids": [
+        2387,
+        3054
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric surgical telemedicine module",
+      "original_ids": [
+        2388,
+        3717
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "family pedigree registry",
+      "original_ids": [
+        2392,
+        2679
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rare disease registry",
+      "original_ids": [
+        2394,
+        2675
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "prenatal genetics module",
+      "original_ids": [
+        2396,
+        2680
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pharmacogenomics module",
+      "original_ids": [
+        2399,
+        2677
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical genetics ai decision support",
+      "original_ids": [
+        2405,
+        2684
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "genetics digital twin integration",
+      "original_ids": [
+        2406,
+        2685
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "primary immunodeficiency module",
+      "original_ids": [
+        2413,
+        3388
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical endocrinology platform core engine",
+      "original_ids": [
+        2431,
+        2801
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "thyroid disorders module",
+      "original_ids": [
+        2435,
+        2804
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "endocrine laboratory registry",
+      "original_ids": [
+        2441,
+        2808
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "endocrine imaging registry",
+      "original_ids": [
+        2442,
+        2809
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical nephrology platform core engine",
+      "original_ids": [
+        2451,
+        2851
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "chronic kidney disease module",
+      "original_ids": [
+        2453,
+        2853
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "glomerular disease module",
+      "original_ids": [
+        2457,
+        2855
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "renal imaging registry",
+      "original_ids": [
+        2462,
+        2858
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "viral hepatitis module",
+      "original_ids": [
+        2473,
+        2758
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical gastroenterology platform core engine",
+      "original_ids": [
+        2491,
+        2831
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "functional gastrointestinal disorders module",
+      "original_ids": [
+        2494,
+        2835
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "gastroenterology laboratory registry",
+      "original_ids": [
+        2502,
+        2840
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pancreatic disorders module",
+      "original_ids": [
+        2506,
+        2837
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pulmonology platform core engine",
+      "original_ids": [
+        2511,
+        2861
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pulmonology laboratory registry",
+      "original_ids": [
+        2520,
+        2871
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "respiratory biomarker registry",
+      "original_ids": [
+        2526,
+        2878
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pulmonology telemedicine module",
+      "original_ids": [
+        2529,
+        2875
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical rheumatology platform core engine",
+      "original_ids": [
+        2531,
+        2811
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology registry",
+      "original_ids": [
+        2532,
+        2812
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "vasculitis module",
+      "original_ids": [
+        2535,
+        2817
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology laboratory registry",
+      "original_ids": [
+        2538,
+        2820
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "juvenile idiopathic arthritis module",
+      "original_ids": [
+        2542,
+        3203,
+        3403,
+        3543,
+        3883,
+        4103
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rheumatology biomarker registry",
+      "original_ids": [
+        2546,
+        2821
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical dermatology platform core engine",
+      "original_ids": [
+        2551,
+        2881
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology registry",
+      "original_ids": [
+        2552,
+        2882
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology imaging registry",
+      "original_ids": [
+        2557,
+        2889
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology laboratory registry",
+      "original_ids": [
+        2560,
+        2891
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "dermatology biomarker registry",
+      "original_ids": [
+        2567,
+        2892
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical ophthalmology platform core engine",
+      "original_ids": [
+        2571,
+        2901
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology registry",
+      "original_ids": [
+        2572,
+        2902
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "glaucoma management module",
+      "original_ids": [
+        2573,
+        2904
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "retinal disease module",
+      "original_ids": [
+        2575,
+        2905
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ophthalmology laboratory registry",
+      "original_ids": [
+        2582,
+        2911
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision ophthalmology module",
+      "original_ids": [
+        2589,
+        2917
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent registry",
+      "original_ids": [
+        2592,
+        2922
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "rhinology module",
+      "original_ids": [
+        2604,
+        2924
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "ent laboratory registry",
+      "original_ids": [
+        2608,
+        2931
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical urology platform core engine",
+      "original_ids": [
+        2631,
+        2941
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "urology registry",
+      "original_ids": [
+        2632,
+        2942
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "prostate cancer module",
+      "original_ids": [
+        2635,
+        2944
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal intensive care module",
+      "original_ids": [
+        3024,
+        3264
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "neonatal biomarker registry",
+      "original_ids": [
+        3031,
+        3271
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision neonatology module",
+      "original_ids": [
+        3038,
+        3276
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical neonatology intelligence hub",
+      "original_ids": [
+        3040,
+        3280
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric surgery platform core engine",
+      "original_ids": [
+        3041,
+        3701
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric surgery module",
+      "original_ids": [
+        3057,
+        3719
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric surgery intelligence hub",
+      "original_ids": [
+        3060,
+        3720
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric cardiology platform core engine",
+      "original_ids": [
+        3061,
+        3661,
+        4061
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiology registry",
+      "original_ids": [
+        3062,
+        3662,
+        4062
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric echocardiography module",
+      "original_ids": [
+        3064,
+        3664,
+        4064
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric arrhythmia module",
+      "original_ids": [
+        3065,
+        3666,
+        4066
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric heart failure module",
+      "original_ids": [
+        3066,
+        3668,
+        4068
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiac surgery module",
+      "original_ids": [
+        3067,
+        3669,
+        4072
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiology ai decision support",
+      "original_ids": [
+        3072,
+        3674,
+        4075
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiology digital twin integration",
+      "original_ids": [
+        3073,
+        3675,
+        4076
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiology telemedicine module",
+      "original_ids": [
+        3074,
+        3676
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiology clinical trials registry",
+      "original_ids": [
+        3075,
+        3678
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric cardiology module",
+      "original_ids": [
+        3076,
+        3679
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiac genetics module",
+      "original_ids": [
+        3077,
+        3672,
+        4073
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric cardiology intelligence hub",
+      "original_ids": [
+        3080,
+        3680,
+        4080
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric neurology platform core engine",
+      "original_ids": [
+        3081,
+        3341,
+        3581,
+        3961,
+        4601,
+        5076
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology registry",
+      "original_ids": [
+        3082,
+        3342,
+        3582,
+        3962
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric epilepsy module",
+      "original_ids": [
+        3083,
+        3343,
+        3583,
+        3963
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric headache module",
+      "original_ids": [
+        3087,
+        3347
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurogenetics module",
+      "original_ids": [
+        3088,
+        3349,
+        3971
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neuroimaging registry",
+      "original_ids": [
+        3089,
+        3351,
+        3592,
+        3972
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric eeg registry",
+      "original_ids": [
+        3090,
+        3350,
+        3591
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology laboratory registry",
+      "original_ids": [
+        3091,
+        3352,
+        3593
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology ai decision support",
+      "original_ids": [
+        3092,
+        3354,
+        3595,
+        3975
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology digital twin integration",
+      "original_ids": [
+        3093,
+        3355,
+        3596,
+        3976
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology telemedicine module",
+      "original_ids": [
+        3094,
+        3356,
+        3598,
+        3978
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology clinical trials registry",
+      "original_ids": [
+        3095,
+        3357,
+        3599
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric neurology module",
+      "original_ids": [
+        3096,
+        3358
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurorehabilitation module",
+      "original_ids": [
+        3097,
+        3977
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology intelligence registry",
+      "original_ids": [
+        3098,
+        3359
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric neurology intelligence hub",
+      "original_ids": [
+        3100,
+        3360,
+        3600,
+        3980
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric endocrinology platform core engine",
+      "original_ids": [
+        3101,
+        3321,
+        3623,
+        3861,
+        4121
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology registry",
+      "original_ids": [
+        3102,
+        3322,
+        3482,
+        3624,
+        3862
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric thyroid disorders module",
+      "original_ids": [
+        3105,
+        3325,
+        3485,
+        3630
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric adrenal disorders module",
+      "original_ids": [
+        3107,
+        3326,
+        3488,
+        3632,
+        3868
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric calcium & bone metabolism module",
+      "original_ids": [
+        3108,
+        3869
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric obesity module",
+      "original_ids": [
+        3109,
+        3490
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrine imaging registry",
+      "original_ids": [
+        3110,
+        3330,
+        3636,
+        3873
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrine laboratory registry",
+      "original_ids": [
+        3111,
+        3492,
+        3635
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrine biomarker registry",
+      "original_ids": [
+        3112,
+        3332,
+        3493
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology ai decision support",
+      "original_ids": [
+        3113,
+        3333,
+        3494,
+        3638,
+        3875,
+        4155
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology digital twin integration",
+      "original_ids": [
+        3114,
+        3334,
+        3495,
+        3639,
+        3876,
+        4156
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology telemedicine module",
+      "original_ids": [
+        3115,
+        3335,
+        3496,
+        3877
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology clinical trials registry",
+      "original_ids": [
+        3116,
+        3336,
+        3497,
+        3878
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric endocrinology module",
+      "original_ids": [
+        3117,
+        3337,
+        3498,
+        3879
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrine genetics module",
+      "original_ids": [
+        3118,
+        3874,
+        4152
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric endocrinology intelligence hub",
+      "original_ids": [
+        3120,
+        3340,
+        3500,
+        3640,
+        3880
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric oncology platform core engine",
+      "original_ids": [
+        3121,
+        3921,
+        4201
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric oncology registry",
+      "original_ids": [
+        3122,
+        3683,
+        3922
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric leukemia module",
+      "original_ids": [
+        3123,
+        3463,
+        3684,
+        3923
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric lymphoma module",
+      "original_ids": [
+        3124,
+        3464,
+        3685,
+        3924,
+        4207
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric brain tumor module",
+      "original_ids": [
+        3125,
+        3687,
+        3925
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric solid tumor module",
+      "original_ids": [
+        3126,
+        3465,
+        3686,
+        3929
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric sarcoma module",
+      "original_ids": [
+        3127,
+        3928
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bone marrow transplant module",
+      "original_ids": [
+        3128,
+        3469
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric oncology imaging registry",
+      "original_ids": [
+        3129,
+        3932
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric oncology ai decision support",
+      "original_ids": [
+        3133,
+        3935,
+        4243
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric oncology digital twin integration",
+      "original_ids": [
+        3134,
+        3936,
+        4244
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric oncology telemedicine module",
+      "original_ids": [
+        3135,
+        3697
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric oncology clinical trials registry",
+      "original_ids": [
+        3136,
+        3937
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric oncology module",
+      "original_ids": [
+        3137,
+        3699,
+        3939
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cancer survivorship module",
+      "original_ids": [
+        3138,
+        3938
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric oncology intelligence hub",
+      "original_ids": [
+        3140,
+        3940
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric nephrology platform core engine",
+      "original_ids": [
+        3141,
+        3301,
+        3501,
+        3641,
+        3841,
+        4551
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology registry",
+      "original_ids": [
+        3142,
+        3302,
+        3642,
+        3842,
+        4042
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric glomerular disease module",
+      "original_ids": [
+        3144,
+        3305,
+        3845,
+        4045
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric tubular disorders module",
+      "original_ids": [
+        3145,
+        3306,
+        3846
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric chronic kidney disease module",
+      "original_ids": [
+        3146,
+        3304,
+        3644,
+        3844,
+        4044
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric dialysis module",
+      "original_ids": [
+        3147,
+        3308,
+        3649,
+        3848
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric kidney transplant module",
+      "original_ids": [
+        3148,
+        3309,
+        3650,
+        3849,
+        4053
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology imaging registry",
+      "original_ids": [
+        3149,
+        3652
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology ai decision support",
+      "original_ids": [
+        3152,
+        3313,
+        3655,
+        3855,
+        4058
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology digital twin integration",
+      "original_ids": [
+        3153,
+        3314,
+        3656,
+        3856,
+        4059
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology telemedicine module",
+      "original_ids": [
+        3154,
+        3315,
+        3657,
+        3857
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology clinical trials registry",
+      "original_ids": [
+        3155,
+        3316,
+        3658,
+        3858
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric nephrology module",
+      "original_ids": [
+        3156,
+        3317,
+        3659,
+        3859
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric renal genetics module",
+      "original_ids": [
+        3157,
+        3854
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology intelligence registry",
+      "original_ids": [
+        3158,
+        3319
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric nephrology intelligence hub",
+      "original_ids": [
+        3160,
+        3320,
+        3660,
+        3860
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric gastroenterology platform core engine",
+      "original_ids": [
+        3161,
+        3281,
+        3441,
+        3601,
+        4501
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology registry",
+      "original_ids": [
+        3162,
+        3282,
+        3442,
+        3602,
+        3822,
+        4022
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric inflammatory bowel disease module",
+      "original_ids": [
+        3163,
+        3283,
+        3444,
+        3603,
+        3824,
+        4028
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric celiac disease module",
+      "original_ids": [
+        3164,
+        3284,
+        3443,
+        3604,
+        3825,
+        4027,
+        4515
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric functional gi disorders module",
+      "original_ids": [
+        3165,
+        3285
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric liver disease module",
+      "original_ids": [
+        3166,
+        3605,
+        3827,
+        4032
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pancreatic disorders module",
+      "original_ids": [
+        3167,
+        3287,
+        3447,
+        3606,
+        3828
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endoscopy registry",
+      "original_ids": [
+        3169,
+        3289,
+        3449,
+        3609
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology imaging registry",
+      "original_ids": [
+        3170,
+        3290
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology laboratory registry",
+      "original_ids": [
+        3171,
+        3291,
+        3451,
+        3610
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology biomarker registry",
+      "original_ids": [
+        3172,
+        3292,
+        3452,
+        3613
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology ai decision support",
+      "original_ids": [
+        3173,
+        3293,
+        3453,
+        3615,
+        3834,
+        4038,
+        4546
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology digital twin integration",
+      "original_ids": [
+        3174,
+        3294,
+        3454,
+        3616,
+        3835,
+        4039,
+        4547
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology telemedicine module",
+      "original_ids": [
+        3175,
+        3295,
+        3455,
+        3617,
+        3837
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology clinical trials registry",
+      "original_ids": [
+        3176,
+        3296,
+        3456,
+        3618,
+        3838
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric gastroenterology module",
+      "original_ids": [
+        3177,
+        3297,
+        3457,
+        3619,
+        3839
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology intelligence registry",
+      "original_ids": [
+        3179,
+        3299,
+        3459,
+        3621
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric gastroenterology intelligence hub",
+      "original_ids": [
+        3180,
+        3300,
+        3460,
+        3622,
+        4040
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric pulmonology platform core engine",
+      "original_ids": [
+        3181,
+        3361,
+        3521,
+        3801,
+        4001,
+        4451
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology registry",
+      "original_ids": [
+        3182,
+        3362,
+        3502,
+        3522,
+        3802,
+        4002
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric asthma module",
+      "original_ids": [
+        3183,
+        3363,
+        3523
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cystic fibrosis module",
+      "original_ids": [
+        3184,
+        3364,
+        3506,
+        3524,
+        3805,
+        4005
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric airway disorders module",
+      "original_ids": [
+        3185,
+        3751
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric respiratory infection module",
+      "original_ids": [
+        3186,
+        3808,
+        4258
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric sleep breathing disorders module",
+      "original_ids": [
+        3187,
+        3368,
+        3508
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bronchoscopy registry",
+      "original_ids": [
+        3189,
+        3370,
+        3513
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonary imaging registry",
+      "original_ids": [
+        3190,
+        3371,
+        3810
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonary biomarker registry",
+      "original_ids": [
+        3192,
+        3373
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology ai decision support",
+      "original_ids": [
+        3193,
+        3374,
+        3516,
+        3533,
+        4016,
+        4494
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology digital twin integration",
+      "original_ids": [
+        3194,
+        3375,
+        3517,
+        3534,
+        3813,
+        4017,
+        4495
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology telemedicine module",
+      "original_ids": [
+        3195,
+        3376,
+        3518,
+        3535,
+        3815,
+        4497
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology clinical trials registry",
+      "original_ids": [
+        3196,
+        3377,
+        3519,
+        3536,
+        3817
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric pulmonology module",
+      "original_ids": [
+        3197,
+        3378,
+        3537,
+        3818
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonary genetics module",
+      "original_ids": [
+        3198,
+        3811
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology intelligence registry",
+      "original_ids": [
+        3199,
+        3379,
+        3539
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric pulmonology intelligence hub",
+      "original_ids": [
+        3200,
+        3380,
+        3520,
+        3540,
+        3820,
+        4020,
+        4500
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric rheumatology platform core engine",
+      "original_ids": [
+        3201,
+        3401,
+        3541,
+        3881,
+        4101,
+        4701,
+        5026
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology registry",
+      "original_ids": [
+        3202,
+        3402,
+        3542,
+        3882,
+        4102
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric systemic lupus module",
+      "original_ids": [
+        3204,
+        3404,
+        3544
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric vasculitis module",
+      "original_ids": [
+        3205,
+        3405,
+        3545,
+        3885,
+        4108
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric autoinflammatory disease module",
+      "original_ids": [
+        3206,
+        3547,
+        4110
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric connective tissue disease module",
+      "original_ids": [
+        3207,
+        3546,
+        3887
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology laboratory registry",
+      "original_ids": [
+        3210,
+        3411,
+        3551
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology biomarker registry",
+      "original_ids": [
+        3211,
+        3412,
+        3552
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology ai decision support",
+      "original_ids": [
+        3212,
+        3413,
+        3554,
+        3894,
+        4116
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology digital twin integration",
+      "original_ids": [
+        3213,
+        3414,
+        3555,
+        3895,
+        4117
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology telemedicine module",
+      "original_ids": [
+        3214,
+        3415,
+        3557,
+        3897
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology clinical trials registry",
+      "original_ids": [
+        3215,
+        3416,
+        3558,
+        3898
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric rheumatology module",
+      "original_ids": [
+        3216,
+        3417,
+        3899
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology genetics module",
+      "original_ids": [
+        3217,
+        3418,
+        3553,
+        3892
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology intelligence registry",
+      "original_ids": [
+        3218,
+        3419,
+        3559
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric rheumatology intelligence hub",
+      "original_ids": [
+        3220,
+        3420,
+        3560,
+        3900,
+        4120
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric infectious diseases platform core engine",
+      "original_ids": [
+        3221,
+        3421,
+        3561,
+        3941,
+        4251,
+        5051
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infectious diseases registry",
+      "original_ids": [
+        3222,
+        3422,
+        3562,
+        3942
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric viral infection module",
+      "original_ids": [
+        3223,
+        3944
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bacterial infection module",
+      "original_ids": [
+        3224,
+        3943
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric fungal infection module",
+      "original_ids": [
+        3225,
+        3427,
+        3945,
+        4267
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric parasitic disease module",
+      "original_ids": [
+        3226,
+        3946
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric microbiology registry",
+      "original_ids": [
+        3229,
+        3431,
+        3571
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infection biomarker registry",
+      "original_ids": [
+        3232,
+        3432
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infectious diseases ai decision support",
+      "original_ids": [
+        3233,
+        3433,
+        3574,
+        3955,
+        4296
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infectious diseases digital twin integration",
+      "original_ids": [
+        3234,
+        3434,
+        3575,
+        4297
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infectious diseases telemedicine module",
+      "original_ids": [
+        3235,
+        3435,
+        3576,
+        3958
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infectious diseases clinical trials registry",
+      "original_ids": [
+        3236,
+        3436,
+        3577
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric infectious diseases module",
+      "original_ids": [
+        3237,
+        3437,
+        3578,
+        3959
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric infectious diseases intelligence registry",
+      "original_ids": [
+        3239,
+        3439,
+        3579
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric infectious diseases intelligence hub",
+      "original_ids": [
+        3240,
+        3440,
+        3580,
+        3960,
+        4300
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric hematology platform core engine",
+      "original_ids": [
+        3241,
+        3901,
+        4161,
+        4976
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology registry",
+      "original_ids": [
+        3242,
+        3682,
+        3902
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric anemia module",
+      "original_ids": [
+        3243,
+        3466,
+        3688,
+        3903
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hemoglobinopathy module",
+      "original_ids": [
+        3244,
+        3467,
+        3905
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric coagulation disorders module",
+      "original_ids": [
+        3245,
+        3468,
+        3906
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric platelet disorders module",
+      "original_ids": [
+        3246,
+        3907
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bone marrow failure module",
+      "original_ids": [
+        3247,
+        3690,
+        4172
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric transfusion medicine module",
+      "original_ids": [
+        3248,
+        3909,
+        4181
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology laboratory registry",
+      "original_ids": [
+        3250,
+        3472,
+        3691
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology biomarker registry",
+      "original_ids": [
+        3251,
+        3473
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology ai decision support",
+      "original_ids": [
+        3252,
+        3914,
+        4192
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology digital twin integration",
+      "original_ids": [
+        3253,
+        3475,
+        3915,
+        4193
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology telemedicine module",
+      "original_ids": [
+        3254,
+        3476,
+        3917,
+        4197
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology clinical trials registry",
+      "original_ids": [
+        3255,
+        3477,
+        3918
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "precision pediatric hematology module",
+      "original_ids": [
+        3256,
+        3478,
+        3919
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology genetics module",
+      "original_ids": [
+        3257,
+        3694,
+        3913
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hematology intelligence registry",
+      "original_ids": [
+        3258,
+        3479
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric hematology intelligence hub",
+      "original_ids": [
+        3260,
+        3920,
+        4200
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastroenterology genetics module",
+      "original_ids": [
+        3298,
+        3458,
+        3614,
+        4037
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric acute kidney injury module",
+      "original_ids": [
+        3303,
+        3643,
+        3843,
+        4043
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric renal imaging registry",
+      "original_ids": [
+        3310,
+        3852
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology laboratory registry",
+      "original_ids": [
+        3311,
+        3651
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology biomarker registry",
+      "original_ids": [
+        3312,
+        3654
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrology genetics module",
+      "original_ids": [
+        3318,
+        3653,
+        4057
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric diabetes mellitus module",
+      "original_ids": [
+        3323,
+        3625
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric growth disorders module",
+      "original_ids": [
+        3324,
+        3486,
+        3628,
+        3863
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pituitary disorders module",
+      "original_ids": [
+        3327,
+        3487,
+        3633,
+        3867
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric puberty disorders module",
+      "original_ids": [
+        3328,
+        3489,
+        3631,
+        3870
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology genetics module",
+      "original_ids": [
+        3338,
+        3637
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endocrinology intelligence registry",
+      "original_ids": [
+        3339,
+        3499
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cerebral palsy module",
+      "original_ids": [
+        3344,
+        3584,
+        3967
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neuromuscular disorders module",
+      "original_ids": [
+        3345,
+        3585
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric movement disorders module",
+      "original_ids": [
+        3348,
+        3589,
+        3969
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurology biomarker registry",
+      "original_ids": [
+        3353,
+        3594
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bronchiolitis module",
+      "original_ids": [
+        3365,
+        3504,
+        3525
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pneumonia module",
+      "original_ids": [
+        3366,
+        3505,
+        3526
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric chronic lung disease module",
+      "original_ids": [
+        3367,
+        3529,
+        4007
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonary function module",
+      "original_ids": [
+        3369,
+        3509,
+        3528,
+        3804
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology laboratory registry",
+      "original_ids": [
+        3372,
+        3511,
+        3531
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric allergy & immunology platform core engine",
+      "original_ids": [
+        3381,
+        3781,
+        4081,
+        4401
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergy & immunology registry",
+      "original_ids": [
+        3382,
+        3782,
+        4082
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric food allergy module",
+      "original_ids": [
+        3383,
+        3783,
+        4083,
+        4404
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric atopic dermatitis module",
+      "original_ids": [
+        3385,
+        3763,
+        4358
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric drug allergy module",
+      "original_ids": [
+        3386,
+        3788,
+        4085
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric anaphylaxis module",
+      "original_ids": [
+        3387,
+        4084
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric immunology laboratory registry",
+      "original_ids": [
+        3391,
+        3791
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric immunogenetics module",
+      "original_ids": [
+        3398,
+        4440
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric allergy & immunology intelligence hub",
+      "original_ids": [
+        3400,
+        3800,
+        4100,
+        4450
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric myositis module",
+      "original_ids": [
+        3408,
+        3548
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology imaging registry",
+      "original_ids": [
+        3410,
+        3891
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bacterial infections module",
+      "original_ids": [
+        3424,
+        3564
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric tuberculosis module",
+      "original_ids": [
+        3425,
+        3948,
+        4266
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric antimicrobial stewardship module",
+      "original_ids": [
+        3430,
+        3570,
+        3951,
+        4285
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric functional gastrointestinal disorders module",
+      "original_ids": [
+        3445,
+        3826,
+        4510
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastrointestinal imaging registry",
+      "original_ids": [
+        3450,
+        3611,
+        4031
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric hematology & oncology platform core engine",
+      "original_ids": [
+        3461,
+        3681
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric hematology & oncology intelligence hub",
+      "original_ids": [
+        3480,
+        3700
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric type 1 diabetes module",
+      "original_ids": [
+        3483,
+        3864
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric type 2 diabetes module",
+      "original_ids": [
+        3484,
+        3865,
+        4144
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric asthma management module",
+      "original_ids": [
+        3503,
+        3803,
+        4003
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric bronchopulmonary dysplasia module",
+      "original_ids": [
+        3507,
+        3806,
+        4006
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology imaging registry",
+      "original_ids": [
+        3512,
+        3530
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pulmonology biomarker registry",
+      "original_ids": [
+        3514,
+        3532
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric respiratory genetics module",
+      "original_ids": [
+        3515,
+        4013
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric sleep medicine module",
+      "original_ids": [
+        3527,
+        3807,
+        4011
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology rehabilitation module",
+      "original_ids": [
+        3556,
+        3896
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric congenital infection module",
+      "original_ids": [
+        3567,
+        3947
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric gastrointestinal motility module",
+      "original_ids": [
+        3607,
+        4513
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric nephrotic syndrome module",
+      "original_ids": [
+        3645,
+        4046
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric hypertension module",
+      "original_ids": [
+        3648,
+        3850
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric cardiomyopathy module",
+      "original_ids": [
+        3667,
+        4067
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric preventive cardiology module",
+      "original_ids": [
+        3677,
+        4077
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric ophthalmology platform core engine",
+      "original_ids": [
+        3721,
+        4726,
+        4951
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric dermatology platform core engine",
+      "original_ids": [
+        3761,
+        4351,
+        4801
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric psoriasis module",
+      "original_ids": [
+        3764,
+        4363
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric dermatology digital twin integration",
+      "original_ids": [
+        3776,
+        4397
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric dermatology intelligence hub",
+      "original_ids": [
+        3780,
+        4400
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergic rhinitis module",
+      "original_ids": [
+        3787,
+        4087,
+        4424
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric immunodeficiency module",
+      "original_ids": [
+        3789,
+        4089
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric autoimmune disease module",
+      "original_ids": [
+        3790,
+        4092
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergy testing module",
+      "original_ids": [
+        3792,
+        4094
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergy & immunology ai decision support",
+      "original_ids": [
+        3795,
+        4096,
+        4445
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergy & immunology digital twin integration",
+      "original_ids": [
+        3796,
+        4097,
+        4446
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergy & immunology telemedicine module",
+      "original_ids": [
+        3797,
+        4099,
+        4448
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric gastroenterology & hepatology platform core engine",
+      "original_ids": [
+        3821,
+        4021
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric endoscopy module",
+      "original_ids": [
+        3830,
+        4030
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric thyroid disease module",
+      "original_ids": [
+        3866,
+        4130
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric systemic lupus erythematosus module",
+      "original_ids": [
+        3884,
+        4105
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neuroblastoma module",
+      "original_ids": [
+        3926,
+        4211
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric chemotherapy management module",
+      "original_ids": [
+        3933,
+        4226
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric pancreatic disease module",
+      "original_ids": [
+        4035,
+        4536
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric immune dysregulation module",
+      "original_ids": [
+        4091,
+        4438
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric allergen immunotherapy module",
+      "original_ids": [
+        4095,
+        4428
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric central nervous system infection module",
+      "original_ids": [
+        4257,
+        5059
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurodevelopment & developmental milestone intelligence module",
+      "original_ids": [
+        4608,
+        5078
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurogenetics & rare neurological disease module",
+      "original_ids": [
+        4609,
+        5090
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric emg, nerve conduction & neuromuscular diagnostics module",
+      "original_ids": [
+        4611,
+        5089
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric neurological rehabilitation & functional recovery module",
+      "original_ids": [
+        4620,
+        5096
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric neurosurgery platform core engine",
+      "original_ids": [
+        4626,
+        5101
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric craniosynostosis & craniofacial neurosurgery module",
+      "original_ids": [
+        4629,
+        5110
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric brain tumor neurosurgical management module",
+      "original_ids": [
+        4634,
+        5111
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric rehabilitation medicine platform core engine",
+      "original_ids": [
+        4689,
+        4851
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric occupational therapy & activities of daily living module",
+      "original_ids": [
+        4691,
+        4854
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric assistive technology & adaptive equipment platform",
+      "original_ids": [
+        4694,
+        4862
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric systemic lupus erythematosus management module",
+      "original_ids": [
+        4704,
+        5031
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric juvenile dermatomyositis & inflammatory myopathy module",
+      "original_ids": [
+        4708,
+        5033
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric rheumatology pain, fatigue & functional impact module",
+      "original_ids": [
+        4719,
+        5043
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric strabismus, ocular alignment & orthoptics module",
+      "original_ids": [
+        4729,
+        4957
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric optic nerve & neuro-ophthalmology module",
+      "original_ids": [
+        4736,
+        4966
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "clinical pediatric ophthalmology & vision intelligence hub",
+      "original_ids": [
+        4750,
+        4975
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    },
+    {
+      "title": "pediatric adhd & executive function management module",
+      "original_ids": [
+        4831,
+        5159
+      ],
+      "meaning": "TITLE_MATCH_ONLY_NOT_SEMANTIC_DUPLICATE"
+    }
+  ]
+}

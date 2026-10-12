@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 93,
+  "family": "core-security-and-sensitive-access",
+  "owner": "CAP-SECURITY",
+  "ids": [
+    489
+  ],
+  "decision_sha256": "78d8febf105402c6a53443d76324d16132ab571edac91d32710659f1642e2b8c",
+  "source_hashes": {
+    "489": "a6d3228090a4be15b487031c01bbc2180b5e5298ae5df8f744aa7daf72143270"
+  }
+}

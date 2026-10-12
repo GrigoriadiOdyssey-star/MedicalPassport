@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-17",
+  "batch": 50,
+  "family": "international-care-coordination-profile",
+  "owner": "CAP-TRAVEL",
+  "ids": [
+    1402
+  ],
+  "decision_sha256": "bc4a0e39e5ebcbef8dd98d4e032867af6ad9900a54f147a7d5b40aa924cb58d0",
+  "source_hashes": {
+    "1402": "ce770001f28d797431d428d3a34179e7462059afc206fa25dcd8b776541e3a89"
+  }
+}

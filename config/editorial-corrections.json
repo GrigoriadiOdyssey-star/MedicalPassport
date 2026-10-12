@@ -1,0 +1,366 @@
+[
+  {
+    "id": "ED-001",
+    "moduleId": 2,
+    "old": "Create one international medical passport accepted worldwide.",
+    "new": "Develop a portable medical information record. Acceptance depends on the receiving organisation, jurisdiction, verified identity, data provenance and supported interoperability profile; worldwide acceptance is an aspiration, not a present capability.",
+    "reason": "Убрано неподтверждённое обещание всемирного признания."
+  },
+  {
+    "id": "ED-002",
+    "moduleId": "*",
+    "old": "GitHub Actions",
+    "new": "GitLab CI/CD (specification validation pipeline; application deployment is not yet implemented)",
+    "reason": "Целевая система репозитория — GitLab; статус CI указан точно."
+  },
+  {
+    "id": "ED-003",
+    "moduleId": "*",
+    "old": "GDPR Compliance",
+    "new": "GDPR applicability and evidence review required; compliance is not established by this specification",
+    "reason": "Требование законодательства не является доказательством соответствия."
+  },
+  {
+    "id": "ED-004",
+    "moduleId": "*",
+    "old": "HIPAA Compliance",
+    "new": "HIPAA applicability assessment and contractual/security evidence required where relevant; compliance is not established by this specification",
+    "reason": "Применимость HIPAA зависит от отношений и юрисдикции."
+  },
+  {
+    "id": "ENG-001-1",
+    "moduleId": 29,
+    "old": "access_token\n\nrefresh_token",
+    "new": "session_reference (non-secret)\n\nprovider_session_id (non-secret)\n\nToken storage: P0 delegates login and refresh to the selected OIDC provider/client; do not persist plaintext access or refresh tokens in this table. Any later local refresh flow requires rotation, replay detection and protected storage.",
+    "reason": "Таблица сессий перечисляет bearer tokens без правил хранения."
+  },
+  {
+    "id": "ENG-002-1",
+    "moduleId": 14,
+    "old": "qr_token",
+    "new": "qr_token_digest (SHA-256 of a 32-byte cryptographically random secret; plaintext token is returned once and never stored or logged)",
+    "reason": "QR bearer в URL и поле qr_token не определяют защиту секрета."
+  },
+  {
+    "id": "ENG-002-2",
+    "moduleId": 53,
+    "old": "GET /qr/{token}",
+    "new": "POST /qr-resolve\n\nP0: submit the QR secret only in the HTTPS JSON request body; no token in URL or logs. One successful atomic redemption returns the explicitly consented snapshot. See specs/openapi.json and docs/engineering/auth-and-qr.md.",
+    "reason": "QR bearer в URL и поле qr_token не определяют защиту секрета."
+  },
+  {
+    "id": "ENG-003-1",
+    "moduleId": 32,
+    "old": "## Level 1 — Public\n\n• Full Name\n\n• Blood Group\n\n• Rh Factor\n\n• Emergency Contact",
+    "new": "## Level 1 — Public\n\nNo personal or medical fields are public by default. P0 requires explicit, scoped, time-limited consent before a bearer QR holder can receive one snapshot. Identity, blood group and emergency-contact data may only be included in an explicitly selected profile scope. Recipient profession is not verified by possession of a QR.",
+    "reason": "Public по умолчанию перечисляет ФИО, кровь и контакт."
+  },
+  {
+    "id": "ENG-004-1",
+    "moduleId": 27,
+    "old": "old_value\n\nnew_value",
+    "new": "changed_field_names (allowlisted identifiers only; no medical values)\n\nresource_version_before\n\nresource_version_after\n\nNever log medical payloads, documents, tokens, cookies or QR secrets. Audit captures action, outcome, actor/resource references and request ID; clinical version history, if needed, is a separate protected data store.",
+    "reason": "Безусловные old_value/new_value дублируют медицинские сведения в audit."
+  },
+  {
+    "id": "ENG-005-1",
+    "moduleId": 84,
+    "old": "• Zero Data Loss",
+    "new": "• Measured data-loss bound: proposed pilot RPO ≤24 hours and RTO ≤8 hours; verify by an independent restore before pilot. The original ≤5-minute RPO / ≤15-minute RTO remains an unvalidated future target, not a zero-data-loss guarantee.",
+    "reason": "Zero Data Loss не совместимо с ненулевым RPO и не подтверждено тестом."
+  },
+  {
+    "id": "ENG-006-1",
+    "moduleId": 81,
+    "old": "• Transparent Data Encryption",
+    "new": "• Select and verify encryption at rest for the actual database service/storage and backups, with separate managed keys, access controls and tested recovery. PostgreSQL selection alone does not demonstrate Transparent Data Encryption.",
+    "reason": "PostgreSQL сам по себе не доказывает transparent data encryption."
+  },
+  {
+    "id": "ENG-007-1",
+    "moduleId": 83,
+    "old": "Operational Logs\n\n90 Days\n\nAudit Logs\n\n7 Years\n\nSecurity Events\n\n10 Years\n\nCritical Incidents\n\nPermanent Archive",
+    "new": "Retention must be purpose- and jurisdiction-specific, with named owner, deletion procedure and approved exceptions. Original 90-day / 7-year / 10-year / permanent values are unvalidated proposals, not universal requirements. Proposed pilot baseline: 30-day technical logs without medical content; 90-day minimal access audit; 30-day encrypted backup horizon. Resolve applicable obligations before processing real data; see docs/engineering/operations.md.",
+    "reason": "Сроки 7/10 лет и Permanent Archive не имеют обоснования."
+  },
+  {
+    "id": "ENG-008-1",
+    "moduleId": 3,
+    "old": "# Backend Layer",
+    "new": "# Backend Layer\n\nP0 decision: one modular application plus worker from the same codebase, PostgreSQL and private object storage. The service names below describe logical/future capabilities, not deployed microservices. Module 51 modular-monolith MVP takes precedence; P0 excludes AI, travel, telemedicine and institutional integration. See docs/engineering/architecture.md.",
+    "reason": "Перечень сервисов не отличает модульные границы P0 от раздельных сервисов."
+  },
+  {
+    "id": "ENG-009-1",
+    "moduleId": 52,
+    "old": "# Standard Columns",
+    "new": "# Standard Columns\n\nP0 normative data rules: one profile per owner; medical resources reference profile_id and never accept an independent client owner ID. Use UTC timestamptz for events, calendar date for dates, integer resource versions with If-Match, enforced foreign keys and ownership checks. Distinguish unknown allergy status from none_known. See docs/engineering/data-model.md and specs/openapi.json.",
+    "reason": "Поля таблиц не задают обязательность, FK, owner isolation, units, null semantics, concurrency."
+  },
+  {
+    "id": "ENG-010-1",
+    "moduleId": 53,
+    "old": "• OpenAPI Compatible",
+    "new": "• Proposed OpenAPI 3.1.1 P0 contract: specs/openapi.json. This is a specification, not an implemented or deployed API. Legacy endpoint lists below are roadmap items; the P0 contract explicitly supersedes them for supported operations.",
+    "reason": "Endpoint-список не определяет usable schemas, scopes, pagination, token lifecycle или ошибки."
+  },
+  {
+    "id": "ENG-010-2",
+    "moduleId": 54,
+    "old": "# Registration",
+    "new": "# Registration\n\nP0 decision: registration, authentication, MFA and recovery are delegated to a selected OIDC provider using Authorization Code + PKCE. The custom endpoint catalogue below is retained as historical planning, not the P0 API. EDHT validates access tokens, provider session status and local account state. No server upload of biometric templates. See docs/engineering/auth-and-qr.md.",
+    "reason": "Endpoint-список не определяет usable schemas, scopes, pagination, token lifecycle или ошибки."
+  },
+  {
+    "id": "ENG-011-1",
+    "moduleId": 12,
+    "old": "is_verified",
+    "new": "file_safety_state (quarantined / available / rejected / deleted; malware scanning does not verify clinical content or issuer authenticity)",
+    "reason": "is_verified не различает antivirus, authenticity и клиническую верификацию."
+  },
+  {
+    "id": "ENG-012-1",
+    "moduleId": 33,
+    "old": "• Permanent Access",
+    "new": "• Permanent Access — excluded from P0; P0 grants require explicit scoped consent, 60–86 400-second expiry, atomic one-time use and revocation. No offline or emergency override grants in P0.",
+    "reason": "Бессрочный доступ конфликтует с минимизацией и моделью P0."
+  },
+  {
+    "id": "CL-003",
+    "moduleId": 32,
+    "old": "Full Medical Record",
+    "new": "Only specifically authorized record segments for the verified recipient, purpose and duration; sensitive-data restrictions remain in force.",
+    "reason": "Роль больницы не даёт универсального доступа."
+  },
+  {
+    "id": "CL-004",
+    "moduleId": 33,
+    "old": "✓ Full Medical Record",
+    "new": "✓ Specifically authorized record segments only; verify recipient, purpose, duration and sensitive-data policy on every access.",
+    "reason": "Полная карта не должна открываться лишь по роли."
+  },
+  {
+    "id": "CL-005",
+    "moduleId": 36,
+    "old": "# AI Recommendations\n\n• Continue Treatment\n\n• Consult Doctor\n\n• Change Dosage\n\n• Stop Medicine\n\n• Emergency Action",
+    "new": "# Clinician Review Outputs\n\n• Evidence-linked interaction information\n\n• Missing-data and uncertainty warnings\n\n• Recommendation to contact a qualified clinician\n\n• Proposed review tasks for authorized clinicians\n\n• Access to the approved emergency pathway\n\nAI must not independently instruct a patient to start, stop, substitute or change a medicine or dose. Treatment decisions require an authorized clinician and an appropriately validated and regulated workflow.",
+    "reason": "Самостоятельные изменение/отмена терапии создают прямой клинический риск."
+  },
+  {
+    "id": "CL-006",
+    "moduleId": 36,
+    "old": "No Interaction",
+    "new": "No interaction identified in the checked sources; incomplete data, unsupported medicines and unavailable checks must be displayed separately.",
+    "reason": "Отсутствие найденного взаимодействия не доказывает безопасность."
+  },
+  {
+    "id": "CL-007",
+    "moduleId": 148,
+    "old": "Parent access supported.",
+    "new": "Parent or guardian access requires verified authority and jurisdiction-aware, purpose-limited permissions. Adolescent confidentiality, assent and data-element restrictions apply as defined in Modules 4596, 4919 and 5172.",
+    "reason": "Снять безусловный родительский доступ; сохранить поздние подробные ограничения."
+  },
+  {
+    "id": "CL-008",
+    "moduleId": 227,
+    "old": "Consent can be revoked at any time.",
+    "new": "Consent-based future access can be withdrawn through a documented workflow. Revocation must be enforced on subsequent online access. Previously downloaded, printed or offline copies cannot be remotely guaranteed to disappear; these limits and any independent lawful retention obligations must be explained.",
+    "reason": "Уточнить технические и правовые пределы отзыва."
+  },
+  {
+    "id": "CL-009",
+    "moduleId": 31,
+    "old": "Hospital Receives Emergency Profile",
+    "new": "Delivery attempted to an authorized participating hospital; delivery and acknowledgement are shown separately and never assumed",
+    "reason": "Схема не должна ложно гарантировать получение помощи."
+  },
+  {
+    "id": "CL-010",
+    "moduleId": 37,
+    "old": "Extracts medical information from uploaded documents, prescriptions and images.",
+    "new": "Extracts draft medical information from uploaded documents, prescriptions and images. Preserve the original, source location, extraction version and review status. Unverified extracted values must not automatically become confirmed diagnoses, active prescriptions or emergency facts.",
+    "reason": "Ошибка OCR не должна становиться подтверждённым клиническим фактом."
+  },
+  {
+    "id": "CL-011",
+    "moduleId": 412,
+    "old": "Assists in calculating prescribed doses.",
+    "new": "A gated clinical function for checking an authorized prescription. Requires validated calculations, explicit dose/concentration/route units, current patient context and clinician verification. Missing or ambiguous inputs block calculation; the documentation does not authorize clinical use.",
+    "reason": "Нужны единицы, ограничения входов и отдельная валидация калькулятора."
+  },
+  {
+    "id": "CL-012",
+    "moduleId": 428,
+    "old": "Provides multilingual translation of medication information.",
+    "new": "Provides clearly labelled draft translations of medication information alongside the original. Preserve active ingredients, numbers, units, negations and dates; clinical use requires an appropriate verification workflow. A translation does not establish cross-border prescription validity.",
+    "reason": "Перевод не должен менять дозу и правовой статус рецепта."
+  },
+  {
+    "id": "CL-013",
+    "moduleId": 866,
+    "old": "Manages insulin therapy for children.",
+    "new": "Records clinician-authorized insulin therapy for children. It must not independently compute, recommend or execute dose changes without separately validated and appropriately regulated functionality.",
+    "reason": "Детский инсулин требует явного разделения записи и управления терапией."
+  },
+  {
+    "id": "CL-014",
+    "moduleId": 867,
+    "old": "Connects supported insulin pumps.",
+    "new": "Imports read-only data from explicitly supported insulin pumps for the initial scope. Changing pump settings or delivering therapy is excluded until a separate validated and appropriately regulated device-control workflow is approved.",
+    "reason": "Не допускать неявного управления медицинским устройством."
+  },
+  {
+    "id": "CL-015",
+    "moduleId": 1147,
+    "old": "Suggests dosage adjustments.",
+    "new": "A gated clinical decision-support capability for authorized clinicians to review possible dosage adjustments. No change is executed or presented as a patient instruction without clinician authorization, clinical validation and the applicable regulatory assessment.",
+    "reason": "Поздний запрет автономной терапии должен применяться и к раннему AI advisor."
+  },
+  {
+    "id": "CL-016",
+    "moduleId": 1153,
+    "old": "Generates prescription drafts.",
+    "new": "Generates clearly marked prescription drafts for an authorized clinician within a validated and appropriately regulated workflow. A draft is not an active or legally valid prescription until the required review, identity, signature and jurisdiction-specific checks are completed.",
+    "reason": "AI-черновик нельзя выдавать за действующий рецепт."
+  },
+  {
+    "id": "CL-017",
+    "moduleId": 1206,
+    "old": "Assists emergency triage.",
+    "new": "A gated clinician-facing triage support capability requiring task-specific clinical validation and regulatory assessment. AI does not independently determine disposition, deny care or delay direct emergency assessment.",
+    "reason": "Сортировка не должна автономно определять объём экстренной помощи."
+  },
+  {
+    "id": "CL-018",
+    "moduleId": 1313,
+    "old": "Suggests therapeutic alternatives.",
+    "new": "Organizes evidence about possible therapeutic alternatives for authorized clinician or pharmacist review. Same ingredient or international availability does not establish therapeutic interchangeability; no autonomous substitution is permitted.",
+    "reason": "Нельзя приравнять generic/available к терапевтической взаимозаменяемости."
+  },
+  {
+    "id": "CL-019",
+    "moduleId": 1347,
+    "old": "Provides AI support without Internet.",
+    "new": "A future offline capability subject to separate clinical and security validation. Show source/model versions, last synchronization and data expiry. Offline output must not imply current knowledge, immediate revocation or guaranteed emergency assistance.",
+    "reason": "Офлайн-кэш создаёт риски устаревания и отзыва."
+  },
+  {
+    "id": "CL-020",
+    "moduleId": 5168,
+    "old": "→ Clinician-defined Risk Stratification",
+    "new": "→ Individualized Clinical Risk Formulation and Safety/Needs Assessment",
+    "reason": "NICE NG225 не рекомендует глобальную стратификацию риска для прогноза/выписки; требуется индивидуальная оценка."
+  },
+  {
+    "id": "CL-021",
+    "moduleId": 5168,
+    "old": "Automated scoring never substitutes for qualified crisis assessment or emergency intervention.",
+    "new": "Automated scoring never substitutes for qualified crisis assessment or emergency intervention. Risk scores or global low/medium/high categories must not be used to predict future suicide or repeated self-harm, determine access to treatment or authorize discharge.",
+    "reason": "Уточнить назначение запрета; сохранить клиническую оценку специалистом."
+  },
+  {
+    "id": "CL-029",
+    "moduleId": 30,
+    "old": "• HIPAA Consent",
+    "new": "• HIPAA applicability and authorization workflow where legally required; distinguish consent from other lawful permissions",
+    "reason": "HIPAA применим по роли организации; единый consent недостаточен."
+  },
+  {
+    "id": "CL-030",
+    "moduleId": 758,
+    "old": "AI evaluates obstetric emergency symptoms.",
+    "new": "A future clinician-facing function for organizing obstetric emergency information, subject to clinical validation and regulatory assessment. It must not exclude an emergency, delay qualified assessment or autonomously determine treatment.",
+    "reason": "Оценка акушерских экстренных симптомов требует ограничений недопущения задержки помощи."
+  },
+  {
+    "id": "ED-005",
+    "moduleId": 4,
+    "old": "MedicalPassport/",
+    "new": "EDHT/\n\nThis repository currently contains sources/, docs/, specs/, config/, data/, scripts/ and tests/. The application folders below are future implementation proposals, not existing code.",
+    "reason": "Точное название и фактическая структура нового репозитория."
+  },
+  {
+    "id": "ED-006",
+    "moduleId": 4,
+    "old": ".github/\n\nworkflows/",
+    "new": ".gitlab-ci.yml\n\n.gitlab/merge_request_templates/",
+    "reason": "Конфигурация GitLab вместо отсутствующих GitHub workflows."
+  },
+  {
+    "id": "PROD-001",
+    "moduleId": 100,
+    "old": "Version 1.0 Complete",
+    "new": "Documentation compilation only; application implementation and clinical validation are not established. Audited specification edition 2026-09-13.",
+    "reason": "Полнота компиляции не означает готовность продукта."
+  },
+  {
+    "id": "PROD-007",
+    "moduleId": 56,
+    "old": "Required Fields\n\n• Blood Group\n\n• Rh Factor",
+    "new": "Optional Medical Facts\n\n• Blood Group and Rh Factor are optional; unknown is valid. Preserve source and verification status. Never force a patient to invent missing values.",
+    "reason": "Обязательные неизвестные медицинские значения не должны провоцировать выдуманные факты."
+  },
+  {
+    "id": "PROD-009-89",
+    "moduleId": 89,
+    "old": "• Zero Data Loss",
+    "new": "• Proposed pilot recovery targets: RPO ≤24 hours; RTO ≤8 hours, verified by an independent restore. Measure and report the residual loss window; no zero-loss guarantee.",
+    "reason": "Устранено противоречие с ненулевым RPO."
+  },
+  {
+    "id": "ED-007",
+    "moduleId": 89,
+    "old": "Medical Records\n\n10 Years\n\nAudit Logs\n\n10 Years\n\nAI Logs\n\n2 Years\n\nQR Logs\n\n2 Years\n\nSystem Logs\n\n1 Year\n\nBackups\n\n7 Years",
+    "new": "Define one approved purpose- and jurisdiction-specific retention policy before real data. Medical content follows the approved account lifecycle and applicable obligations. Proposed pilot baseline: technical logs without medical content 30 days; minimal access audit 90 days; encrypted backup horizon 30 days. AI is excluded from P0. Apply deletion and revocation records before restored data becomes accessible. See docs/engineering/operations.md.",
+    "reason": "Единая политика вместо противоречивых необоснованных сроков."
+  },
+  {
+    "id": "ED-008",
+    "moduleId": 90,
+    "old": "# Availability Targets",
+    "new": "# Availability Targets\n\nThe percentages below are unvalidated future targets, not measured performance or SLA. Proposed pilot target: 99.5% per calendar month, including planned downtime, measured with the defined synthetic profile-read scenario. SOS is outside P0.",
+    "reason": "Указан статус обещаний доступности и измеримая цель пилота."
+  },
+  {
+    "id": "ED-009",
+    "moduleId": 90,
+    "old": "• 99.99% Availability",
+    "new": "• Pilot availability target 99.5%, pending measured acceptance; higher targets require separate evidence and infrastructure.",
+    "reason": "Согласовано с новой архитектурой P0."
+  },
+  {
+    "id": "ED-010",
+    "moduleId": "*",
+    "old": "MVP Foundation:",
+    "new": "Future specialty foundation (not the global P0 release):",
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "id": "ED-011",
+    "moduleId": 100,
+    "old": "• EHDS Compliance",
+    "new": "• EHDS applicability, phased obligations and interoperability assessment; conformity is not established.",
+    "reason": "Проверка применимости вместо неподтверждённого соответствия."
+  },
+  {
+    "id": "ED-012",
+    "moduleId": 100,
+    "old": "• WHO Compatibility",
+    "new": "• Identify a specific applicable WHO publication or programme and evaluate requirements; no generic WHO approval or compatibility is claimed.",
+    "reason": "WHO Compatibility не обозначает подтверждённого стандарта или одобрения."
+  },
+  {
+    "id": "ED-013",
+    "moduleId": 33,
+    "old": "Permanent\n\n↓\n\nUntil Revoked by User",
+    "new": "Permanent\n\nExcluded from P0. Any later delegation requires a separately specified, reviewable and revocable policy; P0 bearer sharing always expires.",
+    "reason": "Устранено второе противоречие о бессрочном QR."
+  },
+  {
+    "id": "ED-014",
+    "moduleId": 33,
+    "old": "Temporary\n\n↓\n\n1 Hour\n\n3 Hours\n\n12 Hours\n\n24 Hours\n\n7 Days\n\n30 Days",
+    "new": "Temporary\n\nP0: one successful use, 60–86 400-second expiry; 15-minute default grant, bounded by consent expiry. Longer institutional sharing is a separate future workflow.",
+    "reason": "Сроки QR согласованы с контрактом P0."
+  }
+]

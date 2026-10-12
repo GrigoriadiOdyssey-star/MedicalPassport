@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-19",
+  "batch": 88,
+  "family": "core-travel-regulatory-information",
+  "owner": "CAP-TRAVEL",
+  "ids": [
+    427,
+    479,
+    496
+  ],
+  "decision_sha256": "a223e4c7f406bce0a97a215b8b6193f089af26baefcde245969ad397cbd92a04",
+  "source_hashes": {
+    "427": "a88534460e2f2714727f4863e69697ca98957ac7f0e51979dd1b6357f8df6e24",
+    "479": "0fe2a3ca94cd06d476d1bc083fff2307c699fa6362096e3171fd1a1644bf77b9",
+    "496": "8018eba5980e03b5b75e073e0da2474296152bcd9b945d44e0cc2bac8eef525a"
+  }
+}

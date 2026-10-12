@@ -1,0 +1,1 @@
+{"name":"edht-cloud-runtime","version":"0.1.0","private":true,"type":"module","engines":{"node":">=24 <25"},"dependencies":{"qrcode":"1.5.4"}}

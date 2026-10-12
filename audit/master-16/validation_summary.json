@@ -1,0 +1,32 @@
+{
+  "pass": "MASTER-16",
+  "targeted_clusters": 18,
+  "targeted_tests_per_cluster": 8,
+  "readiness_tests": 6,
+  "full_runs": [
+    {
+      "name": "MILESTONE40",
+      "passed": 160,
+      "failed": 0,
+      "path": "audit/master-16/validation/MILESTONE40.txt",
+      "sha256": "3ff6fc87b06d7ff800ce10fef5f13d6293919672abfb5837dd094121f7f71caa"
+    },
+    {
+      "name": "FINAL",
+      "passed": 166,
+      "failed": 0,
+      "path": "audit/master-16/validation/FINAL.txt",
+      "sha256": "4655b2d22a6fc2bd6fcd5108876125f5f15c5ce6118d17d00b37c6e39d1e94af"
+    }
+  ],
+  "failed_final": 0,
+  "recovered_build_interruptions": [
+    {
+      "source_id": 1439,
+      "reason": "Source purpose contains two words and correctly failed the generic extraction threshold",
+      "resolution": "Explicitly retained the exact source sentence Supports epidemiologists.; resumed the same frozen batch without recounting earlier IDs"
+    }
+  ],
+  "historical_test_policy": "One obsolete MASTER09 baseline-diff test excluded by inherited runner; replacement hash/immutability guards remain enabled. No historical test modified.",
+  "scope": "Documentation, provenance, bounded schema and readiness gating. No application, production security or clinical acceptance claim."
+}

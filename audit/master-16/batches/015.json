@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-16",
+  "batch": 15,
+  "family": "device-integration-profiles",
+  "owner": "CAP-DEVICES",
+  "ids": [
+    4139,
+    4140,
+    4141,
+    4492
+  ],
+  "decision_sha256": "3644e33a63bef90672d00747ed97b29ec48d3f87af259c4789d81c826f7f9831",
+  "source_hashes": {
+    "4139": "5f7571960e9ca40ba7dd20b8d453749d25402adf6b2ffd3bf90004d7923a2dd4",
+    "4140": "78f77c94fe0dc651347dde07b546e31505f7991a81ea05516db8fa6f1af69b33",
+    "4141": "4cebb58a2f08c20e8070415fefba541a47af1efde73befbae85c9ce644370fd9",
+    "4492": "0f7057340ec2a560ceb1d6978f6320ac5ceb0a38105b5fb551922c8e4dcbc1e7"
+  }
+}

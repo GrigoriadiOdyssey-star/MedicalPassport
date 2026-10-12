@@ -1,0 +1,37 @@
+{
+  "pass": "MASTER-15",
+  "batch": 13,
+  "family": "medication-reference-exposure",
+  "owner": "CAP-MEDICATION",
+  "ids": [
+    156,
+    157,
+    403,
+    410,
+    413,
+    414,
+    415,
+    421,
+    435,
+    436,
+    437,
+    438,
+    439
+  ],
+  "decision_sha256": "96910f68b987fcf5627a3ddf354f851fc9548e6e83fc634501f074529e596b8a",
+  "source_hashes": {
+    "156": "7ee18ced660094e6dc0b9a7e96c38b0daca58cabe2b217c84f4f5a034732572b",
+    "157": "35fcbd11ae6c005ad756bff84a98ab12f43dbe4df6131709b7021be9c2747b72",
+    "403": "bdad2980b19a496103fb873db349512233a69ac30d0dafd830a9ef4653b81e68",
+    "410": "c150b22eb5728a5dc4d210a89304c3975a1e4cf9a0a21d9c1e1413aea6942283",
+    "413": "58b5c006e1c98f28cbc6430ddf954042457c67e8d9f2fffef2278de8acf42dbf",
+    "414": "776658ee5d3a63a003cd6b25defec70e5b057c83d075c69ecbbf2fbbd70c3003",
+    "415": "b2ec9cd629cad35898876b5fb33558b8c610a3fbfccb5f45fb98717a393b2714",
+    "421": "2d9eddc1614107846b1a8e7d82c433111508fc563bf54eb6bddfac1a01e97272",
+    "435": "d4f0410e3fb65dbac50144be06b38d7dc43f19a80f4315ff9364c79411b8aac9",
+    "436": "37408e212d1357eb2f9691ec3a4502cffc90a8dfd85dad73fa3b7492d7ce9bd9",
+    "437": "68ad88e3cf61b61312288cb47835013ec1c7fa60b772817edb9dfcd78a10b3d3",
+    "438": "12290b8adac64e964430907dd531aad97563858bc747d43ce1837805dee95ed7",
+    "439": "6597897238ed1178886f0076438ba05a4f8aff2706979730f7dff8beb18ebfc9"
+  }
+}

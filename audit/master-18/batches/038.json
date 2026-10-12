@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 38,
+  "family": "ai-crossborder-care-information",
+  "owner": "CAP-TRAVEL",
+  "ids": [
+    1350,
+    1428,
+    1429,
+    1899
+  ],
+  "decision_sha256": "0d95a9503b20bd8874bbe2ed9b85e9f4059e481c5732a9eaecc8e94f45e9e928",
+  "source_hashes": {
+    "1350": "f55777c0cb58ea7da5e27f1837432a05df85529660846e84e18d6f151160114f",
+    "1428": "004ab8f3f1b2798722a16aa193648ef097888728ffbd769d3928383510eeb679",
+    "1429": "e22c70b7cd1456a17e2b18fa935b7300c2dafe505f216f6d34937bea1e983dc3",
+    "1899": "594ea38f65d1c6463c74630ebf66ea77f957592f9fecfeb0ee3959ab469bf9f6"
+  }
+}

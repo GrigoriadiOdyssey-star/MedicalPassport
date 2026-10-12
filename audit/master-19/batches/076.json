@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 76,
+  "family": "remaining-dietitian-consultation",
+  "owner": "CAP-TELEMEDICINE",
+  "ids": [
+    297
+  ],
+  "decision_sha256": "1ca5a148e18f31571aebb5bf9536861c0540ebb0bedfc90b427a6caf7f775429",
+  "source_hashes": {
+    "297": "fb2cec50eb50c2aaba1b0165c41e979c149012e9f4444e5cd2edd3c938b6aace"
+  }
+}

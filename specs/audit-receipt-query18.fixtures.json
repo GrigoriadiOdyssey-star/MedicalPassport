@@ -1,0 +1,38 @@
+{
+  "synthetic_only": true,
+  "positive": [
+    {
+      "kind": "receipt_query_page",
+      "schema_version": 1,
+      "grant_reference": "grant-fixture",
+      "snapshot_sequence": 2,
+      "items": [
+        {
+          "receipt_reference": "receipt-fixture",
+          "receipt_sequence": 1,
+          "occurred_at_ms": 100,
+          "committed_at_ms": 105,
+          "action": "ALLERGY_VIEW_ATTEMPT",
+          "outcome": "COMMITTED",
+          "actor_role": "CLINICIAN",
+          "actor_reference": "actor-fixture"
+        }
+      ],
+      "next_cursor": null
+    },
+    {
+      "kind": "receipt_query_page",
+      "schema_version": 1,
+      "grant_reference": "grant-fixture",
+      "snapshot_sequence": 0,
+      "items": [],
+      "next_cursor": null
+    }
+  ],
+  "error": {
+    "kind": "receipt_query_error",
+    "schema_version": 1,
+    "code": "NOT_FOUND",
+    "request_reference": "request-fixture"
+  }
+}

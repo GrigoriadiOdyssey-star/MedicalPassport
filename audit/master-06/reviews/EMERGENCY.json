@@ -1,0 +1,402 @@
+{
+  "pass": "MASTER-06",
+  "domain": "EMERGENCY",
+  "parent_checkpoint": "46539f4beb5cc79e3ff35f9d6a6f46086d3390b3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1554 reviewed IDs.",
+  "count": 16,
+  "reviews": [
+    {
+      "original_id": 831,
+      "title": "Pediatric Emergency Registry",
+      "body": "# Pediatric Emergency Registry\n\nStores emergency medical events.\n\nSupports\n\n• Fever\n\n• Seizures\n\n• Trauma\n\n• Poisoning\n\n• Hospital Admissions\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4fb5a6dfb9fc672fb200aa20067fbe37f95d2b3a80dabdaf08de56e052fc2dc5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 33329
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Fever",
+        "Seizures",
+        "Trauma",
+        "Poisoning",
+        "Hospital Admissions"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1068,
+      "title": "Pediatric Eye Emergency Module",
+      "body": "Supports pediatric ophthalmic emergencies.\n\nIncludes\n\n• Eye Injury\n• Chemical Burns\n• Acute Vision Loss\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c34c79db4fb9d067de2486da74dfdcc75e275b0788616c322bf721fe11b4b0e4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38305
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Eye Injury",
+        "Chemical Burns",
+        "Acute Vision Loss"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1088,
+      "title": "Pediatric Airway Emergency Module",
+      "body": "# Pediatric Airway Emergency Module\n\nSupports airway emergencies.\n\nIncludes\n\n• Airway Obstruction\n\n• Foreign Body\n\n• Emergency Protocols\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3e2de97979f2c663b399f2097d9101cc13a25f16154896d4832590410ee44284",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38674
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Airway Obstruction",
+        "Foreign Body",
+        "Emergency Protocols"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1108,
+      "title": "Pediatric Dermatology Emergency Module",
+      "body": "Supports dermatologic emergencies.\n\nIncludes\n\n• Stevens–Johnson Syndrome\n• Toxic Epidermal Necrolysis\n• Severe Allergic Reactions\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4adc910480fe71f953638658fa6381eae54fca55d2b8311ed21f019d525fc0ca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39066
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Stevens–Johnson Syndrome",
+        "Toxic Epidermal Necrolysis",
+        "Severe Allergic Reactions"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1131,
+      "title": "Pediatric Intensive Care Surgical Registry",
+      "body": "# Pediatric Intensive Care Surgical Registry\n\nTracks postoperative ICU patients.\n\nSupports\n\n• Ventilation\n\n• Monitoring\n\n• Complications\n\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9b0aa1850011009affba84531596725796598fbb134743097fadcae47c8e6d57",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39506
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Ventilation",
+        "Monitoring",
+        "Complications",
+        "Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1138,
+      "title": "Pediatric Surgical Emergency Module",
+      "body": "# Pediatric Surgical Emergency Module\n\nSupports emergency pediatric surgery.\n\nIncludes\n\n• Acute Abdomen\n\n• Trauma\n\n• Intestinal Obstruction\n\n• Emergency Protocols\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a4818682544156674f1f3bfa9608c8184e70b5c2f90f8f793b6091c51bf7a0d5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39654
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Acute Abdomen",
+        "Trauma",
+        "Intestinal Obstruction",
+        "Emergency Protocols"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 2339,
+      "title": "Pediatric Emergency Module",
+      "body": "Supports pediatric emergency care.\n\nSupports\n\n• Fever\n\n• Seizures\n\n• Trauma\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "005b1f5a5509cadeed531a2b4814c267826440777bafedfbf6e051334b2ef7c9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 62220
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Fever",
+        "Seizures",
+        "Trauma"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 3007,
+      "title": "Pediatric Emergency Module",
+      "body": "Supports emergency pediatric care.\n\nSupports\n\n• Fever\n• Dehydration\n• Seizures\n• Trauma\n• Respiratory Failure\n• Pediatric Resuscitation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1088185b131845708aace2dfa593701e9b7b2ec014443d9ff27f6ae0494f3435",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 74529
+      },
+      "verdict": "Emergency specialty profiles preserve clinician-led urgency, source event/triage/transfer provenance and minimum-necessary passport disclosure. Historical templates and device connectivity do not establish a staffed response service or autonomous diagnosis/treatment. Patient instability must not wait for AI, data completion or administrative clearance.",
+      "feature_labels": [
+        "Fever",
+        "Dehydration",
+        "Seizures",
+        "Trauma",
+        "Respiratory Failure",
+        "Pediatric Resuscitation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4098,
+      "title": "Pediatric Allergy Emergency & Action Plan Module",
+      "body": "Centralizes individualized emergency allergy plans.\n\nSupports\n\n• Anaphylaxis Plans\n• Medication Instructions\n• Trigger Avoidance\n• School Plans\n• Caregiver Instructions\n• Emergency Contacts\n• Cross-border Access\n\nProvides multilingual emergency information through the Medical Passport.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "46fde2c430a7895e795a968edbdbdfa1057880622f40e5dc41c833d2d5ce6f32",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 96091
+      },
+      "verdict": "Emergency allergy instructions require identifiable clinician/version, applicability and minimal school/caregiver scope; multilingual access is not blanket disclosure or a new prescription.",
+      "feature_labels": [
+        "Anaphylaxis Plans",
+        "Medication Instructions",
+        "Trigger Avoidance",
+        "School Plans",
+        "Caregiver Instructions",
+        "Emergency Contacts",
+        "Cross-border Access"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4678,
+      "title": "Pediatric Prehospital Trauma & Emergency Transfer Module",
+      "body": "Purpose:\nPreserve critical clinical information from the point of injury through emergency transport and hospital admission.\n\nCore Functions:\n• Injury Time\n• Injury Location Context\n• Mechanism\n• Initial Clinical Status\n• Vital Signs\n• Neurological Status\n• Airway Intervention\n• Respiratory Support\n• Circulatory Support\n• Immobilization\n• Medication\n• Procedures\n• Transport Mode\n• Receiving Facility\n• Transfer Timeline\n• Handover Documentation\n\nInteroperability:\nSupports structured transfer of clinically relevant information between emergency services and receiving institutions.\n\nMedical Passport Integration:\nAuthorized emergency information may provide critical diagnoses, allergies, medications and implanted-device data.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "5d53f593b8cc33bfdd95e81526dc4ca714e6e27dbc52a222a99c2f94071680db",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 111544
+      },
+      "verdict": "Transfer retains point-of-injury times, interventions and sending/receiving identities with acknowledgement, reconciliation and clock uncertainty; transport location is sensitive and distinct from clinical record authority.",
+      "feature_labels": [
+        "Injury Time",
+        "Injury Location Context",
+        "Mechanism",
+        "Initial Clinical Status",
+        "Vital Signs",
+        "Neurological Status",
+        "Airway Intervention",
+        "Respiratory Support",
+        "Circulatory Support",
+        "Immobilization",
+        "Medication",
+        "Procedures",
+        "Transport Mode",
+        "Receiving Facility",
+        "Transfer Timeline",
+        "Handover Documentation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4741,
+      "title": "Pediatric Ocular Trauma & Emergency Ophthalmology Module",
+      "body": "Purpose:\nProvide rapid structured management of pediatric ocular trauma and emergency eye conditions.\n\nCore Functions:\n• Injury Event\n• Injury Mechanism\n• Visual Acuity\n• External Eye Injury\n• Corneal Injury\n• Globe Injury\n• Orbital Injury\n• Foreign Body\n• Chemical Exposure\n• Imaging\n• Emergency Procedures\n• Surgery\n• Medication\n• Complication Monitoring\n• Visual Recovery\n\nEmergency Workflow:\nPresentation → Immediate Assessment → Imaging/Examination → Intervention → Follow-up → Visual Rehabilitation.\n\nIntegrations:\n• Emergency Medicine\n• Ophthalmology\n• Trauma\n• Radiology\n• Surgery\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "2654e33dbb3401f9142b954ef07cb90123773d112edfe9c2d03c816eec720e7a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 113974
+      },
+      "verdict": "Emergency pathway diagrams are documentation flow, not mandatory sequencing that could delay clinician-directed urgent care for imaging or administrative steps.",
+      "feature_labels": [
+        "Injury Event",
+        "Injury Mechanism",
+        "Visual Acuity",
+        "External Eye Injury",
+        "Corneal Injury",
+        "Globe Injury",
+        "Orbital Injury",
+        "Foreign Body",
+        "Chemical Exposure",
+        "Imaging",
+        "Emergency Procedures",
+        "Surgery",
+        "Medication",
+        "Complication Monitoring",
+        "Visual Recovery",
+        "Emergency Medicine",
+        "Ophthalmology",
+        "Trauma",
+        "Radiology",
+        "Surgery"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4780,
+      "title": "Pediatric Dental Infection & Odontogenic Emergency Module",
+      "body": "Purpose:\nSupport rapid assessment and coordinated management of pediatric odontogenic infection and dental emergencies.\n\nCore Functions:\n• Dental Pain\n• Local Infection\n• Abscess\n• Facial Swelling\n• Fever Context\n• Tooth Origin\n• Imaging\n• Airway Risk Context\n• Medication\n• Antibiotic Exposure\n• Drainage\n• Endodontic Procedure\n• Extraction\n• Hospital Referral\n• Treatment Response\n• Complication Surveillance\n\nIntegrations:\n• Dentistry\n• Emergency Medicine\n• Maxillofacial Surgery\n• ENT\n• Infectious Disease\n• Pharmacy\n\nSafety:\nPotentially severe spreading infection or airway involvement can enter clinician-defined escalation workflows.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "1908610080f0cb187dab86d14c274394a45f9ce8c33f3665a7128ce3fc4b8880",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 115563
+      },
+      "verdict": "Spreading odontogenic infection/airway risk has a clinician-defined escalation route; automated classification cannot rule out airway compromise or independently prescribe antibiotics.",
+      "feature_labels": [
+        "Dental Pain",
+        "Local Infection",
+        "Abscess",
+        "Facial Swelling",
+        "Fever Context",
+        "Tooth Origin",
+        "Imaging",
+        "Airway Risk Context",
+        "Medication",
+        "Antibiotic Exposure",
+        "Drainage",
+        "Endodontic Procedure",
+        "Extraction",
+        "Hospital Referral",
+        "Treatment Response",
+        "Complication Surveillance",
+        "Dentistry",
+        "Emergency Medicine",
+        "Maxillofacial Surgery",
+        "ENT",
+        "Infectious Disease",
+        "Pharmacy"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4798,
+      "title": "Pediatric Dental Emergency Passport & Implant/Device Registry Module",
+      "body": "Purpose:\nPreserve clinically important dental, orthodontic and maxillofacial information for emergency and cross-provider care.\n\nPassport Data:\n• Major Dental Conditions\n• Dental Trauma History\n• Maxillofacial Surgery\n• Orthodontic Appliances\n• Dental Implants where applicable\n• Craniofacial Devices\n• Allergies\n• Critical Medication\n• Bleeding Risk Context\n• Immunosuppression Context\n• Relevant Systemic Disease\n• Special Communication Needs\n\nDevice Registry:\n• Appliance Type\n• Implant/Device Type\n• Placement Date\n• Anatomical Location\n• Manufacturer where applicable\n• Current Status\n• Removal/Replacement History\n\nCross-Border Functions:\n• Multilingual Summary\n• Standardized Terminology\n• Source Verification\n• Authorized Emergency Access\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "1b7faaa7292bcb7eafbf68394cacef0fb57c72dde97ba96f2fa417eae2a360ff",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 116207
+      },
+      "verdict": "Dental/craniofacial device passport retains placement/removal/replacement/current status and communication/bleeding-risk context. It references device-owner facts without creating a second authoritative registry.",
+      "feature_labels": [
+        "Major Dental Conditions",
+        "Dental Trauma History",
+        "Maxillofacial Surgery",
+        "Orthodontic Appliances",
+        "Dental Implants where applicable",
+        "Craniofacial Devices",
+        "Allergies",
+        "Critical Medication",
+        "Bleeding Risk Context",
+        "Immunosuppression Context",
+        "Relevant Systemic Disease",
+        "Special Communication Needs",
+        "Appliance Type",
+        "Implant/Device Type",
+        "Placement Date",
+        "Anatomical Location",
+        "Manufacturer where applicable",
+        "Current Status",
+        "Removal/Replacement History",
+        "Multilingual Summary",
+        "Standardized Terminology",
+        "Source Verification",
+        "Authorized Emergency Access"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4909,
+      "title": "Pediatric Ovarian Torsion & Gynecological Emergency Module",
+      "body": "Purpose:\nSupport rapid structured coordination of suspected or confirmed pediatric ovarian torsion and other acute gynecological presentations.\n\nCore Functions:\n• Acute Pain\n• Symptom Onset\n• Laterality\n• Clinical Assessment\n• Vital Signs\n• Laboratory Context\n• Ultrasound\n• Doppler Context\n• Surgical Consultation\n• Procedure\n• Ovarian Preservation Context\n• Pathology where applicable\n• Postoperative Monitoring\n• Recurrence Risk\n• Follow-up\n\nEmergency Workflow:\nPresentation → Assessment → Imaging → Specialist Review → Intervention → Follow-up.\n\nSafety:\nThe platform supports escalation but does not use automated rules to exclude torsion.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "964fdc105c54d6d7e361817a3cef3489b079c3167674e88887f75823f5364d82",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 120790
+      },
+      "verdict": "Preserve explicit no-automated-rule-out torsion safeguard, laterality and onset. Imaging workflow labels cannot delay urgent specialist assessment.",
+      "feature_labels": [
+        "Acute Pain",
+        "Symptom Onset",
+        "Laterality",
+        "Clinical Assessment",
+        "Vital Signs",
+        "Laboratory Context",
+        "Ultrasound",
+        "Doppler Context",
+        "Surgical Consultation",
+        "Procedure",
+        "Ovarian Preservation Context",
+        "Pathology where applicable",
+        "Postoperative Monitoring",
+        "Recurrence Risk",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4943,
+      "title": "Pediatric Testicular Torsion, Acute Scrotum & Urological Emergency Module",
+      "body": "Purpose:\nSupport rapid clinical coordination for acute pediatric scrotal and testicular presentations.\n\nCore Functions:\n• Symptom Onset\n• Pain\n• Laterality\n• Examination\n• Associated Symptoms\n• Ultrasound Context\n• Doppler Context\n• Surgical Consultation\n• Procedure\n• Testicular Viability Context\n• Contralateral Procedure Context\n• Postoperative Care\n• Follow-up\n• Long-term Testicular Health\n\nEmergency Workflow:\nPresentation → Immediate Assessment → Specialist Review → Intervention → Follow-up.\n\nSafety:\nAutomated systems must never be used to rule out torsion or delay urgent specialist assessment.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "9191111d1dda33f9ba96f9359a46ee96a2df23cd5c7629a2515e608242fb2922",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 122078
+      },
+      "verdict": "Automated systems cannot rule out torsion or delay urgent assessment. Preserve viability and contralateral procedure context as clinician-recorded outcomes.",
+      "feature_labels": [
+        "Symptom Onset",
+        "Pain",
+        "Laterality",
+        "Examination",
+        "Associated Symptoms",
+        "Ultrasound Context",
+        "Doppler Context",
+        "Surgical Consultation",
+        "Procedure",
+        "Testicular Viability Context",
+        "Contralateral Procedure Context",
+        "Postoperative Care",
+        "Follow-up",
+        "Long-term Testicular Health"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4969,
+      "title": "Pediatric Ocular Trauma & Ophthalmic Emergency Module",
+      "body": "Purpose:\nSupport rapid structured assessment and continuity of care following pediatric eye injury.\n\nCore Functions:\n• Injury Mechanism\n• Laterality\n• Time of Injury\n• Visual Acuity\n• External Injury\n• Anterior Segment\n• Posterior Segment Context\n• Foreign Body Context\n• Chemical Exposure Context\n• Imaging\n• Emergency Procedure\n• Surgery\n• Medication\n• Follow-up\n• Visual Outcome\n\nSafety:\nPotentially sight-threatening presentations enter immediate clinician-defined emergency pathways.\n\nIntegrations:\n• Ophthalmology\n• Emergency Medicine\n• Surgery\n• Radiology\n• Medical Passport\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "ed6a95acdb42e8c08adf85103fd1e97a10c92c47a745a618ad144025a95a8133",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 123090
+      },
+      "verdict": "Laterality, injury time and anterior/posterior segment context extend earlier eye-emergency profiles; sight-threatening presentations require clinician-defined immediate pathways.",
+      "feature_labels": [
+        "Injury Mechanism",
+        "Laterality",
+        "Time of Injury",
+        "Visual Acuity",
+        "External Injury",
+        "Anterior Segment",
+        "Posterior Segment Context",
+        "Foreign Body Context",
+        "Chemical Exposure Context",
+        "Imaging",
+        "Emergency Procedure",
+        "Surgery",
+        "Medication",
+        "Follow-up",
+        "Visual Outcome",
+        "Ophthalmology",
+        "Emergency Medicine",
+        "Surgery",
+        "Radiology",
+        "Medical Passport"
+      ],
+      "date": "2026-09-15"
+    }
+  ]
+}

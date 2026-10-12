@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 37,
+  "family": "ai-professional-communication",
+  "owner": "CAP-TELEMEDICINE",
+  "ids": [
+    1884,
+    1964,
+    1965,
+    1966
+  ],
+  "decision_sha256": "9e7e2f8581fd07a5b68dbcc7131a9f6e487c344d373c296cfe3bf72369125df3",
+  "source_hashes": {
+    "1884": "a16321edef47964140cc10f292150b3e1b6261f73623c2123e7b9ce3d6ace079",
+    "1964": "fa35ae6f40c107ac4b1265fe6946a88847fa5df46e4cc7ca0d81f6a9e5b56351",
+    "1965": "2ab32e1f06c2c4587d29d2b3b08016a751784b2d03bd460f8c865652b1bfb210",
+    "1966": "207a8517e2aca3d7f0cb24e38e5745670fc5c953dbd57088bb99478f538a6ad7"
+  }
+}

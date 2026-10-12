@@ -1,0 +1,203 @@
+name: EDHT stabilization CI
+
+on:
+  push:
+    branches: [main, sync/gitlab-parity-2026-10-12]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: edht-ci-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  source-parity:
+    name: Source parity and history
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify the pinned source and preserved histories
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, pathlib, subprocess
+          record = json.loads(pathlib.Path('.github/gitlab-source.json').read_text())
+          source = record['source_commit']
+          assert source == 'bb31e24076cd0bd688287dae55e9fd3178a5ccc0', 'Source change requires review'
+          for ancestor in (source, record['github_original_main']):
+              subprocess.run(['git', 'merge-base', '--is-ancestor', ancestor, 'HEAD'], check=True)
+          tree = subprocess.check_output(['git', 'rev-parse', source + '^{tree}'], text=True).strip()
+          assert tree == record['source_tree'], 'Source tree mismatch'
+          names = subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', '-z', source]).split(b'\0')
+          assert len([n for n in names if n]) == record['source_tracked_files'], 'Source count mismatch'
+          subprocess.run(['git', 'diff', '--exit-code', source, 'HEAD', '--', '.', ':(exclude).github'], check=True)
+          print(f"Verified {record['source_tracked_files']} source files and both repository histories")
+          PY
+
+  specifications:
+    name: Specifications and immutable audit checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Run every root test with the documented archival compatibility correction
+        run: |
+          set -uo pipefail
+          failed=0
+          commands=('node --import ./.github/ci/audit-compat.mjs --test tests/*.test.mjs .github/ci/*.test.mjs' 'npm run check' 'npm run audit:check' 'npm run gapfill:check' 'npm run pediatric:check' 'npm run domain:check' 'npm run master04:check' 'npm run master05:check' 'npm run master06:check' 'npm run master07:check' 'npm run master08:check' 'npm run readiness08:check')
+          for command in "${commands[@]}"; do
+            echo "::group::$command"
+            if bash -eo pipefail -c "$command"; then
+              printf -- '- PASS: `%s`\n' "$command" >> "$GITHUB_STEP_SUMMARY"
+            else
+              failed=1
+              printf -- '- FAIL: `%s`\n' "$command" >> "$GITHUB_STEP_SUMMARY"
+              echo "::error::$command failed"
+            fi
+            echo '::endgroup::'
+          done
+          exit "$failed"
+
+  application:
+    name: Medical Passport full test suite
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install locked application dependencies without lifecycle scripts
+        working-directory: apps/medical-passport
+        run: npm ci --ignore-scripts
+      - name: Run all application tests
+        working-directory: apps/medical-passport
+        run: npm test
+
+  laboratory:
+    name: Laboratory and MASTER-27 integration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts
+        working-directory: apps/medical-passport
+      - name: Run the GitLab laboratory acceptance set
+        working-directory: apps/medical-passport
+        run: node --test tests/laboratory-production.test.mjs tests/laboratory-extensions.test.mjs tests/laboratory-specialties.test.mjs tests/laboratory-report-attachments.test.mjs tests/laboratory-hardening.test.mjs tests/laboratory-migration-registry.test.mjs tests/laboratory-frontend.test.mjs tests/master27-28-integration.test.mjs tests/master27-28-server-plugin.test.mjs
+
+  database:
+    name: PostgreSQL / ${{ matrix.contract }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        contract: [baseline, runtime, care, ai-consent]
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: edht_ci
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: edht_ci_only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d edht_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    env:
+      PGHOST: 127.0.0.1
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: edht_ci_only
+      PGDATABASE: edht_ci
+      CONTRACT: ${{ matrix.contract }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Check the isolated PostgreSQL service
+        run: |
+          set -euo pipefail
+          command -v psql
+          pg_isready -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE"
+      - name: Apply migrations and exercise the GitLab SQL contracts
+        run: |
+          set -euo pipefail
+          base=apps/medical-passport/supabase
+          psql -X -v ON_ERROR_STOP=1 -f "$base/tests/bootstrap.sql"
+          if [ "$CONTRACT" = baseline ]; then
+            for migration in 20261001000000_document_storage.sql 20261001001000_patient_records.sql 20261001224520_cloud_rpc_and_fk_hardening.sql; do
+              psql -X -v ON_ERROR_STOP=1 -f "$base/migrations/$migration"
+            done
+            psql -X -v ON_ERROR_STOP=1 -f "$base/tests/rls-smoke.sql"
+          else
+            for migration in "$base"/migrations/*.sql; do
+              psql -X -v ON_ERROR_STOP=1 -f "$migration"
+            done
+            case "$CONTRACT" in
+              runtime) contracts=(preview-runtime-rls.sql preview-document-rls.sql document-server-verification-contract.sql preview-reminder-contract.sql rls-smoke.sql) ;;
+              care) contracts=(preview-care-contract.sql) ;;
+              ai-consent) contracts=(preview-assistant-contract.sql qr-consent-contract.sql) ;;
+              *) echo 'Unknown SQL contract' >&2; exit 1 ;;
+            esac
+            for contract in "${contracts[@]}"; do
+              psql -X -v ON_ERROR_STOP=1 -f "$base/tests/$contract"
+            done
+          fi
+          echo "PASS: PostgreSQL 17 $CONTRACT contracts, disposable CI database only" >> "$GITHUB_STEP_SUMMARY"
+
+  acceptance:
+    name: EDHT acceptance gate
+    if: always()
+    needs: [source-parity, specifications, application, laboratory, database]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      CHECK_RESULTS: ${{ toJSON(needs) }}
+    steps:
+      - name: Require every validation job to succeed
+        run: |
+          python3 - <<'PY'
+          import json, os
+          results = json.loads(os.environ['CHECK_RESULTS'])
+          failed = {name: job['result'] for name, job in results.items() if job['result'] != 'success'}
+          for name, job in results.items():
+              print(name + ': ' + job['result'])
+          if failed:
+              raise SystemExit('Acceptance blocked: ' + json.dumps(failed))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('All GitLab-equivalent validation jobs and source/history parity passed with the documented frozen-audit compatibility adapter. This is repository acceptance, not clinical or production certification.\n')
+          PY

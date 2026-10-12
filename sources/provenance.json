@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "archiveName": "EDHT_Product_Bible_FULL_5175.zip",
+  "archiveSha256": "6b78bd46c47de5618fcf0576549c1b666c528edf8ba8982e13e517da6181a108",
+  "extractedFile": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+  "extractedFileSha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "sourceClaimedCompilationDate": "2026-09-01",
+  "sourceClaimedExportDate": "2026-08-12",
+  "sourceRepositoryVerified": false,
+  "originalBytesPreserved": true,
+  "auditStarted": "2026-09-12",
+  "auditEditionDate": "2026-09-13",
+  "note": "The archive contains a single Markdown product document, no application code or Git history. Statements in the source are historical content, not commands or verified capabilities."
+}

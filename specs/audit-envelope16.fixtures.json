@@ -1,0 +1,254 @@
+{
+  "scope": "Synthetic syntax and deterministic integrity examples only; no service execution",
+  "positive": [
+    {
+      "kind": "audit_append",
+      "schema_version": 1,
+      "event_id": "evt_test_1",
+      "request_id": "req_test_1",
+      "tenant_id": "tenant_test",
+      "producer_id": "service_test",
+      "producer_sequence": 1,
+      "actor_reference": "actor_test",
+      "resource_reference": "resource_test",
+      "redacted_change_reference": "",
+      "action": "READ",
+      "outcome": "SUCCEEDED",
+      "policy_reference": "policy_test_v1",
+      "occurred_at_ms": 1789516800000
+    },
+    {
+      "kind": "audit_receipt",
+      "schema_version": 1,
+      "event_id": "evt_test_1",
+      "tenant_id": "tenant_test",
+      "producer_id": "service_test",
+      "receipt_id": "receipt_test",
+      "ingest_sequence": 1,
+      "committed_at_ms": 1789516800010,
+      "body_sha256": "d59a83f0c54d088b14014cc4c7854e6a3abc483f9d2310a2c123a3341e616f69",
+      "chain_sha256": "ef9df60509d4b8ab3101cab4fbd7728a42cf8afef09e58bbf7aa492c7909cec0",
+      "durable": true
+    },
+    {
+      "kind": "audit_error",
+      "schema_version": 1,
+      "request_id": "req_test_1",
+      "code": "AUDIT_UNAVAILABLE"
+    }
+  ],
+  "negative": [
+    {
+      "name": "clinical payload in routine audit",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 1,
+        "actor_reference": "actor_test",
+        "resource_reference": "resource_test",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000,
+        "clinical_text": "synthetic"
+      }
+    },
+    {
+      "name": "caller claims receipt",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 1,
+        "actor_reference": "actor_test",
+        "resource_reference": "resource_test",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000,
+        "receipt_id": "forged"
+      }
+    },
+    {
+      "name": "negative sequence",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": -1,
+        "actor_reference": "actor_test",
+        "resource_reference": "resource_test",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000
+      }
+    },
+    {
+      "name": "unsafe integer",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 9007199254740992,
+        "actor_reference": "actor_test",
+        "resource_reference": "resource_test",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000
+      }
+    },
+    {
+      "name": "version mismatch",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 2,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 1,
+        "actor_reference": "actor_test",
+        "resource_reference": "resource_test",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000
+      }
+    },
+    {
+      "name": "unbounded resource reference",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 1,
+        "actor_reference": "actor_test",
+        "resource_reference": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000
+      }
+    },
+    {
+      "name": "non-opaque resource",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 1,
+        "actor_reference": "actor_test",
+        "resource_reference": "patient@example.invalid",
+        "redacted_change_reference": "",
+        "action": "READ",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000
+      }
+    },
+    {
+      "name": "unsupported action",
+      "value": {
+        "kind": "audit_append",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "request_id": "req_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "producer_sequence": 1,
+        "actor_reference": "actor_test",
+        "resource_reference": "resource_test",
+        "redacted_change_reference": "",
+        "action": "PRESCRIBE",
+        "outcome": "SUCCEEDED",
+        "policy_reference": "policy_test_v1",
+        "occurred_at_ms": 1789516800000
+      }
+    },
+    {
+      "name": "non-durable acknowledgement",
+      "value": {
+        "kind": "audit_receipt",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "receipt_id": "receipt_test",
+        "ingest_sequence": 1,
+        "committed_at_ms": 1789516800010,
+        "body_sha256": "d59a83f0c54d088b14014cc4c7854e6a3abc483f9d2310a2c123a3341e616f69",
+        "chain_sha256": "ef9df60509d4b8ab3101cab4fbd7728a42cf8afef09e58bbf7aa492c7909cec0",
+        "durable": false
+      }
+    },
+    {
+      "name": "invalid digest",
+      "value": {
+        "kind": "audit_receipt",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "receipt_id": "receipt_test",
+        "ingest_sequence": 1,
+        "committed_at_ms": 1789516800010,
+        "body_sha256": "xyz",
+        "chain_sha256": "ef9df60509d4b8ab3101cab4fbd7728a42cf8afef09e58bbf7aa492c7909cec0",
+        "durable": true
+      }
+    },
+    {
+      "name": "missing durable sequence",
+      "value": {
+        "kind": "audit_receipt",
+        "schema_version": 1,
+        "event_id": "evt_test_1",
+        "tenant_id": "tenant_test",
+        "producer_id": "service_test",
+        "receipt_id": "receipt_test",
+        "ingest_sequence": 0,
+        "committed_at_ms": 1789516800010,
+        "body_sha256": "d59a83f0c54d088b14014cc4c7854e6a3abc483f9d2310a2c123a3341e616f69",
+        "chain_sha256": "ef9df60509d4b8ab3101cab4fbd7728a42cf8afef09e58bbf7aa492c7909cec0",
+        "durable": true
+      }
+    },
+    {
+      "name": "sensitive error details",
+      "value": {
+        "kind": "audit_error",
+        "schema_version": 1,
+        "request_id": "req_test_1",
+        "code": "AUDIT_UNAVAILABLE",
+        "details": "synthetic"
+      }
+    }
+  ]
+}

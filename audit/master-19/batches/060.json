@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-19",
+  "batch": 60,
+  "family": "prescription-lifecycle-and-erx",
+  "owner": "CAP-PRESCRIPTION",
+  "ids": [
+    13,
+    68,
+    121,
+    155,
+    164
+  ],
+  "decision_sha256": "3a97274d30c71a35e6b1c45fc8d76c53f0e5403225be28e44f0ab8d824f2fbef",
+  "source_hashes": {
+    "13": "3c2c3764975e9f80e45b2b6b04fb89b0a014e07b3c9b14ecac2368932645191e",
+    "68": "f930dba34dec46b05539d1b75316e128a562826b74ff094f04313d7b4aa089c2",
+    "121": "7428a0ac715e11720e05d3316d9050883f66093da061cfd23004036a0dbf7365",
+    "155": "2b6f6763f3ff703ca231e7481bfdc42d0dccd2f48238b1690acf38dcd0d84c71",
+    "164": "316f9e7b764582ac59bb4562fb7e0588d2b97e8a746e863e4eb117a8d10d29eb"
+  }
+}

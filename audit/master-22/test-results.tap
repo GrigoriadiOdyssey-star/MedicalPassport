@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: real HTTP complete patient/doctor workflow, isolation, QR decode, CSRF and revoke
+ok 1 - real HTTP complete patient/doctor workflow, isolation, QR decode, CSRF and revoke
+  ---
+  duration_ms: 967.4607
+  type: 'test'
+  ...
+# Subtest: restart retains data and migrations are idempotent; production startup refused
+ok 2 - restart retains data and migrations are idempotent; production startup refused
+  ---
+  duration_ms: 150.4925
+  type: 'test'
+  ...
+# Subtest: migration, hashed identity and foreign keys
+ok 3 - migration, hashed identity and foreign keys
+  ---
+  duration_ms: 222.5789
+  type: 'test'
+  ...
+# Subtest: role self assignment and invalid credentials denied
+ok 4 - role self assignment and invalid credentials denied
+  ---
+  duration_ms: 294.7096
+  type: 'test'
+  ...
+# Subtest: login failure throttling
+ok 5 - login failure throttling
+  ---
+  duration_ms: 521.4407
+  type: 'test'
+  ...
+# Subtest: recovery is one-time and invalidates all sessions
+ok 6 - recovery is one-time and invalidates all sessions
+  ---
+  duration_ms: 372.595
+  type: 'test'
+  ...
+# Subtest: scopes, wrong recipient, patient and doctor write denial
+ok 7 - scopes, wrong recipient, patient and doctor write denial
+  ---
+  duration_ms: 202.7949
+  type: 'test'
+  ...
+# Subtest: revocation and exact expiration boundary
+ok 8 - revocation and exact expiration boundary
+  ---
+  duration_ms: 193.0128
+  type: 'test'
+  ...
+# Subtest: consent change and practitioner suspension fail closed
+ok 9 - consent change and practitioner suspension fail closed
+  ---
+  duration_ms: 197.2109
+  type: 'test'
+  ...
+# Subtest: logout invalidates previously resolved doctor context
+ok 10 - logout invalidates previously resolved doctor context
+  ---
+  duration_ms: 200.6346
+  type: 'test'
+  ...
+# Subtest: patient recovery revokes existing sharing; account disable revokes sessions
+ok 11 - patient recovery revokes existing sharing; account disable revokes sessions
+  ---
+  duration_ms: 332.7597
+  type: 'test'
+  ...
+# Subtest: emergency revisions preserve immutable provenance
+ok 12 - emergency revisions preserve immutable provenance
+  ---
+  duration_ms: 209.2051
+  type: 'test'
+  ...
+# Subtest: one-time consumption and atomic audit rollback
+ok 13 - one-time consumption and atomic audit rollback
+  ---
+  duration_ms: 185.8817
+  type: 'test'
+  ...
+# Subtest: immutable audit and record provenance
+ok 14 - immutable audit and record provenance
+  ---
+  duration_ms: 184.0263
+  type: 'test'
+  ...
+# Subtest: documents stored as bytes and protected by exact patient and scope
+ok 15 - documents stored as bytes and protected by exact patient and scope
+  ---
+  duration_ms: 184.2894
+  type: 'test'
+  ...
+# Subtest: emergency scope is exclusive with distinct access audit
+ok 16 - emergency scope is exclusive with distinct access audit
+  ---
+  duration_ms: 183.8752
+  type: 'test'
+  ...
+# Subtest: FHIR exact binding, idempotent replay and conflicting source rejection
+ok 17 - FHIR exact binding, idempotent replay and conflicting source rejection
+  ---
+  duration_ms: 187.9418
+  type: 'test'
+  ...
+# Subtest: parallel connections give exactly one one-time winner
+ok 18 - parallel connections give exactly one one-time winner
+  ---
+  duration_ms: 718.7798
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4650.1885

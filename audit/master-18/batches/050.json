@@ -1,0 +1,23 @@
+{
+  "pass": "MASTER-18",
+  "batch": 50,
+  "family": "clinical-genomics-and-hemostasis-results",
+  "owner": "CAP-LABORATORY",
+  "ids": [
+    2404,
+    2657,
+    2673,
+    2674,
+    2676,
+    3910
+  ],
+  "decision_sha256": "c1f55a60070c3e6715fcffafe86fa9608d2f68e46569c84142c4ab05819fbf68",
+  "source_hashes": {
+    "2404": "a4eda32d6fbe37c4f0556e5509d4dfc40de53b652a114dc132e4edca00cd3e34",
+    "2657": "5c16da0ea44752b7ee6c495266fbe4cb866a929b13e143aa3e2690871abe87c0",
+    "2673": "cfcd058e9522f64567ec2c38cd5679fb2983e5af305b2ba12353152bdbb0d1f5",
+    "2674": "683daf551d2266356c34cbfe81d7922b2250a8aaba6a78f5223ec930c14e7a5f",
+    "2676": "aa5b5d634dd5072e2f27f238fbe454071a871340b4ffda672cea3b9bbea3afeb",
+    "3910": "f7676152d8b4c749ca3f326854e286a8e151e0eeb51a3f235d33623a4f76f491"
+  }
+}

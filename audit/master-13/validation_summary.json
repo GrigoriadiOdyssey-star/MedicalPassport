@@ -1,0 +1,31 @@
+{
+  "targeted_batches": 3,
+  "targeted_tests": 8,
+  "targeted_status": "PASS",
+  "full_runs": 2,
+  "full_status": "PASS",
+  "final_tests_passed": 140,
+  "failed_validators": 0,
+  "inherited_historical_test_replacements": 1,
+  "replacement_scope": "Same MASTER09 additive-file guard replacement as MASTER12; original cache/hash/anchor assertions retained; no new exclusions",
+  "scope": "Source integrity, complete inventory, provenance and document/contract validation; no runtime or clinical certification",
+  "reproduce": "node scripts/validate-master13.mjs",
+  "runs": [
+    {
+      "label": "MILESTONE97",
+      "path": "validation/MILESTONE97.txt",
+      "sha256": "44eb39fe4e21e0b15c91978316d86b4da56397fb48b71cd1783d5e8c2adc136d",
+      "status": "PASS",
+      "tests_passed": 140,
+      "tests_failed": 0
+    },
+    {
+      "label": "FINAL",
+      "path": "validation/FINAL.txt",
+      "sha256": "7235c2cadb0e7fe12ac7ed62a786ac09bad60ff0e7341e31b7a9fd8aafe70289",
+      "status": "PASS",
+      "tests_passed": 140,
+      "tests_failed": 0
+    }
+  ]
+}

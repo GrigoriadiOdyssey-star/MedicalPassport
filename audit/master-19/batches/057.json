@@ -1,0 +1,27 @@
+{
+  "pass": "MASTER-19",
+  "batch": 57,
+  "family": "breast-and-oncology-longitudinal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    792,
+    793,
+    795,
+    797,
+    800,
+    815,
+    819,
+    820
+  ],
+  "decision_sha256": "f1a49c6c6f947e254b0174ffda40ae2d4abcda6344d7e12412d1087e04d1011e",
+  "source_hashes": {
+    "792": "f7d6d6caccc98ecb2b7fcceeb9220a69f6daa7b74defcf3b98dbcd603ae880e5",
+    "793": "f492777f122267c0bd6c2c3d2eecd2c65a5faa5bf1f66df86ad0bb58978992ae",
+    "795": "f3031606fbb3d5eb491891836400bb7b243cb850ae1a03b2145b9ec947fa4ced",
+    "797": "1ec5a132a9221c858bf027eb0de39be513f54977a3e282a4ec7a77712b982dd7",
+    "800": "3d411d7c984466f5d5556794bd5eb118f6aae441e16c5a30706ad8ab4004caf3",
+    "815": "9583a0e4c7471f6773ebe1c8b70a140a3ad1aaf2fdd078ca25688f475f6416a8",
+    "819": "43ef6e2f44209ed0d33fd79a4424d2361c7c0d9482eebb684e7757fee248e114",
+    "820": "5da9851171ff1edbdf4d89cf4aa5a8c863cfdd0674e9c24becab31262f17bdcf"
+  }
+}

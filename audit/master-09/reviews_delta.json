@@ -1,0 +1,536 @@
+{
+  "pass": "MASTER-09",
+  "baseline_commit": "7d7763deda0c9bb49b8ae82018a9c46428e7bc66",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "reviews": [
+    {
+      "original_id": 81,
+      "title": "Security Architecture",
+      "body": "# Security Architecture\n\n## Purpose\n\nDefines the complete cybersecurity architecture of the Medical Passport platform.\n\n---\n\n# Security Principles\n\n• Zero Trust\n\n• Least Privilege\n\n• Defense in Depth\n\n• Secure by Design\n\n• Privacy by Design\n\n---\n\n# Authentication\n\n• JWT\n\n• Refresh Tokens\n\n• OAuth2\n\n• OpenID Connect\n\n• Passkeys (Future)\n\n• Face ID\n\n• Touch ID\n\n---\n\n# Authorization\n\n• RBAC\n\n• ABAC (Future)\n\n• Role Validation\n\n• Permission Policies\n\n• Session Validation\n\n---\n\n# Encryption\n\nData at Rest\n\n• AES-256\n\nData in Transit\n\n• TLS 1.3\n\nPasswords\n\n• Argon2id\n\nFile Encryption\n\n• AES-256\n\nDatabase Encryption\n\n• Transparent Data Encryption\n\n---\n\n# API Protection\n\n• Rate Limiting\n\n• API Gateway\n\n• WAF\n\n• IP Filtering\n\n• Request Validation\n\n• Response Validation\n\n---\n\n# Mobile Security\n\n• Certificate Pinning\n\n• Jailbreak Detection\n\n• Root Detection\n\n• Secure Storage\n\n• Anti-Tampering\n\n• Debug Protection\n\n---\n\n# Server Security\n\n• Reverse Proxy\n\n• Firewall\n\n• IDS\n\n• IPS\n\n• Container Isolation\n\n• Secrets Management\n\n---\n\n# Monitoring\n\n• Audit Logs\n\n• SIEM\n\n• Threat Detection\n\n• Intrusion Detection\n\n• Security Alerts\n\n• Incident Tracking\n\n---\n\n# Compliance\n\n• GDPR\n\n• HIPAA\n\n• ISO 27001\n\n• ISO 27799\n\n• eIDAS\n\n• OWASP ASVS\n\n• OWASP Mobile Top 10\n\n---\n\n# Integrations\n\n├── Authentication\n\n├── API Gateway\n\n├── Database\n\n├── AI\n\n├── QR Passport\n\n├── Telemedicine\n\n├── Administration\n\n├── Audit Logs\n\n---\n\nFuture Features\n\n• Hardware Security Module (HSM)\n\n• Confidential Computing\n\n• AI Threat Detection\n\n• Behavioral Authentication\n\n• Continuous Risk Assessment\n\n• Quantum-resistant Cryptography\n\n---\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "237eba5c139f4bd47c26320bdac9e49b332d76a479a8ca4dc59b47b942ad1eb0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 12453,
+        "body_sha256": "237eba5c139f4bd47c26320bdac9e49b332d76a479a8ca4dc59b47b942ad1eb0",
+        "original_id": 81
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation."
+    },
+    {
+      "original_id": 221,
+      "title": "Zero Trust Security Architecture",
+      "body": "# Zero Trust Architecture\n\n## Principle\n\nNever trust.\n\nAlways verify.\n\n---\n\nEvery request is verified regardless of origin.\n\nAuthentication required for\n\n• Users\n\n• Doctors\n\n• Hospitals\n\n• Laboratories\n\n• Pharmacies\n\n• APIs\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bbf1c6e4cad0734e6e990f81c46cb83277398184017e085a0c106dc8316db590",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 19107,
+        "body_sha256": "bbf1c6e4cad0734e6e990f81c46cb83277398184017e085a0c106dc8316db590",
+        "original_id": 221
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation."
+    },
+    {
+      "original_id": 229,
+      "title": "Cybersecurity Monitoring",
+      "body": "# Security Monitoring\n\nDetects\n\n• Unauthorized Access\n\n• Suspicious Activity\n\n• API Abuse\n\n• Brute Force Attempts\n\n• Data Exfiltration\n\nAI assists security operations by highlighting anomalies for review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7f5042c901e51176d48a57c9f5c7768fc4ce99277a1fef3d610925126fab711a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 19329,
+        "body_sha256": "7f5042c901e51176d48a57c9f5c7768fc4ce99277a1fef3d610925126fab711a",
+        "original_id": 229
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation."
+    },
+    {
+      "original_id": 601,
+      "title": "Gastroenterologist Profile",
+      "body": "# Gastroenterologist Profile\n\nProvides professional information about licensed gastroenterologists.\n\nSupports\n\n• Full Name\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Professional Biography\n\nIntegrated with Global Gastroenterology Network.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "aaa4fe26d03ea67c0a638c0a434dc28c4d590d1a521f4f1bff0f108028abb773",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 28051,
+        "body_sha256": "aaa4fe26d03ea67c0a638c0a434dc28c4d590d1a521f4f1bff0f108028abb773",
+        "original_id": 601
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 602,
+      "title": "Gastroenterology Clinic Profile",
+      "body": "# Gastroenterology Clinic Profile\n\nStores complete information about participating gastroenterology clinics.\n\nSupports\n\n• Clinic Information\n\n• Services\n\n• Working Hours\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "47d34c1790f84b4b22fd0a87c84fe4fae0a135e85f27334b1e2a03f7af20ff29",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 28077,
+        "body_sha256": "47d34c1790f84b4b22fd0a87c84fe4fae0a135e85f27334b1e2a03f7af20ff29",
+        "original_id": 602
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 631,
+      "title": "Nephrologist Profile",
+      "body": "# Nephrologist Profile\n\nProvides professional information about licensed nephrologists.\n\nSupports\n\n• Full Name\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Professional Biography\n\nIntegrated with Global Nephrology Network.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ed0e793f3f0f7a4be95884200df109728f1804e0a0a48b1da9b8aa480129502a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 28777,
+        "body_sha256": "ed0e793f3f0f7a4be95884200df109728f1804e0a0a48b1da9b8aa480129502a",
+        "original_id": 631
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 632,
+      "title": "Nephrology Clinic Profile",
+      "body": "# Nephrology Clinic Profile\n\nStores complete information about participating nephrology clinics.\n\nSupports\n\n• Clinic Information\n\n• Services\n\n• Working Hours\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a943aaa044ffb3c27b358121d6f09d3d992db70a635922688c597b77f5b89775",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 28803,
+        "body_sha256": "a943aaa044ffb3c27b358121d6f09d3d992db70a635922688c597b77f5b89775",
+        "original_id": 632
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 651,
+      "title": "Urologist Profile",
+      "body": "# Urologist Profile\n\nProfessional profile of a licensed urologist.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Biography\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bfa4bfde8d8ee73af92d0904ce147c19fafbb64f0f12f881d9ee51a6df41d559",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 29263,
+        "body_sha256": "bfa4bfde8d8ee73af92d0904ce147c19fafbb64f0f12f881d9ee51a6df41d559",
+        "original_id": 651
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 652,
+      "title": "Urology Clinic Profile",
+      "body": "# Urology Clinic Profile\n\nStores complete information about urology clinics.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Equipment\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1e48593ef9c42fb309634345078ab554447d4edf52654b6f5525aff32d413256",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 29285,
+        "body_sha256": "1e48593ef9c42fb309634345078ab554447d4edf52654b6f5525aff32d413256",
+        "original_id": 652
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 671,
+      "title": "Andrologist Profile",
+      "body": "# Andrologist Profile\n\nProvides professional information about licensed andrologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Biography\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "594e65c16aabd081489593da0609d3f9b3af626b101f4b3dd323361829f7d4a4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 29709,
+        "body_sha256": "594e65c16aabd081489593da0609d3f9b3af626b101f4b3dd323361829f7d4a4",
+        "original_id": 671
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 672,
+      "title": "Andrology Clinic Profile",
+      "body": "# Andrology Clinic Profile\n\nStores complete information about participating andrology clinics.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f085d4ade1489306dfabd4c4900fe90e4cfcead7870e1aca686014934e51cb44",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 29731,
+        "body_sha256": "f085d4ade1489306dfabd4c4900fe90e4cfcead7870e1aca686014934e51cb44",
+        "original_id": 672
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 691,
+      "title": "Gynecologist Profile",
+      "body": "# Gynecologist Profile\n\nProvides professional information about licensed gynecologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Biography\n\nIntegrated with Global Gynecology Network.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "39042d164997ee10a2052c3a2fb0ee90d4d018227134ace090c0ca1931bbd603",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 30171,
+        "body_sha256": "39042d164997ee10a2052c3a2fb0ee90d4d018227134ace090c0ca1931bbd603",
+        "original_id": 691
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 692,
+      "title": "Gynecology Clinic Profile",
+      "body": "# Gynecology Clinic Profile\n\nStores complete information about participating gynecology clinics.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Equipment\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e9f1d52ccafe55855b88646be749beddf912e0032dcb895f069093a5b18e8012",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 30195,
+        "body_sha256": "e9f1d52ccafe55855b88646be749beddf912e0032dcb895f069093a5b18e8012",
+        "original_id": 692
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 721,
+      "title": "Obstetrician Profile",
+      "body": "# Obstetrician Profile\n\nProvides professional information about licensed obstetricians.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Biography\n\nIntegrated with Global Obstetrics Network.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d631e073c0ea56a0847ba8b4dc8ec18d0dd55f3de8a00fd561be29aa40aeff17",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 30863,
+        "body_sha256": "d631e073c0ea56a0847ba8b4dc8ec18d0dd55f3de8a00fd561be29aa40aeff17",
+        "original_id": 721
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 722,
+      "title": "Obstetrics Clinic Profile",
+      "body": "# Obstetrics Clinic Profile\n\nStores complete information about maternity hospitals and obstetric clinics.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Delivery Facilities\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ccf04a39ff3f233b395602a96c3ba418b977103519985f2363e5efc766bb12bc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 30887,
+        "body_sha256": "ccf04a39ff3f233b395602a96c3ba418b977103519985f2363e5efc766bb12bc",
+        "original_id": 722
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 761,
+      "title": "Reproductive Medicine Specialist Profile",
+      "body": "# Reproductive Medicine Specialist Profile\n\nProfessional profile of reproductive medicine physicians.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Biography\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f39a09e04a5f4378083437c43a7efd3ef6140e9a620d7a6524315b25b543a832",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31765,
+        "body_sha256": "f39a09e04a5f4378083437c43a7efd3ef6140e9a620d7a6524315b25b543a832",
+        "original_id": 761
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 762,
+      "title": "Fertility Clinic Profile",
+      "body": "# Fertility Clinic Profile\n\nStores complete information about fertility centers.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Success Rates\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "df21a32e081a715aa728cd1db8e5e6a7b876fe77404390e8b3149cd2032e1b8a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 31787,
+        "body_sha256": "df21a32e081a715aa728cd1db8e5e6a7b876fe77404390e8b3149cd2032e1b8a",
+        "original_id": 762
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 781,
+      "title": "Mammologist Profile",
+      "body": "# Mammologist Profile\n\nProfessional profile of licensed mammologists and breast specialists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\n• Biography\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "599b3f6a3bb12671a175152b29776d935bf4faa3a7ee5ca3f9dc556eb5c596f9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32205,
+        "body_sha256": "599b3f6a3bb12671a175152b29776d935bf4faa3a7ee5ca3f9dc556eb5c596f9",
+        "original_id": 781
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 782,
+      "title": "Breast Center Profile",
+      "body": "# Breast Center Profile\n\nStores complete information about breast health centers.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Equipment\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "85832397da35d4af94f2cdc4dc79e38bf57a05142bd44f89b88cf4c02d8c8d44",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32227,
+        "body_sha256": "85832397da35d4af94f2cdc4dc79e38bf57a05142bd44f89b88cf4c02d8c8d44",
+        "original_id": 782
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 801,
+      "title": "Gynecologic Oncologist Profile",
+      "body": "# Gynecologic Oncologist Profile\n\nProfessional profile of licensed gynecologic oncologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Scientific Publications\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "902361d76f21ed8f30483fac0e4a81c58ba5d72ffa78767cb058ffcb070e57c3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32647,
+        "body_sha256": "902361d76f21ed8f30483fac0e4a81c58ba5d72ffa78767cb058ffcb070e57c3",
+        "original_id": 801
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 802,
+      "title": "Gynecologic Oncology Center Profile",
+      "body": "# Gynecologic Oncology Center Profile\n\nStores complete information about gynecologic oncology centers.\n\nSupports\n\n• Services\n\n• Surgical Team\n\n• Equipment\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fb04fe8d157665d85c96c8d3c6b31382edf1c7050ec421d197b4fa512e6a3b3f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 32669,
+        "body_sha256": "fb04fe8d157665d85c96c8d3c6b31382edf1c7050ec421d197b4fa512e6a3b3f",
+        "original_id": 802
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 821,
+      "title": "Pediatrician Profile",
+      "body": "# Pediatrician Profile\n\nProfessional profile of licensed pediatricians.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Pediatric Subspecialties\n\n• Languages\n\n• Biography\n\nIntegrated with the Global Pediatrics Network.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6fd9af48d4e76413345dce029afb4aaac3724e48e95111899f8f6d8b710ff020",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 33097,
+        "body_sha256": "6fd9af48d4e76413345dce029afb4aaac3724e48e95111899f8f6d8b710ff020",
+        "original_id": 821
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 822,
+      "title": "Children's Clinic Profile",
+      "body": "# Children's Clinic Profile\n\nStores complete information about pediatric clinics.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Emergency Department\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3ed7fe4bb358f41487951fb9c1a7caf90bc7844cb1e56dc28d129d92a56b75b9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 33123,
+        "body_sha256": "3ed7fe4bb358f41487951fb9c1a7caf90bc7844cb1e56dc28d129d92a56b75b9",
+        "original_id": 822
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 981,
+      "title": "Pediatric Rheumatologist Profile",
+      "body": "# Pediatric Rheumatologist Profile\n\nProfessional profile of licensed pediatric rheumatologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Autoimmune Disease Expertise\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "154a44f6045f666a9fbef1f06d29c7203e366efb55ae278396d9b189a3f1307c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36677,
+        "body_sha256": "154a44f6045f666a9fbef1f06d29c7203e366efb55ae278396d9b189a3f1307c",
+        "original_id": 981
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 982,
+      "title": "Pediatric Rheumatology Center Profile",
+      "body": "# Pediatric Rheumatology Center Profile\n\nStores complete information about pediatric rheumatology centers.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Infusion Unit\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d5e8d710017bf76a1655b9e1624f941b8a8fcfde6c14ff7007ef345441d0b8f1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36699,
+        "body_sha256": "d5e8d710017bf76a1655b9e1624f941b8a8fcfde6c14ff7007ef345441d0b8f1",
+        "original_id": 982
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1001,
+      "title": "Pediatric Infectious Disease Specialist Profile",
+      "body": "Professional profile of licensed pediatric infectious disease specialists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• International Certification\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6f95e3f38591600c16a3fa2d41f7aec2a610c0d05537dc5477071e4ec20a8011",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 37155,
+        "body_sha256": "6f95e3f38591600c16a3fa2d41f7aec2a610c0d05537dc5477071e4ec20a8011",
+        "original_id": 1001
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1002,
+      "title": "Pediatric Infectious Disease Center Profile",
+      "body": "Stores complete information about pediatric infectious disease centers.\n\nSupports\n\n• Isolation Units\n\n• Physicians\n\n• ICU Support\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "05a3efcf38ffd00a796779cb88b392b6a03426a754bd908d94afcb96994fce43",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 37175,
+        "body_sha256": "05a3efcf38ffd00a796779cb88b392b6a03426a754bd908d94afcb96994fce43",
+        "original_id": 1002
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1031,
+      "title": "Pediatric Orthopedic Surgeon Profile",
+      "body": "Professional profile of pediatric orthopedic surgeons.\n\nSupports\n\n• Qualifications\n• Experience\n• Pediatric Orthopedic Expertise\n• Languages\n\n---",
+      "body_sha256": "8f6574afc9154877b4e302d58b19ae426a3c54b3a602c6f8aafe5277a24ca740",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 37715,
+        "body_sha256": "8f6574afc9154877b4e302d58b19ae426a3c54b3a602c6f8aafe5277a24ca740",
+        "original_id": 1031
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1032,
+      "title": "Pediatric Orthopedic Center Profile",
+      "body": "Stores pediatric orthopedic center information.\n\nSupports\n\n• Physicians\n• Operating Rooms\n• Rehabilitation\n• Contact Information\n\n---",
+      "body_sha256": "e6a09ded368b7dde8437abcce9662bb0789b2333c35d87b0b0d3f041b484dbfe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 37728,
+        "body_sha256": "e6a09ded368b7dde8437abcce9662bb0789b2333c35d87b0b0d3f041b484dbfe",
+        "original_id": 1032
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1051,
+      "title": "Pediatric Ophthalmologist Profile",
+      "body": "Professional profile of pediatric ophthalmologists.\n\nSupports\n\n• Qualifications\n• Experience\n• Eye Disease Expertise\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d89cd5bee950e07e4fa801d1ed6a1b1809701ee258cd0c5dc31589d219d345a6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38016,
+        "body_sha256": "d89cd5bee950e07e4fa801d1ed6a1b1809701ee258cd0c5dc31589d219d345a6",
+        "original_id": 1051
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1052,
+      "title": "Pediatric Ophthalmology Center Profile",
+      "body": "Stores pediatric ophthalmology center information.\n\nSupports\n\n• Services\n• Physicians\n• Diagnostic Equipment\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "54929dbb989c66adc2e0be671afdc70728688baf23b91c04e4f63f61768d3143",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38033,
+        "body_sha256": "54929dbb989c66adc2e0be671afdc70728688baf23b91c04e4f63f61768d3143",
+        "original_id": 1052
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1071,
+      "title": "Pediatric ENT Specialist Profile",
+      "body": "Professional profile of pediatric ENT specialists.\n\nSupports\n\n• Qualifications\n• Experience\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dac07f34ede1f2d53e5f3062da5f90c0288062ec906504e28d163661d3da2764",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38354,
+        "body_sha256": "dac07f34ede1f2d53e5f3062da5f90c0288062ec906504e28d163661d3da2764",
+        "original_id": 1071
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1072,
+      "title": "Pediatric ENT Center Profile",
+      "body": "Stores pediatric ENT clinic information.\n\nSupports\n\n• Services\n• Physicians\n• Surgery\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b2e2210cad137178de6c30ee090fbb38f307bc7142ccb163d57e5cb905c01a8d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38370,
+        "body_sha256": "b2e2210cad137178de6c30ee090fbb38f307bc7142ccb163d57e5cb905c01a8d",
+        "original_id": 1072
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1091,
+      "title": "Pediatric Dermatologist Profile",
+      "body": "# Pediatric Dermatologist Profile\n\nProfessional profile of pediatric dermatologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "120cc71a270b13b4e132665b6900908c9cda49bdbb30e04bb1b20803b042536e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38738,
+        "body_sha256": "120cc71a270b13b4e132665b6900908c9cda49bdbb30e04bb1b20803b042536e",
+        "original_id": 1091
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    },
+    {
+      "original_id": 1092,
+      "title": "Pediatric Dermatology Center Profile",
+      "body": "# Pediatric Dermatology Center Profile\n\nStores pediatric dermatology center information.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Laser Unit\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "40227fe78729e47bf0cc354db87a4e41aa15646c71ff44bdbdc28f762328eafc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 38758,
+        "body_sha256": "40227fe78729e47bf0cc354db87a4e41aa15646c71ff44bdbdc28f762328eafc",
+        "original_id": 1092
+      },
+      "reviewed": true,
+      "date": "2026-09-16",
+      "verdict": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate."
+    }
+  ]
+}

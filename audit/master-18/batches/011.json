@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 11,
+  "family": "precision-vaccination-planner",
+  "owner": "CAP-IMMUNIZATION",
+  "ids": [
+    1266
+  ],
+  "decision_sha256": "d2e7cdb0806431e72d4a7d63455ac86226e6a144536743320b7431a17640d0eb",
+  "source_hashes": {
+    "1266": "a19290f482a817cab0d9203f4e98d7b7ed567b4f114d66c33aaa912afaca2728"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "targeted_passed": 9,
+  "failed": 0,
+  "runtime_acceptance_passed": 0,
+  "runtime_acceptance_pending": 14,
+  "full_audit_repeated": false,
+  "scope": "Synthetic lifecycle/guardrail/provenance checks only; no real retrieval, translation, clinical comparison, polling or notification validation",
+  "log_sha256": "3ee7e3fe4f3c3d843df98b5049d7f1e12d0706dfd75a946765d62187552ad440"
+}

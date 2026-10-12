@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-18",
+  "batch": 56,
+  "family": "clinical-specialty-ai-forecasts",
+  "owner": "CAP-AI",
+  "ids": [
+    2097,
+    3629
+  ],
+  "decision_sha256": "f9768a510d22e8dbb86e65139c2d33a9cd73cf0bb6afbb21bf76b6bf54045c36",
+  "source_hashes": {
+    "2097": "2b19c6c8bc8f5202102367d1247a4503598f326da9842e765495b8093d884f24",
+    "3629": "911a5de8c6ac81175bd09e9808eeabb4c239c84f2230a971b2cfd4801777c155"
+  }
+}

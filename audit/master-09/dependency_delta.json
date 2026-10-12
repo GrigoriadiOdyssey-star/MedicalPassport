@@ -1,0 +1,38 @@
+{
+  "pass": "MASTER-09",
+  "baseline_commit": "7d7763deda0c9bb49b8ae82018a9c46428e7bc66",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "nodes": [
+    {
+      "id": "CORE-CAP-SECURITY",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "CORE-CAP-IDENTITY",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-SECURITY",
+      "to": "CAP-IDENTITY"
+    },
+    {
+      "from": "CORE-CAP-SECURITY",
+      "to": "CAP-CONSENT"
+    },
+    {
+      "from": "CORE-CAP-SECURITY",
+      "to": "CAP-AUDIT"
+    },
+    {
+      "from": "CORE-CAP-SECURITY",
+      "to": "CAP-DATA"
+    }
+  ],
+  "baseline_graph": "audit/master-08/dependency_graph.json"
+}

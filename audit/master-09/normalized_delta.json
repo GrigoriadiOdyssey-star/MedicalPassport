@@ -1,0 +1,2237 @@
+{
+  "pass": "MASTER-09",
+  "baseline_commit": "7d7763deda0c9bb49b8ae82018a9c46428e7bc66",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "records": [
+    {
+      "original_id": 601,
+      "source_sha256": "aaa4fe26d03ea67c0a638c0a434dc28c4d590d1a521f4f1bff0f108028abb773",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 602,
+      "source_sha256": "47d34c1790f84b4b22fd0a87c84fe4fae0a135e85f27334b1e2a03f7af20ff29",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 631,
+      "source_sha256": "ed0e793f3f0f7a4be95884200df109728f1804e0a0a48b1da9b8aa480129502a",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 632,
+      "source_sha256": "a943aaa044ffb3c27b358121d6f09d3d992db70a635922688c597b77f5b89775",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 651,
+      "source_sha256": "bfa4bfde8d8ee73af92d0904ce147c19fafbb64f0f12f881d9ee51a6df41d559",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 652,
+      "source_sha256": "1e48593ef9c42fb309634345078ab554447d4edf52654b6f5525aff32d413256",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 671,
+      "source_sha256": "594e65c16aabd081489593da0609d3f9b3af626b101f4b3dd323361829f7d4a4",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 672,
+      "source_sha256": "f085d4ade1489306dfabd4c4900fe90e4cfcead7870e1aca686014934e51cb44",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 691,
+      "source_sha256": "39042d164997ee10a2052c3a2fb0ee90d4d018227134ace090c0ca1931bbd603",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 692,
+      "source_sha256": "e9f1d52ccafe55855b88646be749beddf912e0032dcb895f069093a5b18e8012",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 721,
+      "source_sha256": "d631e073c0ea56a0847ba8b4dc8ec18d0dd55f3de8a00fd561be29aa40aeff17",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 722,
+      "source_sha256": "ccf04a39ff3f233b395602a96c3ba418b977103519985f2363e5efc766bb12bc",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 761,
+      "source_sha256": "f39a09e04a5f4378083437c43a7efd3ef6140e9a620d7a6524315b25b543a832",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 762,
+      "source_sha256": "df21a32e081a715aa728cd1db8e5e6a7b876fe77404390e8b3149cd2032e1b8a",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 781,
+      "source_sha256": "599b3f6a3bb12671a175152b29776d935bf4faa3a7ee5ca3f9dc556eb5c596f9",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 782,
+      "source_sha256": "85832397da35d4af94f2cdc4dc79e38bf57a05142bd44f89b88cf4c02d8c8d44",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 801,
+      "source_sha256": "902361d76f21ed8f30483fac0e4a81c58ba5d72ffa78767cb058ffcb070e57c3",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 802,
+      "source_sha256": "fb04fe8d157665d85c96c8d3c6b31382edf1c7050ec421d197b4fa512e6a3b3f",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 821,
+      "source_sha256": "6fd9af48d4e76413345dce029afb4aaac3724e48e95111899f8f6d8b710ff020",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 822,
+      "source_sha256": "3ed7fe4bb358f41487951fb9c1a7caf90bc7844cb1e56dc28d129d92a56b75b9",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 841,
+      "source_sha256": "1f44775ff487ac4b4696e68f38cd49f70fc43e34cce438386b9efc614d8cb38b",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 842,
+      "source_sha256": "aaff1ce107df5f7317d1af256ae10e9eec5e50d660498ca7b71494f3127096ee",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 861,
+      "source_sha256": "d942fde586dee1813d747594a62f63d3109ee65a37b32a5dd86a65772958c809",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 862,
+      "source_sha256": "ab708c8c62f1a6327a45e9647113bc24bb2e26523d705e1e5d8b5bd8ad1d14bf",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 881,
+      "source_sha256": "af00b97c46d59d6b1009282084e642dd68a9b4b8cd61f409f8fa5936de52f5ea",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 882,
+      "source_sha256": "a831a0d7f450e10cfbfdcbb285974f07c27f512accf30c7e85dac69f545e5d9f",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 901,
+      "source_sha256": "9dbdd61e2e19488fb4e05d5e515b21089a58766cb590c420b2aa10cc9d886ac3",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 902,
+      "source_sha256": "2ae8af9c68b9d8f8cf87b990516690508415bc83f997b58e95577d6244143f9b",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 921,
+      "source_sha256": "b8f2328dbfca95eb97c0fff50914a4d0e31d9b87aa33c42b4e7928ba1c19df47",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 922,
+      "source_sha256": "277e98215421ead56739a1d27308db9150f405c715d17f0b8984d3525b432455",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 941,
+      "source_sha256": "a7e79ab33105c44c7ec13aeb872c64f214161de660e1030815ad5f018602ceb7",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 942,
+      "source_sha256": "77c9ce7846939a4c32b52306c759c791d6373eb7743459807cfb5aea9b67ca56",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 961,
+      "source_sha256": "f31350009ccb597abe4e69ae9712cd73a8381a57c21661c52ab03aee79e14a59",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 962,
+      "source_sha256": "ae6a76c2e958ebfa3f778c106ebad71688f7febf9e500723992bbf52d86365b4",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 981,
+      "source_sha256": "154a44f6045f666a9fbef1f06d29c7203e366efb55ae278396d9b189a3f1307c",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 982,
+      "source_sha256": "d5e8d710017bf76a1655b9e1624f941b8a8fcfde6c14ff7007ef345441d0b8f1",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 991,
+      "source_sha256": "7ca29aed88b66661f43f95d8631329d02b2415fb1d17fe91a229e7dafd8b321d",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 992,
+      "source_sha256": "337f1021f5f42eb2c5c058a661345b4a822a4c78dc2dd0f9f1d97da699897187",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1001,
+      "source_sha256": "6f95e3f38591600c16a3fa2d41f7aec2a610c0d05537dc5477071e4ec20a8011",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1002,
+      "source_sha256": "05a3efcf38ffd00a796779cb88b392b6a03426a754bd908d94afcb96994fce43",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1031,
+      "source_sha256": "8f6574afc9154877b4e302d58b19ae426a3c54b3a602c6f8aafe5277a24ca740",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1032,
+      "source_sha256": "e6a09ded368b7dde8437abcce9662bb0789b2333c35d87b0b0d3f041b484dbfe",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1051,
+      "source_sha256": "d89cd5bee950e07e4fa801d1ed6a1b1809701ee258cd0c5dc31589d219d345a6",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1052,
+      "source_sha256": "54929dbb989c66adc2e0be671afdc70728688baf23b91c04e4f63f61768d3143",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1071,
+      "source_sha256": "dac07f34ede1f2d53e5f3062da5f90c0288062ec906504e28d163661d3da2764",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1072,
+      "source_sha256": "b2e2210cad137178de6c30ee090fbb38f307bc7142ccb163d57e5cb905c01a8d",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1091,
+      "source_sha256": "120cc71a270b13b4e132665b6900908c9cda49bdbb30e04bb1b20803b042536e",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1092,
+      "source_sha256": "40227fe78729e47bf0cc354db87a4e41aa15646c71ff44bdbdc28f762328eafc",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1111,
+      "source_sha256": "f5307f570c9ea20216a7b5ed4eaab1c5c030c263393256e73d57de8720099a07",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1112,
+      "source_sha256": "bc8826b6caa8aa5f737b85d9737fddf9b5f22a1d1c2ad054e33c761e108525c1",
+      "canonical_target": "CORE-CAP-IDENTITY",
+      "canonical_owner": "CAP-IDENTITY",
+      "purpose": "Professional and facility directories share the existing account/practitioner/organization owner; they do not create a new clinical truth store or an owner per specialty. Preserve qualifications, expertise, biography/publications, languages, international certification and network affiliations; verify source, issuing authority, scope, expiry and status. Retain center-specific dialysis, endoscopy, transfusion, infusion, isolation/ICU, laser, rehabilitation, surgery, diagnostic, maternity/delivery and working-hour/contact capabilities. A directory claim is not current staffing, treatment privilege or patient-data authorization. Fertility success rates require denominator/time/cohort provenance and must not be treated as a personal outcome estimate.",
+      "scope": "Append-only providers profile; no replacement of earlier owner profiles",
+      "workflow": "Capture attributed practitioner/organization claim → verify credential and role scope/expiry separately → retain specialty and facility capability profiles → publish purpose-limited directory projection → correct/version with provenance. Clinical record access requires a separate current authorization decision.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "Practitioner",
+        "Organization",
+        "CredentialClaim",
+        "VerifiedRole",
+        "FacilityCapability",
+        "DirectoryRevision"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 81,
+      "source_sha256": "237eba5c139f4bd47c26320bdac9e49b332d76a479a8ca4dc59b47b942ad1eb0",
+      "canonical_target": "CORE-CAP-SECURITY",
+      "canonical_owner": "CAP-SECURITY",
+      "purpose": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation.",
+      "scope": "Append-only security profile; no replacement of earlier owner profiles",
+      "workflow": "Authenticate trusted context via identity → resolve current role, patient binding, resource/version, purpose and grant/policy → enforce default-deny → acquire durable audit acknowledgement → release only authorized projection. Reject missing/stale/ambiguous attributes and dependency failures; monitoring anomalies require qualified review rather than automatic clinical access escalation.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "AuthorizationRequest",
+        "PolicyReference",
+        "Decision",
+        "EnforcementReceipt",
+        "SecurityAlert",
+        "IncidentReference"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-DATA"
+      ]
+    },
+    {
+      "original_id": 221,
+      "source_sha256": "bbf1c6e4cad0734e6e990f81c46cb83277398184017e085a0c106dc8316db590",
+      "canonical_target": "CORE-CAP-SECURITY",
+      "canonical_owner": "CAP-SECURITY",
+      "purpose": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation.",
+      "scope": "Append-only security profile; no replacement of earlier owner profiles",
+      "workflow": "Authenticate trusted context via identity → resolve current role, patient binding, resource/version, purpose and grant/policy → enforce default-deny → acquire durable audit acknowledgement → release only authorized projection. Reject missing/stale/ambiguous attributes and dependency failures; monitoring anomalies require qualified review rather than automatic clinical access escalation.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "AuthorizationRequest",
+        "PolicyReference",
+        "Decision",
+        "EnforcementReceipt",
+        "SecurityAlert",
+        "IncidentReference"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-DATA"
+      ]
+    },
+    {
+      "original_id": 229,
+      "source_sha256": "7f5042c901e51176d48a57c9f5c7768fc4ce99277a1fef3d610925126fab711a",
+      "canonical_target": "CORE-CAP-SECURITY",
+      "canonical_owner": "CAP-SECURITY",
+      "purpose": "Security architecture, per-request zero-trust enforcement and monitoring form one existing shared security owner. Identity supplies authenticated subject/session; Consent supplies policy/grant and legal-authority evidence; Security enforces action/resource/context and Audit records outcomes. Authentication alone never authorizes patient data. Legacy ABAC marked future cannot defer patient/purpose/recipient checks required by the current MVP. Preserve mobile/server/API/encryption/monitoring and future HSM/confidential/quantum-resistant intentions without claiming certification or implementation.",
+      "scope": "Append-only security profile; no replacement of earlier owner profiles",
+      "workflow": "Authenticate trusted context via identity → resolve current role, patient binding, resource/version, purpose and grant/policy → enforce default-deny → acquire durable audit acknowledgement → release only authorized projection. Reject missing/stale/ambiguous attributes and dependency failures; monitoring anomalies require qualified review rather than automatic clinical access escalation.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "AuthorizationRequest",
+        "PolicyReference",
+        "Decision",
+        "EnforcementReceipt",
+        "SecurityAlert",
+        "IncidentReference"
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-DATA"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 79,
+  "family": "remaining-imaging-archive",
+  "owner": "CAP-IMAGING",
+  "ids": [
+    215
+  ],
+  "decision_sha256": "30b28ecce0ccf92cf8cf1a591bf1ccac9b0839f700066754ee1272face12ca87",
+  "source_hashes": {
+    "215": "497bbbb978a6623ce03de34bd2cbc53e50dda3d4878a588e35d9fa9ff1e8129b"
+  }
+}

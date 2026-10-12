@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 34,
+  "family": "laboratory-signature-controls",
+  "owner": "CAP-SECURITY",
+  "ids": [
+    379
+  ],
+  "decision_sha256": "3d976aab37ea0ca67a94ab539eef9252badb650109af380706869f98fceea7b8",
+  "source_hashes": {
+    "379": "c2e92e445c88c6ae179fb02d2b28a2f72e4a82ae0c9b8f2576d7fdef17713de3"
+  }
+}

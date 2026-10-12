@@ -1,0 +1,332 @@
+{
+  "pass": "MASTER-19",
+  "capabilities": [
+    {
+      "key": "twin-core-state-profiles",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-d4912dd7fc5e8497",
+      "text": "Organize patient representation, visualization and model outputs in one versioned system. Hundreds of specialty titles mention twins; these become candidate profiles, not separate infrastructure. Sources 1224 and 1876 describe hospital/resource operations and remain operational models. A workflow model of a physician (1225) is also separate from patient physiology. Search alternatives and preservation decisions are in [dossier](new_module_proposals.json) and [semantic diffs](semantic_diffs.json).",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-d4912dd7fc5e8497"
+    },
+    {
+      "key": "patient-longitudinal-state",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-9558e7bd8d7c5be0",
+      "text": "Create snapshot → check required inputs → select approved profile/model → calculate → persist typed output → reviewer disposition → monitor invalidation. Snapshot includes tenant/patient, time range, consent/purpose, source IDs/versions, missingness, model release and profile. ScenarioRun includes parameters, baseline, horizon, uncertainty representation, computation version and epistemic_status SIMULATED. No synthetic value replaces an Observation.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-9558e7bd8d7c5be0"
+    },
+    {
+      "key": "physiological-organ-models",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-c019923be4ab7584",
+      "text": "| 3 Patient-specific physiological state | timed labs, device signals, clinical observations | measured state plus separately typed inferred estimates; calibration/time alignment gate |",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-c019923be4ab7584"
+    },
+    {
+      "key": "disease-state-models",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-05a06555fd006a97",
+      "text": "| 4 Disease-state models | diagnoses, clinical assessments, longitudinal evidence | disease-specific model instance with validated intended use and uncertainty |",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-05a06555fd006a97"
+    },
+    {
+      "key": "treatment-response-scenarios",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-fb43aa2cda5912d3",
+      "text": "| 6 Scenario simulation | frozen state and user-selected hypothetical intervention | simulated trajectories, assumptions and alternatives; no clinical fact writes |",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-fb43aa2cda5912d3"
+    },
+    {
+      "key": "risk-model-provenance",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-de2aa72dee3b3d28",
+      "text": "Model uncertainty, assumptions, source data and versions remain visible.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-de2aa72dee3b3d28"
+    },
+    {
+      "key": "generic-vs-patient-anatomy",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-51f86f5a829a0d52",
+      "text": "Generic anatomy always displays “generic anatomy”. Patient-derived anatomy requires traceable patient imaging, registration/segmentation provenance and acceptance by the appropriate workflow; a generic atlas cannot acquire that label because the patient name is displayed. De-identify exported images, including embedded metadata, according to the authorized workflow.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-51f86f5a829a0d52"
+    },
+    {
+      "key": "visual-timeline-labs-biomarkers-exposure",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-c8509f3eed53d8de",
+      "text": "Provide organ/system highlighting, clinical timeline, lab overlays, biomarker state, device signals, disease activity and therapy exposure. Spatial and temporal uncertainty, stale source data and unavailable organ models stay visible.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-c8509f3eed53d8de"
+    },
+    {
+      "key": "ct-mri-petct-xray-ultrasound-oct",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-297e8b62239ef008",
+      "text": "CT/MRI/PET-CT/X-ray/ultrasound/OCT references",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-297e8b62239ef008"
+    },
+    {
+      "key": "dynamic-organism-pathway-impact",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-6e3b8c8f0bc6bc03",
+      "text": "Present possible therapy effects on organs, systems, pathways, laboratory markers and known risk areas with their evidence. Existing organ models, multisystem monitoring and therapy-exposure concepts provide inputs; this extension adds a common display contract. It does not justify a new clinical truth store. See [alternatives](new_module_proposals.json). An animation is an explanation of an identified evidence/model result, not proof that a physiological effect occurred.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-6e3b8c8f0bc6bc03"
+    },
+    {
+      "key": "epistemic-states",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-101e3a2ddf9ed18d",
+      "text": "AI may estimate and explain within a validated task; it neither diagnoses autonomously nor prescribes. Separate OBSERVED, MEASURED, REPORTED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED. Confidence measures mean only what the model's evaluation supports; absent confidence is unknown. Model outage offers an authorized earlier snapshot explicitly marked stale, or abstains. Cross-patient joins, device clock drift and incomplete imaging must block patient-specific inference. Logs capture model/context hashes, failures, latency and reviewer action with patient details excluded.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-101e3a2ddf9ed18d"
+    },
+    {
+      "key": "overlay-input-evidence-uncertainty",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-8666de7e63bfbb39",
+      "text": "Each Overlay contains organ/system/pathway key, sourceArtifactId, epistemic_status, evidence reference/version, contextSnapshotId, effective time, model/assumption references where applicable, uncertainty, staleness and anatomy provenance.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-8666de7e63bfbb39"
+    },
+    {
+      "key": "accessible-dynamic-organism",
+      "owner": "CAP-TWIN",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-TWIN-4c5afff5a6e90344",
+      "text": "Interactive body and organ/system highlighting have keyboard equivalents. A timeline synchronizes lab overlays, biomarkers, device signals, disease activity and therapy exposure while displaying missing intervals and differing time resolutions. A side panel lists affected structures, source, evidence strength as defined by that source, assumptions and exclusions. Actual values and hypothetical curves use labels, legends and patterns, not colour alone. Unknown effects display unknown, not green or zero.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-TWIN.md",
+        "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+      },
+      "anchor": "M08-CAP-TWIN-4c5afff5a6e90344"
+    },
+    {
+      "key": "pharmacology-response-interactions-toxicity",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-67bc51603a88d942",
+      "text": "Provide a longitudinal, evidence-linked assessment of medication response, interactions, adverse effects, organ toxicity and alternative therapy scenarios. Existing sources already include pharmacogenomics, dose optimization, OTC/supplements, renal monitoring and therapy response: 1176, 1606, 1663, 1664, 1727, 1843, 2399, 2677, 4419, 4566, 5166. See [search dossier](new_module_proposals.json) and [pairwise preservation](semantic_diffs.json). Their missing common contract justifies an extension of CAP-CDS, not a duplicate source module. Do not build a prescribing engine or claim a simulated response is a measured outcome.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-67bc51603a88d942"
+    },
+    {
+      "key": "pharmacology-complete-patient-context",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-d32a948d75c72678",
+      "text": "The context snapshot includes age and date basis, sex-related clinical context where relevant, height, weight, BSA plus formula/input versions, diagnoses, chronic disease, allergies, prior adverse reactions, current and past medicines, active ingredients, strength/formulation, route, dose units, frequency, start/stop times and adherence uncertainty. Include OTC products and supplements, pregnancy/lactation state, pediatric age/development context, renal/hepatic function with equation and measurement provenance, biomarkers, devices, genome/PGx phenotype, available proteomics/metabolomics, clinical phenotype and observed treatment response. Unknown, not tested, absent and conflicting are separate values. Never infer normal organ function from an absent result.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-d32a948d75c72678"
+    },
+    {
+      "key": "exposure-and-derived-owner-boundaries",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-3868440f00a9c053",
+      "text": "CAP-MEDICATION owns medication statements, reconciliation and exposure episodes, with references to prescriptions owned by CAP-PRESCRIPTION, dispensing owned by CAP-PHARMACY and administration owned by CAP-ADMINISTRATION. CAP-DATA owns identity-linked clinical context; CAP-LABORATORY owns results and CAP-CDS owns derived assessments. CAP-AI owns model execution provenance, not medication truth.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-3868440f00a9c053"
+    },
+    {
+      "key": "precision-assessment-scenario-handoff",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-43372d96506e49d3",
+      "text": "AssessmentRequest references patient, tenant, encounter, purpose, context snapshot/version, exposure IDs, evidence release and intended use. AssessmentResult references input hashes, findings, affected organs/pathways, uncertainty, applicability exclusions, missing data, model/rule version and clinician disposition. ScenarioComparison references alternatives and explicit assumptions; it does not create DoseChange.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-43372d96506e49d3"
+    },
+    {
+      "key": "clinician-review-not-prescribing",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-62ddfadecf0f0a39",
+      "text": "Workflow: reconcile medication history → freeze context → validate applicability and missingness → retrieve evidence → calculate an approved assessment/scenario → expose uncertainty and alternatives → clinician accepts, rejects or requests more evidence. An accepted recommendation still requires a separate authenticated medication order, with its own author and lifecycle. No AI or twin service may issue or change that order.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-62ddfadecf0f0a39"
+    },
+    {
+      "key": "knowledge-personal-clinical-ai-pgx",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-93599357d8174361",
+      "text": "Knowledge AI supplies versioned evidence; Clinical AI explains an assessment; Personal AI provides an audience-appropriate explanation without prescribing; a twin consumes approved context to produce separately labelled scenarios. PGx knowledge must retain allele/phenotype interpretation, evidence source, version, jurisdiction and population applicability. CPIC distinguishes guidance on using available genetic results from decisions to order testing. The FDA association table itself does not imply that testing is recommended before prescribing. These are boundaries for the design, not a validated dosing rule set. [CPIC guidelines](https://cpicpgx.org/guidelines/) · [FDA table](https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations).",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-93599357d8174361"
+    },
+    {
+      "key": "protein-and-functional-genomics",
+      "owner": "CAP-AI",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-AI-ab34c38a73f74cad",
+      "text": "Support protein structure intelligence, variant effects/interpretation, functional genomics, pharmacogenomics, gene–drug and genotype–phenotype relationships, and molecular pathways. A laboratory supplies authorized reports and QC; a qualified genetics/molecular reviewer assesses clinical relevance; a researcher uses separately authorized datasets; the patient controls available access/delegation under applicable policy. Neither a scientific service identity nor a general chatbot may authorize a clinical interpretation.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-AI.md",
+        "sha256": "2b0b6ff3ad2dec7ad0a58e82394746a0138effedb151d92b959fe1658f37cc92"
+      },
+      "anchor": "M08-CAP-AI-ab34c38a73f74cad"
+    },
+    {
+      "key": "source-invalidation-and-pediatric-applicability",
+      "owner": "CAP-CDS",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-CDS-5769f5bddcbeb03b",
+      "text": "Tests must reject stale context, ambiguous units, unapproved models and autonomous dose/order mutations. A new renal result invalidates a dependent scenario; clinician review records the exact evidence/context versions. Both OTC and supplement exposures participate in interaction screening. Each finding opens its source and assumptions. Pediatric/BSA/pregnancy cases remain blocked until intended-use validation establishes eligibility. Open gates: validated formulas/thresholds, licensed knowledge packs, clinical evaluation, human factors and clinical governance. No live assessment or medical validation is claimed.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-CDS.md",
+        "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+      },
+      "anchor": "M08-CAP-CDS-5769f5bddcbeb03b"
+    },
+    {
+      "key": "research-validation-feedback",
+      "owner": "CAP-RESEARCH",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-RESEARCH-776d5e565a16c4f9",
+      "text": "Patient data → authorized minimized/pseudonymized research dataset → Research AI → hypothesis → methodological and independent clinical validation appropriate to the claim → evidence release → Knowledge AI → separately validated Clinical AI/twin/pharmacology release.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-RESEARCH.md",
+        "sha256": "353d620884ad17b0e8a5cd55bc303eac64dde5672c4bac761542e389174853ce"
+      },
+      "anchor": "M08-CAP-RESEARCH-776d5e565a16c4f9"
+    },
+    {
+      "key": "research-no-hypothesis-to-fact",
+      "owner": "CAP-RESEARCH",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-RESEARCH-4b3cefa71b899b23",
+      "text": "A Hypothesis cannot enter the clinical knowledge pack as an established fact. EvidenceRelease records study/protocol, dataset/method versions, validation evidence, reviewer, applicability, limitations and expiry/review triggers. Conflicting results coexist with provenance. Promotion and rollback are explicit signed lifecycle actions.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-RESEARCH.md",
+        "sha256": "353d620884ad17b0e8a5cd55bc303eac64dde5672c4bac761542e389174853ce"
+      },
+      "anchor": "M08-CAP-RESEARCH-4b3cefa71b899b23"
+    },
+    {
+      "key": "canonical-ingestion-and-clinical-truth",
+      "owner": "CAP-INTEROP",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-INTEROP-0c0ca6000980f655",
+      "text": "ImportBatch records input digest, partner/message identity, patient-match result, mapping release, item outcomes and idempotency key. A write candidate must reference approved source authority, validated mapping and current release. The clinical owner revalidates and accepts it; the connector cannot unilaterally overwrite the source of truth.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-INTEROP.md",
+        "sha256": "8e778044e456c8f42b5acd94ff915461fd20a840a92169821faffd596de16db5"
+      },
+      "anchor": "M08-CAP-INTEROP-0c0ca6000980f655"
+    },
+    {
+      "key": "typed-records-only-for-twin",
+      "owner": "CAP-INTEROP",
+      "status": "EXISTING_ARCHITECTURE_REQUIREMENT_CONFIRMED",
+      "source_requirement": "M08-CAP-INTEROP-a38f08efea7899f5",
+      "text": "Use secret management outside repository, least privilege, transport encryption, restricted staging retention, access audit, consent/purpose checks and jurisdiction controls. Logs include schema/release hashes and rejection counts, not sample PHI. Dependencies CAP-DATA, CAP-IDENTITY, CAP-CONSENT, CAP-AI, CAP-AUDIT. Twin/AI consumers see accepted typed records only.",
+      "evidence": {
+        "path": "docs/canonical/master08/CAP-INTEROP.md",
+        "sha256": "8e778044e456c8f42b5acd94ff915461fd20a840a92169821faffd596de16db5"
+      },
+      "anchor": "M08-CAP-INTEROP-a38f08efea7899f5"
+    }
+  ],
+  "capabilities_checked": 25,
+  "new_owners": 0,
+  "new_modules": 0,
+  "architecture_status": "REQUESTED_CONCEPTUAL_CAPABILITIES_COVERED",
+  "implementation_status": "NOT_IMPLEMENTED_OR_CLINICALLY_VALIDATED",
+  "digital_twin_owner": "CAP-TWIN",
+  "precision_pharmacology_owner": "CAP-CDS",
+  "medication_truth_owner": "CAP-MEDICATION",
+  "new_contract": {
+    "path": "docs/engineering/twin-pharmacology-control19.md",
+    "sha256": "1a3478749e6f291f9e8b2009b8895d6e18eb0887a5575d67f9512f8383d3f6a9"
+  },
+  "remaining_engineering": [
+    "Model-specific typed numerical contracts and acceptance thresholds",
+    "Runtime authorized handoff, invalidation and replay implementation",
+    "Imaging derivation and modality-specific integration",
+    "Accessible dynamic-organism UI and export implementation"
+  ],
+  "external_gates": [
+    "Licensed evidence/terminology releases",
+    "Qualified model intended-use/calibration/clinical safety validation",
+    "Approved imaging derivations",
+    "Actual partner and identity/security integrations",
+    "Clinical comprehension and human-factors acceptance"
+  ],
+  "clinical_fact_write_allowed": false,
+  "autonomous_prescribing_allowed": false
+}

@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 73,
+  "family": "remaining-recovery-and-isolation-operations",
+  "owner": "CAP-OPERATIONS",
+  "ids": [
+    230,
+    1011
+  ],
+  "decision_sha256": "cdde0fa867256c9fa8b2de07b70c29980113971dcf58ae680486ffc88dd29228",
+  "source_hashes": {
+    "230": "e39013828bb2fae6d2dd9a21937e0d21571bd7501a72a5548b78463531bf751f",
+    "1011": "65886483aabc139ffe08023be788395debf501928c15566af1a579ba1f55d77c"
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "pass": "MASTER-12",
+  "records": [
+    {
+      "original_id": 406,
+      "source_title": "Medication Side Effect Database",
+      "source_sha256": "cb3c042566fdb7cb68af8d1096a22d6d03c24e69142497d241c6d04dff6c2684",
+      "normalized_title": "Medication Side Effect Database",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Common/rare/serious and frequency claims retain evidence source, formulation and population; observed adverse events are separate from reference knowledge.",
+      "entities": [
+        "MedicationReference",
+        "AdverseEffectEvidence"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 407,
+      "source_title": "Medication Storage Instructions",
+      "source_sha256": "fe7b5af93dadb74cbd672c517e08b4b2633c64c241e5fe4100df112759c3abbc",
+      "normalized_title": "Medication Storage Instructions",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Temperature/humidity/shelf-life instructions retain exact manufacturer/product/formulation release; no generic storage assumption after opening or excursion.",
+      "entities": [
+        "ProductStorageInstruction"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 408,
+      "source_title": "Medication Expiration Monitoring",
+      "source_sha256": "ac334127408df87dda3880e6234e51d27c5c3c241be8425b5d4a67367118a4c4",
+      "normalized_title": "Medication Expiration Monitoring",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Expiry observation retains packaging/source and date semantics; notifications do not authorize replacement, treatment interruption or disposal.",
+      "entities": [
+        "MedicationPackage",
+        "ExpiryObservation"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 409,
+      "source_title": "Medication Recall Center",
+      "source_sha256": "e9a96f6c470c5b9bca762e5b55968dfc1ec1d44e0e8e78fcb9d86b202333f06e",
+      "normalized_title": "Medication Recall Center",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Recall matches require authoritative notice/product/batch identity and update time. Missing batch is unknown, not a negative match; acknowledgement and clinical action are distinct.",
+      "entities": [
+        "RecallNotice",
+        "BatchMatch"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 418,
+      "source_title": "Medication Compliance Monitoring",
+      "source_sha256": "584c561b17b842334e0a74fc8d872e839b074e95ab38b65340dff37ee34b0e85",
+      "normalized_title": "Medication Compliance Monitoring",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Daily/weekly/monthly adherence distinguishes reported, inferred, unknown and observed exposure; no moral label or inferred clinical effect.",
+      "entities": [
+        "AdherenceObservation",
+        "ReportedExposure"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 419,
+      "source_title": "Medication Therapy History",
+      "source_sha256": "a89761c3e2447c54c0e6a584409b5c6106cc7c4ce5ae06adae9cead7c4a483cc",
+      "normalized_title": "Medication Therapy History",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Treatment history preserves attributed start/stop/correction and reported-versus-prescribed/dispensed/administered distinctions; complete history is not guaranteed.",
+      "entities": [
+        "MedicationHistory",
+        "HistoryAmendment"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 420,
+      "source_title": "Medication Timeline",
+      "source_sha256": "3c100620f24d188d28b78df3845d888b5d71d83dfb3b85fb694ceb40ed91a75c",
+      "normalized_title": "Medication Timeline",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Medication chronology references source-owned exposure and version/time rather than rewriting clinical facts; out-of-order corrections remain visible.",
+      "entities": [
+        "MedicationTimeline",
+        "ExposureEpisode"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 422,
+      "source_title": "Medication Stock Management",
+      "source_sha256": "cd5b41f2d7ef3bf5f821fdef5cd1ab15eb9b45c1d32ef87368756c8f817a7099",
+      "normalized_title": "Medication Stock Management",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Home quantity/consumption/low-stock tracking retains unit, product and source uncertainty; consumption estimates are not verified administration.",
+      "entities": [
+        "HomeMedicationStock",
+        "QuantityObservation"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 423,
+      "source_title": "Medication Consumption Statistics",
+      "source_sha256": "b13398bac2bd6ca36bd47b5d4a4cad30151b1e011f94df63e7f3f176151e7a62",
+      "normalized_title": "Medication Consumption Statistics",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Usage statistics preserve period, denominator, missingness and source type; counts of packages or reminders are not clinical adherence outcomes.",
+      "entities": [
+        "UsageAggregate",
+        "AggregateProvenance"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 429,
+      "source_title": "Medication Information Sheet",
+      "source_sha256": "800504c76a2e386d970ab062a1c47054e8e1a55aa7cf2c2a6fde459842d6c080",
+      "normalized_title": "Medication Information Sheet",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "Medication reference knowledge and reported-use chronology share the existing owner, retaining product/manufacturer/evidence version, batch/expiry, quantity units and reported-versus-observed use. Preserve official sheet content without converting it to validated clinical advice.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Official indication/contraindication/dose/effect/storage sheets require exact product/source/version and jurisdiction. Displaying text does not validate treatment applicability.",
+      "entities": [
+        "OfficialMedicationMonograph",
+        "ProductEvidenceVersion"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-MEDICATION.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    },
+    {
+      "original_id": 416,
+      "source_title": "Medication Reminder Center",
+      "source_sha256": "f99503e9b08e86663f4102a5eb6b937bcc7d0f7cc8417b59348e46c2fa0332f3",
+      "normalized_title": "Medication Reminder Center",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Medication reminder delivery reuses notifications; a schedule/message/read receipt is not ingestion, a prescription or a missed-dose treatment instruction.",
+      "scope": "Explicit medication cluster profile; existing shared owner",
+      "workflow": "Daily/weekly/missed-dose reminders follow an authorized schedule and version; delivery/acknowledgement does not prove ingestion and never creates a catch-up instruction.",
+      "entities": [
+        "ReminderSchedule",
+        "DeliveryAttempt",
+        "Acknowledgment"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized context",
+        "Profile-specific source facts and provenance"
+      ],
+      "outputs": [
+        "Versioned bounded artifact",
+        "Explicit uncertainty/missingness",
+        "Human disposition"
+      ],
+      "dependencies": [
+        "CAP-NOTIFICATIONS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.",
+      "acceptance": "All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.",
+      "open_gates": "No validated clinical dosing/rules, runtime integration or qualified acceptance. Prior owner gates remain open.",
+      "evidence": {
+        "document": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+        "review": "audit/master-12/batches/002.json"
+      }
+    }
+  ]
+}

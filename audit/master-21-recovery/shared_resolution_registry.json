@@ -1,0 +1,82 @@
+{
+  "issues": [
+    {
+      "id": "M21R-S01",
+      "question": "Source correction after admission: exact response version?",
+      "resolution": "Pinned immutable snapshot and response digest; no newer source substitution",
+      "status": "DESIGN_RESOLVED",
+      "evidence": [
+        {
+          "path": "docs/engineering/mvp-admission-recovery.md",
+          "sha256": "799497d59a6de7a199be36fb8cf926cc33f9fc95d9324abbf6a29ca671519c3f"
+        },
+        {
+          "path": "scripts/admission-model.mjs",
+          "sha256": "8eb9ffc3c4ad96f7f42eb866099f28a3a8c2b3759fba73964f25dc6ab8b88c1b"
+        }
+      ],
+      "affected_owners": [
+        "CAP-IDENTITY",
+        "CAP-DATA",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-ALLERGY",
+        "CAP-PROFILE"
+      ],
+      "runtime_acceptance": "PENDING_SQL_CONCURRENCY_AND_TRANSPORT_PROOF"
+    },
+    {
+      "id": "M21R-S02",
+      "question": "Can a retry reuse an admission?",
+      "resolution": "Atomic single-use context/digest claim; retry needs new authorization and audit",
+      "status": "DESIGN_RESOLVED",
+      "evidence": [
+        {
+          "path": "docs/engineering/mvp-admission-recovery.md",
+          "sha256": "799497d59a6de7a199be36fb8cf926cc33f9fc95d9324abbf6a29ca671519c3f"
+        },
+        {
+          "path": "scripts/admission-model.mjs",
+          "sha256": "8eb9ffc3c4ad96f7f42eb866099f28a3a8c2b3759fba73964f25dc6ab8b88c1b"
+        }
+      ],
+      "affected_owners": [
+        "CAP-IDENTITY",
+        "CAP-DATA",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-ALLERGY",
+        "CAP-PROFILE"
+      ],
+      "runtime_acceptance": "PENDING_SQL_CONCURRENCY_AND_TRANSPORT_PROOF"
+    },
+    {
+      "id": "M21R-S03",
+      "question": "Do restored admissions remain usable?",
+      "resolution": "Recovery epoch invalidates all prior leases before reads reopen",
+      "status": "DESIGN_RESOLVED",
+      "evidence": [
+        {
+          "path": "docs/engineering/mvp-admission-recovery.md",
+          "sha256": "799497d59a6de7a199be36fb8cf926cc33f9fc95d9324abbf6a29ca671519c3f"
+        },
+        {
+          "path": "scripts/admission-model.mjs",
+          "sha256": "8eb9ffc3c4ad96f7f42eb866099f28a3a8c2b3759fba73964f25dc6ab8b88c1b"
+        }
+      ],
+      "affected_owners": [
+        "CAP-IDENTITY",
+        "CAP-DATA",
+        "CAP-SECURITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-ALLERGY",
+        "CAP-PROFILE"
+      ],
+      "runtime_acceptance": "PENDING_SQL_CONCURRENCY_AND_TRANSPORT_PROOF"
+    }
+  ]
+}

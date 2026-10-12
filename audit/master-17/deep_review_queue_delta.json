@@ -1,0 +1,4148 @@
+{
+  "pass": "MASTER-17",
+  "removed_ids": [],
+  "prior_total": 3109,
+  "remaining_total": 3109,
+  "updates": [
+    {
+      "original_id": 4755,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4767,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 134,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 135,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 248,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 536,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 591,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 826,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1086,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2081,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2084,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2086,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2333,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2378,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2596,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2612,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2620,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2637,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2867,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3012,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3082,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3085,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3086,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3087,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3088,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3089,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3097,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3099,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3527,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3582,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3592,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3708,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3807,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3926,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4011,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 283,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 565,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 579,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 627,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 628,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2169,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2174,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2178,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2179,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2432,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2472,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2474,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2478,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2492,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2507,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2842,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2906,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3003,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3602,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3607,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3612,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3620,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3822,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3823,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4022,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4023,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4024,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1018,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1026,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2127,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2412,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2421,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2429,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2752,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2758,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2759,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2777,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3202,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3219,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3222,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3398,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3402,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3422,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3424,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3430,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3542,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3562,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3563,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3564,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3569,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3570,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3573,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3882,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3942,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3950,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3951,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4091,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4102,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4118,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4119,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 544,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 557,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1054,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1064,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1065,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1070,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1074,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1083,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1090,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1097,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1110,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2211,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2555,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2572,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2592,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2602,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2605,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2922,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2926,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2930,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3018,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3722,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3744,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3762,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3774,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4354,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4355,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4384,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4390,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4398,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4727,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4749,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4753,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4768,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4782,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4784,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4793,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4799,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4822,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4953,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4958,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 140,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 143,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 587,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 599,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2005,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2044,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2046,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2060,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2065,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2519,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2715,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2868,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3013,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3502,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3504,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3509,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3513,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3522,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3525,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3528,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3802,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3804,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4002,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4008,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4010,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4015,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4019,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 638,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 639,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 644,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 645,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 657,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2145,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2264,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2456,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2632,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2942,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2958,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3015,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3142,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3147,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3159,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3302,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3308,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3642,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3649,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3842,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3848,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4042,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4050,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 126,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2123,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2135,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2271,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2772,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2775,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2789,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2792,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2798,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3462,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3463,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3464,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3471,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3682,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3683,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3684,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3685,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3902,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3912,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3922,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3923,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3924,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3930,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3938,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4323,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4916,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 191,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 193,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 514,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 529,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 531,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 548,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 549,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 554,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 556,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 598,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 616,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 667,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 674,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 681,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 694,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 698,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 705,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 706,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 711,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 712,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 729,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 733,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 784,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 804,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 805,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 806,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 807,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 808,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 813,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 835,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 984,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1029,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1034,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1035,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1036,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1037,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1048,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1055,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1056,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1062,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1063,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1075,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1076,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1077,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1078,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1084,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1085,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1094,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1095,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1096,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1106,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1107,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2011,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2073,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2094,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2112,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2115,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2154,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2190,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2204,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2245,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2250,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2263,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2293,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2296,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2312,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2364,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2392,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2607,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2652,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2672,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2679,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2692,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2693,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2694,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2781,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2982,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3002,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3742,
+      "canonical_owner": "CAP-SPECIALTY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2131,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3692,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 196,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 788,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1098,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2105,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2393,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2402,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2420,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2463,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2504,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2659,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3229,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3390,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3431,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3571,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1413,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1747,
+      "canonical_owner": "CAP-LABORATORY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4746,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4939,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 434,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 447,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 477,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 589,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 725,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 737,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 746,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 747,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 749,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 832,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 987,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1102,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1103,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1104,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2129,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2223,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2272,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2303,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2319,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2322,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2443,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2547,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2639,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2669,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3090,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3591,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1194,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1247,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1476,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1511,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1741,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1742,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1743,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1749,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1753,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1760,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1970,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1976,
+      "canonical_owner": "CAP-ENCOUNTER",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4321,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4322,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4324,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 486,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 732,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1015,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2306,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2334,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2760,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4301,
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4396,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1144,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1147,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1155,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1158,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1165,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1168,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1178,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1179,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1182,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1187,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1188,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1192,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1206,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1229,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1253,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1294,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1313,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1379,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1427,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1503,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1504,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1505,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1507,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1534,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1545,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1565,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1599,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1605,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1654,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1721,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1725,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1729,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1730,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1731,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1736,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1739,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1740,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1759,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1783,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1784,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1996,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 431,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 758,
+      "canonical_owner": "CAP-CDS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4745,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4796,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 552,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2155,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2156,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2188,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2228,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2275,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2298,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2495,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2545,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2556,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2660,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3209,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3609,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3753,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3771,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1578,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1748,
+      "canonical_owner": "CAP-IMAGING",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 94,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 97,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 98,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1145,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1146,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1148,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1163,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1164,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1173,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1181,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1184,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1189,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1190,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1193,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1202,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1203,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1211,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1216,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1226,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1227,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1228,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1241,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1244,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1250,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1252,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1263,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1264,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1265,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1267,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1268,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1271,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1273,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1286,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1287,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1288,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1301,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1302,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1303,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1305,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1306,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1307,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1308,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1312,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1318,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1325,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1362,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1365,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1371,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1377,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1385,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1387,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1389,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1405,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1407,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1409,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1417,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1422,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1465,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1467,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1482,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1494,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1513,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1523,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1528,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1529,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1543,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1544,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1562,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1563,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1564,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1566,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1567,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1568,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1569,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1570,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1582,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1583,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1587,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1589,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1590,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1592,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1593,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1595,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1596,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1602,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1604,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1607,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1613,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1614,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1623,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1624,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1627,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1642,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1644,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1649,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1652,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1656,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1657,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1658,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1667,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1702,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1703,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1704,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1706,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1707,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1708,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1709,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1710,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1712,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1714,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1715,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1726,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1757,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1770,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1778,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1804,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1808,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1809,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1813,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1827,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1844,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1873,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1877,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1895,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1916,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1932,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1937,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1956,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1974,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1994,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1195,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1221,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1552,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1556,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1659,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1718,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1798,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1878,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1897,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1917,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1938,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1958,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1977,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 91,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1213,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1285,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1295,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1361,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1367,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1370,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1372,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1466,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1468,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1486,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1495,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1502,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1723,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1758,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1848,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1913,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1984,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1988,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 620,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 668,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 688,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 740,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 796,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 816,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 836,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 989,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1009,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1050,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1069,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1089,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1109,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1408,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1978,
+      "canonical_owner": "CAP-AI",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 173,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 181,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 182,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 343,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 345,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 347,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 348,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 349,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 351,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 374,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 448,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 449,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 515,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 516,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 518,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 546,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1043,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1045,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1046,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1058,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1082,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2026,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2064,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2225,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2434,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2523,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2603,
+      "canonical_owner": "CAP-DEVICES",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1174,
+      "canonical_owner": "CAP-RESEARCH",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1424,
+      "canonical_owner": "CAP-RESEARCH",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1822,
+      "canonical_owner": "CAP-RESEARCH",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 818,
+      "canonical_owner": "CAP-RESEARCH",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3382,
+      "canonical_owner": "CAP-ALLERGY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 3782,
+      "canonical_owner": "CAP-ALLERGY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4082,
+      "canonical_owner": "CAP-ALLERGY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2712,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2732,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 76,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 178,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 200,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 219,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 261,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 262,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 263,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 269,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 270,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 718,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2099,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2289,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2324,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2716,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2718,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2719,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2729,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2738,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 2749,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1750,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1887,
+      "canonical_owner": "CAP-EMERGENCY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 433,
+      "canonical_owner": "CAP-MEDICATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 106,
+      "canonical_owner": "CAP-MEDICATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 159,
+      "canonical_owner": "CAP-MEDICATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 26,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 38,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 79,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 92,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 93,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 217,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1154,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1893,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1752,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1968,
+      "canonical_owner": "CAP-DOCUMENTS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 798,
+      "canonical_owner": "CAP-IDENTITY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 817,
+      "canonical_owner": "CAP-IDENTITY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 82,
+      "canonical_owner": "CAP-IDENTITY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 222,
+      "canonical_owner": "CAP-IDENTITY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 223,
+      "canonical_owner": "CAP-IDENTITY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 152,
+      "canonical_owner": "CAP-PHARMACY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 154,
+      "canonical_owner": "CAP-PHARMACY",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 432,
+      "canonical_owner": "CAP-ADMINISTRATION",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 112,
+      "canonical_owner": "CAP-PROFILE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 266,
+      "canonical_owner": "CAP-PROFILE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 264,
+      "canonical_owner": "CAP-QR",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 268,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1242,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1754,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1894,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1961,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1962,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1971,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1972,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1980,
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1402,
+      "canonical_owner": "CAP-TRAVEL",
+      "documentation_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    }
+  ]
+}

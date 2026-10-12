@@ -1,0 +1,31 @@
+{
+  "pass": "MASTER-17",
+  "batch": 33,
+  "family": "document-translation-profiles",
+  "owner": "CAP-DOCUMENTS",
+  "ids": [
+    26,
+    38,
+    79,
+    92,
+    93,
+    217,
+    218,
+    428,
+    1154,
+    1893
+  ],
+  "decision_sha256": "380f9dfff6a12d2b20e960228d6f7d0d1d40b7bc4f11c6ca70d4f069b5dc9969",
+  "source_hashes": {
+    "26": "91a0cda36e5061c99118e71097c8c32617a60e253fab3b17078344858c49bb77",
+    "38": "d558e18e7b562b6eda2ced8c4990c30c22691cb78fc9bbdd869cefd7b72bdb97",
+    "79": "3ea5d0236254fc52b213640a4741eb1108d37ae2bd7adf25b65d626e9a7e85fa",
+    "92": "4e5aca6ac02269d36ecff5ee01d223f51633b5544a479273d159569cb93cfbae",
+    "93": "81ad5d39c106bc988c4bbc1fb650bb4ef7119453fe2bcc4194b16821bf4d8416",
+    "217": "cba2f407bbfb0aa04cac0a68b50ba325927512e791eff9bc32120548e7a0c5af",
+    "218": "1b9e685d75d26da0f3139b20bbfa149a0c70ea4ecfd041bc019dbecd9031f380",
+    "428": "4e394888c84479cef5ba5abcefab2796ea0c01e6322a7378e835c3e128adfb9f",
+    "1154": "9f0bd23b37dcd394df0abe6d5893fa3c83ad9930f2cb1eec875f2d9bd21e156f",
+    "1893": "01bd4af1f042bf075d423ac097bb1559f6ef3b04177aac4ad3ffc7e615061a60"
+  }
+}

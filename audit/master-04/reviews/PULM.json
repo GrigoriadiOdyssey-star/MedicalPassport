@@ -1,0 +1,2152 @@
+{
+  "pass": "MASTER-04",
+  "domain": "PULM",
+  "parent_checkpoint": "04b8e805e857746f311710577d58f2c60b8eabc3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1100 reviewed IDs.",
+  "count": 104,
+  "reviews": [
+    {
+      "original_id": 901,
+      "title": "Pediatric Pulmonologist Profile",
+      "body": "# Pediatric Pulmonologist Profile\n\nProfessional profile of licensed pediatric pulmonologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Pediatric Respiratory Expertise\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9dbdd61e2e19488fb4e05d5e515b21089a58766cb590c420b2aa10cc9d886ac3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34887
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Qualifications",
+        "Experience",
+        "Pediatric Respiratory Expertise",
+        "Languages"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 902,
+      "title": "Pediatric Pulmonology Center Profile",
+      "body": "# Pediatric Pulmonology Center Profile\n\nStores complete information about pediatric pulmonology centers.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Respiratory Laboratories\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2ae8af9c68b9d8f8cf87b990516690508415bc83f997b58e95577d6244143f9b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34909
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Services",
+        "Physicians",
+        "Respiratory Laboratories",
+        "Contact Information"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 903,
+      "title": "Pediatric Pulmonology Appointment Booking",
+      "body": "# Pediatric Pulmonology Appointment Booking\n\nAllows scheduling consultations with pediatric pulmonologists.\n\nSupports\n\n• Clinic\n\n• Physician\n\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "03735d5fcc99e34d3c7991fb5dbd3383472d237c30304bdaaf57a27e20b4792c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34931
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Clinic",
+        "Physician",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 904,
+      "title": "Pediatric Asthma Registry",
+      "body": "# Pediatric Asthma Registry\n\nStores pediatric asthma diagnoses.\n\nSupports\n\n• Severity\n\n• Triggers\n\n• Exacerbations\n\n• Treatment Plan\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "096b859a80c5ba4800dd26633674e94988648bc64e522b4585a483342f307390",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34951
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Severity",
+        "Triggers",
+        "Exacerbations",
+        "Treatment Plan"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 905,
+      "title": "Pediatric Spirometry Archive",
+      "body": "# Pediatric Spirometry Archive\n\nStores spirometry examinations.\n\nSupports\n\n• FEV1\n\n• FVC\n\n• Flow Curves\n\n• Physician Reports\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "58bbb04c085e13d5b6402ed89f2d0cda29c9ef10a74aa26dfcd8016c152f1c14",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34973
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "FEV1",
+        "FVC",
+        "Flow Curves",
+        "Physician Reports"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 906,
+      "title": "Pediatric Oxygen Saturation Monitoring",
+      "body": "# Pediatric Oxygen Saturation Monitoring\n\nTracks oxygen saturation.\n\nSupports\n\n• Pulse Oximetry\n\n• Trends\n\n• Alerts\n\n• Device Integration\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0dab658b65543b18081580140188417d7d7320541774d6a1876df2301484e692",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34995
+      },
+      "verdict": "Oximetry requires device identity, signal quality, observation time and acquisition context; thresholds and escalation coverage need approved configuration, not inferred from a generic Alerts label.",
+      "feature_labels": [
+        "Pulse Oximetry",
+        "Trends",
+        "Alerts",
+        "Device Integration"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 907,
+      "title": "Pediatric Respiratory Infection Registry",
+      "body": "# Pediatric Respiratory Infection Registry\n\nStores respiratory infections.\n\nSupports\n\n• Bronchiolitis\n\n• Pneumonia\n\n• RSV\n\n• Influenza\n\n• COVID-19\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87851f029652157066a37f54d700031f88a6a0d95a80b28c51d077f35e5f086b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35017
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Bronchiolitis",
+        "Pneumonia",
+        "RSV",
+        "Influenza",
+        "COVID-19"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 908,
+      "title": "Pediatric Cystic Fibrosis Registry",
+      "body": "# Pediatric Cystic Fibrosis Registry\n\nTracks cystic fibrosis management.\n\nSupports\n\n• Lung Function\n\n• Genetics\n\n• Medications\n\n• Nutrition\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "33972ce18c6895c580b7139dee518f4627e6fb86d0832ef7f5e2a5fb60efb9f3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35041
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Lung Function",
+        "Genetics",
+        "Medications",
+        "Nutrition"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 909,
+      "title": "Pediatric Inhaler Manager",
+      "body": "# Pediatric Inhaler Manager\n\nTracks inhaler therapy.\n\nSupports\n\n• Medication\n\n• Dose Counter\n\n• Usage History\n\n• Reminders\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "102a3e59b98f0cb31ff9b3f955d21b1d153eb2795557c119387817cc17b61c6a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35063
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Medication",
+        "Dose Counter",
+        "Usage History",
+        "Reminders"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 910,
+      "title": "Pediatric Nebulizer Integration",
+      "body": "# Pediatric Nebulizer Integration\n\nSupports smart nebulizer synchronization.\n\nIncludes\n\n• Treatment Sessions\n\n• Medication History\n\n• Device Status\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "60ba8dde3511e610dffeaeddc87c3fc0557e792a11c0fff8497ea89d2fba55a4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35085
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Treatment Sessions",
+        "Medication History",
+        "Device Status"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 911,
+      "title": "Pediatric Sleep Apnea Registry",
+      "body": "# Pediatric Sleep Apnea Registry\n\nStores pediatric sleep breathing disorders.\n\nSupports\n\n• Polysomnography\n\n• CPAP Therapy\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bcaa0271c01400e17fad9360ebd00ebde210770594b6d2701a96d6eb1356b8f1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35105
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Polysomnography",
+        "CPAP Therapy",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 912,
+      "title": "Pediatric Lung Imaging Archive",
+      "body": "# Pediatric Lung Imaging Archive\n\nStores chest imaging.\n\nSupports\n\n• X-ray\n\n• CT\n\n• MRI\n\n• Ultrasound\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "122cf308d5c95df70e286c64f2ff7289a6e7d30cc2081996a9540e3888bd7cdf",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35125
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "X-ray",
+        "CT",
+        "MRI",
+        "Ultrasound"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 913,
+      "title": "Pediatric Respiratory Medication Manager",
+      "body": "# Pediatric Respiratory Medication Manager\n\nTracks respiratory medications.\n\nSupports\n\n• Bronchodilators\n\n• Steroids\n\n• Antibiotics\n\n• Weight-Based Dosage\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8ab04cf80f8ca0ffa01764b326c6e397bd5123a336c0d094183c545510808202",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35147
+      },
+      "verdict": "Weight-based dosage is retained as source intent. Record weight/time/units and independently authorized prescription; do not infer an autonomous dosing engine.",
+      "feature_labels": [
+        "Bronchodilators",
+        "Steroids",
+        "Antibiotics",
+        "Weight-Based Dosage"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 914,
+      "title": "Pediatric Pulmonology AI Assistant",
+      "body": "# Pediatric Pulmonology AI Assistant\n\nAI assists respiratory monitoring.\n\nAnalyzes\n\n• Symptoms\n\n• Spirometry\n\n• Oxygen Saturation\n\n• Imaging\n\nProvides educational recommendations.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c3e68527643ad4ff6e056861ef486f5d14073554f2b068ef824f7d0ad99cb3c2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35169
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Spirometry",
+        "Oxygen Saturation",
+        "Imaging"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 915,
+      "title": "Pediatric Respiratory Emergency Module",
+      "body": "# Pediatric Respiratory Emergency Module\n\nSupports respiratory emergencies.\n\nIncludes\n\n• Severe Asthma Attack\n\n• Respiratory Distress\n\n• Low Oxygen Saturation\n\n• Emergency Instructions\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3e42c79e9d5ca68fd66061c54a7bdb3f76665fff8487596eca241334efbe6b03",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35193
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Severe Asthma Attack",
+        "Respiratory Distress",
+        "Low Oxygen Saturation",
+        "Emergency Instructions"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 916,
+      "title": "Pediatric Pulmonology Timeline",
+      "body": "# Pediatric Pulmonology Timeline\n\nDisplays the complete respiratory history.\n\nIncludes\n\n• Diagnoses\n\n• Spirometry\n\n• Imaging\n\n• Medications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "86284d7e92827226f2bcbe3a248c625c421e020dbb236662bc19ce92458ff28e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35215
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Spirometry",
+        "Imaging",
+        "Medications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 917,
+      "title": "International Pediatric Pulmonology Search",
+      "body": "# International Pediatric Pulmonology Search\n\nSearches pediatric respiratory centers worldwide.\n\nDisplays\n\n• Country\n\n• City\n\n• Specialists\n\n• Ratings\n\n• Costs\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e1c42409921bb394eebc4537d1bfe70aea6d7872c4e5e8e51fd66dbdb1ad38b2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35237
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Country",
+        "City",
+        "Specialists",
+        "Ratings",
+        "Costs"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 919,
+      "title": "Pediatric Respiratory Quality of Life Assessment",
+      "body": "# Pediatric Respiratory Quality of Life Assessment\n\nEvaluates quality of life in chronic respiratory diseases.\n\nSupports\n\n• Physical Activity\n\n• Symptoms\n\n• Sleep\n\n• School Attendance\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "28332faa1e04d97564168b1456ae3f68779c046056455eb519b49dfbee3bad8a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35281
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Physical Activity",
+        "Symptoms",
+        "Sleep",
+        "School Attendance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 920,
+      "title": "Comprehensive Pediatric Pulmonology Dashboard",
+      "body": "# Comprehensive Pediatric Pulmonology Dashboard\n\nProvides a complete overview of pediatric respiratory health.\n\nDisplays\n\n• Diagnoses\n\n• Spirometry\n\n• Oxygen Saturation\n\n• Imaging\n\n• Medications\n\n• AI Recommendations\n\nActs as the primary pediatric pulmonology workspace within the Medical Passport ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0a8f68bfde95455fdb5cc1d46d00c3c91e78c2fd4b7e2e618a4eb6a9e6cc0ede",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 35303
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Spirometry",
+        "Oxygen Saturation",
+        "Imaging",
+        "Medications",
+        "AI Recommendations"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3181,
+      "title": "Clinical Pediatric Pulmonology Platform Core Engine",
+      "body": "Central platform for pediatric pulmonology.\n\nSupports\n\n• Congenital Lung Diseases\n• Airway Disorders\n• Asthma\n• Cystic Fibrosis\n• Chronic Respiratory Diseases\n• Respiratory Failure\n\nIntegrates Intensive Care, Allergy, Genetics, Radiology, AI and Digital Twin. :contentReference[oaicite:0]{index=0}\n\n---",
+      "body_sha256": "bcad148ecf1a1ae65b496e7c66b442db3fe2b459acd58fdf240fccba02aae251",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77746
+      },
+      "verdict": "Source includes an unresolved contentReference marker. Retain it as source provenance but do not treat it as a verified citation. Respiratory core is a specialty profile referencing shared owners.",
+      "feature_labels": [
+        "Congenital Lung Diseases",
+        "Airway Disorders",
+        "Asthma",
+        "Cystic Fibrosis",
+        "Chronic Respiratory Diseases",
+        "Respiratory Failure"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3182,
+      "title": "Pediatric Pulmonology Registry",
+      "body": "Maintains comprehensive pediatric pulmonology records.\n\nSupports\n\n• Respiratory Diagnoses\n• Pulmonary Function\n• Imaging\n• Bronchoscopy\n• Longitudinal Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f8e697f66d6c1b0a1924249efdea8ea9f890e9ad75f4dd15e4dbae7d7a2a3893",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77763
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Respiratory Diagnoses",
+        "Pulmonary Function",
+        "Imaging",
+        "Bronchoscopy",
+        "Longitudinal Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3183,
+      "title": "Pediatric Asthma Module",
+      "body": "Supports childhood asthma management.\n\nSupports\n\n• Severity Classification\n• Trigger Identification\n• Inhalation Therapy\n• Exacerbation Prevention\n• Personalized Asthma Plans\n• AI Risk Prediction\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "90da31fe6719b79aab8003126f111341a68256c63a8d17a10f23a63cc8dd590e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77781
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Severity Classification",
+        "Trigger Identification",
+        "Inhalation Therapy",
+        "Exacerbation Prevention",
+        "Personalized Asthma Plans",
+        "AI Risk Prediction"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3184,
+      "title": "Pediatric Cystic Fibrosis Module",
+      "body": "Supports lifelong cystic fibrosis management.\n\nSupports\n\n• CFTR Genotype\n• Pulmonary Function\n• Infection Monitoring\n• Nutritional Therapy\n• CFTR Modulators\n• Long-term Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b73b943f04f98b953b4809d7f076941b475eca8b12576a3ecdf50ab2ddcba68c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77800
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "CFTR Genotype",
+        "Pulmonary Function",
+        "Infection Monitoring",
+        "Nutritional Therapy",
+        "CFTR Modulators",
+        "Long-term Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3185,
+      "title": "Pediatric Airway Disorders Module",
+      "body": "Supports pediatric airway diseases.\n\nSupports\n\n• Laryngomalacia\n• Tracheomalacia\n• Subglottic Stenosis\n• Airway Obstruction\n• Bronchoscopy Planning\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "860cfc2b62d63969bd35ed2d5cf85fcad6a6545076488fbf914f4459b1b97fc1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77819
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Laryngomalacia",
+        "Tracheomalacia",
+        "Subglottic Stenosis",
+        "Airway Obstruction",
+        "Bronchoscopy Planning"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3186,
+      "title": "Pediatric Respiratory Infection Module",
+      "body": "Supports respiratory infections.\n\nSupports\n\n• Bronchiolitis\n• Pneumonia\n• Viral Infections\n• Bacterial Infections\n• Severe Respiratory Disease\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "34c09474ff5bb826d8f9dd6d0141923e7bcaaf9ee5c38584f87c60490b9c8a3c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77837
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Bronchiolitis",
+        "Pneumonia",
+        "Viral Infections",
+        "Bacterial Infections",
+        "Severe Respiratory Disease"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3187,
+      "title": "Pediatric Sleep Breathing Disorders Module",
+      "body": "Supports pediatric sleep-related respiratory disorders.\n\nSupports\n\n• Obstructive Sleep Apnea\n• Central Sleep Apnea\n• Hypoventilation Syndromes\n• Polysomnography\n• CPAP Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "999e59df0bf1ca0651a30e5cd67b4396b0a96fa9147b11d4bc5bba9d3b68b6e9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77855
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Obstructive Sleep Apnea",
+        "Central Sleep Apnea",
+        "Hypoventilation Syndromes",
+        "Polysomnography",
+        "CPAP Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3188,
+      "title": "Pediatric Respiratory Failure Module",
+      "body": "Supports respiratory insufficiency.\n\nSupports\n\n• Acute Respiratory Failure\n• Chronic Ventilation\n• Home Ventilation\n• Oxygen Therapy\n• ECMO Support\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "09e2c24e8c882a0bb5a674d284619dce22a4b255a2fd34b5d5195c84ce3b5053",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77873
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Acute Respiratory Failure",
+        "Chronic Ventilation",
+        "Home Ventilation",
+        "Oxygen Therapy",
+        "ECMO Support"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3189,
+      "title": "Pediatric Bronchoscopy Registry",
+      "body": "Maintains pediatric bronchoscopy records.\n\nSupports\n\n• Diagnostic Bronchoscopy\n• Therapeutic Bronchoscopy\n• Airway Evaluation\n• Foreign Body Removal\n• Digital Video Archive\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "29b858cae854d8ef7b5db069d82e7197f0f76466616ec1dbf5a307673f5cc4c5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77891
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnostic Bronchoscopy",
+        "Therapeutic Bronchoscopy",
+        "Airway Evaluation",
+        "Foreign Body Removal",
+        "Digital Video Archive"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3190,
+      "title": "Pediatric Pulmonary Imaging Registry",
+      "body": "Maintains pulmonary imaging.\n\nSupports\n\n• Chest X-ray\n• CT\n• MRI\n• Lung Ultrasound\n• AI Imaging Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "db8527842da370564949224998c160a53dd6a4ca864797ea1f686a900be144a7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77909
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Chest X-ray",
+        "CT",
+        "MRI",
+        "Lung Ultrasound",
+        "AI Imaging Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3191,
+      "title": "Pediatric Pulmonary Laboratory Registry",
+      "body": "Maintains respiratory laboratory studies.\n\nSupports\n\n• Blood Gases\n• Microbiology\n• Sweat Test\n• Inflammatory Markers\n• Genetic Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "62a17c076a193b84f0177b7ef4db3dd98ce66e4e92a9bd4dff2184c4f5e9dddb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77927
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Blood Gases",
+        "Microbiology",
+        "Sweat Test",
+        "Inflammatory Markers",
+        "Genetic Testing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3192,
+      "title": "Pediatric Pulmonary Biomarker Registry",
+      "body": "Maintains pulmonary biomarkers.\n\nSupports\n\n• Eosinophilic Biomarkers\n• Inflammatory Cytokines\n• Infection Biomarkers\n• Fibrosis Biomarkers\n• Precision Medicine Markers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3953d14d690a1540cd67c8d3b4292f89b0158bb58763e24fc38beb1618c82199",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77945
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Eosinophilic Biomarkers",
+        "Inflammatory Cytokines",
+        "Infection Biomarkers",
+        "Fibrosis Biomarkers",
+        "Precision Medicine Markers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3193,
+      "title": "Pediatric Pulmonology AI Decision Support",
+      "body": "Provides AI-assisted respiratory medicine.\n\nSupports\n\n• Asthma Risk Prediction\n• Respiratory Failure Detection\n• Imaging Interpretation\n• Pulmonary Function Analysis\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eee4a6890bed873cba230f6e628c90f145fc53278688b83e20138c7eb1e4e345",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77963
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma Risk Prediction",
+        "Respiratory Failure Detection",
+        "Imaging Interpretation",
+        "Pulmonary Function Analysis",
+        "Personalized Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3195,
+      "title": "Pediatric Pulmonology Telemedicine Module",
+      "body": "Supports remote respiratory care.\n\nSupports\n\n• Home Spirometry\n• Oxygen Monitoring\n• Ventilator Monitoring\n• AI Translation\n• Family Consultation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ff521cf66187bb28738d46e1f198e62de732ebdf655b2c6f0b0c7685e43f3408",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 77998
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Home Spirometry",
+        "Oxygen Monitoring",
+        "Ventilator Monitoring",
+        "AI Translation",
+        "Family Consultation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3196,
+      "title": "Pediatric Pulmonology Clinical Trials Registry",
+      "body": "Supports respiratory research.\n\nSupports\n\n• Asthma Studies\n• Cystic Fibrosis Research\n• Ventilation Research\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "98e35ec8fa150df06e3f5a8991b77a777ba5d4abe45800b5f4e555c74c36b9f6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78016
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma Studies",
+        "Cystic Fibrosis Research",
+        "Ventilation Research",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3198,
+      "title": "Pediatric Pulmonary Genetics Module",
+      "body": "Supports inherited respiratory diseases.\n\nSupports\n\n• Cystic Fibrosis\n• Primary Ciliary Dyskinesia\n• Surfactant Disorders\n• Rare Lung Diseases\n• Family Screening\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f4bd983751d4c2f11d04ef94547d784a5e268b1be066668135ac1c5e5ca68ac7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78050
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Cystic Fibrosis",
+        "Primary Ciliary Dyskinesia",
+        "Surfactant Disorders",
+        "Rare Lung Diseases",
+        "Family Screening"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3199,
+      "title": "Pediatric Pulmonology Intelligence Registry",
+      "body": "Maintains AI-ready respiratory datasets.\n\nSupports\n\n• Imaging\n• Spirometry\n• Bronchoscopy\n• Laboratory\n• Genetics\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "48196448ffe84473800f2674efaf7143c7727a8824832718b1dd0ed81defc4a1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78068
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Imaging",
+        "Spirometry",
+        "Bronchoscopy",
+        "Laboratory",
+        "Genetics",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3200,
+      "title": "Clinical Pediatric Pulmonology Intelligence Hub",
+      "body": "Coordinates the complete pediatric pulmonology ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Intensive Care\n• Allergy\n• Genetics\n• Radiology\n• Laboratory Services\n• Telemedicine\n\nProvides intelligent lifelong respiratory care across the EDHT ecosystem. :contentReference[oaicite:1]{index=1}\n\n---",
+      "body_sha256": "aff01f309375b9dfc6d79619992af381c69f615959bd30c66ad561e1d39a6d55",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78087
+      },
+      "verdict": "Source contentReference marker is not external evidence. Hub coordinates shared capabilities; it is not a separate clinical truth store.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Intensive Care",
+        "Allergy",
+        "Genetics",
+        "Radiology",
+        "Laboratory Services",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3361,
+      "title": "Clinical Pediatric Pulmonology Platform Core Engine",
+      "body": "Central platform for pediatric pulmonology.\n\nSupports\n\n• Asthma\n• Chronic Lung Diseases\n• Cystic Fibrosis\n• Congenital Pulmonary Disorders\n• Sleep Breathing Disorders\n• Respiratory Failure\n\nIntegrates Allergy, Immunology, Intensive Care, Radiology, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bb57294b2e97f1a4ca4316b71381f3a0ec6c1484b13f9081d8e63a32acf856b6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81345
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma",
+        "Chronic Lung Diseases",
+        "Cystic Fibrosis",
+        "Congenital Pulmonary Disorders",
+        "Sleep Breathing Disorders",
+        "Respiratory Failure"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3362,
+      "title": "Pediatric Pulmonology Registry",
+      "body": "Maintains comprehensive pediatric pulmonology records.\n\nSupports\n\n• Diagnoses\n• Lung Function\n• Imaging\n• Genetics\n• Oxygen Therapy\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "18fbb75126f5aabf8040f562dfd7b3516abf266d2250016eae3f12c58c9f3a14",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81366
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Lung Function",
+        "Imaging",
+        "Genetics",
+        "Oxygen Therapy",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3363,
+      "title": "Pediatric Asthma Module",
+      "body": "Supports pediatric asthma.\n\nSupports\n\n• Mild Asthma\n\n• Moderate Asthma\n\n• Severe Asthma\n\n• Exacerbations\n\n• Biologic Therapy\n\n• Asthma Action Plans\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "263bb3056fc5274d6a94ef6d6594b19fc9a9277884c2cbae8ca31f316d82cd52",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81385
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Mild Asthma",
+        "Moderate Asthma",
+        "Severe Asthma",
+        "Exacerbations",
+        "Biologic Therapy",
+        "Asthma Action Plans"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3364,
+      "title": "Pediatric Cystic Fibrosis Module",
+      "body": "Supports cystic fibrosis.\n\nSupports\n\n• Pulmonary Monitoring\n\n• Nutrition\n\n• Pancreatic Function\n\n• Respiratory Physiotherapy\n\n• CFTR Modulator Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3d13a5a392bb94a63dcc503fad5edf76e7eb06eeea4e588436e9a7811e41de47",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81409
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Pulmonary Monitoring",
+        "Nutrition",
+        "Pancreatic Function",
+        "Respiratory Physiotherapy",
+        "CFTR Modulator Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3365,
+      "title": "Pediatric Bronchiolitis Module",
+      "body": "Supports bronchiolitis.\n\nSupports\n\n• RSV Infection\n\n• Oxygen Therapy\n\n• Hydration\n\n• Hospital Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bb64fc8bc124e8aed405fd05b6c0831550d67e26ac951dc5def78495215afd0b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81431
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "RSV Infection",
+        "Oxygen Therapy",
+        "Hydration",
+        "Hospital Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3366,
+      "title": "Pediatric Pneumonia Module",
+      "body": "Supports pediatric pneumonia.\n\nSupports\n\n• Viral Pneumonia\n\n• Bacterial Pneumonia\n\n• Atypical Pneumonia\n\n• Pleural Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c2efa244919a1891a7167c698f171c0b32d18eacbfd70ab985f75b3b14d6c643",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81451
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Viral Pneumonia",
+        "Bacterial Pneumonia",
+        "Atypical Pneumonia",
+        "Pleural Complications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3367,
+      "title": "Pediatric Chronic Lung Disease Module",
+      "body": "Supports chronic pulmonary disorders.\n\nSupports\n\n• Bronchopulmonary Dysplasia\n\n• Interstitial Lung Disease\n\n• Bronchiectasis\n\n• Chronic Respiratory Failure\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e9dacadce669d0dcd22d75675e91fd067e4eed343f4a0dc3cf19f4adfa11ca69",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81471
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Bronchopulmonary Dysplasia",
+        "Interstitial Lung Disease",
+        "Bronchiectasis",
+        "Chronic Respiratory Failure"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3368,
+      "title": "Pediatric Sleep Breathing Disorders Module",
+      "body": "Supports pediatric sleep medicine.\n\nSupports\n\n• Obstructive Sleep Apnea\n\n• Central Sleep Apnea\n\n• Hypoventilation\n\n• Polysomnography\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ac4bda5e0e6ce6e6f9f702bb30460ccb04a47f9f7d70b12c65198df553859067",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81491
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Obstructive Sleep Apnea",
+        "Central Sleep Apnea",
+        "Hypoventilation",
+        "Polysomnography"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3369,
+      "title": "Pediatric Pulmonary Function Module",
+      "body": "Supports respiratory function testing.\n\nSupports\n\n• Spirometry\n\n• Body Plethysmography\n\n• Diffusion Capacity\n\n• Bronchodilator Testing\n\n• Exercise Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4f930962e1ba0cc5543e0420b0a6e9def45c9a6f47bffc5445197c44b22a1dbc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81511
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Spirometry",
+        "Body Plethysmography",
+        "Diffusion Capacity",
+        "Bronchodilator Testing",
+        "Exercise Testing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3370,
+      "title": "Pediatric Bronchoscopy Registry",
+      "body": "Maintains bronchoscopy records.\n\nSupports\n\n• Diagnostic Bronchoscopy\n\n• Therapeutic Bronchoscopy\n\n• Bronchoalveolar Lavage\n\n• Digital Archive\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "09e57d8f9a32a72e5601ed4b1b44f84c78e1f982448b457fb781379274c1df19",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81533
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnostic Bronchoscopy",
+        "Therapeutic Bronchoscopy",
+        "Bronchoalveolar Lavage",
+        "Digital Archive"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3371,
+      "title": "Pediatric Pulmonary Imaging Registry",
+      "body": "Maintains pulmonary imaging.\n\nSupports\n\n• Chest X-ray\n\n• CT\n\n• MRI\n\n• Lung Ultrasound\n\n• AI Image Interpretation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0fde55599809b518822b9f878de0d5badeaacce4ead7863d3db81d90ceccb94e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81553
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Chest X-ray",
+        "CT",
+        "MRI",
+        "Lung Ultrasound",
+        "AI Image Interpretation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3372,
+      "title": "Pediatric Pulmonology Laboratory Registry",
+      "body": "Maintains pulmonology laboratory studies.\n\nSupports\n\n• Blood Gas Analysis\n\n• Microbiology\n\n• Sweat Test\n\n• Immunology\n\n• Genetic Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "66c0b2034e06a88d34d6b3ef72599517f0e806043434cddeac61475da160eed3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81575
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Blood Gas Analysis",
+        "Microbiology",
+        "Sweat Test",
+        "Immunology",
+        "Genetic Testing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3373,
+      "title": "Pediatric Pulmonary Biomarker Registry",
+      "body": "Maintains pulmonary biomarkers.\n\nSupports\n\n• Inflammatory Biomarkers\n\n• Allergy Biomarkers\n\n• Infection Biomarkers\n\n• Fibrosis Markers\n\n• Respiratory Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3f4b202daacb2d850f61720692fa9ccb1cc7c565ec3a3ff7fa20a629b684932c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81597
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Inflammatory Biomarkers",
+        "Allergy Biomarkers",
+        "Infection Biomarkers",
+        "Fibrosis Markers",
+        "Respiratory Biomarkers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3374,
+      "title": "Pediatric Pulmonology AI Decision Support",
+      "body": "Provides AI-assisted pediatric pulmonology.\n\nSupports\n\n• Asthma Risk Prediction\n\n• Exacerbation Prediction\n\n• Imaging Interpretation\n\n• Therapy Optimization\n\n• Personalized Respiratory Care\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "725a979eceab821b69ce2541eb80b62506323141c72e3697299f10a3a46a3a52",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81619
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma Risk Prediction",
+        "Exacerbation Prediction",
+        "Imaging Interpretation",
+        "Therapy Optimization",
+        "Personalized Respiratory Care"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3376,
+      "title": "Pediatric Pulmonology Telemedicine Module",
+      "body": "Supports remote pulmonology care.\n\nSupports\n\n• Asthma Follow-up\n\n• Home Spirometry\n\n• Oxygen Monitoring\n\n• Medication Supervision\n\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4cd08e31cf94bc262722d2b90b9d4343a2a4813eec7c8b33a5213db9f31fa577",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81661
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma Follow-up",
+        "Home Spirometry",
+        "Oxygen Monitoring",
+        "Medication Supervision",
+        "AI Translation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3377,
+      "title": "Pediatric Pulmonology Clinical Trials Registry",
+      "body": "Supports pulmonology research.\n\nSupports\n\n• Asthma Studies\n\n• CF Research\n\n• Respiratory Trials\n\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b88c8d179d0998d714be06ce6ceccc1713de9a25ac0b85254f6dfb2fa0f439f0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81683
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma Studies",
+        "CF Research",
+        "Respiratory Trials",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3379,
+      "title": "Pediatric Pulmonology Intelligence Registry",
+      "body": "Maintains AI-ready pulmonary datasets.\n\nSupports\n\n• Lung Function\n\n• Imaging\n\n• Genetics\n\n• Laboratory\n\n• Bronchoscopy\n\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "86b20be4cc4ba686afd785c6934f4045962f5c1ebc40f56c34924f7cb98ed29a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81723
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Lung Function",
+        "Imaging",
+        "Genetics",
+        "Laboratory",
+        "Bronchoscopy",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3380,
+      "title": "Clinical Pediatric Pulmonology Intelligence Hub",
+      "body": "Coordinates the complete pediatric pulmonology ecosystem.\n\nIntegrates\n\n• AI\n\n• Digital Twin\n\n• Respiratory Medicine\n\n• Allergy\n\n• Genetics\n\n• Laboratory Medicine\n\n• Imaging\n\n• Telemedicine\n\nProvides intelligent respiratory care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d61fa6e1bcdbb5be804ea6766423c94f283b215172fa9918926e469f8b19ef45",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81747
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Respiratory Medicine",
+        "Allergy",
+        "Genetics",
+        "Laboratory Medicine",
+        "Imaging",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4451,
+      "title": "Clinical Pediatric Pulmonology Platform Core Engine",
+      "body": "Central platform for pediatric respiratory medicine.\n\nSupports\n\n• Asthma\n• Chronic Cough\n• Cystic Fibrosis\n• Bronchiectasis\n• Congenital Lung Disease\n• Interstitial Lung Disease\n• Respiratory Failure\n• Airway Disorders\n• Sleep-related Breathing Disorders\n• Home Respiratory Therapy\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Allergy & Immunology\n• Genetics\n• Microbiology\n• Imaging\n• Pulmonary Function Testing\n• Wearables\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "70e58e40d324af3cb18fee5d96e6d5a69c5033898f3532aed45506d9d6dc4787",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 103959
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma",
+        "Chronic Cough",
+        "Cystic Fibrosis",
+        "Bronchiectasis",
+        "Congenital Lung Disease",
+        "Interstitial Lung Disease",
+        "Respiratory Failure",
+        "Airway Disorders",
+        "Sleep-related Breathing Disorders",
+        "Home Respiratory Therapy",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Allergy & Immunology",
+        "Genetics",
+        "Microbiology",
+        "Imaging",
+        "Pulmonary Function Testing",
+        "Wearables",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4452,
+      "title": "Pediatric Pulmonology Longitudinal Registry",
+      "body": "Maintains longitudinal pediatric respiratory records.\n\nSupports\n\n• Diagnoses\n• Symptoms\n• Exacerbations\n• Pulmonary Function\n• Imaging\n• Microbiology\n• Oxygen Therapy\n• Ventilatory Support\n• Medication\n• Hospitalizations\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "22cc520711733e285334b909ea8340a5095688883f346b2d8b06a1eec7ba2163",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 103994
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnoses",
+        "Symptoms",
+        "Exacerbations",
+        "Pulmonary Function",
+        "Imaging",
+        "Microbiology",
+        "Oxygen Therapy",
+        "Ventilatory Support",
+        "Medication",
+        "Hospitalizations",
+        "Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4453,
+      "title": "Pediatric Respiratory Symptom Intelligence Module",
+      "body": "Structures longitudinal respiratory symptoms.\n\nTracks\n\n• Cough\n• Wheeze\n• Dyspnea\n• Sputum\n• Chest Symptoms\n• Exercise Limitation\n• Nocturnal Symptoms\n• Trigger Patterns\n• Symptom Duration\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8838dfed63498de74643f714a07b10432f37c900a47415f4eb1eaa885f92812d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104018
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Cough",
+        "Wheeze",
+        "Dyspnea",
+        "Sputum",
+        "Chest Symptoms",
+        "Exercise Limitation",
+        "Nocturnal Symptoms",
+        "Trigger Patterns",
+        "Symptom Duration"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4454,
+      "title": "Pediatric Chronic Cough Assessment Module",
+      "body": "Supports structured assessment of persistent cough.\n\nIntegrates\n\n• Duration\n• Cough Characteristics\n• Infection History\n• Asthma\n• Allergy\n• Reflux Context\n• Aspiration Risk\n• Imaging\n• Pulmonary Function\n\nSupports clinician-reviewed differential diagnosis.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eda3ae43fce616a7a8cf5e88723b840639b685ff657483400be0117eae5ef308",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104040
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Duration",
+        "Cough Characteristics",
+        "Infection History",
+        "Asthma",
+        "Allergy",
+        "Reflux Context",
+        "Aspiration Risk",
+        "Imaging",
+        "Pulmonary Function"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4455,
+      "title": "Pediatric Asthma Clinical Module",
+      "body": "Supports comprehensive pediatric asthma care.\n\nTracks\n\n• Diagnosis\n• Symptoms\n• Exacerbations\n• Triggers\n• Lung Function\n• Allergy\n• Medication\n• Adherence\n• Emergency Visits\n• Control Status\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "07c8ae327701e5fae3c42017a029debd549ce89e0bf9cf7074724a48353e5b32",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104064
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnosis",
+        "Symptoms",
+        "Exacerbations",
+        "Triggers",
+        "Lung Function",
+        "Allergy",
+        "Medication",
+        "Adherence",
+        "Emergency Visits",
+        "Control Status"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4456,
+      "title": "Pediatric Asthma Control Intelligence Engine",
+      "body": "Supports longitudinal assessment of asthma control.\n\nAnalyzes\n\n• Daytime Symptoms\n• Night Symptoms\n• Rescue Medication Use\n• Activity Limitation\n• Exacerbations\n• Lung Function\n• Treatment Adherence\n\nSupports validated age-appropriate assessment frameworks.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "95ece6aeef2016d0c6f9ab8929553fc137683f040904039ef3718a1369ce6985",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104087
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Daytime Symptoms",
+        "Night Symptoms",
+        "Rescue Medication Use",
+        "Activity Limitation",
+        "Exacerbations",
+        "Lung Function",
+        "Treatment Adherence"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4457,
+      "title": "Pediatric Asthma Exacerbation Registry",
+      "body": "Maintains structured records of asthma exacerbations.\n\nRecords\n\n• Trigger\n• Symptoms\n• Severity\n• Rescue Medication\n• Systemic Treatment\n• Emergency Care\n• Hospitalization\n• Respiratory Support\n• Outcome\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "781b8cb367017ffe40e46e502551ea521dc31cc1420748dfed2dcf7fb886705a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104109
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Trigger",
+        "Symptoms",
+        "Severity",
+        "Rescue Medication",
+        "Systemic Treatment",
+        "Emergency Care",
+        "Hospitalization",
+        "Respiratory Support",
+        "Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4458,
+      "title": "Pediatric Asthma Trigger Intelligence Module",
+      "body": "Supports identification of clinically relevant asthma triggers.\n\nIntegrates\n\n• Allergens\n• Respiratory Infections\n• Exercise\n• Environmental Exposure\n• Smoke Exposure\n• Weather Context\n• Medication Adherence\n• Historical Exacerbations\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "914eb02913764c98d61d19a53976a227a2d99855d3b5eec82026fc08f13f34e8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104131
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Allergens",
+        "Respiratory Infections",
+        "Exercise",
+        "Environmental Exposure",
+        "Smoke Exposure",
+        "Weather Context",
+        "Medication Adherence",
+        "Historical Exacerbations"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4459,
+      "title": "Pediatric Allergic Asthma Integration Engine",
+      "body": "Connects pulmonology with EDHT Allergy & Immunology.\n\nIntegrates\n\n• Asthma Phenotype\n• Aeroallergens\n• Specific IgE\n• Skin Testing\n• Environmental Exposure\n• Atopic Dermatitis\n• Allergic Rhinitis\n• Immunotherapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f782d1553a9785ba06e60a1f2c51e59bb593905ecc72390fba1754818a3e4c96",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104152
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Asthma Phenotype",
+        "Aeroallergens",
+        "Specific IgE",
+        "Skin Testing",
+        "Environmental Exposure",
+        "Atopic Dermatitis",
+        "Allergic Rhinitis",
+        "Immunotherapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4460,
+      "title": "Pediatric Asthma Action Plan Module",
+      "body": "Maintains clinician-approved personalized asthma action plans.\n\nSupports\n\n• Baseline Therapy\n• Symptom Zones\n• Rescue Medication\n• Escalation Instructions\n• Emergency Indicators\n• School Plan\n• Guardian Instructions\n• Multilingual Presentation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "476472153889b1bdef7f1525c275a1dc903ddbd86ebf0e54489e97881bb68435",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104173
+      },
+      "verdict": "Action plans require author/version/effective date and school-specific disclosure scope. Display of rescue instructions is separate from generation of a new treatment plan.",
+      "feature_labels": [
+        "Baseline Therapy",
+        "Symptom Zones",
+        "Rescue Medication",
+        "Escalation Instructions",
+        "Emergency Indicators",
+        "School Plan",
+        "Guardian Instructions",
+        "Multilingual Presentation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4461,
+      "title": "Pediatric Spirometry Module",
+      "body": "Supports pediatric spirometry workflows.\n\nRecords\n\n• FEV1\n• FVC\n• FEV1/FVC\n• Flow Measurements\n• Reference Values\n• Test Quality\n• Bronchodilator Testing\n• Longitudinal Comparison\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e64c8ac640434598b62fa260a17c249289149912d1561901c63e1cab4ed0f7b8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104194
+      },
+      "verdict": "Preserve raw curves, FEV1/FVC, reference equation/version, age/height context and test-quality status. Non-comparable or poor-quality tests cannot silently drive a trend.",
+      "feature_labels": [
+        "FEV1",
+        "FVC",
+        "FEV1/FVC",
+        "Flow Measurements",
+        "Reference Values",
+        "Test Quality",
+        "Bronchodilator Testing",
+        "Longitudinal Comparison"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4462,
+      "title": "Pediatric Pulmonary Function Laboratory Module",
+      "body": "Integrates advanced pediatric pulmonary function testing.\n\nSupports\n\n• Spirometry\n• Lung Volumes\n• Diffusion Testing\n• Respiratory Muscle Assessment\n• Bronchodilator Testing\n• Exercise Testing\n• Quality Controls\n• Specialist Interpretation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "35ef12231d4a16f46ecfbfb63f6e0d238ca80809f8a1fe93c8d0e168ccadd12b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104215
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Spirometry",
+        "Lung Volumes",
+        "Diffusion Testing",
+        "Respiratory Muscle Assessment",
+        "Bronchodilator Testing",
+        "Exercise Testing",
+        "Quality Controls",
+        "Specialist Interpretation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4463,
+      "title": "Pediatric Bronchodilator Response Module",
+      "body": "Supports structured pre- and post-bronchodilator assessment.\n\nTracks\n\n• Baseline Pulmonary Function\n• Medication\n• Administration Time\n• Repeat Measurements\n• Test Quality\n• Response\n• Specialist Interpretation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7ff34b7c2969e758d488d34af2659dc11895c19752bf5cc3e34de9f27b32c1c5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104236
+      },
+      "verdict": "Pair pre/post measurements with medication, administration time, repeat time and quality; the system records specialist interpretation rather than inventing a response threshold.",
+      "feature_labels": [
+        "Baseline Pulmonary Function",
+        "Medication",
+        "Administration Time",
+        "Repeat Measurements",
+        "Test Quality",
+        "Response",
+        "Specialist Interpretation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4464,
+      "title": "Pediatric Airway Inflammation Biomarker Module",
+      "body": "Supports respiratory inflammatory biomarker integration.\n\nMay include\n\n• FeNO\n• Blood Eosinophils\n• Allergy Biomarkers\n• Sputum Findings where available\n• Longitudinal Trends\n• Treatment Context\n\nResults remain interpreted within the clinical phenotype.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "068b57cbb06fddb5cd2f5cd79254bd5a48758761998eca467ce73d015476734e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104256
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "FeNO",
+        "Blood Eosinophils",
+        "Allergy Biomarkers",
+        "Sputum Findings where available",
+        "Longitudinal Trends",
+        "Treatment Context"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4465,
+      "title": "Pediatric Exercise Respiratory Assessment Module",
+      "body": "Supports evaluation of respiratory symptoms associated with exercise.\n\nIntegrates\n\n• Symptoms\n• Baseline Lung Function\n• Exercise Testing\n• Oxygen Saturation\n• Heart Rate\n• Post-exercise Measurements\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4ec521c3b672a9567606cd245af2c8262a9d4d4907409671dd6456c1e57c9ca4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104277
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Baseline Lung Function",
+        "Exercise Testing",
+        "Oxygen Saturation",
+        "Heart Rate",
+        "Post-exercise Measurements",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4466,
+      "title": "Pediatric Respiratory Imaging Integration Module",
+      "body": "Integrates respiratory imaging into longitudinal care.\n\nSupports\n\n• Chest X-ray\n• CT\n• MRI\n• Ultrasound\n• Airway Imaging\n• Historical Comparison\n• Radiology Reports\n• AI-assisted Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b64f51ae8689b8f66b8fcc2ee7817a4dd6ba601208691060df00d6be6b0c09cc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104297
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Chest X-ray",
+        "CT",
+        "MRI",
+        "Ultrasound",
+        "Airway Imaging",
+        "Historical Comparison",
+        "Radiology Reports",
+        "AI-assisted Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4467,
+      "title": "Pediatric Bronchoscopy Clinical Module",
+      "body": "Supports pediatric bronchoscopy workflows.\n\nRecords\n\n• Indication\n• Airway Findings\n• Procedures\n• Samples\n• Microbiology\n• Cytology\n• Pathology\n• Complications\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a1c574f1796182118e44bb5a35622f6a6bd8d1d6d6c4804bf15e5d8a9b56ad5d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104318
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Indication",
+        "Airway Findings",
+        "Procedures",
+        "Samples",
+        "Microbiology",
+        "Cytology",
+        "Pathology",
+        "Complications",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4468,
+      "title": "Pediatric Airway Anomaly Module",
+      "body": "Supports congenital and acquired airway disorders.\n\nIntegrates\n\n• Airway Anatomy\n• Endoscopy\n• Imaging\n• Symptoms\n• Respiratory Function\n• Surgery\n• Ventilatory Support\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f460f1e0a8c8bd8b5532bc7257a47ea523ce40835feecf829939d5f0b23513e3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104340
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Airway Anatomy",
+        "Endoscopy",
+        "Imaging",
+        "Symptoms",
+        "Respiratory Function",
+        "Surgery",
+        "Ventilatory Support",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4469,
+      "title": "Pediatric Aspiration & Aerodigestive Respiratory Module",
+      "body": "Supports respiratory disease related to swallowing and aspiration.\n\nIntegrates\n\n• Pulmonology\n• Gastroenterology\n• ENT\n• Speech and Swallow Therapy\n• Feeding History\n• Swallow Studies\n• Bronchoscopy\n• Respiratory Events\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0397b225f4bbafe43f387dcfbc2bf3773ced6d51237bfd97a89a4a93189fbe35",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104361
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Pulmonology",
+        "Gastroenterology",
+        "ENT",
+        "Speech and Swallow Therapy",
+        "Feeding History",
+        "Swallow Studies",
+        "Bronchoscopy",
+        "Respiratory Events"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4470,
+      "title": "Pediatric Recurrent Pneumonia Assessment Module",
+      "body": "Supports investigation of recurrent pneumonia.\n\nIntegrates\n\n• Infection History\n• Imaging\n• Immune Function\n• Aspiration\n• Airway Anatomy\n• Cystic Fibrosis Assessment\n• Microbiology\n• Genetics\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2962c8c87ad0d3a7d802242baab149e272e7209c2f11db6e0d1de2d0d8b3a806",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104382
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Infection History",
+        "Imaging",
+        "Immune Function",
+        "Aspiration",
+        "Airway Anatomy",
+        "Cystic Fibrosis Assessment",
+        "Microbiology",
+        "Genetics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4471,
+      "title": "Pediatric Cystic Fibrosis Platform",
+      "body": "Supports comprehensive pediatric cystic fibrosis care.\n\nIntegrates\n\n• Diagnosis\n• CFTR Genetics\n• Sweat Testing\n• Pulmonary Function\n• Microbiology\n• Nutrition\n• Pancreatic Function\n• Medication\n• Exacerbations\n• Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a2dd655425b73b26c10c6a24183ec3bdfb87024c8f2ef0f5f881b610126df979",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104403
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Diagnosis",
+        "CFTR Genetics",
+        "Sweat Testing",
+        "Pulmonary Function",
+        "Microbiology",
+        "Nutrition",
+        "Pancreatic Function",
+        "Medication",
+        "Exacerbations",
+        "Complications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4472,
+      "title": "Pediatric CFTR Genetics Module",
+      "body": "Supports molecular characterization of cystic fibrosis.\n\nIntegrates\n\n• CFTR Variants\n• Variant Classification\n• Genotype\n• Phenotype\n• Family Testing\n• Genetic Counseling\n• Therapy-relevant Molecular Context\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c0f6fb4c8cbf6832bd469d4d108e3bfa5af475c16fdf820c654df75f46f7255b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104426
+      },
+      "verdict": "CFTR molecular evidence retains classification release, phenotype and family authorization; molecular context alone does not authorize treatment.",
+      "feature_labels": [
+        "CFTR Variants",
+        "Variant Classification",
+        "Genotype",
+        "Phenotype",
+        "Family Testing",
+        "Genetic Counseling",
+        "Therapy-relevant Molecular Context"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4473,
+      "title": "Pediatric Cystic Fibrosis Microbiology Module",
+      "body": "Tracks respiratory microbiology in cystic fibrosis.\n\nSupports\n\n• Specimen\n• Organism\n• Colonization History\n• Susceptibility\n• Resistance\n• Antimicrobial Therapy\n• Eradication Attempts\n• Longitudinal Trends\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8da18aaa55904a65eee7b497ed24ff59b47c9cfdd7bcecd51fe41849b060190d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104446
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Specimen",
+        "Organism",
+        "Colonization History",
+        "Susceptibility",
+        "Resistance",
+        "Antimicrobial Therapy",
+        "Eradication Attempts",
+        "Longitudinal Trends"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4474,
+      "title": "Pediatric Cystic Fibrosis Exacerbation Module",
+      "body": "Supports pulmonary exacerbation documentation.\n\nTracks\n\n• Symptoms\n• Lung Function\n• Microbiology\n• Weight\n• Treatment\n• Antimicrobials\n• Hospitalization\n• Response\n• Recovery\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "133b1c32717e24d6634f2edf70e88954d962f43d7e135dc87d908acf56013d78",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104467
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Symptoms",
+        "Lung Function",
+        "Microbiology",
+        "Weight",
+        "Treatment",
+        "Antimicrobials",
+        "Hospitalization",
+        "Response",
+        "Recovery"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4475,
+      "title": "Pediatric Cystic Fibrosis Multisystem Care Module",
+      "body": "Coordinates non-pulmonary manifestations of cystic fibrosis.\n\nIntegrates\n\n• Nutrition\n• Gastroenterology\n• Endocrinology\n• Liver Health\n• Bone Health\n• Diabetes\n• Fertility-related Care\n• Mental Health\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "464515336cfb34d3c9a33d09dfc9dd1bd57587c60ab0d1895a2f328b3b3ac548",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104489
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Nutrition",
+        "Gastroenterology",
+        "Endocrinology",
+        "Liver Health",
+        "Bone Health",
+        "Diabetes",
+        "Fertility-related Care",
+        "Mental Health"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4476,
+      "title": "Pediatric CFTR Modulator Therapy Module",
+      "body": "Supports specialist-supervised CFTR modulator therapy.\n\nTracks\n\n• Molecular Eligibility\n• Product\n• Dose\n• Treatment Start\n• Laboratory Monitoring\n• Pulmonary Response\n• Nutritional Response\n• Adverse Events\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0c303cad2fcb7f45a4d5385c6be8cad827ea9bdb52cafd4cf879fd24f976b8c5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104510
+      },
+      "verdict": "CFTR modulator eligibility, product/dose, laboratory monitoring and response remain specialist-supervised with explicit source/evidence versions; no autonomous product substitution.",
+      "feature_labels": [
+        "Molecular Eligibility",
+        "Product",
+        "Dose",
+        "Treatment Start",
+        "Laboratory Monitoring",
+        "Pulmonary Response",
+        "Nutritional Response",
+        "Adverse Events"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4477,
+      "title": "Pediatric Bronchiectasis Module",
+      "body": "Supports pediatric non-CF and CF-related bronchiectasis.\n\nIntegrates\n\n• Etiology\n• Imaging\n• Pulmonary Function\n• Microbiology\n• Exacerbations\n• Airway Clearance\n• Antimicrobial Therapy\n• Longitudinal Progression\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2e9974c7c36a4d125137d8dd2281e7c606248d33865c3e20617e916d15a34aca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104531
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Etiology",
+        "Imaging",
+        "Pulmonary Function",
+        "Microbiology",
+        "Exacerbations",
+        "Airway Clearance",
+        "Antimicrobial Therapy",
+        "Longitudinal Progression"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4478,
+      "title": "Pediatric Airway Clearance Therapy Module",
+      "body": "Supports prescribed airway-clearance programs.\n\nTracks\n\n• Technique\n• Device\n• Frequency\n• Adherence\n• Respiratory Symptoms\n• Sputum\n• Exacerbations\n• Physiotherapy Review\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b56ab60b264cc01410a709e08e656dad9ec29c209844628c884922e3a6ad3154",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104552
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Technique",
+        "Device",
+        "Frequency",
+        "Adherence",
+        "Respiratory Symptoms",
+        "Sputum",
+        "Exacerbations",
+        "Physiotherapy Review"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4479,
+      "title": "Pediatric Interstitial & Diffuse Lung Disease Module",
+      "body": "Supports rare pediatric diffuse and interstitial lung diseases.\n\nIntegrates\n\n• Phenotype\n• Imaging\n• Pulmonary Function\n• Genetics\n• Pathology\n• Oxygen Requirement\n• Treatment\n• Multidisciplinary Review\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eae7befd077ba39562d97a5758b4dedbedc09c22229149c0524d1eb80459e4dd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104573
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Phenotype",
+        "Imaging",
+        "Pulmonary Function",
+        "Genetics",
+        "Pathology",
+        "Oxygen Requirement",
+        "Treatment",
+        "Multidisciplinary Review"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4480,
+      "title": "Pediatric Congenital Lung Disease Module",
+      "body": "Supports congenital pulmonary disorders.\n\nIntegrates\n\n• Prenatal Findings\n• Neonatal History\n• Imaging\n• Anatomy\n• Respiratory Function\n• Surgery\n• Genetics\n• Long-term Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1bc5fe5913106d7bfe717f1299d0219496b74efb15693a5bf59260505aaa53c9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104594
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Prenatal Findings",
+        "Neonatal History",
+        "Imaging",
+        "Anatomy",
+        "Respiratory Function",
+        "Surgery",
+        "Genetics",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4481,
+      "title": "Pediatric Chronic Respiratory Failure Module",
+      "body": "Supports children requiring long-term respiratory support.\n\nTracks\n\n• Underlying Diagnosis\n• Gas Exchange\n• Oxygen Requirement\n• Ventilatory Support\n• Respiratory Events\n• Hospitalizations\n• Home Equipment\n• Longitudinal Status\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0ca45b677d4304f52afc454ab86fa48560df077a9d4fc06c687211d6ed79c712",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104615
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Underlying Diagnosis",
+        "Gas Exchange",
+        "Oxygen Requirement",
+        "Ventilatory Support",
+        "Respiratory Events",
+        "Hospitalizations",
+        "Home Equipment",
+        "Longitudinal Status"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4482,
+      "title": "Pediatric Home Oxygen Therapy Module",
+      "body": "Supports clinician-prescribed home oxygen therapy.\n\nTracks\n\n• Indication\n• Oxygen Prescription\n• Delivery Device\n• Usage\n• Saturation\n• Equipment\n• Safety Plan\n• Reassessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6964e2a492e25bc57cb8b55657030a9f884e35de84b973efdc0ed111fc248d63",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104636
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Indication",
+        "Oxygen Prescription",
+        "Delivery Device",
+        "Usage",
+        "Saturation",
+        "Equipment",
+        "Safety Plan",
+        "Reassessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4483,
+      "title": "Pediatric Home Non-Invasive Ventilation Module",
+      "body": "Supports home non-invasive respiratory support.\n\nIntegrates\n\n• Device\n• Mode\n• Prescribed Settings\n• Usage\n• Device Data\n• Gas Exchange\n• Sleep Data\n• Clinical Review\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cd323e194a0b245ad7d17321db471f95fc96b2603608c0ba4e2c7188238b8d91",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104657
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Device",
+        "Mode",
+        "Prescribed Settings",
+        "Usage",
+        "Device Data",
+        "Gas Exchange",
+        "Sleep Data",
+        "Clinical Review"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4484,
+      "title": "Pediatric Home Mechanical Ventilation Module",
+      "body": "Supports children dependent on invasive home ventilation.\n\nTracks\n\n• Airway\n• Ventilator\n• Prescribed Settings\n• Equipment\n• Backup Systems\n• Monitoring\n• Emergency Plans\n• Caregiver Training\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "59cebdad69316047054edc8edf6626068358c68c9992fc7683b44126d710007d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104678
+      },
+      "verdict": "Preserve invasive airway, prescribed ventilator settings, backup systems, emergency plan and caregiver training. Read-only acquisition cannot silently become remote ventilator control.",
+      "feature_labels": [
+        "Airway",
+        "Ventilator",
+        "Prescribed Settings",
+        "Equipment",
+        "Backup Systems",
+        "Monitoring",
+        "Emergency Plans",
+        "Caregiver Training"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4485,
+      "title": "Pediatric Tracheostomy Respiratory Care Module",
+      "body": "Supports multidisciplinary tracheostomy care.\n\nIntegrates\n\n• Tracheostomy Type\n• Airway\n• Ventilation\n• Secretions\n• Infection\n• Equipment\n• Emergency Plan\n• Caregiver Competency\n• Decannulation Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a138b6dfbef25b474c93dee77a9c85064b1bbe869454fe94298a47106bd20625",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104699
+      },
+      "verdict": "Tracheostomy type, caregiver competency and decannulation assessment must survive consolidation; final decannulation remains a clinical decision.",
+      "feature_labels": [
+        "Tracheostomy Type",
+        "Airway",
+        "Ventilation",
+        "Secretions",
+        "Infection",
+        "Equipment",
+        "Emergency Plan",
+        "Caregiver Competency",
+        "Decannulation Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4486,
+      "title": "Pediatric Sleep-Disordered Breathing Module",
+      "body": "Supports sleep-related respiratory disorders.\n\nSupports\n\n• Snoring\n• Obstructive Events\n• Central Events\n• Oxygenation\n• Sleep Quality\n• Daytime Symptoms\n• Comorbidities\n• Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fa26cae2b3935aa85bbe384e1b13a50d2d2ee4f412132130b45235a6a2bbae71",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104721
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Snoring",
+        "Obstructive Events",
+        "Central Events",
+        "Oxygenation",
+        "Sleep Quality",
+        "Daytime Symptoms",
+        "Comorbidities",
+        "Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4487,
+      "title": "Pediatric Obstructive Sleep Apnea Module",
+      "body": "Supports pediatric obstructive sleep apnea care.\n\nIntegrates\n\n• Symptoms\n• ENT Findings\n• Growth\n• Obesity\n• Craniofacial Factors\n• Sleep Study\n• Treatment\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c1b759a21e7dcf2965f9dd68665cb2d51f9259ba30391bb0c52a47604d6771cd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104742
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Symptoms",
+        "ENT Findings",
+        "Growth",
+        "Obesity",
+        "Craniofacial Factors",
+        "Sleep Study",
+        "Treatment",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4488,
+      "title": "Pediatric Polysomnography Integration Module",
+      "body": "Integrates pediatric sleep-study data.\n\nSupports\n\n• Sleep Stages\n• Respiratory Events\n• Oxygen Saturation\n• Carbon Dioxide\n• Heart Rate\n• Arousal Data\n• Device Titration\n• Specialist Interpretation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "18e74d83b702724b3affd056d1b211bbb4c2dbc335c654e3cd3ecb2ea770f983",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104763
+      },
+      "verdict": "Sleep stages, carbon dioxide and device titration context are distinct from pulse-oximetry alone; preserve specialist report and acquisition settings.",
+      "feature_labels": [
+        "Sleep Stages",
+        "Respiratory Events",
+        "Oxygen Saturation",
+        "Carbon Dioxide",
+        "Heart Rate",
+        "Arousal Data",
+        "Device Titration",
+        "Specialist Interpretation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4489,
+      "title": "Pediatric PAP Therapy Monitoring Module",
+      "body": "Supports prescribed PAP therapy.\n\nTracks\n\n• Device\n• Mode\n• Settings\n• Usage\n• Mask\n• Leak\n• Respiratory Events\n• Adherence\n• Treatment Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9698b3fafde3b06ac3fd75a4f7e88742a9c20967504a71179104b6dd827a2b3f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104784
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Device",
+        "Mode",
+        "Settings",
+        "Usage",
+        "Mask",
+        "Leak",
+        "Respiratory Events",
+        "Adherence",
+        "Treatment Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4490,
+      "title": "Pediatric Respiratory Equipment Passport",
+      "body": "Maintains critical information about home respiratory equipment.\n\nMay contain\n\n• Oxygen Equipment\n• Ventilator\n• PAP Device\n• Nebulizer\n• Airway Clearance Device\n• Tracheostomy Equipment\n• Supplier\n• Maintenance\n• Backup Equipment\n\nSupports continuity during travel and emergency care.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b9968fecd07e601da7e662e649a401d6ed88d3f6d8fbcd74aa8a304cd7587c65",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104806
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Oxygen Equipment",
+        "Ventilator",
+        "PAP Device",
+        "Nebulizer",
+        "Airway Clearance Device",
+        "Tracheostomy Equipment",
+        "Supplier",
+        "Maintenance",
+        "Backup Equipment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4491,
+      "title": "Pediatric Respiratory Remote Monitoring Module",
+      "body": "Supports longitudinal home respiratory monitoring.\n\nIntegrates\n\n• Symptoms\n• Oxygen Saturation\n• Respiratory Rate\n• Device Data\n• Medication Adherence\n• Activity\n• Sleep\n• Exacerbation History\n\nSupports clinician-defined escalation workflows.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bc4ab0f4ba6968116e886d9ef2a56e20a9d3e71af8b3ec0e89f67f43f21e69da",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104830
+      },
+      "verdict": "Clinician-defined escalation requires recipient coverage, acknowledgement, fallback and unresolved-alert state; connectivity is not continuous clinical supervision.",
+      "feature_labels": [
+        "Symptoms",
+        "Oxygen Saturation",
+        "Respiratory Rate",
+        "Device Data",
+        "Medication Adherence",
+        "Activity",
+        "Sleep",
+        "Exacerbation History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4492,
+      "title": "Pediatric Smart Inhaler Integration Module",
+      "body": "Integrates compatible connected inhaler systems.\n\nSupports\n\n• Medication Use\n• Administration Time\n• Device Events\n• Adherence Patterns\n• Rescue Medication Frequency\n• Symptom Correlation\n• Exacerbation Context\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0f7057340ec2a560ceb1d6978f6320ac5ceb0a38105b5fb551922c8e4dcbc1e7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104853
+      },
+      "verdict": "An inhaler device event is evidence of device use, not proof of delivered dose or correct inhalation technique; reconcile with source 4493 assessment.",
+      "feature_labels": [
+        "Medication Use",
+        "Administration Time",
+        "Device Events",
+        "Adherence Patterns",
+        "Rescue Medication Frequency",
+        "Symptom Correlation",
+        "Exacerbation Context"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4493,
+      "title": "Pediatric Inhaler Technique Assessment Module",
+      "body": "Supports documentation and reassessment of inhaler technique.\n\nTracks\n\n• Device Type\n• Spacer Use\n• Technique Steps\n• Identified Errors\n• Education\n• Demonstration\n• Reassessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6950df02626ea7faab5ad3de27fb5d477615bef0f30a0cea529a64bbba9f2856",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104873
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Device Type",
+        "Spacer Use",
+        "Technique Steps",
+        "Identified Errors",
+        "Education",
+        "Demonstration",
+        "Reassessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4494,
+      "title": "Pediatric Pulmonology AI Decision Support",
+      "body": "Provides AI-assisted pediatric respiratory intelligence.\n\nSupports\n\n• Symptom Pattern Analysis\n• Pulmonary Function Trends\n• Exacerbation Risk Support\n• Microbiology Correlation\n• Treatment-response Analysis\n• Sleep Respiratory Pattern Analysis\n• Longitudinal Change Detection\n\nAI output requires qualified clinician review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d785243d701b031917438fb785076ecc8055d526c94009ab65e3cf7e6a2ea72e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104893
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Symptom Pattern Analysis",
+        "Pulmonary Function Trends",
+        "Exacerbation Risk Support",
+        "Microbiology Correlation",
+        "Treatment-response Analysis",
+        "Sleep Respiratory Pattern Analysis",
+        "Longitudinal Change Detection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4496,
+      "title": "Pediatric Pulmonology AI Pre-Visit Assessment Module",
+      "body": "Creates structured respiratory pre-visit summaries.\n\nAI may organize\n\n• Symptoms\n• Exacerbations\n• Medication\n• Rescue Medication Use\n• Allergy\n• Infection History\n• Device Data\n• Pulmonary Function\n• Sleep Symptoms\n• Previous Hospitalizations\n\nGenerated content remains draft until clinician validation.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "94c36aef60f107d3e3a25ee9414e3946fe6cc8762f29637f9e3864b0dd75dae1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104938
+      },
+      "verdict": "Generated pre-visit content remains a draft and preserves reporter/source attribution until clinician validation.",
+      "feature_labels": [
+        "Symptoms",
+        "Exacerbations",
+        "Medication",
+        "Rescue Medication Use",
+        "Allergy",
+        "Infection History",
+        "Device Data",
+        "Pulmonary Function",
+        "Sleep Symptoms",
+        "Previous Hospitalizations"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4497,
+      "title": "Pediatric Pulmonology Telemedicine Module",
+      "body": "Supports remote respiratory specialist care.\n\nSupports\n\n• Video Consultation\n• Home Monitoring Review\n• Pulmonary Function Review\n• Device Review\n• Treatment Monitoring\n• Second Opinion\n• Cross-border Consultation\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "327bcbb2dc32093416296d5ffcf568ec27c592d67531de5e6eaa0d02bffbf8e7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104963
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Video Consultation",
+        "Home Monitoring Review",
+        "Pulmonary Function Review",
+        "Device Review",
+        "Treatment Monitoring",
+        "Second Opinion",
+        "Cross-border Consultation",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4498,
+      "title": "Pediatric Respiratory Emergency Medical Passport Module",
+      "body": "Provides critical respiratory information during emergency care.\n\nMay display\n\n• Major Respiratory Diagnosis\n• Severe Asthma\n• Cystic Fibrosis\n• Tracheostomy\n• Home Oxygen\n• Ventilation Dependency\n• Relevant Allergies\n• Rescue Medication\n• Baseline Respiratory Support\n\nSupports multilingual cross-border emergency access.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "24b7dc95aee6e8544e1b74cf61261e1c32b0fdfb845a2f33d4e22eaf3334736e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 104984
+      },
+      "verdict": "Emergency passport exposes authorized minimum-necessary current respiratory baseline and device dependency; multilingual access does not bypass identity/consent checks or delay emergency care.",
+      "feature_labels": [
+        "Major Respiratory Diagnosis",
+        "Severe Asthma",
+        "Cystic Fibrosis",
+        "Tracheostomy",
+        "Home Oxygen",
+        "Ventilation Dependency",
+        "Relevant Allergies",
+        "Rescue Medication",
+        "Baseline Respiratory Support"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4499,
+      "title": "Pediatric Pulmonology Transition-to-Adult-Care Module",
+      "body": "Supports structured transition into adult respiratory medicine.\n\nTransfers\n\n• Diagnoses\n• Genetics\n• Pulmonary Function History\n• Microbiology\n• Exacerbations\n• Treatment History\n• Respiratory Devices\n• Oxygen or Ventilation\n• Emergency Plans\n\nMaintains continuity through the EDHT Medical Passport.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "13f5b8ae90468c6cbe3ab45d2481bce40254b8fc89a4be6804db4cad584f3584",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105008
+      },
+      "verdict": "Transfer includes source genetics, device/oxygen/ventilation and emergency plans; add receiving-provider acknowledgement and follow-up rather than count export as completed handover.",
+      "feature_labels": [
+        "Diagnoses",
+        "Genetics",
+        "Pulmonary Function History",
+        "Microbiology",
+        "Exacerbations",
+        "Treatment History",
+        "Respiratory Devices",
+        "Oxygen or Ventilation",
+        "Emergency Plans"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4500,
+      "title": "Clinical Pediatric Pulmonology Intelligence Hub",
+      "body": "Coordinates the complete pediatric respiratory ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Asthma\n• Allergy & Immunology\n• Pulmonary Function\n• Respiratory Imaging\n• Cystic Fibrosis\n• Bronchiectasis\n• Rare Lung Disease\n• Airway Disorders\n• Respiratory Failure\n• Home Ventilation\n• Sleep Medicine\n• Smart Respiratory Devices\n• Emergency Medical Passport\n• Telemedicine\n• Adult-care Transition\n\nProvides longitudinal, multidisciplinary and cross-border pediatric respiratory intelligence across EDHT.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87845e5ba87e434c15ca061255e940f32be687fd2a702911076c7401c3a9f9b3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 105032
+      },
+      "verdict": "Pediatric respiratory profile retains disease phenotype, source measurements and device context. Shared data, imaging, medication, device and emergency owners remain authoritative; AI interpretations require review. Home support is not an automatically staffed emergency service; no autonomous settings or dose changes.",
+      "feature_labels": [
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Asthma",
+        "Allergy & Immunology",
+        "Pulmonary Function",
+        "Respiratory Imaging",
+        "Cystic Fibrosis",
+        "Bronchiectasis",
+        "Rare Lung Disease",
+        "Airway Disorders",
+        "Respiratory Failure",
+        "Home Ventilation",
+        "Sleep Medicine",
+        "Smart Respiratory Devices",
+        "Emergency Medical Passport",
+        "Telemedicine",
+        "Adult-care Transition"
+      ],
+      "date": "2026-09-14"
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "pass": "MASTER-10",
+  "baseline_commit": "9efb09e6f91980c1315a1b7fcaa1f77a3f96d793",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "records": [
+    {
+      "original_id": 763,
+      "source_sha256": "d8ee426c852e85cc8cdacfc5691dee4e4ee71855f3121b1497e3c588507b5290",
+      "canonical_target": "CORE-CAP-APPOINTMENTS",
+      "canonical_owner": "CAP-APPOINTMENTS",
+      "purpose": "Fertility consultations reuse clinic/physician/online booking. A reserved appointment neither authorizes a procedure nor starts a treatment cycle.",
+      "scope": "Append-only booking profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-APPOINTMENTS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 764,
+      "source_sha256": "353620273bb53bd37e422cabbcdf1646802c18a1f7468f97706d4d4f4c9c5477",
+      "canonical_target": "CORE-CAP-PROFILE",
+      "canonical_owner": "CAP-PROFILE",
+      "purpose": "Shared treatment context is a projection linking two separately identified patients. Preserve female/male source categories without assuming sex, parental status or automatic partner access. Independent purpose-scoped grants and withdrawal apply to each source; absence of permission is distinct from absence of clinical data. Never merge partner patient IDs or disclose hidden diagnoses through timeline titles.",
+      "scope": "Append-only couple-projection profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 765,
+      "source_sha256": "59dac4f3c6087d1fadba6b8a30d4b37fab4ef6755e86c8d1f9fe9e7d36d6bd1e",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Female/male/combined/unexplained infertility, stimulation response, pregnancy after assisted reproduction and the specialty workspace are distinct profiles. Preserve follicles/estradiol/medication response and early pregnancy imaging/labs while keeping source ownership and clinician decisions separate. No success guarantee, inferred embryo viability or autonomous stimulation recommendation.",
+      "scope": "Append-only reproductive-care profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 771,
+      "source_sha256": "762f5e1cf75e01d244025fe3108944fdc5bff5298c31ab5cbde841c1cfbca1d7",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Female/male/combined/unexplained infertility, stimulation response, pregnancy after assisted reproduction and the specialty workspace are distinct profiles. Preserve follicles/estradiol/medication response and early pregnancy imaging/labs while keeping source ownership and clinician decisions separate. No success guarantee, inferred embryo viability or autonomous stimulation recommendation.",
+      "scope": "Append-only reproductive-care profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 775,
+      "source_sha256": "8c755120a3dfe11579fb2fbcde3cccd5d37ff3564cf287bacaa60aeb627ab750",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Female/male/combined/unexplained infertility, stimulation response, pregnancy after assisted reproduction and the specialty workspace are distinct profiles. Preserve follicles/estradiol/medication response and early pregnancy imaging/labs while keeping source ownership and clinician decisions separate. No success guarantee, inferred embryo viability or autonomous stimulation recommendation.",
+      "scope": "Append-only reproductive-care profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 780,
+      "source_sha256": "bbf96e87d58b156263ad55ca0d0f4f45050773092c4ffb180350d7576911f24f",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Female/male/combined/unexplained infertility, stimulation response, pregnancy after assisted reproduction and the specialty workspace are distinct profiles. Preserve follicles/estradiol/medication response and early pregnancy imaging/labs while keeping source ownership and clinician decisions separate. No success guarantee, inferred embryo viability or autonomous stimulation recommendation.",
+      "scope": "Append-only reproductive-care profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 766,
+      "source_sha256": "cd3f2dc6d53aa2ad1134427e848825e659d11a6a826e4629a9ac2c28f1ef2d89",
+      "canonical_target": "CORE-CAP-ENCOUNTER",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "IVF cycles link stimulation, retrieval, fertilization and transfer as distinct procedures. Preserve retrieval count/quality/notes and transfer date/grade/physician notes with source version and specimen linkage. Count/grade does not establish suitability, consent or transfer authorization.",
+      "scope": "Append-only ivf-procedures profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 768,
+      "source_sha256": "3d0cd0fa65f7c2d74caa8d4671cc59d96dc58e001213834c012a2010df6e0be2",
+      "canonical_target": "CORE-CAP-ENCOUNTER",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "IVF cycles link stimulation, retrieval, fertilization and transfer as distinct procedures. Preserve retrieval count/quality/notes and transfer date/grade/physician notes with source version and specimen linkage. Count/grade does not establish suitability, consent or transfer authorization.",
+      "scope": "Append-only ivf-procedures profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 769,
+      "source_sha256": "beda263d37060769fd2f46ba5048eac4e98b6a67787db2fc4e52e621bec03725",
+      "canonical_target": "CORE-CAP-ENCOUNTER",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "IVF cycles link stimulation, retrieval, fertilization and transfer as distinct procedures. Preserve retrieval count/quality/notes and transfer date/grade/physician notes with source version and specimen linkage. Count/grade does not establish suitability, consent or transfer authorization.",
+      "scope": "Append-only ivf-procedures profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 770,
+      "source_sha256": "a095dc318bc5b10cc5733ddc6024e60defbb8d27d254833d1faffc36925eba20",
+      "canonical_target": "CORE-CAP-MEDICATION",
+      "canonical_owner": "CAP-MEDICATION",
+      "purpose": "FSH, LH, hCG, progesterone, estrogen and GnRH analogue exposure belongs to shared medication history; drug class alone cannot determine actual ingredient/form/strength/dose or authorize treatment. Prescribing and administration remain separate owners.",
+      "scope": "Append-only reproductive-medication profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 772,
+      "source_sha256": "ce094abd41d155091c3540c7198530cb89f6a3ff02669238d4e76f4d287e4188",
+      "canonical_target": "CORE-CAP-IMAGING",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Ultrasound follicle diameter/count/growth retains study/time, laterality, measurement method/units and signed interpretation. Cross-study comparisons require compatibility; measurements never choose a treatment or trigger.",
+      "scope": "Append-only follicle-imaging profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 767,
+      "source_sha256": "b9fd7a0e0ea995204867cbb577a54478f6521673b79bf344c096c9e2aebca403",
+      "canonical_target": "CORE-CAP-LABORATORY",
+      "canonical_owner": "CAP-LABORATORY",
+      "purpose": "Embryology and hormone observations use separate specimen/result profiles under laboratory ownership. Retain developmental stage/grading, cryopreservation/transfer and embryo/egg/sperm storage identity/custody separately from patient IDs; hormone AMH/LH/FSH/estradiol/progesterone retain units/method/reference/timing. Storage or shared treatment linkage never authorizes disposal, donation, transfer or partner disclosure. Custody and consent state require specialist-validated contracts.",
+      "scope": "Append-only reproductive-lab profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 773,
+      "source_sha256": "94bc604422ef32da686dde31823de1018cfdd63ebe62a684bb9d12d60d210ce5",
+      "canonical_target": "CORE-CAP-LABORATORY",
+      "canonical_owner": "CAP-LABORATORY",
+      "purpose": "Embryology and hormone observations use separate specimen/result profiles under laboratory ownership. Retain developmental stage/grading, cryopreservation/transfer and embryo/egg/sperm storage identity/custody separately from patient IDs; hormone AMH/LH/FSH/estradiol/progesterone retain units/method/reference/timing. Storage or shared treatment linkage never authorizes disposal, donation, transfer or partner disclosure. Custody and consent state require specialist-validated contracts.",
+      "scope": "Append-only reproductive-lab profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 774,
+      "source_sha256": "6da0b9134baff8ea5329b9eb257305e7e9fa7dfa3debb347750aed6a897a39eb",
+      "canonical_target": "CORE-CAP-LABORATORY",
+      "canonical_owner": "CAP-LABORATORY",
+      "purpose": "Embryology and hormone observations use separate specimen/result profiles under laboratory ownership. Retain developmental stage/grading, cryopreservation/transfer and embryo/egg/sperm storage identity/custody separately from patient IDs; hormone AMH/LH/FSH/estradiol/progesterone retain units/method/reference/timing. Storage or shared treatment linkage never authorizes disposal, donation, transfer or partner disclosure. Custody and consent state require specialist-validated contracts.",
+      "scope": "Append-only reproductive-lab profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 776,
+      "source_sha256": "f2a53b73f30e47ac7f49a8e76d67b09e5a7d8b32a03684ad38376f44abb88568",
+      "canonical_target": "CORE-CAP-RESEARCH",
+      "canonical_owner": "CAP-RESEARCH",
+      "purpose": "Cycle, pregnancy and live-birth rates are different cohort outcomes with explicit denominator, follow-up, treatment context and missingness. Aggregates are not individual predictions or comparable clinic rankings without population adjustment and evidence.",
+      "scope": "Append-only fertility-outcomes profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-RESEARCH",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 777,
+      "source_sha256": "19ebad99012bc9b9b15ea37575a3a7e5afe8a2fdca53153966171a8e8b925ff5",
+      "canonical_target": "CORE-CAP-AI",
+      "canonical_owner": "CAP-AI",
+      "purpose": "Hormone, ultrasound, lab and treatment-timeline analysis is a bounded AI task requiring source/model versions, validation, uncertainty and human disposition. No independent selection, grading, stimulation dose or reproductive decision.",
+      "scope": "Append-only fertility-ai profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 779,
+      "source_sha256": "975416c0a1e1a1c8dbc8aeb644c14b4b876d9899b12cbea9cb869036059fc229",
+      "canonical_target": "CORE-CAP-DATA",
+      "canonical_owner": "CAP-DATA",
+      "purpose": "Diagnostics, medications, procedures and outcomes form an attributed source-reference timeline. Cross-partner joins require independent authorization at render time and cannot create merged identity or duplicate clinical truth.",
+      "scope": "Append-only fertility-timeline profile; no replacement of earlier owner profiles",
+      "workflow": "Verify patient/specimen/source linkage and independent authorization → capture versioned source-owned context → qualified review → render bounded profile → preserve correction and withdrawal history.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "PatientBinding",
+        "EpisodeReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    }
+  ]
+}

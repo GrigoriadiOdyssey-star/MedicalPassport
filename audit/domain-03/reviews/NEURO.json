@@ -1,0 +1,2916 @@
+{
+  "pass": "DOMAIN-03",
+  "domain": "NEURO",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 741 reviewed IDs.",
+  "count": 101,
+  "reviews": [
+    {
+      "original_id": 881,
+      "title": "Pediatric Neurologist Profile",
+      "body": "# Pediatric Neurologist Profile\n\nProfessional profile of licensed pediatric neurologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Pediatric Neurology Expertise\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "af00b97c46d59d6b1009282084e642dd68a9b4b8cd61f409f8fa5936de52f5ea",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34443
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Qualifications",
+        "Experience",
+        "Pediatric Neurology Expertise",
+        "Languages"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 883,
+      "title": "Pediatric Neurology Appointment Booking",
+      "body": "# Pediatric Neurology Appointment Booking\n\nAllows scheduling consultations with pediatric neurologists.\n\nSupports\n\n• Clinic\n\n• Physician\n\n• Online Consultation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8b14d43570d1b2caa3b7432cef56f2632425a3a7ea5b06bd6967cd8969d3c3ab",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34487
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Clinic",
+        "Physician",
+        "Online Consultation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 884,
+      "title": "Pediatric Neurological Disease Registry",
+      "body": "# Pediatric Neurological Disease Registry\n\nStores pediatric neurological diagnoses.\n\nSupports\n\n• Epilepsy\n\n• Cerebral Palsy\n\n• Muscular Dystrophy\n\n• Neurodevelopmental Disorders\n\n• Neuromuscular Diseases\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3f9a12b4b2fcb66698a420d6c1434766b8545dda9f8470408759a8815f691499",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34507
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Epilepsy",
+        "Cerebral Palsy",
+        "Muscular Dystrophy",
+        "Neurodevelopmental Disorders",
+        "Neuromuscular Diseases"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 885,
+      "title": "Pediatric EEG Archive",
+      "body": "# Pediatric EEG Archive\n\nStores pediatric electroencephalography examinations.\n\nSupports\n\n• Digital EEG\n\n• Video EEG\n\n• Physician Reports\n\n• Historical Comparison\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "884acffb5ee97584946deb79021f2dc961fe4655e54f016189cd637eb1ae2a4a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34531
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Digital EEG",
+        "Video EEG",
+        "Physician Reports",
+        "Historical Comparison"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 886,
+      "title": "Pediatric Brain MRI Archive",
+      "body": "# Pediatric Brain MRI Archive\n\nStores brain MRI examinations.\n\nSupports\n\n• Images\n\n• Lesion Analysis\n\n• Development Assessment\n\n• Physician Reports\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b3f3bebd2a1765168fabdada7e387e44dcc294348bd1bf5e943d7d36596a6c10",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34553
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Images",
+        "Lesion Analysis",
+        "Development Assessment",
+        "Physician Reports"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 887,
+      "title": "Pediatric Seizure Registry",
+      "body": "# Pediatric Seizure Registry\n\nTracks seizure episodes.\n\nSupports\n\n• Date & Time\n\n• Duration\n\n• Trigger\n\n• Medication Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "823ec41796e575f88b466552e2db3ff07c0dc4b45604250cfa449f0301b1f32c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34575
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Date & Time",
+        "Duration",
+        "Trigger",
+        "Medication Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 888,
+      "title": "Pediatric Epilepsy Monitoring",
+      "body": "# Pediatric Epilepsy Monitoring\n\nSupports long-term epilepsy management.\n\nTracks\n\n• Seizure Frequency\n\n• Medication\n\n• EEG\n\n• Physician Notes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c4ce096510f050d96ec1179fa5cfb5da0ba89cc3b507cb7c50ef0868548365b8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34597
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Seizure Frequency",
+        "Medication",
+        "EEG",
+        "Physician Notes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 889,
+      "title": "Pediatric Headache Registry",
+      "body": "# Pediatric Headache Registry\n\nStores headache disorders.\n\nSupports\n\n• Migraine\n\n• Tension Headache\n\n• Secondary Headache\n\n• Pain Diary\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "22319241db5a52e8aaea60d1e641c3d8a525eba69c5a0eb67abb3c39f7a88c58",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34619
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Migraine",
+        "Tension Headache",
+        "Secondary Headache",
+        "Pain Diary"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 890,
+      "title": "Pediatric Development Assessment",
+      "body": "# Pediatric Development Assessment\n\nEvaluates neurological development.\n\nSupports\n\n• Reflexes\n\n• Coordination\n\n• Cognitive Function\n\n• Speech Development\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9ead7419cb87b6ffc3c4bf181e68d31b1c170cddfab1e26188bfd95c4c658fb6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34641
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Reflexes",
+        "Coordination",
+        "Cognitive Function",
+        "Speech Development"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 891,
+      "title": "Pediatric Neuromuscular Registry",
+      "body": "# Pediatric Neuromuscular Registry\n\nStores neuromuscular disorders.\n\nSupports\n\n• SMA\n\n• Duchenne Muscular Dystrophy\n\n• Peripheral Neuropathies\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8937e54b584b0e6fffc765b264c3750c0d55b23390dfe0abb035df724b4443c0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34663
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "SMA",
+        "Duchenne Muscular Dystrophy",
+        "Peripheral Neuropathies"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 892,
+      "title": "Pediatric Movement Disorder Registry",
+      "body": "# Pediatric Movement Disorder Registry\n\nTracks movement disorders.\n\nSupports\n\n• Tremor\n\n• Dystonia\n\n• Tics\n\n• Chorea\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1c36753681878bfc4b245468c7509e182f1dc7d2ffedac91a80dfa627bba1395",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34683
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Tremor",
+        "Dystonia",
+        "Tics",
+        "Chorea"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 893,
+      "title": "Pediatric Neurogenetics Registry",
+      "body": "# Pediatric Neurogenetics Registry\n\nStores hereditary neurological disorders.\n\nSupports\n\n• Genetic Testing\n\n• Variant Reports\n\n• Family History\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4482f62c012bb082ca3a91d0e942d553df1f1d4825882783cfb7544a7ef681a1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34705
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Genetic Testing",
+        "Variant Reports",
+        "Family History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 894,
+      "title": "Pediatric Neurological Medication Manager",
+      "body": "# Pediatric Neurological Medication Manager\n\nTracks neurological medications.\n\nSupports\n\n• Weight-Based Dosage\n\n• Schedule\n\n• Side Effects\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9e0806a20d3b390aa9ee3760572498c7a1e0b58dd19b873912023f83ab810967",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34725
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Weight-Based Dosage",
+        "Schedule",
+        "Side Effects"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 895,
+      "title": "Pediatric Neurology AI Assistant",
+      "body": "# Pediatric Neurology AI Assistant\n\nAI assists pediatric neurological monitoring.\n\nAnalyzes\n\n• Symptoms\n\n• EEG\n\n• MRI\n\n• Laboratory Results\n\nProvides educational recommendations.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "81c76eaac6e8ba74a29bb5ef9dff1c37472968d481d9d0eb80a818178a23615d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34745
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Symptoms",
+        "EEG",
+        "MRI",
+        "Laboratory Results"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 896,
+      "title": "Pediatric Neurological Emergency Module",
+      "body": "# Pediatric Neurological Emergency Module\n\nSupports neurological emergencies.\n\nIncludes\n\n• Seizures\n\n• Altered Consciousness\n\n• Stroke Symptoms\n\n• Head Trauma\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8fd10ea008c00ae01eeb81997c8be045c2c38eecd70676b810026379ebaf28ee",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34769
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Seizures",
+        "Altered Consciousness",
+        "Stroke Symptoms",
+        "Head Trauma"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 897,
+      "title": "Pediatric Neurology Timeline",
+      "body": "# Pediatric Neurology Timeline\n\nDisplays complete neurological history.\n\nIncludes\n\n• Diagnoses\n\n• EEG\n\n• MRI\n\n• Medications\n\n• Hospitalizations\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cad9424bec611186e008b14f2a8458b23f5ff4a8bf4ac125d5cdb91f511c48e3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 34791
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Diagnoses",
+        "EEG",
+        "MRI",
+        "Medications",
+        "Hospitalizations"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3341,
+      "title": "Clinical Pediatric Neurology Platform Core Engine",
+      "body": "Central platform for pediatric neurology.\n\nSupports\n\n• Epilepsy\n• Neurodevelopmental Disorders\n• Neuromuscular Diseases\n• Headache Disorders\n• Neurogenetic Diseases\n• Cerebral Palsy\n\nIntegrates Neurosurgery, Genetics, Rehabilitation, Neurophysiology, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4368c1b61d179c31fea20dade0cd259dafff346d13e4875ffee655bdc98c332d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 80909
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Epilepsy",
+        "Neurodevelopmental Disorders",
+        "Neuromuscular Diseases",
+        "Headache Disorders",
+        "Neurogenetic Diseases",
+        "Cerebral Palsy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3342,
+      "title": "Pediatric Neurology Registry",
+      "body": "Maintains comprehensive pediatric neurology records.\n\nSupports\n\n• Diagnoses\n• EEG\n• MRI\n• Genetic Studies\n• Functional Assessment\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e4564e7f312129258bfb148c63d275e8fd591f78bf37ff1bc76295c56120c21d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 80930
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Diagnoses",
+        "EEG",
+        "MRI",
+        "Genetic Studies",
+        "Functional Assessment",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3343,
+      "title": "Pediatric Epilepsy Module",
+      "body": "Supports pediatric epilepsy.\n\nSupports\n\n• Focal Epilepsy\n\n• Generalized Epilepsy\n\n• Infantile Spasms\n\n• Drug-resistant Epilepsy\n\n• Ketogenic Diet\n\n• Epilepsy Surgery Planning\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6612adfb3d11d25b9baa0ce372663bf3c661479611bfce413e272adb8f2c643c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 80949
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Focal Epilepsy",
+        "Generalized Epilepsy",
+        "Infantile Spasms",
+        "Drug-resistant Epilepsy",
+        "Ketogenic Diet",
+        "Epilepsy Surgery Planning"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3344,
+      "title": "Pediatric Cerebral Palsy Module",
+      "body": "Supports cerebral palsy management.\n\nSupports\n\n• Motor Assessment\n\n• GMFCS Classification\n\n• Spasticity\n\n• Orthopedic Monitoring\n\n• Rehabilitation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ca1c6b6b60e69c433e4d2f7da2d327fc092d91e8080f4316b99067922c0049f8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 80973
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Motor Assessment",
+        "GMFCS Classification",
+        "Spasticity",
+        "Orthopedic Monitoring",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3345,
+      "title": "Pediatric Neuromuscular Disorders Module",
+      "body": "Supports neuromuscular diseases.\n\nSupports\n\n• Duchenne Muscular Dystrophy\n\n• Spinal Muscular Atrophy\n\n• Peripheral Neuropathies\n\n• Myopathies\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5862b5f946198c6e1b4a9b47b7d8b7653ca2ad9327b45fc8f6d1568a3f0651da",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 80995
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Duchenne Muscular Dystrophy",
+        "Spinal Muscular Atrophy",
+        "Peripheral Neuropathies",
+        "Myopathies"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3346,
+      "title": "Pediatric Neurodevelopment Module",
+      "body": "Supports neurodevelopmental disorders.\n\nSupports\n\n• Developmental Delay\n\n• Global Developmental Delay\n\n• Intellectual Disability\n\n• Motor Development\n\n• Cognitive Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "99cc96accad23d24bcbb63707762d8c59dc391a69d7b1946519c3e2c47371364",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81015
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Developmental Delay",
+        "Global Developmental Delay",
+        "Intellectual Disability",
+        "Motor Development",
+        "Cognitive Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3347,
+      "title": "Pediatric Headache Module",
+      "body": "Supports pediatric headache disorders.\n\nSupports\n\n• Migraine\n\n• Tension Headache\n\n• Secondary Headache\n\n• Chronic Headache\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a9eb93f56501556c6cacda002538757f4b9b951f1e60b2d2690bb67212dde8a9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81037
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Migraine",
+        "Tension Headache",
+        "Secondary Headache",
+        "Chronic Headache"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3348,
+      "title": "Pediatric Movement Disorders Module",
+      "body": "Supports movement disorders.\n\nSupports\n\n• Dystonia\n\n• Chorea\n\n• Tremor\n\n• Tics\n\n• Ataxia\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5955fe65f562a3e9548f4cb839934ac8b20382812e2fea30f4550dd0b91a00f8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81057
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Dystonia",
+        "Chorea",
+        "Tremor",
+        "Tics",
+        "Ataxia"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3349,
+      "title": "Pediatric Neurogenetics Module",
+      "body": "Supports inherited neurological diseases.\n\nSupports\n\n• Rett Syndrome\n\n• Angelman Syndrome\n\n• Leukodystrophies\n\n• Mitochondrial Diseases\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a97b44e766f4c96e1cd3d8593e6855377028296fb4292ad428ee9f27e76edd46",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81079
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Rett Syndrome",
+        "Angelman Syndrome",
+        "Leukodystrophies",
+        "Mitochondrial Diseases"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3350,
+      "title": "Pediatric EEG Registry",
+      "body": "Maintains neurophysiology studies.\n\nSupports\n\n• Routine EEG\n\n• Video EEG\n\n• Ambulatory EEG\n\n• Sleep EEG\n\n• AI EEG Interpretation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1222e6618f413e1032c817539629f8e09263fc0daf35c51d764e1145081ed013",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81099
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Routine EEG",
+        "Video EEG",
+        "Ambulatory EEG",
+        "Sleep EEG",
+        "AI EEG Interpretation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3351,
+      "title": "Pediatric Neuroimaging Registry",
+      "body": "Maintains neurological imaging.\n\nSupports\n\n• MRI\n\n• CT\n\n• Functional MRI\n\n• Diffusion Imaging\n\n• AI Image Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d2b466eff597a0b68ca2ae96e18773f2f69746405411d3789e4b05a19d92dea4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81121
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "MRI",
+        "CT",
+        "Functional MRI",
+        "Diffusion Imaging",
+        "AI Image Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3352,
+      "title": "Pediatric Neurology Laboratory Registry",
+      "body": "Maintains neurological laboratory studies.\n\nSupports\n\n• CSF\n\n• Autoimmune Panels\n\n• Metabolic Screening\n\n• Genetic Testing\n\n• Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "791f5ae364e3f3a9bf50e5c3aafbaf5b57bd798f4ca1972dd7659afa31677d88",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81143
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "CSF",
+        "Autoimmune Panels",
+        "Metabolic Screening",
+        "Genetic Testing",
+        "Biomarkers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3353,
+      "title": "Pediatric Neurology Biomarker Registry",
+      "body": "Maintains neurological biomarkers.\n\nSupports\n\n• Neurodegeneration\n\n• Inflammation\n\n• Autoimmune Disease\n\n• Metabolic Disease\n\n• Genetic Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a4086977911dbacd53ae0b10cd68f8024fde0dcb3f2e2ee48294f8481a7d889d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81165
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurodegeneration",
+        "Inflammation",
+        "Autoimmune Disease",
+        "Metabolic Disease",
+        "Genetic Biomarkers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3354,
+      "title": "Pediatric Neurology AI Decision Support",
+      "body": "Provides AI-assisted pediatric neurology.\n\nSupports\n\n• Seizure Prediction\n\n• EEG Interpretation\n\n• MRI Interpretation\n\n• Developmental Risk Prediction\n\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "93cc3cb3b623c48737760c252787b31ba1a6e7b28c05d7624711f66f3dc6e87d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81187
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Seizure Prediction",
+        "EEG Interpretation",
+        "MRI Interpretation",
+        "Developmental Risk Prediction",
+        "Personalized Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3356,
+      "title": "Pediatric Neurology Telemedicine Module",
+      "body": "Supports remote neurological care.\n\nSupports\n\n• EEG Review\n\n• Video Consultation\n\n• Rehabilitation Follow-up\n\n• Medication Monitoring\n\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "77fb1854d859abda03d03df9cf581ef824edf5b03a7a2848801471b6e8bdc491",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81229
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "EEG Review",
+        "Video Consultation",
+        "Rehabilitation Follow-up",
+        "Medication Monitoring",
+        "AI Translation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3357,
+      "title": "Pediatric Neurology Clinical Trials Registry",
+      "body": "Supports pediatric neurology research.\n\nSupports\n\n• Epilepsy Research\n\n• SMA Studies\n\n• DMD Studies\n\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8f517783e3bf526b55405658a8d29713d9ac8e75c84e46266d345f34f491712c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81251
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Epilepsy Research",
+        "SMA Studies",
+        "DMD Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3359,
+      "title": "Pediatric Neurology Intelligence Registry",
+      "body": "Maintains AI-ready neurological datasets.\n\nSupports\n\n• EEG\n\n• MRI\n\n• Genetics\n\n• Laboratory\n\n• Rehabilitation\n\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "61064f0cfd6eab3f175a84680bad95d055e6a5ddddaed76a76e0f8fb18217889",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81291
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "EEG",
+        "MRI",
+        "Genetics",
+        "Laboratory",
+        "Rehabilitation",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3360,
+      "title": "Clinical Pediatric Neurology Intelligence Hub",
+      "body": "Coordinates the complete pediatric neurology ecosystem.\n\nIntegrates\n\n• AI\n\n• Digital Twin\n\n• Neurophysiology\n\n• Neurosurgery\n\n• Genetics\n\n• Rehabilitation\n\n• Laboratory Medicine\n\n• Telemedicine\n\nProvides intelligent pediatric neurological care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3e6494eddb834186d323c363c42eb39d80333f63f44b0b2c8a26feb85ef04225",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 81315
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Neurophysiology",
+        "Neurosurgery",
+        "Genetics",
+        "Rehabilitation",
+        "Laboratory Medicine",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3961,
+      "title": "Clinical Pediatric Neurology Platform Core Engine",
+      "body": "Central platform for pediatric neurology.\n\nSupports\n\n• Epilepsy\n• Headache\n• Neurodevelopmental Disorders\n• Neuromuscular Diseases\n• Movement Disorders\n• Cerebrovascular Disorders\n• Neurogenetic Diseases\n• Neuroimmunology\n• Neurorehabilitation\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• EEG\n• MRI\n• Neurogenetics\n• Neuropsychology\n• Rehabilitation\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d5ea1bb4897be5e4a847f6cf4c41c56a885b10af9ee7d54c4fb676d11e392f33",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93069
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Epilepsy",
+        "Headache",
+        "Neurodevelopmental Disorders",
+        "Neuromuscular Diseases",
+        "Movement Disorders",
+        "Cerebrovascular Disorders",
+        "Neurogenetic Diseases",
+        "Neuroimmunology",
+        "Neurorehabilitation",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "EEG",
+        "MRI",
+        "Neurogenetics",
+        "Neuropsychology",
+        "Rehabilitation",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3962,
+      "title": "Pediatric Neurology Registry",
+      "body": "Maintains comprehensive pediatric neurology records.\n\nSupports\n\n• Neurological Diagnoses\n• Developmental History\n• Neurological Examinations\n• EEG\n• Neuroimaging\n• Genetic Data\n• Treatment History\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "039ca20f977694ade1f849eeff6bccf7d588405d4cf4580908b705c58d4b37ff",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93102
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Diagnoses",
+        "Developmental History",
+        "Neurological Examinations",
+        "EEG",
+        "Neuroimaging",
+        "Genetic Data",
+        "Treatment History",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3963,
+      "title": "Pediatric Epilepsy Module",
+      "body": "Supports pediatric epilepsy care.\n\nSupports\n\n• Seizure Classification\n• Seizure History\n• Seizure Diaries\n• EEG Integration\n• Medication Monitoring\n• Treatment Response\n• Seizure Action Plans\n\nSupports structured documentation of seizure type, frequency, duration, triggers and time of occurrence.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a05ac1004acf82405e0ed159f33968df9da96ffc240383568f2f633daeff8053",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93123
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Seizure Classification",
+        "Seizure History",
+        "Seizure Diaries",
+        "EEG Integration",
+        "Medication Monitoring",
+        "Treatment Response",
+        "Seizure Action Plans"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3964,
+      "title": "Pediatric EEG & Neurophysiology Module",
+      "body": "Supports pediatric neurophysiology.\n\nSupports\n\n• EEG\n• Video EEG\n• Sleep EEG\n• Evoked Potentials\n• Neurophysiological Monitoring\n• AI-assisted Signal Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "be5a0450a03828f9113a468283247b6bbfff997feb3e61583b6a64e858e985be",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93145
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "EEG",
+        "Video EEG",
+        "Sleep EEG",
+        "Evoked Potentials",
+        "Neurophysiological Monitoring",
+        "AI-assisted Signal Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3965,
+      "title": "Pediatric Headache & Migraine Module",
+      "body": "Supports pediatric headache disorders.\n\nSupports\n\n• Migraine\n• Tension-type Headache\n• Chronic Headache\n• Headache Diaries\n• Trigger Analysis\n• Treatment Monitoring\n• Red Flag Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1c82b1ac8e551dad5ce1e127553b0011c0bd765a2cba540d0ad113db0ae244d6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93164
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Migraine",
+        "Tension-type Headache",
+        "Chronic Headache",
+        "Headache Diaries",
+        "Trigger Analysis",
+        "Treatment Monitoring",
+        "Red Flag Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3966,
+      "title": "Pediatric Neurodevelopmental Disorders Module",
+      "body": "Supports neurodevelopmental medicine.\n\nSupports\n\n• Developmental Delay\n• Intellectual Disability\n• Developmental Assessment\n• Functional Assessment\n• Early Intervention\n• Longitudinal Development Tracking\n\nIntegrates\n\n• Pediatric Neurology\n• Psychology\n• Psychiatry\n• Speech Therapy\n• Occupational Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fa3c7b4b738e551b6c1aea36a43fd213ba7640d5be8462a50e564af0360529a3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93184
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Developmental Delay",
+        "Intellectual Disability",
+        "Developmental Assessment",
+        "Functional Assessment",
+        "Early Intervention",
+        "Longitudinal Development Tracking",
+        "Pediatric Neurology",
+        "Psychology",
+        "Psychiatry",
+        "Speech Therapy",
+        "Occupational Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3967,
+      "title": "Pediatric Cerebral Palsy Module",
+      "body": "Supports cerebral palsy management.\n\nSupports\n\n• Motor Classification\n• Spasticity Assessment\n• Functional Assessment\n• Orthopedic Monitoring\n• Rehabilitation\n• Assistive Technology\n• Longitudinal Outcome Tracking\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "be762c5ac6a0baf12d2c857527c507356ffa59e1f576694c8fa5629ba0463342",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93211
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Motor Classification",
+        "Spasticity Assessment",
+        "Functional Assessment",
+        "Orthopedic Monitoring",
+        "Rehabilitation",
+        "Assistive Technology",
+        "Longitudinal Outcome Tracking"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3968,
+      "title": "Pediatric Neuromuscular Disease Module",
+      "body": "Supports pediatric neuromuscular disorders.\n\nSupports\n\n• Muscular Dystrophies\n• Spinal Muscular Atrophy\n• Congenital Myopathies\n• Neuropathies\n• Muscle Function Monitoring\n• Respiratory Monitoring\n• Genetic Diagnostics\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f90ee4e30d068664dce6a2032bd0205c6432fe0e69f2aa5f72ff21c1f022f392",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93231
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Muscular Dystrophies",
+        "Spinal Muscular Atrophy",
+        "Congenital Myopathies",
+        "Neuropathies",
+        "Muscle Function Monitoring",
+        "Respiratory Monitoring",
+        "Genetic Diagnostics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3969,
+      "title": "Pediatric Movement Disorders Module",
+      "body": "Supports pediatric movement disorders.\n\nSupports\n\n• Dystonia\n• Tics\n• Tremor\n• Chorea\n• Ataxia\n• Parkinsonian Syndromes\n• Video-based Movement Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e2528894fd9436949b68dfacd63ede15d5a026b785ef2956d4640b96c97ea624",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93251
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Dystonia",
+        "Tics",
+        "Tremor",
+        "Chorea",
+        "Ataxia",
+        "Parkinsonian Syndromes",
+        "Video-based Movement Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3970,
+      "title": "Pediatric Neuroimmunology Module",
+      "body": "Supports pediatric neurological immune disorders.\n\nSupports\n\n• Autoimmune Encephalitis\n• Demyelinating Disorders\n• Pediatric Multiple Sclerosis\n• Transverse Myelitis\n• Neuroinflammatory Disorders\n• Immune Therapy Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "796a89e949c6b1db4ff793141b2a9cbb16172eefc15a535c905bc8295bae8c4a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93271
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Autoimmune Encephalitis",
+        "Demyelinating Disorders",
+        "Pediatric Multiple Sclerosis",
+        "Transverse Myelitis",
+        "Neuroinflammatory Disorders",
+        "Immune Therapy Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3971,
+      "title": "Pediatric Neurogenetics Module",
+      "body": "Supports genetic neurological disorders.\n\nSupports\n\n• Genetic Testing\n• Whole Exome Sequencing\n• Whole Genome Sequencing\n• Variant Interpretation\n• Family Screening\n• Genetic Counseling\n\nIntegrates phenotype-to-genotype analysis.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "01a6f4e6587286adbc66cfba897a1d437ded6e4ad84ebf0aa56f6cc2ed5d1e48",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93290
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Genetic Testing",
+        "Whole Exome Sequencing",
+        "Whole Genome Sequencing",
+        "Variant Interpretation",
+        "Family Screening",
+        "Genetic Counseling"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3972,
+      "title": "Pediatric Neuroimaging Registry",
+      "body": "Maintains pediatric neurological imaging.\n\nSupports\n\n• Brain MRI\n• Spine MRI\n• CT\n• Functional Imaging\n• Advanced Neuroimaging\n• AI Image Analysis\n• Longitudinal Comparison\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f438608e935f9a96e5ff74a7ac86dc40f2f8078cebb292e717abea52897328cd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93311
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Brain MRI",
+        "Spine MRI",
+        "CT",
+        "Functional Imaging",
+        "Advanced Neuroimaging",
+        "AI Image Analysis",
+        "Longitudinal Comparison"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3973,
+      "title": "Pediatric Neuropsychology Module",
+      "body": "Supports cognitive and behavioral neurological assessment.\n\nSupports\n\n• Cognitive Testing\n• Memory\n• Attention\n• Executive Function\n• Learning Assessment\n• Behavioral Assessment\n• School Function\n\nIntegrates neuropsychological results into the longitudinal patient profile.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e67c75765cebd70e33f0f59e578a69650d1f5b982ce1ba6235764054858da4b6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93331
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Cognitive Testing",
+        "Memory",
+        "Attention",
+        "Executive Function",
+        "Learning Assessment",
+        "Behavioral Assessment",
+        "School Function"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3974,
+      "title": "Pediatric Stroke & Cerebrovascular Module",
+      "body": "Supports pediatric cerebrovascular disorders.\n\nSupports\n\n• Stroke Recognition\n• Cerebral Vasculopathies\n• Vascular Imaging\n• Risk Assessment\n• Secondary Prevention\n• Long-term Rehabilitation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "247c04bde1e0444bbea25ecce62ef16c59229a0b2be6570bdfb66b6a617b8eee",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93353
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Stroke Recognition",
+        "Cerebral Vasculopathies",
+        "Vascular Imaging",
+        "Risk Assessment",
+        "Secondary Prevention",
+        "Long-term Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3975,
+      "title": "Pediatric Neurology AI Decision Support",
+      "body": "Provides AI-assisted pediatric neurology.\n\nSupports\n\n• Differential Diagnosis\n• EEG Analysis\n• Imaging Analysis\n• Seizure Pattern Recognition\n• Developmental Risk Assessment\n• Treatment Decision Support\n\nAI outputs remain clinician-reviewed decision support.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9bdc8a7c4fe3a65640299283d1d486477341b80ffe3be96d909f0d6f4ec6389f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93372
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Differential Diagnosis",
+        "EEG Analysis",
+        "Imaging Analysis",
+        "Seizure Pattern Recognition",
+        "Developmental Risk Assessment",
+        "Treatment Decision Support"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3977,
+      "title": "Pediatric Neurorehabilitation Module",
+      "body": "Supports neurological rehabilitation.\n\nIntegrates\n\n• Physiotherapy\n• Occupational Therapy\n• Speech Therapy\n• Cognitive Rehabilitation\n• Assistive Technologies\n• Functional Monitoring\n\nSupports longitudinal rehabilitation goals and outcomes.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "813489b035553e332ca4d3bc6605ffcf77d81234de32d5ab3ba8ec8866c0bb70",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93412
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Physiotherapy",
+        "Occupational Therapy",
+        "Speech Therapy",
+        "Cognitive Rehabilitation",
+        "Assistive Technologies",
+        "Functional Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3978,
+      "title": "Pediatric Neurology Telemedicine Module",
+      "body": "Supports remote pediatric neurological care.\n\nSupports\n\n• Video Consultation\n• EEG Review\n• Imaging Review\n• Seizure Diary Review\n• Developmental Follow-up\n• International Second Opinions\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e7eef6db7c10bc68287fc8095b3b4c7211979655c61bd9e04b65d8518cb202fc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93433
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Video Consultation",
+        "EEG Review",
+        "Imaging Review",
+        "Seizure Diary Review",
+        "Developmental Follow-up",
+        "International Second Opinions"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3979,
+      "title": "Pediatric Neurology Transition-to-Adult-Care Module",
+      "body": "Supports transition from pediatric to adult neurological care.\n\nSupports\n\n• Transition Planning\n• Medical Summary\n• Adult Provider Identification\n• Medication Transfer\n• Emergency Plans\n• Self-management Assessment\n• Family/Caregiver Transition\n• Transfer Completion Tracking\n\nMaintains continuity of neurological care across the pediatric-to-adult transition.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8dd3d91ed3f5e47f9bad61fd5b105426a364b8819f295a682fee45aa46251ff3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93452
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Transition Planning",
+        "Medical Summary",
+        "Adult Provider Identification",
+        "Medication Transfer",
+        "Emergency Plans",
+        "Self-management Assessment",
+        "Family/Caregiver Transition",
+        "Transfer Completion Tracking"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3980,
+      "title": "Clinical Pediatric Neurology Intelligence Hub",
+      "body": "Coordinates the complete pediatric neurology ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Epileptology\n• EEG\n• Neuroimaging\n• Neurogenetics\n• Neuropsychology\n• Neuroimmunology\n• Neuromuscular Medicine\n• Neurorehabilitation\n• Telemedicine\n• Adult-care Transition\n\nProvides intelligent longitudinal pediatric neurological care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "50726c8d08e26b9664a6be4917b3b6a0f49b96d1ee0b23da0320d31bedc67ddd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 93475
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Epileptology",
+        "EEG",
+        "Neuroimaging",
+        "Neurogenetics",
+        "Neuropsychology",
+        "Neuroimmunology",
+        "Neuromuscular Medicine",
+        "Neurorehabilitation",
+        "Telemedicine",
+        "Adult-care Transition"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4601,
+      "title": "Clinical Pediatric Neurology Platform Core Engine",
+      "body": "Purpose:\nProvide the central longitudinal architecture for pediatric neurological care across EDHT.\n\nCore Functions:\n• Neurological Diagnosis Registry\n• Neurological History\n• Developmental History\n• Neurological Examination\n• Acute Neurological Events\n• Chronic Neurological Disorders\n• Epilepsy\n• Headache\n• Movement Disorders\n• Neuromuscular Disease\n• Neurogenetic Disorders\n• Neuroinflammatory Disease\n• Neurovascular Disease\n• Neurocritical Care\n• Rehabilitation\n• Transition to Adult Neurology\n\nClinical Data:\n• Symptoms\n• Examination Findings\n• Developmental Milestones\n• EEG\n• Neuroimaging\n• Laboratory Data\n• Genetics\n• Neurophysiology\n• Medication\n• Procedures\n• Hospitalizations\n• Patient-reported Outcomes\n\nIntegrations:\n• Pediatrics\n• Genetics\n• Radiology\n• Neurophysiology\n• Rehabilitation\n• Psychiatry\n• Psychology\n• Ophthalmology\n• ENT\n• Intensive Care\n• Pharmacy\n• Medical Passport\n\nAI Functions:\n• Longitudinal Pattern Detection\n• Clinical Timeline Generation\n• Neurological Trend Analysis\n• Missing-data Detection\n• Pre-Visit Summarization\n• Decision-support Orchestration\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "bad9a1a62ea9ffc2ddb63275dfc571e1c4eecd75e4008bf43a81b720df91d727",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108360
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Diagnosis Registry",
+        "Neurological History",
+        "Developmental History",
+        "Neurological Examination",
+        "Acute Neurological Events",
+        "Chronic Neurological Disorders",
+        "Epilepsy",
+        "Headache",
+        "Movement Disorders",
+        "Neuromuscular Disease",
+        "Neurogenetic Disorders",
+        "Neuroinflammatory Disease",
+        "Neurovascular Disease",
+        "Neurocritical Care",
+        "Rehabilitation",
+        "Transition to Adult Neurology",
+        "Symptoms",
+        "Examination Findings",
+        "Developmental Milestones",
+        "EEG",
+        "Neuroimaging",
+        "Laboratory Data",
+        "Genetics",
+        "Neurophysiology",
+        "Medication",
+        "Procedures",
+        "Hospitalizations",
+        "Patient-reported Outcomes",
+        "Pediatrics",
+        "Genetics",
+        "Radiology",
+        "Neurophysiology",
+        "Rehabilitation",
+        "Psychiatry",
+        "Psychology",
+        "Ophthalmology",
+        "ENT",
+        "Intensive Care",
+        "Pharmacy",
+        "Medical Passport",
+        "Longitudinal Pattern Detection",
+        "Clinical Timeline Generation",
+        "Neurological Trend Analysis",
+        "Missing-data Detection",
+        "Pre-Visit Summarization",
+        "Decision-support Orchestration"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4602,
+      "title": "Pediatric Neurological Examination & Longitudinal Phenotype Module",
+      "body": "Purpose:\nCreate a structured longitudinal neurological phenotype from infancy through adolescence.\n\nCore Functions:\n• Mental Status\n• Cranial Nerve Examination\n• Motor Function\n• Muscle Tone\n• Muscle Strength\n• Reflexes\n• Sensory Function\n• Coordination\n• Gait\n• Balance\n• Speech\n• Swallowing\n• Autonomic Findings\n• Developmental Context\n• Examination Comparison\n\nLongitudinal Functions:\n• Baseline Neurological Status\n• Change Detection\n• Disease Progression Tracking\n• Post-treatment Comparison\n• Postoperative Comparison\n• Rehabilitation Progress\n\nData Structure:\nFindings retain date, examiner, clinical context and confidence where applicable.\n\nAI Functions:\n• Structured Examination Summarization\n• Change Detection Support\n• Phenotype Organization\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "0e5be352116b47c8582dc7ff1311f8f08218eea930db3160d7ad3b2d1fbaeaaf",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108427
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Mental Status",
+        "Cranial Nerve Examination",
+        "Motor Function",
+        "Muscle Tone",
+        "Muscle Strength",
+        "Reflexes",
+        "Sensory Function",
+        "Coordination",
+        "Gait",
+        "Balance",
+        "Speech",
+        "Swallowing",
+        "Autonomic Findings",
+        "Developmental Context",
+        "Examination Comparison",
+        "Baseline Neurological Status",
+        "Change Detection",
+        "Disease Progression Tracking",
+        "Post-treatment Comparison",
+        "Postoperative Comparison",
+        "Rehabilitation Progress",
+        "Structured Examination Summarization",
+        "Change Detection Support",
+        "Phenotype Organization"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4603,
+      "title": "Pediatric Epilepsy & Seizure Management Platform",
+      "body": "Purpose:\nProvide comprehensive longitudinal management of pediatric seizures and epilepsy.\n\nCore Functions:\n• First Seizure Documentation\n• Seizure Classification\n• Epilepsy Diagnosis\n• Epilepsy Syndrome\n• Seizure Diary\n• Event Frequency\n• Event Duration\n• Trigger Context\n• Video Event Documentation\n• EEG Integration\n• Neuroimaging\n• Genetics\n• Metabolic Evaluation\n• Antiseizure Medication\n• Treatment Response\n• Adverse Effects\n• Rescue Medication\n• Hospitalization\n• Surgery Evaluation\n• Long-term Outcomes\n\nPatient/Guardian Functions:\n• Seizure Diary\n• Medication Schedule\n• Rescue Plan\n• Clinician-approved Emergency Instructions\n• Event Upload\n• Treatment Monitoring\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "74ab0c3f77b4375bff32245b527af746f46c7fde22d62dfa1354620fbb3e540d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108470
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "First Seizure Documentation",
+        "Seizure Classification",
+        "Epilepsy Diagnosis",
+        "Epilepsy Syndrome",
+        "Seizure Diary",
+        "Event Frequency",
+        "Event Duration",
+        "Trigger Context",
+        "Video Event Documentation",
+        "EEG Integration",
+        "Neuroimaging",
+        "Genetics",
+        "Metabolic Evaluation",
+        "Antiseizure Medication",
+        "Treatment Response",
+        "Adverse Effects",
+        "Rescue Medication",
+        "Hospitalization",
+        "Surgery Evaluation",
+        "Long-term Outcomes",
+        "Seizure Diary",
+        "Medication Schedule",
+        "Rescue Plan",
+        "Clinician-approved Emergency Instructions",
+        "Event Upload",
+        "Treatment Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4604,
+      "title": "Pediatric EEG, Video-EEG & Neurophysiology Intelligence Module",
+      "body": "Purpose:\nIntegrate pediatric EEG and related neurophysiology into the longitudinal neurological record.\n\nCore Functions:\n• Routine EEG\n• Sleep EEG\n• Ambulatory EEG\n• Video-EEG Monitoring\n• ICU EEG\n• Event Marking\n• Electrographic Seizure Documentation\n• Background Activity\n• Epileptiform Findings\n• Sleep-related Findings\n• Technical Quality\n• Specialist Interpretation\n• Historical Comparison\n• Treatment Correlation\n\nData Functions:\n• Raw Study Reference\n• Structured Findings\n• Clinical Events\n• Video Correlation\n• Medication Context\n• Timestamp Synchronization\n\nAI Functions:\n• Signal Review Assistance\n• Event Detection Support\n• Longitudinal Comparison\n• Workflow Prioritization\n\nSafety:\nAI analysis cannot replace qualified EEG interpretation.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "25ad595db4dc6dfd29e9cbba216aee49b63513e608c81d0e92f7558c2ba8bc5d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108513
+      },
+      "verdict": "Raw EEG references, event/video timestamp synchronization and technical quality are unique requirements; structured report alone does not replace them.",
+      "feature_labels": [
+        "Routine EEG",
+        "Sleep EEG",
+        "Ambulatory EEG",
+        "Video-EEG Monitoring",
+        "ICU EEG",
+        "Event Marking",
+        "Electrographic Seizure Documentation",
+        "Background Activity",
+        "Epileptiform Findings",
+        "Sleep-related Findings",
+        "Technical Quality",
+        "Specialist Interpretation",
+        "Historical Comparison",
+        "Treatment Correlation",
+        "Raw Study Reference",
+        "Structured Findings",
+        "Clinical Events",
+        "Video Correlation",
+        "Medication Context",
+        "Timestamp Synchronization",
+        "Signal Review Assistance",
+        "Event Detection Support",
+        "Longitudinal Comparison",
+        "Workflow Prioritization"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4605,
+      "title": "Pediatric Epilepsy Medication, Rescue Therapy & Safety Module",
+      "body": "Purpose:\nCoordinate antiseizure treatment, rescue therapy and medication safety.\n\nCore Functions:\n• Antiseizure Medication Registry\n• Dose History\n• Weight-related Dose Context\n• Administration Schedule\n• Therapeutic Drug Monitoring\n• Adherence\n• Treatment Response\n• Adverse Effects\n• Drug Interactions\n• Laboratory Monitoring\n• Medication Changes\n• Rescue Medication\n• Rescue Plan\n• Previous Treatment Failures\n• Allergy and Adverse Reaction Integration\n\nSafety Functions:\n• Duplicate Therapy Detection\n• Interaction Alerts\n• Missing Monitoring Detection\n• Rescue Medication Expiration Tracking\n• Clinician-defined High-risk Alerts\n\nIntegrations:\n• Pharmacy\n• Laboratory Medicine\n• Emergency Medicine\n• Medical Passport\n• School Health\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "8e578c095bf5062d733755cf906b25c0659f9a435461d9d5c66ee16e649463b6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108556
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Antiseizure Medication Registry",
+        "Dose History",
+        "Weight-related Dose Context",
+        "Administration Schedule",
+        "Therapeutic Drug Monitoring",
+        "Adherence",
+        "Treatment Response",
+        "Adverse Effects",
+        "Drug Interactions",
+        "Laboratory Monitoring",
+        "Medication Changes",
+        "Rescue Medication",
+        "Rescue Plan",
+        "Previous Treatment Failures",
+        "Allergy and Adverse Reaction Integration",
+        "Duplicate Therapy Detection",
+        "Interaction Alerts",
+        "Missing Monitoring Detection",
+        "Rescue Medication Expiration Tracking",
+        "Clinician-defined High-risk Alerts",
+        "Pharmacy",
+        "Laboratory Medicine",
+        "Emergency Medicine",
+        "Medical Passport",
+        "School Health"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4606,
+      "title": "Pediatric Drug-Resistant Epilepsy & Epilepsy Surgery Module",
+      "body": "Purpose:\nSupport multidisciplinary evaluation of children with treatment-resistant epilepsy.\n\nCore Functions:\n• Treatment Failure History\n• Seizure Burden\n• EEG\n• Video-EEG\n• Structural Imaging\n• Functional Imaging\n• Neuropsychology\n• Genetics\n• Metabolic Testing\n• Surgical Candidacy\n• Multidisciplinary Case Review\n• Surgical Planning\n• Procedure Documentation\n• Neuromodulation\n• Postoperative Monitoring\n• Seizure Outcome\n• Cognitive Outcome\n• Quality of Life\n\nWorkflow:\nReferral → Multimodal Evaluation → Case Conference → Treatment Decision → Intervention → Longitudinal Follow-up.\n\nAI:\nMay assist data synthesis but cannot determine surgical eligibility autonomously.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "761e32ac95bea5c282d28c3a201c190d0d7c045227c62367ff046fde031165e9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108597
+      },
+      "verdict": "Preserve ketogenic/surgical/neuromodulation evaluation context, multimodal case conference and cognitive/quality-of-life outcomes; AI cannot decide eligibility.",
+      "feature_labels": [
+        "Treatment Failure History",
+        "Seizure Burden",
+        "EEG",
+        "Video-EEG",
+        "Structural Imaging",
+        "Functional Imaging",
+        "Neuropsychology",
+        "Genetics",
+        "Metabolic Testing",
+        "Surgical Candidacy",
+        "Multidisciplinary Case Review",
+        "Surgical Planning",
+        "Procedure Documentation",
+        "Neuromodulation",
+        "Postoperative Monitoring",
+        "Seizure Outcome",
+        "Cognitive Outcome",
+        "Quality of Life"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4607,
+      "title": "Pediatric Headache, Migraine & Recurrent Pain Neurology Module",
+      "body": "Purpose:\nProvide longitudinal assessment and management of pediatric headache disorders.\n\nCore Functions:\n• Headache Diary\n• Migraine\n• Headache Phenotype\n• Frequency\n• Duration\n• Severity\n• Aura\n• Associated Symptoms\n• Trigger Context\n• Sleep Correlation\n• Menstrual Context where clinically applicable\n• Medication\n• Acute Treatment\n• Preventive Treatment\n• Imaging Context\n• Functional Impact\n• School Impact\n• Treatment Response\n\nSafety Functions:\nSupports clinician-defined neurological red-flag workflows and escalation.\n\nPatient Functions:\n• Headache Diary\n• Trigger Tracking\n• Medication Tracking\n• Clinician-approved Care Plan\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "c26ff78e3cae6c7f3cb6b005b27f56bebedc6bfa9130cc504177c7d4c64f8770",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108633
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Headache Diary",
+        "Migraine",
+        "Headache Phenotype",
+        "Frequency",
+        "Duration",
+        "Severity",
+        "Aura",
+        "Associated Symptoms",
+        "Trigger Context",
+        "Sleep Correlation",
+        "Menstrual Context where clinically applicable",
+        "Medication",
+        "Acute Treatment",
+        "Preventive Treatment",
+        "Imaging Context",
+        "Functional Impact",
+        "School Impact",
+        "Treatment Response",
+        "Headache Diary",
+        "Trigger Tracking",
+        "Medication Tracking",
+        "Clinician-approved Care Plan"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4608,
+      "title": "Pediatric Neurodevelopment & Developmental Milestone Intelligence Module",
+      "body": "Purpose:\nCreate a longitudinal developmental profile integrated with neurological and pediatric care.\n\nCore Functions:\n• Gross Motor Development\n• Fine Motor Development\n• Speech\n• Language\n• Social Development\n• Adaptive Skills\n• Cognitive Development\n• Developmental Milestones\n• Developmental Regression\n• Developmental Delay\n• School Function\n• Standardized Assessment Results\n• Therapy\n• Intervention History\n• Longitudinal Progress\n\nClinical Intelligence:\nThe system distinguishes developmental acquisition, plateau and potential regression patterns for clinician review.\n\nIntegrations:\n• Pediatrics\n• Neurology\n• Genetics\n• Psychology\n• Speech Therapy\n• Occupational Therapy\n• Physiotherapy\n• Education Support\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "1e06db62ded4a1fbc072a46d5fe79ddbab2af9e4c627b87161f97d800b486402",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108672
+      },
+      "verdict": "Acquisition, plateau and possible regression are distinct developmental trajectories, reviewed with assessment versions and age context.",
+      "feature_labels": [
+        "Gross Motor Development",
+        "Fine Motor Development",
+        "Speech",
+        "Language",
+        "Social Development",
+        "Adaptive Skills",
+        "Cognitive Development",
+        "Developmental Milestones",
+        "Developmental Regression",
+        "Developmental Delay",
+        "School Function",
+        "Standardized Assessment Results",
+        "Therapy",
+        "Intervention History",
+        "Longitudinal Progress",
+        "Pediatrics",
+        "Neurology",
+        "Genetics",
+        "Psychology",
+        "Speech Therapy",
+        "Occupational Therapy",
+        "Physiotherapy",
+        "Education Support"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4609,
+      "title": "Pediatric Neurogenetics & Rare Neurological Disease Module",
+      "body": "Purpose:\nSupport diagnosis and longitudinal management of genetic and rare pediatric neurological disorders.\n\nCore Functions:\n• Neurological Phenotype\n• Developmental Phenotype\n• Dysmorphic Features\n• Family History\n• Pedigree\n• Gene Panels\n• Exome Sequencing\n• Genome Sequencing\n• Copy-number Findings\n• Variant Classification\n• Genotype-Phenotype Correlation\n• Family Testing\n• Genetic Counseling\n• Multisystem Manifestations\n• Disease-specific Surveillance\n\nAI Functions:\n• Phenotype Structuring\n• Rare Disease Pattern Support\n• Genotype-Phenotype Correlation Support\n• Missing Phenotype Identification\n\nGovernance:\nFinal genetic interpretation remains under qualified specialist review.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "7731950b21d5651457459f86ccc74f5a9f58b90226bf0c46bb57032953b4fcfb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108715
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Phenotype",
+        "Developmental Phenotype",
+        "Dysmorphic Features",
+        "Family History",
+        "Pedigree",
+        "Gene Panels",
+        "Exome Sequencing",
+        "Genome Sequencing",
+        "Copy-number Findings",
+        "Variant Classification",
+        "Genotype-Phenotype Correlation",
+        "Family Testing",
+        "Genetic Counseling",
+        "Multisystem Manifestations",
+        "Disease-specific Surveillance",
+        "Phenotype Structuring",
+        "Rare Disease Pattern Support",
+        "Genotype-Phenotype Correlation Support",
+        "Missing Phenotype Identification"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4610,
+      "title": "Pediatric Neuromuscular Disease Management Platform",
+      "body": "Purpose:\nCoordinate multidisciplinary care for pediatric neuromuscular disorders.\n\nCore Functions:\n• Neuromuscular Diagnosis\n• Muscle Weakness\n• Motor Function\n• Gait\n• Contractures\n• Respiratory Function\n• Swallowing\n• Nutrition\n• Cardiac Surveillance\n• Creatine Kinase\n• Electrophysiology\n• Imaging\n• Genetics\n• Muscle Biopsy\n• Disease-modifying Therapy\n• Rehabilitation\n• Mobility Devices\n\nIntegrations:\n• Neurology\n• Genetics\n• Pulmonology\n• Cardiology\n• Orthopedics\n• Rehabilitation\n• Nutrition\n• Gastroenterology\n\nLongitudinal Function:\nCombines motor, respiratory, cardiac and functional trajectories.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "09b71e72bf7a087aab05fdae59f181eb75cb37c79d0fa9bbc9cf4b3d1923f93e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108751
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neuromuscular Diagnosis",
+        "Muscle Weakness",
+        "Motor Function",
+        "Gait",
+        "Contractures",
+        "Respiratory Function",
+        "Swallowing",
+        "Nutrition",
+        "Cardiac Surveillance",
+        "Creatine Kinase",
+        "Electrophysiology",
+        "Imaging",
+        "Genetics",
+        "Muscle Biopsy",
+        "Disease-modifying Therapy",
+        "Rehabilitation",
+        "Mobility Devices",
+        "Neurology",
+        "Genetics",
+        "Pulmonology",
+        "Cardiology",
+        "Orthopedics",
+        "Rehabilitation",
+        "Nutrition",
+        "Gastroenterology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4611,
+      "title": "Pediatric EMG, Nerve Conduction & Neuromuscular Diagnostics Module",
+      "body": "Purpose:\nIntegrate pediatric electrodiagnostic testing with neuromuscular clinical data.\n\nCore Functions:\n• EMG\n• Nerve Conduction Studies\n• Neuromuscular Junction Testing\n• Study Indication\n• Technical Parameters\n• Anatomical Distribution\n• Findings\n• Specialist Interpretation\n• Historical Comparison\n• Clinical Correlation\n• Genetic Correlation\n• Pathology Correlation\n\nAI Functions:\n• Structured Data Extraction\n• Pattern Comparison\n• Longitudinal Change Support\n\nIntegrations:\n• Neurology\n• Neurophysiology\n• Genetics\n• Rehabilitation\n• Pathology\n\nSafety:\nAutomated analysis remains supplementary to specialist interpretation.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "b507d5e012f48b117e8f7ff858c16e547e128b44e33ab89bea602012f0c9fcb4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108793
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "EMG",
+        "Nerve Conduction Studies",
+        "Neuromuscular Junction Testing",
+        "Study Indication",
+        "Technical Parameters",
+        "Anatomical Distribution",
+        "Findings",
+        "Specialist Interpretation",
+        "Historical Comparison",
+        "Clinical Correlation",
+        "Genetic Correlation",
+        "Pathology Correlation",
+        "Structured Data Extraction",
+        "Pattern Comparison",
+        "Longitudinal Change Support",
+        "Neurology",
+        "Neurophysiology",
+        "Genetics",
+        "Rehabilitation",
+        "Pathology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4612,
+      "title": "Pediatric Movement Disorders & Motor Phenotype Module",
+      "body": "Purpose:\nSupport longitudinal assessment of pediatric movement disorders.\n\nCore Functions:\n• Tremor\n• Dystonia\n• Chorea\n• Ataxia\n• Tics\n• Myoclonus\n• Parkinsonian Features\n• Stereotypies\n• Abnormal Gait\n• Motor Fluctuations\n• Video Documentation\n• Medication\n• Treatment Response\n• Genetics\n• Metabolic Evaluation\n• Functional Impact\n\nDigital Phenotyping:\nStructured video or wearable-derived information may complement clinician assessment when appropriately validated.\n\nIntegrations:\n• Neurology\n• Genetics\n• Metabolic Medicine\n• Rehabilitation\n• Psychiatry\n• Digital Twin\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "c266c8564da6bb97f3bf9e4c49bd7aeea815743dbc273c19a45b09e076f01d61",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108832
+      },
+      "verdict": "Movement videos and wearable-derived features are optional, privacy-sensitive and require validation; they do not independently establish a diagnosis.",
+      "feature_labels": [
+        "Tremor",
+        "Dystonia",
+        "Chorea",
+        "Ataxia",
+        "Tics",
+        "Myoclonus",
+        "Parkinsonian Features",
+        "Stereotypies",
+        "Abnormal Gait",
+        "Motor Fluctuations",
+        "Video Documentation",
+        "Medication",
+        "Treatment Response",
+        "Genetics",
+        "Metabolic Evaluation",
+        "Functional Impact",
+        "Neurology",
+        "Genetics",
+        "Metabolic Medicine",
+        "Rehabilitation",
+        "Psychiatry",
+        "Digital Twin"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4613,
+      "title": "Pediatric Cerebral Palsy & Complex Motor Disability Module",
+      "body": "Purpose:\nCoordinate lifelong multidisciplinary management of cerebral palsy and complex pediatric motor disability.\n\nCore Functions:\n• Motor Phenotype\n• Functional Classification\n• Muscle Tone\n• Spasticity\n• Dystonia\n• Mobility\n• Communication\n• Feeding\n• Swallowing\n• Nutrition\n• Pain\n• Sleep\n• Orthopedic Complications\n• Respiratory Risk\n• Assistive Technology\n• Rehabilitation\n• Medication\n• Procedures\n• Surgery\n\nIntegrations:\n• Neurology\n• Rehabilitation\n• Orthopedics\n• Pulmonology\n• Gastroenterology\n• Nutrition\n• Speech Therapy\n• Occupational Therapy\n• Social Care\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "b1df1223bcdf2e33b9b362ce0f3849ab1448f4e73c494e411ec05986b404b226",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108871
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Motor Phenotype",
+        "Functional Classification",
+        "Muscle Tone",
+        "Spasticity",
+        "Dystonia",
+        "Mobility",
+        "Communication",
+        "Feeding",
+        "Swallowing",
+        "Nutrition",
+        "Pain",
+        "Sleep",
+        "Orthopedic Complications",
+        "Respiratory Risk",
+        "Assistive Technology",
+        "Rehabilitation",
+        "Medication",
+        "Procedures",
+        "Surgery",
+        "Neurology",
+        "Rehabilitation",
+        "Orthopedics",
+        "Pulmonology",
+        "Gastroenterology",
+        "Nutrition",
+        "Speech Therapy",
+        "Occupational Therapy",
+        "Social Care"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4614,
+      "title": "Pediatric Neuroinflammatory, Demyelinating & Autoimmune Neurology Module",
+      "body": "Purpose:\nSupport complex pediatric inflammatory and immune-mediated neurological disease.\n\nCore Functions:\n• Clinical Presentation\n• Encephalitis\n• Demyelinating Disorders\n• Autoimmune Neurological Disorders\n• CNS Inflammation\n• CSF Findings\n• Autoantibodies\n• Neuroimaging\n• EEG\n• Infection Exclusion Context\n• Immunotherapy\n• Immunosuppression\n• Relapse\n• Recovery\n• Cognitive Outcomes\n• Neurological Outcomes\n\nIntegrations:\n• Neurology\n• Immunology\n• Rheumatology\n• Infectious Disease\n• Radiology\n• Laboratory Medicine\n• Intensive Care\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "f6d345092e9447e4f05a23077b182803a5aa55037c0d3341fee3e38646768e57",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108913
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Clinical Presentation",
+        "Encephalitis",
+        "Demyelinating Disorders",
+        "Autoimmune Neurological Disorders",
+        "CNS Inflammation",
+        "CSF Findings",
+        "Autoantibodies",
+        "Neuroimaging",
+        "EEG",
+        "Infection Exclusion Context",
+        "Immunotherapy",
+        "Immunosuppression",
+        "Relapse",
+        "Recovery",
+        "Cognitive Outcomes",
+        "Neurological Outcomes",
+        "Neurology",
+        "Immunology",
+        "Rheumatology",
+        "Infectious Disease",
+        "Radiology",
+        "Laboratory Medicine",
+        "Intensive Care"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4615,
+      "title": "Pediatric Neurovascular, Stroke & Cerebrovascular Disease Module",
+      "body": "Purpose:\nCoordinate acute and longitudinal pediatric cerebrovascular care.\n\nCore Functions:\n• Arterial Ischemic Stroke\n• Cerebral Venous Thrombosis\n• Hemorrhagic Stroke\n• Vascular Malformations\n• Stroke Timeline\n• Neurological Deficit\n• Neuroimaging\n• Vascular Imaging\n• Coagulation\n• Cardiac Context\n• Genetic Context\n• Treatment\n• Intervention\n• Rehabilitation\n• Recurrence Surveillance\n• Functional Outcomes\n\nEmergency Workflow:\nPresentation → Acute Imaging → Specialist Assessment → Treatment Documentation → Etiological Workup → Rehabilitation → Long-term Follow-up.\n\nIntegrations:\n• Emergency Medicine\n• Neurology\n• Neuroradiology\n• Hematology\n• Cardiology\n• Neurosurgery\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "ca4df25756e02121e5dc292aee5df77729a7414bac6598de112dde79cc0622c9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108950
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Arterial Ischemic Stroke",
+        "Cerebral Venous Thrombosis",
+        "Hemorrhagic Stroke",
+        "Vascular Malformations",
+        "Stroke Timeline",
+        "Neurological Deficit",
+        "Neuroimaging",
+        "Vascular Imaging",
+        "Coagulation",
+        "Cardiac Context",
+        "Genetic Context",
+        "Treatment",
+        "Intervention",
+        "Rehabilitation",
+        "Recurrence Surveillance",
+        "Functional Outcomes",
+        "Emergency Medicine",
+        "Neurology",
+        "Neuroradiology",
+        "Hematology",
+        "Cardiology",
+        "Neurosurgery",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4616,
+      "title": "Pediatric CNS Infection & Post-Infectious Neurology Module",
+      "body": "Purpose:\nManage neurological manifestations and sequelae of infectious and post-infectious disease.\n\nCore Functions:\n• Meningitis\n• Encephalitis\n• CNS Infection\n• Pathogen Testing\n• CSF Data\n• Neuroimaging\n• EEG\n• Antimicrobial Therapy\n• Antiviral Therapy\n• Intensive Care\n• Neurological Complications\n• Hearing Follow-up\n• Cognitive Follow-up\n• Seizure Follow-up\n• Rehabilitation\n• Long-term Outcomes\n\nIntegrations:\n• Neurology\n• Infectious Disease\n• Microbiology\n• Laboratory Medicine\n• Audiology\n• Rehabilitation\n• Intensive Care\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "0f4eda2c445a0877dea7c3af0295ab8dc744cf633be7ed348d02b83fa5f5bcc7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 108990
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Meningitis",
+        "Encephalitis",
+        "CNS Infection",
+        "Pathogen Testing",
+        "CSF Data",
+        "Neuroimaging",
+        "EEG",
+        "Antimicrobial Therapy",
+        "Antiviral Therapy",
+        "Intensive Care",
+        "Neurological Complications",
+        "Hearing Follow-up",
+        "Cognitive Follow-up",
+        "Seizure Follow-up",
+        "Rehabilitation",
+        "Long-term Outcomes",
+        "Neurology",
+        "Infectious Disease",
+        "Microbiology",
+        "Laboratory Medicine",
+        "Audiology",
+        "Rehabilitation",
+        "Intensive Care"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4617,
+      "title": "Pediatric Neuro-Oncology Neurological Care Integration Module",
+      "body": "Purpose:\nIntegrate neurological care with pediatric oncology for CNS tumors and neurological complications of cancer therapy.\n\nCore Functions:\n• CNS Tumor Context\n• Neurological Symptoms\n• Neurological Examination\n• Neuroimaging\n• Neurosurgery\n• Pathology\n• Molecular Diagnostics\n• Chemotherapy Context\n• Radiotherapy Context\n• Seizures\n• Endocrine Effects\n• Neurocognitive Effects\n• Peripheral Neuropathy\n• Rehabilitation\n• Long-term Surveillance\n\nIntegrations:\n• Pediatric Oncology\n• Neurology\n• Neurosurgery\n• Radiology\n• Pathology\n• Genetics\n• Endocrinology\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "4b119017cf3c1df1498d289b9301a411185bc1cdf4f664b4bcab0ada783c3e92",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109027
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "CNS Tumor Context",
+        "Neurological Symptoms",
+        "Neurological Examination",
+        "Neuroimaging",
+        "Neurosurgery",
+        "Pathology",
+        "Molecular Diagnostics",
+        "Chemotherapy Context",
+        "Radiotherapy Context",
+        "Seizures",
+        "Endocrine Effects",
+        "Neurocognitive Effects",
+        "Peripheral Neuropathy",
+        "Rehabilitation",
+        "Long-term Surveillance",
+        "Pediatric Oncology",
+        "Neurology",
+        "Neurosurgery",
+        "Radiology",
+        "Pathology",
+        "Genetics",
+        "Endocrinology",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4618,
+      "title": "Pediatric Neurocritical Care & Neurological Emergency Module",
+      "body": "Purpose:\nProvide rapid neurological information and coordinated workflows for critically ill children.\n\nCore Functions:\n• Status Epilepticus\n• Altered Consciousness\n• Acute Weakness\n• Raised Intracranial Pressure Context\n• Acute CNS Infection\n• Acute Stroke\n• Traumatic Neurological Injury\n• Neuromuscular Respiratory Failure\n• Continuous EEG\n• Neuroimaging\n• Ventilation Context\n• Hemodynamic Context\n• Critical Medication\n• Procedures\n• Neurological Monitoring\n\nEmergency Medical Passport:\nMay expose authorized critical information including diagnosis, seizure rescue plan, medication, allergies, devices and baseline neurological status.\n\nSafety:\nAll emergency decisions remain under qualified clinical teams.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "bbaa28dc5963a2ad1c0a3f11236539d84583e70196455c6c300bd573898d6a8f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109064
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Status Epilepticus",
+        "Altered Consciousness",
+        "Acute Weakness",
+        "Raised Intracranial Pressure Context",
+        "Acute CNS Infection",
+        "Acute Stroke",
+        "Traumatic Neurological Injury",
+        "Neuromuscular Respiratory Failure",
+        "Continuous EEG",
+        "Neuroimaging",
+        "Ventilation Context",
+        "Hemodynamic Context",
+        "Critical Medication",
+        "Procedures",
+        "Neurological Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4619,
+      "title": "Pediatric Neuroimaging & Neuroradiology Intelligence Module",
+      "body": "Purpose:\nCreate a longitudinal neuroimaging environment integrated with pediatric neurological phenotypes.\n\nCore Functions:\n• Brain MRI\n• Spine MRI\n• CT\n• Ultrasound where applicable\n• Vascular Imaging\n• Functional Imaging\n• Structural Abnormalities\n• Lesion Mapping\n• Serial Comparison\n• Measurement Tracking\n• Radiology Reports\n• Imaging Timeline\n• Surgical Correlation\n• Genetic Correlation\n\nAI Functions:\n• Image Comparison Support\n• Change Detection\n• Quantitative Measurement Support\n• Study Prioritization\n• Longitudinal Visualization\n\nSafety:\nAI-assisted findings remain subject to specialist neuroradiology interpretation.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "c48cda18de32a132257de653441004d337fd3202e1fc2104c0b6ad3b9d4bae27",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109097
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Brain MRI",
+        "Spine MRI",
+        "CT",
+        "Ultrasound where applicable",
+        "Vascular Imaging",
+        "Functional Imaging",
+        "Structural Abnormalities",
+        "Lesion Mapping",
+        "Serial Comparison",
+        "Measurement Tracking",
+        "Radiology Reports",
+        "Imaging Timeline",
+        "Surgical Correlation",
+        "Genetic Correlation",
+        "Image Comparison Support",
+        "Change Detection",
+        "Quantitative Measurement Support",
+        "Study Prioritization",
+        "Longitudinal Visualization"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4620,
+      "title": "Pediatric Neurological Rehabilitation & Functional Recovery Module",
+      "body": "Purpose:\nCoordinate multidisciplinary rehabilitation following neurological disease or injury.\n\nCore Functions:\n• Motor Function\n• Mobility\n• Balance\n• Coordination\n• Speech\n• Language\n• Swallowing\n• Cognition\n• Activities of Daily Living\n• Occupational Function\n• School Reintegration\n• Assistive Devices\n• Physiotherapy\n• Occupational Therapy\n• Speech Therapy\n• Rehabilitation Goals\n• Outcome Measures\n\nLongitudinal Functions:\n• Baseline Function\n• Goal Setting\n• Intervention Timeline\n• Functional Progress\n• Plateau Detection\n• Long-term Support Needs\n\nIntegrations:\n• Neurology\n• Rehabilitation Medicine\n• Orthopedics\n• Psychology\n• Speech Therapy\n• Education Support\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "5a0a604a5b3a903b462026bd550da1185fbe5be23f3a5f08ed695209fadf57df",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109133
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Motor Function",
+        "Mobility",
+        "Balance",
+        "Coordination",
+        "Speech",
+        "Language",
+        "Swallowing",
+        "Cognition",
+        "Activities of Daily Living",
+        "Occupational Function",
+        "School Reintegration",
+        "Assistive Devices",
+        "Physiotherapy",
+        "Occupational Therapy",
+        "Speech Therapy",
+        "Rehabilitation Goals",
+        "Outcome Measures",
+        "Baseline Function",
+        "Goal Setting",
+        "Intervention Timeline",
+        "Functional Progress",
+        "Plateau Detection",
+        "Long-term Support Needs",
+        "Neurology",
+        "Rehabilitation Medicine",
+        "Orthopedics",
+        "Psychology",
+        "Speech Therapy",
+        "Education Support"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4621,
+      "title": "Pediatric Neurology Medication, Polypharmacy & Safety Engine",
+      "body": "Purpose:\nProvide medication safety across complex pediatric neurological treatment.\n\nCore Functions:\n• Neurological Medication Registry\n• Dose History\n• Weight-related Dose Context\n• Drug Interactions\n• Polypharmacy\n• Therapeutic Drug Monitoring\n• Laboratory Monitoring\n• Adverse Effects\n• Allergy Integration\n• Treatment Response\n• Medication Reconciliation\n• Hospital Discharge Reconciliation\n• Adherence\n• Rescue Medication\n• Medication Change History\n\nSafety Intelligence:\n• Duplicate Therapy Detection\n• Interaction Detection\n• Missing Monitoring Detection\n• High-risk Combination Review\n• Dose-context Alerts\n• Patient-specific Contraindication Context\n\nIntegrations:\n• Pharmacy\n• Laboratory Medicine\n• Medical Passport\n• Emergency Medicine\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "551971395241da00d66dfdabfcbd9d3af1d0d409626161e475e70ae25cfc98fb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109178
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Medication Registry",
+        "Dose History",
+        "Weight-related Dose Context",
+        "Drug Interactions",
+        "Polypharmacy",
+        "Therapeutic Drug Monitoring",
+        "Laboratory Monitoring",
+        "Adverse Effects",
+        "Allergy Integration",
+        "Treatment Response",
+        "Medication Reconciliation",
+        "Hospital Discharge Reconciliation",
+        "Adherence",
+        "Rescue Medication",
+        "Medication Change History",
+        "Duplicate Therapy Detection",
+        "Interaction Detection",
+        "Missing Monitoring Detection",
+        "High-risk Combination Review",
+        "Dose-context Alerts",
+        "Patient-specific Contraindication Context",
+        "Pharmacy",
+        "Laboratory Medicine",
+        "Medical Passport",
+        "Emergency Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4622,
+      "title": "Pediatric Neurology AI & Predictive Clinical Intelligence Module",
+      "body": "Purpose:\nProvide explainable AI-assisted intelligence across pediatric neurological care.\n\nCore Functions:\n• Neurological Timeline Summarization\n• Seizure Pattern Analysis\n• Developmental Trend Analysis\n• Examination Change Detection\n• Medication-response Analysis\n• Neurophysiology Correlation\n• Imaging Correlation\n• Genetic Phenotype Structuring\n• Hospitalization Pattern Analysis\n• Pre-Visit Assessment\n• Missing-data Detection\n• Clinical Documentation Support\n\nAI Governance:\n• Explainability\n• Confidence and Uncertainty\n• Source Data Traceability\n• Human Validation\n• Audit Trail\n• Model Version Tracking\n• Bias Monitoring\n• Performance Monitoring\n\nSafety:\nAI cannot autonomously diagnose neurological disease, prescribe medication or initiate emergency treatment.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "39514c66d5e9388ed26acc8313585422ba84b612be087125b36388266e971b5e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109222
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Timeline Summarization",
+        "Seizure Pattern Analysis",
+        "Developmental Trend Analysis",
+        "Examination Change Detection",
+        "Medication-response Analysis",
+        "Neurophysiology Correlation",
+        "Imaging Correlation",
+        "Genetic Phenotype Structuring",
+        "Hospitalization Pattern Analysis",
+        "Pre-Visit Assessment",
+        "Missing-data Detection",
+        "Clinical Documentation Support",
+        "Explainability",
+        "Confidence and Uncertainty",
+        "Source Data Traceability",
+        "Human Validation",
+        "Audit Trail",
+        "Model Version Tracking",
+        "Bias Monitoring",
+        "Performance Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4624,
+      "title": "Pediatric Neurology Remote Monitoring, Medical Passport & Transition Module",
+      "body": "Purpose:\nSupport home neurological monitoring, emergency continuity and transition to adult neurological services.\n\nRemote Monitoring:\n• Seizure Diary\n• Headache Diary\n• Sleep\n• Medication Adherence\n• Motor Function\n• Symptoms\n• Wearable Data where validated\n• Connected Device Data\n• Guardian Reports\n• Teleconsultation\n\nMedical Passport:\n• Major Neurological Diagnoses\n• Epilepsy Status\n• Rescue Medication\n• Medication\n• Allergies\n• Implanted Devices\n• Baseline Neurological Status\n• Communication Needs\n• Emergency Plan\n\nTransition:\n• Pediatric Neurological Summary\n• Genetics\n• Imaging History\n• EEG History\n• Treatment History\n• Functional Status\n• Rehabilitation\n• Adult Neurology Handover\n\nCross-Border Functions:\nSupports multilingual and authorized continuity of care.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "8b99ac35f2f7998a98003cd6ada2bd381ad45bc32cc6e9de2d13c0fc34aa51d8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109298
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Seizure Diary",
+        "Headache Diary",
+        "Sleep",
+        "Medication Adherence",
+        "Motor Function",
+        "Symptoms",
+        "Wearable Data where validated",
+        "Connected Device Data",
+        "Guardian Reports",
+        "Teleconsultation",
+        "Major Neurological Diagnoses",
+        "Epilepsy Status",
+        "Rescue Medication",
+        "Medication",
+        "Allergies",
+        "Implanted Devices",
+        "Baseline Neurological Status",
+        "Communication Needs",
+        "Emergency Plan",
+        "Pediatric Neurological Summary",
+        "Genetics",
+        "Imaging History",
+        "EEG History",
+        "Treatment History",
+        "Functional Status",
+        "Rehabilitation",
+        "Adult Neurology Handover"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4625,
+      "title": "Clinical Pediatric Neurology, Epilepsy & Neurodevelopment Intelligence Hub",
+      "body": "Purpose:\nServe as the orchestration layer for the EDHT pediatric neurological ecosystem.\n\nCoordinates:\n• General Pediatric Neurology\n• Epileptology\n• Neurophysiology\n• Neurodevelopment\n• Neurogenetics\n• Neuromuscular Medicine\n• Movement Disorders\n• Cerebral Palsy\n• Neuroimmunology\n• Neurovascular Medicine\n• CNS Infection\n• Neuro-Oncology\n• Neurocritical Care\n• Neuroradiology\n• Rehabilitation\n• Pharmacy\n• Artificial Intelligence\n• Digital Twin\n• Telemedicine\n• Medical Passport\n• Transition to Adult Care\n\nPlatform Functions:\n• Unified Neurological Timeline\n• Structured Clinical Documentation\n• Multidisciplinary Case Review\n• Clinical Alerts\n• Medication Safety\n• Role-based Access\n• Consent Management\n• Data Provenance\n• Cross-Border Interoperability\n• Patient and Guardian Access\n• Outcome Monitoring\n• Research-ready De-identified Data Layer\n• AI Governance\n• Clinical Decision Traceability\n\nMVP Foundation:\n• Neurological Patient Record\n• Diagnosis Registry\n• Developmental Timeline\n• Seizure Registry\n• Medication Management\n• EEG Report Integration\n• Neuroimaging Report Integration\n• Clinical Alerts\n• Medical Passport\n• Interoperability\n\nExpansion Layers:\n• Raw EEG Integration\n• Wearables\n• Advanced Neuroimaging AI\n• Neurogenetic Intelligence\n• Predictive AI\n• Digital Twin Modeling\n• Advanced Rehabilitation Analytics\n\nArchitecture Principle:\nSpecialized neurological services remain independently deployable while sharing a unified longitudinal patient model.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "cd58b818b7c699bbeb05cbbbeac8657aa292646527ec47076dbee746863f7eb9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 109344
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "General Pediatric Neurology",
+        "Epileptology",
+        "Neurophysiology",
+        "Neurodevelopment",
+        "Neurogenetics",
+        "Neuromuscular Medicine",
+        "Movement Disorders",
+        "Cerebral Palsy",
+        "Neuroimmunology",
+        "Neurovascular Medicine",
+        "CNS Infection",
+        "Neuro-Oncology",
+        "Neurocritical Care",
+        "Neuroradiology",
+        "Rehabilitation",
+        "Pharmacy",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Telemedicine",
+        "Medical Passport",
+        "Transition to Adult Care",
+        "Unified Neurological Timeline",
+        "Structured Clinical Documentation",
+        "Multidisciplinary Case Review",
+        "Clinical Alerts",
+        "Medication Safety",
+        "Role-based Access",
+        "Consent Management",
+        "Data Provenance",
+        "Cross-Border Interoperability",
+        "Patient and Guardian Access",
+        "Outcome Monitoring",
+        "Research-ready De-identified Data Layer",
+        "AI Governance",
+        "Clinical Decision Traceability",
+        "Neurological Patient Record",
+        "Diagnosis Registry",
+        "Developmental Timeline",
+        "Seizure Registry",
+        "Medication Management",
+        "EEG Report Integration",
+        "Neuroimaging Report Integration",
+        "Clinical Alerts",
+        "Medical Passport",
+        "Interoperability",
+        "Raw EEG Integration",
+        "Wearables",
+        "Advanced Neuroimaging AI",
+        "Neurogenetic Intelligence",
+        "Predictive AI",
+        "Digital Twin Modeling",
+        "Advanced Rehabilitation Analytics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5076,
+      "title": "Clinical Pediatric Neurology Platform Core Engine",
+      "body": "Purpose:\nProvide the unified longitudinal architecture for pediatric neurological care from neonatal neurological assessment through transition to adult neurology.\n\nCore Functions:\n• Neurological Diagnosis Registry\n• Neurodevelopment\n• Epilepsy\n• Seizure Disorders\n• Headache\n• Movement Disorders\n• Cerebral Palsy Context\n• Neuromuscular Disease\n• Neurogenetic Disease\n• Neuroimmune Disease\n• Cerebrovascular Disease\n• Sleep-Neurology Context\n• Neurocritical Care\n• Neuroimaging\n• Neurophysiology\n• Medication\n• Rehabilitation\n• Functional Outcomes\n• Transition Care\n\nClinical Data:\n• Neurological Examination\n• Developmental History\n• Seizure History\n• EEG\n• MRI\n• CT Context\n• Neurophysiology\n• Genetics\n• Laboratory Data\n• Medication\n• Procedures\n• Functional Assessment\n• Patient/Guardian Reported Outcomes\n\nIntegrations:\n• Pediatrics\n• Neonatology\n• Neurosurgery\n• Genetics\n• Rehabilitation\n• Psychiatry\n• Psychology\n• Ophthalmology\n• Audiology\n• Sleep Medicine\n• Intensive Care\n• Medical Passport\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "572233a68c7d8545e147de6e797fd228c71d240042bf3d412577025a1e5556de",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127416
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Diagnosis Registry",
+        "Neurodevelopment",
+        "Epilepsy",
+        "Seizure Disorders",
+        "Headache",
+        "Movement Disorders",
+        "Cerebral Palsy Context",
+        "Neuromuscular Disease",
+        "Neurogenetic Disease",
+        "Neuroimmune Disease",
+        "Cerebrovascular Disease",
+        "Sleep-Neurology Context",
+        "Neurocritical Care",
+        "Neuroimaging",
+        "Neurophysiology",
+        "Medication",
+        "Rehabilitation",
+        "Functional Outcomes",
+        "Transition Care",
+        "Neurological Examination",
+        "Developmental History",
+        "Seizure History",
+        "EEG",
+        "MRI",
+        "CT Context",
+        "Neurophysiology",
+        "Genetics",
+        "Laboratory Data",
+        "Medication",
+        "Procedures",
+        "Functional Assessment",
+        "Patient/Guardian Reported Outcomes",
+        "Pediatrics",
+        "Neonatology",
+        "Neurosurgery",
+        "Genetics",
+        "Rehabilitation",
+        "Psychiatry",
+        "Psychology",
+        "Ophthalmology",
+        "Audiology",
+        "Sleep Medicine",
+        "Intensive Care",
+        "Medical Passport"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5077,
+      "title": "Pediatric Longitudinal Neurological Phenotype & Examination Module",
+      "body": "Purpose:\nCreate a structured longitudinal representation of neurological phenotype and examination findings across childhood.\n\nCore Functions:\n• Mental Status\n• Cranial Nerves\n• Motor Function\n• Muscle Tone\n• Muscle Strength\n• Reflexes\n• Sensory Function\n• Coordination\n• Gait\n• Balance\n• Speech Context\n• Developmental Context\n• Abnormal Movements\n• Functional Status\n• Historical Comparison\n\nLongitudinal Functions:\n• Baseline Neurological State\n• New Deficit Detection Context\n• Progression Tracking\n• Recovery Tracking\n• Treatment Correlation\n• Patient-specific Baseline\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "2b9e23d10565efa1f0106750493153ecfd4b60c0e641aecc6968c4ae58e826e7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127479
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Mental Status",
+        "Cranial Nerves",
+        "Motor Function",
+        "Muscle Tone",
+        "Muscle Strength",
+        "Reflexes",
+        "Sensory Function",
+        "Coordination",
+        "Gait",
+        "Balance",
+        "Speech Context",
+        "Developmental Context",
+        "Abnormal Movements",
+        "Functional Status",
+        "Historical Comparison",
+        "Baseline Neurological State",
+        "New Deficit Detection Context",
+        "Progression Tracking",
+        "Recovery Tracking",
+        "Treatment Correlation",
+        "Patient-specific Baseline"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5078,
+      "title": "Pediatric Neurodevelopment & Developmental Milestone Intelligence Module",
+      "body": "Purpose:\nIntegrate neurological development and developmental milestones into a longitudinal pediatric neurological record.\n\nCore Functions:\n• Gross Motor Development\n• Fine Motor Development\n• Language\n• Communication\n• Social Development\n• Cognitive Context\n• Adaptive Function\n• Developmental Regression\n• Developmental Plateau\n• Prematurity Context\n• Neurological Examination\n• Hearing Context\n• Vision Context\n• Genetic Context\n• Intervention History\n• Developmental Outcome\n\nAlert Functions:\n• Clinician-defined Developmental Concern\n• Documented Regression\n• Follow-up Due\n• Missed Developmental Assessment\n• Specialist Referral Tracking\n\nIntegrations:\n• Neurology\n• Developmental Pediatrics\n• Genetics\n• Rehabilitation\n• Psychology\n• Speech Therapy\n• Occupational Therapy\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "4d9b01d3259a6b53b7750a6abc2d67e6f53cfc262ca5b4696e902ae346de78b0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127517
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Gross Motor Development",
+        "Fine Motor Development",
+        "Language",
+        "Communication",
+        "Social Development",
+        "Cognitive Context",
+        "Adaptive Function",
+        "Developmental Regression",
+        "Developmental Plateau",
+        "Prematurity Context",
+        "Neurological Examination",
+        "Hearing Context",
+        "Vision Context",
+        "Genetic Context",
+        "Intervention History",
+        "Developmental Outcome",
+        "Clinician-defined Developmental Concern",
+        "Documented Regression",
+        "Follow-up Due",
+        "Missed Developmental Assessment",
+        "Specialist Referral Tracking",
+        "Neurology",
+        "Developmental Pediatrics",
+        "Genetics",
+        "Rehabilitation",
+        "Psychology",
+        "Speech Therapy",
+        "Occupational Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5079,
+      "title": "Pediatric Epilepsy & Seizure Disorder Management Platform",
+      "body": "Purpose:\nProvide comprehensive longitudinal management of pediatric epilepsy and recurrent seizure disorders.\n\nCore Functions:\n• Epilepsy Diagnosis\n• Seizure Type\n• Syndrome Context\n• Age at Onset\n• Seizure Frequency\n• Duration\n• Trigger Context\n• EEG\n• Neuroimaging\n• Genetics\n• Medication\n• Rescue Medication\n• Treatment Response\n• Adverse Effects\n• Seizure Freedom Context\n• Drug-resistant Epilepsy Context\n• Surgery Evaluation Context\n\nIntegrations:\n• Neurology\n• Neurophysiology\n• Genetics\n• Neurosurgery\n• Emergency Medicine\n• School Health\n• Medical Passport\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "a6ce1bff26733acfbed482e677e18f16d80fee41dfcef36e3ee81abaf9160471",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127561
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Epilepsy Diagnosis",
+        "Seizure Type",
+        "Syndrome Context",
+        "Age at Onset",
+        "Seizure Frequency",
+        "Duration",
+        "Trigger Context",
+        "EEG",
+        "Neuroimaging",
+        "Genetics",
+        "Medication",
+        "Rescue Medication",
+        "Treatment Response",
+        "Adverse Effects",
+        "Seizure Freedom Context",
+        "Drug-resistant Epilepsy Context",
+        "Surgery Evaluation Context",
+        "Neurology",
+        "Neurophysiology",
+        "Genetics",
+        "Neurosurgery",
+        "Emergency Medicine",
+        "School Health",
+        "Medical Passport"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5080,
+      "title": "Pediatric Seizure Event Diary & Digital Event Characterization Module",
+      "body": "Purpose:\nCreate a structured patient/guardian-supported record of seizure and seizure-like events.\n\nCore Functions:\n• Event Date/Time\n• Event Duration\n• Pre-event Context\n• Trigger Context\n• Awareness\n• Motor Features\n• Sensory Features Context\n• Autonomic Features Context\n• Recovery\n• Injury\n• Rescue Medication\n• Emergency Care\n• Video Reference Context\n• Clinician Classification\n• Event Frequency\n\nPatient/Guardian Functions:\n• Event Logging\n• Clinician-approved Event Description\n• Medication Administration Recording\n• Trigger Documentation\n• Recovery Documentation\n\nClinical Principle:\nPatient-entered event descriptions remain distinguishable from clinician-confirmed seizure classification.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "35f54671940ac559e9046a916d4710732cb6513b0c3f4d866c8234235ac3d0ef",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127602
+      },
+      "verdict": "Patient/guardian event descriptions retain reporter and clinician classification as separate records; a seizure-like event is not automatically confirmed epilepsy.",
+      "feature_labels": [
+        "Event Date/Time",
+        "Event Duration",
+        "Pre-event Context",
+        "Trigger Context",
+        "Awareness",
+        "Motor Features",
+        "Sensory Features Context",
+        "Autonomic Features Context",
+        "Recovery",
+        "Injury",
+        "Rescue Medication",
+        "Emergency Care",
+        "Video Reference Context",
+        "Clinician Classification",
+        "Event Frequency",
+        "Event Logging",
+        "Clinician-approved Event Description",
+        "Medication Administration Recording",
+        "Trigger Documentation",
+        "Recovery Documentation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5081,
+      "title": "Pediatric EEG, Video-EEG & Neurophysiology Integration Module",
+      "body": "Purpose:\nProvide unified storage, interpretation context and longitudinal comparison of pediatric electroencephalographic studies.\n\nCore Functions:\n• Routine EEG\n• Sleep EEG Context\n• Ambulatory EEG\n• Video-EEG\n• Study Indication\n• Background Activity Context\n• Epileptiform Findings\n• Event Correlation\n• Medication Context\n• Sleep Context\n• Formal Interpretation\n• Historical Comparison\n• Treatment Correlation\n• Report Integration\n\nAI Functions:\n• Signal Organization Support\n• Event Annotation Assistance\n• Longitudinal Comparison\n• Report Structuring Support\n\nSafety:\nAutomated signal analysis does not replace qualified neurophysiological interpretation.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "7126f984e9a40d99348bb2a16b99e73f20427765b6ab6b3d5902025ef6a835b7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127639
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Routine EEG",
+        "Sleep EEG Context",
+        "Ambulatory EEG",
+        "Video-EEG",
+        "Study Indication",
+        "Background Activity Context",
+        "Epileptiform Findings",
+        "Event Correlation",
+        "Medication Context",
+        "Sleep Context",
+        "Formal Interpretation",
+        "Historical Comparison",
+        "Treatment Correlation",
+        "Report Integration",
+        "Signal Organization Support",
+        "Event Annotation Assistance",
+        "Longitudinal Comparison",
+        "Report Structuring Support"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5082,
+      "title": "Pediatric Epilepsy Medication & Rescue Therapy Safety Engine",
+      "body": "Purpose:\nProvide comprehensive medication safety for antiseizure and emergency seizure treatment.\n\nCore Functions:\n• Antiseizure Medication Registry\n• Indication\n• Dose\n• Weight Context\n• Administration Schedule\n• Serum Level Context\n• Drug Interactions\n• Organ Function Context\n• Allergy\n• Adverse Effects\n• Treatment Response\n• Rescue Medication\n• Rescue Plan\n• Medication Changes\n• Adherence Context\n\nSafety Functions:\n• Interaction Detection\n• Duplicate Therapy Context\n• Required Monitoring\n• Allergy Integration\n• Rescue Plan Visibility\n• Clinician-defined High-risk Alerts\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "e78df222c0f8bcc82fd2819327ff3730789a0ed4c751b247bb6158b83eec2056",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127674
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Antiseizure Medication Registry",
+        "Indication",
+        "Dose",
+        "Weight Context",
+        "Administration Schedule",
+        "Serum Level Context",
+        "Drug Interactions",
+        "Organ Function Context",
+        "Allergy",
+        "Adverse Effects",
+        "Treatment Response",
+        "Rescue Medication",
+        "Rescue Plan",
+        "Medication Changes",
+        "Adherence Context",
+        "Interaction Detection",
+        "Duplicate Therapy Context",
+        "Required Monitoring",
+        "Allergy Integration",
+        "Rescue Plan Visibility",
+        "Clinician-defined High-risk Alerts"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5083,
+      "title": "Pediatric Status Epilepticus & Neurological Emergency Module",
+      "body": "Purpose:\nSupport rapid documentation and continuity for prolonged seizures and acute neurological emergencies.\n\nCore Functions:\n• Event Onset\n• Event Duration\n• Seizure Context\n• Vital Signs\n• Airway/Respiratory Context\n• Rescue Medication\n• Emergency Medication Timeline\n• Laboratory Data\n• Imaging\n• EEG Context\n• Intensive Care\n• Etiology Context\n• Complications\n• Recovery\n• Follow-up\n\nIntegrations:\n• Neurology\n• Emergency Medicine\n• Intensive Care\n• Pharmacy\n• Neurophysiology\n\nSafety:\nThe platform must never delay emergency treatment while awaiting automated classification or data completion.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "5393b36a028abec2d06739dab2dae54e8313072d4943fed2425d7cfb745a7313",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127712
+      },
+      "verdict": "Critical invariant: emergency treatment must not wait for automated classification or data completion.",
+      "feature_labels": [
+        "Event Onset",
+        "Event Duration",
+        "Seizure Context",
+        "Vital Signs",
+        "Airway/Respiratory Context",
+        "Rescue Medication",
+        "Emergency Medication Timeline",
+        "Laboratory Data",
+        "Imaging",
+        "EEG Context",
+        "Intensive Care",
+        "Etiology Context",
+        "Complications",
+        "Recovery",
+        "Follow-up",
+        "Neurology",
+        "Emergency Medicine",
+        "Intensive Care",
+        "Pharmacy",
+        "Neurophysiology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5084,
+      "title": "Pediatric Headache & Migraine Management Module",
+      "body": "Purpose:\nProvide longitudinal assessment of pediatric headache and migraine disorders.\n\nCore Functions:\n• Headache Type Context\n• Frequency\n• Duration\n• Severity\n• Location\n• Associated Symptoms\n• Aura Context\n• Trigger Context\n• Sleep\n• Hydration Context\n• Menstrual Context where applicable\n• Neurological Examination\n• Imaging Context\n• Acute Medication\n• Preventive Medication\n• Headache Diary\n• Functional Impact\n• Treatment Response\n\nPatient/Guardian Functions:\n• Headache Diary\n• Trigger Tracking\n• Medication Tracking\n• School Impact\n• Clinician-approved Management Plan\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "42c304eff86560e30a80f1c50028605371105d0bce8a10f4812caaec4cad3184",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127749
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Headache Type Context",
+        "Frequency",
+        "Duration",
+        "Severity",
+        "Location",
+        "Associated Symptoms",
+        "Aura Context",
+        "Trigger Context",
+        "Sleep",
+        "Hydration Context",
+        "Menstrual Context where applicable",
+        "Neurological Examination",
+        "Imaging Context",
+        "Acute Medication",
+        "Preventive Medication",
+        "Headache Diary",
+        "Functional Impact",
+        "Treatment Response",
+        "Headache Diary",
+        "Trigger Tracking",
+        "Medication Tracking",
+        "School Impact",
+        "Clinician-approved Management Plan"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5085,
+      "title": "Pediatric Movement Disorder & Abnormal Movement Module",
+      "body": "Purpose:\nCoordinate assessment of pediatric movement disorders and abnormal involuntary movements.\n\nCore Functions:\n• Movement Phenotype\n• Tremor Context\n• Dystonia\n• Chorea Context\n• Myoclonus Context\n• Tics\n• Ataxia\n• Stereotypy Context\n• Age at Onset\n• Trigger Context\n• Medication Context\n• Imaging\n• Neurophysiology Context\n• Genetics\n• Functional Impact\n• Treatment Response\n\nIntegrations:\n• Neurology\n• Genetics\n• Psychiatry\n• Rehabilitation\n• Neurosurgery Context\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "07962f0f2b1606287cd0c0c3ce80a267bb95220427384667131cafccad1b78da",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127786
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Movement Phenotype",
+        "Tremor Context",
+        "Dystonia",
+        "Chorea Context",
+        "Myoclonus Context",
+        "Tics",
+        "Ataxia",
+        "Stereotypy Context",
+        "Age at Onset",
+        "Trigger Context",
+        "Medication Context",
+        "Imaging",
+        "Neurophysiology Context",
+        "Genetics",
+        "Functional Impact",
+        "Treatment Response",
+        "Neurology",
+        "Genetics",
+        "Psychiatry",
+        "Rehabilitation",
+        "Neurosurgery Context"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5086,
+      "title": "Pediatric Cerebral Palsy & Motor Disability Coordination Module",
+      "body": "Purpose:\nProvide longitudinal multidisciplinary care for children with cerebral palsy and related motor disability.\n\nCore Functions:\n• Motor Phenotype\n• Distribution\n• Muscle Tone\n• Gross Motor Function\n• Fine Motor Function\n• Mobility\n• Communication Context\n• Feeding Context\n• Vision/Hearing Context\n• Epilepsy Context\n• Musculoskeletal Complications\n• Spasticity Management\n• Assistive Devices\n• Rehabilitation\n• Surgery Context\n• Functional Goals\n• Participation Outcomes\n\nIntegrations:\n• Neurology\n• Rehabilitation\n• Orthopedics\n• Gastroenterology\n• Pulmonology\n• Speech Therapy\n• Occupational Therapy\n• Assistive Technology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "6c78208c62dcf32805855692755f6cf3fffe1eecce867b451e285626e5aea1fb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127821
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Motor Phenotype",
+        "Distribution",
+        "Muscle Tone",
+        "Gross Motor Function",
+        "Fine Motor Function",
+        "Mobility",
+        "Communication Context",
+        "Feeding Context",
+        "Vision/Hearing Context",
+        "Epilepsy Context",
+        "Musculoskeletal Complications",
+        "Spasticity Management",
+        "Assistive Devices",
+        "Rehabilitation",
+        "Surgery Context",
+        "Functional Goals",
+        "Participation Outcomes",
+        "Neurology",
+        "Rehabilitation",
+        "Orthopedics",
+        "Gastroenterology",
+        "Pulmonology",
+        "Speech Therapy",
+        "Occupational Therapy",
+        "Assistive Technology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5087,
+      "title": "Pediatric Spasticity, Tone & Neuromotor Intervention Module",
+      "body": "Purpose:\nCoordinate assessment and treatment of clinically significant abnormalities of muscle tone.\n\nCore Functions:\n• Tone Phenotype\n• Anatomical Distribution\n• Functional Impact\n• Pain Context\n• Contracture Context\n• Range of Motion\n• Medication\n• Injection Therapy Context\n• Intrathecal Therapy Context\n• Orthotic Management\n• Rehabilitation\n• Surgical Context\n• Goal Setting\n• Treatment Response\n• Adverse Events\n\nIntegrations:\n• Neurology\n• Rehabilitation\n• Orthopedics\n• Neurosurgery\n• Physiotherapy\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "63bdafdf652d4ec52cabebe44cb66cb23c5e3afa88e903af65853e437cc1ea0a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127860
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Tone Phenotype",
+        "Anatomical Distribution",
+        "Functional Impact",
+        "Pain Context",
+        "Contracture Context",
+        "Range of Motion",
+        "Medication",
+        "Injection Therapy Context",
+        "Intrathecal Therapy Context",
+        "Orthotic Management",
+        "Rehabilitation",
+        "Surgical Context",
+        "Goal Setting",
+        "Treatment Response",
+        "Adverse Events",
+        "Neurology",
+        "Rehabilitation",
+        "Orthopedics",
+        "Neurosurgery",
+        "Physiotherapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5088,
+      "title": "Pediatric Neuromuscular Disease Platform",
+      "body": "Purpose:\nProvide longitudinal multidisciplinary management of pediatric neuromuscular disorders.\n\nCore Functions:\n• Neuromuscular Diagnosis\n• Muscle Weakness\n• Distribution\n• Motor Function\n• Respiratory Function\n• Swallowing\n• Cardiac Context\n• Orthopedic Context\n• Laboratory Data\n• Neurophysiology\n• Muscle Imaging Context\n• Genetics\n• Molecular Diagnosis\n• Disease-modifying Therapy\n• Rehabilitation\n• Assistive Devices\n• Long-term Outcomes\n\nIntegrations:\n• Neurology\n• Genetics\n• Pulmonology\n• Cardiology\n• Rehabilitation\n• Orthopedics\n• Nutrition\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "643488ab02b032d9141749d6a2b29ec3df76031f36482dc817f53586425baaa2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127894
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neuromuscular Diagnosis",
+        "Muscle Weakness",
+        "Distribution",
+        "Motor Function",
+        "Respiratory Function",
+        "Swallowing",
+        "Cardiac Context",
+        "Orthopedic Context",
+        "Laboratory Data",
+        "Neurophysiology",
+        "Muscle Imaging Context",
+        "Genetics",
+        "Molecular Diagnosis",
+        "Disease-modifying Therapy",
+        "Rehabilitation",
+        "Assistive Devices",
+        "Long-term Outcomes",
+        "Neurology",
+        "Genetics",
+        "Pulmonology",
+        "Cardiology",
+        "Rehabilitation",
+        "Orthopedics",
+        "Nutrition"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5089,
+      "title": "Pediatric EMG, Nerve Conduction & Neuromuscular Diagnostics Module",
+      "body": "Purpose:\nIntegrate neurophysiological diagnostics for pediatric peripheral nerve, neuromuscular junction and muscle disorders.\n\nCore Functions:\n• Study Indication\n• Nerve Conduction\n• EMG Context\n• Repetitive Stimulation Context\n• Neuromuscular Junction Context\n• Nerve Findings\n• Muscle Findings\n• Technical Context\n• Formal Interpretation\n• Genetic Correlation\n• Imaging Correlation\n• Laboratory Correlation\n• Historical Comparison\n• Treatment Response Context\n\nAI Functions:\n• Signal Organization Support\n• Structured Reporting\n• Historical Comparison Assistance\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "d2bca837a1a5c923e13f8e6467a75524157cc0647bb60647e62bcd153c56b9db",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127935
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Study Indication",
+        "Nerve Conduction",
+        "EMG Context",
+        "Repetitive Stimulation Context",
+        "Neuromuscular Junction Context",
+        "Nerve Findings",
+        "Muscle Findings",
+        "Technical Context",
+        "Formal Interpretation",
+        "Genetic Correlation",
+        "Imaging Correlation",
+        "Laboratory Correlation",
+        "Historical Comparison",
+        "Treatment Response Context",
+        "Signal Organization Support",
+        "Structured Reporting",
+        "Historical Comparison Assistance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5090,
+      "title": "Pediatric Neurogenetics & Rare Neurological Disease Module",
+      "body": "Purpose:\nConnect neurological phenotype, genomic diagnostics and family-oriented care for rare pediatric neurological disease.\n\nCore Functions:\n• Neurological Phenotype\n• Developmental Phenotype\n• Family History\n• Pedigree\n• Genetic Testing\n• Molecular Diagnosis\n• Variant Classification\n• Genotype-Phenotype Correlation\n• Metabolic Context\n• Imaging\n• Neurophysiology\n• Family Testing\n• Genetic Counseling\n• Variant Reanalysis\n• Long-term Surveillance\n\nIntegrations:\n• Neurology\n• Genetics\n• Rare Disease Platform\n• Metabolic Medicine\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "39f6ec4d65ae3ad5e2f3fdfa3eca1ce58462f3138fa5509cbbcc12f85ec4d656",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127966
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Phenotype",
+        "Developmental Phenotype",
+        "Family History",
+        "Pedigree",
+        "Genetic Testing",
+        "Molecular Diagnosis",
+        "Variant Classification",
+        "Genotype-Phenotype Correlation",
+        "Metabolic Context",
+        "Imaging",
+        "Neurophysiology",
+        "Family Testing",
+        "Genetic Counseling",
+        "Variant Reanalysis",
+        "Long-term Surveillance",
+        "Neurology",
+        "Genetics",
+        "Rare Disease Platform",
+        "Metabolic Medicine",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5091,
+      "title": "Pediatric Neuroimmune & Demyelinating Disease Module",
+      "body": "Purpose:\nCoordinate pediatric inflammatory, autoimmune and demyelinating neurological disease.\n\nCore Functions:\n• Neurological Presentation\n• Disease Episode\n• MRI\n• CSF Context\n• Autoantibody Context\n• Immunological Data\n• Vision Context\n• Spinal Cord Context\n• Cognitive Context\n• Treatment\n• Immunotherapy\n• Biological Therapy Context\n• Relapse\n• Recovery\n• Disability Context\n\nIntegrations:\n• Neurology\n• Immunology\n• Rheumatology\n• Ophthalmology\n• Radiology\n• Rehabilitation\n• Pharmacy\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "bb50c8e055d23d60751b6f36d269683e2f4e4bdb5efb0dcd587b93d2ad83b3a1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128000
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Presentation",
+        "Disease Episode",
+        "MRI",
+        "CSF Context",
+        "Autoantibody Context",
+        "Immunological Data",
+        "Vision Context",
+        "Spinal Cord Context",
+        "Cognitive Context",
+        "Treatment",
+        "Immunotherapy",
+        "Biological Therapy Context",
+        "Relapse",
+        "Recovery",
+        "Disability Context",
+        "Neurology",
+        "Immunology",
+        "Rheumatology",
+        "Ophthalmology",
+        "Radiology",
+        "Rehabilitation",
+        "Pharmacy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5092,
+      "title": "Pediatric Stroke, Cerebrovascular & Neurovascular Disease Module",
+      "body": "Purpose:\nProvide longitudinal coordination for pediatric arterial, venous and other cerebrovascular disorders.\n\nCore Functions:\n• Event Type\n• Symptom Onset\n• Neurological Deficit\n• Imaging\n• Vascular Imaging Context\n• Thrombosis Context\n• Hematology Context\n• Cardiac Context\n• Genetic Context\n• Acute Treatment Context\n• Antithrombotic Therapy\n• Rehabilitation\n• Recurrence\n• Functional Outcome\n• Long-term Surveillance\n\nIntegrations:\n• Neurology\n• Hematology\n• Cardiology\n• Neurosurgery\n• Radiology\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "f4d9b5e52b283d69f686d444630c891a640d6e84e168b94eae67f73888cf4afe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128036
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Event Type",
+        "Symptom Onset",
+        "Neurological Deficit",
+        "Imaging",
+        "Vascular Imaging Context",
+        "Thrombosis Context",
+        "Hematology Context",
+        "Cardiac Context",
+        "Genetic Context",
+        "Acute Treatment Context",
+        "Antithrombotic Therapy",
+        "Rehabilitation",
+        "Recurrence",
+        "Functional Outcome",
+        "Long-term Surveillance",
+        "Neurology",
+        "Hematology",
+        "Cardiology",
+        "Neurosurgery",
+        "Radiology",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5093,
+      "title": "Pediatric Neurocritical Care & Acute Brain Injury Module",
+      "body": "Purpose:\nCoordinate neurological data for critically ill children with acute brain injury or neurological deterioration.\n\nCore Functions:\n• Neurological Status\n• Consciousness Context\n• Pupillary Findings\n• Seizure Context\n• Intracranial Pressure Context\n• Neuroimaging\n• EEG\n• Respiratory Support Context\n• Hemodynamic Context\n• Medication\n• Neurosurgical Intervention Context\n• Laboratory Data\n• Complications\n• Recovery\n• Neurorehabilitation Handover\n\nIntegrations:\n• Neurology\n• Intensive Care\n• Neurosurgery\n• Radiology\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "bcd74010fb5dc181602fd6f78fd037a8f6ecdbd2bee9a3e18becde8c00028fe2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128071
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Neurological Status",
+        "Consciousness Context",
+        "Pupillary Findings",
+        "Seizure Context",
+        "Intracranial Pressure Context",
+        "Neuroimaging",
+        "EEG",
+        "Respiratory Support Context",
+        "Hemodynamic Context",
+        "Medication",
+        "Neurosurgical Intervention Context",
+        "Laboratory Data",
+        "Complications",
+        "Recovery",
+        "Neurorehabilitation Handover",
+        "Neurology",
+        "Intensive Care",
+        "Neurosurgery",
+        "Radiology",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5094,
+      "title": "Pediatric Brain Injury, Concussion & Post-Concussion Follow-up Module",
+      "body": "Purpose:\nProvide structured longitudinal follow-up following pediatric traumatic brain injury and concussion.\n\nCore Functions:\n• Injury Mechanism\n• Injury Date\n• Loss of Consciousness Context\n• Amnesia Context\n• Neurological Symptoms\n• Headache\n• Dizziness\n• Sleep\n• Cognitive Symptoms\n• School Impact\n• Imaging Context\n• Activity Restrictions Context\n• Rehabilitation\n• Return-to-Learn Context\n• Return-to-Activity Context\n• Recovery Timeline\n\nSafety:\nReturn decisions remain clinician-led and individualized.\n\nIntegrations:\n• Neurology\n• Emergency Medicine\n• Rehabilitation\n• School Health\n• Sports Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "b1f482716962478ef2d61ea35d9c192d79d03c3095bb7a712e78f65c903ec912",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128105
+      },
+      "verdict": "Return-to-learn and return-to-activity decisions remain clinician-led and individualized; preserve both distinct pathways.",
+      "feature_labels": [
+        "Injury Mechanism",
+        "Injury Date",
+        "Loss of Consciousness Context",
+        "Amnesia Context",
+        "Neurological Symptoms",
+        "Headache",
+        "Dizziness",
+        "Sleep",
+        "Cognitive Symptoms",
+        "School Impact",
+        "Imaging Context",
+        "Activity Restrictions Context",
+        "Rehabilitation",
+        "Return-to-Learn Context",
+        "Return-to-Activity Context",
+        "Recovery Timeline",
+        "Neurology",
+        "Emergency Medicine",
+        "Rehabilitation",
+        "School Health",
+        "Sports Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5095,
+      "title": "Pediatric Neurological Sleep & Nocturnal Event Integration Module",
+      "body": "Purpose:\nConnect sleep-related neurological symptoms with epilepsy, movement disorders and sleep medicine.\n\nCore Functions:\n• Sleep History\n• Nocturnal Events\n• Seizure Context\n• Parasomnia Context\n• Movement Context\n• Sleep Duration\n• Sleep Quality\n• Daytime Function\n• Medication Context\n• EEG Context\n• Polysomnography Context\n• Video Context\n• Specialist Interpretation\n• Treatment\n• Longitudinal Outcome\n\nIntegrations:\n• Neurology\n• Sleep Medicine\n• Pulmonology\n• Psychiatry\n• Neurophysiology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "6892b6e7344de2f6781701b2c9c901b9149e5ac4e49ea8f0348167cd51eba348",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128143
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Sleep History",
+        "Nocturnal Events",
+        "Seizure Context",
+        "Parasomnia Context",
+        "Movement Context",
+        "Sleep Duration",
+        "Sleep Quality",
+        "Daytime Function",
+        "Medication Context",
+        "EEG Context",
+        "Polysomnography Context",
+        "Video Context",
+        "Specialist Interpretation",
+        "Treatment",
+        "Longitudinal Outcome",
+        "Neurology",
+        "Sleep Medicine",
+        "Pulmonology",
+        "Psychiatry",
+        "Neurophysiology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5096,
+      "title": "Pediatric Neurological Rehabilitation & Functional Recovery Module",
+      "body": "Purpose:\nCoordinate neurological rehabilitation and measurable functional recovery.\n\nCore Functions:\n• Mobility\n• Strength\n• Balance\n• Coordination\n• Upper Limb Function\n• Communication\n• Swallowing Context\n• Cognitive Function\n• Activities of Daily Living\n• Assistive Devices\n• Physiotherapy\n• Occupational Therapy\n• Speech Therapy\n• Rehabilitation Goals\n• Goal Achievement\n• Longitudinal Outcomes\n\nIntegrations:\n• Neurology\n• Rehabilitation Medicine\n• Physiotherapy\n• Occupational Therapy\n• Speech Therapy\n• Assistive Technology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "19c24fcb10768e886687e6db67411b06a569899f8dab36a664e98f5797c030b9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128177
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Mobility",
+        "Strength",
+        "Balance",
+        "Coordination",
+        "Upper Limb Function",
+        "Communication",
+        "Swallowing Context",
+        "Cognitive Function",
+        "Activities of Daily Living",
+        "Assistive Devices",
+        "Physiotherapy",
+        "Occupational Therapy",
+        "Speech Therapy",
+        "Rehabilitation Goals",
+        "Goal Achievement",
+        "Longitudinal Outcomes",
+        "Neurology",
+        "Rehabilitation Medicine",
+        "Physiotherapy",
+        "Occupational Therapy",
+        "Speech Therapy",
+        "Assistive Technology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5097,
+      "title": "Pediatric Neurology Medication, Device & Treatment Safety Engine",
+      "body": "Purpose:\nProvide unified safety monitoring across neurological medications, implanted devices and complex treatment programs.\n\nCore Functions:\n• Neurological Medication Registry\n• Dose\n• Weight Context\n• Drug Interactions\n• Organ Function Context\n• Allergy\n• Adverse Effects\n• Required Laboratory Monitoring\n• Therapeutic Drug Monitoring Context\n• Implanted Device Registry\n• Neurostimulator Context\n• Pump Context\n• Shunt Context\n• Device Follow-up\n• Treatment Response\n\nSafety Functions:\n• Interaction Alerts\n• Allergy Integration\n• Monitoring Gaps\n• Device Follow-up\n• Battery/Replacement Context\n• Clinician-defined High-risk Alerts\n• Medication Reconciliation\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "aaf3af81564e4b50af703acd48c642877e6cd3ad8ee4a11bfc529f424ca2679b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128213
+      },
+      "verdict": "Device safety includes neurostimulator, pump, shunt, battery/replacement and follow-up; do not reduce this to medication interactions.",
+      "feature_labels": [
+        "Neurological Medication Registry",
+        "Dose",
+        "Weight Context",
+        "Drug Interactions",
+        "Organ Function Context",
+        "Allergy",
+        "Adverse Effects",
+        "Required Laboratory Monitoring",
+        "Therapeutic Drug Monitoring Context",
+        "Implanted Device Registry",
+        "Neurostimulator Context",
+        "Pump Context",
+        "Shunt Context",
+        "Device Follow-up",
+        "Treatment Response",
+        "Interaction Alerts",
+        "Allergy Integration",
+        "Monitoring Gaps",
+        "Device Follow-up",
+        "Battery/Replacement Context",
+        "Clinician-defined High-risk Alerts",
+        "Medication Reconciliation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5098,
+      "title": "Pediatric Neurology AI, Neuroimaging & Neurophysiology Intelligence Module",
+      "body": "Purpose:\nProvide governed AI-assisted intelligence across pediatric neurological data.\n\nCore Functions:\n• Neurological Timeline Summarization\n• Seizure Timeline Analysis\n• EEG Organization Support\n• Neuroimaging Comparison Support\n• Developmental Trend Analysis\n• Motor Function Trend Support\n• Neurophysiology Data Organization\n• Treatment-response Analysis\n• Care-gap Detection\n• Missing-data Detection\n• Pre-Visit Summary\n• Documentation Assistance\n\nAI Governance:\n• Human Validation\n• Explainability\n• Confidence and Uncertainty\n• Source Traceability\n• Model Version Tracking\n• Pediatric Validation\n• Bias Monitoring\n• Audit Trail\n\nSafety:\nAI cannot independently diagnose epilepsy, exclude acute neurological disease, prescribe treatment or determine emergency intervention.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "a0be2c90804e1b59c0ccddf08b691f7d031ba5a14875917d4c11f205c5d2cc51",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128252
+      },
+      "verdict": "AI cannot exclude acute neurological disease or decide emergency intervention; performance and uncertainty must remain visible.",
+      "feature_labels": [
+        "Neurological Timeline Summarization",
+        "Seizure Timeline Analysis",
+        "EEG Organization Support",
+        "Neuroimaging Comparison Support",
+        "Developmental Trend Analysis",
+        "Motor Function Trend Support",
+        "Neurophysiology Data Organization",
+        "Treatment-response Analysis",
+        "Care-gap Detection",
+        "Missing-data Detection",
+        "Pre-Visit Summary",
+        "Documentation Assistance",
+        "Human Validation",
+        "Explainability",
+        "Confidence and Uncertainty",
+        "Source Traceability",
+        "Model Version Tracking",
+        "Pediatric Validation",
+        "Bias Monitoring",
+        "Audit Trail"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5100,
+      "title": "Clinical Pediatric Neurology & Neurodevelopment Intelligence Hub",
+      "body": "Purpose:\nServe as the master orchestration layer for the complete EDHT pediatric neurology and neurodevelopment ecosystem.\n\nCoordinates:\n• Pediatric Neurology\n• Neurological Phenotyping\n• Neurodevelopment\n• Epilepsy\n• Seizure Diaries\n• EEG\n• Video-EEG\n• Antiseizure Therapy\n• Neurological Emergencies\n• Headache\n• Migraine\n• Movement Disorders\n• Cerebral Palsy\n• Spasticity\n• Neuromuscular Disease\n• EMG\n• Neurogenetics\n• Neuroimmune Disease\n• Pediatric Stroke\n• Neurocritical Care\n• Brain Injury\n• Concussion\n• Neurological Sleep Disorders\n• Neurorehabilitation\n• Medication and Device Safety\n• Transition Care\n\nDigital Capabilities:\n• Artificial Intelligence\n• Neurological Digital Twin\n• Neuroimaging Integration\n• EEG Integration\n• Neurophysiology Integration\n• Genomics\n• Remote Monitoring\n• Neurological Passport\n• Patient/Guardian Interface\n• Clinical Alerts\n• Outcomes Registry\n• Research Data Layer\n\nPlatform Functions:\n• Unified Neurological Timeline\n• Developmental Trajectory\n• Seizure Event Registry\n• EEG and Imaging Timeline\n• Genetic Integration\n• Medication Safety\n• Device Registry\n• Functional Outcome Monitoring\n• Rehabilitation Integration\n• Emergency Neurological Information\n• Multidisciplinary Coordination\n• Role-based Access\n• Consent Management\n• Data Provenance\n• Clinical Decision Traceability\n• Cross-Border Interoperability\n\nMVP Foundation:\n• Neurological Diagnosis Registry\n• Neurological Examination\n• Developmental Record\n• Seizure Registry\n• EEG Reports\n• Neuroimaging Reports\n• Medication Record\n• Rescue Plan\n• Device Record\n• Clinical Alerts\n• Neurological Passport\n• Interoperability\n\nExpansion Layers:\n• Advanced Neurology AI\n• Neurological Digital Twin\n• EEG Signal Analytics\n• Neuroimaging Analytics\n• Remote Seizure Monitoring\n• Wearable Neurological Monitoring\n• Neurogenomic Intelligence\n• International Pediatric Neurology Registries\n• Research Infrastructure\n\nArchitecture Principle:\nPediatric neurology is modeled as a longitudinal multisystem domain connected to genetics, rehabilitation, neurosurgery, psychiatry, sleep medicine, ophthalmology, intensive care and the lifelong EDHT patient record.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "0f6a18344d837f8d3ab10c7fb78744ead421e564e0664802c989612a6002869b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 128342
+      },
+      "verdict": "Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.",
+      "feature_labels": [
+        "Pediatric Neurology",
+        "Neurological Phenotyping",
+        "Neurodevelopment",
+        "Epilepsy",
+        "Seizure Diaries",
+        "EEG",
+        "Video-EEG",
+        "Antiseizure Therapy",
+        "Neurological Emergencies",
+        "Headache",
+        "Migraine",
+        "Movement Disorders",
+        "Cerebral Palsy",
+        "Spasticity",
+        "Neuromuscular Disease",
+        "EMG",
+        "Neurogenetics",
+        "Neuroimmune Disease",
+        "Pediatric Stroke",
+        "Neurocritical Care",
+        "Brain Injury",
+        "Concussion",
+        "Neurological Sleep Disorders",
+        "Neurorehabilitation",
+        "Medication and Device Safety",
+        "Transition Care",
+        "Artificial Intelligence",
+        "Neurological Digital Twin",
+        "Neuroimaging Integration",
+        "EEG Integration",
+        "Neurophysiology Integration",
+        "Genomics",
+        "Remote Monitoring",
+        "Neurological Passport",
+        "Patient/Guardian Interface",
+        "Clinical Alerts",
+        "Outcomes Registry",
+        "Research Data Layer",
+        "Unified Neurological Timeline",
+        "Developmental Trajectory",
+        "Seizure Event Registry",
+        "EEG and Imaging Timeline",
+        "Genetic Integration",
+        "Medication Safety",
+        "Device Registry",
+        "Functional Outcome Monitoring",
+        "Rehabilitation Integration",
+        "Emergency Neurological Information",
+        "Multidisciplinary Coordination",
+        "Role-based Access",
+        "Consent Management",
+        "Data Provenance",
+        "Clinical Decision Traceability",
+        "Cross-Border Interoperability",
+        "Neurological Diagnosis Registry",
+        "Neurological Examination",
+        "Developmental Record",
+        "Seizure Registry",
+        "EEG Reports",
+        "Neuroimaging Reports",
+        "Medication Record",
+        "Rescue Plan",
+        "Device Record",
+        "Clinical Alerts",
+        "Neurological Passport",
+        "Interoperability",
+        "Advanced Neurology AI",
+        "Neurological Digital Twin",
+        "EEG Signal Analytics",
+        "Neuroimaging Analytics",
+        "Remote Seizure Monitoring",
+        "Wearable Neurological Monitoring",
+        "Neurogenomic Intelligence",
+        "International Pediatric Neurology Registries",
+        "Research Infrastructure"
+      ],
+      "date": "2026-09-14"
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "pass": "MASTER-04",
+  "domain": "HEMONC",
+  "parent_checkpoint": "04b8e805e857746f311710577d58f2c60b8eabc3",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1100 reviewed IDs.",
+  "count": 55,
+  "reviews": [
+    {
+      "original_id": 961,
+      "title": "Pediatric Hematologist Profile",
+      "body": "# Pediatric Hematologist Profile\n\nProfessional profile of licensed pediatric hematologists.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Pediatric Blood Disorders Expertise\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f31350009ccb597abe4e69ae9712cd73a8381a57c21661c52ab03aee79e14a59",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36227
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Qualifications",
+        "Experience",
+        "Pediatric Blood Disorders Expertise",
+        "Languages"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 962,
+      "title": "Pediatric Hematology Center Profile",
+      "body": "# Pediatric Hematology Center Profile\n\nStores complete information about pediatric hematology centers.\n\nSupports\n\n• Services\n\n• Physicians\n\n• Transfusion Unit\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ae6a76c2e958ebfa3f778c106ebad71688f7febf9e500723992bbf52d86365b4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36249
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Services",
+        "Physicians",
+        "Transfusion Unit",
+        "Contact Information"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 963,
+      "title": "Pediatric Hematology Appointment Booking",
+      "body": "# Pediatric Hematology Appointment Booking\n\nAllows scheduling consultations with pediatric hematologists.\n\nSupports\n\n• Clinic\n\n• Physician\n\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "005086b1f2c6cfab9312e0287e7935ae665b6219e0d63f013e72b704de3ee5fd",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36271
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Clinic",
+        "Physician",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 964,
+      "title": "Pediatric Anemia Registry",
+      "body": "# Pediatric Anemia Registry\n\nStores anemia diagnoses.\n\nSupports\n\n• Iron Deficiency\n\n• Hemolytic Anemia\n\n• Aplastic Anemia\n\n• Megaloblastic Anemia\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d5369e104f76d72e6c56ff6593447ea58962fde4d9edcf4d6deb9b10ff1026a9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36291
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Iron Deficiency",
+        "Hemolytic Anemia",
+        "Aplastic Anemia",
+        "Megaloblastic Anemia"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 965,
+      "title": "Pediatric Hemoglobinopathy Registry",
+      "body": "# Pediatric Hemoglobinopathy Registry\n\nTracks inherited blood disorders.\n\nSupports\n\n• Sickle Cell Disease\n\n• Alpha Thalassemia\n\n• Beta Thalassemia\n\n• Carrier Status\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87389856217cbf911afdfc35a88613125caa4b976d613e9379050bce4555bd8a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36313
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Sickle Cell Disease",
+        "Alpha Thalassemia",
+        "Beta Thalassemia",
+        "Carrier Status"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 966,
+      "title": "Pediatric Coagulation Registry",
+      "body": "# Pediatric Coagulation Registry\n\nStores coagulation disorders.\n\nSupports\n\n• Hemophilia A\n\n• Hemophilia B\n\n• von Willebrand Disease\n\n• Platelet Disorders\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2c520713b539fa6ec8bc7c8df4153131b8cb34da05a94c475150f3674529b11c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36335
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hemophilia A",
+        "Hemophilia B",
+        "von Willebrand Disease",
+        "Platelet Disorders"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 967,
+      "title": "Pediatric Complete Blood Count Archive",
+      "body": "# Pediatric Complete Blood Count Archive\n\nStores CBC history.\n\nSupports\n\n• Hemoglobin\n\n• Leukocytes\n\n• Platelets\n\n• Differential Count\n\n• Trends\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "36d33eb703dd3d283eba178d979295ba206c8c9653dd7dd09bf058377dbd7e96",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36357
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hemoglobin",
+        "Leukocytes",
+        "Platelets",
+        "Differential Count",
+        "Trends"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 968,
+      "title": "Pediatric Bone Marrow Registry",
+      "body": "# Pediatric Bone Marrow Registry\n\nStores bone marrow examinations.\n\nSupports\n\n• Aspirate\n\n• Biopsy\n\n• Cytology\n\n• Histology\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ca765a7f189b0eab415d937a2cd1e2497d2a302c61c4da01db0db9ba8a025ca5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36381
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Aspirate",
+        "Biopsy",
+        "Cytology",
+        "Histology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 969,
+      "title": "Pediatric Blood Transfusion Registry",
+      "body": "# Pediatric Blood Transfusion Registry\n\nTracks transfusion history.\n\nSupports\n\n• Blood Components\n\n• Compatibility\n\n• Reactions\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3d2167b04122b7fa02518193dbd8ef80c07f329773f6f2c11f6b973fd7f4ecd7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36403
+      },
+      "verdict": "Transfusion compatibility is a separately validated blood-bank workflow; historical registry data alone cannot authorize product release or administration.",
+      "feature_labels": [
+        "Blood Components",
+        "Compatibility",
+        "Reactions",
+        "Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 970,
+      "title": "Pediatric Iron Therapy Manager",
+      "body": "# Pediatric Iron Therapy Manager\n\nTracks iron supplementation.\n\nSupports\n\n• Dosage\n\n• Schedule\n\n• Laboratory Response\n\n• Side Effects\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e422cce865e224deeba260523a1f91d73cb81ec38d58bea3ecca32fcb4038a74",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36425
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Dosage",
+        "Schedule",
+        "Laboratory Response",
+        "Side Effects"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 971,
+      "title": "Pediatric Hematology Laboratory Center",
+      "body": "# Pediatric Hematology Laboratory Center\n\nCentralizes hematology laboratory monitoring.\n\nSupports\n\n• Ferritin\n\n• Reticulocytes\n\n• Coagulation Tests\n\n• Blood Smear\n\n• LDH\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2fd4b58ea3c85c4797d7f178310a6520f8a35b87ec03635bc43b0784f0d07cb0",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36447
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Ferritin",
+        "Reticulocytes",
+        "Coagulation Tests",
+        "Blood Smear",
+        "LDH"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 972,
+      "title": "Pediatric Bleeding Episode Registry",
+      "body": "# Pediatric Bleeding Episode Registry\n\nTracks bleeding events.\n\nSupports\n\n• Severity\n\n• Treatment\n\n• Location\n\n• Outcome\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dd1348a127887816621bb6e33738db02064880cbfe934574abed7d5c9858fe9d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36471
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Severity",
+        "Treatment",
+        "Location",
+        "Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 973,
+      "title": "Pediatric Hematology Medication Manager",
+      "body": "# Pediatric Hematology Medication Manager\n\nTracks hematology medications.\n\nSupports\n\n• Weight-Based Dosage\n\n• Clotting Factors\n\n• Iron\n\n• Immunotherapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0a666874ffb21446bf31113b60acd4c8e6f9f9966d30ab1faa96e593044db414",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36493
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Weight-Based Dosage",
+        "Clotting Factors",
+        "Iron",
+        "Immunotherapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 974,
+      "title": "Pediatric Hematology AI Assistant",
+      "body": "# Pediatric Hematology AI Assistant\n\nAI assists blood disorder monitoring.\n\nAnalyzes\n\n• CBC\n\n• Coagulation\n\n• Symptoms\n\n• Laboratory Results\n\nProvides educational recommendations.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8d2ad258eee6366aba325e6c62df5784921c953d52dd0952cff54ffff06f92e4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36515
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "CBC",
+        "Coagulation",
+        "Symptoms",
+        "Laboratory Results"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 975,
+      "title": "Pediatric Hematology Emergency Module",
+      "body": "# Pediatric Hematology Emergency Module\n\nSupports hematologic emergencies.\n\nIncludes\n\n• Severe Bleeding\n\n• Acute Anemia\n\n• Febrile Neutropenia\n\n• Emergency Guidance\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2f113796dc1baffc790e7804c0f049e886022d4c636e6757675ae3597f6843e9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36539
+      },
+      "verdict": "Severe bleeding, acute anemia and febrile neutropenia retain human-led urgent pathways; no automated triage result may delay emergency assessment.",
+      "feature_labels": [
+        "Severe Bleeding",
+        "Acute Anemia",
+        "Febrile Neutropenia",
+        "Emergency Guidance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 976,
+      "title": "Pediatric Hematology Timeline",
+      "body": "# Pediatric Hematology Timeline\n\nDisplays the complete hematology history.\n\nIncludes\n\n• Diagnoses\n\n• Laboratory Results\n\n• Transfusions\n\n• Medications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2a7706dc5c6757a9e7c6a5bfde19b17704bfcccfa87e4b830777444481e6e28b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36561
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Diagnoses",
+        "Laboratory Results",
+        "Transfusions",
+        "Medications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 977,
+      "title": "International Pediatric Hematology Search",
+      "body": "# International Pediatric Hematology Search\n\nSearches pediatric hematology centers worldwide.\n\nDisplays\n\n• Country\n\n• City\n\n• Specialists\n\n• Ratings\n\n• Costs\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f1ce1d24ccd136b8b1a7d0804a8727be957050c6e6b5a95cbc08fe83d8a0d534",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36583
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Country",
+        "City",
+        "Specialists",
+        "Ratings",
+        "Costs"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 979,
+      "title": "Pediatric Hematology Quality of Life Assessment",
+      "body": "# Pediatric Hematology Quality of Life Assessment\n\nEvaluates quality of life in chronic blood disorders.\n\nSupports\n\n• Physical Health\n\n• Fatigue\n\n• School Attendance\n\n• Emotional Well-being\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dd880006e312c2dbfcba5b4aa56934cecde570d4f992146e6e9e3a0e9719ec9a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36627
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Physical Health",
+        "Fatigue",
+        "School Attendance",
+        "Emotional Well-being"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 980,
+      "title": "Comprehensive Pediatric Hematology Dashboard",
+      "body": "# Comprehensive Pediatric Hematology Dashboard\n\nProvides a complete overview of pediatric hematological health.\n\nDisplays\n\n• Diagnoses\n\n• CBC\n\n• Coagulation\n\n• Transfusions\n\n• Medications\n\n• AI Recommendations\n\nActs as the primary pediatric hematology workspace within the Medical Passport ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ebb23013b393d42c49423a03b195b38289324f7b93497711d04e1a209d301f92",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 36649
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Diagnoses",
+        "CBC",
+        "Coagulation",
+        "Transfusions",
+        "Medications",
+        "AI Recommendations"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3121,
+      "title": "Clinical Pediatric Oncology Platform Core Engine",
+      "body": "Central platform for pediatric oncology.\n\nSupports\n\n• Hematologic Malignancies\n• Solid Tumors\n• Neuro-Oncology\n• Bone Tumors\n• Survivorship Programs\n• Precision Pediatric Oncology\n\nIntegrates Genetics, Molecular Biology, Pathology, Radiology, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8289790cb88ce5f11b12a898f301d2c376f500130b356640e3f39cfcc2c363d4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76636
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hematologic Malignancies",
+        "Solid Tumors",
+        "Neuro-Oncology",
+        "Bone Tumors",
+        "Survivorship Programs",
+        "Precision Pediatric Oncology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3122,
+      "title": "Pediatric Oncology Registry",
+      "body": "Maintains comprehensive pediatric oncology records.\n\nSupports\n\n• Cancer Diagnosis\n• TNM/Staging\n• Histology\n• Molecular Profiling\n• Treatment Timeline\n• Long-term Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b8736eb1e46331627d5f8ce61d57f1c2aa19847f0f211fb00db14ca86f87dc0e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76657
+      },
+      "verdict": "TNM/Staging is a source label, not one universal pediatric cancer staging system. Store tumor-specific classification system/version and clinician-signed stage.",
+      "feature_labels": [
+        "Cancer Diagnosis",
+        "TNM/Staging",
+        "Histology",
+        "Molecular Profiling",
+        "Treatment Timeline",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3123,
+      "title": "Pediatric Leukemia Module",
+      "body": "Supports childhood leukemia management.\n\nSupports\n\n• ALL\n• AML\n• Mixed Lineage Leukemia\n• Relapse Monitoring\n• MRD Assessment\n• Precision Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2d900143cee0400eef170fae213db5cda72020d2f0bb22618ecd5c82272adac8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76676
+      },
+      "verdict": "MRD records require specimen, assay, sensitivity/quantification context and treatment time point; missing result cannot imply molecular remission.",
+      "feature_labels": [
+        "ALL",
+        "AML",
+        "Mixed Lineage Leukemia",
+        "Relapse Monitoring",
+        "MRD Assessment",
+        "Precision Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3124,
+      "title": "Pediatric Lymphoma Module",
+      "body": "Supports pediatric lymphoma care.\n\nSupports\n\n• Hodgkin Lymphoma\n• Non-Hodgkin Lymphoma\n• Burkitt Lymphoma\n• T-cell Lymphoma\n• Long-term Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e468a0492270352d1b19034fdde59b20757c52d4d4e7f4b5ee2faee77aa39aa4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76695
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hodgkin Lymphoma",
+        "Non-Hodgkin Lymphoma",
+        "Burkitt Lymphoma",
+        "T-cell Lymphoma",
+        "Long-term Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3125,
+      "title": "Pediatric Brain Tumor Module",
+      "body": "Supports childhood CNS tumors.\n\nSupports\n\n• Medulloblastoma\n• Glioma\n• Ependymoma\n• ATRT\n• Craniopharyngioma\n\nIntegrates Neurosurgery, Radiotherapy and Molecular Diagnostics.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0a82168e833feeecf25016c3ade1bba278dcde9c687f53fb269b15d5b6ef3bfc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76713
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Medulloblastoma",
+        "Glioma",
+        "Ependymoma",
+        "ATRT",
+        "Craniopharyngioma"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3126,
+      "title": "Pediatric Solid Tumor Module",
+      "body": "Supports pediatric solid tumors.\n\nSupports\n\n• Neuroblastoma\n• Wilms Tumor\n• Hepatoblastoma\n• Retinoblastoma\n• Germ Cell Tumors\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c9c9c43d819bb6254731a731bf6f3b5ffcc8df40152ba93fc460b12d7283b63b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76733
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Neuroblastoma",
+        "Wilms Tumor",
+        "Hepatoblastoma",
+        "Retinoblastoma",
+        "Germ Cell Tumors"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3127,
+      "title": "Pediatric Sarcoma Module",
+      "body": "Supports pediatric sarcomas.\n\nSupports\n\n• Osteosarcoma\n• Ewing Sarcoma\n• Rhabdomyosarcoma\n• Soft Tissue Sarcoma\n• Limb Salvage Planning\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "21245d56915544bb2ef05e57283812370d1a301a7733b13609a352602fb99dab",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76751
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Osteosarcoma",
+        "Ewing Sarcoma",
+        "Rhabdomyosarcoma",
+        "Soft Tissue Sarcoma",
+        "Limb Salvage Planning"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3128,
+      "title": "Pediatric Bone Marrow Transplant Module",
+      "body": "Supports hematopoietic stem cell transplantation.\n\nSupports\n\n• Donor Matching\n• Conditioning\n• GVHD Monitoring\n• Immune Reconstitution\n• Long-term Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ebde53a62b4c7055e9c61020431ffacfe29ec170c6359aef4de0cbfcac040b67",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76769
+      },
+      "verdict": "Donor matching, conditioning, GVHD and immune reconstitution remain distinct transplant workflows with donor/patient identity separation.",
+      "feature_labels": [
+        "Donor Matching",
+        "Conditioning",
+        "GVHD Monitoring",
+        "Immune Reconstitution",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3129,
+      "title": "Pediatric Oncology Imaging Registry",
+      "body": "Maintains pediatric oncology imaging.\n\nSupports\n\n• MRI\n• CT\n• PET/CT\n• Ultrasound\n• Nuclear Medicine\n• AI Imaging Analysis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e745a236475aea79b23da2f902ca9082f38a00a8ec79997a10a1d59c33e56b86",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76787
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "MRI",
+        "CT",
+        "PET/CT",
+        "Ultrasound",
+        "Nuclear Medicine",
+        "AI Imaging Analysis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3130,
+      "title": "Pediatric Oncology Pathology Registry",
+      "body": "Maintains pathology data.\n\nSupports\n\n• Histopathology\n• Immunohistochemistry\n• Molecular Pathology\n• Cytogenetics\n• Digital Pathology\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f24aad33065cb9c227f25954182ec0660c65109eb8bb8dd9d312bc832e5d18f4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76806
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Histopathology",
+        "Immunohistochemistry",
+        "Molecular Pathology",
+        "Cytogenetics",
+        "Digital Pathology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3131,
+      "title": "Pediatric Oncology Laboratory Registry",
+      "body": "Maintains laboratory studies.\n\nSupports\n\n• Hematology\n• Biochemistry\n• Tumor Markers\n• Molecular Diagnostics\n• Genomic Sequencing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3679db764fd0e945806d512fa786db7dd06926f4fa48d78ee8b84a613c452173",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76824
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hematology",
+        "Biochemistry",
+        "Tumor Markers",
+        "Molecular Diagnostics",
+        "Genomic Sequencing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3132,
+      "title": "Pediatric Oncology Biomarker Registry",
+      "body": "Maintains pediatric oncology biomarkers.\n\nSupports\n\n• Molecular Biomarkers\n• Targetable Mutations\n• MRD\n• Immunologic Biomarkers\n• Prognostic Biomarkers\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f00936f2d0d1f5337fcbd30cd266991fd842472222549ac3fada190a42f63441",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76842
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Molecular Biomarkers",
+        "Targetable Mutations",
+        "MRD",
+        "Immunologic Biomarkers",
+        "Prognostic Biomarkers"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3133,
+      "title": "Pediatric Oncology AI Decision Support",
+      "body": "Provides AI-assisted pediatric oncology.\n\nSupports\n\n• Tumor Classification\n• Survival Prediction\n• Treatment Optimization\n• Relapse Prediction\n• Precision Oncology\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5afccdbe0cf529587380cd0c2945ca4a07fdafe0bbbf0d47d616041957814718",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76860
+      },
+      "verdict": "Tumor classification, survival prediction and therapy optimization are different AI intended uses requiring separate validation; no autonomous treatment decisions.",
+      "feature_labels": [
+        "Tumor Classification",
+        "Survival Prediction",
+        "Treatment Optimization",
+        "Relapse Prediction",
+        "Precision Oncology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3135,
+      "title": "Pediatric Oncology Telemedicine Module",
+      "body": "Supports remote oncology care.\n\nSupports\n\n• Follow-up Consultations\n• Imaging Review\n• Laboratory Review\n• Family Conferences\n• AI Translation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "889e449eef9e20cf5c22c7ede5114b6c3fa4f73501c9aa2d669d7ffa0638a1ba",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76895
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Follow-up Consultations",
+        "Imaging Review",
+        "Laboratory Review",
+        "Family Conferences",
+        "AI Translation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3136,
+      "title": "Pediatric Oncology Clinical Trials Registry",
+      "body": "Supports pediatric oncology research.\n\nSupports\n\n• Clinical Trials\n• Targeted Therapy Studies\n• Immunotherapy Studies\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c91f6c0fbd04a6feb83800d1ffef5c107b3c51e36c2e324f50eb4e915ba57e42",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76913
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Clinical Trials",
+        "Targeted Therapy Studies",
+        "Immunotherapy Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3138,
+      "title": "Pediatric Cancer Survivorship Module",
+      "body": "Supports long-term survivors of childhood cancer.\n\nSupports\n\n• Late Toxicity Monitoring\n• Cardiac Follow-up\n• Endocrine Follow-up\n• Fertility Preservation\n• Quality of Life Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eb57b751e8d79c3aad09289915bbc63b11ebba8b6b4a57788f91cdbb1aa647a5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76948
+      },
+      "verdict": "Survivorship preserves late toxicity, cardiac/endocrine follow-up, fertility and quality-of-life context under age-appropriate confidential access.",
+      "feature_labels": [
+        "Late Toxicity Monitoring",
+        "Cardiac Follow-up",
+        "Endocrine Follow-up",
+        "Fertility Preservation",
+        "Quality of Life Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3139,
+      "title": "Pediatric Oncology Intelligence Registry",
+      "body": "Maintains AI-ready pediatric oncology datasets.\n\nSupports\n\n• Imaging\n• Pathology\n• Genomics\n• Laboratory\n• Treatment\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b0180ed5b1ad2c87674c00f0b2f3c1122bae97f86c09f81a6051dfc63f5da695",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76966
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Imaging",
+        "Pathology",
+        "Genomics",
+        "Laboratory",
+        "Treatment",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3140,
+      "title": "Clinical Pediatric Oncology Intelligence Hub",
+      "body": "Coordinates the complete pediatric oncology ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Molecular Medicine\n• Genetics\n• Radiology\n• Pathology\n• Laboratory Services\n• Telemedicine\n\nProvides intelligent personalized pediatric cancer care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "da697f108531daf3bf5fee35a6c4b5a7315bf3ec195f059ed6403f8f71a7d26e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 76985
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Molecular Medicine",
+        "Genetics",
+        "Radiology",
+        "Pathology",
+        "Laboratory Services",
+        "Telemedicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3241,
+      "title": "Clinical Pediatric Hematology Platform Core Engine",
+      "body": "Central platform for pediatric hematology.\n\nSupports\n\n• Anemia\n• Hemoglobinopathies\n• Coagulation Disorders\n• Bone Marrow Disorders\n• Platelet Diseases\n• Pediatric Hemostasis\n\nIntegrates Genetics, Laboratory Medicine, Transfusion Medicine, Oncology, AI and Digital Twin.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "86adf2a234406b7e7f5f981623a5a4aec49a65e8f52d5c6d518d0871e573044d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78853
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Anemia",
+        "Hemoglobinopathies",
+        "Coagulation Disorders",
+        "Bone Marrow Disorders",
+        "Platelet Diseases",
+        "Pediatric Hemostasis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3242,
+      "title": "Pediatric Hematology Registry",
+      "body": "Maintains comprehensive pediatric hematology records.\n\nSupports\n\n• Diagnoses\n• Laboratory Results\n• Bone Marrow Findings\n• Transfusion History\n• Genetic Studies\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "82e4243cd9722cc8fc2dfb1977e7bdc99a247487e47b33b6d0082187c002d84b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78874
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Diagnoses",
+        "Laboratory Results",
+        "Bone Marrow Findings",
+        "Transfusion History",
+        "Genetic Studies",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3243,
+      "title": "Pediatric Anemia Module",
+      "body": "Supports diagnosis and treatment of childhood anemia.\n\nSupports\n\n• Iron Deficiency Anemia\n• Megaloblastic Anemia\n• Hemolytic Anemia\n• Aplastic Anemia\n• Chronic Disease Anemia\n\nProvides diagnostic algorithms, treatment pathways and long-term monitoring.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "08ea47ac69c7901718120b08dc545d28e56746933e2c84ecdbf9090471189b8f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78893
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Iron Deficiency Anemia",
+        "Megaloblastic Anemia",
+        "Hemolytic Anemia",
+        "Aplastic Anemia",
+        "Chronic Disease Anemia"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3244,
+      "title": "Pediatric Hemoglobinopathy Module",
+      "body": "Supports inherited hemoglobin disorders.\n\nSupports\n\n• Sickle Cell Disease\n• Alpha-Thalassemia\n• Beta-Thalassemia\n• Rare Hemoglobin Variants\n• Chronic Transfusion Programs\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "aabf6b82d71126de14fe5dd8cb45940c33289294e6e9f8881efe06947e02550f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78913
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Sickle Cell Disease",
+        "Alpha-Thalassemia",
+        "Beta-Thalassemia",
+        "Rare Hemoglobin Variants",
+        "Chronic Transfusion Programs"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3245,
+      "title": "Pediatric Coagulation Disorders Module",
+      "body": "Supports pediatric coagulation disorders.\n\nSupports\n\n• Hemophilia A\n• Hemophilia B\n• von Willebrand Disease\n• Rare Factor Deficiencies\n• Anticoagulation Management\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "60d2b2c633658820bd73d48090d7b3026d0ef28dae881ef941c8306366f98db5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78931
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hemophilia A",
+        "Hemophilia B",
+        "von Willebrand Disease",
+        "Rare Factor Deficiencies",
+        "Anticoagulation Management"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3246,
+      "title": "Pediatric Platelet Disorders Module",
+      "body": "Supports platelet diseases.\n\nSupports\n\n• Immune Thrombocytopenia\n• Congenital Platelet Disorders\n• Thrombocytosis\n• Platelet Function Disorders\n• Bleeding Risk Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e80b5a5700f4319064aa96841cceaa8bc8bc14f6b17e966e93d90248ab580eb1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78949
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Immune Thrombocytopenia",
+        "Congenital Platelet Disorders",
+        "Thrombocytosis",
+        "Platelet Function Disorders",
+        "Bleeding Risk Assessment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3247,
+      "title": "Pediatric Bone Marrow Failure Module",
+      "body": "Supports bone marrow failure syndromes.\n\nSupports\n\n• Aplastic Anemia\n• Fanconi Anemia\n• Diamond–Blackfan Anemia\n• Congenital Marrow Failure\n• Stem Cell Transplant Planning\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "21efa5e8d8720cbb9099957d990799e816d560d27396eb4ef6c687a09dcdca2d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78967
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Aplastic Anemia",
+        "Fanconi Anemia",
+        "Diamond–Blackfan Anemia",
+        "Congenital Marrow Failure",
+        "Stem Cell Transplant Planning"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3248,
+      "title": "Pediatric Transfusion Medicine Module",
+      "body": "Supports pediatric transfusion management.\n\nSupports\n\n• Red Cell Transfusion\n• Platelet Transfusion\n• Plasma Therapy\n• Iron Overload Monitoring\n• Transfusion Reactions\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8720bb2053c5f5d034e156a6b2a993b823b2ea7d98d6642723c9f94541c7b106",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 78985
+      },
+      "verdict": "Blood products, reaction history and iron-overload monitoring survive shared transfusion profiles; clinical product selection remains outside autonomous AI authority.",
+      "feature_labels": [
+        "Red Cell Transfusion",
+        "Platelet Transfusion",
+        "Plasma Therapy",
+        "Iron Overload Monitoring",
+        "Transfusion Reactions"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3249,
+      "title": "Pediatric Bone Marrow Registry",
+      "body": "Maintains bone marrow diagnostics.\n\nSupports\n\n• Aspirate\n• Biopsy\n• Cytogenetics\n• Flow Cytometry\n• Molecular Diagnostics\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "41383328cb48a71e6b92831578043257c6be92c531cf8b227c3f82bd67db4cb5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79003
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Aspirate",
+        "Biopsy",
+        "Cytogenetics",
+        "Flow Cytometry",
+        "Molecular Diagnostics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3250,
+      "title": "Pediatric Hematology Laboratory Registry",
+      "body": "Maintains hematology laboratory studies.\n\nSupports\n\n• CBC\n• Reticulocytes\n• Coagulation Tests\n• Iron Studies\n• Hemoglobin Electrophoresis\n• Molecular Diagnostics\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f5d0d15deda67cb66f2e4dabc2372ff808f36a72abdc6463873c4956dd7828f9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79021
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "CBC",
+        "Reticulocytes",
+        "Coagulation Tests",
+        "Iron Studies",
+        "Hemoglobin Electrophoresis",
+        "Molecular Diagnostics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3251,
+      "title": "Pediatric Hematology Biomarker Registry",
+      "body": "Maintains hematology biomarkers.\n\nSupports\n\n• Iron Metabolism\n• Hemolysis\n• Coagulation Biomarkers\n• Platelet Biomarkers\n• Bone Marrow Activity\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "da669ea2a994435073a12418fa1f20c98146269472dccfa0dcda4ed26ea66908",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79040
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Iron Metabolism",
+        "Hemolysis",
+        "Coagulation Biomarkers",
+        "Platelet Biomarkers",
+        "Bone Marrow Activity"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3252,
+      "title": "Pediatric Hematology AI Decision Support",
+      "body": "Provides AI-assisted pediatric hematology.\n\nSupports\n\n• Anemia Classification\n• Bleeding Risk Prediction\n• Transfusion Optimization\n• Bone Marrow Interpretation\n• Personalized Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1a1c9f560cd2fc264c8a3858298eb9ef6ca3efc66d6ab2ced12a1252387484b5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79058
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Anemia Classification",
+        "Bleeding Risk Prediction",
+        "Transfusion Optimization",
+        "Bone Marrow Interpretation",
+        "Personalized Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3254,
+      "title": "Pediatric Hematology Telemedicine Module",
+      "body": "Supports remote hematology consultations.\n\nSupports\n\n• Laboratory Review\n• Bleeding Monitoring\n• Transfusion Follow-up\n• AI Translation\n• Family Consultation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "da8bd8b15f1042e16a24c037f8283aeaed13732cb377f05ddebde3866380ecd7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79093
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Laboratory Review",
+        "Bleeding Monitoring",
+        "Transfusion Follow-up",
+        "AI Translation",
+        "Family Consultation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3255,
+      "title": "Pediatric Hematology Clinical Trials Registry",
+      "body": "Supports pediatric hematology research.\n\nSupports\n\n• Gene Therapy Trials\n• Hemophilia Research\n• Transfusion Studies\n• AI Dataset Collection\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5278af0d480c81a92ce1575a0e91414d2c4f4b998a8ec854f97e00ca0041da7a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79111
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Gene Therapy Trials",
+        "Hemophilia Research",
+        "Transfusion Studies",
+        "AI Dataset Collection"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3257,
+      "title": "Pediatric Hematology Genetics Module",
+      "body": "Supports inherited hematologic diseases.\n\nSupports\n\n• Hemoglobinopathy Genetics\n• Bone Marrow Genetics\n• Coagulation Genetics\n• Family Screening\n• Genetic Counseling\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e4a924eebb3f2ee1581135b52a8f5480ea3149d3cd015a96b74c8b9270d03b97",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79145
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hemoglobinopathy Genetics",
+        "Bone Marrow Genetics",
+        "Coagulation Genetics",
+        "Family Screening",
+        "Genetic Counseling"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3258,
+      "title": "Pediatric Hematology Intelligence Registry",
+      "body": "Maintains AI-ready pediatric hematology datasets.\n\nSupports\n\n• Laboratory\n• Bone Marrow\n• Genetics\n• Transfusion\n• Imaging\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f24cffb6929b4ee82c5b634925c1a0f4b2e29d6ec2e15e6e451731c4e9b9e412",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79163
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Laboratory",
+        "Bone Marrow",
+        "Genetics",
+        "Transfusion",
+        "Imaging",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3259,
+      "title": "Pediatric Blood Disorders Intelligence Platform",
+      "body": "Coordinates pediatric hematologic disease management.\n\nIntegrates\n\n• Hematology\n• Oncology\n• Genetics\n• Transfusion Medicine\n• AI\n• Digital Twin\n\nSupports lifelong blood disease management beginning from infancy.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c9f1514be407af6e135c78a77d16ac3d673576f887b9cc48ddbaa34fd73ecef4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79182
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "Hematology",
+        "Oncology",
+        "Genetics",
+        "Transfusion Medicine",
+        "AI",
+        "Digital Twin"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 3260,
+      "title": "Clinical Pediatric Hematology Intelligence Hub",
+      "body": "Coordinates the complete pediatric hematology ecosystem.\n\nIntegrates\n\n• AI\n• Digital Twin\n• Genetics\n• Laboratory Medicine\n• Transfusion Medicine\n• Oncology\n• Telemedicine\n• Clinical Research\n\nProvides intelligent personalized hematologic care across the EDHT ecosystem.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "78090df41ca718a8e839cc908684bcb3bafbeb3982bf759e1b309ae5b45da7db",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 79203
+      },
+      "verdict": "Pediatric hematology/oncology retains diagnostic subtype, specimen/pathology and laboratory provenance, treatment episodes and long-term outcomes. Transfusion compatibility, chemotherapy authorization and research eligibility are separate human-governed workflows. AI trial matching, imaging or risk output does not authorize therapy or establish clinical efficacy.",
+      "feature_labels": [
+        "AI",
+        "Digital Twin",
+        "Genetics",
+        "Laboratory Medicine",
+        "Transfusion Medicine",
+        "Oncology",
+        "Telemedicine",
+        "Clinical Research"
+      ],
+      "date": "2026-09-14"
+    }
+  ]
+}

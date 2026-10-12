@@ -1,0 +1,2193 @@
+{
+  "pass": "MASTER-12",
+  "baseline_commit": "53c4fe4647f200df6c4f867acc6b044a6b728ab4",
+  "batch": 2,
+  "label": "MEDICATION-401-430-EXCEPT-425",
+  "date": "2026-09-16",
+  "count": 29,
+  "reviews": [
+    {
+      "original_id": 401,
+      "title": "Pharmacy Medication Search",
+      "eligible": true,
+      "main_purpose": "Allows searching medications across participating pharmacies.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-PHARMACY",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-PHARMACY",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-PHARMACY",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 6,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Allows searching medications across participating pharmacies.",
+            "sha256": "8b107b6041e42d23ea6f91db172d1dcc321f96bede704b62a04a9a78684a27d8"
+          },
+          {
+            "line": 7,
+            "text": "• Brand Name",
+            "sha256": "7040f26507fbf68ed26bf323c2864d920d2e486d774c94253e55e664644556c6"
+          },
+          {
+            "line": 9,
+            "text": "• Generic Name",
+            "sha256": "f7f6f7a50e223ea63180a312059bc6015a4adc77f443a91a27cab3d2b2c9f3c0"
+          },
+          {
+            "line": 11,
+            "text": "• ATC Classification",
+            "sha256": "48e7958a23989e8c78f2c8a603b22268b6da9e5964fbce618453a62f662d32d0"
+          },
+          {
+            "line": 13,
+            "text": "• Barcode",
+            "sha256": "5b42a33c0dc796f1f7053d235c5e6136e1d3d3a302b91a2299b46d450d672ae3"
+          },
+          {
+            "line": 15,
+            "text": "• Manufacturer",
+            "sha256": "05d26274ec9de096e6ecb12541eb6b5a92ba4bdb54e3eb365adea5c8439d0020"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-PRESCRIPTION",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Search preserves brand/generic/ATC/barcode/manufacturer; a search match does not establish dispensing eligibility or availability.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23585,
+        "body_sha256": "d6c486823ea54ecb20448e1907dee454051327a838578d1ed510d996d0af10e4",
+        "original_id": 401
+      },
+      "source_body": "# Pharmacy Medication Search\n\nAllows searching medications across participating pharmacies.\n\nSupports\n\n• Brand Name\n\n• Generic Name\n\n• ATC Classification\n\n• Barcode\n\n• Manufacturer\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-PHARMACY|medication"
+    },
+    {
+      "original_id": 402,
+      "title": "Pharmacy Medication Availability",
+      "eligible": true,
+      "main_purpose": "Displays medicine availability in nearby pharmacies.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-PHARMACY",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-PHARMACY",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-PHARMACY",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays medicine availability in nearby pharmacies.",
+            "sha256": "5390adc49837a3fc271a880b936ac962d2d4c7dc6cd020fbdbc9957210bc131c"
+          },
+          {
+            "line": 7,
+            "text": "• Real-time Availability",
+            "sha256": "e3a52e01e47a482ae3e7634886bfd8c5231fc81e2d1d96bce46da41cf8324145"
+          },
+          {
+            "line": 9,
+            "text": "• Branch Comparison",
+            "sha256": "febe86062c050699383d28a8524e8e2534913acaf4c74a90367636b52e1cb05c"
+          },
+          {
+            "line": 11,
+            "text": "• Alternative Pharmacies",
+            "sha256": "f9837084c07f8a9bc144bba3e48786e8d0c9683408d633e8105d0d2efa9b33aa"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-PRESCRIPTION",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Availability and branch alternatives require timestamp/source and stock uncertainty; real-time is an unverified integration requirement.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23609,
+        "body_sha256": "cefa3699312eec04aac379d52bece1868b1f8253be89474d2777f5a7c116e9c7",
+        "original_id": 402
+      },
+      "source_body": "# Medication Availability\n\nDisplays medicine availability in nearby pharmacies.\n\nSupports\n\n• Real-time Availability\n\n• Branch Comparison\n\n• Alternative Pharmacies\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-PHARMACY|medication"
+    },
+    {
+      "original_id": 403,
+      "title": "Pharmacy Generic Alternatives",
+      "eligible": true,
+      "main_purpose": "Displays approved generic equivalents.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-PHARMACY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays approved generic equivalents.",
+            "sha256": "41d1ca45446ab81261d98a2620d6c6266b071f274d693a970a1785955350a55c"
+          },
+          {
+            "line": 7,
+            "text": "• INN Matching",
+            "sha256": "3a782d952915fdb0878168c0fde0c6213789937ba2991b0fa4871845baccf3bb"
+          },
+          {
+            "line": 9,
+            "text": "• Dosage Comparison",
+            "sha256": "f015131caacf3a3f5e75e3bad01556251767c40bb77da66fd8aa6ac844066ec1"
+          },
+          {
+            "line": 11,
+            "text": "• Manufacturer Comparison",
+            "sha256": "8f8ff4479a99e179de1c968186a7ac27789b02f83816f3de4d8a2b739cff48f5"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-PHARMACY"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "INN, dosage and manufacturer comparison does not establish interchangeability; preserve formulation/strength/route and jurisdiction-specific approval before clinician/pharmacist substitution.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23629,
+        "body_sha256": "bdad2980b19a496103fb873db349512233a69ac30d0dafd830a9ef4653b81e68",
+        "original_id": 403
+      },
+      "source_body": "# Generic Alternatives\n\nDisplays approved generic equivalents.\n\nSupports\n\n• INN Matching\n\n• Dosage Comparison\n\n• Manufacturer Comparison\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 404,
+      "title": "Pharmacy Drug Interaction Center",
+      "eligible": true,
+      "main_purpose": "Displays known interactions between medications.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-CDS",
+      "likely_architecture_layer": "AI / CDS PROFILE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CDS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CDS",
+        "CAP-MEDICATION",
+        "CAP-PHARMACY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays known interactions between medications.",
+            "sha256": "b8d610d8b0cc22b8de29c59b70ce53c8e40f43e65000456e0b0c51b9196c0aef"
+          },
+          {
+            "line": 7,
+            "text": "• Major Interactions",
+            "sha256": "593fff9410491b68b16078f58428830b61d3bd95a6dc95f568ac1f91d5b01461"
+          },
+          {
+            "line": 9,
+            "text": "• Moderate Interactions",
+            "sha256": "0f70f9e463cff4bab1fe8c7a481b3d214b3c0dd4553b39dcc54dc74f835da15f"
+          },
+          {
+            "line": 11,
+            "text": "• Minor Interactions",
+            "sha256": "3f614f8b009c55cb01553e589a27bf151ba25f7da1c0adf19e59f8d8482f48ca"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY",
+        "CAP-PHARMACY"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Major/moderate/minor interactions require licensed versioned knowledge and current complete medication context; absence of a hit is not proof of safety.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23649,
+        "body_sha256": "4fddc8baf59b4c21c049a999ceecc36ba9b12744fa9e86b5be26fee9dd13c2a7",
+        "original_id": 404
+      },
+      "source_body": "# Drug Interaction Center\n\nDisplays known interactions between medications.\n\nSupports\n\n• Major Interactions\n\n• Moderate Interactions\n\n• Minor Interactions\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CDS|medication"
+    },
+    {
+      "original_id": 405,
+      "title": "Medication Contraindications",
+      "eligible": true,
+      "main_purpose": "Displays contraindications for prescribed medicines.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-CDS",
+      "likely_architecture_layer": "AI / CDS PROFILE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CDS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CDS",
+        "CAP-MEDICATION",
+        "CAP-PRESCRIPTION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays contraindications for prescribed medicines.",
+            "sha256": "a17a2241c54c94c4650569a219d6395b52e1ac80ec8b335079b1dbdec2ed6d0d"
+          },
+          {
+            "line": 7,
+            "text": "• Diseases",
+            "sha256": "042a48d93c8c2d2486a1e3b7279ec9a16869df85fcbdd5ffd6672005ea8daa9e"
+          },
+          {
+            "line": 9,
+            "text": "• Pregnancy",
+            "sha256": "8521e95db029d48ec3f358590c5528896beb24348fd93f7a3e2f60b6a0f4d955"
+          },
+          {
+            "line": 11,
+            "text": "• Lactation",
+            "sha256": "a0a63a9bb7a983af023b4966b83219da35c584e4fcd44d844d39044794c150ae"
+          },
+          {
+            "line": 13,
+            "text": "• Age Restrictions",
+            "sha256": "76a2e40e6c37254208f4819432eae0bbd6066e5c7d27bc8ab8636d217eefe9f9"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY",
+        "CAP-PRESCRIPTION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Disease, pregnancy, lactation and age contraindications require population/applicability and current evidence; no automatic prescribing or exclusion based on missing history.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23669,
+        "body_sha256": "7b0efe3ded2f24335f731510012d33e6cf60d4e91751c7ce0e25f8ab0012fda4",
+        "original_id": 405
+      },
+      "source_body": "# Medication Contraindications\n\nDisplays contraindications for prescribed medicines.\n\nSupports\n\n• Diseases\n\n• Pregnancy\n\n• Lactation\n\n• Age Restrictions\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CDS|medication"
+    },
+    {
+      "original_id": 406,
+      "title": "Medication Side Effect Database",
+      "eligible": true,
+      "main_purpose": "Displays documented adverse reactions.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays documented adverse reactions.",
+            "sha256": "747e51330d73a7bf2a81b9279efec3b3081a2add817820ca39624d5b8be8f69c"
+          },
+          {
+            "line": 7,
+            "text": "• Common",
+            "sha256": "90a94ddb74673fcf5fd0bbe01b95986a37324a78e647ce9fad6fd33cd778ed35"
+          },
+          {
+            "line": 9,
+            "text": "• Rare",
+            "sha256": "e1c4c51c41e16fa0c44f01cc75eccd5cee6b9b9b72466378dc86ea95d356b2ab"
+          },
+          {
+            "line": 11,
+            "text": "• Serious",
+            "sha256": "485b7bc0366a7bde94eadd4b564fe0ed86e0d9cf524e92cebe15f1ab9f7556fb"
+          },
+          {
+            "line": 13,
+            "text": "• Frequency",
+            "sha256": "9fe61f5de13b1f33bcb4dc56c67e9634c21e20ea012db4e2bf3fcc074126bd55"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Common/rare/serious and frequency claims retain evidence source, formulation and population; observed adverse events are separate from reference knowledge.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23691,
+        "body_sha256": "cb3c042566fdb7cb68af8d1096a22d6d03c24e69142497d241c6d04dff6c2684",
+        "original_id": 406
+      },
+      "source_body": "# Medication Side Effects\n\nDisplays documented adverse reactions.\n\nSupports\n\n• Common\n\n• Rare\n\n• Serious\n\n• Frequency\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 407,
+      "title": "Medication Storage Instructions",
+      "eligible": true,
+      "main_purpose": "Displays manufacturer storage recommendations.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays manufacturer storage recommendations.",
+            "sha256": "a9b09425a5c8ee7a4c29fab1a3d45ec8b22f1020fbb6c21608bf4fabb3c6549a"
+          },
+          {
+            "line": 7,
+            "text": "• Temperature",
+            "sha256": "4a693dbc60f1bf5928003cbfedba57de6944c1c3a0acc9370cfde2fdf0276fe7"
+          },
+          {
+            "line": 9,
+            "text": "• Humidity",
+            "sha256": "d9d3b67b09a3a9e48e50d01e214f30e1c5a3ec0b0a7dbd5e2aaad9abad55e798"
+          },
+          {
+            "line": 11,
+            "text": "• Shelf Life",
+            "sha256": "f8b566c648c57f43ee5f28ff4ebe44e8f1f584a9194275e8c3cbe42621f836db"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Temperature/humidity/shelf-life instructions retain exact manufacturer/product/formulation release; no generic storage assumption after opening or excursion.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23713,
+        "body_sha256": "fe7b5af93dadb74cbd672c517e08b4b2633c64c241e5fe4100df112759c3abbc",
+        "original_id": 407
+      },
+      "source_body": "# Medication Storage\n\nDisplays manufacturer storage recommendations.\n\nSupports\n\n• Temperature\n\n• Humidity\n\n• Shelf Life\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 408,
+      "title": "Medication Expiration Monitoring",
+      "eligible": true,
+      "main_purpose": "Tracks expiration dates of user medications.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-OPERATIONS",
+        "CAP-NOTIFICATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 3,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Tracks expiration dates of user medications.",
+            "sha256": "15d98bdf6651fcc440d851a511eee491adc8beb73dae5ca7912f6f0665e67233"
+          },
+          {
+            "line": 7,
+            "text": "• Notifications",
+            "sha256": "83ce79328c85f715dc589594c598958bdc6fb2b80ce801a4059ca761f2d2ffe7"
+          },
+          {
+            "line": 9,
+            "text": "• Replacement Planning",
+            "sha256": "b11c5f38c11e1c2a2bc352dbe31674cb549dc3112d0d7cdd13e85969a33d0a44"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-OPERATIONS",
+        "CAP-NOTIFICATIONS"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Expiry observation retains packaging/source and date semantics; notifications do not authorize replacement, treatment interruption or disposal.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23733,
+        "body_sha256": "ac334127408df87dda3880e6234e51d27c5c3c241be8425b5d4a67367118a4c4",
+        "original_id": 408
+      },
+      "source_body": "# Medication Expiration\n\nTracks expiration dates of user medications.\n\nSupports\n\n• Notifications\n\n• Replacement Planning\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 409,
+      "title": "Medication Recall Center",
+      "eligible": true,
+      "main_purpose": "Provides official medication recall notifications.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-NOTIFICATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Provides official medication recall notifications.",
+            "sha256": "3272221bfe2a0b90e48c64b362a0b3f5c68e7d64b559165b8c4bdc8a1bca00c7"
+          },
+          {
+            "line": 7,
+            "text": "• Batch Numbers",
+            "sha256": "035e5c7e2692427bf27bbcc7d8c980aa085af4f06ccbc59c2a47792d49da24d4"
+          },
+          {
+            "line": 9,
+            "text": "• Manufacturer Notices",
+            "sha256": "4ce40d317bed89825f4b8bc0edf731fc8a51ea3168dbc4f8099d661976d990aa"
+          },
+          {
+            "line": 11,
+            "text": "• Safety Alerts",
+            "sha256": "be8c3d35839fc2527b212d2b4101215a53925049bc7fde17f044f9471976ce78"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-NOTIFICATIONS"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Recall matches require authoritative notice/product/batch identity and update time. Missing batch is unknown, not a negative match; acknowledgement and clinical action are distinct.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23751,
+        "body_sha256": "e9a96f6c470c5b9bca762e5b55968dfc1ec1d44e0e8e78fcb9d86b202333f06e",
+        "original_id": 409
+      },
+      "source_body": "# Medication Recall Center\n\nProvides official medication recall notifications.\n\nSupports\n\n• Batch Numbers\n\n• Manufacturer Notices\n\n• Safety Alerts\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 410,
+      "title": "Medication Barcode Scanner",
+      "eligible": true,
+      "main_purpose": "Scans medication packaging.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-QR"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Scans medication packaging.",
+            "sha256": "12040ac65286b0bf9993b2e57ff1856cb850f0e2e3e36015ff8b927c71376e23"
+          },
+          {
+            "line": 7,
+            "text": "• Barcode",
+            "sha256": "5b42a33c0dc796f1f7053d235c5e6136e1d3d3a302b91a2299b46d450d672ae3"
+          },
+          {
+            "line": 9,
+            "text": "• QR Code",
+            "sha256": "c7318b3a062d3e688c6dc1a8051fef7baeac67c07cb458d57105771b5435aa78"
+          },
+          {
+            "line": 11,
+            "text": "• Package Identification",
+            "sha256": "9254402afa2603fb1354d39f5c6c8fb3736d1a09e11c8c9c7084f47e974e0bb5"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-QR"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Barcode/QR/package identification is a candidate product link, not authenticity, active-ingredient equivalence or dispensing approval.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23771,
+        "body_sha256": "c150b22eb5728a5dc4d210a89304c3975a1e4cf9a0a21d9c1e1413aea6942283",
+        "original_id": 410
+      },
+      "source_body": "# Medication Barcode Scanner\n\nScans medication packaging.\n\nSupports\n\n• Barcode\n\n• QR Code\n\n• Package Identification\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 411,
+      "title": "Medication Image Recognition",
+      "eligible": true,
+      "main_purpose": "Identifies medications using package images.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "neurology",
+      "subdomain": [
+        "neurology"
+      ],
+      "capability": "CAP-AI",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-AI",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-AI",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 3,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Identifies medications using package images.",
+            "sha256": "258b056bc7caac53034b61fd667732548a69461dbb7c88414f96b66816641c28"
+          },
+          {
+            "line": 7,
+            "text": "• Package Recognition",
+            "sha256": "6ce591239a11123f937282e1950eee024b75cd8be94d662777d0921ce91f6a4a"
+          },
+          {
+            "line": 9,
+            "text": "• Pill Recognition",
+            "sha256": "0605d73592526e1fe1113c8f52903d7c8ad9ae5acd9919c5594969309359bd48"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Pill/package recognition requires validated image conditions, model uncertainty and human verification; never recommend consumption from an image match.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23791,
+        "body_sha256": "f36c764f290f1a549cf1be30962a21ccb675e344e4e9dbdad77cc9f36acd3867",
+        "original_id": 411
+      },
+      "source_body": "# Medication Image Recognition\n\nIdentifies medications using package images.\n\nSupports\n\n• Package Recognition\n\n• Pill Recognition\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-AI|neurology"
+    },
+    {
+      "original_id": 412,
+      "title": "Medication Dose Calculator",
+      "eligible": true,
+      "main_purpose": "Assists in calculating prescribed doses.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-CDS",
+      "likely_architecture_layer": "AI / CDS PROFILE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CDS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CDS",
+        "CAP-MEDICATION",
+        "CAP-PRESCRIPTION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 3,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Assists in calculating prescribed doses.",
+            "sha256": "c6708f9eeeab374cc81d05e11864ab0510bc87a2c576f291f98de93b6e673fcf"
+          },
+          {
+            "line": 7,
+            "text": "• Weight-based Calculations",
+            "sha256": "63c9edfef87d287c0de1b20762d7e144d47b06052a17f19d8d2e4c7a2b0e1df9"
+          },
+          {
+            "line": 9,
+            "text": "• Age-based Calculations",
+            "sha256": "3c3802a4e6475f9d41f0c000bcab850b393d1cf84c9c07050733307b246f5fc8"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY",
+        "CAP-PRESCRIPTION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Weight/age dose calculations require units, current measurements, exact product/route, organ context, ceilings and independently validated equations. No dose formula or autonomous order is established by this source.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23809,
+        "body_sha256": "694bcd7b32121ab2a302f07b8ddc93c3b258ce912bff0efd0848660b360ec2eb",
+        "original_id": 412
+      },
+      "source_body": "# Dose Calculator\n\nAssists in calculating prescribed doses.\n\nSupports\n\n• Weight-based Calculations\n\n• Age-based Calculations\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CDS|medication"
+    },
+    {
+      "original_id": 413,
+      "title": "Pediatric Medication Guide",
+      "eligible": true,
+      "main_purpose": "Displays medication information for pediatric use.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "pediatric"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-SPECIALTY"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays medication information for pediatric use.",
+            "sha256": "25626fc208bd8f67e08253df5e4b69ac89a1677f1cce882c24380135c7c79b31"
+          },
+          {
+            "line": 7,
+            "text": "• Age",
+            "sha256": "cf43ebb44e49518e438d4fab2086bfaa7481c021a5ed066bfe32f4fbd0d5fbac"
+          },
+          {
+            "line": 9,
+            "text": "• Weight",
+            "sha256": "7f3b5c6f3a8ece70f16a7f3ddd476889b0b93aa3e520c94c150ec8924e25c202"
+          },
+          {
+            "line": 11,
+            "text": "• Pediatric Restrictions",
+            "sha256": "1a0f9077a67c566951b5f26617a4c39c3c820c1e9ebd5e0463724aafdc80a4c7"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SPECIALTY"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Pediatric age/weight/restrictions need gestational/chronological context and approved product applicability; no adult-dose scaling or inferred safe threshold.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23827,
+        "body_sha256": "58b5c006e1c98f28cbc6430ddf954042457c67e8d9f2fffef2278de8acf42dbf",
+        "original_id": 413
+      },
+      "source_body": "# Pediatric Medication Guide\n\nDisplays medication information for pediatric use.\n\nSupports\n\n• Age\n\n• Weight\n\n• Pediatric Restrictions\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 414,
+      "title": "Pregnancy Medication Safety",
+      "eligible": true,
+      "main_purpose": "Displays pregnancy-related medication information.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "reproductive",
+      "subdomain": [
+        "reproductive"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 3,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays pregnancy-related medication information.",
+            "sha256": "f2b2a58c288919f07f3d01e60e777779e723fd4a593179d67e47732c66693517"
+          },
+          {
+            "line": 7,
+            "text": "• Trimester Information",
+            "sha256": "a60145315d246e5202a12ae3a32f01d5a39b1e01dcc96129f04ee56119753e04"
+          },
+          {
+            "line": 9,
+            "text": "• Safety Categories",
+            "sha256": "7a856449f8e74c25f03a72f7cf1c15f52ab45db949114ac857056cda349dccfa"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Pregnancy trimester and historical safety categories require current qualified evidence and patient context. A category alone cannot rank safety or choose treatment.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23847,
+        "body_sha256": "776658ee5d3a63a003cd6b25defec70e5b057c83d075c69ecbbf2fbbd70c3003",
+        "original_id": 414
+      },
+      "source_body": "# Pregnancy Medication Safety\n\nDisplays pregnancy-related medication information.\n\nSupports\n\n• Trimester Information\n\n• Safety Categories\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|reproductive"
+    },
+    {
+      "original_id": 415,
+      "title": "Breastfeeding Medication Guide",
+      "eligible": true,
+      "main_purpose": "Displays medication safety during breastfeeding.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 3,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays medication safety during breastfeeding.",
+            "sha256": "82a259c9c30a0eb0e3a6d27ac4a0e2c26af53e3b5f80c640a79bee94e4d691de"
+          },
+          {
+            "line": 7,
+            "text": "• Lactation Recommendations",
+            "sha256": "89582d43f82a80834066e16efdba51002939ed7beec4136f8fdbaf328d6478f3"
+          },
+          {
+            "line": 9,
+            "text": "• Alternative Medicines",
+            "sha256": "a06d88998fb20bda4f389d6e2b290300282ad32d71c430e4eb946a2c2ca45e84"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Lactation guidance/alternatives depend on product, infant and exposure context; alternatives are not automatic substitutions and missing evidence is explicit.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23865,
+        "body_sha256": "b2ec9cd629cad35898876b5fb33558b8c610a3fbfccb5f45fb98717a393b2714",
+        "original_id": 415
+      },
+      "source_body": "# Breastfeeding Medication Guide\n\nDisplays medication safety during breastfeeding.\n\nSupports\n\n• Lactation Recommendations\n\n• Alternative Medicines\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 416,
+      "title": "Medication Reminder Center",
+      "eligible": true,
+      "main_purpose": "Schedules medication reminders.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-NOTIFICATIONS",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-NOTIFICATIONS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-NOTIFICATIONS",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Schedules medication reminders.",
+            "sha256": "c1b200bdf2b9163c0f03f71ca62a2be63c917e5fe249deb567098611a0e27564"
+          },
+          {
+            "line": 7,
+            "text": "• Daily Schedule",
+            "sha256": "13cd4db29d722f772af653e77f493239bd49c708cdfb2d6471f00706bbee8efc"
+          },
+          {
+            "line": 9,
+            "text": "• Weekly Schedule",
+            "sha256": "d2d6ae68c8e79cd3d0eeea4ca2966ac0a56d5ee1a06665c5bec1a3ec6caf4f3e"
+          },
+          {
+            "line": 11,
+            "text": "• Missed Dose Alerts",
+            "sha256": "280b44d6fd2c1d075533443ec0e7cce0d67efce5fc337c3641d4e191e2bed7b1"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Daily/weekly/missed-dose reminders follow an authorized schedule and version; delivery/acknowledgement does not prove ingestion and never creates a catch-up instruction.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23883,
+        "body_sha256": "f99503e9b08e86663f4102a5eb6b937bcc7d0f7cc8417b59348e46c2fa0332f3",
+        "original_id": 416
+      },
+      "source_body": "# Medication Reminder Center\n\nSchedules medication reminders.\n\nSupports\n\n• Daily Schedule\n\n• Weekly Schedule\n\n• Missed Dose Alerts\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-NOTIFICATIONS|medication"
+    },
+    {
+      "original_id": 417,
+      "title": "Missed Dose Guidance",
+      "eligible": true,
+      "main_purpose": "Provides manufacturer-approved guidance regarding missed medication doses.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 1,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Provides manufacturer-approved guidance regarding missed medication doses.",
+            "sha256": "df9049657dc90911fd030e50e715f492415058d8096da5438f76ff3946ee963b"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Missed-dose guidance needs exact current manufacturer/product regimen and qualified escalation when unclear. Do not synthesize double-dose or timing rules.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23903,
+        "body_sha256": "38c2f864cca72198467fa647e3ce67ea32ad19f2ebe25254c731680663aa9593",
+        "original_id": 417
+      },
+      "source_body": "# Missed Dose Guidance\n\nProvides manufacturer-approved guidance regarding missed medication doses.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 418,
+      "title": "Medication Compliance Monitoring",
+      "eligible": true,
+      "main_purpose": "Tracks medication adherence.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-OPERATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Tracks medication adherence.",
+            "sha256": "2b694579b1abba52ca8eea1af1e024b7e6259152c05c1e182887769e1d5481c9"
+          },
+          {
+            "line": 7,
+            "text": "• Daily Compliance",
+            "sha256": "b6e5ae091839195ddc07f471053e68a107655cbe7c5f9348da712410388ebad5"
+          },
+          {
+            "line": 9,
+            "text": "• Weekly Compliance",
+            "sha256": "fef7dd9a5df90706cc74028662ced0a9216ee0532cc68cddb9d39e5fce59f0dc"
+          },
+          {
+            "line": 11,
+            "text": "• Monthly Compliance",
+            "sha256": "22b38ffee77ea85f67099403a6ec238d72e154bc945e04a3fe9c25a758a6c1a4"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-OPERATIONS"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Daily/weekly/monthly adherence distinguishes reported, inferred, unknown and observed exposure; no moral label or inferred clinical effect.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23915,
+        "body_sha256": "584c561b17b842334e0a74fc8d872e839b074e95ab38b65340dff37ee34b0e85",
+        "original_id": 418
+      },
+      "source_body": "# Medication Compliance\n\nTracks medication adherence.\n\nSupports\n\n• Daily Compliance\n\n• Weekly Compliance\n\n• Monthly Compliance\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 419,
+      "title": "Medication Therapy History",
+      "eligible": true,
+      "main_purpose": "Stores complete medication treatment history.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 1,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores complete medication treatment history.",
+            "sha256": "a28bb6971f5c90134be54b06b1aa37cfca0097f40f583279ef1ab4fe9a948201"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Treatment history preserves attributed start/stop/correction and reported-versus-prescribed/dispensed/administered distinctions; complete history is not guaranteed.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23935,
+        "body_sha256": "a89761c3e2447c54c0e6a584409b5c6106cc7c4ce5ae06adae9cead7c4a483cc",
+        "original_id": 419
+      },
+      "source_body": "# Medication Therapy History\n\nStores complete medication treatment history.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 420,
+      "title": "Medication Timeline",
+      "eligible": true,
+      "main_purpose": "Displays medication history chronologically.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 2,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays medication history chronologically.",
+            "sha256": "90cdd6c1aa9d0a4b537a079068c0fccc8d236f9adbb8d2027310c5a2b43a3961"
+          },
+          {
+            "line": 5,
+            "text": "Integrated with Medical Timeline.",
+            "sha256": "db581bf5ed6e2ec4ff4fdad51608b8a691cab6e0478e34756c60e3113280a0d3"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Medication chronology references source-owned exposure and version/time rather than rewriting clinical facts; out-of-order corrections remain visible.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23947,
+        "body_sha256": "3c100620f24d188d28b78df3845d888b5d71d83dfb3b85fb694ceb40ed91a75c",
+        "original_id": 420
+      },
+      "source_body": "# Medication Timeline\n\nDisplays medication history chronologically.\n\nIntegrated with Medical Timeline.\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 421,
+      "title": "Medication Renewal Planner",
+      "eligible": true,
+      "main_purpose": "Helps users plan prescription renewals.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION",
+        "CAP-PRESCRIPTION",
+        "CAP-PHARMACY",
+        "CAP-NOTIFICATIONS"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Helps users plan prescription renewals.",
+            "sha256": "6584cb59d567f5332a90df1bcfb036bfc07556289b1f361bc22513d2524ff9c0"
+          },
+          {
+            "line": 7,
+            "text": "• Renewal Date",
+            "sha256": "6c6f8141489507e0c98224a4218f2ff4e92306e2530dcfe6bda64b4128d48aa0"
+          },
+          {
+            "line": 9,
+            "text": "• Remaining Supply",
+            "sha256": "2d49e6d392d2cb797648dd407401414891defa57f9960e0d803c6587fa812c9f"
+          },
+          {
+            "line": 11,
+            "text": "• Physician Reminder",
+            "sha256": "7d146b42588545ec2fba1ad1bd44592f8b1256dfe65884c045e789c4ab6afbb3"
+          },
+          {
+            "line": 13,
+            "text": "• Pharmacy Reminder",
+            "sha256": "4c1023bbaabc798b547db77d83f5ae66209a766001238e8922bd3a2ef87e1633"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-PRESCRIPTION",
+        "CAP-PHARMACY",
+        "CAP-NOTIFICATIONS"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Renewal planning tracks date/supply and recipient reminders; it cannot issue a prescription or promise authorization or pharmacy stock.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23961,
+        "body_sha256": "2d9eddc1614107846b1a8e7d82c433111508fc563bf54eb6bddfac1a01e97272",
+        "original_id": 421
+      },
+      "source_body": "# Medication Renewal Planner\n\nHelps users plan prescription renewals.\n\nSupports\n\n• Renewal Date\n\n• Remaining Supply\n\n• Physician Reminder\n\n• Pharmacy Reminder\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 422,
+      "title": "Medication Stock Management",
+      "eligible": true,
+      "main_purpose": "Tracks medication quantities at home.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Tracks medication quantities at home.",
+            "sha256": "c56e65503dcd845cf5fc49e7316fbac82468776a374ccedf9fc87f60e640c3c4"
+          },
+          {
+            "line": 7,
+            "text": "• Current Quantity",
+            "sha256": "eb49087939d36ea818d64ffd8005281490bb35bfa4ada641b4dfde21f2a98f06"
+          },
+          {
+            "line": 9,
+            "text": "• Daily Consumption",
+            "sha256": "b7324d83b0dc0ba4bf2736faae71ea3c1a9311408b1efd51b0630a6e98d3f0d9"
+          },
+          {
+            "line": 11,
+            "text": "• Low Stock Alerts",
+            "sha256": "85481517d405d7d567a1ccce8b88059f164e5289f43d783b689d01109f42fdd2"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Home quantity/consumption/low-stock tracking retains unit, product and source uncertainty; consumption estimates are not verified administration.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 23983,
+        "body_sha256": "cd5b41f2d7ef3bf5f821fdef5cd1ab15eb9b45c1d32ef87368756c8f817a7099",
+        "original_id": 422
+      },
+      "source_body": "# Medication Stock Management\n\nTracks medication quantities at home.\n\nSupports\n\n• Current Quantity\n\n• Daily Consumption\n\n• Low Stock Alerts\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 423,
+      "title": "Medication Consumption Statistics",
+      "eligible": true,
+      "main_purpose": "Analyzes long-term medication usage.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Analyzes long-term medication usage.",
+            "sha256": "9c1f2ce6b5190ba4633a89960d7409698ed6aec144919e90eb9a5efd0c06ec4d"
+          },
+          {
+            "line": 7,
+            "text": "• Daily Statistics",
+            "sha256": "aea6c4de4e67889c6d9d0955c69baedfa91b3d218d85a354cffea4cfdb9e192f"
+          },
+          {
+            "line": 9,
+            "text": "• Monthly Statistics",
+            "sha256": "ff20e7542742bfb07430faa072d579284d3f3e02f2381885170cfb4ae771967e"
+          },
+          {
+            "line": 11,
+            "text": "• Annual Statistics",
+            "sha256": "6f443d0c895a9effb84ebcc0466d9867a0ef1f9322ddb555929337818f09d144"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Usage statistics preserve period, denominator, missingness and source type; counts of packages or reminders are not clinical adherence outcomes.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24003,
+        "body_sha256": "b13398bac2bd6ca36bd47b5d4a4cad30151b1e011f94df63e7f3f176151e7a62",
+        "original_id": 423
+      },
+      "source_body": "# Medication Consumption Statistics\n\nAnalyzes long-term medication usage.\n\nSupports\n\n• Daily Statistics\n\n• Monthly Statistics\n\n• Annual Statistics\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 424,
+      "title": "Controlled Medication Registry",
+      "eligible": true,
+      "main_purpose": "Stores information about controlled prescription medicines.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-PRESCRIPTION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-PRESCRIPTION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-PRESCRIPTION",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores information about controlled prescription medicines.",
+            "sha256": "5a90719a1c0f52078546eb37a04f571af1ebff6b439f1b2fefa3288a860689c2"
+          },
+          {
+            "line": 7,
+            "text": "• Prescription Number",
+            "sha256": "b976d30f2074ae06d54784b244696ddf468c6d4c14d51202d042cb457f694e70"
+          },
+          {
+            "line": 9,
+            "text": "• Issue Date",
+            "sha256": "6a30526c854728c018c236cb07c08e431e2a8e300d4a09b6e5838ecf338ded36"
+          },
+          {
+            "line": 11,
+            "text": "• Expiration Date",
+            "sha256": "c2467b05b027fbf72b64c4b01863dbfb13c7f534d71763c71c0b9a8bb226caf9"
+          },
+          {
+            "line": 13,
+            "text": "• Authorized Quantity",
+            "sha256": "2089a09221d78dce0ffa616da0dcfe249c18cb04b24164b6d2a65ef688c12e3a"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-MEDICATION",
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Controlled medicine identifiers/date/expiry/quantity require current jurisdiction/issuer authority and immutable amendments; registry presence never grants dispensing or transport permission.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24023,
+        "body_sha256": "afb8407916fe8d1ee7edd1445c4539aac4589e0ceb687b7f2c817421d3bacdae",
+        "original_id": 424
+      },
+      "source_body": "# Controlled Medication Registry\n\nStores information about controlled prescription medicines.\n\nSupports\n\n• Prescription Number\n\n• Issue Date\n\n• Expiration Date\n\n• Authorized Quantity\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-PRESCRIPTION|medication"
+    },
+    {
+      "original_id": 426,
+      "title": "Customs Medication Declaration",
+      "eligible": true,
+      "main_purpose": "Stores customs declarations related to transported medications.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-TRAVEL",
+      "likely_architecture_layer": "DOMAIN CORE",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-TRAVEL",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-TRAVEL",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Stores customs declarations related to transported medications.",
+            "sha256": "2c1225fec193939a3bce5003549f5d9670fc0264c62f598f21e45d587df0982a"
+          },
+          {
+            "line": 7,
+            "text": "• Country",
+            "sha256": "f647e26674bcfff769f8ed78634cfd0ff883074851b8ad79b82adfcac6f7b889"
+          },
+          {
+            "line": 9,
+            "text": "• Entry Date",
+            "sha256": "6b16f2483c8c06a80d9b0087c74643d6c72d7b15a78ed092c8667ddb0eb9fc3b"
+          },
+          {
+            "line": 11,
+            "text": "• Medication List",
+            "sha256": "5772106ff66b86890fb84c47c8c949b2552d6c1ae84c42fcca5d86580a0d094b"
+          },
+          {
+            "line": 13,
+            "text": "• Documentation Archive",
+            "sha256": "44a8a7b495a625dffbdfd3259dfa7624f8944db85d3eb2f3cbf6096da8cffa7a"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-PROFILE",
+        "CAP-CONSENT",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Customs declaration links country/entry date/medication and original documents with purpose-limited disclosure; storage is not legal acceptance.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24067,
+        "body_sha256": "2d336d896932ce1bdd5b0aeeb0cb2e1e6bdc9d6615658722690a4659765b0c8a",
+        "original_id": 426
+      },
+      "source_body": "# Customs Medication Declaration\n\nStores customs declarations related to transported medications.\n\nSupports\n\n• Country\n\n• Entry Date\n\n• Medication List\n\n• Documentation Archive\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-TRAVEL|medication"
+    },
+    {
+      "original_id": 427,
+      "title": "International Medication Regulations",
+      "eligible": true,
+      "main_purpose": "Displays country-specific medication regulations.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-TRAVEL",
+      "likely_architecture_layer": "DOMAIN CORE",
+      "clinical_risk": "NO_HIGH_RISK_TRIGGER_DETECTED_NOT_CERTIFIED",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-TRAVEL",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-TRAVEL",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 4,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays country-specific medication regulations.",
+            "sha256": "54f338eaf20cb1035e6e500695d2f1420419aee92edaa9358b82183cfa4e907a"
+          },
+          {
+            "line": 7,
+            "text": "• Import Rules",
+            "sha256": "8d7e8465aca29fe329614c41816ef28814b4d0adc794898b16b198ebf3da633e"
+          },
+          {
+            "line": 9,
+            "text": "• Controlled Medicines",
+            "sha256": "a89c3e0576ee55d8ef63018b92ac4beb0d8b881c9b065a2f22c412833328f834"
+          },
+          {
+            "line": 11,
+            "text": "• Required Documentation",
+            "sha256": "58c6e0bff830ff0fa0345d14c0d4f2c7cae07c353dca7854853bb1ff891dd8e4"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-PROFILE",
+        "CAP-CONSENT",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Import/controlled-drug documentation rules must be dated authoritative jurisdiction evidence; no current legal permission is inferred from generic module text.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24089,
+        "body_sha256": "a88534460e2f2714727f4863e69697ca98957ac7f0e51979dd1b6357f8df6e24",
+        "original_id": 427
+      },
+      "source_body": "# International Medication Regulations\n\nDisplays country-specific medication regulations.\n\nSupports\n\n• Import Rules\n\n• Controlled Medicines\n\n• Required Documentation\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-TRAVEL|medication"
+    },
+    {
+      "original_id": 428,
+      "title": "Medication Translation Center",
+      "eligible": true,
+      "main_purpose": "Provides multilingual translation of medication information.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-DOCUMENTS",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-DOCUMENTS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-DOCUMENTS",
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 5,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Provides multilingual translation of medication information.",
+            "sha256": "950d052d4ebac5e7e4c2171ceeb74f156af8e6bd05aa3e67a09fc7276eeef43f"
+          },
+          {
+            "line": 7,
+            "text": "• Generic Names",
+            "sha256": "a5e43e5c08c299173f106254856989de3e95aaadda9c6bda8aa982c2e5755cd6"
+          },
+          {
+            "line": 9,
+            "text": "• Brand Names",
+            "sha256": "60def454f65dd086c80afceb11d1bb4c0c30cfb4cfce9f6bf51085c13497c304"
+          },
+          {
+            "line": 11,
+            "text": "• Dosage Instructions",
+            "sha256": "5d4038984ca38b7abce6bd37852637f53499098e40dc3f467d0a01ad2f78ae12"
+          },
+          {
+            "line": 13,
+            "text": "• Warnings",
+            "sha256": "076f6fb1c9fcbdeb8229e55e532a04cf4b30086e0bae7a5a578358a461d618b7"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-MEDICATION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Translated generic/brand/dose/warning text is a versioned derivative requiring critical-field review; translation must not silently alter units or administration instructions.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24109,
+        "body_sha256": "4e394888c84479cef5ba5abcefab2796ea0c01e6322a7378e835c3e128adfb9f",
+        "original_id": 428
+      },
+      "source_body": "# Medication Translation Center\n\nProvides multilingual translation of medication information.\n\nSupports\n\n• Generic Names\n\n• Brand Names\n\n• Dosage Instructions\n\n• Warnings\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-DOCUMENTS|medication"
+    },
+    {
+      "original_id": 429,
+      "title": "Medication Information Sheet",
+      "eligible": true,
+      "main_purpose": "Displays official medication information.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-MEDICATION",
+      "likely_architecture_layer": "SHARED CAPABILITY",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-MEDICATION",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-MEDICATION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 6,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Displays official medication information.",
+            "sha256": "7855afe82357af3346164425d9cacac553dc13e0cf490c5212b58ad60650642d"
+          },
+          {
+            "line": 7,
+            "text": "• Indications",
+            "sha256": "fcb86f2a8c489ae88c7defde4a32eba1f59513abca61b8b6553f46d18ae7601e"
+          },
+          {
+            "line": 9,
+            "text": "• Contraindications",
+            "sha256": "01dda832982a51b3d9a07807f2e38f9f509c90fcaeddb5d7fb0674cbcd958a81"
+          },
+          {
+            "line": 11,
+            "text": "• Dosage",
+            "sha256": "87802fdaf12d4b112eeb385f8f4b2c9cbe3ec466d81c11111589e87e5e2a811a"
+          },
+          {
+            "line": 13,
+            "text": "• Side Effects",
+            "sha256": "c056b4d2e68f2b9d63683c827d99f4873f1c46a2f4ecf57dd3cf288ba86c253c"
+          },
+          {
+            "line": 15,
+            "text": "• Storage",
+            "sha256": "b70520d753024956aae5a7abbcf815c84312aa3a28bd4c0c27e05775220193fd"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Official indication/contraindication/dose/effect/storage sheets require exact product/source/version and jurisdiction. Displaying text does not validate treatment applicability.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24131,
+        "body_sha256": "800504c76a2e386d970ab062a1c47054e8e1a55aa7cf2c2a6fde459842d6c080",
+        "original_id": 429
+      },
+      "source_body": "# Medication Information Sheet\n\nDisplays official medication information.\n\nSupports\n\n• Indications\n\n• Contraindications\n\n• Dosage\n\n• Side Effects\n\n• Storage\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-MEDICATION|medication"
+    },
+    {
+      "original_id": 430,
+      "title": "Medication Allergy Cross Check",
+      "eligible": true,
+      "main_purpose": "Automatically compares prescribed medicines with registered allergies.",
+      "purpose_basis": "Non-heading sentence from source body",
+      "domain": "medication",
+      "subdomain": [
+        "medication"
+      ],
+      "capability": "CAP-CDS",
+      "likely_architecture_layer": "AI / CDS PROFILE",
+      "clinical_risk": "HIGH_RISK_PENDING_QUALIFIED_REVIEW",
+      "privacy_risk": "UNASSESSED",
+      "probable_canonical_owner": "CAP-CDS",
+      "owner_confidence": "CANDIDATE_ONLY",
+      "owner_candidates": [
+        "CAP-CDS",
+        "CAP-MEDICATION",
+        "CAP-ALLERGY",
+        "CAP-PRESCRIPTION"
+      ],
+      "overlap_status": "PROFILE_CANDIDATE",
+      "duplicate_overlap_candidate": {
+        "exact_normalized_title_ids": [],
+        "cached_clusters": [],
+        "evidence_scope": "Lexical/cached candidates, not newly adjudicated semantic duplicates"
+      },
+      "unique_requirement_presence": {
+        "status": "SOURCE_REQUIREMENTS_EXTRACTED_UNIQUENESS_UNRESOLVED",
+        "count": 3,
+        "fragments": [
+          {
+            "line": 3,
+            "text": "Automatically compares prescribed medicines with registered allergies.",
+            "sha256": "7ee92b094a10b833bcee19ca81369e37cbd92c5f4aba97264a58a3aa81fe6621"
+          },
+          {
+            "line": 7,
+            "text": "• Active Alerts",
+            "sha256": "771e55c8559f9a79714de82aa375cf7e8c7b4a393575a375b75d0c3181d41733"
+          },
+          {
+            "line": 9,
+            "text": "• Physician Review",
+            "sha256": "527386dc37c83ef66e5a867d35faa7a84acdc765f99290e72032b6132a5d59c1"
+          }
+        ]
+      },
+      "dependency_hints": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY",
+        "CAP-ALLERGY",
+        "CAP-PRESCRIPTION"
+      ],
+      "status": "PROFILE_CANDIDATE",
+      "review_level": "B",
+      "analysis_method": "CLUSTER_BODY_REVIEW_WITH_MODULE_SPECIFIC_FINDING",
+      "review_scope": "Product documentation review only; no clinical, compliance or implementation approval",
+      "deep_review_required": false,
+      "deep_review_reasons": [],
+      "deep_finding": "Allergy cross-check must reconcile ingredient/excipient, reaction and verification status with current medication context. Unknown allergy is not no allergy; professional review governs response.",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 24155,
+        "body_sha256": "0d707bf5996373e702ba8d5ad9800b6527f4e31bd0f27850db8ec0388528a6e5",
+        "original_id": 430
+      },
+      "source_body": "# Medication Allergy Cross Check\n\nAutomatically compares prescribed medicines with registered allergies.\n\nSupports\n\n• Active Alerts\n\n• Physician Review\n\nStatus\n\nDocumentation\n\n---",
+      "rules_version": "FAST12-v1",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "cluster_key": "CAP-CDS|medication"
+    }
+  ]
+}

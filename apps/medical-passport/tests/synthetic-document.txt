@@ -1,0 +1,2 @@
+EDHT browser test fixture. All information in this document is fictional.
+This is not a clinical report and contains no real patient data.

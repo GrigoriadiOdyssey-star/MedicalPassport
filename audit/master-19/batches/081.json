@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 81,
+  "family": "core-clinical-sharing-qr",
+  "owner": "CAP-QR",
+  "ids": [
+    75,
+    180
+  ],
+  "decision_sha256": "7d16979a5224209ac46a3488ade1322b349221cf49b2aedc1b739959199ee9b8",
+  "source_hashes": {
+    "75": "df5908f6eed7f94a30eccb3aed154996c6c87bb553c124b7111daf8c9535417d",
+    "180": "e8a9463b485647b821d52cb1479eaf853c00126a8b78252f81a3bfebfa413b70"
+  }
+}

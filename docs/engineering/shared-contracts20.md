@@ -1,0 +1,33 @@
+# MASTER20 shared engineering contracts
+
+This is a platform specification and executable design-time gate, not an application implementation. It applies once to every existing canonical owner. The source specifications, clinical requirements and historical readiness assessments remain unchanged. Full-owner API, data, event and migration gaps are not closed by adopting shared policy.
+
+## Versioning and compatibility
+
+Contract identity is canonical owner + kind (API, EVENT or DATA) + stable contract_id + positive integer major. A published identity is immutable. Its protected digest covers the complete normative contract package: schema, endpoint/method or event name, authorization semantics, units/value sets, errors, concurrency and ordering rules. Hashing only a schema file is insufficient for API/event changes. The package is UTF-8 exact bytes; the release manifest names its immutable artifact path and SHA-256. The artifact contains no credentials or real patient data.
+
+Any change to these normative bytes requires a new consecutive major, even if a developer believes the change is additive. This deliberately conservative rule avoids unreliable automatic semantic compatibility guesses. Editorial prose outside the package can change without changing its normative identity. There is no implicit minor-version field addition to closed schemas. Existing version-1 contracts remain version 1; this policy does not rewrite them.
+
+The new release declares previous major and previous digest. New identities start at 1. Missing predecessor, skipped major, changed predecessor, unknown owner/kind, same-major mutation, duplicate manifest identity or malformed digest fail the build. An unchanged already published package is an idempotent replay, not a new release. Unknown input versions fail closed; producers/consumers explicitly negotiate a supported major. An event must retain its original major on replay and cannot be relabelled with a newer schema.
+
+Before activation, each changed package requires owner-reviewed fixtures for request/response errors, authorization differences, event replay and stored-data readers as applicable. Dual-read support may support N and N+1 during migration, with explicit writer version and no silent conversion. Deployment compatibility is checked against the complete dependency manifest. Retire N only after no active caller, in-flight event, retained replay or recovery process requires N; archival readers remain available under the same security controls. Observed lack of recent traffic alone is not retirement evidence.
+
+Rollback selects previously verified binaries and readable storage versions. Never roll back grant/source/policy epochs or overwrite acknowledged audit history. If N cannot read data written by N+1, disable affected routes and roll forward/reconcile; do not force a lossy down-conversion. Contract release tests prove the immutable version rule, not runtime compatibility of an unimplemented owner. Each owner's missing domain-specific schema/API/event fixtures remain separate blockers. All 25 inherited B08 policy blockers are closed by this shared specification and its executable gate; this does not close B02/B04/B05/B09.
+
+## Shared event delivery and recovery
+
+The existing MASTER17/19 transactional outbox is the default: source mutation, event identity, deduplication and audit commitment share the declared transaction boundary. At-least-once consumers key by tenant+producer+event_id and persist a body digest. Identical retry has one domain effect; changed-body replay is quarantined. Payloads contain opaque references/versioned codes, not clinical content. Unknown versions and unresolved causal predecessors quarantine without applying permissions. A source amendment invalidates derivations; it does not grant new access. Each owner must still define its concrete event payload and consumer transitions.
+
+Retry transient failures with bounded exponential backoff and jitter; cap a single delay at 60 seconds and send to an operator-visible dead-letter queue after 12 attempts. These are engineering defaults, configurable by deployment, not clinical response guarantees. Authorization never waits on eventual event propagation: current trusted state is checked at release. Durable failed operations must be observable without exposing patient identifiers in telemetry. Recovery pauses affected reads, verifies independent integrity checkpoints, reconciles source/outbox/audit/dedupe positions, expires cursors and admission leases, and then reruns access checks. Replay cannot reactivate a withdrawn grant.
+
+## Migration obligations
+
+Every owner migration requires an immutable manifest naming source/target contract digests, source snapshot, row counts, field mapping, explicit loss/quarantine dispositions, identity mapping and rollback boundary. Dry run must reconcile counts, canonical IDs and source hashes. Unknown or contradictory clinical values stay unknown/quarantined; default normal values and similarity-based patient merges are forbidden. Secrets and former public sharing tokens are not migrated as active grants. Source approval, operational rehearsal and actual owner-specific fixtures remain open B09 items. This shared protocol is partial evidence, not executable migration completion.
+
+## Release separation
+
+Engineering build readiness, runtime acceptance and clinical production release are separate decisions. Synthetic-only adapters may support contract development. Real issuer/clinician credentials, external services, clinical terminology, applicable jurisdiction policy, authentic legal approval and clinical safety acceptance are required before patient use. A syntactically populated approval reference is never approval verification. Gate records require accountable reviewer, immutable evidence and exact capability/version/scope; unknown or expired approval prevents release. No external gate grants access by itself.
+
+## Acceptance and ownership
+
+Governance owns the contract-release registry; domain owners own normative package content, Interop owns partner compatibility and Security owns access decisions. Build tooling validates manifest identities, hashes and predecessor continuity before packaging. Operations owns version-aware rollout/rollback monitoring. Test mutation, wrong owner, skipped predecessor, replay, unknown version and duplicate manifests. Monitor rejected package counts, unsupported-version traffic and quarantined replays without clinical labels. The implementation backlog must bind these requirements to actual endpoints, storage and deployment tests before production.
