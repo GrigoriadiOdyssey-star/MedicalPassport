@@ -13,7 +13,11 @@
     "local_hp_execution": false,
     "plan": "hobby",
     "paid_ai_calls": 0,
-    "managed_db_writes": 0
+    "managed_db_writes": 0,
+    "stopped": true,
+    "actual_duration_ms": 1800844,
+    "active_cpu_duration_ms": 274304,
+    "network_egress_bytes": 534194
   },
   "application": {
     "pass": 282,
@@ -48,8 +52,45 @@
     "managed_supabase_acceptance": "NOT_VERIFIED"
   },
   "live_preview": {
-    "result": "NOT_VERIFIED",
-    "deployment_id": null
+    "result": "BLOCKED_CONFIGURATION",
+    "deployment_id": "dpl_8nfkqXngfvd44pd5uupx3pNeYyw7",
+    "url": "https://edht-r55t1q0e8-grigoriadiodyssey-8824s-projects.vercel.app",
+    "build_state": "READY",
+    "target": "staging",
+    "build_sha": "6267a62ccb0a2e5d90fd18ab87287a1354fc1ff5",
+    "assets": {
+      "/": 200,
+      "/app.css": 200,
+      "/main.js": 200,
+      "/i18n.js": 200,
+      "/master27-ui.js": 200,
+      "/nutrition-model.mjs": 200,
+      "/nutrition-ui.js": 200
+    },
+    "unauthenticated_api": {
+      "/api/me": 503,
+      "/api/views/home": 503,
+      "/api/notifications": 503,
+      "/api/views/nutrition": 503,
+      "/api/config": 503
+    },
+    "diagnostic": "CLOUD_URL_INVALID",
+    "root_cause": "SUPABASE_URL and publishable-key configuration exist only for the older branches; no new branch/commit-specific Supabase environment configured. Sensitive key values are hidden, not missing.",
+    "authenticated_acceptance": "NOT_VERIFIED",
+    "runtime_log_observation": "Four grouped API diagnostic calls counted; this does not certify absence of all runtime exceptions/PII leaks"
   },
-  "ready_for_production": false
+  "ready_for_production": false,
+  "tested_code_commit_sha": "6267a62ccb0a2e5d90fd18ab87287a1354fc1ff5",
+  "gitlab_pipeline": {
+    "id": 2936725915,
+    "status": "PENDING",
+    "all_jobs": 7,
+    "started_jobs": 0,
+    "runner": null,
+    "reason": "VERIFIED_CLOUD_RUNNER_NOT_REGISTERED"
+  },
+  "production": {
+    "unchanged": true,
+    "deployment_id": "dpl_4MNmqj7fxXTDfwKCR6d3o6NhsXhN"
+  }
 }

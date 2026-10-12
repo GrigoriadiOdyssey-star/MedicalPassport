@@ -10,3 +10,5 @@
 - **HISTORICAL_BASELINE — BLOCKED:** Unskipped root248 tests:247PASS/1existing MASTER09cached-baselineFAIL. Historical source/assertions/guards untouched; prior runtime exclusion unchanged.
 
 Production/clinical/legal acceptance is separate from engineering contracts. READY FOR PRODUCTION: NO.
+
+New Preview runtime gate: 503 CLOUD_URL_INVALID; configuration is branch-specific to older branches. Connect only a confirmed isolated database, not the potentially shared existing project. See final MR for deployment/pipeline binding.

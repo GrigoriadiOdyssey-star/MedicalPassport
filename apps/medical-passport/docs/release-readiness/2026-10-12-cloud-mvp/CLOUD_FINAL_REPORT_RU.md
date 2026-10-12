@@ -13,3 +13,13 @@
 CI/автодеплой: отдельный cloud-only тег предотвращает запуск нового кода на прежнем HP runner; GitLabCI ожидает настройку облачного исполнителя. AutoVercel для новой ветки выключен, production build запрещён. Итоговые SHA/статусы и deployment evidence — в DraftMR. РабочаяSupabase и Production не изменены. ПлатныеAIвызовы0; SandboxHobby в бесплатнойквоте.
 
 READY FOR PRODUCTION: NO.
+
+## Фактическая публикация
+
+Код: 6267a62ccb0a2e5d90fd18ab87287a1354fc1ff5, Draft MR !12 (dependency !11). GitLab pipeline2936725915 PENDING:7jobs,runner=null,started_at=null;наHPнетзапуска.
+
+Preview: https://edht-r55t1q0e8-grigoriadiodyssey-8824s-projects.vercel.app — dpl_8nfkqXngfvd44pd5uupx3pNeYyw7 READY. BuildlogsподтверждаютточныйGitLabSHA. Страница,app.css,main.js,i18n.js,master27-ui.js,nutritionUI/model —200.
+
+РаботающийавторизованныйflowНЕпринят: /api/me,/api/views/home,/api/notifications,/api/views/nutrition,/api/config дают503CLOUD_URL_INVALID. VercelметаданныеподтвердилиSupabaseENVтолькодлястарыхветок;конфигурацииэтойветкинет. СтарыйpotentiallysharedSupabaseнеперенастроенинеcкопирован. Дляследующегореальногозапуска нужныisolatedSupabase+PreviewURL/publishablekey и подтверждённыйcloudCIrunner. Секреты/productionENVнетронуты.
+
+Sandboxостановленавтоматическиза30мин;повторныйнеcоздавался. Productiondomainсохранилdpl_4MNmqj7fxXTDfwKCR6d3o6NhsXhN. ПолноеMVP,liveAI,реальныйA/B/C,durablegrant/Storagedocumentpathsнеобъявляютсяготовыми.
