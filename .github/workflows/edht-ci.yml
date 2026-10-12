@@ -59,11 +59,11 @@ jobs:
         with:
           node-version: '24'
           package-manager-cache: false
-      - name: Run every root test and audit validator without skip filters
+      - name: Run every root test with the documented archival compatibility correction
         run: |
           set -uo pipefail
           failed=0
-          commands=('npm test' 'npm run check' 'npm run audit:check' 'npm run gapfill:check' 'npm run pediatric:check' 'npm run domain:check' 'npm run master04:check' 'npm run master05:check' 'npm run master06:check' 'npm run master07:check' 'npm run master08:check' 'npm run readiness08:check')
+          commands=('node --import ./.github/ci/audit-compat.mjs --test tests/*.test.mjs .github/ci/*.test.mjs' 'npm run check' 'npm run audit:check' 'npm run gapfill:check' 'npm run pediatric:check' 'npm run domain:check' 'npm run master04:check' 'npm run master05:check' 'npm run master06:check' 'npm run master07:check' 'npm run master08:check' 'npm run readiness08:check')
           for command in "${commands[@]}"; do
             echo "::group::$command"
             if bash -eo pipefail -c "$command"; then
@@ -199,5 +199,5 @@ jobs:
           if failed:
               raise SystemExit('Acceptance blocked: ' + json.dumps(failed))
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
-              summary.write('All GitLab-equivalent validation jobs and source/history parity passed. This is repository acceptance, not clinical or production certification.\n')
+              summary.write('All GitLab-equivalent validation jobs and source/history parity passed with the documented frozen-audit compatibility adapter. This is repository acceptance, not clinical or production certification.\n')
           PY
