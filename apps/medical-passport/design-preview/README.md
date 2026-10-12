@@ -30,3 +30,6 @@ JavaScript syntax parsed; all 18 RU/EN screen render variants passed targeted in
 Vercel deployment/HTTP and browser visual results are recorded separately after publication. No historical test suites were rerun for this isolated design artifact.
 
 Deploy only files in this folder, as non-production Preview with framework=null and no build/install steps. Do not deploy the repository root or backend.
+
+## Evergreen theme — 2026-10-12
+Primary #20745C, pale green #E7F3EC, canvas #F5F8F5. All existing prototype keyframes and transitions are preserved. This presentation is also implemented in the real application via public/modern-green.css loaded after public/app.css; no auth, APIs, RLS, records, runtime JavaScript or historical files are changed.
