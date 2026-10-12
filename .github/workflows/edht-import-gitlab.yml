@@ -1,0 +1,120 @@
+name: EDHT pinned GitLab import
+
+on:
+  push:
+    branches: [sync/gitlab-parity-2026-10-12]
+    paths: [.github/workflows/edht-import-gitlab.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edht-gitlab-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.repository == 'GrigoriadiOdyssey-star/MedicalPassport' && github.ref == 'refs/heads/sync/gitlab-parity-2026-10-12'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      SOURCE_SHA: bb31e24076cd0bd688287dae55e9fd3178a5ccc0
+      SOURCE_BRANCH: implementation/cloud-mvp-completion
+      TARGET_BRANCH: sync/gitlab-parity-2026-10-12
+    steps:
+      - name: Check out the exact authorized GitHub commit
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - name: Import source without executing application code
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          git fetch --no-tags https://gitlab.com/OdisseyGrigoriadi/edht.git \
+            "refs/heads/$SOURCE_BRANCH:refs/remotes/gitlab/pinned-source"
+          test "$(git rev-parse refs/remotes/gitlab/pinned-source)" = "$SOURCE_SHA" || {
+            echo 'Source branch moved. Reinspect before changing the pinned SHA.' >&2
+            exit 1
+          }
+          if git merge-base --is-ancestor "$SOURCE_SHA" HEAD; then
+            echo 'The pinned source history is already present; no branch was overwritten.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          test "$(git ls-tree -r --name-only HEAD | grep -v '^.github/')" = 'README.md' || {
+            echo 'Unexpected GitHub application files: manual reconciliation required.' >&2
+            exit 1
+          }
+          test -z "$(git ls-tree --name-only "$SOURCE_SHA" .github)" || {
+            echo 'Source contains GitHub automation; review before importing.' >&2
+            exit 1
+          }
+          python3 - <<'PY'
+          import os, re, subprocess
+          sha = os.environ['SOURCE_SHA']
+          names = subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', '-z', sha]).decode().split('\0')
+          forbidden = []
+          for name in filter(None, names):
+              base = name.rsplit('/', 1)[-1].lower()
+              if base in {'.env', '.env.local', '.env.production', '.env.development', 'id_rsa', 'id_ed25519'}:
+                  forbidden.append(name)
+              if re.search(r'\.(p12|pfx|key)$', base):
+                  forbidden.append(name)
+          if forbidden:
+              raise SystemExit('Potential credential files require review: ' + ', '.join(sorted(set(forbidden))))
+          pattern = r'-----BEGIN ([A-Z0-9]+ )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{70,}|glpat-[A-Za-z0-9_-]{20,}|sk-proj-[A-Za-z0-9_-]{40,}|AKIA[0-9A-Z]{16}'
+          scan = subprocess.run(['git', 'grep', '-I', '-l', '-E', pattern, sha, '--', '.'], capture_output=True, text=True)
+          if scan.returncode == 0:
+              raise SystemExit('Potential secret signatures require review (paths only):\n' + scan.stdout)
+          if scan.returncode != 1:
+              raise SystemExit('Credential-signature scan could not complete: ' + scan.stderr)
+          print('Tracked-file and high-confidence credential-signature checks passed.')
+          PY
+          git show "$GITHUB_SHA:README.md" > "$RUNNER_TEMP/github-readme-before-sync.md"
+          git read-tree --reset -u "$SOURCE_SHA"
+          git checkout "$GITHUB_SHA" -- .github
+          cp "$RUNNER_TEMP/github-readme-before-sync.md" .github/github-readme-before-sync.md
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          sha = os.environ['SOURCE_SHA']
+          paths = subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', '-z', sha]).split(b'\0')
+          record = {
+              'source_repository': 'https://gitlab.com/OdisseyGrigoriadi/edht',
+              'source_branch': os.environ['SOURCE_BRANCH'],
+              'source_commit': sha,
+              'source_tree': subprocess.check_output(['git', 'rev-parse', sha + '^{tree}'], text=True).strip(),
+              'source_tracked_files': len([p for p in paths if p]),
+              'github_before_import': os.environ['GITHUB_SHA'],
+              'github_original_main': 'e8396f1e70c9f95935b699ed6451fc9fe8f91fa1',
+              'backup_branch': 'backup/main-before-gitlab-sync-2026-10-12',
+              'allowed_github_only_prefix': '.github/',
+              'imported_on': '2026-10-12',
+              'validation_status': 'imported; application CI must pass before promotion',
+              'issues_modified': False,
+              'production_deployment_modified': False
+          }
+          pathlib.Path('.github/gitlab-source.json').write_text(json.dumps(record, indent=2) + '\n')
+          PY
+          git add .github
+          git diff --cached --exit-code "$SOURCE_SHA" -- . ':(exclude).github'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          tree=$(git write-tree)
+          imported=$(git commit-tree "$tree" -p "$GITHUB_SHA" -p "$SOURCE_SHA" \
+            -m "sync: import GitLab cloud MVP bb31e240 with both repository histories")
+          remote_head=$(git ls-remote origin "refs/heads/$TARGET_BRANCH" | cut -f1)
+          test "$remote_head" = "$GITHUB_SHA" || {
+            echo 'Target branch changed during import; refusing to overwrite concurrent work.' >&2
+            exit 1
+          }
+          git push origin "$imported:refs/heads/$TARGET_BRANCH"
+          {
+            echo '## Import completed — promotion still requires application CI'
+            echo "Source: $SOURCE_SHA"
+            echo "GitHub import: $imported"
+            echo "Tracked source files: $(git ls-tree -r --name-only "$SOURCE_SHA" | wc -l)"
+            echo 'All source paths and file modes are unchanged. Additions are confined to .github/.'
+            echo 'Both source histories are preserved. Main, issues and production settings were not modified.'
+          } >> "$GITHUB_STEP_SUMMARY"
