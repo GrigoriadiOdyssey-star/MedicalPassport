@@ -1,0 +1,137 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "aliases": [
+    {
+      "original_id": 22,
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "canonical_document": "docs/canonical/master11/CAP-TRAVEL.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 117,
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "canonical_document": "docs/canonical/master11/CAP-TRAVEL.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 177,
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "canonical_document": "docs/canonical/master11/CAP-TRAVEL.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 459,
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "canonical_document": "docs/canonical/master11/CAP-TRAVEL.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 778,
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "canonical_document": "docs/canonical/master11/CAP-TRAVEL.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 425,
+      "canonical_id": "CORE-CAP-DOCUMENTS",
+      "canonical_document": "docs/canonical/master11/CAP-DOCUMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 220,
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master11/CAP-INTEROP.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1344,
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master11/CAP-INTEROP.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1886,
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master11/CAP-INTEROP.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4595,
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master11/CAP-INTEROP.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1403,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master11/CAP-AI.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1425,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master11/CAP-AI.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1888,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master11/CAP-AI.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1021,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master11/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3957,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master11/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4293,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master11/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5070,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master11/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4273,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master11/CAP-IMMUNIZATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4307,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master11/CAP-IMMUNIZATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4339,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master11/CAP-IMMUNIZATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4299,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master11/CAP-PROFILE.md",
+      "source_preserved": true
+    }
+  ]
+}

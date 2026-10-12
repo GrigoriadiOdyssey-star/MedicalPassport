@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 19,
+  "family": "pediatric-clinical-screening-prioritization",
+  "owner": "CAP-CDS",
+  "ids": [
+    4395,
+    5152
+  ],
+  "decision_sha256": "9f7b99e56dde60f393b50439c910df941f4c838fbc4a4796953b8079cd0b2f41",
+  "source_hashes": {
+    "4395": "9c4d2dcc98f94855c70bbda45202d01e132c8cbedc92e0fcce021bacc026a92b",
+    "5152": "2a92d246e65bd5179c785edb0b7c499eccdf786359e9a08e78f1880365037d46"
+  }
+}

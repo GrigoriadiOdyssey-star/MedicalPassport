@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 18,
+  "family": "pediatric-hypoglycemia-emergency-context",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    4142
+  ],
+  "decision_sha256": "ce675450423e6a22d4fb44eadfad27fce501e91dc2f5157c835f3eb93f65669b",
+  "source_hashes": {
+    "4142": "63a3bfb52f7c19db01968887c6453c9585918da78e4156a5542284620502d62a"
+  }
+}

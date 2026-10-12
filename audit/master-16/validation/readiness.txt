@@ -1,0 +1,14 @@
+✔ Audit append receipt and error fixtures satisfy bounded syntax (1.6358ms)
+✔ Audit rejects twelve unsafe envelope variants and every required-field omission (2.399ms)
+✔ Audit integrity fixture has deterministic ordered body and predecessor binding (1.6389ms)
+✔ Audit syntax does not falsely prove tenant binding, order, authorization or durable storage (0.2314ms)
+✔ Readiness retains every original criterion and gate; new prose alone cannot promote owners (7.3996ms)
+✔ Readiness evidence is hash-bound and Pharmacy no longer has missing canonical-document blocker (2.8303ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 182.9989

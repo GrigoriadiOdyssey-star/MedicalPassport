@@ -1,0 +1,10 @@
+{
+  "canonical_control_repeated": false,
+  "unchanged_control": {
+    "path": "audit/master-20/architecture_control.json",
+    "sha256": "ffb15459fe5864678fe7458eb336f36a01d91cd8747725fed34e52624ecab7d5"
+  },
+  "digital_twin": "CAP-TWIN: subsequent wave, not an initial MVP dependency",
+  "precision_pharmacology": "CAP-CDS: subsequent wave, not an initial MVP dependency",
+  "new_parallel_architecture": false
+}

@@ -1,0 +1,181 @@
+{
+  "pass": "MASTER-14",
+  "branch": "audit/master-pass-14",
+  "parent_commit": "5a163a3e956a4e298c21b1f0cdda77c318379f68",
+  "objective": "Reach at least 15 percent normalization and canonicalization",
+  "status": "COMPLETE",
+  "date": "2026-09-15T23:31:55.105Z",
+  "statistics": {
+    "pass": "MASTER-14",
+    "baseline_commit": "5a163a3e956a4e298c21b1f0cdda77c318379f68",
+    "baseline_state": "audit/master-08/",
+    "mode": "APPEND_ONLY_DELTA",
+    "date": "2026-09-16",
+    "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+    "gitlab_writes": false,
+    "schema_version": 5,
+    "edition": "2026-09-15",
+    "parent_checkpoint": "5a163a3e956a4e298c21b1f0cdda77c318379f68",
+    "implementation_started": false,
+    "EXPECTED_SOURCE_MODULES": 51075,
+    "ORIGINAL_SOURCE_MODULES": 5175,
+    "ACCOUNTED_SOURCE_MODULES": 5175,
+    "NEW_GAP_MODULES": 0,
+    "REVIEWED": 5175,
+    "NORMALIZED": 777,
+    "CANONICALIZED": 777,
+    "IMPLEMENTATION_READY": 0,
+    "UNAUDITED": 0,
+    "REVIEW_PROGRESS": 100,
+    "NORMALIZATION_PROGRESS": 15.0145,
+    "CANONICALIZATION_PROGRESS": 15.0145,
+    "GAP_FILL_PROGRESS": 100,
+    "IMPLEMENTATION_READINESS": 0,
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+    "gap_scope": {
+      "identified_specification_gaps": 7,
+      "drafted": 7,
+      "validated_closed": 7,
+      "integrated": 7,
+      "validation_scope": "Documentation semantic/owner/integration gates only; clinical/runtime release gates remain open",
+      "clinical_validated": 0
+    },
+    "formulas": {
+      "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+      "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+      "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+      "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+      "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+      "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate",
+      "AUDIT_WORK_PROGRESS": "100 * (REVIEWED + NORMALIZED + CANONICALIZED) / (3 * 5175); equal-weight documentation work steps, not clinical readiness or time spent"
+    },
+    "duplicate_counts": {
+      "exact_groups": 3,
+      "semantic_groups": 1,
+      "partial_overlap_groups": 47,
+      "distinct_capability_groups": 1,
+      "unresolved_clusters": 1937,
+      "source_ids_closed": 0
+    },
+    "legacy_generations_confirmed": 0,
+    "legacy_marker_candidates": 27,
+    "high_risk_candidate_ids": 3608,
+    "critical_findings": 6,
+    "high_findings": 11,
+    "gitlab_write_status": "NO_WRITES",
+    "final_audit_ready": false,
+    "GAP_FILL_VALIDATED": 7,
+    "AUDIT_WORK_PROGRESS": 43.343,
+    "NEWLY_REVIEWED": 0,
+    "NEWLY_NORMALIZED": 7,
+    "NEWLY_CANONICALIZED": 7,
+    "CANONICAL_SPECIFICATIONS": 27,
+    "UNIQUE_REQUIREMENTS_PRESERVED": 7681,
+    "SOURCE_FRAGMENTS_PRESERVED": 15813,
+    "GAP_FILL_INTEGRATED": 7,
+    "NEWLY_GAP_FILL_VALIDATED": 0,
+    "NEWLY_GAP_FILL_INTEGRATED": 0,
+    "PROFILES": 234,
+    "NEWLY_IMPLEMENTATION_READY": 0,
+    "REVIEWED_BEFORE_RUN": 5175,
+    "FAST_REVIEWED": 0,
+    "DEEP_REVIEWED": 0,
+    "NEEDS_DEEP_REVIEW": 0,
+    "DUPLICATE_CANDIDATES_FOUND": 0,
+    "PARTIAL_OVERLAPS_FOUND": 0,
+    "LEGACY_CANDIDATES_FOUND": 0,
+    "LEVEL_A_LIMITATION": "Deterministic full-body classification with evidence extraction, not complete clinical/semantic adjudication. Deep queue is counted separately and not implementation-ready.",
+    "KNOWN_DEEP_REVIEW_QUEUE": 3109,
+    "deep_queue_scope": "MASTER12 and MASTER13 only; older clinical findings remain inherited",
+    "NEW_REVIEW_SOURCE_FRAGMENTS_PRESERVED": 0,
+    "DEEP_QUEUE_RESIDUAL_NOTE": "Seven canonical boundaries resolved for documentation; clinical/integration gates remain open, no queue items silently removed."
+  },
+  "validation": {
+    "targeted_tests_passed": 5,
+    "full_tests_passed": 145,
+    "failed_validators": 0,
+    "historical_test_replacements": 1,
+    "replacement": "Inherited MASTER09 guard replacement, unchanged since MASTER12",
+    "scope": "Documentation/provenance/contract checks, not clinical/runtime approval",
+    "commands": [
+      "node scripts/master14.mjs --check",
+      "node scripts/validate-master13.mjs"
+    ]
+  },
+  "normalized_ids": [
+    107,
+    118,
+    342,
+    367,
+    756,
+    1025,
+    4305
+  ],
+  "canonical_owners_created": 0,
+  "source_lines_preserved_this_pass": 78,
+  "canonical_unique_strings_added": 44,
+  "gitlab_writes": false,
+  "next_safe_action": "Continue high-risk deep review and source-preserving normalization; no UNAUDITED originals remain.",
+  "artifacts": [
+    {
+      "path": "audit/master-14/aliases_delta.json",
+      "sha256": "652064fb55a0b7e1c0b5124fd32657d9d5aa8205e146f97c237a217238face08"
+    },
+    {
+      "path": "audit/master-14/audit_ledger_delta.json",
+      "sha256": "f05a167977e8074811efbfc9f5a2d27d1a14669d8e29b6901f58a6b08bb793f4"
+    },
+    {
+      "path": "audit/master-14/audit_progress.json",
+      "sha256": "3aff23468fd491724313708ca22c5f319087cacbdc2bf4e9b1070566e9754b26"
+    },
+    {
+      "path": "audit/master-14/canonical_delta.json",
+      "sha256": "431eef6188bf3ece968dbb2e3b69d014627658995df83fc8e619082fb0bfa86c"
+    },
+    {
+      "path": "audit/master-14/canonical_registry_delta.json",
+      "sha256": "ffc36e3bae73823f6e9f2406da982aa08553cfff3406347cbe18f760d22754e1"
+    },
+    {
+      "path": "audit/master-14/CONTINUE_FROM_HERE.md",
+      "sha256": "98618b7e1346d88607730b4557d817ea8814dc73e65af862e6b22be4165c6caf"
+    },
+    {
+      "path": "audit/master-14/deep_review_queue_delta.json",
+      "sha256": "95139eb7fde81dd318b7701af893684e1cf544d51b24ab3e7f71fe3c34c9cdfa"
+    },
+    {
+      "path": "audit/master-14/FINAL_VALIDATION.txt",
+      "sha256": "8c0e0d235f459df63277ea7af0936d1fd91f7d29fee165429aec0fce0e10dabf"
+    },
+    {
+      "path": "audit/master-14/normalized_delta.json",
+      "sha256": "27eca0834d31d0279f7f89336e4d6813b4cb04cb1cb163dd25ef84fe4e4e334b"
+    },
+    {
+      "path": "audit/master-14/requirement_migration_delta.json",
+      "sha256": "58a0b0bb5fd0f22cd1fc8aa35baccd83e5276edbb23647a772929fc8640f83e2"
+    },
+    {
+      "path": "audit/master-14/semantic_decision.json",
+      "sha256": "97e840ea6a8b62659b1c893e30c01d95286d4ec7c7323b009c27193876ec2100"
+    },
+    {
+      "path": "audit/master-14/state_manifest.json",
+      "sha256": "1adbda7999f23d081dde5043e34698ffbde20b027f4ba914fc92da702ffda5e7"
+    },
+    {
+      "path": "scripts/master14.mjs",
+      "sha256": "c0787f19205d9f8b880b0b989a2a34d433b0f9f79e8f39b5b41e315a35cf6333"
+    },
+    {
+      "path": "tests/master14.test.mjs",
+      "sha256": "fa14dccc0e72cd3ec42b191317467191599f93b52d0e1c8415ea56b4569986e5"
+    },
+    {
+      "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+      "sha256": "27747bb6315cf245f72fbd978aa42f85df6c4a6a717d9a42ae638063a4ace7c2"
+    }
+  ]
+}

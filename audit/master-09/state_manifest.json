@@ -1,0 +1,55 @@
+{
+  "pass": "MASTER-09",
+  "baseline_commit": "7d7763deda0c9bb49b8ae82018a9c46428e7bc66",
+  "baseline_state": "audit/master-08",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "apply_deltas_in_order": [
+    "audit/master-09/"
+  ],
+  "merge_rules": {
+    "ledger": "Upsert by original_id; all unspecified original rows inherited unchanged",
+    "canonical": "Union source/profile/requirement IDs under same canonical id; preserve original documents and append target_document. CAP-SECURITY is the only new active specification",
+    "mappings": "Append new source IDs only; target_document identifies base/addendum anchors",
+    "dependencies": "Union baseline nodes/edges with delta",
+    "readiness": "Apply explicit owner delta only; all unmentioned blockers/gates remain unchanged",
+    "mvp": "Replace security canonical reference only; tags/counts unchanged"
+  },
+  "cache_inputs": [
+    {
+      "path": "audit/master-08/audit_progress.json",
+      "sha256": "5ae16e6bb1cfe703b18bc8265b5a9a9236427ade924ac97ae581976d6e319755"
+    },
+    {
+      "path": "audit/master-08/canonical_registry.json",
+      "sha256": "ee164b06ad69803b43eade848ac77389101c7d094ff48ac88641a6b89bce1ba0"
+    },
+    {
+      "path": "audit/master-08/active_canonical_records.json",
+      "sha256": "45d2258e80e6806da6b437572feed7caf4a036374e2dbaaa983f677d80b0b04c"
+    },
+    {
+      "path": "audit/master-08/dependency_graph.json",
+      "sha256": "9a26d48efa5ce8e0b9a8cc3d82072ec2b978ae2c1ac47fe1f024d121bbfe94b6"
+    },
+    {
+      "path": "audit/master-08/implementation_readiness_registry.json",
+      "sha256": "71b96710ce1f9c0a7070d8b6ad3d2c6e7221b5a4bca57d7c1d05c7ccdc3c4b2c"
+    },
+    {
+      "path": "docs/engineering/mvp_candidate_registry.json",
+      "sha256": "d596d6033fed37e019b4f3d04b7f26e44bf56217b135770aaed43f701ab010e5"
+    }
+  ],
+  "reused_results": {
+    "baseline_validation": "EDHT_MASTER_08_CHECKPOINT.json (external output artifact)",
+    "gap_fill": "audit/master-08/gap_disposition.json",
+    "semantic_search": "audit/master-08/gap_semantic_search.json",
+    "unchanged_canonical_documents": 25
+  },
+  "last_processed_original_id": 229,
+  "last_processed_cluster": "PROVIDER_DIRECTORY_50_AND_SECURITY_3",
+  "next_exact_task": "Review source 764 (couple fertility profile) separately from directory ownership, then close exact authorization request/response/event schemas and revocation/read concurrency contract; do not reprocess the 53 delta IDs."
+}

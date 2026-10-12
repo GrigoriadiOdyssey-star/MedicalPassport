@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 48,
+  "family": "clinical-pediatric-hypersensitivity",
+  "owner": "CAP-ALLERGY",
+  "ids": [
+    3387,
+    3786,
+    3787,
+    3792
+  ],
+  "decision_sha256": "48a0e76fb717d02d5df08585f9df1200f3430b00b6ce124acf6a2f3ddf125935",
+  "source_hashes": {
+    "3387": "127ee7b1589570bb0d3cf10de9ba958badda89b63b8606ff3eba11757d241386",
+    "3786": "553a6003e001038c199212942f31ac433d0ccb5214a13093d54bb36d0a739803",
+    "3787": "f2bc5e53029a97764095f2f69737dbdd3a0af78159185dc3095d526e358cca6c",
+    "3792": "dabca5326fde3705b138a99ef39c3a05e8d5cce5fb99c2ccd4bb0686c7d0368e"
+  }
+}

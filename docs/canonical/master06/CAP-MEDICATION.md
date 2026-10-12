@@ -1,0 +1,377 @@
+# CORE-CAP-MEDICATION — shared capability and profiles
+
+MASTER-06 · ADOPTED_DOCUMENTATION_BASELINE. Clinical approval and implementation readiness: not established. One owner is used across all profiles below; profiles are not separate canonical modules.
+
+## Ownership, data and workflow
+
+Logical documentation ownership confirmed by explicit profile comparisons and prior owner register; facts and execution authorities remain separate.
+
+Entities: MedicationStatement, ExposureEpisode, Reconciliation, AdministrationReference. Dependencies: CAP-MEDICATION, CAP-DATA, CAP-CONSENT, CAP-AUDIT.
+
+Capture reported/prescribed/administered exposure as distinct evidence → reconcile with author/version → monitor response and changes → preserve correction history; prescription/pharmacy/administration retain authority.
+
+All records carry opaque id, tenant/patient reference, actor, purpose, profile/version, effective/recorded timestamps, source/version/hash, status and correction linkage. Missing, unknown, not tested and conflicting remain distinct. Exact types/cardinalities/value sets remain implementation gates. Commands create a versioned bounded owner artifact, request authorized context, record professional review and invalidate a derived artifact. Errors include ACCESS_DENIED, STALE_CONTEXT, INVALID_SOURCE, UNKNOWN_UNIT and INSUFFICIENT_EVIDENCE. Idempotent events carry opaque IDs/versions, not sensitive payloads. External profiles require independently tested partner releases.
+
+## Safety, security, privacy and acceptance
+
+No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.
+
+Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes. Encryption in transit/at rest, managed keys, least privilege and service authentication require deployment verification; no credentials are embedded here.
+
+Reject identity/unit/schema/context-version conflicts with explicit unavailable/partial state; quarantine untrusted input. Retries use stable source event IDs and idempotency keys; corrections preserve history. Invalidate dependent artifacts on source, permission or model changes. Human clinical care never waits for a model.
+
+All source fragments and profile-specific clauses resolve to canonical anchors; preserve source versions and single aliases. Contract suites must cover wrong patient, missing/ambiguous units, stale context, revoked access, duplicate/out-of-order events and forbidden clinical actions. Documentation tests do not establish implemented system behavior.
+
+Concrete schemas/cardinalities, partner terminology/profile versions, security/privacy evidence, clinical intended-use sign-off, numerical/model evaluations, end-to-end and human-factors acceptance remain open; see implementation_gate_matrix.json.
+
+## Semantic profiles
+
+### PED2-IMMUNE-REPLACEMENT
+
+Original IDs: 996, 4441, 5015.
+
+IVIG/SCIG therapy shares product/route/exposure tracking; retain biological therapy as a separate subtype, infusion reactions, home care and product changes.
+
+Capture reported/prescribed/administered exposure as distinct evidence → reconcile with author/version → monitor response and changes → preserve correction history; prescription/pharmacy/administration retain authority.
+
+### M05-ONCO-SYSTEMIC
+
+Original IDs: 4226, 5132.
+
+Exposure/regimen records preserve intent, protocol/cycle/day, weight/BSA context, prerequisites, delays, modifications and completion/discontinuation. Prescription and administration services retain authority.
+
+Capture reported/prescribed/administered exposure as distinct evidence → reconcile with author/version → monitor response and changes → preserve correction history; prescription/pharmacy/administration retain authority.
+
+### M06-NEONATAL-MEDICATION
+
+Original IDs: 2358.
+
+Neonatal antibiotic, nutrition and infusion exposure shares medication ownership with distinct route/units/time/status; prescribing and administration retain separate authority.
+
+Capture reported/prescribed/administered exposure as distinct evidence → reconcile with author/version → monitor response and changes → preserve correction history; prescription/pharmacy/administration retain authority.
+
+## Integrated extension decisions
+
+
+
+## Preserved canonical requirements
+
+Historical proposal revision/status text below records provenance; current disposition is the integrated decision above.
+
+<a id="M06-CAP-MEDICATION-dbbef1d6c6d47668"></a>
+- **M06-CAP-MEDICATION-dbbef1d6c6d47668**: Tracks immunotherapy.
+  Origin: original 996
+
+<a id="M06-CAP-MEDICATION-43f721077b5df4f8"></a>
+- **M06-CAP-MEDICATION-43f721077b5df4f8**: IVIG
+  Origin: original 996
+
+<a id="M06-CAP-MEDICATION-17316a7be7efdeef"></a>
+- **M06-CAP-MEDICATION-17316a7be7efdeef**: SCIG
+  Origin: original 996
+
+<a id="M06-CAP-MEDICATION-3ba92a774d0545d8"></a>
+- **M06-CAP-MEDICATION-3ba92a774d0545d8**: Biological Therapy
+  Origin: original 996
+
+<a id="M06-CAP-MEDICATION-bf3e89de7b15207a"></a>
+- **M06-CAP-MEDICATION-bf3e89de7b15207a**: Response Monitoring
+  Origin: original 996
+
+<a id="M06-CAP-MEDICATION-762af4295a327b47"></a>
+- **M06-CAP-MEDICATION-762af4295a327b47**: Maintains neonatal medication history.
+  Origin: original 2358
+
+<a id="M06-CAP-MEDICATION-cf1455105f07c3ad"></a>
+- **M06-CAP-MEDICATION-cf1455105f07c3ad**: Antibiotics
+  Origin: original 2358
+
+<a id="M06-CAP-MEDICATION-5768adaf9507e83f"></a>
+- **M06-CAP-MEDICATION-5768adaf9507e83f**: Nutrition
+  Origin: original 2358
+
+<a id="M06-CAP-MEDICATION-935c3e2032654ce5"></a>
+- **M06-CAP-MEDICATION-935c3e2032654ce5**: Infusions
+  Origin: original 2358
+
+<a id="M06-CAP-MEDICATION-7f59c1e0210c3f26"></a>
+- **M06-CAP-MEDICATION-7f59c1e0210c3f26**: Medication Safety
+  Origin: original 2358
+
+<a id="M06-CAP-MEDICATION-abf98e81772af178"></a>
+- **M06-CAP-MEDICATION-abf98e81772af178**: Supports clinician-controlled chemotherapy workflows.
+  Origin: original 4226
+
+<a id="M06-CAP-MEDICATION-2f9c5067ba843e98"></a>
+- **M06-CAP-MEDICATION-2f9c5067ba843e98**: Treatment Protocol
+  Origin: original 4226, original 5132
+
+<a id="M06-CAP-MEDICATION-3cfa39200ce0ea10"></a>
+- **M06-CAP-MEDICATION-3cfa39200ce0ea10**: Medication
+  Origin: original 4226
+
+<a id="M06-CAP-MEDICATION-364a4c7e3ce06ed8"></a>
+- **M06-CAP-MEDICATION-364a4c7e3ce06ed8**: Dose
+  Origin: original 4226, original 4441, original 5015, original 5132
+
+<a id="M06-CAP-MEDICATION-35019e4597bc7eef"></a>
+- **M06-CAP-MEDICATION-35019e4597bc7eef**: Treatment Cycle
+  Origin: original 4226
+
+<a id="M06-CAP-MEDICATION-25d747393526b787"></a>
+- **M06-CAP-MEDICATION-25d747393526b787**: Laboratory Requirements
+  Origin: original 4226
+
+<a id="M06-CAP-MEDICATION-e0af32ed792f0c30"></a>
+- **M06-CAP-MEDICATION-e0af32ed792f0c30**: Administration
+  Origin: original 4226, original 4441, original 5132
+
+<a id="M06-CAP-MEDICATION-d05d6257a6dc9e74"></a>
+- **M06-CAP-MEDICATION-d05d6257a6dc9e74**: Toxicity
+  Origin: original 4226, original 5132
+
+<a id="M06-CAP-MEDICATION-8d91e79d73937840"></a>
+- **M06-CAP-MEDICATION-8d91e79d73937840**: Treatment Delays
+  Origin: original 4226
+
+<a id="M06-CAP-MEDICATION-88c98f547c46744d"></a>
+- **M06-CAP-MEDICATION-88c98f547c46744d**: Dose Modifications
+  Origin: original 4226
+
+<a id="M06-CAP-MEDICATION-b96780e8a37f8a94"></a>
+- **M06-CAP-MEDICATION-b96780e8a37f8a94**: Supports clinician-supervised immunoglobulin replacement.
+  Origin: original 4441
+
+<a id="M06-CAP-MEDICATION-93f9c381ca40e635"></a>
+- **M06-CAP-MEDICATION-93f9c381ca40e635**: Product
+  Origin: original 4441, original 5015
+
+<a id="M06-CAP-MEDICATION-6ffbfeb83a373123"></a>
+- **M06-CAP-MEDICATION-6ffbfeb83a373123**: Route
+  Origin: original 4441, original 5015
+
+<a id="M06-CAP-MEDICATION-3b2c3ca949f16a52"></a>
+- **M06-CAP-MEDICATION-3b2c3ca949f16a52**: Immunoglobulin Levels
+  Origin: original 4441
+
+<a id="M06-CAP-MEDICATION-a01ae28bdb2a917e"></a>
+- **M06-CAP-MEDICATION-a01ae28bdb2a917e**: Infection Frequency
+  Origin: original 4441
+
+<a id="M06-CAP-MEDICATION-356804248c951f56"></a>
+- **M06-CAP-MEDICATION-356804248c951f56**: Adverse Reactions
+  Origin: original 4441
+
+<a id="M06-CAP-MEDICATION-e9bb1b7104aa25cd"></a>
+- **M06-CAP-MEDICATION-e9bb1b7104aa25cd**: Treatment Response
+  Origin: original 4441, original 5015, original 5132
+
+<a id="M06-CAP-MEDICATION-333ff7952ce0d90e"></a>
+- **M06-CAP-MEDICATION-333ff7952ce0d90e**: Manage intravenous and subcutaneous immunoglobulin replacement across the complete treatment lifecycle.
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-2cf2b84939a9ee1d"></a>
+- **M06-CAP-MEDICATION-2cf2b84939a9ee1d**: Treatment Indication
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-267d300e14857db1"></a>
+- **M06-CAP-MEDICATION-267d300e14857db1**: Frequency
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-3388a209063c3833"></a>
+- **M06-CAP-MEDICATION-3388a209063c3833**: Weight Context
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-6cdd415dc77e2876"></a>
+- **M06-CAP-MEDICATION-6cdd415dc77e2876**: Infusion Schedule
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-15b3deadf07f7595"></a>
+- **M06-CAP-MEDICATION-15b3deadf07f7595**: Pre-treatment Laboratory Context
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-dc44066741ba0f64"></a>
+- **M06-CAP-MEDICATION-dc44066741ba0f64**: Infection Burden
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-2d92d631f6313620"></a>
+- **M06-CAP-MEDICATION-2d92d631f6313620**: Trough Level Context
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-fdd43c7cf6dc04d2"></a>
+- **M06-CAP-MEDICATION-fdd43c7cf6dc04d2**: Home Therapy
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-349391face89942f"></a>
+- **M06-CAP-MEDICATION-349391face89942f**: Administration Record
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-861181876bcc3ff4"></a>
+- **M06-CAP-MEDICATION-861181876bcc3ff4**: Adverse Reaction
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-6b4017a202a4f345"></a>
+- **M06-CAP-MEDICATION-6b4017a202a4f345**: Product Change
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-96c457a9cf29c342"></a>
+- **M06-CAP-MEDICATION-96c457a9cf29c342**: Long-term Outcomes
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-bbf2edbbfacad60e"></a>
+- **M06-CAP-MEDICATION-bbf2edbbfacad60e**: Safety Functions:
+  Origin: original 5015, original 5132
+
+<a id="M06-CAP-MEDICATION-24542e39d8206fb2"></a>
+- **M06-CAP-MEDICATION-24542e39d8206fb2**: Product Traceability
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-de419797b065c009"></a>
+- **M06-CAP-MEDICATION-de419797b065c009**: Infusion Reaction History
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-848bc1433ce056c3"></a>
+- **M06-CAP-MEDICATION-848bc1433ce056c3**: Allergy Context
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-a3534f153cca731c"></a>
+- **M06-CAP-MEDICATION-a3534f153cca731c**: Dose History
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-be3e9a8964759849"></a>
+- **M06-CAP-MEDICATION-be3e9a8964759849**: Missed Treatment Detection
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-570923469cb5987a"></a>
+- **M06-CAP-MEDICATION-570923469cb5987a**: Clinician-defined Monitoring
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-43a67d79860bcb43"></a>
+- **M06-CAP-MEDICATION-43a67d79860bcb43**: HIGH
+  Origin: original 5015
+
+<a id="M06-CAP-MEDICATION-e3475b1ed7f694ec"></a>
+- **M06-CAP-MEDICATION-e3475b1ed7f694ec**: Coordinate chemotherapy and other systemic treatment used in pediatric neuro-oncology.
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-a43ad72a226165f3"></a>
+- **M06-CAP-MEDICATION-a43ad72a226165f3**: Treatment Intent
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-c189daff45c4d3cb"></a>
+- **M06-CAP-MEDICATION-c189daff45c4d3cb**: Drug Regimen
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-1fb5d5e2cbe941f9"></a>
+- **M06-CAP-MEDICATION-1fb5d5e2cbe941f9**: Cycle
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-b77db98d3746d88b"></a>
+- **M06-CAP-MEDICATION-b77db98d3746d88b**: Weight/Body Surface Context
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-e1c2a513ace73bfc"></a>
+- **M06-CAP-MEDICATION-e1c2a513ace73bfc**: Laboratory Monitoring
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-7d5b66a43b823c22"></a>
+- **M06-CAP-MEDICATION-7d5b66a43b823c22**: Organ Function
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-de1a7cd9ab83fa38"></a>
+- **M06-CAP-MEDICATION-de1a7cd9ab83fa38**: Infection Context
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-9c8c85f3da997c8f"></a>
+- **M06-CAP-MEDICATION-9c8c85f3da997c8f**: Treatment Delay
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-93e3d8bf76284ae7"></a>
+- **M06-CAP-MEDICATION-93e3d8bf76284ae7**: Dose Modification
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-443cc5d453358871"></a>
+- **M06-CAP-MEDICATION-443cc5d453358871**: Completion
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-e02c31a1f69fbb91"></a>
+- **M06-CAP-MEDICATION-e02c31a1f69fbb91**: Discontinuation
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-c79d96692f5e154e"></a>
+- **M06-CAP-MEDICATION-c79d96692f5e154e**: Medication Verification
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-7ff590adde418414"></a>
+- **M06-CAP-MEDICATION-7ff590adde418414**: Allergy Integration
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-0e81212503c4488e"></a>
+- **M06-CAP-MEDICATION-0e81212503c4488e**: Interaction Detection
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-e29ea80166d9bfe9"></a>
+- **M06-CAP-MEDICATION-e29ea80166d9bfe9**: Required Laboratory Context
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-02aaf2e9c021e422"></a>
+- **M06-CAP-MEDICATION-02aaf2e9c021e422**: Organ Function Monitoring
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-a935e9d92bdb2e89"></a>
+- **M06-CAP-MEDICATION-a935e9d92bdb2e89**: Treatment Protocol Traceability
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-2f27e552d723d07f"></a>
+- **M06-CAP-MEDICATION-2f27e552d723d07f**: Integrations:
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-6b1b617f18c456db"></a>
+- **M06-CAP-MEDICATION-6b1b617f18c456db**: Oncology
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-7605ce62d32022f4"></a>
+- **M06-CAP-MEDICATION-7605ce62d32022f4**: Pharmacy
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-35ff4287a628c0a4"></a>
+- **M06-CAP-MEDICATION-35ff4287a628c0a4**: Laboratory Medicine
+  Origin: original 5132
+
+<a id="M06-CAP-MEDICATION-cd9cc84ecdc81938"></a>
+- **M06-CAP-MEDICATION-cd9cc84ecdc81938**: Neuro-Oncology
+  Origin: original 5132
+
+## Preserved source metadata
+
+<a id="M06-CAP-MEDICATION-ab6d0fa9eac0da47"></a>
+- **M06-CAP-MEDICATION-ab6d0fa9eac0da47**: # Pediatric Immunotherapy Registry
+
+<a id="M06-CAP-MEDICATION-4fbeeb87456accf5"></a>
+- **M06-CAP-MEDICATION-4fbeeb87456accf5**: Supports
+
+<a id="M06-CAP-MEDICATION-5ba74d8fcc7b20cc"></a>
+- **M06-CAP-MEDICATION-5ba74d8fcc7b20cc**: Status
+
+<a id="M06-CAP-MEDICATION-d5232cbd3a326267"></a>
+- **M06-CAP-MEDICATION-d5232cbd3a326267**: Documentation
+
+<a id="M06-CAP-MEDICATION-6f33acf3afb37064"></a>
+- **M06-CAP-MEDICATION-6f33acf3afb37064**: ---
+
+<a id="M06-CAP-MEDICATION-20dcf9e08bfc7cd6"></a>
+- **M06-CAP-MEDICATION-20dcf9e08bfc7cd6**: Tracks
+
+<a id="M06-CAP-MEDICATION-6510c5c511a879bc"></a>
+- **M06-CAP-MEDICATION-6510c5c511a879bc**: Purpose:
+
+<a id="M06-CAP-MEDICATION-b34f593f0f83a1d1"></a>
+- **M06-CAP-MEDICATION-b34f593f0f83a1d1**: Core Functions:
+
+<a id="M06-CAP-MEDICATION-fd85b703c00f8755"></a>
+- **M06-CAP-MEDICATION-fd85b703c00f8755**: MVP Relevance:
+
+<a id="M06-CAP-MEDICATION-b88b375a44ccd619"></a>
+- **M06-CAP-MEDICATION-b88b375a44ccd619**: Status:
+
+[Applied migration](../../../audit/master-06/requirement_migration.json) · [Gap disposition](../../../audit/master-06/gap_disposition.json) · [Readiness gates](../../../audit/master-06/implementation_gate_matrix.json).

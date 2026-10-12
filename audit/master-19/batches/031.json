@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 31,
+  "family": "laboratory-document-archives",
+  "owner": "CAP-DOCUMENTS",
+  "ids": [
+    326,
+    346,
+    368,
+    545
+  ],
+  "decision_sha256": "331d22bb864dec81ca7ccae2aa09a07cc499c3718aef0b89319450df25de3d50",
+  "source_hashes": {
+    "326": "2bcd5d3c728dca6a92369779c05ae0807c3d73736b95f6a52d4b61d0f5aa4ce2",
+    "346": "8164d9e0f7ebcc784fefb61da3babbaf1b29db845396596c035f0050b04ab703",
+    "368": "a3578ca2dd43b1c3da0808eb3158e2193af8419602ccc2ee77f9b4edcc969634",
+    "545": "f28cc54ad0540ea4279b5b4c01d4bb3ad968e5a56e311d38dd3c196da07204e6"
+  }
+}

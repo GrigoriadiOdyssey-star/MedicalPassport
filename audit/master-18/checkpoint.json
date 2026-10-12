@@ -1,0 +1,1119 @@
+{
+  "pass": "MASTER-18",
+  "date": "2026-09-17",
+  "parent_commit": "e8b21a680b7af7c73faf9c3cae8d07146041fa69",
+  "branch": "audit/master-pass-18",
+  "progress": {
+    "pass": "MASTER-18",
+    "baseline_commit": "e8b21a680b7af7c73faf9c3cae8d07146041fa69",
+    "baseline_state": "audit/master-08/",
+    "mode": "APPEND_ONLY_DELTA",
+    "date": "2026-09-17",
+    "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+    "gitlab_writes": false,
+    "schema_version": 5,
+    "edition": "2026-09-15",
+    "parent_checkpoint": "e8b21a680b7af7c73faf9c3cae8d07146041fa69",
+    "implementation_started": false,
+    "EXPECTED_SOURCE_MODULES": 51075,
+    "ORIGINAL_SOURCE_MODULES": 5175,
+    "ACCOUNTED_SOURCE_MODULES": 5175,
+    "NEW_GAP_MODULES": 0,
+    "REVIEWED": 5175,
+    "NORMALIZED": 4312,
+    "CANONICALIZED": 4312,
+    "IMPLEMENTATION_READY": 0,
+    "UNAUDITED": 0,
+    "REVIEW_PROGRESS": 100,
+    "NORMALIZATION_PROGRESS": 83.3237,
+    "CANONICALIZATION_PROGRESS": 83.3237,
+    "GAP_FILL_PROGRESS": 100,
+    "IMPLEMENTATION_READINESS": 0,
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+    "gap_scope": {
+      "identified_specification_gaps": 7,
+      "drafted": 7,
+      "validated_closed": 7,
+      "integrated": 7,
+      "validation_scope": "Documentation semantic/owner/integration gates only; clinical/runtime release gates remain open",
+      "clinical_validated": 0
+    },
+    "formulas": {
+      "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+      "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+      "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+      "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+      "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+      "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate",
+      "AUDIT_WORK_PROGRESS": "100 * (REVIEWED + NORMALIZED + CANONICALIZED) / (3 * 5175); equal-weight documentation work steps, not clinical readiness or time spent"
+    },
+    "duplicate_counts": {
+      "exact_groups": 3,
+      "semantic_groups": 1,
+      "partial_overlap_groups": 47,
+      "distinct_capability_groups": 1,
+      "unresolved_clusters": 1937,
+      "source_ids_closed": 0
+    },
+    "legacy_generations_confirmed": 0,
+    "legacy_marker_candidates": 27,
+    "high_risk_candidate_ids": 3608,
+    "critical_findings": 6,
+    "high_findings": 11,
+    "gitlab_write_status": "NO_WRITES",
+    "final_audit_ready": false,
+    "GAP_FILL_VALIDATED": 7,
+    "AUDIT_WORK_PROGRESS": 88.8824,
+    "NEWLY_REVIEWED": 0,
+    "NEWLY_NORMALIZED": 652,
+    "NEWLY_CANONICALIZED": 652,
+    "CANONICAL_SPECIFICATIONS": 28,
+    "UNIQUE_REQUIREMENTS_PRESERVED": 21907,
+    "SOURCE_FRAGMENTS_PRESERVED": 58154,
+    "GAP_FILL_INTEGRATED": 7,
+    "NEWLY_GAP_FILL_VALIDATED": 0,
+    "NEWLY_GAP_FILL_INTEGRATED": 0,
+    "PROFILES": 373,
+    "NEWLY_IMPLEMENTATION_READY": 0,
+    "REVIEWED_BEFORE_RUN": 5175,
+    "FAST_REVIEWED": 0,
+    "DEEP_REVIEWED": 0,
+    "NEEDS_DEEP_REVIEW": 0,
+    "DUPLICATE_CANDIDATES_FOUND": 0,
+    "PARTIAL_OVERLAPS_FOUND": 0,
+    "LEGACY_CANDIDATES_FOUND": 0,
+    "LEVEL_A_LIMITATION": "Deterministic full-body classification with evidence extraction, not complete clinical/semantic adjudication. Deep queue is counted separately and not implementation-ready.",
+    "KNOWN_DEEP_REVIEW_QUEUE": 3109,
+    "deep_queue_scope": "MASTER12 and MASTER13 only; older clinical findings remain inherited",
+    "NEW_REVIEW_SOURCE_FRAGMENTS_PRESERVED": 0,
+    "DEEP_QUEUE_RESIDUAL_NOTE": "Seven canonical boundaries resolved for documentation; clinical/integration gates remain open, no queue items silently removed.",
+    "NORMALIZED_BEFORE": 3660,
+    "CANONICALIZED_BEFORE": 3660,
+    "REMAINING": 863,
+    "MVP_CORE": 7,
+    "MVP_OPTIONAL": 3,
+    "POST_MVP": 14,
+    "PHASE_2": 4,
+    "RESEARCH": 4,
+    "LONG_TERM": 1,
+    "CANONICAL_OWNERS_CREATED": 0
+  },
+  "readiness": {
+    "queue": "audit/master-18/readiness_queue.json",
+    "selected": [
+      "CAP-AUDIT",
+      "CAP-SECURITY",
+      "CAP-CONSENT",
+      "CAP-PROFILE",
+      "CAP-ALLERGY",
+      "CAP-DATA",
+      "CAP-IDENTITY"
+    ],
+    "new_specification_fields_resolved": 3,
+    "mvp_specification_categories_resolved": 1,
+    "full_owner_blockers_resolved": 0,
+    "newly_ready": 0,
+    "total_ready": 0,
+    "still_blocked": 28,
+    "mvp_core_ready": 0,
+    "mvp_core_blocked": 7,
+    "blockers": {
+      "full_owner_open_items": 241,
+      "mvp_open_categories": 6,
+      "full_owner_resolved": 0,
+      "mvp_specification_categories_resolved": 1
+    }
+  },
+  "targeted_clusters": 56,
+  "readiness_checks": 8,
+  "full_runs": [
+    {
+      "name": "MILESTONE80",
+      "passed": 198,
+      "failed": 0,
+      "path": "audit/master-18/validation/MILESTONE80.txt",
+      "sha256": "f5292a3927376384f6354fc8b2ed86fc5d0b1dfab61dbfb9e03802f13b2bedd7"
+    },
+    {
+      "name": "FINAL",
+      "passed": 198,
+      "failed": 0,
+      "path": "audit/master-18/validation/FINAL.txt",
+      "sha256": "e381abcba619e3ee1420b1e3102f31af0311c557f95d9ed7c3e7e169a0ba86d6"
+    }
+  ],
+  "new_profiles": 56,
+  "new_owners": 0,
+  "new_canonical_specifications": 0,
+  "new_source_fragments": 5759,
+  "new_owner_distinct_strings": 2222,
+  "next_exact_cluster": {
+    "key": "remaining-pediatric-high-risk-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-SPECIALTY",
+      "CAP-IMMUNIZATION",
+      "CAP-ALLERGY",
+      "CAP-MEDICATION",
+      "CAP-CDS",
+      "CAP-IMAGING",
+      "CAP-LABORATORY",
+      "CAP-DEVICES",
+      "CAP-CONSENT"
+    ],
+    "ids": [
+      4004,
+      4005,
+      4014,
+      4025,
+      4029,
+      4030,
+      4036,
+      4047,
+      4049,
+      4054,
+      4055,
+      4056,
+      4065,
+      4084,
+      4087,
+      4094,
+      4095,
+      4104,
+      4105,
+      4107,
+      4111,
+      4112,
+      4114,
+      4124,
+      4127,
+      4128,
+      4129,
+      4132,
+      4134,
+      4136,
+      4138,
+      4142,
+      4148,
+      4150,
+      4151,
+      4154,
+      4185,
+      4214,
+      4215,
+      4254,
+      4263,
+      4264,
+      4266,
+      4272,
+      4274,
+      4275,
+      4276,
+      4277,
+      4278,
+      4280,
+      4281,
+      4282,
+      4284,
+      4290,
+      4291,
+      4292,
+      4294,
+      4295,
+      4298,
+      4302,
+      4303,
+      4304,
+      4306,
+      4308,
+      4309,
+      4310,
+      4312,
+      4313,
+      4314,
+      4315,
+      4316,
+      4317,
+      4318,
+      4319,
+      4320,
+      4325,
+      4326,
+      4327,
+      4328,
+      4329,
+      4330,
+      4331,
+      4332,
+      4333,
+      4334,
+      4335,
+      4336,
+      4337,
+      4338,
+      4340,
+      4342,
+      4343,
+      4344,
+      4345,
+      4346,
+      4348,
+      4349,
+      4350,
+      4353,
+      4356,
+      4357,
+      4359,
+      4362,
+      4371,
+      4372,
+      4373,
+      4375,
+      4377,
+      4378,
+      4379,
+      4380,
+      4382,
+      4386,
+      4391,
+      4394,
+      4395,
+      4403,
+      4406,
+      4408,
+      4409,
+      4410,
+      4413,
+      4415,
+      4417,
+      4421,
+      4424,
+      4425,
+      4426,
+      4428,
+      4430,
+      4436,
+      4437,
+      4447,
+      4464,
+      4468,
+      4469,
+      4473,
+      4483,
+      4484,
+      4487,
+      4489,
+      4490,
+      4505,
+      4509,
+      4512,
+      4514,
+      4522,
+      4526,
+      4528,
+      4553,
+      4557,
+      4559,
+      4561,
+      4564,
+      4589,
+      4597,
+      4604,
+      4612,
+      4613,
+      4616,
+      4621,
+      4712,
+      4729,
+      4730,
+      4734,
+      4738,
+      4747,
+      4748,
+      4756,
+      4758,
+      4765,
+      4770,
+      4777,
+      4778,
+      4783,
+      4785,
+      4786,
+      4790,
+      4802,
+      4806,
+      4808,
+      4811,
+      4812,
+      4813,
+      4814,
+      4817,
+      4821,
+      4828,
+      4829,
+      4830,
+      4833,
+      4836,
+      4844,
+      4846,
+      4847,
+      4852,
+      4854,
+      4855,
+      4858,
+      4859,
+      4862,
+      4869,
+      4880,
+      4881,
+      4888,
+      4891,
+      4892,
+      4894,
+      4896,
+      4902,
+      4903,
+      4904,
+      4907,
+      4908,
+      4910,
+      4912,
+      4914,
+      4915,
+      4917,
+      4919,
+      4927,
+      4928,
+      4931,
+      4934,
+      4935,
+      4936,
+      4941,
+      4942,
+      4944,
+      4947,
+      4952,
+      4954,
+      4957,
+      4963,
+      4970,
+      4971,
+      4972,
+      4980,
+      5003,
+      5005,
+      5008,
+      5009,
+      5011,
+      5012,
+      5016,
+      5017,
+      5030,
+      5036,
+      5037,
+      5052,
+      5053,
+      5054,
+      5056,
+      5063,
+      5067,
+      5072,
+      5077,
+      5082,
+      5085,
+      5087,
+      5134,
+      5152,
+      5156,
+      5157,
+      5158,
+      5160,
+      5165,
+      5170
+    ]
+  },
+  "remaining_source_ids_path": "audit/master-18/normalization_queue.json",
+  "artifacts": [
+    {
+      "path": "audit/master-18/CONTINUE_FROM_HERE.md",
+      "sha256": "27816b0da7eef22d8da37e5538581015dd1fdc84440edea39fdd0e17f5659e84"
+    },
+    {
+      "path": "audit/master-18/DECISIONS_AND_LIMITS.md",
+      "sha256": "102110d8a2de7c623a0681976c21493d13911312acfb9085997361d1772481a7"
+    },
+    {
+      "path": "audit/master-18/aliases_delta.json",
+      "sha256": "a68553981ede7599beb849595dfc7836cff151136909ab168cdbfb699b940109"
+    },
+    {
+      "path": "audit/master-18/audit_ledger_delta.json",
+      "sha256": "55a7d75df11f4a9fdf52d17d4831c3a3c712ecc29e353ba891dfab4252315904"
+    },
+    {
+      "path": "audit/master-18/audit_progress.json",
+      "sha256": "16c1587dd21334dfe5dce0e7fe37b0fff69402cdb0a40fd29b2df84360ef7cd7"
+    },
+    {
+      "path": "audit/master-18/batches/001.json",
+      "sha256": "aa5fe5c10b9bdc7c0d81e3ce37efe15cee72350e81e44a59c9a3d916237b35ef"
+    },
+    {
+      "path": "audit/master-18/batches/002.json",
+      "sha256": "06af1584211c78197ef70ead9a13604e75f18c5905bad31362b4130173b2a9ab"
+    },
+    {
+      "path": "audit/master-18/batches/003.json",
+      "sha256": "2cfe34d0b10aa88638fddc0b3ecb30e30b5dcdeda924ceeac4aff8c0a0a029ff"
+    },
+    {
+      "path": "audit/master-18/batches/004.json",
+      "sha256": "8956a71648d34e183b2fd9dd937d2e6bb9bef0d12e42255f2897cf1d193ef006"
+    },
+    {
+      "path": "audit/master-18/batches/005.json",
+      "sha256": "84677de2c9b3540dc4f796ad0098587f2e00d2021ae6de71f5d46501a5cbf340"
+    },
+    {
+      "path": "audit/master-18/batches/006.json",
+      "sha256": "284fd19e7243625406b61eaee02c78104c28d52ad2d63889bd0f068aa7124be9"
+    },
+    {
+      "path": "audit/master-18/batches/007.json",
+      "sha256": "13aee27077576a0ae6c6b18a0bb24879c5ff208e283c0c2e3f8f32ac406c41b9"
+    },
+    {
+      "path": "audit/master-18/batches/008.json",
+      "sha256": "6efabad14a8d8718d58f69845ba94f6e7c6083c90f50566770708b119af48af5"
+    },
+    {
+      "path": "audit/master-18/batches/009.json",
+      "sha256": "ccfdfd20f2d914e0fb397b26c8ad35d86826742992692f97ffd510bbfddf1b0a"
+    },
+    {
+      "path": "audit/master-18/batches/010.json",
+      "sha256": "7447723b7b73f28d69b5e71596ca82ebd3e559d6b84f1ff962498410f6496b99"
+    },
+    {
+      "path": "audit/master-18/batches/011.json",
+      "sha256": "7ea4a8fc260b4127ce33b42fc061545d62c2c01f3951bc8cc4fa9b72cc23b3e1"
+    },
+    {
+      "path": "audit/master-18/batches/012.json",
+      "sha256": "556572c6bed6e06c223417d479aa6c40106b029e6862813bf389797f55d2886e"
+    },
+    {
+      "path": "audit/master-18/batches/013.json",
+      "sha256": "5959d176eee8224551715426bac556439bd69a928387402dba8963529371735d"
+    },
+    {
+      "path": "audit/master-18/batches/014.json",
+      "sha256": "f65b0e5b0b04d32ac8409a1670de3ea72922870333e985e70d087378675d2588"
+    },
+    {
+      "path": "audit/master-18/batches/015.json",
+      "sha256": "c2de7445422bcef5bef282c11fa73bb048c401ac1143bb4ffbf9793ef1910b65"
+    },
+    {
+      "path": "audit/master-18/batches/016.json",
+      "sha256": "7ccc5339bf3db05fbe9d44d7deeadcd8eac4b77bda99aad08a4f9df4a05eb9e9"
+    },
+    {
+      "path": "audit/master-18/batches/017.json",
+      "sha256": "4978c211ad3bcfb3a3215c5610680750fe4ed5da7a1afefea2383f264ca3f1d8"
+    },
+    {
+      "path": "audit/master-18/batches/018.json",
+      "sha256": "f2a520302cf35be2b9049335fda036e889398c05b866a5d3533f52b942f3f324"
+    },
+    {
+      "path": "audit/master-18/batches/019.json",
+      "sha256": "9852018d90e8b584cef76dfc0b798a306a87ced472a5cdfbdf9818a073e3578b"
+    },
+    {
+      "path": "audit/master-18/batches/020.json",
+      "sha256": "6deecc83deb92a7fb7d5147cf82f3b461aeb9385a5bb2c4d8719a9f4b75dcdec"
+    },
+    {
+      "path": "audit/master-18/batches/021.json",
+      "sha256": "bae7cc874a0b3d8601d9e838a8c1e5430e59789058f37393f80c739486bfe802"
+    },
+    {
+      "path": "audit/master-18/batches/022.json",
+      "sha256": "4de923ee73d39957ea8642a756b6a0fd07a3c02b46ba11c68b0cb671ba53e426"
+    },
+    {
+      "path": "audit/master-18/batches/023.json",
+      "sha256": "41fb546e7b9afbc578d782efedf1d534fd193eaa4b4557807a0910abbec863f6"
+    },
+    {
+      "path": "audit/master-18/batches/024.json",
+      "sha256": "e5e6e128b79f6ca7d1cb3e2f1a9370382510331477a0180b2ae2134e42f52dc4"
+    },
+    {
+      "path": "audit/master-18/batches/025.json",
+      "sha256": "fc1f6838a35b0f7cef9dcebb5e5c380a3416f48f73ae227aeccf539bb9209a64"
+    },
+    {
+      "path": "audit/master-18/batches/026.json",
+      "sha256": "42337adb1e614b5c680344bb1242dd4eec4f8b96ffda41548f9719c945d1d596"
+    },
+    {
+      "path": "audit/master-18/batches/027.json",
+      "sha256": "d5578409e815e2c4e9df833b79305bd9f9be1210a02063dc89ec05089f413530"
+    },
+    {
+      "path": "audit/master-18/batches/028.json",
+      "sha256": "6866c71f5f4135c8f1bb51c4158eaffd0688f93c073eb892d9f72e058ffd448e"
+    },
+    {
+      "path": "audit/master-18/batches/029.json",
+      "sha256": "d1838c633d420d227fddf72deb5e94e8fae27d796ddbde20c2a0cbeb7b1c26eb"
+    },
+    {
+      "path": "audit/master-18/batches/030.json",
+      "sha256": "d6686a24af35e0af84bd85b58b6e45046db3512dd3aabea2e3ba59613426932b"
+    },
+    {
+      "path": "audit/master-18/batches/031.json",
+      "sha256": "fbbb6b643f0570641f83a520ecc42ce860f23e50402c6e6b26ae5dc5c4c76769"
+    },
+    {
+      "path": "audit/master-18/batches/032.json",
+      "sha256": "33819fdd18bbdec611faa369ddb7e2aa9a3196a7add6c63042dae7283905da49"
+    },
+    {
+      "path": "audit/master-18/batches/033.json",
+      "sha256": "946d82aff620ea2dfabfa6a713e51e84a41ddc9a1c17f8f081aec570e56f6e68"
+    },
+    {
+      "path": "audit/master-18/batches/034.json",
+      "sha256": "3b2f1142e6ed090e56be5b51d1fd88d60282df7b7df0c5258695f6b25e3b31d1"
+    },
+    {
+      "path": "audit/master-18/batches/035.json",
+      "sha256": "26270a0388126bdddfee4dc2d9de4af517f948c4bbab176baec5c7e59f3f0236"
+    },
+    {
+      "path": "audit/master-18/batches/036.json",
+      "sha256": "ad9006023ee169b8d4723093717bce2d3e4ccea3ce5ab65fcac3289bbe3b1ad6"
+    },
+    {
+      "path": "audit/master-18/batches/037.json",
+      "sha256": "fb627c74a5af4d4a1136da5ae1ba81d7d3f486bdafca8b9fb99478714127743a"
+    },
+    {
+      "path": "audit/master-18/batches/038.json",
+      "sha256": "7fc44465aa869cb3dddbda0be1ffd8fdc23b8bb7f3154b3ad1636674cbe60bee"
+    },
+    {
+      "path": "audit/master-18/batches/039.json",
+      "sha256": "b80a1719b744739d6a9572664d01813aea904ab5be89bae96b885a4b55b4b228"
+    },
+    {
+      "path": "audit/master-18/batches/040.json",
+      "sha256": "460f4a1f9a19b495d40e4a3b6187b0b4f25657f64d004f41b2830ba272a7a9cc"
+    },
+    {
+      "path": "audit/master-18/batches/041.json",
+      "sha256": "c3f7d293367161663244b57f844e3b909d3477a26814c0b8c849501dcb151bc0"
+    },
+    {
+      "path": "audit/master-18/batches/042.json",
+      "sha256": "76cac7b455acf0dc6fb2b0d3e241e8ff6b28b3a141c9800384313404b2ec9828"
+    },
+    {
+      "path": "audit/master-18/batches/043.json",
+      "sha256": "59c22631c472cce334669f4135522f148c6ba1de2fc36735fe9af4dd81b8cda2"
+    },
+    {
+      "path": "audit/master-18/batches/044.json",
+      "sha256": "f07ecc9d044d76fcd13eba6d53139cfc17d3e4378d5158b3bd38054e08d8d9cc"
+    },
+    {
+      "path": "audit/master-18/batches/045.json",
+      "sha256": "b3398486bdc4f2ae86a50e6b46deea3b581b419b775ea17ebc379dd7e9e5daa1"
+    },
+    {
+      "path": "audit/master-18/batches/046.json",
+      "sha256": "cf927eb0cfff07b2ea17552a3aad5c7e584e553ddf888eaabe364250c88747dd"
+    },
+    {
+      "path": "audit/master-18/batches/047.json",
+      "sha256": "d34ba992f648a737d04881d00672f32c157c032d9e939b38f8b0a18941e800dc"
+    },
+    {
+      "path": "audit/master-18/batches/048.json",
+      "sha256": "370eb2bdc74f884bf0f49abdd9e9fbf727c7742c3dcc360d218295052efdddde"
+    },
+    {
+      "path": "audit/master-18/batches/049.json",
+      "sha256": "df9453b71a465f682042c2dd8b4000a860c268a3fedd20ba424773cbe52eb4c2"
+    },
+    {
+      "path": "audit/master-18/batches/050.json",
+      "sha256": "16ff52b7316b4e4035776e3666554e0c9a757d41833a96638f97f88c85a3c96e"
+    },
+    {
+      "path": "audit/master-18/batches/051.json",
+      "sha256": "af58f8d1aace7367597636cb9bb266bd37047d02bb32ca64c4d64b4fecf42a4b"
+    },
+    {
+      "path": "audit/master-18/batches/052.json",
+      "sha256": "a50ceec9a9af40187165dada027a049dea2746b484f46a89de28db07aa995c0a"
+    },
+    {
+      "path": "audit/master-18/batches/053.json",
+      "sha256": "8fd49f657ab97a821e981a2ff58fb2aaa797357b269969897a50d927b3f7c6dd"
+    },
+    {
+      "path": "audit/master-18/batches/054.json",
+      "sha256": "791a3d925e4aadf6d5861a33a2f0a69fab7ac80cd89ec05be10c7bb6838e715d"
+    },
+    {
+      "path": "audit/master-18/batches/055.json",
+      "sha256": "bb1b45ef3d6fd132f3713debdc7a3c40e2be088f5a70936fb5d99d5cc82136fa"
+    },
+    {
+      "path": "audit/master-18/batches/056.json",
+      "sha256": "95827d817150a6e044a349338f19d21878597a463944b279e46d3aa190e8c75c"
+    },
+    {
+      "path": "audit/master-18/canonical_delta.json",
+      "sha256": "038fedcbf208d6245fcf0d05f65275386d8916c613a429894f977c58ca0f74c9"
+    },
+    {
+      "path": "audit/master-18/canonical_registry_delta.json",
+      "sha256": "1b473b6cfd043721a16cb089e68f46b3f947d9d81f6e83f988374d434dc9bcfe"
+    },
+    {
+      "path": "audit/master-18/cluster_checkpoint.json",
+      "sha256": "1999469bd7b83cc7ccc5757f1f4540575bb4065e72250082876e703d1a964f14"
+    },
+    {
+      "path": "audit/master-18/deep_review_queue_delta.json",
+      "sha256": "0b09253e36647ca40fd30a78087b8a1e9bd3a594d19a4d04ed32b0687df78184"
+    },
+    {
+      "path": "audit/master-18/dependency_graph_delta.json",
+      "sha256": "67380b1f9ae5d2e2ea2b0edb7e041d119f87b52d5679be4b1b26169c55e38b93"
+    },
+    {
+      "path": "audit/master-18/mvp_delta.json",
+      "sha256": "44defdefb44bb0b9d753cab6004ea95966bfc570209592be5445e78799996b4e"
+    },
+    {
+      "path": "audit/master-18/normalization_queue.json",
+      "sha256": "6da1892d782acbc5fed48649c9ed006be2e7e118212fe8fd7a40b3d022020a06"
+    },
+    {
+      "path": "audit/master-18/normalized_delta.json",
+      "sha256": "d4c1c31d2ec7bed143c0569aa1f1c0e87de9edbff9b99f589a498f4b8d6e702b"
+    },
+    {
+      "path": "audit/master-18/readiness_preparation.json",
+      "sha256": "ea666d620fdabf881d748db4a68a9452f2fc047d983fb703b6cf228a0876fec8"
+    },
+    {
+      "path": "audit/master-18/readiness_queue.json",
+      "sha256": "a6f513dca3a4b3f1a573763910b0d6ea6d7ab534de2d93e839eb38fa4a825ce3"
+    },
+    {
+      "path": "audit/master-18/requirement_migration_delta.json",
+      "sha256": "95e35919f5e261be521b570225f383d71cb12e0c6dc34417d6686bc93d5787e3"
+    },
+    {
+      "path": "audit/master-18/semantic_comparisons.json",
+      "sha256": "d66563db0771daa3baa342f9801602e8771bfcab8096ecf82ed5f45fbab5d706"
+    },
+    {
+      "path": "audit/master-18/state_manifest.json",
+      "sha256": "dde3393e5295f949e7a33bb8a36d7aaf122298cc004ac669e7c039fcae2ae842"
+    },
+    {
+      "path": "audit/master-18/validation/FINAL.txt",
+      "sha256": "e381abcba619e3ee1420b1e3102f31af0311c557f95d9ed7c3e7e169a0ba86d6"
+    },
+    {
+      "path": "audit/master-18/validation/MILESTONE80.txt",
+      "sha256": "f5292a3927376384f6354fc8b2ed86fc5d0b1dfab61dbfb9e03802f13b2bedd7"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-001.txt",
+      "sha256": "d635a828ec251cd8ce2e8ca3cf3c247992e7e379a4fbb2a6ae745689f3932bfe"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-002.txt",
+      "sha256": "1cbf10732eb0dea06da882c86d2b488d63cf77e2bf059dff2069be1f62312809"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-003.txt",
+      "sha256": "61a872cab4bf1c541dbe0b69465d819c8148bc4f8e7e36002ba4d34aef539151"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-004.txt",
+      "sha256": "3999326e85df6eb1fa896b7cfb3d1cf5e5d612aeca529536d1dcaedf71a5a305"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-005.txt",
+      "sha256": "24eb21714599122d6b4a67705884c8a26701f3c3f767eaf07edbf277d4748d28"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-006.txt",
+      "sha256": "96ee7d80db332aeaa69d6018e5e24e9b15a41eb3dad61e8253d82304e326ad70"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-007.txt",
+      "sha256": "57bd0d154aea9ae52e036c9e0713226684c151dc8a1ff4da513760a36c35478e"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-008.txt",
+      "sha256": "f295c8159905330acdbdc14d849ea00b237179453851fdadb9a16a188b0138cf"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-009.txt",
+      "sha256": "7f51b961af36f5ae19c36ad9347031cc3ab0bab92394c34480d93f0ad7710286"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-010.txt",
+      "sha256": "92c2d82d7115fda6a9913b82319b192f1b6a184b8e08e62222a90e84f527646d"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-011.txt",
+      "sha256": "b0cc8032dec25607d77633bcfc59eb0eb639d3b707c1ec7cec2d31ffd2cde1b4"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-012.txt",
+      "sha256": "61d97a29237cec31988caac22d7856dba2c9924e552beaab3914237683a14de3"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-013.txt",
+      "sha256": "bbd0b82c7b4124315736a3b59d40256158dce5741fdd8c8a8b6bfff09340a0a0"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-014.txt",
+      "sha256": "1d01fe1777643641226c2e794cd1767925690c99b921b360c897325405bbe665"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-015.txt",
+      "sha256": "858bbbc0bc35c0599ad8adfeb070802b60a89679f52f240ce344009901fa237c"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-016.txt",
+      "sha256": "eca1a7868f996a0f91b7d1bf331d39ce6a9c6951f4a0555f4ae93a85eed22665"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-017.txt",
+      "sha256": "d96b4c496c8dc83b26b97f4260899de7aa9f6a289b40757be8e86428283bb9d5"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-018.txt",
+      "sha256": "2188b396dcae7be349872920346bae3f7e339352ebbc9ea73cebc98f091e14c7"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-019.txt",
+      "sha256": "b3a370dde0b02e6e6a3747adf45d7e9b0e4bb615bbe8b42a0f80b70e3171b93c"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-020.txt",
+      "sha256": "b3861a35864b883e0599ff1e38b2a31d1893ba222952ce2eaa71cb8981077700"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-021.txt",
+      "sha256": "7eff01319d9148379186bc611ca19cccf47fd139d3362c95eadf82d3d0856cd1"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-022.txt",
+      "sha256": "6326f08ebd8b33c4db1175e48d23e60f6358aa41bda3a73b067ce8791336efe9"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-023.txt",
+      "sha256": "b485078764fa8d24178f11cf122285adc251aef65eca7ab8713989fc879ea36e"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-024.txt",
+      "sha256": "fd7a455913a0bb9ef9980fb016dd04c17deb18c5857bc713b78ca934adb22206"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-025.txt",
+      "sha256": "e62ccd5e278c4ef883ffbf7aa73c2e9dfc4fe2323010885b10b0292caa0cc926"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-026.txt",
+      "sha256": "3cefdfb19cfdc22e9aa6fb8f95015653c8a140c6f222f859b0be07e11322b6e6"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-027.txt",
+      "sha256": "ffa6eb0e7ae9a87a4948700380ac7baf44ffddd7988890edea21282c718608f3"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-028.txt",
+      "sha256": "b82f66d5a001a62037e95cca306dbf4a795eb783be0fa7054d32223c8d857936"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-029.txt",
+      "sha256": "39176fa96206c04df4606fd8debe87f9e459fd9857f6c28e696f32b929903268"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-030.txt",
+      "sha256": "3704fa6d53d932d645044a2d3c17e8e3bbcb3e95d1374a2bec6509040876508a"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-031.txt",
+      "sha256": "f1db09d4f15e7036f16db049abae9ae45da1f572da6eb2bd4e594948637fe9d1"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-032.txt",
+      "sha256": "3471fa353a49e09d1c4f4294b9861a2fc81ad06d5db3ffb07ef0620bc8049380"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-033.txt",
+      "sha256": "1c5ca09a8e046f25224b1ed64ec818c7405af93494a89e37956bbd74e2bdcedd"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-034.txt",
+      "sha256": "dce86cf5639934d8b5e215c5c869f077bb0e8dd9375a5567f67632b0febc0cf8"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-035.txt",
+      "sha256": "bd801f7ca37e4ef4e5fcc55841e7aa4976d9e4ad69c60fc0fc7508a3c0979421"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-036.txt",
+      "sha256": "3b625f7b86ed97863276bb06c569d720eb20fdf5b855841033e357c19cfa9a2d"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-037.txt",
+      "sha256": "82528922f4d132558a5087720e3f29e6ce91e427352e1be55b3afe8dee73459c"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-038.txt",
+      "sha256": "98f7c7025010950c7a331aada4049de94b78bee156b2399d6b463e24ad7e9bdd"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-039.txt",
+      "sha256": "f596d1a7d4297c0ccaa70aad20fb03d4319b9195e2013ad375c7179e74880891"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-040.txt",
+      "sha256": "476026722ba18110c879cb52c33e3eb01f86d9e317194ae6e0fbd5c9d5fb1eb2"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-041.txt",
+      "sha256": "96eb77348567474c552e803ed93b7b2526d7053e8e30fdd9b9ad3711efdef763"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-042.txt",
+      "sha256": "82cd782c500b13ed4cc744a2cb9ff9aa523528af4c8964076543c7cc0252abaa"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-043.txt",
+      "sha256": "6ce3a95dbd4eaba69eb4d6fb07d97da47eacd8e13e2cb9cc38ea633cc5f7a3b8"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-044.txt",
+      "sha256": "320d26c212bd7570a0568d504035e889414835a63ce9d30e0edf1b249aa1cabe"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-045.txt",
+      "sha256": "895cde9fdc817e54329caf666a41b3bc04b27587b81d976fe3a786c4bf3c70d6"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-046.txt",
+      "sha256": "45210c328772f0e1da8ea9159ef58dfb396076ba8ca5b3521d3863c8daa610b3"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-047.txt",
+      "sha256": "fc24089c8535925d7e6e9091b7d0f0f2755359fcc5ab77ab31fafbce5edc56fa"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-048.txt",
+      "sha256": "0d8bd163c5053a6e374ad4876a8fb1f80b0d8b958ecee7b9712ac998d85ab5a9"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-049.txt",
+      "sha256": "907a56d640f14d6bbab169940ec062a033ec2088218c95369a46cba8c953d79a"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-050.txt",
+      "sha256": "6aabc8a831ab3672e74ba8f7173b5bc7c1b6e761ef45262dc422bad42e718f6c"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-051.txt",
+      "sha256": "5d74efc04426d01b993f45a651a9ec0b0ce30586a0d7cabc8694a8bba34d8fb5"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-052.txt",
+      "sha256": "73d93d3e5f17b9e97db432d986ca29c516a82ac926f3efbd89303d47decc77ca"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-053.txt",
+      "sha256": "ace59ebb88910f121d1a286077c4ae914e92133c85fd6c69e00acaaf7c6cc240"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-054.txt",
+      "sha256": "bdbd1844da55ea14d75daf985850542e889651a5fe77ae62af2e407473cc9a55"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-055.txt",
+      "sha256": "ee37a07f2d63355a857748d1a3c71a00b41b757236e447a9e59fa41c43ccd94a"
+    },
+    {
+      "path": "audit/master-18/validation/cluster-056.txt",
+      "sha256": "54837a3da9fa834b22c40cfda225232449b566779ea39380475c0d9bc8af147e"
+    },
+    {
+      "path": "audit/master-18/validation/readiness.txt",
+      "sha256": "ace4c2b719e3be2448aaa95bf6e4321f45891242b28074176f9338251bc77993"
+    },
+    {
+      "path": "audit/master-18/validation_summary.json",
+      "sha256": "e5deb331795956fa00103ad0b81f41d07e9c0e1a46daa470d9db3ae5ba0975fc"
+    },
+    {
+      "path": "config/master18.mjs",
+      "sha256": "2a4a66313d7a521392aec252ead62e0f4822ba2ef81dcab17742101ac2ace1a6"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-AI.md",
+      "sha256": "f9f885a99baf5c145c2058b8b4e4615752b58b58c6595ff82dabcf1133b29d78"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-ALLERGY.md",
+      "sha256": "89b1ee99702e92a048110f7bacfe203ec139861688e1458d40b2da4c881a820a"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-APPOINTMENTS.md",
+      "sha256": "8aea9dc8246bd4cf2ec9e4ed9ea23451b5ddce9ce0f8e8eecc5767f6069c4e11"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-AUDIT.md",
+      "sha256": "b656189fe623b335c70b0f4f5985116f70ff647be0b4efe612e915e1bc5bbd57"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-CDS.md",
+      "sha256": "59d100e6e94694a3815a5c82de44ac916601a527422cfe167774ee822bfd0643"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-CONSENT.md",
+      "sha256": "c0dea3b08b433afbc660a8d7d0adbc9333562d101ac82b248d151511735af11d"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-DATA.md",
+      "sha256": "ff7ccf35a83d94c25a112fae41ff755ecb810540581a395458529373ff2ff59c"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-DEVICES.md",
+      "sha256": "e6abaf2443bb5f4f63f01bde974288ce55f2c81e2c9c31c627551f04e06a1766"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-DOCUMENTS.md",
+      "sha256": "ee88973dbf766cfb006ddb744e68d69b559afa253005c69fd0348888e412944d"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-EMERGENCY.md",
+      "sha256": "21dc2585a56371c28eabdaeeb048ea7c541e6e5db79fbf0c87c1a3215f15f6a5"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-ENCOUNTER.md",
+      "sha256": "d0461bf579d99727f7ef05258ac2b34e94777e1f60a39e5a0054b964ee16abce"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-IDENTITY.md",
+      "sha256": "9666898335cd481efb984db243817849d4870659f0e3dddb1025b65be65cbf48"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-IMAGING.md",
+      "sha256": "9e9dda2852d220146009d227fda1dd2bddb618d4128d0832bb221264b1ae6def"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-IMMUNIZATION.md",
+      "sha256": "dbc023432902384eda217870f61d60119d91b184dab297991b8314154ad17f42"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-INTEROP.md",
+      "sha256": "1cc789c48cb1460dd4d9681841dd905d52f15adf76db6efb2ace46394667a740"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-LABORATORY.md",
+      "sha256": "57394973265e5caf96ab3cf69705b61d6596e19b15bbac99e9b55f036f4a9baf"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-MEDICATION.md",
+      "sha256": "5c5d743cac7230e518cc8876c0338f8db578680bdeeb72319c01f40f0231e190"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-NOTIFICATIONS.md",
+      "sha256": "f6ae2e65d811b0120326845024cd9d800efb42f7c4d1c5e0a6c4807d9b4276e4"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-PHARMACY.md",
+      "sha256": "069690cd9beaba502a97b37f966573da1c02f263dd7af157cd61125e409b4eb9"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-PROFILE.md",
+      "sha256": "a24d42d12c62cc9a8d4031681aea2ed441f846e091aafc90eac0b3ad89659e15"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-RESEARCH.md",
+      "sha256": "90be6482d179dc16614c975e338ddd0fdc617211f586ce387bd818ed3216c74d"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-SECURITY.md",
+      "sha256": "c4c8b85cf67d626752da55b5fe2e0c98cd9c6edfba15d5d23735c9811e01221a"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-SPECIALTY.md",
+      "sha256": "0e27dbe86477d56c4a0560b80755fbb85487696f2be1c7e595536e12b2852ab2"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-TELEMEDICINE.md",
+      "sha256": "11ab9a83130d66a3b64a545b126eb31ae3c7ea30e483a112d3572452d8261c06"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-TRAVEL.md",
+      "sha256": "373b4cfb2869d991be08050d01e2abc83306332164fbcbdd631f3f3adc3a4227"
+    },
+    {
+      "path": "docs/canonical/master18/CAP-TWIN.md",
+      "sha256": "d700dd4306e57b6a0b79859c0e9fa37e8c6cced46640627abf1c1d796568c483"
+    },
+    {
+      "path": "docs/engineering/audit-receipt-query18.md",
+      "sha256": "8b82045d6fbf1a42d84c659831f0eff23f06c9db005ed296430615f7b69d82a3"
+    },
+    {
+      "path": "scripts/master18.mjs",
+      "sha256": "1190501fa0c63471fdbb3c65cf7ccbdacdd55033bbc09210fe9160d5b07addb9"
+    },
+    {
+      "path": "scripts/readiness18.mjs",
+      "sha256": "a84deeaabe02745cb58dd33694c4d4ca74e5374ab4576dd090a3f9d41a82dd3e"
+    },
+    {
+      "path": "scripts/receipt-query18-contract.mjs",
+      "sha256": "9ce055d90475043bbd3c6159700f13d27456c6416767a718bbca8ef8bd5b3749"
+    },
+    {
+      "path": "scripts/validate-master18.mjs",
+      "sha256": "85ffef89b2d279dbd3e2a2d9e52eca24f87a9a0d2174db34b2ed1157fcead1e5"
+    },
+    {
+      "path": "specs/audit-receipt-query18.fixtures.json",
+      "sha256": "7e0353ae5ea20f6448f32b8b011a96ef245a44e9e95913d3ac2e9a65e0e2edd2"
+    },
+    {
+      "path": "specs/audit-receipt-query18.schema.json",
+      "sha256": "250dac069e9fecd56d8a95dac1704cd6cc9baf097c645dafb2777fc744eed4d4"
+    },
+    {
+      "path": "tests/master18.test.mjs",
+      "sha256": "79eb80f5177e4ba22f692630cd7f5929c38a647f4c1b2a31f26c61cb5f516b35"
+    },
+    {
+      "path": "tests/readiness18.test.mjs",
+      "sha256": "5755bc4a9299339417cd8f90bc6b95a8137fad394d226a48b565c8efee428ea0"
+    }
+  ],
+  "gitlab_writes": false
+}

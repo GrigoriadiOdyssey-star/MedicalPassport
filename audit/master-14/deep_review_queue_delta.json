@@ -1,0 +1,48 @@
+{
+  "pass": "MASTER-14",
+  "removed_ids": [],
+  "items": [
+    {
+      "original_id": 107,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 118,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 342,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 367,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 756,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 1025,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    },
+    {
+      "original_id": 4305,
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "documentation_owner_boundary_resolved": true,
+      "clinical_and_runtime_gates_open": true
+    }
+  ]
+}

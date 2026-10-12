@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 1,
+  "family": "diagnostic-specialty-assessment",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    4755,
+    4767
+  ],
+  "decision_sha256": "167ca9911296bb58f8fbc189d94f7eb58a997bc5ca078947c4c64deaf8af76a1",
+  "source_hashes": {
+    "4755": "7844cb00dec71b365ab216800dce4d18fddc11e36ede8bdddc19dcbae497b70a",
+    "4767": "590a4f1fe2650ab0c7cd58d306cb55778f1e4fb3d705dfaaaf887e198d256471"
+  }
+}

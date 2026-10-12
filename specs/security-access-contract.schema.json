@@ -1,0 +1,458 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:edht:security-access-contract:1",
+  "title": "Bounded internal access envelopes, proposed only",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "request_id",
+        "tenant_id",
+        "subject_id",
+        "session_reference",
+        "patient_id",
+        "recipient_role_reference",
+        "action",
+        "resource_id",
+        "expected_resource_version",
+        "purpose_code",
+        "grant_id",
+        "expected_grant_version",
+        "expected_policy_version"
+      ],
+      "properties": {
+        "kind": {
+          "const": "access_request"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "subject_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "session_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "patient_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "recipient_role_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "action": {
+          "const": "allergy.read"
+        },
+        "resource_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "expected_resource_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "purpose_code": {
+          "const": "patient_authorized_review"
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "expected_grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "expected_policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "request_id",
+        "decision_id",
+        "decision",
+        "reason_code",
+        "checked_policy_version",
+        "checked_grant_version",
+        "checked_resource_version",
+        "audit_receipt_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "access_decision"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "decision_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "decision": {
+          "const": "ALLOW"
+        },
+        "reason_code": {
+          "const": "AUTHORIZED"
+        },
+        "checked_policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "checked_grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "checked_resource_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "audit_receipt_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "request_id",
+        "decision_id",
+        "decision",
+        "reason_code",
+        "checked_policy_version",
+        "checked_grant_version",
+        "checked_resource_version",
+        "audit_receipt_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "access_decision"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "decision_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "decision": {
+          "const": "DENY"
+        },
+        "reason_code": {
+          "enum": [
+            "CONTEXT_MISMATCH",
+            "STALE_VERSION",
+            "WITHDRAWN",
+            "EXPIRED",
+            "AUTHORITY_UNAVAILABLE",
+            "AUDIT_UNAVAILABLE",
+            "INVALID_REQUEST"
+          ]
+        },
+        "checked_policy_version": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "checked_grant_version": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "checked_resource_version": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "audit_receipt_reference": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "event_id",
+            "event_version",
+            "event_type",
+            "producer_reference",
+            "actor_reference",
+            "tenant_id",
+            "request_id",
+            "decision_id",
+            "occurred_at_ms",
+            "outcome",
+            "reason_code",
+            "policy_version",
+            "grant_version",
+            "resource_version"
+          ],
+          "properties": {
+            "kind": {
+              "const": "audit_event"
+            },
+            "event_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "event_version": {
+              "const": 1
+            },
+            "event_type": {
+              "enum": [
+                "AccessDecision",
+                "EnforcementReceipt"
+              ]
+            },
+            "producer_reference": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "actor_reference": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "tenant_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "request_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "decision_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "occurred_at_ms": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "outcome": {
+              "const": "ALLOW"
+            },
+            "reason_code": {
+              "const": "AUTHORIZED"
+            },
+            "policy_version": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "grant_version": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "resource_version": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "event_id",
+            "event_version",
+            "event_type",
+            "producer_reference",
+            "actor_reference",
+            "tenant_id",
+            "request_id",
+            "decision_id",
+            "occurred_at_ms",
+            "outcome",
+            "reason_code",
+            "policy_version",
+            "grant_version",
+            "resource_version"
+          ],
+          "properties": {
+            "kind": {
+              "const": "audit_event"
+            },
+            "event_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "event_version": {
+              "const": 1
+            },
+            "event_type": {
+              "enum": [
+                "AccessDecision",
+                "EnforcementReceipt"
+              ]
+            },
+            "producer_reference": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "actor_reference": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "tenant_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "request_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "decision_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "occurred_at_ms": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "outcome": {
+              "const": "DENY"
+            },
+            "reason_code": {
+              "enum": [
+                "CONTEXT_MISMATCH",
+                "STALE_VERSION",
+                "WITHDRAWN",
+                "EXPIRED",
+                "AUTHORITY_UNAVAILABLE",
+                "AUDIT_UNAVAILABLE",
+                "INVALID_REQUEST"
+              ]
+            },
+            "policy_version": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "grant_version": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "resource_version": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1,
+              "maximum": 9007199254740991
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

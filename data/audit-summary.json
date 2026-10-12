@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-09-13",
+  "sourceFile": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+  "sourceSha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "moduleCount": 5175,
+  "firstModuleId": 1,
+  "lastModuleId": 5175,
+  "duplicateTitleGroups": 492,
+  "duplicateBodyGroups": 3,
+  "modulesUnder50Words": 4468,
+  "modulesUnder100Words": 5057,
+  "sourceWordsInModuleBodies": 139815,
+  "wordCountMethod": "Sequences of Unicode letters, numbers and underscore in module bodies, including inner headings; Markdown punctuation is not counted as words.",
+  "correctionRules": 52,
+  "correctedModules": 63,
+  "replacementOccurrences": 80,
+  "p0SpecificationInputs": 57,
+  "implementationStatus": "No application source code was present in the input archive. Specifications are not an implemented product.",
+  "method": "Full-corpus structural/lexical checks; targeted semantic audit of core and risk-bearing content. Keyword flags are review candidates, not clinical or legal classification."
+}

@@ -1,0 +1,175 @@
+{
+  "master": "MASTER-26",
+  "branch": "implementation/master-26",
+  "source_of_truth": "existing canonical owners + MASTER-26 implementation request",
+  "no_new_canonical_owners": true,
+  "canonical_owners": [
+    "CAP-PHARMACY",
+    "CAP-MEDICATION",
+    "CAP-PRESCRIPTION",
+    "CAP-AI",
+    "CAP-TWIN",
+    "CAP-AUDIT",
+    "CAP-CONSENT",
+    "CAP-SECURITY",
+    "CAP-DATA"
+  ],
+  "classification_legend": [
+    "IMPLEMENTED",
+    "PARTIAL",
+    "INTERFACE_ONLY",
+    "SYNTHETIC_ADAPTER",
+    "NOT_IMPLEMENTED",
+    "EXTERNAL_GATE"
+  ],
+  "capabilities": [
+    {
+      "capability": "pharmacy_map_list",
+      "status": "SYNTHETIC_ADAPTER",
+      "evidence": "Local coordinate map/list provider; real map provider external gate"
+    },
+    {
+      "capability": "pharmacy_search",
+      "status": "IMPLEMENTED",
+      "evidence": "Name/product/ingredient/strength/form/package/manufacturer/location search with recent searches"
+    },
+    {
+      "capability": "composable_filters",
+      "status": "IMPLEMENTED",
+      "evidence": "Open/24h/delivery/pickup/eRx/benefit/insurance/stock/distance where data exists"
+    },
+    {
+      "capability": "pharmacy_detail",
+      "status": "IMPLEMENTED",
+      "evidence": "Identity/hours/services/provenance/inventory/favorite/call/directions boundary"
+    },
+    {
+      "capability": "medication_catalogue",
+      "status": "IMPLEMENTED",
+      "evidence": "Structured product identity and non-clinical matching categories"
+    },
+    {
+      "capability": "inventory_availability",
+      "status": "SYNTHETIC_ADAPTER",
+      "evidence": "IN_STOCK/LOW_STOCK/OUT_OF_STOCK/UNKNOWN, freshness and confidence"
+    },
+    {
+      "capability": "prescription_workflow",
+      "status": "SYNTHETIC_ADAPTER",
+      "evidence": "Active synthetic eRx through pharmacy selection and dispensing"
+    },
+    {
+      "capability": "benefit_insurance_government",
+      "status": "PARTIAL",
+      "evidence": "Jurisdiction-neutral model present; eligibility/connectors are external gates"
+    },
+    {
+      "capability": "pricing",
+      "status": "SYNTHETIC_ADAPTER",
+      "evidence": "Exact product-linked prices and freshness; no exchange-rate fabrication"
+    },
+    {
+      "capability": "reservation_order",
+      "status": "SYNTHETIC_ADAPTER",
+      "evidence": "State machine implemented; real pharmacy/order/payment/delivery connectors absent"
+    },
+    {
+      "capability": "dispensing_history",
+      "status": "IMPLEMENTED",
+      "evidence": "Append-only dispensing event plus longitudinal Medication record and audit"
+    },
+    {
+      "capability": "pharmacy_provider_portal",
+      "status": "INTERFACE_ONLY",
+      "evidence": "Provider capability contract only, no fake production network"
+    },
+    {
+      "capability": "international_travel_pharmacy",
+      "status": "PARTIAL",
+      "evidence": "Country/jurisdiction identifiers modeled; authoritative rules external gate"
+    },
+    {
+      "capability": "shortages_recalls_notices",
+      "status": "SYNTHETIC_ADAPTER",
+      "evidence": "Provenance model + explicit synthetic notice"
+    },
+    {
+      "capability": "medication_management",
+      "status": "PARTIAL",
+      "evidence": "Existing longitudinal medication/reminder runtime preserved; advanced verification sources remain gated"
+    },
+    {
+      "capability": "medication_reminders",
+      "status": "IMPLEMENTED",
+      "evidence": "Existing reminder schedules/timezone/history preserved"
+    },
+    {
+      "capability": "medication_safety_context",
+      "status": "PARTIAL",
+      "evidence": "Context aggregation and safety boundaries; authoritative interaction/contraindication sources external"
+    },
+    {
+      "capability": "precision_pharmacology_context",
+      "status": "IMPLEMENTED",
+      "evidence": "Normalized provenance-bearing context and epistemic states; no clinical automation"
+    },
+    {
+      "capability": "pharmacogenomics",
+      "status": "INTERFACE_ONLY",
+      "evidence": "Required provenance schema/boundary only; no genomic data fabricated"
+    },
+    {
+      "capability": "digital_twin_connection",
+      "status": "INTERFACE_ONLY",
+      "evidence": "SIMULATED request/response boundary with model/input/assumptions/uncertainty"
+    },
+    {
+      "capability": "ai_medication_assistant",
+      "status": "IMPLEMENTED",
+      "evidence": "Deterministic safety-boundary assistant; no prescribing/dose/stop/substitution"
+    },
+    {
+      "capability": "patient_pharmacy_ui",
+      "status": "IMPLEMENTED",
+      "evidence": "First-class navigation and required pharmacy/prescription/order/dispensing/pharmacology views"
+    },
+    {
+      "capability": "real_map_provider",
+      "status": "EXTERNAL_GATE",
+      "evidence": "No production API key/provider"
+    },
+    {
+      "capability": "real_pharmacy_inventory",
+      "status": "EXTERNAL_GATE",
+      "evidence": "No production pharmacy network connector"
+    },
+    {
+      "capability": "real_order_delivery_payment",
+      "status": "EXTERNAL_GATE",
+      "evidence": "No production order/delivery/payment connector"
+    },
+    {
+      "capability": "authoritative_regulation",
+      "status": "EXTERNAL_GATE",
+      "evidence": "No jurisdictional regulatory feed"
+    },
+    {
+      "capability": "authoritative_pgx",
+      "status": "EXTERNAL_GATE",
+      "evidence": "No clinical genomics/PGx source"
+    },
+    {
+      "capability": "production_clinical_validation",
+      "status": "EXTERNAL_GATE",
+      "evidence": "Requires qualified clinical, legal, security and jurisdictional validation"
+    }
+  ],
+  "safety": {
+    "autonomous_prescribing": false,
+    "autonomous_dose_adjustment": false,
+    "autonomous_discontinuation": false,
+    "autonomous_substitution": false,
+    "synthetic_data_explicit": true,
+    "precise_location_persisted": false
+  }
+}

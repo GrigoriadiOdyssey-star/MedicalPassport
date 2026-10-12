@@ -1,0 +1,143 @@
+{
+  "id": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+  "canonical_owner": "CAP-AI",
+  "extends": "CORE-CAP-AI",
+  "profiles": [
+    "GUIDELINE-CROSS-JURISDICTION",
+    "GUIDELINE-UPDATE-SURVEILLANCE"
+  ],
+  "registry_count": 1,
+  "new_canonical_owners": 0,
+  "canonical_specifications_unchanged": 33,
+  "status": "DESIGN_DEFINED_RUNTIME_ACCEPTANCE_PENDING",
+  "architecture_ready": false,
+  "engineering_ready": false,
+  "production_ready": false,
+  "mvp_scope_changed": false,
+  "mvp_baseline": "audit/master-21/checkpoint.json",
+  "components": [
+    {
+      "name": "Guideline Registry",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Source Connector Layer",
+      "owner": "CAP-INTEROP",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Retrieval",
+      "owner": "CAP-INTEROP",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Versioning",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Update Surveillance",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Change Detection",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Semantic Diff",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Clinical Impact Engine",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Translation",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Translation Versioning",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Semantic Alignment",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Cross-Jurisdiction Comparison Engine",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Re-comparison Engine",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Guideline Notification Service",
+      "owner": "CAP-NOTIFICATIONS",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Evidence/Provenance Layer",
+      "owner": "CAP-AI",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Clinical Safety Guardrails",
+      "owner": "CAP-CDS",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Doctor Review Workflow",
+      "owner": "CAP-ENCOUNTER",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Update Audit Trail",
+      "owner": "CAP-AUDIT",
+      "shared_registry": "CORE-CAP-AI/GUIDELINE-INTELLIGENCE",
+      "status": "SPECIFIED_NOT_IMPLEMENTED"
+    }
+  ],
+  "source_evidence": [
+    {
+      "path": "docs/canonical/master08/CAP-AI.md",
+      "sha256": "2b0b6ff3ad2dec7ad0a58e82394746a0138effedb151d92b959fe1658f37cc92"
+    },
+    {
+      "path": "docs/canonical/master08/CAP-CDS.md",
+      "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+    },
+    {
+      "path": "docs/canonical/guideline-intelligence.md",
+      "sha256": "09f44cf45aaa32cc5520d701cb8baee568f8ca1e539279649690f246d99e5bcb"
+    }
+  ],
+  "ownership_note": "CAP-DOCUMENTS retains original/translation blob storage; Knowledge AI owns their canonical registry metadata. Clinical-rule release is independent under CAP-CDS."
+}

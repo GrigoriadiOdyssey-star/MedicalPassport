@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 13,
+  "family": "pediatric-combined-specialty-safety",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    4747,
+    4947,
+    4972,
+    5017
+  ],
+  "decision_sha256": "e35e637f7265251b624dd307eb378827b2e6145b55642b812833de9b4a712524",
+  "source_hashes": {
+    "4747": "2efed87836388047a8c5d266e43717388858f77e5c306d85c927660da2ce90b6",
+    "4947": "94cab65c37ea37038668cb85442501858498fb890b61df16f3504546a3286902",
+    "4972": "c8ed5de6b34e5c8f64077d76a9018b2a450d99a4dbcb8d0da233abd56227dd18",
+    "5017": "c0d60b899d6d32546bf69a5a1f4357a9dd7a6fdb2f97dbf5f2292ff31f2e33bf"
+  }
+}

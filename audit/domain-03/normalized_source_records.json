@@ -1,0 +1,2266 @@
+{
+  "schema_version": 4,
+  "pass": "DOMAIN-03",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "records": [
+    {
+      "original_id": 846,
+      "source_title": "Pediatric Echocardiography Archive",
+      "source_sha256": "f6ba2d2b3fb66b71c685da91c6eba1e79874d1f7991c7e9d361c971b5acfc4ce",
+      "normalized_title": "Pediatric echocardiography record",
+      "canonical_target": "CAN-CARD-ECHO",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "scope": "Bounded documentation workflow from PED2-CARD-ECHO",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingMeasurement",
+        "DiagnosticReport"
+      ],
+      "workflow": "Acquire authorized echo reference → validate identity/measurement metadata → specialist report → longitudinal comparison.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-ECHO",
+        "document": "docs/canonical/CAN-CARD-ECHO.md",
+        "document_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e"
+      }
+    },
+    {
+      "original_id": 3064,
+      "source_title": "Pediatric Echocardiography Module",
+      "source_sha256": "d00d37257157406c94f25a197be099d77543634c86a13072883e52eddfe8ed97",
+      "normalized_title": "Pediatric echocardiography record",
+      "canonical_target": "CAN-CARD-ECHO",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "scope": "Bounded documentation workflow from PED2-CARD-ECHO",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingMeasurement",
+        "DiagnosticReport"
+      ],
+      "workflow": "Acquire authorized echo reference → validate identity/measurement metadata → specialist report → longitudinal comparison.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-ECHO",
+        "document": "docs/canonical/CAN-CARD-ECHO.md",
+        "document_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e"
+      }
+    },
+    {
+      "original_id": 3664,
+      "source_title": "Pediatric Echocardiography Module",
+      "source_sha256": "ffc1135f6d22d03caea66e1bab2b370ee805e88566398daa0a6a400e9772dc6a",
+      "normalized_title": "Pediatric echocardiography record",
+      "canonical_target": "CAN-CARD-ECHO",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "scope": "Bounded documentation workflow from PED2-CARD-ECHO",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingMeasurement",
+        "DiagnosticReport"
+      ],
+      "workflow": "Acquire authorized echo reference → validate identity/measurement metadata → specialist report → longitudinal comparison.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-ECHO",
+        "document": "docs/canonical/CAN-CARD-ECHO.md",
+        "document_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e"
+      }
+    },
+    {
+      "original_id": 4064,
+      "source_title": "Pediatric Echocardiography Module",
+      "source_sha256": "a050d554076e1f2e0a002c748dfe146226497436db23e57cdaa4d5f5c30ffbbd",
+      "normalized_title": "Pediatric echocardiography record",
+      "canonical_target": "CAN-CARD-ECHO",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "scope": "Bounded documentation workflow from PED2-CARD-ECHO",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingMeasurement",
+        "DiagnosticReport"
+      ],
+      "workflow": "Acquire authorized echo reference → validate identity/measurement metadata → specialist report → longitudinal comparison.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-ECHO",
+        "document": "docs/canonical/CAN-CARD-ECHO.md",
+        "document_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e"
+      }
+    },
+    {
+      "original_id": 3069,
+      "source_title": "Pediatric Cardiology Imaging Registry",
+      "source_sha256": "e788955a997567c628ec421df7abc5dd3491c163125c6a48cf8a500209c486aa",
+      "normalized_title": "Pediatric multimodality cardiac imaging",
+      "canonical_target": "CAN-CARD-IMAGING",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "scope": "Bounded documentation workflow from PED2-CARD-IMAGING",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingSeries",
+        "ReconstructionReference",
+        "Report"
+      ],
+      "workflow": "Link CT/MRI/echo/nuclear/catheterization study references → validate acquisition/geometry → specialist review → compare compatible studies.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-IMAGING",
+        "document": "docs/canonical/CAN-CARD-IMAGING.md",
+        "document_sha256": "b3c3b6e64107375a9a692dff823973856ef01f0f6c5fee75e8a797a62558a819"
+      }
+    },
+    {
+      "original_id": 3671,
+      "source_title": "Pediatric Cardiac Imaging Registry",
+      "source_sha256": "d653aa91d402164739e59148f2ad46935a0e6cdb87cd1175bc73ab5113a56615",
+      "normalized_title": "Pediatric multimodality cardiac imaging",
+      "canonical_target": "CAN-CARD-IMAGING",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "scope": "Bounded documentation workflow from PED2-CARD-IMAGING",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingSeries",
+        "ReconstructionReference",
+        "Report"
+      ],
+      "workflow": "Link CT/MRI/echo/nuclear/catheterization study references → validate acquisition/geometry → specialist review → compare compatible studies.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-IMAGING",
+        "document": "docs/canonical/CAN-CARD-IMAGING.md",
+        "document_sha256": "b3c3b6e64107375a9a692dff823973856ef01f0f6c5fee75e8a797a62558a819"
+      }
+    },
+    {
+      "original_id": 4070,
+      "source_title": "Pediatric Cardiac MRI & CT Registry",
+      "source_sha256": "637970aba6b9ccc191ef6c4cce0f420a517798e8dab72dcade1afa4847f225ea",
+      "normalized_title": "Pediatric multimodality cardiac imaging",
+      "canonical_target": "CAN-CARD-IMAGING",
+      "canonical_owner": "CAP-IMAGING",
+      "purpose": "Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "scope": "Bounded documentation workflow from PED2-CARD-IMAGING",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "ImagingStudy",
+        "ImagingSeries",
+        "ReconstructionReference",
+        "Report"
+      ],
+      "workflow": "Link CT/MRI/echo/nuclear/catheterization study references → validate acquisition/geometry → specialist review → compare compatible studies.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-IMAGING",
+        "document": "docs/canonical/CAN-CARD-IMAGING.md",
+        "document_sha256": "b3c3b6e64107375a9a692dff823973856ef01f0f6c5fee75e8a797a62558a819"
+      }
+    },
+    {
+      "original_id": 3062,
+      "source_title": "Pediatric Cardiology Registry",
+      "source_sha256": "f35f2af7bc364f1eeb0f5dae11a05a3bc0299eb08b12925f1979d8c73ee84455",
+      "normalized_title": "Longitudinal pediatric cardiology record index",
+      "canonical_target": "CAN-CARD-RECORD",
+      "canonical_owner": "CAP-DATA",
+      "purpose": "Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "scope": "Bounded documentation workflow from PED2-CARD-REGISTRY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "SpecialtyRecordIndex",
+        "ClinicalReference",
+        "ContextSnapshot"
+      ],
+      "workflow": "Resolve authorized source records → reconcile identity/version → index timeline → publish bounded summary.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-REGISTRY",
+        "document": "docs/canonical/CAN-CARD-RECORD.md",
+        "document_sha256": "a67c90542208c26faec3129247a245d110e37bf487ed0a03e3827a3d3312203c"
+      }
+    },
+    {
+      "original_id": 3662,
+      "source_title": "Pediatric Cardiology Registry",
+      "source_sha256": "177a2cea1ff5a10ab88170b9604fe1dd43d5e6926a51954e43b76ddc44c2da40",
+      "normalized_title": "Longitudinal pediatric cardiology record index",
+      "canonical_target": "CAN-CARD-RECORD",
+      "canonical_owner": "CAP-DATA",
+      "purpose": "Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "scope": "Bounded documentation workflow from PED2-CARD-REGISTRY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "SpecialtyRecordIndex",
+        "ClinicalReference",
+        "ContextSnapshot"
+      ],
+      "workflow": "Resolve authorized source records → reconcile identity/version → index timeline → publish bounded summary.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-REGISTRY",
+        "document": "docs/canonical/CAN-CARD-RECORD.md",
+        "document_sha256": "a67c90542208c26faec3129247a245d110e37bf487ed0a03e3827a3d3312203c"
+      }
+    },
+    {
+      "original_id": 4062,
+      "source_title": "Pediatric Cardiology Registry",
+      "source_sha256": "e1d9d1a497d6148fc5b987b8b8ad4281fd1416503e682cf273c4547627169777",
+      "normalized_title": "Longitudinal pediatric cardiology record index",
+      "canonical_target": "CAN-CARD-RECORD",
+      "canonical_owner": "CAP-DATA",
+      "purpose": "Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "scope": "Bounded documentation workflow from PED2-CARD-REGISTRY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "SpecialtyRecordIndex",
+        "ClinicalReference",
+        "ContextSnapshot"
+      ],
+      "workflow": "Resolve authorized source records → reconcile identity/version → index timeline → publish bounded summary.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-REGISTRY",
+        "document": "docs/canonical/CAN-CARD-RECORD.md",
+        "document_sha256": "a67c90542208c26faec3129247a245d110e37bf487ed0a03e3827a3d3312203c"
+      }
+    },
+    {
+      "original_id": 847,
+      "source_title": "Pediatric Heart Surgery Registry",
+      "source_sha256": "9aa82913863fe39dfa254a8f26437152b5265e9f5fd0e3de81e3e31bf4c71519",
+      "normalized_title": "Pediatric cardiac procedure and follow-up record",
+      "canonical_target": "CAN-CARD-SURGERY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "scope": "Bounded documentation workflow from PED2-CARD-SURGERY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Procedure",
+        "SurgicalEpisode",
+        "ComplicationRecord",
+        "FollowUpPlan"
+      ],
+      "workflow": "Preoperative assessment → authorized plan → procedure documentation → postoperative/ICU follow-up → longitudinal outcomes.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-SURGERY",
+        "document": "docs/canonical/CAN-CARD-SURGERY.md",
+        "document_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf"
+      }
+    },
+    {
+      "original_id": 3067,
+      "source_title": "Pediatric Cardiac Surgery Module",
+      "source_sha256": "283608fdc916ebd88e2ac860ccc26c5a4f2ba5f67578f9e244b3c874f56e432b",
+      "normalized_title": "Pediatric cardiac procedure and follow-up record",
+      "canonical_target": "CAN-CARD-SURGERY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "scope": "Bounded documentation workflow from PED2-CARD-SURGERY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Procedure",
+        "SurgicalEpisode",
+        "ComplicationRecord",
+        "FollowUpPlan"
+      ],
+      "workflow": "Preoperative assessment → authorized plan → procedure documentation → postoperative/ICU follow-up → longitudinal outcomes.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-SURGERY",
+        "document": "docs/canonical/CAN-CARD-SURGERY.md",
+        "document_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf"
+      }
+    },
+    {
+      "original_id": 3669,
+      "source_title": "Pediatric Cardiac Surgery Module",
+      "source_sha256": "d5e9980de6f38427921659a82db5ceecdc9993740cc49057b3292a47856c5c7e",
+      "normalized_title": "Pediatric cardiac procedure and follow-up record",
+      "canonical_target": "CAN-CARD-SURGERY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "scope": "Bounded documentation workflow from PED2-CARD-SURGERY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Procedure",
+        "SurgicalEpisode",
+        "ComplicationRecord",
+        "FollowUpPlan"
+      ],
+      "workflow": "Preoperative assessment → authorized plan → procedure documentation → postoperative/ICU follow-up → longitudinal outcomes.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-SURGERY",
+        "document": "docs/canonical/CAN-CARD-SURGERY.md",
+        "document_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf"
+      }
+    },
+    {
+      "original_id": 4072,
+      "source_title": "Pediatric Cardiac Surgery Module",
+      "source_sha256": "3dacdc68f943945dfed7c654746f7ab7e3b15c625bf1dba167e75bdac1ab36c8",
+      "normalized_title": "Pediatric cardiac procedure and follow-up record",
+      "canonical_target": "CAN-CARD-SURGERY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "scope": "Bounded documentation workflow from PED2-CARD-SURGERY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Procedure",
+        "SurgicalEpisode",
+        "ComplicationRecord",
+        "FollowUpPlan"
+      ],
+      "workflow": "Preoperative assessment → authorized plan → procedure documentation → postoperative/ICU follow-up → longitudinal outcomes.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-SURGERY",
+        "document": "docs/canonical/CAN-CARD-SURGERY.md",
+        "document_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf"
+      }
+    },
+    {
+      "original_id": 3074,
+      "source_title": "Pediatric Cardiology Telemedicine Module",
+      "source_sha256": "487d4c1f5b3c7292136e8f16911df61b1ccce26d4cf0e25e5b680a9b0cecbde2",
+      "normalized_title": "Remote pediatric cardiology care coordination",
+      "canonical_target": "CAN-CARD-REMOTE",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "purpose": "Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "scope": "Bounded documentation workflow from PED2-CARD-REMOTE",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Encounter",
+        "RemoteReport",
+        "MonitoringPlan",
+        "EscalationTask"
+      ],
+      "workflow": "Authorize consultation/monitoring scope → receive provenance-tagged reports → clinician review → acknowledgement/action → follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-TELEMEDICINE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-REMOTE",
+        "document": "docs/canonical/CAN-CARD-REMOTE.md",
+        "document_sha256": "d9e0a8b160a7c868dbdb9e03d666d23f097d4fc97c26aba68f621a52a7b24bf2"
+      }
+    },
+    {
+      "original_id": 3676,
+      "source_title": "Pediatric Cardiology Telemedicine Module",
+      "source_sha256": "51b4d97b6229b55e18ba177e20037ce4d91ab990052ac0b9a5f5cda63359fa4a",
+      "normalized_title": "Remote pediatric cardiology care coordination",
+      "canonical_target": "CAN-CARD-REMOTE",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "purpose": "Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "scope": "Bounded documentation workflow from PED2-CARD-REMOTE",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Encounter",
+        "RemoteReport",
+        "MonitoringPlan",
+        "EscalationTask"
+      ],
+      "workflow": "Authorize consultation/monitoring scope → receive provenance-tagged reports → clinician review → acknowledgement/action → follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-TELEMEDICINE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-REMOTE",
+        "document": "docs/canonical/CAN-CARD-REMOTE.md",
+        "document_sha256": "d9e0a8b160a7c868dbdb9e03d666d23f097d4fc97c26aba68f621a52a7b24bf2"
+      }
+    },
+    {
+      "original_id": 4079,
+      "source_title": "Pediatric Cardiology Telemedicine & Remote Monitoring Module",
+      "source_sha256": "15b2f92d715f71cb513dfd375bae3c83e1c9374c733a24439bc31ac8a77fedfa",
+      "normalized_title": "Remote pediatric cardiology care coordination",
+      "canonical_target": "CAN-CARD-REMOTE",
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "purpose": "Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "scope": "Bounded documentation workflow from PED2-CARD-REMOTE",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Encounter",
+        "RemoteReport",
+        "MonitoringPlan",
+        "EscalationTask"
+      ],
+      "workflow": "Authorize consultation/monitoring scope → receive provenance-tagged reports → clinician review → acknowledgement/action → follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-TELEMEDICINE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-CARD-REMOTE",
+        "document": "docs/canonical/CAN-CARD-REMOTE.md",
+        "document_sha256": "d9e0a8b160a7c868dbdb9e03d666d23f097d4fc97c26aba68f621a52a7b24bf2"
+      }
+    },
+    {
+      "original_id": 926,
+      "source_title": "Pediatric Kidney Function Monitoring",
+      "source_sha256": "bf36a0fb13c163c75292bbc0c65a854e7322ac7efd23e8e9cc9d8c586d954ad6",
+      "normalized_title": "Pediatric renal function observation and trend profile",
+      "canonical_target": "CAN-RENAL-FUNCTION",
+      "canonical_owner": "CAP-LABORATORY",
+      "purpose": "Retain urea, creatinine, cystatin C, eGFR, urinary markers, protein/albumin, electrolytes, acid-base, recovery and persistent-pattern distinctions. Unknown context cannot imply normality.",
+      "scope": "Bounded documentation workflow from PED2-RENAL-FUNCTION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Observation",
+        "RenalBaseline",
+        "EquationReference",
+        "TrendAssessment"
+      ],
+      "workflow": "Ingest validated results → bind units/method/age/context → clinician-approved calculation → baseline comparison → review.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-RENAL-FUNCTION",
+        "document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+        "document_sha256": "0ba894f3fcb6c0e833a8541cdf00624f7c614c65ec67cd833bc4f091a8062dc7"
+      }
+    },
+    {
+      "original_id": 4552,
+      "source_title": "Pediatric Kidney Function & Renal Biomarker Intelligence Module",
+      "source_sha256": "0c8325091392577f6743225a195d91c60c498e6b03d7322a3284a80599d8af73",
+      "normalized_title": "Pediatric renal function observation and trend profile",
+      "canonical_target": "CAN-RENAL-FUNCTION",
+      "canonical_owner": "CAP-LABORATORY",
+      "purpose": "Retain urea, creatinine, cystatin C, eGFR, urinary markers, protein/albumin, electrolytes, acid-base, recovery and persistent-pattern distinctions. Unknown context cannot imply normality.",
+      "scope": "Bounded documentation workflow from PED2-RENAL-FUNCTION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "Observation",
+        "RenalBaseline",
+        "EquationReference",
+        "TrendAssessment"
+      ],
+      "workflow": "Ingest validated results → bind units/method/age/context → clinician-approved calculation → baseline comparison → review.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-RENAL-FUNCTION",
+        "document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+        "document_sha256": "0ba894f3fcb6c0e833a8541cdf00624f7c614c65ec67cd833bc4f091a8062dc7"
+      }
+    },
+    {
+      "original_id": 4574,
+      "source_title": "Pediatric Renal Medical Passport & Transition-to-Adult-Care Module",
+      "source_sha256": "6871169a34b0105e118f66b8504791017caf794c150fb0e2ebecf669861e5604",
+      "normalized_title": "Pediatric renal passport and adult-care handover",
+      "canonical_target": "CAN-RENAL-HANDOVER",
+      "canonical_owner": "CAP-PROFILE",
+      "purpose": "Preserve renal/genetic/pathology/imaging/dialysis/transplant history, emergency context and cross-border language support. Export alone is not completed handover.",
+      "scope": "Bounded documentation workflow from PED2-RENAL-TRANSITION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "TransitionPlan",
+        "DisclosurePackage",
+        "DeliveryReceipt",
+        "HandoverAcknowledgement"
+      ],
+      "workflow": "Readiness/skills assessment → authorized current summary → receiving-provider transfer → confirmation → follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-RENAL-TRANSITION",
+        "document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+        "document_sha256": "e48b81fef7c88650fd50b44f1c378c18322260617661e347eae035e09f5f89c7"
+      }
+    },
+    {
+      "original_id": 4599,
+      "source_title": "Pediatric Renal Transition, Lifelong Kidney Record & Adult Nephrology Handover Module",
+      "source_sha256": "a2be5f599ddc3ba7e89ba6c59844cc1008c95af39184e53bfd16e38733d903ec",
+      "normalized_title": "Pediatric renal passport and adult-care handover",
+      "canonical_target": "CAN-RENAL-HANDOVER",
+      "canonical_owner": "CAP-PROFILE",
+      "purpose": "Preserve renal/genetic/pathology/imaging/dialysis/transplant history, emergency context and cross-border language support. Export alone is not completed handover.",
+      "scope": "Bounded documentation workflow from PED2-RENAL-TRANSITION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "TransitionPlan",
+        "DisclosurePackage",
+        "DeliveryReceipt",
+        "HandoverAcknowledgement"
+      ],
+      "workflow": "Readiness/skills assessment → authorized current summary → receiving-provider transfer → confirmation → follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-RENAL-TRANSITION",
+        "document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+        "document_sha256": "e48b81fef7c88650fd50b44f1c378c18322260617661e347eae035e09f5f89c7"
+      }
+    },
+    {
+      "original_id": 3993,
+      "source_title": "Pediatric Psychopharmacology Module",
+      "source_sha256": "e352cb9d4d9812bc9d7b98ef7f50ab67deb5926e880c80978cabb262a785d5f8",
+      "normalized_title": "Pediatric psychotropic medication safety profile",
+      "canonical_target": "CAN-MENTAL-MEDICATION",
+      "canonical_owner": "CAP-CDS",
+      "purpose": "Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "scope": "Bounded documentation workflow from PED2-MENTAL-MEDICATION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "MedicationEpisodeReference",
+        "DoseChangeReference",
+        "MonitoringRequirement",
+        "MonitoringResult",
+        "ResponseAssessment"
+      ],
+      "workflow": "Reconcile exposure → verify indication/context → evaluate approved monitoring rules → clinician review → separately authorized order action.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-CDS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION",
+        "CAP-LABORATORY",
+        "CAP-AI"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-MENTAL-MEDICATION",
+        "document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+        "document_sha256": "308e25d39390136403e04f3ec935850bca3050b395cecba6fb0bd77ca45f1940"
+      }
+    },
+    {
+      "original_id": 4842,
+      "source_title": "Pediatric Psychopharmacology, Medication Safety & Monitoring Engine",
+      "source_sha256": "1ac92d5d071eadccb398651fbe92107e167deab65be64cf9842fc34b9decd4d2",
+      "normalized_title": "Pediatric psychotropic medication safety profile",
+      "canonical_target": "CAN-MENTAL-MEDICATION",
+      "canonical_owner": "CAP-CDS",
+      "purpose": "Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "scope": "Bounded documentation workflow from PED2-MENTAL-MEDICATION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "MedicationEpisodeReference",
+        "DoseChangeReference",
+        "MonitoringRequirement",
+        "MonitoringResult",
+        "ResponseAssessment"
+      ],
+      "workflow": "Reconcile exposure → verify indication/context → evaluate approved monitoring rules → clinician review → separately authorized order action.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-CDS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION",
+        "CAP-LABORATORY",
+        "CAP-AI"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-MENTAL-MEDICATION",
+        "document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+        "document_sha256": "308e25d39390136403e04f3ec935850bca3050b395cecba6fb0bd77ca45f1940"
+      }
+    },
+    {
+      "original_id": 5166,
+      "source_title": "Pediatric Psychiatric Medication & Psychopharmacology Safety Engine",
+      "source_sha256": "e724391913c9ef649be584c17b1e02671929514a442f43a96313e28d7132bfa4",
+      "normalized_title": "Pediatric psychotropic medication safety profile",
+      "canonical_target": "CAN-MENTAL-MEDICATION",
+      "canonical_owner": "CAP-CDS",
+      "purpose": "Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "scope": "Bounded documentation workflow from PED2-MENTAL-MEDICATION",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "MedicationEpisodeReference",
+        "DoseChangeReference",
+        "MonitoringRequirement",
+        "MonitoringResult",
+        "ResponseAssessment"
+      ],
+      "workflow": "Reconcile exposure → verify indication/context → evaluate approved monitoring rules → clinician review → separately authorized order action.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-CDS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION",
+        "CAP-LABORATORY",
+        "CAP-AI"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-MENTAL-MEDICATION",
+        "document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+        "document_sha256": "308e25d39390136403e04f3ec935850bca3050b395cecba6fb0bd77ca45f1940"
+      }
+    },
+    {
+      "original_id": 3994,
+      "source_title": "Pediatric Psychotherapy Coordination Module",
+      "source_sha256": "13e2e461324b72f661e42000de973f66ccb5c9945f8d2199a30b5a75b47c39b8",
+      "normalized_title": "Pediatric psychotherapy episode and protected-note record",
+      "canonical_target": "CAN-MENTAL-THERAPY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "scope": "Bounded documentation workflow from PED2-MENTAL-THERAPY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "TherapyEpisode",
+        "SessionReference",
+        "ClinicalSummary",
+        "RestrictedSessionNote",
+        "TherapyGoal"
+      ],
+      "workflow": "Referral/indication → agreed goals/modality → sessions → outcome/review → completion/follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-MENTAL-THERAPY",
+        "document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+        "document_sha256": "5b046e0573967dac2d0b6a562190ad9b8f5c1840c2939d2839d5202e4a9a8211"
+      }
+    },
+    {
+      "original_id": 4841,
+      "source_title": "Pediatric Psychotherapy & Psychological Intervention Management Module",
+      "source_sha256": "274c8b6f62696c78f9aa71c076827f7ed3597dfc136be8dd46eebd93ebba9c81",
+      "normalized_title": "Pediatric psychotherapy episode and protected-note record",
+      "canonical_target": "CAN-MENTAL-THERAPY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "scope": "Bounded documentation workflow from PED2-MENTAL-THERAPY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "TherapyEpisode",
+        "SessionReference",
+        "ClinicalSummary",
+        "RestrictedSessionNote",
+        "TherapyGoal"
+      ],
+      "workflow": "Referral/indication → agreed goals/modality → sessions → outcome/review → completion/follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-MENTAL-THERAPY",
+        "document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+        "document_sha256": "5b046e0573967dac2d0b6a562190ad9b8f5c1840c2939d2839d5202e4a9a8211"
+      }
+    },
+    {
+      "original_id": 5167,
+      "source_title": "Pediatric Psychotherapy & Psychological Intervention Platform",
+      "source_sha256": "5d65d8d1a2f3afc848d526bdb253289966081b769de7511b3428bd3c0c42654b",
+      "normalized_title": "Pediatric psychotherapy episode and protected-note record",
+      "canonical_target": "CAN-MENTAL-THERAPY",
+      "canonical_owner": "CAP-ENCOUNTER",
+      "purpose": "Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "scope": "Bounded documentation workflow from PED2-MENTAL-THERAPY",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "TherapyEpisode",
+        "SessionReference",
+        "ClinicalSummary",
+        "RestrictedSessionNote",
+        "TherapyGoal"
+      ],
+      "workflow": "Referral/indication → agreed goals/modality → sessions → outcome/review → completion/follow-up.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-MENTAL-THERAPY",
+        "document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+        "document_sha256": "5b046e0573967dac2d0b6a562190ad9b8f5c1840c2939d2839d5202e4a9a8211"
+      }
+    },
+    {
+      "original_id": 1115,
+      "source_title": "Drug Allergy Registry",
+      "source_sha256": "b6901f1f569169bbb433375a039d529ad2375b80341da1ac7bd7456b06dad3bc",
+      "normalized_title": "Drug-allergy label and specialist delabeling lifecycle",
+      "canonical_target": "CAN-ALLERGY-LABEL",
+      "canonical_owner": "CAP-ALLERGY",
+      "purpose": "Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "scope": "Bounded documentation workflow from PED2-ALLERGY-DRUG-LABEL",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "AllergyLabel",
+        "ReactionRecord",
+        "DiagnosticEvidence",
+        "DelabelingDecision"
+      ],
+      "workflow": "Capture historical label → assess reaction/diagnostic evidence → specialist conclusion → attributable label revision → notify authorized consumers.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ALLERGY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-ALLERGY-DRUG-LABEL",
+        "document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+        "document_sha256": "91ad570db8389c71764d1614ce20bac130e05517c043d5ec6467cc2bd107d5c6"
+      }
+    },
+    {
+      "original_id": 4416,
+      "source_title": "Pediatric Drug Allergy Registry",
+      "source_sha256": "1dde648249ada4591f700084570943953c9b2e3867dd38208a65bc70ab1faceb",
+      "normalized_title": "Drug-allergy label and specialist delabeling lifecycle",
+      "canonical_target": "CAN-ALLERGY-LABEL",
+      "canonical_owner": "CAP-ALLERGY",
+      "purpose": "Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "scope": "Bounded documentation workflow from PED2-ALLERGY-DRUG-LABEL",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "AllergyLabel",
+        "ReactionRecord",
+        "DiagnosticEvidence",
+        "DelabelingDecision"
+      ],
+      "workflow": "Capture historical label → assess reaction/diagnostic evidence → specialist conclusion → attributable label revision → notify authorized consumers.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ALLERGY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-ALLERGY-DRUG-LABEL",
+        "document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+        "document_sha256": "91ad570db8389c71764d1614ce20bac130e05517c043d5ec6467cc2bd107d5c6"
+      }
+    },
+    {
+      "original_id": 4418,
+      "source_title": "Pediatric Drug Allergy Delabeling Module",
+      "source_sha256": "d1f85f28197a78db7b128eefa4b83b723c4d5aa5b9e4e58f56dcb7a43aef57db",
+      "normalized_title": "Drug-allergy label and specialist delabeling lifecycle",
+      "canonical_target": "CAN-ALLERGY-LABEL",
+      "canonical_owner": "CAP-ALLERGY",
+      "purpose": "Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "scope": "Bounded documentation workflow from PED2-ALLERGY-DRUG-LABEL",
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "entities": [
+        "AllergyLabel",
+        "ReactionRecord",
+        "DiagnosticEvidence",
+        "DelabelingDecision"
+      ],
+      "workflow": "Capture historical label → assess reaction/diagnostic evidence → specialist conclusion → attributable label revision → notify authorized consumers.",
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "dependencies": [
+        "CAP-ALLERGY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "evidence": {
+        "semantic_decision": "PED2-ALLERGY-DRUG-LABEL",
+        "document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+        "document_sha256": "91ad570db8389c71764d1614ce20bac130e05517c043d5ec6467cc2bd107d5c6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "pass": "MASTER-10",
+  "baseline_commit": "9efb09e6f91980c1315a1b7fcaa1f77a3f96d793",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "nodes": [],
+  "edges": [
+    {
+      "from": "CORE-CAP-APPOINTMENTS",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-PROFILE",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-SPECIALTY",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-ENCOUNTER",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-MEDICATION",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-IMAGING",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-LABORATORY",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-RESEARCH",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-AI",
+      "to": "CAP-SECURITY"
+    },
+    {
+      "from": "CORE-CAP-DATA",
+      "to": "CAP-SECURITY"
+    }
+  ],
+  "baseline_graph": "audit/master-08/dependency_graph.json"
+}

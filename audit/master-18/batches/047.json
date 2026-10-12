@@ -1,0 +1,29 @@
+{
+  "pass": "MASTER-18",
+  "batch": 47,
+  "family": "clinical-device-and-life-support-context",
+  "owner": "CAP-DEVICES",
+  "ids": [
+    2042,
+    2045,
+    2067,
+    2087,
+    2103,
+    2282,
+    2734,
+    2736,
+    3626
+  ],
+  "decision_sha256": "5f9b1e65f0a55dbe3535f039cfbde59c6a2cacb10cac3736c53fa2371badb5ec",
+  "source_hashes": {
+    "2042": "b2ad739794a7f4b8b526b9c7854139ca23452676bcd625c4b8ae76a986163e25",
+    "2045": "313898dea2674f092631060b2d114e4b721d4166ec79faea5699e3fb5c7d4938",
+    "2067": "ae7793ff890ecee0e50f29ddb5cfd1beb3945460f74e249b5fbbbb6b56033371",
+    "2087": "130e98661dbf768fda8251677f160c8e5b27a5f2a145e9bacafd6bb0077c4729",
+    "2103": "f36b9f5732f55c8c671afb867a264cdcd7abc4cc780db87b3f30701bd6227012",
+    "2282": "7e122f7e4cceec3a569a3cdb905e4bcca961aef1c49d3e54b3db22274f8255ec",
+    "2734": "4f215bcd614caee4e6313685ab7614638c3b3a9d76355c27ade6a005469c257c",
+    "2736": "edac2db4ffb73d4830e028d754a2fe6f9c6ef2c951165596285e56b080030072",
+    "3626": "30e670d1e4163b3ba03687379511b0a0cfa4d22a16be845c733412f7f210c0c8"
+  }
+}

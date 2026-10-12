@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 7,
+  "family": "precision-medication-proposals",
+  "owner": "CAP-MEDICATION",
+  "ids": [
+    1311,
+    1522,
+    1673
+  ],
+  "decision_sha256": "0e999f836808f838734c38137de04b38b0102fffca04adea82375a704451ad9a",
+  "source_hashes": {
+    "1311": "7e2a3bba7b8db16f13478264710010b264a11b40b51cf41c2ca0b6b674a0980d",
+    "1522": "27ac5efa7efe2dad5d48205ba49306ee47352d88af20288a62b868d50f7ac705",
+    "1673": "2fb74a068c70db4393ec7176a433fcf2de33885e14919d5bad0c5cfcdd80f170"
+  }
+}

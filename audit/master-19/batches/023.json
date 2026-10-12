@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 23,
+  "family": "pediatric-certificate-qr",
+  "owner": "CAP-QR",
+  "ids": [
+    4333
+  ],
+  "decision_sha256": "bb9b7d89f65502e3a6627f7892d9ea362ae5a4ce3de057ad1dd9cb4b89ff66ec",
+  "source_hashes": {
+    "4333": "872fb3828e81d1970ae5562b5a0ce380bdceb0f62d887904f379c3e77b25aa41"
+  }
+}

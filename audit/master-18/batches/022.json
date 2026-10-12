@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 22,
+  "family": "ai-device-lifecycle",
+  "owner": "CAP-DEVICES",
+  "ids": [
+    1217,
+    1411,
+    1768,
+    1867
+  ],
+  "decision_sha256": "2d2e21d2c0733ccec0de6bb05716769ac3f2b604dd4dd5f2a8134430c25e5a7c",
+  "source_hashes": {
+    "1217": "19567d758b9249e479d51539f36ffcb866bac1b1a5125c65a370942730e18364",
+    "1411": "0dff7a1d757a10321010d7d766c633ffb966c3fdf30e669a628c22146f854665",
+    "1768": "8f8ab0d43c19ff120393ce0b1b11c10e7a69c6317f4b971ea52093ed4169ee1f",
+    "1867": "ee5539daec04762818d1e485e747d7d1dbd3e28a35b34969be63ac1dd3e89841"
+  }
+}

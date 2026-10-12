@@ -1,0 +1,25 @@
+{
+  "pass": "MASTER-19",
+  "batch": 11,
+  "family": "pediatric-equipment-and-support-lifecycle",
+  "owner": "CAP-DEVICES",
+  "ids": [
+    4483,
+    4484,
+    4489,
+    4490,
+    4758,
+    4859,
+    4862
+  ],
+  "decision_sha256": "22a4d1eec4f7385a552e37629fbcd96904dc81e95a3ca9135e7d414343a7ea07",
+  "source_hashes": {
+    "4483": "cd323e194a0b245ad7d17321db471f95fc96b2603608c0ba4e2c7188238b8d91",
+    "4484": "59cebdad69316047054edc8edf6626068358c68c9992fc7683b44126d710007d",
+    "4489": "9698b3fafde3b06ac3fd75a4f7e88742a9c20967504a71179104b6dd827a2b3f",
+    "4490": "b9968fecd07e601da7e662e649a401d6ed88d3f6d8fbcd74aa8a304cd7587c65",
+    "4758": "557c2ce52e3ff6c64e5da61835c337223b081e350582e4b46502dacc3b94b2f1",
+    "4859": "936e0af4d75494d03298b9bf99b123d3e8f25f75e3b8ef38f4a2f17ad9d93423",
+    "4862": "8fad719a6c8fc8648aeeceb52e36cfb4ad4af2b32a40b6f68ac2856e795dd1ea"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pass": "MASTER-17",
+  "targeted_clusters": 51,
+  "targeted_checks_per_cluster": 8,
+  "readiness_checks": 8,
+  "full_runs": [
+    {
+      "name": "MILESTONE60",
+      "passed": 174,
+      "failed": 0,
+      "path": "audit/master-17/validation/MILESTONE60.txt",
+      "sha256": "7459e17b4380c012b332049f8692d60ab177db7a157115adc79b92c4681908de"
+    },
+    {
+      "name": "FINAL",
+      "passed": 182,
+      "failed": 0,
+      "path": "audit/master-17/validation/FINAL.txt",
+      "sha256": "4137350ca466ee54310872b891655710d9fbbecdbc2b4f57aa768a1a671231f6"
+    }
+  ],
+  "failed_final": 0,
+  "recovered_issues": [
+    {
+      "type": "BUILD_EXTRACTION_GUARD",
+      "original_id": 3365,
+      "reason": "A complete two-word source sentence was rejected by the old three-word threshold",
+      "resolution": "Accept complete source narrative sentences with an explicit verb and terminal full stop; resumed frozen batch and validated all fragments"
+    },
+    {
+      "type": "TEST_ASSUMPTION",
+      "reason": "Readiness test incorrectly required nonempty dependencies for every owner",
+      "resolution": "Preserved legitimate foundation-owner empty dependency lists; require a represented array instead of inventing edges"
+    }
+  ],
+  "post_full_checks": "Rebuild/state hash checks and targeted tests verify final checkpoint continuation metadata.",
+  "historical_test_policy": "Inherited obsolete MASTER09 diff test remains excluded by the existing runner; replacement immutability/hash guards pass. Historical tests unchanged.",
+  "scope": "Documentation, source provenance, bounded contract syntax/invariants and readiness gating; no application, clinical, privacy or production-security approval."
+}

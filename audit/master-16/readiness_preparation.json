@@ -1,0 +1,273 @@
+{
+  "pass": "MASTER-16",
+  "baseline": "audit/master-08/implementation_readiness_registry.json",
+  "prior_deltas": [
+    "audit/master-09/readiness_delta.json",
+    "audit/master-10/readiness_delta.json",
+    "audit/master-11/readiness_delta.json"
+  ],
+  "scope": "Owner/profile acceptance additions only; no repeated engineering rewrite or MVP implementation",
+  "records": [
+    {
+      "owner": "CAP-PHARMACY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "pharmacy",
+          "acceptance": "Preserve branch, product/formulation/package, currency, quote time, stock source/time and jurisdiction context. Distinguish estimated stock from confirmed reservation and authorized dispense; partial dispensing requires atomic remaining-quantity checks and idempotent receipts. Stale/offline inventory is unknown, never available by default. Reject expired/replayed prescriptions and cross-patient QR use. Delivery tracking is not proof of ingestion; cross-border eligibility and substitution remain subject to qualified local authorization.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-SPECIALTY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "additional-specialty-pathways",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority. Preserve donor/recipient identity separation, immunosuppression exposure, developmental stage and tumor-specific evidence. No common title establishes an equivalent protocol.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "additional-condition-pathways",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority. Distinguish not screened, negative screen, incomplete screen and confirmed disease. Missing red flags or reassuring scores cannot exclude urgent illness; assessment and crisis escalation need separate intended-use validation.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "clinical-integration-workflows",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority. Test differing timestamps, unresolved identity, revoked permissions and contradictory specialty conclusions. Vaccination-associated rash is not automatically allergy; occupational status views disclose only approved minimum fields. Clinical integration cannot broaden parent/guardian/school access.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "disease-workflows",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "disorder-workflows",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "condition-variants",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "management-workflows",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "care-and-transition",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority. Preserve author, recipient, pending/accepted handover and revocation at age/authority transitions. Automated rehabilitation adjustment remains a proposal requiring clinician approval.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "genetics-workflows",
+          "acceptance": "Retain suspected/confirmed/unknown states, source versions, timestamps and clinician attribution. Test contradictory histories and amended results without silently creating diagnoses. Pediatric guardian access and confidential adolescent segments are separately authorized. Dosing, device commands, surgery, crisis disposition and treatment eligibility require qualified clinical decisions and validated intended-use criteria; source automation claims are not execution authority. Preserve assay/assembly/transcript/interpretation version and uncertainty, family-member-specific permission, incidental-finding preferences and reclassification. Variant presence is not diagnosis or therapy eligibility.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-RESEARCH",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "research-decision-profiles",
+          "acceptance": "Retain population, time/region, provenance, data rights, protocol/model versions and uncertainty. Require population-bias/disclosure review and qualified confirmation before policy or protocol use; research recommendations cannot write patient clinical facts.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "research-registries",
+          "acceptance": "Retain protocol/version, study identifier, recruitment status, population, permitted purpose and withdrawal lineage. Research availability is not clinical eligibility or enrollment. Preserve sensitive cohort and familial data permissions and prevent clinical reuse of unverified study observations.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ALLERGY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "allergy-profiles",
+          "acceptance": "Preserve suspected versus confirmed, absent versus unknown/not assessed, culprit product/substance, reaction time, severity and reporting source. Delabeling requires attributed specialist disposition and reversible correction history; display must not silently broaden a class restriction.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-LABORATORY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "laboratory-centers",
+          "acceptance": "Preserve collection/result/correction times, method/unit and age/pregnancy reference population; invalidate downstream derived interpretations on amendment. Missing, preliminary and negative results must remain distinguishable.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IMAGING",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "echocardiography-records",
+          "acceptance": "Preserve study/series references, measurement units, acquisition time, report revisions and interpreter attribution. Prior images and AI-derived comparisons cannot substitute for a current qualified interpretation.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-DEVICES",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "device-integration-profiles",
+          "acceptance": "Preserve device identity/release, units, clock offsets, quality flags and disconnect state. Test stale/replayed/cross-patient data, duplicate readings and revoked connections. No automated EDHT insulin or inhaler setting change is authorized; any future command profile requires its own complete safety/compatibility and clinician authorization contract.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-CDS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "clinical-ai-decision-profiles",
+          "acceptance": "Preserve each original intended population/task, model/evidence/source versions, uncertainty and abstention. Require age/skin-tone/device/cohort-specific evaluation where applicable, correction/revocation propagation and clinician review. Never infer undocumented trauma, autonomously diagnose, change therapy/device settings, coerce care or exclude acute disease from a score or summary.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TWIN",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "neuro-oncology-twin-profile",
+          "acceptance": "Preserve tumor anatomy/molecular classification, radiation exposure, implanted devices, neurological baseline, surveillance and survivorship variants. Distinguish observed, clinician-assessed, inferred and simulated states; version corrections and permissions must invalidate dependent projections. No tumor recurrence or treatment eligibility is established by the Twin.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    }
+  ]
+}

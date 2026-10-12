@@ -1,0 +1,23 @@
+{
+  "pass": "MASTER-18",
+  "batch": 21,
+  "family": "ai-pharmacy-service-workflow",
+  "owner": "CAP-PHARMACY",
+  "ids": [
+    1314,
+    1316,
+    1415,
+    1416,
+    1871,
+    1890
+  ],
+  "decision_sha256": "39222e2e7c87d33d68d1b1ad2d96a9dca1a30f8a113c9f22f4db32a083085f1c",
+  "source_hashes": {
+    "1314": "f34ead0e1855b5c56a440506badf01ca78825b5758b77f7622b0a44e1cad3ea0",
+    "1316": "5364b08da9620d51caae1731eb335223c181f48d7b4360c192b6ec542d0dd542",
+    "1415": "d07b3dbbcc0e043c870b69474f4bcfcf469437d009d4dd0c3f7a61a2b3f0b5b4",
+    "1416": "1d4d0bab6f8d265cb055e3e711ed2d32668441ba77cde4eed705e7eb3fdbb459",
+    "1871": "5f4d197349e18ebe2b6b1379313270fe53135cead4c64857db6e16e0eed751aa",
+    "1890": "fd5ebaf89d2dffb2706328cfd1712fe01591f3530462c7e67172f506766d028c"
+  }
+}

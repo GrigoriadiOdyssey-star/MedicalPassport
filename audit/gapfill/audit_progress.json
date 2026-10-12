@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "edition": "2026-09-14",
+  "pass": "GAPFILL-01",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "7f1e8e84a4e5a3294cab525cea5f818b0a47d2e9",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "EXPECTED_SOURCE_MODULES": 51075,
+  "ORIGINAL_SOURCE_MODULES": 5175,
+  "ACCOUNTED_SOURCE_MODULES": 5175,
+  "GENERATED_CANONICAL_MODULES": 10,
+  "generated_canonical_breakdown": {
+    "prior_profile_drafts": 3,
+    "current_extension_drafts": 7,
+    "approved_canonical_modules": 0,
+    "owner_proposals_excluded": 33
+  },
+  "NEW_GAP_MODULES": 0,
+  "SUPPORTING_ARTIFACTS": 28,
+  "exclusive_status_counts": {
+    "NOT_REVIEWED": 4725,
+    "REVIEWED_ONLY": 450,
+    "NORMALIZED": 0,
+    "CANONICALIZED": 0,
+    "SUPERSEDED": 0,
+    "DUPLICATE": 0,
+    "PARTIAL_OVERLAP": 0,
+    "NEEDS_REVIEW": 0,
+    "IMPLEMENTATION_READY": 0
+  },
+  "REVIEWED": 450,
+  "NORMALIZED": 0,
+  "CANONICALIZED": 0,
+  "IMPLEMENTATION_READY": 0,
+  "UNAUDITED": 4725,
+  "REVIEW_PROGRESS": 8.6957,
+  "NORMALIZATION_PROGRESS": 0,
+  "CANONICALIZATION_PROGRESS": 0,
+  "GAP_FILL_PROGRESS": 0,
+  "IMPLEMENTATION_READINESS": 0,
+  "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+  "gap_scope": {
+    "identified_specification_gaps": 7,
+    "drafted": 7,
+    "validated_closed": 0,
+    "draft_coverage_percent": 100
+  },
+  "formulas": {
+    "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+    "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+    "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+    "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+    "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate"
+  },
+  "duplicate_counts": {
+    "exact_groups": 3,
+    "semantic_groups": 1,
+    "partial_overlap_groups": 18,
+    "unresolved_clusters": 1942,
+    "source_ids_closed": 0
+  },
+  "legacy_generations_confirmed": 0,
+  "legacy_marker_candidates": 27,
+  "high_risk_candidate_ids": 3608,
+  "high_risk_unreviewed": 3264,
+  "unresolved_owner_ids": 2014,
+  "critical_findings": 6,
+  "high_findings": 11,
+  "gitlab_write_status": "NO_WRITES",
+  "final_audit_ready": false
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "ruleId": "ED-001",
+    "moduleId": 2,
+    "occurrences": 1,
+    "reason": "Убрано неподтверждённое обещание всемирного признания."
+  },
+  {
+    "ruleId": "ED-002",
+    "moduleId": 3,
+    "occurrences": 1,
+    "reason": "Целевая система репозитория — GitLab; статус CI указан точно."
+  },
+  {
+    "ruleId": "ENG-008-1",
+    "moduleId": 3,
+    "occurrences": 1,
+    "reason": "Перечень сервисов не отличает модульные границы P0 от раздельных сервисов."
+  },
+  {
+    "ruleId": "ED-005",
+    "moduleId": 4,
+    "occurrences": 1,
+    "reason": "Точное название и фактическая структура нового репозитория."
+  },
+  {
+    "ruleId": "ED-006",
+    "moduleId": 4,
+    "occurrences": 1,
+    "reason": "Конфигурация GitLab вместо отсутствующих GitHub workflows."
+  },
+  {
+    "ruleId": "ENG-011-1",
+    "moduleId": 12,
+    "occurrences": 1,
+    "reason": "is_verified не различает antivirus, authenticity и клиническую верификацию."
+  },
+  {
+    "ruleId": "ENG-002-1",
+    "moduleId": 14,
+    "occurrences": 1,
+    "reason": "QR bearer в URL и поле qr_token не определяют защиту секрета."
+  },
+  {
+    "ruleId": "ED-003",
+    "moduleId": 27,
+    "occurrences": 1,
+    "reason": "Требование законодательства не является доказательством соответствия."
+  },
+  {
+    "ruleId": "ED-004",
+    "moduleId": 27,
+    "occurrences": 1,
+    "reason": "Применимость HIPAA зависит от отношений и юрисдикции."
+  },
+  {
+    "ruleId": "ENG-004-1",
+    "moduleId": 27,
+    "occurrences": 1,
+    "reason": "Безусловные old_value/new_value дублируют медицинские сведения в audit."
+  },
+  {
+    "ruleId": "ENG-001-1",
+    "moduleId": 29,
+    "occurrences": 1,
+    "reason": "Таблица сессий перечисляет bearer tokens без правил хранения."
+  },
+  {
+    "ruleId": "CL-029",
+    "moduleId": 30,
+    "occurrences": 1,
+    "reason": "HIPAA применим по роли организации; единый consent недостаточен."
+  },
+  {
+    "ruleId": "CL-009",
+    "moduleId": 31,
+    "occurrences": 1,
+    "reason": "Схема не должна ложно гарантировать получение помощи."
+  },
+  {
+    "ruleId": "ENG-003-1",
+    "moduleId": 32,
+    "occurrences": 1,
+    "reason": "Public по умолчанию перечисляет ФИО, кровь и контакт."
+  },
+  {
+    "ruleId": "CL-003",
+    "moduleId": 32,
+    "occurrences": 1,
+    "reason": "Роль больницы не даёт универсального доступа."
+  },
+  {
+    "ruleId": "ENG-012-1",
+    "moduleId": 33,
+    "occurrences": 1,
+    "reason": "Бессрочный доступ конфликтует с минимизацией и моделью P0."
+  },
+  {
+    "ruleId": "CL-004",
+    "moduleId": 33,
+    "occurrences": 1,
+    "reason": "Полная карта не должна открываться лишь по роли."
+  },
+  {
+    "ruleId": "ED-013",
+    "moduleId": 33,
+    "occurrences": 1,
+    "reason": "Устранено второе противоречие о бессрочном QR."
+  },
+  {
+    "ruleId": "ED-014",
+    "moduleId": 33,
+    "occurrences": 1,
+    "reason": "Сроки QR согласованы с контрактом P0."
+  },
+  {
+    "ruleId": "CL-005",
+    "moduleId": 36,
+    "occurrences": 1,
+    "reason": "Самостоятельные изменение/отмена терапии создают прямой клинический риск."
+  },
+  {
+    "ruleId": "CL-006",
+    "moduleId": 36,
+    "occurrences": 1,
+    "reason": "Отсутствие найденного взаимодействия не доказывает безопасность."
+  },
+  {
+    "ruleId": "CL-010",
+    "moduleId": 37,
+    "occurrences": 1,
+    "reason": "Ошибка OCR не должна становиться подтверждённым клиническим фактом."
+  },
+  {
+    "ruleId": "ED-003",
+    "moduleId": 44,
+    "occurrences": 1,
+    "reason": "Требование законодательства не является доказательством соответствия."
+  },
+  {
+    "ruleId": "ED-004",
+    "moduleId": 44,
+    "occurrences": 1,
+    "reason": "Применимость HIPAA зависит от отношений и юрисдикции."
+  },
+  {
+    "ruleId": "ED-003",
+    "moduleId": 45,
+    "occurrences": 1,
+    "reason": "Требование законодательства не является доказательством соответствия."
+  },
+  {
+    "ruleId": "ED-003",
+    "moduleId": 46,
+    "occurrences": 1,
+    "reason": "Требование законодательства не является доказательством соответствия."
+  },
+  {
+    "ruleId": "ED-004",
+    "moduleId": 46,
+    "occurrences": 1,
+    "reason": "Применимость HIPAA зависит от отношений и юрисдикции."
+  },
+  {
+    "ruleId": "ENG-009-1",
+    "moduleId": 52,
+    "occurrences": 1,
+    "reason": "Поля таблиц не задают обязательность, FK, owner isolation, units, null semantics, concurrency."
+  },
+  {
+    "ruleId": "ENG-002-2",
+    "moduleId": 53,
+    "occurrences": 1,
+    "reason": "QR bearer в URL и поле qr_token не определяют защиту секрета."
+  },
+  {
+    "ruleId": "ENG-010-1",
+    "moduleId": 53,
+    "occurrences": 1,
+    "reason": "Endpoint-список не определяет usable schemas, scopes, pagination, token lifecycle или ошибки."
+  },
+  {
+    "ruleId": "ENG-010-2",
+    "moduleId": 54,
+    "occurrences": 1,
+    "reason": "Endpoint-список не определяет usable schemas, scopes, pagination, token lifecycle или ошибки."
+  },
+  {
+    "ruleId": "PROD-007",
+    "moduleId": 56,
+    "occurrences": 1,
+    "reason": "Обязательные неизвестные медицинские значения не должны провоцировать выдуманные факты."
+  },
+  {
+    "ruleId": "ENG-006-1",
+    "moduleId": 81,
+    "occurrences": 1,
+    "reason": "PostgreSQL сам по себе не доказывает transparent data encryption."
+  },
+  {
+    "ruleId": "ENG-007-1",
+    "moduleId": 83,
+    "occurrences": 1,
+    "reason": "Сроки 7/10 лет и Permanent Archive не имеют обоснования."
+  },
+  {
+    "ruleId": "ENG-005-1",
+    "moduleId": 84,
+    "occurrences": 1,
+    "reason": "Zero Data Loss не совместимо с ненулевым RPO и не подтверждено тестом."
+  },
+  {
+    "ruleId": "PROD-009-89",
+    "moduleId": 89,
+    "occurrences": 1,
+    "reason": "Устранено противоречие с ненулевым RPO."
+  },
+  {
+    "ruleId": "ED-007",
+    "moduleId": 89,
+    "occurrences": 1,
+    "reason": "Единая политика вместо противоречивых необоснованных сроков."
+  },
+  {
+    "ruleId": "ED-008",
+    "moduleId": 90,
+    "occurrences": 1,
+    "reason": "Указан статус обещаний доступности и измеримая цель пилота."
+  },
+  {
+    "ruleId": "ED-009",
+    "moduleId": 90,
+    "occurrences": 1,
+    "reason": "Согласовано с новой архитектурой P0."
+  },
+  {
+    "ruleId": "PROD-001",
+    "moduleId": 100,
+    "occurrences": 1,
+    "reason": "Полнота компиляции не означает готовность продукта."
+  },
+  {
+    "ruleId": "ED-011",
+    "moduleId": 100,
+    "occurrences": 1,
+    "reason": "Проверка применимости вместо неподтверждённого соответствия."
+  },
+  {
+    "ruleId": "ED-012",
+    "moduleId": 100,
+    "occurrences": 1,
+    "reason": "WHO Compatibility не обозначает подтверждённого стандарта или одобрения."
+  },
+  {
+    "ruleId": "CL-007",
+    "moduleId": 148,
+    "occurrences": 1,
+    "reason": "Снять безусловный родительский доступ; сохранить поздние подробные ограничения."
+  },
+  {
+    "ruleId": "CL-008",
+    "moduleId": 227,
+    "occurrences": 1,
+    "reason": "Уточнить технические и правовые пределы отзыва."
+  },
+  {
+    "ruleId": "CL-011",
+    "moduleId": 412,
+    "occurrences": 1,
+    "reason": "Нужны единицы, ограничения входов и отдельная валидация калькулятора."
+  },
+  {
+    "ruleId": "CL-012",
+    "moduleId": 428,
+    "occurrences": 1,
+    "reason": "Перевод не должен менять дозу и правовой статус рецепта."
+  },
+  {
+    "ruleId": "CL-030",
+    "moduleId": 758,
+    "occurrences": 1,
+    "reason": "Оценка акушерских экстренных симптомов требует ограничений недопущения задержки помощи."
+  },
+  {
+    "ruleId": "CL-013",
+    "moduleId": 866,
+    "occurrences": 1,
+    "reason": "Детский инсулин требует явного разделения записи и управления терапией."
+  },
+  {
+    "ruleId": "CL-014",
+    "moduleId": 867,
+    "occurrences": 1,
+    "reason": "Не допускать неявного управления медицинским устройством."
+  },
+  {
+    "ruleId": "CL-015",
+    "moduleId": 1147,
+    "occurrences": 1,
+    "reason": "Поздний запрет автономной терапии должен применяться и к раннему AI advisor."
+  },
+  {
+    "ruleId": "CL-016",
+    "moduleId": 1153,
+    "occurrences": 1,
+    "reason": "AI-черновик нельзя выдавать за действующий рецепт."
+  },
+  {
+    "ruleId": "CL-017",
+    "moduleId": 1206,
+    "occurrences": 1,
+    "reason": "Сортировка не должна автономно определять объём экстренной помощи."
+  },
+  {
+    "ruleId": "CL-018",
+    "moduleId": 1313,
+    "occurrences": 1,
+    "reason": "Нельзя приравнять generic/available к терапевтической взаимозаменяемости."
+  },
+  {
+    "ruleId": "CL-019",
+    "moduleId": 1347,
+    "occurrences": 1,
+    "reason": "Офлайн-кэш создаёт риски устаревания и отзыва."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4600,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4625,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4650,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4675,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4700,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4725,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4750,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4775,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4800,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4825,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4850,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4875,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4900,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4925,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4950,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 4975,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5000,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5025,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5050,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5075,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5100,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5125,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5150,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  },
+  {
+    "ruleId": "CL-020",
+    "moduleId": 5168,
+    "occurrences": 1,
+    "reason": "NICE NG225 не рекомендует глобальную стратификацию риска для прогноза/выписки; требуется индивидуальная оценка."
+  },
+  {
+    "ruleId": "CL-021",
+    "moduleId": 5168,
+    "occurrences": 1,
+    "reason": "Уточнить назначение запрета; сохранить клиническую оценку специалистом."
+  },
+  {
+    "ruleId": "ED-010",
+    "moduleId": 5175,
+    "occurrences": 1,
+    "reason": "Специализированные MVP не расширяют первый релиз автоматически."
+  }
+]

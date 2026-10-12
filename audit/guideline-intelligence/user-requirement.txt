@@ -1,0 +1,710 @@
+MANDATORY CAPABILITY:
+CROSS-JURISDICTION CLINICAL GUIDELINE INTELLIGENCE
+WITH CONTINUOUS UPDATE & VERSION CONTROL
+
+Добавить/усилить существующую canonical capability для международного сопоставления клинических рекомендаций с обязательной системой обновления, версионирования и отслеживания изменений.
+
+==================================================
+ЦЕЛЬ
+==================================================
+
+Когда пациент обращается к врачу из другой страны, EDHT должен уметь:
+
+1. определить страну/юрисдикцию пациента;
+2. определить выбранную страну/юрисдикцию врача;
+3. определить специальность и клинический контекст;
+4. найти официальные клинические рекомендации соответствующей страны врача;
+5. найти рекомендации страны пациента;
+6. предоставить оригинальные документы;
+7. перевести документы на выбранный пользователем язык;
+8. выполнить структурированное сопоставление рекомендаций;
+9. показать врачу и пациенту различия и совпадения;
+10. сохранить provenance, версии и даты документов;
+11. автоматически отслеживать появление новых рекомендаций;
+12. отслеживать обновления существующих рекомендаций;
+13. выявлять отменённые/заменённые рекомендации;
+14. показывать врачу, что именно изменилось;
+15. не использовать устаревший документ без явного предупреждения.
+
+==================================================
+AUTHORITATIVE SOURCES
+==================================================
+
+Приоритет источников:
+
+national ministries of health
+official national guideline repositories
+national medical authorities
+recognized professional medical societies
+official public-health institutions
+supranational authorities where applicable.
+
+AI не должен выдавать случайный интернет-текст как официальную clinical guideline.
+
+Для каждого документа сохранять:
+
+country
+jurisdiction
+issuing organization
+document title
+specialty
+condition
+publication date
+effective date where available
+version
+revision date
+source URL/reference
+retrieval date
+language
+evidence/grading system where available
+superseded/current status
+document hash
+source authority status
+last verified timestamp.
+
+==================================================
+COUNTRY CONTEXT
+==================================================
+
+Разделять:
+
+PATIENT_HOME_JURISDICTION
+PATIENT_CURRENT_LOCATION
+TREATING_DOCTOR_JURISDICTION
+CARE_DELIVERY_JURISDICTION.
+
+Не считать эти значения автоматически одинаковыми.
+
+Врач должен иметь возможность выбрать применимую юрисдикцию вручную.
+
+==================================================
+GUIDELINE MATCHING
+==================================================
+
+AI должен сопоставлять документы не только по названию.
+
+Использовать:
+
+diagnosis / condition
+patient age
+sex
+pregnancy
+pediatric/adult context
+disease severity
+comorbidities
+treatment stage
+medication context
+procedure context
+specialty.
+
+==================================================
+COMPARISON ENGINE
+==================================================
+
+Показывать:
+
+AGREEMENT
+DIFFERENCE
+ADDITIONAL_REQUIREMENT
+CONTRAINDICATION_DIFFERENCE
+DIAGNOSTIC_DIFFERENCE
+TREATMENT_DIFFERENCE
+DOSING_DIFFERENCE
+MONITORING_DIFFERENCE
+SCREENING_DIFFERENCE
+FOLLOW_UP_DIFFERENCE
+REFERRAL_DIFFERENCE
+EVIDENCE_GRADE_DIFFERENCE.
+
+Для каждого различия показать:
+
+Country A recommendation
+Country B recommendation
+source
+section/page/paragraph where available
+publication/version date
+evidence level where available.
+
+==================================================
+TRANSLATION
+==================================================
+
+Поддержать перевод клинических рекомендаций на любой поддерживаемый язык EDHT.
+
+Хранить отдельно:
+
+ORIGINAL TEXT
+MACHINE TRANSLATION
+HUMAN-VERIFIED TRANSLATION where available.
+
+Перевод не должен изменять:
+
+drug names
+dose units
+laboratory units
+medical terminology
+evidence grades
+contraindications
+legal warnings.
+
+Пользователь всегда должен иметь возможность открыть оригинальный текст.
+
+==================================================
+SIDE-BY-SIDE MODE
+==================================================
+
+Добавить режим:
+
+Country A guideline
+↔
+Country B guideline
+
+с синхронизированными разделами.
+
+Например:
+
+Diagnosis
+Investigations
+First-line therapy
+Second-line therapy
+Medication
+Dose
+Contraindications
+Monitoring
+Follow-up
+Referral
+Emergency criteria.
+
+==================================================
+PATIENT-SPECIFIC CONTEXT
+==================================================
+
+После согласия и разрешения врача AI может выделять части рекомендаций,
+релевантные конкретному пациенту.
+
+Но:
+
+patient-specific relevance ≠ medical prescription.
+
+AI должен формулировать:
+
+"Applicable guideline section"
+"Potentially relevant difference"
+"Requires clinician review"
+
+а не автоматически менять лечение.
+
+==================================================
+CLINICAL SAFETY
+==================================================
+
+AI НЕ должен:
+
+выбирать "лучшую страну";
+автоматически объявлять одну guideline правильнее другой;
+самостоятельно менять терапию;
+автоматически назначать/отменять лекарство;
+подменять решение врача.
+
+Если рекомендации конфликтуют:
+
+показать конфликт,
+источники,
+даты,
+уровень доказательности,
+и передать решение врачу.
+
+==================================================
+CONTINUOUS GUIDELINE UPDATE SYSTEM
+==================================================
+
+Добавить отдельную capability:
+
+CLINICAL GUIDELINE UPDATE & SURVEILLANCE ENGINE.
+
+Система должна регулярно проверять официальные источники на:
+
+new guideline
+new version
+revision
+amendment
+corrigendum
+withdrawal
+superseded guideline
+changed evidence grade
+changed treatment recommendation
+changed dose recommendation
+changed contraindication
+changed screening recommendation
+changed monitoring requirement
+changed emergency criteria.
+
+==================================================
+UPDATE SOURCES
+==================================================
+
+Для каждого authoritative source поддерживать:
+
+source connector
+source type
+jurisdiction
+specialty coverage
+polling schedule
+API/RSS/feed availability
+document page monitoring where legally/technically allowed
+last successful check
+last changed timestamp
+failure state.
+
+При наличии API/RSS/feed использовать их как предпочтительный способ обновления.
+
+Если доступен только web/document repository:
+
+использовать controlled document discovery / metadata comparison.
+
+==================================================
+UPDATE FREQUENCY
+==================================================
+
+Не использовать одну частоту для всех источников.
+
+Поддержать configurable monitoring frequency:
+
+DAILY
+WEEKLY
+MONTHLY
+MANUAL
+EVENT_DRIVEN where supported.
+
+Высокоприоритетные emergency / medication / infectious disease recommendations
+могут проверяться чаще.
+
+==================================================
+VERSION CONTROL
+==================================================
+
+Каждая guideline должна иметь immutable version history.
+
+Хранить:
+
+guideline_id
+version_id
+source_version
+effective_date
+publication_date
+retrieved_at
+document_hash
+supersedes_version_id
+superseded_by_version_id
+change_type
+change_summary
+status.
+
+Старые версии НЕ удалять.
+
+Статусы:
+
+CURRENT
+SUPERSEDED
+WITHDRAWN
+ARCHIVED
+PENDING_VERIFICATION
+SOURCE_UNAVAILABLE.
+
+==================================================
+CHANGE DETECTION
+==================================================
+
+При обнаружении новой версии:
+
+1. загрузить/получить новый документ;
+2. проверить источник;
+3. вычислить document hash;
+4. определить, действительно ли это новая версия;
+5. выполнить structural diff;
+6. выполнить semantic diff;
+7. определить изменившиеся клинические рекомендации;
+8. определить affected specialties/conditions;
+9. определить affected medications/workflows;
+10. создать change record.
+
+Не считать изменение дизайна PDF клиническим изменением.
+
+==================================================
+CLINICAL CHANGE CLASSIFICATION
+==================================================
+
+Классифицировать изменения:
+
+EDITORIAL_ONLY
+EVIDENCE_UPDATE
+DIAGNOSTIC_CHANGE
+TREATMENT_CHANGE
+MEDICATION_CHANGE
+DOSE_CHANGE
+CONTRAINDICATION_CHANGE
+MONITORING_CHANGE
+SCREENING_CHANGE
+FOLLOW_UP_CHANGE
+REFERRAL_CHANGE
+EMERGENCY_CHANGE
+LEGAL_OR_POLICY_CHANGE.
+
+==================================================
+GUIDELINE UPDATE IMPACT ENGINE
+==================================================
+
+При значимом изменении определить:
+
+affected canonical knowledge
+affected Clinical AI rules
+affected CDS logic
+affected Precision Pharmacology rules
+affected Digital Twin assumptions
+affected patient-specific comparisons
+affected saved physician workflows.
+
+Не обновлять clinical behavior автоматически без validation.
+
+==================================================
+UPDATE VALIDATION WORKFLOW
+==================================================
+
+Новая версия должна пройти:
+
+SOURCE_VALIDATION
+DOCUMENT_VALIDATION
+STRUCTURE_VALIDATION
+SEMANTIC_DIFF
+CLINICAL_CHANGE_CLASSIFICATION
+SAFETY_REVIEW where applicable.
+
+После этого:
+
+PENDING_CLINICAL_REVIEW
+или
+APPROVED_FOR_KNOWLEDGE_LAYER.
+
+Высокорисковые изменения:
+
+dose
+contraindication
+emergency
+pregnancy
+pediatrics
+oncology
+critical care
+
+не должны автоматически попадать в активный Clinical AI без review.
+
+==================================================
+UPDATE NOTIFICATIONS
+==================================================
+
+Врач должен получать уведомление:
+
+"Clinical guideline updated"
+
+с указанием:
+
+country
+issuing organization
+condition
+old version
+new version
+effective date
+what changed
+clinical importance
+affected saved patients/workflows if applicable.
+
+Не показывать alarm fatigue для editorial-only updates.
+
+Поддержать уровни:
+
+INFO
+IMPORTANT
+HIGH_CLINICAL_IMPACT
+URGENT_SAFETY_CHANGE.
+
+==================================================
+PATIENT IMPACT RECHECK
+==================================================
+
+Если новая рекомендация потенциально влияет на пациента:
+
+система может создать:
+
+GUIDELINE_REVIEW_REQUIRED
+
+для врача.
+
+Но не должна автоматически менять:
+
+diagnosis
+medication
+dose
+care plan.
+
+==================================================
+CROSS-COUNTRY UPDATE RE-COMPARISON
+==================================================
+
+Если обновилась guideline одной из стран:
+
+автоматически пометить ранее сохранённые comparisons как:
+
+OUTDATED_COMPARISON
+
+и предложить:
+
+RE-COMPARE WITH CURRENT GUIDELINES.
+
+Старое сравнение сохранять в audit history.
+
+==================================================
+TRANSLATION UPDATE VERSIONING
+==================================================
+
+Переводы также должны иметь versioning.
+
+Если исходный guideline обновлён:
+
+старый перевод пометить:
+
+SOURCE_SUPERSEDED.
+
+Создать новый translation job.
+
+Не использовать старый перевод как перевод новой версии.
+
+==================================================
+GUIDELINE REGISTRY
+==================================================
+
+Создать/усилить:
+
+Guideline Registry.
+
+Для каждого guideline хранить:
+
+guideline_id
+country
+jurisdiction
+authority
+specialty
+condition
+language
+current_version
+all_versions
+source
+status
+last_checked
+next_check
+translation_status
+comparison_status
+clinical_validation_status.
+
+==================================================
+SOURCE HEALTH MONITORING
+==================================================
+
+Если официальный источник перестал отвечать:
+
+не удалять guideline.
+
+Пометить:
+
+SOURCE_TEMPORARILY_UNAVAILABLE
+
+и сохранить последнюю verified version.
+
+Указать:
+
+last_verified_at.
+
+==================================================
+UPDATE FAILOVER
+==================================================
+
+Если основной источник недоступен:
+
+разрешить использование secondary authoritative source
+только если источник явно идентифицирован.
+
+Не использовать неофициальный mirror как authoritative без маркировки.
+
+==================================================
+WHY DO GUIDELINES DIFFER
+==================================================
+
+Добавить функцию:
+
+"Why do these guidelines differ?"
+
+AI может объяснять различия только когда причина подтверждается источниками.
+
+Возможные подтверждённые причины:
+
+different publication date
+different evidence base
+different evidence grading system
+drug availability
+national formulary
+population-specific considerations
+local healthcare organization
+screening policy
+resource availability.
+
+Если причина не подтверждена:
+
+показать:
+
+"Reason not established from available authoritative sources."
+
+==================================================
+KNOWLEDGE AI INTEGRATION
+==================================================
+
+Связать capability с:
+
+Knowledge AI
+Clinical AI/CDS
+Medical Passport
+Telemedicine
+Precision Pharmacology
+Digital Twin
+Research AI.
+
+Clinical AI должен ссылаться на конкретную recommendation/version/source,
+а не просто писать "по рекомендациям".
+
+==================================================
+DOCUMENT WORKFLOW
+==================================================
+
+В интерфейсе врача:
+
+Clinical Guidelines
+→ Patient Country
+→ Doctor Country
+→ Condition / Specialty
+→ Compare Guidelines
+→ Translate
+→ View Original
+→ View Differences
+→ View Update History
+→ View What Changed
+→ Save to Encounter / Medical Passport.
+
+Врач может сохранить:
+
+document reference
+comparison result
+selected guideline version
+clinical note explaining chosen approach.
+
+==================================================
+AUDIT / PROVENANCE
+==================================================
+
+Записывать:
+
+who requested comparison
+countries selected
+guideline versions
+translation version
+AI/model version
+retrieval timestamp
+comparison timestamp
+update detection timestamp
+change classification
+validation state
+clinician decision where recorded.
+
+==================================================
+OFFLINE / DOCUMENT IMPORT
+==================================================
+
+Если guideline отсутствует в автоматическом registry,
+разрешить загрузить официальный PDF/document.
+
+AI:
+
+extract
+identify issuing authority
+identify jurisdiction
+identify version
+translate
+structure
+compare
+
+но документ должен быть помечен как:
+
+USER_SUPPLIED_SOURCE
+
+пока источник не подтверждён.
+
+После подтверждения можно связать документ с official registry entry.
+
+==================================================
+IMPLEMENTATION COMPONENTS
+==================================================
+
+Добавить/усилить:
+
+Guideline Registry
+Guideline Source Connector Layer
+Guideline Retrieval
+Guideline Versioning
+Guideline Update Surveillance
+Guideline Change Detection
+Guideline Semantic Diff
+Guideline Clinical Impact Engine
+Guideline Translation
+Guideline Translation Versioning
+Guideline Semantic Alignment
+Cross-Jurisdiction Comparison Engine
+Guideline Re-comparison Engine
+Guideline Notification Service
+Evidence/Provenance Layer
+Clinical Safety Guardrails
+Doctor Review Workflow
+Update Audit Trail.
+
+Не создавать параллельные AI engines,
+если capability может быть реализована через существующие Knowledge AI / Clinical AI canonical owners.
+
+==================================================
+ARCHITECTURAL RULE
+==================================================
+
+Guideline Engine должен быть shared platform capability.
+
+Specialty modules не должны хранить отдельные независимые копии guideline documents.
+
+Использовать:
+
+one canonical Guideline Registry
++
+specialty projections/profiles.
+
+==================================================
+FINAL ACCEPTANCE CRITERIA
+==================================================
+
+Capability считается архитектурно готовой только если система умеет:
+
+1. находить официальные рекомендации двух юрисдикций;
+2. хранить текущую и исторические версии;
+3. переводить;
+4. сопоставлять;
+5. показывать источник и версию;
+6. выявлять новую версию;
+7. определять значимые изменения;
+8. сохранять старые версии;
+9. уведомлять врача;
+10. помечать устаревшие comparisons;
+11. повторно сравнивать после обновления;
+12. не применять high-risk changes без validation;
+13. сохранять audit/provenance;
+14. не подменять решение врача.

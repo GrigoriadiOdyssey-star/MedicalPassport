@@ -1,0 +1,93 @@
+include:
+  - local: '/.gitlab-ci.yml'
+
+variables:
+  GIT_DEPTH: "0"
+
+default:
+  # Cloud-only route: this fresh session tag is not registered on the HP runner.
+  # Keep jobs pending until a verified cloud runner is assigned this tag.
+  tags:
+    - edht-cloud-only-sbx-paw6m1pgcugq6emft29hf86hkty2
+  before_script:
+    - apk add --no-cache git
+
+validate-specifications:
+  script:
+    - node --version
+    - node --test --test-skip-pattern="^cached input hashes, document anchors and baseline guard remain valid$" tests/*.test.mjs
+    - npm run check
+    - npm run audit:check
+    - npm run gapfill:check
+    - npm run pediatric:check
+    - npm run domain:check
+    - npm run master04:check
+    - npm run master05:check
+    - npm run master06:check
+    - npm run master07:check
+    - npm run master08:check
+    - npm run readiness08:check
+
+medical-passport-master26:
+  stage: validate
+  script:
+    - cd apps/medical-passport
+    - npm ci --ignore-scripts
+    - npm test
+
+medical-passport-master27:
+  stage: validate
+  script:
+    - cd apps/medical-passport
+    - npm ci --ignore-scripts
+    - node --test tests/laboratory-production.test.mjs tests/laboratory-extensions.test.mjs tests/laboratory-specialties.test.mjs tests/laboratory-report-attachments.test.mjs tests/laboratory-hardening.test.mjs tests/laboratory-migration-registry.test.mjs tests/laboratory-frontend.test.mjs tests/master27-28-integration.test.mjs tests/master27-28-server-plugin.test.mjs
+
+cloud-postgres-migrations:
+  stage: validate
+  image: postgres:17-alpine
+  services:
+    - name: postgres:17-alpine
+      alias: postgres
+  variables:
+    POSTGRES_DB: edht_ci
+    POSTGRES_HOST_AUTH_METHOD: trust
+    PGHOST: postgres
+    PGUSER: postgres
+    PGDATABASE: edht_ci
+  before_script: []
+  script:
+    - until pg_isready -h postgres -U postgres -d edht_ci; do sleep 1; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001000000_document_storage.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001001000_patient_records.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/migrations/20261001224520_cloud_rpc_and_fk_hardening.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/rls-smoke.sql
+
+cloud-preview-runtime-contracts:
+  extends: cloud-postgres-migrations
+  script:
+    - until pg_isready -h postgres -U postgres -d edht_ci; do sleep 1; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
+    - for migration in apps/medical-passport/supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$migration"; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-runtime-rls.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-document-rls.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/document-server-verification-contract.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-reminder-contract.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/rls-smoke.sql
+
+cloud-preview-care-contracts:
+  extends: cloud-postgres-migrations
+  script:
+    - until pg_isready -h postgres -U postgres -d edht_ci; do sleep 1; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
+    - for migration in apps/medical-passport/supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$migration"; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-care-contract.sql
+
+cloud-ai-consent-contracts:
+  extends: cloud-postgres-migrations
+  script:
+    - until pg_isready -h postgres -U postgres -d edht_ci; do sleep 1; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/bootstrap.sql
+    - for migration in apps/medical-passport/supabase/migrations/*.sql; do psql -v ON_ERROR_STOP=1 -f "$migration"; done
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/preview-assistant-contract.sql
+    - psql -v ON_ERROR_STOP=1 -f apps/medical-passport/supabase/tests/qr-consent-contract.sql

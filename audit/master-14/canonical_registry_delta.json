@@ -1,0 +1,404 @@
+{
+  "pass": "MASTER-14",
+  "records": [
+    {
+      "original_id": 107,
+      "source_title": "Reminder Engine",
+      "source_sha256": "6c4d9712b95b48e85d61b336c91b4f8f7987059a2ffc17af5f6497a454d3f1cf",
+      "normalized_title": "Reminder Engine",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Deliver cross-domain reminders through push, SMS and email.",
+      "scope": "Adds the explicit cross-domain medicine, appointment, vaccination, laboratory, travel and AI recommendation routing matrix to the existing channel/template lifecycle.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION",
+        "CAP-APPOINTMENTS",
+        "CAP-IMMUNIZATION",
+        "CAP-LABORATORY",
+        "CAP-TRAVEL",
+        "CAP-AI"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    },
+    {
+      "original_id": 118,
+      "source_title": "Medical Notifications",
+      "source_sha256": "424643fd2173ba827794cb363ac2cf3aa28f8a7ce82a977893da897c222b74fc",
+      "normalized_title": "Medical Notifications",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Present a unified notification inbox for medical, access, AI and emergency events.",
+      "scope": "Preserves QR access, AI alerts and emergency events as separate origin categories. An inbox read state is not human clinical acknowledgement.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-QR",
+        "CAP-AI",
+        "CAP-EMERGENCY"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    },
+    {
+      "original_id": 342,
+      "source_title": "Medical Device Notification Center",
+      "source_sha256": "9792b00dc71b7e3704cd2c73c01f202a6dbfbf4b400abba8fdcfde3739cf496d",
+      "normalized_title": "Medical Device Notification Center",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Notify authorized recipients of device and synchronization events.",
+      "scope": "Preserves low battery, offline, synchronization failure, firmware update and new-measurement events. The device owner determines state; notification never performs a firmware or therapy change.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-DEVICES"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    },
+    {
+      "original_id": 367,
+      "source_title": "Laboratory Result Notification Center",
+      "source_sha256": "82b6fe9a2324a928248c69b903cd16c0f621ef96ddc80d53339ba0f5c9b77c33",
+      "normalized_title": "Laboratory Result Notification Center",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Notify recipients of laboratory workflow milestones and critical-result events.",
+      "scope": "Preserves sample received, analysis started, results available and critical result separately. Laboratory authority determines criticality; delivery alone cannot close critical-result escalation.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-LABORATORY"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    },
+    {
+      "original_id": 756,
+      "source_title": "Pregnancy Notification Center",
+      "source_sha256": "2a8d6f9e609ec0a5c7aace4dd931ce70e999a95497b74ea70b8e1e971069dab5",
+      "normalized_title": "Pregnancy Notification Center",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Deliver pregnancy-context appointment, laboratory, ultrasound and medication reminders.",
+      "scope": "Preserves the four distinct event sources; a pregnancy profile does not duplicate the shared notification lifecycle. Confidential content must be redacted in external previews.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-APPOINTMENTS",
+        "CAP-LABORATORY",
+        "CAP-IMAGING",
+        "CAP-MEDICATION"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    },
+    {
+      "original_id": 1025,
+      "source_title": "Pediatric Infection Notification Center",
+      "source_sha256": "40ba225368144567e5975ac681548554c4ad79017f03f9376205f8bf33545c98",
+      "normalized_title": "Pediatric Infection Notification Center",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Deliver pediatric infection laboratory, medication, isolation and follow-up notifications.",
+      "scope": "Preserves isolation completion as an externally authorized event, not a timer-derived clearance. Guardian authority and confidential child/adolescent context are checked for each recipient.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-LABORATORY",
+        "CAP-MEDICATION",
+        "CAP-SPECIALTY",
+        "CAP-APPOINTMENTS"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    },
+    {
+      "original_id": 4305,
+      "source_title": "Vaccination Smart Notification Engine",
+      "source_sha256": "ddf07e077f163e805d0f1c6c02beb32c542b01b0438239a948ad69640f0294fc",
+      "normalized_title": "Vaccination Smart Notification Engine",
+      "canonical_target": "CORE-CAP-NOTIFICATIONS",
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "purpose": "Deliver versioned vaccination-status notifications with jurisdiction and preference context.",
+      "scope": "Preserves upcoming, due soon, due, window ending, overdue, catch-up required and medical review required separately. Immunization/CDS owns those determinations; delivery configuration cannot override clinical windows or invent catch-up rules.",
+      "workflow": "Receive versioned event → verify origin and recipient scope → resolve template and redaction → schedule idempotently → deliver with bounded retry/expiry → record delivery separately from acknowledgement or clinical response.",
+      "entities": [
+        "Notification",
+        "OriginEventReference",
+        "TemplateVersion",
+        "RecipientPreference",
+        "DeliveryAttempt",
+        "Acknowledgement"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Qualified clinical reviewer",
+        "Owner service identity",
+        "Independent governance reviewer"
+      ],
+      "inputs": [
+        "Versioned origin event and authority",
+        "Recipient, tenant, purpose and permission context",
+        "Channel, template, locale and scheduling constraints"
+      ],
+      "outputs": [
+        "Redacted notification",
+        "Attempt/delivery state",
+        "Separate human acknowledgement reference"
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-IMMUNIZATION",
+        "CAP-CDS"
+      ],
+      "clinical_safety": "No autonomous diagnosis, prescribing, dose/ventilator/pump change, emergency disposition or clinical-fact overwrite. Preserve REPORTED, OBSERVED, MEASURED, CLINICIAN_ASSESSED, INFERRED, PREDICTED and SIMULATED separately. Uncertain or incomplete evidence cannot become normality, eligibility or remission.",
+      "privacy": "Per-record/encounter tenant, actor, purpose, age/assent/guardian authority, jurisdiction, restriction, expiry and revocation checks apply to views, exports, caches and downstream AI. Family/genomic and restricted session information is separately segmented; routine logs contain opaque IDs and hashes.",
+      "failure_modes": "Reject stale, revoked, misrouted or duplicate events; invalidate pending delivery on event correction. Expired or unavailable delivery is explicit. Critical escalation follows an authorized domain-owned fallback, never assumed successful from a delivery receipt.",
+      "acceptance": "Every nonempty source line resolves to a canonical anchor. Verify wrong recipient, revoked authority, duplicate/out-of-order events, channel failure, stale origin decision, preview disclosure and sent/read/acknowledged separation; runtime evidence remains outstanding.",
+      "open_gates": "Exact integration contracts, clinical criticality/escalation policy, jurisdictional scheduling authority, privacy/security execution evidence and end-to-end acceptance remain open.",
+      "evidence": {
+        "document": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+        "semantic_decision": "audit/master-14/semantic_decision.json",
+        "prior_review": "audit/master-13/audit_ledger_delta.json"
+      },
+      "reviewed": true,
+      "normalized": true,
+      "canonicalized": true,
+      "implementation_ready": false
+    }
+  ]
+}

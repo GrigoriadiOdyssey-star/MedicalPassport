@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PARENT_PRESERVATION",
+  "parent_commit": "c4b6b4408e20026b51d194b1830742073cf6ba00",
+  "tracked_modifications": [],
+  "legacy_suite": {
+    "total": 248,
+    "pass": 247,
+    "fail": 1
+  },
+  "legacy_failure": "MASTER-09 baseline guard rejects subsequent committed canonical addenda because its git diff lacks --diff-filter=MDRT",
+  "preexisting_in_parent": true,
+  "parent_and_current_failure_paths_equal": true,
+  "affected_path_count": 120,
+  "paths_sha256": "b229d9cbe331f287166703a9adf29cf16289584b07f82ce86c5a6f821f15eb73",
+  "old_guard_not_modified": true
+}

@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-18",
+  "batch": 3,
+  "family": "precision-specialty-coordination",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    1619,
+    1631,
+    1675,
+    1856,
+    1952
+  ],
+  "decision_sha256": "b34c871357f475047a9c70b8824db12ea5da37a4df79b559ba83ad5e1eca5762",
+  "source_hashes": {
+    "1619": "836ba429cf71e42b048527c0002fced9f506c8467f937609c50ee5dbd17b0d75",
+    "1631": "a52fa98927574eec68881fb834900e97a948ac83fe5a6bb9d9afeea8dc27d00d",
+    "1675": "97438ff251d4c6261f0aa4dc5c8071ba8d9fb6fd7fa8faf5161e0ec21c404979",
+    "1856": "afec62120a2b4d8298c5e3d071977936b362fac1581dc3d82808f1470d7b64d9",
+    "1952": "7beab54a020736c7f7c2fe69f5db10ebf416e3cd68d5bdd23b6e88d53f12d643"
+  }
+}

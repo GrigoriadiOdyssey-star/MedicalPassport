@@ -1,0 +1,901 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:edht:disclosure-contract:1",
+  "title": "Bounded proposed disclosure and configurable retention syntax; not runtime authorization or legal approval",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "request_id",
+        "record_id",
+        "expected_record_version",
+        "recipient_role_reference",
+        "purpose",
+        "requested_ttl_seconds",
+        "expected_policy_version"
+      ],
+      "properties": {
+        "kind": {
+          "const": "grant_create"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "expected_record_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "recipient_role_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "purpose": {
+          "const": "TREATMENT_REVIEW"
+        },
+        "requested_ttl_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "expected_policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "request_id",
+        "expected_grant_version"
+      ],
+      "properties": {
+        "kind": {
+          "const": "grant_revoke"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "expected_grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "grant_id",
+        "tenant_id",
+        "patient_id",
+        "creator_subject_id",
+        "recipient_role_reference",
+        "record_id",
+        "record_version",
+        "purpose",
+        "grant_version",
+        "policy_version",
+        "created_at_ms",
+        "expires_at_ms",
+        "status",
+        "withdrawn_at_ms"
+      ],
+      "properties": {
+        "kind": {
+          "const": "grant_state"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "patient_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "creator_subject_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "recipient_role_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "purpose": {
+          "const": "TREATMENT_REVIEW"
+        },
+        "grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "created_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "expires_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "status": {
+          "const": "ACTIVE"
+        },
+        "withdrawn_at_ms": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "grant_id",
+        "tenant_id",
+        "patient_id",
+        "creator_subject_id",
+        "recipient_role_reference",
+        "record_id",
+        "record_version",
+        "purpose",
+        "grant_version",
+        "policy_version",
+        "created_at_ms",
+        "expires_at_ms",
+        "status",
+        "withdrawn_at_ms"
+      ],
+      "properties": {
+        "kind": {
+          "const": "grant_state"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "patient_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "creator_subject_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "recipient_role_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "purpose": {
+          "const": "TREATMENT_REVIEW"
+        },
+        "grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "created_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "expires_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "status": {
+          "const": "REVOKED"
+        },
+        "withdrawn_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "grant_id",
+        "tenant_id",
+        "patient_id",
+        "creator_subject_id",
+        "recipient_role_reference",
+        "record_id",
+        "record_version",
+        "purpose",
+        "grant_version",
+        "policy_version",
+        "created_at_ms",
+        "expires_at_ms",
+        "status",
+        "withdrawn_at_ms"
+      ],
+      "properties": {
+        "kind": {
+          "const": "grant_state"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "patient_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "creator_subject_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "recipient_role_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "purpose": {
+          "const": "TREATMENT_REVIEW"
+        },
+        "grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "created_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "expires_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "status": {
+          "const": "EXPIRED"
+        },
+        "withdrawn_at_ms": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "grant_id",
+        "record_id",
+        "record_version",
+        "assertion_state",
+        "verification_state",
+        "freshness",
+        "source_reference",
+        "reported_substance",
+        "reported_reaction",
+        "receipt_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "allergy_view"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "grant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "record_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "assertion_state": {
+          "enum": [
+            "RECORDED",
+            "UNKNOWN",
+            "NOT_ASSESSED",
+            "NO_KNOWN_ALLERGY"
+          ]
+        },
+        "verification_state": {
+          "enum": [
+            "UNVERIFIED",
+            "CLINICIAN_CONFIRMED",
+            "CONFLICTING",
+            "UNKNOWN"
+          ]
+        },
+        "freshness": {
+          "enum": [
+            "CURRENT",
+            "UNKNOWN"
+          ]
+        },
+        "source_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "reported_substance": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "reported_reaction": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "receipt_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "event_name",
+        "event_id",
+        "producer_id",
+        "correlation_id",
+        "tenant_id",
+        "grant_reference",
+        "resource_reference",
+        "grant_version",
+        "source_version",
+        "policy_version",
+        "occurred_at_ms",
+        "outcome"
+      ],
+      "properties": {
+        "kind": {
+          "const": "disclosure_event"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "event_name": {
+          "enum": [
+            "GrantCreated",
+            "GrantWithdrawn",
+            "AccessAllowed",
+            "AccessDenied"
+          ]
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "producer_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "correlation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "grant_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "resource_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "grant_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "source_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "occurred_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "outcome": {
+          "enum": [
+            "COMMITTED",
+            "DENIED",
+            "FAILED"
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "event_name",
+        "event_id",
+        "producer_id",
+        "correlation_id",
+        "tenant_id",
+        "grant_reference",
+        "resource_reference",
+        "grant_version",
+        "source_version",
+        "policy_version",
+        "occurred_at_ms",
+        "outcome"
+      ],
+      "properties": {
+        "kind": {
+          "const": "disclosure_event"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "event_name": {
+          "const": "SourceVersionChanged"
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "producer_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "correlation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "grant_reference": {
+          "type": "null"
+        },
+        "resource_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "grant_version": {
+          "type": "null"
+        },
+        "source_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "occurred_at_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "outcome": {
+          "enum": [
+            "COMMITTED",
+            "DENIED",
+            "FAILED"
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "request_id",
+        "code"
+      ],
+      "properties": {
+        "kind": {
+          "const": "problem"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "code": {
+          "enum": [
+            "INVALID_REQUEST",
+            "UNAUTHENTICATED",
+            "ACCESS_DENIED",
+            "STALE_VERSION",
+            "IDEMPOTENCY_CONFLICT",
+            "POLICY_UNAVAILABLE",
+            "AUDIT_UNAVAILABLE"
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "policy_id",
+        "policy_version",
+        "jurisdiction",
+        "data_category",
+        "legal_basis_reference",
+        "consent_policy_reference",
+        "purpose",
+        "hold_behavior",
+        "archive_authorization",
+        "export_authorization",
+        "status",
+        "retention_seconds",
+        "approval_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "retention_policy"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "policy_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "jurisdiction": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "data_category": {
+          "enum": [
+            "CLINICAL_RECORD",
+            "DISCLOSURE_GRANT",
+            "AUDIT_METADATA"
+          ]
+        },
+        "legal_basis_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "consent_policy_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "hold_behavior": {
+          "const": "BLOCK_DELETION"
+        },
+        "archive_authorization": {
+          "const": "SEPARATE_PERMISSION"
+        },
+        "export_authorization": {
+          "const": "SEPARATE_PERMISSION"
+        },
+        "status": {
+          "const": "DRAFT"
+        },
+        "retention_seconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "approval_reference": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "policy_id",
+        "policy_version",
+        "jurisdiction",
+        "data_category",
+        "legal_basis_reference",
+        "consent_policy_reference",
+        "purpose",
+        "hold_behavior",
+        "archive_authorization",
+        "export_authorization",
+        "status",
+        "retention_seconds",
+        "approval_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "retention_policy"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "policy_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "policy_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "jurisdiction": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "data_category": {
+          "enum": [
+            "CLINICAL_RECORD",
+            "DISCLOSURE_GRANT",
+            "AUDIT_METADATA"
+          ]
+        },
+        "legal_basis_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "consent_policy_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "hold_behavior": {
+          "const": "BLOCK_DELETION"
+        },
+        "archive_authorization": {
+          "const": "SEPARATE_PERMISSION"
+        },
+        "export_authorization": {
+          "const": "SEPARATE_PERMISSION"
+        },
+        "status": {
+          "const": "APPROVED"
+        },
+        "retention_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "approval_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        }
+      }
+    }
+  ]
+}

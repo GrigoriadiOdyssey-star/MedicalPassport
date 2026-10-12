@@ -1,0 +1,364 @@
+TAP version 13
+# Subtest: real HTTP complete patient/doctor workflow, isolation, QR decode, CSRF and revoke
+ok 1 - real HTTP complete patient/doctor workflow, isolation, QR decode, CSRF and revoke
+  ---
+  duration_ms: 1672.9521
+  type: 'test'
+  ...
+# Subtest: restart retains data and migrations are idempotent; production startup refused
+ok 2 - restart retains data and migrations are idempotent; production startup refused
+  ---
+  duration_ms: 275.8916
+  type: 'test'
+  ...
+# Subtest: i18n keys have two languages; unsafe strings are escaped and roles cannot select patient screens
+ok 3 - i18n keys have two languages; unsafe strings are escaped and roles cannot select patient screens
+  ---
+  duration_ms: 2.5829
+  type: 'test'
+  ...
+# Subtest: grant status precedence preserves revoke, expiry and single-use distinctions
+ok 4 - grant status precedence preserves revoke, expiry and single-use distinctions
+  ---
+  duration_ms: 0.2635
+  type: 'test'
+  ...
+# Subtest: navigation renders one screen, empty state and modal validated record creation
+ok 5 - navigation renders one screen, empty state and modal validated record creation
+  ---
+  duration_ms: 431.4762
+  type: 'test'
+  ...
+# Subtest: language switch re-renders labels; unknown server errors are friendly with retry
+ok 6 - language switch re-renders labels; unknown server errors are friendly with retry
+  ---
+  duration_ms: 114.4773
+  type: 'test'
+  ...
+# Subtest: doctor workspace exposes no patient CRUD or clinical sections before authorized access
+ok 7 - doctor workspace exposes no patient CRUD or clinical sections before authorized access
+  ---
+  duration_ms: 31.3871
+  type: 'test'
+  ...
+# Subtest: emergency chat prompt produces escalation without invoking assistant API
+ok 8 - emergency chat prompt produces escalation without invoking assistant API
+  ---
+  duration_ms: 99.2156
+  type: 'test'
+  ...
+# Subtest: localized skip link and profile remain named independently of mobile-hidden text
+ok 9 - localized skip link and profile remain named independently of mobile-hidden text
+  ---
+  duration_ms: 101.8983
+  type: 'test'
+  ...
+# Subtest: notification center and settings submit real UI actions with CSRF
+ok 10 - notification center and settings submit real UI actions with CSRF
+  ---
+  duration_ms: 100.7734
+  type: 'test'
+  ...
+# Subtest: medication reminder form enforces confirmation and serializes schedule independently of record
+ok 11 - medication reminder form enforces confirmation and serializes schedule independently of record
+  ---
+  duration_ms: 200.0009
+  type: 'test'
+  ...
+# Subtest: new resumable file selection does not invoke legacy selected-file handler
+ok 12 - new resumable file selection does not invoke legacy selected-file handler
+  ---
+  duration_ms: 63.0232
+  type: 'test'
+  ...
+# Subtest: daily, custom weekdays and interval schedules preserve entered times
+ok 13 - daily, custom weekdays and interval schedules preserve entered times
+  ---
+  duration_ms: 52.9763
+  type: 'test'
+  ...
+# Subtest: DST gap is skipped and repeated local time occurs exactly once
+ok 14 - DST gap is skipped and repeated local time occurs exactly once
+  ---
+  duration_ms: 1.0394
+  type: 'test'
+  ...
+# Subtest: notification delivery deduplicates; read/dismiss and mandatory security settings enforce ownership
+ok 15 - notification delivery deduplicates; read/dismiss and mandatory security settings enforce ownership
+  ---
+  duration_ms: 469.9727
+  type: 'test'
+  ...
+# Subtest: reminder creates one dose per slot; snooze does not duplicate doses, taken resolves once
+ok 16 - reminder creates one dose per slot; snooze does not duplicate doses, taken resolves once
+  ---
+  duration_ms: 495.5303
+  type: 'test'
+  ...
+# Subtest: skipped, late and missed dose states are factual; future and other-patient actions denied
+ok 17 - skipped, late and missed dose states are factual; future and other-patient actions denied
+  ---
+  duration_ms: 550.7074
+  type: 'test'
+  ...
+# Subtest: pause, archive and edit cancel pending notifications while preserving prescription and provenance
+ok 18 - pause, archive and edit cancel pending notifications while preserving prescription and provenance
+  ---
+  duration_ms: 602.6678
+  type: 'test'
+  ...
+# Subtest: timezone change is explicit; home preserves plan, local reschedules future and does not repeat taken slot
+ok 19 - timezone change is explicit; home preserves plan, local reschedules future and does not repeat taken slot
+  ---
+  duration_ms: 520.0822
+  type: 'test'
+  ...
+# Subtest: doctor access creates patient notification linked to audit and one-time consumption
+ok 20 - doctor access creates patient notification linked to audit and one-time consumption
+  ---
+  duration_ms: 549.1447
+  type: 'test'
+  ...
+# Subtest: notification insertion failure rolls back access consumption and audit together
+ok 21 - notification insertion failure rolls back access consumption and audit together
+  ---
+  duration_ms: 649.2563
+  type: 'test'
+  ...
+# Subtest: upcoming/active/past medication reads use dates and notification Today uses patient timezone
+ok 22 - upcoming/active/past medication reads use dates and notification Today uses patient timezone
+  ---
+  duration_ms: 523.4699
+  type: 'test'
+  ...
+# Subtest: new product APIs preserve authentication/CSRF, scheduling, ownership and read settings
+ok 23 - new product APIs preserve authentication/CSRF, scheduling, ownership and read settings
+  ---
+  duration_ms: 506.5377
+  type: 'test'
+  ...
+# Subtest: disabling and re-enabling reminder notifications resumes pending delivery but preserves dismissals
+ok 24 - disabling and re-enabling reminder notifications resumes pending delivery but preserves dismissals
+  ---
+  duration_ms: 478.3036
+  type: 'test'
+  ...
+# Subtest: durable restart preserves doses, delivery keys and completed actions
+ok 25 - durable restart preserves doses, delivery keys and completed actions
+  ---
+  duration_ms: 326.2873
+  type: 'test'
+  ...
+# Subtest: large file uses bounded chunks, resumes retries, streams to object storage and preserves versions
+ok 26 - large file uses bounded chunks, resumes retries, streams to object storage and preserves versions
+  ---
+  duration_ms: 611.1618
+  type: 'test'
+  ...
+# Subtest: invalid chunk hash and declared size cannot advance session; cancellation denies further writes
+ok 27 - invalid chunk hash and declared size cannot advance session; cancellation denies further writes
+  ---
+  duration_ms: 475.1168
+  type: 'test'
+  ...
+# Subtest: DICOM imports study series and instances, deduplicates same instance and rejects malformed input
+ok 28 - DICOM imports study series and instances, deduplicates same instance and rejects malformed input
+  ---
+  duration_ms: 396.0765
+  type: 'test'
+  ...
+# Subtest: file content signatures and patient quota enforced
+ok 29 - file content signatures and patient quota enforced
+  ---
+  duration_ms: 320.9017
+  type: 'test'
+  ...
+# Subtest: upload HTTP authenticates before reading binary body and rechecks CSRF and ownership
+ok 30 - upload HTTP authenticates before reading binary body and rechecks CSRF and ownership
+  ---
+  duration_ms: 373.594
+  type: 'test'
+  ...
+# Subtest: incremental browser SHA256 matches crypto across padding and chunk boundaries
+ok 31 - incremental browser SHA256 matches crypto across padding and chunk boundaries
+  ---
+  duration_ms: 189.3893
+  type: 'test'
+  ...
+# Subtest: structured labs, conditions and vaccinations retain history and reject false verification
+ok 32 - structured labs, conditions and vaccinations retain history and reject false verification
+  ---
+  duration_ms: 368.9227
+  type: 'test'
+  ...
+# Subtest: doctor imaging grant isolates scope, audits each read and denies after revoke
+ok 33 - doctor imaging grant isolates scope, audits each read and denies after revoke
+  ---
+  duration_ms: 502.5117
+  type: 'test'
+  ...
+# Subtest: upload resumes across database and service restart using persisted offsets
+ok 34 - upload resumes across database and service restart using persisted offsets
+  ---
+  duration_ms: 329.4885
+  type: 'test'
+  ...
+# Subtest: personal appointments notify and cancel atomically; guideline context retains four independent unknowns
+ok 35 - personal appointments notify and cancel atomically; guideline context retains four independent unknowns
+  ---
+  duration_ms: 292.3695
+  type: 'test'
+  ...
+# Subtest: vaccination certificate links reject another patient's document on create and revision
+ok 36 - vaccination certificate links reject another patient's document on create and revision
+  ---
+  duration_ms: 307.1883
+  type: 'test'
+  ...
+# Subtest: migration, hashed identity and foreign keys
+ok 37 - migration, hashed identity and foreign keys
+  ---
+  duration_ms: 329.291
+  type: 'test'
+  ...
+# Subtest: role self assignment and invalid credentials denied
+ok 38 - role self assignment and invalid credentials denied
+  ---
+  duration_ms: 427.433
+  type: 'test'
+  ...
+# Subtest: login failure throttling
+ok 39 - login failure throttling
+  ---
+  duration_ms: 837.8174
+  type: 'test'
+  ...
+# Subtest: recovery is one-time and invalidates all sessions
+ok 40 - recovery is one-time and invalidates all sessions
+  ---
+  duration_ms: 565.2013
+  type: 'test'
+  ...
+# Subtest: scopes, wrong recipient, patient and doctor write denial
+ok 41 - scopes, wrong recipient, patient and doctor write denial
+  ---
+  duration_ms: 418.7405
+  type: 'test'
+  ...
+# Subtest: revocation and exact expiration boundary
+ok 42 - revocation and exact expiration boundary
+  ---
+  duration_ms: 296.2138
+  type: 'test'
+  ...
+# Subtest: consent change and practitioner suspension fail closed
+ok 43 - consent change and practitioner suspension fail closed
+  ---
+  duration_ms: 329.9065
+  type: 'test'
+  ...
+# Subtest: logout invalidates previously resolved doctor context
+ok 44 - logout invalidates previously resolved doctor context
+  ---
+  duration_ms: 270.2505
+  type: 'test'
+  ...
+# Subtest: patient recovery revokes existing sharing; account disable revokes sessions
+ok 45 - patient recovery revokes existing sharing; account disable revokes sessions
+  ---
+  duration_ms: 400.0377
+  type: 'test'
+  ...
+# Subtest: emergency revisions preserve immutable provenance
+ok 46 - emergency revisions preserve immutable provenance
+  ---
+  duration_ms: 267.8362
+  type: 'test'
+  ...
+# Subtest: one-time consumption and atomic audit rollback
+ok 47 - one-time consumption and atomic audit rollback
+  ---
+  duration_ms: 248.8795
+  type: 'test'
+  ...
+# Subtest: immutable audit and record provenance
+ok 48 - immutable audit and record provenance
+  ---
+  duration_ms: 204.0587
+  type: 'test'
+  ...
+# Subtest: documents stored as bytes and protected by exact patient and scope
+ok 49 - documents stored as bytes and protected by exact patient and scope
+  ---
+  duration_ms: 223.2612
+  type: 'test'
+  ...
+# Subtest: emergency scope is exclusive with distinct access audit
+ok 50 - emergency scope is exclusive with distinct access audit
+  ---
+  duration_ms: 226.4411
+  type: 'test'
+  ...
+# Subtest: FHIR exact binding, idempotent replay and conflicting source rejection
+ok 51 - FHIR exact binding, idempotent replay and conflicting source rejection
+  ---
+  duration_ms: 229.144
+  type: 'test'
+  ...
+# Subtest: parallel connections give exactly one one-time winner
+ok 52 - parallel connections give exactly one one-time winner
+  ---
+  duration_ms: 757.6863
+  type: 'test'
+  ...
+# Subtest: revision edit is optimistic, immutable and visible only in current projection
+ok 53 - revision edit is optimistic, immutable and visible only in current projection
+  ---
+  duration_ms: 441.0313
+  type: 'test'
+  ...
+# Subtest: archiving preserves history and removes live grant content
+ok 54 - archiving preserves history and removes live grant content
+  ---
+  duration_ms: 371.4654
+  type: 'test'
+  ...
+# Subtest: document metadata persists; archive denies shared download without deleting original bytes
+ok 55 - document metadata persists; archive denies shared download without deleting original bytes
+  ---
+  duration_ms: 322.7266
+  type: 'test'
+  ...
+# Subtest: recipient-bound status distinguishes expiry, revoke and use without disclosing foreign grant metadata
+ok 56 - recipient-bound status distinguishes expiry, revoke and use without disclosing foreign grant metadata
+  ---
+  duration_ms: 390.0169
+  type: 'test'
+  ...
+# Subtest: screen reads are bounded, typed and patient-owned; profile validates adult birth dates
+ok 57 - screen reads are bounded, typed and patient-owned; profile validates adult birth dates
+  ---
+  duration_ms: 340.5454
+  type: 'test'
+  ...
+# Subtest: new UI HTTP routes retain authentication and CSRF while supporting edits
+ok 58 - new UI HTTP routes retain authentication and CSRF while supporting edits
+  ---
+  duration_ms: 484.9606
+  type: 'test'
+  ...
+# Subtest: medication dates are calendar-valid and ordered on create and revision
+ok 59 - medication dates are calendar-valid and ordered on create and revision
+  ---
+  duration_ms: 302.5359
+  type: 'test'
+  ...
+1..59
+# tests 59
+# suites 0
+# pass 59
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9157.5444

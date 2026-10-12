@@ -1,0 +1,93 @@
+{
+  "scope": "Documentation, provenance and bounded contract validation; not runtime or clinical approval",
+  "targeted_batches": 13,
+  "targeted_current_tests": 8,
+  "targeted_status": "PASS",
+  "full_passed": 9,
+  "full_failed_diagnostic": 2,
+  "current_failed_validators": 0,
+  "final_executed_tests": 132,
+  "final_passed_tests": 132,
+  "historical_test_excluded": 1,
+  "historical_test_replacement": "MASTER12 historical preservation test retains all MASTER09 hash/anchor assertions and forbids prior modifications/deletions; only the obsolete addition-rejecting guard is replaced.",
+  "reproduce": "node scripts/validate-master12.mjs",
+  "runs": [
+    {
+      "file": "validation/EDHT_MASTER_12_FINAL_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 132,
+      "tests_failed": 0,
+      "sha256": "ef25b36de98c17e15120dbb1971f12c4515fc847acc7994b68c01617b7be61b6"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE50_CORRECTED_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 131,
+      "tests_failed": 0,
+      "sha256": "45133f11699d3396aa0c587bd5a2ed92d55811c9b5dd9bbf243124849286057f"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE50_RECHECK_VALIDATION.txt",
+      "status": "FAILED_DIAGNOSTIC",
+      "tests_passed": 131,
+      "tests_failed": 1,
+      "sha256": "9c31f94ffa611cd386930af5acbfe83a629735e82a9fe569c6a68f3b4acc257e"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE50_VALIDATION.txt",
+      "status": "FAILED_DIAGNOSTIC",
+      "tests_passed": 130,
+      "tests_failed": 1,
+      "sha256": "b6a7c38d747173edef98aff3effa0b8305166e751e2ac3f9558e346f98c95e18"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE55_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 131,
+      "tests_failed": 0,
+      "sha256": "953c88f472ea7146200bb593c110d592fd9736c38d5cfafcf4ed31f523b23172"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE60_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 131,
+      "tests_failed": 0,
+      "sha256": "8989b74308cf410202eabb4a03c325c793e25e17f3b6f601ab235fcb1c512c65"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE65_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 131,
+      "tests_failed": 0,
+      "sha256": "34949372000817421dffbec3179f70da6658ebab57cfcf1c0d19a2e0771b03cf"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE70_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 132,
+      "tests_failed": 0,
+      "sha256": "5ae486a80633e8448a0911094be7792a64969675ac0725e3f4c4183f79950cec"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE75_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 132,
+      "tests_failed": 0,
+      "sha256": "b055bb7a34101f9b8d37abaa874e6248247a3df0e5f98d1391b1d1aeb25c4c16"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE80_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 132,
+      "tests_failed": 0,
+      "sha256": "99b64ab3adac95dcc1997ab9dbf317bf243b8deb46f36f54919fc02f09358788"
+    },
+    {
+      "file": "validation/EDHT_MASTER_12_MILESTONE85_VALIDATION.txt",
+      "status": "PASS",
+      "tests_passed": 132,
+      "tests_failed": 0,
+      "sha256": "abd232193c83bf5eb49b978d7563debcf234debfb0b95510048dba26cf6f8042"
+    }
+  ]
+}

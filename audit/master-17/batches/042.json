@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-17",
+  "batch": 42,
+  "family": "hospital-notification-profile",
+  "owner": "CAP-NOTIFICATIONS",
+  "ids": [
+    268
+  ],
+  "decision_sha256": "8d69ba69194f22ba95e1f5e4d78dffe5fc8ee9b38cf616dba39234dc15c58cea",
+  "source_hashes": {
+    "268": "1ae616ff6699af6ebec42126e9e855ddd34a91c57b70c5a69b1766a19e7a1dca"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "pass": "MASTER-15",
+  "next_exact_cluster": {
+    "key": "pharmacy-catalog-and-availability",
+    "owner": "CAP-PHARMACY",
+    "requires_new_family_decision": true,
+    "ids": [
+      45,
+      115,
+      151,
+      204,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      399,
+      400,
+      401,
+      402
+    ]
+  },
+  "remaining_total": 3513,
+  "source_review_complete": true
+}

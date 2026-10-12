@@ -1,0 +1,37 @@
+{
+  "pass": "MASTER-19",
+  "batch": 46,
+  "family": "core-encounter-and-referral-history",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    124,
+    125,
+    166,
+    167,
+    277,
+    302,
+    457,
+    476,
+    507,
+    741,
+    754,
+    811,
+    850
+  ],
+  "decision_sha256": "6637e32c4b8576037a385512de452a4a2c2c5c842831497048495aae9c112956",
+  "source_hashes": {
+    "124": "14453764d7e34d6f310c9fa459a5dba01ee73c8ffa423f1f08e1bc33ef99edb3",
+    "125": "12c9aa03609381f66ecdc66ca26f0c668222e12bfd5aea69cef0b76c1a5793c7",
+    "166": "6ecf6f32bf6fd84ec90bd6e64e3c6eb2cb652a6db5249c27bcd8a1687deb774e",
+    "167": "e08f448b56211a7b9a046edae04e52d5f457a36b8bcefcc8bb2bc80cc84ae216",
+    "277": "cc5f4d8f67ed2c91ea83c20e953cdbb5682c078b6e9348ed0ead926e9b77cbd2",
+    "302": "070a92c2df59856f8cf777e9ad79b40f1e0641a991b1a2287a62dd5c12036cf7",
+    "457": "9e036093da9ffe94aa2beebf913e9f38e6616f75c3e3e9fbc76b2b8a64f69d44",
+    "476": "cc48d7b8f7473d3d54381702b61b75075176f5c33a761f70add94f25ac9316ec",
+    "507": "01a240a33e662ad804461b2cc27dc9b75d51df7661b285fff1ab921e4fc7b5b8",
+    "741": "0bddeee2d5d28f317805399b25a01d6cad3e467e52863f2e0c22b6cee9725209",
+    "754": "69a5e4eaf8d27a024d437e51257c7c47f399ea734c698dbcc0e416ce51b9dbcb",
+    "811": "9c6ff96de17b1f3f0e0857fe99c60af0495c1b371db761f5281f996455246e20",
+    "850": "4897ba10b94046f5ce6becf5dc81ea711ddd955bbc92b99b1ad43d862554f68d"
+  }
+}

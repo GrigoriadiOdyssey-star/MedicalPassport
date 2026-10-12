@@ -1,0 +1,5315 @@
+{
+  "pass": "MASTER-15",
+  "aliases": [
+    {
+      "original_id": 485,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 512,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 626,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2014,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2194,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2251,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2284,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2403,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2418,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2428,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2441,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2449,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2461,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2469,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2481,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2489,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2502,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2509,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2520,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2526,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2538,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2546,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2560,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2566,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2567,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2582,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2586,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2608,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2622,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2623,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2643,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2644,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2656,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2663,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2682,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2683,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2704,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2705,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2723,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2742,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2743,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2761,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2762,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2783,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2799,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2808,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2820,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2821,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2840,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2841,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2859,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2871,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2878,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2890,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2891,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2892,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2911,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2912,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2931,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2932,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2950,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2971,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2972,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2990,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2991,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3010,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3050,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3058,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3070,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3071,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3091,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3111,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3112,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3131,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3132,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3150,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3151,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3172,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3191,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3192,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3210,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3211,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3231,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3232,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3251,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3292,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3311,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3312,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3331,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3332,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3352,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3353,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3372,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3373,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3391,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3392,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3411,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3412,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3432,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3452,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3472,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3473,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3492,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3493,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3511,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3514,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3531,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3532,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3551,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3552,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3572,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3593,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3594,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3610,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3613,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3635,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3651,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3654,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3673,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3691,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3791,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master15/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2030,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2069,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2089,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2139,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2168,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2198,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2217,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2238,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2257,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2280,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2327,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2365,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2387,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2406,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2424,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2445,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2465,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2485,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2500,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2528,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2548,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2569,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2587,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2609,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2625,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2646,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2665,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2685,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2707,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2725,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2745,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2765,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2785,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2824,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2844,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2874,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2894,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2914,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2934,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2954,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2974,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2993,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3054,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3093,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3114,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3134,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3153,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3174,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3194,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3213,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3234,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3253,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3294,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3314,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3334,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3355,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3375,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3394,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3414,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3434,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3454,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3475,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3495,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3517,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3534,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3555,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3575,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3596,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3616,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3639,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3656,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3696,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3733,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3757,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3776,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3796,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3813,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3835,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3856,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3876,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3895,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3915,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3936,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3956,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3976,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3998,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4017,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4039,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4059,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4097,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4117,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4156,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4193,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4244,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4297,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4397,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4446,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4495,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4547,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master15/CAP-TWIN.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 122,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 550,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 573,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 641,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 660,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 677,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 697,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 727,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 786,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 930,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1017,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1039,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1057,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1079,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1099,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2021,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2133,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2165,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2195,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2207,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2213,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2235,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2252,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2270,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2384,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2422,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2442,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2462,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2482,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2503,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2518,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2539,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2557,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2578,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2599,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2619,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2640,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2722,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2741,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2782,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2809,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2819,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2839,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2858,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2869,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2889,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2909,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2929,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2949,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2969,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2989,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3009,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3049,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3110,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3149,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3208,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3230,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3310,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3330,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3410,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3512,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3530,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3550,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3611,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3636,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3652,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3693,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3730,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3754,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3772,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3810,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3831,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3852,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3873,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3891,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3932,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3953,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4009,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4031,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4113,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master15/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 838,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2098,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2119,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2137,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2166,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2196,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2215,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2236,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2255,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2281,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2309,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2325,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2367,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2388,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2407,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2425,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2446,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2466,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2486,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2501,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2529,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2549,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2570,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2581,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2601,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2626,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2647,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2666,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2686,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2708,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2726,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2746,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2766,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2786,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2825,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2845,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2875,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2895,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2915,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2935,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2955,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2975,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2994,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3055,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3094,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3115,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3154,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3214,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3235,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3315,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3335,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3356,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3395,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3415,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3435,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3476,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3496,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3518,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3535,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3557,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3576,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3598,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3617,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3657,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3697,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3717,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3735,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3758,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3777,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3797,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3815,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3837,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3857,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3877,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3897,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3917,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3958,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3978,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4099,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4448,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2029,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2068,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2088,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2110,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2138,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2167,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2180,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2197,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2216,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2237,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2256,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2279,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2300,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2326,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2366,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2386,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2405,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2423,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2444,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2464,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2484,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2499,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2527,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2540,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2568,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2580,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2600,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2624,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2645,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2664,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2684,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2706,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2724,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2744,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2764,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2784,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2810,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2823,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2843,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2873,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2893,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2913,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2933,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2953,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2973,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2992,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3020,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3053,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3092,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3113,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3152,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3212,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3233,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3313,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3333,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3354,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3393,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3413,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3433,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3474,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3494,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3516,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3533,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3554,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3574,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3595,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3615,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3638,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3655,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3695,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3732,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3756,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3775,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3795,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3812,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3834,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3855,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3875,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3894,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3914,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3935,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3955,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3975,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3997,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4016,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4038,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4058,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4096,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4116,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4155,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4296,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4347,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4445,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master15/CAP-CDS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2787,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2826,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2846,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2876,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2896,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2916,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2936,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2956,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2976,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2995,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3056,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3075,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3095,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3116,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3155,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3176,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3196,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3215,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3236,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3255,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3296,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3316,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3336,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3357,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3377,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3396,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3416,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3436,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3456,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3477,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3497,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3519,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3536,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3558,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3577,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3599,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3618,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3658,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3678,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3698,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3718,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3737,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3778,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3798,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3817,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3838,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3858,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3878,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3898,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3918,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3937,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2829,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2849,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2879,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2899,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2919,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2939,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2959,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2979,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2997,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2998,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3059,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3078,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3098,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3119,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3139,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3158,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3179,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3199,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3218,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3239,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3258,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3299,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3319,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3339,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3359,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3379,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3399,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3419,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3439,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3459,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3479,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3499,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3539,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3559,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3579,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3621,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3739,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3819,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master15/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 253,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 365,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 443,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 463,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 483,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 503,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 523,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 543,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 563,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 583,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 603,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 633,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 653,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 673,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 693,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 783,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 803,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 823,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 983,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1033,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1053,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 444,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 455,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 456,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 475,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 495,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 519,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 555,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 619,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 622,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 664,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 708,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 791,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 809,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1041,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1061,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1081,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1101,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2024,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2130,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2214,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2234,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2278,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2299,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2372,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2579,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2583,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3042,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3702,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master15/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 464,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 504,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 524,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 533,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 564,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 571,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 584,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 604,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 608,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 609,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 614,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 618,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 634,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 654,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 870,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 884,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 924,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 944,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 946,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 947,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 985,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1004,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1022,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1805,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1806,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2078,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2096,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2147,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2159,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2182,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2248,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2338,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2394,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2415,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2675,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4122,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4252,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4352,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4402,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2050,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2070,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2090,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2120,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2140,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2150,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2170,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2200,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2220,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2240,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2260,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2290,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2310,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2330,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2340,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2370,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2390,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2410,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2430,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2450,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2470,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2490,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2550,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2590,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2610,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2630,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2650,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2670,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2690,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2710,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2730,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2750,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2770,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2790,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2800,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2830,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2850,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2860,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2880,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2900,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2920,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2940,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2960,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2980,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3000,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3060,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3100,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3120,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3160,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3220,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3240,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3260,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3320,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3340,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3360,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3400,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3420,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3440,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3480,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3500,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3520,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3540,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3560,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3580,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3600,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3622,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3640,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3660,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3700,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3720,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3740,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3760,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3780,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3800,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3820,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3840,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3860,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3880,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3900,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3920,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3940,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3960,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3980,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4020,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4040,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4060,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4100,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4120,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4160,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4250,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4300,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4400,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4625,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4750,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4775,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4800,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4825,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4875,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4900,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4925,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4950,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4975,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5025,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5075,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5100,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2001,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2051,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2071,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2101,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2121,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2141,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2151,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2171,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2181,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2201,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2221,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2241,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2261,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2291,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2311,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2331,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2371,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2391,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2411,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2431,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2451,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2471,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2491,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2511,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2531,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2551,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2571,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2591,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2611,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2631,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2651,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2671,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2691,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2711,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2731,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2751,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2771,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2791,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2801,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2811,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2831,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2851,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2861,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2881,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2901,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2921,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2941,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2961,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2981,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3001,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3041,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3081,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3101,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3141,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3201,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3221,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3301,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3321,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3341,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3381,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3401,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3421,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3461,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3481,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3501,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3521,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3541,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3561,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3581,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3601,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3623,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3641,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3681,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3701,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3721,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3741,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3761,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3781,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3801,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3821,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3841,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3861,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3881,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3901,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3921,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3941,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3961,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4001,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4021,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4041,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4081,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4101,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4121,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4251,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4351,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4601,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4726,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4751,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4776,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4801,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4851,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4876,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4901,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4926,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4951,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5001,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5051,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5076,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master15/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 623,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 730,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 829,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 852,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 894,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 913,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 952,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 973,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 2018,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 156,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 157,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 403,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 410,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 413,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 414,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 415,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 421,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 435,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 436,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 437,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 438,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 439,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master15/CAP-MEDICATION.md",
+      "source_preserved": true
+    }
+  ]
+}

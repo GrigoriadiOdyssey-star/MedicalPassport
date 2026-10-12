@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "clinical_validation_id": "CAP-SECURITY-B05-CLINICAL",
+      "question": "Can wrong-patient, stale binding or revoked authorization disclose an allergy view despite fail-closed rules?",
+      "affected_workflow": "Adult single-allergy disclosure: CAP-SECURITY",
+      "risk": "HIGH",
+      "required_specialty": "Clinical safety officer and privacy/security reviewer",
+      "evidence_needed": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "test_scenario": "Adversarial patient-binding and revocation scenarios with workflow observation",
+      "release_condition": "Qualified version/scope-bound clinical acceptance before any patient use; production route cannot activate with synthetic evidence",
+      "blocks_implementation": false,
+      "blocks_clinical_release": true,
+      "status": "OPEN",
+      "engineering_mitigation": "Security: enforcement and release admission"
+    },
+    {
+      "clinical_validation_id": "CAP-AUDIT-B06-CLINICAL",
+      "question": "Do patients understand that a committed access-attempt receipt does not establish delivery or clinician review?",
+      "affected_workflow": "Adult single-allergy disclosure: CAP-AUDIT",
+      "risk": "HIGH",
+      "required_specialty": "Clinical safety officer and patient human-factors reviewer",
+      "evidence_needed": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "test_scenario": "Comprehension study using synthetic attempt/denial/unavailable receipts",
+      "release_condition": "Qualified version/scope-bound clinical acceptance before any patient use; production route cannot activate with synthetic evidence",
+      "blocks_implementation": false,
+      "blocks_clinical_release": true,
+      "status": "OPEN",
+      "engineering_mitigation": "Shared events, recovery, privacy and interoperability"
+    },
+    {
+      "clinical_validation_id": "CAP-ALLERGY-B01-CLINICAL",
+      "question": "Can the display distinguish unknown, not assessed, no known allergy, reported reaction and clinician-confirmed assertion without suppressing a hazard?",
+      "affected_workflow": "Adult single-allergy disclosure: CAP-ALLERGY",
+      "risk": "HIGH",
+      "required_specialty": "Allergist or clinical immunologist with clinical safety reviewer",
+      "evidence_needed": [
+        "Approved intended-use and hazard analysis",
+        "Version-bound protocol, reviewed fixtures and results",
+        "Named qualified reviewer disposition and unresolved limitations"
+      ],
+      "test_scenario": "Blinded interpretation of synthetic state/provenance/freshness cases and correction handling",
+      "release_condition": "Qualified version/scope-bound clinical acceptance before any patient use; production route cannot activate with synthetic evidence",
+      "blocks_implementation": false,
+      "blocks_clinical_release": true,
+      "status": "OPEN",
+      "engineering_mitigation": "Data and Allergy: source authority and clinical meaning"
+    }
+  ]
+}

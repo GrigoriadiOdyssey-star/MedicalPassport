@@ -1,0 +1,29 @@
+{
+  "pass": "MASTER-19",
+  "batch": 59,
+  "family": "core-telemedicine-communication",
+  "owner": "CAP-TELEMEDICINE",
+  "ids": [
+    78,
+    168,
+    169,
+    251,
+    254,
+    256,
+    258,
+    259,
+    260
+  ],
+  "decision_sha256": "6db4bc38634ff15e84823abd3a33207ecaa6bab3f9bc2853f7bfcda3c40861e7",
+  "source_hashes": {
+    "78": "5ce4315fb0ec94e2316ee9afd1f9d4a79d39097d9bf6dbbd4a3e6dfe961760a9",
+    "168": "2991012c8b6f8d3abbdae153774ba10172fd8345e36c5674f8af1d02874b5c49",
+    "169": "2d499838375c0f519d7bb49957a1f901d7ebd6d36c4d852a4ab1f157c4d72d7d",
+    "251": "7d8da40d34446b78b55227b56bf655598ec969754694901742aaf5491e1189a5",
+    "254": "2072871a373bb88b89f66c4c7c3de48222d216eb16aa52973bea53ec04d395c4",
+    "256": "e3be862ed903b627f5ea5ac6419478d3952e49ea487a2bd8260d234d2f10bab2",
+    "258": "da27eaf6449b225e510672423c3688a64883cab42d8eb5d4cf3f02a84a8f5808",
+    "259": "61ae41f867d1011dcddb4c6bf05e6e33250a17fb541ba9b44c21e6653a933a0d",
+    "260": "8d705c86972ee838acb88aed3fe2f39ed19969fded2adca1d297508842dc36ed"
+  }
+}

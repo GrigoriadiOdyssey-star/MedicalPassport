@@ -1,0 +1,160 @@
+{
+  "decisions": [
+    {
+      "id": "SESSION-SECRETS",
+      "sources": [
+        29,
+        54
+      ],
+      "legacy": "access_token / refresh_token fields and auth endpoints",
+      "decision": "Preserve credential lifecycle requirement; do not import raw bearer values into clinical/session disclosure. Use chosen issuer, protected refresh handling and opaque revocable references. Endpoint contract and misuse tests are still required.",
+      "status": "IMPLEMENTATION_CORRECTION_REQUIRES_CONTRACT",
+      "source_preserved": true,
+      "canonical_owners": [
+        "CAP-IDENTITY"
+      ],
+      "evidence": [
+        {
+          "original_id": 29,
+          "body_sha256": "a188edbe0b6fa5adab31a46be3afe77bc42499cf5f4c4faa9f6dbca2cc5545a8",
+          "migration": "audit/master-08/requirement_migration.json"
+        },
+        {
+          "original_id": 54,
+          "body_sha256": "0b47ffdf31faa55bf2406dcd0d6bea112fc28abde878a9e5f7501e6eb61ca107",
+          "migration": "audit/master-08/requirement_migration.json"
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-MINIMIZATION",
+      "sources": [
+        27
+      ],
+      "legacy": "old_value / new_value / IP and location",
+      "decision": "Retain attributable changes and investigation provenance through redacted or governed encrypted references; unrestricted health payload and credential logging is prohibited. Define retention and audit-access policy.",
+      "status": "IMPLEMENTATION_CORRECTION_REQUIRES_CONTRACT",
+      "source_preserved": true,
+      "canonical_owners": [
+        "CAP-AUDIT"
+      ],
+      "evidence": [
+        {
+          "original_id": 27,
+          "body_sha256": "6ec89c1e9b9f305c0f5822c4526d1f9be04fbf05d8d0f350ea318ac9763e4d0c",
+          "migration": "audit/master-08/requirement_migration.json"
+        }
+      ]
+    },
+    {
+      "id": "QR-NO-BLANKET-GRANT",
+      "sources": [
+        14,
+        32,
+        33
+      ],
+      "legacy": "Public name/blood group/contact, Hospital Full Medical Record, permanent access",
+      "decision": "Preserve configurable disclosure use cases but disable these as automatic grants. Require explicit recipient/purpose/resource policy and current revocation. Opaque online tokens carry no medical payload; no immediate offline revocation promise.",
+      "status": "IMPLEMENTATION_CORRECTION_REQUIRES_CONTRACT",
+      "source_preserved": true,
+      "canonical_owners": [
+        "CAP-QR"
+      ],
+      "evidence": [
+        {
+          "original_id": 14,
+          "body_sha256": "2bf5acfa3ad2c38ab5243087d17d6bdbb86007439cae9fdb13a76953896b942a",
+          "migration": "audit/master-08/requirement_migration.json"
+        },
+        {
+          "original_id": 32,
+          "body_sha256": "a650ee7f4f17e50c8826a7d16d030e357e39a605420ec94ee2eb1d4b2bc8a543",
+          "migration": "audit/master-08/requirement_migration.json"
+        },
+        {
+          "original_id": 33,
+          "body_sha256": "f9069d5f5f008aed985b8d1b1040ac3167ae662c664a4340caa89db4acff2dd7",
+          "migration": "audit/master-08/requirement_migration.json"
+        }
+      ]
+    },
+    {
+      "id": "UNKNOWN-BLOOD-TYPE",
+      "sources": [
+        7,
+        56
+      ],
+      "legacy": "Required blood group/Rh and direct editable profile clinical fields",
+      "decision": "Unknown is permitted; never fabricate blood group or erase source verification. Profile uses source-owned clinical data and versioned correction, not unaudited overwrite.",
+      "status": "IMPLEMENTATION_CORRECTION_REQUIRES_CONTRACT",
+      "source_preserved": true,
+      "canonical_owners": [
+        "CAP-PROFILE"
+      ],
+      "evidence": [
+        {
+          "original_id": 7,
+          "body_sha256": "8281f81778acca7fadbef45709eacfeb939153af8c7b741bac0223bb004c2d7f",
+          "migration": "audit/master-08/requirement_migration.json"
+        },
+        {
+          "original_id": 56,
+          "body_sha256": "42603983ce6498274d961b7fa9bf6619e38f9b709e364c5768795c7bd19b556c",
+          "migration": "audit/master-08/requirement_migration.json"
+        }
+      ]
+    },
+    {
+      "id": "SOS-DELIVERY",
+      "sources": [
+        31,
+        42
+      ],
+      "legacy": "Hospital receives emergency profile and contacts notified",
+      "decision": "Model authorized recipient routing, transmission and acknowledgement separately; unknown delivery remains explicit. Do not block user emergency call on GPS, biometrics or AI.",
+      "status": "IMPLEMENTATION_CORRECTION_REQUIRES_CONTRACT",
+      "source_preserved": true,
+      "canonical_owners": [
+        "CAP-EMERGENCY"
+      ],
+      "evidence": [
+        {
+          "original_id": 31,
+          "body_sha256": "3b2f3ac9889f21682b84eb43a4f92147a50e076c0020c7123e6d86b0961ee2e1",
+          "migration": "audit/master-08/requirement_migration.json"
+        },
+        {
+          "original_id": 42,
+          "body_sha256": "72ec009e4ccb26c937343e345b4f7983336ac89ab3f0749a70784625589a6f71",
+          "migration": "audit/master-08/requirement_migration.json"
+        }
+      ]
+    },
+    {
+      "id": "OCR-NOT-VERIFICATION",
+      "sources": [
+        12,
+        37
+      ],
+      "legacy": "is_verified / signature and dosage recognition / auto-import",
+      "decision": "Extracted text, signature detection and confidence are unverified derivatives. Require attributed validation before clinical use; no automatic prescribing or signature authentication.",
+      "status": "IMPLEMENTATION_CORRECTION_REQUIRES_CONTRACT",
+      "source_preserved": true,
+      "canonical_owners": [
+        "CAP-DOCUMENTS"
+      ],
+      "evidence": [
+        {
+          "original_id": 12,
+          "body_sha256": "0265c5af53e5ab78273bfb3142e9db4b42cafe46a28a9caa1930c734879342a1",
+          "migration": "audit/master-08/requirement_migration.json"
+        },
+        {
+          "original_id": 37,
+          "body_sha256": "a472fa319625f91cd88f6c42b74a2f36a32fd3bfd86e758dc21fc5478f286d7c",
+          "migration": "audit/master-08/requirement_migration.json"
+        }
+      ]
+    }
+  ]
+}

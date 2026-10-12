@@ -1,0 +1,918 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "records": [
+    {
+      "original_id": 22,
+      "source_sha256": "d2f5b5710845379de56758ccff4c8d6640b9b493f7738496511f279388a49b1e",
+      "canonical_target": "CORE-CAP-TRAVEL",
+      "canonical_owner": "CAP-TRAVEL",
+      "purpose": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice.",
+      "scope": "Append-only travel-coordination profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-TRAVEL",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-IDENTITY",
+        "CAP-RESEARCH",
+        "CAP-QR",
+        "CAP-PROFILE",
+        "CAP-IMMUNIZATION"
+      ]
+    },
+    {
+      "original_id": 117,
+      "source_sha256": "fa49e930b567eaefa76cf1a96c742729323e84c158a5d8476390e546ca6280b3",
+      "canonical_target": "CORE-CAP-TRAVEL",
+      "canonical_owner": "CAP-TRAVEL",
+      "purpose": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice.",
+      "scope": "Append-only travel-coordination profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-TRAVEL",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-IDENTITY",
+        "CAP-RESEARCH",
+        "CAP-QR",
+        "CAP-PROFILE",
+        "CAP-IMMUNIZATION"
+      ]
+    },
+    {
+      "original_id": 177,
+      "source_sha256": "25d46b319bffdb1210575ef92f4fa39a2f227232c45621c6a5b1861c2a630707",
+      "canonical_target": "CORE-CAP-TRAVEL",
+      "canonical_owner": "CAP-TRAVEL",
+      "purpose": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice.",
+      "scope": "Append-only travel-coordination profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-TRAVEL",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-IDENTITY",
+        "CAP-RESEARCH",
+        "CAP-QR",
+        "CAP-PROFILE",
+        "CAP-IMMUNIZATION"
+      ]
+    },
+    {
+      "original_id": 459,
+      "source_sha256": "581e4e429670a9736e22300270813ca3345ce6d0ca04dea8b22162d5550d10a4",
+      "canonical_target": "CORE-CAP-TRAVEL",
+      "canonical_owner": "CAP-TRAVEL",
+      "purpose": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice.",
+      "scope": "Append-only travel-coordination profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-TRAVEL",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-IDENTITY",
+        "CAP-RESEARCH",
+        "CAP-QR",
+        "CAP-PROFILE",
+        "CAP-IMMUNIZATION"
+      ]
+    },
+    {
+      "original_id": 778,
+      "source_sha256": "af2f42553c1cad9488e6317ef37662e2c7967da749783b44f89505a9d8f17749",
+      "canonical_target": "CORE-CAP-TRAVEL",
+      "canonical_owner": "CAP-TRAVEL",
+      "purpose": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice.",
+      "scope": "Append-only travel-coordination profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-TRAVEL",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-IDENTITY",
+        "CAP-RESEARCH",
+        "CAP-QR",
+        "CAP-PROFILE",
+        "CAP-IMMUNIZATION"
+      ]
+    },
+    {
+      "original_id": 425,
+      "source_sha256": "50dde7828a179eadf0ada900f5bb541a672262c9744c146e24569b549c2fe64b",
+      "canonical_target": "CORE-CAP-DOCUMENTS",
+      "canonical_owner": "CAP-DOCUMENTS",
+      "purpose": "Medication travel certificate is a versioned document derivative linking qualified physician, prescribed medication and diagnosis source where authorized, with scoped QR verification. A generated certificate does not certify authenticity, medication legality, border acceptance or prescribing authority. Minimize diagnosis disclosure and preserve signature/issuer provenance.",
+      "scope": "Append-only travel-certificate profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-DOCUMENTS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 220,
+      "source_sha256": "6a26a1969306426947b41d491123d01682921639f58da9aa5a92691679f15ca4",
+      "canonical_target": "CORE-CAP-INTEROP",
+      "canonical_owner": "CAP-INTEROP",
+      "purpose": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts.",
+      "scope": "Append-only cross-border-exchange profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-INTEROP",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1344,
+      "source_sha256": "b139985be8505c2a62c077973b3b6a4b5d7dea05807a4775f627fd8ad22c8643",
+      "canonical_target": "CORE-CAP-INTEROP",
+      "canonical_owner": "CAP-INTEROP",
+      "purpose": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts.",
+      "scope": "Append-only cross-border-exchange profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-INTEROP",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1886,
+      "source_sha256": "f53615b24f2bca183e6f210265d16590b3b89521c374e9ecb1d5920dafec7389",
+      "canonical_target": "CORE-CAP-INTEROP",
+      "canonical_owner": "CAP-INTEROP",
+      "purpose": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts.",
+      "scope": "Append-only cross-border-exchange profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-INTEROP",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 4595,
+      "source_sha256": "ad8d7fa3ff76e9a1fb8d0f209a7f341aac751bd80dfec86a4aa775c09b76849e",
+      "canonical_target": "CORE-CAP-INTEROP",
+      "canonical_owner": "CAP-INTEROP",
+      "purpose": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts.",
+      "scope": "Append-only cross-border-exchange profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-INTEROP",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1403,
+      "source_sha256": "0588632ede90170d3ab9a57496792d918d94563f1b78e4efb0f818fcd7ea0838",
+      "canonical_target": "CORE-CAP-AI",
+      "canonical_owner": "CAP-AI",
+      "purpose": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit.",
+      "scope": "Append-only travel-assistance-ai profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1425,
+      "source_sha256": "21c1f4bc81861e48637516e0f67f95043ecc6e6683f1b9bb0268e14ad21c514c",
+      "canonical_target": "CORE-CAP-AI",
+      "canonical_owner": "CAP-AI",
+      "purpose": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit.",
+      "scope": "Append-only travel-assistance-ai profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1888,
+      "source_sha256": "3486bdbc017975c95416c4fb46b4902bf95559d76f50e5e7e7a12b68e35e5941",
+      "canonical_target": "CORE-CAP-AI",
+      "canonical_owner": "CAP-AI",
+      "purpose": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit.",
+      "scope": "Append-only travel-assistance-ai profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 1021,
+      "source_sha256": "69d6c322c90943815780e1b723abd623c16fdee2f68df6922baa7d99724b94f1",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance.",
+      "scope": "Append-only pediatric-travel-clinical profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 3957,
+      "source_sha256": "15206d2dbf98442e55633c61ff55ab106ed6d693f504335999201d42753a768a",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance.",
+      "scope": "Append-only pediatric-travel-clinical profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 4293,
+      "source_sha256": "64b88a2d995ed02015bc1ad662ee2b6dffa02a0629be8ff0ded6d9f54bc84609",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance.",
+      "scope": "Append-only pediatric-travel-clinical profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 5070,
+      "source_sha256": "3d480edb80944f15bcb9c9e1fd38db17edb441639332a56c92fa648df999083f",
+      "canonical_target": "CORE-CAP-SPECIALTY",
+      "canonical_owner": "CAP-SPECIALTY",
+      "purpose": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance.",
+      "scope": "Append-only pediatric-travel-clinical profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 4273,
+      "source_sha256": "80c94df7c1667d02101dd5732c5e011c1a222e5cf93d5972c3c24b640317d3b2",
+      "canonical_target": "CORE-CAP-IMMUNIZATION",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "purpose": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule.",
+      "scope": "Append-only vaccine-travel-equivalence profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-IMMUNIZATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 4307,
+      "source_sha256": "299226d05979f748fba053337a69c632a9e978c6282503e238032d0245530618",
+      "canonical_target": "CORE-CAP-IMMUNIZATION",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "purpose": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule.",
+      "scope": "Append-only vaccine-travel-equivalence profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-IMMUNIZATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 4339,
+      "source_sha256": "165b51f0a1304cee4573daa8e1aba4c3cc0ca9515212004ee6e8f977b5e92cfc",
+      "canonical_target": "CORE-CAP-IMMUNIZATION",
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "purpose": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule.",
+      "scope": "Append-only vaccine-travel-equivalence profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-IMMUNIZATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    },
+    {
+      "original_id": 4299,
+      "source_sha256": "70882645b610bf3990dc0b155ede75dcb77e98c3f3c2fae7ef530ba983856251",
+      "canonical_target": "CORE-CAP-PROFILE",
+      "canonical_owner": "CAP-PROFILE",
+      "purpose": "Multilingual infectious-disease disclosure is a source-linked passport projection retaining vaccines, prior infections/resistance/microbiology, antimicrobial allergies/current use, immunocompromise and isolation context. Role, purpose, consent and emergency policy are separately checked; language choice does not broaden recipient access.",
+      "scope": "Append-only infection-passport profile; no replacement of earlier owner profiles",
+      "workflow": "Resolve authorized patient/trip/source context → preserve source/version and applicable jurisdiction/time → qualified review of comparison or clinical implications → disclose bounded view → record correction, delivery and provenance.",
+      "clinical_safety": "No credential, directory membership, risk score or clinical model can grant treatment authority or unrestricted patient access. Fail closed for the non-emergency MVP read; do not claim emergency response, clinical clearance or certification.",
+      "privacy": "Purpose-limited minimum disclosure with separate tenant/patient/recipient checks, guardian/adolescent restrictions and protected credential/audit metadata. No raw bearer tokens, biometric samples or unrestricted health payloads in logs.",
+      "failure_modes": "Unknown, expired, revoked, contradictory or unavailable identity/role/grant/source yields denial or explicit unavailable state. Preserve source history and idempotent correction; never silently expand permissions on retry.",
+      "acceptance": "Trace every nonempty source fragment to a canonical anchor; verify credential and facility differences survive normalization. Future runtime acceptance must cover wrong patient/tenant/purpose, revoked/expired role, dependency failure, stale source and concurrent revoke/read. Structural tests do not establish runtime protection.",
+      "open_gates": "Typed schemas, current policy/provider configuration, runtime and qualified acceptance evidence are incomplete.",
+      "actors": [
+        "Authorized subject",
+        "Verified practitioner",
+        "Enforcement service",
+        "Governed reviewer"
+      ],
+      "inputs": [
+        "Versioned source identity/context",
+        "Current policy/grant"
+      ],
+      "outputs": [
+        "Bounded attributed owner artifact",
+        "Explicit denied/unknown status"
+      ],
+      "entities": [
+        "SourceReference",
+        "TripContext",
+        "JurisdictionReference",
+        "ProviderReference",
+        "ProfileRevision"
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ]
+    }
+  ]
+}

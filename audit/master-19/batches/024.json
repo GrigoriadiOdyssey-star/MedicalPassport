@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 24,
+  "family": "pediatric-family-vaccine-projection",
+  "owner": "CAP-PROFILE",
+  "ids": [
+    4337
+  ],
+  "decision_sha256": "e1f357bf46222782a09206d00ea20319ee69ff830a04334d1517cc30c20854ed",
+  "source_hashes": {
+    "4337": "914eff7205672f65e80c78236ca95b46c2017b8eb026896107dc2a411a1254e6"
+  }
+}

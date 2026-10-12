@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 6,
+  "family": "precision-intensive-care-coordination",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    1207,
+    1310,
+    1864
+  ],
+  "decision_sha256": "b7e92df3a8a1a7d658c6d2aac0cea3113b78dbc6c6dd2d3ba3f4b4cea5034a75",
+  "source_hashes": {
+    "1207": "8c0b1106a157111a5a9e9cfefcf38279a0dc2f00a8da824952e4ed640d6778dc",
+    "1310": "8148c53016929cc8e1311946fd2b42a3eef481cdf15a4762d0da4cd976d067e2",
+    "1864": "44ba06818e6be2e527ba6a47861990415cb357cc43e6951f96d08e55b9bb407c"
+  }
+}

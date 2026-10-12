@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 4,
+  "family": "precision-followup-coordination",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    1532,
+    1535,
+    1671
+  ],
+  "decision_sha256": "8e6fa70d9a49b244c6543fbb62a07eb565daeb38f4dfc706af04b745de96ae2c",
+  "source_hashes": {
+    "1532": "18ff2e5e3cd49f05ae683fe4a9d98f3756c3746f45e66ba0674f785d2a26edb9",
+    "1535": "7e374153c8d287a6e6bc4d80f3734d51ac7257e367e1d262bceab8a9841cfda9",
+    "1671": "f7e04866de1205392cafe5250b4bf26f8cf36557a7983d0e9bc4852ee98a1a64"
+  }
+}

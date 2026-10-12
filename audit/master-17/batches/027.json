@@ -1,0 +1,27 @@
+{
+  "pass": "MASTER-17",
+  "batch": 27,
+  "family": "registry-immunization",
+  "owner": "CAP-IMMUNIZATION",
+  "ids": [
+    486,
+    732,
+    1015,
+    2306,
+    2334,
+    2760,
+    4271,
+    4301
+  ],
+  "decision_sha256": "ca6e15bf2102d4051f2ecb953be8c04dfd5e31fb6461549c32f03cfa71e6af9d",
+  "source_hashes": {
+    "486": "ae13cc4a9f5b8152402b796b85d8a73695ba0f1d650ed2762caf1f672bc57e4d",
+    "732": "3ca20e9a0946b3b4ffa44fe56c26d472a34ad132c46151e96fc32ec29a174a02",
+    "1015": "54f3a3b5aadfc9ad0eb6b32d95f54094517862374f1efba2f2c99f55c208069c",
+    "2306": "adf8a0c81445c743762e9370901969a10163ed3cd036eb13c9bc8763688b2901",
+    "2334": "ab0de2aab143da164eb26842b0db7b41a25cd98d7d5fff0f8c6a4de467a493a7",
+    "2760": "481084b933a35dec37b8839d7de4e970bae23c60bf83f5c726fa40e180910845",
+    "4271": "f55ce7cae0b676f1a91187045b899968ee66ed0b7980416b4e76daffd82fa0dc",
+    "4301": "4f9b23a09a0e797ac46a0d95ee16722c293326ba2d47db2acba23fcbc11d977b"
+  }
+}

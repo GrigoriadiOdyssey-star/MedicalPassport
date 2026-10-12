@@ -1,0 +1,462 @@
+{
+  "pass": "MASTER-16",
+  "edges": [
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-IDENTITY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-MEDICATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-PRESCRIPTION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-QR",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-CDS",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-NOTIFICATIONS",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-PHARMACY",
+      "to": "CAP-COVERAGE",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-CONDITION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-ENCOUNTER",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-MEDICATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-PRESCRIPTION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-LABORATORY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-IMAGING",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-DEVICES",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-CDS",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-TELEMEDICINE",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-TWIN",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-INTEROP",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-RESEARCH",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-IMMUNIZATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-SPECIALTY",
+      "to": "CAP-PHARMACY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-RESEARCH",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-RESEARCH",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-RESEARCH",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-RESEARCH",
+      "to": "CAP-INTEROP",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-RESEARCH",
+      "to": "CAP-LABORATORY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-RESEARCH",
+      "to": "CAP-AI",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-IMMUNIZATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-MEDICATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-LABORATORY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-ALLERGY",
+      "to": "CAP-SPECIALTY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-LABORATORY",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-LABORATORY",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-LABORATORY",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-LABORATORY",
+      "to": "CAP-INTEROP",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-LABORATORY",
+      "to": "CAP-CDS",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-IMAGING",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-IMAGING",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-IMAGING",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-IMAGING",
+      "to": "CAP-INTEROP",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-IMAGING",
+      "to": "CAP-ENCOUNTER",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-MEDICATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-PRESCRIPTION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-INTEROP",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-DEVICES",
+      "to": "CAP-CDS",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-AI",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-TWIN",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-DEVICES",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-LABORATORY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-IMAGING",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-MEDICATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-CDS",
+      "to": "CAP-SPECIALTY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-DATA",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-CONSENT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-AUDIT",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-IMAGING",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-LABORATORY",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-MEDICATION",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-ENCOUNTER",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-CDS",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    },
+    {
+      "from": "CAP-TWIN",
+      "to": "CAP-AI",
+      "kind": "DATA_OR_SERVICE_CONTRACT",
+      "startup_order_dependency": false
+    }
+  ],
+  "cleanup": "Removed duplicate/self edges; all targets are registered owners. Contract references do not impose process startup order. Prior graph preserved."
+}

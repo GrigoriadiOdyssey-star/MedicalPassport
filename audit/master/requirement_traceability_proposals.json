@@ -1,0 +1,1769 @@
+{
+  "schema_version": 1,
+  "edition": "2026-09-14",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "baseline_commit": "27a26f77d2ca2532ef7c5586802d892dd359a8d0",
+  "pass": "MASTER-01",
+  "state": "ANALYZE_ONLY",
+  "gitlab_writes": false,
+  "status": "DRAFT_NOT_APPROVED",
+  "mapped_original_ids": [
+    3107,
+    3120,
+    3167,
+    3287,
+    3326,
+    3340,
+    3447,
+    3488,
+    3500,
+    3606,
+    3632,
+    3640,
+    3828,
+    3868,
+    3880,
+    4035,
+    4536
+  ],
+  "mappings": [
+    {
+      "original_id": 3167,
+      "source_fragment_id": "REQ-3167-1",
+      "source_fragment_sha256": "7bfa6899f4cd8ccc8e65ae9a9fee9cbb3302ecc6e6da37162c01a52f3183113a",
+      "retained_text": "Supports pancreatic diseases.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3167,
+      "source_fragment_id": "REQ-3167-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3167,
+      "source_fragment_id": "REQ-3167-3",
+      "source_fragment_sha256": "6a150356b3d933d55bffa912b9323f1397a9282c9c7e450e9c0ab83dbf88f207",
+      "retained_text": "• Acute Pancreatitis\n• Chronic Pancreatitis\n• Pancreatic Insufficiency\n• Hereditary Pancreatitis",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01",
+        "PRF-PEDIATRIC-PANCREAS-R02",
+        "PRF-PEDIATRIC-PANCREAS-R03",
+        "PRF-PEDIATRIC-PANCREAS-R04"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3167,
+      "source_fragment_id": "REQ-3167-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3167,
+      "source_fragment_id": "REQ-3167-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3167,
+      "source_fragment_id": "REQ-3167-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-1",
+      "source_fragment_sha256": "7bfa6899f4cd8ccc8e65ae9a9fee9cbb3302ecc6e6da37162c01a52f3183113a",
+      "retained_text": "Supports pancreatic diseases.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-3",
+      "source_fragment_sha256": "39c309393fefeca0979157435a3f0af05b358d7962879fb28e89a449ffd1fc2b",
+      "retained_text": "• Acute Pancreatitis",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-4",
+      "source_fragment_sha256": "a736854cc35343501c5c657b14d7af6df4972cc557a239af655fee52252b3252",
+      "retained_text": "• Chronic Pancreatitis",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R02"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-5",
+      "source_fragment_sha256": "ca7a8f918a7170abf944ae8c4d3b92563473c49d97bf7642a50e01231105b43f",
+      "retained_text": "• Pancreatic Insufficiency",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R03"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-6",
+      "source_fragment_sha256": "38dcf4a459e9f415949b7332480c9362d8b2001980b9ab5934bfaf9d15897b51",
+      "retained_text": "• Genetic Disorders",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R05"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-7",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-8",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3287,
+      "source_fragment_id": "REQ-3287-9",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-1",
+      "source_fragment_sha256": "7bfa6899f4cd8ccc8e65ae9a9fee9cbb3302ecc6e6da37162c01a52f3183113a",
+      "retained_text": "Supports pancreatic diseases.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-3",
+      "source_fragment_sha256": "39c309393fefeca0979157435a3f0af05b358d7962879fb28e89a449ffd1fc2b",
+      "retained_text": "• Acute Pancreatitis",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-4",
+      "source_fragment_sha256": "a736854cc35343501c5c657b14d7af6df4972cc557a239af655fee52252b3252",
+      "retained_text": "• Chronic Pancreatitis",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R02"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-5",
+      "source_fragment_sha256": "ca7a8f918a7170abf944ae8c4d3b92563473c49d97bf7642a50e01231105b43f",
+      "retained_text": "• Pancreatic Insufficiency",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R03"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-6",
+      "source_fragment_sha256": "38dcf4a459e9f415949b7332480c9362d8b2001980b9ab5934bfaf9d15897b51",
+      "retained_text": "• Genetic Disorders",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R05"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-7",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-8",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3447,
+      "source_fragment_id": "REQ-3447-9",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3606,
+      "source_fragment_id": "REQ-3606-1",
+      "source_fragment_sha256": "7bfa6899f4cd8ccc8e65ae9a9fee9cbb3302ecc6e6da37162c01a52f3183113a",
+      "retained_text": "Supports pancreatic diseases.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3606,
+      "source_fragment_id": "REQ-3606-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3606,
+      "source_fragment_id": "REQ-3606-3",
+      "source_fragment_sha256": "aa67d7fcb7308d54ce2e82e5968c5d884fd4f36b2a419e602b87982fc291fa9e",
+      "retained_text": "• Acute Pancreatitis\n• Chronic Pancreatitis\n• Pancreatic Insufficiency\n• Enzyme Replacement Therapy\n• Nutritional Monitoring",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01",
+        "PRF-PEDIATRIC-PANCREAS-R02",
+        "PRF-PEDIATRIC-PANCREAS-R03",
+        "PRF-PEDIATRIC-PANCREAS-R06",
+        "PRF-PEDIATRIC-PANCREAS-R07"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3606,
+      "source_fragment_id": "REQ-3606-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3606,
+      "source_fragment_id": "REQ-3606-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3606,
+      "source_fragment_id": "REQ-3606-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3828,
+      "source_fragment_id": "REQ-3828-1",
+      "source_fragment_sha256": "7bfa6899f4cd8ccc8e65ae9a9fee9cbb3302ecc6e6da37162c01a52f3183113a",
+      "retained_text": "Supports pancreatic diseases.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3828,
+      "source_fragment_id": "REQ-3828-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3828,
+      "source_fragment_id": "REQ-3828-3",
+      "source_fragment_sha256": "5a8e605f2ac3d6ddaee1991f4edd84ebb65bcec5d19ea71b7031caaa6ff343cc",
+      "retained_text": "• Acute Pancreatitis\n• Chronic Pancreatitis\n• Pancreatic Insufficiency\n• Enzyme Replacement\n• Genetic Disorders",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01",
+        "PRF-PEDIATRIC-PANCREAS-R02",
+        "PRF-PEDIATRIC-PANCREAS-R03",
+        "PRF-PEDIATRIC-PANCREAS-R08",
+        "PRF-PEDIATRIC-PANCREAS-R05"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3828,
+      "source_fragment_id": "REQ-3828-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3828,
+      "source_fragment_id": "REQ-3828-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3828,
+      "source_fragment_id": "REQ-3828-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4035,
+      "source_fragment_id": "REQ-4035-1",
+      "source_fragment_sha256": "791317aad70dbdaf600ce76e6bcc6f3457f9bab065c566b080863d2ceac73ae2",
+      "retained_text": "Supports pediatric pancreatic disorders.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4035,
+      "source_fragment_id": "REQ-4035-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4035,
+      "source_fragment_id": "REQ-4035-3",
+      "source_fragment_sha256": "5dbe5329430f5cd7b26937e0ba23a4d1c4701725e8ea3f813f99e7b67f9ebf3d",
+      "retained_text": "• Acute Pancreatitis\n• Recurrent Pancreatitis\n• Chronic Pancreatitis\n• Pancreatic Insufficiency\n• Imaging\n• Genetic Evaluation\n• Nutritional Support",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01",
+        "PRF-PEDIATRIC-PANCREAS-R09",
+        "PRF-PEDIATRIC-PANCREAS-R02",
+        "PRF-PEDIATRIC-PANCREAS-R03",
+        "PRF-PEDIATRIC-PANCREAS-R10",
+        "PRF-PEDIATRIC-PANCREAS-R11",
+        "PRF-PEDIATRIC-PANCREAS-R12"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4035,
+      "source_fragment_id": "REQ-4035-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4035,
+      "source_fragment_id": "REQ-4035-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4035,
+      "source_fragment_id": "REQ-4035-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4536,
+      "source_fragment_id": "REQ-4536-1",
+      "source_fragment_sha256": "791317aad70dbdaf600ce76e6bcc6f3457f9bab065c566b080863d2ceac73ae2",
+      "retained_text": "Supports pediatric pancreatic disorders.",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4536,
+      "source_fragment_id": "REQ-4536-2",
+      "source_fragment_sha256": "00f74431aa810f5a7e971e83f5f3d2a79daec65667acfbe29c04bcdbc2029556",
+      "retained_text": "Integrates",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4536,
+      "source_fragment_id": "REQ-4536-3",
+      "source_fragment_sha256": "94677d738fff1b3bbd35ebdf7f49c843d6b4fc1866fdf1bdafad0ec9e99cfc3e",
+      "retained_text": "• Acute Pancreatitis\n• Chronic Pancreatitis\n• Pancreatic Insufficiency\n• Imaging\n• Laboratory Findings\n• Genetics\n• Nutrition\n• Treatment",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-PANCREAS-R01",
+        "PRF-PEDIATRIC-PANCREAS-R02",
+        "PRF-PEDIATRIC-PANCREAS-R03",
+        "PRF-PEDIATRIC-PANCREAS-R10",
+        "PRF-PEDIATRIC-PANCREAS-R13",
+        "PRF-PEDIATRIC-PANCREAS-R14",
+        "PRF-PEDIATRIC-PANCREAS-R15",
+        "PRF-PEDIATRIC-PANCREAS-R16"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4536,
+      "source_fragment_id": "REQ-4536-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4536,
+      "source_fragment_id": "REQ-4536-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 4536,
+      "source_fragment_id": "REQ-4536-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-PANCREAS",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-PANCREAS.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3107,
+      "source_fragment_id": "REQ-3107-1",
+      "source_fragment_sha256": "19ab87dbc7712ebfd2be218dafc7991bbf8143aab9e6772d0828366c1edfb698",
+      "retained_text": "Supports adrenal diseases.",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3107,
+      "source_fragment_id": "REQ-3107-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3107,
+      "source_fragment_id": "REQ-3107-3",
+      "source_fragment_sha256": "219f42b2dae7dbaf930e864d7bd87b5aae891cc2d80ceeacf1f0efaddd6029e2",
+      "retained_text": "• Congenital Adrenal Hyperplasia\n• Adrenal Insufficiency\n• Cushing Syndrome\n• Adrenal Tumors\n• Steroid Therapy",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R01",
+        "PRF-PEDIATRIC-ADRENAL-R02",
+        "PRF-PEDIATRIC-ADRENAL-R03",
+        "PRF-PEDIATRIC-ADRENAL-R04",
+        "PRF-PEDIATRIC-ADRENAL-R05"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3107,
+      "source_fragment_id": "REQ-3107-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3107,
+      "source_fragment_id": "REQ-3107-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3107,
+      "source_fragment_id": "REQ-3107-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-1",
+      "source_fragment_sha256": "19ab87dbc7712ebfd2be218dafc7991bbf8143aab9e6772d0828366c1edfb698",
+      "retained_text": "Supports adrenal diseases.",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-3",
+      "source_fragment_sha256": "dd44190c857869453130a101f264369f46e172fa3cabaeda0a9e514152338114",
+      "retained_text": "• Congenital Adrenal Hyperplasia",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R01"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-4",
+      "source_fragment_sha256": "ac6bc98620486b3045424ed3d56662941ab940d1b9cc50d0cb472499314bf562",
+      "retained_text": "• Adrenal Insufficiency",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R02"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-5",
+      "source_fragment_sha256": "3cbab364bb6e203c76c7b7c09d656f617a3026a5da78e47068a40404c46060c6",
+      "retained_text": "• Cushing Syndrome",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R03"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-6",
+      "source_fragment_sha256": "3b78c55d876c0ef8347a23518f2871bbf45dc7c507e5c3e0a947c93ebe4b9ee5",
+      "retained_text": "• Adrenal Tumors",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R04"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-7",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-8",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3326,
+      "source_fragment_id": "REQ-3326-9",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-1",
+      "source_fragment_sha256": "19ab87dbc7712ebfd2be218dafc7991bbf8143aab9e6772d0828366c1edfb698",
+      "retained_text": "Supports adrenal diseases.",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-3",
+      "source_fragment_sha256": "dd44190c857869453130a101f264369f46e172fa3cabaeda0a9e514152338114",
+      "retained_text": "• Congenital Adrenal Hyperplasia",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R01"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-4",
+      "source_fragment_sha256": "ac6bc98620486b3045424ed3d56662941ab940d1b9cc50d0cb472499314bf562",
+      "retained_text": "• Adrenal Insufficiency",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R02"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-5",
+      "source_fragment_sha256": "3cbab364bb6e203c76c7b7c09d656f617a3026a5da78e47068a40404c46060c6",
+      "retained_text": "• Cushing Syndrome",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R03"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-6",
+      "source_fragment_sha256": "3b78c55d876c0ef8347a23518f2871bbf45dc7c507e5c3e0a947c93ebe4b9ee5",
+      "retained_text": "• Adrenal Tumors",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R04"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-7",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-8",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3488,
+      "source_fragment_id": "REQ-3488-9",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3632,
+      "source_fragment_id": "REQ-3632-1",
+      "source_fragment_sha256": "19ab87dbc7712ebfd2be218dafc7991bbf8143aab9e6772d0828366c1edfb698",
+      "retained_text": "Supports adrenal diseases.",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3632,
+      "source_fragment_id": "REQ-3632-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3632,
+      "source_fragment_id": "REQ-3632-3",
+      "source_fragment_sha256": "ec87f2cf83a1029b85e21f11bb2af7ec77a15d7fc8c1c9474e90e5020d169df8",
+      "retained_text": "• Congenital Adrenal Hyperplasia\n• Adrenal Insufficiency\n• Cushing Syndrome\n• Hormonal Evaluation",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R01",
+        "PRF-PEDIATRIC-ADRENAL-R02",
+        "PRF-PEDIATRIC-ADRENAL-R03",
+        "PRF-PEDIATRIC-ADRENAL-R06"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3632,
+      "source_fragment_id": "REQ-3632-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3632,
+      "source_fragment_id": "REQ-3632-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3632,
+      "source_fragment_id": "REQ-3632-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3868,
+      "source_fragment_id": "REQ-3868-1",
+      "source_fragment_sha256": "19ab87dbc7712ebfd2be218dafc7991bbf8143aab9e6772d0828366c1edfb698",
+      "retained_text": "Supports adrenal diseases.",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3868,
+      "source_fragment_id": "REQ-3868-2",
+      "source_fragment_sha256": "f52bdea88ef9b226c44c4463ae1511e51c4ef384453f6541394adc2b79bb338d",
+      "retained_text": "Supports",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3868,
+      "source_fragment_id": "REQ-3868-3",
+      "source_fragment_sha256": "4c1fe8b2c04b6553c3f3f727911fb8d13d9c3e6d99b2845bf51f25cff2e07445",
+      "retained_text": "• Congenital Adrenal Hyperplasia\n• Adrenal Insufficiency\n• Cushing Syndrome\n• Adrenal Tumors\n• Hormone Monitoring",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ADRENAL-R01",
+        "PRF-PEDIATRIC-ADRENAL-R02",
+        "PRF-PEDIATRIC-ADRENAL-R03",
+        "PRF-PEDIATRIC-ADRENAL-R04",
+        "PRF-PEDIATRIC-ADRENAL-R07"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3868,
+      "source_fragment_id": "REQ-3868-4",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3868,
+      "source_fragment_id": "REQ-3868-5",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3868,
+      "source_fragment_id": "REQ-3868-6",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ADRENAL",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ADRENAL.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-1",
+      "source_fragment_sha256": "d0b02d075e21acc38313290239232f64fd9ab0f14f0ee51ddc2417fa8eae6f0d",
+      "retained_text": "Coordinates the complete pediatric endocrinology ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-2",
+      "source_fragment_sha256": "00f74431aa810f5a7e971e83f5f3d2a79daec65667acfbe29c04bcdbc2029556",
+      "retained_text": "Integrates",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-3",
+      "source_fragment_sha256": "13ebc0c516dfa8eb0aae82605e071af1390b4f27dacf19b55a61d44099632ada",
+      "retained_text": "• AI\n• Digital Twin\n• Genetics\n• Nutrition\n• Laboratory Services\n• Radiology\n• Telemedicine\n• Preventive Medicine",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R01",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R02",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R03",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R04",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R05",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R06",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R07",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R08"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-4",
+      "source_fragment_sha256": "d26e2b8b9c4963542dea7511ee511b42580e96beb7148c321f73f3f6e233997b",
+      "retained_text": "Provides intelligent endocrine care from infancy through adolescence across the EDHT ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-5",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-6",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3120,
+      "source_fragment_id": "REQ-3120-7",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-1",
+      "source_fragment_sha256": "d0b02d075e21acc38313290239232f64fd9ab0f14f0ee51ddc2417fa8eae6f0d",
+      "retained_text": "Coordinates the complete pediatric endocrinology ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-2",
+      "source_fragment_sha256": "00f74431aa810f5a7e971e83f5f3d2a79daec65667acfbe29c04bcdbc2029556",
+      "retained_text": "Integrates",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-3",
+      "source_fragment_sha256": "f338b094e894a5336efbcf0cf323155647212170d444eea29aa6b8a9de2ae8c0",
+      "retained_text": "• AI",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R01"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-4",
+      "source_fragment_sha256": "2fc875372171b01122dbcbca7c70c29be2985750f62071eeb82830fb283f9217",
+      "retained_text": "• Digital Twin",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R02"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-5",
+      "source_fragment_sha256": "f05e88cf91ca93c54ddd1e224f0a41a62533d37d393348d603290ccba09ee2b1",
+      "retained_text": "• Diabetes Technology",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R09"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-6",
+      "source_fragment_sha256": "265c393244f2578d14145b64fe140b798ad930f60aebcffe59d8c0e00173ca38",
+      "retained_text": "• Genetics",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R03"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-7",
+      "source_fragment_sha256": "eede068b14020c28900f5bd564d214a21ef2fa4d49696a495f70235dec823005",
+      "retained_text": "• Nutrition",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R04"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-8",
+      "source_fragment_sha256": "625d0bc3902b5f8a1d964ce3479d6189ba9d98ee4cb457783b02f3bf431c7210",
+      "retained_text": "• Laboratory Medicine",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R10"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-9",
+      "source_fragment_sha256": "27eaa1930cdcab0d5b4812deb9cafef9f9d6aced82c8263f7f8abd6573a5ab34",
+      "retained_text": "• Imaging",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R11"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-10",
+      "source_fragment_sha256": "c6b559334302334cd60c02b586e71c5bf98ccba5b2183837ea1a928aebb4b8c0",
+      "retained_text": "• Telemedicine",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R07"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-11",
+      "source_fragment_sha256": "58d8ad58fe62b57862669cf758a93dac9c29cb76bdc9b647cb44d9fc4eea7db3",
+      "retained_text": "Provides intelligent endocrine care across the EDHT ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-12",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-13",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3340,
+      "source_fragment_id": "REQ-3340-14",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-1",
+      "source_fragment_sha256": "d0b02d075e21acc38313290239232f64fd9ab0f14f0ee51ddc2417fa8eae6f0d",
+      "retained_text": "Coordinates the complete pediatric endocrinology ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-2",
+      "source_fragment_sha256": "00f74431aa810f5a7e971e83f5f3d2a79daec65667acfbe29c04bcdbc2029556",
+      "retained_text": "Integrates",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-3",
+      "source_fragment_sha256": "f338b094e894a5336efbcf0cf323155647212170d444eea29aa6b8a9de2ae8c0",
+      "retained_text": "• AI",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R01"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-4",
+      "source_fragment_sha256": "2fc875372171b01122dbcbca7c70c29be2985750f62071eeb82830fb283f9217",
+      "retained_text": "• Digital Twin",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R02"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-5",
+      "source_fragment_sha256": "f05e88cf91ca93c54ddd1e224f0a41a62533d37d393348d603290ccba09ee2b1",
+      "retained_text": "• Diabetes Technology",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R09"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-6",
+      "source_fragment_sha256": "265c393244f2578d14145b64fe140b798ad930f60aebcffe59d8c0e00173ca38",
+      "retained_text": "• Genetics",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R03"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-7",
+      "source_fragment_sha256": "eede068b14020c28900f5bd564d214a21ef2fa4d49696a495f70235dec823005",
+      "retained_text": "• Nutrition",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R04"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-8",
+      "source_fragment_sha256": "625d0bc3902b5f8a1d964ce3479d6189ba9d98ee4cb457783b02f3bf431c7210",
+      "retained_text": "• Laboratory Medicine",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R10"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-9",
+      "source_fragment_sha256": "27eaa1930cdcab0d5b4812deb9cafef9f9d6aced82c8263f7f8abd6573a5ab34",
+      "retained_text": "• Imaging",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R11"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-10",
+      "source_fragment_sha256": "c6b559334302334cd60c02b586e71c5bf98ccba5b2183837ea1a928aebb4b8c0",
+      "retained_text": "• Telemedicine",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R07"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-11",
+      "source_fragment_sha256": "58d8ad58fe62b57862669cf758a93dac9c29cb76bdc9b647cb44d9fc4eea7db3",
+      "retained_text": "Provides intelligent endocrine care across the EDHT ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-12",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-13",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3500,
+      "source_fragment_id": "REQ-3500-14",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-1",
+      "source_fragment_sha256": "d0b02d075e21acc38313290239232f64fd9ab0f14f0ee51ddc2417fa8eae6f0d",
+      "retained_text": "Coordinates the complete pediatric endocrinology ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-2",
+      "source_fragment_sha256": "00f74431aa810f5a7e971e83f5f3d2a79daec65667acfbe29c04bcdbc2029556",
+      "retained_text": "Integrates",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-3",
+      "source_fragment_sha256": "8fc9c692b90868a9fc0fe1e9ced3cbf30017345af5507dbf74d5c269de6044a2",
+      "retained_text": "• Artificial Intelligence\n• Digital Twin\n• Laboratory Medicine\n• Genetics\n• Imaging\n• Continuous Monitoring\n• Telemedicine\n• Clinical Research",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R12",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R02",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R10",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R03",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R11",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R13",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R07",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R14"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-4",
+      "source_fragment_sha256": "1e25649aa55c3e52dc8db3e577b764bbd199c3b52e8be197a60fc571042f0968",
+      "retained_text": "Provides intelligent pediatric endocrinology across the EDHT ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-5",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-6",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3640,
+      "source_fragment_id": "REQ-3640-7",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-1",
+      "source_fragment_sha256": "d0b02d075e21acc38313290239232f64fd9ab0f14f0ee51ddc2417fa8eae6f0d",
+      "retained_text": "Coordinates the complete pediatric endocrinology ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-2",
+      "source_fragment_sha256": "00f74431aa810f5a7e971e83f5f3d2a79daec65667acfbe29c04bcdbc2029556",
+      "retained_text": "Integrates",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-3",
+      "source_fragment_sha256": "c8fe60e2b7e33584bdcc0467c5b99022c167c9b898c58f3b0a95e97d3c3c9d33",
+      "retained_text": "• Artificial Intelligence\n• Digital Twin\n• Genetics\n• Laboratory Medicine\n• Imaging\n• Diabetes Monitoring\n• Telemedicine\n• Clinical Research",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Requirement union",
+      "target_requirement_ids": [
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R12",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R02",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R03",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R10",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R11",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R15",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R07",
+        "PRF-PEDIATRIC-ENDOCRINE-HUB-R14"
+      ],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-4",
+      "source_fragment_sha256": "1e25649aa55c3e52dc8db3e577b764bbd199c3b52e8be197a60fc571042f0968",
+      "retained_text": "Provides intelligent pediatric endocrinology across the EDHT ecosystem.",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-5",
+      "source_fragment_sha256": "920e413c7d411b61ef3e8c63b1cb6ad058d5f95f8b481dbafe60248387d8c355",
+      "retained_text": "Status",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-6",
+      "source_fragment_sha256": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "retained_text": "Documentation",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    },
+    {
+      "original_id": 3880,
+      "source_fragment_id": "REQ-3880-7",
+      "source_fragment_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "retained_text": "---",
+      "proposal_id": "PRF-PEDIATRIC-ENDOCRINE-HUB",
+      "target_document": "canonical_profiles/PRF-PEDIATRIC-ENDOCRINE-HUB.md",
+      "target_section": "Original context and status",
+      "target_requirement_ids": [],
+      "decision": "PROPOSED_MAPPING_NOT_MIGRATED",
+      "approved": false
+    }
+  ]
+}

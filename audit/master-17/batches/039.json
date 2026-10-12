@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-17",
+  "batch": 39,
+  "family": "emergency-contact-profiles",
+  "owner": "CAP-PROFILE",
+  "ids": [
+    15,
+    112,
+    266
+  ],
+  "decision_sha256": "bff8a71b74c214c1aaa3f0a9a71325e1db5e746af6802bef00215811fc890bb0",
+  "source_hashes": {
+    "15": "a55420cecba23306adad72e828180db0bd5641c9815ec77ca831ee2175816ab1",
+    "112": "98b0721f162a798f0f0616871170f1abb776848ba6a91c3cf448628b1e6766d1",
+    "266": "a1b874a4e019e47aa2e07cf3aafbdc7adc131e8f35184232e78de2f0e179cc8c"
+  }
+}

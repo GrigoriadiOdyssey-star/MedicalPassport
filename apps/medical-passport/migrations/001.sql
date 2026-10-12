@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS organizations(id TEXT PRIMARY KEY, name TEXT NOT NULL, synthetic INTEGER NOT NULL CHECK(synthetic=1));
+CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, name TEXT NOT NULL, password_hash TEXT NOT NULL, role TEXT NOT NULL CHECK(role IN ('patient','doctor','admin','service')), status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active','disabled')), epoch INTEGER NOT NULL DEFAULT 1, organization_id TEXT REFERENCES organizations(id));
+CREATE TABLE IF NOT EXISTS authentication_identities(user_id TEXT PRIMARY KEY REFERENCES users(id), provider TEXT NOT NULL, subject TEXT NOT NULL UNIQUE);
+CREATE TABLE IF NOT EXISTS patients(id TEXT PRIMARY KEY, user_id TEXT NOT NULL UNIQUE REFERENCES users(id), created_at INTEGER NOT NULL, synthetic INTEGER NOT NULL CHECK(synthetic=1));
+CREATE TABLE IF NOT EXISTS practitioners(id TEXT PRIMARY KEY, user_id TEXT NOT NULL UNIQUE REFERENCES users(id), organization_id TEXT NOT NULL REFERENCES organizations(id), status TEXT NOT NULL CHECK(status IN ('synthetic_verified','suspended')));
+CREATE TABLE IF NOT EXISTS sessions(token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id), csrf TEXT NOT NULL, expires_at INTEGER NOT NULL, epoch INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS recovery_tokens(token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id), expires_at INTEGER NOT NULL, used_at INTEGER);
+CREATE TABLE IF NOT EXISTS records(id TEXT PRIMARY KEY, patient_id TEXT NOT NULL REFERENCES patients(id), kind TEXT NOT NULL CHECK(kind IN ('condition','observation','allergy','medication','vaccination','emergency')), version INTEGER NOT NULL, body TEXT NOT NULL CHECK(json_valid(body)), source TEXT NOT NULL, created_at INTEGER NOT NULL, UNIQUE(patient_id,kind,id));
+CREATE TABLE IF NOT EXISTS documents(id TEXT PRIMARY KEY, patient_id TEXT NOT NULL REFERENCES patients(id), name TEXT NOT NULL, mime TEXT NOT NULL, document_type TEXT NOT NULL, source TEXT NOT NULL, sha256 TEXT NOT NULL, content BLOB NOT NULL, created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS consents(id TEXT PRIMARY KEY, patient_id TEXT NOT NULL REFERENCES patients(id), recipient_id TEXT NOT NULL REFERENCES users(id), purpose TEXT NOT NULL, active INTEGER NOT NULL CHECK(active IN (0,1)), created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS grants(id TEXT PRIMARY KEY, consent_id TEXT NOT NULL REFERENCES consents(id), patient_id TEXT NOT NULL REFERENCES patients(id), recipient_id TEXT NOT NULL REFERENCES users(id), token_hash TEXT NOT NULL UNIQUE, scopes TEXT NOT NULL CHECK(json_valid(scopes)), purpose TEXT NOT NULL CHECK(purpose IN ('review','emergency')), expires_at INTEGER NOT NULL, revoked_at INTEGER, one_time INTEGER NOT NULL CHECK(one_time IN (0,1)), used_at INTEGER, created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS audit_events(seq INTEGER PRIMARY KEY AUTOINCREMENT, patient_id TEXT, actor_id TEXT NOT NULL, action TEXT NOT NULL, reference TEXT NOT NULL, outcome TEXT NOT NULL, occurred_at INTEGER NOT NULL, previous_hash TEXT NOT NULL, event_hash TEXT NOT NULL UNIQUE);
+CREATE TRIGGER IF NOT EXISTS audit_no_update BEFORE UPDATE ON audit_events BEGIN SELECT RAISE(ABORT,'immutable audit'); END;
+CREATE TRIGGER IF NOT EXISTS audit_no_delete BEFORE DELETE ON audit_events BEGIN SELECT RAISE(ABORT,'immutable audit'); END;
+CREATE TABLE IF NOT EXISTS login_throttle(key TEXT PRIMARY KEY, failures INTEGER NOT NULL, blocked_until INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS grant_patient ON grants(patient_id);
+CREATE INDEX IF NOT EXISTS record_patient ON records(patient_id,kind);
+CREATE INDEX IF NOT EXISTS audit_patient ON audit_events(patient_id,seq);

@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-17",
+  "batch": 30,
+  "family": "registry-emergency",
+  "owner": "CAP-EMERGENCY",
+  "ids": [
+    2712,
+    2732
+  ],
+  "decision_sha256": "8cc34c765f31c0aa95a81e9db5a84f527fc80680728f4dd47f02132b5d124a3b",
+  "source_hashes": {
+    "2712": "bd8b40d1422eaa92b892b774daa3f10306b3806d1075c88c97fad78bc9a01092",
+    "2732": "b80c24e1345c6f563827f38ca54279c20b28a5e35651d8125d319bf80e325879"
+  }
+}

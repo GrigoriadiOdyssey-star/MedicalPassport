@@ -1,0 +1,2449 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "records": [
+    {
+      "id": "CORE-CAP-TRAVEL",
+      "owner": "CAP-TRAVEL",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        22,
+        117,
+        177,
+        459,
+        778
+      ],
+      "profile_ids": [
+        "M11-travel-coordination"
+      ],
+      "profiles": [
+        {
+          "id": "M11-travel-coordination",
+          "owner": "CAP-TRAVEL",
+          "source_ids": [
+            22,
+            117,
+            177,
+            459,
+            778
+          ],
+          "reason": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice."
+        }
+      ],
+      "semantic_decision": "M11-travel-coordination",
+      "owner_evidence": "Trip and medical-travel coordination owns itinerary, destination/accessibility and provider comparison views. This resolves 778: country/city/cost/reviews are travel-planning context, while actual provider identity stays CAP-IDENTITY and success-rate definitions stay CAP-RESEARCH. Preserve clinic/dentist selection, accessible airports/hotels/pharmacies/hospitals, equipment rental, medicine/visa/insurance and advisory references. Success rates require source/cohort/denominator/time and missingness before comparison; no ranking, treatment eligibility or outcome guarantee is inferred. Shared-profile/contact/QR flags record intent, not grants. Current country rules require authoritative version/date evidence; historical source examples are not current advice.",
+      "document": "docs/canonical/master11/CAP-TRAVEL.md",
+      "extends_document": null,
+      "requirements": [
+        {
+          "id": "M11-CAP-TRAVEL-5c6452effddb4977",
+          "text": "Stores all travel history and upcoming trips.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-c91610423a46692c",
+          "text": "id (UUID)",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-ff6fb316f9bc6c33",
+          "text": "user_id",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-69cad85f83d01713",
+          "text": "departure_country",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-0a6973bd7eee9d29",
+          "text": "destination_country",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-28cbc592e6b4092a",
+          "text": "departure_city",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-f6cbc7bda3b4ee82",
+          "text": "destination_city",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-07b0aa6e3fc89a12",
+          "text": "departure_date",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-c655043f86b18002",
+          "text": "return_date",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-609612ad3b93c771",
+          "text": "trip_status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-b950f14a868e5e11",
+          "text": "insurance_policy_id",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-7cf3817021919583",
+          "text": "vaccination_required",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-c59b5b1dd72e1801",
+          "text": "visa_required",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-602ff57fc19ebfab",
+          "text": "travel_notes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-e38fdcf4ec81bd7c",
+          "text": "emergency_contacts_shared",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-212a91071c20dd0f",
+          "text": "medical_profile_shared",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-ba2521405f91714e",
+          "text": "qr_access_enabled",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-bcc951dbdead2bf5",
+          "text": "created_at",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-51db2c3a3a174a78",
+          "text": "updated_at",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-11f4442258721d5f",
+          "text": "Travel Record",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-46172ef655d51ea4",
+          "text": "├── User",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-d3851f7ba53f3cf3",
+          "text": "├── Insurance",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-b7f0d2db15272a43",
+          "text": "├── QR Sessions",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-41bd3320fb6ee128",
+          "text": "├── Medical Profile",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-a2f47460a111e5e9",
+          "text": "├── Vaccinations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-225d721817a80b2f",
+          "text": "├── Notifications",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-93522f774f6d0bd5",
+          "text": "├── AI Assistant",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-37bfdffca1a32095",
+          "text": "Future Features",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-2b2d7f92fe0d1ef4",
+          "text": "Country Health Advisories",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-e3c1b1683e588931",
+          "text": "Vaccine Recommendations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-968629c3bc1a4ede",
+          "text": "Climate Risk Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-1e5944f9cb34d38a",
+          "text": "Medicine Import Rules",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-5288ebf2f582a519",
+          "text": "Emergency Numbers",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-01d149081a8aab35",
+          "text": "Embassy Information",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-8cb536f63171eb3d",
+          "text": "Local Pharmacy Finder",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-ae324f31cf9de68c",
+          "text": "Destination",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-60ad5f0e95a3c0f2",
+          "text": "↓",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-eff7a1d0a2fba317",
+          "text": "Country Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-eb928415e699b910",
+          "text": "Vaccination Check",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-296fb7d91e191725",
+          "text": "Disease Alerts",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-db6e854f8e48a3e2",
+          "text": "Climate Risks",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-09d0ef8caea96325",
+          "text": "Medicine Restrictions",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-3c3701124c561691",
+          "text": "Travel Recommendations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-4db49935c1bab8b0",
+          "text": "Provides",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-b174d3ccbec1ac32",
+          "text": "Accessible Airports",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-9114e27f2e619317",
+          "text": "Accessible Hotels",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-1d3c6de338d7fa6d",
+          "text": "Accessible Pharmacies",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-ea8a9de783918a69",
+          "text": "Accessible Hospitals",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-20ed29bdb5979a38",
+          "text": "Medical Equipment Rental",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-80e3ef36950805e9",
+          "text": "Emergency Contacts",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-f4364d96fe644d6b",
+          "text": "Integrated with Travel Module.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-ec58fcd4a1f9ce32",
+          "text": "Provides international dental treatment planning.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-6b0d83cf43f60f38",
+          "text": "Country Selection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-1a6f40e731fe5219",
+          "text": "Clinic Search",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-e41497415ff6b297",
+          "text": "Dentist Search",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-e77294311acdc1ac",
+          "text": "Cost Comparison",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-6a5b0dcf47546b75",
+          "text": "Travel Planning",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-03854c7efbb9b625",
+          "text": "Integrated with Medical Tourism Platform.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-98c6527ad1d4fdd2",
+          "text": "Allows comparison of fertility clinics worldwide.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-f3d993f49bc6debb",
+          "text": "Displays",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-580c32d823047de1",
+          "text": "Country",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-e92411fba2438bd2",
+          "text": "City",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-6d6349f08a07e7fa",
+          "text": "Success Rate",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-d125699682b71377",
+          "text": "Cost",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-0e03b2c19fb0f947",
+          "text": "Reviews",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            778
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-TRAVEL-44d623e0fc438227",
+          "text": "# Travel Records Table",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-2f5fdcca89ef8e56",
+          "text": "## Purpose",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22,
+            117,
+            177,
+            459,
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-90dc9b75b60f53a5",
+          "text": "# Fields",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-fe49bb0338c4f238",
+          "text": "purpose",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-2fac6cbf308c244b",
+          "text": "# Relationships",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22,
+            117,
+            177,
+            459,
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            22,
+            117,
+            177,
+            459,
+            778
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-966280037845a730",
+          "text": "# Travel Health",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            117
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-6780fe6f1b894075",
+          "text": "# Accessible Travel",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            177
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-141b2acffff08808",
+          "text": "# International Dental Tourism",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            459
+          ]
+        },
+        {
+          "id": "M11-CAP-TRAVEL-cf5e7d29629b5e0d",
+          "text": "# International Fertility Tourism",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            778
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-TRAVEL",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT",
+        "CAP-IDENTITY",
+        "CAP-RESEARCH",
+        "CAP-QR",
+        "CAP-PROFILE",
+        "CAP-IMMUNIZATION"
+      ],
+      "document_sha256": "82e2a2d6bf6413da45accf8b2cfb0a29373f32eb72d7f32cd8ebf2308e5c77a9"
+    },
+    {
+      "id": "CORE-CAP-DOCUMENTS",
+      "owner": "CAP-DOCUMENTS",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        425
+      ],
+      "profile_ids": [
+        "M11-travel-certificate"
+      ],
+      "profiles": [
+        {
+          "id": "M11-travel-certificate",
+          "owner": "CAP-DOCUMENTS",
+          "source_ids": [
+            425
+          ],
+          "reason": "Medication travel certificate is a versioned document derivative linking qualified physician, prescribed medication and diagnosis source where authorized, with scoped QR verification. A generated certificate does not certify authenticity, medication legality, border acceptance or prescribing authority. Minimize diagnosis disclosure and preserve signature/issuer provenance."
+        }
+      ],
+      "semantic_decision": "M11-travel-certificate",
+      "owner_evidence": "Medication travel certificate is a versioned document derivative linking qualified physician, prescribed medication and diagnosis source where authorized, with scoped QR verification. A generated certificate does not certify authenticity, medication legality, border acceptance or prescribing authority. Minimize diagnosis disclosure and preserve signature/issuer provenance.",
+      "document": "docs/canonical/master11/CAP-DOCUMENTS.md",
+      "extends_document": "docs/canonical/master08/CAP-DOCUMENTS.md",
+      "requirements": [
+        {
+          "id": "M11-CAP-DOCUMENTS-d193bdcca3f67084",
+          "text": "Generates travel documentation for prescribed medications.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-271e42d0ea3f96db",
+          "text": "Physician Information",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-0e8b278920617d2e",
+          "text": "Medication List",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-5f124f9e42776b79",
+          "text": "Diagnosis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-9c26c1b46bcd0a38",
+          "text": "QR Verification",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            425
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-DOCUMENTS-de9df7e525b399f2",
+          "text": "# Medication Travel Certificate",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            425
+          ]
+        },
+        {
+          "id": "M11-CAP-DOCUMENTS-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            425
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-DOCUMENTS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "e1bf3f268acc5f2b0a52ea8f5040b2f2872042996b273a0156060ea57a4d1032"
+    },
+    {
+      "id": "CORE-CAP-INTEROP",
+      "owner": "CAP-INTEROP",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        220,
+        1344,
+        1886,
+        4595
+      ],
+      "profile_ids": [
+        "M11-cross-border-exchange"
+      ],
+      "profiles": [
+        {
+          "id": "M11-cross-border-exchange",
+          "owner": "CAP-INTEROP",
+          "source_ids": [
+            220,
+            1344,
+            1886,
+            4595
+          ],
+          "reason": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts."
+        }
+      ],
+      "semantic_decision": "M11-cross-border-exchange",
+      "owner_evidence": "Generic and pediatric renal international exchange share transport/mapping ownership despite legacy AI titles. Preserve consent/purpose, patient matching, standardized records, imaging/labs/pathology, medication/dialysis/transplant context, source freshness, translation and receiver handover. Translation is an attributed derivative; cross-border transfer requires actual partner/jurisdiction contracts and cannot expand emergency access or overwrite source facts.",
+      "document": "docs/canonical/master11/CAP-INTEROP.md",
+      "extends_document": "docs/canonical/master08/CAP-INTEROP.md",
+      "requirements": [
+        {
+          "id": "M11-CAP-INTEROP-45463610c3132082",
+          "text": "Secure exchange of medical records between healthcare organizations in different countries.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-d647e421c6bb1759",
+          "text": "Patient Consent",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-61bbd33ddaa601ae",
+          "text": "Secure Transfer",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-79b63a83bc7d1c15",
+          "text": "Audit Trail",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-1343c879f2e1abb9",
+          "text": "Standardized Formats",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-752fb8ffe49d0cb5",
+          "text": "Encrypted Communication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-29a159ee03f03fa9",
+          "text": "Automatic Translation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-0a03b16243e18f75",
+          "text": "Designed for international continuity of care.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-b3f03c12a6339d79",
+          "text": "Secure international exchange of medical information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1344
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-8b5e9b658e594e39",
+          "text": "Cross-border Care",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1344
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-53fdcd3a56f144a6",
+          "text": "Emergency Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1344
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-ef959e75f54d644f",
+          "text": "Consent Management",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1344
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-22d495f0e6fdb9c1",
+          "text": "Standardized Medical Records",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1344
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-a933fc91e05c9915",
+          "text": "Facilitates secure international medical information exchange.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1886
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-ad24d679b96d8e76",
+          "text": "Patient Records",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1886
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-a3241cf77d991407",
+          "text": "Imaging",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1886
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-71f790fdf94f9c10",
+          "text": "Laboratory Results",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1886
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-2c53c579b5dce8a4",
+          "text": "Enable standardized exchange of pediatric renal information between authorized healthcare systems and jurisdictions.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-da4c27358837e4f4",
+          "text": "Structured Clinical Data Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-970207590822e4c7",
+          "text": "Laboratory Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-72c4963a3527e612",
+          "text": "Medication Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-4877dba1ee49a34e",
+          "text": "Imaging Metadata Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-924b969f2da4d823",
+          "text": "Pathology Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-d647260c08f34ac5",
+          "text": "Dialysis Data Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-5e0a3ba56f520b60",
+          "text": "Transplant Data Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-2c4d8f5fb8f88936",
+          "text": "Medical Passport Synchronization",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-232e0f1f44bd4ffc",
+          "text": "Patient Identity Matching",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-bde26ea3090fc16e",
+          "text": "Consent Verification",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-a7dc95c85b62a87a",
+          "text": "Data Provenance",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-ef5c8e2984654801",
+          "text": "Translation Support",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-db2775aafe1277e5",
+          "text": "Terminology Mapping",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-9bb33c6cd38082d8",
+          "text": "Audit Logging",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-77fb8ef2bf85b427",
+          "text": "Interoperability:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-8530b440fb173726",
+          "text": "Designed to support standards-based healthcare interoperability and jurisdiction-specific implementation profiles.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-248e55b099715870",
+          "text": "Cross-Border Functions:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-3875d574f1dbc00f",
+          "text": "Multilingual Clinical Summary",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-6fdeb1db8a50b876",
+          "text": "Emergency Renal Dataset",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-603d4c41e2566835",
+          "text": "Receiving-provider Handover",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-c225be7e018f69d0",
+          "text": "Source Verification",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-9f23d657b7b7ed98",
+          "text": "Data Freshness Indicators",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-35dcf006dc82711b",
+          "text": "Security:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-8deb81f02b2bfc0e",
+          "text": "Role-based Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-0ea56e0119c3111c",
+          "text": "Purpose-based Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-5c29170953f7e94c",
+          "text": "Encryption",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-3f51afab3a09b8f9",
+          "text": "Auditability",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-e6d53bd74634df6d",
+          "text": "Consent Enforcement",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4595
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-INTEROP-1fe987fb9367b3d0",
+          "text": "# Cross-Border Medical Record Exchange",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-638dd97296164597",
+          "text": "Purpose",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            220
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            220,
+            1344,
+            1886
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            220,
+            1344,
+            1886
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            220,
+            1344,
+            1886,
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            220,
+            1344,
+            1886,
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-6510c5c511a879bc",
+          "text": "Purpose:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-b34f593f0f83a1d1",
+          "text": "Core Functions:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4595
+          ]
+        },
+        {
+          "id": "M11-CAP-INTEROP-b88b375a44ccd619",
+          "text": "Status:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4595
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-INTEROP",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "0182583418aefc34a7beb0a7cd54cc59c77242bb97b1821dca7366b44d845778"
+    },
+    {
+      "id": "CORE-CAP-AI",
+      "owner": "CAP-AI",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        1403,
+        1425,
+        1888
+      ],
+      "profile_ids": [
+        "M11-travel-assistance-ai"
+      ],
+      "profiles": [
+        {
+          "id": "M11-travel-assistance-ai",
+          "owner": "CAP-AI",
+          "source_ids": [
+            1403,
+            1425,
+            1888
+          ],
+          "reason": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit."
+        }
+      ],
+      "semantic_decision": "M11-travel-assistance-ai",
+      "owner_evidence": "Hospital/cost/travel/translation assistance, treatment navigation and destination/season/climate/outbreak risk are separate AI task profiles. Preserve current source date/model/version, uncertainty and human review; no clinical selection, guarantee, unverified outbreak inference or autonomous treatment/travel recommendation. Unavailable current evidence remains explicit.",
+      "document": "docs/canonical/master11/CAP-AI.md",
+      "extends_document": "docs/canonical/master08/CAP-AI.md",
+      "requirements": [
+        {
+          "id": "M11-CAP-AI-23a9a45a71d4c141",
+          "text": "Supports international medical tourism.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1403,
+            1888
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-01bbec9df504a305",
+          "text": "Includes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1403
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-6de5f2934118b5c6",
+          "text": "Hospital Selection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1403,
+            1888
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-e77294311acdc1ac",
+          "text": "Cost Comparison",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1403
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-6a5b0dcf47546b75",
+          "text": "Travel Planning",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1403
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-5f42ba8f024bbd01",
+          "text": "Medical Translation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1403
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-0469e8bdff046a2f",
+          "text": "Calculates infection risks before travel.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1425
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-0535ebb6ad4f5674",
+          "text": "Analyzes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1425
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-ae324f31cf9de68c",
+          "text": "Destination",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1425
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-f572e0ac7e9c2e55",
+          "text": "Season",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1425
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-768e21b3f4f06bc9",
+          "text": "Climate",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1425
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-ffd58abc1afc1188",
+          "text": "Current Outbreaks",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1425
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-7c7fb2adca62a628",
+          "text": "Treatment Planning",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1888
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-1cf0ffde4a79a7ee",
+          "text": "Patient Navigation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1888
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-AI-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1403,
+            1425,
+            1888
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1403,
+            1425,
+            1888
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1403,
+            1425,
+            1888
+          ]
+        },
+        {
+          "id": "M11-CAP-AI-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1888
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "f3ca798cb8eff76a6b260163108beb2ff26d3ee01f6da6f1ec0b769613328abb"
+    },
+    {
+      "id": "CORE-CAP-SPECIALTY",
+      "owner": "CAP-SPECIALTY",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        1021,
+        3957,
+        4293,
+        5070
+      ],
+      "profile_ids": [
+        "M11-pediatric-travel-clinical"
+      ],
+      "profiles": [
+        {
+          "id": "M11-pediatric-travel-clinical",
+          "owner": "CAP-SPECIALTY",
+          "source_ids": [
+            1021,
+            3957,
+            4293,
+            5070
+          ],
+          "reason": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance."
+        }
+      ],
+      "semantic_decision": "M11-pediatric-travel-clinical",
+      "owner_evidence": "Pre-travel and imported-infection care retain destination/duration/dates, history, vaccination/prevention, malaria/food/water/vector/animal exposure, illness/symptoms/labs and follow-up. WHO/national/international guidance intent needs an exact approved source release; the registry does not provide validated prophylactic doses, required vaccines or individual travel clearance.",
+      "document": "docs/canonical/master11/CAP-SPECIALTY.md",
+      "extends_document": "docs/canonical/master08/CAP-SPECIALTY.md",
+      "requirements": [
+        {
+          "id": "M11-CAP-SPECIALTY-ac5f66a0d589442d",
+          "text": "Assesses infectious risks before international travel.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1021
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-f53b4f9a79821096",
+          "text": "Destination Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1021
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-dd0b4b40082a335a",
+          "text": "Required Vaccines",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1021
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-d52c301c5d4b5a74",
+          "text": "Local Epidemics",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1021
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-73d6dacfb3c8f751",
+          "text": "WHO Recommendations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1021
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-60c1f953a2770cc1",
+          "text": "Supports pediatric travel medicine.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-92c0279be752e16d",
+          "text": "Travel Risk Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-5e8baed45e6da4a7",
+          "text": "Vaccination Planning",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-db1c013dcfd8423e",
+          "text": "Tropical Diseases",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-b9d1d2010beaa7bc",
+          "text": "Exposure Evaluation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-c6a6b7b2c560cfc8",
+          "text": "Post-travel Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-9eac01f669b626fc",
+          "text": "Supports pre-travel and post-travel pediatric infectious disease workflows.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-ae324f31cf9de68c",
+          "text": "Destination",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293,
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-10d8c964b53514ca",
+          "text": "Duration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-b9f7850c43c977c3",
+          "text": "Medical History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-c725477367334eb0",
+          "text": "Vaccination",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-f77c110a969b6dd2",
+          "text": "Preventive Requirements",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-dee9c030267edcf0",
+          "text": "Exposure History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-8ea50d2707dd1600",
+          "text": "Symptoms",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-196ab9187643f404",
+          "text": "Travel Timeline",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-654cc2663d1ff61c",
+          "text": "Connect pediatric travel history, preventive medicine and imported infection assessment.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-f196627f097786cb",
+          "text": "Travel Dates",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-1f8b9a6d05d31711",
+          "text": "Travel Purpose Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-60f475c3b2db5da1",
+          "text": "Vaccination Requirements Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-fde4ccdca6f67fff",
+          "text": "National/International Guidance Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-4d8b17579bda870a",
+          "text": "Malaria Risk Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-ccb75ad0fbbf1617",
+          "text": "Food/Water Risk Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-5bb1674bd78b70d8",
+          "text": "Vector Exposure Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-31391b63977f346c",
+          "text": "Animal Exposure Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-1c70c0446b908aae",
+          "text": "Preventive Medication Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-b0cdd972a94e1d2a",
+          "text": "Illness During Travel",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-1ab9e02822129e43",
+          "text": "Post-travel Symptoms",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-62348f82b3bcfc9f",
+          "text": "Laboratory Testing",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-b6e6d4c8294aa176",
+          "text": "Imported Infection Diagnosis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-0d86946e629cc025",
+          "text": "Follow-up",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-2f27e552d723d07f",
+          "text": "Integrations:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-813d0ab6af854e92",
+          "text": "Infectious Disease",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-7c65c5638317ca0a",
+          "text": "Vaccination Platform",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-03e6f3d95e9208e7",
+          "text": "Public Health",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-e9eb7b780843070a",
+          "text": "Pediatrics",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-35ff4287a628c0a4",
+          "text": "Laboratory Medicine",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5070
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-SPECIALTY-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1021,
+            3957
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1021,
+            3957,
+            4293,
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3957,
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3957,
+            4293,
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-21d94006fa494f95",
+          "text": "Integrates",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4293
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-6510c5c511a879bc",
+          "text": "Purpose:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-b34f593f0f83a1d1",
+          "text": "Core Functions:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            5070
+          ]
+        },
+        {
+          "id": "M11-CAP-SPECIALTY-b88b375a44ccd619",
+          "text": "Status:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            5070
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "247d7c29b48ca6d5ceaf2541bc918ff23f3d40f6cc4183d581a82ef6cbd01bdf"
+    },
+    {
+      "id": "CORE-CAP-IMMUNIZATION",
+      "owner": "CAP-IMMUNIZATION",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        4273,
+        4307,
+        4339
+      ],
+      "profile_ids": [
+        "M11-vaccine-travel-equivalence"
+      ],
+      "profiles": [
+        {
+          "id": "M11-vaccine-travel-equivalence",
+          "owner": "CAP-IMMUNIZATION",
+          "source_ids": [
+            4273,
+            4307,
+            4339
+          ],
+          "reason": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule."
+        }
+      ],
+      "semantic_decision": "M11-vaccine-travel-equivalence",
+      "owner_evidence": "Product names/history, antigen components, dose sequences, national schedules, age/catch-up and transit/date/duration form explicit reconciliation profiles. Preserve original vaccination history and uncertain equivalence, never silently recompute it as fact. Schedule/requirement versions and jurisdiction applicability need qualified confirmation; Estonia/Germany is a historical example, not a current validated schedule.",
+      "document": "docs/canonical/master11/CAP-IMMUNIZATION.md",
+      "extends_document": "docs/canonical/master08/CAP-IMMUNIZATION.md",
+      "requirements": [
+        {
+          "id": "M11-CAP-IMMUNIZATION-648a99790fa02837",
+          "text": "Supports interpretation of vaccination records across jurisdictions.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-28cbfdcefa11e191",
+          "text": "Maps",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-9560797739c1b3e0",
+          "text": "Vaccine Products",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-84b6c9501b50bbf9",
+          "text": "Antigen Components",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-1300cb34735bbd71",
+          "text": "Dose Sequences",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-2ee897a4100acd79",
+          "text": "National Schedules",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-0c7d80223441f3ad",
+          "text": "Product Names",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-d534853bf2093482",
+          "text": "Historical Products",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-11e443cd678695c3",
+          "text": "Flags uncertain equivalence for professional review.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4273
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-5773b02facf3829b",
+          "text": "Recalculates vaccination requirements after international relocation.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-c8ebc3e63069029b",
+          "text": "Example",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-29f0a11ff5a2dacc",
+          "text": "Estonia",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-60ad5f0e95a3c0f2",
+          "text": "↓",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-85312622bea69e47",
+          "text": "Germany",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-d12d892fa5e4cdc1",
+          "text": "System compares",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-9457444b538e6aff",
+          "text": "Previous Vaccinations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-99809ff30da7ac4a",
+          "text": "Antigen Composition",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-2c76ceb0f9e1ca59",
+          "text": "Dose Numbers",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-9c0efba63c78c41c",
+          "text": "Product Equivalence",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-356d49a6a3871dfa",
+          "text": "German Schedule",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-5fb8f64f3d504245",
+          "text": "Age Requirements",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-4dadca6d2551cc63",
+          "text": "Catch-up Requirements",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-a9af170bc4b3ea16",
+          "text": "Preserves the original vaccination history.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4307
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-374336b8d920b94c",
+          "text": "Supports personalized vaccination assessment for international travel.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-32a79aa90b436d09",
+          "text": "Considers",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-ae324f31cf9de68c",
+          "text": "Destination",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-f463a90b49c12066",
+          "text": "Transit Countries",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-49d86c175da224f5",
+          "text": "Travel Date",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-10d8c964b53514ca",
+          "text": "Duration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-d105f29dd1ec7126",
+          "text": "Age",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-b9f7850c43c977c3",
+          "text": "Medical History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-e9d2a24f76662099",
+          "text": "Existing Vaccinations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-f4cb40975577092a",
+          "text": "Destination-specific Requirements",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-c9b2f3a123552241",
+          "text": "Risk-based Recommendations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4339
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-IMMUNIZATION-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4273,
+            4307,
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4273,
+            4307,
+            4339
+          ]
+        },
+        {
+          "id": "M11-CAP-IMMUNIZATION-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4273,
+            4307,
+            4339
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-IMMUNIZATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "e6a6a841f26db0567281100e2911c416ed4253f61b0b9464f0f1fa691e7270a3"
+    },
+    {
+      "id": "CORE-CAP-PROFILE",
+      "owner": "CAP-PROFILE",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        4299
+      ],
+      "profile_ids": [
+        "M11-infection-passport"
+      ],
+      "profiles": [
+        {
+          "id": "M11-infection-passport",
+          "owner": "CAP-PROFILE",
+          "source_ids": [
+            4299
+          ],
+          "reason": "Multilingual infectious-disease disclosure is a source-linked passport projection retaining vaccines, prior infections/resistance/microbiology, antimicrobial allergies/current use, immunocompromise and isolation context. Role, purpose, consent and emergency policy are separately checked; language choice does not broaden recipient access."
+        }
+      ],
+      "semantic_decision": "M11-infection-passport",
+      "owner_evidence": "Multilingual infectious-disease disclosure is a source-linked passport projection retaining vaccines, prior infections/resistance/microbiology, antimicrobial allergies/current use, immunocompromise and isolation context. Role, purpose, consent and emergency policy are separately checked; language choice does not broaden recipient access.",
+      "document": "docs/canonical/master11/CAP-PROFILE.md",
+      "extends_document": "docs/canonical/master08/CAP-PROFILE.md",
+      "requirements": [
+        {
+          "id": "M11-CAP-PROFILE-07d2c6ced6fd82f3",
+          "text": "Provides critical infectious disease information during international care.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-bebe8ff567c27e81",
+          "text": "Supports multilingual access to",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-a91b469df851c232",
+          "text": "Vaccination History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-7dde352ee0aea560",
+          "text": "Relevant Previous Infections",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-4fd5a5a95517734b",
+          "text": "Resistant Organisms",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-a793244195a40377",
+          "text": "Important Microbiology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-fbbeb1989fb1be71",
+          "text": "Antimicrobial Allergies",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-2da5f2ab97c3dd99",
+          "text": "Current Antimicrobials",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-63005c4a802c6ed8",
+          "text": "Immunocompromised Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-d2e2a261eda045f3",
+          "text": "Isolation-relevant Information",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-abdee66bcdbc429e",
+          "text": "Uses role-based access, consent and emergency-access policies.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4299
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M11-CAP-PROFILE-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4299
+          ]
+        },
+        {
+          "id": "M11-CAP-PROFILE-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4299
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "ee527b4821dc60300026456656039178d6c7eaba0e103075c85458ddf4c7156e"
+    }
+  ]
+}

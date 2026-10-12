@@ -1,0 +1,4033 @@
+{
+  "schema_version": 4,
+  "pass": "DOMAIN-03",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "records": [
+    {
+      "id": "CAN-CARD-ECHO",
+      "title": "Pediatric echocardiography record",
+      "decision": "PED2-CARD-ECHO",
+      "owner": "CAP-IMAGING",
+      "entities": [
+        "ImagingStudy",
+        "ImagingMeasurement",
+        "DiagnosticReport"
+      ],
+      "workflow": "Acquire authorized echo reference → validate identity/measurement metadata → specialist report → longitudinal comparison.",
+      "retained": "Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-CARD-ECHO.md",
+      "source_ids": [
+        846,
+        3064,
+        3664,
+        4064
+      ],
+      "semantic_decision": "PED2-CARD-ECHO",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-ECHO. Preserve Doppler, valve/chamber/ventricular/congenital assessment and source images/reports. AI image interpretation is separately governed.",
+      "requirements": [
+        {
+          "id": "CAN-CARD-ECHO-R-8c07d07d32af",
+          "text": "Stores pediatric echocardiograms.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            846
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-ff3a7199bfc3",
+          "text": "Images",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            846
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-7e88519dba5b",
+          "text": "Measurements",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            846
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-3a56654e8ce0",
+          "text": "Physician Reports",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            846
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-938f90236ccf",
+          "text": "Supports pediatric cardiac ultrasound.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-0c056b421c13",
+          "text": "Structural Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064,
+            3664
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-8a65a1ba1d52",
+          "text": "Doppler Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-14929a6c30e4",
+          "text": "Ventricular Function",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064,
+            3664,
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-cc7fa228ecbc",
+          "text": "Valve Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064,
+            3664,
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-06834973cd48",
+          "text": "Congenital Heart Evaluation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-2dd1a9cd4818",
+          "text": "Integrated with AI-assisted image interpretation.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-6fd0ea267e75",
+          "text": "Supports pediatric echocardiography.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3664,
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-6b45952bdf59",
+          "text": "Doppler Studies",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3664
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-b7344c031add",
+          "text": "AI-assisted Echo Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3664
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-c46c83562ee2",
+          "text": "2D Echocardiography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-77d26df524c7",
+          "text": "Doppler",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-b790cdd54257",
+          "text": "Chamber Measurements",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-267e1b8b12af",
+          "text": "Congenital Anatomy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-acde0dd77f4e",
+          "text": "Longitudinal Comparison",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-R-8000c25bce4b",
+          "text": "AI-assisted Image Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4064
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-CARD-ECHO-M-a4d9269a108a",
+          "text": "# Pediatric Echocardiography Archive",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            846
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            846,
+            3064,
+            3664,
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            846,
+            3064,
+            3664,
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            846,
+            3064,
+            3664,
+            4064
+          ]
+        },
+        {
+          "id": "CAN-CARD-ECHO-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            846,
+            3064,
+            3664,
+            4064
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "cd36b3afc4249d7b75fa88bc4bff353626cd125e92b7a571e8a8078b14287c8e"
+    },
+    {
+      "id": "CAN-CARD-IMAGING",
+      "title": "Pediatric multimodality cardiac imaging",
+      "decision": "PED2-CARD-IMAGING",
+      "owner": "CAP-IMAGING",
+      "entities": [
+        "ImagingStudy",
+        "ImagingSeries",
+        "ReconstructionReference",
+        "Report"
+      ],
+      "workflow": "Link CT/MRI/echo/nuclear/catheterization study references → validate acquisition/geometry → specialist review → compare compatible studies.",
+      "retained": "Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-CARD-IMAGING.md",
+      "source_ids": [
+        3069,
+        3671,
+        4070
+      ],
+      "semantic_decision": "PED2-CARD-IMAGING",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-IMAGING. Retain nuclear cardiology, CT angiography, catheterization references, 3D reconstruction and ventricular-volume detail; a generic model is not patient-derived anatomy.",
+      "requirements": [
+        {
+          "id": "CAN-CARD-IMAGING-R-dd10b967d575",
+          "text": "Maintains pediatric cardiac imaging.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3069,
+            3671
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-3cd905d91ad6",
+          "text": "Echocardiography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3069,
+            3671
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-df7e6cb05e35",
+          "text": "CT",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3069
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-090cdf5efdb6",
+          "text": "MRI",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3069
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-29225a090056",
+          "text": "Cardiac Catheterization",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3069
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-8e8e5efd65d9",
+          "text": "AI Imaging Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3069
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-19aadc272b90",
+          "text": "Cardiac MRI",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3671,
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-d606fad1d193",
+          "text": "CT Angiography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3671
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-cb93f20ed8fa",
+          "text": "Nuclear Cardiology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3671
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-44ad10f96ce2",
+          "text": "AI Image Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3671
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-611b5f416aa7",
+          "text": "Maintains advanced pediatric cardiac imaging.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-ea7e4365465a",
+          "text": "Cardiac CT",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-dc9d93e07ce9",
+          "text": "3D Reconstruction",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-aaf70eaa5836",
+          "text": "Ventricular Volumes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-9907728c2939",
+          "text": "Myocardial Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-267e1b8b12af",
+          "text": "Congenital Anatomy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-R-9e59e7c53b9f",
+          "text": "Longitudinal Imaging Comparison",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4070
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-CARD-IMAGING-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3069,
+            3671,
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3069,
+            3671,
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3069,
+            3671,
+            4070
+          ]
+        },
+        {
+          "id": "CAN-CARD-IMAGING-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3069,
+            3671,
+            4070
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "b3c3b6e64107375a9a692dff823973856ef01f0f6c5fee75e8a797a62558a819"
+    },
+    {
+      "id": "CAN-CARD-RECORD",
+      "title": "Longitudinal pediatric cardiology record index",
+      "decision": "PED2-CARD-REGISTRY",
+      "owner": "CAP-DATA",
+      "entities": [
+        "SpecialtyRecordIndex",
+        "ClinicalReference",
+        "ContextSnapshot"
+      ],
+      "workflow": "Resolve authorized source records → reconcile identity/version → index timeline → publish bounded summary.",
+      "retained": "Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-CARD-RECORD.md",
+      "source_ids": [
+        3062,
+        3662,
+        4062
+      ],
+      "semantic_decision": "PED2-CARD-REGISTRY",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-REGISTRY. Own the index and provenance, not duplicate diagnoses or measurements. Preserve ECG, catheterization, surgery, medication history and functional status.",
+      "requirements": [
+        {
+          "id": "CAN-CARD-RECORD-R-53caf1fdd747",
+          "text": "Maintains comprehensive pediatric cardiology records.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062,
+            3662
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-d161e65ce014",
+          "text": "Congenital Defects",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-3cd905d91ad6",
+          "text": "Echocardiography",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062,
+            3662,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-cbbc65fcbfd5",
+          "text": "ECG",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-a42c0313e775",
+          "text": "Catheterization",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-7e3c197f4e58",
+          "text": "Surgery",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-06e4b9df2f17",
+          "text": "Longitudinal Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3062,
+            3662
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-32814bed6f27",
+          "text": "Cardiac Diagnoses",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3662
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-3b75093163e4",
+          "text": "ECG Data",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3662
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-0766f15902ef",
+          "text": "Imaging",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3662,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-255756747fd3",
+          "text": "Surgical History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3662,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-cc4a943a70a9",
+          "text": "Maintains longitudinal pediatric cardiac records.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-e73c76ffd887",
+          "text": "Diagnoses",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-c0f807a9d457",
+          "text": "Medication History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-R-10f13a542fa8",
+          "text": "Functional Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4062
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-CARD-RECORD-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3062,
+            3662,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3062,
+            3662,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3062,
+            3662,
+            4062
+          ]
+        },
+        {
+          "id": "CAN-CARD-RECORD-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3062,
+            3662,
+            4062
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "a67c90542208c26faec3129247a245d110e37bf487ed0a03e3827a3d3312203c"
+    },
+    {
+      "id": "CAN-CARD-SURGERY",
+      "title": "Pediatric cardiac procedure and follow-up record",
+      "decision": "PED2-CARD-SURGERY",
+      "owner": "CAP-ENCOUNTER",
+      "entities": [
+        "Procedure",
+        "SurgicalEpisode",
+        "ComplicationRecord",
+        "FollowUpPlan"
+      ],
+      "workflow": "Preoperative assessment → authorized plan → procedure documentation → postoperative/ICU follow-up → longitudinal outcomes.",
+      "retained": "Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "source_ids": [
+        847,
+        3067,
+        3669,
+        4072
+      ],
+      "semantic_decision": "PED2-CARD-SURGERY",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-SURGERY. Retain corrective/palliative surgery, valve and great-vessel detail, hospital/surgeon identity and imaging follow-up. AI does not authorize surgery.",
+      "requirements": [
+        {
+          "id": "CAN-CARD-SURGERY-R-9e367d655f35",
+          "text": "Stores pediatric cardiac surgical history.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            847
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-443bb1c6c7c0",
+          "text": "Procedure",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            847
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-c0c028294227",
+          "text": "Hospital",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            847
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-7670daed9586",
+          "text": "Surgeon",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            847
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-b43929b3e4a8",
+          "text": "Follow-up",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            847
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-deaa62d731a2",
+          "text": "Supports pediatric cardiac surgery.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3067
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-a28fce4c81a6",
+          "text": "Corrective Surgery",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3067
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-857a1c2fab72",
+          "text": "Palliative Surgery",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3067
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-0d2f3bf48b21",
+          "text": "Valve Repair",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3067
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-5d40d616551c",
+          "text": "Great Vessel Reconstruction",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3067
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-5f2800a8461f",
+          "text": "Postoperative Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3067,
+            3669,
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-d5e14a22339b",
+          "text": "Supports pediatric cardiac surgery pathways.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3669
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-23efa02161f3",
+          "text": "Preoperative Assessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3669,
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-17c895056dab",
+          "text": "Surgical Planning",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3669,
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-b3690f2221e1",
+          "text": "ICU Follow-up",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3669
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-64f70fb4c290",
+          "text": "Long-term Outcomes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3669
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-9bf5beaf900e",
+          "text": "Supports pediatric cardiac surgery workflows.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-2b39d24b38c5",
+          "text": "Procedure Documentation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-d487f91bff3d",
+          "text": "Complication Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-8ffbfee6a1c2",
+          "text": "Imaging Follow-up",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-R-86f217c295ee",
+          "text": "Longitudinal Outcomes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4072
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-CARD-SURGERY-M-9e0c21901680",
+          "text": "# Pediatric Heart Surgery Registry",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            847
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            847,
+            3067,
+            3669,
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            847,
+            3067,
+            3669,
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            847,
+            3067,
+            3669,
+            4072
+          ]
+        },
+        {
+          "id": "CAN-CARD-SURGERY-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            847,
+            3067,
+            3669,
+            4072
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "c4f5e19d2cd6b4b5133dfc350b19c798031cb607148134789a12cd55fa5a9edf"
+    },
+    {
+      "id": "CAN-CARD-REMOTE",
+      "title": "Remote pediatric cardiology care coordination",
+      "decision": "PED2-CARD-REMOTE",
+      "owner": "CAP-TELEMEDICINE",
+      "entities": [
+        "Encounter",
+        "RemoteReport",
+        "MonitoringPlan",
+        "EscalationTask"
+      ],
+      "workflow": "Authorize consultation/monitoring scope → receive provenance-tagged reports → clinician review → acknowledgement/action → follow-up.",
+      "retained": "Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-CARD-REMOTE.md",
+      "source_ids": [
+        3074,
+        3676,
+        4079
+      ],
+      "semantic_decision": "PED2-CARD-REMOTE",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-CARD-REMOTE. Preserve family consultation, AI translation, ECG/echo review, home wearable/BP/heart-rate/symptom data. A connected device does not prove continuous clinical coverage.",
+      "requirements": [
+        {
+          "id": "CAN-CARD-REMOTE-R-4ffaf4e75ce9",
+          "text": "Supports remote pediatric cardiology.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3074,
+            3676
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-d6386a3d8ec3",
+          "text": "ECG Review",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3074,
+            3676
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-203af1695dfc",
+          "text": "Echo Review",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3074,
+            3676
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-7be9b9d114a2",
+          "text": "Remote Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3074
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-64323ab01d08",
+          "text": "Family Consultation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3074
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-24d65c02642b",
+          "text": "AI Translation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3074
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-2b16f181325d",
+          "text": "Video Consultation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3676,
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-680a401d84b7",
+          "text": "Medication Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3676
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-70b7f76c0ca0",
+          "text": "Follow-up Care",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3676
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-129031279fcc",
+          "text": "Supports remote pediatric cardiac care.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-5a5b427f7cdd",
+          "text": "Home Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-06156a7e8d89",
+          "text": "Wearable Data",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-79e48fe77c57",
+          "text": "Blood Pressure",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-4df979553442",
+          "text": "Heart Rate",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-349de6d74617",
+          "text": "Symptom Diaries",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-fcb83ab75eb5",
+          "text": "ECG Devices",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-b43929b3e4a8",
+          "text": "Follow-up",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-R-4cd39c489795",
+          "text": "Supports escalation workflows based on predefined clinical criteria.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4079
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-CARD-REMOTE-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3074,
+            3676
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3074,
+            3676,
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3074,
+            3676,
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3074,
+            3676,
+            4079
+          ]
+        },
+        {
+          "id": "CAN-CARD-REMOTE-M-1b585a0b235b",
+          "text": "Integrates",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4079
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-TELEMEDICINE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "d9e0a8b160a7c868dbdb9e03d666d23f097d4fc97c26aba68f621a52a7b24bf2"
+    },
+    {
+      "id": "CAN-RENAL-FUNCTION",
+      "title": "Pediatric renal function observation and trend profile",
+      "decision": "PED2-RENAL-FUNCTION",
+      "owner": "CAP-LABORATORY",
+      "entities": [
+        "Observation",
+        "RenalBaseline",
+        "EquationReference",
+        "TrendAssessment"
+      ],
+      "workflow": "Ingest validated results → bind units/method/age/context → clinician-approved calculation → baseline comparison → review.",
+      "retained": "Retain urea, creatinine, cystatin C, eGFR, urinary markers, protein/albumin, electrolytes, acid-base, recovery and persistent-pattern distinctions. Unknown context cannot imply normality.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+      "source_ids": [
+        926,
+        4552
+      ],
+      "semantic_decision": "PED2-RENAL-FUNCTION",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-RENAL-FUNCTION. Retain urea, creatinine, cystatin C, eGFR, urinary markers, protein/albumin, electrolytes, acid-base, recovery and persistent-pattern distinctions. Unknown context cannot imply normality.",
+      "requirements": [
+        {
+          "id": "CAN-RENAL-FUNCTION-R-695a4a1076c7",
+          "text": "Tracks renal function.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-dfe0ee72c9c7",
+          "text": "Creatinine",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-b5e81565f0e4",
+          "text": "eGFR",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-3a662f284545",
+          "text": "Urea",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-068c97192d8b",
+          "text": "Electrolytes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-d9b8c284ee55",
+          "text": "Provide a unified longitudinal engine for assessment and monitoring of pediatric kidney function.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-43ebc3abb216",
+          "text": "Creatinine Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-f89ab7f00d71",
+          "text": "Cystatin C Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-75552f1c8986",
+          "text": "eGFR Calculation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-1bef2f239610",
+          "text": "Age-adjusted Renal Function Interpretation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-8cb4f2528491",
+          "text": "Baseline Kidney Function",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-5074539d8a5d",
+          "text": "Renal Function Trend Analysis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-e49b455825b8",
+          "text": "Proteinuria Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-f1fa65211415",
+          "text": "Albuminuria Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-8629dadbe4ea",
+          "text": "Urinary Biomarkers",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-c467e1dd8b74",
+          "text": "Electrolyte Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-5054bfb7407a",
+          "text": "Acid-Base Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-f57b4ef39ba2",
+          "text": "Historical Comparison",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-dbc8f78ac2c4",
+          "text": "Laboratory Abnormality Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-6e743e5ca590",
+          "text": "Renal Recovery Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-3ecd09f16f16",
+          "text": "Clinical Logic:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-3fe336c58ab5",
+          "text": "The system differentiates isolated abnormal results from persistent, recurrent or progressively worsening patterns.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-7adc7d7e0feb",
+          "text": "Data Context:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-332aa8ddb763",
+          "text": "Age",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-c9df902dbbaf",
+          "text": "Sex where clinically relevant",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-15f6f1cd7df2",
+          "text": "Growth",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-a916486c5b56",
+          "text": "Hydration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-915e7038bbb6",
+          "text": "Medication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-74e594b9773e",
+          "text": "Acute Illness",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-b8472af3428e",
+          "text": "Chronic Disease",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-38a0d7b98bbb",
+          "text": "Previous Renal Function",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-b35155b30d64",
+          "text": "Laboratory Methodology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-0450746eb341",
+          "text": "Alerts:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-bd4e4c835f86",
+          "text": "Rapid Renal Function Deterioration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-41f653e253a1",
+          "text": "Critical Electrolyte Abnormality",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-7288ba399069",
+          "text": "Persistent Proteinuria",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-eb9c21d6caf1",
+          "text": "Significant Change from Patient Baseline",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-da8de39cdeea",
+          "text": "Clinician-defined Renal Risk Thresholds",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-8a44fcee55e9",
+          "text": "Integrations:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-0b6d6c57f142",
+          "text": "Laboratory Medicine",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-b26b52ae67c9",
+          "text": "Nephrology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-fd8587c6620f",
+          "text": "Pharmacy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-9bdcbb9ddb57",
+          "text": "Intensive Care",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-46e2c928ff1a",
+          "text": "Digital Twin",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-090535231fe9",
+          "text": "Medical Passport",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-R-d19840d139f3",
+          "text": "HIGH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4552
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-RENAL-FUNCTION-M-ee252e566bb6",
+          "text": "# Pediatric Kidney Function Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            926
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            926,
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            926,
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-6668d9834f1f",
+          "text": "Purpose:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-713d472307d5",
+          "text": "Core Functions:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-25900ad89eaf",
+          "text": "MVP Relevance:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4552
+          ]
+        },
+        {
+          "id": "CAN-RENAL-FUNCTION-M-907bed51aed6",
+          "text": "Status:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4552
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "0ba894f3fcb6c0e833a8541cdf00624f7c614c65ec67cd833bc4f091a8062dc7"
+    },
+    {
+      "id": "CAN-RENAL-HANDOVER",
+      "title": "Pediatric renal passport and adult-care handover",
+      "decision": "PED2-RENAL-TRANSITION",
+      "owner": "CAP-PROFILE",
+      "entities": [
+        "TransitionPlan",
+        "DisclosurePackage",
+        "DeliveryReceipt",
+        "HandoverAcknowledgement"
+      ],
+      "workflow": "Readiness/skills assessment → authorized current summary → receiving-provider transfer → confirmation → follow-up.",
+      "retained": "Preserve renal/genetic/pathology/imaging/dialysis/transplant history, emergency context and cross-border language support. Export alone is not completed handover.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+      "source_ids": [
+        4574,
+        4599
+      ],
+      "semantic_decision": "PED2-RENAL-TRANSITION",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-RENAL-TRANSITION. Preserve renal/genetic/pathology/imaging/dialysis/transplant history, emergency context and cross-border language support. Export alone is not completed handover.",
+      "requirements": [
+        {
+          "id": "CAN-RENAL-HANDOVER-R-b747f5c8bc5c",
+          "text": "Preserve critical kidney information across institutions, countries and the transition from pediatric to adult medicine.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-e93887a8ff8c",
+          "text": "Medical Passport Data:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-1f415fa2897b",
+          "text": "Major Renal Diagnosis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-8cb4f2528491",
+          "text": "Baseline Kidney Function",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-677780ae3269",
+          "text": "CKD Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-62b57fc5bcdb",
+          "text": "Dialysis Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-e7c825e7a0bd",
+          "text": "Kidney Transplant Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-264e7a297040",
+          "text": "Critical Medication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-6fffad6b3a5c",
+          "text": "Immunosuppression",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-91fdb57005fc",
+          "text": "Allergies",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-3377a26e6ed1",
+          "text": "Vascular Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-eb8e79c9f73a",
+          "text": "Genetic Diagnosis",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-d6a8df5bc3cb",
+          "text": "Major Procedures",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-9bb7a5366c6e",
+          "text": "Emergency Considerations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-4c461a62d3ef",
+          "text": "Transition Functions:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-aef1de96faac",
+          "text": "Structured Pediatric Summary",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-19ff6be4228f",
+          "text": "Longitudinal Renal History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-95141fd7445a",
+          "text": "Treatment History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-548f7ee95f9b",
+          "text": "Dialysis History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-610b3dca33b4",
+          "text": "Transplant History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-52a2af8f6855",
+          "text": "Genetics",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-0766f15902ef",
+          "text": "Imaging",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-02cafcd555ad",
+          "text": "Pathology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-4d60372302ce",
+          "text": "Current Care Plan",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-d83d117a6ebc",
+          "text": "Adult Specialist Handover",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-2ffeb7fded13",
+          "text": "Cross-Border Functions:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-faa79f417bf1",
+          "text": "Multilingual Clinical Summary",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-57152374b0b4",
+          "text": "Standardized Data Exchange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-79e2d285c7e9",
+          "text": "Patient-authorized Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-9690b2f261e2",
+          "text": "Emergency Access Rules",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-0c32a9d8779f",
+          "text": "Jurisdiction-aware Data Sharing",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4574
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-d817e5b5f783",
+          "text": "Prevent loss of clinically important information when pediatric renal patients transition into adult healthcare.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-40479dbe5df5",
+          "text": "Transition Readiness",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-4e38765492e4",
+          "text": "Patient Education",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-10259600b9dd",
+          "text": "Self-management Skills",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-bf4bc4ae92f5",
+          "text": "Diagnosis History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-adf5418fcab9",
+          "text": "Kidney Function History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-255756747fd3",
+          "text": "Surgical History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-c0f807a9d457",
+          "text": "Medication History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-7635a63873a1",
+          "text": "Complication History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-3832a969ef9b",
+          "text": "Adult Provider Handover",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-7c6682dddc43",
+          "text": "Lifelong Record:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-6b3bb92314d4",
+          "text": "Preserves the pediatric renal trajectory as part of the patient's permanent EDHT health history.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-4b136c8b4ad9",
+          "text": "Transition Workflow:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-a242da07bcc8",
+          "text": "Preparation → Readiness Assessment → Structured Summary → Adult Provider Transfer → Confirmation → Follow-up.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-1a93c6610477",
+          "text": "Medical Passport:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-R-c13c4eeb9ba5",
+          "text": "Critical renal and transplant information remains continuously available according to authorization rules.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4599
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-RENAL-HANDOVER-M-6668d9834f1f",
+          "text": "Purpose:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-M-907bed51aed6",
+          "text": "Status:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4574,
+            4599
+          ]
+        },
+        {
+          "id": "CAN-RENAL-HANDOVER-M-713d472307d5",
+          "text": "Core Functions:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4599
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "e48b81fef7c88650fd50b44f1c378c18322260617661e347eae035e09f5f89c7"
+    },
+    {
+      "id": "CAN-MENTAL-MEDICATION",
+      "title": "Pediatric psychotropic medication safety profile",
+      "decision": "PED2-MENTAL-MEDICATION",
+      "owner": "CAP-CDS",
+      "entities": [
+        "MedicationEpisodeReference",
+        "DoseChangeReference",
+        "MonitoringRequirement",
+        "MonitoringResult",
+        "ResponseAssessment"
+      ],
+      "workflow": "Reconcile exposure → verify indication/context → evaluate approved monitoring rules → clinician review → separately authorized order action.",
+      "retained": "Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+      "source_ids": [
+        3993,
+        4842,
+        5166
+      ],
+      "semantic_decision": "PED2-MENTAL-MEDICATION",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-MENTAL-MEDICATION. Preserve start/stop/titration, growth/weight, cardiovascular/metabolic/neurological/sleep effects, adherence, response and adverse reactions. No autonomous prescribing/dose changes.",
+      "requirements": [
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-64a27a6be597",
+          "text": "Supports clinician-supervised psychiatric medication management.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-bb5561e96d69",
+          "text": "Medication Registry",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993,
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-14b7fb321b1c",
+          "text": "Dose Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-7220107f14f0",
+          "text": "Adverse Effects",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993,
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-24bc8031bc14",
+          "text": "Drug Interactions",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993,
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-23598ca51009",
+          "text": "Response Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-95141fd7445a",
+          "text": "Treatment History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-74ab1f68cbe1",
+          "text": "Medication Reconciliation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993,
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-9d46fae15e65",
+          "text": "All prescribing remains subject to licensed clinician review and local regulations.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-7b2feeccf778",
+          "text": "Provide medication safety and longitudinal monitoring for pediatric psychotropic treatment.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-9344e65d0c66",
+          "text": "Indication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-1eedfb4e4326",
+          "text": "Dose History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-168dd2e1eb58",
+          "text": "Weight-related Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-6434bcd98ca2",
+          "text": "Medication Changes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-d49021a162ac",
+          "text": "Treatment Response",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-2ca4bc5f723e",
+          "text": "Adherence",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-16ec31936912",
+          "text": "Laboratory Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-f7f1673e9cd4",
+          "text": "Cardiovascular Monitoring Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-94c3324a34ec",
+          "text": "Growth and Weight Monitoring",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-d3d0cb8dfe15",
+          "text": "Sleep Effects",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-35b349106903",
+          "text": "Neurological Effects",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-826788475ea3",
+          "text": "Safety Functions:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-f73738d9f8a5",
+          "text": "Interaction Alerts",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-3428c76c0860",
+          "text": "Duplicate Therapy Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-c50140b1de65",
+          "text": "Missing Monitoring Detection",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-d16493a3353c",
+          "text": "Allergy Integration",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-fe90aaa76648",
+          "text": "Patient-specific Risk Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-55e8654c9d9d",
+          "text": "Clinician-defined High-risk Alerts",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-8a44fcee55e9",
+          "text": "Integrations:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-e7dea5bc4edd",
+          "text": "Psychiatry",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-fd8587c6620f",
+          "text": "Pharmacy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-ccb878ea94ba",
+          "text": "Pediatrics",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-ce3e573ecbec",
+          "text": "Cardiology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-0b6d6c57f142",
+          "text": "Laboratory Medicine",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-090535231fe9",
+          "text": "Medical Passport",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-d19840d139f3",
+          "text": "HIGH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-5ed32bbfbdd4",
+          "text": "Provide comprehensive longitudinal safety management for psychiatric medication in children and adolescents.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-48d845a70404",
+          "text": "Functions:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-1266ab829738",
+          "text": "Dose",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-f71ed34399e7",
+          "text": "Weight Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-0114de832376",
+          "text": "Start/Stop",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-7f27f3af75d2",
+          "text": "Titration History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-666e7172f68d",
+          "text": "Adherence Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-c1b5a3da8d40",
+          "text": "Response",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-ed9fda42f43a",
+          "text": "Allergy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-9235e99b3261",
+          "text": "Drug Interaction",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-93874ddd9509",
+          "text": "Cardiovascular Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-31bbcb77f0d6",
+          "text": "Metabolic Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-066bb2c3fcad",
+          "text": "Neurological Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-fab11bb77f10",
+          "text": "Growth Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-8c94cace98be",
+          "text": "Automation:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-97ada4984376",
+          "text": "Monitoring Due",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-232ac179de76",
+          "text": "Laboratory Due",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-c526cbdb7584",
+          "text": "Follow-up Due",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-631e448ae34f",
+          "text": "Interaction Review",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-20517c9953dd",
+          "text": "Treatment-plan Review",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-7a54e8452271",
+          "text": "Data Model:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-8d5bf5ec30c0",
+          "text": "MedicationEpisode",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-dd3c6a7a5fed",
+          "text": "DoseChange",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-8fee5363d78d",
+          "text": "MonitoringRequirement",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-5883cb8158b1",
+          "text": "MonitoringResult",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-e8e5c95e3df5",
+          "text": "AdverseReaction",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-8d371058eaeb",
+          "text": "ResponseAssessment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-5a903588d8b4",
+          "text": "Safety:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-938b59379984",
+          "text": "Medication decisions remain clinician-controlled.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-R-80e37213d519",
+          "text": "MVP:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5166
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3993
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3993,
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3993,
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-6668d9834f1f",
+          "text": "Purpose:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-713d472307d5",
+          "text": "Core Functions:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-25900ad89eaf",
+          "text": "MVP Relevance:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4842
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-907bed51aed6",
+          "text": "Status:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4842,
+            5166
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-MEDICATION-M-c4465375628e",
+          "text": "Extended Module v2",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            5166
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-CDS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-MEDICATION",
+        "CAP-LABORATORY",
+        "CAP-AI"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "308e25d39390136403e04f3ec935850bca3050b395cecba6fb0bd77ca45f1940"
+    },
+    {
+      "id": "CAN-MENTAL-THERAPY",
+      "title": "Pediatric psychotherapy episode and protected-note record",
+      "decision": "PED2-MENTAL-THERAPY",
+      "owner": "CAP-ENCOUNTER",
+      "entities": [
+        "TherapyEpisode",
+        "SessionReference",
+        "ClinicalSummary",
+        "RestrictedSessionNote",
+        "TherapyGoal"
+      ],
+      "workflow": "Referral/indication → agreed goals/modality → sessions → outcome/review → completion/follow-up.",
+      "retained": "Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+      "source_ids": [
+        3994,
+        4841,
+        5167
+      ],
+      "semantic_decision": "PED2-MENTAL-THERAPY",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-MENTAL-THERAPY. Preserve CBT/family/behavioral/supportive therapy, individual/group care, participation/goals and outcomes. Restricted session notes stay separate from shared summaries.",
+      "requirements": [
+        {
+          "id": "CAN-MENTAL-THERAPY-R-32b1f59815cd",
+          "text": "Coordinates evidence-based psychological interventions.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-dbf1181a3ab7",
+          "text": "CBT",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-13f033fcf587",
+          "text": "Family Therapy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-f1379ed7daab",
+          "text": "Behavioral Therapy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-51b7f9f59e94",
+          "text": "Supportive Therapy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-165485c55a45",
+          "text": "Therapy Goals",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-265b91d9ca8f",
+          "text": "Progress Tracking",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-aded6182335e",
+          "text": "Referral Coordination",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-65627df64e5d",
+          "text": "Create a structured longitudinal record of psychological and psychotherapeutic interventions.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-85a20d819f30",
+          "text": "Therapy Indication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-383dac585e23",
+          "text": "Therapy Modality",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-94a34f3055e6",
+          "text": "Treatment Goals",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-72e548d1bf6d",
+          "text": "Session Registry",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-6d61bf1c1643",
+          "text": "Intervention Plan",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-80eeb7518f22",
+          "text": "Symptom Measures",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-5aadca7b0fc4",
+          "text": "Functional Goals",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-1d6eba3ae137",
+          "text": "Patient Participation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-3a85c0a570be",
+          "text": "Guardian Participation where appropriate",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-b5b61454ebf6",
+          "text": "Treatment Progress",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-aec0641017cf",
+          "text": "Treatment Modification",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-fb42aa4be41f",
+          "text": "Therapy Completion",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-b43929b3e4a8",
+          "text": "Follow-up",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-bc7ed23dd01d",
+          "text": "Outcome Measures",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-bdab984f0184",
+          "text": "Supported Care Models:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-8572fc42b28c",
+          "text": "Individual Therapy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-0758fca4ef3b",
+          "text": "Family-based Intervention",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-e19c81ab4668",
+          "text": "Group Therapy Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-f3804a173d0c",
+          "text": "Behavioral Intervention",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-079729b81fb0",
+          "text": "Skills-based Therapy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-a5bf36010800",
+          "text": "Developmentally Adapted Psychological Care",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-714533ee58f2",
+          "text": "Privacy:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-8133e7176159",
+          "text": "Detailed psychotherapy notes may be subject to enhanced access controls separate from general clinical summaries.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-2e06ae87af2f",
+          "text": "Provide structured longitudinal management of psychological and psychotherapeutic interventions without unnecessarily exposing confidential session content.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-48d845a70404",
+          "text": "Functions:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-e18948917631",
+          "text": "Therapy Type",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-cc91bf1310ec",
+          "text": "Treatment Indication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-6ddeaf505181",
+          "text": "Attendance",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-801d0b44cd33",
+          "text": "Progress Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-d72316578376",
+          "text": "Family Intervention Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-249e32195faa",
+          "text": "Treatment Completion",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-8ac2dbc8ba07",
+          "text": "Privacy Architecture:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-f608fd9b59b1",
+          "text": "Clinical Summary Layer",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-b1a088dc8588",
+          "text": "Restricted Session-note Layer",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-71925b0ded9f",
+          "text": "Consent-aware Sharing",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-0055c98eb65b",
+          "text": "Role-based Access",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-f4d80ab716c7",
+          "text": "Guardian-access Rules",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-08547ee0e90e",
+          "text": "Audit Trail",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-cdfd585a56c4",
+          "text": "Interoperability:",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-e7dea5bc4edd",
+          "text": "Psychiatry",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-c335655aec19",
+          "text": "Psychology",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-ccb878ea94ba",
+          "text": "Pediatrics",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-100a9274a922",
+          "text": "Rehabilitation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-R-f2ff9cf55b64",
+          "text": "School Support Context",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            5167
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-MENTAL-THERAPY-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3994
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3994,
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            3994,
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-6668d9834f1f",
+          "text": "Purpose:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-713d472307d5",
+          "text": "Core Functions:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4841
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-907bed51aed6",
+          "text": "Status:",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            4841,
+            5167
+          ]
+        },
+        {
+          "id": "CAN-MENTAL-THERAPY-M-c4465375628e",
+          "text": "Extended Module v2",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            5167
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "5b046e0573967dac2d0b6a562190ad9b8f5c1840c2939d2839d5202e4a9a8211"
+    },
+    {
+      "id": "CAN-ALLERGY-LABEL",
+      "title": "Drug-allergy label and specialist delabeling lifecycle",
+      "decision": "PED2-ALLERGY-DRUG-LABEL",
+      "owner": "CAP-ALLERGY",
+      "entities": [
+        "AllergyLabel",
+        "ReactionRecord",
+        "DiagnosticEvidence",
+        "DelabelingDecision"
+      ],
+      "workflow": "Capture historical label → assess reaction/diagnostic evidence → specialist conclusion → attributable label revision → notify authorized consumers.",
+      "retained": "Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+      "source_ids": [
+        1115,
+        4416,
+        4418
+      ],
+      "semantic_decision": "PED2-ALLERGY-DRUG-LABEL",
+      "owner_evidence": "Architectural owner adopted for this bounded documented workflow after existing full-body comparison PED2-ALLERGY-DRUG-LABEL. Retain original label, suspected/confirmed state, drug/class, reaction/timing/severity, alternatives, challenge and specialist decision. Never silently erase history.",
+      "requirements": [
+        {
+          "id": "CAN-ALLERGY-LABEL-R-874d7e610908",
+          "text": "Tracks medication allergies.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1115
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-2bb69d0ab72c",
+          "text": "Drug",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1115
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-402ff51a19f8",
+          "text": "Reaction",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1115,
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-08b39c7ad4b5",
+          "text": "Severity",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1115,
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-2da0e2bdeed7",
+          "text": "Alternatives",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            1115
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-c8bcbd476a83",
+          "text": "Maintains structured suspected and confirmed medication allergy records.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-915e7038bbb6",
+          "text": "Medication",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-3f0e92b105a4",
+          "text": "Drug Class",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-035951cb0230",
+          "text": "Timing",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-6dd85a905a56",
+          "text": "Treatment",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-869f7e26edf4",
+          "text": "Diagnostic Evaluation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-c95ea23cd500",
+          "text": "Confirmation Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-87ba1c3800ea",
+          "text": "Prevents unverified allergy labels from being treated as equivalent to confirmed allergy.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-11ea234bd615",
+          "text": "Supports professionally verified removal or modification of incorrect drug-allergy labels.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-169a76261a85",
+          "text": "Maintains",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-cd1b81658a13",
+          "text": "Original Label",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-27144d10a965",
+          "text": "Diagnostic Evidence",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-3ba5c245684e",
+          "text": "Challenge Results",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-9849ab7a6981",
+          "text": "Specialist Decision",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-3709d3218953",
+          "text": "New Status",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-1a938eb7b985",
+          "text": "Date",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-34973ef817f8",
+          "text": "Audit History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-R-9f9b5ac9d109",
+          "text": "Previous records remain traceable.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            4418
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "CAN-ALLERGY-LABEL-M-17dd6624cc5b",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1115,
+            4416
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-M-2fc1e43d2c6f",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1115,
+            4416,
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-M-8369b8654a18",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1115,
+            4416,
+            4418
+          ]
+        },
+        {
+          "id": "CAN-ALLERGY-LABEL-M-9005f6fabd68",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            1115,
+            4416,
+            4418
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-ALLERGY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "actors": [
+        "Authorized patient/guardian",
+        "Treating clinician",
+        "Relevant specialist",
+        "Authorized source service"
+      ],
+      "inputs": [
+        "Patient/tenant/purpose",
+        "Versioned authorized source records",
+        "Measurement/report/evidence context"
+      ],
+      "outputs": [
+        "Versioned specialty artifact",
+        "Provenance and uncertainty",
+        "Reviewer disposition and follow-up"
+      ],
+      "api": {
+        "commands": [
+          "CreateOrUpdateRecord",
+          "ComposeAuthorizedView",
+          "RecordProfessionalReview"
+        ],
+        "required": [
+          "actor",
+          "tenant",
+          "purpose",
+          "contextVersion",
+          "idempotencyKey"
+        ],
+        "errors": [
+          "ACCESS_DENIED",
+          "STALE_CONTEXT",
+          "INSUFFICIENT_EVIDENCE",
+          "INVALID_SOURCE"
+        ],
+        "events": [
+          "RecordVersionCreated",
+          "ReviewRecorded",
+          "DerivedArtifactInvalidated"
+        ],
+        "status": "SPECIFIED_NOT_IMPLEMENTED"
+      },
+      "clinical_safety": "No autonomous prescribing, dose change, device control or emergency disposition. Derived output cannot overwrite measured/observed facts; reviewed recommendations and clinical orders are separate.",
+      "privacy": "Tenant, purpose, relationship, consent/assent, age, jurisdiction, expiry and revocation are checked per record/encounter. Restricted notes and family information are segmented; exports and caches inherit controls.",
+      "failure_modes": "Wrong patient/unit/source version or revoked permission fails closed. Incomplete context returns an explicit limited/unknown result. Clinical care never waits for automated data completion. Communication failure is visible and requires the configured human escalation path.",
+      "acceptance": "Preserve every source fragment, stable owner and exactly one alias per source. Reject stale versions, unknown identity/units, unauthorized disclosures and autonomous clinical writes. Verify idempotent events and correction history.",
+      "open_gates": "Clinical intended-use approval, jurisdiction policy, terminology/profile releases, partner conformance, runtime security and numerical/model evaluation remain open. Documentation adoption does not close them.",
+      "document_sha256": "91ad570db8389c71764d1614ce20bac130e05517c043d5ec6467cc2bd107d5c6"
+    }
+  ]
+}

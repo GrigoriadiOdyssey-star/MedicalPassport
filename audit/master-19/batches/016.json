@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-19",
+  "batch": 16,
+  "family": "pediatric-procedure-and-functional-studies",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    4030,
+    4055,
+    4065,
+    4604,
+    5052
+  ],
+  "decision_sha256": "dabc83aa14f5e0310a0b8490493ba900bf5a525efa67590eb055fe213a281d40",
+  "source_hashes": {
+    "4030": "db9ca28aa15fb51bfa71eb8da559c6359bdc890fda2b771fd7026d342000bd33",
+    "4055": "1181ced9c361fcccfd30daf937485966ee3f99898143c77309b0db939b47312c",
+    "4065": "dc270e74142093202b849c2150bbe9dcc53649984e2c50e585a992dc8ad6b84e",
+    "4604": "25ad595db4dc6dfd29e9cbba216aee49b63513e608c81d0e92f7558c2ba8bc5d",
+    "5052": "6433c289b99dfbb6bcaca8883224ebf9723f0e90da176144ac06124e6db2540f"
+  }
+}

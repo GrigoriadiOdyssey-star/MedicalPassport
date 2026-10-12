@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 24,
+  "family": "ai-notification-escalation-handoff",
+  "owner": "CAP-NOTIFICATIONS",
+  "ids": [
+    1510,
+    1751,
+    1771,
+    1973
+  ],
+  "decision_sha256": "b5d6751a7e33149c121cc1a8ddd9cf393d14da5f19dc10871746bb8cc65ec2b8",
+  "source_hashes": {
+    "1510": "1afb550c127b26d2c7d79d25087f69076a4ffc23750ba1baece3ed69c5c6a2d0",
+    "1751": "369e4cc200e73216fb0059c7fb6e7cb10eaad7ed18024c3f0c610cb8ad8154b3",
+    "1771": "ab80ded969183d3fb79a669c081383103c53f9bdddf0a6f7821bc0bc4b2c6671",
+    "1973": "b4182be5b5911152118aa52c5ecd8762514c82d2c439eb7a8d991e2ef4f8bd0d"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-19",
+  "batch": 14,
+  "family": "pediatric-imaging-longitudinal-profiles",
+  "owner": "CAP-IMAGING",
+  "ids": [
+    4132,
+    4357,
+    4564,
+    4712,
+    4971
+  ],
+  "decision_sha256": "ba4b7de4bb316a929cd2940af13783e6d0abcf9ab01f789934aff0373b51bbdd",
+  "source_hashes": {
+    "4132": "53aba431244f07291b0218e4ca548279f8fe447b1c377975128db4513244113e",
+    "4357": "cc7548a6ccf406fec12905a1587a7cc4743b0ea2c2503551df98b0e75cf8689c",
+    "4564": "df96a284d87fed024b61554e09189a280eec95b88d9a3d641594b58f9aa85bd6",
+    "4712": "825581e25fdd60778e47a4f145f303815b14ff26693c5f210fd15a4d8e59c301",
+    "4971": "fa49cdd4a3542233787d65e295edcfbdd10c231b2943e3369b49db23a6af2fdf"
+  }
+}

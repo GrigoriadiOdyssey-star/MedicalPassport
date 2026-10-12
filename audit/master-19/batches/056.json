@@ -1,0 +1,29 @@
+{
+  "pass": "MASTER-19",
+  "batch": 56,
+  "family": "male-reproductive-longitudinal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    655,
+    666,
+    670,
+    675,
+    682,
+    683,
+    685,
+    689,
+    690
+  ],
+  "decision_sha256": "802c54dc0d0eaa8654370b86d90fd0e8c96f4a0387fc53916edaf29e78389326",
+  "source_hashes": {
+    "655": "13ed6169c2cc7504120006031e8b43251506f5018c22b5695106f5249dce44b9",
+    "666": "90445672d630b4ef2f56135ac1b03ab8c21e84b21f3be9c999edef5a585fc14a",
+    "670": "c6f0a1ac31678672d07e435930351ab8cabcbf6bec0bd14bfcd4bffefc6615ba",
+    "675": "832133ead0477d3bcef42e990a5a26bf4560dc108aebef58e7bee3492e3d2115",
+    "682": "926a7a4636bc0c23abdf1c09bcd8efddf38f9e23f948d52b6514c23146378de5",
+    "683": "170b5dc693878c0970543d06849dfb4338b3bf50ef835da34763cb62eb4ff4f6",
+    "685": "ab905dfb4f70a6bfedcfe93314dadc698c93bf60d8f75261e67584245b18e93b",
+    "689": "e2d4163d9f4b5f7f31f9f2bdd993bc2c94aba1daaab15c99e76148ad43b58633",
+    "690": "02aef1edbfd85a84850419379d757fcaa063347141278780392971b133e54ffd"
+  }
+}

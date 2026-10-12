@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 23,
+  "family": "ai-medication-history-and-safety",
+  "owner": "CAP-MEDICATION",
+  "ids": [
+    1153,
+    1251,
+    1315,
+    1772
+  ],
+  "decision_sha256": "1fa52c471af4557384b5d7376d69cadcdce4b4e24790a826582fad4fc146ceb7",
+  "source_hashes": {
+    "1153": "dc23f6bc93ff2c3cf3c421ede316df844ec1bfc90dbf72f137b89aefe6b43441",
+    "1251": "edf96fd419b0254e6f540a2b834de5c9c80dc93f504a028b979f805a28b96f68",
+    "1315": "eec4055084731be3dfa9f4766770cbadeb56bd4341117c3bc7d60228a7e643de",
+    "1772": "c723deb3713a364d554925c35333b9a61c28c1c779395755c13c925b4b0d5452"
+  }
+}

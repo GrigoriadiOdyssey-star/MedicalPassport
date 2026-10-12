@@ -1,0 +1,40 @@
+export const parent='5f154798980952e0320b49542b38d23d95d1ac29';
+export const domains={
+ NEURO:{ranges:[[881,900],[3341,3360],[3961,3980],[4601,4625],[5076,5100]],note:'Preserve seizure report versus confirmed classification, EEG technical quality and synchronized video, development plateau/regression, genetic reanalysis, multisystem neuromuscular surveillance, rescue plan/device history, rehabilitation and adult handover. No automated emergency delay, surgical eligibility, diagnosis or treatment; optional video/wearables require authorized validated use.'},
+ ENDOCRINE:{ranges:[[861,880],[3101,3120],[3321,3340],[3481,3500],[3623,3640],[3861,3880],[4121,4160],[4876,4900]],note:'Preserve growth/height velocity and reference context, endocrine dynamic-test timing, puberty and sensitive reproductive context, hormone/insulin exposure, pump/CGM source identity and patient-reported versus measured data. Device ingestion does not authorize autonomous insulin control; adrenal rescue and dosing remain clinician-approved.'},
+ INFECTION:{ranges:[[4251,4300],[5051,5075]],note:'Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.'},
+ REHAB:{ranges:[[4851,4875]],note:'Preserve baseline function, patient-defined goals, participation/accessibility, developmental context, therapy dose and outcome measures, assistive-device fit/maintenance, school/home context and adult handover. Functional independence and quality of life are separate from impairment scores; home programs, swallowing/feeding and return-to-activity require clinician review.'}
+};
+export const specific={
+ 4273:'Cross-border equivalence must preserve antigen, product, sequence and version; uncertain equivalence requires professional review, not automatic dose counting.',
+ 4276:'An event following vaccination does not itself establish causality; preserve product/lot/time and clinical assessment separately.',
+ 4277:'Signed offline certificate and QR access are distinct security modes; offline copies require expiry/status-at-issue and cannot promise live revocation checks.',
+ 4283:'MIC, category, organism, specimen, laboratory standard and standard version must survive interchange; categories cannot be compared without breakpoint context.',
+ 4287:'TDM requires medication administration time and sample time, not merely drug concentration; preserve both timelines and units.',
+ 4291:'An aggregate outbreak signal requires epidemiological validation and disclosure control; it does not authorize public reporting or individual diagnosis.',
+ 5058:'Emergency assessment and treatment must never wait for automated analysis; record progress without imposing data-completion gates on care.',
+ 5063:'Maternal and child records remain separate identities with authorized contextual links; perinatal linkage does not copy maternal history wholesale.',
+ 5072:'Link sequelae to the index infection without assuming causality; preserve recovery, school participation and rehabilitation context.',
+ 4852:'Diagnosis, body functions, activity, participation and environmental supports are distinct record dimensions; one severity score cannot replace them.',
+ 4859:'Retain device prescription, fit, skin tolerance, growth-related replacement and discontinuation; generic device inventory alone is insufficient.',
+ 4865:'AAC includes communication preferences, vision/hearing/motor access, symbol system, switch/eye-gaze and training; these are not interchangeable with speech score.',
+ 4871:'Patient, guardian and clinician goals can differ; retain conflict resolution, responsible professional, target review date and care-plan versions.',
+ 4872:'Remote observations do not automatically change exercise/rehabilitation prescription; clinician review is explicit.',
+ 4873:'AI cannot autonomously prescribe rehabilitation intensity, devices, surgery or medication; preserve this broader safety boundary.',
+ 3627:'Basal/bolus calculations, closed-loop systems and dose optimization are historical scope; current EDHT profile must not autonomously change insulin. A separately regulated device function is a future integration boundary, not implied authorization.',
+ 4141:'Preserve the source conditional regulated-functionality statement as future scope, while enforcing the current user requirement: EDHT does not autonomously change insulin or control delivery.',
+ 4153:'Dynamic testing requires protocol version, timed sample offsets, administered medication and specialist interpretation; never flatten results into an unordered hormone list.',
+ 4154:'Reference ranges depend on age, relevant sex context, puberty, assay and source; conflicting or missing context blocks automatic interpretation.',
+ 4159:'Ambient transcript speaker provenance, consent, selective extraction, draft state and human validation are explicit. Spoken numbers are proposed fields, not automatically measured clinician findings.',
+ 4889:'Preserve non-stigmatizing care and health/function goals; weight alone is not the outcome and must not drive unsupported labels.',
+ 4894:'DSD care requires privacy-sensitive multidisciplinary documentation, purpose-limited disclosure and age-appropriate governance; no automated irreversible clinical decision.',
+ 4604:'Raw EEG references, event/video timestamp synchronization and technical quality are unique requirements; structured report alone does not replace them.',
+ 4606:'Preserve ketogenic/surgical/neuromodulation evaluation context, multimodal case conference and cognitive/quality-of-life outcomes; AI cannot decide eligibility.',
+ 4608:'Acquisition, plateau and possible regression are distinct developmental trajectories, reviewed with assessment versions and age context.',
+ 4612:'Movement videos and wearable-derived features are optional, privacy-sensitive and require validation; they do not independently establish a diagnosis.',
+ 5080:'Patient/guardian event descriptions retain reporter and clinician classification as separate records; a seizure-like event is not automatically confirmed epilepsy.',
+ 5083:'Critical invariant: emergency treatment must not wait for automated classification or data completion.',
+ 5094:'Return-to-learn and return-to-activity decisions remain clinician-led and individualized; preserve both distinct pathways.',
+ 5097:'Device safety includes neurostimulator, pump, shunt, battery/replacement and follow-up; do not reduce this to medication interactions.',
+ 5098:'AI cannot exclude acute neurological disease or decide emergency intervention; performance and uncertainty must remain visible.'
+};

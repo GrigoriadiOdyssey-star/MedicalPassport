@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-18",
+  "batch": 5,
+  "family": "precision-clinical-workspace",
+  "owner": "CAP-PROFILE",
+  "ids": [
+    1245,
+    1381,
+    1676
+  ],
+  "decision_sha256": "b834cd61afd757c533b919d5c7ae6b1c31bce88c53a2f308cf8c016c10c920b2",
+  "source_hashes": {
+    "1245": "2ba3109495f331ee833d9101617879607cb99f1666498a2fcdac6da3969cdfb2",
+    "1381": "d97427dff122210fbe4830960ad08a6e93889e1bdeeb7b1f368fdcc6d524b0a0",
+    "1676": "3be96b920dc6cc02d2d30651b2ec90d6fbf3d1598c4de902b24fca0f00d57419"
+  }
+}

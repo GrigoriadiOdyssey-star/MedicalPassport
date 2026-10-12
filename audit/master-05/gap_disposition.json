@@ -1,0 +1,687 @@
+{
+  "schema_version": 5,
+  "pass": "MASTER-05",
+  "edition": "2026-09-15",
+  "parent_checkpoint": "4b42871cf4e76845a081b5607d3f361a77b1edf5",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "decisions": [
+    {
+      "id": "EXT-PHARM",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-CDS",
+      "target": "CORE-CAP-CDS",
+      "profile_id": "EXT-PHARM",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "Medication facts and prescriptions remain with their clinical owners; derived drug assessment belongs to CDS. Integrate the missing assessment/context/governance contract rather than duplicate a medicines database.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 1176,
+          "title": "AI Pharmacogenomics Advisor",
+          "reviewed": true,
+          "body_sha256": "0babbef856592e371d884a3aa8f2d9f3fc24bb6fe6995079eeba9cdf1ec41145"
+        },
+        {
+          "original_id": 1606,
+          "title": "AI Pharmacogenomics Engine",
+          "reviewed": true,
+          "body_sha256": "abbb42c6d4c0225870546b3dfde3e7b35f03632c5c08a262de910189abe8512c"
+        },
+        {
+          "original_id": 1727,
+          "title": "AI Drug Interaction Intelligence",
+          "reviewed": true,
+          "body_sha256": "c4c8021a8b24fc8dffb030d46e5190955a3860f3d221c2c86c0e06f2a50b8166"
+        },
+        {
+          "original_id": 2399,
+          "title": "Pharmacogenomics Module",
+          "reviewed": true,
+          "body_sha256": "994248e426bce718e5d808d00e920ab627200b9c86d387faa9b157ad59e19164"
+        },
+        {
+          "original_id": 2677,
+          "title": "Pharmacogenomics Module",
+          "reviewed": true,
+          "body_sha256": "158ba96118fc7ebcf909f14de1a23c21d126400ea078f0ae276fd83587382ef5"
+        },
+        {
+          "original_id": 4419,
+          "title": "Pediatric Drug Cross-Reactivity Intelligence Engine",
+          "reviewed": true,
+          "body_sha256": "3a7c96308a9d3688d14f493c2603f734d995486a8aeb7e982f2122e0afa3a927"
+        },
+        {
+          "original_id": 4566,
+          "title": "Pediatric Renal Pharmacology, Dosing & Nephrotoxicity Safety Engine",
+          "reviewed": true,
+          "body_sha256": "ad5782e70153b378cababd8bbbaf76cfb5a95cc3803a27d398a6b23288de24f9"
+        }
+      ],
+      "negative_sources": [
+        {
+          "original_id": 8,
+          "title": "Medicines Table",
+          "reviewed": true,
+          "body_sha256": "2df19410b9a3b13f90c45e26d40b06bd09f77bab9f048ff1636d808e69e5058f"
+        }
+      ],
+      "required_count": 8,
+      "requirement_coverage": [
+        {
+          "requirement": "Patient covariates and missingness",
+          "target_id": "M05-CAP-CDS-4272dff977cf6e63"
+        },
+        {
+          "requirement": "Medication exposure incl OTC/supplements",
+          "target_id": "M05-CAP-CDS-a2556e6de4080025"
+        },
+        {
+          "requirement": "Renal/hepatic function and pediatric/pregnancy context",
+          "target_id": "M05-CAP-CDS-59a6c47a3b33a1b4"
+        },
+        {
+          "requirement": "Genomic/PGx phenotype and uncertainty",
+          "target_id": "M05-CAP-CDS-d316d156c2d3c9ff"
+        },
+        {
+          "requirement": "Organ toxicity and adverse reaction evidence",
+          "target_id": "M05-CAP-CDS-07bd6ca8f0576ec2"
+        },
+        {
+          "requirement": "Response model/scenario comparison",
+          "target_id": "M05-CAP-CDS-451569efe5f30c88"
+        },
+        {
+          "requirement": "Clinician review boundary",
+          "target_id": "M05-CAP-CDS-f6fa32fad860566e"
+        },
+        {
+          "requirement": "Longitudinal response and governed learning",
+          "target_id": "M05-CAP-CDS-72c8ef48cd9af228"
+        }
+      ],
+      "source_document": "audit/gapfill/precision_pharmacology_architecture.md",
+      "source_document_sha256": "706e7ae399a2367270ad5f0077b91aae3e6d10b793aeae2fbcb5f0e96f376577",
+      "source_nonempty_lines": 21,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "EXT-TWIN",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-TWIN",
+      "target": "CORE-CAP-TWIN",
+      "profile_id": "EXT-TWIN",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "Patient-state/scenario profiles share versioned twin infrastructure. Hospital operations and physician workload models do not become patient physiological models.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 3073,
+          "title": "Pediatric Cardiology Digital Twin Integration",
+          "reviewed": true,
+          "body_sha256": "f5f8f72c44143c66615c066ef2422484059dc2a74babed0d81a7616cb268b4c1"
+        },
+        {
+          "original_id": 3675,
+          "title": "Pediatric Cardiology Digital Twin Integration",
+          "reviewed": true,
+          "body_sha256": "bce18293f2cc10ba3700b7809e7a6d616e8021cfbdac27ca26d05db69bedf721"
+        },
+        {
+          "original_id": 4076,
+          "title": "Pediatric Cardiology Digital Twin Integration",
+          "reviewed": true,
+          "body_sha256": "feeeac003e028b43c59f6b9b91f1c0f74b9b13e9e0d714a934873fac7ace4668"
+        }
+      ],
+      "negative_sources": [
+        {
+          "original_id": 1224,
+          "title": "AI Hospital Digital Twin",
+          "reviewed": true,
+          "body_sha256": "31442ddff365854f057df100a1f72e3d2b1485ac32de0981d000b1e2bf4dec50"
+        },
+        {
+          "original_id": 1225,
+          "title": "AI Physician Digital Twin",
+          "reviewed": true,
+          "body_sha256": "625fda56a219e58c2abd1109ee902ab5e7ccacc7ecd8ccacba59d47c3f97c6d2"
+        },
+        {
+          "original_id": 1876,
+          "title": "AI Hospital Digital Twin",
+          "reviewed": true,
+          "body_sha256": "a1c05f7fb09292575feb922f269f35686a3cc9e83ca819ea453ea2ad9d186f2d"
+        }
+      ],
+      "required_count": 7,
+      "requirement_coverage": [
+        {
+          "requirement": "Seven separated twin levels",
+          "target_id": "M05-CAP-TWIN-27657fbc6ab7082f"
+        },
+        {
+          "requirement": "Generic versus patient-derived anatomy",
+          "target_id": "M05-CAP-TWIN-279b75367fe77c0f"
+        },
+        {
+          "requirement": "CT/MRI/PET-CT/X-ray/ultrasound/OCT references",
+          "target_id": "M05-CAP-TWIN-297e8b62239ef008"
+        },
+        {
+          "requirement": "Versioned physiological/disease/treatment model",
+          "target_id": "M05-CAP-TWIN-343c75486c79a74d"
+        },
+        {
+          "requirement": "Scenario assumptions and uncertainty",
+          "target_id": "M05-CAP-TWIN-80d72ceea8584e14"
+        },
+        {
+          "requirement": "Longitudinal invalidation and replay",
+          "target_id": "M05-CAP-TWIN-7ea94c45b4214b9c"
+        },
+        {
+          "requirement": "No clinical fact overwrite",
+          "target_id": "M05-CAP-TWIN-a92971ec981e561b"
+        }
+      ],
+      "source_document": "audit/gapfill/digital_twin_architecture.md",
+      "source_document_sha256": "c92f0b0bc1e805aee32836bda4969ccc72f11d3f312242945b2e7ada5628ca20",
+      "source_nonempty_lines": 28,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "EXT-VISUAL",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-TWIN",
+      "target": "CORE-CAP-TWIN",
+      "profile_id": "EXT-VISUAL",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "Evidence-linked anatomical and joint overlays are a view profile of the twin with source clinical ownership. No independent truth store or additional canonical owner is justified.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 4076,
+          "title": "Pediatric Cardiology Digital Twin Integration",
+          "reviewed": true,
+          "body_sha256": "feeeac003e028b43c59f6b9b91f1c0f74b9b13e9e0d714a934873fac7ace4668"
+        },
+        {
+          "original_id": 4703,
+          "title": "Pediatric Arthritis Joint Mapping & Musculoskeletal Assessment Module",
+          "reviewed": true,
+          "body_sha256": "a77af46bdb3ce4b07ba69cf1e8a37bef6c2f96d72291e87033cfdad247ffd209"
+        },
+        {
+          "original_id": 5029,
+          "title": "Pediatric Digital Joint Map & Musculoskeletal Inflammation Module",
+          "reviewed": true,
+          "body_sha256": "43525138263d36643a0200fe99d2b79f8d8e69673284afd11b341562eca39ef8"
+        }
+      ],
+      "negative_sources": [
+        {
+          "original_id": 1224,
+          "title": "AI Hospital Digital Twin",
+          "reviewed": true,
+          "body_sha256": "31442ddff365854f057df100a1f72e3d2b1485ac32de0981d000b1e2bf4dec50"
+        }
+      ],
+      "required_count": 5,
+      "requirement_coverage": [
+        {
+          "requirement": "Interactive body and organ/system highlighting",
+          "target_id": "M05-CAP-TWIN-a91ecfa5d8dca18f"
+        },
+        {
+          "requirement": "Observed/measured/inferred/predicted/simulated labels",
+          "target_id": "M05-CAP-TWIN-a7c97f9027f578c2"
+        },
+        {
+          "requirement": "Treatment impact/evidence/model links",
+          "target_id": "M05-CAP-TWIN-7db1bf6f3cd95f53"
+        },
+        {
+          "requirement": "Temporal overlays and stale/unknown states",
+          "target_id": "M05-CAP-TWIN-719f178a388538b5"
+        },
+        {
+          "requirement": "Accessible alternative and no false patient anatomy",
+          "target_id": "M05-CAP-TWIN-e0db9b92930b1481"
+        }
+      ],
+      "source_document": "audit/gapfill/dynamic_organism_visualization.md",
+      "source_document_sha256": "e92066e39896e4ac5433c2661bec49e37bd200e9a515cbe2d09dbcca26677634",
+      "source_nonempty_lines": 21,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "EXT-GENOMIC",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-AI",
+      "target": "CORE-CAP-AI",
+      "profile_id": "EXT-GENOMIC",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "The extension owns scientific adapter execution. Raw genomic records stay with data/lab owners; proteinuria is a renal observation, not protein-structure intelligence. Clinical actionability remains qualified review.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 1621,
+          "title": "AI Human Genome Core Engine",
+          "reviewed": true,
+          "body_sha256": "2826516158ad3d13261b98f0f203d39f27c5ab6bbc1dcd5611056c6c2f920d7d"
+        },
+        {
+          "original_id": 2401,
+          "title": "Whole Genome Sequencing Registry",
+          "reviewed": true,
+          "body_sha256": "25a4cf10da1c230eef343d278607a8e95ef264c30a22f3801c5cd5794e7df101"
+        },
+        {
+          "original_id": 4220,
+          "title": "Pediatric Precision Oncology Engine",
+          "reviewed": true,
+          "body_sha256": "216465a3cf4849d771704282062e2ab1c6a35b0be643db55fb1ac21571e02931"
+        },
+        {
+          "original_id": 5018,
+          "title": "Pediatric Immunology Genetics, Genomics & Family Cascade Testing Module",
+          "reviewed": true,
+          "body_sha256": "5c94718ac633651481f7a8fef0c8ce6f34fd611b681906e0e161ea4ddb7e31f7"
+        },
+        {
+          "original_id": 5130,
+          "title": "Pediatric CNS Tumor Genomics & Precision Neuro-Oncology Module",
+          "reviewed": true,
+          "body_sha256": "9ce80899f02f352da79d4e9abbbc4f854c548710553974260d3d7565df491c69"
+        }
+      ],
+      "negative_sources": [
+        {
+          "original_id": 2149,
+          "title": "Proteinuria Monitoring Module",
+          "reviewed": true,
+          "body_sha256": "698037248ad25633ac62a4b9f595bd88810b9b932609cfc2de671699af81db43"
+        },
+        {
+          "original_id": 4583,
+          "title": "Pediatric Hematuria & Proteinuria Diagnostic Intelligence Module",
+          "reviewed": true,
+          "body_sha256": "cc731292d5527a0f317d2b97d2df78319d4b9099b1290430eedd3dd0300d2c88"
+        }
+      ],
+      "required_count": 5,
+      "requirement_coverage": [
+        {
+          "requirement": "Model-agnostic protein/variant adapters",
+          "target_id": "M05-CAP-AI-c02a0fdfbefe81bc"
+        },
+        {
+          "requirement": "Assembly/transcript/allele/phase provenance",
+          "target_id": "M05-CAP-AI-5e4869f941d77273"
+        },
+        {
+          "requirement": "Gene-drug/genotype-phenotype/pathway evidence",
+          "target_id": "M05-CAP-AI-5a72f00d891c84de"
+        },
+        {
+          "requirement": "Licensing and provider approval",
+          "target_id": "M05-CAP-AI-2a026f6135761ed2"
+        },
+        {
+          "requirement": "No protein prediction to clinical conclusion shortcut",
+          "target_id": "M05-CAP-AI-afce8df1ca46213a"
+        }
+      ],
+      "source_document": "audit/gapfill/protein_genomic_adapters.md",
+      "source_document_sha256": "860c09e8551ab3f32ef1609492307b9979d0347b26e18685054113c4848eec5b",
+      "source_nonempty_lines": 20,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "EXT-INTEROP",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-INTEROP",
+      "target": "CORE-CAP-INTEROP",
+      "profile_id": "EXT-INTEROP",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "Existing protocol/connector intent is extended by authorized discovery, proposed semantic mapping, loss reports, independent approval and rollback. A protocol name never establishes partner conformance.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 1356,
+          "title": "AI Medical Interoperability Hub",
+          "reviewed": true,
+          "body_sha256": "92993fad1c22dd9b19f43ee72fa4be339ef8f2305355c580a9423f658074ddf0"
+        },
+        {
+          "original_id": 1359,
+          "title": "AI Universal Health Platform Connector",
+          "reviewed": true,
+          "body_sha256": "9299c4a9acce59187c7b75f92e888004a88d50bca083f2b2414a69819e175d34"
+        }
+      ],
+      "negative_sources": [],
+      "required_count": 7,
+      "requirement_coverage": [
+        {
+          "requirement": "Read-only discovery and format profiling",
+          "target_id": "M05-CAP-INTEROP-ea8e2d92427f9854"
+        },
+        {
+          "requirement": "FHIR/HL7v2/CDA/DICOM/CSV/JSON/XML/API/export inputs",
+          "target_id": "M05-CAP-INTEROP-b4c682b8787da998"
+        },
+        {
+          "requirement": "Candidate semantic/terminology mappings with confidence",
+          "target_id": "M05-CAP-INTEROP-68a0e74d25ecedc5"
+        },
+        {
+          "requirement": "Validation and loss/conflict reporting",
+          "target_id": "M05-CAP-INTEROP-0714f81af47a1e33"
+        },
+        {
+          "requirement": "Sandbox round-trip and human approval",
+          "target_id": "M05-CAP-INTEROP-757b5756f07de8fa"
+        },
+        {
+          "requirement": "Connector registry monitoring rollback",
+          "target_id": "M05-CAP-INTEROP-8ec2befeac8dc564"
+        },
+        {
+          "requirement": "No unvalidated clinical source-of-truth writes",
+          "target_id": "M05-CAP-INTEROP-6eb99d2bef4cd730"
+        }
+      ],
+      "source_document": "audit/gapfill/adaptive_interoperability_architecture.md",
+      "source_document_sha256": "4c67316349d453d150ef86ccd0ab029c032f092f42d0e556ad09f4ff37f393d1",
+      "source_nonempty_lines": 30,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "EXT-RESEARCH",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-RESEARCH",
+      "target": "CORE-CAP-RESEARCH",
+      "profile_id": "EXT-RESEARCH",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "Research/popuIation governance shares infrastructure but keeps purpose-specific release rules; research-method education is outside cohort execution. Integrate hypothesis/evidence-release controls without causal claims.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 1438,
+          "title": "AI Population Health Surveillance",
+          "reviewed": true,
+          "body_sha256": "8564a25555e32a151b8ffb4c33dc24f9dc0d099b6457d0d3d0ccf436dccb0f68"
+        },
+        {
+          "original_id": 1440,
+          "title": "AI Global Epidemiology Core",
+          "reviewed": true,
+          "body_sha256": "17e4d018eb88e4d64c625aadbe2cb7d5218ad00e8894e912c06f95f43ed5a350"
+        },
+        {
+          "original_id": 1823,
+          "title": "AI Research Cohort Builder",
+          "reviewed": true,
+          "body_sha256": "5021cd7b4fdea7783f404458950296cabd03f5033a0ef34beae3a5882c6bdabd"
+        },
+        {
+          "original_id": 1826,
+          "title": "AI Research Hypothesis Generator",
+          "reviewed": true,
+          "body_sha256": "0c67eadc0ea22e9cb024c4779e71b966efd3ab5b69e3f73284c4d8caf3563d00"
+        },
+        {
+          "original_id": 4649,
+          "title": "Pediatric Neurosurgery Outcomes, Quality & Research Registry Module",
+          "reviewed": true,
+          "body_sha256": "ab46b30ffa8e1da130509b3a3d374c5c17199c80116ce7f4af1580583818e09f"
+        }
+      ],
+      "negative_sources": [
+        {
+          "original_id": 1915,
+          "title": "AI Research Education Platform",
+          "reviewed": true,
+          "body_sha256": "7bdbd9af1f27760245aaadbc6bf391d70ecfb7e37b0d52fe6d235ce92ca22dfc"
+        }
+      ],
+      "required_count": 7,
+      "requirement_coverage": [
+        {
+          "requirement": "Distinct analytics purposes",
+          "target_id": "M05-CAP-RESEARCH-b1a01f371983c85b"
+        },
+        {
+          "requirement": "Cohort version and longitudinal exposure/outcome",
+          "target_id": "M05-CAP-RESEARCH-a304c0b407b82cb4"
+        },
+        {
+          "requirement": "Pseudonymization/aggregation and disclosure control",
+          "target_id": "M05-CAP-RESEARCH-4ca664fbd4a531a8"
+        },
+        {
+          "requirement": "Governed hypothesis to evidence publication",
+          "target_id": "M05-CAP-RESEARCH-7c8539ee84a5174c"
+        },
+        {
+          "requirement": "No correlation-to-causation claim",
+          "target_id": "M05-CAP-RESEARCH-e3b8ae8d0997795f"
+        },
+        {
+          "requirement": "Separate training consent/legal basis",
+          "target_id": "M05-CAP-RESEARCH-6d551b6f1b39b7af"
+        },
+        {
+          "requirement": "Knowledge feedback approval and rollback",
+          "target_id": "M05-CAP-RESEARCH-138313061f2528fb"
+        }
+      ],
+      "source_document": "audit/gapfill/research_ai_architecture.md",
+      "source_document_sha256": "174e00f5345d6b2e5a77e1f3a935659a7a0d389066d9ec031eebdf13b6df0e63",
+      "source_nonempty_lines": 30,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "EXT-AI",
+      "status": "INTEGRATED",
+      "history": [
+        "DRAFT_SPECIFICATION",
+        "VALIDATED_DOCUMENTATION",
+        "INTEGRATED"
+      ],
+      "owner": "CAP-AI",
+      "target": "CORE-CAP-AI",
+      "profile_id": "EXT-AI",
+      "validation_scope": "DOCUMENTATION_SEMANTICS_AND_OWNER",
+      "clinical_validation": false,
+      "implementation_ready": false,
+      "new_canonical_owner": false,
+      "semantic_analysis": "A single gateway/router/model lifecycle supports separate Knowledge, Clinical, Personal and Research profiles. Knowledge updates are not permission to retrain or deploy a model.",
+      "search_evidence": "gap_semantic_search.json",
+      "positive_sources": [
+        {
+          "original_id": 1218,
+          "title": "AI Continuous Learning Engine",
+          "reviewed": true,
+          "body_sha256": "eccb85eb0f8fd7c59d0cbf91104a101386b25d892ead11a5c204a28d524e696e"
+        },
+        {
+          "original_id": 1259,
+          "title": "AI Continuous Clinical Learning Platform",
+          "reviewed": true,
+          "body_sha256": "ff3ca1eea165bb58548449cfdf5ff9cc5f5ca9ad6e49acd39735288e335b006b"
+        },
+        {
+          "original_id": 1369,
+          "title": "AI Model Registry",
+          "reviewed": true,
+          "body_sha256": "fce8e878912d4b40657ad9c3c044138539a40f0bd4dbfc942acc99e9c9610a99"
+        },
+        {
+          "original_id": 1471,
+          "title": "AI Adaptive Knowledge Engine",
+          "reviewed": true,
+          "body_sha256": "8437037f91eaa360689a592128e4b17aa7810b9c76c1bfa5e63ed995b4fb82fc"
+        },
+        {
+          "original_id": 1547,
+          "title": "AI Continuous Learning Engine",
+          "reviewed": true,
+          "body_sha256": "6825bc6cf09c1e7bb5ee5fd612851a70435e31338287343f56c3df7f19b95f84"
+        }
+      ],
+      "negative_sources": [],
+      "required_count": 7,
+      "requirement_coverage": [
+        {
+          "requirement": "Knowledge/Clinical/Personal/Research AI hierarchy",
+          "target_id": "M05-CAP-AI-ccd19047984023c9"
+        },
+        {
+          "requirement": "Gateway/router/model registry",
+          "target_id": "M05-CAP-AI-500bd4934719a4f3"
+        },
+        {
+          "requirement": "Routing by task/risk/privacy/jurisdiction/cost/latency/validation",
+          "target_id": "M05-CAP-AI-cc1552c4d5781128"
+        },
+        {
+          "requirement": "Approved alternative models or abstention",
+          "target_id": "M05-CAP-AI-04fb6681d745c856"
+        },
+        {
+          "requirement": "RAG/evidence versioning",
+          "target_id": "M05-CAP-AI-a5da6005f9b70b4f"
+        },
+        {
+          "requirement": "Human review/audit/uncertainty",
+          "target_id": "M05-CAP-AI-2f70b13cc79e2058"
+        },
+        {
+          "requirement": "Governed evaluation to training to deployment lifecycle",
+          "target_id": "M05-CAP-AI-a49bf1af51c72ab1"
+        }
+      ],
+      "source_document": "audit/gapfill/ai_platform_architecture.md",
+      "source_document_sha256": "9cc38d23ecf35d94e21dd7d769cdf6d09afa5344da7bc0d43ff466839748f36b",
+      "source_nonempty_lines": 23,
+      "remaining_release_gates": [
+        "architecture",
+        "data",
+        "security",
+        "privacy",
+        "interoperability",
+        "clinical_safety",
+        "testing",
+        "acceptance"
+      ]
+    }
+  ]
+}

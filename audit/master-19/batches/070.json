@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-19",
+  "batch": 70,
+  "family": "condition-assertions-and-diagnosis-api",
+  "owner": "CAP-CONDITION",
+  "ids": [
+    9,
+    58,
+    192,
+    197
+  ],
+  "decision_sha256": "8d3b37caffe0c3b0edc5b4f10008fa987102731a3d51fb21ccd4bfb6ab7c1c68",
+  "source_hashes": {
+    "9": "b9ffdfdcb49297d38da3cfb901a0bf3262f79dc39c80c0943c9b9e7cbed3d32d",
+    "58": "11bf217b47da5747f3ed888da92308525189d9742f920c16edc340f5cf481925",
+    "192": "b202b0eaef6894d664c26aaf57c9a920ffb7eb7c238b4959f4dd693163c10d63",
+    "197": "4d25b82b55a2b74462f871af5ef335cd148fd089127173fc4bfa6a3eebd95a9f"
+  }
+}

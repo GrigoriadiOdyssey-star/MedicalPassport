@@ -1,0 +1,118 @@
+{
+  "criteria": [
+    {
+      "id": "GI-AC-01",
+      "capability": "Find authoritative guidance for two jurisdictions",
+      "negative_test": "Reject title-only matches, unofficial mirrors and conflated home/current/doctor/care jurisdictions",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-02",
+      "capability": "Store current and historical versions",
+      "negative_test": "Reject history mutation, ambiguous current scope and supersession cycles",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-03",
+      "capability": "Translate to supported EDHT languages",
+      "negative_test": "Reject source-version reuse and unchecked dose/unit/negation changes; expose original",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-04",
+      "capability": "Compare recommendations structurally and contextually",
+      "negative_test": "Unmatched section is not agreement; population mismatch requires warning/abstention",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-05",
+      "capability": "Display source and pinned version",
+      "negative_test": "Missing citation/anchor cannot become a supported recommendation claim",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-06",
+      "capability": "Detect new guideline/version and metadata changes",
+      "negative_test": "Same bytes with changed official withdrawal/effective date must still be handled",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-07",
+      "capability": "Identify significant changes",
+      "negative_test": "Different PDF hash alone is not clinical change; ambiguous OCR cannot be editorial-only",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-08",
+      "capability": "Preserve prior versions",
+      "negative_test": "Source outage or replacement cannot delete known history",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-09",
+      "capability": "Notify authorized clinician",
+      "negative_test": "Deduplicate; editorial digest; no sensitive patient data in push/email",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-10",
+      "capability": "Invalidate outdated comparisons",
+      "negative_test": "Changes on either side invalidate exact dependent versions and preserve old comparison",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-11",
+      "capability": "Recompare after update",
+      "negative_test": "New artifact pins new versions; old result and selected clinician note remain immutable",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-12",
+      "capability": "Block high-risk changes pending validation",
+      "negative_test": "Dose/contraindication/emergency and high-risk population changes cannot activate CDS/Twin automatically",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-13",
+      "capability": "Preserve audit and provenance",
+      "negative_test": "Actor/jurisdictions/source/translation/model/times/classification/review/clinician decisions retained",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    },
+    {
+      "id": "GI-AC-14",
+      "capability": "Retain clinician decision authority",
+      "negative_test": "No automatic diagnosis, therapy, medication/dose/stop/care-plan change or best-country ranking",
+      "design_evidence": "docs/canonical/guideline-intelligence.md",
+      "runtime_status": "PENDING_NOT_IMPLEMENTED",
+      "clinical_validation_status": "NOT_OBTAINED"
+    }
+  ],
+  "automated_policy_tests": "tests/guideline-intelligence.test.mjs",
+  "test_limit": "Pure synthetic policy checks do not satisfy two-country retrieval, translation, clinical semantic comparison, polling or actual notification acceptance"
+}

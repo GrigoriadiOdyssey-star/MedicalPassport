@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 41,
+  "family": "ai-differential-diagnosis-addendum",
+  "owner": "CAP-CDS",
+  "ids": [
+    1324
+  ],
+  "decision_sha256": "4d984d792176366f1168f1f4fbdd3074c85faf1a262ae7d35703b3d8372c1907",
+  "source_hashes": {
+    "1324": "de841b2c87f7dc31428b251036d57bd495ca81e4f53eb61c742a112c777b359b"
+  }
+}

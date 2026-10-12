@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-17",
+  "batch": 3,
+  "family": "diagnostic-functional-studies",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    4611,
+    4746,
+    4939,
+    5089
+  ],
+  "decision_sha256": "fd06b82ee2fa406fbaee59e53e072e64215d65a213e29c4d6bff26a943376339",
+  "source_hashes": {
+    "4611": "b507d5e012f48b117e8f7ff858c16e547e128b44e33ab89bea602012f0c9fcb4",
+    "4746": "ba0dce5459e0fc45e0647134de1cc70c04e1e85675385942b98c4cf8ab69f4fe",
+    "4939": "efcc6649e2d46cfed37e228f04daa27350732ce30775c5ed27e393cac4a91b18",
+    "5089": "d2bca837a1a5c923e13f8e6467a75524157cc0647bb60647e62bcd153c56b9db"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "pass": "MASTER-17",
+  "batch": 36,
+  "family": "provider-directory-profiles",
+  "owner": "CAP-IDENTITY",
+  "ids": [
+    798,
+    817,
+    857,
+    878,
+    898,
+    917,
+    937,
+    957,
+    977
+  ],
+  "decision_sha256": "c8eb4471da44b8b4d0c2a62a02926c315831800b71a1cd9192618180b175489e",
+  "source_hashes": {
+    "798": "7d4504ddf5cca085ddb77e384f66b4456f2c6d908f118e067a23f1b950599207",
+    "817": "86f624b0efdd6f7c32bc451abc4da2f075052f7755a6de2fef4d18215bf6be4e",
+    "857": "10b3a6d2d1f3aa3a2df1f267241f70381c6e72616667268a1fefad86bc17b3d1",
+    "878": "4bcf072c04b87943b1ef138048d8fa3c504907560bb6684db10ae3b34e485baf",
+    "898": "bb0b6aed0f85215db6c7ccbbd5e24373470187badd9f6848311d2481fddc7cef",
+    "917": "e1c42409921bb394eebc4537d1bfe70aea6d7872c4e5e8e51fd66dbdb1ad38b2",
+    "937": "557cf202f5526b31a2ed9f2116a852cfe462b406971c3cb87dbd2a12c2b93304",
+    "957": "ae3eb1d5b044ec9d62cbab1bb1d2f062d63340bda7803281bff061a21dabc127",
+    "977": "f1ce1d24ccd136b8b1a7d0804a8727be957050c6e6b5a95cbc08fe83d8a0d534"
+  }
+}

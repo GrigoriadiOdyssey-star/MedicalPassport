@@ -1,0 +1,35 @@
+{
+  "pass": "MASTER-19",
+  "batch": 52,
+  "family": "skin-and-sensitive-infection-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    466,
+    468,
+    469,
+    470,
+    474,
+    480,
+    484,
+    487,
+    488,
+    490,
+    500,
+    1105
+  ],
+  "decision_sha256": "5722c2856065be123fd47e882d8a8fa65509217b100aa3c0a4775a275d23dc9b",
+  "source_hashes": {
+    "466": "58ada0d2dbf02a3aa44e1d9c49cedfb180b569dc42be2ab1911d55ba653703ba",
+    "468": "1e367a387f298fdb97036acbc618ea83ec39bb4491b1494218b53df55dd487c0",
+    "469": "ecfc429492fbb9e49ce859ef7c1a2927b1d9ece4fe2a821e0f6c394da8b9f0c8",
+    "470": "0422b9f4f107f0333587365b0288699b890fd2c9da41b5066d9d64d077f7999d",
+    "474": "df2ee7f4a74487583239985ea4d184729cf6a6360230484f69a02f68c736579c",
+    "480": "3f3a9fd1d61ff9d9f87420c06b4390dc546bef5db2eda5f6d8b838f9c747692a",
+    "484": "3262cff33c123f9495a3c6a190f773c17edce0c9135817da4022e2668b472ee4",
+    "487": "3c749afa2091b3bee8148fe2374590df072419c89323d71691d2311a8fe00936",
+    "488": "0ba91adc6feb88dea376f558b6fda463117e18056710b32e500d17065ee6a444",
+    "490": "9da8f07501446b9fb142c39220826ca34269eeabb032cf7b63b46a0d5becb2f7",
+    "500": "f62be99f2dbaa2ba2ff7376174afc89a4f649fc0e8359c2f0f56ced7fd42bb4f",
+    "1105": "fc63808d92094cc4e7b690b832d952ed658bdb6e1f3b2f876d87f6cf706dc8c1"
+  }
+}

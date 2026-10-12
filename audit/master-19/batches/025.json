@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 25,
+  "family": "pediatric-remote-dermatology",
+  "owner": "CAP-TELEMEDICINE",
+  "ids": [
+    4394
+  ],
+  "decision_sha256": "cd1b158c6bb2a88b6a65a7294fc430c3809ecb250d6122040b3206763d053028",
+  "source_hashes": {
+    "4394": "235b2cd42c910315db5e353d2101e041a51609cbdb75a202ad2a7deec90e5100"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-18",
+  "batch": 31,
+  "family": "ai-informed-consent-workflow",
+  "owner": "CAP-CONSENT",
+  "ids": [
+    1924
+  ],
+  "decision_sha256": "f11bcce36bbe3d9c11e17d6afbae5ed7c16e656827ebae790a3f9cefb9183121",
+  "source_hashes": {
+    "1924": "89adea3b848e8b6a2b80a73ed58ac4e603a81c5eabd670771ac922c4af13d1b7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-19",
+  "batch": 66,
+  "family": "neurological-longitudinal-care",
+  "owner": "CAP-SPECIALTY",
+  "ids": [
+    530,
+    532,
+    534,
+    539,
+    540
+  ],
+  "decision_sha256": "e80c01f84a202eb255f8f432c08d79a8de9efa48fe0a5d91025dd6078e63fa92",
+  "source_hashes": {
+    "530": "3bb6880bba90591ee73bd5477a05701fea05d44fddb75403e2bac2cd5b2df97b",
+    "532": "5e0b5f019ff0b4f30b1b8e381b5c503b9b3d733c361d7ad2a9a03c9487d647ac",
+    "534": "5c118e311262acba40ac62a5fa9589971d02534474bca525930294c104368629",
+    "539": "9d64a91d809305aa4f3061bda5f93bc7334c77842849894bb5295125bb06d4c9",
+    "540": "9f9b18117234849f76cc90bb2f2d4090b5868e66c106a294e53e4fe7683c1867"
+  }
+}

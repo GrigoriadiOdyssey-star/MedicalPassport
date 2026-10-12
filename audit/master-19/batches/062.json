@@ -1,0 +1,25 @@
+{
+  "pass": "MASTER-19",
+  "batch": 62,
+  "family": "remaining-platform-exchange",
+  "owner": "CAP-INTEROP",
+  "ids": [
+    202,
+    207,
+    209,
+    211,
+    213,
+    214,
+    216
+  ],
+  "decision_sha256": "0f5283e3e2e1cf3faf7ad43d86b9eea5237442dbc67cbf3013c528d0e4bbcaaf",
+  "source_hashes": {
+    "202": "2af4d054eb6be0a37fdd338e9568dc781ac5c441fd2c1938e0513ceae79d2ea2",
+    "207": "791e00dde4441b329fba7ce21f677f908290e49145439df295f6a6ac654f9209",
+    "209": "644246a3839aa7609ebc8a69b9ac0827aea42579cfa0c79fdd71c349f22b4680",
+    "211": "83fb135f51e617179ef7809345071f5f6e53537dc341217f967fa8e0765dae81",
+    "213": "3c902cefa4eda3c2121cf40ff995aac834217ec7c29e7dfdc396c32fed24ab41",
+    "214": "62a593f4b29d527ced620cbdb07fb80a2de45677667d8be1d44671162b7a08dd",
+    "216": "572f4eb800ae0a48f323f329877557bf235130d213e39044f289b7f677d51e44"
+  }
+}

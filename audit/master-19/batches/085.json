@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-19",
+  "batch": 85,
+  "family": "core-appointments-and-marketplace",
+  "owner": "CAP-APPOINTMENTS",
+  "ids": [
+    108,
+    330,
+    757
+  ],
+  "decision_sha256": "6e04d3774ccbb095f47f7a48722a3ce35cfd57f0952eb6735965ecb082757562",
+  "source_hashes": {
+    "108": "f0eb4d8ebde46b6abb17367f030929cf9cad2206cef19c5c5155987a4a1cec2a",
+    "330": "d856b1b772b34e1b98fa028d714a98da4d95a9e3b03abcab29b9f034cd0663c7",
+    "757": "7a476e4f477123da5f51bb3239788b0cedc6aa8a06148bc9f7ae9c5c102c9128"
+  }
+}

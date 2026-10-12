@@ -1,0 +1,46 @@
+image: node:24-alpine
+
+stages:
+  - validate
+
+validate-specifications:
+  stage: validate
+  script:
+    - node --version
+    - npm test
+    - npm run check
+    - npm run audit:check
+    - npm run gapfill:check
+    - npm run pediatric:check
+    - npm run domain:check
+    - npm run master04:check
+    - npm run master05:check
+    - npm run master06:check
+    - npm run master07:check
+    - npm run master08:check
+    - npm run readiness08:check
+  artifacts:
+    when: always
+    paths:
+      - data/audit-summary.json
+      - audit/master/audit_progress.json
+      - audit/master/validation.json
+      - audit/gapfill/audit_progress.json
+      - audit/gapfill/validation.json
+      - audit/pediatric-02/audit_progress.json
+      - audit/pediatric-02/validation.json
+      - audit/domain-03/audit_progress.json
+      - audit/domain-03/validation.json
+      - audit/master-04/audit_progress.json
+      - audit/master-04/validation.json
+      - audit/master-05/audit_progress.json
+      - audit/master-05/validation.json
+      - audit/master-06/audit_progress.json
+      - audit/master-06/validation.json
+      - audit/master-07/audit_progress.json
+      - audit/master-07/validation.json
+      - audit/master-08/audit_progress.json
+      - audit/master-08/validation.json
+      - audit/master-08/implementation_readiness_registry.json
+      - docs/engineering/mvp_candidate_registry.json
+    expire_in: 30 days

@@ -1,0 +1,21 @@
+{
+  "pass": "MASTER-17",
+  "batch": 2,
+  "family": "diagnostic-laboratory",
+  "owner": "CAP-LABORATORY",
+  "ids": [
+    2131,
+    3692,
+    4405,
+    4565,
+    5021
+  ],
+  "decision_sha256": "add724622d708acaae322e9750135ec6fbc68c5c2426e1c9ab344a504769152c",
+  "source_hashes": {
+    "2131": "bd16a6710fe56cc337f6fd1c0efd3c2d6d40683234b953211bbcd9359f3a161d",
+    "3692": "4ac72c923c6f57d5f334e2d4700f89fd5dd253b6c410007d26634ec22748b2a1",
+    "4405": "93987725b120193642e0d936a1562fc7ba7a3fc6b17c02e15687c1ac6c40565c",
+    "4565": "eea8748937c0baed1f10a6b7b1aca593cca4ec4b5153035e24ff16772de4bfa3",
+    "5021": "6accd91af0d825532fcbfd7bcbe24905ca4607b2ed9ede1c9966b4f7886d255c"
+  }
+}

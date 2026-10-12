@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-18",
+  "baseline_commit": "0d2a18ec63d947a841433c6442c0938541f9fbc0",
+  "feature": "GUIDELINE-INTELLIGENCE",
+  "new_canonical_owners": 0,
+  "mvp_unchanged": true,
+  "runtime_acceptance_passed": 0,
+  "runtime_acceptance_pending": 14,
+  "request_sha256": "e75f7539484696ae01b3ce29d8539f5f75b196b73841be242064a8eb3a521728",
+  "next_exact_action": "Implement GI-01 registry and GI-02 approved two-source adapters, then translation/comparison validation; do not activate clinical rules from document updates.",
+  "evidence": [
+    {
+      "path": "docs/canonical/master08/CAP-AI.md",
+      "sha256": "2b0b6ff3ad2dec7ad0a58e82394746a0138effedb151d92b959fe1658f37cc92"
+    },
+    {
+      "path": "docs/canonical/master08/CAP-CDS.md",
+      "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+    },
+    {
+      "path": "docs/canonical/guideline-intelligence.md",
+      "sha256": "09f44cf45aaa32cc5520d701cb8baee568f8ca1e539279649690f246d99e5bcb"
+    }
+  ]
+}

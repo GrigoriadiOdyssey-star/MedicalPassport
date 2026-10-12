@@ -1,0 +1,332 @@
+{
+  "pass": "MASTER-07",
+  "domain": "SURGERY",
+  "parent_checkpoint": "fb33feef4a221780672467948487b23fb04b514a",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1673 reviewed IDs.",
+  "count": 18,
+  "reviews": [
+    {
+      "original_id": 1121,
+      "title": "Pediatric Surgeon Profile",
+      "body": "# Pediatric Surgeon Profile\n\nProfessional profile of licensed pediatric surgeons.\n\nSupports\n\n• Qualifications\n\n• Experience\n\n• Surgical Specialization\n\n• Languages\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "91dc3d68c84580acdb2fe7c1fd785ef263dfb6126e5052b392b38214ab364467",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39288
+      },
+      "verdict": "Qualifications, experience, specialization and languages remain separately sourced practitioner-role facts; a profile is not credential verification, active licensure or surgical privilege approval.",
+      "feature_labels": [
+        "Qualifications",
+        "Experience",
+        "Surgical Specialization",
+        "Languages"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1122,
+      "title": "Pediatric Surgery Center Profile",
+      "body": "# Pediatric Surgery Center Profile\n\nStores pediatric surgery center information.\n\nSupports\n\n• Operating Rooms\n\n• ICU\n\n• Physicians\n\n• Contact Information\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "73e4b9d958a6e4f9331c7f81ee7ba18bf8e11a3b78c0ea2981a81f3770154e79",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39310
+      },
+      "verdict": "Operating rooms, ICU, physicians and contacts are facility capability claims with source and validity; listing an ICU does not prove present staffing, bed availability or pediatric anesthesia coverage.",
+      "feature_labels": [
+        "Operating Rooms",
+        "ICU",
+        "Physicians",
+        "Contact Information"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1123,
+      "title": "Pediatric Surgery Appointment Booking",
+      "body": "# Pediatric Surgery Appointment Booking\n\nAllows scheduling surgical consultations.\n\nSupports\n\n• Clinic\n\n• Surgeon\n\n• Telemedicine\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b18da5351850c4f5a25b90af7d168ae562f2546655708473b6c564f690a8c0c9",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39332
+      },
+      "verdict": "Clinic, surgeon and telemedicine booking require appointment ownership comparison; a reserved slot does not establish surgical indication, guardian consent or emergency access.",
+      "feature_labels": [
+        "Clinic",
+        "Surgeon",
+        "Telemedicine"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1124,
+      "title": "Pediatric Surgical Procedure Registry",
+      "body": "# Pediatric Surgical Procedure Registry\n\nStores all pediatric surgical procedures.\n\nSupports\n\n• Procedure Type\n\n• Date\n\n• Surgeon\n\n• Outcome\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "472d9aef45579d75107825e7bfed433b9f5feb2c7a57dcfc223377a02381ae56",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39352
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Procedure Type",
+        "Date",
+        "Surgeon",
+        "Outcome"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1125,
+      "title": "Pediatric Congenital Malformation Registry",
+      "body": "# Pediatric Congenital Malformation Registry\n\nTracks congenital surgical diseases.\n\nSupports\n\n• Diagnosis\n\n• Imaging\n\n• Surgery\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "27df156948dd679d3009013a3fde87e649633b596659412c36b1907d1711ced3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39374
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Diagnosis",
+        "Imaging",
+        "Surgery",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1126,
+      "title": "Pediatric Appendicitis Registry",
+      "body": "# Pediatric Appendicitis Registry\n\nTracks appendicitis treatment.\n\nSupports\n\n• Diagnosis\n\n• Surgery\n\n• Histology\n\n• Recovery\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7ea7959072c47c5cc5f34df2d13d038c998297afd56485006e12bb72976ed519",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39396
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Diagnosis",
+        "Surgery",
+        "Histology",
+        "Recovery"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1127,
+      "title": "Pediatric Hernia Registry",
+      "body": "# Pediatric Hernia Registry\n\nStores pediatric hernia cases.\n\nSupports\n\n• Inguinal\n\n• Umbilical\n\n• Diaphragmatic\n\n• Surgery\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a23ee5c841ceafc24c54630add2cd35e5dcd501d3277c4eae3f83d1819e3af70",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39418
+      },
+      "verdict": "Inguinal, umbilical and diaphragmatic hernia remain distinct anatomical and urgency contexts; one registry must not imply an interchangeable operative pathway.",
+      "feature_labels": [
+        "Inguinal",
+        "Umbilical",
+        "Diaphragmatic",
+        "Surgery"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1128,
+      "title": "Pediatric Trauma Surgery Registry",
+      "body": "# Pediatric Trauma Surgery Registry\n\nTracks emergency pediatric trauma surgery.\n\nSupports\n\n• Injury\n\n• Operation\n\n• ICU\n\n• Rehabilitation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "837fa4564171c46147127c716076f679e80c1c72aea61138b7a42c714a9ab7fb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39440
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Injury",
+        "Operation",
+        "ICU",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1129,
+      "title": "Pediatric Surgical Imaging Archive",
+      "body": "# Pediatric Surgical Imaging Archive\n\nStores preoperative and postoperative imaging.\n\nSupports\n\n• CT\n\n• MRI\n\n• Ultrasound\n\n• X-ray\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7b4422ffec42f1778af3e4b73482fc1ef0cfc71d5b6c9af53581d31e0d237b32",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39462
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "CT",
+        "MRI",
+        "Ultrasound",
+        "X-ray"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1130,
+      "title": "Pediatric Surgical AI Assistant",
+      "body": "# Pediatric Surgical AI Assistant\n\nAI assists surgical monitoring.\n\nAnalyzes\n\n• Imaging\n\n• Laboratory Results\n\n• Postoperative Recovery\n\n• Complications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "14c756a3e1f054c743641f3014c6b00a35ab2a78abe375d7043bb4ae4f3d0ac4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39484
+      },
+      "verdict": "Imaging, laboratory, recovery and complication AI tasks need separate intended-use evaluation, model/source versions and clinician disposition; no autonomous surgical monitoring response.",
+      "feature_labels": [
+        "Imaging",
+        "Laboratory Results",
+        "Postoperative Recovery",
+        "Complications"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1132,
+      "title": "Pediatric Minimally Invasive Surgery Registry",
+      "body": "# Pediatric Minimally Invasive Surgery Registry\n\nTracks laparoscopic and thoracoscopic procedures.\n\nSupports\n\n• Procedure\n\n• Equipment\n\n• Recovery\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87bf823b13a9dd8cd6d2c4f29dc70a6dadc118bf2fa18a7614f75065978ff021",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39528
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Procedure",
+        "Equipment",
+        "Recovery"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1133,
+      "title": "Pediatric Surgical Implant Registry",
+      "body": "# Pediatric Surgical Implant Registry\n\nStores implanted surgical devices.\n\nSupports\n\n• Implant\n\n• Manufacturer\n\n• Serial Number\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f4d9e6dc8171c49c1950d88f8bae59d31dd1c9907a23f53439853e8a79b621f3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39548
+      },
+      "verdict": "Manufacturer and serial number remain exact implant provenance; missing serial identity must remain unknown and never be synthesized from a device class.",
+      "feature_labels": [
+        "Implant",
+        "Manufacturer",
+        "Serial Number",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1134,
+      "title": "Pediatric Surgical Infection Registry",
+      "body": "# Pediatric Surgical Infection Registry\n\nTracks postoperative infections.\n\nSupports\n\n• Wound Infection\n\n• Antibiotic Therapy\n\n• Outcome\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b622bd08aefbf54d2443bdf84be241adae1026c7c72e32384a25808a706497fe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39570
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Wound Infection",
+        "Antibiotic Therapy",
+        "Outcome"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1135,
+      "title": "Pediatric Surgical Complication Registry",
+      "body": "# Pediatric Surgical Complication Registry\n\nStores surgical complications.\n\nSupports\n\n• Bleeding\n\n• Sepsis\n\n• Reoperation\n\n• Recovery\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4a7ae73e87d9d67ae692fd9876bfcc54e42c069575a7fef99ba77d518aeeafb5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39590
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Bleeding",
+        "Sepsis",
+        "Reoperation",
+        "Recovery"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1136,
+      "title": "Pediatric Surgical Rehabilitation Planner",
+      "body": "# Pediatric Surgical Rehabilitation Planner\n\nPlans postoperative rehabilitation.\n\nSupports\n\n• Physiotherapy\n\n• Nutrition\n\n• Activity\n\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c22956046ade0d312f6856f96f882d3f00c288eed466946f64d619d7f907bcca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39612
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Physiotherapy",
+        "Nutrition",
+        "Activity",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1137,
+      "title": "Pediatric Surgical Outcome Registry",
+      "body": "# Pediatric Surgical Outcome Registry\n\nEvaluates surgical effectiveness.\n\nSupports\n\n• Recovery Time\n\n• Quality of Life\n\n• Long-term Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "07c24d6c8c9b5a4f953965abedce5c0ab4a00c19d7694093b4c3e8c2b8b363d7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39634
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Recovery Time",
+        "Quality of Life",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1139,
+      "title": "Pediatric Surgery Analytics Center",
+      "body": "# Pediatric Surgery Analytics Center\n\nProvides surgical analytics.\n\nDisplays\n\n• Procedure Statistics\n\n• Complication Rates\n\n• Recovery Metrics\n\n• AI Forecasts\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2ce86ce073267a0d41b342fab96576322d057fe488cddb34f05821b1ab0a3f95",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39676
+      },
+      "verdict": "Procedure, complication and recovery analytics require cohort denominator, follow-up completeness and missingness; AI forecasts are not causal estimates or individual treatment advice.",
+      "feature_labels": [
+        "Procedure Statistics",
+        "Complication Rates",
+        "Recovery Metrics",
+        "AI Forecasts"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 1140,
+      "title": "Comprehensive Pediatric Surgery Dashboard",
+      "body": "# Comprehensive Pediatric Surgery Dashboard\n\nProvides a complete overview of pediatric surgical care.\n\nDisplays\n\n• Diagnoses\n\n• Procedures\n\n• Imaging\n\n• ICU\n\n• Rehabilitation\n\n• AI Recommendations\n\nActs as the central pediatric surgery workspace.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2bff697a2e244114d980114077db4f5a0d4d41706813f505d609e5c699e3f965",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 39698
+      },
+      "verdict": "Pediatric surgical workflow preserves procedure, provider, imaging, histology, infection, device and recovery provenance. Booking is not authorization for surgery; professional credentials and facility capability require source verification. Indications, anesthesia plans and complication response remain attributable clinical decisions.",
+      "feature_labels": [
+        "Diagnoses",
+        "Procedures",
+        "Imaging",
+        "ICU",
+        "Rehabilitation",
+        "AI Recommendations"
+      ],
+      "date": "2026-09-15"
+    }
+  ]
+}

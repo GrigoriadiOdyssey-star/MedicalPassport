@@ -1,0 +1,47 @@
+{
+  "pass": "MASTER-16",
+  "baseline": "audit/master-08",
+  "apply_deltas_in_order": [
+    "audit/master-09",
+    "audit/master-10",
+    "audit/master-11",
+    "audit/master-12",
+    "audit/master-13",
+    "audit/master-14",
+    "audit/master-15",
+    "audit/master-16"
+  ],
+  "merge_rules": "Union canonical profile/requirement addenda under existing owner IDs; overlay ledger/normalized/aliases by original ID; preserve all prior evidence and deep-review gates.",
+  "next_exact_cluster": {
+    "key": "diagnostic-and-assessment-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-LABORATORY",
+      "CAP-IMAGING",
+      "CAP-DEVICES",
+      "CAP-CDS",
+      "CAP-IMMUNIZATION"
+    ],
+    "ids": [
+      2008,
+      2131,
+      3692,
+      4158,
+      4321,
+      4322,
+      4324,
+      4396,
+      4405,
+      4565,
+      4611,
+      4745,
+      4746,
+      4755,
+      4767,
+      4796,
+      4939,
+      5021,
+      5089
+    ]
+  }
+}

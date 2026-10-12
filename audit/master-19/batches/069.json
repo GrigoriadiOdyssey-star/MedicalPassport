@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-19",
+  "batch": 69,
+  "family": "remaining-security-services",
+  "owner": "CAP-SECURITY",
+  "ids": [
+    224,
+    225,
+    228
+  ],
+  "decision_sha256": "ad25183d0b2ce36e7cee18cef10635d554b6a0f0f1893e052275492a6b772c76",
+  "source_hashes": {
+    "224": "c5d423d1a920c3cda7e79478a49393230bd76781ea3a3442a90df72a741990e6",
+    "225": "505cbee607073f53c88d2e12f6d7ec6348e9e30e11f4800a7fab458df9b4def4",
+    "228": "4f1c98012c5378e9d8387a5410cab716cdc80459d1ccda274112e757648ad76e"
+  }
+}

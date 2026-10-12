@@ -1,0 +1,84 @@
+{
+  "owner_dependency_graph_recomputed": false,
+  "unchanged_graph": {
+    "path": "audit/master-20/mvp_dependency_order.json",
+    "sha256": "6ba625ba6fa693c0836b28bbef9477a5776b4e49159cade307239bc9016c92fd"
+  },
+  "task_dependencies_changed": true,
+  "task_dependency_order": [
+    {
+      "task_id": "M21-IDENTITY",
+      "dependencies": [],
+      "order": 1
+    },
+    {
+      "task_id": "M21-DATA",
+      "dependencies": [
+        "M21-IDENTITY"
+      ],
+      "order": 2
+    },
+    {
+      "task_id": "M21-SECURITY",
+      "dependencies": [
+        "M21-IDENTITY",
+        "M21-DATA"
+      ],
+      "order": 3
+    },
+    {
+      "task_id": "M21-CONSENT",
+      "dependencies": [
+        "M21-SECURITY"
+      ],
+      "order": 4
+    },
+    {
+      "task_id": "M21-AUDIT",
+      "dependencies": [
+        "M21-CONSENT"
+      ],
+      "order": 5
+    },
+    {
+      "task_id": "M21-ALLERGY",
+      "dependencies": [
+        "M21-DATA",
+        "M21-SECURITY"
+      ],
+      "order": 6
+    },
+    {
+      "task_id": "M21-PROFILE",
+      "dependencies": [
+        "M21-ALLERGY",
+        "M21-CONSENT",
+        "M21-AUDIT"
+      ],
+      "order": 7
+    },
+    {
+      "task_id": "M21-AUDIT-QUERY",
+      "dependencies": [
+        "M21-AUDIT",
+        "M21-PROFILE"
+      ],
+      "order": 8
+    },
+    {
+      "task_id": "M21-RECOVERY",
+      "dependencies": [
+        "M21-AUDIT-QUERY"
+      ],
+      "order": 9
+    },
+    {
+      "task_id": "M21-E2E",
+      "dependencies": [
+        "M21-RECOVERY"
+      ],
+      "order": 10
+    }
+  ],
+  "reason": "Readiness prerequisites become implementation tasks; original owner graph remains unchanged"
+}

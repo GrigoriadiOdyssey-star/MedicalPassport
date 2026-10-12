@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "edition": "2026-09-14",
+  "pass": "GAPFILL-01",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "parent_checkpoint": "7f1e8e84a4e5a3294cab525cea5f818b0a47d2e9",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "corrections": [
+    {
+      "id": "COUNT-01",
+      "finding": "New expected 51075 is unsupported by original ZIP/snapshot",
+      "resolution": "Actual 5175 retained; missing-within-source separated from expected-but-not-evidenced range."
+    },
+    {
+      "id": "COUNT-02",
+      "finding": "Cumulative reviewed/stage metrics must not be added as exclusive counts",
+      "resolution": "Nine-way exclusive partition; generated namespaces excluded. Previous 98+5077=5175 was arithmetically consistent."
+    },
+    {
+      "id": "CLASS-01",
+      "finding": "Documentation boilerplate matched governance/documents capability rules",
+      "removed_candidate_edges": 10175,
+      "resolution": "Ignore status boilerplate and require substantive evidence."
+    },
+    {
+      "id": "CLASS-02",
+      "finding": "API substring matching is broader than API token",
+      "corrected_module_types": 0,
+      "resolution": "Require word-boundary API in title."
+    }
+  ]
+}

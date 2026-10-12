@@ -1,0 +1,5189 @@
+{
+  "version": "MASTER-25",
+  "baseline_commit": "c4c3599",
+  "scope": "All 33 registered canonical owners. Legacy original-ID audits remain unchanged.",
+  "source_registry": "audit/master-19/mvp_delta.json",
+  "backlog": "audit/master-22/mvp_implementation_backlog.json",
+  "dependency_graph": "audit/master-20/mvp_dependency_order.json",
+  "guideline_profile": {
+    "owners": [
+      "CAP-AI",
+      "CAP-DOCUMENTS",
+      "CAP-INTEROP",
+      "CAP-GOVERNANCE"
+    ],
+    "specification": "docs/canonical/guideline-intelligence.md",
+    "status": "PARTIALLY_IMPLEMENTED",
+    "implemented": [
+      "Versioned four-jurisdiction context; explicit unknown/unverified state; no approved source or clinical comparison fabricated"
+    ],
+    "missing": [
+      "Approved source network, current original versions, verified translations, comparison and surveillance"
+    ],
+    "mvp_dependency": false
+  },
+  "items": [
+    {
+      "canonical_owner": "CAP-GOVERNANCE",
+      "canonical_id": "CORE-CAP-GOVERNANCE",
+      "status": "POST_MVP",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master19/CAP-GOVERNANCE.md",
+          "sha256": "ea1ba46c22ebc0f111dfbbeda20ae7921dde9540f14ee54c80da4c5c11b1bb7a"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "platform-governance-and-architecture",
+          "path": "docs/canonical/master19/CAP-GOVERNANCE.md"
+        },
+        {
+          "name": "remaining-governance",
+          "path": "docs/canonical/master19/CAP-GOVERNANCE.md"
+        }
+      ],
+      "dependencies": [],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-IDENTITY",
+      "canonical_id": "CORE-CAP-IDENTITY",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Local sessions and synthetic practitioner identity"
+      ],
+      "missing_functions": [
+        "Real identity issuer, verified clinical authority, MFA"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master08/CAP-IDENTITY.md",
+          "sha256": "6e9494e1077dbf1ee27260de1b78eccbb0886111fe985290990c8537e236702e"
+        },
+        {
+          "path": "docs/canonical/master09/CAP-IDENTITY.md",
+          "sha256": "4f3c29c0a9d30047a8bf7a7b4bbff5f511f4d2690da32a9b4d540024f9937bd8"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-IDENTITY.md",
+          "sha256": "ccaa129f4efb81abd790f809e69f53c834144d2f5121f227604828e0d25be709"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-IDENTITY.md",
+          "sha256": "9666898335cd481efb984db243817849d4870659f0e3dddb1025b65be65cbf48"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-IDENTITY.md",
+          "sha256": "76eaa2cf5c74eb6478881f2f78cf98b41d33e428b8efdf824eb1b1c1ebaadce7"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-IDENTITY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-IDENTITY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-IDENTITY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-IDENTITY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-IDENTITY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-IDENTITY.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master09/CAP-IDENTITY.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master09/CAP-IDENTITY.md"
+        },
+        {
+          "name": "provider-directory-profiles",
+          "path": "docs/canonical/master17/CAP-IDENTITY.md"
+        },
+        {
+          "name": "identity-authentication-profiles",
+          "path": "docs/canonical/master17/CAP-IDENTITY.md"
+        },
+        {
+          "name": "ai-identity-security-consent-data",
+          "path": "docs/canonical/master18/CAP-IDENTITY.md"
+        },
+        {
+          "name": "core-identity-and-binding",
+          "path": "docs/canonical/master19/CAP-IDENTITY.md"
+        }
+      ],
+      "dependencies": [],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-SECURITY",
+      "canonical_id": "CORE-CAP-SECURITY",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Session/CSRF/ownership checks"
+      ],
+      "missing_functions": [
+        "Production hardening, encryption key operations, load acceptance"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master09/CAP-SECURITY.md",
+          "sha256": "b395136b5e5b89ec485f77be92755cb4c8b1394079d8e7be773f5e1ca67170b4"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-SECURITY.md",
+          "sha256": "c4c8b85cf67d626752da55b5fe2e0c98cd9c6edfba15d5d23735c9811e01221a"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-SECURITY.md",
+          "sha256": "93efba68c66752b245b3bbcc9e1a81acbc078546b933302828974fd3e886de3d"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master09/CAP-SECURITY.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master09/CAP-SECURITY.md"
+        },
+        {
+          "name": "ai-resource-authorization",
+          "path": "docs/canonical/master18/CAP-SECURITY.md"
+        },
+        {
+          "name": "pediatric-certificate-cryptography",
+          "path": "docs/canonical/master19/CAP-SECURITY.md"
+        },
+        {
+          "name": "laboratory-signature-controls",
+          "path": "docs/canonical/master19/CAP-SECURITY.md"
+        },
+        {
+          "name": "remaining-security-services",
+          "path": "docs/canonical/master19/CAP-SECURITY.md"
+        },
+        {
+          "name": "core-security-and-sensitive-access",
+          "path": "docs/canonical/master19/CAP-SECURITY.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-AUDIT",
+      "canonical_id": "CORE-CAP-AUDIT",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Transactional hash-chain audit"
+      ],
+      "missing_functions": [
+        "External anchoring, retention policy and disaster recovery"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master08/CAP-AUDIT.md",
+          "sha256": "dfcb694f04722f0eb220f0d704df989c14e9dd3e00940482c9bdb543bdf6dae9"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-AUDIT.md",
+          "sha256": "b656189fe623b335c70b0f4f5985116f70ff647be0b4efe612e915e1bc5bbd57"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-AUDIT.md",
+          "sha256": "947d58b0a5a309b4d50333e87c1126b7d01e2bb6296263dc29484c59f2b20e2d"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-AUDIT.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-AUDIT.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-AUDIT.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-AUDIT.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-AUDIT.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-AUDIT.md"
+        },
+        {
+          "name": "ai-decision-audit-evidence",
+          "path": "docs/canonical/master18/CAP-AUDIT.md"
+        },
+        {
+          "name": "remaining-audit-service",
+          "path": "docs/canonical/master19/CAP-AUDIT.md"
+        },
+        {
+          "name": "core-audit-history",
+          "path": "docs/canonical/master19/CAP-AUDIT.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-CONSENT",
+      "canonical_id": "CORE-CAP-CONSENT",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Recipient-bound scoped expiring/revocable grants"
+      ],
+      "missing_functions": [
+        "Exact source/version leases and recovery contracts"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-CONSENT.md",
+          "sha256": "cc8204fe96c437fc687cd7e53748aac698267566bac79a090500269004b4d7c9"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-CONSENT.md",
+          "sha256": "1ba35d4ce1642a186486f4bd5e4b87c5b44bf7c1173d57e8ef6d0651b287fb2b"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-CONSENT.md",
+          "sha256": "70c034eacdbad70cc066c0e85e61b43b7a72ad4f56d4e1abf57c27d3a040c08f"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-CONSENT.md",
+          "sha256": "49fba962c5a6f03ac0e3fb43807cc45fa7a3f9a715f23273e3df2c44d48a6314"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-CONSENT.md",
+          "sha256": "b878b5fd0f4d17bb87b5f19e34a45c96f5d54a10c82ad783104ce8ddaa4215a0"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-CONSENT.md",
+          "sha256": "c0dea3b08b433afbc660a8d7d0adbc9333562d101ac82b248d151511735af11d"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-CONSENT.md",
+          "sha256": "fda3535e1c061bcba754dffaf460b7fefa1ade9fd241c3f733c85755a61f511b"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-CONSENT.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-CONSENT.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-CONSENT.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-CONSENT.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-CONSENT.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-CONSENT.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-CONSENT.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-CONSENT.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-CONSENT.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-CONSENT.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-CONSENT.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-CONSENT.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-CONSENT.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-CONSENT.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-CONSENT.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-CONSENT.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-CONSENT.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-CONSENT.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-CONSENT.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-CONSENT.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-CONSENT.md"
+        },
+        {
+          "name": "ai-informed-consent-workflow",
+          "path": "docs/canonical/master18/CAP-CONSENT.md"
+        },
+        {
+          "name": "pediatric-adolescent-confidential-consent",
+          "path": "docs/canonical/master19/CAP-CONSENT.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-DATA",
+      "canonical_id": "CORE-CAP-DATA",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Versioned patient records"
+      ],
+      "missing_functions": [
+        "Full canonical terminology, reconciliation and recovery"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-DATA.md",
+          "sha256": "0662b6ce238971a49d8028af36bd63145128060093a7632d9b4e0d6721e9e032"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-DATA.md",
+          "sha256": "50de8821810540a15ac623def84bc42a58d28e44bc492b8a2ea6896367750514"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-DATA.md",
+          "sha256": "a8ff39947d0e3f85bfa57a7463c1292f2a95f56927a42d29cc72a4a1c5f70e83"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-DATA.md",
+          "sha256": "c906c8af6376145f8b6eafef386fbc0a5e9814ecac5fc4ead0c8ad92e1bfd147"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-DATA.md",
+          "sha256": "1ba69822688beaa7485cd04ccb7ef8a9bbc4db8b4fef35ad82d30187320c0815"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-DATA.md",
+          "sha256": "2959f63823b52a448a337419897f614483f3d19b68a18ef16ee8cb4c3f151cfb"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-DATA.md",
+          "sha256": "ff7ccf35a83d94c25a112fae41ff755ecb810540581a395458529373ff2ff59c"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-DATA.md",
+          "sha256": "a8c655135dca4c26b197e7d5ee94fc200b48cff4ccda4026ce9595254c5e2b58"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-DATA.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-DATA.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-DATA.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-DATA.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-DATA.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-DATA.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-DATA.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-DATA.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-DATA.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-DATA.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-DATA.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-DATA.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-DATA.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-DATA.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-DATA.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-DATA.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-DATA.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-DATA.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-DATA.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-DATA.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-DATA.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-DATA.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-DATA.md"
+        },
+        {
+          "name": "ai-data-lineage-governance",
+          "path": "docs/canonical/master18/CAP-DATA.md"
+        },
+        {
+          "name": "canonical-data-model-foundations",
+          "path": "docs/canonical/master19/CAP-DATA.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-INTEROP",
+      "canonical_id": "CORE-CAP-INTEROP",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_OPTIONAL",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Restricted synthetic FHIR import"
+      ],
+      "missing_functions": [
+        "Real provider integration and conformance"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-INTEROP.md",
+          "sha256": "2d84ea14d3ca173f3fd0b86d6c562c1b5fbdfa7d3277e41562eae08731e6877d"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-INTEROP.md",
+          "sha256": "14a74139072e7a74f6fe4b2971dfb0bfc7cba6cc3e2a22d82551f1573bc8c436"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-INTEROP.md",
+          "sha256": "241e1832be844a496e29fb270dfbff4e5ac3e20d34b690907c4895640b3bab4b"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-INTEROP.md",
+          "sha256": "5023d90b15b058b11b861adaf3fefc4ae41c79233123482e7c1bcfcaba5bae81"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-INTEROP.md",
+          "sha256": "8e778044e456c8f42b5acd94ff915461fd20a840a92169821faffd596de16db5"
+        },
+        {
+          "path": "docs/canonical/master11/CAP-INTEROP.md",
+          "sha256": "0182583418aefc34a7beb0a7cd54cc59c77242bb97b1821dca7366b44d845778"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-INTEROP.md",
+          "sha256": "1cc789c48cb1460dd4d9681841dd905d52f15adf76db6efb2ace46394667a740"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-INTEROP.md",
+          "sha256": "47be564dffece8d70464fea535c57c0740c7e6df0f5203cfb8fb9928a9b8b8b8"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-INTEROP.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-INTEROP.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-INTEROP.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-INTEROP.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-INTEROP.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-INTEROP.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-INTEROP.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-INTEROP.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-INTEROP.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-INTEROP.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-INTEROP.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-INTEROP.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-INTEROP.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-INTEROP.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-INTEROP.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-INTEROP.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-INTEROP.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-INTEROP.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-INTEROP.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-INTEROP.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-INTEROP.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-INTEROP.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-INTEROP.md"
+        },
+        {
+          "name": "ai-terminology-and-exchange",
+          "path": "docs/canonical/master18/CAP-INTEROP.md"
+        },
+        {
+          "name": "pediatric-vaccine-exchange",
+          "path": "docs/canonical/master19/CAP-INTEROP.md"
+        },
+        {
+          "name": "laboratory-exchange-hub",
+          "path": "docs/canonical/master19/CAP-INTEROP.md"
+        },
+        {
+          "name": "remaining-platform-exchange",
+          "path": "docs/canonical/master19/CAP-INTEROP.md"
+        },
+        {
+          "name": "core-interoperability-and-national-exchange",
+          "path": "docs/canonical/master19/CAP-INTEROP.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-QR",
+      "canonical_id": "CORE-CAP-QR",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "QR generation, scoped access and revocation"
+      ],
+      "missing_functions": [
+        "Offline verification and deployment-bound trust"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master08/CAP-QR.md",
+          "sha256": "43524ea20cc0ce0e4e30a832f5676ed11ac2d99c7ef0ef6ae603c09ee2d91b40"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-QR.md",
+          "sha256": "f09fde29b104d44c191a37a43b66132b8144a88c57dcb0a56fb8d94f5ccee1b0"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-QR.md",
+          "sha256": "e7a25001e3f348a8db3b98dde618f08b806a68d40b6b4c4925be378f30453811"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-QR.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-QR.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-QR.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-QR.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-QR.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-QR.md"
+        },
+        {
+          "name": "emergency-qr-profile",
+          "path": "docs/canonical/master17/CAP-QR.md"
+        },
+        {
+          "name": "pediatric-certificate-qr",
+          "path": "docs/canonical/master19/CAP-QR.md"
+        },
+        {
+          "name": "core-clinical-sharing-qr",
+          "path": "docs/canonical/master19/CAP-QR.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-CONSENT",
+        "CAP-AUDIT",
+        "CAP-PROFILE"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-PROFILE",
+      "canonical_id": "CORE-CAP-PROFILE",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Patient profile and scoped passport"
+      ],
+      "missing_functions": [
+        "Full longitudinal cross-provider aggregation"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-PROFILE.md",
+          "sha256": "1711c37486eb39ce2917b5601cdb12149d938684984f5c32da05122fa8f0f73a"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-PROFILE.md",
+          "sha256": "02603edd33320beb4276bbd55ae69a1acbd327ebdc9124d197483fe927235e45"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-PROFILE.md",
+          "sha256": "6510cff89f764379d778a97aeb7a41cd7f86c382e4bcdc54e4026d513e12d24a"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-PROFILE.md",
+          "sha256": "b93092404a447df0a59aa7f9ef439cd3af895c35e94463a3ff0297c3dfc4f382"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-PROFILE.md",
+          "sha256": "19715b12f6c868918384023065614207731c50d11c0ce000f14962dac92e59e8"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-PROFILE.md",
+          "sha256": "c776d05ba2cdc2b0e539a128d53596d4e6a879ab581b201d4b13a7937771a684"
+        },
+        {
+          "path": "docs/canonical/master11/CAP-PROFILE.md",
+          "sha256": "ee527b4821dc60300026456656039178d6c7eaba0e103075c85458ddf4c7156e"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-PROFILE.md",
+          "sha256": "35e7345b250e875670490a126f7fde680a7a7a0930d5c78ca361c52caec0562e"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-PROFILE.md",
+          "sha256": "a24d42d12c62cc9a8d4031681aea2ed441f846e091aafc90eac0b3ad89659e15"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-PROFILE.md",
+          "sha256": "a65a92ed5fdbdc0e13818226570597bf93b38ce106db71b23993f696942315ac"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-PROFILE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-PROFILE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-PROFILE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-PROFILE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-PROFILE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-PROFILE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-PROFILE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-PROFILE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-PROFILE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-PROFILE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-PROFILE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-PROFILE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-PROFILE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-PROFILE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-PROFILE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-PROFILE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-PROFILE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-PROFILE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-PROFILE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-PROFILE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-PROFILE.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-PROFILE.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-PROFILE.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-PROFILE.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-PROFILE.md"
+        },
+        {
+          "name": "emergency-contact-profiles",
+          "path": "docs/canonical/master17/CAP-PROFILE.md"
+        },
+        {
+          "name": "precision-clinical-workspace",
+          "path": "docs/canonical/master18/CAP-PROFILE.md"
+        },
+        {
+          "name": "ai-patient-workspace-and-timelines",
+          "path": "docs/canonical/master18/CAP-PROFILE.md"
+        },
+        {
+          "name": "ai-professional-directory",
+          "path": "docs/canonical/master18/CAP-PROFILE.md"
+        },
+        {
+          "name": "pediatric-family-vaccine-projection",
+          "path": "docs/canonical/master19/CAP-PROFILE.md"
+        },
+        {
+          "name": "laboratory-directory-projections",
+          "path": "docs/canonical/master19/CAP-PROFILE.md"
+        },
+        {
+          "name": "core-profile-and-directory-projections",
+          "path": "docs/canonical/master19/CAP-PROFILE.md"
+        },
+        {
+          "name": "remaining-profile-projections",
+          "path": "docs/canonical/master19/CAP-PROFILE.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-MEDICATION",
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Reported medicines, version history, schedules and adherence"
+      ],
+      "missing_functions": [
+        "Verified prescriptions, reconciliation and full pharmacology"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-MEDICATION.md",
+          "sha256": "01d3ab0817b21fd15c5e94da1c1805b86a6bb28feeb59310609aa0b2b82147ad"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-MEDICATION.md",
+          "sha256": "ac1cc0bc59408220249e9ed0339df0e4ecb8ccea93ab1389c6a2fd86dfebdd6f"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-MEDICATION.md",
+          "sha256": "6f7ffa2c2b1aa1c3afc8fb7db4632952d845d9cbcfc4454f27ecc62a0e434f98"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-MEDICATION.md",
+          "sha256": "262bff02e58eff48b53ea554fbb4a3fe07893bf9af7a6011054ad4a85c78fbde"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-MEDICATION.md",
+          "sha256": "956eefda95cb4a550928d75d441d8a03ac59f747542598a71eb26015ba3757e9"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-MEDICATION.md",
+          "sha256": "d2f23c7f8c2f24e9eeacb1a3790234f0f18eaf36bf46c26d3b970c338dc74bda"
+        },
+        {
+          "path": "docs/canonical/master12/CAP-MEDICATION.md",
+          "sha256": "050a39af8289ce9446ec6910bdd092159a438bb125b64ea7b369a1adf83b1c64"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-MEDICATION.md",
+          "sha256": "bc02d99e3625e2be9e44b08d7e1cd21e07facb68e1582d45aaac02137ce6d94d"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-MEDICATION.md",
+          "sha256": "8b2a7bcbe607ff2c5298d78ab0cbd5dd31a5be5d980079ec470aa6bbea547770"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-MEDICATION.md",
+          "sha256": "5c5d743cac7230e518cc8876c0338f8db578680bdeeb72319c01f40f0231e190"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-MEDICATION.md",
+          "sha256": "47fc7f571e1c1f2d4fa7f342a8ff9a733258c82bd169704ae33ffc12915a99ea"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-MEDICATION.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-MEDICATION.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-MEDICATION.md"
+        },
+        {
+          "name": "medication-profiles",
+          "path": "docs/canonical/master15/CAP-MEDICATION.md"
+        },
+        {
+          "name": "medication-reference-exposure",
+          "path": "docs/canonical/master15/CAP-MEDICATION.md"
+        },
+        {
+          "name": "registry-medication",
+          "path": "docs/canonical/master17/CAP-MEDICATION.md"
+        },
+        {
+          "name": "medication-record-profiles",
+          "path": "docs/canonical/master17/CAP-MEDICATION.md"
+        },
+        {
+          "name": "precision-medication-proposals",
+          "path": "docs/canonical/master18/CAP-MEDICATION.md"
+        },
+        {
+          "name": "ai-medication-history-and-safety",
+          "path": "docs/canonical/master18/CAP-MEDICATION.md"
+        },
+        {
+          "name": "clinical-pediatric-chemotherapy-plan",
+          "path": "docs/canonical/master18/CAP-MEDICATION.md"
+        },
+        {
+          "name": "pediatric-medication-and-precision-safety",
+          "path": "docs/canonical/master19/CAP-MEDICATION.md"
+        },
+        {
+          "name": "core-medication-exposure-and-monitoring",
+          "path": "docs/canonical/master19/CAP-MEDICATION.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-PRESCRIPTION",
+      "canonical_id": "CORE-CAP-PRESCRIPTION",
+      "status": "POST_MVP",
+      "mvp_classification": "PHASE_2",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master19/CAP-PRESCRIPTION.md",
+          "sha256": "3d639b7a09a8e5a4272aaed151444b4c013ba5cfd4ee1cecdf8526ea0428dd63"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "prescription-lifecycle-and-erx",
+          "path": "docs/canonical/master19/CAP-PRESCRIPTION.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-PHARMACY",
+      "canonical_id": "CORE-CAP-PHARMACY",
+      "status": "POST_MVP",
+      "mvp_classification": "PHASE_2",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master16/CAP-PHARMACY.md",
+          "sha256": "67a034eb1b232d18e6ed3d4e6fd2cb4f22ad78049517e1bcbfc6375f570598fa"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-PHARMACY.md",
+          "sha256": "76796be8e744609c866a4283c0fdec9474e282b30db0516e5913412d059bd165"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-PHARMACY.md",
+          "sha256": "069690cd9beaba502a97b37f966573da1c02f263dd7af157cd61125e409b4eb9"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-PHARMACY.md",
+          "sha256": "8aa854eaba3fd022f4966e42d26b67624e42e3105486703e643ea1388ab883fd"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "pharmacy",
+          "path": "docs/canonical/master16/CAP-PHARMACY.md"
+        },
+        {
+          "name": "pharmacy-availability-profiles",
+          "path": "docs/canonical/master17/CAP-PHARMACY.md"
+        },
+        {
+          "name": "ai-pharmacy-service-workflow",
+          "path": "docs/canonical/master18/CAP-PHARMACY.md"
+        },
+        {
+          "name": "core-pharmacy-directory-reservation",
+          "path": "docs/canonical/master19/CAP-PHARMACY.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-PRESCRIPTION"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-ADMINISTRATION",
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "status": "POST_MVP",
+      "mvp_classification": "PHASE_2",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+          "sha256": "4c1f8786aaa3579442ddcdbf3a08e80caac926018cbeafadeb957658e101e536"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md",
+          "sha256": "79f5147a9166364afdd75bcb9bebbb328925be3a62424cccf24c7870aecd5719"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md",
+          "sha256": "3d045677143f4550c91c0b325fb7f7ccc0f48481e0e866694d1bc7a8e289d699"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md",
+          "sha256": "53a123e70e7ffd9e4f43c8f10597e7d7ba97a361f43b3f5f61c9ed24cb91e3df"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-ADMINISTRATION.md",
+          "sha256": "9e76a4b81b901bc5cfdd8e465bc4f86cc4fc7f524e2f471855f3179dc171e4ca"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-ADMINISTRATION.md",
+          "sha256": "7f1c58e4425bc93fd48c753d6446bad36314a7b8d245f2101a15945a205bf5a8"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "administration-log-profile",
+          "path": "docs/canonical/master17/CAP-ADMINISTRATION.md"
+        },
+        {
+          "name": "core-medication-administration-history",
+          "path": "docs/canonical/master19/CAP-ADMINISTRATION.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-ENCOUNTER"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-ALLERGY",
+      "canonical_id": "CORE-CAP-ALLERGY",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_CORE",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Reported assertions, versions and critical alerts"
+      ],
+      "missing_functions": [
+        "Qualified verification and cross-source reconciliation"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-ALLERGY.md",
+          "sha256": "65fcfc6313a4ef0b9d452dc4c8e7b9caddb3894bbe4dd323f2ac09ba545cb374"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-ALLERGY.md",
+          "sha256": "138669d1366c9beceb58ae5d54293fb0157e7a1f90cfdf42922c33b0285e5caf"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-ALLERGY.md",
+          "sha256": "d0e03f3c659cb06494d1ee07327465e5e38437f624ea8009b333b65b9ed3c41c"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-ALLERGY.md",
+          "sha256": "2f07c78cdbf6e56fbbefa91c4bda90996e15d541a94541932945a31cb2fb16a5"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-ALLERGY.md",
+          "sha256": "be2cc3fc16663af1390df00e9a765c353eb637383c4f017e7b7a816ed8ed90e2"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-ALLERGY.md",
+          "sha256": "f56002a007ed7a7a17709884cb80a7920b953b711d6fc05b18b665cd13ca9ba3"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-ALLERGY.md",
+          "sha256": "acbd25c167f7f2bc6708e601771a6492799428726427e4690d7e7d110cdfb41d"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-ALLERGY.md",
+          "sha256": "89b1ee99702e92a048110f7bacfe203ec139861688e1458d40b2da4c881a820a"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-ALLERGY.md",
+          "sha256": "bf1f0132c576aab8292095f0d7e9116b70a1b34818adea185311b9d2e0b39244"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-ALLERGY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-ALLERGY.md"
+        },
+        {
+          "name": "allergy-profiles",
+          "path": "docs/canonical/master16/CAP-ALLERGY.md"
+        },
+        {
+          "name": "registry-allergy",
+          "path": "docs/canonical/master17/CAP-ALLERGY.md"
+        },
+        {
+          "name": "clinical-pediatric-hypersensitivity",
+          "path": "docs/canonical/master18/CAP-ALLERGY.md"
+        },
+        {
+          "name": "pediatric-allergy-diagnostic-and-safety",
+          "path": "docs/canonical/master19/CAP-ALLERGY.md"
+        },
+        {
+          "name": "core-allergy-assertions",
+          "path": "docs/canonical/master19/CAP-ALLERGY.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-CONDITION",
+      "canonical_id": "CORE-CAP-CONDITION",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Structured reported conditions, status/onset/resolution, provider/code, revisions/archive"
+      ],
+      "missing_functions": [
+        "Verified diagnosis lifecycle and terminology services"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master19/CAP-CONDITION.md",
+          "sha256": "554836b6aa639c9bd5a95696c3f1ae895ed3078d90df71caad640cc1ef382a91"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "condition-assertions-and-diagnosis-api",
+          "path": "docs/canonical/master19/CAP-CONDITION.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-LABORATORY",
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Structured patient-entered results, reference fields, comparable trends and immutable revisions"
+      ],
+      "missing_functions": [
+        "Laboratory issuer verification, real feeds, coded panel reconciliation and qualified result review"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-LABORATORY.md",
+          "sha256": "80c725e3f4cabde45e3804cfd17c56116a59f7f525434ccba88bf846e4dab9e2"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-LABORATORY.md",
+          "sha256": "26c11df04ea79a204ae551df42b02cfc7a0661fbab1ad178d4b6f0a1c2204d86"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-LABORATORY.md",
+          "sha256": "7fce670c3f9527f8352fb04cf1864bcd815139394cf3cb1c2fa012b2f4bddebb"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-LABORATORY.md",
+          "sha256": "e117d38da6ceb917f5568019e3bed051bb57bd24551feb7778f1894a820a2149"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-LABORATORY.md",
+          "sha256": "93611412cdff8f26f780a89f67fe8fe198258feeaecc95152fe592b5344a41f9"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-LABORATORY.md",
+          "sha256": "4a46c9f6d1959774d471abaf79f952d36aaf682463b0a3680d68db82e33e181a"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-LABORATORY.md",
+          "sha256": "0496300de4b9317a45c1fde9797382c261cf7ad94dba781ce7c3ccf3a17b6d0f"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-LABORATORY.md",
+          "sha256": "e076092b8b0901c67db574ecd87c53e3fbe933e0afb90b759f20825195bcdbda"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-LABORATORY.md",
+          "sha256": "44de971cbca5c69ce2cc7a79ab0a5fb50a9ee5739d59ff348b1db43eaf36ed23"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-LABORATORY.md",
+          "sha256": "57394973265e5caf96ab3cf69705b61d6596e19b15bbac99e9b55f036f4a9baf"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-LABORATORY.md",
+          "sha256": "7738045c31a227e8ae5aa1609acb74df5bb647c10138bca3a71f6c987cca49fe"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-LABORATORY.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-LABORATORY.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-LABORATORY.md"
+        },
+        {
+          "name": "laboratory",
+          "path": "docs/canonical/master15/CAP-LABORATORY.md"
+        },
+        {
+          "name": "laboratory-centers",
+          "path": "docs/canonical/master16/CAP-LABORATORY.md"
+        },
+        {
+          "name": "diagnostic-laboratory",
+          "path": "docs/canonical/master17/CAP-LABORATORY.md"
+        },
+        {
+          "name": "registry-laboratory",
+          "path": "docs/canonical/master17/CAP-LABORATORY.md"
+        },
+        {
+          "name": "ai-assisted-laboratory-workflows",
+          "path": "docs/canonical/master17/CAP-LABORATORY.md"
+        },
+        {
+          "name": "precision-critical-laboratory-escalation",
+          "path": "docs/canonical/master18/CAP-LABORATORY.md"
+        },
+        {
+          "name": "ai-laboratory-result-operations",
+          "path": "docs/canonical/master18/CAP-LABORATORY.md"
+        },
+        {
+          "name": "clinical-genomics-and-hemostasis-results",
+          "path": "docs/canonical/master18/CAP-LABORATORY.md"
+        },
+        {
+          "name": "pediatric-clinical-results",
+          "path": "docs/canonical/master19/CAP-LABORATORY.md"
+        },
+        {
+          "name": "laboratory-clinical-result-service-profiles",
+          "path": "docs/canonical/master19/CAP-LABORATORY.md"
+        },
+        {
+          "name": "core-laboratory-longitudinal-results",
+          "path": "docs/canonical/master19/CAP-LABORATORY.md"
+        },
+        {
+          "name": "remaining-laboratory-portal",
+          "path": "docs/canonical/master19/CAP-LABORATORY.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-IMAGING",
+      "canonical_id": "CORE-CAP-IMAGING",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Study/series/instance import, scoped object storage, report revisions and bounded pixel viewer"
+      ],
+      "missing_functions": [
+        "Broader DICOM syntax/sequence/multiframe support, certified viewer, live PACS, validated anatomy derivation"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-IMAGING.md",
+          "sha256": "e0bd9f0259f2ca1f5250ec495f30de3a9346dc68133beaa0d07030eaec3f7610"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-IMAGING.md",
+          "sha256": "d6c04c9d56a0d3d87e270d41e9c0a0aa75f3303d4d43e2f138cccdbdafe6e84e"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-IMAGING.md",
+          "sha256": "a35be68477020d8910b78ffc60edecf21830dce2023b215ed1d793a55b2488f6"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-IMAGING.md",
+          "sha256": "556f963a5b60b362f7b21bf97a18b53ff799a5fb9f9cfb914017f1742c52c702"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-IMAGING.md",
+          "sha256": "d9445f53cc736d40c2f8c802aee6d820337918ea318419211b4f09997295c8a0"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-IMAGING.md",
+          "sha256": "2b08595d5114e0c19ed9e7e7cf06765e490ce2f9b3b5d1263b77f64ffb0e5b6f"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-IMAGING.md",
+          "sha256": "6f01a0817d3e41f2bfcaa3e75b07f9ea84fd38f050d250d1b0ae75ae9f15592c"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-IMAGING.md",
+          "sha256": "6c951518f0c7b53c91fbafa7429f24ea4bc3ae65e4f4acbb164d93a50e564a71"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-IMAGING.md",
+          "sha256": "d7e5899b918e3dbddab9f12c2592d1d3455f7b8d2272875d992edb00b5b53ad6"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-IMAGING.md",
+          "sha256": "9e9dda2852d220146009d227fda1dd2bddb618d4128d0832bb221264b1ae6def"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-IMAGING.md",
+          "sha256": "9a447567f47eac8019b76dd3170c3fad12b6a343ced185f992691337ed17bb2a"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-IMAGING.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-IMAGING.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-IMAGING.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-IMAGING.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-IMAGING.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-IMAGING.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-IMAGING.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-IMAGING.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-IMAGING.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-IMAGING.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-IMAGING.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-IMAGING.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-IMAGING.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-IMAGING.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-IMAGING.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-IMAGING.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-IMAGING.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-IMAGING.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-IMAGING.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-IMAGING.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-IMAGING.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-IMAGING.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-IMAGING.md"
+        },
+        {
+          "name": "imaging",
+          "path": "docs/canonical/master15/CAP-IMAGING.md"
+        },
+        {
+          "name": "echocardiography-records",
+          "path": "docs/canonical/master16/CAP-IMAGING.md"
+        },
+        {
+          "name": "diagnostic-imaging",
+          "path": "docs/canonical/master17/CAP-IMAGING.md"
+        },
+        {
+          "name": "registry-imaging",
+          "path": "docs/canonical/master17/CAP-IMAGING.md"
+        },
+        {
+          "name": "ai-assisted-imaging-workflows",
+          "path": "docs/canonical/master17/CAP-IMAGING.md"
+        },
+        {
+          "name": "ai-imaging-data-workflow",
+          "path": "docs/canonical/master18/CAP-IMAGING.md"
+        },
+        {
+          "name": "clinical-imaging-result-profiles",
+          "path": "docs/canonical/master18/CAP-IMAGING.md"
+        },
+        {
+          "name": "pediatric-imaging-longitudinal-profiles",
+          "path": "docs/canonical/master19/CAP-IMAGING.md"
+        },
+        {
+          "name": "source-imaging-archives",
+          "path": "docs/canonical/master19/CAP-IMAGING.md"
+        },
+        {
+          "name": "remaining-imaging-archive",
+          "path": "docs/canonical/master19/CAP-IMAGING.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-DOCUMENTS",
+      "canonical_id": "CORE-CAP-DOCUMENTS",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_OPTIONAL",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Configurable resumable object-storage ingestion, SHA256, versioned originals, source labels and scoped streams"
+      ],
+      "missing_functions": [
+        "Native PDF preview, verified translation, malware service, production object provider and complete source certification"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md",
+          "sha256": "a6d77fd7d1c1b0528de6d84c7adb0c36d8fcf0bb23415ed53cf14726cf254f44"
+        },
+        {
+          "path": "docs/canonical/master11/CAP-DOCUMENTS.md",
+          "sha256": "e1bf3f268acc5f2b0a52ea8f5040b2f2872042996b273a0156060ea57a4d1032"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-DOCUMENTS.md",
+          "sha256": "d6afccf76d4314954a6b590edbcaca0f529921d324905285cf1dbd36ef34f389"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-DOCUMENTS.md",
+          "sha256": "ee88973dbf766cfb006ddb744e68d69b559afa253005c69fd0348888e412944d"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-DOCUMENTS.md",
+          "sha256": "8b659ccdff02b29960e0d275d8ca4d0d959de36477833aa82c25e75f9a6ce75b"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "document-translation-profiles",
+          "path": "docs/canonical/master17/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "ai-assisted-document-collaboration",
+          "path": "docs/canonical/master17/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "precision-genomic-report",
+          "path": "docs/canonical/master18/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "ai-clinical-document-drafts",
+          "path": "docs/canonical/master18/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "pediatric-certificate-lifecycle",
+          "path": "docs/canonical/master19/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "laboratory-document-archives",
+          "path": "docs/canonical/master19/CAP-DOCUMENTS.md"
+        },
+        {
+          "name": "core-clinical-documents",
+          "path": "docs/canonical/master19/CAP-DOCUMENTS.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-IMMUNIZATION",
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Structured vaccine/dose/manufacturer/lot/provider/certificate reference and history"
+      ],
+      "missing_functions": [
+        "Verified issuer certificates, schedules, jurisdiction rules and provider feeds"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md",
+          "sha256": "392b0a1095f6cc904e124deda5cb0ac4da70045ebdf09b26777e921d215a8224"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md",
+          "sha256": "855402dfa69a2886707966f912b171ba4d6444f9c6ab73c244d8f9bef626620b"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md",
+          "sha256": "b8c4af31d6e512de568465098e1468b1965fbf66e37d1d49e4a453a02ab8cd80"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md",
+          "sha256": "0460b6b857cf9d185e54973ca1b9e1437064e2074d15ea4426d8f6672d2b8d75"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md",
+          "sha256": "abfcb62b0419431e97c558bba14ebad6730e345852c7a8c1287b31f828e923a2"
+        },
+        {
+          "path": "docs/canonical/master11/CAP-IMMUNIZATION.md",
+          "sha256": "e6a6a841f26db0567281100e2911c416ed4253f61b0b9464f0f1fa691e7270a3"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-IMMUNIZATION.md",
+          "sha256": "be8a98c6d575f26fd0f4bda940b8231a01944a680bd2be9411009c66333566a9"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-IMMUNIZATION.md",
+          "sha256": "dbc023432902384eda217870f61d60119d91b184dab297991b8314154ad17f42"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-IMMUNIZATION.md",
+          "sha256": "1e5400ed22ada3aa3049f576c7e3e91b25bfff72305ece08eeb74720959427ee"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "diagnostic-vaccination-planning",
+          "path": "docs/canonical/master17/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "registry-immunization",
+          "path": "docs/canonical/master17/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "precision-vaccination-planner",
+          "path": "docs/canonical/master18/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "clinical-vaccination-history-and-response",
+          "path": "docs/canonical/master18/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "pediatric-vaccine-rule-profiles",
+          "path": "docs/canonical/master19/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "vaccination-history-archive",
+          "path": "docs/canonical/master19/CAP-IMMUNIZATION.md"
+        },
+        {
+          "name": "core-vaccination-records",
+          "path": "docs/canonical/master19/CAP-IMMUNIZATION.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-ENCOUNTER",
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "status": "POST_MVP",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md",
+          "sha256": "e524acd2eadf7cbe9d14af57795808b7b39e49c88c9a2536fcf822d23a0139db"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md",
+          "sha256": "a42f4c2deeff42563c22119ddf2d41dfeb88a33bd58eaf01818b987c864e8b8f"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md",
+          "sha256": "bede8ba5f4feedfa4899da437806cb77e79973a96b4b8f704abfb7f0b369e41d"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md",
+          "sha256": "032dc55c167e113b82d2ad4214826a665cfb2a2fccd0f0eeb5454c3fe0ea0654"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md",
+          "sha256": "51930786e5a9807182f45f6182f96af59715261d1aa78b4700249c7c9c0f79dd"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-ENCOUNTER.md",
+          "sha256": "a16f8f116a95ecd39ebaadd5805bbae75dce7b5fecde9a02e21a81642b366dee"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-ENCOUNTER.md",
+          "sha256": "7e5911c92a2f8650ab25d6c979a8ddbb94be27325811837382122c6a8356c14d"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-ENCOUNTER.md",
+          "sha256": "98e5bcdc9d8052fcb7f48cc5d4517032c6b2e00099766d91efcaa67e45d4b48b"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-ENCOUNTER.md",
+          "sha256": "d0461bf579d99727f7ef05258ac2b34e94777e1f60a39e5a0054b964ee16abce"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-ENCOUNTER.md",
+          "sha256": "20d48300848fe6a31989b8d0d472cf9c3df4b2ef8adf90416dff9be8d2a5d900"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "encounter-history",
+          "path": "docs/canonical/master15/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "diagnostic-functional-studies",
+          "path": "docs/canonical/master17/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "registry-encounters",
+          "path": "docs/canonical/master17/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "ai-assisted-encounter-workflows",
+          "path": "docs/canonical/master17/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "precision-followup-coordination",
+          "path": "docs/canonical/master18/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "ai-visit-referral-and-discharge-coordination",
+          "path": "docs/canonical/master18/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "clinical-acquisition-and-procedure-history",
+          "path": "docs/canonical/master18/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "pediatric-procedure-and-functional-studies",
+          "path": "docs/canonical/master19/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "source-physiological-study-archives",
+          "path": "docs/canonical/master19/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "laboratory-referral-orders",
+          "path": "docs/canonical/master19/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "core-encounter-and-referral-history",
+          "path": "docs/canonical/master19/CAP-ENCOUNTER.md"
+        },
+        {
+          "name": "remaining-hospital-portal",
+          "path": "docs/canonical/master19/CAP-ENCOUNTER.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-APPOINTMENTS",
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Patient-entered personal calendar, revisions, cancellation and scheduled notifications"
+      ],
+      "missing_functions": [
+        "Provider booking/availability, live telemedicine, externally confirmed appointments"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md",
+          "sha256": "49758257ec70085d29e8a71cc4a08772e2799a07b627d5cc6555f6b16023b54b"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+          "sha256": "26ed4c8504945fa32fe25f30d7f7b64611e87d44bfaa14871faaaeb95824a90f"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-APPOINTMENTS.md",
+          "sha256": "0def65a3555d655ee154920fcf04bdc573a32ed7a093a77562dcb439ef56fa93"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-APPOINTMENTS.md",
+          "sha256": "8aea9dc8246bd4cf2ec9e4ed9ea23451b5ddce9ce0f8e8eecc5767f6069c4e11"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-APPOINTMENTS.md",
+          "sha256": "089cb2da88ea16dab98edef94d6b0548f7a6162e60dcbb1843cf314f6258b6af"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "appointments",
+          "path": "docs/canonical/master15/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "ai-service-queue-and-scheduling",
+          "path": "docs/canonical/master18/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "laboratory-collection-booking",
+          "path": "docs/canonical/master19/CAP-APPOINTMENTS.md"
+        },
+        {
+          "name": "core-appointments-and-marketplace",
+          "path": "docs/canonical/master19/CAP-APPOINTMENTS.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-TELEMEDICINE",
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "status": "POST_MVP",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md",
+          "sha256": "f98cb67a7c6dade49a173eab737b41c2a45f78790cd7fb79a78c21b17f5f1fb6"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+          "sha256": "31653c0786be13cfacf2091fab2cca570cd3cc4c18eced51387d7880db5887fb"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md",
+          "sha256": "7432951e922d0366c393a0a56c044e63f6c2cd3d72db94c42d1ac10c3143df07"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md",
+          "sha256": "9cadf44dc97d0e983369d9a0645f2f163b669593980612a9eed5ee1fdceb11e0"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md",
+          "sha256": "f308a2df0aaf3fa67c7d4df043c71ffa1bf9f4c13d74463d4d246ba45a4f9e6d"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-TELEMEDICINE.md",
+          "sha256": "eb216d82f3e7ef3a1364c813fecbf90390964339f8fb803eafef6cbe6a40c0f1"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-TELEMEDICINE.md",
+          "sha256": "f731cd70adaa7ef63a273e94fe0d78bb32a08ac4f3c74c05bcbfae7238dc4fe4"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-TELEMEDICINE.md",
+          "sha256": "11ab9a83130d66a3b64a545b126eb31ae3c7ea30e483a112d3572452d8261c06"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-TELEMEDICINE.md",
+          "sha256": "bb2bced7bb204e6b3ef6c89f098dd94c735da00044567a4447db346fd12dc494"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "telemedicine",
+          "path": "docs/canonical/master15/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "clinical-communication-profiles",
+          "path": "docs/canonical/master17/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "ai-professional-communication",
+          "path": "docs/canonical/master18/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "pediatric-remote-dermatology",
+          "path": "docs/canonical/master19/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "core-telemedicine-communication",
+          "path": "docs/canonical/master19/CAP-TELEMEDICINE.md"
+        },
+        {
+          "name": "remaining-dietitian-consultation",
+          "path": "docs/canonical/master19/CAP-TELEMEDICINE.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-APPOINTMENTS",
+        "CAP-ENCOUNTER"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "MVP_OPTIONAL",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "In-app scheduling, preferences, medication/appointment actions and periodic UI refresh"
+      ],
+      "missing_functions": [
+        "Background external delivery and provider guarantees"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md",
+          "sha256": "a3d23eec7af1f8b89642a021c5497d3f5770427bb8a33d04321f07c2ef9082ed"
+        },
+        {
+          "path": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+          "sha256": "b30e0fd8c02e5666b261fcdcff0c21e4e92a86f032f8e0432825f9c4f9572d6f"
+        },
+        {
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md",
+          "sha256": "27747bb6315cf245f72fbd978aa42f85df6c4a6a717d9a42ae638063a4ace7c2"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-NOTIFICATIONS.md",
+          "sha256": "1d72bf7a41184eaf9f898b65a9d79f809d8551bf1cc0524913b1bdb3ee36b66d"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-NOTIFICATIONS.md",
+          "sha256": "f6ae2e65d811b0120326845024cd9d800efb42f7c4d1c5e0a6c4807d9b4276e4"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-NOTIFICATIONS.md",
+          "sha256": "9f3f0189c5ca6706bcd0c82c781111d50e3d0d46b7ef405e698cecb1b904247a"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 107: Reminder Engine",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 118: Medical Notifications",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 342: Medical Device Notification Center",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 367: Laboratory Result Notification Center",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 756: Pregnancy Notification Center",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 1025: Pediatric Infection Notification Center",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Original 4305: Vaccination Smart Notification Engine",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "Migration and acceptance",
+          "path": "docs/canonical/master14/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "hospital-notification-profile",
+          "path": "docs/canonical/master17/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "precision-alert-delivery",
+          "path": "docs/canonical/master18/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "ai-notification-escalation-handoff",
+          "path": "docs/canonical/master18/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "pediatric-vaccine-reminders-and-renal-escalation",
+          "path": "docs/canonical/master19/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "remaining-reminders",
+          "path": "docs/canonical/master19/CAP-NOTIFICATIONS.md"
+        },
+        {
+          "name": "core-sensitive-notification",
+          "path": "docs/canonical/master19/CAP-NOTIFICATIONS.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-DEVICES",
+      "canonical_id": "CORE-CAP-DEVICES",
+      "status": "POST_MVP",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master06/CAP-DEVICES.md",
+          "sha256": "58f95dcce186201b710893ace218ce50af0ec3f594f84e4f729735ffeb615808"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-DEVICES.md",
+          "sha256": "b01e37a48ac28872575ac805f8f0459e7a9518e671f35eacecdcdd03d4647d54"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-DEVICES.md",
+          "sha256": "e5d7867175ed9c906e9ffec8fc04e438edfeed0f7465df66a454865bd7d18d33"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-DEVICES.md",
+          "sha256": "46a47ca23de79b8965e59b2247b6855ef7223e205111f15ebdafa37d097840ea"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-DEVICES.md",
+          "sha256": "b4d7538e58b924a467db87fc01ce2986e84e12ccc427c9a7885e2c55f7dee298"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-DEVICES.md",
+          "sha256": "e6abaf2443bb5f4f63f01bde974288ce55f2c81e2c9c31c627551f04e06a1766"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-DEVICES.md",
+          "sha256": "f910b33b52ee47b7d10b861213505e642378da5a07bf95900be826dfe566cb16"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Bounded device evidence contract",
+          "path": "docs/canonical/master06/CAP-DEVICES.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Bounded device evidence contract",
+          "path": "docs/canonical/master07/CAP-DEVICES.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "Bounded device evidence contract",
+          "path": "docs/canonical/master08/CAP-DEVICES.md"
+        },
+        {
+          "name": "device-integration-profiles",
+          "path": "docs/canonical/master16/CAP-DEVICES.md"
+        },
+        {
+          "name": "registry-devices",
+          "path": "docs/canonical/master17/CAP-DEVICES.md"
+        },
+        {
+          "name": "ai-device-lifecycle",
+          "path": "docs/canonical/master18/CAP-DEVICES.md"
+        },
+        {
+          "name": "clinical-device-and-life-support-context",
+          "path": "docs/canonical/master18/CAP-DEVICES.md"
+        },
+        {
+          "name": "pediatric-equipment-and-support-lifecycle",
+          "path": "docs/canonical/master19/CAP-DEVICES.md"
+        },
+        {
+          "name": "device-integration-and-lifecycle-contracts",
+          "path": "docs/canonical/master19/CAP-DEVICES.md"
+        },
+        {
+          "name": "core-device-monitoring",
+          "path": "docs/canonical/master19/CAP-DEVICES.md"
+        },
+        {
+          "name": "remaining-home-device-observations",
+          "path": "docs/canonical/master19/CAP-DEVICES.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-COVERAGE",
+      "canonical_id": "CORE-CAP-COVERAGE",
+      "status": "POST_MVP",
+      "mvp_classification": "PHASE_2",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master19/CAP-COVERAGE.md",
+          "sha256": "2fea2497d99485757509689a2140191dad463a71f14a3c0199b305713cb7fc73"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "coverage-claims-and-billing",
+          "path": "docs/canonical/master19/CAP-COVERAGE.md"
+        },
+        {
+          "name": "remaining-financial-estimates",
+          "path": "docs/canonical/master19/CAP-COVERAGE.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-AI",
+      "canonical_id": "CORE-CAP-AI",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "RESEARCH",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Deterministic permitted-context summaries"
+      ],
+      "missing_functions": [
+        "Generative explain/translate and source-governed guideline comparison"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-AI.md",
+          "sha256": "59e2a20e0630f278d1a0ed1b5c6c025e89c4b090d3660381f31cec6f110f79f1"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-AI.md",
+          "sha256": "3bf056530c0d387f30254d13dc3525bb4949193b08268fe01c535134a32fd7ce"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-AI.md",
+          "sha256": "37ac5c1c1a09d7b93e2eca61be062938af1359c2cf3f2e2d0bba28c22cca3acb"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-AI.md",
+          "sha256": "058fe46956f34b6edff8c3c4ec8de6ebbf1e58d5403af493fec16e05e5120e5c"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-AI.md",
+          "sha256": "2b0b6ff3ad2dec7ad0a58e82394746a0138effedb151d92b959fe1658f37cc92"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-AI.md",
+          "sha256": "bd507b17b88d77269a754173b50a80ebc35d659f041799fad95fa3c474e72510"
+        },
+        {
+          "path": "docs/canonical/master11/CAP-AI.md",
+          "sha256": "f3ca798cb8eff76a6b260163108beb2ff26d3ee01f6da6f1ec0b769613328abb"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-AI.md",
+          "sha256": "5362c04bfce0a0f28645095f3cb45ae388a5764d5e43835e8209ccb17d17e1c0"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-AI.md",
+          "sha256": "f9f885a99baf5c145c2058b8b4e4615752b58b58c6595ff82dabcf1133b29d78"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-AI.md",
+          "sha256": "a9d7ad3b34b214f123b65ea9dee2deb8b9d0cf728034e33fbd6592ea7c699e73"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-AI.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-AI.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-AI.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-AI.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-AI.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-AI.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-AI.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-AI.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-AI.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-AI.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-AI.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-AI.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-AI.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-AI.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-AI.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-AI.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-AI.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-AI.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-AI.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-AI.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-AI.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-AI.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-AI.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-AI.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-AI.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-AI.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-AI.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-AI.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-AI.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-AI.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-AI.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-AI.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-AI.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-AI.md"
+        },
+        {
+          "name": "ai-derived-analysis",
+          "path": "docs/canonical/master17/CAP-AI.md"
+        },
+        {
+          "name": "ai-knowledge-profiles",
+          "path": "docs/canonical/master17/CAP-AI.md"
+        },
+        {
+          "name": "ai-lifecycle-profiles",
+          "path": "docs/canonical/master17/CAP-AI.md"
+        },
+        {
+          "name": "ai-assistance-profiles",
+          "path": "docs/canonical/master17/CAP-AI.md"
+        },
+        {
+          "name": "operational-ai-proposals",
+          "path": "docs/canonical/master17/CAP-AI.md"
+        },
+        {
+          "name": "precision-derived-model-artifacts",
+          "path": "docs/canonical/master18/CAP-AI.md"
+        },
+        {
+          "name": "ai-runtime-knowledge-and-derived-artifacts",
+          "path": "docs/canonical/master18/CAP-AI.md"
+        },
+        {
+          "name": "ai-educational-simulation",
+          "path": "docs/canonical/master18/CAP-AI.md"
+        },
+        {
+          "name": "ai-economic-and-quality-projections",
+          "path": "docs/canonical/master18/CAP-AI.md"
+        },
+        {
+          "name": "clinical-specialty-ai-forecasts",
+          "path": "docs/canonical/master18/CAP-AI.md"
+        },
+        {
+          "name": "pediatric-derived-ai-analysis",
+          "path": "docs/canonical/master19/CAP-AI.md"
+        },
+        {
+          "name": "core-ai-personal-assistance-and-predictions",
+          "path": "docs/canonical/master19/CAP-AI.md"
+        },
+        {
+          "name": "remaining-inference-artifacts",
+          "path": "docs/canonical/master19/CAP-AI.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-CDS",
+      "canonical_id": "CORE-CAP-CDS",
+      "status": "RESEARCH",
+      "mvp_classification": "RESEARCH",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-CDS.md",
+          "sha256": "9ed55c570daa3418f671442a8b62f7a71afa8486d511f4cc6777ea62c2d97b50"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-CDS.md",
+          "sha256": "f109f3951c20ebc736c3589f5789ea4f3830c92535f1d14bb58532d70c1cd98a"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-CDS.md",
+          "sha256": "407f019fdc906792ff620e74e43dc710195bb73a4040fb47c16f655027a98f5a"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-CDS.md",
+          "sha256": "6bf8c327301e0c61a94225afcece755e7203968dbde20a656b12fbe424eb43ea"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-CDS.md",
+          "sha256": "77d8bdd3c4d8c72fbf406880d817fb17f75c00c492c44df84de547debe8de476"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-CDS.md",
+          "sha256": "2a582172efbd67037d5209a45223b1d667687cb21520931c6a14d7866da9b561"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-CDS.md",
+          "sha256": "31b1fa9eea4e00c3333f8249c0ce93cafe2bdba14275f0b682eda2697c18d2b2"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-CDS.md",
+          "sha256": "4ca6c88ca8388e9955df8d959d427172d839fec66deadd7f04754e6fa8ad7b5e"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-CDS.md",
+          "sha256": "59d100e6e94694a3815a5c82de44ac916601a527422cfe167774ee822bfd0643"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-CDS.md",
+          "sha256": "81f06fa1299307a7074a8f6be30c2d9652e9074fb4673c1539d5fe72fb281dda"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-CDS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-CDS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-CDS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-CDS.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-CDS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-CDS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-CDS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-CDS.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-CDS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-CDS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-CDS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-CDS.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-CDS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-CDS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-CDS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-CDS.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-CDS.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-CDS.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-CDS.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-CDS.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-CDS.md"
+        },
+        {
+          "name": "cds",
+          "path": "docs/canonical/master15/CAP-CDS.md"
+        },
+        {
+          "name": "clinical-ai-decision-profiles",
+          "path": "docs/canonical/master16/CAP-CDS.md"
+        },
+        {
+          "name": "diagnostic-clinical-assessment",
+          "path": "docs/canonical/master17/CAP-CDS.md"
+        },
+        {
+          "name": "clinical-recommendation-profiles",
+          "path": "docs/canonical/master17/CAP-CDS.md"
+        },
+        {
+          "name": "medication-safety-assessments",
+          "path": "docs/canonical/master17/CAP-CDS.md"
+        },
+        {
+          "name": "precision-clinical-recommendations",
+          "path": "docs/canonical/master18/CAP-CDS.md"
+        },
+        {
+          "name": "ai-clinical-decision-proposals",
+          "path": "docs/canonical/master18/CAP-CDS.md"
+        },
+        {
+          "name": "ai-differential-diagnosis-addendum",
+          "path": "docs/canonical/master18/CAP-CDS.md"
+        },
+        {
+          "name": "clinical-guideline-and-surgical-proposals",
+          "path": "docs/canonical/master18/CAP-CDS.md"
+        },
+        {
+          "name": "pediatric-clinical-screening-prioritization",
+          "path": "docs/canonical/master19/CAP-CDS.md"
+        },
+        {
+          "name": "core-clinical-recommendation-and-interaction",
+          "path": "docs/canonical/master19/CAP-CDS.md"
+        },
+        {
+          "name": "remaining-guideline-advice",
+          "path": "docs/canonical/master19/CAP-CDS.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-MEDICATION",
+        "CAP-CONDITION",
+        "CAP-LABORATORY"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-TWIN",
+      "canonical_id": "CORE-CAP-TWIN",
+      "status": "RESEARCH",
+      "mvp_classification": "RESEARCH",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-TWIN.md",
+          "sha256": "659799d3245527e4661c66982743949c63ffc1b97281a7267a5ac52f9a755594"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-TWIN.md",
+          "sha256": "ecb8b5fac4dc34a96806c295888b45889fffc82ecfd320e239e98297bcde439e"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-TWIN.md",
+          "sha256": "a344eab59c3704a1c986a52c45ebcd712f6d79d6095e0a645336b9209a1bc9dc"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-TWIN.md",
+          "sha256": "6d2f5e708631589f4da5dae085128dfef8a093b982f190c39b71c53410ad41ec"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-TWIN.md",
+          "sha256": "3b928f07dd29dd23505988960bbc53a6f7235ceaadc1f79aa3d6532a8250249b"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-TWIN.md",
+          "sha256": "4b3967f2ea01fd6a185def26a9d86beec667615a67f51b10439ec38f958ddf49"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-TWIN.md",
+          "sha256": "2e6a5cc20282a2535e5127e66c41c12ece2b2630bb185ae779d444cd6467268a"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-TWIN.md",
+          "sha256": "7ef0edb22fe00c1de867b0f41600d47f3454f007941dc7d8a377c9d1d3da0a91"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-TWIN.md",
+          "sha256": "d700dd4306e57b6a0b79859c0e9fa37e8c6cced46640627abf1c1d796568c483"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-TWIN.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-TWIN.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-TWIN.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-TWIN.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-TWIN.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-TWIN.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-TWIN.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-TWIN.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-TWIN.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-TWIN.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-TWIN.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-TWIN.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-TWIN.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-TWIN.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-TWIN.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-TWIN.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-TWIN.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-TWIN.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-TWIN.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-TWIN.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-TWIN.md"
+        },
+        {
+          "name": "twin",
+          "path": "docs/canonical/master15/CAP-TWIN.md"
+        },
+        {
+          "name": "neuro-oncology-twin-profile",
+          "path": "docs/canonical/master16/CAP-TWIN.md"
+        },
+        {
+          "name": "twin-remaining-projections",
+          "path": "docs/canonical/master17/CAP-TWIN.md"
+        },
+        {
+          "name": "precision-counterfactual-simulation",
+          "path": "docs/canonical/master18/CAP-TWIN.md"
+        },
+        {
+          "name": "ai-counterfactual-and-twin-state",
+          "path": "docs/canonical/master18/CAP-TWIN.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-RESEARCH",
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "status": "RESEARCH",
+      "mvp_classification": "RESEARCH",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-RESEARCH.md",
+          "sha256": "eaa1b5a40cd624a4a3b8aca65d0b5ede3aea7eab5244ba553e556bcfa9badc34"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-RESEARCH.md",
+          "sha256": "7bb14c8b606ce2b8a28505c7a5041087ae29f1b73d116d43533b9bebc97c3f2d"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-RESEARCH.md",
+          "sha256": "5d9730ac2b0b52a29a7d48399d4dc972eeffaaa015a4b3fe591e3f793fe6e72f"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-RESEARCH.md",
+          "sha256": "c53ca5255a13afc219b69f615e664061cadf412da94110cde9fd4b04dc5647e5"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-RESEARCH.md",
+          "sha256": "353d620884ad17b0e8a5cd55bc303eac64dde5672c4bac761542e389174853ce"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-RESEARCH.md",
+          "sha256": "861a455500345ca12c7313fc494b58667235c3e32a1e56581bdd2d305971a509"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-RESEARCH.md",
+          "sha256": "9f000a52aad468ca6041a839c873341d392eaf7b251c8c74a55e9102deb88653"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-RESEARCH.md",
+          "sha256": "789c6f0a264aadd5365bc2e92a512791b1e6c68c4ff3c3c53bbe79184e063eb9"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-RESEARCH.md",
+          "sha256": "8a19e4157554cbba5729787f9b21d68b0c6b13e20294aa2952c6015e6f35cc90"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-RESEARCH.md",
+          "sha256": "90be6482d179dc16614c975e338ddd0fdc617211f586ce387bd818ed3216c74d"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-RESEARCH.md",
+          "sha256": "1ed78c9e2a33a310d7520c48e98fee28e059706c05d8ea43d8e87fd634f6a0b2"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-RESEARCH.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-RESEARCH.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-RESEARCH.md"
+        },
+        {
+          "name": "research",
+          "path": "docs/canonical/master15/CAP-RESEARCH.md"
+        },
+        {
+          "name": "research-datasets",
+          "path": "docs/canonical/master15/CAP-RESEARCH.md"
+        },
+        {
+          "name": "research-registries",
+          "path": "docs/canonical/master16/CAP-RESEARCH.md"
+        },
+        {
+          "name": "research-decision-profiles",
+          "path": "docs/canonical/master16/CAP-RESEARCH.md"
+        },
+        {
+          "name": "research-population-profiles",
+          "path": "docs/canonical/master17/CAP-RESEARCH.md"
+        },
+        {
+          "name": "registry-research",
+          "path": "docs/canonical/master17/CAP-RESEARCH.md"
+        },
+        {
+          "name": "precision-research-collaboration-profile",
+          "path": "docs/canonical/master17/CAP-RESEARCH.md"
+        },
+        {
+          "name": "precision-research",
+          "path": "docs/canonical/master18/CAP-RESEARCH.md"
+        },
+        {
+          "name": "ai-research-and-population-evidence",
+          "path": "docs/canonical/master18/CAP-RESEARCH.md"
+        },
+        {
+          "name": "clinical-population-surveillance",
+          "path": "docs/canonical/master18/CAP-RESEARCH.md"
+        },
+        {
+          "name": "pediatric-outbreak-population-context",
+          "path": "docs/canonical/master19/CAP-RESEARCH.md"
+        },
+        {
+          "name": "core-population-infection-surveillance",
+          "path": "docs/canonical/master19/CAP-RESEARCH.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-CONSENT",
+        "CAP-DATA"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-TRAVEL",
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "status": "POST_MVP",
+      "mvp_classification": "LONG_TERM",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master11/CAP-TRAVEL.md",
+          "sha256": "82e2a2d6bf6413da45accf8b2cfb0a29373f32eb72d7f32cd8ebf2308e5c77a9"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-TRAVEL.md",
+          "sha256": "0cc0a6b1b1772f57dfd0106f713abe7ea21229c1d4df23b8e35bd6f919e55362"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-TRAVEL.md",
+          "sha256": "373b4cfb2869d991be08050d01e2abc83306332164fbcbdd631f3f3adc3a4227"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-TRAVEL.md",
+          "sha256": "17c61d3aebd3a7635d18e2fb3d16a5fdb4d3238642ac8825efbb8dbd6dcd4818"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-TRAVEL.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-TRAVEL.md"
+        },
+        {
+          "name": "international-care-coordination-profile",
+          "path": "docs/canonical/master17/CAP-TRAVEL.md"
+        },
+        {
+          "name": "ai-crossborder-care-information",
+          "path": "docs/canonical/master18/CAP-TRAVEL.md"
+        },
+        {
+          "name": "remaining-country-information",
+          "path": "docs/canonical/master19/CAP-TRAVEL.md"
+        },
+        {
+          "name": "core-travel-regulatory-information",
+          "path": "docs/canonical/master19/CAP-TRAVEL.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-CONSENT"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-EMERGENCY",
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [
+        "Patient emergency profile and scoped access"
+      ],
+      "missing_functions": [
+        "External emergency integration and validated operational workflows"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md",
+          "sha256": "2aa71b58ba7c41bdc6d80751d217e2d504082c0500f95826ff11334f9a172ca9"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md",
+          "sha256": "15e05e8bcb5590e558604f5f709932e89d4db50351f21cb347b0269bc75678b6"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md",
+          "sha256": "a49d54b5463be668f63932825ddfdd8d9ee5d793a479b97542188cb1547bf0e5"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md",
+          "sha256": "e80b7ba36389dfd46eff0634cd19cf1b0ffe23185bd7449bc5588eaba2e6e183"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md",
+          "sha256": "4b5f4b4ddc12ca3bd80263b1757a730d9dd73c884e35c1af708584f3bf5a73c8"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-EMERGENCY.md",
+          "sha256": "57fcbac67514b0f80a937c7de4923aecdd9888ef25bee8b7496e7c074090a9c5"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-EMERGENCY.md",
+          "sha256": "21dc2585a56371c28eabdaeeb048ea7c541e6e5db79fbf0c87c1a3215f15f6a5"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-EMERGENCY.md",
+          "sha256": "89e2f41f81bd7eecc658e648b788ae27deddae890d076ad42ac42369a285528c"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "registry-emergency",
+          "path": "docs/canonical/master17/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "emergency-continuity-profiles",
+          "path": "docs/canonical/master17/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "ai-assisted-emergency-coordination",
+          "path": "docs/canonical/master17/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "precision-intensive-care-coordination",
+          "path": "docs/canonical/master18/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "ai-emergency-logistics-and-offline-projections",
+          "path": "docs/canonical/master18/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "clinical-triage-and-hemodynamic-coordination",
+          "path": "docs/canonical/master18/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "pediatric-hypoglycemia-emergency-context",
+          "path": "docs/canonical/master19/CAP-EMERGENCY.md"
+        },
+        {
+          "name": "core-emergency-handoff",
+          "path": "docs/canonical/master19/CAP-EMERGENCY.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-IDENTITY",
+        "CAP-CONSENT",
+        "CAP-AUDIT"
+      ],
+      "evidence": [
+        "apps/medical-passport/",
+        "audit/master-25/tests.tap",
+        "audit/master-25/BROWSER_REVIEW.md"
+      ],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-OPERATIONS",
+      "canonical_id": "CORE-CAP-OPERATIONS",
+      "status": "POST_MVP",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master19/CAP-OPERATIONS.md",
+          "sha256": "8199f5c8e8a3a08bf07af9439e130effb0a209e55dd42164734dc07f925a5922"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "platform-operations-and-resource-coordination",
+          "path": "docs/canonical/master19/CAP-OPERATIONS.md"
+        },
+        {
+          "name": "remaining-recovery-and-isolation-operations",
+          "path": "docs/canonical/master19/CAP-OPERATIONS.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-SECURITY"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    },
+    {
+      "canonical_owner": "CAP-SPECIALTY",
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "status": "POST_MVP",
+      "mvp_classification": "POST_MVP",
+      "scope": "Full canonical capability, not page presence. Adult synthetic Alpha profile is narrower.",
+      "implemented_workflows": [],
+      "missing_functions": [
+        "Canonical source profiles and external acceptance not implemented in the runtime"
+      ],
+      "specifications": [
+        {
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md",
+          "sha256": "330f86d652e37d2650744929b941765ae5a50635c5e5a9e8c84297f1f0bb340c"
+        },
+        {
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md",
+          "sha256": "5a64157a46419b227f6b6cc50c1c137080ab30433a6972f12bfccff33cd3d1fb"
+        },
+        {
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md",
+          "sha256": "6d83f320567d0aadb67467193c9fda63a0e8ee924bebb3824d49303c61d8a0c6"
+        },
+        {
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md",
+          "sha256": "2f00db9e7bec2caa782635a16e043a512c6d8cf912328d0aebe75c6d10128f5a"
+        },
+        {
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md",
+          "sha256": "a88852579760efb5694fc5a59d98f33c918f7203933b743343cf338838ca5a3a"
+        },
+        {
+          "path": "docs/canonical/master10/CAP-SPECIALTY.md",
+          "sha256": "ee3fd48ba1b84bfcd0261231aef195b772af86e428bf14b695926992ec79e471"
+        },
+        {
+          "path": "docs/canonical/master11/CAP-SPECIALTY.md",
+          "sha256": "247d7c29b48ca6d5ceaf2541bc918ff23f3d40f6cc4183d581a82ef6cbd01bdf"
+        },
+        {
+          "path": "docs/canonical/master15/CAP-SPECIALTY.md",
+          "sha256": "281a38bb53813eedca1355e095093335ab5454462f7006261c9a89447f4d5bc2"
+        },
+        {
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md",
+          "sha256": "7e6c68b134a1e8596236f73748d209f58989c06a6a38911676ef845e77d29b60"
+        },
+        {
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md",
+          "sha256": "f647562cbe6ced754464bbe0cb65d800806d734d9b58d591f423270e572ebb11"
+        },
+        {
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md",
+          "sha256": "0e27dbe86477d56c4a0560b80755fbb85487696f2be1c7e595536e12b2852ab2"
+        },
+        {
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md",
+          "sha256": "21cab2529a71847b0af4df2f36cc3ec4c837fb8fd870d14d7e7528ce74a5e4ea"
+        }
+      ],
+      "profiles": [
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master04/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master05/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master06/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master07/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Ownership, data and workflow",
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Safety, security, privacy and acceptance",
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Semantic profiles",
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Integrated extension decisions",
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved canonical requirements",
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Preserved source metadata",
+          "path": "docs/canonical/master08/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master10/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master10/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "Workflow and boundaries",
+          "path": "docs/canonical/master11/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "New source fragments",
+          "path": "docs/canonical/master11/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "condition-history",
+          "path": "docs/canonical/master15/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "specialty-hubs",
+          "path": "docs/canonical/master15/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "specialty-cores",
+          "path": "docs/canonical/master15/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "disease-workflows",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "care-and-transition",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "disorder-workflows",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "management-workflows",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "condition-variants",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "genetics-workflows",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "additional-specialty-pathways",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "additional-condition-pathways",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "clinical-integration-workflows",
+          "path": "docs/canonical/master16/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "diagnostic-specialty-assessment",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "neuro-behavioral-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "endocrine-digestive-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "immune-infectious-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "sensory-skin-rehab-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "cardiopulmonary-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "renal-urology-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "oncology-hematology-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "registry-specialty-projections",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "precision-specialty-profiles",
+          "path": "docs/canonical/master17/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "precision-specialty-coordination",
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "ai-longitudinal-specialty-and-digital-therapy",
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "clinical-oncology-bone-immune-infectious-care",
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "clinical-renal-reproductive-and-perinatal-care",
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "clinical-cardiovascular-neuro-and-functional-care",
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "clinical-sensory-skin-and-postoperative-care",
+          "path": "docs/canonical/master18/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-neuro-sensory-dental-functional",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-multisystem-endocrine-oncology",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-endocrine-reproductive-urologic",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-skin-airway-digestive-renal",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-immune-infection-neuro-mental",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-combined-specialty-safety",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-development-and-quality-of-life",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "maternal-newborn-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "endocrine-digestive-renal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "skin-and-sensitive-infection-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "gynecological-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "pediatric-growth-and-metabolic-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "male-reproductive-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "breast-and-oncology-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "eye-and-sensory-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "cardiopulmonary-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "general-longitudinal-specialty-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "dental-longitudinal-specialty-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        },
+        {
+          "name": "neurological-longitudinal-care",
+          "path": "docs/canonical/master19/CAP-SPECIALTY.md"
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-CONSENT"
+      ],
+      "evidence": [],
+      "acceptance": "Functional completeness must include ownership, source/state, edit/history/archive where applicable, audit and reload persistence; partial until missing canonical requirements close."
+    }
+  ]
+}

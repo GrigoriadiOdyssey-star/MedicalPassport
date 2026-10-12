@@ -1,0 +1,96 @@
+MASTER AUDIT pass 01 — validation execution, 2026-09-14
+Scope: local source/document/registry/contract checks only. No GitLab writes, no application or clinical validation.
+
+node --test tests/*.test.mjs
+Exit code: 0
+✔ parser preserves embedded headings and rejects missing or duplicate IDs (4.8668ms)
+✔ editorial corrections fail closed if exact evidence changes (0.5699ms)
+✔ same title is not treated as same body or silently merged (2.3604ms)
+✔ risk hints never assign implementation or clinical validation (0.8907ms)
+✔ master source byte spans reconstruct immutable baseline without losing preamble or tail (101.2375ms)
+✔ master CSV preserves all 5175 multiline descriptions and every registry column (1357.1114ms)
+✔ master ledger review counts require explicit source decisions and cannot consume unreviewed IDs (88.7789ms)
+✔ duplicate evidence never loses source requirements or enables destructive change (960.5008ms)
+✔ unknown owners and dependencies remain explicit instead of becoming validated claims (405.6331ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3427.5261
+
+node scripts/master-audit.mjs --check
+Exit code: 0
+{
+  "mode": "CHECK",
+  "result": "PASS",
+  "checks": [
+    "5175 IDs across source/registry/ledger/change map/requirements",
+    "Immutable source hash and contiguous byte spans",
+    "Verbatim descriptions preserved",
+    "Required registry fields/status enum",
+    "Review count based on explicit source decisions",
+    "All cluster member IDs valid",
+    "Proposed owner graph no missing targets or cycles",
+    "No supersede/duplicate writes",
+    "Deterministic artifacts"
+  ],
+  "counts": {
+    "modules": 5175,
+    "reviewed": 83,
+    "owners": 33,
+    "clusters": 1969,
+    "source_reference_edges": 16,
+    "unresolved_reference_entries": 5747
+  },
+  "progress": {
+    "schema_version": 1,
+    "edition": "2026-09-14",
+    "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+    "baseline_commit": "27a26f77d2ca2532ef7c5586802d892dd359a8d0",
+    "pass": "MASTER-01",
+    "state": "ANALYZE_ONLY",
+    "gitlab_writes": false,
+    "denominator": 5175,
+    "accounted": 5175,
+    "reviewed": 83,
+    "normalized": 0,
+    "canonicalized": 0,
+    "implementation_ready": 0,
+    "unaudited": 5092,
+    "canonical_modules": 0,
+    "proposed_canonical_capabilities": 33,
+    "review_progress": 1.6039,
+    "normalization_progress": 0,
+    "canonicalization_progress": 0,
+    "implementation_readiness": 0,
+    "overall_audit_progress": 0,
+    "overall_method": "minimum(review, normalization, canonicalization, implementation readiness); conservative weakest-gate measure, not estimated labour completion",
+    "inventory_coverage": 100,
+    "duplicate_counts": {
+      "exact_duplicate_groups": 3,
+      "exact_duplicate_excess_ids": 3,
+      "semantic_duplicate_groups": 1,
+      "semantic_duplicate_excess_ids": 1,
+      "partial_overlap_groups": 5,
+      "specialty_projection_groups": 5,
+      "legacy_generations_confirmed": 0,
+      "legacy_generation_candidate_modules": 27,
+      "unresolved_clusters": 1954
+    },
+    "new_gap_candidates": 6,
+    "confirmed_new_gaps": 0,
+    "new_canonical_module_proposals": 0,
+    "critical_findings": 4,
+    "high_findings": 8,
+    "gitlab_write_status": "NO_WRITES_THIS_PASS",
+    "quality_gate": "NOT_COMPLETE"
+  }
+}
+
+node scripts/check.mjs
+Exit code: 0
+{"status":"passed","scope":"Targeted contract checks using a limited schema evaluator; not full OpenAPI validation or runtime testing","paths":21,"operations":33,"schemas":29,"refs":383,"positive_examples":5,"negative_cases":13}
+PASS: source integrity; reproducible 5175-module catalog; 31276 local links; JSON and 33 OpenAPI operations; high-confidence credential patterns. These are document/contract checks, not application or clinical validation.

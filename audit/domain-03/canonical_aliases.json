@@ -1,0 +1,221 @@
+{
+  "schema_version": 4,
+  "pass": "DOMAIN-03",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "aliases": [
+    {
+      "original_id": 846,
+      "canonical_id": "CAN-CARD-ECHO",
+      "canonical_document": "docs/canonical/CAN-CARD-ECHO.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3064,
+      "canonical_id": "CAN-CARD-ECHO",
+      "canonical_document": "docs/canonical/CAN-CARD-ECHO.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3664,
+      "canonical_id": "CAN-CARD-ECHO",
+      "canonical_document": "docs/canonical/CAN-CARD-ECHO.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4064,
+      "canonical_id": "CAN-CARD-ECHO",
+      "canonical_document": "docs/canonical/CAN-CARD-ECHO.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3069,
+      "canonical_id": "CAN-CARD-IMAGING",
+      "canonical_document": "docs/canonical/CAN-CARD-IMAGING.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3671,
+      "canonical_id": "CAN-CARD-IMAGING",
+      "canonical_document": "docs/canonical/CAN-CARD-IMAGING.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4070,
+      "canonical_id": "CAN-CARD-IMAGING",
+      "canonical_document": "docs/canonical/CAN-CARD-IMAGING.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3062,
+      "canonical_id": "CAN-CARD-RECORD",
+      "canonical_document": "docs/canonical/CAN-CARD-RECORD.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3662,
+      "canonical_id": "CAN-CARD-RECORD",
+      "canonical_document": "docs/canonical/CAN-CARD-RECORD.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4062,
+      "canonical_id": "CAN-CARD-RECORD",
+      "canonical_document": "docs/canonical/CAN-CARD-RECORD.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 847,
+      "canonical_id": "CAN-CARD-SURGERY",
+      "canonical_document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3067,
+      "canonical_id": "CAN-CARD-SURGERY",
+      "canonical_document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3669,
+      "canonical_id": "CAN-CARD-SURGERY",
+      "canonical_document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4072,
+      "canonical_id": "CAN-CARD-SURGERY",
+      "canonical_document": "docs/canonical/CAN-CARD-SURGERY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3074,
+      "canonical_id": "CAN-CARD-REMOTE",
+      "canonical_document": "docs/canonical/CAN-CARD-REMOTE.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3676,
+      "canonical_id": "CAN-CARD-REMOTE",
+      "canonical_document": "docs/canonical/CAN-CARD-REMOTE.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4079,
+      "canonical_id": "CAN-CARD-REMOTE",
+      "canonical_document": "docs/canonical/CAN-CARD-REMOTE.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 926,
+      "canonical_id": "CAN-RENAL-FUNCTION",
+      "canonical_document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4552,
+      "canonical_id": "CAN-RENAL-FUNCTION",
+      "canonical_document": "docs/canonical/CAN-RENAL-FUNCTION.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4574,
+      "canonical_id": "CAN-RENAL-HANDOVER",
+      "canonical_document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4599,
+      "canonical_id": "CAN-RENAL-HANDOVER",
+      "canonical_document": "docs/canonical/CAN-RENAL-HANDOVER.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3993,
+      "canonical_id": "CAN-MENTAL-MEDICATION",
+      "canonical_document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4842,
+      "canonical_id": "CAN-MENTAL-MEDICATION",
+      "canonical_document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5166,
+      "canonical_id": "CAN-MENTAL-MEDICATION",
+      "canonical_document": "docs/canonical/CAN-MENTAL-MEDICATION.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 3994,
+      "canonical_id": "CAN-MENTAL-THERAPY",
+      "canonical_document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4841,
+      "canonical_id": "CAN-MENTAL-THERAPY",
+      "canonical_document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 5167,
+      "canonical_id": "CAN-MENTAL-THERAPY",
+      "canonical_document": "docs/canonical/CAN-MENTAL-THERAPY.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 1115,
+      "canonical_id": "CAN-ALLERGY-LABEL",
+      "canonical_document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4416,
+      "canonical_id": "CAN-ALLERGY-LABEL",
+      "canonical_document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    },
+    {
+      "original_id": 4418,
+      "canonical_id": "CAN-ALLERGY-LABEL",
+      "canonical_document": "docs/canonical/CAN-ALLERGY-LABEL.md",
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-17",
+  "batch": 40,
+  "family": "emergency-qr-profile",
+  "owner": "CAP-QR",
+  "ids": [
+    264
+  ],
+  "decision_sha256": "c368747d903fbe8a8cb10f7ab1925adad52e20f22810b08197969813cc7e81fa",
+  "source_hashes": {
+    "264": "918e5cc44263621058d07d4c90ece4c019eb2f491abc529fcaf0e82db24c29bc"
+  }
+}

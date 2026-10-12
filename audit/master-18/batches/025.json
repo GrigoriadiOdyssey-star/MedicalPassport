@@ -1,0 +1,19 @@
+{
+  "pass": "MASTER-18",
+  "batch": 25,
+  "family": "ai-resource-authorization",
+  "owner": "CAP-SECURITY",
+  "ids": [
+    1516,
+    1517,
+    1933,
+    1934
+  ],
+  "decision_sha256": "e746fbae33b93fab82811ba14ffbcaa56c44a1ddf2b0cfdd97a0cbbce229c955",
+  "source_hashes": {
+    "1516": "d575020c9c8b6745c977b8eadeadc7df18d5be29429181d3f4bab34624227ea0",
+    "1517": "1e3b84797a16faa70612e73432067c6e5dda8d2a55292d36aa8be18c8be762cd",
+    "1933": "96feedc267adba13cf1ca5c17e10b5ef2429d609d369456461fe20a27106bf17",
+    "1934": "3bae41fef58d83734cea565f053a71a7982b3ed42127a61c776dcf7240a4edcc"
+  }
+}

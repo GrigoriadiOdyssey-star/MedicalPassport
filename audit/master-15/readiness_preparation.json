@@ -1,0 +1,236 @@
+{
+  "pass": "MASTER-15",
+  "baseline": "audit/master-08/implementation_readiness_registry.json",
+  "prior_deltas": [
+    "audit/master-09/readiness_delta.json",
+    "audit/master-10/readiness_delta.json",
+    "audit/master-11/readiness_delta.json"
+  ],
+  "scope": "Owner/profile acceptance additions only; no repeated engineering rewrite or MVP implementation",
+  "records": [
+    {
+      "owner": "CAP-LABORATORY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "laboratory",
+          "acceptance": "Retain method, specimen, time, unit, reference-population and verification context; amended results invalidate downstream interpretations. Genomic and experimental biomarker profiles require separate qualified applicability review.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TWIN",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "twin",
+          "acceptance": "Require scenario/model/input versions, uncertainty and applicability limits; reject stale or revoked inputs. Prediction errors cannot overwrite clinical records or trigger autonomous prescribing, ventilation or emergency disposition.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-IMAGING",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "imaging",
+          "acceptance": "Preserve modality, study/series references, acquisition time, laterality and interpreter attribution. Registration, segmentation, scores and AI image interpretation require separate validation; copied modality lists do not prove device interoperability.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-TELEMEDICINE",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "telemedicine",
+          "acceptance": "Preserve guardian/confidential access, location/licensure context, recording consent, source timestamps and connectivity failures. No remote signal or delivered message establishes safe triage, therapy adjustment or an attended consultation.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-CDS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "cds",
+          "acceptance": "Require intended population/use, licensed evidence/model versions, uncertainty, clinician disposition and outcome-specific tests. Organ/embryo selection, mortality, antimicrobial, ventilation, pediatric and vaccine outputs stay blocked from autonomous execution.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-RESEARCH",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "research",
+          "acceptance": "Verify purpose, consent/assent, protocol/version, jurisdiction, withdrawal and downstream dataset lineage. Candidate trial matches require qualified confirmation; study data is not automatically a clinical fact.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "research-datasets",
+          "acceptance": "Dataset release requires purpose-limited access, lineage, revocation propagation and evaluation of reidentification and cohort limitations; clinical records remain separately authoritative.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-APPOINTMENTS",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "appointments",
+          "acceptance": "Test double booking, time-zone/DST ambiguity, idempotent cancellation, stale provider availability and permission changes. Reminder delivery is separate from attendance.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-ENCOUNTER",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "encounter-history",
+          "acceptance": "Distinguish planned, performed, reported and amended procedures; retain operator, encounter, timing and source attribution. A registry entry does not authorize surgery or attest a completed intervention.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-SPECIALTY",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "condition-history",
+          "acceptance": "Preserve suspected versus confirmed states, chronology, absence versus unknown, source authority and condition-specific scales. Combining a timeline must not silently create clinical facts.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "specialty-hubs",
+          "acceptance": "Preserve domain/life-stage context, escalation, transitions and specialty workflows. Source MVP/foundation claims do not expand the approved minimal vertical slice or establish implemented readiness.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "specialty-cores",
+          "acceptance": "Preserve source-specific privacy and guardian controls, sensitive segmentation, transition care and clinical escalation. MVP HIGH and foundation wording do not prove readiness or expand the initial slice. Require exact source-to-authority contracts before runtime integration.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "owner": "CAP-MEDICATION",
+      "implementation_ready": false,
+      "existing_sections": "Inherited unchanged from existing owner specifications",
+      "added_profile_contract_gates": [
+        {
+          "profile": "medication-profiles",
+          "acceptance": "Retain product/class, route/formulation, patient/context, reported-versus-ordered exposure and evidence versions; treatment selection and dose changes require independent clinical approval.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        },
+        {
+          "profile": "medication-reference-exposure",
+          "acceptance": "Preserve suspected adverse effects, source/period/denominator of adherence, exact product/route/formulation/version, pediatric age/weight and lactation context. Historical pregnancy safety categories alone cannot establish treatment safety. Require current qualified evidence before applying restrictions, alternatives or treatment advice; a diary or reminder does not establish ingestion.",
+          "required_evidence": [
+            "Exact input/output schema and field-to-source bindings",
+            "Permission and consent misuse-case evidence",
+            "Source/version/correction semantics",
+            "Clinical intended-use and safety acceptance where applicable",
+            "Provider failure, observability and end-to-end acceptance evidence"
+          ]
+        }
+      ]
+    }
+  ]
+}

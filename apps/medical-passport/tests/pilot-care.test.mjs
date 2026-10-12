@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{attachPilotCare}from'../pilot-care.mjs';test('pilot care attaches appointment methods additively',()=>{class S{}attachPilotCare(S);assert.equal(typeof S.prototype.createAppointmentMvp,'function');assert.equal(typeof S.prototype.upcomingAppointmentsMvp,'function');});

@@ -1,0 +1,15 @@
+{
+  "pass": "MASTER-19",
+  "batch": 32,
+  "family": "laboratory-referral-orders",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    381,
+    382
+  ],
+  "decision_sha256": "79c7e6ad09037e31252b0a6b6c7afe23e02f47125b3a6fcdbaa8b0400abd3f83",
+  "source_hashes": {
+    "381": "18705502c39d31acbda5ab1dd02516218ed34353a0fc5e3c632c85e1ac5c0e05",
+    "382": "54096bf8d62f316ea7b9d4245822050b8721c2f57036c682574aa1458a0939b7"
+  }
+}

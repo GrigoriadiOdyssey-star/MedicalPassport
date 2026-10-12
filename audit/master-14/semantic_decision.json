@@ -1,0 +1,98 @@
+{
+  "pass": "MASTER-14",
+  "id": "M14-NOTIFICATION-DOMAIN-EVENTS",
+  "owner": "CAP-NOTIFICATIONS",
+  "source_ids": [
+    107,
+    118,
+    342,
+    367,
+    756,
+    1025,
+    4305
+  ],
+  "compared_sources": [
+    21,
+    34,
+    416
+  ],
+  "compared_documents": [
+    {
+      "path": "docs/canonical/master08/CAP-NOTIFICATIONS.md",
+      "sha256": "a3d23eec7af1f8b89642a021c5497d3f5770427bb8a33d04321f07c2ef9082ed"
+    },
+    {
+      "path": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+      "sha256": "b30e0fd8c02e5666b261fcdcff0c21e4e92a86f032f8e0432825f9c4f9572d6f"
+    }
+  ],
+  "conclusion": "One existing delivery owner with event-origin variants. No new canonical module; seven source profiles extend the shared notification capability.",
+  "owner_boundary": "Origin services determine clinical/event truth. Notifications owns authorized template rendering, recipient/channel selection, scheduling, attempts and delivery records. Clinical response and acknowledgement remain separate.",
+  "per_source": {
+    "107": {
+      "purpose": "Deliver cross-domain reminders through push, SMS and email.",
+      "difference": "Adds the explicit cross-domain medicine, appointment, vaccination, laboratory, travel and AI recommendation routing matrix to the existing channel/template lifecycle.",
+      "dependency": [
+        "CAP-MEDICATION",
+        "CAP-APPOINTMENTS",
+        "CAP-IMMUNIZATION",
+        "CAP-LABORATORY",
+        "CAP-TRAVEL",
+        "CAP-AI"
+      ]
+    },
+    "118": {
+      "purpose": "Present a unified notification inbox for medical, access, AI and emergency events.",
+      "difference": "Preserves QR access, AI alerts and emergency events as separate origin categories. An inbox read state is not human clinical acknowledgement.",
+      "dependency": [
+        "CAP-QR",
+        "CAP-AI",
+        "CAP-EMERGENCY"
+      ]
+    },
+    "342": {
+      "purpose": "Notify authorized recipients of device and synchronization events.",
+      "difference": "Preserves low battery, offline, synchronization failure, firmware update and new-measurement events. The device owner determines state; notification never performs a firmware or therapy change.",
+      "dependency": [
+        "CAP-DEVICES"
+      ]
+    },
+    "367": {
+      "purpose": "Notify recipients of laboratory workflow milestones and critical-result events.",
+      "difference": "Preserves sample received, analysis started, results available and critical result separately. Laboratory authority determines criticality; delivery alone cannot close critical-result escalation.",
+      "dependency": [
+        "CAP-LABORATORY"
+      ]
+    },
+    "756": {
+      "purpose": "Deliver pregnancy-context appointment, laboratory, ultrasound and medication reminders.",
+      "difference": "Preserves the four distinct event sources; a pregnancy profile does not duplicate the shared notification lifecycle. Confidential content must be redacted in external previews.",
+      "dependency": [
+        "CAP-APPOINTMENTS",
+        "CAP-LABORATORY",
+        "CAP-IMAGING",
+        "CAP-MEDICATION"
+      ]
+    },
+    "1025": {
+      "purpose": "Deliver pediatric infection laboratory, medication, isolation and follow-up notifications.",
+      "difference": "Preserves isolation completion as an externally authorized event, not a timer-derived clearance. Guardian authority and confidential child/adolescent context are checked for each recipient.",
+      "dependency": [
+        "CAP-LABORATORY",
+        "CAP-MEDICATION",
+        "CAP-SPECIALTY",
+        "CAP-APPOINTMENTS"
+      ]
+    },
+    "4305": {
+      "purpose": "Deliver versioned vaccination-status notifications with jurisdiction and preference context.",
+      "difference": "Preserves upcoming, due soon, due, window ending, overdue, catch-up required and medical review required separately. Immunization/CDS owns those determinations; delivery configuration cannot override clinical windows or invent catch-up rules.",
+      "dependency": [
+        "CAP-IMMUNIZATION",
+        "CAP-CDS"
+      ]
+    }
+  },
+  "clinical_approval": false,
+  "implementation_ready": false
+}

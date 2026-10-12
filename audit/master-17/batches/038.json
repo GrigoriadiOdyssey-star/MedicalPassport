@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-17",
+  "batch": 38,
+  "family": "administration-log-profile",
+  "owner": "CAP-ADMINISTRATION",
+  "ids": [
+    432
+  ],
+  "decision_sha256": "e05f389bc74b398ddd5a0b9b08f77f3b513323b340ff066823a411ffa85e067c",
+  "source_hashes": {
+    "432": "13f4478b61629b55c3d78dd562ff35ead8a1fe7993883ef4da5a34b401d335f9"
+  }
+}

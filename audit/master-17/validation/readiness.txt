@@ -1,0 +1,16 @@
+✔ Disclosure cross-field contract rejects impossible times and contradictory unknown/allergy projections (8.4761ms)
+✔ Disclosure contract fixtures cover requests, lifecycle states, view, event, errors and draft/approved policy (2.7762ms)
+✔ Source changes invalidate resources without inventing grant ownership (0.5096ms)
+✔ Disclosure rejects fifteen forbidden or inconsistent syntax variants and missing required fields (8.2519ms)
+✔ Configurable retention does not invent legal durations or activate unapproved drafts (0.8649ms)
+✔ Valid syntax is not claimed to prove binding, TTL policy, clinical truth or read/withdraw ordering (1.2596ms)
+✔ Readiness queue covers 28 active owners with categorized concrete blockers and seven bounded MVP candidates (3.549ms)
+✔ Readiness additions are hash-bound and preserve separation of full-owner and MVP scope (5.3622ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 201.7805

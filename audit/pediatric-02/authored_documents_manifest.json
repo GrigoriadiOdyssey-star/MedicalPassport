@@ -1,0 +1,39 @@
+{
+  "schema_version": 3,
+  "pass": "PEDIATRIC-02",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "9637f5af9720dc3c1a2d2846b9df70f7f9980055",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "documents": [
+    {
+      "path": "shared_pediatric_contract.md",
+      "sha256": "3b79f2dcd82ce12fc8c5477efe48a1f12c5bbf8f5705f57d0f735ed401e4d183"
+    },
+    {
+      "path": "CONTINUE_FROM_HERE.md",
+      "sha256": "849889dc5d0ed8852db5d6621ab65e84a9127ef8c1fd47707fc9ac2b8cd885f6"
+    },
+    {
+      "path": "pediatric_cardiology.md",
+      "sha256": "0541443eb9d798e62e4e7df9251398ad22d058a61ae5f7709d05ff4967e9c80d"
+    },
+    {
+      "path": "pediatric_renal.md",
+      "sha256": "f7323154a52f3f6ed25d301097741029ee71573afcbc38210ac8d6c9be52713e"
+    },
+    {
+      "path": "pediatric_allergy.md",
+      "sha256": "7e7e6f395afde4680d3a191978f627a275c5e4151b24528c7240c2206b0c72ba"
+    },
+    {
+      "path": "pediatric_immunology.md",
+      "sha256": "f2739c2d5718ad78d03920ad65e70748d8d28deb90585f4ed28ac96a3e2af22e"
+    },
+    {
+      "path": "pediatric_mental_health.md",
+      "sha256": "4f749fab2adb69c3cf1a78dcfe71b5157817e7c0b2769e7eefc450d064b46304"
+    }
+  ]
+}

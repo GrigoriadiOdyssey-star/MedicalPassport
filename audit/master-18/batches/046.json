@@ -1,0 +1,35 @@
+{
+  "pass": "MASTER-18",
+  "batch": 46,
+  "family": "clinical-acquisition-and-procedure-history",
+  "owner": "CAP-ENCOUNTER",
+  "ids": [
+    2015,
+    2016,
+    2031,
+    2075,
+    2629,
+    2641,
+    2870,
+    2910,
+    2951,
+    2970,
+    2987,
+    3830
+  ],
+  "decision_sha256": "c9e485db07069b7cf38d6c7e24ee71c28ca3fc6e9ceebac78644a80a8f3975c0",
+  "source_hashes": {
+    "2015": "6cfbea8950f10cc5fbae0dc73db7391598cbfc25a5a57be357883b15c10b4a3c",
+    "2016": "7f2e5679fd3bf9b1e123ab92f28235b3e13ff219eb417830052b71dc7f4ecde0",
+    "2031": "a514ec44efc83c59e769bac4e82364df642c8ca83d1c55a735ea1b81b7911723",
+    "2075": "2cf04973727e71e57881de681159120237aae15d44fbd530023462fdceeb5de2",
+    "2629": "2f0ac3335e257da3da91f3399e88e5deeb831dbbb9e3fb92bd914f4cdf8f2cc8",
+    "2641": "a7f6888cbf75e681943bfced1b647aa6ecb0930a1579c1113c13da162f2c0962",
+    "2870": "3f83ed0816484dd4e36d117dea9982c06e57670277ab291de026baf57b6061c8",
+    "2910": "40005da66bb14cdd6f1985873363d809d93dc10a5a4041708597586abd2ec2cf",
+    "2951": "df99cc28e3451f106e01240b00046ff4c22d1cb4ac2cf2216d02a6ee88cd845b",
+    "2970": "756d6dc1c0b52390d301087e092bdaee8047ee0284cadc4735c053d723e73163",
+    "2987": "ea263729dd49afb36c438662c552bdd3e1e35f1a81e2648da184985c8af20004",
+    "3830": "6bce32608bcde979d98e8fadf740bb2e8471cee575fca44a24e4129e69a280d8"
+  }
+}

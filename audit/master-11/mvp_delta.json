@@ -1,0 +1,20 @@
+{
+  "pass": "MASTER-11",
+  "baseline_commit": "106d9d8e4dfa62a1452e8425df8d4ca1adf906cb",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "baseline_registry": "docs/engineering/mvp_candidate_registry.json",
+  "prior_delta": "audit/master-09/mvp_delta.json",
+  "replace_owner": {
+    "owner": "CAP-TRAVEL",
+    "canonical_id": "CORE-CAP-TRAVEL",
+    "canonical_document": "docs/canonical/master11/CAP-TRAVEL.md",
+    "tag": "LONG_TERM",
+    "implementation_ready": false
+  },
+  "counts_unchanged": true,
+  "scope": "Source-backed travel owner remains excluded from the initial MVP; no new architectural owner."
+}

@@ -1,0 +1,114 @@
+{
+  "pass": "MASTER-16",
+  "completed_batches": 18,
+  "normalized": 2649,
+  "canonicalized": 2649,
+  "targeted_tests": 8,
+  "failed": 0,
+  "batches": [
+    {
+      "path": "audit/master-16/batches/001.json",
+      "sha256": "0a6f6dfc021735ca0926253326259e5178119c7f9858063dbbcfcf1ee0ae92a7"
+    },
+    {
+      "path": "audit/master-16/batches/002.json",
+      "sha256": "354576e9f50c171413b4ea360dde9def43923b24fab032f5df6695e990383f03"
+    },
+    {
+      "path": "audit/master-16/batches/003.json",
+      "sha256": "7d5fe213f19f554394ffa114b53829dacc6a382a4fbd43e56f0dca8ae7f47754"
+    },
+    {
+      "path": "audit/master-16/batches/004.json",
+      "sha256": "2d5efe91be8ba64c2c902a974aa40ac197397c709f3e5a5e51c46378595defc8"
+    },
+    {
+      "path": "audit/master-16/batches/005.json",
+      "sha256": "1522969df1ee152010dae309445d9848ae5dda7cbe59c383a01aa456ff1ccb44"
+    },
+    {
+      "path": "audit/master-16/batches/006.json",
+      "sha256": "9aff15f5986d057311c872d6d9ae1eab59a664028b102fac07a8b7729df21237"
+    },
+    {
+      "path": "audit/master-16/batches/007.json",
+      "sha256": "fc2dcb2ed3aab2d39986a5976d2bfc989d937ff64f44fb2e293d01512a85846f"
+    },
+    {
+      "path": "audit/master-16/batches/008.json",
+      "sha256": "2c7c522cf59ec0ea54d97c36291eac9879da0fa583921cc422a19aefde45c9b8"
+    },
+    {
+      "path": "audit/master-16/batches/009.json",
+      "sha256": "3c14f8d39f18ae466527bc6e32e21b1b7c75909a6979630eddd58e16e7d8ea0c"
+    },
+    {
+      "path": "audit/master-16/batches/010.json",
+      "sha256": "e92f54fc4be7facf1f4c3fb91c1f8bbafa40c7a66aad9dd47b03202adb24ed8a"
+    },
+    {
+      "path": "audit/master-16/batches/011.json",
+      "sha256": "2e88cde37115f8ca96cdbf5177c626de9bf6163dd93a5deff3d913748d660d04"
+    },
+    {
+      "path": "audit/master-16/batches/012.json",
+      "sha256": "fde5e9e85a36a9f5dc26c3fd0f913bc9a7a1c47efb007e8ca71a419f8b4c9421"
+    },
+    {
+      "path": "audit/master-16/batches/013.json",
+      "sha256": "76f64552d596d832acd444a44de93c9fc39f25cade774a4e5c453d812789c266"
+    },
+    {
+      "path": "audit/master-16/batches/014.json",
+      "sha256": "5399dbad19056ea9b139b78c6489cf1b2d3edfe35ab107a5c6acea401a14245e"
+    },
+    {
+      "path": "audit/master-16/batches/015.json",
+      "sha256": "1bee5ff50429589e0da77a217b11537450ca7e69388b307ece6fad1d7e3d2f97"
+    },
+    {
+      "path": "audit/master-16/batches/016.json",
+      "sha256": "32cf4cdf6513f2bd2ac8eb68c7be722649573cb3459c51d017b88dd0fa0ce463"
+    },
+    {
+      "path": "audit/master-16/batches/017.json",
+      "sha256": "e720402f0fb54f6854e6af76c96f1cf2c59df1fb593f358acd27bb25fbad4945"
+    },
+    {
+      "path": "audit/master-16/batches/018.json",
+      "sha256": "8e22a0def306208e84214c5763d99c4043cd994e64f36a041f2278d1bc2d8fbd"
+    }
+  ],
+  "next_exact_cluster": {
+    "key": "diagnostic-and-assessment-contracts",
+    "requires_new_family_decision": true,
+    "candidate_owners": [
+      "CAP-LABORATORY",
+      "CAP-IMAGING",
+      "CAP-DEVICES",
+      "CAP-CDS",
+      "CAP-IMMUNIZATION"
+    ],
+    "ids": [
+      2008,
+      2131,
+      3692,
+      4158,
+      4321,
+      4322,
+      4324,
+      4396,
+      4405,
+      4565,
+      4611,
+      4745,
+      4746,
+      4755,
+      4767,
+      4796,
+      4939,
+      5021,
+      5089
+    ]
+  }
+}

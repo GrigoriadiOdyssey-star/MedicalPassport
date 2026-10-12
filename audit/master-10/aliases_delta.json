@@ -1,0 +1,113 @@
+{
+  "pass": "MASTER-10",
+  "baseline_commit": "9efb09e6f91980c1315a1b7fcaa1f77a3f96d793",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "aliases": [
+    {
+      "original_id": 763,
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 764,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master10/CAP-PROFILE.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 765,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 771,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 775,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 780,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 766,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 768,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 769,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 770,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 772,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master10/CAP-IMAGING.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 767,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 773,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 774,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 776,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 777,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master10/CAP-AI.md",
+      "source_preserved": true
+    },
+    {
+      "original_id": 779,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master10/CAP-DATA.md",
+      "source_preserved": true
+    }
+  ]
+}

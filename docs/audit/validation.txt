@@ -1,0 +1,19 @@
+EDHT local validation — 2026-09-13
+Node: v24.20.0
+Tests:
+✔ parser preserves embedded headings and rejects missing or duplicate IDs (2.6223ms)
+✔ editorial corrections fail closed if exact evidence changes (0.3106ms)
+✔ same title is not treated as same body or silently merged (3.3078ms)
+✔ risk hints never assign implementation or clinical validation (0.7897ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 124.3804
+Repository checks:
+{"status":"passed","scope":"Targeted contract checks using a limited schema evaluator; not full OpenAPI validation or runtime testing","paths":21,"operations":33,"schemas":29,"refs":383,"positive_examples":5,"negative_cases":13}
+PASS: source integrity; reproducible 5175-module catalog; 31258 local links; JSON and 33 OpenAPI operations; high-confidence credential patterns. These are document/contract checks, not application or clinical validation.
+Exit codes: tests=0, check=0

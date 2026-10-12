@@ -1,0 +1,231 @@
+{
+  "pass": "MASTER-13",
+  "date": "2026-09-15T23:25:24.630Z",
+  "branch": "audit/master-pass-13",
+  "parent_commit": "8b1ebd63ff7e02e1cefb6e3accbd00b654d56d3a",
+  "overlay_order": [
+    "audit/master-08",
+    "audit/master-09",
+    "audit/master-10",
+    "audit/master-11",
+    "audit/master-12",
+    "audit/master-13"
+  ],
+  "objective": "100 percent primary REVIEW of 5175 original modules",
+  "objective_status": "COMPLETE",
+  "scope": "All originals have Level-A-or-deeper review; detailed semantic, clinical and implementation audit remains open",
+  "statistics": {
+    "pass": "MASTER-13",
+    "baseline_commit": "8b1ebd63ff7e02e1cefb6e3accbd00b654d56d3a",
+    "baseline_state": "audit/master-08/",
+    "mode": "APPEND_ONLY_DELTA",
+    "date": "2026-09-16",
+    "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+    "gitlab_writes": false,
+    "schema_version": 5,
+    "edition": "2026-09-15",
+    "parent_checkpoint": "8b1ebd63ff7e02e1cefb6e3accbd00b654d56d3a",
+    "implementation_started": false,
+    "EXPECTED_SOURCE_MODULES": 51075,
+    "ORIGINAL_SOURCE_MODULES": 5175,
+    "ACCOUNTED_SOURCE_MODULES": 5175,
+    "NEW_GAP_MODULES": 0,
+    "REVIEWED": 5175,
+    "NORMALIZED": 770,
+    "CANONICALIZED": 770,
+    "IMPLEMENTATION_READY": 0,
+    "UNAUDITED": 0,
+    "REVIEW_PROGRESS": 100,
+    "NORMALIZATION_PROGRESS": 14.8792,
+    "CANONICALIZATION_PROGRESS": 14.8792,
+    "GAP_FILL_PROGRESS": 100,
+    "IMPLEMENTATION_READINESS": 0,
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+    "gap_scope": {
+      "identified_specification_gaps": 7,
+      "drafted": 7,
+      "validated_closed": 7,
+      "integrated": 7,
+      "validation_scope": "Documentation semantic/owner/integration gates only; clinical/runtime release gates remain open",
+      "clinical_validated": 0
+    },
+    "formulas": {
+      "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+      "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+      "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+      "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+      "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+      "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate",
+      "AUDIT_WORK_PROGRESS": "100 * (REVIEWED + NORMALIZED + CANONICALIZED) / (3 * 5175); equal-weight documentation work steps, not clinical readiness or time spent"
+    },
+    "duplicate_counts": {
+      "exact_groups": 3,
+      "semantic_groups": 1,
+      "partial_overlap_groups": 47,
+      "distinct_capability_groups": 1,
+      "unresolved_clusters": 1937,
+      "source_ids_closed": 0
+    },
+    "legacy_generations_confirmed": 0,
+    "legacy_marker_candidates": 27,
+    "high_risk_candidate_ids": 3608,
+    "critical_findings": 6,
+    "high_findings": 11,
+    "gitlab_write_status": "NO_WRITES",
+    "final_audit_ready": false,
+    "GAP_FILL_VALIDATED": 7,
+    "AUDIT_WORK_PROGRESS": 43.2528,
+    "NEWLY_REVIEWED": 534,
+    "NEWLY_NORMALIZED": 0,
+    "NEWLY_CANONICALIZED": 0,
+    "CANONICAL_SPECIFICATIONS": 27,
+    "UNIQUE_REQUIREMENTS_PRESERVED": 7637,
+    "SOURCE_FRAGMENTS_PRESERVED": 15735,
+    "GAP_FILL_INTEGRATED": 7,
+    "NEWLY_GAP_FILL_VALIDATED": 0,
+    "NEWLY_GAP_FILL_INTEGRATED": 0,
+    "PROFILES": 233,
+    "NEWLY_IMPLEMENTATION_READY": 0,
+    "REVIEWED_BEFORE_RUN": 4641,
+    "FAST_REVIEWED": 534,
+    "DEEP_REVIEWED": 0,
+    "NEEDS_DEEP_REVIEW": 534,
+    "DUPLICATE_CANDIDATES_FOUND": 126,
+    "PARTIAL_OVERLAPS_FOUND": 57,
+    "LEGACY_CANDIDATES_FOUND": 0,
+    "LEVEL_A_LIMITATION": "Deterministic full-body classification with evidence extraction, not complete clinical/semantic adjudication. Deep queue is counted separately and not implementation-ready.",
+    "KNOWN_DEEP_REVIEW_QUEUE": 3109,
+    "deep_queue_scope": "MASTER12 and MASTER13 only; older clinical findings remain inherited",
+    "NEW_REVIEW_SOURCE_FRAGMENTS_PRESERVED": 7537
+  },
+  "validation": {
+    "targeted_batches": 3,
+    "targeted_tests": 8,
+    "targeted_status": "PASS",
+    "full_runs": 2,
+    "full_status": "PASS",
+    "final_tests_passed": 140,
+    "failed_validators": 0,
+    "inherited_historical_test_replacements": 1,
+    "replacement_scope": "Same MASTER09 additive-file guard replacement as MASTER12; original cache/hash/anchor assertions retained; no new exclusions",
+    "scope": "Source integrity, complete inventory, provenance and document/contract validation; no runtime or clinical certification",
+    "reproduce": "node scripts/validate-master13.mjs",
+    "runs": [
+      {
+        "label": "MILESTONE97",
+        "path": "validation/MILESTONE97.txt",
+        "sha256": "44eb39fe4e21e0b15c91978316d86b4da56397fb48b71cd1783d5e8c2adc136d",
+        "status": "PASS",
+        "tests_passed": 140,
+        "tests_failed": 0
+      },
+      {
+        "label": "FINAL",
+        "path": "validation/FINAL.txt",
+        "sha256": "7235c2cadb0e7fe12ac7ed62a786ac09bad60ff0e7341e31b7a9fd8aafe70289",
+        "status": "PASS",
+        "tests_passed": 140,
+        "tests_failed": 0
+      }
+    ]
+  },
+  "next_safe_action": {
+    "pass": "MASTER-13",
+    "unaudited_ids": [],
+    "next_exact_unaudited_ids": [],
+    "next_safe_action": "Close high-risk deep-review and canonical boundary queue without increasing REVIEWED",
+    "next_deep_review_ids": [
+      4312,
+      4347,
+      4734,
+      4965,
+      4903,
+      4904,
+      4905,
+      4906,
+      4907,
+      4332,
+      4333,
+      1300,
+      2000
+    ],
+    "all_originals_level_a_accounted": true
+  },
+  "historical_originals_recounted": 0,
+  "canonical_owners_created": 0,
+  "gitlab_writes": false,
+  "artifacts": [
+    {
+      "path": "audit/master-13/audit_ledger_delta.json",
+      "sha256": "ccfb240a1f727f3a61889b23e0b7574fe1e5f64297adc679f40ea6acc8efec8d"
+    },
+    {
+      "path": "audit/master-13/audit_progress.json",
+      "sha256": "d4fb33c6bead6104482e5b1f8184d68aff4beb2420e98053e57273a44020e006"
+    },
+    {
+      "path": "audit/master-13/batches/001.json",
+      "sha256": "afc633b6e87f853893fbec51121153559853bba131b05961f2a19264e6389b9d"
+    },
+    {
+      "path": "audit/master-13/batches/002.json",
+      "sha256": "08d3987e604b40782626a553ea2d5903dbf591183d66b3427cb5fd3e082de4f0"
+    },
+    {
+      "path": "audit/master-13/batches/003.json",
+      "sha256": "76faa2ceae9a9ada93f11735a07712baab8204bd6869241846e9d399ca325869"
+    },
+    {
+      "path": "audit/master-13/canonical_registry_delta.json",
+      "sha256": "6a4e2df1bd17bcc50d63f5fb348fcb6934943d6c2f0b7b6401c101f96b547543"
+    },
+    {
+      "path": "audit/master-13/CONTINUE_FROM_HERE.md",
+      "sha256": "ae48977355cf4aea29e0d21d731ef6daf608d83121152b82aa389284a444356f"
+    },
+    {
+      "path": "audit/master-13/deep_review_queue.json",
+      "sha256": "c24becf8204604c29e3204995b41c664516df1ebd1ed7a23206a77b75d812701"
+    },
+    {
+      "path": "audit/master-13/REVIEW_DECISIONS.md",
+      "sha256": "044ec5ed779f71381f3bde162e88ae704e12e7cb6f6700478c720abc4bf1e3b7"
+    },
+    {
+      "path": "audit/master-13/review_queue.json",
+      "sha256": "f5cd5c748c743fa4fa2420a1b4c83bc715aba64d815d5e42d3688d5c3be6a5b9"
+    },
+    {
+      "path": "audit/master-13/state_manifest.json",
+      "sha256": "256d3d6c2664cf9539537aae90d6e51688f6e4dcde6bb27c4ddb835f5b65f5dc"
+    },
+    {
+      "path": "audit/master-13/validation/FINAL.txt",
+      "sha256": "7235c2cadb0e7fe12ac7ed62a786ac09bad60ff0e7341e31b7a9fd8aafe70289"
+    },
+    {
+      "path": "audit/master-13/validation/MILESTONE97.txt",
+      "sha256": "44eb39fe4e21e0b15c91978316d86b4da56397fb48b71cd1783d5e8c2adc136d"
+    },
+    {
+      "path": "audit/master-13/validation_summary.json",
+      "sha256": "580c5ebf33f76241516a6d21c11fa965212e8c4a2338fdb6da52fa60fea712fd"
+    },
+    {
+      "path": "config/master13.mjs",
+      "sha256": "50b52b6035868e071bee8752a106e0b7b4e0ff509017ad07897517480ed3b41e"
+    },
+    {
+      "path": "scripts/master13.mjs",
+      "sha256": "bb79aab3512b1f829259c8d94c83e4ff6845a6517e1305ba2e84437059c04617"
+    },
+    {
+      "path": "scripts/validate-master13.mjs",
+      "sha256": "964d46fc9eee990ae2709944429f4f0dc1cd2bd95772f74eab5783705185a552"
+    },
+    {
+      "path": "tests/master13.test.mjs",
+      "sha256": "ba8ae9cc177a722d7b3bbfd00decf36abbddcfcee79adcaea775ee5e410c3ce6"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "base_sha": "2ee86e4ff180ffe9fe66097bbb4d883cfc8e058b",
+  "final_sha_evidence": "Attach final SHA/pipeline/deployment evidence in merge request; local contract evidence must not be called live acceptance",
+  "rows": [
+    {
+      "entity": "AI",
+      "operation": "provider contract / five turns",
+      "actor": "synthetic mock",
+      "expected": "meaningful server response + authoritative prior turns",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "tests/cloud-assistant.test.mjs",
+      "environment": "contract",
+      "tested_sha": null
+    },
+    {
+      "entity": "AI",
+      "operation": "live RU/EN multi-turn",
+      "actor": "real synthetic user",
+      "expected": "real approved provider output",
+      "actual": "BLOCKED",
+      "status": "BLOCKED",
+      "evidence": "User deferred paid calls; model/key/budget not configured",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "AI",
+      "operation": "history/new/delete/reload",
+      "actor": "owner",
+      "expected": "persisted ordered history",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "tests/cloud-assistant-ui.test.mjs + supabase/tests/preview-assistant-contract.sql",
+      "environment": "local",
+      "tested_sha": null
+    },
+    {
+      "entity": "AI",
+      "operation": "foreign read/write/forged provider response",
+      "actor": "foreign JWT",
+      "expected": "deny without side effects",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "supabase/tests/preview-assistant-contract.sql",
+      "environment": "postgres",
+      "tested_sha": null
+    },
+    {
+      "entity": "AI",
+      "operation": "concurrent budget / per-user / request dedupe",
+      "actor": "two PostgreSQL sessions",
+      "expected": "one reservation; no overspend",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "Disposable PostgreSQL17 race checks; outside-repo test driver",
+      "environment": "postgres",
+      "tested_sha": null
+    },
+    {
+      "entity": "AI",
+      "operation": "timeout/unknown usage",
+      "actor": "provider mock",
+      "expected": "retain reservation; no silent fallback",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "tests/cloud-assistant.test.mjs + assistant store contracts",
+      "environment": "contract",
+      "tested_sha": null
+    },
+    {
+      "entity": "QR",
+      "operation": "create/scannable token",
+      "actor": "patient A",
+      "expected": "opaque random QR; hash-only private storage",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "tests/cloud-consent.test.mjs",
+      "environment": "contract",
+      "tested_sha": null
+    },
+    {
+      "entity": "QR",
+      "operation": "scoped read / durable coexistence",
+      "actor": "verified doctor C",
+      "expected": "only permitted records; preserve provenance",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "supabase/tests/qr-consent-contract.sql",
+      "environment": "postgres",
+      "tested_sha": null
+    },
+    {
+      "entity": "QR",
+      "operation": "wrong recipient / private credential / direct read",
+      "actor": "B + wrong doctor",
+      "expected": "opaque denial; no bypass",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "supabase/tests/qr-consent-contract.sql",
+      "environment": "postgres",
+      "tested_sha": null
+    },
+    {
+      "entity": "QR",
+      "operation": "two parallel one-read requests",
+      "actor": "two PostgreSQL sessions",
+      "expected": "one allowed + one denied + one audit receipt",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "Disposable edht_qr_concurrency PostgreSQL17 verification",
+      "environment": "postgres",
+      "tested_sha": null
+    },
+    {
+      "entity": "QR",
+      "operation": "expiry/revoke/revoked session",
+      "actor": "doctor C",
+      "expected": "future access denied",
+      "actual": "PASS",
+      "status": "PASS",
+      "evidence": "supabase/tests/qr-consent-contract.sql",
+      "environment": "postgres",
+      "tested_sha": null
+    },
+    {
+      "entity": "QR",
+      "operation": "live patient-to-doctor flow",
+      "actor": "real Auth A/C",
+      "expected": "same final-SHA Preview",
+      "actual": "BLOCKED",
+      "status": "BLOCKED",
+      "evidence": "Isolated database/migration enablement + verified clinician session required",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "documents",
+      "operation": "QR bytes and versions",
+      "actor": "doctor C",
+      "expected": "proxy reauthorization; no reusable signed URL bypass",
+      "actual": "BLOCKED",
+      "status": "BLOCKED",
+      "evidence": "Document QR proxy not implemented",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "documents",
+      "operation": "safe actual JPEG/PNG/PDF decode",
+      "actor": "owner",
+      "expected": "bounded parser + resource limits",
+      "actual": "NOT_RUN",
+      "status": "NOT_RUN",
+      "evidence": "Existing size/hash checks are not full format validation",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "Auth/RLS",
+      "operation": "all entity operations two independent browser sessions",
+      "actor": "A/B",
+      "expected": "owner success + foreign denial on final deployment",
+      "actual": "BLOCKED",
+      "status": "BLOCKED",
+      "evidence": "Final Preview sessions and database enablement required",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "E2E",
+      "operation": "all screens, registration and reload",
+      "actor": "real synthetic users",
+      "expected": "same final deployment evidence",
+      "actual": "NOT_RUN",
+      "status": "NOT_RUN",
+      "evidence": "Awaiting final Preview and user sessions",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "translation/scanner",
+      "operation": "OCR/derived translation/camera",
+      "actor": "synthetic user",
+      "expected": "immutable original + verified derivative provenance",
+      "actual": "BLOCKED",
+      "status": "BLOCKED",
+      "evidence": "Runtime/permissions unavailable; no live translation claim",
+      "environment": "preview",
+      "tested_sha": null
+    },
+    {
+      "entity": "external clinical APIs",
+      "operation": "pharmacy/lab/imaging",
+      "actor": "synthetic user",
+      "expected": "real persistence and provider contracts",
+      "actual": "NOT_RUN",
+      "status": "NOT_RUN",
+      "evidence": "Outside implemented AI/clinical-QR priority; baseline cloud gaps remain",
+      "environment": "preview",
+      "tested_sha": null
+    }
+  ]
+}

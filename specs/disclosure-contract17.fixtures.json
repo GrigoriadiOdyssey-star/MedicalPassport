@@ -1,0 +1,393 @@
+{
+  "scope": "All identifiers/times/approval references are synthetic. The example 60-second retention is a schema fixture, never a legal or production retention value.",
+  "positive": [
+    {
+      "kind": "grant_create",
+      "schema_version": 1,
+      "request_id": "request_test",
+      "record_id": "record_test",
+      "expected_record_version": 1,
+      "recipient_role_reference": "doctor_test",
+      "purpose": "TREATMENT_REVIEW",
+      "requested_ttl_seconds": 60,
+      "expected_policy_version": 1
+    },
+    {
+      "kind": "grant_revoke",
+      "schema_version": 1,
+      "request_id": "request_test",
+      "expected_grant_version": 1
+    },
+    {
+      "kind": "grant_state",
+      "schema_version": 1,
+      "grant_id": "grant_test",
+      "tenant_id": "tenant_test",
+      "patient_id": "patient_test",
+      "creator_subject_id": "subject_test",
+      "recipient_role_reference": "doctor_test",
+      "record_id": "record_test",
+      "record_version": 1,
+      "purpose": "TREATMENT_REVIEW",
+      "grant_version": 1,
+      "policy_version": 1,
+      "created_at_ms": 1000,
+      "expires_at_ms": 2000,
+      "status": "ACTIVE",
+      "withdrawn_at_ms": null
+    },
+    {
+      "kind": "grant_state",
+      "schema_version": 1,
+      "grant_id": "grant_test",
+      "tenant_id": "tenant_test",
+      "patient_id": "patient_test",
+      "creator_subject_id": "subject_test",
+      "recipient_role_reference": "doctor_test",
+      "record_id": "record_test",
+      "record_version": 1,
+      "purpose": "TREATMENT_REVIEW",
+      "grant_version": 2,
+      "policy_version": 1,
+      "created_at_ms": 1000,
+      "expires_at_ms": 2000,
+      "status": "REVOKED",
+      "withdrawn_at_ms": 1500
+    },
+    {
+      "kind": "grant_state",
+      "schema_version": 1,
+      "grant_id": "grant_test",
+      "tenant_id": "tenant_test",
+      "patient_id": "patient_test",
+      "creator_subject_id": "subject_test",
+      "recipient_role_reference": "doctor_test",
+      "record_id": "record_test",
+      "record_version": 1,
+      "purpose": "TREATMENT_REVIEW",
+      "grant_version": 1,
+      "policy_version": 1,
+      "created_at_ms": 1000,
+      "expires_at_ms": 2000,
+      "status": "EXPIRED",
+      "withdrawn_at_ms": null
+    },
+    {
+      "kind": "allergy_view",
+      "schema_version": 1,
+      "grant_id": "grant_test",
+      "record_id": "record_test",
+      "record_version": 1,
+      "assertion_state": "UNKNOWN",
+      "verification_state": "UNKNOWN",
+      "freshness": "UNKNOWN",
+      "source_reference": "source_test",
+      "reported_substance": null,
+      "reported_reaction": null,
+      "receipt_reference": "receipt_test"
+    },
+    {
+      "kind": "disclosure_event",
+      "schema_version": 1,
+      "event_name": "GrantWithdrawn",
+      "event_id": "event_test",
+      "producer_id": "consent_test",
+      "correlation_id": "request_test",
+      "tenant_id": "tenant_test",
+      "grant_reference": "grant_test",
+      "resource_reference": "record_test",
+      "grant_version": 2,
+      "source_version": 1,
+      "policy_version": 1,
+      "occurred_at_ms": 1500,
+      "outcome": "COMMITTED"
+    },
+    {
+      "kind": "problem",
+      "schema_version": 1,
+      "request_id": "request_test",
+      "code": "ACCESS_DENIED"
+    },
+    {
+      "kind": "retention_policy",
+      "schema_version": 1,
+      "policy_id": "policy_test",
+      "policy_version": 1,
+      "jurisdiction": "CONFIGURABLE",
+      "data_category": "AUDIT_METADATA",
+      "legal_basis_reference": "requires_approval",
+      "consent_policy_reference": "consent_policy_test",
+      "purpose": "TREATMENT_REVIEW",
+      "hold_behavior": "BLOCK_DELETION",
+      "archive_authorization": "SEPARATE_PERMISSION",
+      "export_authorization": "SEPARATE_PERMISSION",
+      "status": "DRAFT",
+      "retention_seconds": null,
+      "approval_reference": null
+    },
+    {
+      "kind": "retention_policy",
+      "schema_version": 1,
+      "policy_id": "policy_test",
+      "policy_version": 1,
+      "jurisdiction": "CONFIGURABLE",
+      "data_category": "AUDIT_METADATA",
+      "legal_basis_reference": "requires_approval",
+      "consent_policy_reference": "consent_policy_test",
+      "purpose": "TREATMENT_REVIEW",
+      "hold_behavior": "BLOCK_DELETION",
+      "archive_authorization": "SEPARATE_PERMISSION",
+      "export_authorization": "SEPARATE_PERMISSION",
+      "status": "APPROVED",
+      "retention_seconds": 60,
+      "approval_reference": "synthetic_approval_only"
+    }
+  ],
+  "negative": [
+    {
+      "name": "caller supplied patient",
+      "value": {
+        "kind": "grant_create",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "record_id": "record_test",
+        "expected_record_version": 1,
+        "recipient_role_reference": "doctor_test",
+        "purpose": "TREATMENT_REVIEW",
+        "requested_ttl_seconds": 60,
+        "expected_policy_version": 1,
+        "patient_id": "foreign"
+      }
+    },
+    {
+      "name": "caller supplied tenant",
+      "value": {
+        "kind": "grant_create",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "record_id": "record_test",
+        "expected_record_version": 1,
+        "recipient_role_reference": "doctor_test",
+        "purpose": "TREATMENT_REVIEW",
+        "requested_ttl_seconds": 60,
+        "expected_policy_version": 1,
+        "tenant_id": "foreign"
+      }
+    },
+    {
+      "name": "emergency override",
+      "value": {
+        "kind": "grant_create",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "record_id": "record_test",
+        "expected_record_version": 1,
+        "recipient_role_reference": "doctor_test",
+        "purpose": "TREATMENT_REVIEW",
+        "requested_ttl_seconds": 60,
+        "expected_policy_version": 1,
+        "emergency_override": true
+      }
+    },
+    {
+      "name": "unsupported purpose",
+      "value": {
+        "kind": "grant_create",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "record_id": "record_test",
+        "expected_record_version": 1,
+        "recipient_role_reference": "doctor_test",
+        "purpose": "RESEARCH",
+        "requested_ttl_seconds": 60,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "zero requested TTL",
+      "value": {
+        "kind": "grant_create",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "record_id": "record_test",
+        "expected_record_version": 1,
+        "recipient_role_reference": "doctor_test",
+        "purpose": "TREATMENT_REVIEW",
+        "requested_ttl_seconds": 0,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "unsafe version",
+      "value": {
+        "kind": "grant_revoke",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "expected_grant_version": 9007199254740992
+      }
+    },
+    {
+      "name": "revoked without withdrawal time",
+      "value": {
+        "kind": "grant_state",
+        "schema_version": 1,
+        "grant_id": "grant_test",
+        "tenant_id": "tenant_test",
+        "patient_id": "patient_test",
+        "creator_subject_id": "subject_test",
+        "recipient_role_reference": "doctor_test",
+        "record_id": "record_test",
+        "record_version": 1,
+        "purpose": "TREATMENT_REVIEW",
+        "grant_version": 2,
+        "policy_version": 1,
+        "created_at_ms": 1000,
+        "expires_at_ms": 2000,
+        "status": "REVOKED",
+        "withdrawn_at_ms": null
+      }
+    },
+    {
+      "name": "active with withdrawal time",
+      "value": {
+        "kind": "grant_state",
+        "schema_version": 1,
+        "grant_id": "grant_test",
+        "tenant_id": "tenant_test",
+        "patient_id": "patient_test",
+        "creator_subject_id": "subject_test",
+        "recipient_role_reference": "doctor_test",
+        "record_id": "record_test",
+        "record_version": 1,
+        "purpose": "TREATMENT_REVIEW",
+        "grant_version": 1,
+        "policy_version": 1,
+        "created_at_ms": 1000,
+        "expires_at_ms": 2000,
+        "status": "ACTIVE",
+        "withdrawn_at_ms": 1500
+      }
+    },
+    {
+      "name": "unapproved activated retention",
+      "value": {
+        "kind": "retention_policy",
+        "schema_version": 1,
+        "policy_id": "policy_test",
+        "policy_version": 1,
+        "jurisdiction": "CONFIGURABLE",
+        "data_category": "AUDIT_METADATA",
+        "legal_basis_reference": "requires_approval",
+        "consent_policy_reference": "consent_policy_test",
+        "purpose": "TREATMENT_REVIEW",
+        "hold_behavior": "BLOCK_DELETION",
+        "archive_authorization": "SEPARATE_PERMISSION",
+        "export_authorization": "SEPARATE_PERMISSION",
+        "status": "APPROVED",
+        "retention_seconds": null,
+        "approval_reference": null
+      }
+    },
+    {
+      "name": "approved retention without period",
+      "value": {
+        "kind": "retention_policy",
+        "schema_version": 1,
+        "policy_id": "policy_test",
+        "policy_version": 1,
+        "jurisdiction": "CONFIGURABLE",
+        "data_category": "AUDIT_METADATA",
+        "legal_basis_reference": "requires_approval",
+        "consent_policy_reference": "consent_policy_test",
+        "purpose": "TREATMENT_REVIEW",
+        "hold_behavior": "BLOCK_DELETION",
+        "archive_authorization": "SEPARATE_PERMISSION",
+        "export_authorization": "SEPARATE_PERMISSION",
+        "status": "APPROVED",
+        "retention_seconds": null,
+        "approval_reference": "synthetic_approval_only"
+      }
+    },
+    {
+      "name": "destructive hold bypass",
+      "value": {
+        "kind": "retention_policy",
+        "schema_version": 1,
+        "policy_id": "policy_test",
+        "policy_version": 1,
+        "jurisdiction": "CONFIGURABLE",
+        "data_category": "AUDIT_METADATA",
+        "legal_basis_reference": "requires_approval",
+        "consent_policy_reference": "consent_policy_test",
+        "purpose": "TREATMENT_REVIEW",
+        "hold_behavior": "IGNORE_HOLD",
+        "archive_authorization": "SEPARATE_PERMISSION",
+        "export_authorization": "SEPARATE_PERMISSION",
+        "status": "APPROVED",
+        "retention_seconds": 60,
+        "approval_reference": "synthetic_approval_only"
+      }
+    },
+    {
+      "name": "raw clinical event",
+      "value": {
+        "kind": "disclosure_event",
+        "schema_version": 1,
+        "event_name": "GrantWithdrawn",
+        "event_id": "event_test",
+        "producer_id": "consent_test",
+        "correlation_id": "request_test",
+        "tenant_id": "tenant_test",
+        "grant_reference": "grant_test",
+        "resource_reference": "record_test",
+        "grant_version": 2,
+        "source_version": 1,
+        "policy_version": 1,
+        "occurred_at_ms": 1500,
+        "outcome": "COMMITTED",
+        "clinical_text": "synthetic"
+      }
+    },
+    {
+      "name": "raw error disclosure",
+      "value": {
+        "kind": "problem",
+        "schema_version": 1,
+        "request_id": "request_test",
+        "code": "ACCESS_DENIED",
+        "patient_id": "foreign"
+      }
+    },
+    {
+      "name": "unknown schema",
+      "value": {
+        "kind": "grant_create",
+        "schema_version": 2,
+        "request_id": "request_test",
+        "record_id": "record_test",
+        "expected_record_version": 1,
+        "recipient_role_reference": "doctor_test",
+        "purpose": "TREATMENT_REVIEW",
+        "requested_ttl_seconds": 60,
+        "expected_policy_version": 1
+      }
+    },
+    {
+      "name": "fabricated safe status",
+      "value": {
+        "kind": "allergy_view",
+        "schema_version": 1,
+        "grant_id": "grant_test",
+        "record_id": "record_test",
+        "record_version": 1,
+        "assertion_state": "SAFE",
+        "verification_state": "UNKNOWN",
+        "freshness": "UNKNOWN",
+        "source_reference": "source_test",
+        "reported_substance": null,
+        "reported_reaction": null,
+        "receipt_reference": "receipt_test"
+      }
+    }
+  ]
+}

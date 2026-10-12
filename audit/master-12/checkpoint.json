@@ -1,0 +1,436 @@
+{
+  "pass": "MASTER-12",
+  "date": "2026-09-15T23:11:02.214Z",
+  "branch": "audit/master-pass-12",
+  "parent_commit": "53c4fe4647f200df6c4f867acc6b044a6b728ab4",
+  "overlay_order": [
+    "audit/master-08",
+    "audit/master-09",
+    "audit/master-10",
+    "audit/master-11",
+    "audit/master-12"
+  ],
+  "statistics": {
+    "pass": "MASTER-12",
+    "baseline_commit": "53c4fe4647f200df6c4f867acc6b044a6b728ab4",
+    "baseline_state": "audit/master-08/",
+    "mode": "APPEND_ONLY_DELTA",
+    "date": "2026-09-16",
+    "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+    "gitlab_writes": false,
+    "schema_version": 5,
+    "edition": "2026-09-15",
+    "parent_checkpoint": "53c4fe4647f200df6c4f867acc6b044a6b728ab4",
+    "implementation_started": false,
+    "EXPECTED_SOURCE_MODULES": 51075,
+    "ORIGINAL_SOURCE_MODULES": 5175,
+    "ACCOUNTED_SOURCE_MODULES": 5175,
+    "NEW_GAP_MODULES": 0,
+    "REVIEWED": 4641,
+    "NORMALIZED": 770,
+    "CANONICALIZED": 770,
+    "IMPLEMENTATION_READY": 0,
+    "UNAUDITED": 534,
+    "REVIEW_PROGRESS": 89.6812,
+    "NORMALIZATION_PROGRESS": 14.8792,
+    "CANONICALIZATION_PROGRESS": 14.8792,
+    "GAP_FILL_PROGRESS": 100,
+    "IMPLEMENTATION_READINESS": 0,
+    "OVERALL_PRODUCT_BIBLE_PROGRESS": 0,
+    "gap_scope": {
+      "identified_specification_gaps": 7,
+      "drafted": 7,
+      "validated_closed": 7,
+      "integrated": 7,
+      "validation_scope": "Documentation semantic/owner/integration gates only; clinical/runtime release gates remain open",
+      "clinical_validated": 0
+    },
+    "formulas": {
+      "REVIEW_PROGRESS": "100 * reviewed original IDs / actual original source count",
+      "NORMALIZATION_PROGRESS": "100 * normalized original IDs / actual original source count",
+      "CANONICALIZATION_PROGRESS": "100 * canonicalized original IDs / actual original source count",
+      "GAP_FILL_PROGRESS": "100 * validated closed specification gaps / 7 identified scoped specification gaps",
+      "IMPLEMENTATION_READINESS": "100 * implementation-ready original IDs / actual original source count",
+      "OVERALL_PRODUCT_BIBLE_PROGRESS": "min(REVIEW_PROGRESS, NORMALIZATION_PROGRESS, CANONICALIZATION_PROGRESS, GAP_FILL_PROGRESS, IMPLEMENTATION_READINESS); conservative weakest gate, not labour estimate",
+      "AUDIT_WORK_PROGRESS": "100 * (REVIEWED + NORMALIZED + CANONICALIZED) / (3 * 5175); equal-weight documentation work steps, not clinical readiness or time spent"
+    },
+    "duplicate_counts": {
+      "exact_groups": 3,
+      "semantic_groups": 1,
+      "partial_overlap_groups": 47,
+      "distinct_capability_groups": 1,
+      "unresolved_clusters": 1937,
+      "source_ids_closed": 0
+    },
+    "legacy_generations_confirmed": 0,
+    "legacy_marker_candidates": 27,
+    "high_risk_candidate_ids": 3608,
+    "critical_findings": 6,
+    "high_findings": 11,
+    "gitlab_write_status": "NO_WRITES",
+    "final_audit_ready": false,
+    "GAP_FILL_VALIDATED": 7,
+    "AUDIT_WORK_PROGRESS": 39.8132,
+    "NEWLY_REVIEWED": 2809,
+    "NEWLY_NORMALIZED": 11,
+    "NEWLY_CANONICALIZED": 11,
+    "CANONICAL_SPECIFICATIONS": 27,
+    "UNIQUE_REQUIREMENTS_PRESERVED": 7637,
+    "SOURCE_FRAGMENTS_PRESERVED": 15735,
+    "GAP_FILL_INTEGRATED": 7,
+    "NEWLY_GAP_FILL_VALIDATED": 0,
+    "NEWLY_GAP_FILL_INTEGRATED": 0,
+    "PROFILES": 233,
+    "NEWLY_IMPLEMENTATION_READY": 0,
+    "REVIEWED_BEFORE_RUN": 1832,
+    "FAST_REVIEWED": 2780,
+    "DEEP_REVIEWED": 29,
+    "NEEDS_DEEP_REVIEW": 2575,
+    "DUPLICATE_CANDIDATES_FOUND": 687,
+    "PARTIAL_OVERLAPS_FOUND": 331,
+    "LEGACY_CANDIDATES_FOUND": 1,
+    "LEVEL_A_LIMITATION": "Deterministic full-body classification with evidence extraction, not complete clinical/semantic adjudication. Deep queue is counted separately and not implementation-ready."
+  },
+  "validation": {
+    "scope": "Documentation, provenance and bounded contract validation; not runtime or clinical approval",
+    "targeted_batches": 13,
+    "targeted_current_tests": 8,
+    "targeted_status": "PASS",
+    "full_passed": 9,
+    "full_failed_diagnostic": 2,
+    "current_failed_validators": 0,
+    "final_executed_tests": 132,
+    "final_passed_tests": 132,
+    "historical_test_excluded": 1,
+    "historical_test_replacement": "MASTER12 historical preservation test retains all MASTER09 hash/anchor assertions and forbids prior modifications/deletions; only the obsolete addition-rejecting guard is replaced.",
+    "reproduce": "node scripts/validate-master12.mjs",
+    "runs": [
+      {
+        "file": "validation/EDHT_MASTER_12_FINAL_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 132,
+        "tests_failed": 0,
+        "sha256": "ef25b36de98c17e15120dbb1971f12c4515fc847acc7994b68c01617b7be61b6"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE50_CORRECTED_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 131,
+        "tests_failed": 0,
+        "sha256": "45133f11699d3396aa0c587bd5a2ed92d55811c9b5dd9bbf243124849286057f"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE50_RECHECK_VALIDATION.txt",
+        "status": "FAILED_DIAGNOSTIC",
+        "tests_passed": 131,
+        "tests_failed": 1,
+        "sha256": "9c31f94ffa611cd386930af5acbfe83a629735e82a9fe569c6a68f3b4acc257e"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE50_VALIDATION.txt",
+        "status": "FAILED_DIAGNOSTIC",
+        "tests_passed": 130,
+        "tests_failed": 1,
+        "sha256": "b6a7c38d747173edef98aff3effa0b8305166e751e2ac3f9558e346f98c95e18"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE55_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 131,
+        "tests_failed": 0,
+        "sha256": "953c88f472ea7146200bb593c110d592fd9736c38d5cfafcf4ed31f523b23172"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE60_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 131,
+        "tests_failed": 0,
+        "sha256": "8989b74308cf410202eabb4a03c325c793e25e17f3b6f601ab235fcb1c512c65"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE65_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 131,
+        "tests_failed": 0,
+        "sha256": "34949372000817421dffbec3179f70da6658ebab57cfcf1c0d19a2e0771b03cf"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE70_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 132,
+        "tests_failed": 0,
+        "sha256": "5ae486a80633e8448a0911094be7792a64969675ac0725e3f4c4183f79950cec"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE75_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 132,
+        "tests_failed": 0,
+        "sha256": "b055bb7a34101f9b8d37abaa874e6248247a3df0e5f98d1391b1d1aeb25c4c16"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE80_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 132,
+        "tests_failed": 0,
+        "sha256": "99b64ab3adac95dcc1997ab9dbf317bf243b8deb46f36f54919fc02f09358788"
+      },
+      {
+        "file": "validation/EDHT_MASTER_12_MILESTONE85_VALIDATION.txt",
+        "status": "PASS",
+        "tests_passed": 132,
+        "tests_failed": 0,
+        "sha256": "abd232193c83bf5eb49b978d7563debcf234debfb0b95510048dba26cf6f8042"
+      }
+    ]
+  },
+  "unreviewed_missing_reasons": {
+    "capability_owner_classification": 444,
+    "purpose_or_requirements": 90
+  },
+  "next_safe_action": {
+    "cluster": "MANUAL-CLASSIFICATION|capability_owner_classification",
+    "exact_ids": [
+      26,
+      41,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      66,
+      67,
+      71,
+      72,
+      73,
+      78,
+      80,
+      83,
+      90,
+      101,
+      131,
+      132,
+      136,
+      149,
+      150,
+      158,
+      161,
+      162,
+      165,
+      167,
+      171,
+      172,
+      181,
+      186,
+      187,
+      191,
+      194,
+      196,
+      207,
+      210,
+      211,
+      212,
+      225,
+      234,
+      235,
+      236,
+      240,
+      244,
+      250,
+      252,
+      258,
+      259,
+      260,
+      261,
+      263,
+      264,
+      265,
+      268,
+      269,
+      272,
+      278,
+      285,
+      286,
+      287,
+      296,
+      297,
+      298,
+      301,
+      308,
+      309,
+      314,
+      319,
+      320,
+      322,
+      324,
+      325,
+      326,
+      328,
+      329,
+      330,
+      336,
+      337,
+      342,
+      346,
+      347,
+      350,
+      356,
+      357,
+      367,
+      389,
+      444,
+      445,
+      447,
+      449,
+      453,
+      458,
+      460,
+      470,
+      484,
+      488,
+      495
+    ],
+    "instruction": "Read full descriptions of these UNAUDITED IDs and resolve candidate capability/owner without forcing a canonical assignment. Generic three-word purpose extraction is already enabled. Do not recount any of 4641 reviewed IDs. Deep-queue closure is a separate operation. No eligible automatic batches remain."
+  },
+  "reused_prior_reviewed_ids": 1832,
+  "new_aliases": 11,
+  "new_canonical_owners": 0,
+  "closed_gaps_reopened": 0,
+  "gitlab_writes": false,
+  "artifacts": [
+    {
+      "path": "audit/master-12/aliases_delta.json",
+      "sha256": "bc3c364e86c8dd88a3f680469b9e74514ee8833b8040c7f7264f7e1244941676"
+    },
+    {
+      "path": "audit/master-12/audit_ledger_delta.json",
+      "sha256": "47f6b4b57d09d8a9fabd76b2b5b0e563e0cee3b3256d269fda11d22c2e796aa8"
+    },
+    {
+      "path": "audit/master-12/audit_progress.json",
+      "sha256": "55889e06b6b4b142f9368a9ac39ebcb5fc902132dca7a536ee88a3a8b066e380"
+    },
+    {
+      "path": "audit/master-12/batches/001.json",
+      "sha256": "f783cc7a0d061989f6ee94bc6995f1c3e1713c789d825950bee3e59c473fbf53"
+    },
+    {
+      "path": "audit/master-12/batches/002.json",
+      "sha256": "103e04f493093d5a1730a61233275d936de4e9e9e334cac26f6964f6ca28deac"
+    },
+    {
+      "path": "audit/master-12/batches/003.json",
+      "sha256": "3c13bde1d79fbd032e7194b3dd3134dab7c363733e222514f4a060031762e997"
+    },
+    {
+      "path": "audit/master-12/batches/004.json",
+      "sha256": "9f8ed8527ebd94f6e8db6abc8f3f9d1443a9a45cfe6cf492bcc38e9ea0702244"
+    },
+    {
+      "path": "audit/master-12/batches/005.json",
+      "sha256": "d26be5a9232fd60e7fa60cde4a1952be92c15e176b0ee9c266713bb8213c9990"
+    },
+    {
+      "path": "audit/master-12/batches/006.json",
+      "sha256": "17cf6ca7d80e326ef585b71006fc283e655b1a95c82b54454d5fa235ad19d4da"
+    },
+    {
+      "path": "audit/master-12/batches/007.json",
+      "sha256": "d37314b4f2e29035cb3ac317bf3f889297bcf7d5a3e534c6dc4db48c899ec65c"
+    },
+    {
+      "path": "audit/master-12/batches/008.json",
+      "sha256": "7a943bfbce464d1307bfe34c771b93a29bbd9391f6530e9f885c3a20afa45ab8"
+    },
+    {
+      "path": "audit/master-12/batches/009.json",
+      "sha256": "41d3dddaccd2bb5260505f6a217a8c5c6d32b33e53f83caa06d94585bc8acdc7"
+    },
+    {
+      "path": "audit/master-12/batches/010.json",
+      "sha256": "8a917d07ef435d9fdf5c2de2c734bbd8c4e8bc1124ea62b73cde81beb3218711"
+    },
+    {
+      "path": "audit/master-12/batches/011.json",
+      "sha256": "3e3c0eba376ec28e4322cdc457ff8e1628007286da2324cdf2764e5d0c3a869b"
+    },
+    {
+      "path": "audit/master-12/batches/012.json",
+      "sha256": "92c056248f30a7b72815d7c743e83cea557bd33504a04a55d7aa79dafe97ab51"
+    },
+    {
+      "path": "audit/master-12/batches/013.json",
+      "sha256": "8dbd1bc8c2f7e8a9dd924b1a8aab5f50f70663c644febe969f79e2e95de80d9b"
+    },
+    {
+      "path": "audit/master-12/calibration_notes.md",
+      "sha256": "aa084e863b8fc39532735c01c51802dece8cda0813ce8c4e0a8c15baff1d0f51"
+    },
+    {
+      "path": "audit/master-12/canonical_delta.json",
+      "sha256": "2557152b392f311b09c0de0bac49597ab468cdc7aacafa20d3cd80985e41fa16"
+    },
+    {
+      "path": "audit/master-12/canonical_registry_delta.json",
+      "sha256": "d6a818a0f4b7ce10a874b4ef07a718bf2b55121531588bc2706b628c367ad867"
+    },
+    {
+      "path": "audit/master-12/classification_cache.json",
+      "sha256": "18e67aa8e818908b64745eb583ee742247b2380919aab0b620e7d351a1c73e24"
+    },
+    {
+      "path": "audit/master-12/CONTINUE_FROM_HERE.md",
+      "sha256": "1e89efc604c139b538af30cc84daeb02da97595529720296fb3b4b7a0b165fc3"
+    },
+    {
+      "path": "audit/master-12/deep_review_queue.json",
+      "sha256": "c9a42ea4a1bb7885c219f038e7a2098300e24d4737861da946eee46be90f4026"
+    },
+    {
+      "path": "audit/master-12/normalized_delta.json",
+      "sha256": "8e306fbae75b498da623987e4c05eeec37b31fd5e41c4144ed0e23e70d1dea9f"
+    },
+    {
+      "path": "audit/master-12/requirement_migration_delta.json",
+      "sha256": "76435da951e191c1f50b7595770265e5068ddd078f86b79e6461de3c1325bf55"
+    },
+    {
+      "path": "audit/master-12/review_queue.json",
+      "sha256": "51ee4471b9755fca4bcc8d6e57aa9122f7e33f1658721d0bd9c5e7177bf80f5c"
+    },
+    {
+      "path": "audit/master-12/state_manifest.json",
+      "sha256": "1d8a52c1b381a70ec177a501be235299a2943802ef8afd4cca5ceedc2381c0bb"
+    },
+    {
+      "path": "docs/canonical/master12/CAP-MEDICATION.md",
+      "sha256": "050a39af8289ce9446ec6910bdd092159a438bb125b64ea7b369a1adf83b1c64"
+    },
+    {
+      "path": "docs/canonical/master12/CAP-NOTIFICATIONS.md",
+      "sha256": "b30e0fd8c02e5666b261fcdcff0c21e4e92a86f032f8e0432825f9c4f9572d6f"
+    },
+    {
+      "path": "config/fast-review12.mjs",
+      "sha256": "27befe9cc0e85f329d3192af66d8a71b9efc816c8aa22da8ec706a691a0b86e8"
+    },
+    {
+      "path": "scripts/fast-review12.mjs",
+      "sha256": "a21fce85d5557c806c25cc55962834334f235be4d3743b75a35f316871a8d653"
+    },
+    {
+      "path": "scripts/master12-state.mjs",
+      "sha256": "ecd400d6ae9321c791ea4eff8609d75f4f4181c93265b973960a32308b4bce56"
+    },
+    {
+      "path": "scripts/validate-master12.mjs",
+      "sha256": "2d0b8c39a9358e993d3d6222f75f766d41ec11a9baa8d0f8ab93bab9860a13ce"
+    },
+    {
+      "path": "tests/master12.test.mjs",
+      "sha256": "8dc4d169f7240f3e4f62ef1d679957750ad66c04c2d6122a6821dd474ebb20d0"
+    }
+  ]
+}

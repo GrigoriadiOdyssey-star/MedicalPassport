@@ -1,0 +1,57 @@
+{
+  "schema_version": 3,
+  "pass": "PEDIATRIC-02",
+  "edition": "2026-09-14",
+  "parent_checkpoint": "9637f5af9720dc3c1a2d2846b9df70f7f9980055",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "corrections": [
+    {
+      "id": "PED2-RETRIEVAL-01",
+      "finding": "Pediatric/specialty title filters miss contextually pediatric source modules",
+      "matrix_cells_with_added_context": 62,
+      "examples": [
+        844,
+        855,
+        1114,
+        1115,
+        1116,
+        3063,
+        3663,
+        4405,
+        4414
+      ],
+      "resolution": "Add reviewed complete-block context with source IDs; no automatic clinical coverage."
+    },
+    {
+      "id": "PED2-RETRIEVAL-02",
+      "finding": "renal substring matches Adrenal",
+      "excluded_nephrology_candidates": [
+        2108,
+        2437,
+        2806,
+        3107,
+        3326,
+        3488,
+        3632,
+        3868,
+        4135,
+        4136,
+        4137,
+        4883,
+        4884
+      ],
+      "resolution": "Retain adrenal sources under endocrine context; source records unchanged."
+    },
+    {
+      "id": "PED2-SEMANTIC-01",
+      "finding": "Identical immunotherapy titles have different therapeutic intents",
+      "source_ids": [
+        996,
+        1118
+      ],
+      "resolution": "DISTINCT_CAPABILITIES; retain IVIG/SCIG versus SCIT/SLIT."
+    }
+  ]
+}

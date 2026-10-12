@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:edht:audit-receipt-query:1",
+  "title": "Patient receipt query syntax; authoritative bindings and paging need runtime evidence",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "grant_reference",
+        "snapshot_sequence",
+        "next_cursor",
+        "items"
+      ],
+      "properties": {
+        "kind": {
+          "const": "receipt_query_page"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "grant_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "snapshot_sequence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "next_cursor": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 32,
+              "maxLength": 256,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "items": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "receipt_reference",
+              "receipt_sequence",
+              "occurred_at_ms",
+              "committed_at_ms",
+              "action",
+              "outcome",
+              "actor_role",
+              "actor_reference"
+            ],
+            "properties": {
+              "receipt_reference": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_-]+$"
+              },
+              "receipt_sequence": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "occurred_at_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "committed_at_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "action": {
+                "enum": [
+                  "GRANT_CREATED",
+                  "GRANT_REVOKED",
+                  "GRANT_EXPIRED",
+                  "ALLERGY_VIEW_ATTEMPT",
+                  "RECEIPTS_VIEW"
+                ]
+              },
+              "outcome": {
+                "enum": [
+                  "COMMITTED",
+                  "DENIED",
+                  "UNAVAILABLE"
+                ]
+              },
+              "actor_role": {
+                "enum": [
+                  "PATIENT",
+                  "CLINICIAN",
+                  "SERVICE",
+                  "WITHHELD"
+                ]
+              },
+              "actor_reference": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9_-]+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "schema_version",
+        "code",
+        "request_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "receipt_query_error"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "code": {
+          "enum": [
+            "INVALID_REQUEST",
+            "INVALID_CURSOR",
+            "UNAUTHENTICATED",
+            "NOT_FOUND",
+            "UNAVAILABLE",
+            "RATE_LIMITED"
+          ]
+        },
+        "request_reference": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        }
+      }
+    }
+  ]
+}

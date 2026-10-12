@@ -1,0 +1,393 @@
+{
+  "pass": "MASTER-19",
+  "records": [
+    {
+      "owner": "CAP-GOVERNANCE",
+      "canonical_id": "CORE-CAP-GOVERNANCE",
+      "canonical_document": "docs/canonical/master19/CAP-GOVERNANCE.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-IDENTITY",
+      "canonical_id": "CORE-CAP-IDENTITY",
+      "canonical_document": "docs/canonical/master19/CAP-IDENTITY.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Choose issuer and account recovery/credential lifecycle; define account-to-patient binding and provider-role verification/expiry schemas. MFA enrollment and session revocation need misuse-case acceptance.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-SECURITY",
+      "canonical_id": "CORE-CAP-SECURITY",
+      "canonical_document": "docs/canonical/master19/CAP-SECURITY.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Canonical documentation is now available; remaining gates: Normalize existing authorization originals; define deny-by-default RBAC/ABAC policy input, enforcement and cache/revocation consistency contracts.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-AUDIT",
+      "canonical_id": "CORE-CAP-AUDIT",
+      "canonical_document": "docs/canonical/master19/CAP-AUDIT.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Define producer identity, sequence/idempotency/durable acknowledgement and tamper-evidence model; govern redacted change references and approved retention/export policy.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-CONSENT",
+      "canonical_id": "CORE-CAP-CONSENT",
+      "canonical_document": "docs/canonical/master19/CAP-CONSENT.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Define recipient/resource/purpose/version/expiry grant and withdrawal schemas, conflict precedence and guardian authority. Approve jurisdiction/adolescent segmentation rules; consent is not the enforcement mechanism.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-DATA",
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master19/CAP-DATA.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Define stable patient/source binding, correction/merge/unmerge rules and provenance schema. Conflicting identity must quarantine rather than silently match; signed source boundaries remain missing.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-INTEROP",
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master19/CAP-INTEROP.md",
+      "tag": "MVP_OPTIONAL",
+      "scope": "Optional future document/exchange/delivery extension; not required for the local core journey",
+      "implementation_ready": false,
+      "blocker": "Pin partner FHIR release and profiles, terminology system/version, map-loss and reconciliation fixtures; terminology expansion/validation contract and partner credentials remain unresolved.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-QR",
+      "canonical_id": "CORE-CAP-QR",
+      "canonical_document": "docs/canonical/master19/CAP-QR.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define opaque grant token lifecycle, recipient binding, atomic one-use redemption, online revocation and resource-level filtering; offline revocation guarantees are explicitly unavailable.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-PROFILE",
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master19/CAP-PROFILE.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Define source-linked projection schema and field-level authorization, freshness and unknown state. Required legacy blood type must migrate to unknown until verified; no invented normal values.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-MEDICATION",
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master19/CAP-MEDICATION.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Separate reported use, knowledge, prescribing, dispensing and administration. Drug identity/strength/form/route/units, interaction evidence license/version and pharmacogenomic uncertainty need exact contracts.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-PRESCRIPTION",
+      "canonical_id": "CORE-CAP-PRESCRIPTION",
+      "canonical_document": "docs/canonical/master19/CAP-PRESCRIPTION.md",
+      "tag": "PHASE_2",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-PHARMACY",
+      "canonical_id": "CORE-CAP-PHARMACY",
+      "canonical_document": "docs/canonical/master19/CAP-PHARMACY.md",
+      "tag": "PHASE_2",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-ADMINISTRATION",
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master19/CAP-ADMINISTRATION.md",
+      "tag": "PHASE_2",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define actual exposure/product/route/time, barcode identity, blood-bank release reference, reaction and correction contracts; prescribing/dispensing remain separate.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-ALLERGY",
+      "canonical_id": "CORE-CAP-ALLERGY",
+      "canonical_document": "docs/canonical/master19/CAP-ALLERGY.md",
+      "tag": "MVP_CORE",
+      "scope": "Patient-authorized read-only view of one existing allergy record; no other owner profiles included",
+      "implementation_ready": false,
+      "blocker": "Define reported versus confirmed, absent versus unknown/not assessed, substance coding, verification and correction schema. Clinician confirmation and clinical safety acceptance are still missing.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-CONDITION",
+      "canonical_id": "CORE-CAP-CONDITION",
+      "canonical_document": "docs/canonical/master19/CAP-CONDITION.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-LABORATORY",
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master19/CAP-LABORATORY.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Specify specimen/observation/report identity, units/method/reference intervals, corrected results, critical flag acknowledgement and partner conformance fixtures.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-IMAGING",
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master19/CAP-IMAGING.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Specify study/series/instance identity, diagnostic original/derivative lineage, de-identification validation, signed report and actual PACS operation/version conformance.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-DOCUMENTS",
+      "canonical_id": "CORE-CAP-DOCUMENTS",
+      "canonical_document": "docs/canonical/master19/CAP-DOCUMENTS.md",
+      "tag": "MVP_OPTIONAL",
+      "scope": "Optional future document/exchange/delivery extension; not required for the local core journey",
+      "implementation_ready": false,
+      "blocker": "Define quarantined upload and immutable derivative schemas, MIME/size/archive limits, malware/OCR review lifecycle, retention and reauthorization on content retrieval.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-IMMUNIZATION",
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master19/CAP-IMMUNIZATION.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define administered versus planned/refused/unknown state, product/lot/dose/source and schedule-version applicability; no inferred protection or autonomous scheduling.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-ENCOUNTER",
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master19/CAP-ENCOUNTER.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Specify clinician attribution, procedure/therapy state transitions, consent/assent, source-owned devices/drugs and signed correction workflows; no autonomous indications or clearance.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-APPOINTMENTS",
+      "canonical_id": "CORE-CAP-APPOINTMENTS",
+      "canonical_document": "docs/canonical/master19/CAP-APPOINTMENTS.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define participant/availability identity, timezone/DST and concurrency/idempotency reservation, cancellation/reschedule and encounter separation.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-TELEMEDICINE",
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master19/CAP-TELEMEDICINE.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Specify verified clinician/region, meeting access, independent recording/translation consent, connection failure, clinical documentation and provider contracts.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-NOTIFICATIONS",
+      "canonical_id": "CORE-CAP-NOTIFICATIONS",
+      "canonical_document": "docs/canonical/master19/CAP-NOTIFICATIONS.md",
+      "tag": "MVP_OPTIONAL",
+      "scope": "Optional future document/exchange/delivery extension; not required for the local core journey",
+      "implementation_ready": false,
+      "blocker": "Pin delivery providers, recipient verification, redacted templates, scheduling/expiry/retry and acknowledgement semantics; no clinical-response SLA has been established.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-DEVICES",
+      "canonical_id": "CORE-CAP-DEVICES",
+      "canonical_document": "docs/canonical/master19/CAP-DEVICES.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Existing configuration evidence schema covers only documented history. RPM units/clock/quality, robotics/assistive/recall profiles, connector releases and device clinical acceptance remain unproven.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-COVERAGE",
+      "canonical_id": "CORE-CAP-COVERAGE",
+      "canonical_document": "docs/canonical/master19/CAP-COVERAGE.md",
+      "tag": "PHASE_2",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-AI",
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master19/CAP-AI.md",
+      "tag": "RESEARCH",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Specify task intended use, data rights, model/version registry, evaluation by cohort, uncertainty/abstention, rollback, prompt-injection boundaries and clinician disposition; no autonomous treatment.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-CDS",
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master19/CAP-CDS.md",
+      "tag": "RESEARCH",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define bounded clinical task, evidence release, patient context freshness, rule/model validation and clinician disposition; decision support cannot overwrite clinical facts.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-TWIN",
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master18/CAP-TWIN.md",
+      "tag": "RESEARCH",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Specify source/model/scenario separation, validity domain, uncertainty and counterfactual assumptions; measured facts must never be replaced by simulated trajectories.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-RESEARCH",
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master19/CAP-RESEARCH.md",
+      "tag": "RESEARCH",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define protocol/cohort/consent linkage, secondary-use permissions, de-identification/re-identification controls, dataset lineage, population bias and approved output disclosure.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-TRAVEL",
+      "canonical_id": "CORE-CAP-TRAVEL",
+      "canonical_document": "docs/canonical/master19/CAP-TRAVEL.md",
+      "tag": "LONG_TERM",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-EMERGENCY",
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "canonical_document": "docs/canonical/master19/CAP-EMERGENCY.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Define supported jurisdiction/provider coverage, explicit recipient acknowledgement, unavailable/offline states, minimum disclosure and qualified emergency workflow acceptance.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    },
+    {
+      "owner": "CAP-OPERATIONS",
+      "canonical_id": "CORE-CAP-OPERATIONS",
+      "canonical_document": "docs/canonical/master19/CAP-OPERATIONS.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Active canonical specification and bounded scope/data/interface/security/acceptance assessment are required before readiness.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": [
+        "NO_ACTIVE_CANONICAL_SPECIFICATION"
+      ]
+    },
+    {
+      "owner": "CAP-SPECIALTY",
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master19/CAP-SPECIALTY.md",
+      "tag": "POST_MVP",
+      "scope": "Excluded from the initial vertical slice; requirements retained",
+      "implementation_ready": false,
+      "blocker": "Each clinical profile needs intended-use and typed data/acceptance contracts while retaining shared source owners; generic orchestration text is insufficient for all specialties.",
+      "new_profiles_included_in_initial_slice": false,
+      "resolved_blockers": []
+    }
+  ],
+  "counts": {
+    "MVP_CORE": 7,
+    "MVP_OPTIONAL": 3,
+    "POST_MVP": 14,
+    "PHASE_2": 4,
+    "RESEARCH": 4,
+    "LONG_TERM": 1
+  },
+  "scope": "Existing minimal allergy-record vertical slice unchanged; new clinical, research and Twin profiles are not automatically included."
+}

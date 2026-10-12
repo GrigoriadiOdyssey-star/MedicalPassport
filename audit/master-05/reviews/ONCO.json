@@ -1,0 +1,1022 @@
+{
+  "pass": "MASTER-05",
+  "domain": "ONCO",
+  "parent_checkpoint": "4b42871cf4e76845a081b5607d3f361a77b1edf5",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 1423 reviewed IDs.",
+  "count": 46,
+  "reviews": [
+    {
+      "original_id": 4201,
+      "title": "Clinical Pediatric Oncology Platform Core Engine",
+      "body": "Central platform for pediatric oncology and precision cancer medicine.\n\nSupports\n\n• Leukemias\n• Lymphomas\n• Brain Tumors\n• Solid Tumors\n• Rare Pediatric Cancers\n• Precision Oncology\n• Survivorship\n• Palliative Care\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Genomics\n• Molecular Diagnostics\n• Imaging\n• Pathology\n• Pharmacology\n• Clinical Trials\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "35633d07adfa6e0fad1c056805e63fb8bfe6872efcb81ddf633f60e4082e9bd4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98428
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Leukemias",
+        "Lymphomas",
+        "Brain Tumors",
+        "Solid Tumors",
+        "Rare Pediatric Cancers",
+        "Precision Oncology",
+        "Survivorship",
+        "Palliative Care",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Genomics",
+        "Molecular Diagnostics",
+        "Imaging",
+        "Pathology",
+        "Pharmacology",
+        "Clinical Trials"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4202,
+      "title": "Pediatric Oncology Longitudinal Registry",
+      "body": "Maintains lifelong structured pediatric oncology records.\n\nSupports\n\n• Diagnosis\n• Histology\n• Molecular Classification\n• Stage\n• Risk Group\n• Treatment\n• Response\n• Relapse\n• Toxicities\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b8913e83c0ab79051a5afe5d3923370c79a26e0a5181080415291d0751fd1b2d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98460
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Diagnosis",
+        "Histology",
+        "Molecular Classification",
+        "Stage",
+        "Risk Group",
+        "Treatment",
+        "Response",
+        "Relapse",
+        "Toxicities",
+        "Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4203,
+      "title": "Pediatric Cancer Diagnostic Orchestration Module",
+      "body": "Coordinates multidisciplinary cancer diagnostics.\n\nIntegrates\n\n• Clinical Findings\n• Laboratory Medicine\n• Imaging\n• Pathology\n• Molecular Testing\n• Genetics\n• Tumor Board Review\n\nMaintains diagnostic provenance and version history.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8fc467b8a044c81505b797419cf27c6a2e9ed85b93bbefc5db179fc297c2f25e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98483
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Clinical Findings",
+        "Laboratory Medicine",
+        "Imaging",
+        "Pathology",
+        "Molecular Testing",
+        "Genetics",
+        "Tumor Board Review"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4204,
+      "title": "Pediatric Acute Lymphoblastic Leukemia Module",
+      "body": "Supports pediatric acute lymphoblastic leukemia care.\n\nSupports\n\n• Immunophenotype\n• Cytogenetics\n• Molecular Findings\n• Risk Classification\n• Treatment Phases\n• Response\n• MRD\n• Toxicity\n• Relapse Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "37da577b72c8a6837fc0ef80ee27b346a008afc3736b99ec60b8c6fa4f6adef5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98505
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Immunophenotype",
+        "Cytogenetics",
+        "Molecular Findings",
+        "Risk Classification",
+        "Treatment Phases",
+        "Response",
+        "MRD",
+        "Toxicity",
+        "Relapse Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4205,
+      "title": "Pediatric Acute Myeloid Leukemia Module",
+      "body": "Supports pediatric acute myeloid leukemia.\n\nIntegrates\n\n• Morphology\n• Flow Cytometry\n• Cytogenetics\n• Molecular Genetics\n• Risk Stratification\n• Chemotherapy\n• MRD\n• Stem Cell Transplantation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b597dcf66b2ac44d9066fe809e132b1d6c3315325cead398e744460f9b7b0b23",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98527
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Morphology",
+        "Flow Cytometry",
+        "Cytogenetics",
+        "Molecular Genetics",
+        "Risk Stratification",
+        "Chemotherapy",
+        "MRD",
+        "Stem Cell Transplantation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4206,
+      "title": "Pediatric Leukemia MRD Monitoring Module",
+      "body": "Supports measurable residual disease monitoring.\n\nIntegrates\n\n• Flow Cytometry\n• Molecular Assays\n• Sequencing\n• Time Points\n• Treatment Phase\n• Historical Results\n• Response Classification\n\nSupports longitudinal MRD visualization.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dafc489d1f672177dbe29846651d015a24ff2fc35c97df995e154f3d4b37db9a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98548
+      },
+      "verdict": "MRD retains assay, specimen, treatment phase/time point, sensitivity/quantification and result uncertainty; missing or below-quantification is not automatically negative/remission.",
+      "feature_labels": [
+        "Flow Cytometry",
+        "Molecular Assays",
+        "Sequencing",
+        "Time Points",
+        "Treatment Phase",
+        "Historical Results",
+        "Response Classification"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4207,
+      "title": "Pediatric Lymphoma Module",
+      "body": "Supports pediatric lymphoma care.\n\nSupports\n\n• Hodgkin Lymphoma\n• Non-Hodgkin Lymphoma\n• Histology\n• Molecular Findings\n• Staging\n• Imaging\n• Treatment\n• Response Assessment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1f2b4c37d41c8565c13d6c4d0d086c5b78c0ec782174ee4cae1df4dd763a02f4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98570
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Hodgkin Lymphoma",
+        "Non-Hodgkin Lymphoma",
+        "Histology",
+        "Molecular Findings",
+        "Staging",
+        "Imaging",
+        "Treatment",
+        "Response Assessment"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4208,
+      "title": "Pediatric CNS Tumor Module",
+      "body": "Supports pediatric central nervous system tumors.\n\nIntegrates\n\n• Neurology\n• Neurosurgery\n• Neuro-oncology\n• MRI\n• Histopathology\n• Molecular Classification\n• Radiation Oncology\n• Rehabilitation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4a1cbcabff6c242250a449221664e3899ff274a79852505379ffc88bc4471749",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98591
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Neurology",
+        "Neurosurgery",
+        "Neuro-oncology",
+        "MRI",
+        "Histopathology",
+        "Molecular Classification",
+        "Radiation Oncology",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4209,
+      "title": "Pediatric Brain Tumor Molecular Classification Module",
+      "body": "Supports molecularly informed CNS tumor classification.\n\nIntegrates\n\n• Histology\n• DNA Alterations\n• RNA Findings\n• Epigenetic Profiles\n• Molecular Signatures\n• Imaging\n• Clinical Phenotype\n\nClassification frameworks are version-controlled.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "73a9cd704382f2ba2e054c8b1dcb2ace22d02459c6f6d1c91a1de719cb676692",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98612
+      },
+      "verdict": "Histology, DNA/RNA and epigenetic/molecular classification use a version-controlled framework; preserve prior classification and signed reclassification reasons.",
+      "feature_labels": [
+        "Histology",
+        "DNA Alterations",
+        "RNA Findings",
+        "Epigenetic Profiles",
+        "Molecular Signatures",
+        "Imaging",
+        "Clinical Phenotype"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4210,
+      "title": "Pediatric Neuro-Oncology Longitudinal Monitoring Module",
+      "body": "Tracks children with CNS tumors over time.\n\nSupports\n\n• Neurological Function\n• Imaging\n• Endocrine Function\n• Cognition\n• Vision\n• Hearing\n• Treatment Toxicity\n• Recurrence Surveillance\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c25e3b3cb3fcebf1c051e525ebcf8f717564fc3cf7b66eabe0cacc918924772b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98634
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Neurological Function",
+        "Imaging",
+        "Endocrine Function",
+        "Cognition",
+        "Vision",
+        "Hearing",
+        "Treatment Toxicity",
+        "Recurrence Surveillance"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4211,
+      "title": "Pediatric Neuroblastoma Module",
+      "body": "Supports neuroblastoma care.\n\nSupports\n\n• Primary Tumor\n• Metastatic Disease\n• Molecular Findings\n• Imaging\n• Bone Marrow Evaluation\n• Risk Classification\n• Treatment\n• Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "5cb534f86b95be142398006061a30efdcdd1c7a04c99e7eca33919fb0c461f21",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98655
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Primary Tumor",
+        "Metastatic Disease",
+        "Molecular Findings",
+        "Imaging",
+        "Bone Marrow Evaluation",
+        "Risk Classification",
+        "Treatment",
+        "Response"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4212,
+      "title": "Pediatric Wilms Tumor & Renal Oncology Module",
+      "body": "Supports pediatric renal malignancies.\n\nIntegrates\n\n• Imaging\n• Pathology\n• Genetics\n• Surgery\n• Chemotherapy\n• Radiation Therapy\n• Renal Function\n• Survivorship\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d07489575ae83e246cb02688e1ad0e3e9900599f817f9c5d162515ea9c6c90ca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98676
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Imaging",
+        "Pathology",
+        "Genetics",
+        "Surgery",
+        "Chemotherapy",
+        "Radiation Therapy",
+        "Renal Function",
+        "Survivorship"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4213,
+      "title": "Pediatric Bone Tumor Module",
+      "body": "Supports malignant and clinically relevant pediatric bone tumors.\n\nSupports\n\n• Osteosarcoma\n• Ewing Sarcoma\n• Imaging\n• Pathology\n• Molecular Diagnostics\n• Surgery\n• Systemic Therapy\n• Rehabilitation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d04f7c36190c7d2a9a91235bd0cef92033b8ac571edd6c6c5974db7baddadef7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98697
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Osteosarcoma",
+        "Ewing Sarcoma",
+        "Imaging",
+        "Pathology",
+        "Molecular Diagnostics",
+        "Surgery",
+        "Systemic Therapy",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4214,
+      "title": "Pediatric Soft Tissue Sarcoma Module",
+      "body": "Supports pediatric soft tissue sarcomas.\n\nSupports\n\n• Rhabdomyosarcoma\n• Non-rhabdomyosarcoma Sarcomas\n• Histology\n• Molecular Findings\n• Imaging\n• Surgery\n• Systemic Therapy\n• Radiation Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7ea359a7168c10359563a55382d24f875a8dc6031252e87aa07e998b576ba79d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98718
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Rhabdomyosarcoma",
+        "Non-rhabdomyosarcoma Sarcomas",
+        "Histology",
+        "Molecular Findings",
+        "Imaging",
+        "Surgery",
+        "Systemic Therapy",
+        "Radiation Therapy"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4215,
+      "title": "Pediatric Retinoblastoma Module",
+      "body": "Supports multidisciplinary retinoblastoma care.\n\nIntegrates\n\n• Ophthalmology\n• Oncology\n• Imaging\n• Genetics\n• Treatment\n• Vision Outcomes\n• Family Screening\n• Long-term Surveillance\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b6e9ce0504b7baa3afd0de2aa65d4892da2f0cd058ae2372b371b4070db44c31",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98739
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Ophthalmology",
+        "Oncology",
+        "Imaging",
+        "Genetics",
+        "Treatment",
+        "Vision Outcomes",
+        "Family Screening",
+        "Long-term Surveillance"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4216,
+      "title": "Pediatric Germ Cell Tumor Module",
+      "body": "Supports pediatric germ cell tumors.\n\nIntegrates\n\n• Tumor Location\n• Tumor Markers\n• Imaging\n• Histology\n• Molecular Findings\n• Surgery\n• Systemic Therapy\n• Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0d147ff6381f1b9a08a782b37a39eb36d06c5aba5d145b8beeb71d36b319ad53",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98760
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Tumor Location",
+        "Tumor Markers",
+        "Imaging",
+        "Histology",
+        "Molecular Findings",
+        "Surgery",
+        "Systemic Therapy",
+        "Response"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4217,
+      "title": "Pediatric Rare Cancer Module",
+      "body": "Supports rare pediatric malignancies.\n\nProvides\n\n• Structured Phenotyping\n• Pathology Integration\n• Molecular Profiling\n• Expert Referral\n• International Consultation\n• Registry Integration\n• Research Matching\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7afcce2c22249722d664ec41be5e7c4759c6408173c6775f0e1c35e41fadd317",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98781
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Structured Phenotyping",
+        "Pathology Integration",
+        "Molecular Profiling",
+        "Expert Referral",
+        "International Consultation",
+        "Registry Integration",
+        "Research Matching"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4218,
+      "title": "Pediatric Cancer Predisposition Syndrome Module",
+      "body": "Supports inherited cancer predisposition.\n\nIntegrates\n\n• Personal History\n• Family History\n• Germline Genetics\n• Phenotype\n• Surveillance Programs\n• Family Screening\n• Genetic Counseling\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "831c2bcc9cd174d90d6895e1ae6a2a7fec14f80943c733f52787608ec0bd247f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98801
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Personal History",
+        "Family History",
+        "Germline Genetics",
+        "Phenotype",
+        "Surveillance Programs",
+        "Family Screening",
+        "Genetic Counseling"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4221,
+      "title": "Pediatric Molecular Tumor Board Module",
+      "body": "Supports multidisciplinary molecular tumor boards.\n\nIntegrates\n\n• Oncology\n• Pathology\n• Genetics\n• Molecular Biology\n• Pharmacology\n• Surgery\n• Radiology\n• Research Teams\n\nMaintains decisions, evidence and audit history.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "cecf5e70404184ed9be6205615e276c366f2a6a00fc9fe93d2b8f5de8d092054",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98862
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Oncology",
+        "Pathology",
+        "Genetics",
+        "Molecular Biology",
+        "Pharmacology",
+        "Surgery",
+        "Radiology",
+        "Research Teams"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4222,
+      "title": "Pediatric Digital Oncology Pathology Module",
+      "body": "Supports digital pathology.\n\nSupports\n\n• Whole-slide Imaging\n• Histology\n• Immunohistochemistry\n• Annotation\n• Molecular Correlation\n• AI-assisted Pattern Analysis\n• Expert Review\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fef83c9f6ed29cc6cf114ddacdaf5336f62511b3928ed368b240533a8f71ed4e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98885
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Whole-slide Imaging",
+        "Histology",
+        "Immunohistochemistry",
+        "Annotation",
+        "Molecular Correlation",
+        "AI-assisted Pattern Analysis",
+        "Expert Review"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4223,
+      "title": "Pediatric Oncology AI Pathology Module",
+      "body": "Provides AI-assisted pathology analysis.\n\nSupports\n\n• Tissue Pattern Detection\n• Cell Classification\n• Region Identification\n• Quantification Assistance\n• Historical Comparison\n• Molecular Correlation\n\nFinal pathology interpretation remains under specialist control.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "aa714b97d076554b990c4407e03af79e8cbcf07a111cf76e7081c2a17e50648b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98905
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Tissue Pattern Detection",
+        "Cell Classification",
+        "Region Identification",
+        "Quantification Assistance",
+        "Historical Comparison",
+        "Molecular Correlation"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4224,
+      "title": "Pediatric Oncology Imaging Intelligence Module",
+      "body": "Integrates oncology imaging.\n\nSupports\n\n• MRI\n• CT\n• PET\n• Ultrasound\n• Nuclear Medicine\n• Tumor Measurements\n• Response Assessment\n• Longitudinal Comparison\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a14dce84f91f4f42a648379f26f70a3aa70a82a16e7167b11f048d341d06d16f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98926
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "MRI",
+        "CT",
+        "PET",
+        "Ultrasound",
+        "Nuclear Medicine",
+        "Tumor Measurements",
+        "Response Assessment",
+        "Longitudinal Comparison"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4225,
+      "title": "Pediatric Oncology Radiomics Module",
+      "body": "Supports research and regulated clinical radiomics workflows.\n\nExtracts structured quantitative imaging characteristics for\n\n• Tumor Characterization\n• Longitudinal Comparison\n• Response Research\n• Phenotype Correlation\n• AI Model Development\n\nClinical use requires appropriate validation and regulatory controls.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "98899cbd23914b924c93da26d17e415a89a3a724fc494890af7f387f135ed68c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98947
+      },
+      "verdict": "Radiomics is a research task unless the particular clinical intended use has validation and applicable regulatory controls; retain acquisition/segmentation/extraction/model versions.",
+      "feature_labels": [
+        "Tumor Characterization",
+        "Longitudinal Comparison",
+        "Response Research",
+        "Phenotype Correlation",
+        "AI Model Development"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4226,
+      "title": "Pediatric Chemotherapy Management Module",
+      "body": "Supports clinician-controlled chemotherapy workflows.\n\nSupports\n\n• Treatment Protocol\n• Medication\n• Dose\n• Treatment Cycle\n• Laboratory Requirements\n• Administration\n• Toxicity\n• Treatment Delays\n• Dose Modifications\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "b29c283f38d03e8dc5e1996a26ab2f3bb1bc61bfb6e65419a9d28b1f6574edc3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98967
+      },
+      "verdict": "Chemotherapy retains protocol version, cycle/day, laboratory prerequisites, authorizations, administration and delays/modifications. Tracking is not an executable medication order.",
+      "feature_labels": [
+        "Treatment Protocol",
+        "Medication",
+        "Dose",
+        "Treatment Cycle",
+        "Laboratory Requirements",
+        "Administration",
+        "Toxicity",
+        "Treatment Delays",
+        "Dose Modifications"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4227,
+      "title": "Pediatric Oncology Medication Safety Engine",
+      "body": "Provides oncology-specific medication safety controls.\n\nChecks\n\n• Patient Identity\n• Diagnosis\n• Protocol\n• Dose\n• Body Surface Area\n• Organ Function\n• Allergies\n• Drug Interactions\n• Previous Toxicity\n\nRequires authorized clinical verification.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1680736ee9078b66baf7f7564e0b23e62aaf9390128b2d7ee30d7ac40df9bdca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 98989
+      },
+      "verdict": "Identity, protocol, body-surface inputs/formula version, organ function and prior toxicity require authorized verification; never compute or release a treatment dose from incomplete context.",
+      "feature_labels": [
+        "Patient Identity",
+        "Diagnosis",
+        "Protocol",
+        "Dose",
+        "Body Surface Area",
+        "Organ Function",
+        "Allergies",
+        "Drug Interactions",
+        "Previous Toxicity"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4228,
+      "title": "Pediatric Targeted Cancer Therapy Module",
+      "body": "Supports targeted anticancer therapy.\n\nIntegrates\n\n• Molecular Target\n• Drug\n• Evidence Level\n• Dose\n• Response\n• Resistance\n• Toxicity\n• Molecular Evolution\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "179428d288dd4266562e38e92d4dc3904cf6073e699fb42c5581afd1d99b562f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99013
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Molecular Target",
+        "Drug",
+        "Evidence Level",
+        "Dose",
+        "Response",
+        "Resistance",
+        "Toxicity",
+        "Molecular Evolution"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4229,
+      "title": "Pediatric Cancer Immunotherapy Module",
+      "body": "Supports pediatric oncology immunotherapy.\n\nSupports\n\n• Treatment Type\n• Eligibility\n• Administration\n• Immune-related Toxicities\n• Response\n• Biomarkers\n• Longitudinal Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "581fc884f1498e2ebaa30d9f244fddee154adc02aff2dcf7d0a7af316c41b511",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99034
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Treatment Type",
+        "Eligibility",
+        "Administration",
+        "Immune-related Toxicities",
+        "Response",
+        "Biomarkers",
+        "Longitudinal Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4230,
+      "title": "Pediatric CAR-T Therapy Module",
+      "body": "Supports CAR-T clinical workflows.\n\nSupports\n\n• Eligibility\n• Cell Collection\n• Manufacturing Status\n• Bridging Therapy\n• Infusion\n• Response\n• Toxicity\n• Long-term Follow-up\n\nIntegrates specialized cellular therapy centers.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f9a735f71d4587bb405687001abe60682fc3b896283621473f9e7d1de4414673",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99054
+      },
+      "verdict": "CAR-T must retain patient/product chain of identity and custody across collection, manufacturing, bridging, release and infusion; manufacturing status does not establish product-release authority.",
+      "feature_labels": [
+        "Eligibility",
+        "Cell Collection",
+        "Manufacturing Status",
+        "Bridging Therapy",
+        "Infusion",
+        "Response",
+        "Toxicity",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4231,
+      "title": "Pediatric Oncology Radiation Therapy Module",
+      "body": "Supports pediatric radiation oncology.\n\nIntegrates\n\n• Indication\n• Treatment Planning\n• Target Volumes\n• Treatment Course\n• Dose Records\n• Organ-at-risk Data\n• Toxicity\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9f8451934527afb7ee1eb777281d2fccc86b0a6bccd10fda6fb13170800da54c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99077
+      },
+      "verdict": "Radiation planning and delivered dose are distinct; preserve course, fractions, target/organ-at-risk definitions and correction history without enabling equipment control.",
+      "feature_labels": [
+        "Indication",
+        "Treatment Planning",
+        "Target Volumes",
+        "Treatment Course",
+        "Dose Records",
+        "Organ-at-risk Data",
+        "Toxicity",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4232,
+      "title": "Pediatric Proton Therapy Integration Module",
+      "body": "Supports pediatric proton therapy workflows.\n\nSupports\n\n• Referral\n• Planning Data\n• Treatment Course\n• Dose Documentation\n• Imaging\n• Toxicity\n• Long-term Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e0175f872408fbcab824bd2d88dab1de9a59cb3ba47a3bceef974e356b3fbe18",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99098
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Referral",
+        "Planning Data",
+        "Treatment Course",
+        "Dose Documentation",
+        "Imaging",
+        "Toxicity",
+        "Long-term Outcomes"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4233,
+      "title": "Pediatric Oncologic Surgery Module",
+      "body": "Supports surgical oncology workflows.\n\nIntegrates\n\n• Preoperative Assessment\n• Imaging\n• Surgical Planning\n• Procedure\n• Pathology\n• Margins\n• Complications\n• Recovery\n• Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e388bd006713f564211999a918a1b55d8a2af45fa3ff116bc6ccd2d570e6ffeb",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99118
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Preoperative Assessment",
+        "Imaging",
+        "Surgical Planning",
+        "Procedure",
+        "Pathology",
+        "Margins",
+        "Complications",
+        "Recovery",
+        "Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4234,
+      "title": "Pediatric Oncology 3D Surgical Planning Module",
+      "body": "Supports advanced anatomical visualization.\n\nIntegrates\n\n• CT\n• MRI\n• Tumor Segmentation\n• Vascular Anatomy\n• Organ Relationships\n• 3D Reconstruction\n• Surgical Planning\n\nDesigned for clinician-supervised planning.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4ac7a7c77a1d67aa7ca5f451593845fbd0bce83e3fc64d12e6f87de02251fc2d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99140
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "CT",
+        "MRI",
+        "Tumor Segmentation",
+        "Vascular Anatomy",
+        "Organ Relationships",
+        "3D Reconstruction",
+        "Surgical Planning"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4235,
+      "title": "Pediatric Oncology Treatment Response Engine",
+      "body": "Combines multimodal treatment-response information.\n\nIntegrates\n\n• Clinical Status\n• Laboratory Results\n• Imaging\n• Pathology\n• Molecular Data\n• MRD\n• Treatment Timeline\n\nSupports versioned response criteria.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0a542c1f44734fcad029899ecc14027482369da98e882f29f5fa5352a678ebe1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99162
+      },
+      "verdict": "Response assessment records criterion/version, modality/time point and reviewer; discordant MRD, imaging and clinical results must remain visible.",
+      "feature_labels": [
+        "Clinical Status",
+        "Laboratory Results",
+        "Imaging",
+        "Pathology",
+        "Molecular Data",
+        "MRD",
+        "Treatment Timeline"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4236,
+      "title": "Pediatric Oncology Toxicity Monitoring Module",
+      "body": "Tracks acute and cumulative treatment toxicity.\n\nSupports\n\n• Hematologic Toxicity\n• Cardiotoxicity\n• Nephrotoxicity\n• Hepatotoxicity\n• Neurotoxicity\n• Endocrine Toxicity\n• Infection\n• Functional Effects\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "877e6dd81e4baec41bef674a8cfbf62ac46718a4ce1a428fd913d0865493fd04",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99184
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Hematologic Toxicity",
+        "Cardiotoxicity",
+        "Nephrotoxicity",
+        "Hepatotoxicity",
+        "Neurotoxicity",
+        "Endocrine Toxicity",
+        "Infection",
+        "Functional Effects"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4237,
+      "title": "Pediatric Onco-Cardiology Module",
+      "body": "Integrates pediatric oncology and cardiology.\n\nSupports\n\n• Baseline Cardiac Assessment\n• Echocardiography\n• ECG\n• Biomarkers\n• Treatment Exposure\n• Cardiotoxicity Surveillance\n• Long-term Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0fc9f83161c562e111549714d6a9177da9a6c6ba7c2af79c900fb9bab8c03481",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99205
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Baseline Cardiac Assessment",
+        "Echocardiography",
+        "ECG",
+        "Biomarkers",
+        "Treatment Exposure",
+        "Cardiotoxicity Surveillance",
+        "Long-term Monitoring"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4238,
+      "title": "Pediatric Onco-Endocrinology Module",
+      "body": "Supports endocrine consequences of childhood cancer and treatment.\n\nTracks\n\n• Growth\n• Thyroid Function\n• Pituitary Function\n• Puberty\n• Gonadal Function\n• Bone Health\n• Metabolic Health\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "3db6da7c030e1d475c07f7aa42db008ab59db3c4e82c63d36101fa8009f5e4ba",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99225
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Growth",
+        "Thyroid Function",
+        "Pituitary Function",
+        "Puberty",
+        "Gonadal Function",
+        "Bone Health",
+        "Metabolic Health"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4239,
+      "title": "Pediatric Onco-Fertility Preservation Module",
+      "body": "Supports fertility-risk assessment and preservation workflows.\n\nSupports\n\n• Treatment-related Risk\n• Age-appropriate Assessment\n• Specialist Referral\n• Preservation Options\n• Consent\n• Procedure Documentation\n• Long-term Follow-up\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "e0e456b08276a07fe7519023ccd88a954e88f65b2ecd74fde2d1d5a58cc625c3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99245
+      },
+      "verdict": "Onco-fertility preserves age-appropriate consent/assent, separate guardian authority, specialist referral and confidential information; records do not promise fertility outcomes.",
+      "feature_labels": [
+        "Treatment-related Risk",
+        "Age-appropriate Assessment",
+        "Specialist Referral",
+        "Preservation Options",
+        "Consent",
+        "Procedure Documentation",
+        "Long-term Follow-up"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4240,
+      "title": "Pediatric Oncology Infection & Immunocompromised Care Module",
+      "body": "Supports infection management for immunocompromised pediatric oncology patients.\n\nIntegrates\n\n• Neutropenia\n• Fever Events\n• Microbiology\n• Antimicrobial Therapy\n• Central Lines\n• Immune Status\n• Infection History\n• Escalation Workflows\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "7449b8da8fc12957f40f22fa267cbf0600bb4ad82e3a9501e9727148ba58719b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99265
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Neutropenia",
+        "Fever Events",
+        "Microbiology",
+        "Antimicrobial Therapy",
+        "Central Lines",
+        "Immune Status",
+        "Infection History",
+        "Escalation Workflows"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4241,
+      "title": "Pediatric Oncology Clinical Trials Matching Engine",
+      "body": "Supports international pediatric oncology trial discovery.\n\nMatches structured patient characteristics against\n\n• Diagnosis\n• Age\n• Stage\n• Molecular Profile\n• Previous Treatments\n• Disease Status\n• Geographic Eligibility\n• Trial Criteria\n\nAI-generated matches require trial-site eligibility verification.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "06edaddd419cec5c08a078b02a6e3926ca57bc7b34b777714fb598f15579ab27",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99286
+      },
+      "verdict": "Potential international trial matches require site verification of current criteria and separate consent/enrollment; geographic availability and recruitment are not inferred.",
+      "feature_labels": [
+        "Diagnosis",
+        "Age",
+        "Stage",
+        "Molecular Profile",
+        "Previous Treatments",
+        "Disease Status",
+        "Geographic Eligibility",
+        "Trial Criteria"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4242,
+      "title": "Pediatric Oncology International Second Opinion Module",
+      "body": "Supports cross-border specialist review.\n\nSecurely packages\n\n• Clinical Summary\n• Imaging\n• Pathology\n• Genomics\n• Treatment History\n• Response\n• Clinical Questions\n\nSupports multilingual specialist collaboration through EDHT.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c995d1d362ffc47c3ed91fc671b61d5d4907ca0add4aa243e8a549a16ee729ad",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99309
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Clinical Summary",
+        "Imaging",
+        "Pathology",
+        "Genomics",
+        "Treatment History",
+        "Response",
+        "Clinical Questions"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4243,
+      "title": "Pediatric Oncology AI Decision Support",
+      "body": "Provides AI-assisted pediatric oncology intelligence.\n\nSupports\n\n• Diagnostic Pattern Analysis\n• Risk Stratification\n• Molecular Evidence Retrieval\n• Treatment Response Analysis\n• Toxicity Pattern Detection\n• Trial Matching\n• Longitudinal Change Detection\n\nAI does not independently diagnose cancer or prescribe treatment.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4c29544c26dc235b0dac47f5463d62b701ba08d828a6b92270e5738e11e305ea",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99331
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Diagnostic Pattern Analysis",
+        "Risk Stratification",
+        "Molecular Evidence Retrieval",
+        "Treatment Response Analysis",
+        "Toxicity Pattern Detection",
+        "Trial Matching",
+        "Longitudinal Change Detection"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4245,
+      "title": "Pediatric Oncology AI Pre-Visit & Case Synthesis Module",
+      "body": "Creates clinician-reviewable oncology case summaries.\n\nAI may synthesize\n\n• Diagnosis\n• Pathology\n• Molecular Findings\n• Imaging\n• Previous Treatment\n• Toxicities\n• Laboratory Trends\n• Current Symptoms\n• Outstanding Clinical Questions\n\nEvery statement links to its source data where technically available.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "11ec1d1ef744f9fa5b6c9731996844936d9c67307135a505d55f1be3360ee5ac",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99375
+      },
+      "verdict": "If statement-level provenance is technically unavailable, mark the generated statement unsupported or omit it from released clinical summaries; do not silently relax traceability.",
+      "feature_labels": [
+        "Diagnosis",
+        "Pathology",
+        "Molecular Findings",
+        "Imaging",
+        "Previous Treatment",
+        "Toxicities",
+        "Laboratory Trends",
+        "Current Symptoms",
+        "Outstanding Clinical Questions"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4246,
+      "title": "Pediatric Oncology Family Communication & Education Module",
+      "body": "Provides age-appropriate and family-oriented information.\n\nSupports\n\n• Diagnosis Explanations\n• Treatment Journey\n• Medication Education\n• Procedure Preparation\n• Side-effect Information\n• Follow-up Education\n• Multilingual Content\n\nSeparates educational information from individualized medical advice.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a3d1cf59b1250cfcc1d74eb626450b6fe6f301deaf7cfe303f71236f64077205",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99399
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Diagnosis Explanations",
+        "Treatment Journey",
+        "Medication Education",
+        "Procedure Preparation",
+        "Side-effect Information",
+        "Follow-up Education",
+        "Multilingual Content"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4247,
+      "title": "Pediatric Oncology Palliative & Supportive Care Module",
+      "body": "Supports integrated supportive and palliative care.\n\nTracks\n\n• Symptoms\n• Pain\n• Nausea\n• Fatigue\n• Sleep\n• Nutrition\n• Psychological Needs\n• Family Needs\n• Care Goals\n• Quality of Life\n\nSupports concurrent integration with disease-directed treatment.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "a5370c315b5df68c41d8652e403def7e60027e4af4c4909290f5def31faaeb84",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99421
+      },
+      "verdict": "Supportive and palliative care may coexist with disease-directed treatment; shared profile must retain care goals and family/patient needs without inferring treatment cessation.",
+      "feature_labels": [
+        "Symptoms",
+        "Pain",
+        "Nausea",
+        "Fatigue",
+        "Sleep",
+        "Nutrition",
+        "Psychological Needs",
+        "Family Needs",
+        "Care Goals",
+        "Quality of Life"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4248,
+      "title": "Childhood Cancer Survivorship Passport",
+      "body": "Creates a lifelong structured cancer survivorship record.\n\nContains\n\n• Original Diagnosis\n• Molecular Diagnosis\n• Surgery\n• Chemotherapy Exposure\n• Radiation Exposure\n• Cellular Therapy\n• Transplantation\n• Major Toxicities\n• Late-effect Risks\n• Surveillance History\n\nTravels with the patient's EDHT Medical Passport into adulthood.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "01e83caf9d2b12b4764701016f108268922aabe6a730b260a03559e6ed5ef499",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99446
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Original Diagnosis",
+        "Molecular Diagnosis",
+        "Surgery",
+        "Chemotherapy Exposure",
+        "Radiation Exposure",
+        "Cellular Therapy",
+        "Transplantation",
+        "Major Toxicities",
+        "Late-effect Risks",
+        "Surveillance History"
+      ],
+      "date": "2026-09-15"
+    },
+    {
+      "original_id": 4249,
+      "title": "Pediatric Oncology Late Effects & Lifelong Surveillance Engine",
+      "body": "Supports risk-based lifelong surveillance after childhood cancer.\n\nIntegrates\n\n• Previous Treatment Exposure\n• Cardiac Health\n• Endocrine Health\n• Renal Health\n• Neurological Health\n• Fertility\n• Hearing\n• Vision\n• Secondary Malignancy Surveillance\n• Psychosocial Health\n\nGenerates clinician-reviewable personalized surveillance pathways.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ed56f17357a60eca1bbcffd147136a6f64f88835c6dd9007df1d85539d7f8d5e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99471
+      },
+      "verdict": "Oncology preserves tumor-specific diagnosis/classification releases, specimen/pathology/genomic evidence, treatment phases/exposure and response/toxicity provenance. Separate molecular association, trial matching and predicted response from clinical eligibility and authorized therapy. Maintain family/guardian privacy, survivorship and concurrent supportive care.",
+      "feature_labels": [
+        "Previous Treatment Exposure",
+        "Cardiac Health",
+        "Endocrine Health",
+        "Renal Health",
+        "Neurological Health",
+        "Fertility",
+        "Hearing",
+        "Vision",
+        "Secondary Malignancy Surveillance",
+        "Psychosocial Health"
+      ],
+      "date": "2026-09-15"
+    }
+  ]
+}

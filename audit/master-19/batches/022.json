@@ -1,0 +1,13 @@
+{
+  "pass": "MASTER-19",
+  "batch": 22,
+  "family": "pediatric-adolescent-confidential-consent",
+  "owner": "CAP-CONSENT",
+  "ids": [
+    4919
+  ],
+  "decision_sha256": "0ea8c8e0019770c88acd4a5cc03f9b8b2a6b13de0c9df3e1ca626a5983a3063c",
+  "source_hashes": {
+    "4919": "0a29784bf0afe0317834f3b581317f94f99936bdd8a9d591f71c57b134d5ab50"
+  }
+}

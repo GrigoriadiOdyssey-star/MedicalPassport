@@ -1,0 +1,1585 @@
+{
+  "pass": "MASTER-10",
+  "baseline_commit": "9efb09e6f91980c1315a1b7fcaa1f77a3f96d793",
+  "baseline_state": "audit/master-08/",
+  "mode": "APPEND_ONLY_DELTA",
+  "date": "2026-09-16",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "records": [
+    {
+      "id": "CORE-CAP-APPOINTMENTS",
+      "owner": "CAP-APPOINTMENTS",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        763
+      ],
+      "profile_ids": [
+        "M10-booking"
+      ],
+      "profiles": [
+        {
+          "id": "M10-booking",
+          "owner": "CAP-APPOINTMENTS",
+          "source_ids": [
+            763
+          ],
+          "reason": "Fertility consultations reuse clinic/physician/online booking. A reserved appointment neither authorizes a procedure nor starts a treatment cycle."
+        }
+      ],
+      "semantic_decision": "M10-booking",
+      "owner_evidence": "Fertility consultations reuse clinic/physician/online booking. A reserved appointment neither authorizes a procedure nor starts a treatment cycle.",
+      "document": "docs/canonical/master10/CAP-APPOINTMENTS.md",
+      "extends_document": "docs/canonical/master08/CAP-APPOINTMENTS.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-APPOINTMENTS-1529f209dda56be0",
+          "text": "Allows scheduling fertility consultations.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-76968af3bfd3face",
+          "text": "Clinic",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-55faff639138dc86",
+          "text": "Physician",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-76507b42b60ede7f",
+          "text": "Online Consultation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            763
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-APPOINTMENTS-82a77873cf8fbddc",
+          "text": "# Fertility Consultation Booking",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            763
+          ]
+        },
+        {
+          "id": "M10-CAP-APPOINTMENTS-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            763
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-APPOINTMENTS",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "26ed4c8504945fa32fe25f30d7f7b64611e87d44bfaa14871faaaeb95824a90f"
+    },
+    {
+      "id": "CORE-CAP-PROFILE",
+      "owner": "CAP-PROFILE",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        764
+      ],
+      "profile_ids": [
+        "M10-couple-projection"
+      ],
+      "profiles": [
+        {
+          "id": "M10-couple-projection",
+          "owner": "CAP-PROFILE",
+          "source_ids": [
+            764
+          ],
+          "reason": "Shared treatment context is a projection linking two separately identified patients. Preserve female/male source categories without assuming sex, parental status or automatic partner access. Independent purpose-scoped grants and withdrawal apply to each source; absence of permission is distinct from absence of clinical data. Never merge partner patient IDs or disclose hidden diagnoses through timeline titles."
+        }
+      ],
+      "semantic_decision": "M10-couple-projection",
+      "owner_evidence": "Shared treatment context is a projection linking two separately identified patients. Preserve female/male source categories without assuming sex, parental status or automatic partner access. Independent purpose-scoped grants and withdrawal apply to each source; absence of permission is distinct from absence of clinical data. Never merge partner patient IDs or disclose hidden diagnoses through timeline titles.",
+      "document": "docs/canonical/master10/CAP-PROFILE.md",
+      "extends_document": "docs/canonical/master08/CAP-PROFILE.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-PROFILE-589356eb408c56c7",
+          "text": "Creates a shared reproductive health profile for partners.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-8d85b001168e70bc",
+          "text": "Female Data",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-5432218f4540930f",
+          "text": "Male Data",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-8ba19d107237a535",
+          "text": "Shared Treatment Timeline",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            764
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-PROFILE-9fe942870c502c79",
+          "text": "# Couple Fertility Profile",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            764
+          ]
+        },
+        {
+          "id": "M10-CAP-PROFILE-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            764
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-PROFILE",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "c776d05ba2cdc2b0e539a128d53596d4e6a879ab581b201d4b13a7937771a684"
+    },
+    {
+      "id": "CORE-CAP-SPECIALTY",
+      "owner": "CAP-SPECIALTY",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        765,
+        771,
+        775,
+        780
+      ],
+      "profile_ids": [
+        "M10-reproductive-care"
+      ],
+      "profiles": [
+        {
+          "id": "M10-reproductive-care",
+          "owner": "CAP-SPECIALTY",
+          "source_ids": [
+            765,
+            771,
+            775,
+            780
+          ],
+          "reason": "Female/male/combined/unexplained infertility, stimulation response, pregnancy after assisted reproduction and the specialty workspace are distinct profiles. Preserve follicles/estradiol/medication response and early pregnancy imaging/labs while keeping source ownership and clinician decisions separate. No success guarantee, inferred embryo viability or autonomous stimulation recommendation."
+        }
+      ],
+      "semantic_decision": "M10-reproductive-care",
+      "owner_evidence": "Female/male/combined/unexplained infertility, stimulation response, pregnancy after assisted reproduction and the specialty workspace are distinct profiles. Preserve follicles/estradiol/medication response and early pregnancy imaging/labs while keeping source ownership and clinician decisions separate. No success guarantee, inferred embryo viability or autonomous stimulation recommendation.",
+      "document": "docs/canonical/master10/CAP-SPECIALTY.md",
+      "extends_document": "docs/canonical/master08/CAP-SPECIALTY.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-SPECIALTY-d3af434368617d45",
+          "text": "Stores infertility diagnoses.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            765
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-835f37c3ebb6b75b",
+          "text": "Female Factors",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            765
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-3dd7f81ca16c3f04",
+          "text": "Male Factors",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            765
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-8bf40a14548e8c95",
+          "text": "Combined Factors",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            765
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-0f8b98280a0538f0",
+          "text": "Unexplained Infertility",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            765
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-7ac700b64b17d11f",
+          "text": "Tracks ovarian stimulation cycles.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            771
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-4289dc7827e23a4f",
+          "text": "Follicle Growth",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            771
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-49dff57230c6f6cc",
+          "text": "Estradiol",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            771
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-bb1f33938f899a6e",
+          "text": "Medication Response",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            771
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-a5879e040aa4403f",
+          "text": "Supports pregnancies achieved through assisted reproduction.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            775
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-5b35040d6e704676",
+          "text": "Early Pregnancy",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            775
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-5032f26f1a690cb2",
+          "text": "Ultrasound",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            775
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-71f790fdf94f9c10",
+          "text": "Laboratory Results",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            775
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-e69b8e91d7214b61",
+          "text": "Provides a complete overview of fertility treatment.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-f3d993f49bc6debb",
+          "text": "Displays",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-7b40033c1c8e1625",
+          "text": "Hormones",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-baec3852076bf1c2",
+          "text": "IVF",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-9e824ea2c4e0ef7f",
+          "text": "Embryos",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-b769af85ada69188",
+          "text": "Medications",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-e5797c17a8280c5f",
+          "text": "Pregnancy Progress",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-e22fe857a3a17db9",
+          "text": "AI Recommendations",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-3f2ee03c609429ec",
+          "text": "Acts as the primary reproductive medicine workspace within the Medical Passport ecosystem.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            780
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-SPECIALTY-ad40c081f1820f2e",
+          "text": "# Infertility Diagnosis Registry",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            765
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            765,
+            771
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            765,
+            771,
+            775,
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            765,
+            771,
+            775,
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            765,
+            771,
+            775,
+            780
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-dac3f0105b9d8a52",
+          "text": "# Ovarian Stimulation Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            771
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-3b37a0174ec2e138",
+          "text": "# Pregnancy After IVF Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            775
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-20dcf9e08bfc7cd6",
+          "text": "Tracks",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            775
+          ]
+        },
+        {
+          "id": "M10-CAP-SPECIALTY-1dfde8983969ac72",
+          "text": "# Comprehensive Reproductive Medicine Dashboard",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            780
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-SPECIALTY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "ee3fd48ba1b84bfcd0261231aef195b772af86e428bf14b695926992ec79e471"
+    },
+    {
+      "id": "CORE-CAP-ENCOUNTER",
+      "owner": "CAP-ENCOUNTER",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        766,
+        768,
+        769
+      ],
+      "profile_ids": [
+        "M10-ivf-procedures"
+      ],
+      "profiles": [
+        {
+          "id": "M10-ivf-procedures",
+          "owner": "CAP-ENCOUNTER",
+          "source_ids": [
+            766,
+            768,
+            769
+          ],
+          "reason": "IVF cycles link stimulation, retrieval, fertilization and transfer as distinct procedures. Preserve retrieval count/quality/notes and transfer date/grade/physician notes with source version and specimen linkage. Count/grade does not establish suitability, consent or transfer authorization."
+        }
+      ],
+      "semantic_decision": "M10-ivf-procedures",
+      "owner_evidence": "IVF cycles link stimulation, retrieval, fertilization and transfer as distinct procedures. Preserve retrieval count/quality/notes and transfer date/grade/physician notes with source version and specimen linkage. Count/grade does not establish suitability, consent or transfer authorization.",
+      "document": "docs/canonical/master10/CAP-ENCOUNTER.md",
+      "extends_document": "docs/canonical/master08/CAP-ENCOUNTER.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-ENCOUNTER-db7edbbf09f663c6",
+          "text": "Stores in vitro fertilization treatment history.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            766
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-b858b78dcd5ed9ca",
+          "text": "Stimulation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            766
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-34829087d2d9b447",
+          "text": "Egg Retrieval",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            766
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-4b40812dc9c94bb9",
+          "text": "Fertilization",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            766
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-e3c75140386562e4",
+          "text": "Embryo Transfer",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            766
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-bd1c3e8adb48ad5b",
+          "text": "Tracks oocyte retrieval procedures.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            768
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-b266eb550530399d",
+          "text": "Number Retrieved",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            768
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-fbaf1cf78a982e74",
+          "text": "Quality",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            768
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-734fba275d46f333",
+          "text": "Procedure Notes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            768
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-ed058f76a46ae094",
+          "text": "Stores embryo transfer procedures.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-9989db3c868bfcee",
+          "text": "Transfer Date",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-6c551171dbdfd703",
+          "text": "Embryo Grade",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-6864b968505141fb",
+          "text": "Physician Notes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            769
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-ENCOUNTER-a03ffa8dc573799d",
+          "text": "# IVF Treatment Registry",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            766
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            766,
+            768,
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            766,
+            768,
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            766,
+            768,
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            766,
+            768,
+            769
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-4ceb9ca5a3baadc1",
+          "text": "# Egg Retrieval Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            768
+          ]
+        },
+        {
+          "id": "M10-CAP-ENCOUNTER-33505285cac0e12d",
+          "text": "# Embryo Transfer Registry",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            769
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-ENCOUNTER",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "a16f8f116a95ecd39ebaadd5805bbae75dce7b5fecde9a02e21a81642b366dee"
+    },
+    {
+      "id": "CORE-CAP-MEDICATION",
+      "owner": "CAP-MEDICATION",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        770
+      ],
+      "profile_ids": [
+        "M10-reproductive-medication"
+      ],
+      "profiles": [
+        {
+          "id": "M10-reproductive-medication",
+          "owner": "CAP-MEDICATION",
+          "source_ids": [
+            770
+          ],
+          "reason": "FSH, LH, hCG, progesterone, estrogen and GnRH analogue exposure belongs to shared medication history; drug class alone cannot determine actual ingredient/form/strength/dose or authorize treatment. Prescribing and administration remain separate owners."
+        }
+      ],
+      "semantic_decision": "M10-reproductive-medication",
+      "owner_evidence": "FSH, LH, hCG, progesterone, estrogen and GnRH analogue exposure belongs to shared medication history; drug class alone cannot determine actual ingredient/form/strength/dose or authorize treatment. Prescribing and administration remain separate owners.",
+      "document": "docs/canonical/master10/CAP-MEDICATION.md",
+      "extends_document": "docs/canonical/master08/CAP-MEDICATION.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-MEDICATION-fe9de08e531ab937",
+          "text": "Tracks reproductive medicine medications.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-37b35a2f4dc4e7c5",
+          "text": "FSH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-fbfd0eed59f10498",
+          "text": "LH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-543b0085a8e98d30",
+          "text": "hCG",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-2f87863459d7d729",
+          "text": "Progesterone",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-3f55ecdbec07eb48",
+          "text": "Estrogen",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-2de08d4225f61134",
+          "text": "GnRH Analogues",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            770
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-MEDICATION-ae8336324478e370",
+          "text": "# Fertility Medication Manager",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            770
+          ]
+        },
+        {
+          "id": "M10-CAP-MEDICATION-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            770
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-MEDICATION",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "d2f23c7f8c2f24e9eeacb1a3790234f0f18eaf36bf46c26d3b970c338dc74bda"
+    },
+    {
+      "id": "CORE-CAP-IMAGING",
+      "owner": "CAP-IMAGING",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        772
+      ],
+      "profile_ids": [
+        "M10-follicle-imaging"
+      ],
+      "profiles": [
+        {
+          "id": "M10-follicle-imaging",
+          "owner": "CAP-IMAGING",
+          "source_ids": [
+            772
+          ],
+          "reason": "Ultrasound follicle diameter/count/growth retains study/time, laterality, measurement method/units and signed interpretation. Cross-study comparisons require compatibility; measurements never choose a treatment or trigger."
+        }
+      ],
+      "semantic_decision": "M10-follicle-imaging",
+      "owner_evidence": "Ultrasound follicle diameter/count/growth retains study/time, laterality, measurement method/units and signed interpretation. Cross-study comparisons require compatibility; measurements never choose a treatment or trigger.",
+      "document": "docs/canonical/master10/CAP-IMAGING.md",
+      "extends_document": "docs/canonical/master08/CAP-IMAGING.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-IMAGING-bcfd6ce60cb26e45",
+          "text": "Stores follicular development.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-5032f26f1a690cb2",
+          "text": "Ultrasound",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-9b3538175b56f8f9",
+          "text": "Diameter",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-6a39849178d3ef60",
+          "text": "Number",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-67b8930e2378552d",
+          "text": "Growth Timeline",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            772
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-IMAGING-d87533e51ebf56ef",
+          "text": "# Follicle Monitoring",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            772
+          ]
+        },
+        {
+          "id": "M10-CAP-IMAGING-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            772
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-IMAGING",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "2b08595d5114e0c19ed9e7e7cf06765e490ce2f9b3b5d1263b77f64ffb0e5b6f"
+    },
+    {
+      "id": "CORE-CAP-LABORATORY",
+      "owner": "CAP-LABORATORY",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        767,
+        773,
+        774
+      ],
+      "profile_ids": [
+        "M10-reproductive-lab"
+      ],
+      "profiles": [
+        {
+          "id": "M10-reproductive-lab",
+          "owner": "CAP-LABORATORY",
+          "source_ids": [
+            767,
+            773,
+            774
+          ],
+          "reason": "Embryology and hormone observations use separate specimen/result profiles under laboratory ownership. Retain developmental stage/grading, cryopreservation/transfer and embryo/egg/sperm storage identity/custody separately from patient IDs; hormone AMH/LH/FSH/estradiol/progesterone retain units/method/reference/timing. Storage or shared treatment linkage never authorizes disposal, donation, transfer or partner disclosure. Custody and consent state require specialist-validated contracts."
+        }
+      ],
+      "semantic_decision": "M10-reproductive-lab",
+      "owner_evidence": "Embryology and hormone observations use separate specimen/result profiles under laboratory ownership. Retain developmental stage/grading, cryopreservation/transfer and embryo/egg/sperm storage identity/custody separately from patient IDs; hormone AMH/LH/FSH/estradiol/progesterone retain units/method/reference/timing. Storage or shared treatment linkage never authorizes disposal, donation, transfer or partner disclosure. Custody and consent state require specialist-validated contracts.",
+      "document": "docs/canonical/master10/CAP-LABORATORY.md",
+      "extends_document": "docs/canonical/master08/CAP-LABORATORY.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-LABORATORY-2d681d38c3aaefc2",
+          "text": "Stores embryo information.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            767
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-7e44192230be02a2",
+          "text": "Development Stage",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            767
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-dba7066a268b6f23",
+          "text": "Grading",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            767
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-42e8af3059cdaa23",
+          "text": "Cryopreservation",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            767
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-b5c004e6259d340b",
+          "text": "Transfer History",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            767
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-d3c2d52814568958",
+          "text": "Displays reproductive hormone trends.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-3568af0ff32502f8",
+          "text": "AMH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-fbfd0eed59f10498",
+          "text": "LH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-37b35a2f4dc4e7c5",
+          "text": "FSH",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-49dff57230c6f6cc",
+          "text": "Estradiol",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-2f87863459d7d729",
+          "text": "Progesterone",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-4f370eac5e1cee93",
+          "text": "Stores frozen embryos and gametes.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-9e824ea2c4e0ef7f",
+          "text": "Embryos",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-47a0fa03c1f96d3d",
+          "text": "Eggs",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-99449419ec92652a",
+          "text": "Sperm",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-18427afb0c9b45b2",
+          "text": "Storage Information",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            774
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-LABORATORY-3eb6309d77e2fbe2",
+          "text": "# Embryo Registry",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            767
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-4fbeeb87456accf5",
+          "text": "Supports",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            767,
+            773,
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            767,
+            773,
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            767,
+            773,
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            767,
+            773,
+            774
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-0c2317df648b72cf",
+          "text": "# Reproductive Hormone Dashboard",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            773
+          ]
+        },
+        {
+          "id": "M10-CAP-LABORATORY-21a6ba10d0ba7f39",
+          "text": "# Cryopreservation Registry",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            774
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-LABORATORY",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "4a46c9f6d1959774d471abaf79f952d36aaf682463b0a3680d68db82e33e181a"
+    },
+    {
+      "id": "CORE-CAP-RESEARCH",
+      "owner": "CAP-RESEARCH",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        776
+      ],
+      "profile_ids": [
+        "M10-fertility-outcomes"
+      ],
+      "profiles": [
+        {
+          "id": "M10-fertility-outcomes",
+          "owner": "CAP-RESEARCH",
+          "source_ids": [
+            776
+          ],
+          "reason": "Cycle, pregnancy and live-birth rates are different cohort outcomes with explicit denominator, follow-up, treatment context and missingness. Aggregates are not individual predictions or comparable clinic rankings without population adjustment and evidence."
+        }
+      ],
+      "semantic_decision": "M10-fertility-outcomes",
+      "owner_evidence": "Cycle, pregnancy and live-birth rates are different cohort outcomes with explicit denominator, follow-up, treatment context and missingness. Aggregates are not individual predictions or comparable clinic rankings without population adjustment and evidence.",
+      "document": "docs/canonical/master10/CAP-RESEARCH.md",
+      "extends_document": "docs/canonical/master08/CAP-RESEARCH.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-RESEARCH-0b4925eaaf51d57b",
+          "text": "Provides treatment outcome statistics.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-f3d993f49bc6debb",
+          "text": "Displays",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-97ede4bf21a6303f",
+          "text": "Cycles",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-d30d3ca2feffeaa9",
+          "text": "Pregnancy Rate",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-b11ec48e32b62f08",
+          "text": "Live Birth Rate",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            776
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-RESEARCH-af60b3fbe84d77de",
+          "text": "# Fertility Success Analytics",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            776
+          ]
+        },
+        {
+          "id": "M10-CAP-RESEARCH-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            776
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-RESEARCH",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "861a455500345ca12c7313fc494b58667235c3e32a1e56581bdd2d305971a509"
+    },
+    {
+      "id": "CORE-CAP-AI",
+      "owner": "CAP-AI",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        777
+      ],
+      "profile_ids": [
+        "M10-fertility-ai"
+      ],
+      "profiles": [
+        {
+          "id": "M10-fertility-ai",
+          "owner": "CAP-AI",
+          "source_ids": [
+            777
+          ],
+          "reason": "Hormone, ultrasound, lab and treatment-timeline analysis is a bounded AI task requiring source/model versions, validation, uncertainty and human disposition. No independent selection, grading, stimulation dose or reproductive decision."
+        }
+      ],
+      "semantic_decision": "M10-fertility-ai",
+      "owner_evidence": "Hormone, ultrasound, lab and treatment-timeline analysis is a bounded AI task requiring source/model versions, validation, uncertainty and human disposition. No independent selection, grading, stimulation dose or reproductive decision.",
+      "document": "docs/canonical/master10/CAP-AI.md",
+      "extends_document": "docs/canonical/master08/CAP-AI.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-AI-cc6356b415e00b17",
+          "text": "AI assists reproductive treatment monitoring.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-0535ebb6ad4f5674",
+          "text": "Analyzes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-7b40033c1c8e1625",
+          "text": "Hormones",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-5032f26f1a690cb2",
+          "text": "Ultrasound",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-71f790fdf94f9c10",
+          "text": "Laboratory Results",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-9b97c6e8966ca772",
+          "text": "Treatment Timeline",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            777
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-AI-782ad0677884c83c",
+          "text": "# Reproductive AI Assistant",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            777
+          ]
+        },
+        {
+          "id": "M10-CAP-AI-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            777
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-AI",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "bd507b17b88d77269a754173b50a80ebc35d659f041799fad95fa3c474e72510"
+    },
+    {
+      "id": "CORE-CAP-DATA",
+      "owner": "CAP-DATA",
+      "stage": "ADOPTED_DOCUMENTATION_BASELINE",
+      "clinical_approval": false,
+      "implementation_ready": false,
+      "source_ids": [
+        779
+      ],
+      "profile_ids": [
+        "M10-fertility-timeline"
+      ],
+      "profiles": [
+        {
+          "id": "M10-fertility-timeline",
+          "owner": "CAP-DATA",
+          "source_ids": [
+            779
+          ],
+          "reason": "Diagnostics, medications, procedures and outcomes form an attributed source-reference timeline. Cross-partner joins require independent authorization at render time and cannot create merged identity or duplicate clinical truth."
+        }
+      ],
+      "semantic_decision": "M10-fertility-timeline",
+      "owner_evidence": "Diagnostics, medications, procedures and outcomes form an attributed source-reference timeline. Cross-partner joins require independent authorization at render time and cannot create merged identity or duplicate clinical truth.",
+      "document": "docs/canonical/master10/CAP-DATA.md",
+      "extends_document": "docs/canonical/master08/CAP-DATA.md",
+      "requirements": [
+        {
+          "id": "M10-CAP-DATA-63aeb7f77f1f47fe",
+          "text": "Displays the complete fertility treatment journey.",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-01bbec9df504a305",
+          "text": "Includes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-66cb8cd6201376f6",
+          "text": "Diagnostics",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-b769af85ada69188",
+          "text": "Medications",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-228b18d13e8b34f1",
+          "text": "Procedures",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-5e8c51cc3501e267",
+          "text": "Outcomes",
+          "kind": "REQUIREMENT",
+          "source_ids": [
+            779
+          ]
+        }
+      ],
+      "source_metadata": [
+        {
+          "id": "M10-CAP-DATA-94811b69bb1ffb15",
+          "text": "# Fertility Timeline",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-5ba74d8fcc7b20cc",
+          "text": "Status",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-d5232cbd3a326267",
+          "text": "Documentation",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            779
+          ]
+        },
+        {
+          "id": "M10-CAP-DATA-6f33acf3afb37064",
+          "text": "---",
+          "kind": "SOURCE_METADATA",
+          "source_ids": [
+            779
+          ]
+        }
+      ],
+      "dependencies": [
+        "CAP-DATA",
+        "CAP-DATA",
+        "CAP-CONSENT",
+        "CAP-SECURITY",
+        "CAP-AUDIT"
+      ],
+      "document_sha256": "2959f63823b52a448a337419897f614483f3d19b68a18ef16ee8cb4c3f151cfb"
+    }
+  ]
+}

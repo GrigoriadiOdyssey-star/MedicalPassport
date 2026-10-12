@@ -1,0 +1,4645 @@
+{
+  "schema_version": 5,
+  "pass": "MASTER-05",
+  "edition": "2026-09-15",
+  "parent_checkpoint": "4b42871cf4e76845a081b5607d3f361a77b1edf5",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "gitlab_writes": false,
+  "implementation_started": false,
+  "aliases": [
+    {
+      "original_id": 969,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3248,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4181,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4182,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4183,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4184,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4993,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4994,
+      "canonical_id": "CORE-CAP-ADMINISTRATION",
+      "canonical_document": "docs/canonical/master05/CAP-ADMINISTRATION.md",
+      "profile_ids": [
+        "M05-HEM-TRANSFUSION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 854,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "PED2-CARD-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 914,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-PULM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 954,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-GASTRO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 974,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-HEM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 1218,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1259,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1369,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1471,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1547,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1609,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-GENOMIC"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1621,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-STRATEGIC-GENOMIC"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3072,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "PED2-CARD-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3133,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-ONCO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3173,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-GASTRO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3193,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-PULM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3252,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-HEM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3293,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-GASTRO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3374,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-PULM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3453,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-GASTRO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 3674,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "PED2-CARD-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4075,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "PED2-CARD-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4191,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-HEM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4192,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-HEM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4196,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-HEM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4223,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-ONCO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4243,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-ONCO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4245,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-ONCO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4494,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-PULM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4496,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-PULM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4546,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-GASTRO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4548,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-GASTRO-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4722,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-RHEUM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 4998,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M05-HEM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5048,
+      "canonical_id": "CORE-CAP-AI",
+      "canonical_document": "docs/canonical/master05/CAP-AI.md",
+      "profile_ids": [
+        "M04-RHEUM-AI"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-AI"
+    },
+    {
+      "original_id": 1115,
+      "canonical_id": "CORE-CAP-ALLERGY",
+      "canonical_document": "docs/canonical/master05/CAP-ALLERGY.md",
+      "profile_ids": [
+        "CAN-ALLERGY-LABEL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ALLERGY"
+    },
+    {
+      "original_id": 4416,
+      "canonical_id": "CORE-CAP-ALLERGY",
+      "canonical_document": "docs/canonical/master05/CAP-ALLERGY.md",
+      "profile_ids": [
+        "CAN-ALLERGY-LABEL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ALLERGY"
+    },
+    {
+      "original_id": 4418,
+      "canonical_id": "CORE-CAP-ALLERGY",
+      "canonical_document": "docs/canonical/master05/CAP-ALLERGY.md",
+      "profile_ids": [
+        "CAN-ALLERGY-LABEL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ALLERGY"
+    },
+    {
+      "original_id": 933,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "PED2-RENAL-MEDICATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1175,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1176,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1540,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1606,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1661,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1663,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1664,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1680,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1727,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1841,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1843,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 1860,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 2399,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 2677,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 3993,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "CAN-MENTAL-MEDICATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 4179,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-HEM-MED-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4220,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-ONCO-PRECISION-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4227,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-ONCO-PRECISION-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4228,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-ONCO-PRECISION-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4419,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-STRATEGIC-PHARM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 4566,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "PED2-RENAL-MEDICATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 4713,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-RHEUM-MED-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 4842,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "CAN-MENTAL-MEDICATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 4988,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-HEM-MED-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4997,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-HEM-MED-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5046,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M04-RHEUM-MED-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 5130,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "M05-ONCO-PRECISION-SAFETY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5166,
+      "canonical_id": "CORE-CAP-CDS",
+      "canonical_document": "docs/canonical/master05/CAP-CDS.md",
+      "profile_ids": [
+        "CAN-MENTAL-MEDICATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CDS"
+    },
+    {
+      "original_id": 4849,
+      "canonical_id": "CORE-CAP-CONSENT",
+      "canonical_document": "docs/canonical/master05/CAP-CONSENT.md",
+      "profile_ids": [
+        "PED2-MENTAL-CONFIDENTIALITY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CONSENT"
+    },
+    {
+      "original_id": 5172,
+      "canonical_id": "CORE-CAP-CONSENT",
+      "canonical_document": "docs/canonical/master05/CAP-CONSENT.md",
+      "profile_ids": [
+        "PED2-MENTAL-CONFIDENTIALITY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-CONSENT"
+    },
+    {
+      "original_id": 916,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-PULM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 956,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-GASTRO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 976,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 994,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "PED2-IMMUNE-REGISTRY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3062,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "CAN-CARD-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3077,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "PED2-CARD-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3122,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-ONCO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3162,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-GASTRO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3182,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-PULM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3242,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3257,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3282,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-GASTRO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3362,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-PULM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3442,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-GASTRO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3662,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "CAN-CARD-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 3672,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "PED2-CARD-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 4062,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "CAN-CARD-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 4073,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "PED2-CARD-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 4162,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4168,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4189,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4202,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-ONCO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4431,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "PED2-IMMUNE-REGISTRY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 4452,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-PULM-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 4502,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M04-GASTRO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 4996,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-HEM-GENETICS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5004,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "PED2-IMMUNE-REGISTRY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-DATA"
+    },
+    {
+      "original_id": 5127,
+      "canonical_id": "CORE-CAP-DATA",
+      "canonical_document": "docs/canonical/master05/CAP-DATA.md",
+      "profile_ids": [
+        "M05-ONCO-RECORD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3995,
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "canonical_document": "docs/canonical/master05/CAP-EMERGENCY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CRISIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-EMERGENCY"
+    },
+    {
+      "original_id": 3996,
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "canonical_document": "docs/canonical/master05/CAP-EMERGENCY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CRISIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-EMERGENCY"
+    },
+    {
+      "original_id": 4840,
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "canonical_document": "docs/canonical/master05/CAP-EMERGENCY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CRISIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-EMERGENCY"
+    },
+    {
+      "original_id": 5168,
+      "canonical_id": "CORE-CAP-EMERGENCY",
+      "canonical_document": "docs/canonical/master05/CAP-EMERGENCY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CRISIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-EMERGENCY"
+    },
+    {
+      "original_id": 847,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-CARD-SURGERY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 927,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "PED2-RENAL-DIALYSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 945,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-GASTRO-ENDOSCOPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 968,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-HEM-MARROW"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3067,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-CARD-SURGERY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3169,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-GASTRO-ENDOSCOPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3189,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-PULM-PROCEDURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3249,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-HEM-MARROW"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3289,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-GASTRO-ENDOSCOPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3370,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-PULM-PROCEDURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3449,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-GASTRO-ENDOSCOPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3669,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-CARD-SURGERY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 3994,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-MENTAL-THERAPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4072,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-CARD-SURGERY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4173,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-HEM-MARROW"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4231,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-ONCO-RADIATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4232,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-ONCO-RADIATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4233,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-ONCO-SURGERY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4467,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-PULM-PROCEDURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4521,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-GASTRO-ENDOSCOPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4567,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "PED2-RENAL-DIALYSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4577,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "PED2-RENAL-DIALYSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4578,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "PED2-RENAL-DIALYSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4579,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "PED2-RENAL-DIALYSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4720,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-RHEUM-REHAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4841,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-MENTAL-THERAPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 4992,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-HEM-MARROW"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4995,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-HEM-APHERESIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5044,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M04-RHEUM-REHAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 5131,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-ONCO-SURGERY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5133,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "M05-ONCO-RADIATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5167,
+      "canonical_id": "CORE-CAP-ENCOUNTER",
+      "canonical_document": "docs/canonical/master05/CAP-ENCOUNTER.md",
+      "profile_ids": [
+        "CAN-MENTAL-THERAPY"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-ENCOUNTER"
+    },
+    {
+      "original_id": 846,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-ECHO"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 912,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-PULM-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 950,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-GASTRO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3064,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-ECHO"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3069,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3129,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M05-ONCO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3130,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M05-ONCO-PATHOLOGY-IMAGES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3170,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-GASTRO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3190,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-PULM-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3290,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-GASTRO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3371,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-PULM-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3450,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-GASTRO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3664,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-ECHO"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 3671,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 4064,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-ECHO"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 4070,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "CAN-CARD-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 4222,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M05-ONCO-PATHOLOGY-IMAGES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4224,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M05-ONCO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4466,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-PULM-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 4524,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M04-GASTRO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMAGING"
+    },
+    {
+      "original_id": 5128,
+      "canonical_id": "CORE-CAP-IMAGING",
+      "canonical_document": "docs/canonical/master05/CAP-IMAGING.md",
+      "profile_ids": [
+        "M05-ONCO-IMAGING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4443,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master05/CAP-IMMUNIZATION.md",
+      "profile_ids": [
+        "PED2-IMMUNE-VACCINATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMMUNIZATION"
+    },
+    {
+      "original_id": 4715,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master05/CAP-IMMUNIZATION.md",
+      "profile_ids": [
+        "M04-RHEUM-VACCINATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMMUNIZATION"
+    },
+    {
+      "original_id": 5014,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master05/CAP-IMMUNIZATION.md",
+      "profile_ids": [
+        "PED2-IMMUNE-VACCINATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMMUNIZATION"
+    },
+    {
+      "original_id": 5020,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master05/CAP-IMMUNIZATION.md",
+      "profile_ids": [
+        "PED2-IMMUNE-VACCINATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMMUNIZATION"
+    },
+    {
+      "original_id": 5047,
+      "canonical_id": "CORE-CAP-IMMUNIZATION",
+      "canonical_document": "docs/canonical/master05/CAP-IMMUNIZATION.md",
+      "profile_ids": [
+        "M04-RHEUM-VACCINATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-IMMUNIZATION"
+    },
+    {
+      "original_id": 1356,
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master05/CAP-INTEROP.md",
+      "profile_ids": [
+        "M04-STRATEGIC-INTEROP"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-INTEROP"
+    },
+    {
+      "original_id": 1359,
+      "canonical_id": "CORE-CAP-INTEROP",
+      "canonical_document": "docs/canonical/master05/CAP-INTEROP.md",
+      "profile_ids": [
+        "M04-STRATEGIC-INTEROP"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-INTEROP"
+    },
+    {
+      "original_id": 905,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-PULM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 926,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "CAN-RENAL-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 949,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 951,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 967,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M05-HEM-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 971,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M05-HEM-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3171,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 3250,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M05-HEM-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3291,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 3369,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-PULM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 3451,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4180,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M05-HEM-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4461,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-PULM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4462,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-PULM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4463,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-PULM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4465,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-PULM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4525,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4527,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M04-GASTRO-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4552,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "CAN-RENAL-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-LABORATORY"
+    },
+    {
+      "original_id": 4977,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M05-HEM-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4986,
+      "canonical_id": "CORE-CAP-LABORATORY",
+      "canonical_document": "docs/canonical/master05/CAP-LABORATORY.md",
+      "profile_ids": [
+        "M05-HEM-LAB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 996,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master05/CAP-MEDICATION.md",
+      "profile_ids": [
+        "PED2-IMMUNE-REPLACEMENT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-MEDICATION"
+    },
+    {
+      "original_id": 4226,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master05/CAP-MEDICATION.md",
+      "profile_ids": [
+        "M05-ONCO-SYSTEMIC"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4441,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master05/CAP-MEDICATION.md",
+      "profile_ids": [
+        "PED2-IMMUNE-REPLACEMENT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-MEDICATION"
+    },
+    {
+      "original_id": 5015,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master05/CAP-MEDICATION.md",
+      "profile_ids": [
+        "PED2-IMMUNE-REPLACEMENT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-MEDICATION"
+    },
+    {
+      "original_id": 5132,
+      "canonical_id": "CORE-CAP-MEDICATION",
+      "canonical_document": "docs/canonical/master05/CAP-MEDICATION.md",
+      "profile_ids": [
+        "M05-ONCO-SYSTEMIC"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4195,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master05/CAP-PROFILE.md",
+      "profile_ids": [
+        "M05-HEM-PASSPORT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4199,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master05/CAP-PROFILE.md",
+      "profile_ids": [
+        "M05-HEM-PASSPORT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4248,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master05/CAP-PROFILE.md",
+      "profile_ids": [
+        "M05-ONCO-PASSPORT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4574,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master05/CAP-PROFILE.md",
+      "profile_ids": [
+        "CAN-RENAL-HANDOVER"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-PROFILE"
+    },
+    {
+      "original_id": 4599,
+      "canonical_id": "CORE-CAP-PROFILE",
+      "canonical_document": "docs/canonical/master05/CAP-PROFILE.md",
+      "profile_ids": [
+        "CAN-RENAL-HANDOVER"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-PROFILE"
+    },
+    {
+      "original_id": 1438,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 1440,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 1823,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 1826,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 2219,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 2588,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 3136,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M05-ONCO-TRIAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4198,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M05-ONCO-TRIAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4241,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M05-ONCO-TRIAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4649,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M04-STRATEGIC-RESEARCH"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-RESEARCH"
+    },
+    {
+      "original_id": 5135,
+      "canonical_id": "CORE-CAP-RESEARCH",
+      "canonical_document": "docs/canonical/master05/CAP-RESEARCH.md",
+      "profile_ids": [
+        "M05-ONCO-TRIAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 844,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CONGENITAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 849,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-RHYTHM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 853,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-FAILURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 860,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 904,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 908,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 920,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 940,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-RENAL-ORCHESTRATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 948,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 953,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 960,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 964,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-ANEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 965,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-HEMOGLOBIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 966,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 980,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 1120,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-ALLERGY-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3061,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3063,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CONGENITAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3065,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-RHYTHM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3066,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-FAILURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3080,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3121,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3123,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-LEUKEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3125,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3128,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-TRANSPLANT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3138,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-OUTCOMES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3140,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3161,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3163,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3165,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-FUNCTIONAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3168,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3180,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3181,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3183,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3184,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3200,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3241,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3243,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-ANEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3244,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-HEMOGLOBIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3245,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3246,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3247,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3259,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3281,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3283,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3285,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-FUNCTIONAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3288,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3300,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3361,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3363,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3364,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3380,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3441,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3444,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3445,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-FUNCTIONAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3448,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3460,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3661,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3663,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CONGENITAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3666,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-RHYTHM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3668,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-FAILURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3680,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3981,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4000,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-MENTAL-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4061,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4063,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-CONGENITAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4066,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-RHYTHM"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4068,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-FAILURE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4080,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-CARD-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4161,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4163,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-ANEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4164,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-ANEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4166,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-HEMOGLOBIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4167,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-HEMOGLOBIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4169,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4170,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4171,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4172,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4174,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4175,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4176,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4177,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-THROMBOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4178,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-THROMBOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4186,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-TRANSPLANT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4187,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-TRANSPLANT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4188,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-TRANSPLANT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4200,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4201,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4203,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-DIAGNOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4204,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-LEUKEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4205,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-LEUKEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4206,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-LEUKEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4208,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4209,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-DIAGNOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4210,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-NEURO-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4221,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-DIAGNOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4230,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CELLULAR"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4235,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-OUTCOMES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4236,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-OUTCOMES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4246,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-SUPPORT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4247,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-SUPPORT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4249,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-OUTCOMES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4401,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-ALLERGY-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4435,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-IMMUNE-SCREENING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4444,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-IMMUNE-PROFILE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4450,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-ALLERGY-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4451,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4455,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4456,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4457,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4458,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4459,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4460,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-ASTHMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4471,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4474,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4475,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4476,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CF"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4500,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-PULM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4501,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4510,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-FUNCTIONAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4511,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-FUNCTIONAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4513,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-FUNCTIONAL"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4516,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4517,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4518,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4519,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4520,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-IBD"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4539,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4540,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4541,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4542,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4543,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4544,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4545,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-NUTRITION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4550,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-GASTRO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4551,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-RENAL-ORCHESTRATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4575,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-RENAL-ORCHESTRATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4600,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-RENAL-ORCHESTRATION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4701,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4702,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-JIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4703,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-JOINT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4704,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-LUPUS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4705,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-LUPUS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4706,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-VASCULITIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4708,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-MYOSITIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4709,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-SCLERODERMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4710,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-EVOLUTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4719,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4725,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4826,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4850,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-MENTAL-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 4976,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4978,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-ANEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4979,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-ANEMIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4981,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-HEMOGLOBIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4982,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-HEMOGLOBIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4983,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4984,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4985,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-BLEEDING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4987,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-THROMBOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4989,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-THROMBOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4990,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4991,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CYTOPENIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5000,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-HEM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5002,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-IMMUNE-PROFILE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5007,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-IMMUNE-SCREENING"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5026,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5028,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-JIA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5029,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-JOINT"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5031,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-LUPUS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5032,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-LUPUS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5033,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-MYOSITIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5034,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-SCLERODERMA"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5035,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-VASCULITIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5039,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-EVOLUTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5043,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5050,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M04-RHEUM-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5126,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5129,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-DIAGNOSIS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5136,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5137,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5138,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5139,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5140,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5141,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CNS"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5143,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-NEURO-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5144,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-NEURO-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5145,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-NEURO-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5146,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-NEURO-FUNCTION"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5147,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-OUTCOMES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5148,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-OUTCOMES"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5150,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "M05-ONCO-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 5151,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-MENTAL-CORE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 5175,
+      "canonical_id": "CORE-CAP-SPECIALTY",
+      "canonical_document": "docs/canonical/master05/CAP-SPECIALTY.md",
+      "profile_ids": [
+        "PED2-MENTAL-HUB"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-SPECIALTY"
+    },
+    {
+      "original_id": 3074,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "CAN-CARD-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3135,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M05-ONCO-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3175,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M04-GASTRO-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3195,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M04-PULM-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3254,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M05-HEM-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 3295,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M04-GASTRO-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3376,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M04-PULM-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3455,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M04-GASTRO-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3676,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "CAN-CARD-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 4079,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "CAN-CARD-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 4194,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M05-HEM-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4197,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M05-HEM-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4242,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M05-ONCO-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": null
+    },
+    {
+      "original_id": 4497,
+      "canonical_id": "CORE-CAP-TELEMEDICINE",
+      "canonical_document": "docs/canonical/master05/CAP-TELEMEDICINE.md",
+      "profile_ids": [
+        "M04-PULM-REMOTE"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TELEMEDICINE"
+    },
+    {
+      "original_id": 3073,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master05/CAP-TWIN.md",
+      "profile_ids": [
+        "PED2-CARD-TWIN",
+        "M04-STRATEGIC-TWIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TWIN"
+    },
+    {
+      "original_id": 3675,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master05/CAP-TWIN.md",
+      "profile_ids": [
+        "PED2-CARD-TWIN",
+        "M04-STRATEGIC-TWIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TWIN"
+    },
+    {
+      "original_id": 4076,
+      "canonical_id": "CORE-CAP-TWIN",
+      "canonical_document": "docs/canonical/master05/CAP-TWIN.md",
+      "profile_ids": [
+        "PED2-CARD-TWIN",
+        "M04-STRATEGIC-TWIN"
+      ],
+      "status": "ACTIVE_DOCUMENTATION_ALIAS",
+      "source_preserved": true,
+      "previous_canonical_id": "CORE-CAP-TWIN"
+    }
+  ]
+}

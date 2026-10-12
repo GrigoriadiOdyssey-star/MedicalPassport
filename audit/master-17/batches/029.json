@@ -1,0 +1,17 @@
+{
+  "pass": "MASTER-17",
+  "batch": 29,
+  "family": "registry-research",
+  "owner": "CAP-RESEARCH",
+  "ids": [
+    818,
+    2689,
+    2769
+  ],
+  "decision_sha256": "ad7d99ac9654abc9d73de932f089f57540d029c64f01c03206b5ca456e2ff89c",
+  "source_hashes": {
+    "818": "b3512c0e127e521575079e814458517c8176155796a7e00c0dae79fd64de7287",
+    "2689": "a396b5ed6087724c426ee47651731d051523a86859df53c2ea4db8696dfef305",
+    "2769": "2d0ce61ad56f1f4c80ab6bdb34e1f010d920ae0f595ce39f9923cf418e9b4816"
+  }
+}

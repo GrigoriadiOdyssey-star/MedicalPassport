@@ -1,0 +1,1981 @@
+{
+  "pass": "DOMAIN-03",
+  "domain": "INFECTION",
+  "parent_checkpoint": "5f154798980952e0320b49542b38d23d95d1ac29",
+  "source_sha256": "da6bd421441f58d2b759f3edf8d5b54c415f0e4544968d162cb352da59a6e835",
+  "review_scope": "Full-body architectural review; no clinical certification; excludes all prior 741 reviewed IDs.",
+  "count": 73,
+  "reviews": [
+    {
+      "original_id": 4251,
+      "title": "Clinical Pediatric Infectious Diseases Platform Core Engine",
+      "body": "Central platform for pediatric infectious disease medicine.\n\nSupports\n\n• Bacterial Infections\n• Viral Infections\n• Fungal Infections\n• Parasitic Diseases\n• Congenital Infections\n• Immunocompromised Patients\n• Vaccination\n• Antimicrobial Stewardship\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Microbiology\n• Molecular Diagnostics\n• Genomics\n• Epidemiology\n• Pharmacy\n• Public Health\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1a1cd2bf58dd896d55ae19097a48335f1ad53e26e8c38b0609a53ba44aea8c3d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99531
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Bacterial Infections",
+        "Viral Infections",
+        "Fungal Infections",
+        "Parasitic Diseases",
+        "Congenital Infections",
+        "Immunocompromised Patients",
+        "Vaccination",
+        "Antimicrobial Stewardship",
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Microbiology",
+        "Molecular Diagnostics",
+        "Genomics",
+        "Epidemiology",
+        "Pharmacy",
+        "Public Health"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4252,
+      "title": "Pediatric Infectious Diseases Longitudinal Registry",
+      "body": "Maintains longitudinal infectious disease history.\n\nSupports\n\n• Diagnoses\n• Previous Infections\n• Microbiology\n• Antimicrobial Exposure\n• Vaccination\n• Hospitalizations\n• Travel History\n• Infection-related Complications\n• Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "6732f02e060c46f54ca90afd4f4be93deadca1cb222e7ed1769e5a9b83e7548b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99563
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diagnoses",
+        "Previous Infections",
+        "Microbiology",
+        "Antimicrobial Exposure",
+        "Vaccination",
+        "Hospitalizations",
+        "Travel History",
+        "Infection-related Complications",
+        "Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4253,
+      "title": "Pediatric Acute Infection Assessment Module",
+      "body": "Supports structured assessment of suspected acute infections.\n\nIntegrates\n\n• Symptoms\n• Vital Signs\n• Examination Findings\n• Laboratory Data\n• Microbiology\n• Imaging\n• Epidemiological Context\n• Previous Medical History\n\nSupports clinician-reviewed differential diagnosis and escalation workflows.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87af6267894567d0567b7552c3e9db996268c0909912a869c5b1680122e5d0e3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99585
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Symptoms",
+        "Vital Signs",
+        "Examination Findings",
+        "Laboratory Data",
+        "Microbiology",
+        "Imaging",
+        "Epidemiological Context",
+        "Previous Medical History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4254,
+      "title": "Pediatric Fever Intelligence Module",
+      "body": "Supports longitudinal and acute fever assessment.\n\nTracks\n\n• Temperature\n• Duration\n• Pattern\n• Associated Symptoms\n• Exposure History\n• Vaccination Status\n• Laboratory Findings\n• Treatment\n\nSupports age-aware clinical workflows.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d3ea5733ca973355bca0af5b760b5623737ff9c8ca1969d150d231ff352c3a27",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99608
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Temperature",
+        "Duration",
+        "Pattern",
+        "Associated Symptoms",
+        "Exposure History",
+        "Vaccination Status",
+        "Laboratory Findings",
+        "Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4255,
+      "title": "Pediatric Sepsis Recognition & Escalation Module",
+      "body": "Supports clinician-defined pediatric sepsis recognition workflows.\n\nIntegrates\n\n• Vital Signs\n• Perfusion\n• Mental Status\n• Laboratory Trends\n• Organ Function\n• Infection Evidence\n• Treatment Timeline\n\nProvides rapid escalation alerts according to validated institutional protocols.\n\nAI does not replace emergency clinical assessment.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f24bcd6c3843fd8e3b44e7e2028fd4a14abfa0eaad7e85e5490a2ed0c4f08bf3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99631
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Vital Signs",
+        "Perfusion",
+        "Mental Status",
+        "Laboratory Trends",
+        "Organ Function",
+        "Infection Evidence",
+        "Treatment Timeline"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4256,
+      "title": "Pediatric Bloodstream Infection Module",
+      "body": "Supports bacteremia and bloodstream infection management.\n\nIntegrates\n\n• Blood Cultures\n• Molecular Diagnostics\n• Organism Identification\n• Susceptibility Results\n• Antimicrobial Therapy\n• Central Venous Devices\n• Clinical Response\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "16f8920a4872bd8918e86558085b3d7419be453577dc7b040bb3ea4896a82e55",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99655
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Blood Cultures",
+        "Molecular Diagnostics",
+        "Organism Identification",
+        "Susceptibility Results",
+        "Antimicrobial Therapy",
+        "Central Venous Devices",
+        "Clinical Response"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4257,
+      "title": "Pediatric Central Nervous System Infection Module",
+      "body": "Supports infectious diseases involving the CNS.\n\nSupports\n\n• Meningitis\n• Encephalitis\n• Brain Abscess\n• CSF Results\n• Molecular Testing\n• Neuroimaging\n• Treatment\n• Neurological Outcomes\n\nIntegrates infectious disease, neurology and critical care.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2a1550f7c7233bc69de163885c7d0a6dc56519758114a63b2372bd0fee74d6c4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99675
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Meningitis",
+        "Encephalitis",
+        "Brain Abscess",
+        "CSF Results",
+        "Molecular Testing",
+        "Neuroimaging",
+        "Treatment",
+        "Neurological Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4258,
+      "title": "Pediatric Respiratory Infection Module",
+      "body": "Supports pediatric respiratory infections.\n\nSupports\n\n• Upper Respiratory Infection\n• Pneumonia\n• Bronchiolitis\n• Viral Respiratory Disease\n• Microbiology\n• Imaging\n• Oxygen Requirement\n• Treatment Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c883ec3f0d6ed72bddd1d9193ca7ef8bc55b4836648852e24572f72f0d4dfc28",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99698
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Upper Respiratory Infection",
+        "Pneumonia",
+        "Bronchiolitis",
+        "Viral Respiratory Disease",
+        "Microbiology",
+        "Imaging",
+        "Oxygen Requirement",
+        "Treatment Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4259,
+      "title": "Pediatric Gastrointestinal Infection Module",
+      "body": "Supports infectious gastrointestinal disease.\n\nIntegrates\n\n• Diarrhea\n• Vomiting\n• Dehydration\n• Stool Diagnostics\n• Molecular Testing\n• Microbiology\n• Travel History\n• Outbreak Context\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ba353dd4c29b524ff5080aee3ce54f7e8188643f350a08852595acbcc81befed",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99719
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diarrhea",
+        "Vomiting",
+        "Dehydration",
+        "Stool Diagnostics",
+        "Molecular Testing",
+        "Microbiology",
+        "Travel History",
+        "Outbreak Context"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4260,
+      "title": "Pediatric Urinary Infection Integration Module",
+      "body": "Connects infectious disease, nephrology and urology workflows.\n\nSupports\n\n• Urinalysis\n• Urine Culture\n• Resistance Profile\n• Recurrent Infection\n• Imaging\n• Congenital Risk Factors\n• Treatment History\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4162193b12bbfa2002b8d6c6e2adee954c60665aec2c6f8b552347523821de0a",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99740
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Urinalysis",
+        "Urine Culture",
+        "Resistance Profile",
+        "Recurrent Infection",
+        "Imaging",
+        "Congenital Risk Factors",
+        "Treatment History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4261,
+      "title": "Pediatric Skin, Soft Tissue & Musculoskeletal Infection Module",
+      "body": "Supports infections involving skin, soft tissue, bone and joints.\n\nSupports\n\n• Cellulitis\n• Abscess\n• Osteomyelitis\n• Septic Arthritis\n• Microbiology\n• Imaging\n• Procedures\n• Antimicrobial Therapy\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "29a6db70a58072b79bc4b5da2eee6eed0309cc1ce50479bc87b0de5faa51c329",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99760
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Cellulitis",
+        "Abscess",
+        "Osteomyelitis",
+        "Septic Arthritis",
+        "Microbiology",
+        "Imaging",
+        "Procedures",
+        "Antimicrobial Therapy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4262,
+      "title": "Pediatric Viral Disease Module",
+      "body": "Supports clinically relevant pediatric viral infections.\n\nIntegrates\n\n• Clinical Syndrome\n• Molecular Diagnostics\n• Serology\n• Viral Load\n• Organ Involvement\n• Treatment\n• Isolation Requirements\n• Longitudinal Outcomes\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "87f7c69e7b318c2077ab27afeaacd8ed82c3047e0114e4bb8c43df1ac816a5c3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99781
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Clinical Syndrome",
+        "Molecular Diagnostics",
+        "Serology",
+        "Viral Load",
+        "Organ Involvement",
+        "Treatment",
+        "Isolation Requirements",
+        "Longitudinal Outcomes"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4263,
+      "title": "Pediatric Influenza & Seasonal Respiratory Virus Module",
+      "body": "Supports seasonal respiratory viral disease monitoring.\n\nIntegrates\n\n• Influenza\n• RSV\n• Other Respiratory Viruses\n• Molecular Testing\n• Vaccination History\n• Risk Factors\n• Clinical Severity\n• Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8a00a98c122d6ba5aa087b9b5aa3725f2fc0d9f1acbbb248cefdf93b28dc5034",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99802
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Influenza",
+        "RSV",
+        "Other Respiratory Viruses",
+        "Molecular Testing",
+        "Vaccination History",
+        "Risk Factors",
+        "Clinical Severity",
+        "Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4264,
+      "title": "Pediatric SARS-CoV-2 & Emerging Coronavirus Module",
+      "body": "Supports current and future coronavirus-related pediatric workflows.\n\nSupports\n\n• Diagnostic Testing\n• Clinical Severity\n• Vaccination\n• Previous Infection\n• Complications\n• Longitudinal Follow-up\n• Versioned Clinical Guidance\n\nArchitecture allows pathogen-specific logic to evolve over time.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "01ad83e2987b8d9f8de3e8ea67c82a832a1800fe1e2de492438ba902d8c35acf",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99823
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diagnostic Testing",
+        "Clinical Severity",
+        "Vaccination",
+        "Previous Infection",
+        "Complications",
+        "Longitudinal Follow-up",
+        "Versioned Clinical Guidance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4265,
+      "title": "Pediatric HIV Care Module",
+      "body": "Supports pediatric and adolescent HIV care.\n\nIntegrates\n\n• Diagnostic History\n• Viral Load\n• Immune Status\n• Antiretroviral Therapy\n• Resistance\n• Adherence\n• Comorbidities\n• Transition to Adult Care\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "d760454500a163f89f9c2439d4b6da333f9e3f27c870d1bf0e05a0db74dfb3b4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99845
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diagnostic History",
+        "Viral Load",
+        "Immune Status",
+        "Antiretroviral Therapy",
+        "Resistance",
+        "Adherence",
+        "Comorbidities",
+        "Transition to Adult Care"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4266,
+      "title": "Pediatric Tuberculosis Module",
+      "body": "Supports pediatric tuberculosis workflows.\n\nSupports\n\n• Exposure History\n• Screening\n• Microbiology\n• Molecular Diagnostics\n• Imaging\n• Drug Susceptibility\n• Treatment\n• Contact Investigation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "81260f1cb98b33e90c491e342fe1ccd6ddffc8be99b146d8958239b32361ce94",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99866
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Exposure History",
+        "Screening",
+        "Microbiology",
+        "Molecular Diagnostics",
+        "Imaging",
+        "Drug Susceptibility",
+        "Treatment",
+        "Contact Investigation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4267,
+      "title": "Pediatric Fungal Infection Module",
+      "body": "Supports superficial, invasive and opportunistic fungal infections.\n\nIntegrates\n\n• Host Risk\n• Microbiology\n• Antigen Testing\n• Molecular Diagnostics\n• Imaging\n• Antifungal Therapy\n• Drug Monitoring\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "bef6b10bd76a0620546ef452e97950a5a75b592a456f8a34f4356048a5737c78",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99887
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Host Risk",
+        "Microbiology",
+        "Antigen Testing",
+        "Molecular Diagnostics",
+        "Imaging",
+        "Antifungal Therapy",
+        "Drug Monitoring"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4268,
+      "title": "Pediatric Parasitic & Tropical Infection Module",
+      "body": "Supports pediatric parasitic and tropical diseases.\n\nIntegrates\n\n• Symptoms\n• Travel\n• Geographic Exposure\n• Vector Exposure\n• Laboratory Diagnostics\n• Microscopy\n• Molecular Testing\n• Treatment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "dabfabba3ca16372c4f10b0b8221e8240fd591b3f8756ecdd833c9e98eab90ac",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99907
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Symptoms",
+        "Travel",
+        "Geographic Exposure",
+        "Vector Exposure",
+        "Laboratory Diagnostics",
+        "Microscopy",
+        "Molecular Testing",
+        "Treatment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4269,
+      "title": "Pediatric Congenital & Perinatal Infection Module",
+      "body": "Supports congenital and perinatally acquired infections.\n\nIntegrates\n\n• Maternal History\n• Pregnancy Data\n• Prenatal Testing\n• Neonatal Findings\n• Microbiology\n• Imaging\n• Hearing\n• Vision\n• Neurodevelopment\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8f92f6559e395b9c544e5593cf12dd879cc2c8b2a1f828098371f70788bc6948",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99928
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Maternal History",
+        "Pregnancy Data",
+        "Prenatal Testing",
+        "Neonatal Findings",
+        "Microbiology",
+        "Imaging",
+        "Hearing",
+        "Vision",
+        "Neurodevelopment"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4270,
+      "title": "Pediatric Infection in Immunocompromised Patients Module",
+      "body": "Supports infection management in high-risk children.\n\nIntegrates\n\n• Oncology\n• Transplantation\n• Immunodeficiency\n• Immunosuppression\n• Neutropenia\n• Previous Infections\n• Microbiology\n• Prophylaxis\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "fe50493eeab51eb53cae352f7ad852fad8c5b6e4688e2b12a3396d14fa4a4bb8",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99950
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Oncology",
+        "Transplantation",
+        "Immunodeficiency",
+        "Immunosuppression",
+        "Neutropenia",
+        "Previous Infections",
+        "Microbiology",
+        "Prophylaxis"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4271,
+      "title": "Universal Pediatric Vaccination Registry",
+      "body": "Maintains a lifelong structured immunization record.\n\nSupports\n\n• Vaccine\n• Manufacturer\n• Product\n• Dose\n• Batch/Lot\n• Administration Date\n• Administration Location\n• Provider\n• Country\n• Source Verification\n\nSynchronizes with the EDHT Medical Passport.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f55ce7cae0b676f1a91187045b899968ee66ed0b7980416b4e76daffd82fa0dc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99971
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Vaccine",
+        "Manufacturer",
+        "Product",
+        "Dose",
+        "Batch/Lot",
+        "Administration Date",
+        "Administration Location",
+        "Provider",
+        "Country",
+        "Source Verification"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4272,
+      "title": "Global Vaccination Schedule Engine",
+      "body": "Supports country-specific vaccination schedules.\n\nMaintains versioned rules by\n\n• Country\n• Region\n• Age\n• Risk Group\n• Vaccine\n• Schedule Version\n• Effective Date\n\nAllows EDHT to interpret vaccination records when a child moves between countries.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2cbccad1ce1bcd2f9cb47f52e6ad54e5ee662e6b812e05582fce216d81444c11",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 99996
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Country",
+        "Region",
+        "Age",
+        "Risk Group",
+        "Vaccine",
+        "Schedule Version",
+        "Effective Date"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4273,
+      "title": "Cross-Border Vaccine Equivalence Engine",
+      "body": "Supports interpretation of vaccination records across jurisdictions.\n\nMaps\n\n• Vaccine Products\n• Antigen Components\n• Dose Sequences\n• National Schedules\n• Product Names\n• Historical Products\n\nFlags uncertain equivalence for professional review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "80c94df7c1667d02101dd5732c5e011c1a222e5cf93d5972c3c24b640317d3b2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100018
+      },
+      "verdict": "Cross-border equivalence must preserve antigen, product, sequence and version; uncertain equivalence requires professional review, not automatic dose counting.",
+      "feature_labels": [
+        "Vaccine Products",
+        "Antigen Components",
+        "Dose Sequences",
+        "National Schedules",
+        "Product Names",
+        "Historical Products"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4274,
+      "title": "Pediatric Vaccination Catch-Up Planning Module",
+      "body": "Supports clinician-reviewed catch-up vaccination planning.\n\nAnalyzes\n\n• Age\n• Previous Doses\n• Vaccine Products\n• Dose Dates\n• Country Schedule\n• Risk Factors\n• Contraindications\n\nUses version-controlled official vaccination rules.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "60d01bd0eb4c4229e9df22064be908e7142b6949fd67dbf982bd51eef594e0fe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100039
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Age",
+        "Previous Doses",
+        "Vaccine Products",
+        "Dose Dates",
+        "Country Schedule",
+        "Risk Factors",
+        "Contraindications"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4275,
+      "title": "Pediatric Vaccine Eligibility & Contraindication Module",
+      "body": "Supports vaccination safety assessment.\n\nIntegrates\n\n• Age\n• Medical Conditions\n• Immunosuppression\n• Allergies\n• Previous Reactions\n• Current Therapy\n• Pregnancy Context where relevant\n• Vaccine-specific Guidance\n\nFinal eligibility remains a clinical determination.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "58cbd420dd595a8e8adb0978e6eca469fe53add8979f70733ceb7162e63d234c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100061
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Age",
+        "Medical Conditions",
+        "Immunosuppression",
+        "Allergies",
+        "Previous Reactions",
+        "Current Therapy",
+        "Pregnancy Context where relevant",
+        "Vaccine-specific Guidance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4276,
+      "title": "Pediatric Vaccine Adverse Event Module",
+      "body": "Supports structured documentation of events following immunization.\n\nRecords\n\n• Vaccine\n• Batch\n• Timing\n• Symptoms\n• Severity\n• Clinical Assessment\n• Treatment\n• Outcome\n\nSupports jurisdiction-specific pharmacovigilance workflows.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "98fc94a24f927aa83743fe309adcb57baf016af2de7dff6db097df2287efb4ca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100084
+      },
+      "verdict": "An event following vaccination does not itself establish causality; preserve product/lot/time and clinical assessment separately.",
+      "feature_labels": [
+        "Vaccine",
+        "Batch",
+        "Timing",
+        "Symptoms",
+        "Severity",
+        "Clinical Assessment",
+        "Treatment",
+        "Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4277,
+      "title": "Pediatric Digital Vaccination Certificate Module",
+      "body": "Provides verifiable vaccination information through the Medical Passport.\n\nSupports\n\n• QR-based Access\n• Digital Signatures\n• Issuer Verification\n• Vaccine History\n• Multilingual Presentation\n• Selective Data Sharing\n• Offline Emergency Presentation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f8c31831faf2b767ab15dd4fdcefd81457d4981ffd3ec2cf7cb39fdcf488b15f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100107
+      },
+      "verdict": "Signed offline certificate and QR access are distinct security modes; offline copies require expiry/status-at-issue and cannot promise live revocation checks.",
+      "feature_labels": [
+        "QR-based Access",
+        "Digital Signatures",
+        "Issuer Verification",
+        "Vaccine History",
+        "Multilingual Presentation",
+        "Selective Data Sharing",
+        "Offline Emergency Presentation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4278,
+      "title": "Pediatric Vaccination Reminder & Recall Engine",
+      "body": "Supports vaccination continuity.\n\nProvides\n\n• Upcoming Dose Identification\n• Missed Dose Detection\n• Catch-up Notifications\n• Parent/Guardian Reminders\n• Provider Recall Lists\n• Schedule Change Adaptation\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eca82f80c50cda9bc249b7d5388d6bf0bd1203691fa8f47bb66ce77684bff788",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100127
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Upcoming Dose Identification",
+        "Missed Dose Detection",
+        "Catch-up Notifications",
+        "Parent/Guardian Reminders",
+        "Provider Recall Lists",
+        "Schedule Change Adaptation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4279,
+      "title": "Pediatric Vaccine Inventory & Supply Integration Module",
+      "body": "Connects clinical vaccination workflows with authorized inventory systems.\n\nSupports\n\n• Product Availability\n• Batch Tracking\n• Expiration\n• Storage Status\n• Administration Records\n• Recall Identification\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "85f3ec4cc31a32e3f0f16c9956505877cdd6c475e8c5f8271b150f6c24c677bc",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100146
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Product Availability",
+        "Batch Tracking",
+        "Expiration",
+        "Storage Status",
+        "Administration Records",
+        "Recall Identification"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4280,
+      "title": "Pediatric Vaccine Cold Chain Integrity Module",
+      "body": "Supports vaccine storage quality information.\n\nIntegrates\n\n• Temperature Monitoring\n• Storage Device Data\n• Excursion Events\n• Batch Information\n• Quarantine Status\n• Corrective Actions\n• Audit History\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "9d343cc50f65c6f26e2829e626b44bb97acee94fd4cf1cbc1856344235c92823",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100165
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Temperature Monitoring",
+        "Storage Device Data",
+        "Excursion Events",
+        "Batch Information",
+        "Quarantine Status",
+        "Corrective Actions",
+        "Audit History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4281,
+      "title": "Pediatric Clinical Microbiology Intelligence Module",
+      "body": "Integrates microbiological diagnostics.\n\nSupports\n\n• Culture\n• Microscopy\n• Antigen Testing\n• Serology\n• PCR\n• Multiplex Panels\n• Sequencing\n• Susceptibility Testing\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "067b63d1feaa9a46e276355b3f155fed977ebdc5c08a454566229e54e17c99ed",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100185
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Culture",
+        "Microscopy",
+        "Antigen Testing",
+        "Serology",
+        "PCR",
+        "Multiplex Panels",
+        "Sequencing",
+        "Susceptibility Testing"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4282,
+      "title": "Pediatric Pathogen Identification Engine",
+      "body": "Supports structured pathogen identification.\n\nCombines\n\n• Specimen Type\n• Culture\n• Molecular Results\n• Microscopy\n• Clinical Context\n• Previous Organisms\n• Contamination Indicators\n\nFinal interpretation remains under qualified laboratory and clinical review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "edf002a2468d0e1d8b2252722564ca92f307316409020cb86202a4541911a9fe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100206
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Specimen Type",
+        "Culture",
+        "Molecular Results",
+        "Microscopy",
+        "Clinical Context",
+        "Previous Organisms",
+        "Contamination Indicators"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4283,
+      "title": "Pediatric Antimicrobial Susceptibility Module",
+      "body": "Structures antimicrobial susceptibility information.\n\nSupports\n\n• Organism\n• Antibiotic\n• MIC\n• Susceptibility Category\n• Laboratory Standard\n• Standard Version\n• Specimen\n• Historical Resistance\n\nMaintains interpretation provenance.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "4aa7ca821603c754ce97192ebfc6876de9d4126cc2d6c7eb03f47e2bbc185fa7",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100228
+      },
+      "verdict": "MIC, category, organism, specimen, laboratory standard and standard version must survive interchange; categories cannot be compared without breakpoint context.",
+      "feature_labels": [
+        "Organism",
+        "Antibiotic",
+        "MIC",
+        "Susceptibility Category",
+        "Laboratory Standard",
+        "Standard Version",
+        "Specimen",
+        "Historical Resistance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4284,
+      "title": "Pediatric Antimicrobial Resistance Intelligence Engine",
+      "body": "Analyzes antimicrobial resistance patterns.\n\nSupports\n\n• Patient-level Resistance History\n• Facility Trends\n• Regional Patterns\n• Organism Trends\n• Resistance Mechanisms\n• Longitudinal Surveillance\n\nAggregated analytics use privacy-preserving controls.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "732815343b5e4ef553584da7a95c6d796365d738d1de7c2857d1fc004bcb050b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100251
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Patient-level Resistance History",
+        "Facility Trends",
+        "Regional Patterns",
+        "Organism Trends",
+        "Resistance Mechanisms",
+        "Longitudinal Surveillance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4285,
+      "title": "Pediatric Antimicrobial Stewardship Module",
+      "body": "Supports responsible antimicrobial use.\n\nIntegrates\n\n• Diagnosis\n• Microbiology\n• Susceptibility\n• Medication\n• Dose\n• Duration\n• Route\n• Organ Function\n• Previous Exposure\n\nSupports clinician and pharmacist review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f4a98af1b5ffcb60520730de58c9f0afd9ee4ab2c54339dd07dfab5e6dc2bd8d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100272
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diagnosis",
+        "Microbiology",
+        "Susceptibility",
+        "Medication",
+        "Dose",
+        "Duration",
+        "Route",
+        "Organ Function",
+        "Previous Exposure"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4286,
+      "title": "Pediatric Antibiotic Dose Safety Module",
+      "body": "Provides clinician-facing medication safety support.\n\nConsiders\n\n• Age\n• Weight\n• Body Surface Area\n• Renal Function\n• Hepatic Function\n• Allergies\n• Drug Interactions\n• Route\n• Indication\n\nDoes not autonomously prescribe medication.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1afff067e9ee3771b3ded510d6a1024526fc44ca671d5a0a52cdc5c7b656d680",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100296
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Age",
+        "Weight",
+        "Body Surface Area",
+        "Renal Function",
+        "Hepatic Function",
+        "Allergies",
+        "Drug Interactions",
+        "Route",
+        "Indication"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4287,
+      "title": "Pediatric Antimicrobial Therapeutic Drug Monitoring Module",
+      "body": "Supports antimicrobial drug monitoring where clinically indicated.\n\nIntegrates\n\n• Medication\n• Dose\n• Administration Time\n• Sampling Time\n• Drug Concentration\n• Renal Function\n• Treatment Response\n• Toxicity\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "691f5f8c0da7683c4e82c0d0b1e1bb0aaf2f4e615f0d4c25e4e77709d646cb2b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100320
+      },
+      "verdict": "TDM requires medication administration time and sample time, not merely drug concentration; preserve both timelines and units.",
+      "feature_labels": [
+        "Medication",
+        "Dose",
+        "Administration Time",
+        "Sampling Time",
+        "Drug Concentration",
+        "Renal Function",
+        "Treatment Response",
+        "Toxicity"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4288,
+      "title": "Pediatric Antibiotic Allergy & Delabeling Integration Module",
+      "body": "Connects antimicrobial stewardship with allergy medicine.\n\nSupports\n\n• Historical Allergy Labels\n• Reaction Phenotype\n• Timing\n• Diagnostic Testing\n• Challenge Results\n• Specialist Assessment\n• Delabeling\n• Audit History\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "2804ba469b340862dd149b33b2a79bd4d7145e223ce879e47b0ea691b8abb0ae",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100341
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Historical Allergy Labels",
+        "Reaction Phenotype",
+        "Timing",
+        "Diagnostic Testing",
+        "Challenge Results",
+        "Specialist Assessment",
+        "Delabeling",
+        "Audit History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4289,
+      "title": "Pediatric Infection Control & Isolation Module",
+      "body": "Supports healthcare infection-control workflows.\n\nSupports\n\n• Transmission Precautions\n• Isolation Status\n• Pathogen\n• Exposure\n• Room Requirements\n• Staff Alerts\n• Discontinuation Criteria\n• Audit Trail\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "51f79af0a1817bebb3abaf062041ddf6a5fedb0860c79e05780586eea5b7cc73",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100362
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Transmission Precautions",
+        "Isolation Status",
+        "Pathogen",
+        "Exposure",
+        "Room Requirements",
+        "Staff Alerts",
+        "Discontinuation Criteria",
+        "Audit Trail"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4290,
+      "title": "Pediatric Healthcare-Associated Infection Surveillance Module",
+      "body": "Supports surveillance of healthcare-associated infections.\n\nTracks\n\n• Device-associated Infection\n• Surgical Site Infection\n• Hospital Exposure\n• Organisms\n• Resistance\n• Outcomes\n• Infection-control Actions\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "c6bfa222bfe2395094cea1b780c3be055c44e21e30ab7ac6dcf968a466fecbe1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100383
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Device-associated Infection",
+        "Surgical Site Infection",
+        "Hospital Exposure",
+        "Organisms",
+        "Resistance",
+        "Outcomes",
+        "Infection-control Actions"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4291,
+      "title": "Pediatric Outbreak Detection Intelligence Module",
+      "body": "Supports privacy-preserving detection of unusual infection patterns.\n\nAnalyzes authorized aggregated data for\n\n• Symptom Clusters\n• Pathogen Clusters\n• Geographic Trends\n• Temporal Trends\n• Laboratory Signals\n• Unexpected Case Increases\n\nPotential signals require epidemiological validation.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "1e1adb6f5ece85d06093db1392920bfeac54d1c40ddc87f61a2cff3014d09318",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100403
+      },
+      "verdict": "An aggregate outbreak signal requires epidemiological validation and disclosure control; it does not authorize public reporting or individual diagnosis.",
+      "feature_labels": [
+        "Symptom Clusters",
+        "Pathogen Clusters",
+        "Geographic Trends",
+        "Temporal Trends",
+        "Laboratory Signals",
+        "Unexpected Case Increases"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4292,
+      "title": "Pediatric Emerging Pathogen Intelligence Module",
+      "body": "Supports rapid adaptation to newly recognized infectious threats.\n\nIntegrates versioned information on\n\n• Pathogen Characteristics\n• Diagnostics\n• Transmission\n• Clinical Manifestations\n• Risk Groups\n• Treatment Evidence\n• Prevention\n• Public Health Guidance\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "f36c1a047b4c0735e007024481a945195cd1ab9185e196e8799a090055b6e8d4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100424
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Pathogen Characteristics",
+        "Diagnostics",
+        "Transmission",
+        "Clinical Manifestations",
+        "Risk Groups",
+        "Treatment Evidence",
+        "Prevention",
+        "Public Health Guidance"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4293,
+      "title": "Pediatric Travel Medicine Module",
+      "body": "Supports pre-travel and post-travel pediatric infectious disease workflows.\n\nIntegrates\n\n• Destination\n• Duration\n• Medical History\n• Vaccination\n• Preventive Requirements\n• Exposure History\n• Symptoms\n• Travel Timeline\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "64b88a2d995ed02015bc1ad662ee2b6dffa02a0629be8ff0ded6d9f54bc84609",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100445
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Destination",
+        "Duration",
+        "Medical History",
+        "Vaccination",
+        "Preventive Requirements",
+        "Exposure History",
+        "Symptoms",
+        "Travel Timeline"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4294,
+      "title": "Pediatric Geographic Infection Risk Engine",
+      "body": "Connects epidemiological context with clinical assessment.\n\nSupports\n\n• Country\n• Region\n• Travel History\n• Season\n• Vector Distribution\n• Outbreak Information\n• Pathogen Prevalence\n\nGeographic risk information is time-stamped and source-versioned.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "911233c75abcdf52e7160cf62812f448c1c202f644da31c5ce1d1a35625b87ea",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100466
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Country",
+        "Region",
+        "Travel History",
+        "Season",
+        "Vector Distribution",
+        "Outbreak Information",
+        "Pathogen Prevalence"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4295,
+      "title": "Pediatric One Health Infection Intelligence Module",
+      "body": "Connects human, animal and environmental infection information where legally and clinically appropriate.\n\nSupports\n\n• Zoonotic Exposure\n• Animal Contact\n• Vector Exposure\n• Environmental Exposure\n• Veterinary Data Interfaces\n• Epidemiological Signals\n\nUses privacy-preserving and jurisdiction-aware data controls.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "0632ffd98228a4759d0d70e5cc26c8e60d34a721faf1efc09ae71f0be50b7d41",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100488
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Zoonotic Exposure",
+        "Animal Contact",
+        "Vector Exposure",
+        "Environmental Exposure",
+        "Veterinary Data Interfaces",
+        "Epidemiological Signals"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4296,
+      "title": "Pediatric Infectious Diseases AI Decision Support",
+      "body": "Provides AI-assisted infectious disease intelligence.\n\nSupports\n\n• Differential Diagnosis\n• Microbiology Interpretation\n• Resistance Pattern Analysis\n• Clinical Trend Detection\n• Treatment-response Monitoring\n• Escalation Support\n• Evidence Retrieval\n\nAI output requires qualified clinician review.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "8f1098646d5c3316f84ae7001a1a11fc9c537ba8d626ab843be80dd8c2166ef6",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100509
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Differential Diagnosis",
+        "Microbiology Interpretation",
+        "Resistance Pattern Analysis",
+        "Clinical Trend Detection",
+        "Treatment-response Monitoring",
+        "Escalation Support",
+        "Evidence Retrieval"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4298,
+      "title": "Pediatric Infection AI Pre-Visit & Case Synthesis Module",
+      "body": "Creates clinician-reviewable infectious disease summaries.\n\nAI may organize\n\n• Symptoms\n• Fever Timeline\n• Travel\n• Exposure\n• Vaccination\n• Previous Antibiotics\n• Microbiology\n• Laboratory Trends\n• Imaging\n• Relevant Comorbidities\n\nEvery generated conclusion remains draft until professional validation.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "eb0012603a9803138b8b2d5d0003ce0d98c4cd4f53460759bbc15aa43af3382b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100553
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Symptoms",
+        "Fever Timeline",
+        "Travel",
+        "Exposure",
+        "Vaccination",
+        "Previous Antibiotics",
+        "Microbiology",
+        "Laboratory Trends",
+        "Imaging",
+        "Relevant Comorbidities"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4299,
+      "title": "Pediatric Infectious Disease Cross-Border Medical Passport Module",
+      "body": "Provides critical infectious disease information during international care.\n\nSupports multilingual access to\n\n• Vaccination History\n• Relevant Previous Infections\n• Resistant Organisms\n• Important Microbiology\n• Antimicrobial Allergies\n• Current Antimicrobials\n• Immunocompromised Status\n• Isolation-relevant Information\n\nUses role-based access, consent and emergency-access policies.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "70882645b610bf3990dc0b155ede75dcb77e98c3f3c2fae7ef530ba983856251",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100578
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Vaccination History",
+        "Relevant Previous Infections",
+        "Resistant Organisms",
+        "Important Microbiology",
+        "Antimicrobial Allergies",
+        "Current Antimicrobials",
+        "Immunocompromised Status",
+        "Isolation-relevant Information"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 4300,
+      "title": "Clinical Pediatric Infectious Diseases Intelligence Hub",
+      "body": "Coordinates the complete pediatric infectious disease ecosystem.\n\nIntegrates\n\n• Artificial Intelligence\n• Digital Twin\n• Infectious Diseases\n• Vaccination\n• Microbiology\n• Molecular Diagnostics\n• Antimicrobial Stewardship\n• Resistance Surveillance\n• Infection Control\n• Travel Medicine\n• Epidemiology\n• One Health\n• Medical Passport\n• Telemedicine\n• Public Health\n• Clinical Research\n\nProvides longitudinal, cross-border and evidence-versioned pediatric infectious disease intelligence across EDHT.\n\nStatus\n\nDocumentation\n\n---",
+      "body_sha256": "ba7d020901aea327bb812ea99e70e0dab0a2c1cdc9fef32ec6c04ff05d8b27b1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 100601
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Artificial Intelligence",
+        "Digital Twin",
+        "Infectious Diseases",
+        "Vaccination",
+        "Microbiology",
+        "Molecular Diagnostics",
+        "Antimicrobial Stewardship",
+        "Resistance Surveillance",
+        "Infection Control",
+        "Travel Medicine",
+        "Epidemiology",
+        "One Health",
+        "Medical Passport",
+        "Telemedicine",
+        "Public Health",
+        "Clinical Research"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5051,
+      "title": "Clinical Pediatric Infectious Diseases Platform Core Engine",
+      "body": "Purpose:\nProvide the unified longitudinal architecture for pediatric infectious disease prevention, diagnosis, treatment, surveillance and post-infectious follow-up across EDHT.\n\nCore Functions:\n• Infectious Disease Diagnosis Registry\n• Infection Episode Registry\n• Bacterial Infections\n• Viral Infections\n• Fungal Infections\n• Parasitic Infections\n• Congenital Infections\n• Recurrent Infections\n• Severe Infections\n• Opportunistic Infections\n• Healthcare-associated Infections\n• Microbiology\n• Antimicrobial Therapy\n• Antimicrobial Resistance\n• Infection Prevention\n• Exposure Management\n• Post-infectious Surveillance\n• Long-term Outcomes\n\nClinical Data:\n• Symptoms\n• Vital Signs\n• Laboratory Data\n• Microbiology\n• Molecular Diagnostics\n• Serology\n• Imaging\n• Antimicrobial Therapy\n• Drug Susceptibility\n• Immune Status\n• Vaccination Status\n• Hospitalization\n• Procedures\n• Outcomes\n\nIntegrations:\n• Pediatrics\n• Emergency Medicine\n• Intensive Care\n• Immunology\n• Microbiology\n• Pharmacy\n• Vaccination Platform\n• Public Health\n• Laboratory Medicine\n• Medical Passport\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "07b7e9e76bf7f9004721419acc59c0ce5f7c1cc03077d8d77fba31b421ae4f9b",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126427
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Infectious Disease Diagnosis Registry",
+        "Infection Episode Registry",
+        "Bacterial Infections",
+        "Viral Infections",
+        "Fungal Infections",
+        "Parasitic Infections",
+        "Congenital Infections",
+        "Recurrent Infections",
+        "Severe Infections",
+        "Opportunistic Infections",
+        "Healthcare-associated Infections",
+        "Microbiology",
+        "Antimicrobial Therapy",
+        "Antimicrobial Resistance",
+        "Infection Prevention",
+        "Exposure Management",
+        "Post-infectious Surveillance",
+        "Long-term Outcomes",
+        "Symptoms",
+        "Vital Signs",
+        "Laboratory Data",
+        "Microbiology",
+        "Molecular Diagnostics",
+        "Serology",
+        "Imaging",
+        "Antimicrobial Therapy",
+        "Drug Susceptibility",
+        "Immune Status",
+        "Vaccination Status",
+        "Hospitalization",
+        "Procedures",
+        "Outcomes",
+        "Pediatrics",
+        "Emergency Medicine",
+        "Intensive Care",
+        "Immunology",
+        "Microbiology",
+        "Pharmacy",
+        "Vaccination Platform",
+        "Public Health",
+        "Laboratory Medicine",
+        "Medical Passport"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5052,
+      "title": "Pediatric Longitudinal Infection Episode Registry Module",
+      "body": "Purpose:\nCreate a unified lifetime registry of clinically significant pediatric infectious episodes.\n\nCore Functions:\n• Infection Episode\n• Date of Onset\n• Anatomical Site\n• Suspected Pathogen\n• Confirmed Pathogen\n• Severity\n• Fever Context\n• Laboratory Results\n• Imaging\n• Microbiology\n• Treatment\n• Hospitalization\n• Intensive Care Context\n• Complications\n• Resolution\n• Recurrence\n\nLongitudinal Functions:\n• Infection Frequency\n• Recurrent Site Detection\n• Pathogen Recurrence\n• Treatment History\n• Antibiotic Exposure\n• Resistant Organism History\n• Patient-specific Infection Baseline\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "6433c289b99dfbb6bcaca8883224ebf9723f0e90da176144ac06124e6db2540f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126488
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Infection Episode",
+        "Date of Onset",
+        "Anatomical Site",
+        "Suspected Pathogen",
+        "Confirmed Pathogen",
+        "Severity",
+        "Fever Context",
+        "Laboratory Results",
+        "Imaging",
+        "Microbiology",
+        "Treatment",
+        "Hospitalization",
+        "Intensive Care Context",
+        "Complications",
+        "Resolution",
+        "Recurrence",
+        "Infection Frequency",
+        "Recurrent Site Detection",
+        "Pathogen Recurrence",
+        "Treatment History",
+        "Antibiotic Exposure",
+        "Resistant Organism History",
+        "Patient-specific Infection Baseline"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5053,
+      "title": "Pediatric Fever & Fever of Unknown Origin Clinical Module",
+      "body": "Purpose:\nProvide structured longitudinal assessment of acute, recurrent and prolonged fever presentations.\n\nCore Functions:\n• Fever Onset\n• Temperature Timeline\n• Duration\n• Associated Symptoms\n• Exposure Context\n• Travel Context\n• Infection Context\n• Inflammatory Context\n• Immunological Context\n• Malignancy Context\n• Laboratory Data\n• Microbiology\n• Imaging\n• Medication\n• Diagnostic Evolution\n• Clinical Outcome\n\nClinical Principle:\nThe platform preserves infectious and non-infectious differential contexts without autonomously assigning a definitive diagnosis.\n\nSafety:\nHigh-risk fever contexts are routed through clinician-defined escalation pathways.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "07f1eca539075a42805beee793793b4e5b625ea1dce0af8488e135d3224d620e",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126528
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Fever Onset",
+        "Temperature Timeline",
+        "Duration",
+        "Associated Symptoms",
+        "Exposure Context",
+        "Travel Context",
+        "Infection Context",
+        "Inflammatory Context",
+        "Immunological Context",
+        "Malignancy Context",
+        "Laboratory Data",
+        "Microbiology",
+        "Imaging",
+        "Medication",
+        "Diagnostic Evolution",
+        "Clinical Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5054,
+      "title": "Pediatric Microbiology, Culture & Pathogen Identification Module",
+      "body": "Purpose:\nConnect microbiological specimens and pathogen identification directly to infection episodes and treatment.\n\nCore Functions:\n• Specimen Type\n• Collection Date\n• Anatomical Source\n• Collection Method Context\n• Culture\n• Microscopy Context\n• Pathogen Identification\n• Molecular Identification\n• Viral Detection\n• Fungal Detection\n• Parasitology Context\n• Contamination Context\n• Quantitative Result Context\n• Susceptibility Testing\n• Final Microbiology Report\n\nIntegrations:\n• Microbiology\n• Infectious Disease\n• Laboratory Medicine\n• Pharmacy\n• Infection Control\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "4a747dbe66ed97246a4b8d428301b1b3062c07f738abdcb91c8b4b0d7807447d",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126562
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Specimen Type",
+        "Collection Date",
+        "Anatomical Source",
+        "Collection Method Context",
+        "Culture",
+        "Microscopy Context",
+        "Pathogen Identification",
+        "Molecular Identification",
+        "Viral Detection",
+        "Fungal Detection",
+        "Parasitology Context",
+        "Contamination Context",
+        "Quantitative Result Context",
+        "Susceptibility Testing",
+        "Final Microbiology Report",
+        "Microbiology",
+        "Infectious Disease",
+        "Laboratory Medicine",
+        "Pharmacy",
+        "Infection Control"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5055,
+      "title": "Pediatric Antimicrobial Susceptibility & Resistance Intelligence Module",
+      "body": "Purpose:\nMaintain a longitudinal patient-specific record of antimicrobial susceptibility and resistance.\n\nCore Functions:\n• Organism\n• Specimen\n• Susceptibility Profile\n• Resistance Profile\n• Resistant Organism Classification Context\n• Previous Resistant Isolates\n• Antimicrobial Exposure\n• Treatment Failure Context\n• Colonization Context\n• Infection Context\n• Resistance Evolution\n• Laboratory Method Context\n• Historical Comparison\n• Infection-control Context\n\nSafety Functions:\n• Previous Resistance Visibility\n• Drug Allergy Integration\n• Prior Treatment Failure Context\n• Organ Function Context\n• Antimicrobial History\n\nArchitecture Principle:\nResistance information follows the patient across specialties and institutions where interoperability and consent permit.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "042299db45106723701edbfcc25708594fc876ca5461c3d64b7b38093ff8e71f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126599
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Organism",
+        "Specimen",
+        "Susceptibility Profile",
+        "Resistance Profile",
+        "Resistant Organism Classification Context",
+        "Previous Resistant Isolates",
+        "Antimicrobial Exposure",
+        "Treatment Failure Context",
+        "Colonization Context",
+        "Infection Context",
+        "Resistance Evolution",
+        "Laboratory Method Context",
+        "Historical Comparison",
+        "Infection-control Context",
+        "Previous Resistance Visibility",
+        "Drug Allergy Integration",
+        "Prior Treatment Failure Context",
+        "Organ Function Context",
+        "Antimicrobial History"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5056,
+      "title": "Pediatric Antimicrobial Therapy & Stewardship Engine",
+      "body": "Purpose:\nProvide governed antimicrobial medication management and stewardship support for pediatric care.\n\nCore Functions:\n• Antimicrobial Agent\n• Indication\n• Dose\n• Weight Context\n• Route\n• Frequency\n• Start Date\n• Planned Duration\n• Microbiology Context\n• Susceptibility Context\n• Renal Function\n• Hepatic Function Context\n• Allergy\n• Drug Interaction\n• Treatment Response\n• De-escalation Context\n• Discontinuation\n\nStewardship Functions:\n• Duplicate Therapy Detection\n• Excess Duration Context\n• Microbiology-Treatment Correlation\n• IV-to-Oral Review Context\n• Previous Resistance\n• Allergy Review\n• Treatment Outcome\n\nSafety:\nAll therapeutic recommendations remain clinician-reviewed and patient-specific.\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "f5354a0edb24a73827e7e24638d432671367bf944fc0bd7feed2123a06f9c6b2",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126635
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Antimicrobial Agent",
+        "Indication",
+        "Dose",
+        "Weight Context",
+        "Route",
+        "Frequency",
+        "Start Date",
+        "Planned Duration",
+        "Microbiology Context",
+        "Susceptibility Context",
+        "Renal Function",
+        "Hepatic Function Context",
+        "Allergy",
+        "Drug Interaction",
+        "Treatment Response",
+        "De-escalation Context",
+        "Discontinuation",
+        "Duplicate Therapy Detection",
+        "Excess Duration Context",
+        "Microbiology-Treatment Correlation",
+        "IV-to-Oral Review Context",
+        "Previous Resistance",
+        "Allergy Review",
+        "Treatment Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5057,
+      "title": "Pediatric Antibiotic Allergy, Intolerance & Delabeling Coordination Module",
+      "body": "Purpose:\nDistinguish documented antimicrobial allergy from intolerance, uncertain historical labels and specialist-reviewed delabeling.\n\nCore Functions:\n• Suspected Drug\n• Reaction\n• Reaction Date\n• Reaction Timing\n• Severity\n• Immediate/Delayed Context\n• Treatment Required\n• Historical Source\n• Confidence Context\n• Allergy Assessment\n• Testing Context\n• Challenge Context\n• Specialist Conclusion\n• Delabeling\n• Future Restrictions\n• Medical Passport Update\n\nIntegrations:\n• Infectious Disease\n• Allergy\n• Immunology\n• Pharmacy\n• Emergency Medicine\n\nSafety:\nHistorical allergy information is never silently deleted; changes remain traceable through an audit history.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "c6ede57fa96d83a1ec4a69004786f477496109f13a5bbb6caae6a7e9eb886c16",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126679
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Suspected Drug",
+        "Reaction",
+        "Reaction Date",
+        "Reaction Timing",
+        "Severity",
+        "Immediate/Delayed Context",
+        "Treatment Required",
+        "Historical Source",
+        "Confidence Context",
+        "Allergy Assessment",
+        "Testing Context",
+        "Challenge Context",
+        "Specialist Conclusion",
+        "Delabeling",
+        "Future Restrictions",
+        "Medical Passport Update",
+        "Infectious Disease",
+        "Allergy",
+        "Immunology",
+        "Pharmacy",
+        "Emergency Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5058,
+      "title": "Pediatric Sepsis & Severe Infection Coordination Module",
+      "body": "Purpose:\nSupport rapid multidisciplinary documentation and continuity for suspected or confirmed severe pediatric infection and sepsis.\n\nCore Functions:\n• Infection Source Context\n• Vital Signs\n• Perfusion Context\n• Mental Status Context\n• Respiratory Status\n• Laboratory Data\n• Microbiology\n• Organ Dysfunction Context\n• Fluid Therapy Context\n• Antimicrobial Timeline\n• Critical Care\n• Procedures\n• Treatment Response\n• Complications\n• Outcome\n• Post-sepsis Follow-up\n\nIntegrations:\n• Emergency Medicine\n• Intensive Care\n• Infectious Disease\n• Microbiology\n• Pharmacy\n• Laboratory Medicine\n\nSafety:\nThe system must never delay emergency clinical assessment or treatment while awaiting automated analysis.\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "cc1b0af0e29f6503e1a3875f0f8d06edfd872cfbc729cff1a4ef8f9765dd1842",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126717
+      },
+      "verdict": "Emergency assessment and treatment must never wait for automated analysis; record progress without imposing data-completion gates on care.",
+      "feature_labels": [
+        "Infection Source Context",
+        "Vital Signs",
+        "Perfusion Context",
+        "Mental Status Context",
+        "Respiratory Status",
+        "Laboratory Data",
+        "Microbiology",
+        "Organ Dysfunction Context",
+        "Fluid Therapy Context",
+        "Antimicrobial Timeline",
+        "Critical Care",
+        "Procedures",
+        "Treatment Response",
+        "Complications",
+        "Outcome",
+        "Post-sepsis Follow-up",
+        "Emergency Medicine",
+        "Intensive Care",
+        "Infectious Disease",
+        "Microbiology",
+        "Pharmacy",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5059,
+      "title": "Pediatric Central Nervous System Infection Module",
+      "body": "Purpose:\nCoordinate diagnosis and longitudinal follow-up of meningitis, encephalitis and other pediatric CNS infections.\n\nCore Functions:\n• Neurological Symptoms\n• Fever\n• Seizure Context\n• Mental Status\n• CSF Context\n• Microbiology\n• Molecular Diagnostics\n• Imaging\n• Antimicrobial Therapy\n• Antiviral Therapy Context\n• Intensive Care Context\n• Neurological Complications\n• Hearing Follow-up Context\n• Developmental Follow-up\n• Long-term Outcome\n\nIntegrations:\n• Infectious Disease\n• Neurology\n• Intensive Care\n• Radiology\n• Audiology\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "019159f03ecf87086c54a5f4777b527c5542726335c1ffcb3a4695b1723faf12",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126759
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Neurological Symptoms",
+        "Fever",
+        "Seizure Context",
+        "Mental Status",
+        "CSF Context",
+        "Microbiology",
+        "Molecular Diagnostics",
+        "Imaging",
+        "Antimicrobial Therapy",
+        "Antiviral Therapy Context",
+        "Intensive Care Context",
+        "Neurological Complications",
+        "Hearing Follow-up Context",
+        "Developmental Follow-up",
+        "Long-term Outcome",
+        "Infectious Disease",
+        "Neurology",
+        "Intensive Care",
+        "Radiology",
+        "Audiology",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5060,
+      "title": "Pediatric Respiratory Infection & Pneumonia Management Module",
+      "body": "Purpose:\nProvide longitudinal management of clinically significant pediatric respiratory infections.\n\nCore Functions:\n• Upper/Lower Respiratory Context\n• Symptoms\n• Oxygenation Context\n• Respiratory Support Context\n• Laboratory Data\n• Microbiology\n• Viral Testing\n• Imaging\n• Bacterial Context\n• Antimicrobial Therapy\n• Antiviral Therapy Context\n• Hospitalization\n• Complications\n• Recurrent Pneumonia Context\n• Resolution\n\nIntegrations:\n• Infectious Disease\n• Pulmonology\n• Pediatrics\n• Emergency Medicine\n• Intensive Care\n• Microbiology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "99777de3ce010a4c17ab3fcb619e8548d257e7430ef090ddd35d932aa1971a32",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126794
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Upper/Lower Respiratory Context",
+        "Symptoms",
+        "Oxygenation Context",
+        "Respiratory Support Context",
+        "Laboratory Data",
+        "Microbiology",
+        "Viral Testing",
+        "Imaging",
+        "Bacterial Context",
+        "Antimicrobial Therapy",
+        "Antiviral Therapy Context",
+        "Hospitalization",
+        "Complications",
+        "Recurrent Pneumonia Context",
+        "Resolution",
+        "Infectious Disease",
+        "Pulmonology",
+        "Pediatrics",
+        "Emergency Medicine",
+        "Intensive Care",
+        "Microbiology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5061,
+      "title": "Pediatric Gastrointestinal Infection & Enteric Pathogen Module",
+      "body": "Purpose:\nCoordinate pediatric infectious gastroenteritis and clinically significant enteric infections.\n\nCore Functions:\n• Diarrhea\n• Vomiting\n• Fever\n• Dehydration Context\n• Stool Testing\n• Bacterial Pathogen\n• Viral Pathogen\n• Parasite Context\n• Toxin Context\n• Travel\n• Food Exposure\n• Outbreak Context\n• Treatment\n• Isolation Context\n• Complications\n• Follow-up\n\nIntegrations:\n• Infectious Disease\n• Gastroenterology\n• Microbiology\n• Public Health\n• Emergency Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "039f26d8bf25ea7c7dfba383404f514dc18cfc942585d227c1cd33c0ca31efa5",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126829
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diarrhea",
+        "Vomiting",
+        "Fever",
+        "Dehydration Context",
+        "Stool Testing",
+        "Bacterial Pathogen",
+        "Viral Pathogen",
+        "Parasite Context",
+        "Toxin Context",
+        "Travel",
+        "Food Exposure",
+        "Outbreak Context",
+        "Treatment",
+        "Isolation Context",
+        "Complications",
+        "Follow-up",
+        "Infectious Disease",
+        "Gastroenterology",
+        "Microbiology",
+        "Public Health",
+        "Emergency Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5062,
+      "title": "Pediatric Skin, Soft Tissue, Bone & Joint Infection Module",
+      "body": "Purpose:\nProvide integrated management of pediatric skin, soft-tissue and musculoskeletal infections.\n\nCore Functions:\n• Infection Site\n• Cellulitis Context\n• Abscess Context\n• Osteomyelitis Context\n• Septic Arthritis Context\n• Symptoms\n• Laboratory Data\n• Microbiology\n• Imaging\n• Surgery/Drainage Context\n• Antimicrobial Therapy\n• Treatment Duration\n• Functional Impact\n• Rehabilitation Context\n• Recurrence\n\nIntegrations:\n• Infectious Disease\n• Dermatology\n• Orthopedics\n• Surgery\n• Radiology\n• Rehabilitation\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "e01d37e30883db77e487ff86c46cd4a1ae2e9b74d239ea073fec890fbfbcf6ca",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126864
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Infection Site",
+        "Cellulitis Context",
+        "Abscess Context",
+        "Osteomyelitis Context",
+        "Septic Arthritis Context",
+        "Symptoms",
+        "Laboratory Data",
+        "Microbiology",
+        "Imaging",
+        "Surgery/Drainage Context",
+        "Antimicrobial Therapy",
+        "Treatment Duration",
+        "Functional Impact",
+        "Rehabilitation Context",
+        "Recurrence",
+        "Infectious Disease",
+        "Dermatology",
+        "Orthopedics",
+        "Surgery",
+        "Radiology",
+        "Rehabilitation"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5063,
+      "title": "Pediatric Congenital & Perinatal Infection Platform",
+      "body": "Purpose:\nCoordinate maternal, fetal, neonatal and childhood data for congenital and perinatally acquired infections.\n\nCore Functions:\n• Maternal Infection Context\n• Pregnancy Timing\n• Prenatal Findings\n• Birth Context\n• Neonatal Symptoms\n• Microbiology\n• Serology\n• Molecular Diagnostics\n• Imaging\n• Hearing Context\n• Vision Context\n• Neurological Context\n• Growth\n• Treatment\n• Developmental Surveillance\n• Long-term Outcomes\n\nIntegrations:\n• Infectious Disease\n• Obstetrics Context\n• Fetal Medicine\n• Neonatology\n• Neurology\n• Ophthalmology\n• Audiology\n• Developmental Pediatrics\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "7a62e9ea7af98d80b3e4cba008feae53e110a6bb340121f89c6fb956d2c2ef92",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126899
+      },
+      "verdict": "Maternal and child records remain separate identities with authorized contextual links; perinatal linkage does not copy maternal history wholesale.",
+      "feature_labels": [
+        "Maternal Infection Context",
+        "Pregnancy Timing",
+        "Prenatal Findings",
+        "Birth Context",
+        "Neonatal Symptoms",
+        "Microbiology",
+        "Serology",
+        "Molecular Diagnostics",
+        "Imaging",
+        "Hearing Context",
+        "Vision Context",
+        "Neurological Context",
+        "Growth",
+        "Treatment",
+        "Developmental Surveillance",
+        "Long-term Outcomes",
+        "Infectious Disease",
+        "Obstetrics Context",
+        "Fetal Medicine",
+        "Neonatology",
+        "Neurology",
+        "Ophthalmology",
+        "Audiology",
+        "Developmental Pediatrics"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5064,
+      "title": "Pediatric Tuberculosis & Mycobacterial Disease Module",
+      "body": "Purpose:\nProvide longitudinal management of tuberculosis exposure, infection and disease as well as clinically relevant mycobacterial conditions.\n\nCore Functions:\n• Exposure History\n• Contact Context\n• Screening\n• Immunological Testing Context\n• Microbiology\n• Molecular Diagnostics\n• Imaging\n• Disease Site\n• Drug Susceptibility\n• Medication Regimen\n• Treatment Duration\n• Adherence\n• Adverse Effects\n• Public Health Context\n• Follow-up\n• Outcome\n\nIntegrations:\n• Infectious Disease\n• Pulmonology\n• Microbiology\n• Pharmacy\n• Public Health\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "8547a285d5946a9e82a79fb95091c1d975a1c4c36c885db689fc0cb4c9124dfe",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126937
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Exposure History",
+        "Contact Context",
+        "Screening",
+        "Immunological Testing Context",
+        "Microbiology",
+        "Molecular Diagnostics",
+        "Imaging",
+        "Disease Site",
+        "Drug Susceptibility",
+        "Medication Regimen",
+        "Treatment Duration",
+        "Adherence",
+        "Adverse Effects",
+        "Public Health Context",
+        "Follow-up",
+        "Outcome",
+        "Infectious Disease",
+        "Pulmonology",
+        "Microbiology",
+        "Pharmacy",
+        "Public Health"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5065,
+      "title": "Pediatric HIV & Chronic Viral Infection Coordination Module",
+      "body": "Purpose:\nSupport longitudinal specialist care for pediatric HIV and other chronic viral infections requiring ongoing surveillance.\n\nCore Functions:\n• Diagnosis\n• Acquisition Context\n• Viral Load Context\n• Immune Status\n• Treatment\n• Medication Adherence\n• Resistance Context\n• Organ Function\n• Coinfection Context\n• Vaccination Context\n• Growth\n• Development\n• Psychosocial Context\n• Transition Planning\n• Long-term Outcomes\n\nIntegrations:\n• Infectious Disease\n• Immunology\n• Pharmacy\n• Hepatology\n• Adolescent Medicine\n• Vaccination Platform\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "f2486b8c471382a0db63f3b8368194a23c02342de610599dd4740b2004fa1d25",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 126972
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Diagnosis",
+        "Acquisition Context",
+        "Viral Load Context",
+        "Immune Status",
+        "Treatment",
+        "Medication Adherence",
+        "Resistance Context",
+        "Organ Function",
+        "Coinfection Context",
+        "Vaccination Context",
+        "Growth",
+        "Development",
+        "Psychosocial Context",
+        "Transition Planning",
+        "Long-term Outcomes",
+        "Infectious Disease",
+        "Immunology",
+        "Pharmacy",
+        "Hepatology",
+        "Adolescent Medicine",
+        "Vaccination Platform"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5066,
+      "title": "Pediatric Viral Hepatitis & Hepatotropic Infection Module",
+      "body": "Purpose:\nCoordinate pediatric viral hepatitis diagnosis, treatment and liver surveillance.\n\nCore Functions:\n• Viral Hepatitis Type\n• Acquisition Context\n• Serology\n• Molecular Testing\n• Viral Load Context\n• Liver Enzymes\n• Liver Function\n• Imaging Context\n• Fibrosis Context\n• Treatment\n• Treatment Response\n• Vaccination Context\n• Household/Exposure Context\n• Long-term Surveillance\n\nIntegrations:\n• Infectious Disease\n• Hepatology\n• Gastroenterology\n• Vaccination Platform\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "dee86efc0dbb6680d9ac39dd4418475a8b410e6938e0cdfa4663c6c4a085367f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127007
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Viral Hepatitis Type",
+        "Acquisition Context",
+        "Serology",
+        "Molecular Testing",
+        "Viral Load Context",
+        "Liver Enzymes",
+        "Liver Function",
+        "Imaging Context",
+        "Fibrosis Context",
+        "Treatment",
+        "Treatment Response",
+        "Vaccination Context",
+        "Household/Exposure Context",
+        "Long-term Surveillance",
+        "Infectious Disease",
+        "Hepatology",
+        "Gastroenterology",
+        "Vaccination Platform",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5067,
+      "title": "Pediatric Opportunistic Infection & Immunocompromised Host Module",
+      "body": "Purpose:\nCoordinate infectious disease management for children with impaired immune function.\n\nCore Functions:\n• Underlying Immune Condition\n• Immunosuppression\n• Oncology Context\n• Transplant Context\n• Neutropenia Context\n• Opportunistic Pathogen\n• Previous Infection\n• Prophylaxis\n• Diagnostic Testing\n• Imaging\n• Antimicrobial Therapy\n• Treatment Response\n• Immune Recovery Context\n• Recurrence\n• Prevention Plan\n\nIntegrations:\n• Infectious Disease\n• Immunology\n• Hematology\n• Oncology\n• Transplantation\n• Pharmacy\n\nMVP Relevance:\nHIGH\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "8ec053abc2b0b749d1d66d0296ebfb6e657feb2eb146be3c0bf132dd1751ac02",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127040
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Underlying Immune Condition",
+        "Immunosuppression",
+        "Oncology Context",
+        "Transplant Context",
+        "Neutropenia Context",
+        "Opportunistic Pathogen",
+        "Previous Infection",
+        "Prophylaxis",
+        "Diagnostic Testing",
+        "Imaging",
+        "Antimicrobial Therapy",
+        "Treatment Response",
+        "Immune Recovery Context",
+        "Recurrence",
+        "Prevention Plan",
+        "Infectious Disease",
+        "Immunology",
+        "Hematology",
+        "Oncology",
+        "Transplantation",
+        "Pharmacy"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5068,
+      "title": "Pediatric Healthcare-Associated Infection & Device Infection Module",
+      "body": "Purpose:\nProvide surveillance and clinical coordination for healthcare-associated and device-related pediatric infections.\n\nCore Functions:\n• Device Type\n• Device Placement Date\n• Infection Episode\n• Infection Site\n• Bloodstream Infection Context\n• Catheter Infection Context\n• Surgical Site Context\n• Microbiology\n• Resistance\n• Antimicrobial Therapy\n• Device Removal/Replacement Context\n• Infection-control Investigation\n• Outcome\n• Recurrence\n\nIntegrations:\n• Infectious Disease\n• Infection Control\n• Surgery\n• Intensive Care\n• Microbiology\n• Device Registry\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "c4f9a161277fa0ce0ac755d59c99cbfebc7f633c429bddb29d814f5f205bfce3",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127078
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Device Type",
+        "Device Placement Date",
+        "Infection Episode",
+        "Infection Site",
+        "Bloodstream Infection Context",
+        "Catheter Infection Context",
+        "Surgical Site Context",
+        "Microbiology",
+        "Resistance",
+        "Antimicrobial Therapy",
+        "Device Removal/Replacement Context",
+        "Infection-control Investigation",
+        "Outcome",
+        "Recurrence",
+        "Infectious Disease",
+        "Infection Control",
+        "Surgery",
+        "Intensive Care",
+        "Microbiology",
+        "Device Registry"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5069,
+      "title": "Pediatric Infection Exposure, Contact & Post-Exposure Management Module",
+      "body": "Purpose:\nCoordinate clinically relevant infectious exposures and subsequent follow-up.\n\nCore Functions:\n• Exposure Type\n• Source Context\n• Exposure Date\n• Pathogen Context\n• Exposure Intensity Context\n• Immune Status\n• Vaccination Status\n• Previous Infection Context\n• Laboratory Testing\n• Post-exposure Prophylaxis Context\n• Vaccination Context\n• Symptom Surveillance\n• Follow-up Testing\n• Outcome\n• Public Health Context\n\nSafety:\nManagement pathways depend on pathogen, exposure type, immune status and applicable clinical/public-health guidance.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "aa32f63a4c1cc6a425779beba0b3ef7064d74f45c0d26a0fe765a0ff1e8679d4",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127112
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Exposure Type",
+        "Source Context",
+        "Exposure Date",
+        "Pathogen Context",
+        "Exposure Intensity Context",
+        "Immune Status",
+        "Vaccination Status",
+        "Previous Infection Context",
+        "Laboratory Testing",
+        "Post-exposure Prophylaxis Context",
+        "Vaccination Context",
+        "Symptom Surveillance",
+        "Follow-up Testing",
+        "Outcome",
+        "Public Health Context"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5070,
+      "title": "Pediatric Travel Medicine & Imported Infection Module",
+      "body": "Purpose:\nConnect pediatric travel history, preventive medicine and imported infection assessment.\n\nCore Functions:\n• Destination\n• Travel Dates\n• Travel Purpose Context\n• Vaccination Requirements Context\n• National/International Guidance Context\n• Malaria Risk Context\n• Food/Water Risk Context\n• Vector Exposure Context\n• Animal Exposure Context\n• Preventive Medication Context\n• Illness During Travel\n• Post-travel Symptoms\n• Laboratory Testing\n• Imported Infection Diagnosis\n• Follow-up\n\nIntegrations:\n• Infectious Disease\n• Vaccination Platform\n• Public Health\n• Pediatrics\n• Laboratory Medicine\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "3d480edb80944f15bcb9c9e1fd38db17edb441639332a56c92fa648df999083f",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127142
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Destination",
+        "Travel Dates",
+        "Travel Purpose Context",
+        "Vaccination Requirements Context",
+        "National/International Guidance Context",
+        "Malaria Risk Context",
+        "Food/Water Risk Context",
+        "Vector Exposure Context",
+        "Animal Exposure Context",
+        "Preventive Medication Context",
+        "Illness During Travel",
+        "Post-travel Symptoms",
+        "Laboratory Testing",
+        "Imported Infection Diagnosis",
+        "Follow-up",
+        "Infectious Disease",
+        "Vaccination Platform",
+        "Public Health",
+        "Pediatrics",
+        "Laboratory Medicine"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5071,
+      "title": "Pediatric Infection Prevention, Isolation & Infection-Control Module",
+      "body": "Purpose:\nCoordinate patient-specific infection-prevention measures across healthcare environments.\n\nCore Functions:\n• Infection Status\n• Colonization Status\n• Resistant Organism Context\n• Isolation Requirement Context\n• Precaution Type\n• Start Date\n• Review Date\n• Discontinuation Context\n• Device Context\n• Procedure Context\n• Exposure Context\n• Household Context\n• Healthcare Setting Context\n• Infection-control Documentation\n• Audit Trail\n\nIntegrations:\n• Infection Control\n• Infectious Disease\n• Nursing\n• Hospital Operations\n• Microbiology\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "998a91ae30c0e257496bd2d3447ceecf63d23ffad545a34ce19d8d7f546e1533",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127176
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Infection Status",
+        "Colonization Status",
+        "Resistant Organism Context",
+        "Isolation Requirement Context",
+        "Precaution Type",
+        "Start Date",
+        "Review Date",
+        "Discontinuation Context",
+        "Device Context",
+        "Procedure Context",
+        "Exposure Context",
+        "Household Context",
+        "Healthcare Setting Context",
+        "Infection-control Documentation",
+        "Audit Trail",
+        "Infection Control",
+        "Infectious Disease",
+        "Nursing",
+        "Hospital Operations",
+        "Microbiology"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5072,
+      "title": "Pediatric Post-Infectious Syndrome & Long-term Recovery Module",
+      "body": "Purpose:\nTrack clinically significant persistent or delayed consequences following pediatric infection.\n\nCore Functions:\n• Index Infection\n• Recovery Timeline\n• Persistent Symptoms\n• Fatigue Context\n• Cardiovascular Context\n• Respiratory Context\n• Neurological Context\n• Musculoskeletal Context\n• Gastrointestinal Context\n• Functional Status\n• School Participation\n• Laboratory Follow-up\n• Rehabilitation\n• Specialist Referral\n• Long-term Outcome\n\nArchitecture Principle:\nThe original infectious episode remains linked to subsequent clinically documented sequelae without assuming causality where it has not been established.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "595eeea2ad89345b3c9781d30ab3dbf078ca5b4d18e161a1af142af9f9ec93a1",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127210
+      },
+      "verdict": "Link sequelae to the index infection without assuming causality; preserve recovery, school participation and rehabilitation context.",
+      "feature_labels": [
+        "Index Infection",
+        "Recovery Timeline",
+        "Persistent Symptoms",
+        "Fatigue Context",
+        "Cardiovascular Context",
+        "Respiratory Context",
+        "Neurological Context",
+        "Musculoskeletal Context",
+        "Gastrointestinal Context",
+        "Functional Status",
+        "School Participation",
+        "Laboratory Follow-up",
+        "Rehabilitation",
+        "Specialist Referral",
+        "Long-term Outcome"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5073,
+      "title": "Pediatric Infectious Disease AI & Pathogen Intelligence Module",
+      "body": "Purpose:\nProvide governed AI-assisted intelligence across pediatric infectious disease workflows.\n\nCore Functions:\n• Infection Timeline Summarization\n• Microbiology Trend Analysis\n• Resistance History Organization\n• Antimicrobial Exposure Analysis\n• Recurrent Infection Pattern Support\n• Laboratory Trend Support\n• Treatment-response Analysis\n• Infection-risk Context\n• Missing-data Detection\n• Care-gap Detection\n• Pre-Visit Summary\n• Documentation Assistance\n\nAI Governance:\n• Human Validation\n• Explainability\n• Confidence and Uncertainty\n• Source Traceability\n• Model Version Tracking\n• Pediatric Validation\n• Bias Monitoring\n• Audit Trail\n\nSafety:\nAI cannot independently diagnose sepsis, prescribe antimicrobials, determine isolation status or replace specialist/public-health decision making.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "a54a4e1bf6410189ec6ea3053a9acaf6d9605ebd88d697236009337e1bcd3d2c",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127240
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Infection Timeline Summarization",
+        "Microbiology Trend Analysis",
+        "Resistance History Organization",
+        "Antimicrobial Exposure Analysis",
+        "Recurrent Infection Pattern Support",
+        "Laboratory Trend Support",
+        "Treatment-response Analysis",
+        "Infection-risk Context",
+        "Missing-data Detection",
+        "Care-gap Detection",
+        "Pre-Visit Summary",
+        "Documentation Assistance",
+        "Human Validation",
+        "Explainability",
+        "Confidence and Uncertainty",
+        "Source Traceability",
+        "Model Version Tracking",
+        "Pediatric Validation",
+        "Bias Monitoring",
+        "Audit Trail"
+      ],
+      "date": "2026-09-14"
+    },
+    {
+      "original_id": 5075,
+      "title": "Clinical Pediatric Infectious Diseases & Antimicrobial Intelligence Hub",
+      "body": "Purpose:\nServe as the master orchestration layer for the complete EDHT pediatric infectious disease ecosystem.\n\nCoordinates:\n• Infectious Disease Registry\n• Infection Episodes\n• Fever\n• Microbiology\n• Pathogen Identification\n• Antimicrobial Susceptibility\n• Antimicrobial Resistance\n• Antimicrobial Stewardship\n• Antibiotic Allergy\n• Sepsis\n• CNS Infection\n• Respiratory Infection\n• Gastrointestinal Infection\n• Musculoskeletal Infection\n• Congenital Infection\n• Tuberculosis\n• Chronic Viral Infection\n• Viral Hepatitis\n• Opportunistic Infection\n• Healthcare-associated Infection\n• Exposure Management\n• Travel Medicine\n• Infection Prevention\n• Post-infectious Care\n• Transition Care\n\nDigital Capabilities:\n• Artificial Intelligence\n• Infection Digital Twin\n• Microbiology Integration\n• Laboratory Integration\n• Pharmacy Integration\n• Vaccination Intelligence\n• Infection Passport\n• Patient/Guardian Interface\n• Clinical Alerts\n• Resistance Surveillance\n• Outcomes Registry\n• Research Data Layer\n\nPlatform Functions:\n• Unified Infection Timeline\n• Patient-specific Microbiology History\n• Antimicrobial Exposure Timeline\n• Resistance History\n• Allergy and Adverse Reaction Integration\n• Vaccination Integration\n• Immune-status Integration\n• Device Infection Tracking\n• Infection-control Context\n• Multidisciplinary Coordination\n• Role-based Access\n• Consent Management\n• Data Provenance\n• Clinical Decision Traceability\n• Cross-Border Interoperability\n\nMVP Foundation:\n• Infection Episode Registry\n• Microbiology Results\n• Pathogen Registry\n• Antimicrobial Medication History\n• Resistance History\n• Antibiotic Allergy Record\n• Vaccination Integration\n• Immune-status Context\n• Severe Infection Alerts\n• Infection Passport\n• Interoperability\n\nExpansion Layers:\n• Advanced Pathogen Intelligence\n• Infection Digital Twin\n• Predictive Infection-risk Models\n• Automated Resistance Analytics\n• Advanced Antimicrobial Stewardship\n• Outbreak Intelligence\n• International Infection Surveillance\n• Research Infrastructure\n\nArchitecture Principle:\nPediatric infectious disease remains connected to vaccination, microbiology, immunology, pharmacy, intensive care, public health and the lifelong EDHT patient record rather than operating as an isolated specialty system.\n\nStatus:\nDocumentation\n\n---",
+      "body_sha256": "ac1c500888d7fb85fd874722151a3c7c1bdad6c224de61d410d793424ad3fa75",
+      "source": {
+        "path": "sources/EDHT_Medical_Passport_Product_Bible_5175_Modules_FULL.md",
+        "heading_line": 127322
+      },
+      "verdict": "Preserve infection episode/site/specimen/pathogen/method/result versions, susceptibility breakpoint standard and resistance context, stewardship review, vaccination history versus eligibility, immunocompromised/perinatal/travel context, de-identified surveillance and governed public reporting. Never delay sepsis care for scoring or let AI prescribe, clear vaccination or confirm an outbreak.",
+      "feature_labels": [
+        "Infectious Disease Registry",
+        "Infection Episodes",
+        "Fever",
+        "Microbiology",
+        "Pathogen Identification",
+        "Antimicrobial Susceptibility",
+        "Antimicrobial Resistance",
+        "Antimicrobial Stewardship",
+        "Antibiotic Allergy",
+        "Sepsis",
+        "CNS Infection",
+        "Respiratory Infection",
+        "Gastrointestinal Infection",
+        "Musculoskeletal Infection",
+        "Congenital Infection",
+        "Tuberculosis",
+        "Chronic Viral Infection",
+        "Viral Hepatitis",
+        "Opportunistic Infection",
+        "Healthcare-associated Infection",
+        "Exposure Management",
+        "Travel Medicine",
+        "Infection Prevention",
+        "Post-infectious Care",
+        "Transition Care",
+        "Artificial Intelligence",
+        "Infection Digital Twin",
+        "Microbiology Integration",
+        "Laboratory Integration",
+        "Pharmacy Integration",
+        "Vaccination Intelligence",
+        "Infection Passport",
+        "Patient/Guardian Interface",
+        "Clinical Alerts",
+        "Resistance Surveillance",
+        "Outcomes Registry",
+        "Research Data Layer",
+        "Unified Infection Timeline",
+        "Patient-specific Microbiology History",
+        "Antimicrobial Exposure Timeline",
+        "Resistance History",
+        "Allergy and Adverse Reaction Integration",
+        "Vaccination Integration",
+        "Immune-status Integration",
+        "Device Infection Tracking",
+        "Infection-control Context",
+        "Multidisciplinary Coordination",
+        "Role-based Access",
+        "Consent Management",
+        "Data Provenance",
+        "Clinical Decision Traceability",
+        "Cross-Border Interoperability",
+        "Infection Episode Registry",
+        "Microbiology Results",
+        "Pathogen Registry",
+        "Antimicrobial Medication History",
+        "Resistance History",
+        "Antibiotic Allergy Record",
+        "Vaccination Integration",
+        "Immune-status Context",
+        "Severe Infection Alerts",
+        "Infection Passport",
+        "Interoperability",
+        "Advanced Pathogen Intelligence",
+        "Infection Digital Twin",
+        "Predictive Infection-risk Models",
+        "Automated Resistance Analytics",
+        "Advanced Antimicrobial Stewardship",
+        "Outbreak Intelligence",
+        "International Infection Surveillance",
+        "Research Infrastructure"
+      ],
+      "date": "2026-09-14"
+    }
+  ]
+}
